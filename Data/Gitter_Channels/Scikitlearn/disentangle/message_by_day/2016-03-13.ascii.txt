@@ -1,0 +1,58 @@
+[07:04] <564789be16b6c7089cbab8b7> I found it ... I think it should be renamed :)
+[09:18] <53135b495e986b0712efc453> Which one should be renamed?
+[09:55] <564789be16b6c7089cbab8b7> "score(X, y[, sample_weight]) 	Returns the coefficient of determination R^2 of the prediction." This is confusing I think. It's really a correlation coefficient. Why is it called R^2?
+[09:56] <564789be16b6c7089cbab8b7> it is a value between -1 and 1
+[09:56] <564789be16b6c7089cbab8b7> as far as I can tell
+[09:56] <564789be16b6c7089cbab8b7> @rvraghav93  ^^
+[15:16] <5537027215522ed4b3df56ab> Hey guys, would it make sense to contribute confidence intervals for linear models?
+[15:17] <5537027215522ed4b3df56ab> because without standard errors for each coefficient estimated from test data, it's hard to interpret coefficients
+[15:22] <5537027215522ed4b3df56ab> i work with data that changes over time, so in my case I need confidence intervals on output probabilities for new samples. When using the standard output probabilities,  they are sometimes wrong and confidence intervals would help figure out a) how wrong you are and b) which coefficients have lower standard errors over time for more robust feature selection
+[15:46] <54e07d6515522ed4b3dc0858> @lesshaste not really. Training R^2 is between 0 and 1, but on unseen data it can become negative.  And "coefficient of determination" is an established term in statistics.
+[16:50] <564789be16b6c7089cbab8b7> @vene Hi. If it's an established term then that is what we should use. Maybe a very brief explanation of the range it can take on test data and why could be added?
+[16:58] <564789be16b6c7089cbab8b7> @vene  I managed to get these scores [-0.38971809 -1.32178009 -0.20038367]  . What is the range? It clearly isn't -1 to 1
+[16:59] <54e07d6515522ed4b3dc0858> It's -INF to 1, I think.
+[17:26] <564789be16b6c7089cbab8b7>  @vene  that's interesting. It would be great if something definitive and clear could be added to the docs about this. Please :)
+[18:38] <54e07d6515522ed4b3dc0858> @lesshaste have you read this? http://scikit-learn.org/stable/modules/model_evaluation.html#r2-score
+[18:41] <54e07d6515522ed4b3dc0858> the intuition is: a model can never do worse than predicting the mean *on training data*. (at least a linear model that can set all its coefs to 0) but it can do much worse on test data if it overfits.
+[18:46] <54e07d6515522ed4b3dc0858> on "hard" regression problems (few samples, many irrelevant features) MSE/MAE can lead you to believe you're doing well,  if you don't compare against a dummy baseline that predicts the mean, or something simple like that. I've fallen in this trap.
+[18:59] <564789be16b6c7089cbab8b7> @vene Oops! I hadn't read that. Sorry that's my bad
+[19:00] <564789be16b6c7089cbab8b7> @vene  I seem to have a hard regression problem currently :(
+[19:05] <56e5af1285d51f252ab894f7> hey, if anyone has any remote remote , designer,  DevOps  or Sysadmin jobs they can post them at http://webwork.io
+[19:13] <54e07d6515522ed4b3dc0858> @lesshaste did you try feature selection?
+[19:14] <54e07d6515522ed4b3dc0858> @lqdc confidence intervals are cool, but it seems more in the domain of statsmodels. And I think it's actually already implemented in statsmodels.
+[19:15] <54e07d6515522ed4b3dc0858> [for OLS at least](http://statsmodels.sourceforge.net/devel/generated/statsmodels.regression.linear_model.OLSResults.conf_int.html#statsmodels.regression.linear_model.OLSResults.conf_int)
+[19:20] <54e07d6515522ed4b3dc0858> seems like it's there for [GLM](http://statsmodels.sourceforge.net/devel/generated/statsmodels.genmod.generalized_linear_model.GLMResults.conf_int.html#statsmodels.genmod.generalized_linear_model.GLMResults.conf_int) too
+[19:24] <564789be16b6c7089cbab8b7> @vene  I didn't.. I just assumed that randomforestregressor doesn't really benefit from that. Is that wrong?
+[19:31] <54e07d6515522ed4b3dc0858> I haven't used random forests much, dunno.
+[19:39] <564789be16b6c7089cbab8b7> @vene  I think problem is that I have 140 samples where I am used to 100s of thousands
+[19:39] <564789be16b6c7089cbab8b7> so my intuition for what works is wrong
+[19:45] <54e07d6515522ed4b3dc0858> I never actually managed to get random forests to outperform linear models on the datasets I worked with
+[19:45] <54e07d6515522ed4b3dc0858> which are usually <<10k samples
+[19:47] <564789be16b6c7089cbab8b7> @vene that's a very interesting observation! I have found them to be great when I have a mix of categorical and numerical values and lots of data
+[19:48] <564789be16b6c7089cbab8b7> @vene  maybe I should send you my data to see what you can make of it :)
+[19:52] <564789be16b6c7089cbab8b7> because I am completely failing currently
+[19:52] <56b80528e610378809c05a48> Hello guys, Is there anyone familiar with cythons fused type?  ```cython cimport cython  ctypedef fused char_or_float:     cython.char     cython.float  def show_me():     cdef char_or_float  cython.char a = 127  show_me() ```
+[19:54] <56b80528e610378809c05a48> Oh theres a typo
+[19:55] <56b80528e610378809c05a48> Following script dosnt work ...  ```cython cimport cython  ctypedef fused char_or_float:     cython.char     cython.float  def show_me():     cdef char_or_float a = 127.0  show_me() ```
+[19:56] <56b80528e610378809c05a48> Can somebody tell me whats the problem?
+[20:01] <54e07d6515522ed4b3dc0858> can you assign 127.0 to a char normally?
+[20:01] <56b80528e610378809c05a48> yes
+[20:02] <54e07d6515522ed4b3dc0858> what is it supposed to do? it doesn't typecheck to me to assign a float to a char
+[20:04] <56b80528e610378809c05a48> really?
+[20:05] <56b80528e610378809c05a48> But it works for me ...
+[20:05] <56b80528e610378809c05a48> Thx for your help!
+[20:06] <56b80528e610378809c05a48> It is not  assign a float to a char
+[20:06] <56b80528e610378809c05a48> It is to declare a type that can accept either cython.char or  cython.float
+[20:07] <54e07d6515522ed4b3dc0858> yes, the type is declared correctly. But you can't instantiate and assign to it like that, apparently
+[20:08] <54e07d6515522ed4b3dc0858> It should work if you make it a function argument, if I understand correctly
+[20:10] <54e07d6515522ed4b3dc0858> I mean, what are you trying to do in this example? Why do you want your type to be generic if you're assigning a float to it?
+[20:11] <56b80528e610378809c05a48> oh yeah I simplify the code alot
+[20:13] <54e07d6515522ed4b3dc0858> it's not that; I don't think it makes sense to assign a literal to a fused type
+[20:13] <54e07d6515522ed4b3dc0858> this works, for example:
+[20:14] <54e07d6515522ed4b3dc0858> ``` %%cython  cimport cython  ctypedef fused char_or_float:     cython.char     cython.float  cdef char_or_float add_1(char_or_float x):     return x + 1  def show_me():     cdef cython.char a = 1     print(add_1(a))  show_me()```
+[20:15] <54e07d6515522ed4b3dc0858> note i'm declaring and assigning to a char, not to a char_or_float. But I can pass it to a function that takes char_or_float
+[20:15] <56b80528e610378809c05a48> I see
+[20:15] <56b80528e610378809c05a48> thanks for the clarafacation
+[20:16] <54e07d6515522ed4b3dc0858> in theory I'd imagine, for your example,  that the compiler *could* just specialize your char_or_float to a float when you assign to it. But I can see why they didn't implement that, it doesn't really have a point.
+[20:17] <54e07d6515522ed4b3dc0858> Are you familiar with C++ templates?
+[21:06] <54d4a1d6db8155e6700f853b> @vighneshbirodkar thanks. Sorry, I'm still travelling. How does it compare in terms of runtime?

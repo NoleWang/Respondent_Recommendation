@@ -1,0 +1,2 @@
+<s> <user> to look at feature importance , i extract it from the <unka_`> attribute , sort , and visualize . is there a way to pretty print plot automatically ? in r , <unka()_`> does the trick </s>
+<s> <user> if there 's not a way to do this in <unka-> , is there a reason why and does the community welcome pr in this regard ? </s>

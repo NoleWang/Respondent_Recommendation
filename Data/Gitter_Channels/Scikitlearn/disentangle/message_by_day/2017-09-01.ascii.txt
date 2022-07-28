@@ -1,0 +1,9 @@
+[11:27] <54c084dbdb8155e6700eed4c> The #9551 merge seems to be causing fails in a lot of new PRs
+[11:28] <5571fe1015522ed4b3e17d90> Hmmm really do you have examples?
+[11:32] <54c084dbdb8155e6700eed4c> #4197 https://travis-ci.org/scikit-learn/scikit-learn/builds/270779099?utm_source=github_status&utm_medium=notification
+[11:33] <54c084dbdb8155e6700eed4c> #9147 sorry... feeling dlysexic this evening 
+[11:36] <54c084dbdb8155e6700eed4c> #5653 will fail shortly too I'm guessing (for a variety of reasons lol... but this complex check will be one of them)
+[12:07] <5571fe1015522ed4b3e17d90> :confused: #9147 has not been merged yet, right?
+[12:13] <5571fe1015522ed4b3e17d90> I think I understand what you are saying. I'll fix it.
+[12:14] <54c084dbdb8155e6700eed4c> the fails aren't related to the PRs that are failing... #9551 seems to be the source unrelated to the new code
+[12:21] <5571fe1015522ed4b3e17d90> Should be fixed now: https://github.com/scikit-learn/scikit-learn/commit/deaa96452a981e3e54dc302fc14cb1c83cb2e399

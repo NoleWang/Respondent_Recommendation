@@ -1,0 +1,5 @@
+[13:38] <matrix-zacchiro:matrix.org> @adrinjalali: thanks for your feedback. Aside from that (which I'm gonna try) any reference number about the performances of sklearn's DBSCAN implementation on large datasets?
+[13:38] <matrix-zacchiro:matrix.org> it'd be very useful to have an idea if I'm "almost there" or, like, only 1e-6 % done
+--------------------------------------------------------------------------------------------------
+[14:40] <567f5d7716b6c7089cc043a8> I personally haven't worked with very large datasets and DBSCAN, so I can't really help you there unfortunately.
+--------------------------------------------------------------------------------------------------

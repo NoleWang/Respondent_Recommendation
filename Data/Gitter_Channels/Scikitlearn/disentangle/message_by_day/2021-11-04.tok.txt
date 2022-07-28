@@ -1,0 +1,9 @@
+<s> <user> does <unka> regression support <unka> <unka> as input for the x matrix ? URL/https:/ <unka-./> <unka#./_> does this then allow us to make use of the new attribute name : <unka_`> ? </s>
+<s> <user> you can pass a <unka> </s>
+<s> <user> currently <unka_`> be useless in <unka> and <unka> </s>
+<s> <user> because we will convert into a numpy array to make the optimisation </s>
+<s> <user> the idea for the moment is to propagate feature names in the <unka> steps </s>
+<s> <user> such that you for instance know the name of the columns of the numpy array that will be passed to the <unka> regression ( and potentially build the <unka> ) </s>
+<s> <user> the work that could be done for <unka> and <unka> is to make that the fitted attribute could use the feature names to decorate themselves </s>
+<s> <user> but it can be still be easily done by getting the <unka_`> from the last <unka> stage and create for instance a <unka> series using the <unka> </s>
+<s> <user> but for the moment we try that we can move the feature names in the <unka> </s>

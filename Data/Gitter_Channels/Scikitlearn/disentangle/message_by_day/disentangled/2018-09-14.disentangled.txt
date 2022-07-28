@@ -1,0 +1,7 @@
+[08:44] <5b9b749bd73408ce4fa82693> Hi. I'm a student and am new to sklearn. One of my peers told me that once I get a job, I can't and shouldn't use sklearn for professional projects. Is this true? Is not sklearn completely open source and free to use?
+[08:46] <5b9b749bd73408ce4fa82693> which license does it come under?
+--------------------------------------------------------------------------------------------------
+[08:48] <5b9b749bd73408ce4fa82693> If the response is too detailed to be mentioned in a chat, please respond on my email : ujjawalpanchal32@gmail.com Thanks for your help. Looking forward to replies.
+--------------------------------------------------------------------------------------------------
+[10:00] <5582e83c15522ed4b3e21bef> @Ujjawal-K-Panchal just look at github: https://github.com/scikit-learn/scikit-learn/blob/master/COPYING
+--------------------------------------------------------------------------------------------------

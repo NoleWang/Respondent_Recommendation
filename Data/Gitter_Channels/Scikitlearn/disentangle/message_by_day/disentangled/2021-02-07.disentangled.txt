@@ -1,0 +1,4 @@
+[08:09] <564789be16b6c7089cbab8b7> @adrinjalali  yes. I was just wondering if anyone thought it was interesting.
+--------------------------------------------------------------------------------------------------
+[17:25] <5e43c3d3d73408ce4fd969da> Why column transformer convert datatype to objects after calling fit_transform?
+--------------------------------------------------------------------------------------------------

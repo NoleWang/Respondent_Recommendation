@@ -1,0 +1,164 @@
+<s> <user> will i be able to edit my prop after 27th ? :p </s>
+<s> <user> i do n't think so . the <unka> might </s>
+<s> <user> but you should not count on it ;) </s>
+<s> <user> okay ! would you be able to take a look at the revised prop and leave your comments ? :) </s>
+<s> <user> tomorrow . it 's 21h in nyc </s>
+<s> <user> oh !! sorry :p how are you today btw ? </s>
+<s> <user> <unka> 's formatting is very bad <unka:_> : the wiki pages look neat compared to <unka> ... </s>
+<s> <user> you could copy paste , i think </s>
+<s> <user> still sick , meh </s>
+<s> <user> thats bad :/ tc ! </s>
+<s> <user> hey <unk#a@> :) </s>
+<s> <user> gsoc 2016 : <unka> </s>
+<s> <user> i tried but its still very bad :( </s>
+<s> <user> this site was useful for me tho :d - URL/http:/ <unka./> <unka/> </s>
+<s> <user> i edited entirely in md and copy pasted the html code into <unka> :p </s>
+<s> <user> this is what i did . i use sublime to preview markdown , then copy paste html page </s>
+<s> <user> haha ... <unka> seems to be better in so many ways ... hmm i guess time to move away from vim ... </s>
+<s> <user> noooo do n't do it ;) </s>
+<s> <user> thanks atleast i got one person saying that :o every other person i meet recommends <unka> or pycharm ... i love vim but hate them ranting about their shiny editors :p </s>
+<s> <user> what do you use ? :) </s>
+<s> <user> vim </s>
+<s> <user> ;) </s>
+<s> <user> i should probably switch at some point </s>
+<s> <user> " i 've been using vim for three years , but that 's only because i cant figure out how to exit " </s>
+<s> <user> <unka@> you released <unka> ? nice ! </s>
+<s> <user> you should create an <unka/`> folder with a sample script on some regression dataset from <unka-> ( e.g . <unka_> ) and another on a synthetic data </s>
+<s> <user> where you know the symbolic ground truth </s>
+<s> <user> <unka@> i am checking the documentation of the <unk#a.> branch . it looks good . will run trough the release checklist next . </s>
+<s> <user> let me know if you find any release blocker in the mean time . </s>
+<s> <user> i think that everyone in this room should read URL/http:/ URL/www.amazon.com/ <unk#a-/> </s>
+<s> <user> this is f***ing awesome ! </s>
+<s> <user> thanks </s>
+<s> <user> np </s>
+<s> <user> i did n't know about it . but it seems a bit dated ( 2011 ) </s>
+<s> <user> <unka@> no blockers that i know of . anything you want me to work on ? </s>
+<s> <user> scheduling the release for the day before the gsoc deadline was a genious move on our part ^^ </s>
+<s> <user> this needs backporting i think : URL/https:/ URL/github.com/ <unk#a-/> </s>
+<s> <user> <unka@> i 'm sure there is a new edition somewhere </s>
+<s> <user> <unka@> i would n't expect that . </s>
+<s> <user> hi <unka@> . just reserved the name on <unka> and am getting the hang of all the code review tools last few days . still a long way to go before i 'm satisfied enough to release it . definitely need to add a lot of tests ( coverage at 4% haha ), documentation , examples , etc etc . but it 'll get there </s>
+<s> <user> i'd plan on some practical examples like boston , and then another like <unk#a^> + <unk#a^> + x + 1 or something , maybe in two dims </s>
+<s> <user> maybe i 'll try to write some docs for <unka> on the process of setting up your own <unka<> > learn or something </s>
+<s> <user> first step would be to build at a nice testing framework ( <unk##> ) i feel :) </s>
+<s> <user> so long as it remains stable . a lot of thought right now going into how i 'll support various versions of <unka> . i may need to grab a copy of a lot of the tests and utils to keep from being <unka> by bug reports </s>
+<s> <user> since those do n't go through <unka> cycles so far as i know </s>
+<s> <user> but yeah , that looks like a good start <unka@> </s>
+<s> <user> <unka@> i just did the backport </s>
+<s> <user> ok , thanks </s>
+<s> <user> about the version number , shall we use <unk#.> or 0.16 ? </s>
+<s> <user> last time we did <unk#.> . but i used <unk#a.> instead of <unk#a.> </s>
+<s> <user> i think we should do <unk#.> for <unka> sorting of folders and stuff like that </s>
+<s> <user> <unka@> shall we do the <unka`> log <unka<_> > .. | git <unka> -s <unka-`> report for this release , or not ? </s>
+<s> <user> as you said earlier it , this vanity contest might encourage contributors not to squash their pr by default ( and it does not reflect review work ). </s>
+<s> <user> i 'm -0 . we could do alphabetical order ? </s>
+<s> <user> is <unk#.> according to the pep thing ? i think <unk#a.> was not , so we did n't do it . i think <unk#.> is good </s>
+<s> <user> the <unka> already mentioned the contributors next to the changes . maybe that 's enough vanity ? that encourages cool things ;) </s>
+<s> <user> fuck again broke the <unka> trying to <unka> on master . that is really finnicky </s>
+<s> <user> <unka@> can you do me a favor and physically force <unka@> to review <unk##> so we can merge it ? i only pick him because no-one else is in physical proximity ;) </s>
+<s> <user> why is fabian so high up in the commits ? </s>
+<s> <user> oh i think my git log was wrong </s>
+<s> <user> > physically force <unka@> to review <unk##> haha <unka:> : </s>
+<s> <user> <unka@> any parts of the release you want me to do ? update the links in the website ? built the website ? </s>
+<s> <user> all <unk#a.> <unk#a.> 0.16 <unk#.> are valid according to pep 440 </s>
+<s> <user> +1 for not including the stats </s>
+<s> <user> +1 <unk#.> </s>
+<s> <user> i had to leave the office early ( going to a <unka> to try and hire <unka> students to work on <unka> next year ) ... </s>
+<s> <user> ok for <unk#.> then </s>
+<s> <user> let 's merge <unk##> : it 's mostly a fix , no new api , no <unka> , no documentation or example to update . it should not be controversial . </s>
+<s> <user> git log <unk#.> .. <unk#a.> | git <unka> -s -n </s>
+<s> <user> if you want the stats </s>
+<s> <user> <unka@> i let you do the <unka-> for URL/https:/ URL/github.com/ <unk#a-/> into <unk#a.> </s>
+<s> <user> to fix your ranking for <unk#.> commit number :) </s>
+<s> <user> <unka@> <unka@> any final comments on my revised prop ? i made it a bit ambitious but i think it is doable with full time involvement . <unka> ? </s>
+<s> <user> not there ? let me do it . then i will change the version number and start fixing the links in the doc . </s>
+<s> <user> <unka@> i 'm back </s>
+<s> <user> just out for lunch </s>
+<s> <user> <unka@> i 'll do it in a bit </s>
+<s> <user> <unka> actually the <unka-> of <unk##> is not trivial . we probably also need to <unka> <unk##> too but this one is not trivial either ... </s>
+<s> <user> i have to go to the <unka> soon , i wo n't have time to do the <unk##> backport today . </s>
+<s> <user> i 'll do it , i can release afterwards . </s>
+<s> <user> thanks ... sorry for hijacking into your 0.16 discussions ... :) </s>
+<s> <user> <unka@> let me do another pass on your proposal </s>
+<s> <user> damn i though <unk##> was in </s>
+<s> <user> no <unka> , it 's our fault to have scheduled to do the release on the same week as the gsoc deadline </s>
+<s> <user> maybe it is in then </s>
+<s> <user> i had conflicts that looked non trivial when picking <unk##> so it did a git reset <unka-> on my sandbox </s>
+<s> <user> <unk##> was before branching even </s>
+<s> <user> <unka@> it was the <unka> stuff by <unka@> that caused the <unka-> error . i backported it </s>
+<s> <user> pushed to <unk#a.> should be fine now </s>
+<s> <user> <unka> i got 50 commits :p </s>
+<s> <user> <unka@> what is the status now ? do you want to do it or should i ? also , should we have a " highlights " section in <unka> ? </s>
+<s> <user> maybe not </s>
+<s> <user> next we should push the <unk#.> version , trigger the <unka> , and move the docs , right ? </s>
+<s> <user> are you working on any of these ? </s>
+<s> <user> <unka@> i would move the <unka-> <unka-> as a low priority optional in case everything else is implemented first . </s>
+<s> <user> i doubt we will have the time to implement everything else but one never knows :) </s>
+<s> <user> hum , URL/https:/ URL/github.com/ <unk#a-/> would have been nice , but without a review by a pls person i 'm doubtful </s>
+<s> <user> if you feel like it </s>
+<s> <user> <unka@> would be great to have a highlight section . </s>
+<s> <user> ok </s>
+<s> <user> </s>
+<s> <user> <unka@> i 'll make a quick pr so you can review </s>
+<s> <user> other than that , version change to <unk#.> , update the links in the menus for the doc , put the <unk#.> tag and push it , update the <unka> in the <unka> repo to get travis build wheels for osx , wait for <unka> to do the same for windows . then let me know , i will manually test install on my mac and a windows vm </s>
+<s> <user> <unka@> okay ! thanks for the review .... :) should i perhaps concentrate on gen cv and early stopping for the month of july ? </s>
+<s> <user> except for the month of july , i believe i have <unka> a satisfactory ( to myself :p ) timeline . it is the month of july i am not quite sure , what i will get to work on that could be useful for sk and also be feasible for me ... </s>
+<s> <user> my presentation will start soon , then there will be beers so i wo n't be of any use tonight . </s>
+<s> <user> but if <unka> and <unka> travis are all green , i can do the manual tests tomorrow morning </s>
+<s> <user> and build the doc to rsync the new version . </s>
+<s> <user> URL/https:/ URL/github.com/ <unk#a-/> </s>
+<s> <user> <unka@> do n't worry too much , i think there is a lot of testing benchmarking polishing documentation cleaning to do </s>
+<s> <user> can you have a brief look at the commit URL/https:/ URL/github.com/ <unk#a-/> <unka@> ? </s>
+<s> <user> <unka@> thanks i 'll just remove <unka> ... pl let me know if you feel i should do any more modifications to my prop :) </s>
+<s> <user> <unka@> maybe put a word on the input validation stuff : " improved and more consistent error messages when fitting <unka> on invalid input data ." </s>
+<s> <user> <unka> is <unka-> hashing </s>
+<s> <user> not <unka-> hashing . </s>
+<s> <user> maybe reword as " scalable approximate nearest neighbors search with <unka-> hashing <unka> " </s>
+<s> <user> the <unka-> part could still be improved :) </s>
+<s> <user> maybe we should explicitly mention <unka> for the speed improvements </s>
+<s> <user> ok </s>
+<s> <user> " speed improvements , notably <unka> , ... " </s>
+<s> <user> or maybe the phrasing is bad </s>
+<s> <user> input validation was already mostly in 0.14 , right ? </s>
+<s> <user> 0.15 </s>
+<s> <user> but it has been improved : the utils were there in 0.15 but they were not consistently used throughout the code base . </s>
+<s> <user> that 's what i ment </s>
+<s> <user> yeah </s>
+<s> <user> true </s>
+<s> <user> remember the work you did in <unka_> over the past 6 months :p ? </s>
+<s> <user> - improved error messages and better validation when using malformed input data . </s>
+<s> <user> great phrasing <unk#+:> : </s>
+<s> <user> what i did when in <unka_> is mostly a blur ;) i remember touching every single file during the last sprint when removing <unka_> lol </s>
+<s> <user> :) </s>
+<s> <user> <unka> mentioning jay or nay ? </s>
+<s> <user> maybe also " many speed improvements , reduced memory requirements , <unka-> and better default settings ." </s>
+<s> <user> as you wish . </s>
+<s> <user> i think many users are interested in <unka> </s>
+<s> <user> <unka@> i think your proposal is fine </s>
+<s> <user> URL/https:/ URL/github.com/ <unk#a-/> </s>
+<s> <user> looks great to me </s>
+<s> <user> do n't forget to <unka-> the paragraph both in master and 0.16 . </s>
+<s> <user> ok . i 'll push it , do the docs stuff and push the docs . i think we can do this now . </s>
+<s> <user> <unka> changes will go to both branches </s>
+<s> <user> <unka@> thanks :d </s>
+<s> <user> thanks </s>
+<s> <user> <unka@> have you looked at <unka> 's proposal by any chance ? </s>
+<s> <user> hi , i am wondering how many slots does <unka-> have this year , if it is not a top secret ? i remember the number is 4 in 2014 . </s>
+<s> <user> URL/https:/ <unka./> <unk#a#./_> </s>
+<s> <user> we currently have 5 <unka> registered ( if no one else registered ) which means we would get a max of 5 slots </s>
+<s> <user> ok . thanks ! hope we have 5 . </s>
+<s> <user> hello everyone ! just got an invitation to join the chat here . any final bit of advice on my proposal ? </s>
+<s> <user> <unka@> </s>
+<s> <user> ^ </s>
+<s> <user> ? </s>
+<s> <user> sorry wrong key presses <unka:> : </s>
+<s> <user> hi <unka@> i have to look at your proposal again . sorry , we are a bit busy today , we are also doing a perfectly timed release today </s>
+<s> <user> the <unka-> seemed a bit light . the proposal on the idea page was not super <unka> out , unfortunately </s>
+<s> <user> maybe you can give a bit more background on the improvements for the existing algorithms . currently it is only half a sentence . </s>
+<s> <user> do you have any other ideas in the <unka-> scope ? </s>
+<s> <user> got it . </s>
+<s> <user> i think i can implement more than one <unka-> algorithms , candidates of which can be discussed in the community bonding period . </s>
+<s> <user> i know it is pretty late now , but it would be great if you could propose some . in the other <unka-> proposal i mentioned <unka> <unka> . i 'm not entirely sure they are the best way to go , but at least they are a common benchmark . the more your proposal shows you are familiar with the material and already looked into it , the better </s>
+<s> <user> ok . my original intention to write like this is that i want to serve the needs of the community to the greatest extent . since what algorithms we most want in <unka._> has n't been fully discussed in the community , i decided not to show personal preferences . now i 'll pick some algorithms according to my <unka> . </s>
+<s> <user> i understand your motivation , and it would have been better if we could have had a broader discussion previously on the mailing list . unfortunately , mostly because of lack of time of the developers , that did n't happen . </s>
+<s> <user> for your proposal to be strong , you do need to say more than you currently say , though . </s>

@@ -1,0 +1,7 @@
+<s> <user> hey guys , i know this is slightly off topic , but is there any recommendation regarding <unka/> learning libraries in python ? </s>
+<s> <user> i have been using <unka> but unforunately it 's only first order and not very good for named entity recognition </s>
+<s> <user> the stanford <unka> java lib is crazy <unka/> -_- </s>
+<s> <user> nm looks like <unka@> has <unka> in <unka> ! i hope it 's fast . please be fast . </s>
+<s> <user> even has great docs = ) </s>
+<s> <user> <unka> and <unka> are two projects maintained by <unka-> developers ADDRESS_( <unka@_> and <unka@> respectively ). </s>
+<s> <user> <unka@> the docs are new and work in progress ;) <unka> implements maximum margin learning and <unka> , <unka> implements hmms and <unka> , i think . so both do n't implement maximum likelihood <unka> </s>

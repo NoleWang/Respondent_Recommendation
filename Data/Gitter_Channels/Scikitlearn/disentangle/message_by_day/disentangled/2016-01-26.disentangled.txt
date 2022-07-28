@@ -1,0 +1,10 @@
+[04:10] <5537027215522ed4b3df56ab> Hey guys, anyone has an idea why logistic regression doesn't give realistic probability estimates?
+[04:10] <5537027215522ed4b3df56ab> with the number of features is large?
+[04:12] <5537027215522ed4b3df56ab> random forest on the other hand gives more realistic estimates
+--------------------------------------------------------------------------------------------------
+[04:16] <5537027215522ed4b3df56ab> it is basically overfitting on the things that seem to happen only a few times in the dataset, because they are "good predictors" mostly by chance. More aggressive L1 regularization always results in poorer performance
+--------------------------------------------------------------------------------------------------
+[09:25] <5537027215522ed4b3df56ab> perhaps if we had bayesian logistic regression
+--------------------------------------------------------------------------------------------------
+[18:15] <54d4a1d6db8155e6700f853b> @lqdc have you tried the calibration module?
+--------------------------------------------------------------------------------------------------

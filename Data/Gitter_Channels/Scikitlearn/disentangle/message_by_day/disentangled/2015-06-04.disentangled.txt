@@ -1,0 +1,134 @@
+[07:25] <541a528b163965c9bc2053de> > Can I ask a quick joblib question here? https://github.com/joblib/joblib/blame/master/doc/memory.rst#L187 it says r+ and w+ "will propagate the changes to disk". Shouldn't that be "will NOT propagate"?  Not it is correct. Both `r+` and `w+` open the file in read-write mode. `r` is read-only. The difference between `r+` and `w+` is that `w+` will delete any existing file before creating a new one from scratch.
+--------------------------------------------------------------------------------------------------
+[09:10] <541a528b163965c9bc2053de> @xuewei4d will have a look thanks. Another thing we could try to address during your GSoC is the ability to add a `partial_fit` function for incremental / out-of-core fitting of (classical) GMM, for instance http://arxiv.org/abs/0712.4273. Of course the priority is fixing issues on the current code base. I can currently familiarizing myself with this part of the code base that I don't know well enough to comment on the open PRs / issues.
+--------------------------------------------------------------------------------------------------
+[14:42] <550f53e215522ed4b3dda5f6> Thanks @ogrisel . I just finished the derivations for VBGMM.
+--------------------------------------------------------------------------------------------------
+[14:42] <53135b495e986b0712efc453> @xuewei4d Thanks!! I just updated the same :)
+[14:43] <53135b495e986b0712efc453> @amueller thanks for the feedback will update my blog post accordingly :)
+[14:46] <53135b495e986b0712efc453> I think Terri should merge the PR then only it will refresh :)
+--------------------------------------------------------------------------------------------------
+[14:45] <550f53e215522ed4b3dda5f6> great, but the webpage http://terri.toybox.ca/python-soc/ seems not updated yet.
+--------------------------------------------------------------------------------------------------
+[15:12] <54e07d4015522ed4b3dc0856> @ogrisel Would the partial_fit version be EM style, or SGD? I think EM style is "easier" from a convergence perspective but I am not sure how you would do it in minibatch fashion
+[15:13] <54e07d4015522ed4b3dc0856> Though I think David Cournapeau had some good papers on it he showed at PyCon
+[15:13] <54e07d4015522ed4b3dc0856> I have the links somewhere
+--------------------------------------------------------------------------------------------------
+[15:41] <54d4a1d6db8155e6700f853b> I think we should focus on fixing what we have before implementing new algorithms
+--------------------------------------------------------------------------------------------------
+[15:58] <550f53e215522ed4b3dda5f6> I agree with @amueller.  May I ask what is EM style @kastnerkyle ?
+--------------------------------------------------------------------------------------------------
+[16:12] <551418d115522ed4b3dddd7b> @xuewei4d I think he meant that in order to do partial_fit (update model rather than retrain it) you can just do several Expectation Maximization iterations from the point you've stopped at previously
+[16:16] <551418d115522ed4b3dddd7b> Though I don't get SGD part of it. I'm not sure of how severe expenses of a single EM iteration are, but I don't think they're so huge that we can't afford even a minibatch iteration
+--------------------------------------------------------------------------------------------------
+[17:03] <54e07d4015522ed4b3dc0856> Expectation-maximization style instead of gradient descent by minibatches. I am weaker in EM than SGD approaches, but I have done SGD style learning for GMMs in the very recent past. This is why I asked - trying to gauge what I would need to read :)
+[17:04] <54e07d4015522ed4b3dc0856> Also, +1 to @amueller comment. Nothing can really happen until there is something that is well documented and understood by several people is there to experiment with/on
+--------------------------------------------------------------------------------------------------
+[20:20] <54d4a1d6db8155e6700f853b> there was once a PR that summarized all classifiers, I think. Does anyone know where that went?
+--------------------------------------------------------------------------------------------------
+[20:27] <53135b495e986b0712efc453> Hey @amueller Would it not be better to have `model_selection/validation.py` instead of `validate.py`?
+[20:30] <54d4a1d6db8155e6700f853b> yeah sounds good
+[20:30] <53135b495e986b0712efc453> thanks!
+--------------------------------------------------------------------------------------------------
+[21:00] <541a528b163965c9bc2053de> @kastnerkyle  I was thinking of online EM as described in http://arxiv.org/abs/0712.4273, but if you have good references for SGD for GMM, that's interesting too. I agree fixing existing stuff is the priority over implementing new incremental solvers but I also think that incremental solvers would make GMMs more practically useful so it would be good to review the literature on that topic.
+--------------------------------------------------------------------------------------------------
+[21:02] <54e07d4015522ed4b3dc0856> You know me - partial fit for all the things! But this link looks good - I will read up once I get spare time.
+--------------------------------------------------------------------------------------------------
+[21:04] <541a528b163965c9bc2053de> @xuewei4d how different are your derivations from http://scikit-learn.org/dev/modules/dp-derivation.html ?
+[21:05] <541a528b163965c9bc2053de> David recommended to read http://leon.bottou.org/publications/pdf/online-1998.pdf as an intro to some of the concept of the online EM paper.
+--------------------------------------------------------------------------------------------------
+[21:08] <550f53e215522ed4b3dda5f6> lol. Actually, the doc that the link points is for DPGMM, not VBGMM
+[21:10] <550f53e215522ed4b3dda5f6> I am trying to figure out that Blei's paper for DPGMM now.
+[21:17] <550f53e215522ed4b3dda5f6> @ogrisel
+--------------------------------------------------------------------------------------------------
+[22:07] <54d4a1d6db8155e6700f853b> does anyone have opinions on the heterogeneous feature union interface?
+[22:07] <54d4a1d6db8155e6700f853b> 3886
+[22:07] <54d4a1d6db8155e6700f853b> #3886
+[22:07] <54d4a1d6db8155e6700f853b> ?
+--------------------------------------------------------------------------------------------------
+[22:07] <54e07d6515522ed4b3dc0858> hi Andy
+--------------------------------------------------------------------------------------------------
+[22:08] <54e07d6515522ed4b3dc0858> I also had thought about what you just proposed `(estimator, column_name, weight)`
+[22:08] <54e07d6515522ed4b3dc0858> but I think it's not self-documenting enough
+--------------------------------------------------------------------------------------------------
+[22:13] <54e07d6515522ed4b3dc0858> and also it makes it hard if you don't need weights. Pass explicit `None`s? ugly
+[22:13] <54d4a1d6db8155e6700f853b> well you could just leave them out, that could be supported.
+[22:13] <54d4a1d6db8155e6700f853b> but still ugly
+--------------------------------------------------------------------------------------------------
+[22:14] <54e07d6515522ed4b3dc0858> I'd something like `dict(name='date', estimator=DateExtractor(), column='timestamp', weight=0.5)`
+[22:14] <54e07d6515522ed4b3dc0858> but without a dict
+[22:14] <54e07d6515522ed4b3dc0858> namedtuple maybe?
+[22:17] <54e07d6515522ed4b3dc0858> I never used them, let me check
+--------------------------------------------------------------------------------------------------
+[22:16] <54e07d6515522ed4b3dc0858> it'd be nice to also support `('date', DateExtractor(), column='timestamp')`, it'd be almost like a pipeline with optional arguments
+[22:16] <54e07d6515522ed4b3dc0858> is that even doable in Python?
+--------------------------------------------------------------------------------------------------
+[22:17] <54d4a1d6db8155e6700f853b> with namedtuples
+[22:17] <54d4a1d6db8155e6700f853b> right?
+[22:17] <54d4a1d6db8155e6700f853b> but it would be super cumbersome for the user
+[22:17] <54d4a1d6db8155e6700f853b> because they need to import this particular named tuple class
+--------------------------------------------------------------------------------------------------
+[22:19] <54e07d6515522ed4b3dc0858> if only there existed anonymous namedtuples
+[22:19] <54e07d6515522ed4b3dc0858> like ad-hoc, you just write (a, b, d='something'). Something like a function call argument list, but without the function
+--------------------------------------------------------------------------------------------------
+[22:19] <54d4a1d6db8155e6700f853b> I think if we want a default argument for weight, we need to define a custom class. But for the user that doesn't look much different from a namedtuple
+[22:19] <54d4a1d6db8155e6700f853b> how do you mean anonymous?
+[22:20] <54d4a1d6db8155e6700f853b> hehe yeah that's not possible in Python
+[22:20] <54d4a1d6db8155e6700f853b> because () calls the tuple constructor
+[22:20] <54d4a1d6db8155e6700f853b> I guess we could monkey-patch it :P
+[22:21] <54d4a1d6db8155e6700f853b> the other option would be a syntax more like the make_stuff helpers
+[22:21] <54d4a1d6db8155e6700f853b> but that would require kwargs
+--------------------------------------------------------------------------------------------------
+[22:21] <54e07d6515522ed4b3dc0858> I feel dirty just having this conversation
+[22:21] <54d4a1d6db8155e6700f853b> haha
+--------------------------------------------------------------------------------------------------
+[22:22] <54d4a1d6db8155e6700f853b> ColumnTransformer(some_name=(CountVectorizer(), column_name, weight), some_name2=(OneHotEncoder(), column_name, weight))
+[22:22] <54d4a1d6db8155e6700f853b> still wouldn't document what the weight is, though
+[22:25] <54d4a1d6db8155e6700f853b> I think I'm going with
+[22:25] <54d4a1d6db8155e6700f853b> ColumnTransformer({'some_name': (CountVectorizer(), column_name), 'some_name2': (OneHotEncoder(), column_name)}, weights=[weight1, weight2])
+[22:25] <54d4a1d6db8155e6700f853b> err
+[22:26] <54d4a1d6db8155e6700f853b>  ColumnTransformer({'some_name': (CountVectorizer(), column_name), 'some_name2': (OneHotEncoder(), column_name)}, weights={'some_name':weight1, 'some_name2':weight2})
+--------------------------------------------------------------------------------------------------
+[22:31] <54e07d6515522ed4b3dc0858> I wish they could all be grouped in the same place
+--------------------------------------------------------------------------------------------------
+[22:33] <550f53e215522ed4b3dda5f6> a quick question. Where should I add deprecation warnings in GMM? Is that good adding warning  just after ```class GMM```, (not within any function)
+[22:33] <54e07d6515522ed4b3dc0858> this is a mix of grouping by row and grouping by column
+--------------------------------------------------------------------------------------------------
+[22:35] <54e07d6515522ed4b3dc0858> the other extreme would be ColumnTransformer(names=['a', 'b', 'c'], estimators=[CountVectorizer()] * 3, columns=['title', 'content', 'comments'], weights=[1, 1, 2])
+[22:35] <54e07d6515522ed4b3dc0858> hey, what if for ColumnTransformer we drop the names completely and use the column as the name?
+--------------------------------------------------------------------------------------------------
+[22:37] <54d4a1d6db8155e6700f853b> then you can't grid-search if you have multiple transformers on the same column
+[22:38] <54d4a1d6db8155e6700f853b> hm if we change the data structure of how we store the transformers from FeatureUnion, we'll have a lot of code duplication :-/
+[22:38] <54e07d6515522ed4b3dc0858> correct
+[22:38] <54e07d6515522ed4b3dc0858> @xuewei4d maybe in `__init__`?
+[22:38] <54e07d6515522ed4b3dc0858> I can't find any examples
+[22:40] <54d4a1d6db8155e6700f853b> You can look at the rename of LDA to LinearDiscriminantAnalysis. well actually there it was in the file. for GMM the init would be good
+--------------------------------------------------------------------------------------------------
+[22:42] <54e07d6515522ed4b3dc0858> that's how Ward was deprecated
+[22:42] <54e07d6515522ed4b3dc0858> looks god
+[22:42] <54e07d6515522ed4b3dc0858> good
+[22:42] <54e07d6515522ed4b3dc0858> https://github.com/scikit-learn/scikit-learn/pull/4370/files#diff-d7365adec1b76c4ff63051e4d1dd32b0L932
+[22:43] <54e07d6515522ed4b3dc0858> why?
+--------------------------------------------------------------------------------------------------
+[22:42] <54d4a1d6db8155e6700f853b> hm if we use dicts we also need to sort them every time we use them lol
+--------------------------------------------------------------------------------------------------
+[22:45] <54d4a1d6db8155e6700f853b> updated #3886
+[22:46] <54d4a1d6db8155e6700f853b> because dictionaries have undefined sorting, and if we iterate over them in transform we might get them in a different order then in fit
+[22:46] <54d4a1d6db8155e6700f853b> i.e. the features would be shuffled
+--------------------------------------------------------------------------------------------------
+[22:47] <54e07d6515522ed4b3dc0858> but aren't they ever only accessed by key?
+[22:50] <54e07d6515522ed4b3dc0858> ahhh, I know what you mean now
+--------------------------------------------------------------------------------------------------
+[22:51] <54e07d6515522ed4b3dc0858> yes, this is probably the reason why Pipeline and FeatureUnion aren't {name: Estimator()} dicts, but lists of tuples
+[22:52] <54e07d6515522ed4b3dc0858> sorting isn't good, we really want to keep the order the user gives. Otherwise there'll be a world of confusion
+[22:53] <54e07d6515522ed4b3dc0858> Now, the question is:  `ColumnTransformer([('name', (Est(), 'col')), ...]), transformer_weights=...)` vs. `ColumnTransformer([('name', Est(), 'col'), ...]), transformer_weights=...)`
+--------------------------------------------------------------------------------------------------
+[22:59] <54e07d4015522ed4b3dc0856> I think you can use OrderedDict from collections also.
+[23:00] <54e07d4015522ed4b3dc0856> I like the flat one personally
+--------------------------------------------------------------------------------------------------
+[23:01] <54e07d6515522ed4b3dc0858> @kastnerkyle yes, but then the user needs to do `ColumnTransformer(OrderedDict(...))`
+--------------------------------------------------------------------------------------------------
+[23:06] <54e07d4015522ed4b3dc0856> Was thinking you could do d= OrderedDict(); d.items = user_d.items internally, though I have no idea if this would work. Probably more trouble than it is worth
+[23:07] <54e07d4015522ed4b3dc0856> maybe sorting is just as easy. But I like the flat list version better
+[23:07] <54e07d4015522ed4b3dc0856> er list of tuple
+--------------------------------------------------------------------------------------------------

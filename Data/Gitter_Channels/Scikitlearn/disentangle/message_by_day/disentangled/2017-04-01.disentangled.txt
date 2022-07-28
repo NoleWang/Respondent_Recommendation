@@ -1,0 +1,4 @@
+[10:37] <58cd4780d73408ce4f51d3cb> @sbromberger You can read more about bias and variance at http://cs229.stanford.edu/materials/ML-advice.pdf
+--------------------------------------------------------------------------------------------------
+[23:16] <551c051b15522ed4b3de2fea> I understand (or at least I think I do) about bias and variance. What I dont quite have down is whether or not my actual results above indicate excessive variance.
+--------------------------------------------------------------------------------------------------

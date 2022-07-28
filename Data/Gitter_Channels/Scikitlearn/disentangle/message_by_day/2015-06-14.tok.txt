@@ -1,0 +1,17 @@
+<s> <user> this [ <unk#a(-./:]> ) which is a reference to <unka> <unk#a> <unka> seems to be down ! </s>
+<s> <user> there was an issue regarding broken links right ? </s>
+<s> <user> <unk##> </s>
+<s> <user> this [ <unk#a#(-./:]> ) in particular ! </s>
+<s> <user> chatting from the <unka> irc bridge ! </s>
+<s> <user> :) </s>
+<s> <user> its cool !! i am planning to resume work on the <unka-> bridging thing that we discussed long back ( when <unka> was n't happy with us using <unka> over irc ) when i find time ! </s>
+<s> <user> i.e apart from my regular work ;) </s>
+<s> <user> i actually really like <unka> 's interface , what were <unka> 's concerns ? </s>
+<s> <user> that the discussions were getting <unka> at multiple platforms ... ( <unka> , irc , ml , github etc ... ) </s>
+<s> <user> good point , but was n't irc kind of dead ? </s>
+<s> <user> URL/https:/ URL/github.com/ <unk#a#-/> </s>
+<s> <user> yes !! but its active during <unka> i think .. </s>
+<s> <user> i like the <unka-> to issues , and the activity pane in <unka> </s>
+<s> <user> and history , code formatting , markdown too ! ;) </s>
+<s> <user> speaking of activity pane :p <unka@> could you take a look at <unk##> its a very minor pr ! :) </s>
+<s> <user> i left a comment there </s>

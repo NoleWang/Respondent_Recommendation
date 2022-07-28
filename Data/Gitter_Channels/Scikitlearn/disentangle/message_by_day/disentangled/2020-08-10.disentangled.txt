@@ -1,0 +1,10 @@
+[01:48] <5ac29bedd73408ce4f9419a3> By seeing the sgd and sag code in https://github.com/scikit-learn/scikit-learn/sklearn/linear_model I wonder why the solvers do not use the mini-batch implementation?
+--------------------------------------------------------------------------------------------------
+[10:53] <5f3125ecd73408ce4febd212> Hey, everyone, I am new to Scikit-Learn and after reading this [Security & maintainability limitations](https://scikit-learn.org/stable/modules/model_persistence.html#security-maintainability-limitations) I want to know is their other safer ways to save and load sklearn models.
+--------------------------------------------------------------------------------------------------
+[11:31] <5baf7d9ad73408ce4fa9c9b2> @kaelgabriel  SGD processes each sample individually so by definition it cannot be a mini-batch approach
+--------------------------------------------------------------------------------------------------
+[12:04] <5ac29bedd73408ce4f9419a3> @NicolasHug yes, you are right, I was wondering why people chosen SGD over mini-batch SGD (the one that is more common in DL). Just trying to understand.
+--------------------------------------------------------------------------------------------------
+[13:58] <5e614c10d73408ce4fdbbb92> Hello, everybody. I hope you all's been fine. Has anyone already created a custom classifier with `sample_weight` that can share with me? I'm building my own estimator and i need `sample_weight` to make it work with AdaboostClassifier, tough i have no clue what it is
+--------------------------------------------------------------------------------------------------

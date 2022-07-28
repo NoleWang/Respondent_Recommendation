@@ -1,0 +1,5 @@
+<s> <user> hi all , i 'm developing a wrapper that wraps <unka> models with the <unka-> api . i'd like some input from <unka-> developers on what direction i should take the interface , i'd like to make it as aligned as possible with <unka-> . </s>
+<s> <user> the package is here : URL/https:/ URL/github.com/ <unka/> </s>
+<s> <user> would any of you able to chat and give some input ? </s>
+<s> <user> <unka@> you could <unka'`> <unka'().`> and then use <unka`> ? </s>
+<s> <user> <unka@> the design choices in URL/https:/ URL/github.com/ <unka-/> might be helpful , if you have specific question do n't hesitate to ask . </s>

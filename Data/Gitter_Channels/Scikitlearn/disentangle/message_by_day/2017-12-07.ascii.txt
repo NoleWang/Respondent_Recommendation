@@ -1,0 +1,26 @@
+[23:00] <56f8122085d51f252abb1414> Hello everyone. Anyone can point me to a mathematical proof of the objective function used in sklearn for the logistic regression? http://scikit-learn.org/stable/modules/linear_model.html#logistic-regression Im trying to demonstrate it starting from the Bernoulli likelihood in which the probability of a success is a sigmoid function, however, the final likelihood expression that I arrive is not equivalent to sklearns.
+[23:01] <54d4a1d6db8155e6700f853b> @mirca there's nothing sklearn specific about this, this is *the* objective for binary logistic regression (with penalty)
+[23:02] <54d4a1d6db8155e6700f853b> Elements of statistical learning, chapter 4.4
+[23:02] <54d4a1d6db8155e6700f853b> https://web.stanford.edu/~hastie/ElemStatLearn/
+[23:05] <541a528b163965c9bc2053de> The objective function for binary classification logistic regression stems from the negative log likelihood of a linear parametrization the log odd ratio of the Bernoulli model.
+[23:07] <541a528b163965c9bc2053de> the linear parametrization (w.T . x + b)  is for the log odd ratio log(p / (1 - p)) instead of p directly, where p is the parameter of the Bernoulli function.
+[23:07] <541a528b163965c9bc2053de> I edited my comment as I made a mistake :)
+[23:09] <56f8122085d51f252abb1414> @amueller Im arriving exactly at expression (4.20) of the book you mention. Am I mistaken or (4.20) is different from http://scikit-learn.org/stable/modules/linear_model.html#logistic-regression ? (disconsider the regularization/prior term)
+[23:14] <56f8122085d51f252abb1414> @ogrisel exactly, through these assumptions I arrive at (4.20) ^, which, to me, looks a little different from http://scikit-learn.org/stable/modules/linear_model.html#logistic-regression . Perhaps I am missing out something?
+[23:17] <54d4a1d6db8155e6700f853b> I think you can simplify the 2 class case further.  let me catch up with the notation
+[23:20] <541a528b163965c9bc2053de> IIRC y_i take values in {-1, 1} for the negative and positive classes respectively. This is not clear in the scikit-learn doc.
+[23:20] <54d4a1d6db8155e6700f853b> why do you need to sum up the y_i and 1 - y_i cases? in 4.19 we are only looking at the probability of gi
+[23:20] <54d4a1d6db8155e6700f853b> ah right one of them is always zero... hm yeah could be the different encoding of y_i
+[23:23] <54d4a1d6db8155e6700f853b> did they use p(x, theta) as the top of 4.18 or the bottom of 4.18? I guess if they are consistent, they use the top, but we might use the bottom one
+[23:24] <54d4a1d6db8155e6700f853b> but that just replaces classes 0 and 1 I guess
+[23:25] <54d4a1d6db8155e6700f853b> Eh, I should be grading
+[23:25] <541a528b163965c9bc2053de> :)
+[23:36] <56f8122085d51f252abb1414> its not clear to me how (4.20) and sklearns docs are equivalent
+[23:37] <54d4a1d6db8155e6700f853b> have you tried replacing y by -1 and 1 like ogrisel said?
+[23:38] <54d4a1d6db8155e6700f853b> or maybe easier, try to expand sklearns doc for  y=-1 and y=1 and then try to match that to the two terms in 4.20
+[23:39] <56f8122085d51f252abb1414> Hum, ok! That looks to be the answer
+[23:39] <56f8122085d51f252abb1414> thank you!
+[23:39] <541a528b163965c9bc2053de> Feel free to submit a pull request to improve the doc :)
+[23:40] <541a528b163965c9bc2053de> https://github.com/scikit-learn/scikit-learn/blob/master/doc/modules/linear_model.rst?utf8=%E2%9C%93#logistic-regression
+[23:41] <56f8122085d51f252abb1414> Will do! =)
+[23:41] <541a528b163965c9bc2053de> Just mentioning explicitly the -1 and +1 values for y_i might be enough.

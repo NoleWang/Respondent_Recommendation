@@ -1,0 +1,6 @@
+[08:35] <59076a40d73408ce4f5c34b4> Hi. I want to learn scikit-learn from scratch. Do we have an official book or guide?
+[08:35] <59076a40d73408ce4f5c34b4> If not, I will be making notes. Can I contribute one?
+[12:33] <59076a40d73408ce4f5c34b4> Thank you
+--------------------------------------------------------------------------------------------------
+[12:28] <58de4778d73408ce4f551e04> Hi @D3V4N5H, there is plenty on resources in the docs. You can start with the ["Getting Started" pages](https://scikit-learn.org/stable/getting_started.html).
+--------------------------------------------------------------------------------------------------

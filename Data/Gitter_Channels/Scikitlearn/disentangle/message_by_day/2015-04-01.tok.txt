@@ -1,0 +1,12 @@
+<s> <user> <unka@> around ? </s>
+<s> <user> <unka@> yes </s>
+<s> <user> > if you do n't think it is horrible , i think i 'll leave it as is <unka@> i only see a single slide with bullet bullet points for incremental <unka> . is it this slide you are talking about or do you have a figure for <unka> ? </s>
+<s> <user> <unka@> i do n't have a figure for <unka> . i could n't produce a good one </s>
+<s> <user> i could have added a code block showing partial fit , but i felt that added little </s>
+<s> <user> no <unka> </s>
+<s> <user> i think it 's fine like this </s>
+<s> <user> there is a lot of material to cover already </s>
+<s> <user> i agree </s>
+<s> <user> <unka@> i saw you online and thought of pestering you to review <unk##> ` ;) <unka:`> </s>
+<s> <user> <unka@> i am too tired to do it now , i put that on my todo list for tomorrow morning . do n't hesitate to ping me again if i fail to deliver :) </s>
+<s> <user> thanks :d > do n't hesitate to ping me again if i fail to deliver do n't worry about that <unka:`> </s>

@@ -1,0 +1,24 @@
+[01:11] <5941c1b4d73408ce4f6764d6> Hello my name is priyam and i am interested in contributing to scikit-learn.Can anyone help me i am completely new in open source world.
+[07:55] <541a528b163965c9bc2053de> @bnaul that's really weird. Do you have the full Traceback? It seems that the interesting part is under the setup_package function.
+[15:19] <57433a8cc43b8c6019747d9e> @satishjasthi Hi all, Anyone knows how to visualize high dimensional data in 2d image
+[15:20] <57433a8cc43b8c6019747d9e> We have 25 instances each of dimension 1800. We want to visualize each instance separately and then build a classifier on it.
+[15:20] <57433a8cc43b8c6019747d9e> Please help
+[15:21] <541a528b163965c9bc2053de> You can do a scatter plot of a t-SNE embedding to get some intuition on the structure of your data.  But you should not train the classifier on the 2D project. It's very likely that you will get much higher predictive accuracy by training the classifier on the original high dimensional data.
+[15:23] <57433a8cc43b8c6019747d9e> can We visualize each instance separately in t-SNE
+[15:23] <541a528b163965c9bc2053de> There is a TSNE class in scikit-learn but it has many bugs. We would like to solve them for the next release but it's not ready yet. I would advise to have a look at https://github.com/lvdmaaten/bhtsne .
+[15:24] <541a528b163965c9bc2053de> The scatter plot will put on dot in the 2D plane for each instance.
+[15:24] <541a528b163965c9bc2053de> What you visualize is the neighborhood structure of your data.
+[15:24] <541a528b163965c9bc2053de> http://distill.pub/2016/misread-tsne/
+[15:25] <57433a8cc43b8c6019747d9e> No. We dont want a dot for each instance. We want an altogether different 2D image for each instance
+[15:25] <541a528b163965c9bc2053de> You should also try with 2D PCA of your data. This is much faster to compute alhough generally the neighborhood structure can be much blurier.
+[15:27] <541a528b163965c9bc2053de> I don't understand what it means to "visualize a 2D image or a single 1800 dimensional vector".
+[15:27] <541a528b163965c9bc2053de> what are you features ? which data types ? what is the physical meaning of each of them ?
+[15:28] <57433a8cc43b8c6019747d9e> We have 1800 features for each instance. We then need to visualize these 1800 features in a single image. Repeat this process for each instance. And then build a classifier on it
+[15:29] <541a528b163965c9bc2053de> you already said that, please answer my question if you want me to be able to help you.
+[15:29] <57433a8cc43b8c6019747d9e> we got these 1800 features after doing CNN on the image
+[15:30] <57433a8cc43b8c6019747d9e> RGB image, we performed CNN, and then extracted features are of dimension 1800
+[15:30] <541a528b163965c9bc2053de> There is no generic way to visualize a single feature vector of a CNN.
+[15:31] <57433a8cc43b8c6019747d9e> We have 25 such images
+[15:31] <57433a8cc43b8c6019747d9e> so it becomes 25X1800
+[15:32] <541a528b163965c9bc2053de> If you want to visualize the distribution of your 25 images embedded in the 1800 dimensional CNN space,  then you can use PCA or TSNE, for instance using http://projector.tensorflow.org/ (online web interface) or https://github.com/lvdmaaten/bhtsne to do that programmatically.
+[15:36] <541a528b163965c9bc2053de> Also if you want to train an image classifier, I would advise you to build a training set with at list 100 images per class. 25 is probably far too few even if you do binary classification.

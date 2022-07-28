@@ -1,0 +1,19 @@
+<s> <user> just to let u know , <unka.> ( and i guess lots more ) is not working with scipy <unk#.> on osx , at least not with a <unka> install ( maybe the library is missing in the <unka> binary ?) URL/https:/ URL/github.com/ <unk#a/> </s>
+<s> <user> <unk#a@> sorry for my <unka> <unka> . i am back from my travels and will catch up with all your activity </s>
+<s> <user> <unka> : what is the error you get ? </s>
+<s> <user> <unka@> what is the error ? i 'm pretty sure that is working for other people . </s>
+<s> <user> master is failing ? </s>
+<s> <user> was that me ?! </s>
+<s> <user> is there a way to see when master started failing ? </s>
+<s> <user> URL/https:/ <unka-./> <unka-/> </s>
+<s> <user> may not just be master </s>
+<s> <user> <unka@> i was not alone , e.g . URL/https:/ URL/github.com/ <unk#a-/> but its all fixed now . </s>
+<s> <user> <unka@> glad you worked it out :) </s>
+<s> <user> <unka@> which makes it very hard to find out which are actual master commits and which are not </s>
+<s> <user> well , others worked it , im just happy it does work again . ;) its really scary if scipy doesnt work ... ;) </s>
+<s> <user> but thankfully , its so easy to quickly downgrade with <unka> : <unka`> install <unk#a.=`> </s>
+<s> <user> kinda ;) well <unka.> " does n't work " so .... </s>
+<s> <user> great , the error was first here : <unk#a> </s>
+<s> <user> failure : URL/https:/ <unka-./> <unk#a-/> success : URL/https:/ <unka-./> <unk#a-/> </s>
+<s> <user> and all the versions seem to be the same </s>
+<s> <user> ah , new scipy </s>

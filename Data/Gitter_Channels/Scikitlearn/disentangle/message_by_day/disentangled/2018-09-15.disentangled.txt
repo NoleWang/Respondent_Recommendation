@@ -1,0 +1,8 @@
+[03:34] <5b9b749bd73408ce4fa82693> Thanks!
+--------------------------------------------------------------------------------------------------
+[11:20] <561a58f7d33f749381a8ff2f> interesting question: https://stats.stackexchange.com/questions/367051/how-to-learn-new-clusters-on-residuals-of-kmeans
+[11:20] <561a58f7d33f749381a8ff2f> given you have 40k frozen centroids, how to learn 40k more?
+[14:40] <561a58f7d33f749381a8ff2f> `partial_fit` and `_mini_batch_step` don't feel very modular
+--------------------------------------------------------------------------------------------------
+[14:54] <5b953136d73408ce4fa76b1f> hello
+--------------------------------------------------------------------------------------------------

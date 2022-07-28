@@ -1,0 +1,24 @@
+[12:19] <541a528b163965c9bc2053de> +1 for a 0.16.1 release with such bad bug fixes.
+[12:20] <541a528b163965c9bc2053de> I created the milestone. However I have to work on my talks for PyCon now. Maybe I can help for the 0.16.1 release during the sprints next week.
+[13:41] <54d4a1d6db8155e6700f853b> The k-means fortran layout bug might need another fix and we should check if the bug appears elsewhere, too....
+[13:49] <541a528b163965c9bc2053de> yes we could do a new common test for that, leveraging @ragv's `assert_same_model` utility.
+[14:00] <54d4a1d6db8155e6700f853b> or we could just use ``fit_predict``....
+[14:01] <54d4a1d6db8155e6700f853b> Ok, I'll try to use his branch and see if that works...
+[14:02] <541a528b163965c9bc2053de> `fit_predict` or `fit_transform` would do as well.
+[14:02] <541a528b163965c9bc2053de> BTW, I had forgotten to upload the 0.16.0 artifacts to sourceforge, this is fixed.
+[14:06] <54d4a1d6db8155e6700f853b> oh damn, I didn't think of that.
+[14:06] <54d4a1d6db8155e6700f853b> btw, can you ping gael on gsoc?
+[14:06] <54d4a1d6db8155e6700f853b> we need to move forward
+[14:06] <54d4a1d6db8155e6700f853b> to get the right number of slots
+[14:35] <541a528b163965c9bc2053de> I think Gael is offline till tomorrow.
+[15:24] <54d4a1d6db8155e6700f853b> ok
+[15:25] <541a528b163965c9bc2053de> ok back to my PyCon preparation
+[16:00] <54d4a1d6db8155e6700f853b> @ogrisel I cherry picked some stuff in the 0.16.X branch, I'll work on the kmeans and then I think this should be good to go.
+[16:01] <54d4a1d6db8155e6700f853b> The isotonic is a major concern for me as we introduced something that seems to be pretty broken.
+[16:12] <541a528b163965c9bc2053de> I agree.
+[21:37] <541a528b163965c9bc2053de> @amueller in your latest comment on #3907, you link to #3907 itself.
+[21:40] <54d4a1d6db8155e6700f853b> fixed
+[21:40] <54d4a1d6db8155e6700f853b> should have been #4535
+[21:40] <54d4a1d6db8155e6700f853b> I'd like to think that #4535 wasn't as bad before I introduced ``check_array`` and that I broke it and that scikit-learn wasn't always i that state...
+[22:58] <54d4a1d6db8155e6700f853b> ok I was just being silly. There are no breakages with fortran ordering, at least not with default settings.
+[23:11] <54d4a1d6db8155e6700f853b> the k-means fix in #4531 seems good....

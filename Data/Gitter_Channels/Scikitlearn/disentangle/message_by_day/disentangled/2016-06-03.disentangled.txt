@@ -1,0 +1,3 @@
+[11:14] <57504263c43b8c6019765b0e>  is there any chinese develper ? I have an translate project ,hope volunteers join in it.
+[11:14] <57504263c43b8c6019765b0e> here is the repo    https://github.com/lzjqsdd/scikit-learn-doc-cn
+--------------------------------------------------------------------------------------------------

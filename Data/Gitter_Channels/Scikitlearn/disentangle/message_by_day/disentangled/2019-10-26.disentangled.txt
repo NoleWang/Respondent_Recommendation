@@ -1,0 +1,2 @@
+[21:12] <59605bcbd73408ce4f6c2b60> Hello the scikit-learn community! I'd like to have your thoughts on what I coded. It's a way to do automatic machine learning on scikit-learn pipelines. It allows for handling hyperparameter spaces as well as hyperparameters. Example: https://www.neuraxio.com/en/neuraxle/stable/examples/hyperparams.html#sphx-glr-examples-hyperparams-py
+--------------------------------------------------------------------------------------------------

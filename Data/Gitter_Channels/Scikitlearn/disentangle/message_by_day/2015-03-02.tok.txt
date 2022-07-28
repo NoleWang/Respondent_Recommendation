@@ -1,0 +1,72 @@
+<s> <user> <unka@> what is your plan for the day ? i did n't have much time on the weekend unfortunately :-/ </s>
+<s> <user> no <unka> . i just pushed <unk##> to tackle the remaining <unka> and test issues w.r.t . <unka_> . please feel free to have a look . </s>
+<s> <user> i will now catch up on your work on <unka> regression . i think it looks good from a first look at it . will test it a bit more . that might make it possible to remove the random tie breaking in the calibration code . </s>
+<s> <user> the behavior is different from what it was before , but i think this is the only way to make <unka().> ) and <unka(_> ) be the same . </s>
+<s> <user> i 'll head t othe office now and look at <unk##> once i 'm ther </s>
+<s> <user> alright . i will be offline for 1h ( <unka> back home from <unka> ) but should get back online afterwards . </s>
+<s> <user> damn time difference ;) </s>
+<s> <user> it 's also because i have to <unka> early in the morning and in the afternoon to take a shuttle bus that avoids most of the paris rush hour traffic :) i would not wake up at <unk#a:> naturally otherwise ... </s>
+<s> <user> i a good paper to read on <unka> search on the way back home :) </s>
+<s> <user> the one kyle sent around ? jasper <unka> will give a talk at <unka> on friday :) </s>
+<s> <user> yes </s>
+<s> <user> it seems only useful when you can use a big compute cluster for a week though . still it looks interesting . </s>
+<s> <user> it means that we might be able to use the future <unka> model for <unka> search instead of trying to fix the gp to make them efficient ;) </s>
+<s> <user> well <unka> uses the <unka> random <unka> for <unka> search l ) </s>
+<s> <user> so we could also use that ;) </s>
+<s> <user> yes but apparently it does not reach the quality of the solution of <unka> optimization with gps or <unka> . </s>
+<s> <user> nor does <unka> , at least in the benchmarks run in this paper . </s>
+<s> <user> anyway let 's focus back on the release :) </s>
+<s> <user> btw , for URL/https:/ URL/github.com/ <unk#a-/> currently the random <unka> are pretty loud </s>
+<s> <user> <unk##> </s>
+<s> <user> wait , which is the paper you read on the train ? not this one , right ? URL/http:/ <unka./> <unk#a./> </s>
+<s> <user> i guess this one : URL/http:/ <unka./> <unk#a./> </s>
+<s> <user> do we have a link to the pdf docs on the website ? i think we do n't :-/ where should it go ? </s>
+<s> <user> i read the one by <unka> , but also read the other 2 weeks ago i think . </s>
+<s> <user> > do we have a link to the pdf docs on the website ? i think we do n't <unka:> : where should it go ? no we do n't , we do n't build it on a regular basis but we could . it should be possible to upload it as part of the build process . </s>
+<s> <user> after this the latex build should be relatively clean : URL/https:/ URL/github.com/ <unk#a-/> </s>
+<s> <user> anything you want me to review work on ? </s>
+<s> <user> is there a way to make <unka`> act without the cv part ( do parameters <unka=`> or <unka`> help in this context )? </s>
+<s> <user> you can <unka> a single test train split : <unka_> , <unka_> = <unka(_> , <unk#a.=_> , <unk#a=_> ) cv = <unk([> <unka_> , <unka_> )] <unka(> , <unka().=> , y ) </s>
+<s> <user> ahh thanks ! :) </s>
+<s> <user> i am using your code in a comment at <unk##> ... </s>
+<s> <user> i made a mistake : </s>
+<s> <user> <unka_> , <unka_> = <unka(._> ), <unk#a.=_> , <unk#a=_> ) </s>
+<s> <user> missing the <unka.> </s>
+<s> <user> it might be interesting to have the ability to not split into training and test data for <unka> algorithms . </s>
+<s> <user> what does setting cv to none do currently ? </s>
+<s> <user> perhaps we could set cv to -1 for that behaviour ? </s>
+<s> <user> <unka@> <unka> scores can still <unka> </s>
+<s> <user> it depends on the context . for clustering , where you can not even evaluate on <unka-> data , it totally makes sense . </s>
+<s> <user> i 'm looking into the sphinx thing but i 'm not entirely clear on how to achieve this . i do n't know where to hook it in . did you have time to look at the <unka> stuff ? </s>
+<s> <user> indeed </s>
+<s> <user> i thought about <unka-> where predict is possible but this is not always the case , for instance when clustering is done on a <unka> distance or similarity matrix </s>
+<s> <user> i am testing it now </s>
+<s> <user> the <unka> </s>
+<s> <user> sweet thanks :) </s>
+<s> <user> <unka@> for <unk##> , do you think the metrics might be useful ? </s>
+<s> <user> possibly . i did n't have much time to look at them yet </s>
+<s> <user> this is not really a priority as i want to get stuff clean and fixed for the release first </s>
+<s> <user> okay ... i 'll just leave a comment there ... take a look if you happen to find time after the release related work :) </s>
+<s> <user> +1 for not working on not introducing any new feature that has not already received a significant amount of reviews . </s>
+<s> <user> rephrasing : i meant not working on pr introducing new features unless it has already been reviewed extensively . </s>
+<s> <user> sure :) </s>
+<s> <user> :) </s>
+<s> <user> URL/https:/ URL/github.com/ <unk#a-/> </s>
+<s> <user> is part of the <unka_> fix where you can press the green button . i agree that this should be in the beta </s>
+<s> <user> haha i merged it before reading your message here ;) </s>
+<s> <user> haha i just saw it and thought you read my message ;) </s>
+<s> <user> anything i should look at now ? btw , does beta mean uploading docs ? </s>
+<s> <user> probably not i guess ? </s>
+<s> <user> no , no site change for the beta . but it 's good to fix it anyway :) </s>
+<s> <user> so the plan is uploading a non-default <unka> package and writing a mail ? and wheels ? </s>
+<s> <user> maybe then i should focus on the very verbose tests ^^ </s>
+<s> <user> as i said above , if you have anything on your wishlist , let me know </s>
+<s> <user> yes </s>
+<s> <user> verbose tests and maybe decide on <unk##> because it has a slight api impact . </s>
+<s> <user> and <unka-> the <unka> and radius <unka> that should be ready to merge very soon now . </s>
+<s> <user> it 's midnight here , i think i will call it a day on my side </s>
+<s> <user> see you tomorrow . tomorrow morning i will work to prepare a team meeting on probability calibration and meeting in the afternoon . should be online after that . </s>
+<s> <user> well but for those we need another <unka> , right ? </s>
+<s> <user> have a good night and see you tomorrow </s>
+<s> <user> yes we need other <unka> for those . </s>
+<s> <user> good night </s>

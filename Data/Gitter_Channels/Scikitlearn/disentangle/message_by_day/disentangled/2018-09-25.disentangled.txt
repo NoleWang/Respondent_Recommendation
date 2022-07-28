@@ -1,0 +1,16 @@
+[13:13] <564e507e16b6c7089cbb6551> @amueller I cannot find this one $\eta = \frac{1}{\alpha (t_0 + t)}$ (http://scikit-learn.org/stable/modules/sgd.html#id1) in Bottou's source code
+--------------------------------------------------------------------------------------------------
+[14:45] <54d4a1d6db8155e6700f853b> Isn't that the same as svmsgd?
+--------------------------------------------------------------------------------------------------
+[15:03] <564e507e16b6c7089cbb6551> @amueller I've opened `svm/svmsgd.cpp`, I can't locate that same formula. I found this one which is different: `double eta = eta0 / (1 + lambda * eta0 * t);`
+[15:04] <54d4a1d6db8155e6700f853b> @h4k1m0u open an issue or ask the mailing list maybe?
+[15:05] <564e507e16b6c7089cbb6551> @amueller Thanks I'll open an issue on Github
+--------------------------------------------------------------------------------------------------
+[15:35] <54d4a1d6db8155e6700f853b> :+1:
+--------------------------------------------------------------------------------------------------
+[18:23] <54de281a15522ed4b3dbfc22> For demonstration purposes, I would like to track the kmeans centers during each iteration of the fit. Is that possible with sklearn kmeans, e.g. with a callback?
+--------------------------------------------------------------------------------------------------
+[18:50] <54de281a15522ed4b3dbfc22> I will try to run kmeans for one iteration at a team, initializing the centers with the centers from the previous kmeans. That should do the trick.
+[19:44] <54d4a1d6db8155e6700f853b> yeah that should work. at that point it's easy enough to implement it yourself as well though ;)
+[21:04] <54de281a15522ed4b3dbfc22> :plus1:
+--------------------------------------------------------------------------------------------------

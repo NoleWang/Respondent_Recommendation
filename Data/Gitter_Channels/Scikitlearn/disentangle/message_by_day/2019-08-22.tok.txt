@@ -1,0 +1,3 @@
+<s> <user> i want to rebuild the <unka'-> project . i tried running <unka`> install <unka-> .` as stated in the docs URL/https:/ <unka-./> <unka#-./_> but i am getting this error . can someone help me out . <unk`> error : cannot uninstall <unka'-> . it is a <unka> installed project and thus we cannot accurately determine which files belong to it which would lead to only a partial uninstall . <unk`> </s>
+<s> <user> <unka@> see URL/https:/ URL/github.com/ <unk#a#-/> probably best to reinstall in a new virtual environment . </s>
+<s> <user> <unka@> you like puzzles , right ? URL/https:/ URL/github.com/ <unk#a-/> </s>

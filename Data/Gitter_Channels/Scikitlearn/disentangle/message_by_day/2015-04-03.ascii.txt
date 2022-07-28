@@ -1,0 +1,3 @@
+[16:52] <5474d9eadb8155e6700d8178> Yeaa :D Thats awesome... I'm really looking forward to that :)
+[17:38] <54d4a1d6db8155e6700f853b> this looks pretty bad: https://github.com/scikit-learn/scikit-learn/pull/4507
+[17:39] <54d4a1d6db8155e6700f853b> how about we do a bug-fix release when this is done with the fix to isotonic, my CCA fix, and this?

@@ -1,0 +1,6 @@
+[05:02] <5c34f182d73408ce4fb408a6> I want to rebuild the 'scikit-learn' project. I tried running `pip install --editable .` as stated in the docs https://scikit-learn.org/stable/developers/advanced_installation.html#building-from-source but I am getting this error. Can someone help me out. ``` ERROR: Cannot uninstall 'scikit-learn'. It is a distutils installed project and thus we cannot accurately determine which files belong to it which would lead to only a partial uninstall. ```
+--------------------------------------------------------------------------------------------------
+[08:03] <589b9e0fd73408ce4f490ba4> @sameshl See https://github.com/pypa/pip/issues/5247#issuecomment-381550610 probably best to reinstall in a new virtual environment.
+--------------------------------------------------------------------------------------------------
+[14:18] <54d4a1d6db8155e6700f853b> @thomasjpfan you like puzzles, right? https://github.com/scikit-learn/scikit-learn/pull/14704
+--------------------------------------------------------------------------------------------------

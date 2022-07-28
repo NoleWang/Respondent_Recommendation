@@ -1,0 +1,26 @@
+[08:45] <5ecf797dd73408ce4fe523d7> Hey guys, I'm trying to use Agglomerative Clustering. When applying the distance threshold, does it have a specific range? E.g. 0-1? or 0-10? or 0-1000? When I tried 1000, it gave me all the same cluster. When trying 500 it gave me clusters 0 1 2 3. I wanted to do something like: "All vectors above 70% similarity should merge" but I'm not sure how to implement that with distance threshold.
+[08:53] <567f5d7716b6c7089cc043a8> what does 70% similarity mean?
+[08:53] <567f5d7716b6c7089cc043a8> the range is applied on the output of your distance metric
+[08:54] <567f5d7716b6c7089cc043a8> if you want .7 to mean 70% similarity, then you should give a metric which results in 0.7 when they're 70% similar, with whatever definition you have
+[08:54] <567f5d7716b6c7089cc043a8> but the distances are not bounded, and therefore usually you need to sample from your distances, look at the distribution, and decide on what the threshold should be
+[08:56] <5ecf797dd73408ce4fe523d7> Yes I do mean something like: if I tried to do cosine distance with 2 vectors and then subtract that by 1 and get the absolute value, I get the similarity. 
+[08:56] <5ecf797dd73408ce4fe523d7> Sorry I'm not familiar with what distance metric refers to
+[08:58] <5ecf797dd73408ce4fe523d7> When you say the distances are not bounded, do you mean that, for every dataset I apply this to, the clustering behavior would change? Basically my situation is I have a bunch of sentence embeddings and I want to cluster the sentences. I found that with my sentence embedding model, sentences with a similarity above 0.7 tend to be actually similar. 
+[08:59] <567f5d7716b6c7089cc043a8> "sentences with a similarity above 0.7 tend to be actually similar. " is not welldefined unless you define you metric, if it's cosine, then your statement may be correct, in which case you should set the `affinity` parameter to cosine
+[08:59] <567f5d7716b6c7089cc043a8> the default is euclidean 
+[08:59] <567f5d7716b6c7089cc043a8> https://scikit-learn.org/dev/modules/generated/sklearn.cluster.AgglomerativeClustering.html#sklearn.cluster.AgglomerativeClustering
+[09:00] <5ecf797dd73408ce4fe523d7> Ah okay I'm currently trying to test with cosine, will report back. Thank you!
+[09:01] <5ecf797dd73408ce4fe523d7> The confusing part for me is the linkage choice. I'm not sure which would give the desired effect. I'll try to search for tutorials online for that though.
+[09:05] <5ecf797dd73408ce4fe523d7> Okay doing this: AgglomerativeClustering(distance_threshold=1,n_clusters=None, affinity='cosine', linkage='complete').fit(sentence_embeddings)
+[09:05] <5ecf797dd73408ce4fe523d7> Gives me 147 clusters 
+[09:05] <5dbe0c1fd73408ce4fcfc84a> @youssefabdelm_twitter Hi Sir, 
+[09:06] <5ecf797dd73408ce4fe523d7> Hey @anjumuaf123_twitter 
+[09:07] <5dbe0c1fd73408ce4fcfc84a> sir,  are you familiar with python GIS?
+[09:07] <5ecf797dd73408ce4fe523d7> I'm not @anjumuaf123_twitter 
+[09:08] <5dbe0c1fd73408ce4fcfc84a> @youssefabdelm_twitter RIGHT SIR
+[09:08] <5dbe0c1fd73408ce4fcfc84a> @youssefabdelm_twitter tHANK YOU VERY MUCH 
+[09:09] <5ecf797dd73408ce4fe523d7> I expected something like 1 cluster for that last line: AgglomerativeClustering(distance_threshold=1,n_clusters=None, affinity='cosine', linkage='complete').fit(sentence_embeddings)"
+[09:16] <5ecf797dd73408ce4fe523d7> Just realized where I might've gone wrong in my thinking there. My dataset probably has a bunch of sentences which are in fact that similar.
+[09:17] <567f5d7716b6c7089cc043a8> you not similar, more like orthogonal and dissimilar
+[09:19] <5ecf797dd73408ce4fe523d7> Ah yes. 1 would refer to more dissimilarity per cluster and 0 more similarity per cluster I think.
+[09:19] <567f5d7716b6c7089cc043a8> yes

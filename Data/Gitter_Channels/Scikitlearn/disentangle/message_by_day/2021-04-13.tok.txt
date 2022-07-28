@@ -1,0 +1,10 @@
+<s> <user> does using the fit function on a fitted model replace the fitted model , or update it ? </s>
+<s> <user> i 'm trying to use a <unka> in a machine learning context , and i want to keep updating it with each test run i do </s>
+<s> <user> obviously , i could in theory , take the model , and train it with the results of the particular test run , then merge the <unka> with the last model myself , but it would be better if i could avoid that </s>
+<s> <user> <unka`> make a full training from scratch </s>
+<s> <user> <unka_`> is doing an update </s>
+<s> <user> <unka@> thank you . what kinds of models is <unka_> available for ? </s>
+<s> <user> hrm ... it seems like all of the ones with that method only are for <unka> , not for <unka> output . </s>
+<s> <user> sgd <unka> is one of them </s>
+<s> <user> oh perfect </s>
+<s> <user> i will use that in the project my team is doing . thanks for helping </s>

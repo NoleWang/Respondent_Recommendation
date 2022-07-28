@@ -1,0 +1,7 @@
+<s> <user> do i need to have great knowledge about machine learning and ai to start with . </s>
+<s> <user> or knowing some basic about it will help . </s>
+<s> <user> i 'm confused as of now i know python and some basic of machine learning and ai </s>
+<s> <user> <unk#a@> knowing some basics is good but even that is not necessary to get started </s>
+<s> <user> all right <unka@> . thanks </s>
+<s> <user> thanks for all your work <unka@> , congrats on the release ! <unka:> : </s>
+<s> <user> btw sorry i missed your responses , i 'll have a bit more of a tinker with <unka> at some point </s>

@@ -1,0 +1,43 @@
+<s> <user> <unka> </s>
+<s> <user> hello , i 'm looking for some help with a code i wrote . it seems straightforward enough but it takes forever ( its not even run it yet and i 've had it running for hours ) to perform a <unk#a-> cross validation bit on an 800 x 18 <unka> . </s>
+<s> <user> this seems to be where my code hangs : </s>
+<s> <user> <unk`> kf = <unk#a(,> ) score = [ ] for i in <unk#a(,> ): <unka> = <unk#a(/=> , <unka'=> ) error = [ ] for <unka_> , <unka_> in kf : <unka_> , <unka_> = <unka[_> ], <unka[_> ] <unka_> , <unka_> = <unka[_> ], <unka[_> ] <unka(,._> ) <unk#a(.> - <unka(._> , <unka_> )) <unk#a()./> ) <unk`> </s>
+<s> <user> you can use the [ <unka(-./:]_`> ) function to do what you try to do </s>
+<s> <user> also i think that you are using the <unka_`> module which you should move away from since it is deprecated </s>
+<s> <user> use the <unka_`> where you have the <unka> <unka-> classes </s>
+<s> <user> long story short , you can write your code as </s>
+<s> <user> <unka`> from <unka._> import <unka> from <unka._> <unka_> from <unka.> import <unka> <unka> = <unka'(=> ) <unka(_> , x , y )) <unk`> </s>
+<s> <user> then it seems that you try to actually find the best <unka`> parameter probably . to do that you should use the [ <unka(-./:]_`> ) class . </s>
+<s> <user> <unka`> from <unka> import svm , <unka> from <unka._> import <unka> parameters = { 'c' : [ 1 , 10 , 100 , 1000 <unk]}> <unka> = <unka'(.=> ) <unka> = <unka(> , parameters ) <unka(.> , y ) <unk`> </s>
+<s> <user> it will search and select the best <unka`> parameter </s>
+<s> <user> ok . thank you so much <unka@> . i'd try that yes , i am trying to find the best c parameter </s>
+<s> <user> in your example you are trying all the 1000 possible <unka`> values and it could be pretty slow . you can also use <unk#a-=_`> to take advantages of all the cpu cores </s>
+<s> <user> oh . sorry , i 'm still new at it so , i do n't know how to use the <unka_> yet </s>
+<s> <user> <unka`> = <unka(> , parameters , <unk#a)-=_`> </s>
+<s> <user> is enough </s>
+<s> <user> the task was to check for the best c value between 0.01 and 10 </s>
+<s> <user> <unka> = <unka(> , parameters ) </s>
+<s> <user> you can check the examples in the doc </s>
+<s> <user> ok . thanks a lot ! </s>
+<s> <user> this is actually related to an svm with different kernel and c values </s>
+<s> <user> <unka(=`> , <unka'=_> , <unk#a(.=> , <unk#a=_> , <unka=_> , <unk#a.=> , <unka=_> , <unk#a=> , <unka'=> , <unka'=> , <unk#a-=_> , <unka=> , <unka=_> , <unka=> , <unk#a.=> , <unka=> ), <unka=_{> }, <unka=> , <unk#a=_> , <unka'=_{> : [ 1 , 10 , 100 , 1000 <unk,]}> <unk#a'*=_> , <unka=> , <unka=_> , <unka=> , <unk#a)=`> </s>
+<s> <user> i guess this implies the best <unka> is c = 1.0 ? </s>
+<s> <user> yep </s>
+<s> <user> wow ! thank you . you are a life saver ! </s>
+<s> <user> the returned <unka> is this one </s>
+<s> <user> i 've been trying to do this for days ! </s>
+<s> <user> you can increase the number of c to visit if you want as well </s>
+<s> <user> ok </s>
+<s> <user> how do i do that ? </s>
+<s> <user> by changing <unka_> ? </s>
+<s> <user> yep </s>
+<s> <user> cool </s>
+<s> <user> <unka`> = { 'c' : <unk#a(-.> , 2 , <unk#a)=`}> </s>
+<s> <user> do n't hesitate sometimes to check the tutorial </s>
+<s> <user> URL/http:/ <unka-./> <unka/> </s>
+<s> <user> ok . thank you </s>
+<s> <user> URL/http:/ <unka-./> <unka./_> </s>
+<s> <user> was actually the one you wanted ;) </s>
+<s> <user> i 'm new at <unka-> and machine learning . so sometimes , my solutions are not optimal and my system is rather slow </s>
+<s> <user> awesome . i'd go through it </s>
+<s> <user> yes , it is :d </s>

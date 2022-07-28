@@ -1,0 +1,4 @@
+<s> <user> please does it make sense to find the optimal gamma for a <unka> kernel ? </s>
+<s> <user> most of the examples i 've seen searching for gamma have the kernel as linear or <unka> </s>
+<s> <user> i tried using grid search , but it does n't seem to be the right function for getting the gamma in this case ( it seems slow in processing ) </s>
+<s> <user> </s>

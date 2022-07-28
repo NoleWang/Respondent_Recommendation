@@ -1,0 +1,1 @@
+<s> <user> hello , i would be very grateful for help or hint . what i would like to do is to somehow find pattern in text . lets say you have forum and people or posting on it . i would like to find pattern which would indicate me what are they talking about the most . thank you for hint . </s>

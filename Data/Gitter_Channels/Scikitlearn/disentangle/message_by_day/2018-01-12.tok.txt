@@ -1,0 +1,7 @@
+<s> <user> do you mean something which has never been done with <unka-> or something that has never been done in general ? if the former then just look for feature request . if the latter i think it is safe to say all simple things have been done long ago . </s>
+<s> <user> yeah its all done </s>
+<s> <user> well the <unka> of novel and simple is nearly nonexistant in most developed fields </s>
+<s> <user> am i supposed to know the internal functioning of all the <unka> learn models ? </s>
+<s> <user> because there are too many models </s>
+<s> <user> i just did the andrew ng course on <unka> </s>
+<s> <user> he taught a few basic things . </s>

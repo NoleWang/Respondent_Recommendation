@@ -1,0 +1,3 @@
+[13:59] <564789be16b6c7089cbab8b7> what's the default scoring scheme when using  cross_val_score with RandomForestRegressor?
+[13:59] <564789be16b6c7089cbab8b7> If the docs say, I haven't seen it
+--------------------------------------------------------------------------------------------------

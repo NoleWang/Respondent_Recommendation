@@ -1,0 +1,6 @@
+[00:14] <58af2e9dd73408ce4f4c72db> I agree to with ur point. In my training dataset i see a relationship among the transactions happened with in a less span of time and in morning & evening are classified as suspicious .
+--------------------------------------------------------------------------------------------------
+[00:22] <551c051b15522ed4b3de2fea> so you want to create a set of features based on the timestamp: perhaps the hour of the timestamp only (to determine morning/evening), and then some duration engineered from the rest of the data.
+--------------------------------------------------------------------------------------------------
+[00:28] <58af2e9dd73408ce4f4c72db> Ok. So new features like hour and minute bin like 5 or 10 minute size will have to create.
+--------------------------------------------------------------------------------------------------

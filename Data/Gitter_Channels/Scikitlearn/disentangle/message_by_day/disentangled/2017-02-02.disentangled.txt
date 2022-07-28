@@ -1,0 +1,5 @@
+[14:45] <579618a040f3a6eec05c5e42> Hey guys, I have a question regarding Gaussian process. It seems to me that is taking for ever to converge even with the n_jobs=-1 option. The data is very high dimensional. Any suggestions to speed up the convergence? Any tricks I should be aware of? Last but not least I've noticed that the option of `n_jobs=-1`is included only in a number of algorithms. Why was that the case? What is the logic behind it to include it only in a subset of the algorithms that scikit offers?
+--------------------------------------------------------------------------------------------------
+[20:21] <5891ba54d73408ce4f476005> are there no newcomer issues to solve at https://github.com/scikit-learn/scikit-learn/issues
+[20:21] <5891ba54d73408ce4f476005> i want to start contributing here
+--------------------------------------------------------------------------------------------------

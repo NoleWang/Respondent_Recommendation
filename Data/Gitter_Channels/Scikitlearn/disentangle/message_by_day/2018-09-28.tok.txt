@@ -1,0 +1,4 @@
+<s> <user> number of features of the model must match the input . model <unka_> is 13 and input <unka_> is 2 </s>
+<s> <user> what does it mean ? </s>
+<s> <user> <unka-@> can you please say what 's unclear about that so we can improve the error message ? </s>
+<s> <user> the model was trained with 13 features and you give it data with 2 features </s>

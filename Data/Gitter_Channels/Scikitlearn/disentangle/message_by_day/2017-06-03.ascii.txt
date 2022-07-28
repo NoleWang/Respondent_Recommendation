@@ -1,0 +1,3 @@
+[02:01] <590709b7d73408ce4f5c2454> S
+[10:53] <54d4a1d6db8155e6700f853b> @nelson-liu sample order shouldn't matter but feature order. Some pick the coordinates at random, I think.
+[10:54] <54d4a1d6db8155e6700f853b> @amitmanchanda1995 C is an upper bound on the dual coefficents, and if you restrict the dual coefficients more (make C smaller) you'll have less zero alphas, i.e. more support vectors

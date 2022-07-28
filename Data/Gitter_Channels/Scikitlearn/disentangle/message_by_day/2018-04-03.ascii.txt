@@ -1,0 +1,5 @@
+[08:33] <570665ba187bb6f0eade50c8> Hi , I am a beginner and I try to predict an anomaly in different systems, I have different parameters, which I can use to do more precise prediction. I have a general question, is there a way to do prediction without know with parameters should I use ? sometimes, I don't have all parameters values, so I am thinking if there is a away to do prediction with a minimum parameters
+[18:14] <5a2c58c8d73408ce4f8294ba> Google feature selection
+[19:37] <54d4a1d6db8155e6700f853b> @naaioa @DrEhrfurchtgebietend more like imputation?
+[19:39] <54d4a1d6db8155e6700f853b> @idahmed the "python data science handbook" is a great introduction and available online for free and in notebook format.
+[19:40] <54d4a1d6db8155e6700f853b> @mcasl if I may ask, have you looked at mine as well? I feel the two are somewhat similar in scope, but tbh I haven't looked into Aurelien's book in that much detail

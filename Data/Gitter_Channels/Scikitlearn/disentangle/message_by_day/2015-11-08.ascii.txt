@@ -1,0 +1,4 @@
+[20:07] <54b4f2d1db8155e6700e99c0> Hey Folks, congrats for the release! Awesome work!
+[20:07] <54b4f2d1db8155e6700e99c0> Quick question, why does KMeans accept y in its fit() ?
+[20:12] <53135b495e986b0712efc453> For API compatibility with other supervised learning algorithms... (and to safely pass y through kmeans in a pipeline)
+[20:13] <54b4f2d1db8155e6700e99c0> Thanks a lot @rvraghav93 :)

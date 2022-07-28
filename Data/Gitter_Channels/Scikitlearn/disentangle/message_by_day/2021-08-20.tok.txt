@@ -1,0 +1,4 @@
+<s> <user> hello everyone , i am a newbie to open source with basic knowledge about <unka-> and want to contribute to this repository . can anyone tell me how should i start ? i have basic knowledge about generating my first pr and solving good first issues . now i want to fix bugs and do some code contributions but i am unable to understand the issues . can anyone guide me ? </s>
+<s> <user> hi <unka@> , thanks for wanting to contribute ! have you read the contributor 's guide ? i would suggest you look for issues tagged " good first issue " . many of those are multi-part issues where you can pick just a part to work on </s>
+<s> <user> see URL/https:/ <unka-./> <unka./> and URL/https:/ URL/github.com/ <unk#a%-/> for good first issues </s>
+<s> <user> this one might be good to get started : URL/https:/ URL/github.com/ <unk#a-/> </s>

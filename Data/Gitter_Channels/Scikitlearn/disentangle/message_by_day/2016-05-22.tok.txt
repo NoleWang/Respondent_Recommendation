@@ -1,0 +1,11 @@
+<s> <user> hi everyone , i am new to this room , found it through <unka> listing . i am a usual <unka-> user . would this be a place to know more about projects using the tool ? thanks ! </s>
+<s> <user> hmm not quite , thus room is mainly used for developer chat . </s>
+<s> <user> <unka-@> hi , i guess you are referring to me ? > hmm not quite , thus room is mainly used for developer chat . i see ... i guess that it is the desired use . a quick <unka-> seems to show a plethora of different interesting topics ... :) i will respect the main interest of the <unka> though . thanks for the info ! i hope there is no issue is i stay as <unka> meanwhile ? </s>
+<s> <user> of course , we definitely talk about other things :) </s>
+<s> <user> thanks !! :) </s>
+<s> <user> np ! btw , does anyone have a 32 bit machine ( ideally linux ) and would be willing to spare a few minutes to pull down some code from one of my branches and run a <unka> ? </s>
+<s> <user> a 32-bit linux machine ? </s>
+<s> <user> yeah i mean running a 32 bit os i mean haha </s>
+<s> <user> yeah i caught what you meant , its just my time machine is in the shop </s>
+<s> <user> ah got it . i have some tests failing on <unka> , only when running on windows 32 bit though . i 'm considering setting up a vm to debug , but i 'm also curious if it breaks on linux 32 bit bc it 's a lot easier to get linux set up and running on a vm vs windows haha </s>
+<s> <user> hah yeah i do n't even try to support windows </s>

@@ -1,0 +1,17 @@
+<s> <user> hi guys , how are you able to make imports like " from <unka._> import <unka_> " from any python file . have you changed <unka.> from anywhere ? thanks </s>
+<s> <user> can you <unka`> <unka`> ? </s>
+<s> <user> actually i was just browsing code . </s>
+<s> <user> for example in this file </s>
+<s> <user> URL/https:/ URL/github.com/ <unka-./_> </s>
+<s> <user> we are able to do <unka`> <unka.> import <unka`> </s>
+<s> <user> i was wondering how were you able to do that ? is there any configuration for this ? </s>
+<s> <user> <unk#a@> there ? </s>
+<s> <user> <unka@> no , there is n't any . this is how the import system of python works . </s>
+<s> <user> a [ <unk#a(-./:]> ) </s>
+<s> <user> it shows how <unka._`> works ! </s>
+<s> <user> yeah . cool </s>
+<s> <user> hope this answers your question <unka:> : </s>
+<s> <user> yes . thank you :) </s>
+<s> <user> hi . trying to use <unka> with <unka'=_> . ending up with this error : <unka(_> ) got an unexpected keyword argument <unka'_> </s>
+<s> <user> <unka> version is <unk#'.> </s>
+<s> <user> can anybody please help ? </s>

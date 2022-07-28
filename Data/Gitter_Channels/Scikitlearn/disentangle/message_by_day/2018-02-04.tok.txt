@@ -1,0 +1,2 @@
+<s> <user> hello </s>
+<s> <user> i want to ask which is more advantageous to use dummy variables or one hot encoding ? </s>

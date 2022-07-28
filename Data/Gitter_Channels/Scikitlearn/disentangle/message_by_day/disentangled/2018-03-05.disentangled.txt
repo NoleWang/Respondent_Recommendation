@@ -1,0 +1,3 @@
+[11:53] <5a70791bd73408ce4f8ad6e1> Hi, further on my spell correct algo: Is there a function that gives you the number of occurences of a word (BoW-style)? I would expect that frequent words (preposition) are often in the neighbourhood of other words (nouns)
+[13:07] <5a70791bd73408ce4f8ad6e1> @aph61 Further to my question  before, can you also work with word vectors, like, count the number of vectors for a given word? Makes actually more sense
+--------------------------------------------------------------------------------------------------

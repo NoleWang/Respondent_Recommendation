@@ -1,0 +1,18 @@
+[18:08] <572e2e2bc43b8c601971aa31> hey guys i'm new here 
+[18:08] <572e2e2bc43b8c601971aa31> needed some help  regarding machine learning
+[18:08] <572d31b4c43b8c6019718fca> Whats up? :)
+[18:09] <572e2e2bc43b8c601971aa31> i've just started studying about machine learning
+[18:09] <572e2e2bc43b8c601971aa31> and everywhere i read that machine learning course on Coursera by Andrew Ng
+[18:10] <572e2e2bc43b8c601971aa31> is good to begin with
+[18:10] <572e2e2bc43b8c601971aa31> but it is not focused on python 
+[18:10] <572e2e2bc43b8c601971aa31> and i want to use machine learning in python
+[18:10] <572e2e2bc43b8c601971aa31> so should i consider learning from somewhere else?
+[18:10] <572e2e2bc43b8c601971aa31> help me out
+[18:11] <54e07d6515522ed4b3dc0858> You can do the assignments in Python if you want to
+[18:11] <572d31b4c43b8c6019718fca> If you can do machine learning in one language, youll have little to no trouble switching languages :)
+[18:12] <572e2e2bc43b8c601971aa31> and what would you recommend on some good resources
+[18:12] <572d31b4c43b8c6019718fca> Good resources for what specifically?
+[18:12] <572e2e2bc43b8c601971aa31> or anything that can help me learn faster 
+[18:13] <572e2e2bc43b8c601971aa31> i'm not sure i have just started 
+[18:13] <572e2e2bc43b8c601971aa31> maybe how to implement the algorithms in python 
+[18:13] <572e2e2bc43b8c601971aa31> where should i learn that from

@@ -1,0 +1,2 @@
+[19:46] <564789be16b6c7089cbab8b7> what are good options for supervised categorical encoding when the target is also categorical?  target encoding looks attractive but doesn't really make sense when the target is categorical
+--------------------------------------------------------------------------------------------------

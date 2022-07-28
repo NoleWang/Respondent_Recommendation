@@ -1,0 +1,3 @@
+<s> <user> <unka@> this is <unka> to an integer . refer to [ <unk#a#(-./:]> ) for details . </s>
+<s> <user> am asked to only <unka> a smart device in c++ that could belong to the iot . although , i am not entirely sure what to choose . i have been given an example such as a weather device , also it is to produced data by 3 ( simulated ) sensors . for example the weather device , may register data from temperature , air pressure and wind speed sensors . any ideas on a device i could choose ? </s>
+<s> <user> <unka@> , thanks </s>

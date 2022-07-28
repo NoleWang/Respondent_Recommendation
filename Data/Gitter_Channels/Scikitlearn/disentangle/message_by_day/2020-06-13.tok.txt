@@ -1,0 +1,1 @@
+<s> <user> i am writing a neural network without any external libraries for <unka> with only 4 <unka.> the train <unka._> file i have one hot encoded <unk#a(> ) for all samples , my doubt is how to call the data directly to the function in the code . iam using <unka> as my activation function in output layer </s>

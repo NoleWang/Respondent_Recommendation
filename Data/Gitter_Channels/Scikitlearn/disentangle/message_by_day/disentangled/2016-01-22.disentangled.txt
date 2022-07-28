@@ -1,0 +1,12 @@
+[02:19] <560d8599d33f749381a7fa7c>
+--------------------------------------------------------------------------------------------------
+[04:17] <5496a05adb8155e6700e1a4b> @amueller thank you for clarifying.
+--------------------------------------------------------------------------------------------------
+[04:19] <5496a05adb8155e6700e1a4b> "The average complexity is given by O(k n T), were n is the number of samples and T is the number of iteration. The worst case complexity is given by O(n^(k+2/p)) with n = n_samples, p = n_features". This is mentioned in the docs. What is "k" here ? Also, is it O(KnT), Multiplication of all 3 parameters?
+--------------------------------------------------------------------------------------------------
+[04:40] <561d08d0d33f749381a937bf> Hi guys, im going to bombard this forum with a lot of newbee questions. Feel free to kick me out anytime. Ive got several IDs just in case.
+--------------------------------------------------------------------------------------------------
+[16:19] <54d4a1d6db8155e6700f853b> @Fredilly lol. Maybe try stackoverflow with the sklearn tag
+[16:19] <54d4a1d6db8155e6700f853b> that will get you replies more quickly and more willingly ;)
+[16:19] <54d4a1d6db8155e6700f853b> @rajathkumarmp k is the number of clusters, knt is the multiplication
+--------------------------------------------------------------------------------------------------

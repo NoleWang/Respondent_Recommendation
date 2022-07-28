@@ -1,0 +1,2 @@
+<s> <user> hey folks , with <unka> , if you fit with all the components , you should be able to transform with a subset of them only . if im not wrong , this is currently not possible . should i open an issue ? </s>
+<s> <user> <unka@> sounds very strange . i do n't think that 's possible with <unka> . do you have literature where it says ? as far as i know if you go compress 40 features into 10 features , you'd need measurements on all 40 features to result into 10 . </s>

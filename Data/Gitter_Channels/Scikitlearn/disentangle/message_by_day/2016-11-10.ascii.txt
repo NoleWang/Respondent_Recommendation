@@ -1,0 +1,3 @@
+[08:55] <56b38569e610378809bfe274> Completely new to contributing to sklearn. Is there a recommended contributions guide? Considering fixing the memory issues with bh-tsne.
+[18:12] <56c4f19ae610378809c1f8ae> @hvaara http://scikit-learn.org/dev/developers/contributing.html#contributing
+[19:17] <5824bf65d73408ce4f350625> Hi, I'm new with machine learning, do you can help me for information?

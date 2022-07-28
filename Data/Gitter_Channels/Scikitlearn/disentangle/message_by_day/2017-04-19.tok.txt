@@ -1,0 +1,2 @@
+<s> <user> DIR/~~~/ testing DIR/~~~/ </s>
+<s> <user> hi everyone , ( it seems that this channel changed its purpose ... ? anyway ) i do n't want to bother the group but i recently posted [ an issue when running <unk#a'(-./:]> )? it is in stackoverflow with the suggested changes by other users - still downgraded though . does anyone can have a look ? if not , which other place would be the best one to post my question ? also : what other tests should i try before posting anywhere else to be sure i did all i could to verify the problem was completely evaluated ? </s>

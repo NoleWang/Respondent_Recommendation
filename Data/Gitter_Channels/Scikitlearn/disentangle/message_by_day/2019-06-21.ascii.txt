@@ -1,0 +1,47 @@
+[17:24] <564789be16b6c7089cbab8b7> if you are doing image classification using scikit learn, do you have to convert the images into 1d arrays first?
+[17:24] <55d21ee30fc9f982beadabb8> yes
+[17:25] <564789be16b6c7089cbab8b7> @glemaitre  hmm... that seems to lose some vital information
+[17:25] <564789be16b6c7089cbab8b7> i..e that pixels next to each other are related
+[17:25] <55d21ee30fc9f982beadabb8> you can look at an example of `load_digits` to see that the 8x8 images are transformed to 1d 64 arrays
+[17:25] <541a528b163965c9bc2053de> you can use a pre-trained convolutional neural network to extract interesting features
+[17:25] <541a528b163965c9bc2053de> or you can use scikit-image HoG features for instance. Depending on the kinds of images, it might be enough.
+[17:25] <55d21ee30fc9f982beadabb8> > you can use a pre-trained convolutional neural network to extract interesting features  which a much better approach
+[17:26] <564789be16b6c7089cbab8b7> HoG features?
+[17:26] <564789be16b6c7089cbab8b7> Histogram of Oriented Gradients ?
+[17:26] <541a528b163965c9bc2053de> Histogram of Oriented Gradients
+[17:26] <541a528b163965c9bc2053de> yes
+[17:27] <55d21ee30fc9f982beadabb8> https://scikit-image.org/docs/dev/auto_examples/features_detection/plot_hog.html
+[17:27] <564789be16b6c7089cbab8b7> all very interesting thanks. It seems a weakness somehow in the general non-NN classification model that it can't take advantage of 2d data
+[17:28] <55d21ee30fc9f982beadabb8> I think that I have 2 quick examples showing a bit how things can be connected:
+[17:28] <55d21ee30fc9f982beadabb8> https://scikit-image.org/docs/dev/auto_examples/applications/plot_haar_extraction_selection_classification.html#sphx-glr-auto-examples-applications-plot-haar-extraction-selection-classification-py
+[17:28] <55d21ee30fc9f982beadabb8> https://github.com/scikit-learn/scikit-learn/pull/6509/files
+[17:28] <564789be16b6c7089cbab8b7> I suppose even in 1d random forests etc are invariant to permutations of the input array
+[17:29] <564789be16b6c7089cbab8b7> @glemaitre  thanks
+[17:29] <541a528b163965c9bc2053de> yes, you have to do feature engineering first. You can consider the 2D conv layers before the final flatten / global average pooling as a feature extractor and the last fully connected layers as a standard classifier. It's just that both the feature extraction and the classifier are trained end-to-end together
+[17:29] <564789be16b6c7089cbab8b7> it's only really the convolutions that  take advantage of the neighborhood of pixels I suppose
+[17:30] <564789be16b6c7089cbab8b7> @ogrisel  right.  
+[17:30] <541a528b163965c9bc2053de> but nowawdays, (convolutional) neural networks are almost always the good solution for image classification, unless you have very specific prior knowledge on the image you want to classify.
+[17:31] <564789be16b6c7089cbab8b7> I wonder if random forests could be changed to take arrays of pairs, say, as inputs
+[17:31] <564789be16b6c7089cbab8b7> @ogrisel  that's true but I am also thinking of time series data
+[17:31] <564789be16b6c7089cbab8b7> where it makes a big difference if two values are from successive times or not
+[17:31] <541a528b163965c9bc2053de> > it's only really the convolutions that  take advantage of the neighborhood of pixels I suppose  No: if you have deep conv layers with downsampling (strides or max pooling for instance) the conv layers can capture large high level complex patterns that span a large receptive field.
+[17:32] <564789be16b6c7089cbab8b7> @ogrisel  you said No but I read your answer as yes :)
+[17:32] <541a528b163965c9bc2053de> we need an example of some standard feature engineering you can do on time windows for time series forecasting / classification.
+[17:32] <564789be16b6c7089cbab8b7> @ogrisel  that would be good to see
+[17:33] <541a528b163965c9bc2053de> I misread the original quote, then yes.
+[17:33] <541a528b163965c9bc2053de> But what I meant is that deep conv net can model non-local patterns
+[17:33] <564789be16b6c7089cbab8b7> @ogrisel yes . What I meant is that without any convolutions you don't get to see local patterns
+[17:34] <564789be16b6c7089cbab8b7> on an NN topic, is there software to give you a good guess at a reasonable architecture for a classification task? I saw autokeras but it's pretty heavy.
+[17:34] <541a528b163965c9bc2053de> if you really want to use decision trees for image classification you might be interested in https://arxiv.org/abs/1905.10073 but this is not (and will not) be implemented in scikit-learn ;)
+[17:35] <564789be16b6c7089cbab8b7> @ogrisel thanks! Why won't it be implemented? Because it doesn't work or coding resources?
+[17:35] <541a528b163965c9bc2053de> I don't know what is the practical state of the art for architecture search for image classification
+[17:35] <564789be16b6c7089cbab8b7> really I am secretly interested in time series 
+[17:35] <541a528b163965c9bc2053de> because it is not a standard, established method.
+[17:36] <564789be16b6c7089cbab8b7> @ogrisel  got you
+[17:36] <564789be16b6c7089cbab8b7> image classification was just interesting because the data is in 2d
+[17:36] <541a528b163965c9bc2053de> https://scikit-learn.org/stable/faq.html#what-are-the-inclusion-criteria-for-new-algorithms
+[17:36] <564789be16b6c7089cbab8b7> but even in 1d it seems unclear to me what the right thing to do is
+[17:36] <564789be16b6c7089cbab8b7> @ogrisel  I have read those guidelines! They seem very sensible to me
+[17:37] <541a528b163965c9bc2053de> https://scikit-learn.org/stable/faq.html#why-is-there-no-support-for-deep-or-reinforcement-learning-will-there-be-support-for-deep-or-reinforcement-learning-in-scikit-learn
+[17:37] <564789be16b6c7089cbab8b7> I greatly admire how scikit learn is run in general
+[17:37] <564789be16b6c7089cbab8b7> @ogrisel  I read that second link too :)

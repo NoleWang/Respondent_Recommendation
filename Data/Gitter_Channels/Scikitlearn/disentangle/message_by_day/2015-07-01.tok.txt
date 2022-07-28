@@ -1,0 +1,31 @@
+<s> <user> seq of seq support for <unka`> is [ <unka> for removal in <unk#a#(-./:]> ) ... should we remove it ?? </s>
+<s> <user> <unka@> thanks heaps for the patient reviews !!! i 'll address them and push before tomorrow along with the documentation and examples ... with that <unk##> is done !!! ( except for further rounds of reviews , ofcourse !! ) </s>
+<s> <user> tomorrow ( in nyc time ) </s>
+<s> <user> i still have , like , half of the pr to go through . it 's a big one ! :) </s>
+<s> <user> yeaa :/ thanks anyway :) after addressing your comments i 'll split it into one commit per file ... this should make it marginally easy to review ? </s>
+<s> <user> do n't worry about label <unka> right now . probably yes , it should be removed . </s>
+<s> <user> i use git diff to compare to the old files , so i do n't really care how the commits are grouped . i just look at the head </s>
+<s> <user> ah okay then :) </s>
+<s> <user> anyway , before i go to bed , i 'm not sold on using labels for the predefined split . it should n't stray too much from the old api </s>
+<s> <user> i 'll think about it some more tomorrow </s>
+<s> <user> happy hacking ! </s>
+<s> <user> okay !! i 'll leave it as such :) good night !! </s>
+<s> <user> <unka@> i never heard of that metric before either . which community is it from ? google told me it is used in a couple of <unka> <unka> , but it does n't have a wikipedia entry </s>
+<s> <user> <unka> is the only place i 've seen it as well </s>
+<s> <user> i guess it is for <unka> regression tasks . basically you log the target and then to <unka> ? for most models it would probably be better to log the target before training as regression models are more likely to minimize <unka> </s>
+<s> <user> i agree . i will probably try that in my model , but unfortunately i ca n't change the evaluation metric that this competition uses </s>
+<s> <user> alternatively you could create your own <unka> for this , but i do n't think it belongs in <unka> . the problem is that if you do your own <unka> , you probably also want a <unka-> that logs the target before fitting <unka> with your model and then transform back . </s>
+<s> <user> you do n't need to change the evaluation metric . just apply log to y . then do <unka-> with <unka> on your ridge regression </s>
+<s> <user> the error will be the " right " <unka\> </s>
+<s> <user> and it will perform much better than using ridge on the original target with <unka> </s>
+<s> <user> hm , i suppose then i would just have to exp my <unka> for submission </s>
+<s> <user> yes </s>
+<s> <user> ( <unka(> + 1 ) and <unka(> - 1 ) that is to not get <unka> ) </s>
+<s> <user> not sure if they have internal optimizations to save you the extra op </s>
+<s> <user> or use numpy 's <unk#a> and <unk#a> </s>
+<s> <user> anyway , i did n't want to <unka> free advice on how to win a <unka> competition . just wanted to find out of this evaluation metric was noteworthy enough to merit a pr </s>
+<s> <user> thanks for the discussion </s>
+<s> <user> np . i would n't worry about optimizing this , though using <unk#a> and <unk#a> are probably a good idea </s>
+<s> <user> for stability yes . for speed , this is just pre and post processing , so i doubt it matters </s>
+<s> <user> URL/http:/ <unka./> <unk#a-/> </s>
+<s> <user> if curious , here 's the numpy implementation of <unk#a> if the math.h one is not available URL/https:/ URL/github.com/ <unk#a#./_> </s>

@@ -1,0 +1,5 @@
+[20:40] <5385f2fe048862e761fa2d40> Won't this fail with an attribute error if there are no empty clusters? https://github.com/scikit-learn/scikit-learn/blob/master/sklearn/cluster/_k_means.pyx#L289
+[20:51] <5385f2fe048862e761fa2d40>
+--------------------------------------------------------------------------------------------------
+[21:55] <54d4a1d6db8155e6700f853b> @omerzimp the loops goes over the empty clusters. If there are none, it never gets executed
+--------------------------------------------------------------------------------------------------

@@ -1,0 +1,6 @@
+<s> <user> hey all , <unka> away at <unk##> and was wondering if there 's any places in the codebase that check if fitted on any input <unka> ( where the est type is unknown ) ? </s>
+<s> <user> URL/https:/ URL/github.com/ <unk#a#-./_> from <unk##> is a little tricky to <unka> </s>
+<s> <user> hrmm . i think i can sneak it into the logic for <unka> and then check for other <unka> in the fit stage . never mind ! </s>
+<s> <user> hi </s>
+<s> <user> hi , i 've generated a big set of very <unka-> <unka> ( 7300 <unka> with 1700 dimensions each ) from a <unka> dataset . i 'm trying to visualize them and what i do is to apply [ <unka#(-./:]`> ) ( a <unka> which centers the data ) to obtain 50 dimensions and then pass those to [ <unka(-./:]`> ) in order to visualize them in 2d . the problem is that those <unka> include lots of verb <unka> and synonyms , so i would like to apply some type of algorithm to those <unka-> <unka> ( like <unka> or <unka> similarity ) in order to obtain clusters or groups of similar <unka> represented by a single vector for each of those groups ( without reducing their <unka> since that is done later through <unka> and <unka> ). does anybody know how to obtain that ? </s>
+<s> <user> <unka@> issue already exists but pr is still left open </s>

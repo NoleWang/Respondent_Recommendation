@@ -1,0 +1,32 @@
+<s> <user> well , this is weird : URL/https:/ <unka-./> <unk#a-/> . <unka_> , <unka> and <unka> and the iris dataset should all be deterministic . </s>
+<s> <user> indeed weird </s>
+<s> <user> maybe some corrupted memory on the travis host ? we should keep this failure in mind if it ever happen a second time </s>
+<s> <user> corrupted memory sounds unlikely </s>
+<s> <user> btw , why does pip install on os x do a compile ? URL/https:/ URL/github.com/ <unk#a-/> when are the wheels used ? </s>
+<s> <user> <unk#a@> i just started reading your blog post . i would n't argue with google search hits , as they are <unka-> dependent . yours and mine are very likely biased heavily towards <unka> . </s>
+<s> <user> vlad advised me on a few improvements and i am working on it too :d </s>
+<s> <user> <unk#a@> end of may is pretty soon , btw . what is the status of the <unka-> cv <unka> ? and why is the svm infamous ? </s>
+<s> <user> btw this is my blog url <unk#a.> ( so the rest of the people could take a look too ) </s>
+<s> <user> infamous was a wrong usage :/ correcting it :) </s>
+<s> <user> and i am working on it ... the final consensus was that the code must be duplicated right ... one with the <unka> and one without ... will push soon ;) </s>
+<s> <user> ok thanks . </s>
+<s> <user> ping me once you incorporated <unka> comments </s>
+<s> <user> sure :) </s>
+<s> <user> btw i intentionally aimed it to be biased towards <unka> ... i wanted to give a view where in the end user might see what they get out of my work ... like vlad had advised in the email ... is that okay ? </s>
+<s> <user> what i meant is that if you use google , google knows you contribute to <unka-> , so it will show <unka-> results on top . </s>
+<s> <user> if someone else reads your blog and clicks the links , but they are an r user , it might show them links to r libraries , and no <unka-> anywhere </s>
+<s> <user> i just checked for " cross validation " using an online proxy server ... our documentation page for cross validation still ranks at 3 ;) </s>
+<s> <user> actually 2 if you consider the first 2 wikipedia pages as one </s>
+<s> <user> fair enough </s>
+<s> <user> :) </s>
+<s> <user> woah my google cred is improving </s>
+<s> <user> <unka:> : </s>
+<s> <user> and may end as in without counting code reviews and revisions which i could do in parallel with the next goal :) </s>
+<s> <user> hehe ok </s>
+<s> <user> <unka> URL/http:/ URL/en.wikipedia.org/ <unk#a%/_> </s>
+<s> <user> nice :) it appears you have been there for more than a year URL/http:/ URL/en.wikipedia.org/ <unk#a%&./=?_> </s>
+<s> <user> time to fill in that page </s>
+<s> <user> ;) </s>
+<s> <user> awesome ;) we are filling it up :p </s>
+<s> <user> lol </s>
+<s> <user> i 'm not that interesting </s>

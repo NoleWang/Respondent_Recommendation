@@ -1,0 +1,32 @@
+[07:10] <541a528b163965c9bc2053de> Well, this is weird: https://travis-ci.org/scikit-learn/scikit-learn/jobs/64079397 . cross_val_score, GridSearchCV and SVC and the iris dataset should all be deterministic.
+[14:09] <54d4a1d6db8155e6700f853b> indeed weird
+[14:11] <541a528b163965c9bc2053de> maybe some corrupted memory on the travis host? we should keep this failure in mind if it ever happen a second time
+[14:57] <54d4a1d6db8155e6700f853b> corrupted memory sounds unlikely
+[14:58] <54d4a1d6db8155e6700f853b> btw, why does pip install on OS X do a compile? https://github.com/scikit-learn/scikit-learn/issues/4766 when are the wheels used?
+[20:14] <54d4a1d6db8155e6700f853b> @rvraghav93 I just started reading your blog post. I wouldn't argue with google search hits, as they are google-bubble dependent. Yours and mine are very likely biased heavily towards sklearn.
+[20:16] <53135b495e986b0712efc453> Vlad advised me on a few improvements  and I am working on it too :D 
+[20:16] <54d4a1d6db8155e6700f853b> @rvraghav93 end of may is pretty soon, btw. What is the status of the data-dependend CV iterators?  and why is the SVM infamous?
+[20:17] <53135b495e986b0712efc453> BTW this is my blog url rvraghav93.blogspot.in (so the rest of the people could take a look too) 
+[20:18] <53135b495e986b0712efc453> infamous was a wrong usage :/ correcting it :)
+[20:18] <53135b495e986b0712efc453> And I am working on it... The final consensus was that the code must be duplicated right... one with the deprecations and one without... Will push soon ;)
+[20:19] <54d4a1d6db8155e6700f853b> ok thanks.
+[20:19] <54d4a1d6db8155e6700f853b> ping me once you incorporated vlads comments
+[20:19] <53135b495e986b0712efc453> sure :)
+[20:20] <53135b495e986b0712efc453> btw I intentionally aimed it to be biased towards scikit... I wanted to give a view where in the end user might see what they get out of my work... like Vlad had advised in the email... Is that okay? 
+[20:22] <54d4a1d6db8155e6700f853b> What I meant is that if you use google, google knows you contribute to scikit-learn, so it will show scikit-learn results on top.
+[20:23] <54d4a1d6db8155e6700f853b> if someone else reads your blog and clicks the links, but they are an R user, it might show them links to R libraries, and no scikit-learn anywhere
+[20:26] <53135b495e986b0712efc453> I just checked for "cross validation" using an online proxy server... our documentation page for cross validation still ranks at 3 ;)
+[20:26] <53135b495e986b0712efc453> actually 2 if you consider the first 2 wikipedia pages as one
+[20:31] <54d4a1d6db8155e6700f853b> fair enough
+[20:31] <53135b495e986b0712efc453> :)
+[20:31] <54d4a1d6db8155e6700f853b> woah my google cred is improving
+[20:31] <53135b495e986b0712efc453> :beers: 
+[20:38] <53135b495e986b0712efc453> and may end as in without counting code reviews and revisions which I could do in parallel with the next goal :)
+[20:39] <54d4a1d6db8155e6700f853b> hehe ok
+[20:39] <54d4a1d6db8155e6700f853b> loooool http://en.wikipedia.org/wiki/Andreas_M%C3%BCller
+[20:56] <54e07e1715522ed4b3dc0866> nice :) It appears you have been there for more than a year http://en.wikipedia.org/w/index.php?title=Andreas_M%C3%BCller&type=revision&diff=597996618&oldid=573147763
+[20:56] <54e07e1715522ed4b3dc0866> time to fill in that page
+[20:56] <54e07e1715522ed4b3dc0866> ;)
+[20:58] <53135b495e986b0712efc453> awesome ;) we are filling it up :P
+[20:58] <54d4a1d6db8155e6700f853b> lol
+[20:58] <54d4a1d6db8155e6700f853b> I'm not that interesting

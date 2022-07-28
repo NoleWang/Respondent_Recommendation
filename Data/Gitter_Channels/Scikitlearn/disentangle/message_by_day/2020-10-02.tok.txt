@@ -1,0 +1,7 @@
+<s> <user> hello , i would like to talk to the maintainers of <unka-> about their infrastructure needs : URL/https:/ <unka-./> <unka#-./> are you currently all set ? or are you looking for a cloud service provider to offer cloud <unka> ? </s>
+<s> <user> we are currently using microsoft <unka/> <unka> travis for our continuous integration and i think that we are pretty happy with the current services . </s>
+<s> <user> we might actually improve the testing for arm but i think that some work has been done using travis recently </s>
+<s> <user> <unka@> i would n't mind having ssh access to arm nodes from time to time to be able to interactively debug stuff . i the moment we use URL/https:/ <unka-./> <unk#a#-./> which is kind of slow . </s>
+<s> <user> hum i just read : URL/https:/ <unka./> <unk#a/_> </s>
+<s> <user> so probably not interested in this :) </s>
+<s> <user> ok . thank you very much :) </s>

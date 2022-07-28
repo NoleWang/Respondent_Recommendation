@@ -1,0 +1,5 @@
+[07:50] <5bc98094d73408ce4fabf741> Quick question, when using TfIdf vectorizer, would you consider it beneficial to lemmatize the body of the document before fitting?
+--------------------------------------------------------------------------------------------------
+[07:52] <5b3ed273d73408ce4f9fcb4e> Lemmatization is always a good idea. Maybe you can run the vectorizer first and see in how many cases you got a wrong prediction because of no lemmatization and then take a call
+[07:55] <5bc98094d73408ce4fabf741> I will check that in practice then I guess as suggested. Thanks @srniranjan
+--------------------------------------------------------------------------------------------------

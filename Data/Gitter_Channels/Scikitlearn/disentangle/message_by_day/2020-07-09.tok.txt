@@ -1,0 +1,3 @@
+<s> <user> i dump with <unka> a model with all cpus ( <unka> = -1 ), when i load the model and predict , not use all cpus </s>
+<s> <user> hi sir how to ignore negative floating values in a data set ? </s>
+<s> <user> <unka@> use <unk#a().=_`> after <unka> </s>

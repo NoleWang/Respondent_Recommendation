@@ -1,0 +1,1 @@
+[19:15] <574454a0c43b8c601974a563> [sklearn-porter 0.5.0](https://github.com/nok/sklearn-porter) has been released :sparkles:. The [MLPRegressor](http://scikit-learn.org/stable/modules/generated/sklearn.neural_network.MLPRegressor.html) is the first supported regressor! That's one small step for a man, one giant leap for scientists. :smile: 

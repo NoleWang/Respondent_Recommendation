@@ -1,0 +1,3 @@
+<s> <user> <unka@> thanks , that 's interesting . i noticed that you can always use URL/http:/ <unka-./> <unka./> to make <unka> </s>
+<s> <user> yes you can </s>
+<s> <user> i tagged my pull request with wip . however , right now , id like if someone would have a look over it . im not sure if my approach is the desired one . i could do some stuff on documentation of course , but it might be that my approach is declined entirely . so should i change the name of the request ? for completeness : this is the pull request ( URL/https:/ URL/github.com/ <unk#a-/> ). of course i know that time is precious for all of us . </s>

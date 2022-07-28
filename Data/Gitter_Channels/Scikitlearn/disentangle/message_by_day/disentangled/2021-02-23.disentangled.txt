@@ -1,0 +1,2 @@
+[07:46] <5f7ac1dcd73408ce4ff0af34> Could anyone help me with this error? https://www.reddit.com/r/learnpython/comments/ibk04a/linalgerror_svd_did_not_converge_in_linear_least/
+--------------------------------------------------------------------------------------------------

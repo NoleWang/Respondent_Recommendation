@@ -1,0 +1,44 @@
+<s> <user> <unka@> how do you do a random forest embedding ? </s>
+<s> <user> oh ... reading about it now . </s>
+<s> <user> hello <unk#a@> really sorry for the late reply , just survived from my <unka> <unka:> : yeah ill send it to the mailing list today ! </s>
+<s> <user> yay , congrats ! </s>
+<s> <user> haha you too </s>
+<s> <user> when was random forest embedding added to <unka-> ? </s>
+<s> <user> <unka@> thanks i will try that idea . do you happen to know when was random forest embedding added to <unka-> ? </s>
+<s> <user> oh .. 0.13 ! not sure how i missed it </s>
+<s> <user> i think at least <unk#a> releases ago </s>
+<s> <user> oh </s>
+<s> <user> do you have a view about URL/https:/ <unka./> <unka./> ? </s>
+<s> <user> i ca n't quite tell if it would provide something significantly new to what <unka> learn already has </s>
+<s> <user> if you follow the <unka> it seems isolation <unka> come from a similar idea </s>
+<s> <user> i could open an issue i suppose but i feel a little ignorant on this topic </s>
+<s> <user> <unka@> as the author of the random forest embedding , does this provide anything extra ? </s>
+<s> <user> <unka@> where " this " is URL/https:/ <unka./> <unka./> </s>
+<s> <user> that tech report is really hard to skim </s>
+<s> <user> <unka@> , the random forest embedding uses totally randomized trees , ie there is no learning </s>
+<s> <user> yes ... i did try myself . URL/http:/ <unka./> <unk#a./=?> performs a comparison with this method apparently </s>
+<s> <user> " in the first experiment we compare <unka> with orca [ 3 ], lof [ 6 ] and random <unka> ( rf ) [ 12 ]" where [ 12 ] is URL/https:/ <unka./> <unka./> </s>
+<s> <user> i do n't know anything about how isolation <unka> work . but it seems that the <unka> approach <unka> a <unka> rf between the real data and randomly <unka> data . </s>
+<s> <user> ok that 's interesting already </s>
+<s> <user> and uses that <unka> for clustering </s>
+<s> <user> <unka-> approaches to anomaly detection never really struck me as a great idea . but in your case you might be able to tweak it more , because you know some things about the " ideal " <unka> process of your data </s>
+<s> <user> ie if network traffic were random </s>
+<s> <user> what methods currently in <unka> learn are suitable when the distance between features is highly non-linear ? that is not at all <unka> </s>
+<s> <user> what do you mean by distance between features ? </s>
+<s> <user> btw if you plot a <unka> of your data do you have some sort of " spikes " at the values that you say you want to treat as <unka> ? </s>
+<s> <user> well yes sort of . properly clustered there would be spikes in particular clusters but not in others </s>
+<s> <user> you might be able to <unka-> some sort of pgm mixture model </s>
+<s> <user> what is pgm ? </s>
+<s> <user> <unka> graphical model </s>
+<s> <user> so a <unka> model </s>
+<s> <user> ah yes .. well that would be great </s>
+<s> <user> but it 's hard to model network traffic </s>
+<s> <user> you have some <unka> variables that correspond to your <unka> , and when you sample , you have a chance to sample from a random <unka(> ?) or to <unka(> ?) pick out the payload </s>
+<s> <user> i meant distance between feature vectors , not feature . in other words ( <unk#,> ) might be very far from ( <unk#,> ) but ( <unk#,> ) might be very close </s>
+<s> <user> and ( <unk#,> ) and ( <unk#,> ) might be very close </s>
+<s> <user> so it 's just not a simple <unka> distance </s>
+<s> <user> well , <unka> methods , even linear ones , could capture such a threshold i think </s>
+<s> <user> interesting .. i did try linear regression on some labelled data and it was a disaster </s>
+<s> <user> where a random forest worked really well </s>
+<s> <user> i mean the linear regression essentially failed completely </s>
+<s> <user> is your task a regression task ? </s>

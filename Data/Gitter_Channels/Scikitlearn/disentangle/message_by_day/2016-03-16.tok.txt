@@ -1,0 +1,3 @@
+<s> <user> hey guys , can anyone tell me why the ci failed at [ this <unk#a#(-./:]> )? according to the [ <unk#a(-./:]> ), <unka(.> ) should accept <unka_`> an argument . </s>
+<s> <user> and there is no erro if i run <unka`> on my own computer . </s>
+<s> <user> oh i got it ... cis scipy version = 0.9 </s>

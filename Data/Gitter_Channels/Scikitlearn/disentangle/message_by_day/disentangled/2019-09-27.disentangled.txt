@@ -1,0 +1,15 @@
+[16:28] <54d4a1d6db8155e6700f853b> hm is there a pandas gitter? Or is @jorisvandenbossche around lol? For a pandas dtype, how do I get the closest numpy dtype to cast to?
+[16:30] <54d4a1d6db8155e6700f853b> indeed
+[16:31] <54d4a1d6db8155e6700f853b> it's for https://github.com/scikit-learn/scikit-learn/pull/15094 which is currently failing because np.result_type(pd.CategoricalDType) raises an error
+[16:33] <53232ac75e986b0712efe3af> the issue that I rememered is https://github.com/pandas-dev/pandas/issues/22791
+[16:35] <54d4a1d6db8155e6700f853b> ok. so no solution :-/ is there a work-around?
+[16:35] <54d4a1d6db8155e6700f853b> like what does actually happen when you do the conversion?
+[16:36] <54d4a1d6db8155e6700f853b> is it from the ``pd.DataFrame.__array__`` method or something?
+[16:45] <54d4a1d6db8155e6700f853b> yeah it is, no way to figure that one out :-/
+--------------------------------------------------------------------------------------------------
+[16:29] <53232ac75e986b0712efe3af> yep
+[16:29] <53232ac75e986b0712efe3af> there is pandas gitter actually (pydata/pandas)
+[16:29] <53232ac75e986b0712efe3af> I don't think there is a typical way to do it
+[16:30] <53232ac75e986b0712efe3af> If I remember correctly, there is an issue about it
+[16:30] <53232ac75e986b0712efe3af> Basically, you would like to know the dtype of `np.asarray(obj).dtype` right? (but without needing to do the actual conversion?)
+--------------------------------------------------------------------------------------------------

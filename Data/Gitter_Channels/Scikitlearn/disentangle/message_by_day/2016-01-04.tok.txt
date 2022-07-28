@@ -1,0 +1,2 @@
+<s> <user> thanks <unk#a@> for the detailed explanation :- ) </s>
+<s> <user> does someone have a face recognition example where using <unka> actually works better than raw pixels ? i played around with <unka> , but it seems to make results worse :-/ </s>

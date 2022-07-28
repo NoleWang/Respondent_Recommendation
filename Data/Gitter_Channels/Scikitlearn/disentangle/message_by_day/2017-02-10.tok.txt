@@ -1,0 +1,2 @@
+<s> <user> hi guys </s>
+<s> <user> is there anyone know c# ? </s>

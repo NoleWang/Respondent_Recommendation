@@ -1,0 +1,3 @@
+<s> <user> s </s>
+<s> <user> <unka-@> sample order should n't matter but feature order . some pick the coordinates at random , i think . </s>
+<s> <user> <unk#a@> c is an upper bound on the dual <unka> , and if you restrict the dual <unka> more ( make c smaller ) you 'll have less zero alphas , i.e . more support vectors </s>

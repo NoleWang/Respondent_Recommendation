@@ -1,0 +1,18 @@
+[14:05] <53eb987c107e137846baa89d> How do I run tests (unit tests) locally after making some changes?
+[14:09] <53eb987c107e137846baa89d> Would running `make` at the top-level directory be sufficient?
+--------------------------------------------------------------------------------------------------
+[14:43] <53eb987c107e137846baa89d> Though I did that now. But I would still like to know how to do it cleanly.
+--------------------------------------------------------------------------------------------------
+[21:08] <55d21ee30fc9f982beadabb8> make test
+--------------------------------------------------------------------------------------------------
+[21:27] <564106cd16b6c7089cba16c7> Hi all, could you tell what you think of this approach  : https://www.kaggle.com/jankoch/scikit-learn-pipelines-and-pandas/notebook ?
+--------------------------------------------------------------------------------------------------
+[22:28] <53232ac75e986b0712efe3af> @ncouturier I didn't go through your notebook in detail, but I think you might be interested in looking at https://github.com/scikit-learn/scikit-learn/pull/9012/
+[22:29] <53232ac75e986b0712efe3af> That certainly relates to those transformers you implemented to apply certain transformers to certain columns
+[22:29] <53232ac75e986b0712efe3af> (you call it DataFrameFeatureUnion)
+[22:30] <53232ac75e986b0712efe3af> Regarding the dummy encoder transformer, you also might want to look at https://github.com/scikit-learn/scikit-learn/pull/9151 that implements a CategoricalEncoder
+[22:32] <53232ac75e986b0712efe3af> Further, you might be interested in https://github.com/scikit-learn-contrib/sklearn-pandas (but I am also not very familiar with that, so not sure how the functionality there relates to the transformers you implemented)
+[22:35] <53232ac75e986b0712efe3af> (so as a summary, I agree with you that it currently is hard to do pandas-like preprocessing in sklearn pipelines, but we are working to improve that. Feedback on those linked PRs / project is always welcome!)
+--------------------------------------------------------------------------------------------------
+[22:36] <564106cd16b6c7089cba16c7> ok. Thx for your answer.
+--------------------------------------------------------------------------------------------------

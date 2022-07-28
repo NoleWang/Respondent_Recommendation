@@ -1,0 +1,1 @@
+<s> <user> hi ! does anyone have any advice for tackling errors in the azure pipeline ? we're failing for linux and windows and i ca n't find a descriptive error message as to why it 's failing other than " bash exited with code '1' ." i 'm on a mac . URL/https:/ URL/github.com/ <unk#a-/> </s>

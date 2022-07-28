@@ -1,0 +1,27 @@
+<s> <user> <unka@> i have deployed travis , and <unka> and <unka> is now building the <unka> </s>
+<s> <user> URL/http:/ <unka./> <unka-/> </s>
+<s> <user> <unka@> sweet ! </s>
+<s> <user> <unka@> that is actually totally <unka> </s>
+<s> <user> can you add a " user guide " like page to the documentation that explains what exactly a user has to do to make this work for them ? </s>
+<s> <user> <unka@> this here can maybe help , too : URL/https:/ URL/github.com/ <unka/> </s>
+<s> <user> <unka@> old one </s>
+<s> <user> <unka@> i think the algorithm is wrong . the update does n't conform to the literature , and it does n't seem to work very well in many settings . </s>
+<s> <user> <unka@> can i help to set it right ? </s>
+<s> <user> well you can help fix the new implementation . have you looked at the pull request ? </s>
+<s> <user> <unka@> which pull request are you talking about can u share the link </s>
+<s> <user> <unk##> </s>
+<s> <user> <unka@> i 'm on it </s>
+<s> <user> thanks :) </s>
+<s> <user> <unka@> i noticed one thing . currently the <unka> script installs python packages via both apt-get and pip . we could simplify it to only use pip . the cache in <unka> caches pip packages and their subsequent installation will happen in no time . </s>
+<s> <user> <unka@> but installing numpy and scipy by pip is discouraged and will take forever and apt-get is also cached . </s>
+<s> <user> <unka@> i ran into some pythonpath issues on <unka> . is it ok if i install numpy and scipy through pip for the stub package ? </s>
+<s> <user> that requires compiling , right ? that will take very long . and the people that copy the stub will have trouble . </s>
+<s> <user> one option would be to just use <unka> </s>
+<s> <user> and not test a <unka-> environment </s>
+<s> <user> it does need <unka> . but only for the first time . doing it this way let 's us keep the configuration to a minimum . do you think i should switch to apt-get ? </s>
+<s> <user> how do you mean for the first time ? the first time in master ? or the first time for any pull request ? </s>
+<s> <user> <unka> is only built over master to deploy the documentation . so the first time on master . <unka> will be built by travis which uses apt-get </s>
+<s> <user> i 'm sorry . travis uses <unka> right now . </s>
+<s> <user> <unka@> could you take a look at <unk##> ? </s>
+<s> <user> <unk#a@> it 's on my list of the more urgent things ;) </s>
+<s> <user> thanks :d </s>

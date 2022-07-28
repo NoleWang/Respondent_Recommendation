@@ -1,0 +1,26 @@
+<s> <user> hey guys , i 'm trying to use <unka> clustering . when applying the distance threshold , does it have a specific range ? e.g . <unk#-> ? or <unk#-> ? or <unk#-> ? when i tried 1000 , it gave me all the same cluster . when trying 500 it gave me clusters 0 1 2 3 . i wanted to do something like : " all vectors above 70% similarity should merge " but i 'm not sure how to implement that with distance threshold . </s>
+<s> <user> what does 70% similarity mean ? </s>
+<s> <user> the range is applied on the output of your distance metric </s>
+<s> <user> if you want .7 to mean 70% similarity , then you should give a metric which results in 0.7 when they're 70% similar , with whatever definition you have </s>
+<s> <user> but the distances are not <unka> , and therefore usually you need to sample from your distances , look at the distribution , and decide on what the threshold should be </s>
+<s> <user> yes i do mean something like : if i tried to do <unka> distance with 2 vectors and then subtract that by 1 and get the absolute value , i get the similarity . </s>
+<s> <user> sorry i 'm not familiar with what distance metric refers to </s>
+<s> <user> when you say the distances are not <unka> , do you mean that , for every dataset i apply this to , the clustering behavior would change ? basically my situation is i have a bunch of sentence <unka> and i want to cluster the sentences . i found that with my sentence embedding model , sentences with a similarity above 0.7 tend to be actually similar . </s>
+<s> <user> " sentences with a similarity above 0.7 tend to be actually similar . " is not <unka> unless you define you metric , if it 's <unka> , then your statement may be correct , in which case you should set the <unka`> parameter to <unka> </s>
+<s> <user> the default is <unka> </s>
+<s> <user> URL/https:/ <unka-./> <unka#./> </s>
+<s> <user> ah okay i 'm currently trying to test with <unka> , will report back . thank you ! </s>
+<s> <user> the confusing part for me is the linkage choice . i 'm not sure which would give the desired effect . i 'll try to search for tutorials online for that though . </s>
+<s> <user> okay doing this : <unk#a(,=_> , <unka'=> , <unka'().=_> ) </s>
+<s> <user> gives me 147 clusters </s>
+<s> <user> <unka@_> hi sir , </s>
+<s> <user> hey <unk#a@_> </s>
+<s> <user> sir , are you familiar with python gis ? </s>
+<s> <user> i 'm not <unk#a@_> </s>
+<s> <user> <unka@_> right sir </s>
+<s> <user> <unka@_> thank you very much </s>
+<s> <user> i expected something like 1 cluster for that last line : <unk#a(,=_> , <unka'=> , <unka'().=_> )" </s>
+<s> <user> just realized where i might 've gone wrong in my thinking there . my dataset probably has a bunch of sentences which are in fact that similar . </s>
+<s> <user> you not similar , more like orthogonal and dissimilar </s>
+<s> <user> ah yes . 1 would refer to more <unka> per cluster and 0 more similarity per cluster i think . </s>
+<s> <user> yes </s>

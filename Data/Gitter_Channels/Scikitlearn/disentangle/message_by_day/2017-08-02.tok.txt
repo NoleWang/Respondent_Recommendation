@@ -1,0 +1,4 @@
+<s> <user> hi all , i was wondering if it is somehow possible to include a model into the mean of a <unka> process <unka> ( just like one can choose a kernel ) a fit for the mean as well ? </s>
+<s> <user> no , i do n't think so . that 's rarely done in gps afaik </s>
+<s> <user> you can remove the global mean beforehand if you like </s>
+<s> <user> oh ok , thanks for the quick reply . i dont want to subtract the mean because sometimes <unka> things out of a dataset somehow changes its random nature ... </s>

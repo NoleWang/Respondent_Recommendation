@@ -1,0 +1,4 @@
+[07:05] <567f5d7716b6c7089cc043a8> You probably wanna pass `-no-build-isolation` as well @mhamilton723
+--------------------------------------------------------------------------------------------------
+[11:56] <5baf7d9ad73408ce4fa9c9b2> @mhamilton723  `make inplace` will only recompile the files that you changed Also if you do lots of back and forth, https://ccache.dev/ might help
+--------------------------------------------------------------------------------------------------

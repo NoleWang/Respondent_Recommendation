@@ -1,0 +1,29 @@
+<s> <user> hey guys , does anyone else have issues with big memory usage because of python <unka> going crazy with high <unka> data for text <unka> ? </s>
+<s> <user> i was gonna implement it as a trie , but it would be a big change and maybe change external api unless we do a dict abstraction </s>
+<s> <user> i went from 50gb used to 200mb </s>
+<s> <user> so no need to use <unka> </s>
+<s> <user> another <unka> related question ... since the cost of creating a <unka> with millions of features is so large in terms of memory , there is a need for preemptive feature selection </s>
+<s> <user> i mean for me ... things like forward selection , <unka> based , etc . i am not sure if it belongs in <unka-> </s>
+<s> <user> this is to avoid generating the large matrix with unnecessary features when they will likely be discarded anyway </s>
+<s> <user> <unka@> i like the idea of the trie - even if we just called it something else ( in case where it ca n't match external api ) it sounds insanely useful . as for <unka-> feature selection it would be cool if this can be done in a general way , but all the tricks i know are domain specific . any ideas in that direction seem nice , since it is a real-world issue </s>
+<s> <user> <unka@> there is some very simple feature selection based in <unka_> and <unka_> . but that needs to built the whole dictionary first . </s>
+<s> <user> how large is your dictionary ? the idea of a trie came up before . so you actually implemented it ? </s>
+<s> <user> some discussion on ties here : URL/https:/ URL/github.com/ <unk#a-/> </s>
+<s> <user> yeah looks like it 's not happening </s>
+<s> <user> and yes , the feature selection would be for avoiding building the whole dict which perhaps would n't be a problem in the first place if we used a trie for <unka-> <unka> </s>
+<s> <user> i do n't remember the size of the dictionary exactly but it was taking up <unk#a> gb </s>
+<s> <user> what do you mean by " looks like it 's not happening " ? </s>
+<s> <user> the question is a bit how complex the code is and the speed and memory compared to c++ <unka> and python <unka> </s>
+<s> <user> in the pr , the memory footprint was 1/3 of <unka> . you reported <unk#/> above , right ? </s>
+<s> <user> yeah </s>
+<s> <user> his earlier tests </s>
+<s> <user> <unka(> ): <unk#a> ; <unk#a(,=_> ): <unk#a> ; <unka(> ): <unk#a.> ; <unk#a(,=_> )): <unk#a.> ; </s>
+<s> <user> also he was doing it in a way that does n't help my <unka> . basically he made the python dict fist and then populated a trie with the dict then replaced the dict with the trie </s>
+<s> <user> the use case he has is build the <unka> on a beefy machine then when you actually want to use it , <unka> and use </s>
+<s> <user> i was also using <unka> trie </s>
+<s> <user> but building it from the streaming input . anyway , as <unka@> put it in that thread , there is understandable <unka> of merging a large c++ dependency that no one fully understands besides people who wrote the trie i assume . </s>
+<s> <user> well but allowing it as an optional replacement might work </s>
+<s> <user> hello , i have a question about pull requesting policy . i have a pr and i made some changes , what i should to do with new changes : add new commit to pr , amend initial commit ? i used to use <unka> commits , it keeps history look nice , but pr discussions seems ambiguous because of <unka`> <unka`> . </s>
+<s> <user> either is fine </s>
+<s> <user> usually we ask to squash commits before merging , so if you always amend you do n't have to do that </s>
+<s> <user> the pr discussions are not handled in a great way by github , no matter which method you use . </s>

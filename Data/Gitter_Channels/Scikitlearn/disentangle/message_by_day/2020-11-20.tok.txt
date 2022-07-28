@@ -1,0 +1,7 @@
+<s> <user> actually , i tried that module yesterday . for a <unk#a> array x as input , the <unka(._> ) is returning a <unk#a> array . i was looking for a <unk#a> array that can be used to create a new axis to the existing 1d data resulting in 2d data . but , by reading the docs i could not make sense of the returned <unk#a> array . that is why i came here . > <unka.@_> are you looking for this , URL/https:/ <unka-./> <unka./?_> </s>
+<s> <user> <unk#a@> </s>
+<s> <user> oh , okay , got your problem . may or may not be able to check this out . busy with university right now . exams on the way next week . <unka.@_> </s>
+<s> <user> do well <unka:> : . </s>
+<s> <user> thank you . </s>
+<s> <user> <unka.@_> for the <unka(> ) you will always get a square matrix because it 's the formula above between all rows in x . if you have a single vector , it should be <unk#a> . if you want to have the kernels with an existing set , it should be <unka(> , y ) </s>
+<s> <user> though i 'm not sure what you're trying to achieve . that is indeed for the gp . we also have a <unka_> function ( which does the same thing ) if you just want to compute the kernel values </s>

@@ -1,0 +1,3 @@
+<s> <user> hi .. i want to do <unka-> but my data comes in groups . i have <unk#,> rows in total and the sizes of the groups vary a lot . so i would really like to sample 100,000 rows first in proportion to the group sizes and then do the group <unka-> . is that possible ? </s>
+<s> <user> is <unka-> taking part on the google summer of code this year ? ( i couldnt find anything for this year ) </s>
+<s> <user> <unka@> not this year </s>

@@ -1,0 +1,59 @@
+[00:11] <54e07d4015522ed4b3dc0856> OK looking now. Key question - does StarCluster still work?
+[00:12] <54e07d4015522ed4b3dc0856> I was under the impression that it broke at some point a ways back but I am not super informed on these things
+[00:14] <54e07d4015522ed4b3dc0856> The hashing stuff / out-of-core stuff seems like maybe we should do it *before* parallel. It is quite nice I think. Now onto rendered_notebooks
+[00:16] <54e07d4015522ed4b3dc0856> I think we should focus on py 3.4 compat - seeing at least a few print blah in there. I can work on that if you want?
+[00:19] <54e07d4015522ed4b3dc0856> Also... describing all the different types of sparse matrices may not be pleasant in the intro. Maybe leave them there but gloss over subtleties of different representations? If you know guts I am all for it - but I am definitely a high-level sparse matrix user. I use what works normally and check stack overflow
+[00:41] <54e07d4015522ed4b3dc0856> Should we add an image telling what petal and sepal are? Or just say what it is. For sure *somebody* will ask  :)
+[07:54] <541a528b163965c9bc2053de> @xuewei4d do you think changing the handling of the \mu_k will have a significant impact on the runtime performance? Besides Bishop's PRML do you have another "standard" formulation / derivation of the Variational GMM in mind?
+[07:56] <541a528b163965c9bc2053de> +1 for not introducing a deep hierarchy of estimators for GMMs but ok for using mixin class and possibly a _BaseGMM abstract base class if that can help factoring too redundant code.
+[07:59] <541a528b163965c9bc2053de> @kastnerkyle I have not tried to launch a StarCluster instance in a long time but the project is still active. The configuration might have changed a bit (e.g. AMIs ids) so it should be possible to adapt it to make it run again. However I would not do that during a tutorial if you are not a regular user yourself. You can just mention that it exists in passing.
+[10:56] <53135b495e986b0712efc453> Is it just me or this page takes forever to load :@ - I've been trying since yesterday ;( https://travis-ci.org/scikit-learn/scikit-learn/jobs/66302262
+[11:32] <541a528b163965c9bc2053de> it works here
+[11:33] <53135b495e986b0712efc453> Thanks a lot for checking :)
+[11:33] <541a528b163965c9bc2053de> try https://s3.amazonaws.com/archive.travis-ci.org/jobs/66302262/log.txt
+[11:33] <541a528b163965c9bc2053de> if it does not work, I can paste-bin it for you
+[11:35] <53135b495e986b0712efc453> Thankss a ton for this txt log link! Will be really useful for me! :D and yea it does work :)
+[11:37] <53135b495e986b0712efc453> Hey @ogrisel BTW could you check why  ``` from sklearn.utils.extmath import fast_dot from sklearn.exceptions import NonBLASDotWarning import warnings warnings.simplefilter('always', NonBLASDotWarning) import numpy as np fast_dot(np.array([1, 2, 3]), np.array([4, 5, 6])) ``` doesn't raise the intended warning? Am sure I must be missing something simple here :|
+[11:55] <541a528b163965c9bc2053de> @rvraghav93 which PR number is this again?
+[11:57] <53135b495e986b0712efc453> #4826 :)
+[11:58] <53135b495e986b0712efc453> Please do take a look if you are able to find time :)
+[12:03] <541a528b163965c9bc2053de> this warning is only raised for old versions of numpy
+[12:03] <541a528b163965c9bc2053de> < 1.7
+[12:03] <541a528b163965c9bc2053de> if np_version < (1, 7, 2) and _have_blas_gemm()
+[12:03] <53135b495e986b0712efc453> Ahhh... Thanks!!
+[13:40] <54e07d4015522ed4b3dc0856> @ogrisel @amueller pyspark now deserves a mention along with https://pypi.python.org/pypi/sparkit-learn/0.1 I think. 
+[13:40] <54e07d4015522ed4b3dc0856> Would be of interest for many of the same people who care about StarCluster
+[13:50] <541a528b163965c9bc2053de> also useful, although not directly related: - http://yelp.github.io/MOE/ - http://pythonhosted.org/airflow/
+[13:51] <541a528b163965c9bc2053de> I have not yet found to the time to test any of those
+[14:26] <550f53e215522ed4b3dda5f6> @ogrisel The distinction is that whether \mu_k depends on \Lambda_k. PRML and MLAPP(P750) models that dependence. In the literature, some work has that ,some work does not. I think those are two kinds of modeling. Modeling the dependence would give more accurate approximation. The exercise 10.20 in PRML says if you have many data, the pdf of q(\mu, \Lambda) will become a delta function, which recover the classic EM algorithm. But the pdf of current variational distribution will not, since the variance of \mu is fixed.  For refactoring, I would intend to build a BaseGaussianMixtureModel and with different estimators for different variables. For example, there are 8 covariance estimators. full, diag, spherical, tied, times variational or not. Then GaussianMixtureModel could be implemented by inheriting from base class and combined with one of 8 estimators for covariance variables. I don't know estimators should be taken as a mixin class. I would prefer to let GMM includes the estimators.
+[14:29] <541a528b163965c9bc2053de> I would rather keep the covariance choice as an hyper-parameter of the class instead of dedicating it a sub-class.
+[14:31] <541a528b163965c9bc2053de> side remark, I think for the full covariance type, it might be interesting to experiment with a shrinkage estimator such as ledoit-wolf, at least in the Maximum likelihood / EM formulation. If that can improve the cross-validated log-likelihood we might consider it for inclusion.
+[14:32] <550f53e215522ed4b3dda5f6> so the GMM would be like ```class GMM(FullCovMixin, BaseGMM)```,```class GMM(DiagCovMixin, BaseGMM)``` ?
+[14:33] <541a528b163965c9bc2053de> http://scikit-learn.org/stable/modules/generated/sklearn.covariance.ledoit_wolf.html
+[14:34] <541a528b163965c9bc2053de> @xuewei4d please feel free to open a [WIP] PR with that refactoring with mixin / base classes so that we can have a discussion on concrete code.
+[14:35] <541a528b163965c9bc2053de> Also private classes should start with a `_`.
+[14:35] <550f53e215522ed4b3dda5f6> OK. I will try to build some prototypes :)
+[14:36] <541a528b163965c9bc2053de> thanks
+[14:37] <550f53e215522ed4b3dda5f6> So what about the approximation? Do you like to consider the dependence?
+[14:43] <54d4a1d6db8155e6700f853b> @kastnerkyle the "rendered notebooks" are still the old ones. I haven't redone them. I agree we should do more out-of-core stuff before doing clusters.
+[14:44] <54d4a1d6db8155e6700f853b> @kastnerkyle I am currently somewhere around 3. and 4.
+[14:46] <550f53e215522ed4b3dda5f6> http://scikit-learn.org/stable/modules/generated/sklearn.covariance.ledoit_wolf.html The section 'notes' seems has a little problem. '+' sign is interpreted as a list mark.
+[14:50] <541a528b163965c9bc2053de> Indeed we need to escape this.
+[14:53] <541a528b163965c9bc2053de> > So what about the approximation? Do you like to consider the dependence?  It depends how the runtime, memory usage and the  complexity of the code base will evolve if we do so :) I am still clear about the details. Reading PRML at the moment. It would be great if we could have an example that demonstrates that the VBGMM asymptotically joins the solution of the MLE estimate on some toy dataset
+[14:56] <541a528b163965c9bc2053de> leveraging ledoit wolf shrinkage is not a priority as we already have the `min_covar` hack to regularize the covariance estimation. But I think we should keep it in mind and it would be great to explore the importance of covariance regularization, especially on high dim data
+[15:05] <550f53e215522ed4b3dda5f6> Great. I would continue to work on the PR #4802
+[15:11] <541a528b163965c9bc2053de> I think we should also improve the examples to discuss model selections for GMMs. I started to run some experiments here: https://github.com/ogrisel/notebooks/blob/master/gmm/Model%20Selection%20for%20GMM.ipynb
+[15:21] <541a528b163965c9bc2053de> I have to go offline now, see you later.
+[15:22] <550f53e215522ed4b3dda5f6> I tried some toy experiments with VBGMM before, but it did not work correctly. May I ask why would you like to do model selection for GMM? See you
+[15:25] <54e07d4015522ed4b3dc0856> @amueller I noticed the other ones were shorter and swapped. Only got to 2.x but I can try to do some PRs tonight.
+[15:28] <54d4a1d6db8155e6700f853b> @kastnerkyle cool :) I'm working on the intro to unsupervised currently
+[15:29] <54d4a1d6db8155e6700f853b> @xuewei4d could you have a look at #4845 ?
+[15:31] <550f53e215522ed4b3dda5f6> Gotcha.
+[15:48] <550f53e215522ed4b3dda5f6> Where is the discussion about #4511?
+[15:52] <550f53e215522ed4b3dda5f6> I mean on the ML. Thanks~
+[15:52] <54d4a1d6db8155e6700f853b> the conclusion was that we want to raise a value error
+[15:52] <54d4a1d6db8155e6700f853b> that is deprecate it for now and raise a value error in the future
+[15:54] <54d4a1d6db8155e6700f853b> @xuewei4d https://sourceforge.net/p/scikit-learn/mailman/scikit-learn-general/thread/20150501175859.GE1362450%40phare.normalesup.org/#msg34075913
+[15:59] <550f53e215522ed4b3dda5f6> OK.
+[20:43] <54d4a1d6db8155e6700f853b> @ogrisel what do you think about adding a ``shuffle`` option to cross_val_score and GridSearchCV (@jnothman or anyone else feel also free to chime in;) ? 
+[20:43] <54d4a1d6db8155e6700f853b> I feel it would be useful for cv=integer

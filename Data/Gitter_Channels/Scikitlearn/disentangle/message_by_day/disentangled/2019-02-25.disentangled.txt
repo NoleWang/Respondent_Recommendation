@@ -1,0 +1,10 @@
+[12:39] <54e07d6515522ed4b3dc0858> @mansenfranzen you need to provide `transform` as well, since there are cases where `transform` is called on different data than `fit`; and otherwise make sure you follow the custom estimator guidelines, if you have any parameters to set: https://scikit-learn.org/stable/developers/contributing.html#rolling-your-own-estimator
+--------------------------------------------------------------------------------------------------
+[13:08] <5c73c654d73408ce4fb8d721> sprint Paris: I am continuing #5862
+--------------------------------------------------------------------------------------------------
+[13:44] <57922eec40f3a6eec05c04ef> @vene Thanks alot for the link to the documentation - it's exactly what I was looking for :-)
+--------------------------------------------------------------------------------------------------
+[19:06] <580fa6b0d73408ce4f30ca61> oecd_bli = oecd_bli[oecd_bli["INEQUALITY"]=="TOT"] can anyone explain the last line of code? I can't understand this line properly.
+[19:06] <580fa6b0d73408ce4f30ca61> '''
+[19:07] <580fa6b0d73408ce4f30ca61> ''' def prepare_country_stats(oecd_bli, gdp_per_capita):     oecd_bli = oecd_bli[oecd_bli["INEQUALITY"]=="TOT"] ''' can anyone explain the last line of code? I can't understand this line properly.
+--------------------------------------------------------------------------------------------------

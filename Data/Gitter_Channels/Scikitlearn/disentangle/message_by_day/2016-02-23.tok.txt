@@ -1,0 +1,6 @@
+<s> <user> hello <unka@> , sorry for disrupting you . could you please answer my question in <unk##> ? </s>
+<s> <user> for <unka-> <unka> , <unka> by l2 norm makes bow representation more <unka> to doc length ( similar idea but rephrased :). </s>
+<s> <user> maybe a bit off topic , but should the topic in the irc channel be changed to reflect the release of <unk#.> ? ( does anyone ever use the irc anymore ? ive been on it for the past week and havent seen a single message in the channel ) </s>
+<s> <user> i do n't remember who has op rights . i think i do but i do n't remember the password of my nickserv account . </s>
+<s> <user> seems like only <unka@> does , or thats what <unka/`> chanserv access <unka#-> list` is reporting . </s>
+<s> <user> <unka@> could you close this - URL/https:/ URL/github.com/ <unk#a-/> </s>

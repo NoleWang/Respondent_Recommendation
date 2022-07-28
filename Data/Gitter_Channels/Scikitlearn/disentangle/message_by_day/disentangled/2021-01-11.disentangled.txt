@@ -1,0 +1,22 @@
+[05:56] <5e532f4fd73408ce4fda84b2> https://github.com/scikit-learn/scikit-learn/issues/19092
+[05:56] <5e532f4fd73408ce4fda84b2> Hey,
+--------------------------------------------------------------------------------------------------
+[05:57] <5e532f4fd73408ce4fda84b2> Can someone help me understand if I can start working on this?
+--------------------------------------------------------------------------------------------------
+[11:18] <564789be16b6c7089cbab8b7> how exactly does prediction work for gradient boosted trees? In a random forest you just get a prob from every tree and average them I think. Is this different for gradient boosted trees?
+--------------------------------------------------------------------------------------------------
+[13:29] <5baf7d9ad73408ce4fa9c9b2> @lesshaste in gradient boosting, one directly optimizes a loss function. For binary classification in sickit-learn this is the log loss, much like logistic regression. What the trees predict is the log-odds ratio (decision_function()) and it's passed into a sigmoid to get a probability (predict_proba())
+[13:30] <5baf7d9ad73408ce4fa9c9b2> this is a self plug but this might help: http://nicolas-hug.com/blog/around_gradient_boosting
+--------------------------------------------------------------------------------------------------
+[13:33] <564789be16b6c7089cbab8b7> @NicolasHug  thank you. In low level terms, what happens at prediction time? Is something computed for every tree separately and then averaged?
+--------------------------------------------------------------------------------------------------
+[13:56] <5baf7d9ad73408ce4fa9c9b2> decision_function is the sum of all the tree values, not the average
+[13:57] <5baf7d9ad73408ce4fa9c9b2> see https://nbviewer.jupyter.org/github/NicolasHug/nicolashug.github.io/blob/master/assets/gradient_boosting_descent/GradientBoosting.ipynb
+--------------------------------------------------------------------------------------------------
+[14:27] <59bc1baad73408ce4f75eec5> I've cross-compiled scikit-learn for an armv7h system and I'm receiving the following error when testing, does anyone have any suggestions for where the issue may lie?
+[14:27] <59bc1baad73408ce4f75eec5> ``` File "sklearn/cluster/_dbscan_inner.pyx", line 40, in sklearn.cluster._dbscan_inner.dbscan_inner ValueError: Buffer dtype mismatch, expected 'npy_intp' but got 'long long'  ```
+[14:28] <59bc1baad73408ce4f75eec5> It looks like it could be something 32bit vs 64bit related but from what I can see the `setup.py` build system just imports from `numpy` which I would expect to handle this all properly
+[14:29] <59bc1baad73408ce4f75eec5> so I'm wondering if this isn't a cross compile issue and is maybe just an assumption made in the code that the argument will be 64bit?
+--------------------------------------------------------------------------------------------------
+[14:51] <564789be16b6c7089cbab8b7> @NicolasHug thanks
+--------------------------------------------------------------------------------------------------

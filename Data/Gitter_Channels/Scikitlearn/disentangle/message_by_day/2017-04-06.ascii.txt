@@ -1,0 +1,3 @@
+[08:56] <561a58f7d33f749381a8ff2f> OHE makes me feel like a handicapped person
+[17:46] <57f1894dd73408ce4f2b2588> is there a sklearn preprocessing function/class that removes data points (examples) with values that are out of range? here is a snippet, i.e. remove all data x<lo or x>up. here is an example https://gist.github.com/ulf1/6810883a985ef464ae9d26833966b4fa
+[20:23] <55d21ee30fc9f982beadabb8> @ulf1 you can use [`numpy.clip`](https://docs.scipy.org/doc/numpy/reference/generated/numpy.clip.html)

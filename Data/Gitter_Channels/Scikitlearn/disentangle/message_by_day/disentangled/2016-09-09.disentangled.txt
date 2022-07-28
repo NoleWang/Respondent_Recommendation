@@ -1,0 +1,11 @@
+[06:11] <56c625c3e610378809c22760> Hey is anyone coming for PyCon Rennes from here?
+--------------------------------------------------------------------------------------------------
+[14:33] <54d4a1d6db8155e6700f853b> only india ;)
+--------------------------------------------------------------------------------------------------
+[17:38] <55a36f535e0d51bd787b3400> Hi guys, I recently re-installed the dev version of sklearn, and I get an mkl error   ```  from .murmurhash import murmurhash3_32 .Intel MKL FATAL ERROR: Cannot load libmkl_avx.so or libmkl_def.so. ``` If I don't first call a sklearn function (e.g. call `linear_model.Ridge()` first prevents the error, but calling `linear_model.LogisticRegression()` doesn't)
+[17:39] <55a36f535e0d51bd787b3400> Do you have an idea where I should look to track this error down?
+--------------------------------------------------------------------------------------------------
+[19:03] <54d4a1d6db8155e6700f853b> update conda?
+--------------------------------------------------------------------------------------------------
+[19:21] <56c625c3e610378809c22760> @amueller yep looking forward to your talk there!
+--------------------------------------------------------------------------------------------------

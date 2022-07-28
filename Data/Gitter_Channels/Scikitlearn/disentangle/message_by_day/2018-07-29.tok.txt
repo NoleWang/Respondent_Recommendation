@@ -1,0 +1,2 @@
+<s> <user> then do n't do image recognition </s>
+<s> <user> <unk#a@> tasks are more claimed than assigned . go to the open issues on github and find one you can do . ask if anybody is <unka> working on it . if not then you can give it a try </s>

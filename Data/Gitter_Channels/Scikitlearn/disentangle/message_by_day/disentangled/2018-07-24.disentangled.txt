@@ -1,0 +1,10 @@
+[11:58] <54d4a1d6db8155e6700f853b> that example shows you what to do, doesn't it?
+[11:58] <54d4a1d6db8155e6700f853b> Don't think anyone here has used sagemaker
+--------------------------------------------------------------------------------------------------
+[17:55] <5a2c58c8d73408ce4f8294ba> I can build it myself but its more a question of if there are standard images. Maybe this is more or a conda question since it is about making a consistent collection of packages.
+[17:57] <5a2c58c8d73408ce4f8294ba> I would suggest you guys take a look at sagemaker. There are not any good exampke for scikit learn for the whole train test deploy. Would be good for adoption of sklearn. Althoughj, i am sure you have no shortage of projects
+--------------------------------------------------------------------------------------------------
+[17:58] <54d4a1d6db8155e6700f853b> I was visiting the sagemaker team like a month ago
+--------------------------------------------------------------------------------------------------
+[18:37] <5a2c58c8d73408ce4f8294ba> Cool. My team uses sklearn a lot and we are just getting started with sagemaker for deployment. We do everything locally now but will move to AWS for train and predict. We will try to come up with a good example for the deployment and maybe add it to their existing examples.
+--------------------------------------------------------------------------------------------------

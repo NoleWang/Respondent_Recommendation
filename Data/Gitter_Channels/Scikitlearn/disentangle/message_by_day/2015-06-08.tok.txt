@@ -1,0 +1,37 @@
+<s> <user> that is my opinion . though it is weird cause that is what people call it . so i am of 2 minds at once </s>
+<s> <user> but the paper citation stuff is really pretty shady so that is tough too . </s>
+<s> <user> do we care about being <unka> for this ? </s>
+<s> <user> just a general question ... is there a way to track changes in a particular module and get notified if that gets merged ? ( w.r.t <unk##> ) ( ref [ <unk#a#(-./:]> )) </s>
+<s> <user> ah its easier to just check the history of the file ;) sorry for the noise ! </s>
+<s> <user> <unka@> btw i 'm going to seriously start on the tutorials now , i was pretty busy with other things before </s>
+<s> <user> <unka@> i think we should use the word extreme learning machine in the <unka> and maybe as a remark in the <unka> , but not as the name . </s>
+<s> <user> like " this can be used to implement so-called extreme learning machines " or something like that </s>
+<s> <user> that 's probably wise . </s>
+<s> <user> also , <unka-> should have the power to change the way <unka> call algorithms . maybe our naming decision will fix this mess a bit . </s>
+<s> <user> i 've seen <unka> calling <unka> smo because that 's what the solver class is called in <unka> </s>
+<s> <user> omg </s>
+<s> <user> i remember fabian had started wrapping <unka> 's cd solver . now that sag is joining the family of <unka> available for <unka> regression , we might be able to simplify the codebase by picking that up </s>
+<s> <user> assuming it matches the interface of scipy <unka> </s>
+<s> <user> URL/https:/ URL/github.com/ <unka/> </s>
+<s> <user> ( question triggered by <unka@> 's [ <unk#a#(-./:]> )) </s>
+<s> <user> <unka@> when do you have time to discuss the tutorial ? do you think we should put exercises after each sections or do " morning lecture , morning exercises , afternoon lecture , afternoon exercises " ? maybe multiple short breaks would be good ? four hours is such a long time . maybe a four 45 blocks with 15 minutes exercises ? not sure . </s>
+<s> <user> hi , i am almost done the <unka> draft . i fixed some typos and errors , and completed the dp part . what is left is the lower bound and <unka> distribution for two cases . i think i could finish it tomorrow . the difference from current <unka> includes , the initial parameters and the updating functions for <unka> distribution . the rest of them are the same . i hope i could find out the reason of the latter . </s>
+<s> <user> with regards to the new names of <unka> and <unka> , i think these two names are not suitable , just like someone calls svm as smo . actually , the models are <unka> <unka> , <unka> process <unka> <unka> ( <unka> is often used ) respectively . both of them are solved by <unka> <unka> . in other words , <unka> is not a good name . the new names , i think , should have the meaning of <unka'> <unka> solved by <unka'> , <unka'()> solved by <unka'> . </s>
+<s> <user> <unk#a@> the two <unka> with the <unka> code are <unk##> and <unk##> . <unk##> contains <unka> </s>
+<s> <user> <unk#a@> i agree wrt vb . it should be " <unka> <unka> " </s>
+<s> <user> or something similar </s>
+<s> <user> <unka@> i have time . just started my <unka> today so i should be able to take a look at it now :) i think 45 min blocks + <unka> is good but we should also budget for questions <unka*> . and hopefully we will not be only 2 who can help when questions arise - maybe some advanced <unka> users in audience can help too </s>
+<s> <user> though i am expecting more question during advanced section for sure . we could do that in <unk#/> blocks </s>
+<s> <user> if necessary . also the first day tutorial might inform us of mods to make for second day </s>
+<s> <user> <unka@> cool . i basically just copied the 2013 as a start , but i want to do some <unka> . i 'm not entirely certain about the structure and the cluster stuff </s>
+<s> <user> i am now going through the lectures again and i 'll draft a new toc tomorrow . i think having a bit more intro about what ml is in the beginning would be good , and i 'll try to recycle some of my diagrams </s>
+<s> <user> actually the current notebooks are pretty close to the toc in the proposal , with a bit of <unka> </s>
+<s> <user> <unka@> is there any part you'd like to work on particularly so that we do n't conflict ? also , when do you have time or a beer in the city ? </s>
+<s> <user> i think i'd like to work on the intro for now . </s>
+<s> <user> i am planning right now to pop in over the weekend . so if you have a day or time which is good i am game . i am probably stronger talking about <unka> , gp and friends than random <unka> , svm and the like if we are gonna go into theoretical aspects . but if not then i have no preference . </s>
+<s> <user> also i am terrible at the text preprocessor stuff . but i think it is important </s>
+<s> <user> <unka> etc . might be a crucial thing for examples . raw text -> <unka> ala your troll detection model </s>
+<s> <user> i do n't think we will do much theory , and i do n't think we should include gps . i want to talk a bit more about details about some of the commonly used <unka> models . </s>
+<s> <user> i think sunday would work for me . </s>
+<s> <user> ok cool . i will let you know later in the week what is up but i can try to be in ny on sunday . what part are you in ? </s>
+<s> <user> i 'm in east village but i 'm pretty free on sunday , so i could travel a bit </s>

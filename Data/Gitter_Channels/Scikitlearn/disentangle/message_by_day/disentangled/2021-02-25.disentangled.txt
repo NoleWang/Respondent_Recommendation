@@ -1,0 +1,20 @@
+[13:08] <6018a9a26da037398460d5ca> Hello, when I run pytest -Werror::RuntimeWarning  sklearn/ensemble/tests/test_iforest.py I get an 'ImportError while loading confest' error.  How can I bypass this?
+--------------------------------------------------------------------------------------------------
+[14:12] <55d21ee30fc9f982beadabb8> Could you provide the traceback @icky254
+--------------------------------------------------------------------------------------------------
+[14:15] <55d21ee30fc9f982beadabb8> @benny:michael-enders.com By checking the [documentation](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.GridSearchCV.html), `grid_search.best_score_` is mean cross-validated score of the best_estimator.
+[14:15] <55d21ee30fc9f982beadabb8> So the `best_estimator.score` is called on each fold (supposing that you do `KFold`) and averaged.
+--------------------------------------------------------------------------------------------------
+[14:20] <55d21ee30fc9f982beadabb8> > when I evaluate the same dataset with .score()  It depends what you mean. You might do something wrong here. Calling a single time `score` will not give you an estimate of the variability of your model. If you reuse `best_estimator_` (with best parameter set), you need to evaluate on some left-out data . You might want to look the following example regarding why you need to nest grid-search and cross-validation: https://scikit-learn.org/stable/auto_examples/model_selection/plot_nested_cross_validation_iris.html#sphx-glr-auto-examples-model-selection-plot-nested-cross-validation-iris-py
+--------------------------------------------------------------------------------------------------
+[16:12] <6018a9a26da037398460d5ca> [![Screenshot from 2021-02-25 19-06-35.png](https://files.gitter.im/541a528c163965c9bc2053e1/3Pzi/thumb/Screenshot-from-2021-02-25-19-06-35.png)](https://files.gitter.im/541a528c163965c9bc2053e1/3Pzi/Screenshot-from-2021-02-25-19-06-35.png)
+[16:15] <6018a9a26da037398460d5ca> @glemaitre
+--------------------------------------------------------------------------------------------------
+[18:38] <55d21ee30fc9f982beadabb8> As the message mentioned, it seems that scikit-learn was not build
+[18:39] <55d21ee30fc9f982beadabb8> Be sure to have activated the environment where you installed and built scikit-learn
+[18:39] <55d21ee30fc9f982beadabb8> FYI: https://scikit-learn.org/stable/developers/advanced_installation.html#building-from-source
+[18:40] <55d21ee30fc9f982beadabb8> basically to install and build: `pip install --verbose --no-build-isolation --editable .`
+[18:40] <55d21ee30fc9f982beadabb8> could work if the previous message steps where already done
+--------------------------------------------------------------------------------------------------
+[22:51] <53d67ca7107e137846ba83ca> Apologies for the PSA style post, but in a collaboration with Microsoft, we just published a blog post on using compilation techniques to accelerate SKLearn models for production, it's also another route to run models on GPUs (and potentially other accelerators) as well! Check it out if interested: https://medium.com/octoml/compiling-classical-ml-for-up-to-30x-performance-gains-and-hardware-portability-2aef760af694
+--------------------------------------------------------------------------------------------------

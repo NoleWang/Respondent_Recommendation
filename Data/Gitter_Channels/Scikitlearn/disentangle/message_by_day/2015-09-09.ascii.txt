@@ -1,0 +1,8 @@
+[20:49] <54d4a1d6db8155e6700f853b> @vighneshbirodkar I think this would be interesting to work on: https://github.com/scikit-learn/scikit-learn/issues/4920
+[21:14] <54d4a1d6db8155e6700f853b> does anyone have opinions about including issue numbers into whatsnew?
+[22:33] <54e07d6515522ed4b3dc0858> Just that sklearn will outlive github
+[22:33] <54e07d6515522ed4b3dc0858> :)
+[22:33] <54d4a1d6db8155e6700f853b> well we can stop using them then ;) Also, outlive the existence of github or the use?
+[22:34] <54d4a1d6db8155e6700f853b> As long as the links still work it might be useful, even if we transition to the next version control system ;)
+[22:41] <54e07d6515522ed4b3dc0858> Possibly the existence. But we could always save a copy of the issue text.
+[22:42] <54e07d6515522ed4b3dc0858> It seems useful to have the numbers. 

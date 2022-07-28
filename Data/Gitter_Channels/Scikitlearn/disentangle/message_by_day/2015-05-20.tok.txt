@@ -1,0 +1,22 @@
+<s> <user> <unka@> i think i understand part of the <unka> for the <unka_> failure on old scipy although i cannot reproduce it in ubuntu 12.04 docker container with scipy <unk#.> . will submit a pr . </s>
+<s> <user> <unka@> thanks ! i tried vagrant but did n't reproduce </s>
+<s> <user> i think we can merge . </s>
+<s> <user> <unka@> <unk##> </s>
+<s> <user> damn , yeah i 'm stupid of not having seen that <unka@> </s>
+<s> <user> hopefully , this will fix the issue . but travis is so slow nowadays . i opened <unk##> to tackle travis speed on the longer term . </s>
+<s> <user> pretty sure that will fix the issue </s>
+<s> <user> <unk##> would be really , really nice . i did not know travis was starting to support that - awesome ! </s>
+<s> <user> <unka@> so do you definitely want to do <unk#.> ? i 'm not sure . maybe if we have the <unka> fix ? </s>
+<s> <user> btw , <unka@> if you have time reviews of these should be quick : <unk##> <unk##> <unk##> </s>
+<s> <user> maybe we should have added some more <unka> entries </s>
+<s> <user> this is not necessarily for <unka> ( more for say <unka-> , <unka> , <unka-> , etc ): would the change mentioned in the blog post referenced in <unk##> make certain <unka-> ( but fast ) test cases possible with <unka> stored in s3 ? </s>
+<s> <user> depends on how large , right ? i guess we do n't know which datacenter , but even between <unka> i think ec2 is pretty fast </s>
+<s> <user> ah yes - i thought that data was represented in several locations and always near to where you need it , but that is probably wishful thinking . <unka-> , as far as i understand data transfer from s3 to ec2 machines is free , so that should n't be a <unka> . then the only question is whether practically out of these containers one can 'see' s3 as one can from ec2 . </s>
+<s> <user> probably not without some kind of credentials or something - you would have to authorize the ec2 instance that it is " ok " to access your s3 data </s>
+<s> <user> well that is the same for all s3 access , right ? ec2 machines are no different from any other machines on the internet wrt to s3 access iirc </s>
+<s> <user> i am thinking more if your data was in a private s3 bucket - in the case where people are accessing your data publicly it would be fine though it would cost $$ </s>
+<s> <user> but if you wanted to only allow data access for , say , nightly tests on master branch to cut down cost , you would need some kind of authorization . </s>
+<s> <user> so if amazon gives free s3 to open source ( or travis ), that would work . but otherwise i do n't think we can rely on it without a bill . </s>
+<s> <user> <unka@> do you think we can ask intel for an <unka> licence for building our wheels ? </s>
+<s> <user> i just realized that if i wanted to test the neural nets with <unka> i have to wait until we release and continuum builds it for me ... that seems slightly silly ... </s>
+<s> <user> hum , thinking about it again , how do we build this on travis ? that uses <unka> , right ? </s>

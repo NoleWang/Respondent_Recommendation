@@ -1,0 +1,53 @@
+[11:13] <54d4a1d6db8155e6700f853b> hey
+[11:13] <541a528b163965c9bc2053de> hi @amueller 
+[11:14] <54d4a1d6db8155e6700f853b> Thanks for starting on the reviews :)
+[11:14] <54a99c64db8155e6700e5ac4> Hi
+[11:14] <541a528b163965c9bc2053de> I want to do the `check_array` empty data first
+[11:14] <54d4a1d6db8155e6700f853b> I'm with family this week and so not super active, but I hope we can work towards the release next week :)
+[11:14] <54d4a1d6db8155e6700f853b> sure. There is another check_array pr that might be conflicting
+[11:14] <54d4a1d6db8155e6700f853b> and that I think is very important
+[11:14] <54d4a1d6db8155e6700f853b> the dtype=object one
+[11:15] <541a528b163965c9bc2053de> yeah, I got side-tracked to work on clusterlib the past 2 weeks, I hope I will rebalance effort to sklearn next week as well
+[11:15] <541a528b163965c9bc2053de> what is the issue number of dtype=object?
+[11:15] <54d4a1d6db8155e6700f853b> https://github.com/scikit-learn/scikit-learn/pull/4057
+[11:16] <541a528b163965c9bc2053de> tks
+[11:18] <54d4a1d6db8155e6700f853b> Most of the bug-fixes are isolated to one estimator. So I think they are important for the release, but shouldn't interact with other issues so much. The ones that are more API-ish are the dtype=object one (https://github.com/scikit-learn/scikit-learn/pull/4057), the clustering / pipeline one https://github.com/scikit-learn/scikit-learn/pull/4064 and the input validation one https://github.com/scikit-learn/scikit-learn/pull/4136
+[11:18] <541a528b163965c9bc2053de> ok
+[11:18] <54d4a1d6db8155e6700f853b> the last two interact somewhat. not sure how clear that is from the PR but the main thing in the input validation is that it extends common tests to estimators that don't inherit from clustering, classification, regression or transformation mixins
+[11:20] <54d4a1d6db8155e6700f853b> I'll try but I'm not sure I'll finish writing the pipeline integration tests today
+[11:20] <54d4a1d6db8155e6700f853b> oh and going toward the release, we need to fix the bugs and regressions in isotonic regression :-/ I don't think a fix exists yet
+[11:21] <541a528b163965c9bc2053de> yeah
+[11:21] <541a528b163965c9bc2053de> the slinear side effects?
+[11:22] <541a528b163965c9bc2053de> I saw it broke the calibration PR
+[11:22] <541a528b163965c9bc2053de> too many open tabs, my firefox is so slow at times...
+[11:23] <54d4a1d6db8155e6700f853b> it did? I didn't see that. haha I know the open tabs issue. Well the ``slinear`` broke some cases of ``fit`` and ``fit_transform`` not doing the same thing. Maybe it broke other things, too.
+[11:24] <54d4a1d6db8155e6700f853b> Bugs that are not regressions are that fit and fit_transform were not consistent before in the case of ties, and that having sample_weight=0 in multiple places can lead to infinite loops in the isotonic regression code
+[11:25] <541a528b163965c9bc2053de> that's bad
+[11:26] <54d4a1d6db8155e6700f853b> I agree. I proposed a fix in one of the issues. Maybe just remove the implementation of ``fit_transform``, that is use the naive fit.transform, and mask out sample_weight=0. That should get rid of the worst bugs.
+[11:26] <54d4a1d6db8155e6700f853b> but doesn't solve all issues with tie-breaking, I think.
+[11:27] <54d4a1d6db8155e6700f853b> some discussion here: https://github.com/scikit-learn/scikit-learn/issues/2507 and in the issues linked at the bottom
+[11:29] <54d4a1d6db8155e6700f853b> So that was a list of the "hard" issues / PRs. If you want I can also give you a list of the simple bug fixes lol
+[11:30] <54d4a1d6db8155e6700f853b> what are you working on with clusterlib btw?
+[11:35] <541a528b163965c9bc2053de> I want to implement the `concurrent.futures` API. That includes porting cloudpickle.py to Python 3 or implemeting something similar with dill.
+[11:36] <541a528b163965c9bc2053de> The goal is to be able to use SGE / SLURM clusters easily, without having to write bash or boilerplate python scripts.
+[11:36] <541a528b163965c9bc2053de> There is also cloudpi.pe to watch in the same space.
+[11:37] <541a528b163965c9bc2053de> going grab some lunch, see you later
+[12:05] <54d4a1d6db8155e6700f853b> Args. I am slightly confused by the current API requirements in pipeline. If ``fit_transform`` accepts ``y=None`` we don't require ``transform`` to accept a ``y=None``. That is somewhat inconsistent and weird, I think...
+[12:07] <54d4a1d6db8155e6700f853b> Huh ok transform is never passed ``y`` at all... never mind...
+[13:32] <541a528b163965c9bc2053de> @amueller I am reviewing #4057
+[13:32] <541a528b163965c9bc2053de> In another PR I suggested in a comment to add support for the `dtype=[np.float64, np.float32]` idiom.
+[13:33] <541a528b163965c9bc2053de> but I don't remember which PR ;)
+[13:34] <541a528b163965c9bc2053de> I think the dtype='numeric' is a fine, loose default but I would like to check with the other PR if we also need the `dtype=<list of accepted dtypes idiom>` for specific cases as well.
+[13:34] <541a528b163965c9bc2053de> do you remember which PR it was?
+[13:41] <541a528b163965c9bc2053de> Ok found it: it was collapsed in: https://github.com/scikit-learn/scikit-learn/pull/4136#discussion_r24176562
+[14:04] <54d4a1d6db8155e6700f853b> sorry didn't watch the chat
+[14:05] <54d4a1d6db8155e6700f853b> yeah so a dtype list for check_array would be nice, and then we could get rid of ``as_float_array``
+[14:06] <541a528b163965c9bc2053de> I agree
+[14:08] <541a528b163965c9bc2053de> "unfriend all multi-output estimators on facebook."
+[14:08] <541a528b163965c9bc2053de> :)
+[14:10] <54d4a1d6db8155e6700f853b> There was only slight frustration on my part. I'm not sure if the ``y_numeric`` is a good workaround, because it somehow stipulates that by default "y" are arbitrary objects aka classification labels
+[14:13] <54d4a1d6db8155e6700f853b> btw, there are not really that many tests on ``y``.  Many estimators just used ``np.asarray(y)``...
+[14:13] <541a528b163965c9bc2053de> ...
+[14:13] <54d4a1d6db8155e6700f853b> we should probably test for finite targets for regression
+[14:13] <541a528b163965c9bc2053de> I don't understand what you mean by finite targets
+[14:14] <541a528b163965c9bc2053de> integers & categorical labels?

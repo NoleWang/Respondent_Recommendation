@@ -1,0 +1,3 @@
+[15:55] <56d2f977e610378809c40828> Hi, a recent ML enthusiast trying to contribute. I just forked the scikit-learn repo and got a very easy PR merged. 
+[16:00] <56d2f977e610378809c40828> I set up a dev environment using virtualenv, so that it does not interfere with my existing scikit-learn installation. But I see that the docs does not mention it at all. Is there any particular reason? Or am I missing something obvious here?
+[17:26] <59ea3107d73408ce4f7af81c> @angelotc  : First import  from sklearn.model_selection import train_test_split then  X_train, X_test, y_train, y_test = train_test_split( X, y, test_size=0.33, random_state=42) X is a dataframe having only features and y is a dataframe having only target from your original dataset

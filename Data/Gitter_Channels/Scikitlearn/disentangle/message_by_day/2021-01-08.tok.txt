@@ -1,0 +1,17 @@
+<s> <user> do any <unka> in <unka-> handle <unka> features directly ? i feel there were some <unka> about this a long time ago </s>
+<s> <user> you're in luck <unka@> URL/https:/ <unka-./> <unk#a#-./_> </s>
+<s> <user> <unka@> that 's great . i will try it in a few minutes </s>
+<s> <user> hi guys ! i wrote a document which is " hello <unka> " . i hope to get some feedback about the document such as a typo , grammar error , wrong information , etc . URL/https:/ URL/github.com/ <unk#a-/> thank you :) </s>
+<s> <user> <unka@> it works which is great . </s>
+<s> <user> hmm . except i ca n't get it to work with <unka> features </s>
+<s> <user> what am i doing wrong ? URL/https:/ <unka./> <unka/> </s>
+<s> <user> why is it trying to convert a string to a float ? </s>
+<s> <user> <unka@> <unka> features are supported but the <unka> themselves only understand integer values in [ 0 , 255 ]. you 'll need to encode hte <unka> features with an <unka> before passing them to the <unka> . you can take a look at URL/https:/ <unka-./> <unka#-./_> for an example </s>
+<s> <user> in your case since it seems that you only have <unka> features , you can bypass the <unka> and just do <unka`> = <unka(_> ), <unka()`> </s>
+<s> <user> <unka@> ah ok . and then i list which features are <unka> using <unka=_> ? as in <unka> = <unka(_> ), <unka(=_> )) ? </s>
+<s> <user> <unka@> i should say that <unka> has some very clever tricks for <unka> features that would be awesome if included in <unka-> </s>
+<s> <user> the default for <unka> seems to be no <unka> features unless i misunderstood it </s>
+<s> <user> > <unka@> ah ok . and then i list which features are <unka> using <unka=_> ? as in <unka> = <unka(_> ), <unka(=_> )) ? yes , or you can use <unka(.=_`> ... <unk)`> after <unka`> is defined . and yes , by default all features are treated as continuous , as is the case for the overwhelming majority of <unka> ( only a few <unka> like <unka> expect <unka> features by default ). regarding <unka> : i think they do target encoding for <unka-> <unka> features . this is in the works URL/https:/ URL/github.com/ <unk#a-/> </s>
+<s> <user> <unka@> thanks .. they actually have two tricks </s>
+<s> <user> URL/https:/ <unka./> <unk#a./> explains it better than i could </s>
+<s> <user> but essentially the first and more most important trick is ordered boosting ( section 4.2 ) and the second is feature combinations </s>

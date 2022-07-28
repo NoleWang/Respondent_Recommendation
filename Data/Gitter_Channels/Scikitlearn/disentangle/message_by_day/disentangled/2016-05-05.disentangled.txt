@@ -1,0 +1,55 @@
+[05:30] <564789be16b6c7089cbab8b7> @vene How do you do a random forest embedding?
+[05:32] <564789be16b6c7089cbab8b7> Oh...reading about it now.
+--------------------------------------------------------------------------------------------------
+[07:11] <56b80528e610378809c05a48> hello @rvraghav93   Really sorry for the late reply, just survived from my midterm :smile:  Yeah Ill send it to the mailing list today!
+[07:11] <56b80528e610378809c05a48> haha you too
+--------------------------------------------------------------------------------------------------
+[07:11] <56c4f19ae610378809c1f8ae>  yay, congrats!
+--------------------------------------------------------------------------------------------------
+[08:35] <564789be16b6c7089cbab8b7> when was random forest embedding added to scikit-learn?
+[16:17] <564789be16b6c7089cbab8b7> @vene  thanks I will try that idea. Do you happen to know when was random forest embedding added to scikit-learn?
+[16:18] <564789be16b6c7089cbab8b7> oh.. 0.13! Not sure how I missed it
+[16:19] <564789be16b6c7089cbab8b7> do you have a view about https://labs.genetics.ucla.edu/horvath/RFclustering/RFclustering.htm ?
+[16:19] <564789be16b6c7089cbab8b7> I can't quite tell if it would provide something significantly new to what scikit learn already has
+[16:19] <564789be16b6c7089cbab8b7> if you follow the citations it seems isolation forests come from a similar idea
+[16:20] <564789be16b6c7089cbab8b7> I could open an issue I suppose but I feel a little ignorant on this topic
+[16:21] <564789be16b6c7089cbab8b7> @amueller  As the author of the random forest embedding, does this provide anything extra?
+[16:22] <564789be16b6c7089cbab8b7> @amueller  where "this" is https://labs.genetics.ucla.edu/horvath/RFclustering/RFclustering.htm
+--------------------------------------------------------------------------------------------------
+[16:18] <54e07d6515522ed4b3dc0858> I think at least 2ish releases ago
+[16:18] <54e07d6515522ed4b3dc0858> Oh
+--------------------------------------------------------------------------------------------------
+[16:26] <54e07d6515522ed4b3dc0858> That tech report is really hard to skim
+[16:27] <54e07d6515522ed4b3dc0858> @lesshaste, the random forest embedding uses totally randomized trees, ie there is no learning
+--------------------------------------------------------------------------------------------------
+[16:28] <564789be16b6c7089cbab8b7> yes... I did try myself.   http://cs.nju.edu.cn/zhouzh/zhouzh.files/publication/icdm08b.pdf?q=isolationThis performs a comparison with this method apparently
+[16:29] <564789be16b6c7089cbab8b7> " In the first experiment we compare iForest with ORCA [3], LOF [6] and Random Forests (RF) [12]" where [12] is https://labs.genetics.ucla.edu/horvath/RFclustering/RFclustering.htm
+--------------------------------------------------------------------------------------------------
+[16:30] <54e07d6515522ed4b3dc0858> I don't know anything about how isolation forests work. But it seems that the RFclustering approach trains a discriminative RF between the real data and randomly sampled data.
+[16:30] <564789be16b6c7089cbab8b7> ok that's interesting already
+[16:31] <54e07d6515522ed4b3dc0858> and uses that repr for clustering
+[16:32] <54e07d6515522ed4b3dc0858> Sampling-based approaches to anomaly detection never really struck me as a great idea. But in your case you might be able to tweak it more, because you know some things about the "ideal" generative process of your data
+[16:32] <54e07d6515522ed4b3dc0858> ie if network traffic were random
+[16:36] <54e07d6515522ed4b3dc0858> you might be able to hand-craft some sort of PGM mixture model
+[16:36] <54e07d6515522ed4b3dc0858> probabilistic graphical model
+[16:36] <54e07d6515522ed4b3dc0858> so a generative model
+[21:15] <54e07d6515522ed4b3dc0858> is your task a regression task?
+--------------------------------------------------------------------------------------------------
+[16:33] <564789be16b6c7089cbab8b7> what methods currently in scikit learn are suitable when the distance between features is highly non-linear? That is not at all Euclidean
+[16:34] <54e07d6515522ed4b3dc0858> what do you mean by distance between features?
+[16:35] <54e07d6515522ed4b3dc0858> btw if you plot a histogram of your data do you have some sort of "spikes" at the values that you say you want to treat as categorical?
+[16:36] <564789be16b6c7089cbab8b7> well yes sort of. Properly clustered there would be spikes in particular clusters but not in others
+[16:36] <564789be16b6c7089cbab8b7> what is PGM?
+[16:36] <564789be16b6c7089cbab8b7> ah yes.. well that would be great
+[16:36] <564789be16b6c7089cbab8b7> but it's hard to model network traffic
+[16:37] <54e07d6515522ed4b3dc0858> you have some latent variables that correspond to your payloads, and when you sample, you have a chance to sample from a random poisson(?) or to exactly(?) pick out the payload
+[16:37] <564789be16b6c7089cbab8b7> I meant distance between feature vectors, not feature. In other words (1,23) might be very far from (1,25) but (2,24) might be very close
+[16:37] <564789be16b6c7089cbab8b7> and (1,25) and (1,26) might be very close
+[16:38] <564789be16b6c7089cbab8b7> so it's just not a simple euclidean distance
+--------------------------------------------------------------------------------------------------
+[16:41] <54e07d6515522ed4b3dc0858> Well, discriminative methods, even linear ones, could capture such a threshold I think
+--------------------------------------------------------------------------------------------------
+[17:16] <564789be16b6c7089cbab8b7> interesting.. I did try linear regression on some labelled data and it was a disaster
+[17:16] <564789be16b6c7089cbab8b7> where a random forest worked really well
+[17:16] <564789be16b6c7089cbab8b7> I mean the linear regression essentially failed completely
+--------------------------------------------------------------------------------------------------

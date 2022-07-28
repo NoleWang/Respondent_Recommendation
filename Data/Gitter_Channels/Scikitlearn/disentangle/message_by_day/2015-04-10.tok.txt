@@ -1,0 +1,3 @@
+<s> <user> wo n't this fail with an attribute error if there are no empty clusters ? URL/https:/ URL/github.com/ <unk#a#-./_> </s>
+<s> <user> </s>
+<s> <user> <unka@> the loops goes over the empty clusters . if there are none , it never gets executed </s>

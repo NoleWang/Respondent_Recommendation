@@ -1,0 +1,31 @@
+[04:42] <53135b495e986b0712efc453> seq of seq support for `LabelBinarizer` is [earmarked for removal in 0.17](https://github.com/scikit-learn/scikit-learn/blob/master/sklearn/utils/multiclass.py#L195)... should we remove it??
+[04:54] <53135b495e986b0712efc453> @vene Thanks heaps for the patient reviews!!! I'll address them and push before tomorrow along with the documentation and examples... with that #4294 is done!!! (except for further rounds of reviews, ofcourse!!)
+[04:54] <53135b495e986b0712efc453> tomorrow (in NYC time)
+[05:11] <54e07d6515522ed4b3dc0858> I still have, like, half of the PR to go through.  it's a big one! :)
+[05:12] <53135b495e986b0712efc453> Yeaa :/ Thanks anyway :) After addressing your comments I'll split it into one commit per file... this should make it marginally easy to review?
+[05:12] <54e07d6515522ed4b3dc0858> Don't worry about label binarizer right now. Probably yes, it should be removed.
+[05:13] <54e07d6515522ed4b3dc0858> I use  git diff to compare to the old files, so I don't really care how the commits are grouped. I just look at the head
+[05:13] <53135b495e986b0712efc453> Ah okay then :)
+[05:15] <54e07d6515522ed4b3dc0858> Anyway, before I go to bed, I'm not sold on using labels for the predefined split. It shouldn't stray too much from the old api
+[05:16] <54e07d6515522ed4b3dc0858> I'll think about it some more tomorrow
+[05:17] <54e07d6515522ed4b3dc0858> Happy hacking!
+[05:17] <53135b495e986b0712efc453> Okay!! I'll leave it as such :) Good night!!
+[13:49] <54d4a1d6db8155e6700f853b> @zacsteward  I never heard of that metric before either. which community is it from? Google told me it is used in a couple of kaggle competitions, but it doesn't have a wikipedia entry
+[13:49] <5425a933163965c9bc206e53> Kaggle is the only place I've seen it as well
+[13:51] <54d4a1d6db8155e6700f853b> i guess it is for exponential regression tasks. Basically you log the target and then to rmse? For most models it would probably be better to log the target before training as regression models are more likely to minimize rmse
+[13:53] <5425a933163965c9bc206e53> I agree. I will probably try that in my model, but unfortunately I can't change the evaluation metric that this competition uses
+[13:53] <54d4a1d6db8155e6700f853b> alternatively you could create your own scorer for this, but I don't think it belongs in sklearn. The problem is that if you do your own scorer, you probably also want a meta-estimator that logs the target before fitting / predicting with your model and then transform back.
+[13:53] <54d4a1d6db8155e6700f853b> you don't need to change the evaluation metric. just apply log to y. then do grid-search with rmse on your ridge regression
+[13:53] <54d4a1d6db8155e6700f853b> the error will be the "right" one\
+[13:54] <54d4a1d6db8155e6700f853b> and it will perform much better than using ridge on the original target with rmsle
+[13:54] <5425a933163965c9bc206e53> Hm, I suppose then I would just have to exp my predictions for submission
+[13:54] <54d4a1d6db8155e6700f853b> yes
+[13:55] <54d4a1d6db8155e6700f853b> (log(y + 1) and exp(y - 1) that is to not get nans)
+[13:56] <5425a933163965c9bc206e53> Not sure if they have internal optimizations to save you the extra op
+[13:56] <5425a933163965c9bc206e53> or use numpy's log1p and expm1
+[13:57] <5425a933163965c9bc206e53> Anyway, I didn't want to solicit free advice on how to win a Kaggle competition. Just wanted to find out of this evaluation metric was noteworthy enough to merit a PR
+[13:57] <5425a933163965c9bc206e53> Thanks for the discussion
+[13:59] <54d4a1d6db8155e6700f853b> np. I wouldn't worry about optimizing this, though using log1p and expm1 are probably a good idea
+[14:00] <54e07d6515522ed4b3dc0858> For stability yes. For speed, this is just pre and post processing, so I doubt it matters
+[14:03] <54e07d6515522ed4b3dc0858> http://www.johndcook.com/blog/2010/06/07/math-library-functions-that-seem-unnecessary/
+[15:29] <54e07d6515522ed4b3dc0858> if curious, here's the numpy implementation of log1p if the math.h one is not available https://github.com/numpy/numpy/blob/master/numpy/core/src/npymath/npy_math.c.src#L86

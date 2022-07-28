@@ -1,0 +1,3 @@
+<s> <user> i agree to with ur point . in my training dataset i see a relationship among the transactions happened with in a less span of time and in morning & evening are classified as suspicious . </s>
+<s> <user> so you want to create a set of features based on the timestamp : perhaps the hour of the timestamp only ( to determine <unka/> ), and then some duration engineered from the rest of the data . </s>
+<s> <user> ok . so new features like hour and minute bin like 5 or 10 minute size will have to create . </s>

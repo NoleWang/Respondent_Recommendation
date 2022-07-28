@@ -1,0 +1,2 @@
+[23:27] <53135b495e986b0712efc453> @amueller Would you be interested in doing the honor of giving a -1 and closing this? :P (https://github.com/scikit-learn/scikit-learn/pull/5883)
+--------------------------------------------------------------------------------------------------

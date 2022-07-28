@@ -1,0 +1,12 @@
+[06:34] <5a6cb8cdd73408ce4f8a6a10> @quant12345 numirate your questions, please [Answer](https://stackoverflow.com/questions/7152470/how-i-can-merge-two-binary-trees) on the first question 
+[06:37] <5a6cb8cdd73408ce4f8a6a10> Maybe with one tree it's incomplicated problem, but I think after concationations, your tree will be so big
+[10:57] <5acfdfffd73408ce4f95738d> @istom1n_twitter  Looked graphs of all 100 trees. They have different architectures. Do even, if possible to unite them, the tree will be huge. regards 
+[11:08] <5acfdfffd73408ce4f95738d> 1.  To take advantage of a random forest, for later use in a single decision tree graph(diagram). Getting significant features from random forests. Then I use only these features in one solution tree. What do you think about this? 2.  Is there a need to balance classes in the random forest and decision tree(the number of signs in class 1-two times more than in the 2nd class)? If so, what features should I use?
+[12:46] <5a6cb8cdd73408ce4f8a6a10> @quant12345 2. Balabcing, [first in search](https://www.geeksforgeeks.org/how-to-determine-if-a-binary-tree-is-balanced/)
+[12:53] <5a6cb8cdd73408ce4f8a6a10> 1. I don't understand your questions, if you mean reduce your tree after connections, I think you can get Dijkstras Algorithm, Minimum Spanning Trees
+[12:54] <5a6cb8cdd73408ce4f8a6a10> I found good [explanation](https://web.eecs.umich.edu/~akamil/teaching/sp03/041403.pdf)
+[18:18] <5acfdfffd73408ce4f95738d> @istom1n_twitter  Thank you! On the second issue was meant another. Already found a solution: class_weight =balanced
+[18:25] <5a6cb8cdd73408ce4f8a6a10> depends about what tree we're talking, if binary, them balanced is in the left and in the right, we have equal amount of nodes 
+[18:31] <5a6cb8cdd73408ce4f8a6a10> Im only now get your message, strange
+[18:34] <5a6cb8cdd73408ce4f8a6a10> Alright, thats correct, you are welcome
+[18:36] <5a6cb8cdd73408ce4f8a6a10> Question in that, if we connected 100 tree, for example, we get a graph, not tree obviously, and our problem is to find minimum spanning tree

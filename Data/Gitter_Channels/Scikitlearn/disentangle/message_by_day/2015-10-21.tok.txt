@@ -1,0 +1,108 @@
+<s> <user> <unk#a@> in addition to finding issues to fix at the sprint ( which is great ! ), could you also try to promote reviewing :) you can tell people to look for <unka> with the [ <unka> ] tag , these are the ones ready for review </s>
+<s> <user> <unka@> you mean 2.3 , right ? </s>
+<s> <user> if anyone has a pr that needs review that is what i am focusing on - though some stuff may be outside my <unka> </s>
+<s> <user> <unka@> <unk##> would need some love , but this is huge </s>
+<s> <user> ( though both arnaud and andy have been reviewing it ) </s>
+<s> <user> <unk##> maybe ? </s>
+<s> <user> or any help with all the <unk#a+> <unka> is welcome , so that we can have some of those merged </s>
+<s> <user> <unka@> URL/https:/ URL/github.com/ <unk#a-/> ;) </s>
+<s> <user> anyone wanna weigh in on <unk##> ( adding k modes to related projects ) </s>
+<s> <user> anything anyone want 's me to have a look at ? </s>
+<s> <user> i have an urgent bank work :( i 'll be coming in the afternoon . apologies <unka:> : </s>
+<s> <user> <unka@> sure !! will do :) </s>
+<s> <user> <unk#a@> no problem . </s>
+<s> <user> <unk#a@> hopefully by then i will have finished reviewing your cv pr ;) </s>
+<s> <user> can we discuss <unk##> </s>
+<s> <user> <unka@> <unk##> looks like a +2 now with <unka@> </s>
+<s> <user> <unka@> needs to <unka> it first </s>
+<s> <user> i mean <unk##> </s>
+<s> <user> <unka@> opinions on <unk##> ? </s>
+<s> <user> i wanna ask <unka> and arnaud , too </s>
+<s> <user> lol URL/https:/ URL/github.com/ <unk#a#-/> </s>
+<s> <user> i think this is a first , <unka> telling me to be more pragmatic </s>
+<s> <user> not sure i should screenshot </s>
+<s> <user> <unka@> you agree that <unka> should be removed in 0.20 , right ? </s>
+<s> <user> then we need to fix and backport </s>
+<s> <user> old gp is deprecated in 0.18 , removed in 0.20 </s>
+<s> <user> indeed </s>
+<s> <user> ok my bad then </s>
+<s> <user> i 'll fix that </s>
+<s> <user> done </s>
+<s> <user> <unk##> and <unk##> need contributors : those are documentation related issues . <unk#a@> : <unka@> told me to tell you to leave those issues for others ;) </s>
+<s> <user> thanks <unka@> </s>
+<s> <user> hm similarly here : <unk##> we should change the version . or backport the <unka> to 0.17 </s>
+<s> <user> <unk##> as well </s>
+<s> <user> documentation fixes </s>
+<s> <user> ah needs contributor as well ... </s>
+<s> <user> <unka@> if you are bored , maybe look at <unk##> ( needs reviews ) </s>
+<s> <user> i though <unk##> was merged , whoops ( <unka_> default parameters and normalization ) </s>
+<s> <user> reviews appreciated </s>
+<s> <user> i am +1 on <unk#> </s>
+<s> <user> so it is +2 now - if tests pass you can go ahead and hit the button <unka@> </s>
+<s> <user> you can go ahead and merge kyle :) </s>
+<s> <user> yes <unka@> , i mean 2.3 </s>
+<s> <user> <unka@> <unka> . so slow . it needs to hurry up before andy stops eating ... he is faster than me :d </s>
+<s> <user> i 'll never win the " merge button <unka> " </s>
+<s> <user> <unka@> in <unka_`> i think . not sure though </s>
+<s> <user> <unka@> had some thoughts about doing only two power iterations , i think </s>
+<s> <user> i thought those were addressed , but we can let him hit the button instead </s>
+<s> <user> does anyone at the sprint have <unka> ? </s>
+<s> <user> can people still look at travis logs ? URL/https:/ <unka-./> <unk#a-/> for example ? </s>
+<s> <user> i think travis just throttled our ip </s>
+<s> <user> keeps " loading " here </s>
+<s> <user> so it is not our ip </s>
+<s> <user> URL/https:/ <unka./> </s>
+<s> <user> <unk#a> errors </s>
+<s> <user> URL/https:/ <unka./> <unk#a#-/> </s>
+<s> <user> could be anything </s>
+<s> <user> <unka@> lol okay ;) and thanks a lot for the reviews :) </s>
+<s> <user> i still need to finish that one . </s>
+<s> <user> i remember there was a discussion about how to call a function that gives uncertainty estimates on regression values . where was that ? i ca n't find it any more </s>
+<s> <user> we need reviews on <unk##> and want to backport it . </s>
+<s> <user> i 'm going to lie on the couch in front of the room if anyone is looking for me . i 'm beginning to question my decision to take a flight yesterday ^^ </s>
+<s> <user> > i remember there was a discussion about how to call a function that gives uncertainty estimates on regression values . where was that ? i ca n't find it any more <unka_`> on the <unka`> method of old gps </s>
+<s> <user> i thought we discussed the use of the same parameter for another <unka-> <unka> ( i checked <unka> but it 's not it apparently ). </s>
+<s> <user> that is doing interval <unka> . that is slightly different . sometimes you want to evaluate the density at a certain point </s>
+<s> <user> <unka@> while you are there , can you have a discussion with the other about the <unka`> issue and in general how we can handle strings with it ? </s>
+<s> <user> <unka*> </s>
+<s> <user> the <unka> fun on windows is back : URL/https:/ <unka./> <unk#a-./> </s>
+<s> <user> <unka@> what was the open questions ? if there are columns with mixed strings and numbers ? </s>
+<s> <user> yes , specially an array with <unk#`> and <unk#"`> in the same column </s>
+<s> <user> <unka@> what is your definition of " fun " ? :d </s>
+<s> <user> something that you cannot reproduce on your dev environment </s>
+<s> <user> maybe <unka@> can give it a try . </s>
+<s> <user> i have faced similar issues before somewhere else . </s>
+<s> <user> yes : it used to be very frequent in the past and at some point it stopped appearing . but now it 's back . i am not sure whether it reveals a true problem in the way we use <unka> under windows or is caused by a problem on the <unka> ci infrastructure . </s>
+<s> <user> i have windows on dual-boot , but i have to setup <unka-> over there before i can run tests . does anyone else over there have it ? </s>
+<s> <user> i have a windows vm in the cloud that i use for such debugging . i can give it another try . </s>
+<s> <user> pr <unk##> is ready for review . caching + removal of .c file seems to be working </s>
+<s> <user> it 's a bit hackish though , waiting for some proper build system ... </s>
+<s> <user> <unka@> in <unk#.`> when they say " <unka> " i assume there will be some sort of a loop ? i ca n't seem to find that anywhere </s>
+<s> <user> <unka@> there does n't necessarily be a loop </s>
+<s> <user> <unka@> i can not reproduce the issue with <unka> locally </s>
+<s> <user> <unka@> you mean it could be computed by some function in <unka.`> or similar ? </s>
+<s> <user> fyi the URL/https:/ <unka./> <unk#a-./> failure might be caused by the fact that this was deployed on <unka@> 's <unka> account which runs of a different infra than the one we should usually run on ( that is using the <unka-@> account ). i reconfigured the <unka> <unka> on the <unka-> repo and hopefully the future <unka> builds will run on the correct infra and not fail this way anymore . if this is not the case we will have to investigate . </s>
+<s> <user> > <unka@> i can not reproduce the issue with <unka> locally so it might be a consequence of the past travis outage </s>
+<s> <user> <unka@> or there could be a closed form solution </s>
+<s> <user> <unka@> yeah i think it was a fluke </s>
+<s> <user> if you see this URL/https:/ URL/github.com/ <unk#a#-./_> for example , only the learning late is <unka> . </s>
+<s> <user> <unka@> i 'm not sure . maybe ping <unka@> ? </s>
+<s> <user> <unka@> can we talk about handling strings in <unka> ? </s>
+<s> <user> <unka@> have you asked arnaud about the greater is better issue ? </s>
+<s> <user> no have have not asked him , and yes we can talk about strings in <unka> </s>
+<s> <user> <unka@> </s>
+<s> <user> <unka@> about the one hot encoder : we are fine if <unka=> , right ? </s>
+<s> <user> yes </s>
+<s> <user> so the problem is only if you pass a list ? </s>
+<s> <user> yes , and i am assuming based on the <unka> of the input , we will have 2 different pieces of code to process them ( object and <unka> ) </s>
+<s> <user> why ? </s>
+<s> <user> because the current code only works for integers </s>
+<s> <user> right . </s>
+<s> <user> but maybe the new code based on unique would work for both integers and objects ? well ok that is not that important </s>
+<s> <user> maybe we do <unka_`> and if we get back a string <unka> , we do the conversion again with <unka> object . does that solve all problems ? </s>
+<s> <user> even with <unk##> the code cannot support <unka-> types </s>
+<s> <user> the problem is if converting something like <unk#[`> , '1' , 2 , 3 , <unk#]`> to an integer , casting to integer works and gives wrong results </s>
+<s> <user> now that i think about it , since the <unka`> has a lot of the functionality needed , instead have a <unka> of <unka`> called <unka`> </s>
+<s> <user> so the <unka> <unka> mention from place to place the idea that <unka`> can be <unka"`> , but i ca n't get that to work , the current code does n't seem to implement it . </s>
+<s> <user> i ca n't seem to find any documentation or any open issues about this . </s>
+<s> <user> hmm i think it 's fixed in master actually , sorry about the noise </s>

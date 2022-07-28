@@ -1,0 +1,15 @@
+[00:17] <56c4f19ae610378809c1f8ae> yes i have
+[00:17] <56c4f19ae610378809c1f8ae> by version do you mean release #? @alexbednarczyk 
+[00:18] <56c4f19ae610378809c1f8ae> whats the error you are getting right now?
+[02:23] <53135b495e986b0712efc453> > Does mean_score_time in GridSearchCV.cv\_results_ mean time that it took to predict classes (in classification case) and calcuclate the relevant evaluation scores?  @mkoske Yes. `mean_fit_time` corresponds to the training time...
+[09:16] <55d213e50fc9f982beadaa87> @nelson-liu what does your requirements.txt line for sklearn look like? I've tried scikit-learn==0.17 and sklearn==0.17 both give me errors
+[10:31] <55d213e50fc9f982beadaa87> it doesn't seem like sklearn interacts with pip3 freeze. when i use pip3 freeze it displays the version as 0.0 when im using 0.18
+[10:33] <55d213e50fc9f982beadaa87> Collecting sklearn==0.17 (from -r requirements.txt (line 3))  Could not find a version that satisfies the requirement sklearn==0.17 (from -r requirements.txt (line 3)) (from versions: 0.0) No matching distribution found for sklearn==0.17 (from -r requirements.txt (line 3))
+[13:38] <56c4f19ae610378809c1f8ae> hmm thats odd. my pip outputs `scikit-learn==0.18` perfectly fine
+[13:38] <56c4f19ae610378809c1f8ae> although i am on python 2, so ill try with 3
+[13:43] <56c4f19ae610378809c1f8ae> ``` conda create --name test python=3 source activate test pip install numpy scipy cython scikit-learn  $ pip --version pip 8.1.2 from /Users/nfliu/miniconda2/envs/test/lib/python3.5/site-packages (python 3.5)  $ pip freeze Cython==0.24.1 numpy==1.11.2 scikit-learn==0.18 scipy==0.18.1 ```  seemed to work for me
+[13:44] <56c4f19ae610378809c1f8ae> @alexbednarczyk 
+[14:03] <55d213e50fc9f982beadaa87> alright. im using pip 8.1.1, maybe i need to update
+[14:03] <55d213e50fc9f982beadaa87> did it work with 0.17?
+[14:08] <56c4f19ae610378809c1f8ae> yeah it did
+[14:17] <55d213e50fc9f982beadaa87> ok ill try updating pip, thanks 

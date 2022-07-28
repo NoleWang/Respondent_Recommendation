@@ -1,0 +1,2 @@
+[20:32] <564e507e16b6c7089cbb6551> Hi, what does it mean when `linear_model.Ridge`returns `n_iter_` = None? does it mean it didn't even perform one single iteration?
+[21:29] <5baf7d9ad73408ce4fa9c9b2> @h4k1m0u the doc says     n_iter_ : None or array of shape (n_targets,)         Actual number of iterations for each target. Available only for         sag and lsqr solvers. Other solvers will return None.  you're probably not using sag or lsqr?

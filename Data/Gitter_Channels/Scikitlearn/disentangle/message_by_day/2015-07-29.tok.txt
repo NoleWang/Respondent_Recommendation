@@ -1,0 +1,19 @@
+<s> <user> <unk#a@> you should have pinged me using my username , i did n't see your message . i 'm behind the great firewall so my connectivity is poor until the 31st </s>
+<s> <user> to answer , i do n't see why <unka> would be better or worse than anything else . the gist of the problem is the estimation of the score . if you use <unka> instead of lolo you will <unka> . </s>
+<s> <user> the idea of validation is to estimate how your model would do in a realistic setting . if your observations are grouped and they arrive in groups , it 's not realistic to assume that you can be able to train on some samples from the same groups that you will run it on . </s>
+<s> <user> i guess <unka> is likely to <unka> . but it 's not a question of <unka> k . it 's one of methodology </s>
+<s> <user> think of search queries . if real life users would look for exactly the same queries you have in your training set , <unk#a> can return perfect results . but that 's not a realistic of interesting case . </s>
+<s> <user> if you " <unka> " your evaluation with this kind of data you can think your system <unka> much better than it really does . </s>
+<s> <user> because the model can implicitly learn to recognize the <unka> group label , and then get some of the test points predicted really well </s>
+<s> <user> i hope this makes sense . i gtg </s>
+<s> <user> excuse me , what kind of test cases should i write for some computation functions ? </s>
+<s> <user> which functions ? </s>
+<s> <user> like update functions ... </s>
+<s> <user> URL/https:/ URL/github.com/ <unk#a#-/> </s>
+<s> <user> URL/https:/ URL/github.com/ <unk#a#-/> </s>
+<s> <user> not easily ;) </s>
+<s> <user> you could test it against simple cases that you worked out on paper and that are easy to check ? </s>
+<s> <user> though that is rarely the case with formulas involving <unka> functions :-/ </s>
+<s> <user> honestly i do n't know . <unka-> <unka> <unka> .... </s>
+<s> <user> ok .. i will try it against simple cases . </s>
+<s> <user> reviews for <unk##> and <unk##> would be very welcome so we can fix travis </s>

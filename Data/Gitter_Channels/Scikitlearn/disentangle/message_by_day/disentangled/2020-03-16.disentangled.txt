@@ -1,0 +1,12 @@
+[08:52] <59f3eda9d73408ce4f7c14ba> Hi,In the Scikit learn Website: https://scikit-learn.org/stable/testimonials/testimonials.html#who-is-using-scikit-learn. I know many other companies use scikit-learn package but do not see in the list, what is the process to list the testimonials in the website.
+--------------------------------------------------------------------------------------------------
+[13:00] <5b58594ed73408ce4fa23ee3> @NicolasHug well I guess scikit-learn's Estimator class itself follows the strategy design pattern, but no, the fit/predict behaviour does not share code. I could encapsulate them into their respective classes (`StrategyARegressor`, `StrategyBRegressor`, etc) but then I could tune over the strategy parameter ... any other idea or example in scikit-learn that comes to mind? Thanks for the help!
+--------------------------------------------------------------------------------------------------
+[13:17] <5baf7d9ad73408ce4fa9c9b2> @mloning you can run parameter search over multiple estimators by wrapping them in a Pipeline object (slightly hacky, but it works: https://stackoverflow.com/questions/38555650/try-multiple-estimator-in-one-grid-search). Otherwise,  you can have both StrategyARegressor and StrategyBRegressor, and use these as instances in a MyRegressorClass.
+--------------------------------------------------------------------------------------------------
+[14:35] <5b58594ed73408ce4fa23ee3> @NicolasHug "Otherwise, you can have both StrategyARegressor and StrategyBRegressor, and use these as instances in a MyRegressorClass." so how does this last suggestion work? Like a composition? So I'd have something like `if strategey="a": self.estimator = StrategyARegressor()` and then call `fit` by calling `self.estimator.fit()`
+[15:37] <5baf7d9ad73408ce4fa9c9b2> yup
+--------------------------------------------------------------------------------------------------
+[17:45] <57b364d540f3a6eec05fce2b> Hello all, i'd be grateful if anyone could take some time to see my question:  https://datascience.stackexchange.com/questions/69788/valueerror-the-estimator-should-be-a-classifier
+[17:49] <57b364d540f3a6eec05fce2b> Briefly, i need ELMClassifier from sklearn-extensions running with VotingClassifier and AdaboostClassifier. After some customizations, i am able to pass the ELM directly to the Adaboost, but i also need to pass a VotingClassifier (of ELMs) to the Adaboost as well. And that's where i'm struggling
+--------------------------------------------------------------------------------------------------

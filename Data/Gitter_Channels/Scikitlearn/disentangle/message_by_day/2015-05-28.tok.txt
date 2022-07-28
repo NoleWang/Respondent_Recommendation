@@ -1,0 +1,5 @@
+<s> <user> hey <unka@> , regarding <unk##> , just remembered your <unk##> now ... do you think i should pause work there until that merges ? do you think it will be merged ? also applies to <unk##> i suppose ... i guess both of these <unka> would not necessarily require <unka> since they would not be in a public release , but would be more work for you . should i press on with <unka@> 's pr comments , or put both on hold pending renewed <unka_> <unka/> ? </s>
+<s> <user> reviewing these , i begin to feel that i am a <unka-> pony <unka:> : </s>
+<s> <user> <unk##> should be merged . there were no real reviews yet , though . </s>
+<s> <user> i 'm pretty sure you have more tricks up your leave , though <unka@> ;) </s>
+<s> <user> i 'm not sure , i would love some reviews for <unk##> . i 'll <unka> now . maybe <unka@> has time to have a look ? </s>

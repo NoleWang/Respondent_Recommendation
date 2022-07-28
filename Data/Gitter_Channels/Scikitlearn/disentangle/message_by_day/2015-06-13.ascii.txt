@@ -1,0 +1,15 @@
+[01:29] <544879efdb8155e6700cdb21> Hello, I'm not sure that gitter is proper place to ask this question, if so please point me the right place.  I have a problem with building the whole project, when I do `make` i get this tests result: `FAILED (SKIP=14, errors=2)`  ``` ERROR: sklearn.tests.test_cross_validation.test_cross_val_score_pandas ... IndexError: arrays used as indices must be of integer (or boolean) type ```  pandas.__version__ = 0.13.1 numpy.__version__ = 1.6.2  Thank you
+[12:53] <53135b495e986b0712efc453> Hey @mr0re1 ... do you have a particular PR number for which this test fails... or incase you haven't already, could you just raise one so we can all see the modified code that caused this test failure? :)
+[13:23] <53135b495e986b0712efc453> And btw this is indeed the place to ask such questions :)
+[15:44] <544879efdb8155e6700cdb21> Tests fail in master branch. There is no my changes. It seems like problem is in my environment. 
+[15:53] <551418d115522ed4b3dddd7b> @mr0re1 the problem might be in sklearn. Testing doesn't cover all possible combinations of platforms and third-party libraries. I suggest you create an issue and put all debug information about failed testcases
+[16:32] <54e07d6515522ed4b3dc0858> @mr0re1, that test behaves differently whether pandas is installed or not. I assume the error occurs on the Pandas-only code path. Pandas is known to break API often. This is a problem with the test, in my opinion, but your installation seems to be mostly functional. The test might pass if you update pandas. Still, could you raise an issue for this on github? It's something I think we should fix.  What is the other error, by the way? You said you get 2 errors but only showed us one.
+[16:32] <54e07d6515522ed4b3dc0858> @rvraghav93, since this is a cross-validation indexing issue, could you look into it? If you use anaconda you can easily set up a virtual environment with a specific version of pandas.
+[16:33] <53135b495e986b0712efc453> Sure I'll look into it :)
+[16:33] <54e07d6515522ed4b3dc0858> also, @rvraghav93, when you said PR number above, did you mean opening a Github issue?
+[16:34] <544879efdb8155e6700cdb21> @vene, will open an issue, the second error is the same. 
+[16:35] <53135b495e986b0712efc453> Since @mr0re1 was asking about raising a PR a few chats above, I assumed he had been working on something which had failed the tests ;) So I suggested that he raise a PR... not that the failure is in master... that is moot :P
+[16:35] <53135b495e986b0712efc453> *now
+[16:35] <54e07d6515522ed4b3dc0858> Ah I see
+[16:35] <53135b495e986b0712efc453> :D
+[16:36] <54e07d6515522ed4b3dc0858> @mr0re1 what test do you get the error for, I mean?

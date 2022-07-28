@@ -1,0 +1,5 @@
+[05:27] <583a6e71d73408ce4f38e30d> I'm a newbie, so please pardon what might be a very simple / silly question.  I'm wondering whether the example code for various sample problems posted on the scikit-learn website are done in Python 2 or Python 3?
+[20:00] <56c4f19ae610378809c1f8ae> @FLalani should be compatible with both 
+[20:02] <56c4f19ae610378809c1f8ae> @nok contact the scikit-learn contrib folks about that. I think the proper procedure is to raise an issue on their repo, but I'm not sure.
+[20:04] <574454a0c43b8c601974a563> Thanks @nelson-liu 
+[23:07] <583a6e71d73408ce4f38e30d> @nelson-liu:  Thanks!  It did indeed run with no exceptions on Python 2.7 after my comment so I can at least verify Python 2.  Thanks again.

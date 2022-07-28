@@ -1,0 +1,126 @@
+[00:33] <53135b495e986b0712efc453> @vene @amueller My second blog post - http://rvraghav93.blogspot.com/2015/06/gsoc-2015-psf-scikit-learn-nested-cross.html
+[00:36] <53135b495e986b0712efc453> Please take a look and let me know your views!
+[00:37] <53135b495e986b0712efc453> I'll also mail it to the ML as soon as I get a +1 from either of you! :)
+[03:15] <54d4a1d6db8155e6700f853b> Thanks. I'll have a look tomorrow first thing in  the morning
+[14:57] <54d4a1d6db8155e6700f853b> @tw991 I'm still not sure about #4844, I hope I have time to look at it soon. In the meantime, once #4874 is done, you could either look to finish https://github.com/scikit-learn/scikit-learn/pull/4539 which is boring but straight-forward, or investigate how to make sure the two k-means algorithms always give the same results in #2008, which is more interesting but also more involved
+[15:10] <54e07d6515522ed4b3dc0858> @rvraghav93 I think the book in your blog post is just by Petersohn, and John Vogt Verlag is the publisher (Verlag means something like publisher in German I think)
+[15:11] <53135b495e986b0712efc453> Oh :laughing:  thanks!!
+[15:12] <54e07d6515522ed4b3dc0858> But it's a pretty simple idea and a pretty obscure book
+[15:12] <54e07d6515522ed4b3dc0858> I think you can explain it better semi-formally without including that
+[15:13] <54d4a1d6db8155e6700f853b> yeah
+[15:13] <54d4a1d6db8155e6700f853b> if anything I'd try to reference esl
+[15:13] <54d4a1d6db8155e6700f853b> (which is what I always reference for everything)
+[15:13] <54e07d6515522ed4b3dc0858> for cross-val stuff I started referencing Gilles' thesis :)
+[15:14] <54d4a1d6db8155e6700f853b> I stil have not really read that :-/
+[15:16] <54e07d6515522ed4b3dc0858> Me neither, not fully, just the first two parts, but what I've read is great, very readable. Better than most ML textbooks.
+[15:16] <54d4a1d6db8155e6700f853b> sweet
+[15:16] <54e07d6515522ed4b3dc0858> so, @rvraghav93, could you simplify a bit the 3-step description of nested CV that you currently have? I find it a bit verbose, and it kind of makes everything seem more complicated than it is
+[15:17] <53135b495e986b0712efc453> Okay! I'll remove that reference and make that description simpler :)
+[15:17] <53135b495e986b0712efc453> Does the example seem okay?
+[15:17] <54e07d6515522ed4b3dc0858> there are things that you can save for later in the blog post
+[15:17] <54e07d6515522ed4b3dc0858> such as "based on the selected scoring technique. (At present only one loss function..."
+[15:18] <5582dd0915522ed4b3e21b33> Hi, can anyone point me in the direction of a explanation of how to do model ensembling?
+[15:18] <54e07d6515522ed4b3dc0858> you can leave this for a kicker later
+[15:20] <53135b495e986b0712efc453> Okay! thanks for the feedback :) @Callipygian0 http://scikit-learn.org/stable/modules/ensemble.html
+[15:20] <54e07d6515522ed4b3dc0858> Sure! I'm still reading through the blog post so give me a few more minutes please
+[15:20] <53135b495e986b0712efc453> Please take your time!!
+[15:20] <5582dd0915522ed4b3e21b33> Thanks :)
+[15:22] <54e07d6515522ed4b3dc0858> @Callipygian0 If you mean ensembling heterogeneous models, you might want the [VotingClassifier](http://scikit-learn.org/dev/modules/ensemble.html#votingclassifier) in the current development version, not available in the last stable release.
+[15:24] <54e07d6515522ed4b3dc0858> so, @rvraghav93 I'd actually not manually calculate `n_samples` that way
+[15:26] <54e07d6515522ed4b3dc0858> If you want to show an example that's currently possible, I would use `cv=3` instead
+[15:26] <54e07d6515522ed4b3dc0858> this currently does stratified kfold if given a classification dataset 
+[15:26] <54e07d6515522ed4b3dc0858> (I think)
+[15:26] <54e07d6515522ed4b3dc0858> and then you can say something like...
+[15:28] <54e07d6515522ed4b3dc0858> if you needed more customization, or a different CV such as LeaveOneLabelOut, it wouldn't work anymore
+[15:28] <54e07d6515522ed4b3dc0858> oh I just noticed you do nested CV with a for loop
+[15:28] <5582dd0915522ed4b3e21b33> I'm using version 0.15.2
+[15:29] <54d4a1d6db8155e6700f853b> @rvraghav93 I wouldn't say cleaner way in the first sentence. Many things are straight up not possible. I would say to enable cross-validation with cross-validation objects. Or make it more flexible....
+[15:29] <54d4a1d6db8155e6700f853b> @Callipygian0 do you want to ensemble heterogeneous models? Then there is nothing to help you. Though implementing a voting classifier is pretty trivial.
+[15:31] <54d4a1d6db8155e6700f853b> @rvraghav93 : " In each iteration (split), the dataset (X, y) is partitioned into training, validation set.` " should be "into a training and a validation set" also there is a backtick
+[15:31] <54d4a1d6db8155e6700f853b> the no should be number.
+[15:31] <54e07d6515522ed4b3dc0858> also this thing "This becomes necessary especially when the dataset is too small to split it into three"
+[15:31] <54e07d6515522ed4b3dc0858> it kind of depends on your audience, but technically, it's never too small (unless you have two samples)
+[15:32] <5582dd0915522ed4b3e21b33> I had all my models vote but it didnt really seem to work very well. This is my first machine learning experience so i'm very new! There is a kaggle style competition at my work. I was doing very well with GBM but everyone is overtaking me with ensemble now!
+[15:32] <54d4a1d6db8155e6700f853b> @vene would you not agree? Well you could argue it is always more robust.
+[15:32] <54d4a1d6db8155e6700f853b> GBM is an ensemble ;)
+[15:32] <54e07d6515522ed4b3dc0858> I fully agree, I just want to phrase it more clearly
+[15:32] <54d4a1d6db8155e6700f853b> I feel the split in bullet points is not very clear
+[15:33] <54e07d6515522ed4b3dc0858> technically if the data is truly IID, it wouldn't matter, would it?
+[15:33] <5582dd0915522ed4b3e21b33> I was told the best thing to do is combine like 5 different random forests, 5 different gbms 5 extra trees etc
+[15:34] <54d4a1d6db8155e6700f853b> well that could work...
+[15:34] <54d4a1d6db8155e6700f853b> @vene not sure what you mean
+[15:34] <54d4a1d6db8155e6700f853b> @rvraghav93 I'm not sure it is necessary do mention RandomizedSearchCV, it is pretty unrelated to the issue, right?
+[15:36] <54e07d6515522ed4b3dc0858> So, say I have a bunch of data that I want to model. I'll leave out, say, 25% as a test set, do GridSearchCV on the train set, and report the score on the test set. This is probably the most straightforward way, right?
+[15:36] <54e07d6515522ed4b3dc0858> But what if I got lucky with my choice of test set?
+[15:37] <54d4a1d6db8155e6700f853b> well yeah
+[15:37] <54d4a1d6db8155e6700f853b> the variance will just be very high with a small dataset, right?
+[15:38] <54e07d6515522ed4b3dc0858> usually yes
+[15:38] <54d4a1d6db8155e6700f853b> @rvraghav93 The example with the code is pretty clear, why I feel the initial explanation is not.
+[15:38] <54e07d6515522ed4b3dc0858> well if your model is perfect and if your data is IID you can have small variance, right?
+[15:39] <54d4a1d6db8155e6700f853b> @rvraghav93 However, I wouldn't say you need to estimate n_samples. It is not something you are guessing or using statistical methods on. You just need to know it. but you can't with the current setup
+[15:40] <54e07d6515522ed4b3dc0858> "The final result of the nested CV is the collection of n best Models"
+[15:40] <54d4a1d6db8155e6700f853b> @vene I don't think it is. If you have three data points sampled from a Gaussian, you use two for training and one for test, and your model is fitting a gaussian to it, the variance of the log-likelyhood will be high
+[15:40] <54d4a1d6db8155e6700f853b> *likelihood
+[15:40] <54d4a1d6db8155e6700f853b> even though the data is perfectly iid and you are using the true model
+[15:41] <54e07d6515522ed4b3dc0858> unless the 3rd point is exactly in the middle of the two test points
+[15:41] <54e07d6515522ed4b3dc0858> hmm
+[15:41] <54e07d6515522ed4b3dc0858> you're right
+[15:41] <54d4a1d6db8155e6700f853b> well if you have three points in a line and do 3-fold cross valiation ....
+[15:42] <54d4a1d6db8155e6700f853b> variance of the estimate scales with the number of samples and cross-validation gives an unbiased estimate of the variance iirc
+[15:42] <54e07d6515522ed4b3dc0858> anyway I was only trying to say that it might not be clear what "too few samples to leave a test set out" means
+[15:45] <54e07d6515522ed4b3dc0858> it is indeed a question of variance
+[15:46] <54e07d6515522ed4b3dc0858> and because of the variance, you can get particularly lucky or unlucky if you do one single outer fold
+[15:46] <54e07d6515522ed4b3dc0858> on small data
+[15:52] <54e07d6515522ed4b3dc0858> so iris is small, and the outer CV variance in @rvraghav93's example is not large
+[15:54] <53135b495e986b0712efc453> By variance do you mean to say the variance in the hyper param points or the performance of the best models?
+[15:54] <54e07d6515522ed4b3dc0858> the performance of the best models
+[15:54] <53135b495e986b0712efc453> ok
+[15:55] <53135b495e986b0712efc453> > "The final result of the nested CV is the collection of n best Models"  You were going to say something about this right?
+[15:55] <54d4a1d6db8155e6700f853b> actually I think you should pick an example that can currently not be made to work
+[15:56] <54e07d6515522ed4b3dc0858> I'm fond of LeaveOneLabelOut :)
+[15:56] <54d4a1d6db8155e6700f853b> if you use StratifiedKFold with k=4 on iris
+[15:56] <54d4a1d6db8155e6700f853b> it will already be impossible
+[15:56] <54e07d6515522ed4b3dc0858> but that works if you do cv=4, no?
+[15:56] <54d4a1d6db8155e6700f853b> yes
+[15:57] <54d4a1d6db8155e6700f853b> let's say you want to shuffle, though ;)
+[15:57] <54d4a1d6db8155e6700f853b> or you want KFold
+[15:57] <54e07d6515522ed4b3dc0858> why you'd want KFold is hard to explain
+[15:57] <54e07d6515522ed4b3dc0858> if it doesn't shuffle by default that's perfect!
+[15:58] <54d4a1d6db8155e6700f853b> maybe a better example: use regression and say you want to shuffle
+[15:58] <54d4a1d6db8155e6700f853b> because we currently have no stratification for regression
+[15:58] <54e07d6515522ed4b3dc0858> yep
+[15:59] <53135b495e986b0712efc453> what would stratification look like on regression?
+[15:59] <54d4a1d6db8155e6700f853b> draw a line, fit something to it, and oh no! because we don't shuffle we don't generalize
+[15:59] <54e07d6515522ed4b3dc0858> that might suggest that the problem is not shuffling by default
+[15:59] <54d4a1d6db8155e6700f853b> discussion: https://github.com/scikit-learn/scikit-learn/issues/4757
+[16:00] <54d4a1d6db8155e6700f853b> @vene there are long arguments about that. shuffling might hide correlations. If you data order has meaning, like being temporal, then shuffling will give you too optimistic results
+[16:01] <54e07d6515522ed4b3dc0858> I'm just saying the phrasing should be such that it doesn't lead to "just make shuffling default"
+[16:01] <54e07d6515522ed4b3dc0858> but instead to "oh, we need to be able to tweak parameters of the CV object"
+[16:01] <54d4a1d6db8155e6700f853b> I was thinking about adding a shuffle keyword to GridSearchCV and cross_val_score at multiple points
+[16:01] <54d4a1d6db8155e6700f853b> alright
+[16:02] <54d4a1d6db8155e6700f853b> but wait
+[16:02] <54d4a1d6db8155e6700f853b> no
+[16:02] <54d4a1d6db8155e6700f853b> the argument should be different
+[16:02] <54d4a1d6db8155e6700f853b> if you use cv=4 on the outside with iris
+[16:02] <54d4a1d6db8155e6700f853b> you can't use shuffle split on the inside
+[16:02] <54d4a1d6db8155e6700f853b> I'm stupid
+[16:02] <54e07d6515522ed4b3dc0858> you can't?
+[16:03] <54e07d6515522ed4b3dc0858> can't you use cv=4 both outside and inside?
+[16:03] <54d4a1d6db8155e6700f853b> yes. But you can't use shuffle split on the inside
+[16:03] <54d4a1d6db8155e6700f853b> because shuffle split needs the number of samples
+[16:03] <54e07d6515522ed4b3dc0858> ah, yes
+[16:03] <54d4a1d6db8155e6700f853b> I think that is the right example
+[16:04] <54e07d6515522ed4b3dc0858> so say you want more iterations for the inner loop?
+[16:04] <54e07d6515522ed4b3dc0858> first show an example with cv=4 both outside and inside
+[16:04] <54e07d6515522ed4b3dc0858> ?
+[16:04] <54d4a1d6db8155e6700f853b> alright
+[16:05] <54e07d6515522ed4b3dc0858> btw, what's the intuition when choosing between StratifiedKFold with [Stratified?]ShuffleSplit?
+[16:06] <54e07d6515522ed4b3dc0858> the docs just say "finer control on the number of iterations and the proportion of samples"
+[16:08] <54e07d6515522ed4b3dc0858> I just shuffle first and do StratifiedKFold usually
+[16:26] <54d4a1d6db8155e6700f853b> well, you can control the number of repetitions and the test set size independently
+[16:26] <54d4a1d6db8155e6700f853b> because having too small a test-set will also give you a bad estimate
+[18:06] <54d4a1d6db8155e6700f853b> oh man, perfect post for a coffee break: http://googleresearch.blogspot.co.uk/2015/06/inceptionism-going-deeper-into-neural.html
+[18:09] <54e07d6515522ed4b3dc0858> loving the low level ones
+[18:11] <54d4a1d6db8155e6700f853b> I think I'll get a print of this for the office: http://1.bp.blogspot.com/-XZ0i0zXOhQk/VYIXdyIL9kI/AAAAAAAAAmQ/UbA6j41w28o/s1600/building-dreams.png
+[18:28] <5576063e15522ed4b3e19cc3> @amueller I updated the #4874. would you like to take a look? 
+[23:57] <53135b495e986b0712efc453> @amueller @vene I've revised the blog post based on all your suggestions... However the example is still an illustration of a working nested CV. I thought once the data indep iterator work is over... I will show an example using LOLO to highlight the benefit of having data independence! Please take a look now :) http://rvraghav93.blogspot.in/2015/06/gsoc-2015-psf-scikit-learn-nested-cross.html

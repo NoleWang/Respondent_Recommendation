@@ -1,0 +1,2 @@
+[03:07] <5827d866d73408ce4f3575e6> @VictorArias24 Hi, Victor! For some basics you can refer to: http://scikit-learn.org/stable/tutorial/basic/tutorial.html hope it helps!
+[10:16] <5730c2dcc43b8c601971eca1> Just wondering if anybody in Scikit Community has already worked on Recurrent Decision Tree implementation ?

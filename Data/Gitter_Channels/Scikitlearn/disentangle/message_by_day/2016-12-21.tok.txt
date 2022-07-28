@@ -1,0 +1,9 @@
+<s> <user> i apologize for a rather naive python question , but i 've forked <unka> , made some local changes introducing new <unka> , committed them , and now want to use my modified <unka> in a test project . should i manipulate <unka.> to import my modified <unka> ? do i need to run `make` in it first ? do i need to re-run `make` if i edit <unka> again ? or should i be running `make` as in [ <unka#(-./:]_> )? </s>
+<s> <user> hi , i suppose the last link would be better in case you are okay to use dev version for all purposes . i </s>
+<s> <user> sorry sent message early . i use <unka`> setup.py <unka`> . in case you want both stable and dev versions , it would be better to use virtualenv to create a virtual environment for working on dev . hope it helps . </s>
+<s> <user> ah , great idea re virtualenv ; thanks ! </s>
+<s> <user> sure anytime <unk#+:> : </s>
+<s> <user> thanks <unka@> <unka:> : </s>
+<s> <user> i am having some trouble getting an <unka> sample to work . any hints or pointers appreciated . thank you . </s>
+<s> <user> p </s>
+<s> <user> URL/http:/ URL/stackoverflow.com/ <unk#a-/> </s>

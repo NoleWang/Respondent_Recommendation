@@ -1,0 +1,20 @@
+<s> <user> hey <unka@> not sure if youre around , but im having some issues <unka> commits in URL/https:/ URL/github.com/ <unk#a-./> i took the original contributors commits and <unka> master on top of it . however , i am trying to squash it now and am unable to . do you have any advice as to how to fix this ? </s>
+<s> <user> <unka-@> done </s>
+<s> <user> i meant i gave it a review . it seems squashed enough to me . what problems do you have ? </s>
+<s> <user> ah , thanks ! well , commit URL/https:/ URL/github.com/ <unk#a-/> has quite a long diff , and id rather not pollute the commit history with that </s>
+<s> <user> additionally , itd be nice to squash the commits into 1 instead of having 4 separate commits </s>
+<s> <user> when i currently try to squash the commits , i get a bunch of merge conflicts and such . running <unka`> <unka> -i <unk#a`~> ( to squash my last 3 commits ) ends up for some reason pulling up interactive <unka> for <unk#a/~> commits onto URL/https:/ URL/github.com/ <unk#a,-/> even though the head is at URL/https:/ URL/github.com/ <unk#a-/> </s>
+<s> <user> right i did no see that from the github diff view of the pr . indeed this comment should be removed . </s>
+<s> <user> i would start over again from the original contributor 's pr . squash the top commits first , then <unka> on master and fix the conflicts . then add your changes on top and squash again . </s>
+<s> <user> <unka-/_> <unk#a@_> has many changes with conflict markers that should not be part of this pr . </s>
+<s> <user> the commits in URL/https:/ URL/github.com/ <unk#a-/> are clean though . </s>
+<s> <user> got it </s>
+<s> <user> how do you generally resolve merge conflicts ? im using <unka`> <unka`> , which is opening <unka> on my osx machine </s>
+<s> <user> wondering if this might be why conflict markers are there ? </s>
+<s> <user> anyway , i just pushed a new version at URL/https:/ URL/github.com/ <unk#a-./> can you let me know if there are any issues ? </s>
+<s> <user> edit the files with the conflicts , look for section with conflict markers , edit the code to replace the segments in conflict with the expected code segment and remove the markers </s>
+<s> <user> ah ok , i wasnt aware that you could just do it through the text editor . i think ive properly done it in the last pr , could you let me know ? </s>
+<s> <user> check that there are no other files with conflict markers and then <unka`> <unka`> the files where you resolved the conflicts and <unka`> <unka> <unka-`> </s>
+<s> <user> does anyone have a good example of when l2 <unka> is useful ? i only ever really use l1 </s>
+<s> <user> if you want to compute <unka> similarities : <unka> the data once and then use <unka.> . </s>
+<s> <user> hm ... good point , but slightly to advanced ^^ </s>

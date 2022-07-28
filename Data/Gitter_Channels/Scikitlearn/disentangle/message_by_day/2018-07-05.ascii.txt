@@ -1,0 +1,2 @@
+[20:19] <564e507e16b6c7089cbb6551> Hey guys, is there a nice book or a course online to understand how the MLP and the SGD classifiers implemented in Scikit-learn work?
+[20:20] <564e507e16b6c7089cbb6551> I'm looking at the code, but I can't understand it, without having a basic understanding of the theory behind

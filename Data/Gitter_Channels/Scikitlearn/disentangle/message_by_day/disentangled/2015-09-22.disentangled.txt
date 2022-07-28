@@ -1,0 +1,10 @@
+[00:43] <54d4a1d6db8155e6700f853b> https://github.com/scikit-learn/scikit-learn/pull/5293 reviews for 0.17?
+[16:20] <54d4a1d6db8155e6700f853b> @vighneshbirodkar This one would be good to fix: https://github.com/scikit-learn/scikit-learn/issues/5089
+--------------------------------------------------------------------------------------------------
+[16:22] <53810862048862e761fa2887> Can @amueller or someone else OK this ? https://github.com/scikit-learn/scikit-learn/pull/5234
+[16:23] <53810862048862e761fa2887> It is a minor change and can be easily included in the upcoming release
+--------------------------------------------------------------------------------------------------
+[16:35] <53810862048862e761fa2887> @amueller There are some warnings due to PIL not being there. I can either install PIL on travis or skip those tests like this https://github.com/scikit-image/scikit-image/blob/master/skimage/future/graph/tests/test_rag.py#L51
+--------------------------------------------------------------------------------------------------
+[17:59] <54d4a1d6db8155e6700f853b>  scikit-learn/scikit-learn#5234 already has my +1
+--------------------------------------------------------------------------------------------------

@@ -1,0 +1,8 @@
+[11:40] <5891ba54d73408ce4f476005> Does scikit have any ideas page for gsoc 2017?
+--------------------------------------------------------------------------------------------------
+[18:33] <54d4a1d6db8155e6700f853b> not yet
+--------------------------------------------------------------------------------------------------
+[18:34] <54d4a1d6db8155e6700f853b> @Djabbz things inherit when there's shared functionality. if there's not, there's no reason to inherit
+--------------------------------------------------------------------------------------------------
+[19:31] <54b4f2d1db8155e6700e99c0> Thanks @amueller. But if you compare the code, there are a lot of similarities (not surprising given that RF are bagged random trees). My question is: is it done on purpose or is it a consequence of different persons working on different algorithms?
+--------------------------------------------------------------------------------------------------

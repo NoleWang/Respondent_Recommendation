@@ -1,0 +1,17 @@
+[12:23] <564789be16b6c7089cbab8b7> do any classifiers in scikit-learn handle categorical features directly? I feel there were some PRs about this a long time ago
+[13:37] <5baf7d9ad73408ce4fa9c9b2> You're in luck @lesshaste https://scikit-learn.org/stable/auto_examples/release_highlights/plot_release_highlights_0_24_0.html#native-support-for-categorical-features-in-histgradientboosting-estimators
+[13:50] <564789be16b6c7089cbab8b7> @NicolasHug  that's great. I will try it in a few minutes
+[14:26] <5ff86ab4d73408ce4ff853dc> Hi guys! I wrote a document which is "Hello Kaggle". I hope to get some feedback about the document such as a typo, grammar error, wrong information, etc. https://github.com/stevekwon211/Hello-Kaggle thank you :)
+[14:38] <564789be16b6c7089cbab8b7> @NicolasHug  it works which is great. 
+[14:42] <564789be16b6c7089cbab8b7> hmm. except I can't get it to work with categorical features
+[14:44] <564789be16b6c7089cbab8b7> what am I doing wrong? https://bpa.st/IXRQ
+[14:44] <564789be16b6c7089cbab8b7> why is it trying to convert a string to a float?
+[15:19] <5baf7d9ad73408ce4fa9c9b2> @lesshaste categorical features are supported but the estimators themselves only understand integer values in [0, 255]. You'll need to encode hte categorical features with an OrdinalEncoder before passing them to the predictor. You can take a look at https://scikit-learn.org/stable/auto_examples/ensemble/plot_gradient_boosting_categorical.html#gradient-boosting-estimator-with-native-categorical-support for an example
+[15:20] <5baf7d9ad73408ce4fa9c9b2> In your case since it seems that you only have categorical features, you can bypass the ColumnTransformer and just  do `clf  = make_pipeline(OrdinalEncoder(), HistGradientBoostingClassifier())`
+[15:46] <564789be16b6c7089cbab8b7> @NicolasHug  ah ok. And then I list which features are categorical using categorical_features=cat_features? As in clf = make_pipeline(OrdinalEncoder(), HistGradientBoostingClassifier(categorical_features=cat_features)) ?
+[15:46] <564789be16b6c7089cbab8b7> @NicolasHug  I should say that catboost has some very clever tricks for categorical features that would be awesome if included in scikit-learn
+[15:51] <564789be16b6c7089cbab8b7> the default for HistGradientBoostingClassifier seems to  be no categorical features unless I misunderstood it
+[17:15] <5baf7d9ad73408ce4fa9c9b2> > @NicolasHug  ah ok. And then I list which features are categorical using categorical_features=cat_features? As in clf = make_pipeline(OrdinalEncoder(), HistGradientBoostingClassifier(categorical_features=cat_features)) ?  Yes, or you can use `clf.set_params(histgradientboostingclassifier__categorical_features=...)` after `clf` is defined. And yes, by default all features are treated as continuous, as is the case for the overwhelming majority of estimators (only a few tranformers like OneHotEncoder expect categorical features by default). Regarding CatBoost:  I think  they do target encoding for high-cardinality categorical features. This is in the works https://github.com/scikit-learn/scikit-learn/pull/17323
+[17:54] <564789be16b6c7089cbab8b7> @NicolasHug  thanks.. they actually have two tricks
+[17:55] <564789be16b6c7089cbab8b7> https://arxiv.org/pdf/1706.09516.pdf  explains it better than I could
+[17:56] <564789be16b6c7089cbab8b7> but essentially the first and more most important trick is Ordered boosting   (section 4.2) and the second is Feature combinations

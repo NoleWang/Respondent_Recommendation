@@ -1,0 +1,3 @@
+<s> <user> could someone remove the need contrib tags from issues which have a pr open ? <unka@> <unka@> <unka@> ? </s>
+<s> <user> <unk##> <unk##> <unk##> <unk##> <unk##> <unk##> <unk##> <unk##> </s>
+<s> <user> also since there was sufficient interest in mailing list ( by sufficient interest i mean the +1 from joel and <unk#(+> ?) from andy <unk),;> could some one add the " need review " tag pl ? once added i have a list of <unka> to be tagged ;) </s>

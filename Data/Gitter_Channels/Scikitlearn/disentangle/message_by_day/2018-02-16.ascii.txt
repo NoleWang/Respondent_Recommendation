@@ -1,0 +1,1 @@
+[06:43] <5a867bd5d73408ce4f8d6091> hi i am working on ml that determine the emergency situation in vehicle(cars) by getting the input from the sensors of the vehicle . so i need a real time OBD2 logged csv file for training in the ml. any help ?

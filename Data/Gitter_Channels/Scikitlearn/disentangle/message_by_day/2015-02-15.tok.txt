@@ -1,0 +1,20 @@
+<s> <user> <unka@> would you be interested in setting up URL/http:/ <unka./> and landscape bot ? <unk##> </s>
+<s> <user> refer [ <unka(-./:]> ) for live preview of our repo and [ <unk#a#(-./:]> ) for an example comment by the bot . </s>
+<s> <user> a general suggestion ... i feel it would be more helpful to debug test results if we replaced <unka> for tests by comment ... output when a <unka> is present for a test <unk`> tests all <unka> which support <unka_> ... ok tests all <unka> which support <unka_> ... ok tests all <unka> which support <unka_> ... ok <unk`> output when no <unka> is present for a test <unk`> <unka'(._> , <unka<> <unka'._> > ) ... ok <unka'(._> , <unka<> <unka'._> > ) ... ok <unka'(._> , <unka<> <unka'._> > ) ... ok <unka'(._> , <unka<> <unka'._> > ) ... ok <unk`> </s>
+<s> <user> trying out <unka> from irc </s>
+<s> <user> <unka@> thanks for the invite </s>
+<s> <user> i agree about the test <unka> issue . </s>
+<s> <user> <unka@> would it be worth to have a pr for that ? or should i just create an issue and refer that when any related code is changed ? </s>
+<s> <user> explaining the <unka> in an issue is a good idea . then a bunch of small <unka> related to that issue if people have no objection . </s>
+<s> <user> ok ! thanks ! </s>
+<s> <user> alternatively we could use this on travis : URL/https:/ <unka./> <unka-/> </s>
+<s> <user> ah ! thanks ;) that was helpful ! sorry should have googled a bit before asking ... </s>
+<s> <user> and in the makefile , i'd say </s>
+<s> <user> do n't we even have a nose config file in the repo ? </s>
+<s> <user> im about to send a pr for that ;) </s>
+<s> <user> and yea <unka.`> </s>
+<s> <user> :) oh we do need to install a package , i thought it was a build-in option </s>
+<s> <user> yea it will go in <unka-./`> after <unka`> install <unka`> </s>
+<s> <user> <unka@> how do you feel about URL/https:/ URL/github.com/ <unka-/> ? </s>
+<s> <user> it look really very simple and could cleanly sync irc and <unka> ... </s>
+<s> <user> i 'll take care of the setup ... </s>

@@ -1,0 +1,77 @@
+[14:07] <54d4a1d6db8155e6700f853b> @ogrisel the thing about the mlp is, that as long as it is a PR, we will not get feedback about it from anyone. But once it is merged, people will use it, and people will sent PRs. I don't think we need to "nail it" before it is merged. The naive end-user will only use it after the release
+--------------------------------------------------------------------------------------------------
+[16:17] <5474d9eadb8155e6700d8178> That seems like a good idea... More after merging to master, it becomes easier for anyone to contribute to it by a normal PR rather than a PR to a PR... (for whatever my comment is worth) +1 from me for that! :)
+[16:19] <5474d9eadb8155e6700d8178> also, if it is not considered convoluted, we could raise a `BetaModule` warning like `DeprecationWarning` to warn users not to use it in production code?
+--------------------------------------------------------------------------------------------------
+[17:47] <54d4a1d6db8155e6700f853b> well, if it is the dev version, people should know
+--------------------------------------------------------------------------------------------------
+[18:40] <54d4a1d6db8155e6700f853b> I have the common tests on OneClassSVM (I think) hanging randomly on my box. no good.
+--------------------------------------------------------------------------------------------------
+[18:52] <5474d9eadb8155e6700d8178> @amueller Should #1674 be closed in favor of #1626, since @mblondel has been positive about the same in his last comment?
+--------------------------------------------------------------------------------------------------
+[19:12] <54d4a1d6db8155e6700f853b> which comment?
+--------------------------------------------------------------------------------------------------
+[19:13] <5474d9eadb8155e6700d8178> https://github.com/scikit-learn/scikit-learn/issues/1674#issuecomment-13982364
+[19:16] <54d4a1d6db8155e6700f853b> well he said he understood my idea
+[19:16] <54d4a1d6db8155e6700f853b> not that it solves his issue / replaces his
+[19:16] <54d4a1d6db8155e6700f853b> I should reread my proposal
+[19:16] <54d4a1d6db8155e6700f853b> It has been two years (sic!)
+--------------------------------------------------------------------------------------------------
+[19:19] <5474d9eadb8155e6700d8178> Well.. I thought of including it in my proposal ;) I feel this is a tough one and will take easily around 1.5 months? (Is that adequate amount of time that could be allocated for the same?)
+[19:19] <54d4a1d6db8155e6700f853b> I would have to re-read but it tries to address some of the points that I mentioned in my email
+[19:21] <5474d9eadb8155e6700d8178> Yea :) please take your time... I'll just put it tentatively as 1.5 months for now... but you'd know better, given my previous work and my 8hr a day schedule... :)
+[19:22] <54d4a1d6db8155e6700f853b> :)
+--------------------------------------------------------------------------------------------------
+[19:22] <54d4a1d6db8155e6700f853b> the main question would be how to pass it the validation set so to make it pipeline compatible and GridSearchCV compatible
+--------------------------------------------------------------------------------------------------
+[20:44] <54d4a1d6db8155e6700f853b> any GSOC applicant looking for stuff to do can check: https://github.com/scikit-learn/scikit-learn/issues/4442#issuecomment-85683185
+[20:45] <54d4a1d6db8155e6700f853b> (ragv you have enough contribs and don't need to worry about it ;)
+[20:45] <54d4a1d6db8155e6700f853b> not that help would not be appreciated, but I think you have enough stuff to do
+--------------------------------------------------------------------------------------------------
+[20:46] <5474d9eadb8155e6700d8178> LOL okay :D I am a bit busy this month due to my academics moreover, thats why I am not able to spend enough time on scikit-learn  :cry:
+[20:49] <5474d9eadb8155e6700d8178> Sure! I haven't yet... I was fine tuning it a bit.. sorry :)
+[20:50] <541a528b163965c9bc2053de> I think it's better to put it on melange early so that we can comment on it and read each others comments
+[20:51] <541a528b163965c9bc2053de> you can still edit it afterwards
+[20:51] <5474d9eadb8155e6700d8178> I am doing that now... sorry for the delay :)
+--------------------------------------------------------------------------------------------------
+[20:48] <541a528b163965c9bc2053de> @ragv have you put you proposal on melange?
+[20:48] <541a528b163965c9bc2053de> I cannot find it
+[20:49] <541a528b163965c9bc2053de> if so please edit the title to add "scikit-learn" in it
+--------------------------------------------------------------------------------------------------
+[20:56] <5474d9eadb8155e6700d8178> @ogrisel Done! but the formatting is awefully bad... A little more description is needed too... I'll fix both ASAP :)
+[20:59] <5474d9eadb8155e6700d8178> Is "path algorithms" a good name to mean all cv related objects?
+[21:00] <54d4a1d6db8155e6700f853b> no
+[21:02] <5474d9eadb8155e6700d8178> Does this seem okay? - "scikit-learn: Enhance cross validation and related modules."
+--------------------------------------------------------------------------------------------------
+[21:01] <54d4a1d6db8155e6700f853b> wait, depends on what you mean by cv related objects
+[21:01] <54d4a1d6db8155e6700f853b> It applies to LinearModelCV objects
+--------------------------------------------------------------------------------------------------
+[21:01] <5474d9eadb8155e6700d8178> cross_validation / learning_curve / model_selection etc... oh.. sorry then I'll call them CV objects simply :)
+[21:01] <54d4a1d6db8155e6700f853b> anyhow, I commented on melange that I think it is not a good name
+[21:01] <54d4a1d6db8155e6700f853b> I would just call it model selection and evaluation maybe
+[21:01] <5474d9eadb8155e6700d8178> Thanks :D
+[21:04] <5474d9eadb8155e6700d8178> Okay :)
+--------------------------------------------------------------------------------------------------
+[21:03] <54d4a1d6db8155e6700f853b> I think you will have a great proposal. I haven't read your most recent version, I just wanted to reiterate that you should try to focus, in particular provide concrete deliverables
+[21:03] <54d4a1d6db8155e6700f853b> sound more appropriate than the current title.
+[21:04] <54d4a1d6db8155e6700f853b> sorry if my feedback today is a bit short, I am feeling sick and wanted to at least briefly comment on all submission
+[21:04] <54d4a1d6db8155e6700f853b> s
+--------------------------------------------------------------------------------------------------
+[21:07] <5474d9eadb8155e6700d8178> Not an issue at all! Feel free to comment whenever you feel like :) And more over I got the basic idea and hence can work out my proposal according to your guidelines :) Also take care :) Sorry to trouble you at the last min...
+[21:11] <5474d9eadb8155e6700d8178> HI5 :p
+--------------------------------------------------------------------------------------------------
+[21:11] <54d4a1d6db8155e6700f853b> haha well we just started to review now so it is our fault ;)
+--------------------------------------------------------------------------------------------------
+[21:21] <541a528b163965c9bc2053de> +1 on the new title and focus
+--------------------------------------------------------------------------------------------------
+[21:34] <54d4a1d6db8155e6700f853b> I at least gave some cursory comments on all proposals. I think all the mentors should review at least one that they are interested in.
+[21:35] <54d4a1d6db8155e6700f853b> @ogrisel do you want to put your name on one or more proposals on the list (more than one meaning one of these will be selected)
+--------------------------------------------------------------------------------------------------
+[21:49] <541a528b163965c9bc2053de> @amueller you mean in the google doc or on melange?
+[21:59] <54d4a1d6db8155e6700f853b> google doc
+[22:00] <54d4a1d6db8155e6700f853b> @ogrisel do you think this is a good idea: https://github.com/scikit-learn/scikit-learn/issues/4445 we could ask cangermueller to do it, he didn't have much opportunity to prove his coding skills yet, I think
+[22:01] <54d4a1d6db8155e6700f853b> heading over to facebook for free drinks now ^^
+[22:01] <54d4a1d6db8155e6700f853b> ttyl
+--------------------------------------------------------------------------------------------------
+[22:03] <541a528b163965c9bc2053de> cheers!
+--------------------------------------------------------------------------------------------------

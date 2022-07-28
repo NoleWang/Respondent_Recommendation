@@ -1,0 +1,5 @@
+[06:59] <53135b495e986b0712efc453> @amueller @vene I've fixed the documentation and the `labels` param... I've hosted the doc (with examples and all the new changes but without plots) [here](http://rvraghav93.github.io/doc_builds)
+[07:00] <53135b495e986b0712efc453> The doc with plots is building... It will hopefully get over in a few hours and I'll host it once its done...
+[07:01] <53135b495e986b0712efc453> Ah one more thing... the appveyor not testing the `model_selection` is not yet fixed... :/ I suspect its because that module has not public python files? That would be the only thing left to investigate apart from your final reviews on rvraghav93/scikit-learn#4
+[07:02] <53135b495e986b0712efc453> And moving `grid_search.rst` to `search.rst` once the review is over :)
+--------------------------------------------------------------------------------------------------

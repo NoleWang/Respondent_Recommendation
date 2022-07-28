@@ -1,0 +1,20 @@
+[12:32] <5474d9eadb8155e6700d8178> @ogrisel around?
+--------------------------------------------------------------------------------------------------
+[12:42] <541a528b163965c9bc2053de> @ragv yes
+--------------------------------------------------------------------------------------------------
+[12:46] <541a528b163965c9bc2053de> > If you don't think it is horrible, I think I'll leave it as is  @amueller I only see a single slide with bullet bullet points for incremental PCA. Is it this slide you are talking about or do you have a figure for IncrementalPCA?
+--------------------------------------------------------------------------------------------------
+[14:05] <54d4a1d6db8155e6700f853b> @ogrisel I don't have a figure for IncrementalPCA. I couldn't produce a good one
+[14:05] <54d4a1d6db8155e6700f853b> I could have added a code block showing partial fit, but I felt that added little
+--------------------------------------------------------------------------------------------------
+[14:23] <541a528b163965c9bc2053de> no pbm
+[14:23] <541a528b163965c9bc2053de> I think it's fine like this
+[14:23] <541a528b163965c9bc2053de> there is a lot of material to cover already
+[14:27] <54d4a1d6db8155e6700f853b> I agree
+--------------------------------------------------------------------------------------------------
+[16:44] <5474d9eadb8155e6700d8178> @ogrisel I saw you online and thought of pestering you to review #3907 `;) :p`
+--------------------------------------------------------------------------------------------------
+[19:27] <541a528b163965c9bc2053de> @ragv  I am too tired to do it now, I put that on my todo list for tomorrow morning. Don't hesitate to ping me again if I fail to deliver :)
+--------------------------------------------------------------------------------------------------
+[23:01] <5474d9eadb8155e6700d8178> Thanks :D > Don't hesitate to ping me again if I fail to deliver  don't worry about that `:p`
+--------------------------------------------------------------------------------------------------

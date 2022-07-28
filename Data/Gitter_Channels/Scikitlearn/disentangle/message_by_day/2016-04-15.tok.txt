@@ -1,0 +1,10 @@
+<s> <user> <unka@> makes sense , thanks . </s>
+<s> <user> i think our <unk#a> feature selector is asking these lines </s>
+<s> <user> <unka*> these lines </s>
+<s> <user> thanks a lot <unka@> and <unka@> for the help ! yes i want to use that count matrix for some further calculations . also , yes i 'm making the assumption that if a doc is labeled x then the term belonging to that doc also belongs to the category x . basically if a particular term occurs in a document categorized as x , then in the <unka-> matrix the entry <unka> to that term and cat ( x in this case ) is updated by one . i then assign certain weights for each term for each category and see how much that term contributes to each category . this is in turn used in performing feature selection . </s>
+<s> <user> hey all , is there anyone experienced using <unka-> for labeling each frame of a video data </s>
+<s> <user> <unka@> <unka-> the same question will not get you a response ;) if you have a particular question that is not suitable for a quick discussion , i would suggest that you post it as a thread to our mailing list or stackoverflow . if people know about it and your question interests them , they will respond in detail . </s>
+<s> <user> that being said , <unka-> is deep learning stuff that is not a part of <unka-> . you would be better off contacting the mailing list of some deep learning library like <unka> , tensorflow or <unka> ... or even better like i said before stackoverflow . </s>
+<s> <user> reddit seems to be decent for deep learning discussions these days </s>
+<s> <user> any idea whats happening here ? due to some reason numpy does not print strings with quotes </s>
+<s> <user> URL/https:/ <unka-./> <unk#a-/> </s>

@@ -1,0 +1,47 @@
+<s> <user> this looks interesting :) URL/https:/ URL/github.com/ <unka/> </s>
+<s> <user> people certainly do care about kernels , <unka@> </s>
+<s> <user> " random <unka> and deep learning " are certainly not the solution to everything . </s>
+<s> <user> <unk#a@> thanks ! </s>
+<s> <user> <unka@> it would lovely to see a blog post investigating that question more deeply . </s>
+<s> <user> investigating what question ? </s>
+<s> <user> if people use other methods than rf and deep learning ? </s>
+<s> <user> <unka@> i did n't quite mean that :) if you look at <unka> <unka> their main tools are quite consistent ( <unka> and/or deep learning ). i was thinking of a blog post titled " where kernels methods still rule " explaining with examples where they are still the best approach </s>
+<s> <user> my understanding is high frequency trading uses kernel methods pretty extensively , because they need speed and tree based approaches are rather slow </s>
+<s> <user> so they 'll usually use some form of <unka> kernel regression </s>
+<s> <user> " rather slow " in the <unka> sense , not in the normal person sense , at making <unka> </s>
+<s> <user> kernel methods are also pretty good for variable length sequences . for example in <unka> , the <unka'> kernel <unka'> is frequently used to compare <unka> sequences to each other to do domain <unka> or such . </s>
+<s> <user> i mean , kernels extend far past just <unka> of data . there are kernels to compare tree based structures , or graphs , to each other . </s>
+<s> <user> <unka@> that 's very interesting ... although i am a little surprised by the trees being slow </s>
+<s> <user> why ? </s>
+<s> <user> doing an inner product is super fast , compared to <unka> n binary trees . </s>
+<s> <user> i 'm not trying to <unka> either rf or deep learning , which are super powerful , but <unka> <unka> are a small subset of ml problems out there . </s>
+<s> <user> <unka@> only because there is a line of research on producing minimum and <unka> or even a single decision tree with similar performance to a random forest and all you are doing is comparisons . 1000 comparisons is very fast </s>
+<s> <user> you have n't even touched my favorite models , <unka> graphical models . people use <unka> nets , hmms , <unka> all the time . </s>
+<s> <user> very fast for a normal person , but it 's still orders of magnitude slower than an inner product using <unka> , and in the <unka> sense , <unka> count . </s>
+<s> <user> i also imagine you can put a <unka> kernel machine on a gpu , but ca n't put trees on a gpu easily . </s>
+<s> <user> <unka@> i think you would be a great person to write a blog post on this . it 's very interesting and not universally understood </s>
+<s> <user> what do you think it should cover ? </s>
+<s> <user> i am trying and failing to find some papers on <unka> a <unka> decision tree from a random forest currently </s>
+<s> <user> i ca n't seem to find the papers now ... :( </s>
+<s> <user> <unka@> well ... that would be up to the author :) but how about a set of topics <unka> with ... timings for prediction using random <unka> versus kernel methods , spectrum kernel svm and how it is applied to variable length sequences . this would be even cooler if there were a test dataset and we could see how well a straightforward application of <unka> does in comparison , practical examples with real data for kernels to compare tree based structures , or graphs and a comparison with what one would have to do using <unka> </s>
+<s> <user> that sort of thing :) </s>
+<s> <user> basically , concrete <unka> or regression tasks where there is a clearly understandable objective function and we can see how kernel methods are easier or just do better </s>
+<s> <user> i do n't think it 's possible to infer a single tree from an entire random forest , except in special circumstances </s>
+<s> <user> <unka@> there is work on this . i am just struggling to find the papers again ! </s>
+<s> <user> i'd love to se it </s>
+<s> <user> <unka@> can you read URL/http:/ <unka./> <unk#a-./_> ? </s>
+<s> <user> the <unka> </s>
+<s> <user> not the whole paper ? </s>
+<s> <user> no :( </s>
+<s> <user> ok .. let me try harder .. the papers i am referring to are in the " related work " section of that paper </s>
+<s> <user> that also does n't look exactly the same as turning a rf into a single decision tree </s>
+<s> <user> i thought you meant turn a rf into a single tree which <unka> it identically </s>
+<s> <user> 2 seconds :) </s>
+<s> <user> <unka@> here is one URL/https:/ <unka./> <unk#a./_> </s>
+<s> <user> <unka@> here is another URL/http:/ <unka./> <unk#a&./=?> </s>
+<s> <user> <unka@> this is a copy and paste of the related work section URL/https:/ URL/bpaste.net/ <unk#a/> </s>
+<s> <user> let me know if you want any of the papers </s>
+<s> <user> that 's pretty interesting , i did n't know that was a thing . </s>
+<s> <user> i do n't know how well known it is .. or how useful :) </s>
+<s> <user> it would be great to understand how practically important URL/http:/ <unka./> <unk#a./> is too ! </s>
+<s> <user> section 5 claims it does better than <unka> wabbit </s>

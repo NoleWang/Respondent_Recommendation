@@ -1,0 +1,2 @@
+<s> <user> <unk#a@> thanks for the pointers i was trying to achieve the same outcome but with pure tf . not luck so far :( </s>
+<s> <user> i am fitting several <unka> to images and get <unk#a/~> <unka> model file size for <unk#a/~> image data . does the pickle contain any redundant data ( training or otherwise ) or is that a reasonable size ? </s>

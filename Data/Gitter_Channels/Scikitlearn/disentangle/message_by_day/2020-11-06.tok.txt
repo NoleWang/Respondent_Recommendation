@@ -1,0 +1,2 @@
+<s> <user> hi <unka-> team ! i 'll start a new job on 16 november and have some free time until then . i just wanted to let you know that i 'll try to add all missing documentation for attributes by then ( see <unk##> ). there are only a few undocumented attributes left . so if anyone has time to review my <unka> you ( hopefully ) could have all attributes documented by the end of next week . :) nicolas and <unka> have already kindly started reviewing the <unka> i sent in for this in the last few days . </s>
+<s> <user> thanks <unka@> right in time for <unk#.> ! </s>

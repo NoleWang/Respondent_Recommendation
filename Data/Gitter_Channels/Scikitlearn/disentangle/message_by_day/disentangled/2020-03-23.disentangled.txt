@@ -1,0 +1,6 @@
+[04:27] <5df656e9d73408ce4fd42524> Hi everyone , Im a begginer and i want to contribute to scikit learn. I have worked on few Deep Learning projects in pytorch . I cant find a good issue to work as someone is already assigned to it or somebody has already fixed it . Can someone guide me to contributing in this repo
+--------------------------------------------------------------------------------------------------
+[08:43] <56bb7a56e610378809c0cb2c> `jonpsy` I can see the chat's packed already,anyway here's my two cents  I was going through the implementation of RandomFourierFeatures implemented in sklearn, under kernel_approximation.py. I noticed a part where you put  ``` class RBFSampler(..):     . . .. def transform(..): .. ..  np.cos(projection,projection) ..  return projection ``` Now np.cos doesn't take two arguments, so what's happening? I tried replicating this in my console and I got error, also why is no variable storing that information ?. I've created the corresponding [issue](https://github.com/scikit-learn/scikit-learn/issues/16746).   Thanks for the help :)
+[12:41] <56bb7a56e610378809c0cb2c> `jonpsy` Nvm Issue solved thanks !!
+[12:41] <56bb7a56e610378809c0cb2c> `jonpsy`  * Nvm Issue solved thanks Nicolas Hug (Gitter) .
+--------------------------------------------------------------------------------------------------

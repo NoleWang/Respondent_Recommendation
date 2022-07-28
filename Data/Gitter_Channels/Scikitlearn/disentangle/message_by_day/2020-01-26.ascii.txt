@@ -1,0 +1,5 @@
+[13:45] <5e2d9704d73408ce4fd7ced4> [![image.png](https://files.gitter.im/scikit-learn/scikit-learn/6t1w/thumb/image.png)](https://files.gitter.im/scikit-learn/scikit-learn/6t1w/image.png)
+[13:47] <5e2d9704d73408ce4fd7ced4> Hello, I'm new to using Pipelines and getting the above error 'Last step of Pipeline should implement fit or be the string 'passthrough'. I can't figure out how to overcome this step. Please assist if you can. 
+[13:53] <5baf7d9ad73408ce4fa9c9b2> @wbadiah_gitlab you're passing a list, instead just pass the estimators directly as in the example: `make_pipeline(StandardScaler(), GaussianNB(priors=None), ...)` `
+[13:53] <5baf7d9ad73408ce4fa9c9b2> i.e. remove the brackets. you can also remove the redundant parenthesis around the estimators
+[14:01] <5e2d9704d73408ce4fd7ced4> Thanks @NicolasHug It worked! 

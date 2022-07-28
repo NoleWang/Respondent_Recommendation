@@ -1,0 +1,13 @@
+<s> <user> <unk#a@> hi .. in URL/https:/ URL/github.com/ <unk#a-/> which of the variants listed in the r example are you doing for the <unka> case ? </s>
+<s> <user> or all of them ? </s>
+<s> <user> anyone familiar with the amazon employee access challenge on <unka> ? URL/http:/ URL/bit.ly/ <unk#a/> it provides a training set and testing set . the training set contains target response but the testing set doesnt . do i still perform <unka_> on training set ? </s>
+<s> <user> hello <unka@> yes , ive only committed the <unka> part by now . actually , im a little confused about the <unka> case . </s>
+<s> <user> if i got 1 sample for 1st day , 2 samples for 2nd day and 3 samples for 3rd day , then i decide to do 2 <unka> <unka> cv , what will happen ? </s>
+<s> <user> ping <unka@> <unka@> </s>
+<s> <user> do all samples we collect in the same day should be in the same fold ? </s>
+<s> <user> sorry , i 'm pretty busy right now </s>
+<s> <user> its pretty okay ... take your time :) </s>
+<s> <user> <unk#a@> even in the <unka> part there are various options for how to do the <unka-> </s>
+<s> <user> oh sorry for my ambiguous description . i implemented the basic case , like the example <unka> gave in the discussion between you and him before . </s>
+<s> <user> <unk#a@> ah ok thanks . i am not even sure how interesting the other cases are to be honest </s>
+<s> <user> we need some data and tests i suppose </s>

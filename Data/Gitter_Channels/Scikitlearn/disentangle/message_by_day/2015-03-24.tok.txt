@@ -1,0 +1,55 @@
+<s> <user> <unka@> the thing about the <unka> is , that as long as it is a pr , we will not get feedback about it from anyone . but once it is merged , people will use it , and people will sent <unka> . i do n't think we need to " nail it " before it is merged . the naive end-user will only use it after the release </s>
+<s> <user> that seems like a good idea ... more after merging to master , it becomes easier for anyone to contribute to it by a normal pr rather than a pr to a pr ... ( for whatever my comment is worth ) +1 from me for that ! :) </s>
+<s> <user> also , if it is not considered convoluted , we could raise a <unka`> warning like <unka`> to warn users not to use it in production code ? </s>
+<s> <user> well , if it is the dev version , people should know </s>
+<s> <user> i have the common tests on <unka> ( i think ) hanging randomly on my box . no good . </s>
+<s> <user> <unka@> should <unk##> be closed in favor of <unk##> , since <unka@> has been positive about the same in his last comment ? </s>
+<s> <user> which comment ? </s>
+<s> <user> URL/https:/ URL/github.com/ <unk#a#-/> </s>
+<s> <user> well he said he understood my idea </s>
+<s> <user> not that it solves his issue replaces his </s>
+<s> <user> i should reread my proposal </s>
+<s> <user> it has been two years ( sic ! ) </s>
+<s> <user> well .. i thought of including it in my proposal ;) i feel this is a tough one and will take easily around 1.5 months ? ( is that adequate amount of time that could be allocated for the same ?) </s>
+<s> <user> i would have to re-read but it tries to address some of the points that i mentioned in my email </s>
+<s> <user> yea :) please take your time ... i 'll just put it <unka> as 1.5 months for now ... but you'd know better , given my previous work and my <unk#a> a day schedule ... :) </s>
+<s> <user> :) </s>
+<s> <user> the main question would be how to pass it the validation set so to make it pipeline compatible and <unka> compatible </s>
+<s> <user> any gsoc <unka> looking for stuff to do can check : URL/https:/ URL/github.com/ <unk#a#-/> </s>
+<s> <user> ( <unka> you have enough <unka> and do n't need to worry about it ;) </s>
+<s> <user> not that help would not be appreciated , but i think you have enough stuff to do </s>
+<s> <user> lol okay :d i am a bit busy this month due to my <unka> moreover , thats why i am not able to spend enough time on <unka-> <unka:> : </s>
+<s> <user> <unka@> have you put you proposal on <unka> ? </s>
+<s> <user> i cannot find it </s>
+<s> <user> if so please edit the title to add " <unka-> " in it </s>
+<s> <user> sure ! i have n't yet ... i was fine tuning it a bit .. sorry :) </s>
+<s> <user> i think it 's better to put it on <unka> early so that we can comment on it and read each others comments </s>
+<s> <user> you can still edit it afterwards </s>
+<s> <user> i am doing that now ... sorry for the delay :) </s>
+<s> <user> <unka@> done ! but the formatting is <unka> bad ... a little more description is needed too ... i 'll fix both asap :) </s>
+<s> <user> is " path algorithms " a good name to mean all cv related objects ? </s>
+<s> <user> no </s>
+<s> <user> wait , depends on what you mean by cv related objects </s>
+<s> <user> it applies to <unka> objects </s>
+<s> <user> <unka_> <unka_> <unka_> etc ... oh .. sorry then i 'll call them cv objects simply :) </s>
+<s> <user> anyhow , i commented on <unka> that i think it is not a good name </s>
+<s> <user> i would just call it model selection and evaluation maybe </s>
+<s> <user> thanks :d </s>
+<s> <user> does this seem okay ? - " <unka-> : enhance cross validation and related modules ." </s>
+<s> <user> i think you will have a great proposal . i have n't read your most recent version , i just wanted to reiterate that you should try to focus , in particular provide concrete <unka> </s>
+<s> <user> sound more appropriate than the current title . </s>
+<s> <user> okay :) </s>
+<s> <user> sorry if my feedback today is a bit short , i am feeling sick and wanted to at least briefly comment on all submission </s>
+<s> <user> s </s>
+<s> <user> not an issue at all ! feel free to comment whenever you feel like :) and more over i got the basic idea and hence can work out my proposal according to your guidelines :) also take care :) sorry to trouble you at the last min ... </s>
+<s> <user> haha well we just started to review now so it is our fault ;) </s>
+<s> <user> hi5 :p </s>
+<s> <user> +1 on the new title and focus </s>
+<s> <user> i at least gave some cursory comments on all <unka> . i think all the <unka> should review at least one that they are interested in . </s>
+<s> <user> <unka@> do you want to put your name on one or more <unka> on the list ( more than one meaning one of these will be selected ) </s>
+<s> <user> <unka@> you mean in the google doc or on <unka> ? </s>
+<s> <user> google doc </s>
+<s> <user> <unka@> do you think this is a good idea : URL/https:/ URL/github.com/ <unk#a-/> we could ask <unka> to do it , he did n't have much opportunity to prove his coding skills yet , i think </s>
+<s> <user> heading over to facebook for free drinks now ^^ </s>
+<s> <user> ttyl </s>
+<s> <user> cheers ! </s>

@@ -1,0 +1,11 @@
+<s> <user> hey <unka@> ... just a fyi , ran your <unka_> api on my package . it works for the most part . though i raise a copied version of the <unka> and get a fail since it is n't explicitly using the <unka-> version ( i wanted to support <unk#.> as well so exported a bunch of functions to reside in <unka.> ). </s>
+<s> <user> thanks for the feedback . is there a reason your <unka> does n't inherit from the <unka> one ? well i guess actually we wanted people to be able to provide compatible code without needing to rely on <unka> .... hum ... </s>
+<s> <user> <unka@> maybe i 'm slow , how is that related to the remark in the parentheses ? </s>
+<s> <user> <unka> was new in <unk#.> i think , so i'd fail tests on my own travis builds based on <unk#.> if i tried to inherit from <unka> i guess </s>
+<s> <user> and to guard against other changes to the <unka-> api , i grabbed a few key utils modules from <unk#.> and stuffed them into a folder in my project </s>
+<s> <user> i could potentially wrap all the important stuff in try blocks , like the fixes module in <unka> . but that seems like a lot of work given how interconnected some of the utils are </s>
+<s> <user> yeah no , do n't do that . actually we should aim at allowing people to pass tests without <unka> from <unka> . </s>
+<s> <user> <unka@> <unka> and i think we should n't check for <unka> , but a public one . i 'm not sure if <unka> or attributeerror </s>
+<s> <user> that'd work . mine is a direct copy of the <unka> error . probably other 's are using older code bases where i think a <unka> was directly raised when not fitted </s>
+<s> <user> actually maybe not ... URL/https:/ URL/github.com/ <unk#a-/> shows a mix of both were in the code base . perhaps check for either of them . i think checking from both is overkill and makes an unnecessary burden on people who want to work with <unka> , but not require it . </s>
+<s> <user> yeah , probably . </s>

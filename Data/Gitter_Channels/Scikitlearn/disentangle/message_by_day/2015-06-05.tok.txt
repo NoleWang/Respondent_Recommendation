@@ -1,0 +1,64 @@
+<s> <user> pipeline is not a dict because it has a sequence , <unka> is not a dict becaues i 'm stupid . </s>
+<s> <user> look at the issue , i went with dict . </s>
+<s> <user> why do you think sorting is n't good ? </s>
+<s> <user> because people do n't know which <unka> correspond to what ? </s>
+<s> <user> damn i just spend two hours on that . </s>
+<s> <user> well if you put it that way </s>
+<s> <user> it 's not a lot different from <unka_> being sorted . which also is a bit confusing for the user . but it is cleaner . </s>
+<s> <user> it would be good to support <unka> if e user so wishes </s>
+<s> <user> <unk#a@> would n't you happen to have a pdf version of <unka> ? i am working at home today and i left my <unka> copy in our lab . </s>
+<s> <user> yes , i have </s>
+<s> <user> URL/https:/ URL/www.dropbox.com/ <unk#a%./=?> </s>
+<s> <user> thanks :) </s>
+<s> <user> <unka:> : let me know if there is any problem in the <unka> draft . </s>
+<s> <user> yeah sorry , i am slow to review your work . i have been busy helping a colleague with a <unka> submission this week . the deadline is tonight . i hope to be more responsive next week . </s>
+<s> <user> <unk#a@> any update on the generalized cv ? it would really be great if you'd report more regularly so we can follow what is happening . </s>
+<s> <user> sory sory ! :( will update that soon ... !! i am unable to pass all the tests :/ </s>
+<s> <user> btw can i go ahead and add the exceptions module or should i wait for a reply from lars ( <unk##> )? </s>
+<s> <user> even if tests are failing , you can still push </s>
+<s> <user> okay :) </s>
+<s> <user> i am not saying " work harder " but " communicate more " ;) </s>
+<s> <user> making tests pass is not always easy , and it is hard for me or <unka@> to help if we do n't see the code </s>
+<s> <user> do you need the exceptions module for the cv pr ? </s>
+<s> <user> yes sure ... apologies for the lack of regular communications :) </s>
+<s> <user> and yea it would be cleaner to put those in exceptions ... coz we are already duplicating a lot of code it would be great if we could group those together into the exceptions module ... ( not a big issue though ) </s>
+<s> <user> feel free to do it </s>
+<s> <user> thanks :) </s>
+<s> <user> <unka@> <unka@> do you remember the <unka> summary pr ? i think it was by <unka@> ? </s>
+<s> <user> is there a more readable alternative to <unka> with complex numbers ? this seems like the most <unka> hack . </s>
+<s> <user> i do n't remember ... </s>
+<s> <user> maybe i 'm imagining things ... </s>
+<s> <user> <unka@> what are you referencing re : <unka> ? is it in any <unka-> code ? </s>
+<s> <user> i just noticed that the problem setting in the current <unka> of <unka> is simpler than mine . you could find it in my new blog post URL/http:/ <unk#a./> <unk#a-./> <unka@> <unka@> <unka@> . </s>
+<s> <user> <unka@> yes , in the examples . <unk#a.:[> ] means " do ten steps from 1 to 2 " </s>
+<s> <user> it is a <unka-> version of <unka> </s>
+<s> <user> without the j it means " step " </s>
+<s> <user> so <unka> implements a <unka-> <unka> if the third argument is real , and a <unka-> <unka> if it is complex . </s>
+<s> <user> not sure if <unk#a:> : or <unka:> : </s>
+<s> <user> so there is no function for this without a slice api ? </s>
+<s> <user> thanks for the <unka-> <unk#a@> ! i will have a deeper look at it next week . </s>
+<s> <user> <unka@> that is what i was asking </s>
+<s> <user> and the <unka> api with complex number that do not mean steps seems a really awkward construct </s>
+<s> <user> <unk#a(.[_> , 2 <unk),]> <unka.> ) == true . # that is all </s>
+<s> <user> <unka> is weird </s>
+<s> <user> <unk#a@> about the api issues , we need to make sure that the score api ( in particular the shape ) is not conflicting with the score method of other models in <unka-> in particular models that are not density <unka> . i think we would have a <unka`> or <unka_`> methods to have more explicit names and avoid conflicts </s>
+<s> <user> <unk#a(.[_> , 3 ], [ 5 , 3 <unk),]> <unka.> ) == true . # that is all </s>
+<s> <user> will come back to you to discuss that on the relevant github issues next week </s>
+<s> <user> btw thanks for the effort to <unka> the <unka> in latex with clear formatting , this is well appreciated . </s>
+<s> <user> <unk#a@> indeed , that is pretty cool </s>
+<s> <user> hum , if i want to <unka-> encode [ <unka'> , <unka'> , <unka'> , 'new <unka'> ] i have to use <unka`> , not <unka`> . that seems odd . </s>
+<s> <user> and if it is [ <unka'> , <unka'> , <unka'> ] i only get a single column .... </s>
+<s> <user> <unka@> the mapping thing is <unka> </s>
+<s> <user> more or less <unka> than the complex <unka> ? </s>
+<s> <user> ok so i want to do an example for the <unka> feature union <unka> that processes `` [ <unka'> , <unka'> , <unka'> , 'new <unka'> ] `` as a <unka> variable . is this really not possible with <unka-> ? </s>
+<s> <user> less . csr is naturally a <unka-> structure </s>
+<s> <user> ;) </s>
+<s> <user> but how do i solve my <unka-> problem now ? should i change <unka> to work with strings ? </s>
+<s> <user> that really should work </s>
+<s> <user> i can already hear <unka> shouting ^^ </s>
+<s> <user> we could code a <unka-> for <unka> </s>
+<s> <user> what should the allowed input types for <unka> be ? </s>
+<s> <user> currently it is integer arrays </s>
+<s> <user> anything that can be turned into a set and indexed ? </s>
+<s> <user> sorry , i did n't get that </s>
+<s> <user> list of strings should work too </s>

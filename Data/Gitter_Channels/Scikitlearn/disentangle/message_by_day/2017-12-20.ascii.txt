@@ -1,0 +1,6 @@
+[04:13] <5a37fc62d73408ce4f83e015> Hello everyone, how can I help with this project?
+[10:37] <53eb987c107e137846baa89d> Here in `make_blobs` http://scikit-learn.org/stable/modules/generated/sklearn.datasets.make_blobs.html , what is centers? It says: ``` centers : int or array of shape [n_centers, n_features], optional      (default=3) The number of centers to generate, or the fixed center locations. ``` The number of centers to generate. I don't understand this.
+[10:39] <53eb987c107e137846baa89d> @MartinEliasQ see http://scikit-learn.org/stable/developers/contributing.html
+[12:00] <53eb987c107e137846baa89d> I think I got some idea using its different values in plots. (centers of normal distribution)
+[22:14] <5a2c58c8d73408ce4f8294ba> Yep. The center of each blob (cluster)
+[22:14] <53eb987c107e137846baa89d> Thanks @DrEhrfurchtgebietend 

@@ -1,0 +1,4 @@
+<s> <user> i do n't know if this is the right place but i need some advice on how to train a <unka> using a data set with multiple feature types : text , integers , floats , dates </s>
+<s> <user> any idea ? </s>
+<s> <user> my first approach was to convert each feature to binary , example : feature 1 -> " the word <unka_> is in column j ?" , feature 2 -> " the value in column j is greater than 10 ?", feature 3 -> " the month in the date of column j was <unka> ?", etc . </s>
+<s> <user> by the way , oliver <unka> : hi ! :d </s>

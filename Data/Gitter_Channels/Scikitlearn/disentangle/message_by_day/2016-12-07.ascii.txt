@@ -1,0 +1,8 @@
+[17:23] <54d4a1d6db8155e6700f853b> @mrocklin they will be. For what application were you thinking?
+[17:24] <54d4a1d6db8155e6700f853b> wow I haven't been here in a while.. whoops
+[17:42] <530c03e25e986b0712efafb8> They've been around for a long while, why the delay?  And more importantly, why the optimism?
+[17:43] <54d4a1d6db8155e6700f853b> in the context of machine learning they haven't been around that long, and I think for topic modeling for example they are only now becoming popular
+[17:43] <54d4a1d6db8155e6700f853b> they've been around for CRFs for a while
+[17:43] <54d4a1d6db8155e6700f853b> which applications / algorithms did you have in mind?
+[17:44] <530c03e25e986b0712efafb8> I've had a request to build implementations on top of dask.array.  I'm polling to see how much value there is to the general community.
+[17:45] <530c03e25e986b0712efafb8> If you happen to have strong opinions about the value of various algorithms I'd enjoy getting your thoughts.

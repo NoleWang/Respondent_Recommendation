@@ -1,0 +1,5 @@
+<s> <user> </s>
+<s> <user> hi everyone , i am <unka> and i am a <unka-> of the python <unka> <unka> in london ( at least i hope so as this is my first time next week ). we are planning on doing a small documentation sprint on a few open source libraries . the main <unka> is planning to address some issues and <unka> changes in the <unka> documentation and i wanted to help a separate group work on a different library . i thought that maybe URL/https:/ URL/github.com/ <unk#a-/> would be a good issue to work on with a small group of people for about 2-3 hours since it overlaps nicely with the other group . is that something that would be helpful and is there someone working on it already ( did not see anyone on github picking it up so far )? </s>
+<s> <user> i do n't see anyone working on the issue for the moment and it seems a good opportunity . </s>
+<s> <user> it would be beneficial for the project since we start to have some feature ( e.g . <unka> ) which can benefit from the <unka> . </s>
+<s> <user> ok great , i see where we can get to on thursday </s>

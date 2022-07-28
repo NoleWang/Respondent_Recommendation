@@ -1,0 +1,6 @@
+[05:05] <5496a05adb8155e6700e1a4b> Does sklearn kmeans uses Linde Buzo Gray algorithm for codebook generation?
+[13:22] <53135b495e986b0712efc453> have a look at this - http://docs.scipy.org/doc/scipy-0.14.0/reference/cluster.vq.html
+[18:25] <54d4a1d6db8155e6700f853b> @rvraghav93 how does that answer the question? @rajathkumarmp no it's just using lloyd's algorithm
+[20:03] <53135b495e986b0712efc453> Sorry I assumed he wanted vector quantisation
+[22:59] <54d4a1d6db8155e6700f853b> well yeah he asked which algorithm is implemented in kmeans. scipy's vq implements the same algorithm as sklearn does
+[23:05] <53135b495e986b0712efc453> Okay :grin: (I stupidly assumed since it was a vq module, maybe it does it using lbg as lbg seems to be the preferred alg for vq)

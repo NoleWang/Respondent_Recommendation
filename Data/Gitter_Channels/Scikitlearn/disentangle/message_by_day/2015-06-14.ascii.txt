@@ -1,0 +1,17 @@
+[13:44] <53135b495e986b0712efc453> This [link](http://eprints.pascal-network.org/archive/00006964/01/vedaldi10.pdf) which is a reference to additive chi2 sampler seems to be down!
+[13:45] <53135b495e986b0712efc453> There was an issue regarding broken links right?
+[13:46] <53135b495e986b0712efc453> #4344
+[13:47] <53135b495e986b0712efc453> This [comment](https://github.com/scikit-learn/scikit-learn/issues/4344#issuecomment-77744354) in particular!
+[20:40] <53135b495e986b0712efc453> chatting from the gitter irc bridge!
+[20:44] <54d4a1d6db8155e6700f853b> :)
+[20:49] <53135b495e986b0712efc453> Its cool!! I am planning to resume work on the irc-gitter bridging thing that we discussed long back (when gael wasn't happy with us using gitter over irc) when I find time!
+[20:49] <53135b495e986b0712efc453> i.e apart from my regular work ;)
+[20:51] <54e07d6515522ed4b3dc0858> I actually really like gitter's interface, what were Gael's concerns?
+[21:05] <53135b495e986b0712efc453> That the discussions were getting diluted at multiple platforms... (gitter, irc, ml, github etc...)
+[21:06] <54e07d6515522ed4b3dc0858> good point, but wasn't IRC kind of dead?
+[21:06] <53135b495e986b0712efc453> https://github.com/scikit-learn/scikit-learn/pull/4248#issuecomment-74413361
+[21:06] <53135b495e986b0712efc453> yes!! but its active during sprints I think..
+[21:08] <54e07d6515522ed4b3dc0858> i like the auto-links to issues,  and the activity pane in gitter
+[21:09] <53135b495e986b0712efc453> And history, code formatting, markdown too! ;) 
+[21:12] <53135b495e986b0712efc453> Speaking of activity pane :p @vene could you take a look at #4860 its a very minor PR! :)
+[21:28] <54e07d6515522ed4b3dc0858> I left a comment there

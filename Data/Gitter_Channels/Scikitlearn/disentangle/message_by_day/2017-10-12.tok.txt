@@ -1,0 +1,2 @@
+<s> <user> <unk#a@> i am not sure how you can exactly achieve this but what you are trying to achieve is a very hard problem . i feel wordnet shall be used for calculating the word distances for <unka/> and even use <unka-> for sentence <unka> . i know this is very vague for you 've got some work to do .. </s>
+<s> <user> does someone have experience with using <unk#a(> ) poses as inputs ? i am trying to find a good representation for the <unka> . some pros/cons , along with usage guidelines would be much appreciated as well . thanks in advance </s>

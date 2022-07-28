@@ -1,0 +1,6 @@
+[05:58] <5fb60715d73408ce4ff46856> hey, I need help with plotting rbf kernel's output in svm.SVC. Where do I go for help?
+--------------------------------------------------------------------------------------------------
+[06:35] <5fb60715d73408ce4ff46856> [![image.png](https://files.gitter.im/541a528c163965c9bc2053e1/Y9W4/thumb/image.png)](https://files.gitter.im/541a528c163965c9bc2053e1/Y9W4/image.png)  Any material on rbf kernel will help. I am looking for the above function.
+--------------------------------------------------------------------------------------------------
+[13:25] <5da2a33dd73408ce4fcdacee> @salih.four_gitlab are you looking for this, https://scikit-learn.org/stable/modules/generated/sklearn.gaussian_process.kernels.RBF.html?
+--------------------------------------------------------------------------------------------------

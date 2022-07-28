@@ -1,0 +1,6 @@
+[09:11] <564789be16b6c7089cbab8b7> @amueller  right.. it would be nice to have an example that worked in a script though as many newbie people will just copy and paste into their code
+[09:12] <564789be16b6c7089cbab8b7> @amueller  I got it work myself so this is a suggestion for others
+[14:59] <54d4a1d6db8155e6700f853b> @lesshaste you mean for the tree plotting? The real solution is here: https://github.com/scikit-learn/scikit-learn/pull/9251
+[17:22] <564789be16b6c7089cbab8b7> @amueller  Thanks. Should this work for regression trees too?  
+[17:22] <54d4a1d6db8155e6700f853b> yes
+[17:34] <564789be16b6c7089cbab8b7> great! I look forward to it's being merged

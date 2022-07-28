@@ -1,0 +1,4 @@
+<s> <user> how i get the individual components from <unka_> ? </s>
+<s> <user> i found this : URL/https:/ URL/stackoverflow.com/ <unk#a-/> </s>
+<s> <user> sorry , this : URL/https:/ URL/stackoverflow.com/ <unk#a-/> </s>
+<s> <user> but the <unka=_> does n't seem to work , i am receiving an error stating this parameter does not exist on the <unka_> function , i also do n't trust <unka_> , plus it misses accuracy </s>

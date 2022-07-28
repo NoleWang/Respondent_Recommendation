@@ -1,0 +1,3 @@
+<s> <user> hi . i am looking at the [ <unka> <unka(-./:]_> ). do we only support <unka`> layer for neural networks for now ? i was hoping to try some <unka`> features of <unka-`> to create some <unka> networks . </s>
+<s> <user> <unka> neural networks are indeed not supported and out of the scope of <unka-> . please use a library dedicated to deep learning for this . if you need <unka-> api compatibility , you can try : URL/https:/ URL/github.com/ <unka-/> or URL/https:/ <unka./> <unka/_> . </s>
+<s> <user> thanks . i think i will stick with tensorflow for now . </s>

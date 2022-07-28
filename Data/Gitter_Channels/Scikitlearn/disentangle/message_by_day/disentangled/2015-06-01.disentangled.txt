@@ -1,0 +1,21 @@
+[02:16] <53135b495e986b0712efc453> @vene @amueller @ogrisel Hey this is the updated blog post incorporating all your suggestions... I am still a newbie at ML and might have made a few stupid mistakes... Please take a look at the post and feel free to point out if there are any :)
+[02:16] <53135b495e986b0712efc453> http://rvraghav93.blogspot.com/2015/05/gsoc-2015-with-python-software.html
+--------------------------------------------------------------------------------------------------
+[10:48] <551418d115522ed4b3dddd7b> @rvraghav93 doesn't Wei Xue work on Gaussian Mixture Models? I thought that bayesian hyperoptimization didn't make it into accepted projects
+--------------------------------------------------------------------------------------------------
+[13:18] <54d4a1d6db8155e6700f853b> yeah, that is correct
+--------------------------------------------------------------------------------------------------
+[13:19] <54d4a1d6db8155e6700f853b> I'll have a look at the blog post probably tomorrow, I am sprinting with @pprett and @GaelVaroquaux today
+[15:59] <54d4a1d6db8155e6700f853b> https://github.com/scikit-learn/scikit-learn/issues/3560
+--------------------------------------------------------------------------------------------------
+[16:03] <54d4a1d6db8155e6700f853b> There is a sprint in boston!
+[16:04] <54d4a1d6db8155e6700f853b> (like, today)
+[16:04] <54d4a1d6db8155e6700f853b> if anyone here wants to join
+[16:05] <54d4a1d6db8155e6700f853b> like @llllllllll
+[16:05] <54d4a1d6db8155e6700f853b> lol
+[16:05] <54d4a1d6db8155e6700f853b> that is the worst name
+--------------------------------------------------------------------------------------------------
+[16:48] <54d4a1d6db8155e6700f853b> @GaelVaroquaux do you want to merge this? https://github.com/scikit-learn/scikit-learn/pull/4785
+--------------------------------------------------------------------------------------------------
+[17:36] <54d4a1d6db8155e6700f853b> https://github.com/scikit-learn/scikit-learn/issues/4784
+--------------------------------------------------------------------------------------------------

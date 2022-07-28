@@ -1,0 +1,3 @@
+<s> <user> hi ! what week scheduled for release <unka-> 1.0 ? </s>
+<s> <user> there is no specific week scheduled <unka@> , but we try to release every 6 months and the previous one was released in december </s>
+<s> <user> so perfectly june but i think that for 1.0 we want a couple of feature to be inside the release so we might be delayed . </s>

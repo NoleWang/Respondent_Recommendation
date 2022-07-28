@@ -1,0 +1,15 @@
+[15:03] <58beb8b7d73408ce4f4ef904> hello
+--------------------------------------------------------------------------------------------------
+[15:05] <58beb8b7d73408ce4f4ef904> while I am trying to fix an issue using the the inspect.signature method with python3, I am getting this error: /sklearn/__check_build/_check_build.so: undefined symbol: PyUnicodeUCS4_DecodeUTF8
+[15:06] <58beb8b7d73408ce4f4ef904> Have I built something wrong , or do you know how I can build again so as to be python3 compatible?
+[15:14] <58beb8b7d73408ce4f4ef904> https://github.com/scikit-learn/scikit-learn/issues/8194
+[15:14] <58beb8b7d73408ce4f4ef904> I am running the rcheck.py to scan the modules
+[16:26] <58beb8b7d73408ce4f4ef904> I managed to build successfully with make using python3. Everything looks good now, I 'll get on with the fix
+[16:26] <58beb8b7d73408ce4f4ef904> Thank you Andreas!
+--------------------------------------------------------------------------------------------------
+[15:13] <54d4a1d6db8155e6700f853b> do you want to use the development version? Otherwise I'd suggest you just use anaconda or the wheels provided by pip
+[15:13] <54d4a1d6db8155e6700f853b> What's the error you're trying to fix?
+[15:16] <54d4a1d6db8155e6700f853b> how did you build scikit-learn?
+[15:16] <54d4a1d6db8155e6700f853b> and how are you running rcheck.py?
+[15:16] <54d4a1d6db8155e6700f853b> Make the installation procedure matches the python environment you are running
+--------------------------------------------------------------------------------------------------

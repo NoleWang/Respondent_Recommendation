@@ -1,0 +1,8 @@
+<s> <user> does anyone know how the images are generated in the " example gallery " <unka?> trying to contribute an example but the plot legend and title are cut off on the html page in my local build . </s>
+<s> <user> <unk#a@> i do n't think <unka> has been implemented yet which afaik is crucial for getting good out of sample prediction performance </s>
+<s> <user> i once saw a pr for it i think but i am not sure what happened </s>
+<s> <user> URL/https:/ URL/github.com/ <unk#a-/> and URL/https:/ URL/github.com/ <unka-/_> . maybe these are stalled ? </s>
+<s> <user> on a similar note ... has URL/https:/ URL/github.com/ <unk#a-/> stalled ? i am hugely looking forward it . </s>
+<s> <user> URL/http:/ <unka./> <unk#a-/> </s>
+<s> <user> <unka@> yes but what 's the point :) bus drivers take a lot of <unka> so i ca n't believe it saves much money </s>
+<s> <user> @_@ what the point of automating <unka> ? </s>

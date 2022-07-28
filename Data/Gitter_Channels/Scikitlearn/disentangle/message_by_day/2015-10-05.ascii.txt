@@ -1,0 +1,3 @@
+[14:30] <53135b495e986b0712efc453> Do we need to have the notifications for test failures in gitter activity bar... wouldn't notifications on PR activity suffice?
+[14:30] <53135b495e986b0712efc453> @ogrisel 
+[14:33] <541a528b163965c9bc2053de> @rvraghav93 we can try adding them in gitter. If it's too noisy, we can remove it.

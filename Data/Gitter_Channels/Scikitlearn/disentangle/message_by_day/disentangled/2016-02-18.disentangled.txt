@@ -1,0 +1,50 @@
+[06:31] <5363a92c048862e761fa03c3> I am trying to update my local scikit-learn folder by using `git pull upstream master` but then I am getting this: ``` (devscikit)kaichogami@kaichogami:~/codes/development_scikit-learn/scikit-learn$ git pull upstream master From https://github.com/scikit-learn/scikit-learn  * branch            master     -> FETCH_HEAD Updating 1aa0ec2..1b27536 error: The following untracked working tree files would be overwritten by merge: 	continuous_integration/circle/build_doc.sh 	continuous_integration/circle/check_build_doc.py 	continuous_integration/circle/push_doc.sh 	doc/tutorial/statistical_inference/unsupervised_learning_fixture.py 	examples/cluster/plot_face_compress.py 	examples/cluster/plot_face_segmentation.py 	examples/cluster/plot_face_ward_segmentation.py 	examples/mixture/plot_gmm_covariances.py Please move or remove them before you can merge. Aborting ``` I messed up some merge conflicts although that I was not in `master` branch.  What would be the best approach to resolve this?
+--------------------------------------------------------------------------------------------------
+[06:45] <56c4f19ae610378809c1f8ae> hmm
+--------------------------------------------------------------------------------------------------
+[06:45] <56c4f19ae610378809c1f8ae> im presuming you want to preserve the untracked working tree files?
+--------------------------------------------------------------------------------------------------
+[14:03] <541a528b163965c9bc2053de> Assuming you don't care about any local changes to your master branch or uncommit changes:  ```bash git checkout master git reset --hard upstream/master ```
+[14:07] <541a528b163965c9bc2053de> BTW, you should never commit anything to your local master. Always use branches.
+[15:38] <541a528b163965c9bc2053de> I thought your French lessons would only start next month ;)
+--------------------------------------------------------------------------------------------------
+[15:08] <541a528b163965c9bc2053de> @amueller I am building the wheels for osx and windows for 0.17.1, how did you sync with conda people?
+--------------------------------------------------------------------------------------------------
+[15:27] <54d4a1d6db8155e6700f853b> @ogrisel I emailed them. give me a minute
+--------------------------------------------------------------------------------------------------
+[15:28] <541a528b163965c9bc2053de> The 0.17.1 tag is already public
+[15:28] <541a528b163965c9bc2053de> I am ready to upload :)
+[15:28] <54d4a1d6db8155e6700f853b> just email support@continuum.io
+[15:28] <541a528b163965c9bc2053de> actually no, I would like to run a couple more tests.
+[15:29] <541a528b163965c9bc2053de> Alright I will sync up with them
+[15:32] <541a528b163965c9bc2053de> No pbm :) Hope you'll feel better soon. BTW thanks for the PyData Berlin reco :)
+[15:37] <541a528b163965c9bc2053de> done :)
+--------------------------------------------------------------------------------------------------
+[15:29] <54d4a1d6db8155e6700f853b> I cc'ed peter wang, which might have helped the process lol
+[15:29] <54d4a1d6db8155e6700f853b> thanks for working on the release again, and sorry I'm not more help
+[15:29] <54d4a1d6db8155e6700f853b> I'm doing a company visit today and also I'm dead sick. hurray ^^
+--------------------------------------------------------------------------------------------------
+[15:35] <53135b495e986b0712efc453> @ogrisel Ah caught you on gitter - Now could you please review and merge this - #6254 ? :P
+[15:37] <53135b495e986b0712efc453> Merci ;)
+--------------------------------------------------------------------------------------------------
+[15:40] <53135b495e986b0712efc453> Next month I'll progress to full sentences in French ^_^
+--------------------------------------------------------------------------------------------------
+[15:41] <541a528b163965c9bc2053de> I sent an email to continuum.
+--------------------------------------------------------------------------------------------------
+[17:07] <5363a92c048862e761fa03c3> @nelson-liu
+--------------------------------------------------------------------------------------------------
+[17:13] <5363a92c048862e761fa03c3> @nelson-liu I think I accidentally committed in `master` which resulted in that.  @ogrisel Thank you, that helped me. I do use different branches. Will be extra careful next time! :)
+--------------------------------------------------------------------------------------------------
+[18:19] <541a528b163965c9bc2053de> scikit-learn 0.17.1 is online!
+[18:19] <541a528b163965c9bc2053de> :beers:
+[18:19] <56c4f19ae610378809c1f8ae> :clap:
+--------------------------------------------------------------------------------------------------
+[18:31] <56c4f19ae610378809c1f8ae> @kaichogami got it, glad you got it fixed!
+--------------------------------------------------------------------------------------------------
+[20:14] <56c625c3e610378809c22760> Never knew that the gitter channel was this active! @nelson-liu please add this to the doc!
+--------------------------------------------------------------------------------------------------
+[20:17] <56c4f19ae610378809c1f8ae> yeah I find it a bit odd that it isnt in there already...searching gitter in the repos issue history even shows many people referencing collaborating / talking on it. at least its much more active than irc :P
+[20:18] <56c625c3e610378809c22760> haha yeah true
+--------------------------------------------------------------------------------------------------
+[21:24] <564789be16b6c7089cbab8b7>
+--------------------------------------------------------------------------------------------------

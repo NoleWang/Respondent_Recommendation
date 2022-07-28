@@ -1,0 +1,7 @@
+[00:01] <54b2524adb8155e6700e8a8e> A toy for anyone who uses grid search, and particularly @amueller: https://github.com/jnothman/searchgrid
+[00:02] <54b2524adb8155e6700e8a8e> very much in alpha status
+--------------------------------------------------------------------------------------------------
+[14:37] <54d4a1d6db8155e6700f853b> @jnothman nice!
+--------------------------------------------------------------------------------------------------
+[14:38] <54d4a1d6db8155e6700f853b> What I'm thinking about right now / talking about with some people is to make it easier to implement ask/tell interfaces with BaseGridSearch. Maybe not in sklearn, but I think it should be possible to use a coroutine approach that allows implementing arbitrary parallel search strategies with a common interface
+--------------------------------------------------------------------------------------------------

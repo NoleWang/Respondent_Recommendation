@@ -1,0 +1,19 @@
+[09:00] <5c62c8f4d73408ce4fb791fb> Hi everyone, I need some help in implementing sklearn.decomposition.SparseCoder in c++. I've been searching it for a while but couldn't find good resource/library so far. Is there any library out there which can solve sparse decomposition in c++?
+--------------------------------------------------------------------------------------------------
+[09:06] <567f5d7716b6c7089cc043a8> Have you checked Shogun? They might have something
+--------------------------------------------------------------------------------------------------
+[09:34] <5c62c8f4d73408ce4fb791fb> Not yet, will check
+--------------------------------------------------------------------------------------------------
+[11:30] <5da2a33dd73408ce4fcdacee> @KartikShrivastava , there is MLPack, https://mlpack.org/doc/mlpack-3.1.0/doxygen/cftutorial.html, I haven't read the complete article, but it does have the phrase "Sparse Matrix" in it.
+--------------------------------------------------------------------------------------------------
+[13:53] <5c62c8f4d73408ce4fb791fb> Yup, I've tried the sparse coding module of that but couldn't get the right results from as, not as good as sklearn, so I thought that it might not be the way to go
+--------------------------------------------------------------------------------------------------
+[15:11] <5da2a33dd73408ce4fcdacee> Ah, okay! What other solutions have you tried? Would like to know.
+--------------------------------------------------------------------------------------------------
+[16:57] <5c62c8f4d73408ce4fb791fb> I'm also trying nnls solver of eigen library. I've used it in a similar application
+[17:09] <5da2a33dd73408ce4fcdacee> That's cool!
+--------------------------------------------------------------------------------------------------
+[17:22] <5c62c8f4d73408ce4fb791fb> Took help of mlpack people and it worked using the sparse coder interface :) Just to mention it requires initializing dictionary and a call to encode. I realized that it's very similar to sklearn sparse coder
+--------------------------------------------------------------------------------------------------
+[21:22] <5fa72f4dd73408ce4ff383e4> Hi! I am new
+--------------------------------------------------------------------------------------------------

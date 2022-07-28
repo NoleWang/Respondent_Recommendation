@@ -1,0 +1,18 @@
+[06:43] <56c4f19ae610378809c1f8ae> does anyone happen to know if scikit-learns implementation of coordinate descent (for stuff like Lasso, ElasticNet, etc.) is stochastic?
+[06:43] <56c4f19ae610378809c1f8ae> i.e., does sample order matter?
+[06:43] <56c4f19ae610378809c1f8ae> (assuming random seeds are set and all that other stuff)
+--------------------------------------------------------------------------------------------------
+[08:54] <56aba3aee610378809bedf43> I have been trying SVC and have a doubt. C is referred to the penalty term, therefore with increase in the value of C, the algorithm try's to reduce the number of wrong classified and with very high value of C it may overfit the data. Can we say that with overfitting, the number of support vectors would increase. And if we use a lower value of C the number of support vectors will be less ?
+[08:55] <56aba3aee610378809bedf43> But the results I got were different, with small value of C, the model was underfit and the number of support vectors were huge
+--------------------------------------------------------------------------------------------------
+[09:03] <56aba3aee610378809bedf43> Can anyone explain, what is wrong with my thinking :P
+--------------------------------------------------------------------------------------------------
+[18:42] <592f0e7ad73408ce4f63b1dd> no
+[18:42] <592f0e7ad73408ce4f63b1dd> don't you know anything?
+--------------------------------------------------------------------------------------------------
+[23:26] <574454a0c43b8c601974a563> @sbromberger Currently Im not familiar with Julia, but it seems to be easy. I will have a look at the necessary parts.
+--------------------------------------------------------------------------------------------------
+[23:33] <574454a0c43b8c601974a563> @amitmanchanda1995 https://stats.stackexchange.com/questions/31066/what-is-the-influence-of-c-in-svms-with-linear-kernel
+--------------------------------------------------------------------------------------------------
+[23:37] <574454a0c43b8c601974a563> @amitmanchanda1995 Furthermore  the parameter `n_support_`  of an estimator gives you the number of used support vectors for each class: https://github.com/scikit-learn/scikit-learn/blob/14031f6/sklearn/svm/classes.py#L484-L485
+--------------------------------------------------------------------------------------------------

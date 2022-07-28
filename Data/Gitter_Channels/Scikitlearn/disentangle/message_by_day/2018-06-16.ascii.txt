@@ -1,0 +1,3 @@
+[15:54] <54d4a1d6db8155e6700f853b> @tanimislam you can use gridsearchcv for that.
+[15:54] <54d4a1d6db8155e6700f853b> (bandwidth estimation)
+[15:54] <54d4a1d6db8155e6700f853b> there's no efficient implementation if that was the question

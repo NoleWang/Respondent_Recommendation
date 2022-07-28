@@ -1,0 +1,61 @@
+[17:11] <54d4a1d6db8155e6700f853b> welcome everybody to the sprint!
+[17:19] <54c084dbdb8155e6700eed4c>  hey all!
+[17:43] <564a144c16b6c7089cbaebe3> Hello folks! I'm having an issue building sklearn from source. I've included my full logs here (http://pastebin.com/13LKxi55). I'm using pyenv with anaconda. Has anyone seen any issues with sklearn/cluster/_k_means.c failing to compile?  This looks a lot like my error https://github.com/scikit-learn/scikit-learn/issues/3114, but I don't understand the resolution.
+[17:44] <564a0e2916b6c7089cbaead6> Which version of python are you using?
+[17:45] <564a144c16b6c7089cbaebe3> ``` (root) <unconvertable>  scikit-learn git:(master) pyenv version anaconda3-2.4.0 (set by /Users/maxlikely/src/scikit-learn/.python-version) ```
+[17:45] <564a144c16b6c7089cbaebe3> which is 3.5
+[17:49] <564a0e2916b6c7089cbaead6> I think that might be your issue
+[17:49] <564a0e2916b6c7089cbaead6> Possible to build against an 3.4?
+[17:49] <564a0dc816b6c7089cbaeacd> suppose I've found an Easy issue to address, having a Needs Contributor label. how do I claim this as my own?
+[17:49] <564a0e2916b6c7089cbaead6> comment on it
+[17:52] <564a144c16b6c7089cbaebe3> @joshuacook I tried building against 3.4.3, I had the same issue. I can try 3.4.0.
+[17:57] <54c084dbdb8155e6700eed4c> http://scikit-learn.org/stable/developers/contributing.html
+[17:57] <564a18f416b6c7089cbaec93> Here is the documentation on contributing code, for the person who just asked: http://scikit-learn.org/dev/developers/contributing.html#contributing-code
+[17:58] <564a0e2916b6c7089cbaead6> @maxlikely I had issues with required libs being built against different versions. But I'm not using `conda`
+[18:02] <564a185916b6c7089cbaec66> When I run `make` on a forked branch of master, I get 1 error and 1 failure.  Here is the traceback for the error http://pastebin.com/C8EpQT75 It involves reading a jpeg with PIL, which hasn't been working for me the past few weeks.  I have Pillow 3.0.0 installed
+[18:07] <564a0d8116b6c7089cbaeabf> Looking at https://github.com/scikit-learn/scikit-learn/issues/5686
+[18:10] <564a0dc816b6c7089cbaeacd> looking at 5581, and need to reconcile the built path mentioned in the bug with the path in the source. bug mentions file:///home/andy/checkout/scikit-learn/doc/_build/html/stable/modules/neural_networks_supervised.html#more-control-with-warm-start, but the source path is actually doc/modules/neural_networks_supervised.rst. After updating such a doc, what is to be done to verify all is well before submitting a PR?
+[18:19] <564a18f416b6c7089cbaec93> When I run '''make''' on my branch, the build fails. Here is the traceback: http://pastebin.com/VgHFvhPF# Any help appreciated.
+[18:30] <5648fd3216b6c7089cbad1e3> I got the same error as @hallr   Any ideas why it doesn't "make"?
+[18:34] <564a116816b6c7089cbaeb95> Me too I have the same problem @hallr  @lazarillo 
+[18:38] <564a0e2916b6c7089cbaead6> any restructured text gurus?
+[18:46] <564a0dc816b6c7089cbaeacd> answering my own question, `make doc` builds html docs under doc/_build/html/stable  
+[18:50] <564a0d8116b6c7089cbaeabf> Any traction on that make test error with the infinite value?
+[18:55] <564a264d16b6c7089cbaee0f> hi all, if anybody would like to review my pull request for 'adding cython to requirements' in documentation, it is here: 
+[18:55] <564a264d16b6c7089cbaee0f> https://github.com/scikit-learn/scikit-learn/pull/5834
+[18:57] <5648fd3216b6c7089cbad1e3> Hi @joshuacook  I don't know if I'd say guru, but I understand it fairly well.
+[19:00] <564a144c16b6c7089cbaebe3> I'm going to take a stab at https://github.com/scikit-learn/scikit-learn/issues/5606.
+[19:00] <564a0d8116b6c7089cbaeabf> I have a PR for an error that happens in the tests: https://github.com/scikit-learn/scikit-learn/pull/5836
+[19:00] <564a144c16b6c7089cbaebe3> FWIW: I bypassed the build issue with `pyenv` by installing anaconda directly.
+[19:00] <53135b495e986b0712efc453> @amueller #4533 can be closed...
+[19:01] <564a0e2916b6c7089cbaead6> @lazarillo where can I find you? I am red head in red flannel
+[19:12] <564a11fc16b6c7089cbaeb9e> Has anyone found an issue that they are working on that is simple and would enjoy more collaboration?
+[19:22] <564a176d16b6c7089cbaec44> Is there a norm against implementing visualization methods directly within an sklearn module?
+[19:24] <564a11fc16b6c7089cbaeb9e> @hallr @NTBlok Can i work on issue #5827 with you? 
+[19:25] <53135b495e986b0712efc453> What kind of visualisation methods do you mean? @jonoleson
+[19:31] <564a176d16b6c7089cbaec44> @rvraghav93 Like I was considering adding a plotting method to the RFECV module that would graph the cross-validation scores for each subset of features. Just a simple line graph with num_features on the x-axis and cv_score on the y-axis. 
+[19:34] <564a11fc16b6c7089cbaeb9e> I am going to work on issue #5656
+[19:35] <564a264d16b6c7089cbaee0f> edited pull request and ready to merge #5834 
+[19:39] <564a27c016b6c7089cbaee48> I'm looking into #5364
+[19:42] <564a183f16b6c7089cbaec5b> we're looking into #5804
+[19:42] <54d4a1d6db8155e6700f853b> for someone interested in figuring out a segfault, you can take a stab at https://github.com/scikit-learn/scikit-learn/issues/5724
+[19:43] <54d4a1d6db8155e6700f853b> btw, fixing any errors in the build of the documentation (running make or make html in the doc folder) or fixing any warnings in the tests is also very welcome
+[20:05] <564a18f416b6c7089cbaec93> @NTBlok @fluxtransport and I submitted PR for #5827 - add contributors for 0.16 and 0.17 to docs
+[20:12] <564a11fc16b6c7089cbaeb9e> @lazarillo and I are taking a stab at #4920
+[20:40] <564a0d8116b6c7089cbaeabf> Is the problem with the news group downloads b/c the underlying data has moved to a new web site? https://github.com/scikit-learn/scikit-learn/issues/4711
+[21:00] <564a0d8116b6c7089cbaeabf> I had a look at the segfault -- I cannot reproduce when using %run inside an ipython notebook. Using either of the new matplotlib methods to fetch the yahoo data.
+[21:03] <564a0e2916b6c7089cbaead6> Pull request for the single dead link: https://github.com/scikit-learn/scikit-learn/pull/5829#partial-pull-merging
+[21:08] <564a11fc16b6c7089cbaeb9e> @amueller Is issue Meta-estimators for multi-output learning #5824 still available? 
+[21:13] <54d4a1d6db8155e6700f853b> @MrChristophRivera @hugobowne just asked me about it.
+[21:13] <54d4a1d6db8155e6700f853b> it is probably not as easy as the other issues. please check with him if he is working on it
+[21:18] <564a264d16b6c7089cbaee0f> @MrChristophRivera i'm just looking into it now -- not sure whether i'll attack it . are you at the code sprint. thanks @amueller 
+[21:31] <54d4a1d6db8155e6700f853b> @MrChristophRivera probably is ;) you can also use the physical audio channel
+[21:52] <564a4d2b16b6c7089cbaf2ee> @amueller made changes you requested: https://github.com/scikit-learn/scikit-learn/pull/5841
+[22:02] <564a144c16b6c7089cbaebe3> Hey, I just wanted to check if anyone has claimed https://github.com/scikit-learn/scikit-learn/issues/5851 yet?
+[22:48] <564a183f16b6c7089cbaec5b> git@github.com:RubyW/scikit-learn.git
+[22:48] <564a183f16b6c7089cbaec5b> oops
+[22:49] <564a0d8116b6c7089cbaeabf> can someone review my change here: https://github.com/scikit-learn/scikit-learn/pull/5858
+[23:18] <564a0dc816b6c7089cbaeacd> coupla PRs here: https://github.com/scikit-learn/scikit-learn/pull/5833 https://github.com/scikit-learn/scikit-learn/pull/5856
+[23:31] <54d4a1d6db8155e6700f853b> is @maxlikely in SF at the sprint?
+[23:32] <564a144c16b6c7089cbaebe3> yes
+[23:34] <564a0dc816b6c7089cbaeacd> probably

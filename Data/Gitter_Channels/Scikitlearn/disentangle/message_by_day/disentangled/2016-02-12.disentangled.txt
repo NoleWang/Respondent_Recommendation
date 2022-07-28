@@ -1,0 +1,27 @@
+[00:11] <54d4a1d6db8155e6700f853b> @lesshaste there is a PR for stability scores, but evaluating clustering is really hard
+[16:11] <54d4a1d6db8155e6700f853b> @lesshaste yes
+--------------------------------------------------------------------------------------------------
+[02:13] <56b80528e610378809c05a48> Hello @amueller ,
+--------------------------------------------------------------------------------------------------
+[02:15] <56b80528e610378809c05a48> Would you please answer the question I asked in this issue lately? https://github.com/scikit-learn/scikit-learn/issues/6322  Oh and homogeneous and heterogeneous should be separated into two classes, right?
+--------------------------------------------------------------------------------------------------
+[06:17] <564789be16b6c7089cbab8b7> @amueller  thanks. I hope that PR works out. I seem to remember it had made quite a lot of progress
+--------------------------------------------------------------------------------------------------
+[07:30] <564789be16b6c7089cbab8b7> @amueller  https://github.com/scikit-learn/scikit-learn/pull/4301 ?
+--------------------------------------------------------------------------------------------------
+[16:23] <54d4a1d6db8155e6700f853b> @ogrisel are you around?
+--------------------------------------------------------------------------------------------------
+[17:42] <53135b495e986b0712efc453> Does anyone know if it is a better idea to form the `neighbors/binary_tree.pxi` into a proper `pyx` + `pxd` file rather than importing the pxi file at `kd_tree.pyx` and `ball_tree.pyx`. From [this](https://github.com/cython/cython/wiki/FAQ#what-is-the-difference-between-a-pxd-and-pxi-file-when-should-either-be-used) (Thanks  to @tomdlt) article, I understand that pxi file gets included at both the places. Would it be better to import than to include or am I missing something?
+--------------------------------------------------------------------------------------------------
+[17:48] <54d4a1d6db8155e6700f853b> ok I set up the travis correctly and reproduced locally, so I'll spend the rest of the day fixing numpy dev compatibility
+[17:50] <53135b495e986b0712efc453> @amueller I'm free for the evening (and weekend). I am starting the work on multiple metric grid search... (I have some notes on how you had wanted it implemented) I'll ping you and joel if I get into trouble ;)
+[17:52] <54d4a1d6db8155e6700f853b> have you talked to @MechCoder ? he was also thinking about the problem
+[17:52] <54d4a1d6db8155e6700f853b> it's valentines day on Sunday, I might be busy ;)
+[17:52] <54d4a1d6db8155e6700f853b> also I want to make sure everything is ready for the 0.17.1 release
+[17:52] <53135b495e986b0712efc453> Yes I spoke to him too out of github ;)
+[17:53] <54d4a1d6db8155e6700f853b> cool
+[17:53] <53135b495e986b0712efc453> Hehe :P Have a nice time ;)
+--------------------------------------------------------------------------------------------------
+[20:04] <54d4a1d6db8155e6700f853b> Anyone who knows the sequential dataset well? I'm stumped on #6334
+[21:30] <54d4a1d6db8155e6700f853b> ok, all "fixed"
+--------------------------------------------------------------------------------------------------

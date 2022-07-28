@@ -1,0 +1,13 @@
+[20:13] <54d4a1d6db8155e6700f853b> quick poll: did you all notice the conda compiler package update and have you trashed all your legacy environments? Am I the only one that didn't hear about that?
+[20:16] <53232ac75e986b0712efe3af> I have had a lot of problems lately with conda, but I don't know if they are related to the new compiler packages. Basically whatever small change I want to do, it wants to downgrade/upgrade a whole set of other packages (eg it always wants to downgrade my conda-forge numpy 1.13 to defaults numpy 1.11 when installing a package that is in no way depending (also no through its deps) on numpy)
+[20:16] <54d4a1d6db8155e6700f853b> huh
+[20:16] <53232ac75e986b0712efe3af> at a certain point it even just wanted to remove numpy
+[20:16] <53232ac75e986b0712efe3af> https://github.com/conda/conda/issues/6283
+[20:17] <54d4a1d6db8155e6700f853b> are you mixing old and new packages by any chance?
+[20:17] <53232ac75e986b0712efe3af> possibly, but as a user I should not be needed to be aware of that
+[20:17] <54d4a1d6db8155e6700f853b> these are all "old" packages. I guess conda-forge only uses old packages?
+[20:18] <54d4a1d6db8155e6700f853b> that's what I though, but I was just told in the conda issue tracker that I need to discard any old environment
+[20:18] <54d4a1d6db8155e6700f853b> or at least not try to upgrade anything or compile anything
+[20:19] <53232ac75e986b0712efe3af> they can say that maybe for environments that depend on defaults, but I have environments that are mainly conda-forge (because they eg depend on geospatial things that are (or were) broken on defaults), and there just updating a conda-forge package should still work, without having it pull in defaults (conda-forge should take priority)
+[20:20] <54d4a1d6db8155e6700f853b> yeah, true
+[20:20] <54d4a1d6db8155e6700f853b> that sounds possibly unrelated ;)

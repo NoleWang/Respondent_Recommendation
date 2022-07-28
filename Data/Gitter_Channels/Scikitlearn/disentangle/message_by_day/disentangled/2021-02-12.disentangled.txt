@@ -1,0 +1,10 @@
+[09:01] <5571fe1015522ed4b3e17d90> I think it would be a good idea to encourage creating a Github Discussion (rather than gitter) for anything else than simple questions/answers: https://github.com/scikit-learn/scikit-learn/discussions/new. gitter is not properly indexed by search engines so it is not a great use of time for people who answer questions.
+[09:02] <5571fe1015522ed4b3e17d90> I agree that "simple qestion/answer" does not have a very-well defined boundary but in the case of @citron's questions I think we have crossed this boundary a long time ago ...
+--------------------------------------------------------------------------------------------------
+[09:16] <5479972adb8155e6700d9370> @lesteve I understand and agree.
+--------------------------------------------------------------------------------------------------
+[10:40] <5571fe1015522ed4b3e17d90> @citron then if you find the time maybe create a Github Discussion and post the link in the gitter so that the discussion can continue in the Github Discussion?
+--------------------------------------------------------------------------------------------------
+[22:04] <6026fa066da037398461e161> Hello guys! Me and my friends are looking to tackle some open issues on scikit-learn soon. We're very new so I would love a high level overview of the architecture.
+[22:05] <6026fa066da037398461e161> Can anyone help or point to some resources?
+--------------------------------------------------------------------------------------------------

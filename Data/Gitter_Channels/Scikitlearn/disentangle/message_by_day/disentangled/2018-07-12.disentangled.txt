@@ -1,0 +1,4 @@
+[11:07] <564e507e16b6c7089cbb6551> Anyone knows on which paper are based the formulas in: http://scikit-learn.org/stable/modules/sgd.html#id1 for the `weights` and the `learning rate` of the `SGDClassifier`? I couldn't find the exact same formulas in the papers linked at the bottom of those sections.
+--------------------------------------------------------------------------------------------------
+[18:15] <54d4a1d6db8155e6700f853b> @h4k1m0u probably bottou's sgd code
+--------------------------------------------------------------------------------------------------

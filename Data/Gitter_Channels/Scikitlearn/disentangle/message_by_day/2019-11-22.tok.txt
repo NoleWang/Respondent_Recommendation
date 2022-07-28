@@ -1,0 +1,5 @@
+<s> <user> hi there , is <unka-> clustering <unka> even when the initial centers are given ? i 'm noticing different results when i run my code multiple times </s>
+<s> <user> <unk#a@> i do n't think it should be </s>
+<s> <user> <unka@> that 's weird , i ca n't find out why in this short piece of code ( URL/https:/ URL/bpaste.net/ <unka/> ) the <unka> found by <unka> are sometimes located at the center of the 3 samples and sometimes not </s>
+<s> <user> you do n't fix the random seed so the data changes </s>
+<s> <user> oh sorry , i 've completely forgotten the <unka.> above . thanks a lot for reminding about that . </s>

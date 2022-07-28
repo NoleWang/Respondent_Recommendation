@@ -1,0 +1,9 @@
+<s> <user> hi everyone . i would like to contribute to this open-source project . may i know the process , please . </s>
+<s> <user> <unk#a@> hi sir </s>
+<s> <user> hello <unk#a@_> sir </s>
+<s> <user> i am beginner for python </s>
+<s> <user> i want to go for time series analysis </s>
+<s> <user> <unk#a@> i have my own data </s>
+<s> <user> <unk#a@> would you like to help me ? </s>
+<s> <user> please </s>
+<s> <user> sure <unk#a@_> </s>

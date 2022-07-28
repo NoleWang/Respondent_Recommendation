@@ -1,0 +1,2 @@
+[07:41] <55e7596f0fc9f982beaf75b6> Hello, I've proposed a project for chromosomes segmentation : https://github.com/jeanpat/DeepFISH . Up to now there are datasets (82146 images+ground-truth labels) and python notebooks (way to generate datasets, scikit-image based). The notebooks could be better:  the size of the datasets are limited by the amount of RAM. The datasets are waiting to train a classifier.
+--------------------------------------------------------------------------------------------------

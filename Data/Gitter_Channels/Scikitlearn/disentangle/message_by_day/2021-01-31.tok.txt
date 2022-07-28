@@ -1,0 +1,7 @@
+<s> <user> hi , is there any way to make it so that <unka> does n't normalize the columns in <unka> ? </s>
+<s> <user> i do n't think that we have a parameter to do that . </s>
+<s> <user> it would be weird to not normalize the columns since it is an assumption of <unka> if i am not wrong </s>
+<s> <user> not <unka> will make that you will get an intercept while <unka> </s>
+<s> <user> uhm now that i think about it , there is the <unka> </s>
+<s> <user> URL/https:/ <unka-./> <unka./> </s>
+<s> <user> this should do the job </s>

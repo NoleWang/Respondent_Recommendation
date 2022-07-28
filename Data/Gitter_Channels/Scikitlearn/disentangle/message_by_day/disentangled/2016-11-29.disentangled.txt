@@ -1,0 +1,2 @@
+[07:59] <583d3402d73408ce4f3962b6> Hi, i am running into some really wierd behavior on gridsearchCV on an ESXI host. Although number of jobs is set to a fixed number, the spawned pythonw.exe will claim all available cores after the 2nd-3th task iteration and run into some sort of infinite loop
+--------------------------------------------------------------------------------------------------

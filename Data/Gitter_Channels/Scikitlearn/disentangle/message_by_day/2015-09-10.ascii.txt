@@ -1,0 +1,18 @@
+[00:27] <53135b495e986b0712efc453> I just got a stop gap accommodation till Dec 31 thanks to Mainak Jas and Airbnb... I am back... @amueller is there anything I need to worry about w.r.t this comment? (https://github.com/scikit-learn/scikit-learn/pull/4270#issuecomment-136450796) 
+[00:37] <54d4a1d6db8155e6700f853b> @rvraghav93 Great to have you back!
+[00:37] <54d4a1d6db8155e6700f853b> No, it's just that we won't include the model selection changes in the upcoming release.
+[00:38] <54d4a1d6db8155e6700f853b> Still it would be great to get them done soon
+[00:38] <53135b495e986b0712efc453> Okay!! :D and thanks :)
+[13:27] <541a528b163965c9bc2053de> @amueller I have rebased the LDA deprecation in #5245. Let's wait for CI to check that I did not break anything in the process.
+[13:40] <54d4a1d6db8155e6700f853b> thanks cool :)
+[13:41] <54d4a1d6db8155e6700f853b> Do you maybe want to have a look at #4924 ?
+[14:11] <54d4a1d6db8155e6700f853b> also #5236
+[14:15] <541a528b163965c9bc2053de> For #4924, it will need to be updated to work on top of #5245.
+[14:17] <54d4a1d6db8155e6700f853b> yeah but that should be a quick change that either of us can do if it has two reviews
+[14:18] <54d4a1d6db8155e6700f853b> do you have any opinion on adding PR links to whatsnew?
+[14:29] <541a528b163965c9bc2053de> I gave my +1
+[14:31] <541a528b163965c9bc2053de> > do you have any opinion on adding PR links to whatsnew? I am fine with it. It would be great to add the PR numbers on all of the items but that sounds tedious to do :)
+[14:32] <541a528b163965c9bc2053de> I will have to run soon to take my shuttle. I will be busy tonight so I don't think will be able to work on the release much more today. I should be able to focus on that tomorrow though.
+[14:36] <541a528b163965c9bc2053de> You might want to have a look at #5104 as well.
+[14:59] <54d4a1d6db8155e6700f853b> cool. have fun tonight :)
+[18:54] <53810862048862e761fa2887> `LabelEncoder` right now is doing a binary search using `np.searchsorted`. Can't we speed that up by using a dictionary ?

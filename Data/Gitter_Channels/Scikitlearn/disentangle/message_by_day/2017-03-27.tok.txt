@@ -1,0 +1,5 @@
+<s> <user> the docs for <unka> and <unka> are very similar . one says " this <unka-> object is a merge of <unka> and <unka> , which returns <unka> randomized <unka> . the <unka> are made by preserving the percentage of samples for each class ." and the other says " this <unka-> object is a variation of <unka> that returns <unka> <unka> . the <unka> are made by preserving the percentage of samples for each class ." i might not be the only person who finds this confusing </s>
+<s> <user> what is the difference ? </s>
+<s> <user> is the only difference that the first one is randomized ? </s>
+<s> <user> there are no <unka> in <unka> </s>
+<s> <user> the number of iterations is independent of the training set size </s>

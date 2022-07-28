@@ -1,0 +1,29 @@
+<s> <user> my above request has been addressed by <unka@> . thanks ! :d </s>
+<s> <user> good morning :) </s>
+<s> <user> hello ! is there anyone who can assist me in using <unka> 's <unka> mutual information for real , continuous <unka> data ? </s>
+<s> <user> <unka@> as far as i know , it 's only implemented for discrete data . computing mutual information for continuous data requires making <unka> assumptions </s>
+<s> <user> i was wondering about that because i was getting <unka-> results </s>
+<s> <user> many thanks ! </s>
+<s> <user> we actually have a <unka-> mutual information for feature selection ( between a continuous and a discrete distribution ). are both your distributions discrete ? </s>
+<s> <user> both are real i.e . temperature and <unka> concentration </s>
+<s> <user> hm you did n't get a warning ? you should have gotten a warning , i think :-/ </s>
+<s> <user> no , i just kept on getting near unity results no matter what i tried - related data , unrelated data , two noise arrays </s>
+<s> <user> can you please open an issue on the issue tracker for that ? i think we should provide an error or at least a warning </s>
+<s> <user> okay </s>
+<s> <user> if both of your variables are <unka> , you might want to look at URL/https:/ <unka-./> <unka#./_> </s>
+<s> <user> however , that 's just one particular estimate of the mutual information . </s>
+<s> <user> i tried that one as well , it seemed to behave a bit better , but as you know , is not <unka> to a metric . my problem is that , as you also likely know , estimates of entropy to normalize it are highly dependent on resolution </s>
+<s> <user> exactly , which is why you need some <unka> model of the entropy , which is why we do n't really do that </s>
+<s> <user> i think most people would use a regression analysis or something like that to answer the question you want to answer , unless you are relatively certain about how to model the distributions </s>
+<s> <user> it 's not an easy thing to do it seems , thanks for your input ! </s>
+<s> <user> btw , there 's a cool <unka-> estimate using <unka> minimum spanning trees </s>
+<s> <user> hahaha ! you are talking to an <unka> scientist who has , sadly , no stats and is way in over their head :) </s>
+<s> <user> then i'd suggest a regression model , i think </s>
+<s> <user> there are some papers on using <unka-> neighbour for entropy which supposedly works well for continuous data , but i wanted to confirm that <unka> was n't appropriate before going down that rabbit hole </s>
+<s> <user> yes that 's the default , and that 's what the <unka_> uses </s>
+<s> <user> and you can probably use that as a starting point and only have to modify it slightly </s>
+<s> <user> that is good news ! many thanks for providing a direction . for now i am going to report the <unka-> issue you requested </s>
+<s> <user> thanks ! </s>
+<s> <user> just to be sure we are on the same page , here is what my results are : </s>
+<s> <user> <unk#a(.=`> ) <unk#a()*,-.=> # testing the <unka> mi score between <unka> and noise - should return near zero for totally unrelated data sets <unka(,=_> ) <unk`> output : 1.0 </s>
+<s> <user> yeah it should just error on floats , i think </s>

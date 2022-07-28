@@ -1,0 +1,4 @@
+<s> <user> <unk#a@> can only help if you tell us what the issue is :) </s>
+<s> <user> hi <unka@> , actually , i solve it on my own :) </s>
+<s> <user> hi all , i made one pr on issue <unk##> but it failing the <unka> job of black and showing the error " <unka#[]> exited with code '1' " . can anyone tell me where i am doing wrong ? i am totally a newbie in open-source but i m really enjoying :) </s>
+<s> <user> you can see how to fix that here : URL/https:/ <unka-./> <unka#-./> you need to run black on your code </s>

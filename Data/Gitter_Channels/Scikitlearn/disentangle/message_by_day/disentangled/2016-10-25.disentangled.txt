@@ -1,0 +1,46 @@
+[14:32] <54d4a1d6db8155e6700f853b> @neerajwadhwa take andrew Ng's coursera course and by my book ;) https://www.amazon.com/Introduction-Machine-Learning-Python-Scientists/dp/1449369413/ref=sr_1_1?ie=UTF8&qid=1477405931&sr=8-1&keywords=introduction+to+machine+learning+with+python
+--------------------------------------------------------------------------------------------------
+[16:27] <53135b495e986b0712efc453> @amueller Do you have any issue that needs fixing or review for `0.18.1`?
+--------------------------------------------------------------------------------------------------
+[16:28] <54d4a1d6db8155e6700f853b> @raghavrv  https://github.com/scikit-learn/scikit-learn/pulls?q=is%3Aopen+is%3Apr+milestone%3A0.18.1 ;)
+[16:30] <54d4a1d6db8155e6700f853b> and https://github.com/scikit-learn/scikit-learn/issues?q=is%3Aopen+is%3Aissue+milestone%3A0.18.1+label%3ABlocker
+[16:31] <54d4a1d6db8155e6700f853b> so two things that would be great are fixing this: https://github.com/scikit-learn/scikit-learn/issues/7563 (I'm investigating but getting no-where)
+[16:31] <54d4a1d6db8155e6700f853b> and a non-regression test for this: https://github.com/scikit-learn/scikit-learn/pull/7724
+--------------------------------------------------------------------------------------------------
+[16:32] <53135b495e986b0712efc453> @amueller Okay! BTW for #7672, you can try `curl -Ls https://goo.gl/jhGwkV | git apply -v --index; git commit -m "NOMERGE recythonize all";` to clear up the cache and make tests pass... (Resetting the cache at travis seems to not work...)
+[16:58] <53135b495e986b0712efc453> Have addressed your comments at #5874
+[16:59] <53135b495e986b0712efc453> @amueller For #7724 do you want me to cherry-pick his commits and add a test or do we wait for him to add it?
+[16:59] <54d4a1d6db8155e6700f853b> either way. first find a test?
+--------------------------------------------------------------------------------------------------
+[17:29] <562a7da216b6c7089cb80965> For `sklearn.svm.SVC` with a [callable kernel](http://scikit-learn.org/dev/modules/svm.html#using-python-functions-as-kernels), is there any way the callee knows if the outer estimator is in the midst of a `fit` or `predict` (or similar)?
+[17:30] <54d4a1d6db8155e6700f853b> whether the kernel knows? Well if X==Y it's probably fit
+[17:30] <562a7da216b6c7089cb80965> Yeah, that was first heuristic that came to mind
+[17:30] <54d4a1d6db8155e6700f853b> but no, there is no flag or anything. The kernel shoudn't know
+[17:30] <54d4a1d6db8155e6700f853b> why do you want that?
+[17:30] <562a7da216b6c7089cb80965> Ok. I know others have done work on this, but trying to implement MKL as a callable
+[17:31] <54d4a1d6db8155e6700f853b> use shogun if you want to do mkl ;)
+[17:31] <562a7da216b6c7089cb80965> Idea is that during outer `fit` call, there's an MKL class that computes the various kernels, learns the gamma weights and stores them, then returns the combined gram
+[17:31] <562a7da216b6c7089cb80965> but during `predict` it uses the stored weights
+[17:31] <562a7da216b6c7089cb80965> Yeah, I suppose I could go to shogun. I just like sklearn so dang much
+[17:32] <562a7da216b6c7089cb80965> I suppose so long as the weight learning is deterministic, it's effectively idempotent, so that heuristic would work
+[17:32] <562a7da216b6c7089cb80965> i.e., if you're predicting the training data, it works the same as fitting the training data
+[17:32] <562a7da216b6c7089cb80965> Yeah, I previously built that, too, but trying to see if I can fit this within the `SVC` spec
+[17:33] <562a7da216b6c7089cb80965> nystroem it?
+[17:33] <562a7da216b6c7089cb80965> nvm, presume you're talking about the `Nystroem` class from kernel estimator family
+[17:34] <562a7da216b6c7089cb80965> ah, that makes sense
+[17:34] <562a7da216b6c7089cb80965> My motivating case is multiple kernels of same functional form but defined on non-overlapping subsets of the feature space
+[17:35] <562a7da216b6c7089cb80965> which is very group lasso-y
+[17:35] <562a7da216b6c7089cb80965> Thanks @amueller! If you come across your MKL code, would appreciate a link, but no worries if it's not close at hand
+--------------------------------------------------------------------------------------------------
+[17:31] <54d4a1d6db8155e6700f853b> I think I did implement mkl with sklearn at some point...
+[17:31] <54d4a1d6db8155e6700f853b> hm
+[17:32] <54d4a1d6db8155e6700f853b> Well you should implement your own class that calls the kernels, I would say
+[17:32] <54d4a1d6db8155e6700f853b> you can always just nystroem it and use a liner model on the combined embedding ;)
+[17:34] <54d4a1d6db8155e6700f853b> compute the nystroem feature map (see Nystroem class), which makes the SVM problem a linear problem in that feature space. MKL is just doing a linear model on concatenated features
+[17:34] <54d4a1d6db8155e6700f853b> I guess it's a group lasso, though
+--------------------------------------------------------------------------------------------------
+[17:49] <562a7da216b6c7089cb80965> ah, but that callable isn't going to have access to `Y`, even if estimator is doing a fit, so that kind of sinks learning weights based on labels
+[17:49] <562a7da216b6c7089cb80965> Seems like feature xform is the way to go (if I'm going to fit this into sklearn)
+--------------------------------------------------------------------------------------------------
+[22:15] <57a061aa40f3a6eec05d8d26> Hello, I am using NearestNeighbors.kneighbors. If there's some cases that are at equal distance from the query point, the number of neighbors might be larger than n_neighbors. Is there a way to find how many neighbors there actually were, i.e. counting the neighbors with equal distance.
+--------------------------------------------------------------------------------------------------

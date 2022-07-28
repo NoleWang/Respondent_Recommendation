@@ -1,0 +1,3 @@
+[17:37] <54d4a1d6db8155e6700f853b> @mrocklin there is no way currently to know if something has been fitted. The "idiomatic" way is to try and predict. If it hasn't been fitted, it will raise an appropriate error. But you need to know the number of features is might have been fitted with.
+[21:07] <54d4a1d6db8155e6700f853b> @ogrisel did you have time to set up the doc build server yet?
+--------------------------------------------------------------------------------------------------

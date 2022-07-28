@@ -1,0 +1,13 @@
+<s> <user> hm is there a <unka> <unka> ? or is <unka@> around lol ? for a <unka> <unka> , how do i get the closest numpy <unka> to cast to ? </s>
+<s> <user> yep </s>
+<s> <user> there is <unka> <unka> actually ( <unka/> ) </s>
+<s> <user> i do n't think there is a typical way to do it </s>
+<s> <user> if i remember correctly , there is an issue about it </s>
+<s> <user> basically , you would like to know the <unka> of <unka().`> right ? ( but without needing to do the actual conversion ?) </s>
+<s> <user> indeed </s>
+<s> <user> it 's for URL/https:/ URL/github.com/ <unk#a-/> which is currently failing because <unka(._> ) raises an error </s>
+<s> <user> the issue that i <unka> is URL/https:/ URL/github.com/ <unk#a-/> </s>
+<s> <user> ok . so no solution :-/ is there a work-around ? </s>
+<s> <user> like what does actually happen when you do the conversion ? </s>
+<s> <user> is it from the <unka._`> method or something ? </s>
+<s> <user> yeah it is , no way to figure that one out :-/ </s>

@@ -1,0 +1,9 @@
+<s> <user> <unka@> that makes sense but stats models does n't deal with a million features </s>
+<s> <user> basically the whole lib does n't work for <unka> than like 20 features </s>
+<s> <user> also <unka> in general is not developed very quickly or actively . i used to follow it but gave up . </s>
+<s> <user> maybe there is a way to initialize the <unka> result object with our <unka> . </s>
+<s> <user> and use their post processing </s>
+<s> <user> <unka@> that 's a nice idea . </s>
+<s> <user> <unka@> do you want to open an issue with an example large enough that <unka> ca n't cope ? </s>
+<s> <user> and paste in <unka@> 's thought maybe </s>
+<s> <user> <unka@> sounds good </s>

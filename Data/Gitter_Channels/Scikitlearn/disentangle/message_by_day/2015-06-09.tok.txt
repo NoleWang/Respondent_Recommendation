@@ -1,0 +1,11 @@
+<s> <user> that sounds good to me . i will email you and set up something . i will be the country kid in the big apple ;) </s>
+<s> <user> <unka@> one thing i noticed about the notebooks is that they are pretty <unka-> . i 'm not sure how i feel about it . i guess it depends on whether you think of it more as a presentation or as an " in your own time " thing . while someone is speaking , the text seems more distracting than helpful . i 'm not sure about it , though . </s>
+<s> <user> i agree . the text is useful " after the fact " . but our presentation should basically be the content contained in that text imo , so we can focus on the pretty pictures </s>
+<s> <user> we could make a stripped down version of all , with just images . or just scroll so that images are the focus </s>
+<s> <user> so , you suggest do develop one with text for people to work though it at home afterwards , and drop the text for the presentation ? which one do we distribute then for the tutorial ? the <unka-> one ? </s>
+<s> <user> do we have a real-world dataset that uses <unka-> ? or any real-world dataset that has <unka> features encoded as strings ? btw , what is the recommended method to deal with that ? <unka> ? or converting to dict and <unka> ? </s>
+<s> <user> i would say it depends how much we reuse old tutorials . if it is all new ( unlikely ) generating that much content will be tough - in that case i would go with pics only . but if we mostly reuse i think we should do text + images in main notebooks we put in tutorial repo , then just have a separate folder of " presentation ready " which is basically titles , pictures and key math or whatever else is necessary to talk on . or vice-versa ( text versions in a separate folder called like " <unka_> " ) to avoid confusion </s>
+<s> <user> sounds good </s>
+<s> <user> i'd go with the " self teaching " approach </s>
+<s> <user> yeah . that way it takes extra effort to open the wrong content :) though i am sure it will happen anyways ... </s>
+<s> <user> <unka@> i do n't see where <unka-> is introduced in the notebooks ... hum ... </s>

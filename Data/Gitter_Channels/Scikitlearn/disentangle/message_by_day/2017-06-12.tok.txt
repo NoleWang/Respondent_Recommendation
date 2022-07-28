@@ -1,0 +1,12 @@
+<s> <user> is there any way to incorporate cost matrix in svm <unka> as is available in <unka> URL/https:/ <unka./> <unka/> </s>
+<s> <user> <unka@> possibly the <unka_> parameter , though that does n't allow specifying a full matrix , only relative weights </s>
+<s> <user> it also depends a bit on whether you want to do that for training or for <unka> with a trained model or both . it looks like <unka> <unka> the training . </s>
+<s> <user> <unka> supports both afaik . my aim is to prevent <unka> of other labels as a target label </s>
+<s> <user> for example if i have 3 labels a , b and c , i do n't want a and c to be predicted as b </s>
+<s> <user> false positives for that label ? </s>
+<s> <user> yeah </s>
+<s> <user> i think it would make most sense to calibrate the prediction <unka> for that , but <unka-> does n't have tools for that yet . </s>
+<s> <user> you can try to change the <unka-> , but the control they give is a bit indirect </s>
+<s> <user> do you know how <unka> implements this ? </s>
+<s> <user> the <unka-> <unka_> for <unka> are <unka> to c so that you get one c per class , as described in the <unka> paper </s>
+<s> <user> no , have n't gone through their code yet . </s>

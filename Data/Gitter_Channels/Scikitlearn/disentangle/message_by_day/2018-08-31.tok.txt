@@ -1,0 +1,10 @@
+<s> <user> is there a reason why <unka> does n't have <unka_> ? </s>
+<s> <user> <unka@> yeah it 's not a <unka> model </s>
+<s> <user> oh ! hmm ... </s>
+<s> <user> URL/http:/ <unka-./> <unka./> has <unka_> </s>
+<s> <user> <unka@> i am confused why one is a <unka> model but the other is n't </s>
+<s> <user> i mean there is no randomness in the decision tree <unka> </s>
+<s> <user> randomness has nothing to do with whether it 's a <unka> model . there 's no randomness in <unka> regression </s>
+<s> <user> <unka@> yes sorry my mistake . could you give a short reason why one is a <unka> model and the other is n't ? </s>
+<s> <user> please </s>
+<s> <user> not really ? there is a way to interpret a tree model in a <unka> way but there is no way to interpret an svm in a <unka> way </s>

@@ -1,0 +1,7 @@
+[17:14] <5acfdfffd73408ce4f95738d> how to get precision and recall from function 'precision_recall_curve' for class 0. I posted a question with a code on this topic [here](https://ai.stackexchange.com/questions/32127/how-to-get-precision-and-recall-from-function-precision-recall-curve-for-class)
+--------------------------------------------------------------------------------------------------
+[17:34] <55d21ee30fc9f982beadabb8> You should use either
+[17:34] <55d21ee30fc9f982beadabb8> https://scikit-learn.org/stable/modules/generated/sklearn.metrics.PrecisionRecallDisplay.html#sklearn.metrics.PrecisionRecallDisplay.from_estimator
+[17:34] <55d21ee30fc9f982beadabb8> https://scikit-learn.org/stable/modules/generated/sklearn.metrics.PrecisionRecallDisplay.html#sklearn.metrics.PrecisionRecallDisplay.from_predictions
+[17:34] <55d21ee30fc9f982beadabb8> with `pos_label=0`
+--------------------------------------------------------------------------------------------------

@@ -1,0 +1,2 @@
+<s> <user> hey guys , is there a nice book or a course online to understand how the <unka> and the sgd <unka> implemented in <unka-> work ? </s>
+<s> <user> i 'm looking at the code , but i ca n't understand it , without having a basic understanding of the theory behind </s>

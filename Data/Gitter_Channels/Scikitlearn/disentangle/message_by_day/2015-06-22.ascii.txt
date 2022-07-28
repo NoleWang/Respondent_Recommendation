@@ -1,0 +1,21 @@
+[17:39] <54d4a1d6db8155e6700f853b> @xuewei4d btw, please also ping @lesteve when asking gmm questions, he is @ogrisel's co-mentor ;)
+[18:00] <550f53e215522ed4b3dda5f6> Okay. I forgot to ping him in the last comment.
+[18:12] <53135b495e986b0712efc453> @vene @amueller status update... the main part of data independent refactor is done.... all the new split / validate tests pass... working on grid search tests :) Will do the documentations and examples after pushing the grid search tests and an initial round of reviews (so as to finalize implementation) :)
+[18:14] <53135b495e986b0712efc453> one minor question
+[18:15] <53135b495e986b0712efc453> will ask at the PR itself...
+[18:20] <54d4a1d6db8155e6700f853b> Thanks @rvraghav93. I am super busy right now but I'll review your blog post and PR in the afternoon
+[18:23] <53135b495e986b0712efc453> Sure please take ur time :) I'll be done with all the tests by then :smile: 
+[18:40] <54e07d6515522ed4b3dc0858> Hi @rvraghav93, thanks for the update! I'll do my best and try to review tonight as well.
+[18:44] <53135b495e986b0712efc453> Thanks a lot! :)
+[21:02] <54d4a1d6db8155e6700f853b> I sent you detailed comments on the blog post per pm so as not to flood the channel. I still think it would be good to add an example that is currently impossible and will be possible with your contribution
+[21:03] <54d4a1d6db8155e6700f853b> Has anyone ever seen gcc errors with printf in cython code?
+[21:03] <54d4a1d6db8155e6700f853b> sklearn/manifold/_barnes_hut_tsne.c:7211:5: error: format not a string literal and no format arguments [-Werror=format-security]      printf(__pyx_k_t_SNE_Checking_tree_consistency); 
+[21:03] <54d4a1d6db8155e6700f853b> I get that on my box but not on travis.
+[21:17] <54d4a1d6db8155e6700f853b> @rvraghav93 so I should review #4294, right?
+[21:18] <54d4a1d6db8155e6700f853b> no wait, that is not the right one
+[21:19] <54d4a1d6db8155e6700f853b> @rvraghav93 you should reference the issues you are working on in the blog post ;)
+[21:54] <54d4a1d6db8155e6700f853b> any reviewers for https://github.com/scikit-learn/scikit-learn/pull/4621 btw?
+[21:54] <54d4a1d6db8155e6700f853b> or maybe https://github.com/scikit-learn/scikit-learn/pull/4840 ?
+[22:46] <54e07d6515522ed4b3dc0858>  Sorry, tonight is a bit tough for me for a more thorough review. I'll be on top of things in the morning.
+[22:50] <54d4a1d6db8155e6700f853b> no worries vladn :)
+[23:52] <53135b495e986b0712efc453> Thanks for the reviews! Will address them ASAP :)

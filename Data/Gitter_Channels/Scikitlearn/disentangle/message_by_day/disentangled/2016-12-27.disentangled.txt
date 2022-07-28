@@ -1,0 +1,12 @@
+[13:34] <5808a180d73408ce4f2f919f> Hey guys, I hope you can help me out
+--------------------------------------------------------------------------------------------------
+[13:34] <5808a180d73408ce4f2f919f> I want to train a random forest regressor, and my features are mainly categorical
+[13:35] <5808a180d73408ce4f2f919f> The thing is, the amount of possible labels per example is variable, so I can't easily dump it in a CSV
+[13:35] <5808a180d73408ce4f2f919f> I tried creating a 1-hot encoded CSV but that would result in a ~50GB file
+[13:36] <5808a180d73408ce4f2f919f> So what I want is saving my label-encoded values in some data format (maybe JSON, which supports arrays), and one-hot encoding on the fly during training
+[13:36] <5808a180d73408ce4f2f919f> I'm not sure where to start though, any clues?
+--------------------------------------------------------------------------------------------------
+[14:09] <5808a180d73408ce4f2f919f> Hmm I guess scipy sparse matrices could help me here, then I just need to find a good file format
+--------------------------------------------------------------------------------------------------
+[15:50] <572cc82bc43b8c6019718138> Hello everyone! My name is Samriddhi Sinha. I am interested in contributing to this project. I have been working with various Machine Learning algorithms an have participated in a few Data Analytics competitions. Can some one help me getting started?
+--------------------------------------------------------------------------------------------------

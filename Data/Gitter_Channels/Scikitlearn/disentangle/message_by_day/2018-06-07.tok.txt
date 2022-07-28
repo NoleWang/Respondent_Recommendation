@@ -1,0 +1,2 @@
+<s> <user> <unk#a@> please provide a minimal complete <unka> example in your paste ( URL/http:/ <unka./> <unk#a-/> ) </s>
+<s> <user> i 'm trying to get cluster assignments from the linkage matrix . so far , i know that i can use the <unka> to do that . but , how do i specify the <unka_> ? </s>

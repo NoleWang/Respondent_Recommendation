@@ -1,0 +1,1 @@
+<s> <user> hello , i was using <unka.> and it took five hours . i did get good results , but i am wondering if <unka-> has an eta ( estimated time to arrival ) setting , which shows the estimated time for the program to run . </s>

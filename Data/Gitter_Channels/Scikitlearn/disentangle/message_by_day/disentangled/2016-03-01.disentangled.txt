@@ -1,0 +1,45 @@
+[00:25] <53810862048862e761fa2887> Guys, take a look at http://contrib.scikit-learn.org/project-template/
+--------------------------------------------------------------------------------------------------
+[00:26] <53810862048862e761fa2887> Right now the because of the code and website being hosted in the same root folder, the source files are available on that url
+[00:26] <53810862048862e761fa2887> For example,  http://contrib.scikit-learn.org/project-template/setup.py. Is that a problem ?
+--------------------------------------------------------------------------------------------------
+[00:45] <56c4f19ae610378809c1f8ae> i registered scikit-learn.ml and redirected it to the main site haha
+[00:46] <56c4f19ae610378809c1f8ae> [http://scikit-learn.ml](http://scikit-learn.ml)
+--------------------------------------------------------------------------------------------------
+[07:27] <53135b495e986b0712efc453> Thats sweet! You should ping @ogrisel
+--------------------------------------------------------------------------------------------------
+[07:28] <56c4f19ae610378809c1f8ae> on another note, does anyone know whether its possible to do multi-line links in markdown? If not, maybe we can get a scikit-learn link shortener to make the issue/pr template more digestible.
+[07:30] <56c4f19ae610378809c1f8ae>  short things like [http://sklearn.ml/contributing](http://sklearn.ml/contributing)
+[07:30] <53135b495e986b0712efc453> Did you register sklearn.ml too? :P
+[07:31] <56c4f19ae610378809c1f8ae> haha yeah .ml domains are free and quite applicable to a variety of projects i feel haha
+[07:32] <56c4f19ae610378809c1f8ae> was just trying to see if there was a way to cut down clutter in docs, so the idea of link shortening came up (e.g. how google does goo.gl)
+[19:22] <56c4f19ae610378809c1f8ae> yeah, thatd be great. I didnt know we had that sort of functionality
+[19:23] <56c4f19ae610378809c1f8ae> if only there was a way to default to preview mode or something...but I feel like that would get cumbersome after awhile once youve learned the guidelines / template. Raw output is hard to format nicely.
+--------------------------------------------------------------------------------------------------
+[07:31] <56b80528e610378809c05a48> smart move haha
+--------------------------------------------------------------------------------------------------
+[07:39] <53135b495e986b0712efc453> Really? I am getting one then ;)
+--------------------------------------------------------------------------------------------------
+[07:55] <53135b495e986b0712efc453> @nelson-liu Thanks for the nice idea :D
+[07:56] <56c4f19ae610378809c1f8ae> np =)
+--------------------------------------------------------------------------------------------------
+[08:57] <56c4f19ae610378809c1f8ae> aw, just got an email that for some reason [sklearn.ml](sklearn.ml) was already registered and that i dont have the rights to it. oh well, [scikit-learn.ml](scikit-learn.ml) will do for link shortening.
+[08:57] <56c4f19ae610378809c1f8ae> in that vein, should we move the discussion about the issue / pr template to https://github.com/scikit-learn/scikit-learn/issues/6394 or just create a new issue?
+--------------------------------------------------------------------------------------------------
+[13:20] <53135b495e986b0712efc453> Arrrgh some advertising company purchased sklearn.ml. It would have been cool to have it redirect to our page too!
+[19:27] <53135b495e986b0712efc453> In the end I'm guessing github will realize they just need to improve their interface rather than providing these hacky workarounds
+--------------------------------------------------------------------------------------------------
+[16:59] <54e07d6515522ed4b3dc0858> why is it important to have different domains?
+--------------------------------------------------------------------------------------------------
+[17:30] <56c4f19ae610378809c1f8ae> Have you taken a look at the pr / issue template?
+[17:31] <56c4f19ae610378809c1f8ae> A lot of the links in there are very long, and since you can't create multi-line links in markdown it greatly diminishes readability
+[17:31] <56c4f19ae610378809c1f8ae> So I was thinking maybe use the  .ml domain for link shortening internally
+[17:32] <56c4f19ae610378809c1f8ae> Basically: it's not important, just an idea haha
+[20:32] <56c4f19ae610378809c1f8ae> haha that would be ideal. made a pr at https://github.com/scikit-learn/scikit-learn/pull/6470
+--------------------------------------------------------------------------------------------------
+[19:21] <53135b495e986b0712efc453> @vene I thought it would be cool to have a .ml domain :p BTW @nelson-liu there was a thread claiming those free .ml providers as scam. Be careful!
+[19:22] <53135b495e986b0712efc453> As for the link shortener we should implement it at our main site.
+[19:23] <53135b495e986b0712efc453> Sounds great!
+--------------------------------------------------------------------------------------------------
+[19:22] <56c4f19ae610378809c1f8ae> Im drafting up a new, more template-y version of the templates right now
+--------------------------------------------------------------------------------------------------

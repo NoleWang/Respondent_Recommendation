@@ -1,0 +1,18 @@
+<s> <user> <unka@> . i am using it on the 200gb stackexchange dump . </s>
+<s> <user> how many <unka/> ? </s>
+<s> <user> around <unk#> </s>
+<s> <user> nodes ? </s>
+<s> <user> how many edges ? and have you tried loading this into <unka> ? </s>
+<s> <user> but all of them wo n't be mapped . lots of tags contain null so wont map them . <unka> has pretty straightforward documentaion . i read through it but <unka> looks quite <unka> . </s>
+<s> <user> <unka@> it 's my first ds project . learning by doing so could use some good advice . </s>
+<s> <user> <unka> is a different package with different goals . it really depends on what you want to do . </s>
+<s> <user> if you want to visualize data and play around with it in a gui , <unka> is better suited . if you want to run advanced graph analysis , <unka> is probably better . </s>
+<s> <user> but both have limitations . </s>
+<s> <user> can i apply <unka> on the data on the <unka> graphs ? </s>
+<s> <user> i dont know . </s>
+<s> <user> okay . it can be done in <unka> . is n't it ? </s>
+<s> <user> i dont believe it can . </s>
+<s> <user> but there are many clustering algorithms available for each . </s>
+<s> <user> URL/http:/ URL/stackoverflow.com/ <unk#a-/> may help you . </s>
+<s> <user> thanks ! that was a great help . is this feature also available in <unka> in some way ? </s>
+<s> <user> i dont know . </s>

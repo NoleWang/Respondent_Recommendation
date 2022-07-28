@@ -1,0 +1,97 @@
+<s> <user> i tried it . still running out all memory <unka@> </s>
+<s> <user> sorry , i check the script again and find this error is caused by plotting cluster patterns after clustering using matplotlib . thanks anyway ! <unka@> </s>
+<s> <user> hi </s>
+<s> <user> i have a question </s>
+<s> <user> so ... you can ask :) </s>
+<s> <user> <unka@> i will push the <unk#a.> tag soon </s>
+<s> <user> <unka@> thanks :) </s>
+<s> <user> if i am python programmer and no knowledge about ml but i want to go in ml so how can i start with python ? </s>
+<s> <user> you can follow the tutorials on URL/http:/ <unka-./> then read a book such as <unka@> 's and work the examples , then try a <unka.> challenge then follow a class online . </s>
+<s> <user> basically alternate between theory and practice </s>
+<s> <user> to get the theory you need basic linear algebra and stats <unka> </s>
+<s> <user> i know ai theory and reading modern approach but i am lacking to understand equations and expression in ml , for understanding those <unka> and expression what should i learn first ?? </s>
+<s> <user> then you do n't know theory ;) </s>
+<s> <user> also ai is wider than ml </s>
+<s> <user> but ml is a very very rich <unka> of ai </s>
+<s> <user> ok for understand <unka> and equations what should i learn ? </s>
+<s> <user> ok i see you mentioned linear algebra ! any good tutorial or blog or book for linear algebra ? </s>
+<s> <user> what i said : linear algebra and stats <unka> + basic differential <unka> calculus ( what is a continuous function , a <unka> function , a gradient ... ) </s>
+<s> <user> and will i able to understand regression funtion after reading linear <unka> ? </s>
+<s> <user> i do n't have any particular recommendation in mind but if you ask that question to google you will probably get answers </s>
+<s> <user> regression is a stats machine learning concept , not a linear algebra concept . but generally it is presented in terms of vector space with a <unka> metric so you need to know about vector spaces and <unka> and distances first </s>
+<s> <user> which math course would you recommend for understanding regression ( vector .. etc ) </s>
+<s> <user> to apply ml you do n't necessarily need to understand the underlying math in details though . it 's good to start with a bit of ml practice ( e.g . <unka> tutorials ) then learn a bit about the underlying maths and then iterate </s>
+<s> <user> i am working with <unka> flow api </s>
+<s> <user> but i want to work with <unka> </s>
+<s> <user> learning linear algebra + stats + <unka> is typically 1 or 2 <unka> of <unka> in a math related <unka> . so learning on your own without application to ml will probably be too dry . </s>
+<s> <user> alternate with practice to keep with the motivation . </s>
+<s> <user> then go an read a tensorflow tutorial instead </s>
+<s> <user> i am also <unka> student and this is last year of my <unka> ! </s>
+<s> <user> ok , thanks :) </s>
+<s> <user> you might be interested in this : URL/https:/ URL/www.youtube.com/ <unk#a/=?> </s>
+<s> <user> you did not take any linear algebra class ? </s>
+<s> <user> yet now but i will self learn no prob . </s>
+<s> <user> <unka@> i pushed the <unk#a.> tag . i also triggered the wheel builder . </s>
+<s> <user> sweet ! </s>
+<s> <user> i tried with python <unk#a.> and we have broken tests because of int str comparisons : need to look in details </s>
+<s> <user> i 'll try to trigger the <unka> builder </s>
+<s> <user> after the <unk#a.> </s>
+<s> <user> all numpy tests pass on python <unk#a.> , 8 errors for scipy . </s>
+<s> <user> <unka@> err did you merge <unk##> ? </s>
+<s> <user> should n't the version be <unk#a.> ? </s>
+<s> <user> no i did not merge <unk##> , let me review it quickly , we can merge it and then tag <unk#a.> will be after <unk#a.> and nobody will ever know ;) </s>
+<s> <user> ;) </s>
+<s> <user> actually i am not sure about updating the website . </s>
+<s> <user> i think we should wait for 0.18 final to update the nav </s>
+<s> <user> btw i think <unk#a.> is equivalent to <unk#a.> </s>
+<s> <user> ok </s>
+<s> <user> it 's not entirely impossible that we do manual <unka> of the stable website , which would be silly </s>
+<s> <user> also URL/https:/ <unka./> <unka-/> </s>
+<s> <user> ugh test failures in the pickle test </s>
+<s> <user> this is looking good : URL/https:/ <unka-./> <unka-/> URL/https:/ <unka./> <unka-/> ( the python 3.3 failure is known but we do n't care for the rc ) </s>
+<s> <user> on python three </s>
+<s> <user> travis is failing </s>
+<s> <user> like our normal travis URL/https:/ <unka-./> <unk#a-/> </s>
+<s> <user> what ... </s>
+<s> <user> unicode stuff ? </s>
+<s> <user> that 's the built in the <unk#a.> branch ? </s>
+<s> <user> turns out that running a " replace " on a <unka> string is not a good idea </s>
+<s> <user> who'd thought ? </s>
+<s> <user> gimme a sec </s>
+<s> <user> <unka@> URL/https:/ URL/github.com/ <unk#a-/> </s>
+<s> <user> let 's wait for ci , then backport </s>
+<s> <user> yeah </s>
+<s> <user> travis is slow ... </s>
+<s> <user> hm i 'm having trouble with the <unka> </s>
+<s> <user> URL/https:/ <unka./> <unk#a-/> </s>
+<s> <user> maybe @ <unka> has an idea . </s>
+<s> <user> hum that did not work </s>
+<s> <user> i opened an issue here : URL/https:/ URL/github.com/ <unk#a-/> </s>
+<s> <user> i tried setting <unka-> as source channel </s>
+<s> <user> not sure if that does anything </s>
+<s> <user> it 'll take like half an hour to complete anyhow :-/ </s>
+<s> <user> how are the wheels ? </s>
+<s> <user> travis must be completely overloaded by the <unka> ... </s>
+<s> <user> the wheels tests break because of the pickle issue under python 3 </s>
+<s> <user> i cancelled them to wait for <unk##> </s>
+<s> <user> the python 2.7 wheels did work </s>
+<s> <user> <unka@> i merged , backported and pushed <unk#a.> </s>
+<s> <user> the wheel builder is triggered </s>
+<s> <user> <unka@> the wheels are on their way . how are you doing with the <unka-> <unka> ? </s>
+<s> <user> well , it 's running </s>
+<s> <user> coool </s>
+<s> <user> i mean " they have n't failed yet " </s>
+<s> <user> :) </s>
+<s> <user> wheel builder was going fine but no more travis workers at the moment unfortunately : URL/https:/ <unka-./> <unka-/> </s>
+<s> <user> the windows wheels are almost all ready : URL/https:/ <unka./> <unka-/> </s>
+<s> <user> osx travis workers are overloaded </s>
+<s> <user> i have to wake up early tomorrow , i wo n't have time to wait for them , feel free to push everything to <unka> while i 'm sleeping :) </s>
+<s> <user> <unk`> git checkout <unk#a.> pip install <unka-> python setup.py <unka> <unka_> <unk`> </s>
+<s> <user> then <unka`> upload <unka/`> </s>
+<s> <user> hehe alright </s>
+<s> <user> hm i messed up the channel config somewhere </s>
+<s> <user> ... </s>
+<s> <user> i going afk , see you tomorrow . good luck with <unka-> . </s>
+<s> <user> hi </s>
+<s> <user> thanks <unka@> and good night :) </s>
+<s> <user> hi <unka@_> </s>

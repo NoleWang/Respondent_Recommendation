@@ -1,0 +1,11 @@
+[18:19] <5910079ed73408ce4f5dc467> [![image.png](https://files.gitter.im/scikit-learn/scikit-learn/yuhz/thumb/image.png)](https://files.gitter.im/scikit-learn/scikit-learn/yuhz/image.png)
+[18:19] <5910079ed73408ce4f5dc467> Hello everybody , I have a doubt - Why is the number of nodes in hidden layer always 1 more than number of nodes in input layer ?  
+[18:21] <5910079ed73408ce4f5dc467> How do we set that number of nodes in hidden layer . In most cases I see this type of representation as shown in diagram 
+[18:21] <55a487245e0d51bd787b4e45> @CaptainAshis "Always"?
+[18:21] <5910079ed73408ce4f5dc467> I mean in most cases that I came across   @mikegraham 
+[18:23] <55a487245e0d51bd787b4e45> @CaptainAshis I am not aware of this being a standard practice. Do you mean in actual cases or just diagramatically?
+[18:25] <5910079ed73408ce4f5dc467> I mean diagrammatically .In most youtube videos I see this type of representation @mikegraham 
+[18:26] <55a487245e0d51bd787b4e45> @CaptainAshis It's probably what's convenient for the creator to draw.
+[18:27] <5910079ed73408ce4f5dc467> @mikegraham  . So is there any standard rule to know how many nodes we can set for the hidden layer ? 
+[18:36] <55a487245e0d51bd787b4e45> @CaptainAshis It varies wildly what ends up working well. There is an old rule of thumb for single-hidden-layer models of 'mean of input nodes and output nodes', but that is even rougher than most rules of thumb.
+[18:37] <5910079ed73408ce4f5dc467> ok , Thank you @mikegraham 

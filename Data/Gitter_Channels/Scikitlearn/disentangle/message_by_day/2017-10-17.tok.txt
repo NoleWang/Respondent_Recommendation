@@ -1,0 +1,5 @@
+<s> <user> hi , i am trying to prepare training data for hand written recognition for <unka> language . as i have to prepare thousand of it . i want to make sure i am making the correct format of pixel values for <unka> character for machine learning . i tried a single <unka> alphabet image of size <unk#*> pixel . i got the pixel values but i am not able to plot its back in python using <unka.> . </s>
+<s> <user> hey guys i have <unka_> and <unka_> data . does anyone know how i can divide it so i can have two different two of each for two different models ? </s>
+<s> <user> trying to make a pipeline </s>
+<s> <user> <unka@> you got one data file ? </s>
+<s> <user> nope i did n't use <unka_> to make <unka_> and <unka_> </s>

@@ -1,0 +1,4 @@
+<s> <user> does <unka> have any ideas page for gsoc 2017 ? </s>
+<s> <user> not yet </s>
+<s> <user> <unka@> things inherit when there 's shared functionality . if there 's not , there 's no reason to inherit </s>
+<s> <user> thanks <unka@> . but if you compare the code , there are a lot of similarities ( not surprising given that rf are <unka> random trees ). my question is : is it done on purpose or is it a consequence of different persons working on different algorithms ? </s>

@@ -1,0 +1,9 @@
+[00:19] <541a528b163965c9bc2053de> ok I did a pass on the GSoC proposals. I need to go to sleep now. Tomorrow will be very busy with meetings and meetups.
+[00:21] <541a528b163965c9bc2053de> I will probably be back online on Thursday morning to resume work on GSoC reviews and sklearn 0.16 release.
+[18:39] <54d4a1d6db8155e6700f853b> I might cherry-pick some more things today, I have to check
+[20:58] <5474d9eadb8155e6700d8178> @amueller do you think we should probably fine tune landscape settings to avoid reporting not-so-useful fixes that are probably ignored... Thing is without it raising red flags only for important issues that a core dev would normally frown upon (like PEP8, imports, the docstring format), I am afraid this will eventually be ignored like the coveralls bot. :/ WDYT?
+[21:03] <54d4a1d6db8155e6700f853b> the main problem is that it reports new problems that are not related to the code at all.
+[21:18] <5474d9eadb8155e6700d8178> Ah... We'll then just wait for it to get better ;)
+[21:22] <54d4a1d6db8155e6700f853b> maybe ;)
+[21:23] <54d4a1d6db8155e6700f853b> @ogrisel do you think there is a chance @GaelVaroquaux will review and / or put his name next to some of the proposals? It would be nice to have tentative mentors.
+[21:42] <54d4a1d6db8155e6700f853b> @ogrisel I backported some doc fixes and the faster polynomial features

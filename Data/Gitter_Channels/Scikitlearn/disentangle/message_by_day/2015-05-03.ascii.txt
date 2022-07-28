@@ -1,0 +1,8 @@
+[03:19] <54d4a1d6db8155e6700f853b> we should probably add class_weights to the gradient boosting classifier
+[05:17] <54c084dbdb8155e6700eed4c> @amueller ... #4215 is just waiting on a #4347 merge so that there isnt more refactoring on your part required.
+[05:17] <54c084dbdb8155e6700eed4c> unless you want me to address the comments and add more work to your pile??
+[05:19] <54c084dbdb8155e6700eed4c> im good either way :smile: 
+[05:22] <54c084dbdb8155e6700eed4c> ... it would effect gbm, as well as the  adaboost and bagging meta-ensembles
+[15:08] <54d4a1d6db8155e6700f853b> oh, I forgot that PR.
+[15:10] <54d4a1d6db8155e6700f853b> #4215 that is. My PR needs work to deprecate the class_weight in trees as you know. I should do that, but I didn't really get any reviews yet :-/
+[15:19] <54c084dbdb8155e6700eed4c> that's why I figured I'd wait. Boosting has the subsample option too

@@ -1,0 +1,33 @@
+[05:33] <565b339a16b6c7089cbc9958> @kootenpv Thanks for the reply!!
+[05:33] <565b339a16b6c7089cbc9958> <module 'sklearn.preprocessing' from '/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/sklearn/preprocessing/__init__.py'>
+[05:33] <565b339a16b6c7089cbc9958> This is the output that I got on trying out what you told me!
+[05:35] <565b339a16b6c7089cbc9958> I've recently upgraded my scikit version and prior to which I had installed 0.16 version whose source code I have been referring to.
+[05:35] <565b339a16b6c7089cbc9958> I'll check out once again.
+[05:37] <565b339a16b6c7089cbc9958> I used pip install -U scikit-learn and it says the requirement is up to date.
+[18:53] <541d52b1163965c9bc205cf3> hi anyone up here
+[19:01] <53135b495e986b0712efc453> Yes?
+[19:06] <541d52b1163965c9bc205cf3> https://github.com/scikit-learn/scikit-learn/issues/5947
+[19:07] <541d52b1163965c9bc205cf3> i would like to implement this  if it is not already implemented (I couldnt find this in scikit library )
+[19:08] <541d52b1163965c9bc205cf3> The closest was  spectral embedding
+[19:08] <541d52b1163965c9bc205cf3> I havent explained the idea of the algorithm in the issue  but i can do that 
+[19:09] <541d52b1163965c9bc205cf3> and the applications of the same too , as in recent years its gainig some popularity
+[19:18] <53135b495e986b0712efc453> How popular is it?
+[19:21] <53135b495e986b0712efc453> Also what kind of problems does it solve? You may want to include the answer to the prev questions in your issue :)
+[19:22] <53135b495e986b0712efc453> I haven't looked into it exactly... will do so and let you know my view :)
+[19:30] <541d52b1163965c9bc205cf3> as already mentioned some very popular uses are web graph minning , page ranking algorithms 
+[19:31] <541d52b1163965c9bc205cf3> let me include some application based papers in the area
+[19:31] <541d52b1163965c9bc205cf3> http://cseweb.ucsd.edu/~atsiatas/pr_diffusion.pdf
+[19:31] <541d52b1163965c9bc205cf3> http://ictactjournals.in/paper/IJSC_Vol3_Iss3_P5_544_548.pdf
+[19:33] <53135b495e986b0712efc453> I'll let you know my views after I look into it. You may have to wait for core devs to respond to you in that issue before you can proceed. You can also make a detailed email to our mailing list linking your issue to attract more comments.
+[19:35] <541d52b1163965c9bc205cf3> fot the other part of the questions :: it is used   in  a semi-supervised setup  and can be used at problems requiring local and global scales of information using some sort of  label transfer but not limited to this
+[19:37] <53135b495e986b0712efc453> Could you also add these questions and answers to the issue? (So that this discussion could reach a larger audience)
+[19:40] <55f2a92f0fc9f982beb05d85> Hey Scikiters,
+[19:41] <55f2a92f0fc9f982beb05d85> I would like to know if someone has a parallel implementation of DBSCAN .. or Knows how to use it on top of Apache Spark .. Thanks in Advance
+[19:45] <53135b495e986b0712efc453> I may be wrong but isn't our implementation parallel?
+[19:48] <55f2a92f0fc9f982beb05d85> No, the base one in Scikit learn is serial one .. I am trying now to use pySpark to paralleize it, but its really difficult as I am not aware of scikit learn, and I dont have plenty of time :) .. would appreciate if someone can help
+[19:49] <53135b495e986b0712efc453> Afaik parallelization in scikit-learn is mostly done using joblib... maybe you should take a look at that?
+[19:54] <55f2a92f0fc9f982beb05d85> Do u mean, i should try to edit the scikit implementation to utilize Joblib, or u already using Joblib ?
+[19:59] <541d52b1163965c9bc205cf3> i will do that
+[20:02] <55f2a92f0fc9f982beb05d85> @halwai  .. if u mean DBSCAN, would u please let me know then ?
+[20:11] <541d52b1163965c9bc205cf3> @Elbehery   i am sorry  i was not reffering to DBSCAN
+[20:27] <55f2a92f0fc9f982beb05d85> no problem

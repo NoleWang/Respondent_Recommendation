@@ -1,0 +1,4 @@
+[14:20] <54d4a1d6db8155e6700f853b> I feel like I should know that, but does scikit-learn have a doi?
+--------------------------------------------------------------------------------------------------
+[21:58] <56c4f19ae610378809c1f8ae> @amueller I dont think so? I just searched the docs and couldnt find it. It also isnt in the original publication. I also looked at a few papers that cited scikit-learn, but they omitted the DOI
+--------------------------------------------------------------------------------------------------

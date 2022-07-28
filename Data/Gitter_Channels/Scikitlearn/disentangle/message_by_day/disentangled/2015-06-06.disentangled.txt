@@ -1,0 +1,56 @@
+[17:07] <54d4a1d6db8155e6700f853b> and how about lists of lists of strings?
+[17:07] <54d4a1d6db8155e6700f853b> ;)
+--------------------------------------------------------------------------------------------------
+[18:01] <54e07d6515522ed4b3dc0858> @amueller what is the use case? I'd just use CountVectorizer without a tokenizer there :D
+[18:02] <54e07d6515522ed4b3dc0858> In your example above, `['paris', 'paris', 'london', 'new york']` is the entire column (4 values) or a single value?
+[18:02] <54e07d6515522ed4b3dc0858> if the former, OneHotEncoder would work, right?
+[18:05] <54e07d6515522ed4b3dc0858> @amueller try this: ``` x = [['paris', 'paris', 'london'], ['london', 'nyc']] CountVectorizer(analyzer=lambda x: x).fit_transform(x).todense() ```
+[18:09] <54e07d6515522ed4b3dc0858> I think OneHotEncoder should support it
+[18:10] <54e07d6515522ed4b3dc0858> what I meant yesterday is that it can support anything that's an object
+[18:10] <54e07d6515522ed4b3dc0858> as long as you can assign integers to different objects you encounter
+--------------------------------------------------------------------------------------------------
+[18:06] <54d4a1d6db8155e6700f853b> the entire column
+[18:06] <54d4a1d6db8155e6700f853b> four samples
+[18:06] <54d4a1d6db8155e6700f853b> it is just one categorical value
+[18:06] <54d4a1d6db8155e6700f853b> OneHotEncoder only works on integers
+[18:09] <54d4a1d6db8155e6700f853b> true. It seems odd to me, though.
+[18:09] <54d4a1d6db8155e6700f853b> Is that the interface we want?
+[18:10] <54d4a1d6db8155e6700f853b> and I feel like I also want to support data that has one column that is city and one column that is color. But maybe ColumnTransformer is for that
+[18:11] <54d4a1d6db8155e6700f853b> ok but what is the type / shape of X? Would you support this for X being a list of arbitrary objects? Or for X being an 2d array of arbitrary objects?
+--------------------------------------------------------------------------------------------------
+[18:07] <54d4a1d6db8155e6700f853b> LabelBinarizer kind of works, but is not really made for this usecase and doesn't really have a transformer interface
+--------------------------------------------------------------------------------------------------
+[18:08] <54e07d6515522ed4b3dc0858> this works: ``` In [12]:  x = [['paris'], ['paris'], ['london'], ['new york']] CountVectorizer(analyzer=lambda x: x).fit_transform(x).toarray()  Out[12]: array([[0, 0, 1],        [0, 0, 1],        [1, 0, 0],        [0, 1, 0]]) ```
+--------------------------------------------------------------------------------------------------
+[18:11] <54e07d6515522ed4b3dc0858> I'd say list (or 1d array) of arbitrary objects
+[18:11] <54e07d6515522ed4b3dc0858> why 2d array? for city and color?
+[18:12] <54e07d6515522ed4b3dc0858> once you have more than one field of categorical variables, you could encode them as dict(city='new york', color='red') in which case dictvectorizer works, right?
+[18:13] <54e07d6515522ed4b3dc0858> or encode them as dict(cities=['nyc', 'paris'], colors=['red', 'yellow']) and then ColumnTransformer + OneHotEncoder should work
+--------------------------------------------------------------------------------------------------
+[18:18] <54e07d6515522ed4b3dc0858> for your example you could do ``` X = {'post_content': ["long string 1", "long string 2"...],         'metadata': [{location='nyc', category='misc'}, {location='paris', category='programming'}...] ```
+[18:19] <54e07d6515522ed4b3dc0858> and ColumnTransformer(dict(post_content=CountVectorizer(), metadata=DictVectorizer()))
+--------------------------------------------------------------------------------------------------
+[18:28] <54d4a1d6db8155e6700f853b> I feel the nested dicts are ugly.
+[18:28] <54d4a1d6db8155e6700f853b> I just updated the example but something is wrong :-/
+[18:36] <54d4a1d6db8155e6700f853b> ah
+[18:37] <54d4a1d6db8155e6700f853b> how do you do the code highlighting again?
+[18:37] <54d4a1d6db8155e6700f853b> right
+--------------------------------------------------------------------------------------------------
+[18:36] <54d4a1d6db8155e6700f853b> ```python x = ['paris', 'paris', 'london', 'new york'] CountVectorizer(analyzer=lambda x: [x]).fit_transform(x).toarray() ```
+[18:36] <54d4a1d6db8155e6700f853b> is what I want
+--------------------------------------------------------------------------------------------------
+[18:37] <529c6c25ed5ab0b3bf04d824> backticks
+--------------------------------------------------------------------------------------------------
+[18:42] <54e07d6515522ed4b3dc0858> that works, but the analyzer lambda is super opaque
+[18:44] <54e07d6515522ed4b3dc0858> idea: why not deprecate DictVectorizer and create a CategoricalVectorizer with the same interface
+[18:44] <54e07d6515522ed4b3dc0858> except if you pass it a 2d array, it would treat each column as a different implicit key
+[18:45] <54e07d6515522ed4b3dc0858> so then you can do `['paris', 'paris', 'new york', 'london']` as well as `[['paris, 'red'], ['paris', 'green'], ...]`
+[18:58] <54e07d6515522ed4b3dc0858> or that
+--------------------------------------------------------------------------------------------------
+[18:55] <54d4a1d6db8155e6700f853b> hm... maybe just add that?
+[18:56] <54d4a1d6db8155e6700f853b> I added a somewhat interesting example to the pr
+[18:56] <54e07d6515522ed4b3dc0858> yes but then it's no longer a **dict** vectorizer :)
+[18:56] <54d4a1d6db8155e6700f853b> I meant just adding a different class with a different interface
+--------------------------------------------------------------------------------------------------
+[21:20] <54e07d6515522ed4b3dc0858> IThe example is very nice
+--------------------------------------------------------------------------------------------------

@@ -1,0 +1,5 @@
+<s> <user> i 'm a newbie , so please pardon what might be a very simple silly question . i 'm wondering whether the example code for various sample problems posted on the <unka-> website are done in python 2 or python 3 ? </s>
+<s> <user> <unka@> should be compatible with both </s>
+<s> <user> <unka@> contact the <unka-> contrib folks about that . i think the proper procedure is to raise an issue on their repo , but i 'm not sure . </s>
+<s> <user> thanks <unka-@> </s>
+<s> <user> <unka-@> : thanks ! it did indeed run with no exceptions on python 2.7 after my comment so i can at least verify python 2 . thanks again . </s>

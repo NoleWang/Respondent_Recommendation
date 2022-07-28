@@ -1,0 +1,6 @@
+<s> <user> <unka@> right .. it would be nice to have an example that worked in a script though as many newbie people will just copy and paste into their code </s>
+<s> <user> <unka@> i got it work myself so this is a suggestion for others </s>
+<s> <user> <unka@> you mean for the tree plotting ? the real solution is here : URL/https:/ URL/github.com/ <unk#a-/> </s>
+<s> <user> <unka@> thanks . should this work for regression trees too ? </s>
+<s> <user> yes </s>
+<s> <user> great ! i look forward to it 's being merged </s>

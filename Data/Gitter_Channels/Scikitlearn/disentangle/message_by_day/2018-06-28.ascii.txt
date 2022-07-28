@@ -1,0 +1,5 @@
+[08:06] <55d21ee30fc9f982beadabb8> As fast as possible :)
+[08:07] <55d21ee30fc9f982beadabb8> We are trying to finish up couple of issues and we would like to have a release candidate for SciPy 
+[08:08] <55d21ee30fc9f982beadabb8> However we might have some delay depending on how it will go :)
+[14:25] <530c03e25e986b0712efafb8> Thanks for the response.   Given the "trying to have a release candidate for scipy" statement I'm interpretting this as "weeks away", not days and not months
+[14:27] <55d21ee30fc9f982beadabb8> Yep

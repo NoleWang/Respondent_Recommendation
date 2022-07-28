@@ -1,0 +1,2 @@
+<s> <user> hi , is there a way to remove samples using a pipeline ? i was looking at <unka> but i do n't see how it will modify the y values </s>
+<s> <user> <unka@_> <unka-`> has a <unka`> object that lets you remove samples . also , there is wip for a <unka`> that lets you use arbitrary functions confirming the <unka-`> 's object oriented api . </s>

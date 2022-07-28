@@ -1,0 +1,6 @@
+[07:38] <58a84478d73408ce4f4b3982> Number of features of the model must match the input. Model n_features is 13 and input n_features is 2
+[07:38] <58a84478d73408ce4f4b3982> What does it mean?
+--------------------------------------------------------------------------------------------------
+[15:57] <54d4a1d6db8155e6700f853b> @Praful-cs can you please say what's unclear about that so we can improve the error message?
+[15:57] <54d4a1d6db8155e6700f853b> The model was trained with 13 features and you give it data with 2 features
+--------------------------------------------------------------------------------------------------

@@ -1,0 +1,5 @@
+[05:40] <53135b495e986b0712efc453> virtualenvwrapper is cool! ;) Just incase any one is interested... This is a simple tutorial - http://simononsoftware.com/virtualenv-tutorial-part-2/
+[05:41] <53135b495e986b0712efc453> @ogrisel thats great!! btw why doesn't appveyor do the doc tests? only travis does it? (not that it should be of any concern)
+--------------------------------------------------------------------------------------------------
+[23:14] <53135b495e986b0712efc453> Also is there a way I could debug appveyor failures without having a win build? virual box? any suggestions?
+--------------------------------------------------------------------------------------------------

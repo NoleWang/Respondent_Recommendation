@@ -1,0 +1,2 @@
+[15:05] <55a36f535e0d51bd787b3400> Hi all. Is there a plan for making `cross_val_score` accept multidimensional scoring metrics (i.e. a scorer that returns an array rather than a float)? I see that #7388 may be related, but IIUC it mainly to compare different metrics.
+--------------------------------------------------------------------------------------------------

@@ -1,0 +1,5 @@
+<s> <user> i hope all of you in paris are safe <unka:> : </s>
+<s> <user> master does not compile on <unk#a> for me : </s>
+<s> <user> <unka`> <unk-> importerror traceback ( most recent call last ) <unk#a-<> > in <module > ( ) --- -> 1 from <unk#a.> import <unka> 2 from <unk#a> import <unk#a> as io 3 from <unka.> import display 4 from <unka> import <unka> 5 from <unka> import path DIR/users/ <unk#a/> DIR/dropbox/ DIR/src/ <unk#a/> <unk#a/> <unka./> in <module > ( ) 11 from <unka> import <unka> 12 from <unka> import path -- -> 13 from <unka.> import <unka> 14 15 from . import markings , <unk#a> DIR/users/ <unk#a/> <unk#a/> <unka/> <unk#a/> DIR/lib/ <unk#a./> DIR/site-packages/ <unka/> <unka/> <unka./_> in <module > ( ) 8 <unka_> , <unka_> ) 9 from <unka._> import <unka_> , <unka> -- -> 10 from <unka.> import ( <unka_> , ward , <unka> , 11 <unka> , <unka_> , 12 <unka> ) importerror : cannot import name <unka'> <unk`> did <unka`> setup.py <unka`> beforehand . </s>
+<s> <user> this also did not go away by checking out <unk#.`> . </s>
+<s> <user> could you try " make clean " then make ... </s>

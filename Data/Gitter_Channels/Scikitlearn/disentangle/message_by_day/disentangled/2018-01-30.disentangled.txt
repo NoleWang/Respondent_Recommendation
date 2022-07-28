@@ -1,0 +1,4 @@
+[09:39] <551d48fa15522ed4b3de4121> @jnothman thanks!
+--------------------------------------------------------------------------------------------------
+[09:40] <551d48fa15522ed4b3de4121> using GaussianMixtureModel.predict I'm able to guess what cluster/distribution the sample(s) belong(s) to, but how do I get the probability of the given sample occurring given that distribution (not a weighted average of all clusters)?
+--------------------------------------------------------------------------------------------------

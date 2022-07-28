@@ -1,0 +1,56 @@
+[03:32] <5864997ad73408ce4f3fe96c> pbppppppppppapoppppp
+--------------------------------------------------------------------------------------------------
+[19:21] <5921d334d73408ce4f612e46> Hello, I'm looking for some help with a code I wrote. It seems straightforward enough but it takes forever (its not even run it yet and I've had it running for hours) to perform a 5-fold cross validation bit on an 800 x 18 dataframe.
+[19:40] <5921d334d73408ce4f612e46> This seems to be where my code hangs:
+--------------------------------------------------------------------------------------------------
+[19:41] <5921d334d73408ce4f612e46> ``` kf = KFold(800,5) score = [] for i in range(1,1001):      clf = SVC(C=i/100, kernel='linear')      error = []      for train_index, test_index in kf:           X_train, X_test = train_data[train_index], train_data[test_index]           y_train, y_test = train_label[train_index], train_label[test_index]           clf.fit(X_train,y_train)           error.append(1 - clf.score(X_test, y_test))      score.append(sum(error)/5) ```
+--------------------------------------------------------------------------------------------------
+[19:49] <55d21ee30fc9f982beadabb8> you can use the [`cross_val_score`](http://scikit-learn.org/stable/modules/generated/sklearn.model_selection.cross_val_score.html) function to do what you try to do
+[19:51] <55d21ee30fc9f982beadabb8> Also I think that you are using the `cross_validation` module which you should move away from since it is deprecated
+[19:51] <55d21ee30fc9f982beadabb8> Use the `model_selection` where you have the refactored cross-validation classes
+[19:52] <55d21ee30fc9f982beadabb8> long story short, you can write your code as
+[19:55] <55d21ee30fc9f982beadabb8> Then it seems that you try to actually find the best `C` parameter probably. To do that you should use the [`GridSearchCV`](http://scikit-learn.org/stable/modules/generated/sklearn.model_selection.GridSearchCV.html) class.
+[19:59] <55d21ee30fc9f982beadabb8> ```python from sklearn import svm, datasets from sklearn.model_selection import GridSearchCV  parameters = {'C': [1, 10, 100, 1000]} svr = svm.SVC(kernel='linear') clf = GridSearchCV(svr, parameters) clf.fit(X, y) ```
+[19:59] <55d21ee30fc9f982beadabb8> It will search and select the best `C` parameter
+--------------------------------------------------------------------------------------------------
+[19:54] <55d21ee30fc9f982beadabb8> ```python from sklearn.model_selection import KFold from sklearn.model_selection cross_val_score from sklearn.svm import SVC  clf = SVC(kernel='linear') print(cross_val_score(clf, X, y))  ```
+--------------------------------------------------------------------------------------------------
+[20:00] <5921d334d73408ce4f612e46> OK. Thank you so much @glemaitre. I'd try that Yes, I am trying to find the best C parameter
+--------------------------------------------------------------------------------------------------
+[20:00] <55d21ee30fc9f982beadabb8> In your example you are trying all the 1000 possible `C` values and it could be pretty slow. You can also use `n_jobs=-1` to take advantages of all the CPU cores
+[20:03] <55d21ee30fc9f982beadabb8> this is actually related to an SVM with different kernel and C values
+--------------------------------------------------------------------------------------------------
+[20:02] <5921d334d73408ce4f612e46> Oh. Sorry, I'm still new at it so, I don't know how to use the n_jobs yet
+[20:03] <55d21ee30fc9f982beadabb8> `clf = GridSearchCV(svr, parameters, n_jobs=-1)`
+[20:03] <55d21ee30fc9f982beadabb8> is enough
+[20:03] <55d21ee30fc9f982beadabb8> clf = GridSearchCV(svr, parameters)
+[20:03] <55d21ee30fc9f982beadabb8> you can check the examples in the doc
+[20:03] <5921d334d73408ce4f612e46> OK. Thanks a lot!
+--------------------------------------------------------------------------------------------------
+[20:03] <5921d334d73408ce4f612e46> The task was to check for the best C value between 0.01 and 10
+--------------------------------------------------------------------------------------------------
+[20:13] <5921d334d73408ce4f612e46> `GridSearchCV(cv=None, error_score='raise',        estimator=SVC(C=1.0, cache_size=200, class_weight=None, coef0=0.0,   decision_function_shape=None, degree=3, gamma='auto', kernel='linear',   max_iter=-1, probability=False, random_state=None, shrinking=True,   tol=0.001, verbose=False),        fit_params={}, iid=True, n_jobs=1,        param_grid={'C': [1, 10, 100, 1000]}, pre_dispatch='2*n_jobs',        refit=True, return_train_score=True, scoring=None, verbose=0)`
+[20:14] <5921d334d73408ce4f612e46> I guess this implies the best estimator is C = 1.0 ?
+[20:14] <55d21ee30fc9f982beadabb8> yep
+[20:14] <5921d334d73408ce4f612e46> Wow! Thank you. You are a life saver!
+[20:16] <5921d334d73408ce4f612e46> Cool
+--------------------------------------------------------------------------------------------------
+[20:14] <55d21ee30fc9f982beadabb8> the returned classifier is this one
+[20:15] <5921d334d73408ce4f612e46> I've been trying to do this for days!
+[20:15] <55d21ee30fc9f982beadabb8> you can increase the number of C to visit if you want as well
+[20:15] <5921d334d73408ce4f612e46> OK
+[20:15] <5921d334d73408ce4f612e46> How do I do that?
+[20:15] <5921d334d73408ce4f612e46> By changing param_grid?
+[20:15] <55d21ee30fc9f982beadabb8> yep
+--------------------------------------------------------------------------------------------------
+[20:17] <55d21ee30fc9f982beadabb8> `parameters = {'C': np.logspace(-1, 2, num=20)}`
+[20:18] <55d21ee30fc9f982beadabb8> Don't hesitate sometimes to check the tutorial
+[20:18] <55d21ee30fc9f982beadabb8> http://scikit-learn.org/stable/tutorial/
+[20:18] <5921d334d73408ce4f612e46> Ok. Thank you
+[20:18] <55d21ee30fc9f982beadabb8> http://scikit-learn.org/stable/tutorial/statistical_inference/model_selection.html
+[20:18] <55d21ee30fc9f982beadabb8> was actually the one you wanted ;)
+--------------------------------------------------------------------------------------------------
+[20:19] <5921d334d73408ce4f612e46> I'm new at sci-kit and machine learning. So sometimes, my solutions are not optimal and my system is rather slow
+[20:19] <5921d334d73408ce4f612e46> Awesome. I'd go through it
+[20:19] <5921d334d73408ce4f612e46> Yes, it is :D
+--------------------------------------------------------------------------------------------------

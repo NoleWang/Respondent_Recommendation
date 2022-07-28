@@ -1,0 +1,2 @@
+[19:33] <57b364d540f3a6eec05fce2b> Hello, can anyone explain why my custom estimator fails when used with `cross_val_score`? The error message is not clear: `ValueError: output_type='binary', but y.shape = (30, 3)`
+[19:33] <57b364d540f3a6eec05fce2b> My estimator has its own `score()` function which computes the accuracy

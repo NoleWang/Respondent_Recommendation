@@ -1,0 +1,2 @@
+[18:31] <614fb4c06da03739848687d4> I am trying to rejuvenate scikit-learn/scikit-learn#14636 which would then close scikit-learn/scikit-learn#8834 and scikit-learn/scikit-learn#8842. That requires merging https://github.com/scipy/scipy/pull/15391 Could someone please help by reviewing? Even though it's SciPy PR, it is a must to merge for sklearn spectral embedding and clustering that relies on SciPy to construct the graph Laplacian.
+--------------------------------------------------------------------------------------------------

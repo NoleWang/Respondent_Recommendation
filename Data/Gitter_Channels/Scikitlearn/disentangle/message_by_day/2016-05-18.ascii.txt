@@ -1,0 +1,2 @@
+[06:29] <557c765a15522ed4b3e1de4f> can anyone suggest a good "standard" dataset for evaluating the performance of a clustering/visualization package?  I'm looking for something with a few hundred thousand rows.  (I've tested on mnist, and my machine doesn't have the RAM to handle 1M+ row datasets.)
+[16:27] <54d4a1d6db8155e6700f853b> I don' think there are many standard datasets

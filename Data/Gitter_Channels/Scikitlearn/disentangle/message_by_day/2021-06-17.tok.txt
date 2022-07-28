@@ -1,0 +1,2 @@
+<s> <user> hello ... greetings to all .. !!! i will participate in the sprint on saturday june 26 .. !!! </s>
+<s> <user> welcome <unka@> ! </s>

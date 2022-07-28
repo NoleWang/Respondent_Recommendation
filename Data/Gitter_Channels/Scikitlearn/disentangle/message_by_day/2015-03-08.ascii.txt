@@ -1,0 +1,5 @@
+[13:34] <5474d9eadb8155e6700d8178> spectral embedding doesn't accept lists... Should that be considered an issue?
+[21:21] <54d4a1d6db8155e6700f853b> the function or the class?
+[21:38] <5474d9eadb8155e6700d8178> the `fit` method I had meant
+[21:40] <54d4a1d6db8155e6700f853b> are you sure? That should be a common test. It might be that the common test doesn't cover clustering yet. Then this should be fixed.
+[21:43] <5474d9eadb8155e6700d8178> Yes `SpectralEmbedding().fit([[1, 2]])` doesn't work... Ok I'll fix it and add tests for that...

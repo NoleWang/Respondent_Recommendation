@@ -1,0 +1,3 @@
+<s> <user> question : how large are typical parameter sets to <unka`> ? </s>
+<s> <user> and how large are <unka-> parameter sets ? </s>
+<s> <user> <unka@> and i are trying to decide how much we should care about <unka> in <unka+> work </s>

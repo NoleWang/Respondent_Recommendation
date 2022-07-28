@@ -1,0 +1,4 @@
+[07:38] <5571fe1015522ed4b3e17d90> > Ok, but the link on /stable is still broken, FYI.
+[07:38] <5571fe1015522ed4b3e17d90> Yep this will be fixed on the next stable release
+[16:37] <54d4a1d6db8155e6700f853b> @halwai do you mean the old or the new?
+[18:43] <53135b495e986b0712efc453> 

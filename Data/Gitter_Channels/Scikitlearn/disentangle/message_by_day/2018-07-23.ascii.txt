@@ -1,0 +1,8 @@
+[06:42] <541a528b163965c9bc2053de> We still ship a bunch of cblas and actually use it in the windows and linux wheels. The easiest way to get rid of that would be to use scipy cython BLAS functions API but this won't be possible before we bump up the dependencies.
+[17:10] <560313510fc9f982beb1a331> Sounds like issue ( https://github.com/scikit-learn/scikit-learn/issues/11638 ) :wink:
+[19:16] <59cbaaecd73408ce4f779597> Hello peoplw
+[19:17] <59cbaaecd73408ce4f779597> I want to begin with scikit, how should I begin ?
+[19:17] <59cbaaecd73408ce4f779597> Please suggest
+[19:18] <54d4a1d6db8155e6700f853b> @geekyharshal https://jakevdp.github.io/PythonDataScienceHandbook/
+[22:19] <5a2c58c8d73408ce4f8294ba> Hey guys, are there any prebuild Docker images to work with sagemaker for sklearn? They support Apache MXNet or TensorFlow directly but not sklearn. https://github.com/awslabs/amazon-sagemaker-examples/blob/master/advanced_functionality/scikit_bring_your_own/scikit_bring_your_own.ipynb
+[22:25] <5a2c58c8d73408ce4f8294ba> This is an option if not https://github.com/jupyter/repo2docker

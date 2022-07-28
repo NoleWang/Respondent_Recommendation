@@ -1,0 +1,3 @@
+<s> <user> how can i start committing to the open source </s>
+<s> <user> <unka-@> you can start by going through our contributing guides : URL/https:/ <unka-./> <unka#./> </s>
+<s> <user> thank you sir , surely i will do that </s>

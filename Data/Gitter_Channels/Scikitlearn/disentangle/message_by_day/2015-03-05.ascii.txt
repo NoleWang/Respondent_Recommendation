@@ -1,0 +1,77 @@
+[08:21] <541a528b163965c9bc2053de> @amueller  Sorry I was feeling sick yesterday night and I did not go online.
+[08:26] <541a528b163965c9bc2053de> I started thinking about it, we can do: - general intro to ML in Python with scikit-learn - couple of words on the project organization and the team of contributors - highlight of some new stuff in 0.16: improvement on speed or scalability of some methods such as:    - IncrementalPCA    - clustering (I am preparing a notebook comparing DBSCAN, MiniBatchKMeans, KMeans and Birch on 100k blobish 2D points to simulate someone working to extract Point of Interests from raw geo location data (e.g. GSM phone records) - new Approximate Nearest Neighbors search with LSHForest Then for the future we could talk about TSNE and algorithmic improvements under review in the pipeline
+[08:27] <541a528b163965c9bc2053de> I forgot, I also wanted to say a couple of words about probability calibration
+[14:47] <54d4a1d6db8155e6700f853b> Right, calibration is not on my list.  Is it in whatsnew?
+[14:51] <54d4a1d6db8155e6700f853b> Oh, and a title
+[14:52] <54d4a1d6db8155e6700f853b> Hope you are feeling better today
+[14:53] <54d4a1d6db8155e6700f853b> News from scikit-learn 0.16 and soon-to-be gems for the next release. ??
+[14:58] <541a528b163965c9bc2053de> sounds good to me
+[14:58] <541a528b163965c9bc2053de> I am half feeling better, really weird
+[14:58] <541a528b163965c9bc2053de> some hours I feel sick and then completely fine for a while
+[14:59] <541a528b163965c9bc2053de> that's weird
+[15:00] <541a528b163965c9bc2053de> I played a bit with clustering on 1e5 points in 2D
+[15:00] <541a528b163965c9bc2053de> http://nbviewer.ipython.org/github/ogrisel/notebooks/blob/master/sklearn_demos/Large%20Scale%202D%20Clustering.ipynb
+[15:00] <541a528b163965c9bc2053de> DBSCAN is 3x faster than 0.15.2
+[15:01] <541a528b163965c9bc2053de> MB KMeans is still the fastest although it does not deal with outliers as DBSCAN does
+[15:02] <54d4a1d6db8155e6700f853b> cool :) and there are still faster DBSCAN variants in the PRs
+[15:02] <54d4a1d6db8155e6700f853b> there is a pretty new PR on that I think
+[15:02] <541a528b163965c9bc2053de> Birch core set extraction seems to works great but the final affinity clustering pass is not as scalable as the core set extraction
+[15:43] <54d4a1d6db8155e6700f853b> what's on todays agenda for the release?
+[15:43] <54d4a1d6db8155e6700f853b> or what was for you ;)
+[15:44] <54d4a1d6db8155e6700f853b> no progress on isotonic I see
+[15:44] <54d4a1d6db8155e6700f853b> would you mind having a look at https://github.com/scikit-learn/scikit-learn/issues/4324
+[16:04] <54d4a1d6db8155e6700f853b> I guess I start reviewing the non-release PRs now. Or is there anything to review left?
+[16:07] <54d4a1d6db8155e6700f853b> Delaying the beta even more seems a bit silly to me, but the only other option is to merge the remaining urgent fixes with fewer reviews
+[20:39] <541a528b163965c9bc2053de> I am having a look at the DBSCAN. Let's release the beta tomorrow. Whatever the review state of the remaining PRs. we will do backports for the fixes afterwards for the second beta.
+[20:40] <54d4a1d6db8155e6700f853b> you want a second beta? Alright....
+[20:41] <541a528b163965c9bc2053de> maybe not
+[20:41] <541a528b163965c9bc2053de> it depends how stable we find the beta
+[20:41] <541a528b163965c9bc2053de> I would like to merge this https://github.com/scikit-learn/scikit-learn/pull/4028 before cutting the beta branch
+[20:42] <54d4a1d6db8155e6700f853b> go for it. It shouldn't interfere with anything.
+[20:42] <541a528b163965c9bc2053de> ok
+[20:43] <54d4a1d6db8155e6700f853b> Do you think we should get this one in soon: https://github.com/scikit-learn/scikit-learn/pull/4228
+[20:44] <541a528b163965c9bc2053de> If it's ready soon, +1 for a backport to the 0.16.X branch.
+[20:44] <54d4a1d6db8155e6700f853b> ok
+[20:45] <541a528b163965c9bc2053de> maybe we can do: beta tomorrow, continue backports of fixes and target 0.16 in 2 or 3 weeks. And if we fix additional important bugs, 0.16.1 in a month and half
+[20:46] <54d4a1d6db8155e6700f853b> yeah, sounds good.
+[20:46] <54d4a1d6db8155e6700f853b>  we should really release more regularly.
+[20:46] <541a528b163965c9bc2053de> I will be in PyCon at that point but you can do the 0.16.1 with the help of others if I am not responsive enough at that point.
+[20:46] <54d4a1d6db8155e6700f853b> Alright. I don't think I'll make it this year.
+[20:47] <54d4a1d6db8155e6700f853b> you are not coming to scipy are you?
+[20:52] <541a528b163965c9bc2053de> nope
+[20:53] <541a528b163965c9bc2053de> I was planning to attend ICML as a free-styler because is just 1h by train
+[20:54] <54d4a1d6db8155e6700f853b> :) sweet
+[21:07] <5474d9eadb8155e6700d8178> Hey :) could you help me with #4228 ? I don't understand a few things... When testing you said I could use multilabel data right? but which classifier do I test against? (or if you might have time could you take over?)
+[21:08] <54d4a1d6db8155e6700f853b> Try a tree? Or use OneVsRestClassifer(LogisticRegression).
+[21:08] <54d4a1d6db8155e6700f853b> I'll have a look soon.
+[21:08] <5474d9eadb8155e6700d8178> will grid search propagate the parameters from `OneVsRestClassifier` to `LogisticRegression`?
+[21:08] <5474d9eadb8155e6700d8178> and thanks :)
+[21:10] <54d4a1d6db8155e6700f853b> probably with ``estimator__``. But I'd rather go with a tree, which should work
+[21:11] <5474d9eadb8155e6700d8178> okay I'll push in sometime... pl see if I am in the right direction or kindly take over... sorry for having kept you waiting over that :)
+[21:17] <5474d9eadb8155e6700d8178> A small doubt do you use multiple monitors? ;)
+[21:24] <541a528b163965c9bc2053de> no why?
+[21:27] <5474d9eadb8155e6700d8178> Just curious how @amueller could be online and commenting at the same time :O I am online sometimes while I work since I use vim in a transparent guake terminal over the gitter chat window... :)
+[21:27] <54d4a1d6db8155e6700f853b> no transparency here. I technically have a laptop monitor and a large one, but in the office I currently only use the large one. Still context-switching too much.
+[21:28] <54d4a1d6db8155e6700f853b> I have the gitter tab just always open
+[21:28] <5474d9eadb8155e6700d8178> Ah :D :)
+[22:03] <54d4a1d6db8155e6700f853b> are you working on https://github.com/scikit-learn/scikit-learn/pull/4228 now or should I go for it? I only have like 2 hours of work left today, though ;)
+[22:13] <5474d9eadb8155e6700d8178> Please go for it :) :P Most ests don't seem to support sparse y... :)
+[22:15] <5474d9eadb8155e6700d8178> ``` ====================================================================== ERROR: sklearn.tree.tests.test_tree.test_sparse_input('DecisionTreeClassifier', 'sparse-mix', None) ---------------------------------------------------------------------- Traceback (most recent call last):   File "/usr/local/lib/python2.7/dist-packages/nose/case.py", line 197, in runTest     self.test(*self.arg)   File ".../scikit-learn/sklearn/tree/tests/test_tree.py", line 1051, in check_sparse_input     y_sparse)   File ".../scikit-learn/sklearn/tree/tree.py", line 221, in fit     "number of samples=%d" % (len(y), n_samples)) ValueError: Number of labels=1 does not match number of samples=20 -------------------- >> begin captured stdout << --------------------- ``` Perhaps the `len(y)` needs to be changed to `_num_samples(y)` here...
+[22:17] <54d4a1d6db8155e6700f853b> maybe... but with dense y it works?
+[22:22] <5474d9eadb8155e6700d8178> Even after changing to `_num_samples(y)` the error seems to persist :|
+[22:25] <54d4a1d6db8155e6700f853b> ok let me look at it tomorrow
+[22:25] <5474d9eadb8155e6700d8178> thanks!! :)
+[22:29] <541a528b163965c9bc2053de> I am working on the polishing of the no-shuffle DBSCAN
+[22:29] <541a528b163965c9bc2053de> running the tests and should merge soon.
+[22:34] <54d4a1d6db8155e6700f853b> yeah I saw. cool :)
+[22:34] <54d4a1d6db8155e6700f853b> I'm thinking about the class_weight heuristic
+[22:35] <541a528b163965c9bc2053de> I have not read the reference. Do you?
+[22:35] <541a528b163965c9bc2053de> I meant "have you?" not "do you?"
+[22:39] <54d4a1d6db8155e6700f853b> skimmed. But it makes more sense. I'll post a regression test in a second.
+[22:39] <541a528b163965c9bc2053de> Great!
+[22:44] <541a528b163965c9bc2053de> Alright, I will call it a day. See you tomorrow!
+[22:46] <54d4a1d6db8155e6700f853b> alright. you work soo much later than I do.... Have a good night and see you tomorrow
+[22:47] <541a528b163965c9bc2053de> ++
+[23:10] <54c084dbdb8155e6700eed4c> @amueller , just so you're aware, when I was messing with how to structure the forests' class_weight implementations, I noticed float-point numerical differences in some little toy test datasets between a couple of different implementations that differed only in where or how i was multiplying, say sample weight and bootstrap weights. 
+[23:10] <54c084dbdb8155e6700eed4c> I'd expect that the change in #4347 will definitely change the way small floating point differences are evaluated. This obviously has a big effect in trees as magnitude doesn't matter, just gini improvement... So the outputs using class_weight between implementations will likely be different for forests, probably trees. Not that this really matters as they are both entering @ 0.16
+[23:12] <54c084dbdb8155e6700eed4c> Long story short, I think SVMs and Linear Models could potentially change a little bit with #4347, though not as bad as trees I'm guessing. I'm not sure what "promise" is made to users about reproducibility between scikit-learn versions... 

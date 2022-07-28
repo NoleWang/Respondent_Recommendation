@@ -1,0 +1,15 @@
+<s> <user> <unka@> do you understand this URL/https:/ <unka-./> <unk#a-/> ? </s>
+<s> <user> <unka_> failed </s>
+<s> <user> <unka@> it 's weird i just did it ( <unka_> ) on my mac and i do n't get the error . </s>
+<s> <user> python 3.5.0 as well . </s>
+<s> <user> maybe the version of the <unka`> project pre-installed on the travis host is too old for python 3.5.0 . will change the config to make it upgrade it . </s>
+<s> <user> > requirement already satisfied ( use --upgrade to upgrade ): wheel in <unk#a-./> </s>
+<s> <user> <unka@> i saw you commited something . did it fix it ? </s>
+<s> <user> the weird gcc flags were ... weird but i did n't see it come up again after i added the flags </s>
+<s> <user> ah , wheels work . we only need to sync master for the 3.3 fix </s>
+<s> <user> for 3.5 on the osx wheel builder , yes it 's fixed ( just ugraded the <unka`> package on travis ). </s>
+<s> <user> for your 3.3 fix that i merged i plan to only include it for the next release . </s>
+<s> <user> i would like to have the tag match the content of the archive . </s>
+<s> <user> what do you mean by that ? that the version tag in the <unka> repo is the same as the wheel with the same name ? makes sense . </s>
+<s> <user> i have to work on other stuff today . you are busy with <unka> fr right ? it looks like <unk##> would be good to have review </s>
+<s> <user> i'd like to start contributing and work on <unk##> , so i was wondering if it 's better to submit one pr with a lot of warning fixes or <unka> in chunks that deal with one specific type of warning ? </s>

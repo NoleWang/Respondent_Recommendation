@@ -1,0 +1,27 @@
+<s> <user> ugh they credit me as the creator of <unka> </s>
+<s> <user> haha , yeah i saw :d the creator :p to be fair , you're the sole maintainer contact on <unka> ( iirc ) </s>
+<s> <user> that means nothing lol </s>
+<s> <user> <unka@> thanks for the feedback haha ! i 'll edit the post soon to correct what you just pointed out . i sincerely thought you were the main creator of <unka> , as you are the top contributor , and also that you are very very involved . i'd love to know if there is anything i could do to help , or if you have any idea of things you'd like to see in <unka> to help with making <unka> more integrated in deep learning projects . for instance , i think the following code snippet is really <unka> as a way to do deep learning pipelines using the pipe and filter design pattern : URL/https:/ <unka./> <unka#-./> would you have any ideas to share , or things you'd like to point out for me to work on next with <unka> ? </s>
+<s> <user> <unka@> " limitations and caveats ... " sounds cool ! i could rename the article . i wanted it to catch the eye , seems like it worked hehe . i love <unka> tho :) on my side , i 've already fixed 95% of the issues i listed , in <unka> ( as per the links to the <unka> website documentation for each problem listed ). </s>
+<s> <user> regarding deep learning pipeline , i think that we want to be conservative : URL/https:/ <unka-./> <unka#-./> </s>
+<s> <user> issues regarding <unka> and <unka> search could be discussed , however . </s>
+<s> <user> i think that <unka-> provide a nice way to deployed <unka-> model in production </s>
+<s> <user> yeah , that 's the goal ( <unka-> ), but it still needs a bit of work . i 'm all in favor of focusing a bit on <unka_> ( mini batches ) though . </s>
+<s> <user> but this is rather challenging to <unka> models and update models across versions . this might not be in the scope of <unka-> but having a <unka-> to manage those could be nice </s>
+<s> <user> <unka@> incremental learning , early stopping , and <unka> are things which would be nice </s>
+<s> <user> they are in the roadmap i think </s>
+<s> <user> yeah they are , they're just hard :p </s>
+<s> <user> :) yes indeed </s>
+<s> <user> nice to confirm that you scope <unka-> like that . i feared i'd play a bit too much in your <unka> but it seems fine , i 'm glad you have this opinion . i 'm totally down to make <unka> a way to handle all those <unka> and things required for doing deep learning , + <unka> . i do n't know about <unka> , but there could be a way that i adapt to that to save every neural net usign that instead of building custom savers . for now i 'm doing 2 other libraries already : <unka-> and <unka-> to provide default neural net savers to allow <unka> and <unka> and have those models have their special <unka> . might also do <unka-> and so forth . </s>
+<s> <user> you also have <unka-> </s>
+<s> <user> and <unka-> </s>
+<s> <user> which manage the same way than <unka-> </s>
+<s> <user> but this is for prediction only </s>
+<s> <user> they are for <unka> and deployment , though . i think <unka-@> wants training as well </s>
+<s> <user> lol ok you beat me to it ;) </s>
+<s> <user> i 'll need to look into that . for now , with <unka> , someone could do this using 3 tf functions that builds tf graphs : <unk`> model = <unk#a(> <unka_> , <unka_> , <unka_> , <unka=_> <unka()._> ) <unk`> and i have savers that allows for saving and reloading and continue a fit ( already ! ) </s>
+<s> <user> same api would work for tf v1 using a <unk#a> instead , also <unka> ( using some <unka.`> ), and eventually <unka> in some ways </s>
+<s> <user> i also have a <unka`> class which uses the savers for <unka> instead of using <unka> . so all the <unka> , tf , and <unka> code is <unka> . i also am building right now a <unka`> which acts like the <unka> using savers , but sends the saved wrapped pipeline over a worker that has a rest api . so the clustering wrapper can split a batch of data to n workers , by first sending the model , and then sending the data it splitted in parallel . </s>
+<s> <user> the same concept applies to a new <unka`> class i 'm creating right now :d it has the ability to have some steps ( e.g .: <unka-> ) run in different threads , and to have queues between each thread like a <unka-> design pattern . i also already have a [ <unka#(./:]> ) that just like a <unka-> [ <unka#(./:]> ), but that already uses <unka-> , meaning that it splits the batches into mini batches , and it 's just like having a normal pipeline but calling <unka.`> many times in a row ( sorry , i did n't name it <unka_`> , my <unka`> is already thought of as potentially always a partial one . </s>
+<s> <user> <unka@> you said : > <unka@> incremental learning , early stopping , and <unka> are things which would be nice if you look closely [ <unka#(-./:]> ), i already have incremental learning ( e.g .: if you ctrl+f for the <unka`> ` ). i'd love to add early stopping and other <unka> soon , good idea . i opened an issue [ <unk#a(./:]> ) for such things , i'd add <unka> to it ! </s>
+<s> <user> so in the issue [ <unk#a#(./:]> ) i just linked to , there is some example api code , but it might not be enough . i'd like to really discover the good design patterns for that , although i at least found something that seems like it would work properly . </s>

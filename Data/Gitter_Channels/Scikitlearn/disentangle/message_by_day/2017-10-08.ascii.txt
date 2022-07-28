@@ -1,0 +1,2 @@
+[23:13] <59146cabd73408ce4f5ec527> To look at feature importance, I extract it from the `feature_importance_` attribute, sort, and visualize. Is there a way to pretty print / plot automatically? In R, `plot(random_forest)` does the trick
+[23:13] <59146cabd73408ce4f5ec527> If there's not a way to do this in scikit-learn, is there a reason why and does the community welcome PR in this regard?

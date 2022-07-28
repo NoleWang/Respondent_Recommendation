@@ -1,0 +1,3 @@
+<s> <user> can you give an example of such an x ? sorry i 'm being slow . the x example you gave above has shape ( <unka_> , 1 ) </s>
+<s> <user> what are the typical approaches used for time series based <unka> decisions . appreciate any pointers . i am planning to start with decision trees to somehow learn features based on class transitions . ( i only expect a couple of class transitions amongst </s>
+<s> <user> classes which got renamed over time but essentially carry similar features - say classes a1 , <unk#a,> ) besides the vanilla <unka> problem against classes <unk#a,> and c1 . </s>

@@ -1,0 +1,24 @@
+<s> <user> hello my name is <unka> and i am interested in contributing to <unka-.> anyone help me i am completely new in open source world . </s>
+<s> <user> <unka@> that 's really weird . do you have the full traceback ? it seems that the interesting part is under the <unka_> function . </s>
+<s> <user> <unka@> hi all , anyone knows how to visualize high <unka> data in 2d image </s>
+<s> <user> we have 25 instances each of dimension 1800 . we want to visualize each instance separately and then build a <unka> on it . </s>
+<s> <user> please help </s>
+<s> <user> you can do a scatter plot of a <unka-> embedding to get some intuition on the structure of your data . but you should not train the <unka> on the 2d project . it 's very likely that you will get much higher <unka> accuracy by training the <unka> on the original high <unka> data . </s>
+<s> <user> can we visualize each instance separately in <unka-> </s>
+<s> <user> there is a <unka> class in <unka-> but it has many bugs . we would like to solve them for the next release but it 's not ready yet . i would advise to have a look at URL/https:/ URL/github.com/ <unka/> . </s>
+<s> <user> the scatter plot will put on dot in the 2d plane for each instance . </s>
+<s> <user> what you visualize is the neighborhood structure of your data . </s>
+<s> <user> URL/http:/ <unka./> <unk#a-/> </s>
+<s> <user> no . we dont want a dot for each instance . we want an altogether different 2d image for each instance </s>
+<s> <user> you should also try with 2d <unka> of your data . this is much faster to compute <unka> generally the neighborhood structure can be much <unka> . </s>
+<s> <user> i do n't understand what it means to " visualize a 2d image or a single 1800 <unka> vector " . </s>
+<s> <user> what are you features ? which data types ? what is the physical meaning of each of them ? </s>
+<s> <user> we have 1800 features for each instance . we then need to visualize these 1800 features in a single image . repeat this process for each instance . and then build a <unka> on it </s>
+<s> <user> you already said that , please answer my question if you want me to be able to help you . </s>
+<s> <user> we got these 1800 features after doing cnn on the image </s>
+<s> <user> rgb image , we performed cnn , and then extracted features are of dimension 1800 </s>
+<s> <user> there is no generic way to visualize a single feature vector of a cnn . </s>
+<s> <user> we have 25 such images </s>
+<s> <user> so it becomes <unk#a> </s>
+<s> <user> if you want to visualize the distribution of your 25 images embedded in the 1800 <unka> cnn space , then you can use <unka> or <unka> , for instance using URL/http:/ <unka./> ( online web interface ) or URL/https:/ URL/github.com/ <unka/> to do that programmatically . </s>
+<s> <user> also if you want to train an image <unka> , i would advise you to build a training set with at list 100 images per class . 25 is probably far too few even if you do binary <unka> . </s>

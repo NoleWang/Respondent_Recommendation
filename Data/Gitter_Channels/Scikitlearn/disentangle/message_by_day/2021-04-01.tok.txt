@@ -1,0 +1,5 @@
+<s> <user> <unka@> that is surprising . i normally agree with all the decisions of <unka> learn devs </s>
+<s> <user> i have two questions about <unka> . a ) when using early stopping do you end up with the " best model " according to the validation loss or the most recent one after it stops ? </s>
+<s> <user> b ) is the validation set chosen by <unka> chosen at random and is it the same set for every iteration of the training ? </s>
+<s> <user> maybe these should be asked on github as an issue ? </s>
+<s> <user> a ) there 's no notion of best model . early stopping stops the training process if the score has n't improved by more than <unka`> in the last <unka_`> iterations . the score can be the loss or an arbitrary <unka> and it can be computed on the training set or on the validation set b ) yes and yes </s>

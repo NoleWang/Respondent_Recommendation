@@ -1,0 +1,11 @@
+[17:21] <541a528b163965c9bc2053de> >  conda upgrade --all breaks scikit-learn  scikit-learn installed from conda or built from the source prior to the upgrade? What does break mean? A specific test fails? or a segfault at `import sklearn`?
+[18:10] <54d4a1d6db8155e6700f853b> @ogrisel running conda upgrade twice actually makes it work again
+[18:10] <54d4a1d6db8155e6700f853b> it was a linking issue
+[18:10] <54d4a1d6db8155e6700f853b> there is a specific version of sklearn on conda that is not properly linked, but I think they fixed it now
+[18:10] <54d4a1d6db8155e6700f853b> (and I meant installed from conda)
+[20:56] <541a528b163965c9bc2053de> ok great
+[22:01] <54d4a1d6db8155e6700f853b> @vighneshbirodkar maybe also compare against https://github.com/jkarnows/rpcaADMM
+[22:01] <54d4a1d6db8155e6700f853b> and possibly https://github.com/dganguli/robust-pca
+[22:33] <54d4a1d6db8155e6700f853b> oh @vighneshbirodkar you should definitely try https://gist.github.com/bmcfee/a378bfe31a75769c583e first
+[23:11] <54d4a1d6db8155e6700f853b> @vighneshbirodkar brian says to read this book ^^ http://www.web.stanford.edu/~boyd/papers/pdf/admm_distr_stats.pdf
+[23:12] <54d4a1d6db8155e6700f853b> (the variable names are taken from there, in particular 3.11 and 3.12)

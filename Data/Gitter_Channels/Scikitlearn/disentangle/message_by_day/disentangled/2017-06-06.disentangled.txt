@@ -1,0 +1,9 @@
+[11:34] <593679b8d73408ce4f65082e> Hello!   Am I right that https://github.com/scikit-learn/scikit-learn/pull/6015 is also within the sprint scope? Can I take it?
+--------------------------------------------------------------------------------------------------
+[11:35] <54d4a1d6db8155e6700f853b> @n0mad review it you mean?
+--------------------------------------------------------------------------------------------------
+[11:39] <54e47f0815522ed4b3dc2640> Anyone tackling this already https://github.com/scikit-learn/scikit-learn/issues/8899 ? Seems easy and would be useful for hmmlearn as well.
+[11:39] <593679b8d73408ce4f65082e> @amueller I had impression it did not fully address https://github.com/scikit-learn/scikit-learn/issues/5879  so I thought I could continue working on it?
+--------------------------------------------------------------------------------------------------
+[11:45] <55d21ee30fc9f982beadabb8> @superbobry You can go ahead if there is not PR yet
+--------------------------------------------------------------------------------------------------

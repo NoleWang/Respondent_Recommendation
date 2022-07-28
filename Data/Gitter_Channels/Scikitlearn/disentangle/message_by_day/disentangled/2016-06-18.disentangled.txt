@@ -1,0 +1,21 @@
+[09:42] <567d7eca16b6c7089cc02a05> Hi, I am new to scikit-learn , I want to contribute, can i get some guidance. Frankly I am having problems in understanding the easy issues. Sorry for being naive
+--------------------------------------------------------------------------------------------------
+[09:58] <56b80528e610378809c05a48> Hi :smile: , which issues are you solving?
+[09:59] <56b80528e610378809c05a48> or trying to understand
+--------------------------------------------------------------------------------------------------
+[10:01] <567d7eca16b6c7089cc02a05> I tried to understand more than one... but I am unable to narrow down the scope of the problem
+[10:01] <56b80528e610378809c05a48> May you paste the link?
+[10:01] <567d7eca16b6c7089cc02a05> https://github.com/scikit-learn/scikit-learn/issues/6796
+[10:02] <567d7eca16b6c7089cc02a05> this is one of them....
+[10:05] <567d7eca16b6c7089cc02a05> Actually I am not fimiliar with the code-base. So I dont know what to ask him
+[10:05] <567d7eca16b6c7089cc02a05> Can you assign me a task, as a mentor
+--------------------------------------------------------------------------------------------------
+[10:04] <56b80528e610378809c05a48> I see, maybe you should leave a comments there and tag the issue opener for more specific elaboration.
+[10:04] <56b80528e610378809c05a48> Doing this can help you make sure you are on the right path!
+[10:06] <56b80528e610378809c05a48> No haha, Im not a pro here.
+[10:06] <567d7eca16b6c7089cc02a05> atleast you can guide me!
+[10:06] <567d7eca16b6c7089cc02a05> I am lost in here.... and i want to get some task for myself
+--------------------------------------------------------------------------------------------------
+[10:21] <56b80528e610378809c05a48> You can leave a comment about how you gonna solve this, and ask the issue opener whether you are correct.  It looks like to implement a function based on [this script](http://scikit-learn.org/stable/auto_examples/model_selection/plot_confusion_matrix.html) which can conveniently plot the confusion matrix, you can find doc of confusion matrix [here](http://scikit-learn.org/stable/modules/generated/sklearn.metrics.confusion_matrix.html#sklearn.metrics.confusion_matrix)
+[10:22] <567d7eca16b6c7089cc02a05> Thanks Yen
+--------------------------------------------------------------------------------------------------

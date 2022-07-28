@@ -1,0 +1,8 @@
+[00:43] <5ecf797dd73408ce4fe523d7> Hey guys, is the agglomerative clustering in scikit learn soft or hard? Or is there a setting somewhere we could use to set that?
+[00:46] <5ecf797dd73408ce4fe523d7> Also, while using agglomerative clustering on 100K data points, my computer crashed. I assume this is because I didn't use the 'memory' parameter for caching? Or did I misunderstand something there?
+--------------------------------------------------------------------------------------------------
+[19:02] <54d4a1d6db8155e6700f853b> the memory parameter will not help you here. What do you mean by soft or hard?
+[19:04] <54d4a1d6db8155e6700f853b> it might be useful to precomputed the distance matrix in a chunked way
+[19:06] <54d4a1d6db8155e6700f853b> how much RAM do you have?
+[19:11] <54d4a1d6db8155e6700f853b> and which linkage mode are you using?
+--------------------------------------------------------------------------------------------------

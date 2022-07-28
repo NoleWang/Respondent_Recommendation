@@ -1,0 +1,1 @@
+<s> <user> that 's ... <unka> and <unka> . i do n't get the warnings with the exact same versions of everything ( afaict , except that <unka> is from <unka> ), whether with <unka-> numpy and scipy or <unka-> ones . </s>

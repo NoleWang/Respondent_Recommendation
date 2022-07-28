@@ -1,0 +1,3 @@
+[11:20] <56d577ffe610378809c46670> Hey, I'm not able to locate the ``load_breast_cancer`` in http://scikit-learn.org/dev/modules/classes.html#module-sklearn.datasets. The only reference I can find in docs is here http://scikit-learn.org/dev/datasets/index.html#breast-cancer-wisconsin-diagnostic-database
+[11:21] <56d577ffe610378809c46670> There is no reference to it's method details. Why is so ?
+[15:40] <53135b495e986b0712efc453> @amueller Andy are you around and have a few minutes to talk about the gbcv?

@@ -1,0 +1,1 @@
+<s> <user> how to train neural network and what i the best design of it if i have <unka/> input and continual output ? </s>

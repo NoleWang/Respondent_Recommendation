@@ -1,0 +1,2 @@
+[00:44] <5911fe0fd73408ce4f5e38ec> Is there like a standard file format for storing the output of roc_curve? Maybe something that is easy to read, analyze, visualize, etc?
+--------------------------------------------------------------------------------------------------

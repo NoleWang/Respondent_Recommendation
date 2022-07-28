@@ -1,0 +1,2 @@
+[04:57] <5796939b40f3a6eec05c6fe0> 
+[21:15] <572ccae9c43b8c60197181b7> Is there any way to get the uncertainty on the fit parameters out of a `RANSACRegressor` or an underlying `base_estimator`?

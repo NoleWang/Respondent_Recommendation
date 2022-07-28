@@ -1,0 +1,7 @@
+<s> <user> <unka@> not to my knowledge . what approaches were you considering and why do you think it might be beneficial ? </s>
+<s> <user> is there an estimate on a release date of 0.20 ? no pressure or expectations , i 'm just doing some planning . " no estimate " is also a fine response . </s>
+<s> <user> <unka@> see URL/https:/ URL/github.com/ <unk#a-/> for the <unk#a.> , probably several weeks later for the 0.20 final . </s>
+<s> <user> thank you for the pointer <unka@> . i should have been able to find that :) </s>
+<s> <user> hope to do the rc today or tomorrow but i 'm an <unka> ;) </s>
+<s> <user> i need to convince some more people that i 'm right and they are wrong before we can do that , though </s>
+<s> <user> that should n't take long :) </s>

@@ -1,0 +1,1 @@
+[11:25] <57a061aa40f3a6eec05d8d26> What does it mean, when I do grid search and in ther cv_results_ there's param_n_estimators, for example, and it's type is masked_array and then next to it, there's mask which is full of boolean false values?

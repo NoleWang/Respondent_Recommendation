@@ -1,0 +1,43 @@
+[14:15] <564789be16b6c7089cbab8b7> I am going to guess it is
+--------------------------------------------------------------------------------------------------
+[14:38] <5b437334d73408ce4fa02901> Hello, I'm just not getting anywhere. I have a regression ANN with four inputs and want to draw a contour plot.  So two variable variables and two fixed. Does anyone have an example or can you give me a hint how I do this?
+--------------------------------------------------------------------------------------------------
+[14:39] <55d21ee30fc9f982beadabb8> > is the score being printed the roc_auc score?
+[14:39] <55d21ee30fc9f982beadabb8> accuracy for classifier and r2 for regressor
+--------------------------------------------------------------------------------------------------
+[14:40] <564789be16b6c7089cbab8b7> @glemaitre  sorry I was really asking a  a tpot question. I think it prints whatever you used when defining TPOTClassifier
+[14:40] <55d21ee30fc9f982beadabb8> so it depends what TPOTClassifier from which class is it deriving but I assume `ClassifierMixin`
+[14:40] <564789be16b6c7089cbab8b7> as in "TPOTClassifier(generations=20, population_size=50, scoring='roc_auc', verbosity=2, n_jobs=-1)"
+[14:40] <564789be16b6c7089cbab8b7> where scoring is defined  as roc_auc
+[14:40] <564789be16b6c7089cbab8b7> but I could be wrong of course
+[14:41] <55d21ee30fc9f982beadabb8> TPOTClassifier is not something in scikit-learn so I am not aware of how it works or implemented actually
+--------------------------------------------------------------------------------------------------
+[14:46] <564789be16b6c7089cbab8b7> of course.. sorry for asking a slightly off topic question here
+--------------------------------------------------------------------------------------------------
+[14:47] <55d21ee30fc9f982beadabb8> no problem but looking quickly at their base class, score is calling the associated string score from sklearn
+[14:47] <55d21ee30fc9f982beadabb8> so I think that your guess was good
+[14:47] <564789be16b6c7089cbab8b7> great, thanks!
+--------------------------------------------------------------------------------------------------
+[14:48] <564789be16b6c7089cbab8b7> on another topic, I have lots (1000s) of pairs of vectors. For each pair on the left there is exactly one pair on the right that it should be associated with
+[14:49] <564789be16b6c7089cbab8b7> I could make a classification problem out of it by concatenating the vectors and labelling them with 0 or 1 but 1/1000s of the labels would be 1.  That is the fraction of 1 labels would be tiny
+[14:49] <564789be16b6c7089cbab8b7> is there a standard way to approach this sort of problem?
+[14:50] <564789be16b6c7089cbab8b7> oh that sounds interesting
+[14:51] <564789be16b6c7089cbab8b7> thanks.. I will see if that is appropriate  The main restriction is that I need to do out of sample prediction
+[14:51] <564789be16b6c7089cbab8b7> I did also look at scikit learn's kernel pca
+[14:52] <564789be16b6c7089cbab8b7> might that work?
+[14:52] <564789be16b6c7089cbab8b7> you would need to feed in a full set of distances which would only ever be 0 or 1
+[14:53] <564789be16b6c7089cbab8b7> I don't know if that is generally a bad idea for kernel pca
+[14:53] <564789be16b6c7089cbab8b7> http://scikit-learn.org/stable/modules/generated/sklearn.decomposition.KernelPCA.html
+[14:54] <564789be16b6c7089cbab8b7> me neither!
+--------------------------------------------------------------------------------------------------
+[14:50] <55d21ee30fc9f982beadabb8> I am not really familiar
+[14:50] <55d21ee30fc9f982beadabb8> but it could something linked to metric learning
+[14:50] <55d21ee30fc9f982beadabb8> in which you want to know the relative distance between pairs
+[14:50] <55d21ee30fc9f982beadabb8> and know which pairs have the minimal distance
+[14:50] <55d21ee30fc9f982beadabb8> https://github.com/metric-learn/metric-learn
+[14:54] <55d21ee30fc9f982beadabb8> I don't have enough background there :)
+--------------------------------------------------------------------------------------------------
+[14:55] <55d21ee30fc9f982beadabb8> I would presume that having a continuous distance is what you would need
+[14:55] <564789be16b6c7089cbab8b7> I need to find a nice expert online as I don't know anyone in real life who could help
+[14:55] <564789be16b6c7089cbab8b7> That's my intuition too
+--------------------------------------------------------------------------------------------------

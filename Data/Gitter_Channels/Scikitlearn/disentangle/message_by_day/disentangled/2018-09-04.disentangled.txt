@@ -1,0 +1,13 @@
+[10:46] <5582e83c15522ed4b3e21bef> Hi all! What is the current recommended was to save models and redistribute them. We tried https://github.com/uchicago-cs/deepdish and similar concepts, but all do pickle the object at some point. This is not relocatable and breaks with different python versions etc ... is there any emerging standard. Any hint how the ML community is tackling this at the moment or in the future?
+[17:13] <5582e83c15522ed4b3e21bef> @DrEhrfurchtgebietend I consider this a very bad hack :)
+[17:13] <5582e83c15522ed4b3e21bef> Is there no emerging standard :(
+--------------------------------------------------------------------------------------------------
+[16:48] <5a2c58c8d73408ce4f8294ba> @bgruening Use pickle from joblib and build in a docker container. It seems to be the standatd method but is not without flaws. In a standard local server deployment i rarely use the docker containers and just keep track of package versions.
+--------------------------------------------------------------------------------------------------
+[19:29] <55d21ee30fc9f982beadabb8> I would refer to the talk of Alejandro Saucedo at EuroSciPy couple of days ago https://axsauze.github.io/scalable-data-science/#/
+[19:30] <55d21ee30fc9f982beadabb8> and more precisely
+[19:30] <55d21ee30fc9f982beadabb8> https://github.com/axsauze/awesome-machine-learning-operations
+[19:33] <55d21ee30fc9f982beadabb8> However, I did not check all the solution and I cannot ensure you that you will not get the pickling issue that you mentioned.
+--------------------------------------------------------------------------------------------------
+[19:43] <5b6fe633d73408ce4fa45408> thx for sharing Guillaume
+--------------------------------------------------------------------------------------------------

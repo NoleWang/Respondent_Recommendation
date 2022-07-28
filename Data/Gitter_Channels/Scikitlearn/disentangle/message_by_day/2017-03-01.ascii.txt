@@ -1,0 +1,7 @@
+[12:55] <57a061aa40f3a6eec05d8d26> how much memory I need with PolynomialFeatures?
+[12:59] <57a061aa40f3a6eec05d8d26> I have data with shape (10374, 500) and I use interaction_only=True, but it gives me memory error
+[12:59] <57a061aa40f3a6eec05d8d26> I  think I have 8G limit for memory on that machine where I'm running it
+[15:24] <589b9e0fd73408ce4f490ba4> @mkoske Well, `PolynomialFeatures(degree=2, interaction_only=True).fit_transform(np.ones((1, 500)))`  generates an array with 125251 features, so if you do that for all of your 10374 rows, it would produce a ~10.4 GB array (64 bit floats) and 8 GB RAM wont be enough..
+[15:25] <57a061aa40f3a6eec05d8d26> @rth ok, thanks :) 
+[15:35] <57a061aa40f3a6eec05d8d26> if I use 32 bit floats, would that be half of it? like ~5GB?
+[16:14] <589b9e0fd73408ce4f490ba4> @mkoske True that could work..

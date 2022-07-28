@@ -1,0 +1,137 @@
+[10:02] <54e07d0815522ed4b3dc0850> An update from Paris: we have a dozen of people working on a variety of small issues or reviewing (they have marked the issues that they are working on).
+[10:03] <54e07d0815522ed4b3dc0850> I think that some of us are going to prioritize issues needed for the release.
+--------------------------------------------------------------------------------------------------
+[13:01] <55d21ee30fc9f982beadabb8> great
+--------------------------------------------------------------------------------------------------
+[13:02] <55d21ee30fc9f982beadabb8> we will in the office in 30 minutes or so ready to light up
+--------------------------------------------------------------------------------------------------
+[13:03] <54e07d0815522ed4b3dc0850> Awesome. I am busy finishing details on small PRs that are important for the release.
+[13:05] <54e07d0815522ed4b3dc0850> I would like to move a bunch of issues to the next milestone. I think that we should not delay the release. If needed, we can discuss this quickly.
+[15:11] <54e07d0815522ed4b3dc0850> I think that we should delay KMedoids
+[15:11] <54e07d0815522ed4b3dc0850> It would be good to have it, but this release is already a big one
+--------------------------------------------------------------------------------------------------
+[13:15] <53232ac75e986b0712efe3af> it will not be in 30 min, Guillaume was a bit optimistic :)
+--------------------------------------------------------------------------------------------------
+[13:26] <54e07d0815522ed4b3dc0850> It's good to be optimistic!
+--------------------------------------------------------------------------------------------------
+[13:38] <54e07d1515522ed4b3dc0852> anyone looking for a simple issue that is pure doc: https://github.com/scikit-learn/scikit-learn/issues/9196
+--------------------------------------------------------------------------------------------------
+[14:24] <560313510fc9f982beb1a331> Anyone able to review a small PR using BLAS? ( https://github.com/scikit-learn/scikit-learn/pull/11420 )
+--------------------------------------------------------------------------------------------------
+[14:41] <55d21ee30fc9f982beadabb8> but we eventually got in the office now
+--------------------------------------------------------------------------------------------------
+[14:49] <54e07d0815522ed4b3dc0850> OK. Looking at the list of issues for the next release: https://github.com/scikit-learn/scikit-learn/milestone/24, I would like to postpone a few. Things like #11520 , #8642, #9098. My goal is to move us forward to the release.
+[14:49] <54e07d0815522ed4b3dc0850> Any objections?
+[14:50] <54e07d0815522ed4b3dc0850> Also, #11408 needs a review. It fixes one of the problems of the build
+[14:51] <54e07d0815522ed4b3dc0850> @amueller : OK, but this list is too long. We are going to have to make choices. The delay in the release is not good for our users. I am happy focusing on things to get them done (including #11520), but we will not be able to address all this.
+[14:53] <54e07d0815522ed4b3dc0850> Great. I'll have a look at #11520 right now
+[16:26] <54e07d0815522ed4b3dc0850> @amueller is adding issues to the milestone faster than we can close them :)
+[16:55] <54e07d0815522ed4b3dc0850> Yes, but it's quite depressing to see the percentage going down as we work. I really worry about feature creep. I was expecting this release to be out a couple months ago.
+--------------------------------------------------------------------------------------------------
+[14:49] <54d4a1d6db8155e6700f853b> I don't want to postpone the Yeo-Johnson because it will be the default for PowerTransform
+--------------------------------------------------------------------------------------------------
+[14:50] <54d4a1d6db8155e6700f853b> basically if we don't do #11520 then we'll release with power transform only working on non-negative data and we need a deprecation cycle to change the default to yeo-johnson
+--------------------------------------------------------------------------------------------------
+[14:51] <54d4a1d6db8155e6700f853b> I'm also untagging some things right now, and tagging other things as blockers
+[14:51] <54d4a1d6db8155e6700f853b> yes I know it is
+[14:51] <54d4a1d6db8155e6700f853b> I think joris is creating a github project board right now
+--------------------------------------------------------------------------------------------------
+[14:54] <5b3cc3c9d73408ce4f9f9bf8> Hi . please help me about visualization of SVM, cross validation and its performance measures
+--------------------------------------------------------------------------------------------------
+[14:57] <54d4a1d6db8155e6700f853b> what' about #9723 ?
+[15:00] <55d21ee30fc9f982beadabb8> If we consider it as a bug fix then this is ready to be merged.
+[15:00] <55d21ee30fc9f982beadabb8> I really think that it was actually a bug
+--------------------------------------------------------------------------------------------------
+[15:00] <54d4a1d6db8155e6700f853b> yeah looks like it from a glance
+[15:01] <54d4a1d6db8155e6700f853b> @GaelVaroquaux I kinda wanted estimator tags in, but I guess we might not be able to do that :-/
+[15:01] <54d4a1d6db8155e6700f853b> KMedoids? #11099  I'd say delay
+[15:02] <54d4a1d6db8155e6700f853b> #10058 NCA I'd say delay as well
+--------------------------------------------------------------------------------------------------
+[15:05] <54e07d0815522ed4b3dc0850> I do think that NCA is delayed :(
+--------------------------------------------------------------------------------------------------
+[15:06] <55d21ee30fc9f982beadabb8> we need a second review on https://github.com/scikit-learn/scikit-learn/pull/11464
+[15:07] <54d4a1d6db8155e6700f853b> ok most PRs that are tagged either are small and have +1 or are bug fixes or blockers
+[15:09] <54d4a1d6db8155e6700f853b> ok apart from KMedoids I think tagged PRs are relatively reasonable right now
+[15:10] <54d4a1d6db8155e6700f853b> anyone have oppinions on KMedoids?
+--------------------------------------------------------------------------------------------------
+[15:16] <55d21ee30fc9f982beadabb8> We also need to fix the MICE/ChainedImputer/IterativeImputer
+[15:16] <55d21ee30fc9f982beadabb8> https://github.com/scikit-learn/scikit-learn/pull/11350
+[15:17] <55d21ee30fc9f982beadabb8> basically the remaining question would be link to the default imputer to use (RidgeCV or RandomForest)
+--------------------------------------------------------------------------------------------------
+[15:28] <54e07d0815522ed4b3dc0850> I commented on this choice directly in the PR, to keep the discussion on github.
+--------------------------------------------------------------------------------------------------
+[16:07] <54d4a1d6db8155e6700f853b> @GaelVaroquaux do you have opinions on https://github.com/scikit-learn/scikit-learn/issues/11536 ?
+[16:08] <54d4a1d6db8155e6700f853b> there is tons of convergence warnings everywhere currently
+[16:08] <54d4a1d6db8155e6700f853b> also, the examples and tests have tons of warnings about iid. Should we do something about that? not sure if it's worth in the examples, in the test we should probably catch
+[16:09] <54d4a1d6db8155e6700f853b> @ogrisel also would love to hear your thoughts on https://github.com/scikit-learn/scikit-learn/issues/11536
+--------------------------------------------------------------------------------------------------
+[16:26] <54d4a1d6db8155e6700f853b> @GaelVaroquaux sorry :-/ only thing that I'm noticing now that we broke
+--------------------------------------------------------------------------------------------------
+[16:55] <54d4a1d6db8155e6700f853b> what feature creep? you mean scope of sklearn or scope of this release?
+[16:56] <54d4a1d6db8155e6700f853b> I'm just going through examples and dogfooding all the changes we did and make sure the user experience is sane
+[16:57] <54d4a1d6db8155e6700f853b> like the iid change can easily lead to a wall of deprecations. I guess the user can always catch them...
+[19:15] <54d4a1d6db8155e6700f853b> @glemaitre the one you just posted lol
+[19:49] <54d4a1d6db8155e6700f853b> this is related but not the consistency: #6425
+[19:50] <54d4a1d6db8155e6700f853b> this is the actual issue #7242
+--------------------------------------------------------------------------------------------------
+[16:57] <589b9e0fd73408ce4f490ba4> Opinions of what should be done about the blocking  euclidean_distance in 32 bit issue would be welcome https://github.com/scikit-learn/scikit-learn/issues/9354#issuecomment-405314164
+--------------------------------------------------------------------------------------------------
+[17:26] <54d4a1d6db8155e6700f853b> this is ready for reviews: https://github.com/scikit-learn/scikit-learn/pull/11561
+--------------------------------------------------------------------------------------------------
+[17:30] <55d21ee30fc9f982beadabb8> This could be merged (MRG+2): https://github.com/scikit-learn/scikit-learn/pull/9616
+[17:34] <54d4a1d6db8155e6700f853b> I was trying to press the green button on #9616 but got many unicorns
+[17:34] <55d21ee30fc9f982beadabb8> what is #9616
+[17:35] <55d21ee30fc9f982beadabb8> because gitter says that it is not found
+--------------------------------------------------------------------------------------------------
+[18:03] <54e07d0815522ed4b3dc0850> OK, we are wrapping up here in Paris. I am signing off, as I have "real work" to do for tonight. Sorry
+--------------------------------------------------------------------------------------------------
+[19:14] <54d4a1d6db8155e6700f853b> thanks!
+--------------------------------------------------------------------------------------------------
+[19:18] <547d8325db8155e6700da60b> @amueller https://hub.github.com/
+--------------------------------------------------------------------------------------------------
+[19:18] <5571fe1015522ed4b3e17d90> or this without dependencies: git push https://github.com/lmcinnes/scikit-learn pr/8554:sparse-LLE-Isomap -f
+--------------------------------------------------------------------------------------------------
+[19:20] <55d21ee30fc9f982beadabb8> @amueller You seem to be interested in merging this one since the test are passing
+[19:20] <55d21ee30fc9f982beadabb8> https://github.com/scikit-learn/scikit-learn/pull/8075
+--------------------------------------------------------------------------------------------------
+[19:23] <54d4a1d6db8155e6700f853b> what about https://github.com/scikit-learn/scikit-learn/pull/8760 ?
+[19:23] <54d4a1d6db8155e6700f853b> anyone working on that?
+[19:23] <54d4a1d6db8155e6700f853b> is that a regression?
+--------------------------------------------------------------------------------------------------
+[19:41] <5a83f33dd73408ce4f8d133f> I'm working on it (PR related to issue #8720 which I commented)
+--------------------------------------------------------------------------------------------------
+[19:44] <54d4a1d6db8155e6700f853b> @rth do you wanna review the openml loader? #11419 ?
+[19:47] <54d4a1d6db8155e6700f853b> anyone else have a quick review for #11561 ?
+[19:47] <55d21ee30fc9f982beadabb8> I'll do that while waiting for some benchmark
+[19:48] <54d4a1d6db8155e6700f853b> thanks :)
+--------------------------------------------------------------------------------------------------
+[19:54] <54e07d0815522ed4b3dc0850> @amueller : feature creep = scope of release. Not scope of scikit-learn. I think that we are doing good on this.
+[19:54] <54d4a1d6db8155e6700f853b> ok
+--------------------------------------------------------------------------------------------------
+[19:54] <53232ac75e986b0712efe3af> @amueller https://github.com/scikit-learn/scikit-learn/pull/10198 (OneHotEncoder.get_feature_names, was not tagged apparently)
+--------------------------------------------------------------------------------------------------
+[19:56] <54d4a1d6db8155e6700f853b> someone look at #11567 ? ;)
+[19:57] <54d4a1d6db8155e6700f853b> (still opening issues and PRs quicker than people can close them)
+--------------------------------------------------------------------------------------------------
+[20:23] <54e07d0815522ed4b3dc0850> Hey Austin, while both y'all and we all are awake, how about we schedule a hangout for tomorrow
+[20:23] <54e07d0815522ed4b3dc0850> I miss you all!
+--------------------------------------------------------------------------------------------------
+[20:24] <541a528b163965c9bc2053de> Alright, which time would be fine with you?
+--------------------------------------------------------------------------------------------------
+[20:57] <54d4a1d6db8155e6700f853b> jan: https://github.com/scikit-learn/scikit-learn/pull/11570
+--------------------------------------------------------------------------------------------------
+[21:10] <55d21ee30fc9f982beadabb8> @rth https://github.com/scikit-learn/scikit-learn/pull/11561 merge this since your comments have been addressd
+--------------------------------------------------------------------------------------------------
+[21:21] <54d4a1d6db8155e6700f853b> @rth do you know about this? 11572
+[21:21] <54d4a1d6db8155e6700f853b> #11572
+[21:22] <54d4a1d6db8155e6700f853b> it's about AUC reorder
+--------------------------------------------------------------------------------------------------
+[21:47] <547d8325db8155e6700da60b> @amueller https://github.com/scikit-learn/scikit-learn/pull/10495/files
+--------------------------------------------------------------------------------------------------
+[21:52] <54d4a1d6db8155e6700f853b> can someone change the working in https://github.com/scikit-learn/scikit-learn/pull/10495 from interpret to convert?
+--------------------------------------------------------------------------------------------------
+[22:04] <547d8325db8155e6700da60b> I'll do a PR, rewording it
+--------------------------------------------------------------------------------------------------
+[22:11] <55d21ee30fc9f982beadabb8> Second review needed on the SimpleImputer which was buggy for sparse matrix
+[22:11] <55d21ee30fc9f982beadabb8> https://github.com/scikit-learn/scikit-learn/pull/11496
+--------------------------------------------------------------------------------------------------

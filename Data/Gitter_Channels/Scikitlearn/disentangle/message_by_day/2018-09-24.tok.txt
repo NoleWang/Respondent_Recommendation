@@ -1,0 +1,6 @@
+<s> <user> <unka@> nice report ! two suggestions . one , it would be nice to explain what the red and blue colors mean . i did n't get a strong sense of what those were when reading the medium post or your final report pdf . and two , if you were to improve this accuracy of your models , maybe consider feature selection to narrow which words you use in your model , instead of using all of them . from your final report , it appears you used all of them , but if i missed that part of your analysis , forgive me . thanks for sharing your work and results ! </s>
+<s> <user> <unka@> and feel free to share in the [ <unka> <unka(./:]> ) room as well <unka:> : </s>
+<s> <user> thank you for your feedback , <unka@> .. i will try to implement what you said :) </s>
+<s> <user> actually the colors did n't mean anything .. it was a style that i used for the graphs </s>
+<s> <user> <unka@> checked <unka> 's sgd code in c++ ( URL/https:/ <unka./> <unka/> ), i 'm not sure where that same formula used for the learning rate can be found there . </s>
+<s> <user> <unk#a@> which one ? </s>

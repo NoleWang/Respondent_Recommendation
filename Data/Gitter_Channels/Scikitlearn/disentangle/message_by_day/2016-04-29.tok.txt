@@ -1,0 +1,11 @@
+<s> <user> <unka@> other options for <unka> data : 1 ) when it is that skewed , try anomaly detection . 2 ) i found this <unka+> from <unka> et . al . to be <unka> approach ( URL/https:/ <unka./> <unk#a&,/=?_> ) </s>
+<s> <user> <unka@> <unka@> you think it 's necessary to upload the wheels of the template project on rackspace ? granted the wheels wo n't be of much use , but it could serve as an example for projects which clone it . </s>
+<s> <user> does anyone know when the argument <unka_`> was removed from <unka> ? cannot find it in the changelog </s>
+<s> <user> <unka@> URL/https:/ URL/github.com/ <unk#a-/> </s>
+<s> <user> seems like it was planned to be removed in 0.15 , but might have been removed later . i couldnt find any mention of it in the changelog as well . </s>
+<s> <user> date on that is july 17 , 2014 . <unk#.> was released on july 15 2014 , and <unk#.> was released on aug 1 2014 . im presuming it was thus gone by <unk#.> ? </s>
+<s> <user> <unka@> thanks very much </s>
+<s> <user> <unka@> i will look up " <unka> loss " thanks </s>
+<s> <user> <unka@> in my case i am wondering whether the extreme nature of the class <unka> ( 300 versus 300 millions ) means that black box methods might not be appropriate </s>
+<s> <user> that is i may have to do something other than try to infer the model from the data </s>
+<s> <user> <unka@> sounds like a good idea </s>

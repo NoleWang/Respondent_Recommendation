@@ -1,0 +1,85 @@
+<s> <user> <unka@> : do you want to do a video hangout at some point , mostly to say hi and join the excitement ? </s>
+<s> <user> <unka@> i believe that it 's <unk#a:> your time . we are currently having the lunch break . so maybe in a little while will be good . we can put you on a big screen </s>
+<s> <user> i 'm okay with small screens . sounds like fun . i 'm currently having my dinner too . </s>
+<s> <user> ok , after dinner ? or will you be busy ? </s>
+<s> <user> if you want : ping me on google hangout </s>
+<s> <user> should be alright when all the <unka> is </s>
+<s> <user> over </s>
+<s> <user> everybody is gone to take a break outside now :) </s>
+<s> <user> no hurry on my part ! there 's washing up to do . </s>
+<s> <user> when you want , everybody is back </s>
+<s> <user> child calls . </s>
+<s> <user> i 'll be with you in a couple of mins </s>
+<s> <user> <unka@> also URL/https:/ URL/github.com/ <unk#a-/> URL/https:/ URL/github.com/ <unk#a-/> </s>
+<s> <user> ;) </s>
+<s> <user> <unka@> i think <unka@> is going to <unka> </s>
+<s> <user> haha i think </s>
+<s> <user> all <unka> : we are having a <unka-> discussion from <unk#:> to <unk#:> , and a group picture at <unk#:> hopefully on the roof </s>
+<s> <user> if you want you can find a spec for <unka-> i have done several month ago to launch the discussion : URL/https:/ URL/github.com/ <unk#a./_> </s>
+<s> <user> thanks <unka@> , i 'll reread </s>
+<s> <user> update : group picture : <unk#:> sharp : <unka> will be there to bring us up to the roof </s>
+<s> <user> simple fix for making <unka> ( more ) api compatible : URL/https:/ URL/github.com/ <unk#a-/> </s>
+<s> <user> hi all , i wish to calculate the confidence of an <unka`> prediction , but i have a hard time understanding the result i have fitting data like this <unka`> x = <unka(.[> [ 0 , 0 , 0 , 0 ], [ 1 , 1 , 1 , 1 ], [ 2 , 2 , 2 , 2 ], [ 3 , 3 , 3 , 3 ] ]) y = <unka(.[> 0 , 1 , 2 , 3 ]) <unka> = <unk#a(.=> , <unka'=> , <unka=> ) <unka(.> , y ) <unk`> then i predict the class for input <unka`> = <unk#a(.[> , 2 , 3 , <unk#)]`> , and i the output makes sence <unka`> <unka(.[> ]) # <unk#a([> ]) <unk`> but the probability does not make sense at all <unka`> <unka(.[_> ]) # <unka([> <unk#.> , <unk#.> , <unk#.> , <unk#.> <unk)]> <unk`> according to the <unka> , class <unk#`> has the lowest possibility . why is that ? </s>
+<s> <user> what 's x ? </s>
+<s> <user> <unka@> check out the docs , it tells you that there can be inconsistencies between the probability estimate and the prediction , because of the <unka> scaling that is used to create the <unka> </s>
+<s> <user> you can also look at <unka_> and that should be consistent </s>
+<s> <user> oh , sorry </s>
+<s> <user> <unka`> x = <unk#a(.[> , 1 , 1 , 1 ]) <unk`> </s>
+<s> <user> i tried the <unka_`> too </s>
+<s> <user> could you tell me a bit more what it means ? </s>
+<s> <user> i can explain to you what happens : the probability estimate uses <unka-> to create the probability estimates , but there 's only one data point for each class , so the models will be pretty useless </s>
+<s> <user> because as soon as you leave out some points you leave out the whole class </s>
+<s> <user> if you're trying to understand the svm algorithm , do n't look at the <unka> </s>
+<s> <user> what is your goal ? </s>
+<s> <user> my goal is to determine how confident a prediction is </s>
+<s> <user> on this dataset ? </s>
+<s> <user> so as to declare that a prediction is not reliable </s>
+<s> <user> no </s>
+<s> <user> on a much bigger dataset </s>
+<s> <user> this is just for example </s>
+<s> <user> ok . well then it will work </s>
+<s> <user> so when i do this <unka().[]_`> , i get this <unk`> <unk#a(-.[> , <unk#-.> , <unk#-.> , <unk#-.> , <unk#-.> , 0 . <unk)]> <unk`> </s>
+<s> <user> well the example is done in a way that breaks the method that is used to get the uncertainty </s>
+<s> <user> how should i <unka> these numbers ? </s>
+<s> <user> <unka_> they are estimated <unka> of the classes </s>
+<s> <user> for <unka_> they are <unka> , so higher means better but there is no absolute scale </s>
+<s> <user> <unka`> import numpy as np from <unka> import svm x = <unka(.[> [ 0 , 0 , 0 , 0 ], [ 1 , 1 , 1 , 1 ], [ 2 , 2 , 2 , 2 ], [ 3 , 3 , 3 , 3 ] ]) x = <unka(.> , 10 , <unk#a=> ) y = <unka(.[> 0 , 1 , 2 , 3 ]) y = <unka(.> , 10 ) <unka> = <unk#a(.=> , <unka'=> , <unka=> ) <unka(.> , y ) <unk#a(.[> , 1 , 1 , 1 <unk)]> <unk#a(.[_> , 1 , 1 , 1 <unk)]> <unk`> </s>
+<s> <user> ohhh , now it makes better sense </s>
+<s> <user> so i do not have enough data for <unka-> </s>
+<s> <user> in your example , yes </s>
+<s> <user> so in this case </s>
+<s> <user> the <unka_> is <unk#a(-.[`> , 0 . , <unk#.> , <unk#.> , 1 . , <unk#.> <unk)]`> </s>
+<s> <user> the evaluation for class 1 is 0 </s>
+<s> <user> so close to 0 is better ? </s>
+<s> <user> isnt that the distance to the <unka> ? </s>
+<s> <user> no </s>
+<s> <user> with this code i get </s>
+<s> <user> [[ <unk#.> 3.5 <unk#.> <unk#-.> ]] in [ ]: </s>
+<s> <user> <unk#a(.[_> , 1 , 1 , 1 <unk)]> </s>
+<s> <user> higher is better </s>
+<s> <user> there 's a 3.5 for class 1 , that 's why class 1 is predicted </s>
+<s> <user> it 's always the <unka> of the decision function </s>
+<s> <user> i dont get the same output as yours </s>
+<s> <user> you're running different code then ;) </s>
+<s> <user> no no </s>
+<s> <user> i copied your code </s>
+<s> <user> it returns an array of 6 elements </s>
+<s> <user> then you did n't copy my code </s>
+<s> <user> ohhh wait </s>
+<s> <user> sorry </s>
+<s> <user> set <unka'=_> </s>
+<s> <user> if you have <unka-> 0.17 </s>
+<s> <user> you should upgrade to 0.18 </s>
+<s> <user> <unka._> is was really weird as well </s>
+<s> <user> it does say this " the <unka_> default value will change from <unka'> to <unka'> in 0.19 . this will change the shape of the decision function returned by <unka> . <unconvertable > :) </s>
+<s> <user> yeah </s>
+<s> <user> i wrote this ;) </s>
+<s> <user> make it <unka> </s>
+<s> <user> then it 'll have 4 elements </s>
+<s> <user> i 'm on <unk#a-.> </s>
+<s> <user> sorry about that </s>
+<s> <user> i see :) </s>
+<s> <user> it is an honor </s>
+<s> <user> ok starbucks is closing and i have to write a keynote </s>
+<s> <user> good luck </s>
+<s> <user> have fun ! </s>

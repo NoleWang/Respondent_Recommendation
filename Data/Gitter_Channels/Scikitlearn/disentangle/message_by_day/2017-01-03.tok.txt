@@ -1,0 +1,3 @@
+<s> <user> <unka@> depends on the <unka> ;) </s>
+<s> <user> hm i ca n't build master because of some c++ linking issues :-/ </s>
+<s> <user> ah right , i had that issue before on another box URL/https:/ URL/github.com/ <unk#a-/> </s>

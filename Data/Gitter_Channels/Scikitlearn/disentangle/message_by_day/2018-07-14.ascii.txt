@@ -1,0 +1,50 @@
+[14:02] <54d4a1d6db8155e6700f853b> Sprints!!!
+[14:08] <56f8122085d51f252abb1414> Hi all, I would like to know whether there is interest in adding a least absolute deviation regression with L1 penalty to sklearn. The optimization problem is very similar to the Lasso one, but it uses a L1 likelihood rather than L2.
+[14:10] <54d4a1d6db8155e6700f853b> @mirca that's probably a better question for the mailing list. what's the application? robust regression? How does it behave differently from huber in practice?
+[14:36] <56f8122085d51f252abb1414> @amueller yes, thats mostly for robust regression. I dont have the answer on how it compares to huber right now, but I would guess least absolute deviation would work better on sparse settings. I will investigate that and follow up on the mailing list. Thanks!
+[14:36] <54d4a1d6db8155e6700f853b> :)
+[14:56] <54d4a1d6db8155e6700f853b> we're in 105 for now
+[15:02] <55d21ee30fc9f982beadabb8> A list of issues/stalled PRs are tagged "sprint" which could be good selection for the sprint.
+[15:02] <55d21ee30fc9f982beadabb8> https://github.com/scikit-learn/scikit-learn/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc+label%3ASprint
+[15:03] <54d4a1d6db8155e6700f853b> also if you're new the ones tagged "good first issue" https://github.com/scikit-learn/scikit-learn/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22+sort%3Aupdated-desc
+[15:12] <59b1b233d73408ce4f74ce2d> thanks @amueller and @glemaitre !
+[16:40] <59b1b233d73408ce4f74ce2d> I have a question about the issue here: https://github.com/scikit-learn/scikit-learn/issues/9352 Where should docker be run? https://github.com/scikit-learn/scikit-learn/blob/master/.travis.yml#L62 I assume that we should copy over install and testing scripts and run in a docker container, is that the right path?
+[16:48] <59b1b233d73408ce4f74ce2d> ran tests in the CentOS32 bit docker image. 13 failed, investigating why first
+[16:52] <54d4a1d6db8155e6700f853b> @jrmlhermitte yeah I think travis
+[16:53] <54d4a1d6db8155e6700f853b> @jrmlhermitte olivier is at the back of the room ;)
+[16:54] <589b9e0fd73408ce4f490ba4> @jrmlhermitte you can report the errors you get in that issue about 32bit bits in any case-- it might be helpful for future reference..
+[17:01] <59b1b233d73408ce4f74ce2d> thanks i posted them here : https://github.com/scikit-learn/scikit-learn/pull/11515 waiting for travis to build but i thikn i can start trying to debug locally
+[17:16] <54d4a1d6db8155e6700f853b> I'm hungry
+[17:16] <54d4a1d6db8155e6700f853b> food?
+[17:16] <55d21ee30fc9f982beadabb8> I agree this is time
+[17:16] <55d21ee30fc9f982beadabb8> :)
+[17:16] <54d4a1d6db8155e6700f853b> where should we go?
+[17:17] <55d21ee30fc9f982beadabb8> Whatever works where there is a vegetarian option
+[17:23] <54d4a1d6db8155e6700f853b> the vietnamese place or the indian place? or the food carts if they are there?
+[19:09] <54d4a1d6db8155e6700f853b> can someone merge this please? https://github.com/scikit-learn/scikit-learn/pull/11289#pullrequestreview-137246243
+[19:19] <55d21ee30fc9f982beadabb8> done
+[19:21] <54d4a1d6db8155e6700f853b> https://sci-hub.tw/https://doi.org/10.1002/sim.1822
+[19:25] <55d21ee30fc9f982beadabb8> Can someone merge this one https://github.com/scikit-learn/scikit-learn/pull/11391
+[19:25] <55d21ee30fc9f982beadabb8> :)
+[19:54] <589b9e0fd73408ce4f490ba4> @amueller if you are OK with https://github.com/scikit-learn/scikit-learn/pull/11431 should we merge it?
+[19:55] <5b4a54fdd73408ce4fa0e3c7> Hi all, quick question: how do I run a single test locally? For example the docttests? Thanks!
+[19:57] <54d4a1d6db8155e6700f853b> make test-doc
+[19:57] <54d4a1d6db8155e6700f853b> or pytest file
+[19:58] <5b4a54fdd73408ce4fa0e3c7> Great, thanks!
+[20:02] <589b9e0fd73408ce4f490ba4> To run a single test you can also run, ``` pytest sklearn/file_path..  -k part_of_test-name ``` providing both the path to the file and a part of the test name will make test collection faster.
+[20:07] <589b9e0fd73408ce4f490ba4> See http://scikit-learn.org/dev/developers/tips.html#useful-pytest-aliases-and-flags
+[20:10] <55d21ee30fc9f982beadabb8> https://github.com/scikit-learn/scikit-learn/pull/11469
+[20:10] <55d21ee30fc9f982beadabb8> I push some changes @amueller @rth 
+[20:16] <5571fe1015522ed4b3e17d90> James Bourbeau (@jrbourbeau) would like to chat with us about how to make GridSearchCV play nicer with dask-ml. If you have a preferred time today, let me know! Otherwise we'll probably just drop by at a random time :-).  To sum up, in GridSearchCV something check that the score returned by the metric is a number, so they dask-ml needs to call `.compute` explicitly which has a bit of friction with the rest of their API (everything is lazy).
+[20:19] <5b4a54fdd73408ce4fa0e3c7> Hi all, I'm afraid I am still a bit test-confused (newbie here). When running `make test`, I can see errors (like `scikit-learn/sklearn/impute.py:547: DocTestFailure`) related to the docstring in the Imputation, but `make test-doc` does not surface these. 
+[20:28] <541a528b163965c9bc2053de> @lesteve we you want
+[20:33] <5b4a54fdd73408ce4fa0e3c7> Ok, `pytest sklearn/impute.py::sklearn.impute.ChainedImputer`  does the trick! I guess that was in the docs, thanks again!
+[20:43] <5571fe1015522ed4b3e17d90> FYI we'll drop by in 5 -10 minutes
+[21:52] <541a528b163965c9bc2053de> Sorry I missed you @lesteve . 
+[21:53] <541a528b163965c9bc2053de> I merged the Python 3.7 ABC warning  fix in 0.19.X and triggered a new build on the MacPython/scikit-learn-wheels repo
+[21:53] <541a528b163965c9bc2053de> if it goes well I can push those wheels to pypi.org
+[22:51] <569fe132e610378809bd5552> I'm getting a doctest failure when building from source on master
+[22:51] <569fe132e610378809bd5552> It's getting raised from modules/compose.rst
+[22:51] <569fe132e610378809bd5552> Has anyone else here run into this?
+[22:52] <54d4a1d6db8155e6700f853b> sprint will end in 10 minutes
+[22:52] <54d4a1d6db8155e6700f853b> also: if you want to ask me something, you have 10 minutes because then I'll f off

@@ -1,0 +1,12 @@
+<s> <user> <unka@> i suggest you use aws <unka> directly , which supports hadoop and spark 1.x . </s>
+<s> <user> you can quickly try it w/o spending hours on setting up the cluster . </s>
+<s> <user> who is taking the <unka> " intro to ml " class here ? </s>
+<s> <user> i 'm takin stanford ( <unka> ) and mit ( <unka> ) ml classes </s>
+<s> <user> <unka@> you are awesome . i took a few stanford lessons and feel difficult . </s>
+<s> <user> haha i usually have to watch them 2-3 times over . they start off head first in the math and i have n't taken calc yet so it 's been pretty slow learning . but mit posts a lot of their courses on youtube , so i 'm going through the artificial intelligence course , much easier . how 's the <unka> one ? </s>
+<s> <user> <unka> 's " intro ml " is good . the tools ( <unka> , <unka> ) they use is more recent , not r , octave , numpy . see results quick :) </s>
+<s> <user> </s>
+<s> <user> <unka@> thanks for the suggestion . will try <unconvertable > </s>
+<s> <user> </s>
+<s> <user> are there plans for a <unka> at <unka#> this year ? </s>
+<s> <user> <unka@> i am just about completed with the <unka> ml <unka> . </s>

@@ -1,0 +1,4 @@
+<s> <user> <unka@> most <unka> come with a changelog entry , e.g . URL/https:/ URL/github.com/ <unk#a-/> then we have scripts to process check it which are described in URL/https:/ <unka-./> <unka./> ( we call the change log a " what 's new " ) </s>
+<s> <user> <unka@> thanks - that 's very helpful ! </s>
+<s> <user> a very good evening everyone !! i am trying to setup <unka-> project into my development env but encountered with an error when i try to run " pip install --verbose <unka-> <unka-> ." </s>
+<s> <user> can someone help me to fix this error ? </s>

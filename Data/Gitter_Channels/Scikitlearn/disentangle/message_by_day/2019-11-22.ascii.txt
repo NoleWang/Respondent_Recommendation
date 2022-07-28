@@ -1,0 +1,5 @@
+[22:27] <564e507e16b6c7089cbb6551> Hi there, is k-means clustering stochastic even when the initial centers are given? I'm noticing different results when I run my code multiple times
+[22:27] <54d4a1d6db8155e6700f853b> @h4k1m0u I don't think it should be
+[22:32] <564e507e16b6c7089cbb6551> @amueller That's weird, I can't find out why in this short piece of code (https://bpaste.net/show/ORPVW) the centroids found by kmeans are sometimes located at the center of the 3 samples and sometimes not
+[22:33] <54d4a1d6db8155e6700f853b> you don't fix the random seed so the data changes
+[22:34] <564e507e16b6c7089cbb6551> Oh sorry, I've completely forgotten the np.random above. Thanks a lot for reminding about that.

@@ -1,0 +1,28 @@
+[14:56] <53135b495e986b0712efc453> @ogrisel I feel #4826 can be included in 0.17?? It was already [reviewed by Andy](https://github.com/scikit-learn/scikit-learn/pull/4826#issuecomment-125715318) a second review should make it merge-able? 
+[16:43] <54d4a1d6db8155e6700f853b> opening my sklearn inbox now
+[16:45] <54d4a1d6db8155e6700f853b> everybody brace themselves for spam
+[16:45] <54d4a1d6db8155e6700f853b> (by me)
+[16:54] <53135b495e986b0712efc453> I'm eagerly waiting ;)
+[16:58] <54d4a1d6db8155e6700f853b> did https://github.com/scikit-learn/scikit-learn/pull/4826
+[17:13] <530c03e25e986b0712efafb8> What is the right way to get a nice unique and consistent hash value for an estimator?
+[17:13] <530c03e25e986b0712efafb8> can I hash something like `type(est), est.get_params(), ...`?
+[18:10] <54d4a1d6db8155e6700f853b> with or without the part that is estimated from data? Without that should cover it.
+[18:11] <530c03e25e986b0712efafb8> lets say *with*
+[18:11] <54d4a1d6db8155e6700f853b> If est.get_params() contains a random state, we probably need to fix it to something?
+[18:11] <530c03e25e986b0712efafb8> or rather, optionally with
+[19:59] <54d4a1d6db8155e6700f853b> well with is harder. I think we opted for storing the data along, right? I think storing the class, get_params, and the data is enough. With a fixed random_state that is.
+[20:00] <54d4a1d6db8155e6700f853b> actually, what is the definition of unique consistent hash?
+[20:02] <54d4a1d6db8155e6700f853b> should they be the same if a) they are the same object [probably not] b) they behave the same way? c) they are the same in memory? I guess the answer is c)?
+[20:15] <530c03e25e986b0712efafb8> I'm trying to solve this more generally and in isolation from the dasklearn project.  Is there a consistent set of attributes on a BaseEstimator that define it?  After I call `estimator.fit(X)`is there a set of attributes on the object that I can consistently check?  Or does this vary estimator-to-estimator?
+[20:38] <53135b495e986b0712efc453> If I understand you correctly, What you require is partly similar to the model similarity checking problem at #4841 AFAIK you can only have a relative equality check and not a(n) (absolute) hash value that can uniquely identify a fit-model...
+[22:17] <541a528b163965c9bc2053de> @mrocklin beware of `est.get_params(deep=True)` that includes both the subestimator instances and their params
+[22:18] <541a528b163965c9bc2053de> e.g.: ```python >>> from sklearn.svm import SVC >>> from sklearn.decomposition import PCA >>> from sklearn.pipeline import make_pipeline >>> p = make_pipeline(PCA(3), SVC()) >>> p.get_params(deep=True) {'svc__probability': False, 'svc__decision_function_shape': None, 'svc__degree': 3, 'pca__copy': True, 'svc__tol': 0.001, 'svc': SVC(C=1.0, cache_size=200, class_weight=None, coef0=0.0,   decision_function_shape=None, degree=3, gamma='auto', kernel='rbf',   max_iter=-1, probability=False, random_state=None, shrinking=True,   tol=0.001, verbose=False), 'steps': [('pca', PCA(copy=True, n_components=3, whiten=False)), ('svc', SVC(C=1.0, cache_size=200, class_weight=None, coef0=0.0,   decision_function_shape=None, degree=3, gamma='auto', kernel='rbf',   max_iter=-1, probability=False, random_state=None, shrinking=True,   tol=0.001, verbose=False))], 'svc__cache_size': 200, 'svc__max_iter': -1, 'pca__n_components': 3, 'svc__coef0': 0.0, 'pca__whiten': False, 'svc__shrinking': True, 'pca': PCA(copy=True, n_components=3, whiten=False), 'svc__gamma': 'auto', 'svc__verbose': False, 'svc__C': 1.0, 'svc__kernel': 'rbf', 'svc__class_weight': None, 'svc__random_state': None} ```
+[22:20] <541a528b163965c9bc2053de> > After I call estimator.fit(X)is there a set of attributes on the object that I can consistently check? Or does this vary estimator-to-estimator?  It varies on an per-estimator basis.
+[22:20] <541a528b163965c9bc2053de> Attributes learned from data (by the call to fit) ends in `_`.
+[22:21] <541a528b163965c9bc2053de> `get_params` only returns constructor parameters (aka hyperparameters) not the fitted parameters
+[22:22] <541a528b163965c9bc2053de> we don't have a good abstraction to introspect / serialize / deserialize fitted models.
+[22:22] <530c03e25e986b0712efafb8> is there a way to check if a model is fitted?
+[22:22] <530c03e25e986b0712efafb8> or to revert it to a non-fitted state?
+[22:23] <541a528b163965c9bc2053de> to revert to a non-fitted state you can use:  ```python >>> from sklearn.base import clone >>> unfitted_est = clone(fitted_est) ```
+[22:23] <541a528b163965c9bc2053de> the `clone`  name is not necessarily a good name...
+[22:36] <530c03e25e986b0712efafb8> Is there an equivalent for to ask if it is fitted?

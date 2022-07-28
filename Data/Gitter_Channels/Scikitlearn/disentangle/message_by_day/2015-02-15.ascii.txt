@@ -1,0 +1,20 @@
+[08:40] <5474d9eadb8155e6700d8178> @ogrisel Would you be interested in setting up http://landscape.io and landscape bot? #3888 
+[08:46] <5474d9eadb8155e6700d8178> Refer [this](https://landscape.io/github/ragv/scikit-learn) for live preview of our repo and [this](https://github.com/hugovk/word-tools/pull/7#issuecomment-67533284) for an example comment by the bot.
+[09:25] <5474d9eadb8155e6700d8178> A general suggestion... I feel it would be more helpful to debug test results if we replaced docstrings for tests by comment...  Output when a docstring is present for a test ``` Tests all estimators which support partial_fit ... ok Tests all estimators which support partial_fit ... ok Tests all estimators which support partial_fit ... ok ``` Output when no docstring is present for a test ``` test_common.test_partial_fit('Perceptron', <class 'sklearn.linear_model.perceptron.Perceptron'>) ... ok test_common.test_partial_fit('Perceptron', <class 'sklearn.linear_model.perceptron.Perceptron'>) ... ok test_common.test_partial_fit('Perceptron', <class 'sklearn.linear_model.perceptron.Perceptron'>) ... ok test_common.test_partial_fit('SGDClassifier', <class 'sklearn.linear_model.stochastic_gradient.SGDClassifier'>) ... ok ```
+[11:47] <5474d9eadb8155e6700d8178> Trying out gitter from irc
+[12:02] <54e07def15522ed4b3dc0864> @ragv thanks for the invite
+[15:56] <541a528b163965c9bc2053de> I agree about the test docstring issue.
+[16:32] <5474d9eadb8155e6700d8178> @ogrisel would it be worth to have a pr for that? Or should I just create an issue and refer that when any related code is changed?
+[16:33] <541a528b163965c9bc2053de> Explaining the pbm in an issue is a good idea. Then a bunch of small PRs related to that issue if people have no objection.
+[16:33] <5474d9eadb8155e6700d8178> Ok! thanks!
+[16:35] <541a528b163965c9bc2053de> Alternatively we could use this on travis: https://pypi.python.org/pypi/nose-ignore-docstring
+[16:36] <5474d9eadb8155e6700d8178> Ah! thanks ;) that was helpful! Sorry should have googled a bit before asking...
+[17:04] <54d4a1d6db8155e6700f853b> and in the makefile, I'd say
+[17:05] <54d4a1d6db8155e6700f853b> don't we even have a nose config file in the repo?
+[17:05] <5474d9eadb8155e6700d8178> Im about to send a PR for that ;)
+[17:05] <5474d9eadb8155e6700d8178> and yea `setup.cfg`
+[17:05] <54d4a1d6db8155e6700f853b> :) oh we do need to install a package, I thought it was a build-in option
+[17:06] <5474d9eadb8155e6700d8178> yea It will go in `continuous-integration/install.sh` after `pip install nose`
+[18:15] <5474d9eadb8155e6700d8178> @amueller How do you feel about https://github.com/finnp/gitter-irc-bot ?
+[18:15] <5474d9eadb8155e6700d8178> It look really very simple and could cleanly sync irc and gitter...
+[18:20] <5474d9eadb8155e6700d8178> I'll take care of the setup...

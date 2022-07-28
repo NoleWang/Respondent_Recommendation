@@ -1,0 +1,3 @@
+[13:05] <564789be16b6c7089cbab8b7> @NicolasHug  let's say the latter example you gave. The problem is that with early stopping you wait some number of iteration before deciding to stop. So the final iteration is not the best. That's why catboost for example has a use_best parameter.
+[13:07] <564789be16b6c7089cbab8b7> It is common in early stopping for the final valudation loss to be higher than the loss a few epochs before.  How long you wait to see if the loss will start going down again is sometimes called "patience" . I think that's what pytorch lightning calls it
+--------------------------------------------------------------------------------------------------

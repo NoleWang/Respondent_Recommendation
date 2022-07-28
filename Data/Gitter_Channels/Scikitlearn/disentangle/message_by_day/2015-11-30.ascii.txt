@@ -1,0 +1,8 @@
+[14:18] <554c47fe15522ed4b3e01823> Hey Guys, I want to contribute to this project, How do i start?
+[14:23] <553e8e1015522ed4b3df97f7> Hi @chinmoysam, just dive into the issue tracker and see issues that are tagged Easy and Need Contributor.
+[14:24] <553e8e1015522ed4b3df97f7> take a look at the developer guide too: http://scikit-learn.org/stable/developers/
+[14:25] <554c47fe15522ed4b3e01823> @vortex-ape Thanks is this issue tracker in the github page?? and i have just started learning scikit i have some knowledge of programming in python, Can i directly go to issue tracker and try to solve something??
+[14:25] <553e8e1015522ed4b3df97f7> https://github.com/scikit-learn/scikit-learn/issues?q=is%3Aopen+is%3Aissue+label%3AEasy
+[14:27] <553e8e1015522ed4b3df97f7> go through the easy issues, you should be able to solve most with a basic knowledge of python
+[16:03] <554c47fe15522ed4b3e01823> thanks a lot  @vortex-ape 
+[16:30] <5653208916b6c7089cbbd390> Hi, Anyone having sample svm text classification code in sklearn ?

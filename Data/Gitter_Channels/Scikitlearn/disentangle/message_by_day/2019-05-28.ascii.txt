@@ -1,0 +1,1 @@
+[04:10] <58663b41d73408ce4f402d24> Hey guys!!! Can someone suggest me any dataset available on kaggle which contains both numerical and textual data? I have to apply machine learning as well as nlp concepts on it.

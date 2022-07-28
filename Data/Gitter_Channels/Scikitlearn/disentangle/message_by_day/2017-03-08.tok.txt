@@ -1,0 +1,12 @@
+<s> <user> hello </s>
+<s> <user> while i am trying to fix an issue using the the <unka.> method with python3 , i am getting this error : <unka/> <unka/_> <unka./_> : undefined symbol : <unk#a_> </s>
+<s> <user> have i built something wrong , or do you know how i can build again so as to be python3 compatible ? </s>
+<s> <user> do you want to use the development version ? otherwise i'd suggest you just use anaconda or the wheels provided by pip </s>
+<s> <user> what 's the error you're trying to fix ? </s>
+<s> <user> URL/https:/ URL/github.com/ <unk#a-/> </s>
+<s> <user> i am running the <unka.> to scan the modules </s>
+<s> <user> how did you build <unka-> ? </s>
+<s> <user> and how are you running <unka.> ? </s>
+<s> <user> make the installation procedure matches the python environment you are running </s>
+<s> <user> i managed to build successfully with make using python3 . everything looks good now , i 'll get on with the fix </s>
+<s> <user> thank you andreas ! </s>

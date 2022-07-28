@@ -1,0 +1,7 @@
+<s> <user> hi all , i have a program to run pipeline with <unka> infinitely by putting into <unka_> function and training data . so may i know how to know program running status ? i am using anaconda jupiter notebook to run that python script . million thanks </s>
+<s> <user> any verbose features available on fit transform and pipeline ? </s>
+<s> <user> <unka@> it depends on the models in the pipeline </s>
+<s> <user> there is a pull request for verbosity in pipelines , but i do n't think it 's merged yet </s>
+<s> <user> hi , does anybody know how should i go if i want to work on an open pr from another person ? </s>
+<s> <user> you can add them as a remote and pull their branch and open your own pr </s>
+<s> <user> <unka@> </s>

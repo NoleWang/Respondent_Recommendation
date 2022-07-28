@@ -1,0 +1,40 @@
+<s> <user> morning </s>
+<s> <user> morning :) </s>
+<s> <user> or afternoon <unk);_> </s>
+<s> <user> are you working on the <unka> stuff right now ? anything i should review ? </s>
+<s> <user> ah , you are doing URL/https:/ URL/github.com/ <unk#a,-/> cool :) </s>
+<s> <user> yes <unk##> , i am resolving conflicts ( both <unka> and logic ), almost done . running the full test suite </s>
+<s> <user> cool </s>
+<s> <user> previously i was trying to understand what 's wrong with the <unka> transform ( <unk#a> with <unka'=> ) </s>
+<s> <user> the bug you found ( the infinite loop with zero sample weight ) is something entirely different </s>
+<s> <user> yeah maybe that was a bad idea . but it was already broken before </s>
+<s> <user> both are important bugs we should make a priority to fix imho . </s>
+<s> <user> i know the bugs are unrelated , but i thought the fix might be . i was thinking about removing the implementation of partial fit , which would make it easier to fix both bugs , i think </s>
+<s> <user> i do n't understand the details of any of the 2 bugs at the moment , feel free to investigate on your side </s>
+<s> <user> are you sure this is related to <unka_> ? </s>
+<s> <user> args i meant <unka_> </s>
+<s> <user> err <unka_> ? </s>
+<s> <user> i kind of understand the infinite loop . there is a while x ! = y and if both are nan then it never finishes . the easiest way to solve the problem is to remove data points with zero sample weight . but if you do that , you can not implement <unka_> the way it currently is . </s>
+<s> <user> the other way would be to take care of zero sample weight in the <unka> code , but i do n't understand that part 100% </s>
+<s> <user> fixed URL/https:/ URL/github.com/ <unk#a-/> </s>
+<s> <user> ok , but this seem completely independent from the bug found in transform by <unka> in <unk##> </s>
+<s> <user> when i last checked , i had the impression that some of the inconsistencies come from the way that <unka_> is implemented . if it is indeed only an error in transform , then they are unrelated . </s>
+<s> <user> i 'll double check . </s>
+<s> <user> it does look like <unka_> works correctly , never mind then </s>
+<s> <user> it seems different versions of scipy give different results </s>
+<s> <user> which version of scipy are you running and how the test fail in your case ? </s>
+<s> <user> i need to run catch my shuttle . not sure i will be able to work on that further today but will catch up tomorrow </s>
+<s> <user> ok . i 'll try to look into it more today . now my tests are failing the same way yours are doing . but i had different results on my different laptop </s>
+<s> <user> this one is on <unk#.> </s>
+<s> <user> bye </s>
+<s> <user> bye </s>
+<s> <user> what is the difference between " predict " and " transform " in <unka> regression ? </s>
+<s> <user> ah , there is none . is n't that slightly confusing ? </s>
+<s> <user> it is , <unka> we could <unka> transform in favor of predict . </s>
+<s> <user> fyi URL/https:/ URL/github.com/ <unk#a-/> should be good </s>
+<s> <user> i had some weird behavior with the <unk#a> but i need to do some <unka> stuff before i can investigate further </s>
+<s> <user> <unka@> can i take up the newly tagged easy issues , assuming this will help u release the 0.16 beta cut or should i leave those for a new contributor instead ? </s>
+<s> <user> which ones in particular ? for the release only the tagged issues are important imho </s>
+<s> <user> i had meant <unk##> , <unk##> , <unk##> ... but i just realized i had one unfinished 0.16 tagged pr - <unk##> ... i 'll work on it instead :) </s>
+<s> <user> you can leave the three issues for new people , or you can go for them . but they are really low priority . finishing up the other <unka> you already have open might be better for us at the moment . </s>
+<s> <user> yea :) thanks ! </s>

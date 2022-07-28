@@ -1,0 +1,72 @@
+[14:19] <54d4a1d6db8155e6700f853b> @ogrisel what is your plan for the day? I didn't have much time on the weekend unfortunately :-/
+[14:44] <541a528b163965c9bc2053de> no pbm. I just pushed #4317 to tackle the remaining docstring and test issues w.r.t. radius_neighbors. Please feel free to have a look.
+[14:45] <541a528b163965c9bc2053de> I will now catch up on your work on isotonic regression. I think it looks good from a first look at it. Will test it a bit more. That might make it possible to remove the random tie breaking in the calibration code.
+[14:46] <54d4a1d6db8155e6700f853b> The behavior is different from what it was before, but I think this is the only way to make fit().transform() and fit_transform() be the same.
+[14:46] <54d4a1d6db8155e6700f853b> I'll head t othe office now and look at #4317 once I'm ther
+[14:52] <541a528b163965c9bc2053de> Alright. I will be offline for 1h (commute back home from saclay) but should get back online afterwards.
+[14:53] <54d4a1d6db8155e6700f853b> damn time difference ;)
+[14:56] <541a528b163965c9bc2053de> It's also because I have to commute early in the morning and in the afternoon to take a shuttle bus that avoids most of the Paris rush hour traffic :) I would not wake up at 6:30am naturally otherwise...
+[14:56] <541a528b163965c9bc2053de> I a good paper to read on hyperparam search on the way back home :)
+[14:59] <54d4a1d6db8155e6700f853b> the one kyle sent around? Jasper Snoek will give a talk at NYU on Friday :)
+[14:59] <541a528b163965c9bc2053de> yes
+[15:00] <541a528b163965c9bc2053de> it seems only useful when you can use a big compute cluster for a week though. Still it looks interesting.
+[15:01] <541a528b163965c9bc2053de> It means that we might be able to use the future MLP model for hyperparam search instead of trying to fix the GP to make them efficient ;)
+[15:04] <54d4a1d6db8155e6700f853b> well spearmint uses the sklearn random forests for hyperparameter search l)
+[15:04] <54d4a1d6db8155e6700f853b> so we could also use that ;)
+[15:10] <541a528b163965c9bc2053de> yes but apparently it does not reach the quality of the solution of bayes optimization with GPs or NNs.
+[15:10] <541a528b163965c9bc2053de> Nor does TPEs, at least in the benchmarks run in this paper.
+[15:10] <541a528b163965c9bc2053de> anyway let's focus back on the release :)
+[15:41] <54d4a1d6db8155e6700f853b> btw, for https://github.com/scikit-learn/scikit-learn/issues/2274 currently the random projections are pretty loud
+[16:26] <54d4a1d6db8155e6700f853b> #4318
+[17:34] <54d4a1d6db8155e6700f853b> wait, which is the paper you read on the train? not this one, right? http://arxiv.org/pdf/1502.03492v2.pdf
+[17:35] <54d4a1d6db8155e6700f853b> I guess this one: http://arxiv.org/pdf/1502.05700.pdf
+[18:27] <54d4a1d6db8155e6700f853b> do we have a link to the pdf docs on the website? I think we don't :-/ where should it go?
+[19:06] <541a528b163965c9bc2053de> I read the one by Snoek, but also read the other 2 weeks ago I think.
+[19:07] <541a528b163965c9bc2053de> > do we have a link to the pdf docs on the website? I think we don't :pensive: where should it go? no we don't, we don't build it on a regular basis but we could. It should be possible to upload it as part of the build process.
+[19:21] <54d4a1d6db8155e6700f853b> after this the latex build should be relatively clean: https://github.com/scikit-learn/scikit-learn/pull/4320
+[19:22] <54d4a1d6db8155e6700f853b> anything you want me to review / work on?
+[20:36] <5474d9eadb8155e6700d8178> Is there a way to make `GridSearchCV` act without the CV part ( do parameters `cv=None` or `refit` help in this context )?
+[20:38] <541a528b163965c9bc2053de> You can precompute a single test train split: train_idx, validation_idx = train_test_split(n_samples, test_size=0.2, random_state=0) cv = [(train_idx, validation_idx)] GridSearchCV(model, cv=cv).fit(X, y)
+[20:39] <5474d9eadb8155e6700d8178> Ahh thanks! :)
+[20:43] <5474d9eadb8155e6700d8178> I am using your code in a comment at #4301...
+[20:45] <541a528b163965c9bc2053de> I made a mistake:
+[20:45] <541a528b163965c9bc2053de> train_idx, validation_idx = train_test_split(np.arange(n_samples), test_size=0.2, random_state=0)
+[20:45] <541a528b163965c9bc2053de> missing the np.arange
+[21:05] <54d4a1d6db8155e6700f853b> it might be interesting to have the ability to not split into training and test data for unsupervised algorithms.
+[21:09] <5474d9eadb8155e6700d8178> what does setting cv to None do currently?
+[21:10] <5474d9eadb8155e6700d8178> Perhaps we could set cv to -1 for that behaviour?
+[21:20] <541a528b163965c9bc2053de> @amueller unsupervised scores can still overfit
+[21:21] <54d4a1d6db8155e6700f853b> it depends on the context. For clustering, where you can not even evaluate on non-training data, it totally makes sense.
+[21:22] <54d4a1d6db8155e6700f853b> I'm looking into the sphinx thing but I'm not entirely clear on how to achieve this. I don't know where to hook it in. Did you have time to look at the isotonic stuff?
+[21:22] <541a528b163965c9bc2053de> indeed
+[21:23] <541a528b163965c9bc2053de> I thought about k-means where predict is possible but this is not always the case, for instance when clustering is done on a precompute distance or similarity matrix
+[21:23] <541a528b163965c9bc2053de> I am testing it now
+[21:23] <541a528b163965c9bc2053de> the isotonic
+[21:46] <54d4a1d6db8155e6700f853b> sweet thanks :)
+[21:53] <5474d9eadb8155e6700d8178> @amueller for #4301, do you think the metrics might be useful?
+[21:54] <54d4a1d6db8155e6700f853b> possibly. I didn't have much time to look at them yet
+[21:54] <54d4a1d6db8155e6700f853b> this is not really a priority as I want to get stuff clean and fixed for the release first
+[21:55] <5474d9eadb8155e6700d8178> Okay... I'll just leave a comment there... take a look if you happen to find time after the release related work :)
+[22:06] <541a528b163965c9bc2053de> +1 for not working on not introducing any new feature that has not already received a significant amount of reviews.
+[22:07] <541a528b163965c9bc2053de> Rephrasing: I meant not working on PR introducing new features unless it has already been reviewed extensively.
+[22:08] <5474d9eadb8155e6700d8178> Sure :) 
+[22:19] <54d4a1d6db8155e6700f853b> :)
+[22:36] <54d4a1d6db8155e6700f853b> https://github.com/scikit-learn/scikit-learn/pull/4313
+[22:36] <54d4a1d6db8155e6700f853b> is part of the kneighbors_graph fix where you can press the green button. I agree that this should be in the beta
+[22:39] <541a528b163965c9bc2053de> haha I merged it before reading your message here ;)
+[22:40] <54d4a1d6db8155e6700f853b> haha I just saw it and thought you read my message ;)
+[22:40] <54d4a1d6db8155e6700f853b> anything I should look at now? btw, does beta mean uploading docs?
+[22:40] <54d4a1d6db8155e6700f853b> probably not I guess?
+[22:43] <541a528b163965c9bc2053de> no, no site change for the beta. But it's good to fix it anyway :)
+[22:45] <54d4a1d6db8155e6700f853b> so the plan is uploading a non-default pipy package and writing a mail? and wheels?
+[22:45] <54d4a1d6db8155e6700f853b> Maybe then I should focus on the very verbose tests ^^
+[22:45] <54d4a1d6db8155e6700f853b> As I said above, if you have anything on your wishlist, let me know
+[22:48] <541a528b163965c9bc2053de> yes
+[22:48] <541a528b163965c9bc2053de> verbose tests and maybe decide on #4309 because it has a slight API impact.
+[22:48] <541a528b163965c9bc2053de> and off-course the isotonic  and radius PRs that should be ready to merge very soon now.
+[22:56] <541a528b163965c9bc2053de> it's midnight here, I think I will call it a day on my side
+[22:56] <541a528b163965c9bc2053de> see you tomorrow. Tomorrow morning I will work to prepare a team meeting on probability calibration and meeting in the afternoon. Should be online after that.
+[22:58] <54d4a1d6db8155e6700f853b> well but for those we need another reviewer, right?
+[22:59] <54d4a1d6db8155e6700f853b> have a good night and see you tomorrow
+[23:00] <541a528b163965c9bc2053de> yes we need other reviewers for those.
+[23:00] <541a528b163965c9bc2053de> good night

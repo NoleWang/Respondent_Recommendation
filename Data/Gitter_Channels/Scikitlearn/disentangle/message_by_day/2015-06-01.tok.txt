@@ -1,0 +1,14 @@
+<s> <user> <unka@> <unka@> <unka@> hey this is the updated blog post <unka> all your suggestions ... i am still a newbie at ml and might have made a few stupid mistakes ... please take a look at the post and feel free to point out if there are any :) </s>
+<s> <user> URL/http:/ <unk#a./> <unk#a-./> </s>
+<s> <user> <unk#a@> does n't wei <unka> work on <unka> mixture models ? i thought that <unka> <unka> did n't make it into accepted projects </s>
+<s> <user> yeah , that is correct </s>
+<s> <user> i 'll have a look at the blog post probably tomorrow , i am <unka> with <unka@> and <unka@> today </s>
+<s> <user> URL/https:/ URL/github.com/ <unk#a-/> </s>
+<s> <user> there is a sprint in boston ! </s>
+<s> <user> ( like , today ) </s>
+<s> <user> if anyone here wants to join </s>
+<s> <user> like <unka@> </s>
+<s> <user> lol </s>
+<s> <user> that is the worst name </s>
+<s> <user> <unka@> do you want to merge this ? URL/https:/ URL/github.com/ <unk#a-/> </s>
+<s> <user> URL/https:/ URL/github.com/ <unk#a-/> </s>

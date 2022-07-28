@@ -1,0 +1,7 @@
+<s> <user> hello everyone </s>
+<s> <user> <unka-> it should be <unka.> rather than <unka(.> ) </s>
+<s> <user> ah , yeah sorry that was a typo on my part . i ended up just making a custom analyzer . </s>
+<s> <user> <unka.> has worked for me </s>
+<s> <user> using <unka.> seems to break <unka_> , though ? </s>
+<s> <user> e.g . <unk`> > > > from <unka._> import <unka> > > > <unka_> = <unka(.=> , <unk#a(=_> , 2 )) > > > <unka'(.[_> quick brown fox jumped over the lazy dog .' ]) <unk#a<> sparse matrix of type <unka'<> <unk#a'.> > ' with 10 stored elements in compressed sparse row format > > > > print <unka(._> ) [ '.' , <unka'> , <unka'> , <unka'> , <unka'> , <unka'> , <unka'> , <unka'> , <unka'> , 'the ] <unk`> </s>
+<s> <user> looking at the code for <unka`> , it seems like the analyzer argument is also responsible for making <unka> . so <unka.`> would only make <unka> ? </s>

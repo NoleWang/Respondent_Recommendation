@@ -1,0 +1,3 @@
+[14:45] <5a09a93cd73408ce4f7e626f> @amueller  When i ingest data, set sharing to true, what is shared?
+[14:49] <5a09a93cd73408ce4f7e626f> @amueller The distributed ingest data in geomesa is the MapReduce method, why not use spark?
+[20:45] <53eb987c107e137846baa89d> Ah, never mind. I found about 'help wanted' here: http://scikit-learn.org/stable/developers/contributing.html#issue-tracker-tags

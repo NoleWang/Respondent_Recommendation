@@ -1,0 +1,11 @@
+[13:41] <54e07d4015522ed4b3dc0856> That sounds good to me. I will email you and set up something. I will be the country kid in the Big Apple ;)
+[15:29] <54d4a1d6db8155e6700f853b> @kastnerkyle one thing  I noticed about the notebooks is that they are pretty text-heavy. I'm not sure how I feel about it. I guess it depends on whether you think of it more as a presentation or as an "in your own time" thing. While someone is speaking, the text seems more distracting than helpful. I'm not sure about it, though.
+[15:30] <54e07d4015522ed4b3dc0856> I agree. The text is useful "after the fact". But our presentation should basically be the content contained in that text IMO, so we can focus on the pretty pictures
+[15:30] <54e07d4015522ed4b3dc0856> We could make a stripped down version of all, with just images. Or just scroll so that images are the focus
+[15:32] <54d4a1d6db8155e6700f853b> So, you suggest do develop one with text for people to work though it at home afterwards, and drop the text for the presentation? Which one do we distribute then for the tutorial? The no-text one?
+[15:39] <54d4a1d6db8155e6700f853b> do we have a real-world dataset that uses dict-vectorizer? Or any real-world dataset that has categorical features encoded as strings? Btw, what is the recommended method to deal with that? Pandas? Or converting to dict and DictVectorizer?
+[15:40] <54e07d4015522ed4b3dc0856> I would say it depends how much we reuse old tutorials. If it is all new (unlikely) generating that much content will be tough - in that case I would go with pics only. But if we mostly reuse I think we should do text + images in main notebooks we put in tutorial repo, then just have a separate folder of "presentation ready" which is basically titles, pictures and key math or whatever else is necessary to talk on. Or vice-versa (text versions in a separate folder called like "self_teaching") to avoid confusion
+[15:45] <54d4a1d6db8155e6700f853b> sounds good
+[15:46] <54d4a1d6db8155e6700f853b> I'd go with the "self teaching" approach
+[15:46] <54e07d4015522ed4b3dc0856> yeah. that way it takes extra effort to open the wrong content :) though I am sure it will happen anyways...
+[21:27] <54d4a1d6db8155e6700f853b> @kastnerkyle I don't see where cross-validation is introduced in the notebooks... hum...

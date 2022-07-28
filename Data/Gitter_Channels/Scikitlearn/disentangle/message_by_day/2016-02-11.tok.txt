@@ -1,0 +1,25 @@
+<s> <user> ok . <unka@> i 'm the new engineer of telecom and i 'm working full time on <unka-> , so tell me what i can do to help . </s>
+<s> <user> hi all <unka@> , i replied to your email . wo n't have time to follow up on that before next week though . </s>
+<s> <user> <unka@> merge <unk##> ? </s>
+<s> <user> <unka@> no problem . thx </s>
+<s> <user> <unka@> do you think it is worth my opening an issue about cv and time series data ? </s>
+<s> <user> hello <unka@> , here is one URL/https:/ URL/github.com/ <unk#a-/> </s>
+<s> <user> <unka@> merged <unk##> </s>
+<s> <user> <unka@> i can work on <unk##> and the bug fixes in DIR/~2/ hours , not earlier </s>
+<s> <user> <unk#a@> thanks ! how do i <unka> it :) </s>
+<s> <user> <unk#a@> there were two interesting cases i think . one where you have some value for each time tick and one where you can have different numbers of events per day </s>
+<s> <user> <unka@> join github ! </s>
+<s> <user> i have joined it ! can you <unka> there ? </s>
+<s> <user> <unk#a@> i see both cases are already listed by <unka> </s>
+<s> <user> yes </s>
+<s> <user> umm ... how ? by adding a comment or is there some <unka> button ? </s>
+<s> <user> in any case i am very pleased you are taking this on </s>
+<s> <user> thank you </s>
+<s> <user> oh about <unka> ... i mean join github as a software engineer and add this function :) </s>
+<s> <user> </s>
+<s> <user> oh i see .. sorry :) </s>
+<s> <user> loool <unk#a@> </s>
+<s> <user> ( and i approve ;) </s>
+<s> <user> me too :) </s>
+<s> <user> although it 's hard to <unka> , is it true that the clustering algorithms perform roughly as the examples in URL/https:/ URL/github.com/ <unk#a-/> when you increase the dimension ? </s>
+<s> <user> maybe there is some numerical score that could be given on higher dimension data sets ? </s>

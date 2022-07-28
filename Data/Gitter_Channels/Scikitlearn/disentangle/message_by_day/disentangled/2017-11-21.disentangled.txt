@@ -1,0 +1,27 @@
+[14:30] <564789be16b6c7089cbab8b7> if you use minmaxscaler like this: scaler = MinMaxScaler(feature_range=(0, 1)) train = scaler.fit_transform(train) test = scaler.transform(test)
+[14:30] <564789be16b6c7089cbab8b7> are we guaranteed that test is in the range 0 to 1?
+--------------------------------------------------------------------------------------------------
+[15:11] <54d4a1d6db8155e6700f853b> @lesshaste the training set yes, the test-set  not.
+[15:11] <564789be16b6c7089cbab8b7> @amueller  ah right.. so what is the right thing to do here?
+[15:11] <54d4a1d6db8155e6700f853b> the right thing to do for what?
+[15:12] <564789be16b6c7089cbab8b7> I need to scale the data to use keras (LSTM)
+[15:12] <564789be16b6c7089cbab8b7> so I train on some set and the test on another
+[15:12] <564789be16b6c7089cbab8b7> how should I scale the test set?
+[15:12] <564789be16b6c7089cbab8b7> if this method doesn't guarantee it will be in the right range
+[15:12] <54d4a1d6db8155e6700f853b> is there a technical reason why it needs to be in this range?
+[15:13] <54d4a1d6db8155e6700f853b> it will be in this range unless there are samples in the test set that are outside of the range of the training set
+[15:13] <564789be16b6c7089cbab8b7> hmm.. I don't actually know.. it's just that all the docs says you should scale everything to be in the range 0 to 1
+[15:14] <54d4a1d6db8155e6700f853b> yeah, then Using MinMaxScaler in this way is exactly the right thing to do.
+[15:14] <564789be16b6c7089cbab8b7> ok thanks.. It occurred to me that you could just scale the test set independently too
+[15:15] <564789be16b6c7089cbab8b7> which wouldn't be "cheating" but would give you the guarantee
+[15:15] <564789be16b6c7089cbab8b7> but maybe that is wrong
+[15:15] <54d4a1d6db8155e6700f853b> that will make it harder for the algorithm to generalize, because the meaning of the values in the training and test set will be different
+[15:15] <564789be16b6c7089cbab8b7> true and good point
+[15:15] <564789be16b6c7089cbab8b7> thank you
+--------------------------------------------------------------------------------------------------
+[15:29] <564789be16b6c7089cbab8b7> in a related question.. how would you do CV for time series data?  The only obvious method that I can think of is to randomly split the data into the first x% of samples and the last (100-x)% of samples and train and test accordingly. But that clearly has much less randomness than a normal CV and the different folds overlap hugely
+[17:02] <564789be16b6c7089cbab8b7> I am confused by this example to visualize a decision tree. http://scikit-learn.org/stable/modules/tree.html#tree In a script, how do you get to see the picture? The example just finishes with >>> graph = graphviz.Source(dot_data)   >>> graph
+--------------------------------------------------------------------------------------------------
+[20:05] <54d4a1d6db8155e6700f853b> in jupyter you can just put the graph object in a cell
+[20:05] <54d4a1d6db8155e6700f853b> it'll show as image
+--------------------------------------------------------------------------------------------------

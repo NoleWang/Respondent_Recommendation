@@ -1,0 +1,27 @@
+[05:00] <53810862048862e761fa2887> @amueller I have deployed Travis, and Coveralls and CircleCI is now building the doumentation
+[05:02] <53810862048862e761fa2887> http://vighneshbirodkar.github.io/sklearn-stub/docs/
+[16:20] <54d4a1d6db8155e6700f853b> @vighneshbirodkar sweet!
+[16:20] <54d4a1d6db8155e6700f853b> @vighneshbirodkar that is actually totally aweseom
+[16:21] <54d4a1d6db8155e6700f853b> can you add a "user guide" like page to the documentation that explains what exactly a user has to do to make this work for them?
+[16:23] <54d4a1d6db8155e6700f853b> @vighneshbirodkar this here can maybe help, too: https://github.com/uwescience/shablona
+[16:49] <541d52b1163965c9bc205cf3> @amueller   old one
+[16:55] <54d4a1d6db8155e6700f853b> @halwai I think the algorithm is wrong. The update doesn't conform to the literature, and it doesn't seem to work very well in many settings.
+[16:56] <541d52b1163965c9bc205cf3> @amueller  can i  help to set it right ?
+[16:56] <54d4a1d6db8155e6700f853b> well you can help fix the new implementation. have you looked at the pull request?
+[17:04] <541d52b1163965c9bc205cf3> @amueller  which pull request are you talking about can u share the link
+[17:11] <54d4a1d6db8155e6700f853b> #4802
+[17:37] <53810862048862e761fa2887> @amueller I'm on it 
+[17:49] <54d4a1d6db8155e6700f853b> Thanks :)
+[17:53] <53810862048862e761fa2887> @amueller I noticed one thing. Currently the CircleCI script installs python packages via both apt-get and pip. We could simplify it to only use pip. The cache in CircleCI caches pip packages and their subsequent installation will happen in no time. 
+[18:05] <54d4a1d6db8155e6700f853b> @vighneshbirodkar but installing numpy and scipy by pip is discouraged and will take forever and apt-get is also cached.
+[18:08] <53810862048862e761fa2887> @amueller I ran into some PYTHONPATH issues on CircleCI. Is it ok if I install numpy and scipy through pip for the stub package? 
+[18:13] <54d4a1d6db8155e6700f853b> that requires compiling, right? that will take very long. And the people that copy the stub will have trouble.
+[18:13] <54d4a1d6db8155e6700f853b> one option would be to just use conda
+[18:14] <54d4a1d6db8155e6700f853b> and not test a non-conda environment
+[18:17] <53810862048862e761fa2887> It does need compliing. But only for the first time. Doing it this way let's us keep the configuration to a minimum. Do you think I should switch to apt-get ?
+[18:28] <54d4a1d6db8155e6700f853b> how do you mean for the first time? the first time in master? or the first time for any pull request?
+[18:35] <53810862048862e761fa2887> CircleCI is only built over master to deploy the documentation. So the first time on master. PRs will be built by travis which uses apt-get
+[19:06] <53810862048862e761fa2887> I'm sorry. Travis uses conda right now.
+[19:11] <53135b495e986b0712efc453> @amueller could you take a look at #5568? 
+[19:11] <54d4a1d6db8155e6700f853b> @rvraghav93 It's on my list of the more urgent things ;)
+[19:12] <53135b495e986b0712efc453> Thanks :D

@@ -1,0 +1,8 @@
+<s> <user> i do n't recall us having one . </s>
+<s> <user> hi , pls i will need some explanation . if i have a honeypot logfile , and i want to apply neural network to the logfile , so i can get analysis type of the logfile , which i want to use to generate intrusion signature . </s>
+<s> <user> <unka@> what is your question ? </s>
+<s> <user> i am thinking of applying <unka> and clustering algorithm on a honeypot logfile , after which i want to generate intrusion signature based on the algorithm results , pls can i get more explanation on this , and approach i can use if possible . thanks </s>
+<s> <user> so you want to detect <unka> ? do you know which ones were <unka> or not ? </s>
+<s> <user> <unka@> unknown </s>
+<s> <user> try <unka> <unka> methods like <unka> </s>
+<s> <user> hi everyone . im working with <unka> , and i already have a <unka> that has been <unka> and everything . how would i extract <unka> from it ? setting <unka().=`> breaks the <unka_> argument . would i have to write my own analyzer ? setting the default ( <unka=`> ) does not work for me because that strips punctuation and i want to keep punctuation . </s>

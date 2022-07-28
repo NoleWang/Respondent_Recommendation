@@ -1,0 +1,6 @@
+<s> <user> too bad . </s>
+<s> <user> maybe you could try to send an email to the original author of the paper dataset to ask for explicit permission for inclusion of the data in the <unka-> toolkit ( mention explicitly that its license is the bsd license ) if they have the copyright on this data ? we will <unka-> credit their paper in the description of the dataset . </s>
+<s> <user> <unka@> <unka@> <unka> in <unk##> by <unka@> for the windows test failures that causes <unka> to be all red since recently : URL/https:/ <unka./> <unka-/> </s>
+<s> <user> btw , good news : i was contacted by the <unka> maintainer and we were upgraded to a much faster infrastructure ( still for free ). the builds run in 3-5 mins instead of <unk#a-> . this means that we might be able to run <unka> on the pull requests as we do for travis . right now we only run them <unka-> to master as it would have been too slow to process the full pr queues on the slow infrastructure . </s>
+<s> <user> ok . i will send the author an email , and cc to <unka@> , <unka@> . who else should i cc to <unka@> ? </s>
+<s> <user> it would be great to put the mailing list in cc but it 's not possible to reply if there are not subscribed . so just us is fine . in case of positive outcome we can forward there authorization to the mailing list for the record . </s>

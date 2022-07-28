@@ -1,0 +1,2 @@
+<s> <user> thanks for the follow-up , indeed is not very intuitive . maybe it 's normal , maybe the documentation of the <unka> argument could explain better how to deal with the <unka_> . maybe this could be part of a new tests doc improvements related to URL/https:/ URL/github.com/ <unk#a-./> </s>
+<s> <user> <unka@> i 'm happy to try to make the change myself - do you think it could be done as a pr to the docs for <unka> ( and the other linear models that take <unka> as an argument to their <unka> and accept a <unka_> arg to <unka`> ) </s>

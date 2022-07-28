@@ -1,0 +1,4 @@
+[21:45] <54c084dbdb8155e6700eed4c> I'm toying with the idea of doing a PyData NYC pilgrimage next month. Anyone planning on being there? Chance for a sklearn sprint perhaps?
+--------------------------------------------------------------------------------------------------
+[21:51] <53810862048862e761fa2887> Count me in
+--------------------------------------------------------------------------------------------------

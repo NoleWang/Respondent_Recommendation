@@ -1,0 +1,10 @@
+[09:39] <5bac969fd73408ce4fa98ba2> @adrinjalali https://github.com/scikit-learn/scikit-learn/issues/16951
+--------------------------------------------------------------------------------------------------
+[10:14] <567f5d7716b6c7089cc043a8> I think the "go wanted" tag was removed from the issue cause we already have at least a half solution to the issue. Not sure if we want to work on it during the sprint @Mariam-ke
+[10:16] <567f5d7716b6c7089cc043a8> *"help wanted"
+[10:17] <567f5d7716b6c7089cc043a8> Is it on the issue list for the sprint @Mariam-ke ?
+--------------------------------------------------------------------------------------------------
+[20:52] <5a9c7b4dd73408ce4f8fd92e> I have a small concern.  I am wondering if matplotlib should also be installed in setup.py along with NumPy and scipy. Is there is a reason it is not?
+--------------------------------------------------------------------------------------------------
+[21:33] <54d4a1d6db8155e6700f853b> @Sahanave there is no reason to. It's a soft dependency and many people run scikit-learn in a server setup where there's not even a screen attached
+--------------------------------------------------------------------------------------------------

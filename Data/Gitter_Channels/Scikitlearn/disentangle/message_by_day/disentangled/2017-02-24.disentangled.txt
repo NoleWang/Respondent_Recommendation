@@ -1,0 +1,22 @@
+[21:16] <54d4a1d6db8155e6700f853b> @NelleV I'm probably not the right person to ask this either.  It's just an F-test, right? https://en.wikipedia.org/wiki/F-test
+[21:17] <54d4a1d6db8155e6700f853b> @jwittenbach have you checked out GridSearchCV? that does that automatically
+[21:17] <54d4a1d6db8155e6700f853b> you can use ShuffleSplit if you want random splits of the data
+[21:17] <54d4a1d6db8155e6700f853b> What's the objective that you want to use for selection?
+[21:17] <54d4a1d6db8155e6700f853b> If you want to do it manually, you shouldn't leave them out by setting them to NaN but by just subsetting the data and throwing out those rows.
+--------------------------------------------------------------------------------------------------
+[21:23] <5759dd0dc2f0db084a1d128d> @amueller I am definitely not the right person to ask this, but f-tests are used to compare different models, while t-tests used for significance testing
+[21:24] <5759dd0dc2f0db084a1d128d> @amueller I *think* that in that specific case, the code compares 1 model (univariate regression model) versus the null (mean == 0), and thus it is identical
+[21:25] <5759dd0dc2f0db084a1d128d> @amueller now, as f-tests are often use to compare models, they can be use for feature selection by comparing linear models with covariate X1 and linear models with covariate X1 and X2.
+[21:26] <5759dd0dc2f0db084a1d128d> @amueller in practice, our f-regression does not do this, and thus I think the Stack exchange answer is wrong (though I would have to look at the code): our f-regression just fit univariate linear models, and rank them with the significance of the regression parameter (with is computed with a t-test)
+[21:26] <5759dd0dc2f0db084a1d128d> am I making any sense?
+[21:27] <5759dd0dc2f0db084a1d128d> now, I have recently realized that sure independance screening and our f-regression is the same. I think that might be worth mentioning somewhere, considering how widely used SIS is.
+[21:27] <54d4a1d6db8155e6700f853b> yes that makes sense. I haven't checked the code but sounds plausible
+[21:28] <54d4a1d6db8155e6700f853b> the f_regression and f_classif docs are pretty bad imho
+[21:28] <54d4a1d6db8155e6700f853b> I have not heard of SIS but that means nothing
+[21:28] <5759dd0dc2f0db084a1d128d> yep... I might work on that during the docathon :)
+[21:28] <54d4a1d6db8155e6700f853b> cool :)
+[21:29] <5759dd0dc2f0db084a1d128d> the sure independence screening paper is quite interesting. They don't make the link between the cross correlation and the significance of the linear regression of X on y (but it might be just that it is trivial for this community), but it gives a good intuition on why this works better for feature selection than lasso
+[21:30] <5759dd0dc2f0db084a1d128d> it has over 1000 citations
+--------------------------------------------------------------------------------------------------
+[21:30] <54bd5965db8155e6700ed583> @amueller I guess my issue  is that I dont want to throw out entire rows, because that will change the shape of the factors ($$X = WH$$). I just want to hold out random elements during the fit (analogous to k-fold CV for regression) and then use the reconstruction error, i.e. $$\sum_{i, j \in S} (X_{ij} - (WH)_{ij})^2$$ (where $$S$$ is the subset of held-out elements), for the cross-validation
+--------------------------------------------------------------------------------------------------

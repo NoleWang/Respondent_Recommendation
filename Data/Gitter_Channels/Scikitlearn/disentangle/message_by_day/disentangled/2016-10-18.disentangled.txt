@@ -1,0 +1,4 @@
+[16:07] <57f4f049d73408ce4f2bfae9> Decision trees support categorical data or do I have to convert categorical data into numbers?
+--------------------------------------------------------------------------------------------------
+[17:22] <56c4f19ae610378809c1f8ae> you have to convert categorical data into numbers
+--------------------------------------------------------------------------------------------------

@@ -1,0 +1,8 @@
+[00:09] <544906e2db8155e6700cdd16> Hi everyone!  I'm trying to run a grid search on a dataset that is stored in a Pandas DataFrame (something very similar to this example http://scikit-learn.org/stable/auto_examples/hetero_feature_union.html#example-hetero-feature-union-py).  When I run my code I get the next error message: "ValueError: cannot label index with a null key" I've tried different approaches but I didn't be able to fix it. I have a working example that I can share with you if needed.
+--------------------------------------------------------------------------------------------------
+[00:58] <53135b495e986b0712efc453> @mac2bua Could you paste your code into github gist/ pastebin and post the link here please?
+--------------------------------------------------------------------------------------------------
+[03:33] <544906e2db8155e6700cdd16> Yes, of course I can!
+[03:34] <544906e2db8155e6700cdd16> https://gist.github.com/mac2bua/94f0f15bc327684d16ba
+[03:34] <544906e2db8155e6700cdd16> let me know if you need anything else
+--------------------------------------------------------------------------------------------------

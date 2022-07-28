@@ -1,0 +1,4 @@
+[11:03] <58e53928d73408ce4f565aa3> hi guys ,i m coding in c ,and i want to store values from a txt file to an array any idea ?
+--------------------------------------------------------------------------------------------------
+[11:11] <55d21ee30fc9f982beadabb8> @Krikbov  Bad chance that scikit-learn is in Python
+--------------------------------------------------------------------------------------------------

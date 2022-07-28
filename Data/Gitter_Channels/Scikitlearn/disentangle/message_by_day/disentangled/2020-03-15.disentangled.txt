@@ -1,0 +1,4 @@
+[15:25] <5b58594ed73408ce4fa23ee3> Hi, I want to write a new scikit-learn compatible estimator where the behaviour of fit/predict depends on a "strategy" hyper-parameter (similar to DummyClassifier but the behaviour is more complicated). Is there any other way/design pattern to implement this apart from making case distinctions within fit/predict?
+--------------------------------------------------------------------------------------------------
+[19:41] <5baf7d9ad73408ce4fa9c9b2> @mloning if the different "strategies" share common code, the conveniently named strategy design pattern might be worth using
+--------------------------------------------------------------------------------------------------

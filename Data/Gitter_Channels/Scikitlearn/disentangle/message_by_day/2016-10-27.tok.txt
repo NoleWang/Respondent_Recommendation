@@ -1,0 +1,7 @@
+<s> <user> <unk#a@> can anyone help me out with <unka> python i got hindi pos tagger and hindi parser ,but i am not able to excess it . m new to this so i need some help for my in-house project </s>
+<s> <user> andy , for <unk##> , do you want me to send a pr to his branch to speed up the process ? </s>
+<s> <user> <unka@> </s>
+<s> <user> <unka@> hm not sure . i mean i'd like to finish up this week , but there is no super rush </s>
+<s> <user> okie so i 'll clean up that as a test , comment there and wait for him to make the changes . if it still remains at the end of the week <unka> , ping me so i can carry forward the work ... </s>
+<s> <user> ok cool </s>
+<s> <user> anyone here wants to pick up an easy doc issue ? - <unk##> </s>

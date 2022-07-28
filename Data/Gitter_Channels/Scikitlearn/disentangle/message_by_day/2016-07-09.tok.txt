@@ -1,0 +1,1 @@
+<s> <user> <unka@> yes indeed but like <unka-@> says it would be nice to use it both in a single script ... i tried messing around with the setup.py file but looks like there are quite a lot of imports inside sources which do not use relative imports ( hence explicitly importing from <unka.`> ... ) ... i'd have to change all of that ;( </s>

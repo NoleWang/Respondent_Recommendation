@@ -1,0 +1,12 @@
+<s> <user> thanks <unka@> and <unka@> . i tried working through the docs on URL/http:/ <unka-./> <unka./> but it got rather dense at the <unka*> and <unka*> section especially at <unk#a(-.:[`> ], <unk#a)-.:[]`> . i am at a loss to what some of the parameters in <unk#a(.=`> , <unk#a=_> , <unka=_> , <unk#a.=> , <unka=_> , <unk#a=> , <unk#a.=> , <unka'=> , <unk#a-=_> , <unka=> , <unka=_> , <unka=> , <unk#a.=> , <unka)=`> represent . </s>
+<s> <user> you do n't need to know the meaning of them all at first but you should check the api documentation of the <unka> class at some point </s>
+<s> <user> URL/http:/ <unka-./> <unka./> </s>
+<s> <user> thanks for the tip <unka@> <unconvertable > </s>
+<s> <user> hey guys ! i have an idea for an app and i was hoping i could find rediculously <unka> people who could come work with me . it has machine learning integrated to bring progress to mankind . </s>
+<s> <user> i think people in this room are ridiculously <unka> ( and incredibly busy ) in building tools for other people to build apps to bring progress to mankind . </s>
+<s> <user> ;) </s>
+<s> <user> <unka> </s>
+<s> <user> <unka@> haha yeah that 's pretty evident :' ) so you would n't be able to help me ? </s>
+<s> <user> i am sorry , no . you should probably setup a proof of concept of your own if you want to recruit others to join your project . </s>
+<s> <user> hi , i am a veteran <unka/> developer wanting to transition to being a <unka> contributor . there are a lot of classes and i think a consistent coding style in the <unka> code base - i 'm wondering if there are any docs or presentations on the overall architecture ( class hierarchy , the way helper functions should be organized , etc ) that could help me understand the flow and be able to contribute ? </s>
+<s> <user> <unka@> i would check the tutorial URL/http:/ <unka-./> <unka./> the introduction will give you the convention and bases regarding the <unka> </s>

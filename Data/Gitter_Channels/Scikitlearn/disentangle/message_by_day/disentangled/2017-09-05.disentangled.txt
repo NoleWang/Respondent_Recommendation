@@ -1,0 +1,31 @@
+[07:41] <564789be16b6c7089cbab8b7> I am confused by scikit-learn's support for pandas dataframes.  Can you just use them like 2n numpy arrays in scikit learn and if so, is there still any need for sklearn-pandas?
+--------------------------------------------------------------------------------------------------
+[07:51] <541a528b163965c9bc2053de> @lesshaste you can use pandas dataframes with numeric values as input to most scikit-learn estimators and model selection tools (e.g. cross_val_score and parameter search tools). sklearn-pandas can still be useful to do per-column feature preprocessing although this also should be improved by default in future scikit-learn versions.
+--------------------------------------------------------------------------------------------------
+[07:53] <564789be16b6c7089cbab8b7> @ogrisel  thanks!  I can't tell by looking at the docs which parts of sklearn will work with dataframes and which won't. For example http://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html
+[07:54] <564789be16b6c7089cbab8b7> should I just assume all classifier and regression functions will work?
+[07:55] <541a528b163965c9bc2053de> yes, whenever there is `array-like` as the type for X in fit and predict, numerical dataframes should work.
+[07:55] <564789be16b6c7089cbab8b7> thanks so much
+[20:13] <564789be16b6c7089cbab8b7> @ian-flores  It's the only sensible way I know to measure a classification  where the number of items in each class is very different
+[20:14] <564789be16b6c7089cbab8b7> @amueller  I would like to know how much each feature contributes to the auc . Does that make sense?
+[20:14] <564789be16b6c7089cbab8b7> It would also be great if sklearn had multi-class auc but that PR seems to have stalled a while ago
+[20:14] <54d4a1d6db8155e6700f853b> @lesshaste feel free to pick it up ;)
+[20:15] <54d4a1d6db8155e6700f853b> it makes sense if you can define it? ;)
+[20:15] <564789be16b6c7089cbab8b7> @amueller  I wish I had the skills!
+[20:15] <564789be16b6c7089cbab8b7> @amueller  what do you mean by "it makes sense if you can define it"?
+[20:17] <564789be16b6c7089cbab8b7> if you mean the multi-class AUC, isn't there a more or less standard definition by Hand and Till?
+[20:18] <54d4a1d6db8155e6700f853b> there are two standard definitions
+[20:18] <54d4a1d6db8155e6700f853b> I'm not sure what's currently to do
+[20:24] <564789be16b6c7089cbab8b7> is there a more efficient way of doing this?
+--------------------------------------------------------------------------------------------------
+[10:55] <564789be16b6c7089cbab8b7> Is there any way to get feature importance (for a random forest classifier) based on auc (area under the curve)?
+--------------------------------------------------------------------------------------------------
+[18:49] <584778b4d73408ce4f3b440c> why is auc important?
+--------------------------------------------------------------------------------------------------
+[18:50] <54d4a1d6db8155e6700f853b> @lesshaste what do you mean by that? you could do sequential feature selection for any arbitrary metric, but that requires fitting multiple models
+--------------------------------------------------------------------------------------------------
+[20:19] <564789be16b6c7089cbab8b7> ah ok.  Looks like it just stalled on that observation https://github.com/scikit-learn/scikit-learn/pull/7663#issuecomment-307566895
+[20:19] <54d4a1d6db8155e6700f853b> What does it mean for a feature to contribute to the auc? how much will AUC change if you leave it out? That is just one step of sequential forward selection
+[20:20] <564789be16b6c7089cbab8b7> yes I think that makes sense. You just want to avoid rebuilding the model n times when you have n features
+[20:20] <564789be16b6c7089cbab8b7> I often have 10,000 features
+--------------------------------------------------------------------------------------------------

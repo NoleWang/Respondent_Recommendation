@@ -1,0 +1,2 @@
+[23:34] <5fbd959ad73408ce4ff4db63> hi guys i'm  new to the contributors community and i want to start contributing to scikit-learn, but really i don't know how to start, and to be more specific when i check an issue and feel like i want to start working on it i don't know how to communicate with the developers there, like what should i say or shouldn't and what are the best practices or the ethics i should know before start working, any advices please ?. thank you
+--------------------------------------------------------------------------------------------------

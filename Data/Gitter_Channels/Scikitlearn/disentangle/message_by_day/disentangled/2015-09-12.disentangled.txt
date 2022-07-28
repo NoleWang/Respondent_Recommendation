@@ -1,0 +1,2 @@
+[17:54] <55901c1b15522ed4b3e2f949> AppVeyor tweeted about slow performance recently; I guess that's what is holding up all the tests
+--------------------------------------------------------------------------------------------------

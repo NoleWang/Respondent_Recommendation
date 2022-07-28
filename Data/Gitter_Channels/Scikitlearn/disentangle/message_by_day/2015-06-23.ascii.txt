@@ -1,0 +1,134 @@
+[14:32] <54d4a1d6db8155e6700f853b> @ogrisel and after barnes-hut and LDA you review the GP rewrite? ;)
+[14:39] <556705cb15522ed4b3e10f84> Hi @amueller  and @ogrisel, I tried to adress all comments in #4444 if you have time for a quick review :)
+[14:45] <53135b495e986b0712efc453> @amueller @vene Could I trouble you for a small doubt? - https://github.com/scikit-learn/scikit-learn/pull/4294#issuecomment-114523116
+[14:48] <54d4a1d6db8155e6700f853b> @rvraghav93 commented there
+[14:48] <53135b495e986b0712efc453> thanks!!
+[14:49] <54e07d6515522ed4b3dc0858> yes I think @amueller is right, returning cv.split(...) should do it
+[14:51] <54e07d6515522ed4b3dc0858> is check_cv in utils?
+[14:51] <54d4a1d6db8155e6700f853b> no in cross_validation
+[14:51] <54d4a1d6db8155e6700f853b> so there will be a new version now in model_selection
+[14:51] <54e07d6515522ed4b3dc0858> ah, yes
+[14:51] <54d4a1d6db8155e6700f853b> and the old version will behave the old way
+[14:51] <54e07d6515522ed4b3dc0858> perfect
+[14:51] <53135b495e986b0712efc453> Is there any reason why we can't have it to return the iterator? 
+[14:54] <54e07d6515522ed4b3dc0858> so there are instances when the len(new_cv.split(X, y)) doesn't work?
+[14:54] <53135b495e986b0712efc453> yes!
+[14:54] <54e07d6515522ed4b3dc0858> That's odd, that line contains enough information to know what the length should be
+[14:55] <54e07d6515522ed4b3dc0858> no?
+[14:56] <53135b495e986b0712efc453> not without expanding it right? I mean `new_cv.split(X, y)` returns an iterator... 
+[14:56] <54d4a1d6db8155e6700f853b> yeah just add ``new_cv.n_folds(X, y, labels)``
+[14:56] <53135b495e986b0712efc453> Thanks!
+[14:56] <54d4a1d6db8155e6700f853b> because we don't want to instantiate the whole thing there. we usually know this anyhow
+[14:57] <54e07d6515522ed4b3dc0858> add it where? I don't get what you propose
+[14:57] <54e07d6515522ed4b3dc0858> return the cv and the n_folds from check_cv?
+[14:58] <53135b495e986b0712efc453> add `get_n_folds(X, y, labels)` / `n_folds(X, y, labels)` it to the new cv classes
+[14:59] <54e07d6515522ed4b3dc0858> this means you'll have to change this line
+[14:59] <54e07d6515522ed4b3dc0858> https://github.com/scikit-learn/scikit-learn/blob/master/sklearn/grid_search.py#L512
+[14:59] <54e07d6515522ed4b3dc0858> right?
+[14:59] <53135b495e986b0712efc453> Yes!
+[15:00] <54e07d6515522ed4b3dc0858> and you only need to support the new classes. I get it now, this is good.
+[15:00] <53135b495e986b0712efc453> Sorry to pester again! but why do you think we can't have `cv, len_cv = check_cv(...)`... is it so we can find the length without generating the cv?
+[15:01] <53135b495e986b0712efc453> That will make it support old cv classes too right?
+[15:01] <54d4a1d6db8155e6700f853b> what do you mean without generating the cv? the ``cv.n_folds(X, y, labels)`` desn't generate the cv, right?
+[15:01] <54d4a1d6db8155e6700f853b> and the wrapper of the old classes can just call ``__len__``
+[15:02] <53135b495e986b0712efc453> yes... but  check_cv(..) would... is that why you are suggesting so? :)
+[15:02] <54e07d6515522ed4b3dc0858> no, check_cv doesn't generate it either
+[15:02] <54e07d6515522ed4b3dc0858> not until you iterate over what it returns
+[15:02] <54e07d6515522ed4b3dc0858> right?
+[15:02] <54d4a1d6db8155e6700f853b> yeah
+[15:03] <54d4a1d6db8155e6700f853b> well what do you mean by "generate"?
+[15:03] <54e07d6515522ed4b3dc0858> I guess the same as you
+[15:03] <54e07d6515522ed4b3dc0858> instantiate the folds
+[15:03] <53135b495e986b0712efc453> oh! so you don't want it to `return cv.split(X, y, ...)`? Then fine!
+[15:03] <54d4a1d6db8155e6700f853b> no! it should just return a new-style cv object, given either an old-style or a new-style one
+[15:04] <54d4a1d6db8155e6700f853b> or a number
+[15:04] <53135b495e986b0712efc453> ahh! okay! thanks :)
+[15:04] <54d4a1d6db8155e6700f853b> @JeanKossaifi stupid question but is the splitting of the lables into folds equivalent to bin-packing?
+[15:08] <556705cb15522ed4b3e10f84> @amueller  at least it is very similar. If I get it right for bin-packing we want to spread different weights into the smallest possible amount of bags (all bags having the same size). Here the number of bags (folds) is fixed and we want them to have (approximately) the same weight at the end.
+[15:09] <556705cb15522ed4b3e10f84> @amueller thanks for the review :)
+[15:09] <54d4a1d6db8155e6700f853b> I'm just trying to figure out if the optimal solution is np hard or not ;)
+[15:11] <556705cb15522ed4b3e10f84> Yes, I had the same problem when I first needed that functionality. 
+[15:12] <54d4a1d6db8155e6700f853b> I think you can show equivalence with bin-packing by binary searching the bin-size
+[15:13] <54d4a1d6db8155e6700f853b> your heuristic was always adding to the smallest bin, right?
+[15:14] <556705cb15522ed4b3e10f84> yes, starting with the biggest weights
+[15:16] <54d4a1d6db8155e6700f853b> yeah seems good. I suggested minor refactorings
+[15:17] <54d4a1d6db8155e6700f853b> should we try to merge #4444 and #4583 before #4294?
+[15:18] <556705cb15522ed4b3e10f84> Yes, I'm correcting it at the moment, thanks a lot!
+[15:19] <54d4a1d6db8155e6700f853b> np. sorry for the delay. we have quite a few prs
+[15:21] <54d4a1d6db8155e6700f853b> @vene @ogrisel do you want to review #4583 ?
+[15:23] <54e07d6515522ed4b3dc0858> Sure
+[15:24] <54e07d6515522ed4b3dc0858> This gives me an idea for renaming the ugly `p` in `LeavePLabelOut` into `test_size`, WDYT?
+[15:27] <54d4a1d6db8155e6700f853b> I suggested n_labels
+[15:27] <54d4a1d6db8155e6700f853b> (or n_groups if we rename)
+[15:28] <54d4a1d6db8155e6700f853b> why test-size?
+[15:28] <54e07d6515522ed4b3dc0858> that's the meaning of `test_size` in #4583
+[15:28] <54e07d6515522ed4b3dc0858> if it's an integer
+[15:28] <54e07d6515522ed4b3dc0858> it means you'll have `test_size` labels in the test set
+[15:29] <54d4a1d6db8155e6700f853b> n_test_labels?
+[15:29] <54d4a1d6db8155e6700f853b> but ok, makes sense
+[15:30] <54e07d6515522ed4b3dc0858> well, what I mean is, if `test_size` isn't right, we should change it in #4583
+[15:30] <54e07d6515522ed4b3dc0858> `test_size` is a bit ambiguous (people could expect it to refer to samples, not labels)
+[15:30] <556705cb15522ed4b3e10f84> @amueller in the current implementation I sort tuples of (weight, corresponding labels). if I use np.bincout I will have to sort it anyway and keep the correspondence to the original labels, so the complexity would be the same, right?
+[15:31] <53135b495e986b0712efc453> `n_labels` seems good!!
+[15:33] <54e07d6515522ed4b3dc0858> How about for LeavePOut, would you suggest `n_samples`?
+[15:33] <54e07d6515522ed4b3dc0858> I wouldn't
+[15:35] <53135b495e986b0712efc453> ah! okay `test_size` it is!
+[15:35] <54e07d6515522ed4b3dc0858> wait, both have their problems
+[15:35] <54e07d6515522ed4b3dc0858> @rvraghav93 you're very quick to agree with things :) let's think about it
+[15:35] <53135b495e986b0712efc453> :P
+[15:36] <53135b495e986b0712efc453> `p_samples` ?
+[15:36] <54d4a1d6db8155e6700f853b> @JeanKossaifi you have to sort it, the correspondence would be stored in ``unique_labels``
+[15:36] <54d4a1d6db8155e6700f853b> the quadratic comes from looping over unique_labels and then doing fancy indexing. I want to avoid the fancy indexing
+[15:36] <54e07d6515522ed4b3dc0858> in #4583 `train_size` and `test_size` are natural because they're delegated up to `ShuffleSplit`. They're not the best names but they're the friendliest parametrization.
+[15:37] <54e07d6515522ed4b3dc0858> (Also, these parameter names are kind of mixing up test and validation...)
+[15:38] <54e07d6515522ed4b3dc0858> (It's hard to teach someone and ramble for 10min about validation vs test, and then you code test_size=0.25)
+[15:40] <54e07d6515522ed4b3dc0858> But ignoring this, `test_size` makes sense for LeavePOut (one could imagine even supporting fractions and `train_size`, but that's not important)
+[15:47] <54e07d6515522ed4b3dc0858> There are currently no common tests for cross-validation generators, right?
+[15:48] <53135b495e986b0712efc453> there are! `tests/test_cross_validation`?
+[15:48] <53135b495e986b0712efc453> which I've refactored  into `test_split.py` and `test_validate.py`
+[15:52] <54e07d6515522ed4b3dc0858> Those aren't really common tests, it's just regular tests
+[15:52] <54e07d6515522ed4b3dc0858> I mean something like https://github.com/scikit-learn/scikit-learn/blob/master/sklearn/utils/estimator_checks.py#L1213
+[15:52] <53135b495e986b0712efc453> oh! okay!!
+[16:10] <54e07d6515522ed4b3dc0858> Do you find the name of [`_check_is_partition`](https://github.com/scikit-learn/scikit-learn/blob/master/sklearn/cross_validation.py#L1107) appropriate? I just got totally misled by it.
+[17:01] <53135b495e986b0712efc453> How about `_is_permutation_of_arange_n`?
+[17:08] <54d4a1d6db8155e6700f853b> from the docstring it checks whether it is a permutation
+[17:08] <54d4a1d6db8155e6700f853b> so ``_is_permutation`` seems appropriate?
+[17:08] <54e07d6515522ed4b3dc0858> also from the code. I was just curious whether there's some obscure meaning of `partition` that I wasn't aware of.
+[17:10] <54d4a1d6db8155e6700f853b> @jnothman  raised a good point in the pr: we probably still want to support passing iterables
+[17:10] <54d4a1d6db8155e6700f853b> so maybe we want check_cv indeed to return an iterable?
+[17:11] <53135b495e986b0712efc453> yes!! That seems like a nice solution to me :)
+[17:11] <54e07d6515522ed4b3dc0858> The thing is, after all the refactoring, we'll want it to return the new-style CV object, right?
+[17:11] <53135b495e986b0712efc453> and about that helper I think we can do without it... its used only in one place... I'll remove that
+[17:12] <53135b495e986b0712efc453> IMHO check_cv is used only internally right? we will be able to do  ``` for tr, te in check_cv(...):    ... ``` if we return iterable...
+[17:12] <54d4a1d6db8155e6700f853b> @vene there is not really a reason to do that, right? the check_cv is instantiated where we actually have X and y
+[17:13] <54d4a1d6db8155e6700f853b> @rvraghav93 yeah
+[17:14] <54e07d6515522ed4b3dc0858> That will pass all the responsibility of proxying labels etc to check_cv
+[17:15] <54e07d6515522ed4b3dc0858> I'm not saying it's a bad thing, just that it makes the function pretty heavy
+[17:16] <54e07d6515522ed4b3dc0858> will the API of the new CV objects ever be used outside of check_cv then?
+[17:16] <54d4a1d6db8155e6700f853b> proxying labels? what do you mean?
+[17:17] <54e07d6515522ed4b3dc0858> passing weights, labels (sample_props in general) to the cv generator
+[17:17] <54d4a1d6db8155e6700f853b> It makes the function more heavy, but not that much. And no, then I think the ``split`` would only be called there. the ``n_folds`` will probably be called outside of it, which kind of makes it tricky again.
+[17:17] <53135b495e986b0712efc453> or we could have `get_cv_safe`?
+[17:17] <54d4a1d6db8155e6700f853b> currently we only have labels and they are present in all the function calls
+[17:17] <54d4a1d6db8155e6700f853b> what would that do?
+[17:19] <53135b495e986b0712efc453> I mean rename `check_cv` to `get_cv_safe` so ppl could use that?
+[17:20] <53135b495e986b0712efc453> I have a crazy suggestion... why don't we takle `sample_weights` along with this? will it make the PR too big?
+[17:20] <53135b495e986b0712efc453> tackle
+[17:20] <54d4a1d6db8155e6700f853b> I think we should change the name if it gets more responsibility but how would that impact how people can use it?
+[17:20] <54d4a1d6db8155e6700f853b> please don't include sample_weights changes in this pr
+[17:21] <53135b495e986b0712efc453> okay ;)
+[17:21] <54d4a1d6db8155e6700f853b> there is still quite a bit to do for this, I think
+[17:23] <53135b495e986b0712efc453> The main todo yet to be done is `check_cv`... other are minor right? documentation must be the next big thing... fixing examples should be quite easy... 
+[17:30] <54d4a1d6db8155e6700f853b> well yes, the way we now discussed check_cv there will be no changes to the estimatorCV code
+[17:30] <53135b495e986b0712efc453> yes :)
+[17:30] <54d4a1d6db8155e6700f853b> and make the tests pass
+[17:31] <53135b495e986b0712efc453> yep! on it!
+[17:31] <54d4a1d6db8155e6700f853b> alright :)
+[17:54] <556705cb15522ed4b3e10f84> @amueller Currently the shuffle parameter is not used given the heuristic used (I could shuffle the labels having a same weight but this case might not appear and the result could be misleading). 
+[17:56] <556705cb15522ed4b3e10f84> --sorry with the new notation it would be the labels having the same number of samples :)
+[19:38] <54d4a1d6db8155e6700f853b> oh, right. sorry. brainfart. Then please remove the shuffle parameter.
+[19:39] <54d4a1d6db8155e6700f853b> for shuffling people could use #4583
+[19:42] <556705cb15522ed4b3e10f84> Thanks, done!
+[20:03] <54d4a1d6db8155e6700f853b> I think it looks good now apart from minor cosmetic things that I commented on. Maybe find another reviewer ;)
+[20:09] <556705cb15522ed4b3e10f84> Great, thanks a lot! :)
+[20:11] <556705cb15522ed4b3e10f84> @vene since you already saw the code, would you have time to take a look? :)

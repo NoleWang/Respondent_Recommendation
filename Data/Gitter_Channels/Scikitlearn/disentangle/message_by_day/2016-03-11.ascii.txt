@@ -1,0 +1,59 @@
+[07:17] <564789be16b6c7089cbab8b7> @rvraghav93  ah thanks... I do have some small thoughts in fact
+[07:33] <564789be16b6c7089cbab8b7> @rvraghav93  first.. what are the dotted lines?
+[07:36] <564789be16b6c7089cbab8b7> @rvraghav93  and what is the bootstrap you refer to? (sorry these are naive questions)
+[07:37] <564789be16b6c7089cbab8b7> also, one standard way to handle missing values when using a random forest is just to treat them as categorical values. That is make a new feature "X is missing" and set it to 1 if it is missing.
+[07:37] <564789be16b6c7089cbab8b7> would it be worth comparing to that approach?
+[08:23] <564789be16b6c7089cbab8b7> I found the bootstrap option so please cancel that part of my question :)
+[11:31] <53135b495e986b0712efc453> Yes! You are right. This approach does exactly the same thing. It tries to send the missing values to the best partition as if it were a categorical variable.
+[11:31] <53135b495e986b0712efc453> BTW hurraayyy we have github reactions to comments and PR comments...
+[11:34] <564789be16b6c7089cbab8b7> :)
+[11:34] <564789be16b6c7089cbab8b7> @rvraghav93  isn't that a lot simpler in that case?
+[11:35] <53135b495e986b0712efc453> Sorry. I don't get you. Simpler in which case?
+[11:37] <53135b495e986b0712efc453> Oh wait you mean make a new feature for "X is missing"... Hmm no this approach does not do that...
+[11:38] <53135b495e986b0712efc453> But how will you do that? What will you do with the missing values in the features which are not "This feature is missing"?
+[11:40] <564789be16b6c7089cbab8b7> what I do in practice is make the feature categorical if it is missing and then just run dictvectorizer
+[11:40] <564789be16b6c7089cbab8b7> which handles it all for me
+[11:42] <53135b495e986b0712efc453> That just explodes your feature space no? Also could you give me a minimal code example so I can be sure to follow what you mean.
+[11:44] <564789be16b6c7089cbab8b7> it creates one new feature per feature at most
+[11:44] <564789be16b6c7089cbab8b7> so at most doubles
+[11:44] <564789be16b6c7089cbab8b7> I don't have any code here sorry
+[11:45] <53135b495e986b0712efc453> No my question is lets say I have a data `X = [[1.2,], [2.2,], [np.nan,]]` How does your new data (after your preprocessing for missing values) look like?
+[11:49] <564789be16b6c7089cbab8b7> 
+[11:52] <564789be16b6c7089cbab8b7> I think it looks like [[1.2,0], [2.2,0], [0,1]]
+[11:53] <564789be16b6c7089cbab8b7> assuming I am parsing this correctly
+[11:53] <564789be16b6c7089cbab8b7> you just add one more feature for each feature that can have a missing value
+[12:09] <564789be16b6c7089cbab8b7> @rvraghav93  does this make sense?
+[12:10] <564789be16b6c7089cbab8b7> @rvraghav93 I am not sure what you mean by "What will you do with the missing values in the features which are not "This feature is missing""
+[12:51] <53135b495e986b0712efc453> Say we have 10 features and the 10th feature has missing values. We now have 11 features right? Will that mean we amplify the importance of the 10th feature and not the other features? Anyway this is an interesting case for comparison. I will compare that and let you know how it performs in comparison with the implemented method.
+[12:53] <53135b495e986b0712efc453> My intuition is that, at a higher level, both these methods are similar...
+[12:54] <53135b495e986b0712efc453> both as in the one that you propose and my implementation at #5974
+[13:13] <564789be16b6c7089cbab8b7> @rvraghav93  "Will that mean we amplify the importance of the 10th feature and not the other features?" That hadn't occurred to me as a possibility as the 11th feature is only ever 1 or 0
+[13:14] <564789be16b6c7089cbab8b7> I would love to see the results of your testing on this
+[13:15] <564789be16b6c7089cbab8b7> @rvraghav93  "We now have 11 features right? " yes
+[13:20] <53135b495e986b0712efc453> "as the 11th feature is only ever 1 or 0" - Correct! But I'm not sure if the feature importance will now be shared between the 10th and 11th feature or will be independently assigned... Have to look into it. Nevertheless this is a good comparison for my method. Another thing that I tried was replacing the missing values by the 10*maximum across all the features... This seems to not perform as well as the implementation. Thanks for your inputs! Please feel free to share more thoughts!
+[13:22] <564789be16b6c7089cbab8b7> @rvraghav93  thanks. I should say that I am particularly interested in categorical variables so things like replacing missing values by huge values never occurs to me :)
+[13:23] <564789be16b6c7089cbab8b7> @rvraghav93  were the dotted lines the timings? I mean in the graphs 
+[13:24] <564789be16b6c7089cbab8b7> @rvraghav93  you make a very interesting point about feature importance.  
+[13:49] <53135b495e986b0712efc453> Yes! the dotted lines are time taken for `cross_val_score` . I'm now trying to plot the time taken for a single fit.
+[14:10] <564789be16b6c7089cbab8b7> @rvraghav93 thanks. 
+[14:25] <564789be16b6c7089cbab8b7> @rvraghav93  actually categorical values in general make the imputation strategies for missing values tricky, or at least different
+[14:25] <564789be16b6c7089cbab8b7> I think this is an important use case
+[14:25] <53135b495e986b0712efc453> I think the imputation strategy for categorical value should be 'median' or 'mode' instead of 'mean' no?
+[14:27] <53135b495e986b0712efc453> And if the categorical support is introduced (in https://github.com/scikit-learn/scikit-learn/pull/4899), handling missing values in categorical features is not difficult. The missing simply becomes an additional category.
+[14:28] <564789be16b6c7089cbab8b7> @rvraghav93  mode could work but I am not sure what median would mean as there is no natural ordering
+[14:28] <564789be16b6c7089cbab8b7> @rvraghav93  I really hope https://github.com/scikit-learn/scikit-learn/issues/4899 makes progress
+[14:28] <53135b495e986b0712efc453> yes correct. Median is not appropriate.
+[14:29] <53135b495e986b0712efc453> #4899 is next on my list, (as #5974 is brought to a reviewable state).
+[14:29] <564789be16b6c7089cbab8b7> although mode is a little worrying too.. imagine lots of categories which occur 7,8,9 or 10 times. It's not clear the missing ones should be given to the category that occurs 10 times
+[14:29] <564789be16b6c7089cbab8b7> @rvraghav93 Great and a huge thank you.
+[14:29] <53135b495e986b0712efc453> :D
+[14:30] <564789be16b6c7089cbab8b7> I think we need a smarter imputation for categorical values
+[14:30] <53135b495e986b0712efc453> Yes that is a valid point.
+[14:30] <53135b495e986b0712efc453> The best way to handle is to consider missing to be a separate category.
+[14:30] <564789be16b6c7089cbab8b7> right!
+[14:31] <564789be16b6c7089cbab8b7> actually, and this is somewhat off topic sorry, there is a nice problem where you have numerical values but some of them should really be treated as categories
+[14:31] <564789be16b6c7089cbab8b7> so 10 is nowhere near 11, say, but 1000 is near 1001
+[14:32] <564789be16b6c7089cbab8b7> you can imagine this comes from some measurements of the output of a computer
+[14:32] <564789be16b6c7089cbab8b7> what I do in that case is put the feature in twice, once as numerical and once as categorical and let the RF work it :)
+[14:33] <564789be16b6c7089cbab8b7> but that only works if the number of different numerical values is not too large
+[14:34] <564789be16b6c7089cbab8b7> end of off topic :)

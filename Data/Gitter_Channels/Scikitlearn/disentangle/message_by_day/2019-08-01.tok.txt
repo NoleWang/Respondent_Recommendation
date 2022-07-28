@@ -1,0 +1,5 @@
+<s> <user> yes , i 'm now going through the repo first . i 'll then go for the issues . thanks for the reply ! </s>
+<s> <user> i would n't try going to the repo , it 's a lot . i would start with the contributor docs </s>
+<s> <user> even understanding how we set up and run tests would probably take me a week to understand </s>
+<s> <user> is there something in <unka> learn for 4000 dimension regression where i know i only one or two of the <unka> to be non-zero ? </s>
+<s> <user> something like forward <unka> regression ? </s>

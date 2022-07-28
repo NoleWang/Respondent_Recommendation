@@ -1,0 +1,38 @@
+<s> <user> <unka@> ah . i am not 100% clear why it would be a huge maintenance problem . does n't that depend on whatever elegant solution someone comes up with ? or to put it another way , if the problem is stated in parts with " part 1 ) devise a solution that <unka> the maintenance needed " would this not be plausible ? </s>
+<s> <user> has someone done a survey to see what other solutions exist out there ? </s>
+<s> <user> for example in r or <unka> </s>
+<s> <user> from a very quick look , the standard solution in r just seems to be <unka> URL/https:/ <unka./> <unka-./> </s>
+<s> <user> spark has this URL/https:/ <unka./> <unk#a-./> </s>
+<s> <user> <unka> has URL/https:/ <unka./> <unka+/> </s>
+<s> <user> <unka@> <unka@> <unka@> you can use <unka.> ( based on pickle with some optimization on numpy arrays ) too , see URL/http:/ <unka-./> <unka#-./_> for more details . there were some discussion on the mailing list iirc about this for example URL/http:/ <unka./> <unk#a-./=> </s>
+<s> <user> <unka@> thanks . that mailing list thread is somehow slightly negative . i would love to see an objective and technical analysis of the situation . </s>
+<s> <user> for example , what is wrong with developing the <unka> idea ? </s>
+<s> <user> iirc <unka.> makes a large number of small files . one simple improvement would be to reduce the number of files to 1 or 2 </s>
+<s> <user> ah .. i see the other problems are mentioned </s>
+<s> <user> > for example , what is wrong with developing the <unka> idea ? </s>
+<s> <user> i do n't think there is anything wrong per se . it 's just that it is quite some work and it probably wo n't happen inside <unka-> . not an expert though . there may have been other discussions on the mailing list on this <unka> issues . it does come up from time to time . </s>
+<s> <user> ok thanks . i am just a big fan of having clearly stated tasks for keen volunteers to pick from . i feel lots of people want to contribute to <unka> learn as it is so great :) </s>
+<s> <user> > iirc <unka.> makes a large number of small files . one simple improvement would be to reduce the number of files to 1 or 2 for the record , <unka> master creates only a single pickle file ( and not one per numpy array as previously ) </s>
+<s> <user> <unka> is a very verbose <unka-> format . the new spark <unka> lightweight format would probably be better much more efficient . </s>
+<s> <user> <unka@> oh that sounds very interesting . </s>
+<s> <user> </s>
+<s> <user> <unka@> it 's from the link you just sent </s>
+<s> <user> <unka@> the spark link ? </s>
+<s> <user> yes , did n't you read it ? </s>
+<s> <user> no i did :) i just sent a lot of links </s>
+<s> <user> to be clear , the interesting part is that an expert ( that 's you ) thinks it might be relevant </s>
+<s> <user> my knowledge is very shallow in this area </s>
+<s> <user> <unka@> i did n't know <unka> master creates only a single pickle file . thank you </s>
+<s> <user> it 's only in the master branch of <unka> so far . it will be part of the next release . </s>
+<s> <user> if someone starts implementing tools to save <unka> models to load from the spark 2 <unka> format , please reference the repo in URL/https:/ URL/github.com/ <unka#-./_> </s>
+<s> <user> this will require a good python <unka> implementation . the most promising implementation should be the official URL/https:/ URL/github.com/ <unka-/> but the python bindings are not ready yet but progress is happening , see eg : URL/http:/ <unka./> <unka-/> </s>
+<s> <user> very interesting </s>
+<s> <user> any of you guys work with c++ </s>
+<s> <user> im trying to make an ai using python </s>
+<s> <user> <unka@> to avoid the problems of pickle in full , you need to be explicit . to be explicit , you need to have your data model change every time anything applicable changes . </s>
+<s> <user> hello , i am seeing many feature scaling methods , but i cannot find things like <unka> and etc on the internet . </s>
+<s> <user> what are they called in academic society ? </s>
+<s> <user> and what is difference between scale and <unka> ? </s>
+<s> <user> is <unka> just a class implementation of scale ? </s>
+<s> <user> <unka@> yes , scale is a function that returns the result , <unka> can go in a pipeline or whatever . </s>
+<s> <user> <unka@> i do n't know that <unka> has a consistent academic name . to indicate what they did , someone might describe it . i 've seen it <unka> with naive scaling by calling it " <unka> " , but that 's not a formal name for the scaling technique , which merely uses the actual <unka> to do its job . a lot of people might know what you mean if you just said " <unka> scaling " or " scaled to the <unka> " though . </s>

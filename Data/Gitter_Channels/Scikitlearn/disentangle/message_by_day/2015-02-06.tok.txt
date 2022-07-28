@@ -1,0 +1,53 @@
+<s> <user> hey </s>
+<s> <user> hi <unka@> </s>
+<s> <user> thanks for starting on the reviews :) </s>
+<s> <user> hi </s>
+<s> <user> i want to do the <unka_`> empty data first </s>
+<s> <user> i 'm with family this week and so not super active , but i hope we can work towards the release next week :) </s>
+<s> <user> sure . there is another <unka_> pr that might be conflicting </s>
+<s> <user> and that i think is very important </s>
+<s> <user> the <unka=> one </s>
+<s> <user> yeah , i got <unka-> to work on <unka> the past 2 weeks , i hope i will <unka> effort to <unka> next week as well </s>
+<s> <user> what is the issue number of <unka=> ? </s>
+<s> <user> URL/https:/ URL/github.com/ <unk#a-/> </s>
+<s> <user> tks </s>
+<s> <user> most of the <unka-> are isolated to one <unka> . so i think they are important for the release , but should n't interact with other issues so much . the ones that are more <unka-> are the <unka=> one ( URL/https:/ URL/github.com/ <unk#a-/> ), the clustering pipeline one URL/https:/ URL/github.com/ <unk#a-/> and the input validation one URL/https:/ URL/github.com/ <unk#a-/> </s>
+<s> <user> ok </s>
+<s> <user> the last two interact somewhat . not sure how clear that is from the pr but the main thing in the input validation is that it extends common tests to <unka> that do n't inherit from clustering , <unka> , regression or transformation <unka> </s>
+<s> <user> i 'll try but i 'm not sure i 'll finish writing the pipeline integration tests today </s>
+<s> <user> oh and going toward the release , we need to fix the bugs and regressions in <unka> regression :-/ i do n't think a fix exists yet </s>
+<s> <user> yeah </s>
+<s> <user> the <unka> side effects ? </s>
+<s> <user> i saw it broke the calibration pr </s>
+<s> <user> too many open tabs , my firefox is so slow at times ... </s>
+<s> <user> it did ? i did n't see that . haha i know the open tabs issue . well the <unka`> broke some cases of <unka`> and <unka_`> not doing the same thing . maybe it broke other things , too . </s>
+<s> <user> bugs that are not regressions are that fit and <unka_> were not consistent before in the case of ties , and that having <unk#a=_> in multiple places can lead to infinite loops in the <unka> regression code </s>
+<s> <user> that 's bad </s>
+<s> <user> i agree . i proposed a fix in one of the issues . maybe just remove the implementation of <unka_`> , that is use the naive <unka.> , and mask out <unk#a=_> . that should get rid of the worst bugs . </s>
+<s> <user> but does n't solve all issues with <unka-> , i think . </s>
+<s> <user> some discussion here : URL/https:/ URL/github.com/ <unk#a-/> and in the issues linked at the bottom </s>
+<s> <user> so that was a list of the " hard " issues <unka> . if you want i can also give you a list of the simple bug fixes lol </s>
+<s> <user> what are you working on with <unka> btw ? </s>
+<s> <user> i want to implement the <unka.`> api . that includes porting <unka.> to python 3 or <unka> something similar with <unka> . </s>
+<s> <user> the goal is to be able to use <unka> <unka> clusters easily , without having to write bash or <unka> python scripts . </s>
+<s> <user> there is also <unka.> to watch in the same space . </s>
+<s> <user> going grab some lunch , see you later </s>
+<s> <user> args . i am slightly confused by the current api requirements in pipeline . if <unka_`> accepts <unka=`> we do n't require <unka`> to accept a <unka=`> . that is somewhat inconsistent and weird , i think ... </s>
+<s> <user> huh ok transform is never passed <unka`> at all ... never mind ... </s>
+<s> <user> <unka@> i am reviewing <unk##> </s>
+<s> <user> in another pr i suggested in a comment to add support for the <unk#a.=[`> , <unk#a.]`> <unka> . </s>
+<s> <user> but i do n't remember which pr ;) </s>
+<s> <user> i think the <unka'=> is a fine , loose default but i would like to check with the other pr if we also need the <unka<=`> of accepted <unka> <unka> > ` for specific cases as well . </s>
+<s> <user> do you remember which pr it was ? </s>
+<s> <user> ok found it : it was collapsed in : URL/https:/ URL/github.com/ <unk#a#-/_> </s>
+<s> <user> sorry did n't watch the chat </s>
+<s> <user> yeah so a <unka> list for <unka_> would be nice , and then we could get rid of <unka_`> </s>
+<s> <user> i agree </s>
+<s> <user> " <unka> all <unka-> <unka> on facebook ." </s>
+<s> <user> :) </s>
+<s> <user> there was only slight frustration on my part . i 'm not sure if the <unka_`> is a good workaround , because it somehow <unka> that by default " y " are arbitrary objects aka <unka> labels </s>
+<s> <user> btw , there are not really that many tests on <unka`> . many <unka> just used <unka().`> ... </s>
+<s> <user> ... </s>
+<s> <user> we should probably test for finite targets for regression </s>
+<s> <user> i do n't understand what you mean by finite targets </s>
+<s> <user> integers & <unka> labels ? </s>

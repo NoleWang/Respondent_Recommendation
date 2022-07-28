@@ -1,0 +1,29 @@
+[10:44] <564789be16b6c7089cbab8b7> Hi.. I have a binary classification task with 300 positive examples 300 million negative
+[10:44] <564789be16b6c7089cbab8b7> Is there a sensible way to handle this?
+[10:47] <569ebe44e610378809bd2db4> what do you mean by "to handle" ?
+[10:48] <564789be16b6c7089cbab8b7> well I would like to use the knowledge about the  300 million negative examples to learn what "normal" looks like
+[10:49] <564789be16b6c7089cbab8b7> @hmha  I could just throw it at a random forest and ignore the massive skew. Is that a sensible thing to do?
+[10:51] <569ebe44e610378809bd2db4> @lesshaste sorry, I don't have enough knowledge yet to help you
+[10:53] <564789be16b6c7089cbab8b7> @hmha  no problem at all
+[10:54] <564789be16b6c7089cbab8b7> it would be nice if some of these were in scikit-learn https://github.com/fmfn/UnbalancedDataset
+[11:42] <54e07d6515522ed4b3dc0858> If you think a linear model could work, you could optimize for AUC by training on pairwise differences of positive and negative examples.
+[11:50] <564789be16b6c7089cbab8b7> @vene  An interesting suggestion.  Unfortunately it my case I don't think linear models will work
+[11:51] <564789be16b6c7089cbab8b7> Also, there are a lot of pairs of positive and negative examples aren't there?
+[12:51] <54e07d6515522ed4b3dc0858> there are a lot indeed, but you could stochastically subsample the pairs and do partial_fit sgd iterations
+[12:51] <54e07d6515522ed4b3dc0858> it's the idea used in sofia-ml, which is pretty great
+[13:47] <564789be16b6c7089cbab8b7> now I need to look up sofia-ml! :)
+[13:58] <564789be16b6c7089cbab8b7> @vene  but for my problem I can't see that linear models would work
+[13:58] <564789be16b6c7089cbab8b7> the "numerical data" has special values that seem to indicate particular things. So 1,56,123 have some meaning from 200-10000 don't for example. Except I don't get told what those are
+[13:59] <564789be16b6c7089cbab8b7> random forests are good at picking these out
+[15:05] <54e07d6515522ed4b3dc0858> true. You could discretize the data, I guess. In random forests you can just use sample weights to deal with class imbalance.
+[15:06] <54e07d6515522ed4b3dc0858> actually it seems now you can actually use `class_weight="balanced"`
+[15:06] <564789be16b6c7089cbab8b7> the problem is its not clear a priori how to bin the numerical data, if that is what you mean
+[15:06] <564789be16b6c7089cbab8b7> I am not 100% convinced that actually does anything :)
+[15:07] <564789be16b6c7089cbab8b7> there is an issue about that I think
+[15:07] <564789be16b6c7089cbab8b7> but I will certainly try that
+[15:45] <54e07d6515522ed4b3dc0858> it should reweigh the samples accordingly. The problem is, that isn't guaranteed to be better.
+[15:45] <564789be16b6c7089cbab8b7> ah ok
+[15:45] <564789be16b6c7089cbab8b7> that's interesting
+[23:45] <54e07d6515522ed4b3dc0858> @lesshaste I'm not saying there is no bug there, I am not familiar with the code
+[23:46] <54e07d6515522ed4b3dc0858> but I'm saying that, even with linear models, `class_weight="balanced` does not necessarily lead to better generalization
+[23:50] <54e07d6515522ed4b3dc0858> If you're into deep learning stuff, you can use a similar sampling strategy + pairwise training there. I think they call it "contrastive loss" in that world :)

@@ -1,0 +1,22 @@
+<s> <user> hi guys i 'm new to the room i 'm working on a subject and i 'm looking for someone that have experience with this subject to advice me and hopefully point me to the right direction , my project is as following a document <unka> i have a big data base with texts for all kind off categories holidays politics sport etc i already managed for now if if i enter a text to my code that it detects which category it belongs using svm <unka> </s>
+<s> <user> what i want to do next is to predict a category for a <unka> but until now i do n't know yet how to start this </s>
+<s> <user> do you have any training data ? </s>
+<s> <user> you want a recommendation system it seems </s>
+<s> <user> have you looked up that general term ? </s>
+<s> <user> yes i do have a training data </s>
+<s> <user> yes i wnat to have a recommendation system </s>
+<s> <user> to explain more my situation i 'm doing in an <unka> and my company has a data base with tones of messages each text is tagged to a <unka> </s>
+<s> <user> ok sure .. so the first thing to do is to look up recommendation systems really </s>
+<s> <user> are you stuck somewhere ? </s>
+<s> <user> until now what i managed to do is classify this data and when i enter a text as an input my system manages to tell me to which <unka> it belongs </s>
+<s> <user> now my next step is prediction i have to predict what a user wants i looked up some terms like recommendation system but did n't find something really helpfull what i can start with </s>
+<s> <user> try URL/http:/ <unka./> <unka/> </s>
+<s> <user> what do you think about <unka> </s>
+<s> <user> it 's perfectly fine :) </s>
+<s> <user> im on a linux debian trying to install it </s>
+<s> <user> there some <unka> to do </s>
+<s> <user> java 8 scala etc ... </s>
+<s> <user> but it 's completely offtopic here </s>
+<s> <user> i used <unka> for my code so i thought ill get some from info here but thank you ill stop bothering you guys </s>
+<s> <user> guys , what do you think about this post :d URL/http:/ <unka./> <unk#a-/> </s>
+<s> <user> does anyone know anything about the <unka_> function ... it 's kinda weird </s>

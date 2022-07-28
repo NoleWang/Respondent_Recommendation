@@ -1,0 +1,1 @@
+<s> <user> hello ! i have taken machine learning class from <unka> and now there 's a problem while loading a pickle file . the file is just 15mb and i 've 4gb ram . anyone who can get me through this problem ? </s>

@@ -1,0 +1,1 @@
+<s> <user> <unka@> is there a reason that the new <unka> process <unka> does n't provide an error estimate on the fitted probability , similar to the <unka> process <unka> ? i believe this can be done , similar as to how one would use the <unka> <unka/> information of <unka> regression model to confidence bounds upon the fitted <unka> ? thx in advance . </s>

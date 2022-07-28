@@ -1,0 +1,4 @@
+[16:31] <5841ea1ed73408ce4f3a543e> Hi guys i'm new to scikit learning
+[16:31] <5841ea1ed73408ce4f3a543e> i want to learn more about data science
+[16:31] <5841ea1ed73408ce4f3a543e> i hope you can help me with that.
+--------------------------------------------------------------------------------------------------

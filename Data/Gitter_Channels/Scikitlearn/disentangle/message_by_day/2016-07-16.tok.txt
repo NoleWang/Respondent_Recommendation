@@ -1,0 +1,35 @@
+<s> <user> weve reached 7000 <unka> issues <unka:> : not sure if its a cause for celebration , though :) </s>
+<s> <user> <unka@> oh cool ! </s>
+<s> <user> another basic question .. i have some data which is mixed <unka> and numerical . there are various different ways i could <unka> it before trying to train my <unka> . at the moment i just have a python script which i have to edit and rerun . is there some neat way , using pipelines <unka(> ?) to make this all more systematic ? i would like to do the equivalent of <unka> really but with the different ways of <unka> the data </s>
+<s> <user> well depends what you want to do ? you could write your own transformers and that would work </s>
+<s> <user> hey <unka> ! </s>
+<s> <user> <unka:> : </s>
+<s> <user> i tagged some issues with " sprint " that might be good entry points : URL/https:/ URL/github.com/ <unk#a%+-/=?> </s>
+<s> <user> other good tags are " easy " and " needs contributor " </s>
+<s> <user> you can find the contributor guide here : URL/http:/ <unka-./> <unka./> </s>
+<s> <user> please start with something very simple , happy to talk about more complicated issues . you can also start reviewing other pull requests , or see if there are pull requests that have been stalled for a long time . </s>
+<s> <user> <unka@> thinking more about it , transformers are probably what you want . there are a bunch of <unka> tools within the library natively but if youre writing your own scripts , its pretty trivial to wrap them in a transformer and put them into a pipeline </s>
+<s> <user> ok pasted the above message here : URL/https:/ URL/github.com/ <unk#a-/> </s>
+<s> <user> hey <unka> . thanks for helping us . tell us if you need help for something . have a good <unka> . </s>
+<s> <user> if anyone needs help on things or setting up dev environment or finding things to start , id be happy to help </s>
+<s> <user> btw , if any issue says " change x " , if this is an api change or if it changes behavior of the code , instead of actually changing it , you need to <unka> the old behavior URL/http:/ <unka-./> <unka#./> </s>
+<s> <user> btw , if you find bugs or stuff is not working properly , also feel free to open issues or talk to me or the other developers </s>
+<s> <user> so if you want to create a new <unka> environment for the sprint , you should create one with all the dependencies , fork and clone the repo , and then do pip install -e . ( while in the <unka-> folder that you cloned ) </s>
+<s> <user> hi to <unka> from paris ! have fun ! :) </s>
+<s> <user> <unka@> are you working today ? </s>
+<s> <user> i got bored at home and came to the lab . the internet speed is very good here ;) and i will be glad to help if there is any pr to review . :) </s>
+<s> <user> <unka-@> hey , i 'm a beginner in ml . i was looking for some good first time issues which do n't involve completing documention . i went through the list of issues on github but would really appreciate if you or anyone could point to any specific issue for beginners . thanks . </s>
+<s> <user> this pr stalled and might be a good place to pick back up ? URL/https:/ URL/github.com/ <unk#a-/> </s>
+<s> <user> sure , i 'll ping if i face any problems . </s>
+<s> <user> i tried to make sure all the issues that are still available are tagged as " need contributors " </s>
+<s> <user> hi <unka@> , i have some time and since there is a <unka> learn sprint going on now , i was thinking of contributing remotely from <unka> . is this possible ? i will be glad to work on some documentation stuff . </s>
+<s> <user> <unka@> hey . any contributions are always welcome :) </s>
+<s> <user> the ones that are tagged sprint are very easy ones . if there is something that strikes your fancy , let me know ! </s>
+<s> <user> ( i mean other than the sprint ones ) </s>
+<s> <user> i go for the most easy ones now :d , maybe this : URL/https:/ URL/github.com/ <unk#a-/> ? :) </s>
+<s> <user> sure , thanks :) </s>
+<s> <user> for anyone joining recently important links and advice is here : URL/https:/ URL/github.com/ <unk#a-/> </s>
+<s> <user> does anyone want to pick this up ? URL/https:/ URL/github.com/ <unk#a-/> </s>
+<s> <user> i 'll be in 103 for a bit </s>
+<s> <user> fyi , there are issues that need contributors that do n't have any of the tags . the tags are a very rough approximation to the state of the issues </s>
+<s> <user> if you need a review of your pr just add <unka@> in the pr and i will have a look </s>

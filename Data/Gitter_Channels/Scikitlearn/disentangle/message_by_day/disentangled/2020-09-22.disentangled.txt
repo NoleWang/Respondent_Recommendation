@@ -1,0 +1,3 @@
+[08:37] <56bb7a56e610378809c0cb2c> `algo_max` Will coins be always nicely centered and rotated in the same direction? Or scattered around the whole image and randomly rotated? Also one coin per image or multiple?
+[08:40] <56bb7a56e610378809c0cb2c> `algo_max` Found it.. there was a template matching example for coins in skimage. Is this of any help? https://scikit-image.org/docs/dev/auto_examples/features_detection/plot_template.html
+--------------------------------------------------------------------------------------------------

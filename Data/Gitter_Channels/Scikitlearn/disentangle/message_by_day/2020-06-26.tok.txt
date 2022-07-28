@@ -1,0 +1,2 @@
+<s> <user> hello , the question i meet is the <unka> returned from the function <unka'_> seem to be very different from the result of actual fitting process . this is the last training process where most of the valid loss are about 0.1 . however the score i get from the <unka'_> is about <unk#.> . the score i use is the <unka'> <unka'> which is the similar to the loss function of the network <unka'> . i want to know why it happens and how to fix it . thanks a lot . </s>
+<s> <user> <unk![> <unk#a()./:]> ) </s>

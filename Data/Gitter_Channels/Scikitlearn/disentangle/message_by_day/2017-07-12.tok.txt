@@ -1,0 +1,33 @@
+<s> <user> as its <unka> , you dont lose a great deal by not stopping . you should just process the output of <unka_> to adhere to your criteria . </s>
+<s> <user> its is possible to <unka> a <unka> <unka> once loaded back from a <unka> filed </s>
+<s> <user> yes but it will forget everything from the previous training set . </s>
+<s> <user> so its again a fresh training ? </s>
+<s> <user> yes . </s>
+<s> <user> is there a way to persist that memory </s>
+<s> <user> there is no generic way , it depends on the model . some models have a <unka_`> method , it might or might not do want you want . read the documentation , the reference papers of the literature ( usually referenced in the <unka> of the class ) and the source code of the model to determine that whether it can help accomplish what you are looking for . </s>
+<s> <user> <unka@> thank you for this information </s>
+<s> <user> my advice would be to always snapshot the training sets of your models so that you can <unka> later , possibly with an extended <unka> training set . </s>
+<s> <user> so you mean to keep the training set as a back up and letter merge the new dataset with old and fit </s>
+<s> <user> yes , that 's the safest thing to do . </s>
+<s> <user> perfect </s>
+<s> <user> you can discard or down weight older samples if you think that the distribution of the data <unka> over time . </s>
+<s> <user> ok that sounds good </s>
+<s> <user> <unka@> did you tag at some point ? </s>
+<s> <user> we should definitely tag before the sprint </s>
+<s> <user> looks like no branch yet </s>
+<s> <user> sir can i ask you something </s>
+<s> <user> hi there </s>
+<s> <user> hi </s>
+<s> <user> if i have few doubt </s>
+<s> <user> <unka@> no , not yet i got busy on other thing and now i am back at trying to debug a precision issue in the error computation of the <unka> model that has an impact on the stopping <unka> . </s>
+<s> <user> for <unka> </s>
+<s> <user> can any one help me </s>
+<s> <user> <unka@> so branch now and backport <unka> once it 's merged ? </s>
+<s> <user> <unka@> in any case , if i cannot find the bug before tomorrow , i will cut the branch <unk#a.> anyway . </s>
+<s> <user> ok that </s>
+<s> <user> also good with me <unka@> </s>
+<s> <user> <unka@> can i ask u something </s>
+<s> <user> sure </s>
+<s> <user> <unka@> i have an <unka> in a startup </s>
+<s> <user> <unka@> i clear technical part but if somebody ask about is there any questions for me what should i ask </s>
+<s> <user> this is not really a forum to discuss interview practices </s>

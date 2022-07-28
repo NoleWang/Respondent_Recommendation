@@ -1,0 +1,4 @@
+<s> <user> <unka@> looks like the at the end is the problem . URL/http:/ <unka-./> <unka./> works . i 'll take a look at fixing the link on the main page . </s>
+<s> <user> <unka@> the faq link at the bottom of the page is now fixed on the dev doc : URL/http:/ <unka-./> <unka/> </s>
+<s> <user> ok , but the link on <unka/> is still broken , fyi . </s>
+<s> <user> but good to know that it actually works without the </s>

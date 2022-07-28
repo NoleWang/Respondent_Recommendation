@@ -1,0 +1,6 @@
+[07:50] <58faf245d73408ce4f5a2675> hey,
+--------------------------------------------------------------------------------------------------
+[07:51] <58faf245d73408ce4f5a2675> i have some doubt in estimator_check can anyone plz explain the purpose of that file
+--------------------------------------------------------------------------------------------------
+[12:26] <53eb987c107e137846baa89d> I think it contains various routines to check the correctness of input to the various estimators. In particular see: http://scikit-learn.org/stable/modules/generated/sklearn.utils.estimator_checks.check_estimator.html
+--------------------------------------------------------------------------------------------------

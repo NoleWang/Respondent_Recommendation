@@ -1,0 +1,2 @@
+[21:22] <550f53e215522ed4b3dda5f6> https://cloud.githubusercontent.com/assets/1180956/8710149/a6437600-2b15-11e5-9524-d503200f01a5.gif
+[21:23] <550f53e215522ed4b3dda5f6> Hi all. Here is a ```BayesianGaussianMixture``` demo on rescaled old faith data.

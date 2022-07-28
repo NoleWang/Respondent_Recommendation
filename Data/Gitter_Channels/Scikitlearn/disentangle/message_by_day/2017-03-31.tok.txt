@@ -1,0 +1,18 @@
+<s> <user> does <unka> have tests that you can run ? </s>
+<s> <user> <unka@> do you mean URL/https:/ URL/github.com/ <unka#-/> </s>
+<s> <user> yes thanks </s>
+<s> <user> are some errors expected ? for example " <unk#a.:> : <unka> : divide by zero encountered in log " </s>
+<s> <user> sometimes , you can have error or warning raised by scipy and numpy which will be catch i think </s>
+<s> <user> the important things is that you get no output as </s>
+<s> <user> <unk`> ran 20 tests in <unk#a.> failed ( <unk#a=> ) <unk`> </s>
+<s> <user> or with failure </s>
+<s> <user> <unka@> ok </s>
+<s> <user> i think it is all works fine . i was trying to get <unka> to work which stalls mysteriously on os x and i wanted to check it was n't a <unka> learn problem . it is n't . </s>
+<s> <user> then if you fill this is a bug you probably want to put it back in the issue tracker in github </s>
+<s> <user> it 's a <unka> bug i think , not a <unka-> one </s>
+<s> <user> probably in fact a <unka> bug </s>
+<s> <user> hello , i am willing to get the frequency of keywords + <unka> over a russian text . i am having troubles using the <unka> , here is what i did so far : <unka`> <unka> = <unka"()-.> ) <unka> = <unka(._> , <unka'()+?\> , <unka=> ) cv = <unk#a(=_> , 10 ), <unka"=[> of russian keywords + <unka> " ], <unka'()+=?\_> ) results = <unka()._> ), <unka(.=_> )) <unka_> = <unka(.> ) <unk`> <unka_`> shows that none of the keywords or <unka> are present in the text . however when i searched manually i could find them . also , this code snippet worked with english text . any help is appreciated , thanks ! </s>
+<s> <user> would someone mind interpreting a learning curve for me ? im not quite sure whether this represents an issue with my data . </s>
+<s> <user> <unk![> screen shot <unk#-> at <unk#a()-./:]> ) </s>
+<s> <user> it looks like were getting a 7% cv error , which is a bit high , but tolerable for this use case ? </s>
+<s> <user> my <unka/> values sort of suck </s>

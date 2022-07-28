@@ -1,0 +1,9 @@
+<s> <user> <unka> -s -v <unka-.> should be enough </s>
+<s> <user> is this page for development using <unka> or contributing to the project or both ? </s>
+<s> <user> for any type of queries and suggestions related to <unka-> . </s>
+<s> <user> there 's a special dev room for developers of the project . </s>
+<s> <user> can i get a link for the room ? </s>
+<s> <user> never mind </s>
+<s> <user> got it </s>
+<s> <user> thanks for the response though </s>
+<s> <user> <unka:> : </s>

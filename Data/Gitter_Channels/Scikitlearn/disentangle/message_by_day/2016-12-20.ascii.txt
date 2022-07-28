@@ -1,0 +1,5 @@
+[05:08] <5634e15116b6c7089cb8f9f2> Hi all, how would I do knowledge representation in SKL?
+[05:11] <57714f9ec2f0db084a203010> Can someone explain what hyperparameter optimization? 
+[11:17] <584ae429d73408ce4f3bed37> Hello everyone I wanted to contribute. Can anybody help me how to do so????
+[11:28] <584ae429d73408ce4f3bed37> I have knowledge of ML and R but am completely new to scikit-learn
+[17:42] <54d4a1d6db8155e6700f853b> Abinash check out the contributor docs on the website

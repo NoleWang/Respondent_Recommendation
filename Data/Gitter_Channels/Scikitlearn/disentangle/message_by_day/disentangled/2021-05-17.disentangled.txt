@@ -1,0 +1,4 @@
+[11:37] <matrix-nyanpasu:matrix.org> Hello! in `sklearn.decomposition.PCA`, how do I tell it which column represents the label?  For example, I have a dataframe with the following columns:  `feature_0 feature_1 feature_2 label`  How do I tell PCA that `label` is the dependent variable?
+--------------------------------------------------------------------------------------------------
+[14:32] <5baf7d9ad73408ce4fa9c9b2> @nyanpasu:matrix.org you don't, PCA is unsupervised and doesn't take the labels as input, only the features.
+--------------------------------------------------------------------------------------------------

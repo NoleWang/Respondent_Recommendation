@@ -1,0 +1,2 @@
+[18:02] <5baebfaed73408ce4fa9bd25> Hello, I ran `pytest sklearn` and see the following.  Is this ok, or is there something wrong with my build: ``` SKIPPED [16] sklearn/utils/tests/test_validation.py:1374: could not import 'pandas': No module named 'pandas' ==== 355 failed, 19625 passed, 1443 skipped, 117 xfailed, 37 xpassed, 3371 warnings in 2380.84s (0:39:40) ==== (sklearn-dev)  ```
+[23:56] <5baebfaed73408ce4fa9bd25> OK, it works now.  Thanks Thomas Fan.  

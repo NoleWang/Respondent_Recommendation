@@ -1,0 +1,11 @@
+[09:32] <5938174cd73408ce4f656da8> Hi all, I have a program to run pipeline with featureunion infinitely by putting into fit_transform function and training data. So may I know how to know program running status? I am using anaconda Jupiter notebook to run that python script. Million thanks
+[09:33] <5938174cd73408ce4f656da8> Any verbose features available on fit transform and pipeline?
+--------------------------------------------------------------------------------------------------
+[14:51] <54d4a1d6db8155e6700f853b> @bryanleekw it depends on the models in the pipeline
+[14:51] <54d4a1d6db8155e6700f853b> there is a pull request for verbosity in pipelines, but I don't think it's merged yet
+--------------------------------------------------------------------------------------------------
+[21:30] <55366f4c15522ed4b3df5040> Hi, does anybody know how should I go if I want to work on an open PR from another person?
+--------------------------------------------------------------------------------------------------
+[21:51] <54d4a1d6db8155e6700f853b> you can add them as a remote and pull their branch and open your own pr
+[21:52] <54d4a1d6db8155e6700f853b> @gsmafra
+--------------------------------------------------------------------------------------------------

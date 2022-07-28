@@ -1,0 +1,1 @@
+[12:33] <53135b495e986b0712efc453> @vighneshbirodkar yes indeed but like @nelson-liu says it would be nice to use it both in a single script... I tried messing around with the setup.py file but looks like there are quite a lot of imports inside sources which do not use relative imports (hence explicitly importing from `sklearn.module`...)... I'd have to change all of that ;(

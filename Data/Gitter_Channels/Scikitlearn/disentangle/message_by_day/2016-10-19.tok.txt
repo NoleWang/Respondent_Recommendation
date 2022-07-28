@@ -1,0 +1,6 @@
+<s> <user> hello -- does anyone know what 's the best way to <unka> <unka> learn models to <unka/> etc , which can be stored in a database ? </s>
+<s> <user> i have tried pickle -- but many people seem to advice against it . </s>
+<s> <user> <unka> is good for writing to a file , but does not provide support to converting to string . </s>
+<s> <user> hello , are the neighbors returned by <unka(.> ) always sorted by distance ? </s>
+<s> <user> hi , i suppose it is sorted by distance - <unka(> least distance ) being the first element . </s>
+<s> <user> if i use same <unka> in a loop but with different subset of data , should i always call <unka(.> , y ) with the new subset ? </s>

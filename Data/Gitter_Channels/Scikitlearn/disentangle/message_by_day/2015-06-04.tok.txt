@@ -1,0 +1,95 @@
+<s> <user> > can i ask a quick <unka> question here ? URL/https:/ URL/github.com/ <unk#a#./> it says r+ and <unka+> " will propagate the changes to disk " . should n't that be " will not propagate " ? not it is correct . both <unka+`> and <unka+`> open the file in read-write mode . <unka`> is read-only . the difference between <unka+`> and <unka+`> is that <unka+`> will delete any existing file before creating a new one from scratch . </s>
+<s> <user> <unk#a@> will have a look thanks . another thing we could try to address during your gsoc is the ability to add a <unka_`> function for incremental <unka-> fitting of ( classical ) <unka> , for instance URL/http:/ <unka./> <unk#a./> of course the priority is fixing issues on the current code base . i can currently <unka> myself with this part of the code base that i do n't know well enough to comment on the open <unka> issues . </s>
+<s> <user> thanks <unka@> . i just finished the <unka> for <unka> . </s>
+<s> <user> <unk#a@> thanks !! i just updated the same :) </s>
+<s> <user> <unka@> thanks for the feedback will update my blog post accordingly :) </s>
+<s> <user> great , but the webpage URL/http:/ <unka./> <unka-/> seems not updated yet . </s>
+<s> <user> i think <unka> should merge the pr then only it will refresh :) </s>
+<s> <user> <unka@> would the <unka_> version be em style , or sgd ? i think em style is " easier " from a convergence perspective but i am not sure how you would do it in <unka> fashion </s>
+<s> <user> though i think david <unka> had some good papers on it he showed at <unka> </s>
+<s> <user> i have the links somewhere </s>
+<s> <user> i think we should focus on fixing what we have before implementing new algorithms </s>
+<s> <user> i agree with <unka@> . may i ask what is em style <unka@> ? </s>
+<s> <user> <unk#a@> i think he meant that in order to do <unka_> ( update model rather than <unka> it ) you can just do several expectation <unka> iterations from the point you 've stopped at previously </s>
+<s> <user> though i do n't get sgd part of it . i 'm not sure of how severe <unka> of a single em iteration are , but i do n't think they're so huge that we ca n't afford even a <unka> iteration </s>
+<s> <user> <unka-> style instead of gradient descent by <unka> . i am weaker in em than sgd approaches , but i have done sgd style learning for <unka> in the very recent past . this is why i asked - trying to gauge what i would need to read :) </s>
+<s> <user> also , +1 to <unka@> comment . nothing can really happen until there is something that is well documented and understood by several people is there to experiment <unka/> </s>
+<s> <user> there was once a pr that summarized all <unka> , i think . does anyone know where that went ? </s>
+<s> <user> hey <unka@> would it not be better to have <unka./_`> instead of <unka.`> ? </s>
+<s> <user> yeah sounds good </s>
+<s> <user> thanks ! </s>
+<s> <user> <unka@> i was thinking of online em as described in URL/http:/ <unka./> <unk#a,./> but if you have good references for sgd for <unka> , that 's interesting too . i agree fixing existing stuff is the priority over implementing new incremental <unka> but i also think that incremental <unka> would make <unka> more practically useful so it would be good to review the literature on that topic . </s>
+<s> <user> you know me - partial fit for all the things ! but this link looks good - i will read up once i get spare time . </s>
+<s> <user> <unk#a@> how different are your <unka> from URL/http:/ <unka-./> <unka-./> ? </s>
+<s> <user> david recommended to read URL/http:/ <unka./> <unk#a-./> as an intro to some of the concept of the online em paper . </s>
+<s> <user> lol . actually , the doc that the link points is for <unka> , not <unka> </s>
+<s> <user> i am trying to figure out that <unka> 's paper for <unka> now . </s>
+<s> <user> <unka@> </s>
+<s> <user> does anyone have opinions on the <unka> feature union interface ? </s>
+<s> <user> <unk#> </s>
+<s> <user> <unk##> </s>
+<s> <user> ? </s>
+<s> <user> hi andy </s>
+<s> <user> i also had thought about what you just proposed <unka(`> , <unka_> , <unka)`> </s>
+<s> <user> but i think it 's not <unka-> enough </s>
+<s> <user> and also it makes it hard if you do n't need weights . pass explicit <unka`> ? ugly </s>
+<s> <user> well you could just leave them out , that could be supported . </s>
+<s> <user> but still ugly </s>
+<s> <user> i'd something like <unka'(=`> , <unka(=> ), <unka'=> , <unk#a).=`> </s>
+<s> <user> but without a dict </s>
+<s> <user> <unka> maybe ? </s>
+<s> <user> it'd be nice to also support <unka'(`> , <unka(> ), <unka')=`> , it'd be almost like a pipeline with optional arguments </s>
+<s> <user> is that even doable in python ? </s>
+<s> <user> with <unka> </s>
+<s> <user> right ? </s>
+<s> <user> i never used them , let me check </s>
+<s> <user> but it would be super cumbersome for the user </s>
+<s> <user> because they need to import this particular named <unka> class </s>
+<s> <user> if only there existed anonymous <unka> </s>
+<s> <user> i think if we want a default argument for weight , we need to define a custom class . but for the user that does n't look much different from a <unka> </s>
+<s> <user> how do you mean anonymous ? </s>
+<s> <user> like ad-hoc , you just write ( a , b , <unka'=> ). something like a function call argument list , but without the function </s>
+<s> <user> hehe yeah that 's not possible in python </s>
+<s> <user> because ( ) calls the <unka> constructor </s>
+<s> <user> i guess we could <unka-> it :p </s>
+<s> <user> i feel dirty just having this conversation </s>
+<s> <user> haha </s>
+<s> <user> the other option would be a syntax more like the <unka_> helpers </s>
+<s> <user> but that would require <unka> </s>
+<s> <user> <unka(=_> ), <unka_> , weight ), <unk#a(=_> ), <unka_> , weight )) </s>
+<s> <user> still would n't document what the weight is , though </s>
+<s> <user> i think i 'm going with </s>
+<s> <user> <unka'(_{> : ( <unka(> ), <unka_> ), <unk#a'_> : ( <unka(> ), <unka_> <unk),}> <unk#a=[> , <unk#a> ]) </s>
+<s> <user> err </s>
+<s> <user> <unka'(_{> : ( <unka(> ), <unka_> ), <unk#a'_> : ( <unka(> ), <unka_> <unk),}> <unk#a':=_{> , <unk#a':_> }) </s>
+<s> <user> i wish they could all be grouped in the same place </s>
+<s> <user> a quick question . where should i add <unka> warnings in <unka> ? is that good adding warning just after <unka`> <unka`> , ( not within any function ) </s>
+<s> <user> this is a mix of grouping by row and grouping by column </s>
+<s> <user> the other extreme would be <unka'(=[> , 'b' , 'c' ], <unka(=[> )] * 3 , <unka'=[> , <unka'> , <unka'> ], <unk#a=[> , 1 , 2 ]) </s>
+<s> <user> hey , what if for <unka> we drop the names completely and use the column as the name ? </s>
+<s> <user> then you ca n't <unka-> if you have multiple transformers on the same column </s>
+<s> <user> hm if we change the data structure of how we store the transformers from <unka> , we 'll have a lot of code duplication :-/ </s>
+<s> <user> correct </s>
+<s> <user> <unk#a@> maybe in <unka_`> ? </s>
+<s> <user> i ca n't find any examples </s>
+<s> <user> you can look at the rename of <unka> to <unka> . well actually there it was in the file . for <unka> the init would be good </s>
+<s> <user> that 's how ward was deprecated </s>
+<s> <user> looks god </s>
+<s> <user> good </s>
+<s> <user> URL/https:/ URL/github.com/ <unk#a#-/> </s>
+<s> <user> hm if we use <unka> we also need to sort them every time we use them lol </s>
+<s> <user> why ? </s>
+<s> <user> updated <unk##> </s>
+<s> <user> because dictionaries have undefined sorting , and if we iterate over them in transform we might get them in a different order then in fit </s>
+<s> <user> i.e . the features would be <unka> </s>
+<s> <user> but are n't they ever only accessed by key ? </s>
+<s> <user> ahhh , i know what you mean now </s>
+<s> <user> yes , this is probably the reason why pipeline and <unka> are n't { name : <unka(> <unk)}> <unka> , but lists of <unka> </s>
+<s> <user> sorting is n't good , we really want to keep the order the user gives . otherwise there 'll be a world of confusion </s>
+<s> <user> now , the question is : <unka'([`> , ( <unka(> ), <unka'> )), ... <unk),]> <unka=_> ... <unk)`> vs . <unka'([`> , <unka(> ), <unka'> ), ... <unk),]> <unka=_> ... <unk)`> </s>
+<s> <user> i think you can use <unka> from collections also . </s>
+<s> <user> i like the flat one personally </s>
+<s> <user> <unka@> yes , but then the user needs to do <unka(`> ... <unk)`> </s>
+<s> <user> was thinking you could do d= <unka(> ); <unka.> = <unka._> internally , though i have no idea if this would work . probably more trouble than it is worth </s>
+<s> <user> maybe sorting is just as easy . but i like the flat list version better </s>
+<s> <user> er list of <unka> </s>

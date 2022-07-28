@@ -1,0 +1,10 @@
+[18:45] <61f5898d6da03739848f5c77> Hello guys while testing  the file my test are getting skipped how to fix it  '''  ==================================================================== test session starts ==================================================================== platform win32 -- Python 3.9.10, pytest-6.2.5, py-1.11.0, pluggy-1.0.0 rootdir: D:\OpenSource\sci-kit\scikit-learn, configfile: setup.cfg plugins: cov-3.0.0 collected 0 items / 2 skipped ''''
+--------------------------------------------------------------------------------------------------
+[18:52] <61cc86716da03739848d405f> what is the command you are using ?
+--------------------------------------------------------------------------------------------------
+[18:57] <61f5898d6da03739848f5c77> pytest sklearn/tests/test_docstrings.py -k sklearn.datasets._california_housing.fetch_california_housing
+--------------------------------------------------------------------------------------------------
+[18:59] <61cc86716da03739848d405f> I think you forgot to install documentation dependencies https://scikit-learn.org/stable/developers/contributing.html#building-the-documentation
+--------------------------------------------------------------------------------------------------
+[19:06] <61f5898d6da03739848f5c77> @PurnaChandraMansingh  thanks ,Now its working
+--------------------------------------------------------------------------------------------------

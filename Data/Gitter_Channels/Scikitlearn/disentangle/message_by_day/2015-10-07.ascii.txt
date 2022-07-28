@@ -1,0 +1,7 @@
+[09:11] <541a528b163965c9bc2053de> @TracyMRohlin please write this a small reproduction code snippet on small random data (e.g. using `np.random.randn` and such) and post it as a question on stackoverflow. If you think this is a bug, post it as an issue on the scikit-learn issue tracker instead.
+[14:37] <53135b495e986b0712efc453> #3123 can be closed!
+[14:44] <53135b495e986b0712efc453> @ogrisel Manoj wants you to review his #4242 if possible :P 
+[14:45] <541a528b163965c9bc2053de> I would like to focus on bug fixing for the release this week...
+[14:54] <53135b495e986b0712efc453> Okay :)
+[16:24] <53135b495e986b0712efc453> @TomDLT Can I take #4523 up?
+[16:47] <555b8aa615522ed4b3e0a160> yes sure!

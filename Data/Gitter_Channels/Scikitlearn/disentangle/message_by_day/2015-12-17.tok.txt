@@ -1,0 +1,46 @@
+<s> <user> <unka@> i am sure this is n't helpful but ... URL/http:/ <unka./> <unka-/> is at least pretty </s>
+<s> <user> thanks <unka@> . i'd prefer python code but i have something similar than that now </s>
+<s> <user> <unka@> i know already this is a dim question but .. i notice <unka-> has said no to adding deep learning . however we do already have <unka> and some people working on improving that code ( e.g . adding <unka> ). is there a clean line between <unka> and deep learning ? </s>
+<s> <user> i assume that an <unka> with 20 layers is not deep learning for example ? </s>
+<s> <user> it seems that the three main types of neural networks are <unka-> , <unka> and <unka> . if we just look at <unka-> neural networks , i am wondering if there is a clear view of what is in and what is out of scope ? </s>
+<s> <user> no is a perfectly acceptable answer :) </s>
+<s> <user> <unka@> neural networks are by now basically synonymous with deep learning . <unka> are actually <unka-> nets </s>
+<s> <user> i think the agreed scope is feed forward without <unka> </s>
+<s> <user> <unka@> ok .. i ask as a recent mailing list question was " i 'm interested in deep learning and wanna contribute to <unka-> and try out for gsoc next summer . i was wondering if <unka-> is looking to expand its neural nets package ." </s>
+<s> <user> and no support for custom architectures , i.e . you can specify a list with the number of nodes in each hidden layer , but they will all have the same activation function and there are no skip connections etc </s>
+<s> <user> and the answer was no </s>
+<s> <user> v . interesting re : custom architectures </s>
+<s> <user> yeah we're not gonna expand beyond the model that is there . we want to make the <unka> as good as possible , so we will add <unka> , and if there is a consensus for a better <unka-> optimizer than adam , i think we 'll be happy to add that , too </s>
+<s> <user> it is highly unclear to me how much the bells and whistles actually make a difference when you measure <unka> performance </s>
+<s> <user> have you read <unka> posts on the <unka> zoo and <unka> <unka> ? </s>
+<s> <user> ah no ... could you point me to them please ? </s>
+<s> <user> URL/http:/ <unka./> <unk#a-./> </s>
+<s> <user> on the topic of gsoc .. it would be great if someone could <unka/> the <unka> <unka> module </s>
+<s> <user> URL/http:/ <unka./> <unk#a./> </s>
+<s> <user> the <unka> you mean ? </s>
+<s> <user> there was a gsoc last year , but it did't finish yet :-/ </s>
+<s> <user> URL/http:/ <unka-./> <unka./> </s>
+<s> <user> reading your link ... </s>
+<s> <user> <unka@> i read that article .. it 's still not clear to me how much worse you would do with a simpler architecture . but i do think that image tasks seem uniquely well suited to <unka> networks </s>
+<s> <user> however i notice that neural networks are now being used more for <unka-> based tasks on <unka> </s>
+<s> <user> <unka@> i think you told me that <unka> was basically broken .. but i may have remembered that wrong </s>
+<s> <user> there is a pull request with a rewrite of the <unka> </s>
+<s> <user> but it is not finished </s>
+<s> <user> and the status is unclear to me </s>
+<s> <user> i 'm a bit <unka> with writing a book </s>
+<s> <user> that i want to finish early spring </s>
+<s> <user> oh great ! on machine learning ? </s>
+<s> <user> machine learning in <unka-> </s>
+<s> <user> err machine learning with python </s>
+<s> <user> it 's a machine learning book for programmers without a lot of math ( because there are many good stats ml books out there already ) </s>
+<s> <user> it aims to be very practical </s>
+<s> <user> sounds wonderful </s>
+<s> <user> i look forward to it ! </s>
+<s> <user> thanks :) </s>
+<s> <user> ( and i 'll go back to that now ;) </s>
+<s> <user> check out the <unka> rewrite pull request if you are interested </s>
+<s> <user> although i am a little worried that ml is going to be <unka> by neural network mumbo jumbo :) </s>
+<s> <user> i will do .. thanks </s>
+<s> <user> good luck ! </s>
+<s> <user> ( p.s . did you consider cloning yourself ? :) ) </s>
+<s> <user> ( as everyone wants your attention ) </s>

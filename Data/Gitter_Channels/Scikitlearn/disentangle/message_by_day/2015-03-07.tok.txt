@@ -1,0 +1,36 @@
+<s> <user> no there wo n't be any 0.16 website , before the 0.16 final release but i think this is fine . dev points to <unk#a.> and stable points to <unk#.> </s>
+<s> <user> next time we upload the website we should remove the version for the link to the development documentation number from the documentation menu . </s>
+<s> <user> is there a nice <unka> guide that i could use ? ( related to <unk##> for <unka._`> to make it support sparse y ) </s>
+<s> <user> <unka@> i tried to install the <unka> in a new venv and it works : </s>
+<s> <user> <unk`> ( <unk#a)-.> [ <unka$/]~> pip install -f URL/http:/ <unka./> <unka-> numpy scipy <unka-> <unka/> numpy URL/http:/ <unka./> uses an insecure transport scheme ( http ). consider using https if <unka.> has it available downloading <unk#a-._> ( <unk#a.> ): <unk#a.> downloaded storing download in cache at <unk#a%-./_> <unka/> scipy URL/http:/ <unka./> uses an insecure transport scheme ( http ). consider using https if <unka.> has it available downloading <unk#a-._> ( <unk#a.> ): <unk#a.> downloaded storing download in cache at <unk#a%-./_> <unka/> <unka-> URL/http:/ <unka./> uses an insecure transport scheme ( http ). consider using https if <unka.> has it available downloading <unk#a-._> ( <unk#a.> ): <unk#a.> downloaded storing download in cache at <unk#a%-./_> installing collected packages : numpy , scipy , <unka-> successfully installed numpy scipy <unka-> cleaning up ... ( <unk#a)-.> [ <unka$/]~> python -c " import <unka> ; <unka(._> )" <unk#a-.> <unk`> </s>
+<s> <user> however the version number is not good </s>
+<s> <user> actually it 's my bad , it picked up the wrong wheel ( because of the old version number <unk#a-.> that is considered more recent than <unk#a.> ) </s>
+<s> <user> we wo n't have the problem when we upload on <unka> as we wo n't upload that <unk#a-.> wheel </s>
+<s> <user> if i fix the version of <unka-> , it works : <unk`> ( <unk#a)-.> [ <unka$/]~> python -c " import <unka> ; <unka(._> )" <unk#a-.> ( <unk#a)-.> [ <unka$/]~> pip uninstall -y <unka-> uninstalling <unka-> : successfully uninstalled <unka-> ( <unk#a)-.> [ <unka$/]~> pip install -f URL/http:/ <unka./> <unk#a-.=> <unka/> <unk#a-.=> URL/http:/ <unka./> uses an insecure transport scheme ( http ). consider using https if <unka.> has it available downloading <unk#a-._> ( <unk#a.> ): <unk#a.> downloaded storing download in cache at <unk#a%-./_> installing collected packages : <unka-> successfully installed <unka-> cleaning up ... ( <unk#a)-.> [ <unka$/]~> python -c " import <unka> ; <unka(._> )" <unk#a.> <unk`> </s>
+<s> <user> i am launching the tests now </s>
+<s> <user> all tests pass with the <unk#a.> wheel on my osx laptop </s>
+<s> <user> on windows on the other hand , the wheels were not uploaded because the tests are broken : URL/https:/ <unka./> <unka-/> </s>
+<s> <user> they have been broken for a while and i had not noticed </s>
+<s> <user> here is the error message : <unk`> [ <unk#:> ] <unk=> [ <unk#:> ] fail : test that <unka> support <unka_> or raise sensible errors [ <unk#:> ] <unk-> [ <unk#:> ] traceback ( most recent call last ): [ <unk#:> ] file " <unk#a-.:\> " , line 198 , in <unka> [ <unk#:> ] <unka(*.> ) [ <unk#:> ] file " <unk#a-.:\> " , line 300 , in wrapper [ <unk#:> ] return <unka(*> , <unka*> ) [ <unk#:> ] file " <unk#a-.:\_> " , line 343 , in <unka_> [ <unk#:> ] "{ <unk#a"(.}> , <unka> , <unka> )) [ <unk#:> ] <unka> : <unk#.> == <unk#.> : <unka> <unka_> behaves identically when called with sample weights : 0.3 vs 0.3 [ <unk#:> ] [ <unk#:> ] <unk-> <unk`> </s>
+<s> <user> i created this to track it : <unk##> </s>
+<s> <user> i pushed a fix for master ( hopefully ) </s>
+<s> <user> apparently you did not push the <unk#a.> branch to the repo . i cannot <unka-> the fix ( <unk#a> ) to get it into the <unk#a.> branch . </s>
+<s> <user> huh , pretty sure i pushed the <unk#a.> branch . </s>
+<s> <user> the tag is in the branch </s>
+<s> <user> hum ok guess i did n't push it . i pushed with <unka-> , apparently that only pushes the <unka> </s>
+<s> <user> so which branch is this commit in ? <unk#a> </s>
+<s> <user> fixed it , i think </s>
+<s> <user> <unka@> i fixed <unk##> </s>
+<s> <user> it was a missing <unka_`> , do you want me to do the backport ? </s>
+<s> <user> yeah , go ahead . the branch should be there now . </s>
+<s> <user> yes i see it thanks ! </s>
+<s> <user> pushed </s>
+<s> <user> let 's wait for <unka> to build the wheels </s>
+<s> <user> btw , where is the continuous integration on <unka> ? i 'm sure there is a badge for that so we can see when it breaks </s>
+<s> <user> URL/https:/ <unka./> <unka-/> </s>
+<s> <user> i have to go offline now . i might get back online tomorrow evening paris time . if we are both online at that point we can push the release to <unka> together . otherwise on monday . if the windows wheels are all generated correctly and you feel confident to use the <unka-> command of the <unka-> tool , feel free to do it before that . </s>
+<s> <user> ok , i 'll check back tomorrow , not gonna do anything today i think </s>
+<s> <user> ok have a nice we then :) </s>
+<s> <user> you too ! </s>
+<s> <user> i think i would need to login to get the badge url </s>
+<s> <user> well we can use shields : URL/https:/ <unka./> <unka-./> </s>

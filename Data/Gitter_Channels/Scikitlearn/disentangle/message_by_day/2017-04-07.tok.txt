@@ -1,0 +1,3 @@
+<s> <user> <unka@> thank you for the tip . however it isnt exactly what i was searching for . <unka.> substitute values that are out of range . my plan is to remove the row ( or column ) that contain <unka-> values . </s>
+<s> <user> there is not transformer which remove samples in <unka-> i think </s>
+<s> <user> you could probably use the [ <unk#a(-./:]`> ) to make such request </s>

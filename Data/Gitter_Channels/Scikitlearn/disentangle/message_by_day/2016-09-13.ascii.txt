@@ -1,0 +1,97 @@
+[01:07] <56f0af1085d51f252aba1606> I tried it. Still running out all memory @amueller 
+[01:46] <56f0af1085d51f252aba1606> Sorry, I check the script again and find this error is caused by plotting cluster patterns after clustering using matplotlib. Thanks anyway! @amueller 
+[05:07] <5770330bc2f0db084a2008c6> hi
+[05:09] <5770330bc2f0db084a2008c6> i have a question
+[05:13] <57d4603540f3a6eec06494c4> So... you can ask :)
+[17:29] <541a528b163965c9bc2053de> @amueller I will push the 0.18rc tag soon
+[18:11] <54d4a1d6db8155e6700f853b> @ogrisel thanks :)
+[18:12] <57d83c7940f3a6eec0650f6e> If i am python programmer and no knowledge about Ml but i want to go in ML so how can i start with python ? 
+[18:15] <541a528b163965c9bc2053de> you can follow the tutorials on http://scikit-learn.org then read a book such as @amueller's and work the examples, then try a kaggle.com challenge then follow a class online.
+[18:15] <541a528b163965c9bc2053de> basically alternate between theory and practice
+[18:16] <541a528b163965c9bc2053de> to get the theory you need basic linear algebra and stats / proba
+[18:17] <57d83c7940f3a6eec0650f6e> I know AI theory and reading Modern approach but i am lacking to understand equations and expression in ML , for understanding those euations and expression what should i learn first??
+[18:17] <541a528b163965c9bc2053de> then you don't know theory ;)
+[18:18] <541a528b163965c9bc2053de> also AI is wider than ML
+[18:18] <541a528b163965c9bc2053de> but ML is a very very rich subfield of AI
+[18:18] <57d83c7940f3a6eec0650f6e> Ok for understand expressiona and equations what should i learn? 
+[18:19] <57d83c7940f3a6eec0650f6e> ok i see you mentioned Linear algebra ! Any good tutorial or blog or book for linear algebra ?
+[18:19] <541a528b163965c9bc2053de> what I said:  linear algebra and stats / proba + basic differential multivariate calculus (what is a continuous function, a differentiable function, a gradient...)
+[18:20] <57d83c7940f3a6eec0650f6e> And will i able to understand regression funtion after reading linear algenra ?
+[18:20] <541a528b163965c9bc2053de> I don't have any particular recommendation in mind but if you ask that question to google you will probably get answers
+[18:21] <541a528b163965c9bc2053de> regression is a stats / machine learning concept, not a linear algebra concept. But generally it is presented in terms of vector space with a euclidean metric so you need to know about vector spaces and norms and distances first
+[18:22] <57d83c7940f3a6eec0650f6e> which math course would you recommend for understanding regression (vector..etc)
+[18:23] <541a528b163965c9bc2053de> to apply ML you don't necessarily need to understand the underlying math in details though. It's good to start with a bit of ml practice (e.g. sklearn tutorials) then learn a bit about the underlying maths and then iterate
+[18:23] <57d83c7940f3a6eec0650f6e> I am working with tensor flow api
+[18:23] <57d83c7940f3a6eec0650f6e> but i want to work with SNN
+[18:24] <541a528b163965c9bc2053de> learning linear algebra + stats + proba is typically 1 or 2 semesters of BSc in a math related cursus. So learning on your own without application to ML will probably be too dry.
+[18:24] <541a528b163965c9bc2053de> alternate with practice to keep with the motivation.
+[18:25] <541a528b163965c9bc2053de> then go an read a tensorflow tutorial instead
+[18:25] <57d83c7940f3a6eec0650f6e> I am also undergraduate student and this is last year of my graduation !
+[18:26] <57d83c7940f3a6eec0650f6e> Ok , thanks :)
+[18:27] <541a528b163965c9bc2053de> you might be interested in this : https://www.youtube.com/watch?v=cKxRvEZd3Mw
+[18:27] <541a528b163965c9bc2053de> you did not take any linear algebra class?
+[18:28] <57d83c7940f3a6eec0650f6e> Yet now but i will self learn no prob.
+[18:35] <541a528b163965c9bc2053de> @amueller I pushed the 0.18rc tag. I also triggered the wheel builder.
+[18:36] <54d4a1d6db8155e6700f853b> sweet!
+[18:36] <541a528b163965c9bc2053de> I tried with Python 3.6.0b1 and we have broken tests because of int / str comparisons: need to look in details
+[18:36] <54d4a1d6db8155e6700f853b> i'll try to trigger the conda builder
+[18:36] <541a528b163965c9bc2053de> after the 0.18rc
+[18:37] <541a528b163965c9bc2053de> all numpy tests pass on Python 3.6.0b1, 8 errors for scipy.
+[18:38] <54d4a1d6db8155e6700f853b> @ogrisel err did you merge #7414 ?
+[18:40] <54d4a1d6db8155e6700f853b> shouldn't the version be 0.18rc1?
+[18:41] <541a528b163965c9bc2053de> no I did not merge #7414, let me review it quickly, we can merge it and then tag 0.18rc1 will be after 0.18rc and nobody will ever know ;)
+[18:42] <54d4a1d6db8155e6700f853b> ;)
+[18:44] <541a528b163965c9bc2053de> actually I am not sure about updating the website.
+[18:44] <541a528b163965c9bc2053de> I think we should wait for 0.18 final to update the nav
+[18:44] <541a528b163965c9bc2053de> BTW I think 0.18rc is equivalent to 0.18rc0
+[18:47] <54d4a1d6db8155e6700f853b> ok
+[18:48] <54d4a1d6db8155e6700f853b> it's not entirely impossible that we do manual builts of the stable website, which would be silly
+[18:48] <54d4a1d6db8155e6700f853b> also https://circleci.com/gh/scikit-learn/scikit-learn-feedstock
+[18:49] <54d4a1d6db8155e6700f853b> ugh test failures in the pickle test
+[18:49] <541a528b163965c9bc2053de> this is looking good: https://travis-ci.org/MacPython/scikit-learn-wheels / https://ci.appveyor.com/project/sklearn-wheels/scikit-learn-wheels (the Python 3.3 failure is known but we don't care for the RC)
+[18:49] <54d4a1d6db8155e6700f853b> on python three
+[18:49] <54d4a1d6db8155e6700f853b> travis is failing
+[18:50] <54d4a1d6db8155e6700f853b> like our normal travis https://travis-ci.org/scikit-learn/scikit-learn/builds/159677032
+[18:50] <541a528b163965c9bc2053de> what...
+[18:51] <54d4a1d6db8155e6700f853b> unicode stuff?
+[18:52] <54d4a1d6db8155e6700f853b> that's the built in the 0.18.X branch?
+[18:54] <54d4a1d6db8155e6700f853b> turns out that running a "replace" on a pickled string is not a good idea
+[18:54] <54d4a1d6db8155e6700f853b> who'd thought?
+[18:58] <54d4a1d6db8155e6700f853b> gimme a sec
+[18:58] <54d4a1d6db8155e6700f853b> @ogrisel https://github.com/scikit-learn/scikit-learn/pull/7415
+[18:58] <54d4a1d6db8155e6700f853b> let's wait for CI, then backport
+[19:02] <541a528b163965c9bc2053de> yeah
+[19:25] <541a528b163965c9bc2053de> travis is slow...
+[19:26] <54d4a1d6db8155e6700f853b> hm I'm having trouble with the feedstock
+[19:27] <54d4a1d6db8155e6700f853b> https://circleci.com/gh/scikit-learn/scikit-learn-feedstock/4
+[19:30] <541a528b163965c9bc2053de> Maybe @ jakirkham has an idea.
+[19:30] <541a528b163965c9bc2053de> hum that did not work
+[19:31] <54d4a1d6db8155e6700f853b> I opened an issue here: https://github.com/conda-forge/conda-smithy/issues/304
+[19:39] <54d4a1d6db8155e6700f853b> I tried setting conda-forge as source channel
+[19:39] <54d4a1d6db8155e6700f853b> not sure if that does anything
+[19:39] <54d4a1d6db8155e6700f853b> it'll take like half an hour to complete anyhow :-/
+[19:39] <54d4a1d6db8155e6700f853b> how are the wheels?
+[19:42] <541a528b163965c9bc2053de> travis must be completely overloaded by the californians...
+[19:43] <541a528b163965c9bc2053de> the wheels tests break because of the pickle issue under Python 3
+[19:43] <541a528b163965c9bc2053de> I cancelled them to wait for #7415
+[19:43] <541a528b163965c9bc2053de> The Python 2.7 wheels did work
+[20:39] <541a528b163965c9bc2053de> @amueller I merged, backported and pushed 0.18rc1
+[20:39] <541a528b163965c9bc2053de> the wheel builder is triggered
+[21:11] <541a528b163965c9bc2053de> @amueller the wheels are on their way. How are you doing with the conda-forge feedstock?
+[21:11] <54d4a1d6db8155e6700f853b> well, it's running
+[21:11] <541a528b163965c9bc2053de> coool
+[21:13] <54d4a1d6db8155e6700f853b> I mean "they haven't failed yet"
+[21:15] <541a528b163965c9bc2053de> :)
+[21:22] <541a528b163965c9bc2053de> wheel builder was going fine but no more travis workers at the moment unfortunately: https://travis-ci.org/MacPython/scikit-learn-wheels
+[21:23] <541a528b163965c9bc2053de> the windows wheels are almost all ready: https://ci.appveyor.com/project/sklearn-wheels/scikit-learn-wheels
+[21:23] <541a528b163965c9bc2053de> OSX travis workers are overloaded
+[21:24] <541a528b163965c9bc2053de> I have to wake up early tomorrow, I won't have time to wait for them, feel free to push everything to PyPI while I'm sleeping :)
+[21:25] <541a528b163965c9bc2053de> ``` git checkout 0.18rc1 pip install wheelhouse-uploader python setup.py sdist fetch_artifacts ```
+[21:25] <541a528b163965c9bc2053de> then `twine upload dist/`
+[21:29] <54d4a1d6db8155e6700f853b> hehe alright
+[21:29] <54d4a1d6db8155e6700f853b> hm I messed up the channel config somewhere
+[21:30] <541a528b163965c9bc2053de> ...
+[21:30] <541a528b163965c9bc2053de> I going AFK, see you tomorrow. Good luck with conda-forge.
+[21:31] <57d8575a40f3a6eec0651444> hi
+[21:53] <54d4a1d6db8155e6700f853b> thanks @ogrisel and good night :)
+[21:54] <54d4a1d6db8155e6700f853b> hi @canadadeer_twitter 

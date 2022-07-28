@@ -1,0 +1,9 @@
+[13:14] <55d21ee30fc9f982beadabb8> http://scikit-learn.org/stable/modules/multiclass.html
+[13:14] <55d21ee30fc9f982beadabb8> @maykulkarni most of the time yes
+[13:15] <55d21ee30fc9f982beadabb8> @jotes35 SVM does not handle multi-label. But I am not sure that you have to hot one encode
+--------------------------------------------------------------------------------------------------
+[13:17] <55fc44590fc9f982beb11bbf> #10478 #10443 completed, needs review
+--------------------------------------------------------------------------------------------------
+[13:39] <55d21ee30fc9f982beadabb8> @maykulkarni I put 2 additional tests to do because I am almost sure that the solution in #10443 is not working if we don't introduce a dtype to the transformer as proposed [here](https://github.com/glemaitre/scikit-learn/commit/4e5e1f06ed1b90c0ffb00584db81a4e8c77e1dff)
+[13:40] <55fc44590fc9f982beb11bbf> Thanks, will check it out
+--------------------------------------------------------------------------------------------------

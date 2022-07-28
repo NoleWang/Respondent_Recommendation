@@ -1,0 +1,1 @@
+<s> <user> hi , everybody . i wouild like to make a system to recognize coins . i have made database with coins text information and a couple images for every coin . my hypothesis is to use <unka> approach to recognize coins . may be someone know <unka> or library that i can use ? thanks . </s>

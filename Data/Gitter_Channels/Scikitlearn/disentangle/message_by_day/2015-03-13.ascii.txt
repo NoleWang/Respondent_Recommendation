@@ -1,0 +1,2 @@
+[14:39] <541a528b163965c9bc2053de> Hi @amueller, I fixed a bug in @larsmans PR #4157 to optimize DBSCAN. It works great in my experiment. If we merge it quickly, I would like to get it in 0.16.
+[22:14] <54d4a1d6db8155e6700f853b> Fine with me :)

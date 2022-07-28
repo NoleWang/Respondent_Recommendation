@@ -1,0 +1,4 @@
+[18:17] <5479972adb8155e6700d9370> Hello ( I am back and I will try not to flood the your screen )
+--------------------------------------------------------------------------------------------------
+[18:25] <5479972adb8155e6700d9370> Using Scikit-learn 0.24.1 and sklearn-onnx 1.7.0, I try to export a pipeline embedding an HistGradientBoostingClassifier. The data contains only StandardScaled floating point features.  convert_sklearn prompts an error : 'numpy.bool' object has no attribute 'encode'StringTensorTypeStringTensorType Any idea please ?
+--------------------------------------------------------------------------------------------------

@@ -1,0 +1,3 @@
+<s> <user> <unka@> <unka> is blocked on a build </s>
+<s> <user> hi , i 'm fairly new to machine <unka/> learning , but i 'm currently working on a project where i want to classify some <unka> images . i want to initially run an <unka> clustering of similar images that do n't have labels . later on i want to take a set of labeled images and run some type of deep learning algorithm to aid in <unka> the images . what are some ways i can get started ? any help would be really appreciated , thank you ! </s>
+<s> <user> hi <unka@> <unka@> sorry ! got a bit busy :/ will resume work in a few hours !! :) </s>

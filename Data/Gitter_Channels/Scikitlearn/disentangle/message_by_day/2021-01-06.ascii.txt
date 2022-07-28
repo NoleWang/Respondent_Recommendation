@@ -1,0 +1,2 @@
+[12:43] <584177bed73408ce4f3a3d87> Hi there! I'm developing an online ensemble learning thingy, and I just wanted to praise you guys for the quality of your code. It's always a pleasure to read! (Even though I always weep looking at `BaseEstimator` and its cool `get/set_params`, wondering whether I should rewrite something similar or re-use your code -- and *wanting* to do neither :P )
+[13:29] <541a528b163965c9bc2053de> Thanks :)

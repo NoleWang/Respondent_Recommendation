@@ -1,0 +1,5 @@
+[00:11] <55aee1ab0fc9f982beaa80a5> @crimsonsoccer55 what do you want to do?
+[21:27] <574454a0c43b8c601974a563> Hi all :smile:
+[21:28] <574454a0c43b8c601974a563> I just want mention that Im working on a module which ports trained (sklearn) decision tree models to Java and C. Have a look if you are interested: https://github.com/nok/sklearn-decision-tree-porting
+[21:28] <574454a0c43b8c601974a563> 
+[21:40] <55aee1ab0fc9f982beaa80a5> Does anyone know if there are plans to expand the MLP/RBM modules to include more hierarchical learning techniques 

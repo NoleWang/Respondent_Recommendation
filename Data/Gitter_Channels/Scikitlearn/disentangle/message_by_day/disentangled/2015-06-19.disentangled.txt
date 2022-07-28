@@ -1,0 +1,16 @@
+[00:03] <53135b495e986b0712efc453> Okay I'll sleep and finish this data indep before sunday :punch:   My next blog on mon/tue should be on nested CV using the data indep LOLO!! :) good night!!
+[00:10] <53135b495e986b0712efc453> BTW is the 3 part explanation still verbose?
+[14:40] <53135b495e986b0712efc453>  Okay :) will add one!!
+--------------------------------------------------------------------------------------------------
+[14:17] <54d4a1d6db8155e6700f853b> @rvraghav93 I'll have a look in a bit. I still think you should definitely also show an example that is currently not working. I feel the current breakage is pretty bad and showing it emphasizes how important your work is
+--------------------------------------------------------------------------------------------------
+[15:19] <550f53e215522ed4b3dda5f6> Hi, I adjusted the displaying of verbose messages in ```GaussianMixture```, what do you think? The extra messages displayed when verbose=2 compared to those when verbose=1 are put the same line with 'Iteration'. I think that would be more clear. @ogrisel @amueller
+[15:19] <550f53e215522ed4b3dda5f6> [Comment](https://github.com/scikit-learn/scikit-learn/pull/4802#issuecomment-113303471)
+--------------------------------------------------------------------------------------------------
+[15:30] <550f53e215522ed4b3dda5f6> I have finished the most methods of ```_MixtureBase``` and methods of ```GaussianMixture``` related to full covariances. I think it's time to write tests before further implementation. In the master branch, the tests is implemented with ```unittest.TestCase```, while simple testing functions for other modules. Which one should I use?
+[15:34] <550f53e215522ed4b3dda5f6> I think displaying verbose messages makes ```fit``` a little messy. Any better idea?
+--------------------------------------------------------------------------------------------------
+[15:35] <54d4a1d6db8155e6700f853b> @xuewei4d We usually prefer simple functions for testing. If you feel that using TestCase would simplify the testing code or make it more clear, you can use that, too.
+--------------------------------------------------------------------------------------------------
+[16:05] <550f53e215522ed4b3dda5f6> Okay.
+--------------------------------------------------------------------------------------------------

@@ -1,0 +1,12 @@
+<s> <user> <unka@> 404 error on your link </s>
+<s> <user> <unka@> URL/https:/ URL/github.com/ <unka-/> ( under active development ) </s>
+<s> <user> <unka@> could you please let me know how to proceed with URL/https:/ URL/github.com/ <unk#a-/> </s>
+<s> <user> it seems impossible to pass <unka_> for a sparse <unka> that does not do <unka-> out of the box . </s>
+<s> <user> because of [ this <unk#a#(-./:]_> ) </s>
+<s> <user> <unka@> not sure what you mean by hierarchical learning , but in general any framework expansion of the neural network components is out of scope for <unka-> </s>
+<s> <user> <unka@> why is that out of scope , there is a beta <unka> module that works pretty well </s>
+<s> <user> giving users the ability to build networks layer by layer should be feasible </s>
+<s> <user> <unka@> i did n't say it 's <unka> , it just does n't fit within the simple api that <unka-> <unka> for . there are great libraries that allow modular composition of deep nets , like <unka> and <unka> . check out the <unka-> [ <unka(-./:]> ) for more about this " vision " . </s>
+<s> <user> <unka@> i had n't seen that before , i got it now </s>
+<s> <user> currently <unka-> pipelines and feature <unka> are extremely simple objects , and steps in a pipeline cannot and do not communicate with each other , but instead are trained independently . </s>
+<s> <user> yeah i always assumed the contributions were n't there , not that <unka> actively stayed away from those kinds of models </s>

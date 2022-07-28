@@ -1,0 +1,2 @@
+[00:28] <5a4f6d1cd73408ce4f864c42> I don't think mlp works that way. You can't determine which neuron made it predict that output @quant12345 . But try googling it.im not entirely sure either.
+--------------------------------------------------------------------------------------------------

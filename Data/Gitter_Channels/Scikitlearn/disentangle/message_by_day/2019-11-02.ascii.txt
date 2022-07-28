@@ -1,0 +1,17 @@
+[09:14] <55d21ee30fc9f982beadabb8> For the people joining the MAN-AHL sprint, you can find the instructions to install scikit-learn from source at the following documentation page: https://scikit-learn.org/dev/developers/advanced_installation.html#building-from-source
+[09:48] <55d21ee30fc9f982beadabb8> In addition, you can find the contributing guide as the following address: https://scikit-learn.org/dev/developers/contributing.html
+[09:51] <55d21ee30fc9f982beadabb8> Finally, if you are searching for an issue to work on, several issues have been tagged specifically for sprints: https://github.com/scikit-learn/scikit-learn/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3ASprint You can set some other tags if you want ("good first issues", etc.). You also free to search any issue that you are interested in on the issue tracker.
+[10:05] <589b9e0fd73408ce4f490ba4> One example of a "good first issue", particularly if you have never contributed to large open-source projects before is  https://github.com/scikit-learn/scikit-learn/issues/15440 aiming to improve docstrings. That would allow you to see how the contribution workflow works before tackling more complex issues.
+[10:35] <589b9e0fd73408ce4f490ba4> Also it's useful to read the contribution guide at https://scikit-learn.org/dev/developers/contributing.html
+[11:14] <5dbd6437d73408ce4fcfbf0f> Hi @rth I just tried to run `test_docstrings` and looks like just 13 out of 1619 tests pass. I suppose I can pick any estimator to start to improve docstrings, am I right? is there any scale of priorities?
+[11:17] <589b9e0fd73408ce4f490ba4> @gbroccolo Yes, you can pick any estimator that fails :)
+[11:17] <5dbd6437d73408ce4fcfbf0f> thanks
+[11:25] <5dbd6769d73408ce4fcfbf2c> Hi @rth I'd like to pick RadiusNeighborsClassifier
+[11:32] <589b9e0fd73408ce4f490ba4> Sure, please comment about it in the issue
+[16:13] <5dbd6437d73408ce4fcfbf0f> Would like to take care of one of the PR that has been labeled as `stalled` and `help wanted`. I suppose a new one can pick this and conclude the PR also taking into account the comments of the reviewers. What's the best here? Create a new PR that refers to the already existing one?
+[16:20] <5dbd5484d73408ce4fcfbe0b> Trying to take a look at https://github.com/scikit-learn/scikit-learn/issues/13045 -- Does this seem like a decent issue to tackle?
+[16:21] <54d4a1d6db8155e6700f853b> @norvan sure please comment there. Are you part of the wimlds sprint?
+[16:22] <5dbd5484d73408ce4fcfbe0b> I'm at the man hackathon
+[16:22] <54d4a1d6db8155e6700f853b> ah :)
+[16:22] <54d4a1d6db8155e6700f853b> I didn't realize there were two today lol
+[17:03] <55d21ee30fc9f982beadabb8> :)

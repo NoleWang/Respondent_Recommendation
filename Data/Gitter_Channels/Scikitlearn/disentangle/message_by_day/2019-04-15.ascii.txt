@@ -1,0 +1,2 @@
+[09:44] <558c0fd615522ed4b3e2b943> n_splits is the number of chunks produced. So n_splits=1 means not to split the data at all, leave it in one chunk
+[13:06] <5b58594ed73408ce4fa23ee3> That's not right if I understand you correctly, running  ``` cv = KFold(n_splits=2) len(list(cv.split(np.arange(10)))) ``` returns 2, i.e. 2 tuples of two arrays, not  a single tuple. 

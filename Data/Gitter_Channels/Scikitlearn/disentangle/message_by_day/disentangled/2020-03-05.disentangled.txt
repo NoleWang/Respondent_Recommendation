@@ -1,0 +1,7 @@
+[19:01] <5e614c10d73408ce4fdbbb92> Hello, i'm ML student and i'm loving scikit-learn. Altough, i'm struggling using AdaboostClassifier. I'd like to set MLPClassifier as base_estimator but it says "MLPClassifier does not implement sample_weight function". Is there anyway i can customize this to accept this learner and others?
+[19:02] <5e614c10d73408ce4fdbbb92> I also tried to create a VotingClassifier of MLPClassifiers, and then using AdaboostClassifier with VotingClassifier as base_estimator, but no success
+[22:22] <5e614c10d73408ce4fdbbb92> oh
+[22:23] <5e614c10d73408ce4fdbbb92> @NicolasHug do you recommend another option to achieve this? I really need an Adaboost of MLP classifiers, even if it's not scikit-learn
+--------------------------------------------------------------------------------------------------
+[22:17] <5baf7d9ad73408ce4fa9c9b2> @vendrafilm you can't use AdaBoost with MLP because MLP does not support sample weights and AdaBoost requires the the `base_estimator` parameter to support sample weights (it's in the docstring). AdaBoost works by re-weighting some of the samples, so support for SW is mandatory. There's no way around it unfortunately.
+--------------------------------------------------------------------------------------------------

@@ -1,0 +1,9 @@
+[02:10] <562a7da216b6c7089cb80965> I apologize for a rather naive python question, but I've forked sklearn, made some local changes introducing new functinoality, committed them, and now want to use my modified sklearn in a test project. Should I manipulate sys.path to import my modified sklearn? Do I need to run `make` in it first? Do I need to re-run `make` if I edit sklearn again? Or should I be running `make` as in [here](http://scikit-learn.org/stable/developers/advanced_installation.html#testing-scikit-learn-from-within-the-source-folder)?
+[02:16] <553d32d715522ed4b3df8b92> Hi, I suppose the last link would be better in case you are okay to use dev version for all purposes. I 
+[02:18] <553d32d715522ed4b3df8b92> Sorry sent message early. I use ``python setup.py develop``. In case you want both stable and dev versions, it would be better to use virtualenv to create a virtual environment for working on dev. hope it helps.
+[02:24] <562a7da216b6c7089cb80965> Ah, great idea RE virtualenv; thanks!
+[02:25] <553d32d715522ed4b3df8b92> Sure Anytime :+1: 
+[02:45] <584ae429d73408ce4f3bed37> Thanks  @amueller  :smile: 
+[04:58] <578b5ed1c2f0db084a235992> I am having some trouble getting an MLPRegressor sample to work. Any hints or pointers appreciated. Thank you. 
+[04:59] <578b5ed1c2f0db084a235992> P
+[05:05] <578b5ed1c2f0db084a235992> http://stackoverflow.com/questions/41069905/trouble-fitting-simple-data-with-mlpregressor

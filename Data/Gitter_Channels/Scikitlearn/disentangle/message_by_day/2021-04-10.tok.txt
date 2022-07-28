@@ -1,0 +1,2 @@
+<s> <user> <unka@> let 's say the latter example you gave . the problem is that with early stopping you wait some number of iteration before deciding to stop . so the final iteration is not the best . that 's why <unka> for example has a <unka_> parameter . </s>
+<s> <user> it is common in early stopping for the final <unka> loss to be higher than the loss a few <unka> before . how long you wait to see if the loss will start going down again is sometimes called " patience " . i think that 's what <unka> lightning calls it </s>

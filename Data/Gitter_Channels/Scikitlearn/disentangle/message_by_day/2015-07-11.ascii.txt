@@ -1,0 +1,20 @@
+[15:56] <54d4a1d6db8155e6700f853b> good morning everyone! sprints are starting now!
+[16:06] <53135b495e986b0712efc453> Good morning!! Scipy sprints??
+[16:33] <54d4a1d6db8155e6700f853b> yes!
+[16:35] <53135b495e986b0712efc453> Awesome! good luck with that! :)
+[19:21] <54e07d6515522ed4b3dc0858> Hi @amueller, sprint still going?
+[21:11] <54d4a1d6db8155e6700f853b> yeahg
+[21:12] <54d4a1d6db8155e6700f853b> @rvraghav93 @vene so what do we want to tackle next? I feel the sample_props is not clear enough to go ahead
+[21:12] <54d4a1d6db8155e6700f853b> Another possibility would be the multiple metrics grid-search
+[21:12] <54d4a1d6db8155e6700f853b> or nesting GridSearchCV and EstimatorCV
+[21:14] <54e07d6515522ed4b3dc0858> is #1626 where I should read about the second suggestion?
+[21:16] <54e07d6515522ed4b3dc0858> multiple metrics seems more straightforward to me right now
+[21:16] <54e07d6515522ed4b3dc0858> I agree sample_props is not ripe yet
+[23:17] <53135b495e986b0712efc453> Okay!! multiple metric it is! BTW the reason I suggested sample props to be done next was because it seemed more framework-ish... 
+[23:18] <54e07d6515522ed4b3dc0858> @rvraghav93 it would have been a great thing to work on next, but the solution isn't clear enough, as @amueller noted
+[23:19] <53135b495e986b0712efc453> yes indeed!! BTW I heard from Joel that he wouldn't be available for the next few weeks... too bad since he vouched for multiple metric support very much!
+[23:20] <53135b495e986b0712efc453> My reply to Luca was brief... will expand it as a blog post and reply to that mail like you had suggested... 
+[23:21] <54e07d6515522ed4b3dc0858> it was a good reply
+[23:22] <53135b495e986b0712efc453> Also I scoured through the notification email and found bits and pieces of the lost conversation on `classifier` param... have commented it there!!
+[23:33] <54e07d6515522ed4b3dc0858> I'm finally resuming my review! sorry for the delay
+[23:34] <54e07d6515522ed4b3dc0858> thanks for finding the e-mails, I thought there had been more discussion that I missed

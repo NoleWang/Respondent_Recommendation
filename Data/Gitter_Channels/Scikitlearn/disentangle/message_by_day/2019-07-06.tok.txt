@@ -1,0 +1,1 @@
+<s> <user> <unka@> yup , i figured it out yesterday and after some fight with tensorflow dependencies i got it running </s>

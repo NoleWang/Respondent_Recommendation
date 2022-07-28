@@ -1,0 +1,2 @@
+<s> <user> hi , what does it mean when <unka._`> <unka_`> = none ? does it mean it did n't even perform one single iteration ? </s>
+<s> <user> <unk#a@> the doc says <unka_> : none or array of shape ( <unka_> ,) actual number of iterations for each target . available only for sag and <unka> <unka> . other <unka> will return none . you're probably not using sag or <unka> ? </s>

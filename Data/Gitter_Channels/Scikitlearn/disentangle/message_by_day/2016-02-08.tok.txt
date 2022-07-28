@@ -1,0 +1,7 @@
+<s> <user> <unka-> regression appears to have 2 <unka> which makes it too early for <unka> learn if i understand correctly ( iiuc ?) </s>
+<s> <user> not just 2 <unka> . 2 <unka> since 2013 ... </s>
+<s> <user> just curious , <unk#a-@> , why are you interested in this method ? </s>
+<s> <user> it has better results than mine , on a public data set i used once . </s>
+<s> <user> yeah , it seems too early for <unka> </s>
+<s> <user> ^^ this was the only reason why i was curious to know how it yielded better results ... xd </s>
+<s> <user> <unk#a-@> what works well is if you make a separate <unka> learn compatible implementation and it can be added to URL/http:/ <unka-./> <unka./_> potentially </s>

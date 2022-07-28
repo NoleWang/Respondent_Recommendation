@@ -1,0 +1,33 @@
+[01:52] <54b2524adb8155e6700e8a8e> As its agglomerative, you dont lose a great deal by not stopping. You should just process the output of linkage_tree to adhere to your criteria.
+[10:01] <5581814615522ed4b3e20c6a> Its is possible to retrain a Sklearn classifier once loaded back from a pickled filed
+[10:02] <541a528b163965c9bc2053de> Yes but it will forget everything from the previous training set.
+[10:02] <5581814615522ed4b3e20c6a> So its again a fresh training?
+[10:02] <541a528b163965c9bc2053de> Yes.
+[10:02] <5581814615522ed4b3e20c6a> Is there a way to persist that memory
+[10:07] <541a528b163965c9bc2053de> There is no generic way, it depends on the model. Some models have a `partial_fit` method, it might or might not do want you want. Read the documentation, the reference papers of the literature (usually referenced in the docstring of the class) and the source code of the model to determine that whether it can help accomplish what you are looking for.
+[10:07] <5581814615522ed4b3e20c6a> @ogrisel thank you for this information
+[10:08] <541a528b163965c9bc2053de> My advice would be to always snapshot the training sets of your models so that you can retrain later, possibly with an extended / enriched training set.
+[10:10] <5581814615522ed4b3e20c6a> So you mean to keep the training set as a back up and letter merge the new dataset with old and fit
+[10:10] <541a528b163965c9bc2053de> yes, that's the safest thing to do.
+[10:10] <5581814615522ed4b3e20c6a> Perfect
+[10:11] <541a528b163965c9bc2053de> you can discard or down weight older samples if you think that the distribution of the data drifts over time.
+[10:11] <5581814615522ed4b3e20c6a> Ok that sounds good
+[14:39] <54d4a1d6db8155e6700f853b> @ogrisel did you tag at some point?
+[14:39] <54d4a1d6db8155e6700f853b> We should definitely tag before the sprint
+[14:40] <54d4a1d6db8155e6700f853b> looks like no branch yet
+[16:01] <59533ac5d73408ce4f6a9616> sir can i ask You something
+[16:02] <59533ac5d73408ce4f6a9616> hi there
+[16:02] <54d4a1d6db8155e6700f853b> hi
+[16:02] <59533ac5d73408ce4f6a9616> if i have few doubt
+[16:02] <541a528b163965c9bc2053de> @amueller no, not yet I got busy on other thing and now I am back at trying to debug a precision issue in the error computation of the TSNE model that has an impact on the stopping criterion.
+[16:02] <59533ac5d73408ce4f6a9616> for interviw
+[16:02] <59533ac5d73408ce4f6a9616> can any one help me
+[16:02] <54d4a1d6db8155e6700f853b> @ogrisel so branch now and backport TSNE once it's merged?
+[16:02] <541a528b163965c9bc2053de> @amueller  In any case, if I cannot find the bug before tomorrow, I will cut the branch 0.19.X anyway.
+[16:03] <54d4a1d6db8155e6700f853b> ok that
+[16:03] <54d4a1d6db8155e6700f853b> also good with me @ogrisel 
+[16:03] <59533ac5d73408ce4f6a9616> @amueller can i ask u something
+[16:03] <54d4a1d6db8155e6700f853b> sure
+[16:04] <59533ac5d73408ce4f6a9616> @amueller  I have an interviw  in a startup
+[16:05] <59533ac5d73408ce4f6a9616> @amueller I clear technical part but if somebody ask about is there any questions for me  what should i ask
+[16:05] <54d4a1d6db8155e6700f853b> This is not really a forum to discuss interview practices

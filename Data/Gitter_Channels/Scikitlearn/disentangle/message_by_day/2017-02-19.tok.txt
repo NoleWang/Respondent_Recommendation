@@ -1,0 +1,1 @@
+<s> <user> hello friends , first time on <unka> so introduction : i am <unka> <unka> 2nd year computer science <unka> from vit <unka> . i mostly contributed on back end tasks using python in google developers <unka-> . but i made a transition to machine learning this winter after taking a course on <unka> . looking forward to working and learning from all . thanks . </s>

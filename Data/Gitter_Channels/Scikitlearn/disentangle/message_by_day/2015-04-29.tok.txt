@@ -1,0 +1,13 @@
+<s> <user> wait , i think i confused it with <unka-> . sorry , never mind . <unka> is just the l1 variant . that should be pretty easy to add to the current code , i think . </s>
+<s> <user> how do you compute the <unka> <unka> in l1 space ? </s>
+<s> <user> <unka-> <unka> , right ? </s>
+<s> <user> from <unka-> wikipedia : " the <unka> is computed in each single dimension in the <unka-> <unka> of the <unka-> problem " </s>
+<s> <user> but <unka-> , my code , does not use <unka> space because it clusters <unka> variables </s>
+<s> <user> so , quite different from <unka-> or <unka-> </s>
+<s> <user> argh , ok , got double confused , then . </s>
+<s> <user> feel free to sent a pr to include it as related project . we do n't really have anything for <unka> variables at the moment , and we have n't really figured out the api . how do you denote which variables are <unka> and what are the inputs ? or are just all features assumed to be <unka> ? </s>
+<s> <user> there 's <unka-> , for which all is assumed <unka> ; and there 's <unka-> ( this combines <unka-> and <unka-> ), which receives x as a list of 2 arrays , one for numerical and one for <unka> variables </s>
+<s> <user> ok . so this list would mess with the <unka> api a lot , for <unka-> tries to sample along the first axis . </s>
+<s> <user> another option would be to take a single x , and a " <unka_> " variable that specifies which columns are <unka> </s>
+<s> <user> yeah , that is what i think we would like to do for the <unka> , but i 'm not sure . it is a bit awkward that they are float then , but not a big deal i guess </s>
+<s> <user> using <unka> <unka> would also be an option , maybe not in <unka-> though . </s>

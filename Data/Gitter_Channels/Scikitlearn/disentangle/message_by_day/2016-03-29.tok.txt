@@ -1,0 +1,9 @@
+<s> <user> hi <unk#a@> </s>
+<s> <user> anyone can help on URL/https:/ URL/github.com/ <unk#a-/?> </s>
+<s> <user> <unka-@> i love your gsoc proposal by the way </s>
+<s> <user> thanks <unka@> :) </s>
+<s> <user> the <unka> documentation says that all components are initialized to mean 0 , identity <unka> . </s>
+<s> <user> how is it possible to update the components if each component is identical ? </s>
+<s> <user> i vaguely recall something about <unka> using <unka+> to initialize the components somewhere . maybe i 'm imagining things . </s>
+<s> <user> the code seems to imply it uses a round of <unka> to initialize the components , but the documentation does n't say that . </s>
+<s> <user> <unka@> hello ! sorry i 've been a bit busy lately . ;( </s>

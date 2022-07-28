@@ -1,0 +1,2 @@
+[20:20] <564789be16b6c7089cbab8b7> is there  a suggested replacement for the deprecated http://scikit-learn.org/stable/modules/generated/sklearn.linear_model.RandomizedLogisticRegression.html ?
+[20:20] <564789be16b6c7089cbab8b7> or http://scikit-learn.org/stable/modules/generated/sklearn.linear_model.RandomizedLasso.html ?

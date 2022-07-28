@@ -1,0 +1,2 @@
+<s> <user> hello ! in <unka.`> , how do i tell it which column represents the label ? for example , i have a <unka> with the following columns : <unk#a_`> <unk#a_> <unk#a_> <unka`> how do i tell <unka> that <unka`> is the dependent variable ? </s>
+<s> <user> <unka.:@> you do n't , <unka> is <unka> and does n't take the labels as input , only the features . </s>

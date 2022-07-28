@@ -1,0 +1,20 @@
+<s> <user> good morning everyone ! <unka> are starting now ! </s>
+<s> <user> good morning !! scipy <unka> ?? </s>
+<s> <user> yes ! </s>
+<s> <user> awesome ! good luck with that ! :) </s>
+<s> <user> hi <unka@> , sprint still going ? </s>
+<s> <user> <unka> </s>
+<s> <user> <unk#a@> <unka@> so what do we want to tackle next ? i feel the <unka_> is not clear enough to go ahead </s>
+<s> <user> another possibility would be the multiple metrics <unka-> </s>
+<s> <user> or <unka> <unka> and <unka> </s>
+<s> <user> is <unk##> where i should read about the second suggestion ? </s>
+<s> <user> multiple metrics seems more straightforward to me right now </s>
+<s> <user> i agree <unka_> is not <unka> yet </s>
+<s> <user> okay !! multiple metric it is ! btw the reason i suggested sample props to be done next was because it seemed more <unka-> ... </s>
+<s> <user> <unk#a@> it would have been a great thing to work on next , but the solution is n't clear enough , as <unka@> noted </s>
+<s> <user> yes indeed !! btw i heard from joel that he would n't be available for the next few weeks ... too bad since he <unka> for multiple metric support very much ! </s>
+<s> <user> my reply to <unka> was brief ... will expand it as a blog post and reply to that mail like you had suggested ... </s>
+<s> <user> it was a good reply </s>
+<s> <user> also i scoured through the notification email and found bits and pieces of the lost conversation on <unka`> param ... have commented it there !! </s>
+<s> <user> i 'm finally resuming my review ! sorry for the delay </s>
+<s> <user> thanks for finding the e-mails , i thought there had been more discussion that i missed </s>

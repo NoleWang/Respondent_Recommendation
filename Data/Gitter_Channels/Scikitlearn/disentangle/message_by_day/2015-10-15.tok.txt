@@ -1,0 +1,75 @@
+<s> <user> <unka@> sorry i saw the chat just now ! i 'll build the docs and look for errors :) </s>
+<s> <user> <unk#a@> i was planning to look at the broken examples too . let me know if we can split the work between the two of us . </s>
+<s> <user> yes sure ! i 'm looking at URL/http:/ <unka-./> <unka./_> </s>
+<s> <user> let me know if you want to take over ... </s>
+<s> <user> do you have a list of all the broken examples ? i am generating the doc right now but if you already have the full list i could look at another broken example . </s>
+<s> <user> wait andy posted one more broken link right ? - [ <unka(-./]_> ) unless you are more than 20% done with the doc generation i 'll generate the list and let you know shortly :) i need to generate the docs with plots for the one of my <unka> anyway ... so i could save you the trouble ... if you want please take over the URL/http:/ <unka-./> <unka./_> too ... that seems to be due to a problem in importing ( <unka`> scipy import <unka`> seems to <unka(> ?)) </s>
+<s> <user> is there a way to work with 2 branches at once ? :p </s>
+<s> <user> ok i 'll take a look at URL/http:/ <unka-./> <unka./_> </s>
+<s> <user> > is there a way to work with 2 branches at once ? clone the <unka-> repo twice , create 2 <unka> env or 2 <unka> and <unka`> install -e .` each repo in each env . </s>
+<s> <user> okay !! thanks :) </s>
+<s> <user> <unka@> any review for the <unka> sync <unk##> ? it reverts a broken experimental change in the pickle format that was in introduced in <unka> <unk#a.> ( hence not part of <unka-> <unk#.> ). see : URL/https:/ URL/github.com/ <unk#a#-./> </s>
+<s> <user> i generated the doc locally so i am going to create one ticket by broken example . fwiw i found 5 broken examples : <unk#a./_> <unka./_> <unka./_> <unka./_> <unka./_> </s>
+<s> <user> note the <unka> one is broken only for numpy 1.10 </s>
+<s> <user> you did doc with plots right ? how did it get over so fast ? it takes forever on my machine :/ anyway let me know if you want me to look into any of those while you work on other things ... </s>
+<s> <user> yeah make html . too <unk#a/~> minutes on my machine . </s>
+<s> <user> let 's split the work on fixing the examples . </s>
+<s> <user> i 'll take the last 2 if no one else is working on it ? </s>
+<s> <user> <unka_> and <unka_> ? sure i have a look at something else . </s>
+<s> <user> yea ! </s>
+<s> <user> i will have a look at <unka._> </s>
+<s> <user> i can take <unka_> should be trivial </s>
+<s> <user> <unk#a@> the <unka_> one is due to the <unka_> not all having the same shape , not sure why ... </s>
+<s> <user> <unka> looks like a real regression :( </s>
+<s> <user> i 'm back </s>
+<s> <user> i did the <unk#a_> fix while i was at it . </s>
+<s> <user> <unka@> are you planning on uploading the website for the rc ? no , right ? </s>
+<s> <user> i think it would be nice to fix URL/https:/ URL/github.com/ <unk#a-/> </s>
+<s> <user> should i go for that ? </s>
+<s> <user> oh right there is URL/https:/ URL/github.com/ <unk#a-/> </s>
+<s> <user> is there a reason why we do n't have the <unka.`> in our repo ? </s>
+<s> <user> yeah because it would need to include numpy and scipy and we do n't want people to install this via pip on linux </s>
+<s> <user> is anyone doing <unk##> ? </s>
+<s> <user> okay .. and yes i am ... </s>
+<s> <user> URL/http:/ <unka-./> <unka./> is entirely broken </s>
+<s> <user> it 's the sphinx version with the fun </s>
+<s> <user> btw , do we want to fix the " <unka> : <unka> comparison failed ; returning <unka> instead , but in the future will perform <unka> comparison " ? </s>
+<s> <user> <unka@> which version of sphinx is on the doc build bot ? </s>
+<s> <user> <unka@> i mean it is not really release related but for the build bot we need to fix the sphinx version to 1.2.3 not sure how to do that with a salt state </s>
+<s> <user> oh wait , just name = sphinx == 1.2.3 </s>
+<s> <user> > <unka@> are you planning on uploading the website for the rc ? no , right ? updating the <unka/> part ? no i do n't think we should do it for the beta . </s>
+<s> <user> i agree . </s>
+<s> <user> so the plotting examples are " not that critical " for the release . though it would be nice to fix them </s>
+<s> <user> for the final they are </s>
+<s> <user> yeah but not for the rc . </s>
+<s> <user> i thought you wanted to do an <unka/> today ? or the full release ? </s>
+<s> <user> <unka@> > which version of sphinx is on the doc build bot ? it using the latest stable version installed by pip : URL/https:/ URL/github.com/ <unk#a#-./> </s>
+<s> <user> it 's not updated as long as the machine does not crash and we restart it though ( which is very rare ). </s>
+<s> <user> yeah that is no good . i just sent you a pr to fix it to 1.2.3 </s>
+<s> <user> current stable does n't build the api docs </s>
+<s> <user> ok </s>
+<s> <user> URL/https:/ URL/github.com/ <unk#a-/> </s>
+<s> <user> i just put some instructions to let you try to run it . if it fails , tell me and i will do it . </s>
+<s> <user> ok . gotta grab some lunch now </s>
+<s> <user> <unk#a@> if you're bored you can try to bisect URL/https:/ URL/github.com/ <unk#a-/> </s>
+<s> <user> do you want me to do the <unka-> stuff ? </s>
+<s> <user> you can always give it a try later </s>
+<s> <user> guten <unka> ! </s>
+<s> <user> merci </s>
+<s> <user> i can try it later </s>
+<s> <user> i do n't see any fires at the moment </s>
+<s> <user> ok </s>
+<s> <user> fixing more warnings in master and fixing the <unka-> would be nice </s>
+<s> <user> ok </s>
+<s> <user> how about the " <unka> : <unka> comparison failed ; returning <unka> instead , but in the future will perform <unka> comparison " ? from numpy ? </s>
+<s> <user> anyhow , my stomach demands attention </s>
+<s> <user> website build is fixed . thanks <unka@> </s>
+<s> <user> good </s>
+<s> <user> what is the timeline ? how long will you be around today ? </s>
+<s> <user> many of the the " <unka> comparison failed ; returning <unka> instead , but in the future will perform <unka> comparison " are due to us comparing parameters that might be arrays to strings . like <unka`> init == " <unka"`> </s>
+<s> <user> i will soon logout . i wanted to do the <unka> example fix but we can do that after the cut of the <unk#a.> branch . </s>
+<s> <user> do you want to cut it today ? otherwise i can do it tomorrow morning ( paris time ). </s>
+<s> <user> i just merged the <unka> upgrade </s>
+<s> <user> cool . </s>
+<s> <user> i 'll fix " <unka> : <unka> comparison failed ; returning <unka> instead , but in the future will perform <unka> comparison " in a couple of minutes . i'd like to include that in the rc . then you can cut it tomorrow morning ? </s>
+<s> <user> URL/https:/ URL/github.com/ <unk#a-/> </s>

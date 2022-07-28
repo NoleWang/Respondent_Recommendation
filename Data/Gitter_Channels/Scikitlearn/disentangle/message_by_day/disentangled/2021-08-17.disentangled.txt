@@ -1,0 +1,7 @@
+[09:24] <5baf7d9ad73408ce4fa9c9b2> @mloning most PRs come with a changelog entry, e.g. https://github.com/scikit-learn/scikit-learn/pull/20727/files Then we have scripts to process / check it which are described in https://scikit-learn.org/stable/developers/maintainer.html (we call the change log a "What's new")
+--------------------------------------------------------------------------------------------------
+[12:01] <5b58594ed73408ce4fa23ee3> @NicolasHug thanks - that's very helpful!
+--------------------------------------------------------------------------------------------------
+[17:32] <5fd8fff2d73408ce4ff69a39> A very good evening everyone!! I am trying to setup scikit-learn project into my development env but encountered with an error when I try to run "pip install --verbose --no-build-isolation --editable ."
+[17:33] <5fd8fff2d73408ce4ff69a39> Can someone help me to fix this error?
+--------------------------------------------------------------------------------------------------

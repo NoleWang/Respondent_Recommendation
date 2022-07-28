@@ -1,0 +1,12 @@
+<s> <user> <unk#a@> <unka> your questions , please [ <unk#a(-./:]> ) on the first question </s>
+<s> <user> maybe with one tree it 's <unka> problem , but i think after <unka> , your tree will be so big </s>
+<s> <user> <unk#a@_> looked graphs of all 100 trees . they have different architectures . do even , if possible to unite them , the tree will be huge . regards </s>
+<s> <user> 1 . to take advantage of a random forest , for later use in a single decision tree <unka(> ). getting significant features from random <unka> . then i use only these features in one solution tree . what do you think about this ? 2 . is there a need to balance classes in the random forest and decision <unka(> number of signs in class <unk#a-> times more than in the 2nd class )? if so , what features should i use ? </s>
+<s> <user> <unk#a@> 2 . <unka> , [ first in <unka(-./:]> ) </s>
+<s> <user> 1 . i do n't understand your questions , if you mean reduce your tree after connections , i think you can get <unka> algorithm , minimum spanning trees </s>
+<s> <user> i found good [ <unk#a(./:]~> ) </s>
+<s> <user> <unk#a@_> thank you ! on the second issue was meant another . already found a solution : <unka_> <unka=> </s>
+<s> <user> depends about what tree we're talking , if binary , them balanced is in the left and in the right , we have equal amount of nodes </s>
+<s> <user> im only now get your message , strange </s>
+<s> <user> alright , thats correct , you are welcome </s>
+<s> <user> question in that , if we connected 100 tree , for example , we get a graph , not tree obviously , and our problem is to find minimum spanning tree </s>

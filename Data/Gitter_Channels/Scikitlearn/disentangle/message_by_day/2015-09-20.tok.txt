@@ -1,0 +1,4 @@
+<s> <user> <unka@> <unka@> i 've fixed the documentation and the <unka`> param ... i 've hosted the doc ( with examples and all the new changes but without plots ) [ <unk#a(./:]_> ) </s>
+<s> <user> the doc with plots is building ... it will hopefully get over in a few hours and i 'll host it once its done ... </s>
+<s> <user> ah one more thing ... the <unka> not testing the <unka_`> is not yet fixed ... :/ i suspect its because that module has not public python files ? that would be the only thing left to investigate apart from your final reviews on <unk#a#-/> </s>
+<s> <user> and moving <unka._`> to <unka.`> once the review is over :) </s>

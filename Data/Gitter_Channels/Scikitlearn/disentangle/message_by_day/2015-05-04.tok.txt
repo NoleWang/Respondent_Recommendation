@@ -1,0 +1,4 @@
+<s> <user> <unka@> <unka`> try : from <unka.> import <unka> except importerror : # backward compat for <unka-> < <unk#.> class <unka(> ): pass <unk`> should work . </s>
+<s> <user> <unka@> what do you think of <unk##> ? </s>
+<s> <user> after three years , i 'm apparently still confused by <unka_> vs <unka_> </s>
+<s> <user> <unka@> if you have time , your input on <unk##> would be nice . </s>

@@ -1,0 +1,5 @@
+<s> <user> hello ! am i right that URL/https:/ URL/github.com/ <unk#a-/> is also within the sprint scope ? can i take it ? </s>
+<s> <user> <unk#a@> review it you mean ? </s>
+<s> <user> anyone tackling this already URL/https:/ URL/github.com/ <unk#a-/> ? seems easy and would be useful for <unka> as well . </s>
+<s> <user> <unka@> i had impression it did not fully address URL/https:/ URL/github.com/ <unk#a-/> so i thought i could continue working on it ? </s>
+<s> <user> <unka@> you can go ahead if there is not pr yet </s>

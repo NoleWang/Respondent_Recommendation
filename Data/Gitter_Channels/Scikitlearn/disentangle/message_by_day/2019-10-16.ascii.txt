@@ -1,0 +1,2 @@
+[13:33] <5da71b2fd73408ce4fce084d> how to learn complete sk learn ? please give the resources?
+[13:35] <5b4c9e4bd73408ce4fa10b88> Andreas Muller's book, Introduction to Machine Learning with Python: A Guide for Data Scientists, is quite complete. You can also look at the user guides: https://scikit-learn.org/stable/user_guide.html

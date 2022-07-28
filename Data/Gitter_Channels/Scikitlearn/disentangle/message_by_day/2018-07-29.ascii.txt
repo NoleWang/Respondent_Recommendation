@@ -1,0 +1,2 @@
+[05:35] <5a2c58c8d73408ce4f8294ba> Then don't do image recognition
+[18:21] <5a2c58c8d73408ce4f8294ba> @Ishaan28malik Tasks are more claimed than assigned. Go to the open issues on github and find one you can do. Ask if anybody is activly working on it. If not then you can give it a try

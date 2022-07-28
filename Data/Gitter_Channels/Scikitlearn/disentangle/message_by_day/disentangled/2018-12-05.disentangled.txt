@@ -1,0 +1,4 @@
+[13:26] <5b3f6eedd73408ce4f9fd9e7> Hi, i get following error when im trying to apply one hot to categoric columns. I didnt understand what is problem exactly. Error is: TypeError: Wrong type for parameter `n_values`. Expected 'auto', int or array of ints, got <class 'numpy.ndarray'>
+--------------------------------------------------------------------------------------------------
+[13:33] <5b3f6eedd73408ce4f9fd9e7> and here is the my one hot code: col_index = ([train.columns.get_loc(c) for c in train.columns if c in temp_cat_cols]) print('OneHot Uygulanacak Columns: ', col_index) ohe = OneHotEncoder(categorical_features=col_index, handle_unknown='ignore') X_train = ohe.fit_transform(X_train).toarray() X_test = ohe.transform(X_test).toarray()
+--------------------------------------------------------------------------------------------------

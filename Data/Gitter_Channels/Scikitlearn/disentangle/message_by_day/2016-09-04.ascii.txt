@@ -1,0 +1,14 @@
+[03:53] <56a34c16e610378809bdc988> Hello @amueller @nelson-liu @GaelVaroquaux I had a look at #7319. 
+[03:53] <56a34c16e610378809bdc988> Well I agree, nose has some deprecated code now
+[03:53] <56a34c16e610378809bdc988> Shifting to pytest can be a really good choice.
+[03:54] <56a34c16e610378809bdc988> I recently completed GSoC 16 with _TARDIS_, I am staying there as a regular contributor, although I always wanted to get involved in an ML centric community.
+[03:55] <56a34c16e610378809bdc988> Throughout my project I have worked a lot with pytest, and read a lot of its docs - I can take up this issue to solve on a regular basis.
+[03:56] <56a34c16e610378809bdc988> While I have used a little of scikit, I am planning to get comfortable with the codebase for sometime, and then move ahead with a series of PRs. Would you accept my PRs a few weeks down the line ?
+[03:56] <56a34c16e610378809bdc988> ( Because I see you are choosing it for next GSoC )
+[03:59] <56c4f19ae610378809c1f8ae> hi @karandesai-96, thanks for inquiring! Id suggest you copy and paste your message onto the issue, since not everyone checks gitter.
+[03:59] <56b80528e610378809c05a48> +1 on what @nelson-liu said
+[03:59] <56a34c16e610378809bdc988> @nelson-liu very well :D
+[04:00] <56c4f19ae610378809c1f8ae> that would help it get more visibility + there might be nuances in the switch to consider that would require input from other developers, so best to see if you can get a solid green light there first
+[04:03] <56a34c16e610378809bdc988> Great, done. I'll be happy to take it up if :traffic_light: :checkered_flag: 
+[04:06] <56c4f19ae610378809c1f8ae> great, id also be happy to pitch in :) i dont know too much about py.tests and this seems like a good opportunity to learn
+[04:57] <53fdba59163965c9bc200ba2> Thanks @ItchyJunk

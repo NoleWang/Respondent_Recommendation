@@ -1,0 +1,39 @@
+<s> <user> hello from berlin ! </s>
+<s> <user> how can i debug using the simple 'print' commands ? this is what i tried :, i first put a <unka(`> ( <unka> , <unka)`> in my code . then if i run the tests using <unka`> <unka./`> then i do n't get output from the <unka`> statement , i get whatever was expected without the <unka`> statements . ( i 'm sure that running those test would definitely reach those <unka`> statements ). has this got something to do with <unka*.`> files ? </s>
+<s> <user> hello developers ! am a newbie . can someone provide me instructions link to build & run <unka-> from source code . am messing up with things . </s>
+<s> <user> i guess this URL/http:/ <unka-./> <unka./_> should probably work . </s>
+<s> <user> am not getting how to put the cloned code to work . help </s>
+<s> <user> are you able to do `make <unka`> ( without errors ) on root <unka-> directory ? </s>
+<s> <user> nope </s>
+<s> <user> <unk#a./:_> : <unka> </s>
+<s> <user> <unk#`> failed , <unk#> passed , 16 skipped , <unk#> warnings in <unk#.> <unka`> </s>
+<s> <user> if you could paste into a pastebin or <unka> that might help </s>
+<s> <user> URL/https:/ URL/pastebin.com/ <unk#a/> </s>
+<s> <user> <unka-@> do n't worry about that , that looks like ups messing up . </s>
+<s> <user> we need to fix that , though </s>
+<s> <user> though master if working </s>
+<s> <user> hm ... </s>
+<s> <user> so might be that you're mixing different installations ? </s>
+<s> <user> working now </s>
+<s> <user> it says : <unk#`> failed , <unk#> passed , 16 skipped , <unk#> warnings in <unk#.> <unka`> , it does contain <unka'> non-zero value , does it indicate ruling out mixing installations ? </s>
+<s> <user> lol </s>
+<s> <user> oh cool . </s>
+<s> <user> what is <unka'> messing up' ? </s>
+<s> <user> meant " us messing up " though i double checked , and it 's correct </s>
+<s> <user> what time will it take to get familiar with things over here ? </s>
+<s> <user> ? </s>
+<s> <user> m newbie . understanding issues and working is still tough despite working in python for long </s>
+<s> <user> well depends on what you mean with " getting familiar with things over here " ... i 've been doing machine learning for err .. 8 years and learn new stuff most days ;) </s>
+<s> <user> i meant the open-source terms <unka:> : </s>
+<s> <user> <unka@> since you are here . can you please answer this query of mine URL/https:/ <unka./> <unk#a-/=?> ? ( i think otherwise it might get lost upward ) </s>
+<s> <user> same applies , i guess ? </s>
+<s> <user> <unka@> how do you run <unka> ? </s>
+<s> <user> yeah , sure . doing my best </s>
+<s> <user> i think you need -s -v ? </s>
+<s> <user> <unka`> <unka./`> </s>
+<s> <user> but i 'm relatively new to <unka> ;) </s>
+<s> <user> nope i do n't use <unka-`> -v` arguments . </s>
+<s> <user> aah . </s>
+<s> <user> it does work accordingly to what is expected . </s>
+<s> <user> passing arguments is important i guess . </s>
+<s> <user> i 'm sure , i am even new ( newer ?) than you on <unka> . </s>

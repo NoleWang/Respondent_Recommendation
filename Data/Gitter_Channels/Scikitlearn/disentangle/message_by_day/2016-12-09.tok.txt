@@ -1,0 +1,9 @@
+<s> <user> <unka@> can you share your application domain ? </s>
+<s> <user> <unka@> it means none of the values is masked out </s>
+<s> <user> i.e . it 's a normal full array </s>
+<s> <user> <unka@> i genuinely do n't know the application domain . government types are asking for a general library for <unka> <unka> in python . </s>
+<s> <user> which , while that ignorance is somewhat suboptimal , also means that we get to build software for the common case . </s>
+<s> <user> ( this is somewhat typical in my world ) </s>
+<s> <user> huh alright </s>
+<s> <user> well in machine learning , <unka> <unka> applications are somewhat " new " </s>
+<s> <user> given the wiggle room , how would you direct my time to best benefit the community if other people were paying for it ? </s>

@@ -1,0 +1,4 @@
+<s> <user> i noticed <unka-> is taking part in gsoc . i was wondering if URL/https:/ URL/github.com/ <unk#a-/> would make a nice <unka> ? </s>
+<s> <user> it has the advantage not being too technical i think </s>
+<s> <user> <unka@> the projects should be in line with the <unka> specified there : URL/https:/ URL/github.com/ <unk#a()-/> </s>
+<s> <user> <unka@> ok thanks </s>

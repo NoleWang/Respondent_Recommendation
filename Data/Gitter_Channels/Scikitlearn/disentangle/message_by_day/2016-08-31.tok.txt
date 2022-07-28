@@ -1,0 +1,5 @@
+<s> <user> got it . thanks ! i understand <unka> chain mechanics , but was wondering if there are other better alternatives </s>
+<s> <user> plus you mentioned tensorflow using <unka> , i think that is awesome </s>
+<s> <user> <unka@> ahh there are different <unka> each with their ups and downs i think . </s>
+<s> <user> <unka@> is it possible to use for example <unka> to do <unka> parsing , then i use <unka-> and bag of words to classify the tokens , and possibly attempt to make a prediction ? does that even work ? </s>
+<s> <user> hello everyone ! is anyone <unka> in <unka> 's ml <unka> course URL/https:/ <unka./> <unka-/> ? </s>

@@ -1,0 +1,14 @@
+[13:42] <579618a040f3a6eec05c5e42> @amueller here's an example: ``` array(['dsny', 'bcc - brooklyn south', 'sanitation condition',        '15 street cond/dump-out/drop-off', 'street', '218 31 street',        '31 street', 'brooklyn', 'closed', '07 brooklyn', 'brooklyn'],       dtype=object) ```
+[13:46] <579618a040f3a6eec05c5e42> [![example.png](https://files.gitter.im/scikit-learn/scikit-learn/LYOA/thumb/example.png)](https://files.gitter.im/scikit-learn/scikit-learn/LYOA/example.png)
+[13:47] <579618a040f3a6eec05c5e42> here `X` is (n_samples, 11)
+--------------------------------------------------------------------------------------------------
+[16:29] <54d4a1d6db8155e6700f853b> these two are different examples, though?! Ok so do you want one vectorizer for each column?
+[16:30] <54d4a1d6db8155e6700f853b> ``make_column_transformer(*[(c, CountVectorizer()) for c in X.columns])`` should do that.
+[16:30] <54d4a1d6db8155e6700f853b> but really status here is probably a categorical variable - thought I guess CountVectorizer also works for those
+[16:31] <54d4a1d6db8155e6700f853b> Well unless there's a space in one of the category names - so explictly saying these are categorical might be better
+--------------------------------------------------------------------------------------------------
+[17:26] <579618a040f3a6eec05c5e42> > these two are different examples, though?  They are the same in the sense that the picture is `X` and the array above corresponds just to the first row of `X`.   > but really status here is probably a categorical variable  True, its a categorical value.
+[17:27] <579618a040f3a6eec05c5e42> Thanks!
+--------------------------------------------------------------------------------------------------
+[17:27] <54d4a1d6db8155e6700f853b> yeah well treating a single column is different from treating the table, and the single column example is exactly what CountVectorizer does
+--------------------------------------------------------------------------------------------------

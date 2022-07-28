@@ -1,0 +1,18 @@
+<s> <user> i feel we could add more to the doc string of the dataset loaders ... ( perhaps a description or at least a link ?) for example in the <unka> documentation no domain related info is given ... </s>
+<s> <user> domain related as in no info as to what the targets represent or what the various attributes are ? </s>
+<s> <user> <unka@> <unka@> said there were delays in the visa process ;( i 've tried pestering him too :p i really hope i'd be there by september at the least :| </s>
+<s> <user> most of them have readmes after loading , i guess . </s>
+<s> <user> was n't the <unka> fixed recently ? </s>
+<s> <user> <unk#a@> last time i checked there were still unresolved comments on the model selection pr . </s>
+<s> <user> no it is still the same afaik ... yes a few ... i 'm working on them :) i 'm actually finishing up on my blog post ! will publish the same in a few mins ... would you be around ? if so i 'll trouble you for a review ! </s>
+<s> <user> i can try . i 'm pretty busy at the moment but i 'll have a look </s>
+<s> <user> does anyone know where <unka@> is ? holidays ? </s>
+<s> <user> <unka/`> ;) </s>
+<s> <user> ? </s>
+<s> <user> performing a vim search for <unka@> ;) </s>
+<s> <user> ah ^^ </s>
+<s> <user> <unka@> <unka@> this is my new blog post ... could you check it and let me know if it looks okay ? </s>
+<s> <user> URL/http:/ <unk#a./> <unk#a-./> </s>
+<s> <user> i 'll check it tomorrow </s>
+<s> <user> can this get another review : URL/https:/ URL/github.com/ <unk#a-/> so we can merge it before URL/https:/ URL/github.com/ <unk#a-/> ? </s>
+<s> <user> also we should really work on URL/https:/ URL/github.com/ <unk#a-/> </s>

@@ -1,0 +1,20 @@
+[03:09] <55fc44590fc9f982beb11bbf> Alroght thanks I'll change it with something else
+[03:10] <55fc44590fc9f982beb11bbf> Alright *
+--------------------------------------------------------------------------------------------------
+[05:42] <54b2524adb8155e6700e8a8e> #9099 is also a fairly large, non-core project... Designing a better way to print out estimators.
+--------------------------------------------------------------------------------------------------
+[15:29] <55fc44590fc9f982beb11bbf> Is github down?
+--------------------------------------------------------------------------------------------------
+[15:51] <58faf245d73408ce4f5a2675>  @maykulkarni nope
+--------------------------------------------------------------------------------------------------
+[15:52] <55fc44590fc9f982beb11bbf> It's working now, it was d os n
+[15:52] <55fc44590fc9f982beb11bbf> It was down a while ago
+--------------------------------------------------------------------------------------------------
+[16:09] <5a477efed73408ce4f85632f> @maykulkarni - Were you trying to access using Jio internet because I faved the same problem
+[16:09] <5a477efed73408ce4f85632f> *faced
+--------------------------------------------------------------------------------------------------
+[16:09] <55fc44590fc9f982beb11bbf> No github was down https://status.github.com/messages
+--------------------------------------------------------------------------------------------------
+[17:10] <5a429497d73408ce4f84e60d> guys does anyone have a cool idea for a simple machine learning project?
+[17:11] <5a429497d73408ce4f84e60d> using sciket-learn which is never done before?
+--------------------------------------------------------------------------------------------------

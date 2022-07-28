@@ -1,0 +1,4 @@
+[12:15] <5b7904d9d73408ce4fa50f7a> Hello guys, I wish to start contributing to sci-kit learn. As I am a beginner, so can anybody suggest me how to start contributing.
+--------------------------------------------------------------------------------------------------
+[16:09] <5a2c58c8d73408ce4f8294ba> There are issues on GitHub marked with "easy"/"good first issue" https://github.com/scikit-learn/scikit-learn/issues
+--------------------------------------------------------------------------------------------------

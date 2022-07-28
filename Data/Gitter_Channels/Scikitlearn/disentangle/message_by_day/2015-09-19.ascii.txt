@@ -1,0 +1,4 @@
+[13:03] <53135b495e986b0712efc453> how about `"Group labels for the samples used while splitting the dataset into test/train set."`?
+[13:03] <53135b495e986b0712efc453> @amueller @vene 
+[13:06] <53135b495e986b0712efc453> This would be for all the `labels` parameter in `.*Label.*` classes...
+[18:07] <54d4a1d6db8155e6700f853b> yes that sounds good

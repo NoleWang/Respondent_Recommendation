@@ -1,0 +1,4 @@
+<s> <user> hey i am a newbie . would love to contribute to the organization . can anyone guide me on this ? </s>
+<s> <user> you may start by solving easy issues . its available at URL/https:/ URL/github.com/ <unk#a%+-/=?> </s>
+<s> <user> solve the ones which is not currently being attempted by anyone else . ( i 'm a newbie too :p ) </s>
+<s> <user> alright . thanks <unka:> : </s>

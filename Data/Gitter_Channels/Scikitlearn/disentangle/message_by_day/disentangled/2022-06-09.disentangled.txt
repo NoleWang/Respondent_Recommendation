@@ -1,0 +1,2 @@
+[14:20] <5f31510fd73408ce4febd603> Hello, I see `ElasticNet` does not have an `n_jobs` parameter. Does that mean it uses all available resources on the machine to train? https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.ElasticNet.html
+--------------------------------------------------------------------------------------------------

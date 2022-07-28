@@ -1,0 +1,3 @@
+<s> <user> hi , a recent ml enthusiast trying to contribute . i just forked the <unka-> repo and got a very easy pr merged . </s>
+<s> <user> i set up a dev environment using virtualenv , so that it does not interfere with my existing <unka-> installation . but i see that the docs does not mention it at all . is there any particular reason ? or am i missing something obvious here ? </s>
+<s> <user> <unka@> : first import from <unka._> import <unka_> then <unka_> , <unka_> , <unka_> , <unka_> = <unka(_> x , y , <unk#a.=_> , <unk#a=_> ) x is a <unka> having only features and y is a <unka> having only target from your original dataset </s>

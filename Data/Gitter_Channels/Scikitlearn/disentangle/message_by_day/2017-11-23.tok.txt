@@ -1,0 +1,3 @@
+<s> <user> <unka@> when i <unka> data , set sharing to true , what is shared ? </s>
+<s> <user> <unka@> the distributed <unka> data in <unka> is the mapreduce method , why not use spark ? </s>
+<s> <user> ah , never mind . i found about 'help <unka'> here : URL/http:/ <unka-./> <unka#-./> </s>

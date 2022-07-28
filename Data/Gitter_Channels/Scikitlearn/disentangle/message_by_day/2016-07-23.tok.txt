@@ -1,0 +1,14 @@
+<s> <user> hello can anyone help me on this [ <unk#a#(-./:]> ) issue ? </s>
+<s> <user> my test pass on 64-bit computer but fail on 32-bit computer , and the occurs at [ this <unk#a#(-./:]_> ). </s>
+<s> <user> i wonder what is the difference to call [ <unka(-./:]_> ) on 32-bit and 64-bit computer when fitting <unk#a.`> data ? </s>
+<s> <user> hi everyone , just a small question . is the link to <unka`> package [ <unka#(-./:]_> ) the expected one ? </s>
+<s> <user> <unk#a@> the tests are failing on <unka> , so it is windows environment right ? is it failing on 32 bit machines working on ubuntu or mac too ? </s>
+<s> <user> good point . i am not sure about ubuntu but not on mac </s>
+<s> <user> <unk#a@> thanks . </s>
+<s> <user> and the link you pointed out seems obviously wrong <unka:> : </s>
+<s> <user> yeah the other day someone was asking about the testing instructions and then i accidentally stumbled upon this . i just thought it should be clarified once ! </s>
+<s> <user> and in case you do n't have access to one , i can checkout your branch and check on my machine . i am running ubuntu 14.04 on 32 bit vm machine . </s>
+<s> <user> i only try to reproduce it using 32-bit python but run on an 64-bit mac </s>
+<s> <user> thanks a lot ! </s>
+<s> <user> it looks good on 32-bit python with 64-bit mac </s>
+<s> <user> oh okay . i have no other idea about the possibility for the error . sorry . </s>

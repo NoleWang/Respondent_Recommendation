@@ -1,0 +1,3 @@
+[06:09] <56b80528e610378809c05a48> Hey guys, can anyone tell me why the CI failed at [this line](https://travis-ci.org/scikit-learn/scikit-learn/jobs/116304478#L2329)? According to the [doc](http://docs.scipy.org/doc/scipy-0.14.0/reference/generated/scipy.sparse.rand.html), scipy.sparse.rand() should accept `random_state`as an argument.
+[06:10] <56b80528e610378809c05a48> And there is no erro if I run `nosetests` on my own computer.
+[07:22] <56b80528e610378809c05a48> Oh I got it ... CIs scipy version = 0.9

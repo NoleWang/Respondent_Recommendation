@@ -1,0 +1,4 @@
+[11:57] <62137b006da037398490b938> I am a question with sklearn.PCA. Whether data needs to be standardized? eg.  the variance may be used before create the pca object?
+[11:58] <62137b006da037398490b938> [![image.png](https://files.gitter.im/541a528c163965c9bc2053e1/rsRh/thumb/image.png)](https://files.gitter.im/541a528c163965c9bc2053e1/rsRh/image.png)
+[12:00] <62137b006da037398490b938> Thank you for answering
+--------------------------------------------------------------------------------------------------

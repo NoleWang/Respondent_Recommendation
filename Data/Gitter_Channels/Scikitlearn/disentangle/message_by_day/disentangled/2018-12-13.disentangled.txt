@@ -1,0 +1,3 @@
+[00:31] <54d4a1d6db8155e6700f853b> @talatccan can you give a minimum example to reproduce?
+[00:32] <54d4a1d6db8155e6700f853b> and what version of sklearn are you using?
+--------------------------------------------------------------------------------------------------

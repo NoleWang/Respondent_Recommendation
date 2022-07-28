@@ -1,0 +1,90 @@
+<s> <user> <unka@> by making <unka> work well with <unka> did you mean implementing generalized <unka-> ? ( URL/https:/ URL/github.com/ <unk#a-/> ) </s>
+<s> <user> is anyone here very competitive about the relative capabilities of <unka-> and r ? <unka@> ? </s>
+<s> <user> ... because with the r package i just pushed to my git , i would really <unka> some trash talking </s>
+<s> <user> <unka@> well i'd like to be <unka-> as good as possible , and if you have an implementation that is much better than ours in some respect , i'd love to have your input ;) </s>
+<s> <user> <unka@> what did you push ? </s>
+<s> <user> <unk#a@> well part of that . i want to be able to use an <unka> in <unka> . </s>
+<s> <user> <unk#a@> like using a cv object in a pipeline . </s>
+<s> <user> if you find a way to enable <unka(_`> ), <unka()`> <unka-> , that would be a start </s>
+<s> <user> or <unka(_`> ... ), <unka()`> </s>
+<s> <user> <unka@> <unka> . it 's like <unka> but efficient on ultra large <unka> because it scales in <unka(> ). the algo is only two weeks old , they have n't presented their reference code yet . you have a few hours to catch up though - i found a bug in my c++ code that 's gonna take me a while to fix </s>
+<s> <user> ^^ i do n't think this is a race . </s>
+<s> <user> you could also add python wrappers to your r package </s>
+<s> <user> <unka-> <unka-> is also <unka(> ) right ? </s>
+<s> <user> <unka@> i hope it 's bsd licensed ;) </s>
+<s> <user> barnes hut <unka-> is <unka(> log n ) </s>
+<s> <user> URL/http:/ <unka./> <unk#a./> </s>
+<s> <user> hm makes sense </s>
+<s> <user> <unka@> let me know if you have an <unka> picture ;) </s>
+<s> <user> they say ( n log n ) i actually think its a little worse , at least as implemented . whether <unka> really scales remains to be seen -- in theory its <unka(> ) holding everything else constant , but when you grow n , you add nearest neighbors and sgd iterations too . </s>
+<s> <user> <unka@> will do ;) should be tonight actually -- the algo is working now on small data sets ( does iris beautifully ) but something is making it segfault when i scale up to <unka> . working on it now </s>
+<s> <user> oh , and if i were in your shoes , i would totally agree its not a race </s>
+<s> <user> hey guys , about decision tree </s>
+<s> <user> how do we visualize it ? </s>
+<s> <user> you can export it to graphviz </s>
+<s> <user> see URL/http:/ <unka-./> <unka./_> </s>
+<s> <user> oh , <unka> do not have this ? </s>
+<s> <user> that 's my actual question </s>
+<s> <user> no <unka._`> </s>
+<s> <user> no <unka._`> , but theres something else that i think you want </s>
+<s> <user> <unka_`> not </s>
+<s> <user> you can use <unka._`> to get a list of <unka> </s>
+<s> <user> i want to actually convert a <unka> into <unka> variables </s>
+<s> <user> ahhh , the separate instances do have the tree </s>
+<s> <user> awesome :) </s>
+<s> <user> yup , then just <unka_`> on all of them </s>
+<s> <user> i have the idea that the <unka> variables as binary decisions in a sparse matrix would be awesome </s>
+<s> <user> have rf as a <unka> </s>
+<s> <user> and then do sparse ridge on top of it </s>
+<s> <user> or nn </s>
+<s> <user> <unka._> and <unka._> are the ones huh :) </s>
+<s> <user> hmm wheres <unka._`> ? </s>
+<s> <user> it seems like it would be what you want though </s>
+<s> <user> <unka._`> , <unka._`> </s>
+<s> <user> yea it works </s>
+<s> <user> nice , good to hear </s>
+<s> <user> it could basically transform a non-linear problem to a linear one , well .. if it can be captured by a decision tree </s>
+<s> <user> <unka-@> if your plan is to treat each tree 's prediction as a a distinct <unka> variable and then make your actual prediction by applying ridge regression or some other mechanism to those variables , i will bet you <unk#:> odds that ( a ) you never implement this algorithm because of the <unka> of what you'd have to feed into the ridge regression , or ( b ) if you do implement it , it <unka> </s>
+<s> <user> i was thinking to <unka> it perhaps lol </s>
+<s> <user> </s>
+<s> <user> or at least to remove too strongly <unka> kind of duplicates </s>
+<s> <user> <unka@> i thought it more of a <unka> step </s>
+<s> <user> indeed it'd be too intense </s>
+<s> <user> oops sorry nelson , i mixed your two chats up </s>
+<s> <user> what about from a single decision tree ? </s>
+<s> <user> is there a situation in which you could imagine that using the leaf node 's id as a binary var for a next model useful ? </s>
+<s> <user> as kind of feature engineering step </s>
+<s> <user> wanna try something funky for <unka> that would probably work ? take your data and cut it into square <unka> , like if your data is 1000 <unka> , chop it into one 31 * 31 square and one 7 * 7 square . the run a <unka> over both squares using a kernel initialized to have mean 0 and unit norm . you can control the amount of <unka> reduction by controlling the size of the kernel . </s>
+<s> <user> i think i 've seen people use node ids as ivs before for the next <unka> </s>
+<s> <user> and they got " better " results </s>
+<s> <user> that sounds very interesting <unka> </s>
+<s> <user> some people on <unka> at least improved their model by a fraction of a percent . it 's very <unka> , but was useful in their case . </s>
+<s> <user> <unka@> that 's just the effect of a <unka> variable on <unka> . </s>
+<s> <user> i.e . less <unka> because the number of splits is <unka> ? </s>
+<s> <user> googled <unka> : one variable that increases the effect of another var </s>
+<s> <user> lol </s>
+<s> <user> strange naming </s>
+<s> <user> i 'm interested for this particular challenge : URL/http:/ <unka./> </s>
+<s> <user> super nasty one </s>
+<s> <user> hey guys , i have a question : how do you deal with unrealistic estimates for <unka> for some <unka> ? i tried using cis ( <unk##> ), which were fine in my case , but apparently this is not the preferred approach . </s>
+<s> <user> is that competition for spam filtering ? </s>
+<s> <user> i can imagine <unka.> dealing with lots of that </s>
+<s> <user> it 's a <unka> learning comp </s>
+<s> <user> on each round ( there are <unk#a./~> ) </s>
+<s> <user> <unka@> no , any time you add a variable to your training data , performance on the training data will improve slightly , regardless of whether there 's a genuine relationship . that 's just the math . its called a " <unka> " variable because it <unka> the true error . but the result is just increased <unka> . </s>
+<s> <user> you get 35 values </s>
+<s> <user> you can influence the <unk#a> variable by choosing 1 out of 4 actions </s>
+<s> <user> the <unk#a> var goes from <unk#-.> to 1.1 </s>
+<s> <user> every round you also get the reward </s>
+<s> <user> reward can be super delayed </s>
+<s> <user> rules unclear </s>
+<s> <user> 35 vars are roughly between -18 and 12 or something , mostly around -1 to 1 </s>
+<s> <user> <unka@> if you want an example of this , create a 20 * 100 normally distributed random matrix , and 20 randomly selected labels . split the data into a training and a test set by row . run <unka> over the training data , trying to predict the labels . observe your error ( it will be zero ). then run the generated model on your test set . </s>
+<s> <user> it is very non-linear </s>
+<s> <user> this is why having features that do n't truly correlate leads to inferior performance </s>
+<s> <user> but let 's say the original random forest made an incorrect estimate for a split on some variable for which there was little data . then just getting to that variable in some of the trees would be additional information </s>
+<s> <user> i.e . trees too deep and too few of them </s>
+<s> <user> no , it would n't . it would be a reduction in information . </s>
+<s> <user> a prediction based on a training data set ca n't ever contain any more information than the amount of information in the training set plus the amount of information in the example . </s>
+<s> <user> sure , but an incorrect decision based on original information by an upstream <unka> can be worse than just the original information in a downstream <unka> . ie you are recovering information that was lost </s>
+<s> <user> i 'll try to construct a synthetic test for this </s>

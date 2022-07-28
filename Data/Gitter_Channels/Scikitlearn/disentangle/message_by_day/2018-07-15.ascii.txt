@@ -1,0 +1,30 @@
+[15:04] <54d4a1d6db8155e6700f853b> does anyone understand what's happening with lgtm? seems like pypi timeouts? @jnothman ?
+[15:37] <54d4a1d6db8155e6700f853b> @ogrisel do you have an opinion on https://github.com/scikit-learn/scikit-learn/pull/11469#discussion_r202540743 ?
+[16:52] <54d4a1d6db8155e6700f853b> @lesteve is there an issue tracking the joblib pickle thing?
+[16:53] <5571fe1015522ed4b3e17d90> Yep, let me find it.
+[16:53] <5571fe1015522ed4b3e17d90> https://github.com/scikit-learn/scikit-learn/issues/11408
+[19:36] <55d21ee30fc9f982beadabb8> There is to pending PR waiting for an extra review to be merged
+[19:36] <55d21ee30fc9f982beadabb8> https://github.com/scikit-learn/scikit-learn/pull/11469
+[19:36] <55d21ee30fc9f982beadabb8> https://github.com/scikit-learn/scikit-learn/pull/11391
+[20:31] <589b9e0fd73408ce4f490ba4> Anyone interested in a reviewing a PR on PyPy support ?  https://github.com/scikit-learn/scikit-learn/pull/11010 it's mostly a CI setup + very light changes to make tests pass .. Maybe @lesteve ? :)
+[20:37] <54d4a1d6db8155e6700f853b> I gave my +1
+[21:01] <54d4a1d6db8155e6700f853b> FYI I disabled the lgtm webhook (or tried to?) because it's confusing for the sprinters
+[21:14] <55d21ee30fc9f982beadabb8> Any additional review on the MissingIndicator is welcomed
+[21:14] <55d21ee30fc9f982beadabb8> https://github.com/scikit-learn/scikit-learn/pull/8075
+[21:31] <55d21ee30fc9f982beadabb8> Anybody can review this one 
+[21:31] <55d21ee30fc9f982beadabb8> https://github.com/scikit-learn/scikit-learn/pull/9616
+[21:33] <54d4a1d6db8155e6700f853b> does anyone know what happened here? https://github.com/scikit-learn/scikit-learn/pull/11504
+[21:33] <54d4a1d6db8155e6700f853b> there's something funky going on with the pooling_func deprecation
+[21:39] <5b4a4873d73408ce4fa0e326> @amueller 
+[21:39] <5b4a4873d73408ce4fa0e326> @amueller  When I post a future warning, am I to assume we are  currently on version 0.20 of sci-kit learn?
+[21:40] <55d21ee30fc9f982beadabb8> @annaayzenshtat right
+[21:40] <5b4a4873d73408ce4fa0e326> ok, thanks!
+[21:41] <55d21ee30fc9f982beadabb8> @amueller It seems it was done on purpose
+[21:41] <55d21ee30fc9f982beadabb8> https://github.com/scikit-learn/scikit-learn/commit/b4561f09e6e0ff8a2e16f09be21b3202012bbdd7
+[21:41] <54d4a1d6db8155e6700f853b> fixed in #11537
+[21:41] <54d4a1d6db8155e6700f853b> it's unused in agglomerative clustering but not feature agglomeration which inherits the fit...
+[21:42] <55d21ee30fc9f982beadabb8> oh right
+[21:44] <54d4a1d6db8155e6700f853b> (and that's why I don't want deprecation warnings in the examples and tests ;)
+[21:57] <5b4a4873d73408ce4fa0e326> @amueller  When I do a pull request, should it be against the master branch?
+[21:58] <55d21ee30fc9f982beadabb8> It should be against master
+[21:58] <5b4a4873d73408ce4fa0e326> thanks!

@@ -1,0 +1,6 @@
+<s> <user> <unka-@> yeah as long as you are randomly sampling , you can either <unka> from the smaller class or down sample .. or use an algorithm that can tolerate <unka> data .. you could even turn the problem into an anomaly detection one .. if the smaller class has only very few data points .. there are other techniques like <unka> .. that you could look into .. as well . </s>
+<s> <user> thanks for the answers <unka@> and <unka@> , i was n't aware you have models for working with <unka> data sets specifically , how do they fare against large sparse <unka> , i am talking word vectors ? </s>
+<s> <user> <unka-@> i would consider the word vectors as the input <unka> ? and if you are looking to classify something , you can look into <unka> that deal with <unka> classes , essentially it weights the <unka> class differently .. <unka-> has a section for that : URL/https:/ <unka-./> <unka./> </s>
+<s> <user> or try a tree based algorithms to see how your accuracy numbers and roc curve is </s>
+<s> <user> for accuracy , check out : URL/https:/ <unka-./> <unka./_> </s>
+<s> <user> thanks <unka@> your response is much appreciated , i will take a look at it . </s>

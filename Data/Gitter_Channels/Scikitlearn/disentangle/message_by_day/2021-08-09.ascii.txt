@@ -1,0 +1,4 @@
+[08:05] <610a83356da03739848276fc> Can I use a confusion  matrix to see the accuracy of SVR(support vector regression) ?
+[08:05] <610a83356da03739848276fc> or is it only for classification ?
+[09:12] <55d21ee30fc9f982beadabb8> confusion matrix and derived metrics are only for classification
+[09:12] <55d21ee30fc9f982beadabb8> look at the regression metrics instead

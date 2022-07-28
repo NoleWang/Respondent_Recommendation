@@ -1,0 +1,12 @@
+<s> <user> `make clean ; <unka`> finishes fine , but then ? should i `make install` as usual for <unka-> ? </s>
+<s> <user> yes .. does that succeed now ? </s>
+<s> <user> <unka`> $ make install make : *** no rule to make target `install' . stop . <unk`> </s>
+<s> <user> do you want to globally install ? or user install or build in the folder ? </s>
+<s> <user> python setup.py install or python setup.py develop or python setup.py <unka_> -i do some of these </s>
+<s> <user> yes , but i have been advised above not to use that . </s>
+<s> <user> i want to just install for my user account , what is the advised sequence of commands ( as written above , <unka`> setup.py install` failed ). </s>
+<s> <user> <unka@> it would be </s>
+<s> <user> python setup.py install --user </s>
+<s> <user> hah , after the full run of make clean ; make the <unka`> setup.py install` actually worked now . thanks for your help . </s>
+<s> <user> in case u wonder , i still need to <unka-> even so im a <unka> user , b/c i have pinned my numpy to <unk#*.> b/c numpy 1.10 has performance probs with character arrays . </s>
+<s> <user> and theres no <unka-> for <unka> <unk#a.> numpy 1.9 on offer in <unka> . </s>

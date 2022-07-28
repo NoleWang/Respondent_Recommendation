@@ -1,0 +1,4 @@
+[13:00] <5845699ed73408ce4f3ad4e7> I am getting a major error in Dictionary Learning.  The error is Segmentation fault (core dumped).
+[13:02] <5845699ed73408ce4f3ad4e7> It is working fine for 100 Images to train a Dictionary but If I use 200 Images to train a Dictionary then I am  getting Segmentation fault (core dumped).
+[13:02] <5845699ed73408ce4f3ad4e7> I debuged my code and got this one : :0x00007ffff3059f50 in ATL_dJIK0x0x48NN0x0x0_aX_bX () from /usr/lib/libblas.so.3
+--------------------------------------------------------------------------------------------------

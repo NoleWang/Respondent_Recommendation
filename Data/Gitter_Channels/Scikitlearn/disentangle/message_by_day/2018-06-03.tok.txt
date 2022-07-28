@@ -1,0 +1,2 @@
+<s> <user> i am working with text data . i 'm using <unka> right off the shelf . i noticed that <unka> gives a better performance than <unka(_> = false ). i found this link : URL/http:/ <unka-./> <unka#-./_> this prompted me to try out different scaling transformers . is there anybody who has worked with text data before ? i wanted to know if " selecting scaler " is worth time spending on ? </s>
+<s> <user> if it is , the link uses feature distributions , <unka> to select a scaler ? do the above concepts make sense in the space after <unka> <unka> the text data ? </s>

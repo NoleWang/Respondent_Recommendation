@@ -1,0 +1,6 @@
+<s> <user> <unka@> URL/https:/ URL/github.com/ <unk#a-/> </s>
+<s> <user> i think the " go wanted " tag was removed from the issue cause we already have at least a half solution to the issue . not sure if we want to work on it during the sprint <unka-@> </s>
+<s> <user> <unka"*> wanted " </s>
+<s> <user> is it on the issue list for the sprint <unka-@> ? </s>
+<s> <user> i have a small concern . i am wondering if matplotlib should also be installed in setup.py along with numpy and scipy . is there is a reason it is not ? </s>
+<s> <user> <unka@> there is no reason to . it 's a soft dependency and many people run <unka-> in a server setup where there 's not even a screen attached </s>

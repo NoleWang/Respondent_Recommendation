@@ -1,0 +1,30 @@
+[18:40] <54d4a1d6db8155e6700f853b> anything in particular that you would like me to review?
+[18:44] <54d4a1d6db8155e6700f853b> Did you have a look at this one yet: https://github.com/scikit-learn/scikit-learn/pull/4192 I haven't really followed what is happening with the pos_label etc in the metrics
+[18:46] <5474d9eadb8155e6700d8178> Hey :) sorry to interrupt you... do you feel we could do the data indep. cv part first and later do the renaming?
+[18:51] <54d4a1d6db8155e6700f853b> There are two roads we could go down: either doing both together, but using the fact to have a deprecation path for it. That would mean copying a lot of code for a while. OR doing them separately. If we do them separately, I would do the CV objects first. Also, I wouldn't do either for the 0.16 release, I think.
+[18:52] <54d4a1d6db8155e6700f853b> Actually, I think the code duplication thing is not necessary, so we should just focus on the cv objects
+[18:54] <54d4a1d6db8155e6700f853b> @ogrisel green button on https://github.com/scikit-learn/scikit-learn/pull/4249 (sign flip) ?
+[18:59] <5474d9eadb8155e6700d8178> Okay! so I'll salvage #4294 to do the CV related fixes alone?
+[18:59] <54d4a1d6db8155e6700f853b> yeah that sounds like a good idea
+[19:02] <5474d9eadb8155e6700d8178> thanks! :)
+[19:04] <5474d9eadb8155e6700d8178> Just one more minor thing... what is the expected range of scores ( w.r.t #4295 ) ( could it by any chance be >= 40? )
+[19:07] <54d4a1d6db8155e6700f853b> the sigmoid should be between 0 and 1 as you plotted, and the votes shouldn't be larger than the number of classes, right?
+[19:09] <5474d9eadb8155e6700d8178> if the values for `sum_of_confidences` ( previously `scores` ) exceed 34 we get 1 which is not desirable... i.e `expit(34)` is 1... with 0.5 it extends upto 73...
+[19:09] <5474d9eadb8155e6700d8178> or am I too paranoid? perhaps `scores` do not extend  upto 34?
+[19:11] <54d4a1d6db8155e6700f853b> sorry, I don't follow. scores can be arbitrary high. You say that it actually reaches 1? that seems a bit odd
+[19:13] <54d4a1d6db8155e6700f853b> I see... maybe then we need to do 0.9 * expit(scores) ? which would be just another magic value....
+[19:13] <5474d9eadb8155e6700d8178> sorry its at 37.... and yea in my system `expit(37) == 0`... would you mind confirming the same pl?
+[19:14] <54d4a1d6db8155e6700f853b> you mean == 1
+[19:14] <54d4a1d6db8155e6700f853b> In [9]: expit(37) Out[9]: array(0.9999999999999999)  In [10]: expit(38) Out[10]: array(1.0) 
+[19:15] <54d4a1d6db8155e6700f853b> I commented on the issue and pinged @mblondel 
+[19:15] <5474d9eadb8155e6700d8178> yes :P sorry again...
+[19:15] <54d4a1d6db8155e6700f853b> np. you are right, that is an issue
+[19:17] <5474d9eadb8155e6700d8178> Perhaps we could scale to `[0, 1]` before mapping it using sigmoid? ( it would be a tad slower )
+[19:19] <54d4a1d6db8155e6700f853b> that is also weird ;)
+[19:25] <5474d9eadb8155e6700d8178> haha yea ;)
+[19:53] <54d4a1d6db8155e6700f853b> took me only 3 days to catch up with 7 days of sklearn notifications....
+[19:53] <54d4a1d6db8155e6700f853b> now for some actual work
+[20:02] <5474d9eadb8155e6700d8178> That was fast ;)  What issue are you currently working on? :)
+[20:06] <54d4a1d6db8155e6700f853b> I have to do some pystruct stuff now because I commited to some research projects. Other than that, I'm working on getting as many PRs as possible that are tagged with 0.16 in, and writing as many bug-fixes for 0.16 tagged issues as possible
+[20:07] <54d4a1d6db8155e6700f853b> mostly reviewing currently
+[20:30] <54d4a1d6db8155e6700f853b> @ogrisel this one should also be simple: https://github.com/scikit-learn/scikit-learn/pull/4082

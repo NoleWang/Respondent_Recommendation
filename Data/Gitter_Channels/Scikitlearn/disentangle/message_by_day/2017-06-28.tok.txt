@@ -1,0 +1,4 @@
+<s> <user> i have some customers data what information can i get from there using machine learning </s>
+<s> <user> hi there </s>
+<s> <user> <unka@> hi there </s>
+<s> <user> lol wut </s>

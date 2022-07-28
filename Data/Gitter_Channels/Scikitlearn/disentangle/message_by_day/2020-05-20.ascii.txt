@@ -1,0 +1,2 @@
+[03:06] <5ec49d18d73408ce4fe44c2c> Hi, I am trying to create anisotropic exponential and anisotropic gaussian kernel function for Sklearns' Gaussian Process Regressor. Any idea how I can do this with sklearns' inbuilt kernels? See attached image. ![alt](https://i.stack.imgur.com/DRKAE.png)
+[03:07] <5ec49d18d73408ce4fe44c2c> I am new to this and I have been looking for help since a long time. Any help will very appreciated. Thanks.

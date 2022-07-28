@@ -1,0 +1,3 @@
+<s> <user> hey guys , so i 'm new to <unka> , so please bear with me . i have a <unka> <unka> that looks like this : [ email , <unka> , manager , <unk#a> , <unk#a> , <unk#a> , ... , <unk#a> ] so essentially one row defines one user that has either a 1 or nan on each of the <unka> columns specifying if they have that app or not . </s>
+<s> <user> what i want is a <unka> that given email , <unka> , and manager .... would return a list of apps should have </s>
+<s> <user> i 've got the data in that format as i specified , what are the models do you guys think would b good for creating this type of <unka> ? and how would i go about this in general ? </s>

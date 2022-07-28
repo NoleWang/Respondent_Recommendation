@@ -1,0 +1,7 @@
+[20:44] <54d4a1d6db8155e6700f853b> @MechCoder https://github.com/scikit-learn/scikit-learn/issues/4497
+--------------------------------------------------------------------------------------------------
+[21:54] <564789be16b6c7089cbab8b7> Is there an easy way to see what the new features etc might be for the upcoming 0.18 by searching https://github.com/scikit-learn/scikit-learn/pulls ?
+[21:54] <564789be16b6c7089cbab8b7> clearly this would be subject to change but I haven't found an appropriate tag to search for yet
+--------------------------------------------------------------------------------------------------
+[22:43] <53810862048862e761fa2887> @amueller I have started working on https://github.com/vighneshbirodkar/sklearn-stub
+--------------------------------------------------------------------------------------------------

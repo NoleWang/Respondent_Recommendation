@@ -1,0 +1,2 @@
+<s> <user> is there a <unka-> preferred way to store a vector using <unka> ? i 've seen <unka.> , <unka.> and numpy used in the code base . <unka@> <unka@> </s>
+<s> <user> the way we do it now is to allocate numpy arrays ( in python or in <unka> ), and then use a memory view for pure <unka> parts . you can take a look at how we do it in e.g . <unka/_`> </s>

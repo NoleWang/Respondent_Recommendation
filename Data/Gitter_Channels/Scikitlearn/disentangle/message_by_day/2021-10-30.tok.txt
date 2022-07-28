@@ -1,0 +1,10 @@
+<s> <user> if we run this command after setup <unka`> <unka./_> -k <unka.`> , we got platform linux -- python <unk#.> , <unk#a-.> , <unk#a-.> , <unk#a-.> <unka> : <unka/> <unka-/> , configfile : <unka.> plugins : <unk#a-.> collected 0 items 2 skipped <unk=> short test summary info <unk=> skipped [ 2 ] <unk#a./:_> : could not import <unka'.> : no module named <unka'> <unk=> 2 skipped in <unk#a.> <unk=> </s>
+<s> <user> you need to install <unka> via pip or <unka> </s>
+<s> <user> okay </s>
+<s> <user> otherwise the test is skipped </s>
+<s> <user> we dont impose it because this is an optional dependency </s>
+<s> <user> working on <unk##> issue </s>
+<s> <user> <unk=> test session starts <unk=> platform linux -- python <unk#.> , <unk#a-.> , <unk#a-.> , <unk#a-.> <unka> : <unka/> <unka-/> , configfile : <unka.> plugins : <unk#a-.> collected <unk#> items <unk#> deselected 1 selected <unka./_> . [ 100% ] <unk=> 1 passed , <unk#> deselected in <unk#a.> <unk=> </s>
+<s> <user> now , we got passed , then we make a pr for it ? </s>
+<s> <user> yes </s>
+<s> <user> > yes done ! </s>

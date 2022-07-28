@@ -1,0 +1,10 @@
+[03:30] <57e9f34a40f3a6eec06789ad> > [![perceptron.png](https://files.gitter.im/scikit-learn/scikit-learn/Tyle/thumb/perceptron.png)](https://files.gitter.im/scikit-learn/scikit-learn/Tyle/perceptron.png)  can anyone explain line 6-7 update work , if example that would be great
+[03:51] <5dbe0c1fd73408ce4fcfc84a> @jhamlal  hi sir
+[03:51] <5dbe0c1fd73408ce4fcfc84a> google colab mutb??
+[14:37] <5a32d2b0d73408ce4f835d1a> Hello, why does `cross_val_predict` "eats" prints from `Pipeline`? When i set verbose on Pipeline i dont see any verbosity and when i have debug step in the pipeline that prints shape of the data it also doesnt print anything but when i execute the pipeline manualy it prints all the thing above
+[14:56] <5e2072c5d73408ce4fd6daef> Hello! new, hopefully soon to be contributor here, I am working with a team of fellow data science majors who have recently submitted a pull request for documentation. Would love some guidance or suggestions as we haven't heard anything back yet and are working on more as we speak! Thanks in advance! 
+[14:57] <567f5d7716b6c7089cc043a8> nice to have you on board @hansenallison . Review time is our main bottleneck, and therefore it may take some time before a reviewer can get to check your PR. What's your PR number?
+[14:59] <5e2072c5d73408ce4fd6daef> thank you so much, understandably so! we are PR #16417 and really just added a couple lines of documentation
+[15:03] <5e2072c5d73408ce4fd6daef> @adrinjalali thanks again for responding, even if someone has a minute to let us know if we are on the right track that would be super helpful! 
+[15:15] <5a32d2b0d73408ce4f835d1a> I am running the same version of sklearn but once the pipeline outputs the verbose when in cross_val_predict and the other time it doesnt, could it be something conserning jupyter?
+[15:47] <567f5d7716b6c7089cc043a8> @EnyMan probably it'd be easier to track the problem if you open an issue with a reproducible bit of code 

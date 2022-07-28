@@ -1,0 +1,17 @@
+[14:23] <529c6e38ed5ab0b3bf04dde0> Hey Guys, I was going through the issues on github, so have a few  questions regarding  Neural Network modules(MLPclassifier/MLPregressor):
+[14:24] <529c6e38ed5ab0b3bf04dde0> 1. I think Dropout has already been implemented, is the PR already merged with the 'master' branch
+[14:24] <529c6e38ed5ab0b3bf04dde0> 2. What are the other things in the pipeline related to neural networks
+[14:25] <529c6e38ed5ab0b3bf04dde0> Also, are there any plans for implementing Word Vectors in scikit-learn?
+[14:27] <529c6e38ed5ab0b3bf04dde0> @amueller ?
+--------------------------------------------------------------------------------------------------
+[14:36] <56c4f19ae610378809c1f8ae> iirc there was a proposal to add word2vec awhile ago but it got dismantled pretty quickly since gensim is already a thing
+[14:37] <56c4f19ae610378809c1f8ae>  also i dont think dropout is implemented / merged, see https://github.com/scikit-learn/scikit-learn/pull/7407
+[14:38] <56c4f19ae610378809c1f8ae> heres the word2vec one https://github.com/scikit-learn/scikit-learn/issues/6247
+--------------------------------------------------------------------------------------------------
+[14:39] <529c6e38ed5ab0b3bf04dde0> @nelson-liu true that. and although gensim is pretty straight forward to use, do you think that, if we had the word2vec module in scikit-learn itself, then one doesn't have to rely on two different libraries, besides, we already have couple of existing vectorization methods for text, in that way you can simply try word vectors instead of tfidf/count vectors etc.
+[14:40] <56c4f19ae610378809c1f8ae> i dont think thats worth implementing word2vec/glove in scikit-learn though; as gael said in the issue > Text modelling probably requires more than just machine learning, including specific rules. Thus I think that word2vec belongs more in gensim (where it already is) than in scikit-learn: it is a model very tuned to text.
+[14:40] <56c4f19ae610378809c1f8ae> and gensim does indeed have a scikit-learn interface (or should have one soon i believe)
+[14:41] <529c6e38ed5ab0b3bf04dde0> yeah right, just went through it. I think as @mblondel mentioned in this issue, I'd rather add it in https://github.com/scikit-learn/scikit-learn/wiki/Third-party-projects-and-code-snippets.
+--------------------------------------------------------------------------------------------------
+[15:27] <56c4f19ae610378809c1f8ae> yup or perhaps https://github.com/scikit-learn-contrib
+--------------------------------------------------------------------------------------------------

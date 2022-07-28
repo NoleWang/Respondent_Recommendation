@@ -1,0 +1,4 @@
+[14:30] <5944c1e5d73408ce4f67f652> Hi, everyone. My name is Manish and It's nice to meet you all. I used SK learn for one of my projects this summer and  I really love this library. I want to start contributing to it. I'm new to open source stuff and I don't know how to get started. I checked issues under good first issue label but I'm not able to understand anything. Can anyone plz guide me with this??
+--------------------------------------------------------------------------------------------------
+[16:49] <54d4a1d6db8155e6700f853b> @ManishAradwad welcome! the easiest way is probably to ask directly on the issue. Have you checked out the contributors guide?
+--------------------------------------------------------------------------------------------------

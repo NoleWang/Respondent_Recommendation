@@ -1,0 +1,13 @@
+<s> <user> hello ! can anyone tell me how can i make this python script ignore ds store files ... very silly issue . i have this function , i 've googled but i do n't know where to put the code in my current function . thank you ! def <unka(_> ): r = [ ] subdirs = [ <unk#a[> ] for x in <unka(.> )] for subdir in subdirs : files = <unk#a().[_> ] if ( <unka(> ) > 0 ): for file in files : <unka(.> + " " + file ) return r <unka_> = <unka(_> ) </s>
+<s> <user> i dont think this is necessarily the proper venue for your question . that being said , your code doesnt work properly on my mac . theoretically though , you would wrap your <unka().`> statement in an <unka-> that checks if the filename is <unka._> . </s>
+<s> <user> <unka@> you can go to stackoverflow </s>
+<s> <user> did <unka-> apply to google summer of code ? </s>
+<s> <user> <unka-@> it is under the umbrella of the psf </s>
+<s> <user> ah ok . i talked to <unka> and she said that <unka-> has n't submitted a proposal yet , are there plans to do so ? </s>
+<s> <user> was the deadline already ? yes , there is a plan to submit a proposal </s>
+<s> <user> oh ok , just wanted to know . the deadline is march 8th iirc </s>
+<s> <user> ( do n't quote me on that ) </s>
+<s> <user> 7th of march </s>
+<s> <user> <unk#a@> do you have anything for the multiple metrics ? i think it might be easier to work on that before trying to clean up </s>
+<s> <user> if you're busy with your other <unka> , i can look into it . </s>
+<s> <user> okay please go ahead . i am just fighting with the tree code . i am sorry :/ i will take up something else instead of it later .... </s>

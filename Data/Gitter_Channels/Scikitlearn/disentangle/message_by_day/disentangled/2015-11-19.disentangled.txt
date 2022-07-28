@@ -1,0 +1,138 @@
+[10:47] <564789be16b6c7089cbab8b7> I have data with a mix of categorical and numerical values. It classifies very well using one-hot encoding + random forests but terribly using any non-tree method I have tried. I am looking for a clustering method that might work on this sort of data.  What might be suitable?
+[10:47] <564789be16b6c7089cbab8b7> I tried some standard methods that rely on euclidean distance but they are a disaster it seems
+[10:48] <564789be16b6c7089cbab8b7> I noticed that http://labs.genetics.ucla.edu/horvath/RFclustering/RFclustering.htm exists
+--------------------------------------------------------------------------------------------------
+[12:27] <53135b495e986b0712efc453> #5765 can be closed...
+--------------------------------------------------------------------------------------------------
+[12:28] <564789be16b6c7089cbab8b7> hi @rvraghav93
+[12:28] <53135b495e986b0712efc453> Hi @lesshaste :)
+[12:28] <564789be16b6c7089cbab8b7> Are you interested in random forests by any chance?
+[12:29] <564789be16b6c7089cbab8b7> I think there are some interesting directions to take the scikit-learn work
+[12:30] <564789be16b6c7089cbab8b7> not for that sorry.... I was going to make longer term suggestions for when that is all done..which I hope is ok
+[12:31] <564789be16b6c7089cbab8b7> but first I should say a huge thank you for the work you are doing
+[12:31] <564789be16b6c7089cbab8b7> adding to your TODO may not be a great way of saying thank you :)
+[12:32] <564789be16b6c7089cbab8b7> but actually.. before I get to that. Does scikit learn have any equivalent of the R package randomGLM ?
+[12:34] <564789be16b6c7089cbab8b7> It is described at http://labs.genetics.ucla.edu/horvath/RGLM/. I couldn't quite tell from the scikit-learn docs. There are lots of things that look similar but maybe not the same
+[12:35] <53135b495e986b0712efc453> Thanks :D and no I'd be happy TODO :) You can actually raise an issue and add your suggestions of features which you feel are worthy of adding and why you think they should be added... That way you will get a larger participation of people  in discussions... :)
+--------------------------------------------------------------------------------------------------
+[12:29] <53135b495e986b0712efc453> Yes I will be working on Trees and RFs :)
+[12:29] <564789be16b6c7089cbab8b7> great!
+--------------------------------------------------------------------------------------------------
+[12:30] <53135b495e986b0712efc453> For me the priority is https://github.com/scikit-learn/scikit-learn/issues/5212#issuecomment-155387289 :)
+[12:30] <53135b495e986b0712efc453> Do you have any suggestions in mind?
+--------------------------------------------------------------------------------------------------
+[12:35] <564789be16b6c7089cbab8b7> good point.. because there is a risk my ideas are already done or just plain stupid, do you mind being a first stage filter?
+--------------------------------------------------------------------------------------------------
+[12:35] <53135b495e986b0712efc453> And about GLM what does it do? Generalized Linear Models? translates roughly to our `linear_model` module?
+[12:37] <53135b495e986b0712efc453> Oh sure a stupidity filter... I'm in ;)
+--------------------------------------------------------------------------------------------------
+[12:38] <564789be16b6c7089cbab8b7> the full title of the randomGLM talk is "Random generalized linear model:  a highly accurate and interpretable  ensemble predictor" . http://labs.genetics.ucla.edu/horvath/RGLM/TalkRGLM.pdf   In more detail it is an ensemble predictor based on  bootstrap  aggregation (bagging) of  generalized linear models  whose  covariates are selected using  forward regression  according to  AIC criteria.
+[12:39] <564789be16b6c7089cbab8b7> maybe we already have something that is equivalent to that?
+[12:41] <564789be16b6c7089cbab8b7> @rvraghav93  https://followthedata.wordpress.com/2013/10/10/random-generalized-linear-models/ has an explanation of randomglm too
+--------------------------------------------------------------------------------------------------
+[12:43] <53135b495e986b0712efc453> We got `bagging` and `boosting` in the `ensemble` module! (Is that what randomGLM does?)... I will read the links in a moment...
+[12:43] <564789be16b6c7089cbab8b7> thanks
+[12:46] <53135b495e986b0712efc453> Ah that was interesting... we don't have it...
+--------------------------------------------------------------------------------------------------
+[12:50] <53135b495e986b0712efc453> But the paper - http://www.ncbi.nlm.nih.gov/pubmed/23323760 - has only 12 citations... I am not sure the core devs might want to take this into scikit learn, since this is not popular/old/academically established enough... See [this FAQ](http://scikit-learn.org/stable/faq.html#can-i-add-this-new-algorithm-that-i-or-someone-else-just-published) :)
+[12:53] <564789be16b6c7089cbab8b7> I like that rule
+[12:53] <53135b495e986b0712efc453> :)
+--------------------------------------------------------------------------------------------------
+[13:09] <564789be16b6c7089cbab8b7> ok back to my real suggestions :)
+--------------------------------------------------------------------------------------------------
+[13:12] <564789be16b6c7089cbab8b7> for random forests, it would be great if we had a method to make a small interpretable versions.  One of the main drawbacks of random forests is that they end up like a black box. Can you read http://link.springer.com/chapter/10.1007/978-3-319-18356-5_20 ?
+[13:13] <564789be16b6c7089cbab8b7> or even to infer a single decision tree
+[13:14] <564789be16b6c7089cbab8b7> http://scikit-learn.org/stable/faq.html doesn't mention neural networks!
+[13:15] <564789be16b6c7089cbab8b7> @rvraghav93  see above
+--------------------------------------------------------------------------------------------------
+[13:18] <564789be16b6c7089cbab8b7> ah..200 references.. I will work on that :)
+[13:18] <564789be16b6c7089cbab8b7> it's not a bad rule
+--------------------------------------------------------------------------------------------------
+[13:23] <564789be16b6c7089cbab8b7> @rvraghav93  under the 200+ citations rule I withdraw all my suggestions :)
+--------------------------------------------------------------------------------------------------
+[13:43] <564a264d16b6c7089cbaee0f> #5834 ready for merge. minor changes to documentation. straightforward.
+--------------------------------------------------------------------------------------------------
+[13:54] <53135b495e986b0712efc453> 200+ citations is not a hard and fast rule... if the suggestion is for an improvement/technique that is not fundamentally different from a well established algorithm and gives a very significant performance improvement, it would be worthwhile to implement the same... Basically, the idea is that we don't want code that might rot over time without a substantial userbase or maintainers to support or both... Essentially u can compress that rule to this --  `((Will a lot of people who already use sklearn benefit from this?) || (Will it help bring *a lot* of new people to sklearn?, if its a completely new feature)) && (Does it fit well within our API?) && !(Will it make life tougher for the existing users)` ;)
+[13:55] <564789be16b6c7089cbab8b7> @rvraghav93  I think these are really sensible rules and I completely agree with them :)
+[13:55] <53135b495e986b0712efc453> :D
+[15:00] <53135b495e986b0712efc453> That one seems useful... Please raise an issue!! I'll try to implement if possible :)
+[15:05] <53135b495e986b0712efc453> Nevermind I raised an issue (#5884)... Lets see how it is received... Thanks for the suggestion! :)
+[15:06] <53135b495e986b0712efc453> Could someone review #5823 please? @amueller ?
+[16:26] <53135b495e986b0712efc453> yes we don't support them...
+[16:28] <53135b495e986b0712efc453> Probably ;)
+--------------------------------------------------------------------------------------------------
+[13:57] <564789be16b6c7089cbab8b7> @rvraghav93  I realise it's a little cheeky to ask here but.. do you have a view on my earlier question? That is ... I have data with a mix of categorical and numerical values. It classifies very well using one-hot encoding + random forests but terribly using any non-tree method I have tried. I am looking for a clustering/unsupervised method that might work on this sort of data. What might be suitable? I tried some standard methods that rely on euclidean distance but they are a disaster it seems
+[13:58] <564789be16b6c7089cbab8b7> That is what took me to the unsupervised random forest method
+--------------------------------------------------------------------------------------------------
+[14:23] <564789be16b6c7089cbab8b7> Another suggestion, this one I hope uncontroversial. We seem not to have the Gower distance implemented. As in http://stats.stackexchange.com/a/15313/53128
+--------------------------------------------------------------------------------------------------
+[15:10] <564789be16b6c7089cbab8b7> @rvraghav93  Thanks! I am impressed again :)
+[15:10] <53135b495e986b0712efc453> @amueller Also #5834
+[15:12] <53135b495e986b0712efc453> And #5703... (sorry :P)
+[16:27] <564789be16b6c7089cbab8b7> OK thanks. Something for the future maybe :)
+--------------------------------------------------------------------------------------------------
+[15:14] <564789be16b6c7089cbab8b7> @rvraghav93  is daisy https://stat.ethz.ch/R-manual/R-devel/library/cluster/html/daisy.html something that been discussed (this is relevant to the Gower coefficient). I have  a very vague memory of seeing it in some scikit learn discussion but I may well have that wrong
+[15:17] <564789be16b6c7089cbab8b7> ah no.. I think I was remembering http://stackoverflow.com/a/26387936/2179021
+[16:28] <564789be16b6c7089cbab8b7> Although there is a very interesting and related PR about LambdaMART I see where the conclusion of the discussion seems to be that we are better off using GBRT
+--------------------------------------------------------------------------------------------------
+[16:04] <564789be16b6c7089cbab8b7> I just realised that scikit learn has no support at all for ordinals currently.. is that right?
+--------------------------------------------------------------------------------------------------
+[16:14] <53135b495e986b0712efc453> I think so... By ordinals you mean something like `{"small", "medium", "large"}` correct?
+[16:16] <53135b495e986b0712efc453> @glouppe Your PhD thesis is awesome! Thanks... I am loving it...
+--------------------------------------------------------------------------------------------------
+[16:17] <564789be16b6c7089cbab8b7> @rvraghav93  more 1,2,3,4,5,6,7 where all you know is that 1<2<3<4<5<6<7
+[16:17] <564789be16b6c7089cbab8b7> that is you just know the order
+[16:17] <564789be16b6c7089cbab8b7> but you can't do 1+3 = 4
+[16:17] <564789be16b6c7089cbab8b7> we could call them ranks
+--------------------------------------------------------------------------------------------------
+[16:38] <53135b495e986b0712efc453> @amueller If you come online I have a list of minor PRs for you to review/merge ;) BTW was #5883 discussed during the sprint??
+--------------------------------------------------------------------------------------------------
+[16:50] <54d4a1d6db8155e6700f853b> @lesshaste scikit-learn doesn't really have any support for categorical variables at the moment.
+[16:50] <54d4a1d6db8155e6700f853b> #5883 wasn't discusses during the sprint afaik
+[16:50] <54d4a1d6db8155e6700f853b> @rvraghav93 I have a loooot to review at the moment. Trying to catch up
+--------------------------------------------------------------------------------------------------
+[16:51] <53135b495e986b0712efc453> @lesshaste Oh!! Sorry I haven't followed that PR... :(
+[16:52] <53135b495e986b0712efc453> @amueller Do you have anything in mind that I could be of help (in reviewing)?
+--------------------------------------------------------------------------------------------------
+[16:54] <54d4a1d6db8155e6700f853b> things by tw991, the neural network improvements, the huber regressor. Anything by vignesh, tian or manoj (I'm supervising them). Your stuff is after that ;)
+--------------------------------------------------------------------------------------------------
+[16:56] <53135b495e986b0712efc453> Do you mean to say I can review any of these or are u just listing ur todo list? :P
+--------------------------------------------------------------------------------------------------
+[17:00] <564789be16b6c7089cbab8b7> @amueller right.. well I suppose the tree improvements will be  the first major support for categorical variables.. ? I am referring to https://github.com/scikit-learn/scikit-learn/pull/4899
+[17:00] <564789be16b6c7089cbab8b7> @amueller and my suggestion for the Gower coefficient gives an easy way for mixed types including categorical variables if all you need is a distance. This could really help for clustering I suspect.
+--------------------------------------------------------------------------------------------------
+[17:17] <564789be16b6c7089cbab8b7> @amueller  in relation to our previous conversation about using shufflesplit to subsample for CV, I realised the use case I really had in mind is doing this out of core
+[17:19] <564789be16b6c7089cbab8b7> so the 10^9 feature vectors stay out of core and shufflesplit samples 6 10^5 feature vectors for training and 4 10^5 feature vectors for testing from the large out of core data set.  This may all be better done by bespoke code however rather than something built into scikit learn
+[19:02] <564789be16b6c7089cbab8b7> @amueller  That sounds like a good idea to me
+[19:05] <564789be16b6c7089cbab8b7> @amueller  maybe http://docs.scipy.org/doc/numpy/reference/generated/numpy.memmap.html or https://docs.python.org/2/library/mmap.html ?
+[19:05] <564789be16b6c7089cbab8b7> Is it worth opening an issue? I see that some support for out of core processing is entering into scikit-learn
+[19:07] <564789be16b6c7089cbab8b7> or are you thinking the mmap'ing can happen in the user code and shufflesplit will just use it efficiently as is?
+--------------------------------------------------------------------------------------------------
+[18:36] <54d4a1d6db8155e6700f853b> I was listing my todo list ;)
+[18:36] <54d4a1d6db8155e6700f853b> @lesshaste you could possibly use memory mapped arrays to do this out of core. Not sure though
+[19:54] <54d4a1d6db8155e6700f853b> yes
+[19:55] <54d4a1d6db8155e6700f853b> that might be possible
+[21:36] <54d4a1d6db8155e6700f853b> yes
+[21:36] <54d4a1d6db8155e6700f853b> all fit methods do
+[21:36] <54d4a1d6db8155e6700f853b> in particular to make pipelines easier to understand
+--------------------------------------------------------------------------------------------------
+[20:37] <5395efa3a9176b500d1cd7fb> Why would the PCA fit methods accept target vectors `y` if they dont do anything with it? Just for API exchange-a-bility ?
+--------------------------------------------------------------------------------------------------
+[22:27] <5395efa3a9176b500d1cd7fb> Thanks. So, if I may ask one more: Im a bit confused how to reduce dimensionality for a regression task? It is clear to me that some features are more related to variance in the target vector than others, so I believe to understand that applying a PCA should make sense in general, but I dont understand how to apply `sklearn` for this. Should I make the target vector part of the X-matrix before handing it to the PCA? I want to learn which of my features are related to variability in the target vector, and how much. All your examples and very nice tutorials only ever mention how to apply PCA to classification but never a case for regression, it seems.
+--------------------------------------------------------------------------------------------------
+[22:43] <54a2cde7db8155e6700e4190> Youre probably better of with something like Lasso or RidgeRegression if youre interested in knowing which features are related to your target vector.
+[22:43] <54a2cde7db8155e6700e4190> PCA will mix together your inputs, meaning your regression coefficients wont have a direct interpretation.
+[22:45] <54a2cde7db8155e6700e4190> But if you do want to use PCA, then making a pipeline something like `pipeline.make_pipeline(PCA(n_components=N), LinearRegression()).fit(X, y)` ought to work (untested code)
+--------------------------------------------------------------------------------------------------
+[22:55] <54d4a1d6db8155e6700f853b> reviews for #5728 would be cool
+--------------------------------------------------------------------------------------------------
+[22:58] <5395efa3a9176b500d1cd7fb> I thought PCA might be the right tool, as it provided this percentage-wise composition of the feature vectors for the resulting decomposition which I find very neat, also the way the explained variance results tells you how many new components are needed to explain variety. Your pipeline code will not consider the target vector in the PCA so I wonder how the PCA can be helpful that way.
+[22:59] <5395efa3a9176b500d1cd7fb> Ill have a look at how Lasso/Ridge Regressions work, thanks.
+[23:38] <5395efa3a9176b500d1cd7fb> ok, gotcha, thks.
+--------------------------------------------------------------------------------------------------
+[23:17] <564e507e16b6c7089cbb6551> Is fuzzy c-means clustering implemented in scikit-learn?
+--------------------------------------------------------------------------------------------------
+[23:28] <54d4a1d6db8155e6700f853b> @h4k1m0u currently not. Why do you want that and not GMMs?
+[23:29] <54d4a1d6db8155e6700f853b> It is just optimizing GMMs with spherical covariance and optimized using hard EM, right?
+[23:29] <54d4a1d6db8155e6700f853b> @michaelaye PCA never uses y, it is an unsupervised method. Therefor it is likely not a good choice for your application.
+--------------------------------------------------------------------------------------------------

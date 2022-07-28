@@ -1,0 +1,9 @@
+[02:08] <54c084dbdb8155e6700eed4c> [![download (1).jpg](https://files.gitter.im/scikit-learn/scikit-learn/6cOi/thumb/download-_1_.jpg)](https://files.gitter.im/scikit-learn/scikit-learn/6cOi/download-_1_.jpg)
+[02:08] <54c084dbdb8155e6700eed4c> Deep dreaming on sklearn... 
+[02:10] <54c084dbdb8155e6700eed4c> My assessment: blue blob is pure machine, and orange blob is learning.
+[02:11] <54c084dbdb8155e6700eed4c> FWIW, the crazy stuff in the background was imagined from a blank white canvas 
+[08:11] <53135b495e986b0712efc453> Cool!! How
+[08:12] <53135b495e986b0712efc453> *how'd u do that??
+[08:13] <53135b495e986b0712efc453> BTW andyy happy birthday!! :)
+[15:39] <54c084dbdb8155e6700eed4c> @rvraghav93 I spent several hours trying to get caffe installed :smiley: and then played with a few of the params at https://github.com/google/deepdream
+[17:17] <54c084dbdb8155e6700eed4c> And then, things got weird... http://i.imgur.com/5QA87gU.gif

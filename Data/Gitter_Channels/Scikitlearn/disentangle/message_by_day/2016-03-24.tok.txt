@@ -1,0 +1,12 @@
+<s> <user> hi <unka@> , it seems that such parameter doesnt exist . check the documentation to see which parameters can be used . </s>
+<s> <user> <unka@> thanks a lot , that helped ! </s>
+<s> <user> <unka@> <unka> in <unk#.> does n't support <unka_> , if you update to the <unk#.> version it should work . </s>
+<s> <user> thanks <unka@> </s>
+<s> <user> i 'll now go figure out how to update it </s>
+<s> <user> hi everyone . i have a <unka> of several pipelines , is there any way i can turn the <unka> into a numpy array for use in other applications ? </s>
+<s> <user> e.g . in this case , im using <unka-> to do the <unka> , and <unka> for the learning </s>
+<s> <user> you should be able to call transform to obtain an array </s>
+<s> <user> as long as your pipelines have only transformers and no <unka> </s>
+<s> <user> it does n't really make sense to me to turn the " feature union " into an array , but to apply it on data to obtain an array . or am i misunderstanding ? </s>
+<s> <user> ah , no you arent misunderstanding , i was . </s>
+<s> <user> the <unka> is just a <unka> of various steps , which you then pass things into and get a numpy array . is this what you were thinking ? </s>

@@ -1,0 +1,3 @@
+[22:09] <59e7b052d73408ce4f7aa075> Do "train" and "fit" mean exactly the same thing or do they have different connotations?
+[22:10] <54d4a1d6db8155e6700f853b> @bsheline they mean the same. I think train mostly comes from the neural net community, while fit comes more from statistics
+[22:10] <54d4a1d6db8155e6700f853b> but I'm not sure

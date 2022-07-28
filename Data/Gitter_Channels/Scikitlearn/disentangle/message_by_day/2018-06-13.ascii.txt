@@ -1,0 +1,1 @@
+[23:06] <5634e8e116b6c7089cb8fa99> Hi all, do the kernel density estimators in scikit-learn allow for diagonal (D class) bandwidths, and do any of them also use a leave-one-out bandwidth estimation?

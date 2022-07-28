@@ -1,0 +1,2 @@
+<s> <user> <unk#a@> [ <unk#a#(-./:]> ) this line assumes <unka`> to be a sparse matrix . but if target variable <unka`> has only one class then in <unka`> = <unka()._`> <unka`> becomes <unka.`> which makes <unka().`> fail . is this intended ? </s>
+<s> <user> there was some code to plot a neural network somewhere . does anyone remember where ? </s>

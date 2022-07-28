@@ -1,0 +1,56 @@
+[03:05] <54d4a1d6db8155e6700f853b> @rvraghav93 let's finish the data dependent cv first
+[03:05] <54d4a1d6db8155e6700f853b> sorry I have been offline for the last 4 days
+--------------------------------------------------------------------------------------------------
+[03:06] <53135b495e986b0712efc453> No issues :) Would you be able to spare a few mins to take a look at that? :)
+[03:06] <54d4a1d6db8155e6700f853b> tomorrow
+[03:08] <53135b495e986b0712efc453> Okay! I'll do that now... :) gn :)
+--------------------------------------------------------------------------------------------------
+[03:07] <54d4a1d6db8155e6700f853b> I have 300+ unread emails and it is 23:06
+[03:07] <53135b495e986b0712efc453> Sure ;) I forgot its 11PM there :P
+[03:07] <53135b495e986b0712efc453> Just one more question!
+[03:07] <54d4a1d6db8155e6700f853b> sure
+[03:07] <53135b495e986b0712efc453> Can I finish the documentation / examples too?
+[03:07] <53135b495e986b0712efc453> without waiting for the review?
+[03:08] <54d4a1d6db8155e6700f853b> yeah sure
+[03:13] <54d4a1d6db8155e6700f853b> thanks
+--------------------------------------------------------------------------------------------------
+[14:57] <556705cb15522ed4b3e10f84> @amueller @jnothman @ogrisel are you happy with the changes in #4444? :)
+--------------------------------------------------------------------------------------------------
+[18:10] <54d4a1d6db8155e6700f853b> @JeanKossaifi sorry I can not review any time soon
+--------------------------------------------------------------------------------------------------
+[18:22] <54d4a1d6db8155e6700f853b> A friendly reminder to all the mentors that mid-terms are coming up this Friday!
+--------------------------------------------------------------------------------------------------
+[18:55] <550f53e215522ed4b3dda5f6> I am writing the mid term evaluation, but I don't think my PR could merge right now. Do you think I need to pick ```GaussianMixture``` and ```_MixtureBase``` out of my current PR and make it ready to merge?  @amueller
+--------------------------------------------------------------------------------------------------
+[19:00] <54d4a1d6db8155e6700f853b> @xuewei4d no, I don't think you should do that
+[19:01] <54d4a1d6db8155e6700f853b> Its fine if there is good progress
+--------------------------------------------------------------------------------------------------
+[19:28] <550f53e215522ed4b3dda5f6> Just submitted the evaluation form. Hope everything is fine.
+--------------------------------------------------------------------------------------------------
+[19:33] <54e07d4015522ed4b3dc0856> Mentors... does anyone have access to Artem's GSoC evaluation? Apparently I am still not added correctly as a mentor! Working on getting the right access but would like to put an initial evaluation even if it means someone else copy-pastes in my words.
+--------------------------------------------------------------------------------------------------
+[21:14] <5425a933163965c9bc206e53> Is there a reason RMSLE isn't in the metrics module, or would a PR for that be welcome?
+--------------------------------------------------------------------------------------------------
+[22:18] <54e07d6515522ed4b3dc0858> @zacstewart what does RMSLE stand for?
+--------------------------------------------------------------------------------------------------
+[22:18] <5425a933163965c9bc206e53> Root mean squared logarithmic error.
+[22:19] <5425a933163965c9bc206e53> Same as RMSE, but take the log(y_pred + 1) and log(y_true + 1) instead of just the values
+[22:21] <5425a933163965c9bc206e53> I don't know if it is. I am bringing it up because it is the evaluation metric for a competition I am starting on today
+[22:22] <54e07d6515522ed4b3dc0858> and I can't find anything relevant on google scholar quickly
+[22:22] <5425a933163965c9bc206e53> Seems like a good idea for variables with a lot of variance
+[22:22] <5425a933163965c9bc206e53> But I'm admittedly more of a programmer than a statistician
+[22:22] <54e07d6515522ed4b3dc0858> anyway, you can easily define your custom metrics
+[22:23] <5425a933163965c9bc206e53> Yes, I've done so. I just wondered if it would be generally useful and worth pushing upstream.
+--------------------------------------------------------------------------------------------------
+[22:21] <54e07d6515522ed4b3dc0858> is this a mainstream thing? I see the first result is from Kaggle :/
+--------------------------------------------------------------------------------------------------
+[22:24] <54e07d6515522ed4b3dc0858> If you want you can prepare a PR
+[22:25] <54e07d6515522ed4b3dc0858> Of course it would need tests and docs (with references) and maybe a motivating example.
+--------------------------------------------------------------------------------------------------
+[22:26] <5425a933163965c9bc206e53> Okay. That's reasonable. Not sure I can provide a motivating reason to use it, other than it's the metric for the competition I'm working on
+--------------------------------------------------------------------------------------------------
+[22:27] <54e07d6515522ed4b3dc0858> I don't know whether it belongs in scikit-learn by default. But I'm pessimistic because I personally never heard of this metric before. I'm rather clueless though. It also may be the case that it's been around under a different name
+[23:36] <54e07d6515522ed4b3dc0858> I mean PartitionIterator, not CVIterator
+--------------------------------------------------------------------------------------------------
+[23:07] <54e07d6515522ed4b3dc0858> Ugh. I just noticed that the CVIterator, when given a class that implements _iter_test_indices, converts the indices to masks and then back into indices.
+--------------------------------------------------------------------------------------------------

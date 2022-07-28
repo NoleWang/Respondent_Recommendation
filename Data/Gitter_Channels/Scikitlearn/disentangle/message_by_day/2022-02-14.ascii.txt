@@ -1,0 +1,2 @@
+[07:29] <6208ba1a6da037398490413f>  E   ValueError: numpy.ndarray size changed, may indicate binary incompatibility. Expected 96 from C header, got 88 from PyObject
+[08:48] <matrix-ogrisel:matrix.org> @Shubham1450: can you please open an issue with this error message and the full output of `conda list`?

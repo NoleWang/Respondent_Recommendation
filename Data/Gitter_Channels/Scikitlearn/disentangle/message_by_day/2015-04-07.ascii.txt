@@ -1,0 +1,11 @@
+[14:50] <550f53e215522ed4b3dda5f6> I don't quite understand #4507 and #4531. What's the problem there?
+[16:04] <54d4a1d6db8155e6700f853b> The problem is that the results on fortran-ordered data are garbage with precompute_distances=False
+[16:06] <54d4a1d6db8155e6700f853b> results should be independent of the memory layout of the data.
+[16:06] <54d4a1d6db8155e6700f853b> If you run his code, the cluster-assignments are [0, 0, 1] which is clearly garbage, as the two last points are identical
+[17:29] <550f53e215522ed4b3dda5f6> I see. Thanks!
+[19:05] <54d4a1d6db8155e6700f853b> favourite bug of the day: a pandas dataframe with a "dtype" column
+[21:35] <541a528b163965c9bc2053de> haha
+[22:31] <551061f615522ed4b3ddb1c0> @amueller Just saw your comment in Melange.
+[22:38] <551061f615522ed4b3ddb1c0> I did some investigation several days ago. Zhu has a nice tutorial giving introduction on how to implement S3VMs:  http://pages.cs.wisc.edu/~jerryzhu/pub/sslicml07.pdf
+[22:46] <551061f615522ed4b3ddb1c0> It introduces 5 implementations, of which SVM^light has corresponding implementation in C: http://svmlight.joachims.org/ . We may write a wrapper for it.
+[23:11] <551061f615522ed4b3ddb1c0> I can also consult the author of libSVM, Professor Lin, to get some suggestions.

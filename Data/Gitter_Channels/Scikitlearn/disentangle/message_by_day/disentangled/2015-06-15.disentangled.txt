@@ -1,0 +1,34 @@
+[00:12] <54e07d6515522ed4b3dc0858> @rvraghav93 what do you plan to write about in this week's blog post?
+--------------------------------------------------------------------------------------------------
+[00:14] <53135b495e986b0712efc453> Nested CV!! Is that okay? Hey BTW do u happen to have a link of the mailing list thread that u had mentioned previously? I am unable to find it :/
+[00:15] <53135b495e986b0712efc453> And I'll resume work on cross validation as soon as I am done with fit reset / partial fit tests... :)
+[00:33] <53135b495e986b0712efc453> Okay and yes sure!!
+[00:43] <53135b495e986b0712efc453> Okay!!
+[14:17] <53135b495e986b0712efc453> Sure I'll do that! :)
+--------------------------------------------------------------------------------------------------
+[00:28] <54e07d6515522ed4b3dc0858> @rvraghav93 the discussion was here. I think this thread has some very valuable insight about evaluation in machine learning. http://sourceforge.net/p/scikit-learn/mailman/message/34102242/
+[00:29] <53135b495e986b0712efc453> Thanks!!
+[00:31] <54e07d6515522ed4b3dc0858> I would acknowledge @eickenberg and @satra and maybe even link to the thread too.
+[00:32] <54e07d6515522ed4b3dc0858> The "extreme" example (where the dataset has two consistent but different biases) would make for a nice running example
+--------------------------------------------------------------------------------------------------
+[00:38] <53135b495e986b0712efc453> And I am 2 blog posts behind -_- nested CV was supposed to be last Sunday's ! For this sunday can I post about online learning / `partial_fit` support in sklearn and the usefulness of the proposed tests (in ensuring `partial_fit` behaves as expected)?
+--------------------------------------------------------------------------------------------------
+[00:41] <54e07d6515522ed4b3dc0858> That sounds good, I think you can do a smaller post about this mid-next week. This is more internal stuff, it's hard to write too much interesting stuff about it.
+[00:44] <54e07d6515522ed4b3dc0858> Maybe talk about how useful it is to have common tests that enforce API conventions to future code as well
+[00:45] <53135b495e986b0712efc453> Sure! :)
+[00:47] <54e07d6515522ed4b3dc0858> @amueller what do you think?
+--------------------------------------------------------------------------------------------------
+[00:52] <54e07d6515522ed4b3dc0858> also @rvraghav93 could you put down a brief plan for what you think we can get done in the next 2-3 weeks?
+[00:52] <54e07d6515522ed4b3dc0858> A bit of structure might be useful, and I think this is better than just going back to the original timeline, since things are always in flow :)
+--------------------------------------------------------------------------------------------------
+[18:06] <550f53e215522ed4b3dda5f6> Any comment on #4802? I mean in terms of class definition. Most of methods are not implemented yet, but I hope I am on the right track.
+--------------------------------------------------------------------------------------------------
+[18:42] <54d4a1d6db8155e6700f853b> btw irc is totally unused during sprints
+[18:42] <54d4a1d6db8155e6700f853b> ^^
+[18:43] <54d4a1d6db8155e6700f853b> btw @rvraghav93 what is the status of the data-dependent cv?
+[18:43] <54d4a1d6db8155e6700f853b> sorry I was out for the weekend
+[18:43] <54d4a1d6db8155e6700f853b> it would be great if you could catch up on the blog posts. The IRC bridge is really not that important
+[18:43] <54d4a1d6db8155e6700f853b> and I saw there was a lot of discussion on the assert helpers. are they needed for any of the gsoc PRs?
+--------------------------------------------------------------------------------------------------
+[19:09] <53135b495e986b0712efc453> I just wanted to finish it off as it was lying around for a long time :/ I'll resume work on it by tomorrow :) Planning to finish off my blog post, the helpers and tests by today :)
+--------------------------------------------------------------------------------------------------

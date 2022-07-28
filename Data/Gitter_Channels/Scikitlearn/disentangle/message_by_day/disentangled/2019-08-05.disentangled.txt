@@ -1,0 +1,30 @@
+[14:19] <54d4a1d6db8155e6700f853b> @ManishAradwad look at things tagged as "good first issue" and "help wanted" as outlined in the contributing guide
+--------------------------------------------------------------------------------------------------
+[14:45] <5a7aea3dd73408ce4f8c133a> Hello guys, maybe anyone can help me out here. I am running following validation code: ``` train_scores, valid_scores = validation_curve(estimator=pipeline,  # estimator (pipeline)                                               X=features,  # features matrix                                               y=target,  # target vector                                              param_name='pca__n_components',                                              param_range=range(1,50),  # test these k-values                                              cv=5,  # 5-fold cross-validation                                              scoring='neg_mean_absolute_error')  # use negative validation ```  in the same `.py` file on different machines, which I would name `#1 localhost`, `#2 staging`, `#3 live`, `#4 live`  localhost and staging have both i7 cpus, localhost needs around 40s for the validation, staging needs around 13-14 seconds  live (#3) and live (#4) need almost 10 minutes for executing the validation - both of these servers have intel cpus with 48 threads.   In order to get more "trustworthy" numbers I dockerized the images and run them on the servers. Anyone has an idea why the speed is so different?
+--------------------------------------------------------------------------------------------------
+[14:47] <54d4a1d6db8155e6700f853b> how many cores do you have in localhost and staging?
+[14:48] <54d4a1d6db8155e6700f853b> could be that you're overallocating processes in the estimator and parallelization actually hurts you
+[14:50] <54d4a1d6db8155e6700f853b> what's pipeline?
+[14:50] <54d4a1d6db8155e6700f853b> so the number of cores is the likely difference, right?
+--------------------------------------------------------------------------------------------------
+[14:50] <5a7aea3dd73408ce4f8c133a> @amueller localhost and staging are both with i7 (4 cores and 8 threads)
+[14:51] <5a7aea3dd73408ce4f8c133a> yeah, live 3 and live 4 have 48 threads, 24 cores. Pipeline: ``` from sklearn.linear_model import LinearRegression model = LinearRegression() from sklearn.preprocessing import PolynomialFeatures poly_transformer = PolynomialFeatures(degree=2, include_bias=False) from sklearn.pipeline import Pipeline pipeline = Pipeline([('poly', poly_transformer), ('reg', model)]) ```
+--------------------------------------------------------------------------------------------------
+[15:29] <5a7aea3dd73408ce4f8c133a> After profiling, I saw this (slowest time on bottom, sorted by 3rd column): ```      4150  208.706    0.050  208.706    0.050 {built-in method numpy.dot}       245   13.112    0.054   13.360    0.055 decomp_svd.py:16(svd)      2170  142.567    0.066  143.360    0.066 decomp_lu.py:153(lu) ```  Just executed `python -m cProfiler validation.py`
+--------------------------------------------------------------------------------------------------
+[15:48] <54d4a1d6db8155e6700f853b> can you try to benchmark just calling svd directly without any sklearn around it?
+[15:49] <54d4a1d6db8155e6700f853b> if that's a pure scipy issues that would be good to isolate
+--------------------------------------------------------------------------------------------------
+[15:53] <5a7aea3dd73408ce4f8c133a> how can I isolate it, make a separate `.py` and run `cProfiler` on it?
+--------------------------------------------------------------------------------------------------
+[16:32] <54d4a1d6db8155e6700f853b> make a py file that calls scipy.linalg.svd without using sklearn
+[19:11] <54d4a1d6db8155e6700f853b> well that should work
+--------------------------------------------------------------------------------------------------
+[17:31] <54d4a1d6db8155e6700f853b> lol I am killing the sorting in the pull requests in the issue tracker with adding tags. sorry lol
+--------------------------------------------------------------------------------------------------
+[18:52] <5a7aea3dd73408ce4f8c133a> I will try this and report here. Any ideas what could be the reason? Localhost and staging are intel i7, live3 and live4 are xeon cpus, do you think mkl would improve speed or setting up the environment in another way? (Tensorflow recommends custom compile for speed for example)
+[18:54] <54d4a1d6db8155e6700f853b> how did you install numpy and scipy? if you did custom compilation that might be a reason. if you install binaries they will use mkl or openblas, either of which should be quite fast
+--------------------------------------------------------------------------------------------------
+[18:59] <5a7aea3dd73408ce4f8c133a> Using pipenv, numpy 1.16.x i think
+[18:59] <5a7aea3dd73408ce4f8c133a> They are using openblas
+--------------------------------------------------------------------------------------------------

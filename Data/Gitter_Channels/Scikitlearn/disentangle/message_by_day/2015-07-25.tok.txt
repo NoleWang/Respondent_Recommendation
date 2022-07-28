@@ -1,0 +1,6 @@
+<s> <user> hey ! i 'll add one tonight ! :) </s>
+<s> <user> vlad is choosing k in <unka> a good example for lolo ? ( about labeled data i was thinking like some n samples from m patients and we leave one patient out for validation to make sure we are able to <unka> to other patients too ) </s>
+<s> <user> sounds good ? </s>
+<s> <user> i am unable to find a nice example for lolo otherwise :/ </s>
+<s> <user> any suggestions ? </s>
+<s> <user> also if you find time could you take a look at <unk##> </s>

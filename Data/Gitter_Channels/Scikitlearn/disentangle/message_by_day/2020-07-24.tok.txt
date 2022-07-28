@@ -1,0 +1,4 @@
+<s> <user> it is bit tricky but you need to follow the links to get to this page : URL/https:/ <unka./> <unk#a&-/=?_> </s>
+<s> <user> so to do so : click on " details " on checks frame in the pr page . it will lead you to a page where you have only the " bash exited with <unk#a'> " most of the time . in this page you can go on the bottom and click on " view more details on azure pipelines " . it will redirect you on the azure where you can see the terminal output </s>
+<s> <user> and there you will get which test is failing and what are the reason </s>
+<s> <user> usually you can reproduce those locally afterwards </s>

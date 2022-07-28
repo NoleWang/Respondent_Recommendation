@@ -1,0 +1,5 @@
+[10:26] <555e110715522ed4b3e0bd50> Anyone interested in giving some feedback on https://github.com/scikit-learn/scikit-learn/pull/5123 ? 
+[14:15] <54d4a1d6db8155e6700f853b> @basveeling sorry, feedback often takes some time. It sounds like a good idea to me, though I'm not the authority on this subject.
+[14:16] <54d4a1d6db8155e6700f853b> When designing the classifiers, we didn't have "most entries are zero all the time" in mind, which is the case for hashing.
+[16:36] <555e110715522ed4b3e0bd50> @amueller no worries, thanks for the feedback! I'll spend some more time on benchmarking the sparse structure
+[19:06] <54e07d6515522ed4b3dc0858> @rvraghav93: gentle reminder that Friday is the firm GSoC pencils-down date.

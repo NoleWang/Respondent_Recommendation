@@ -1,0 +1,3 @@
+<s> <user> any reason why <unka`> 's <unka_`> does not allow sparse data ? ([ relevant <unk#a#(-./:]_> )) </s>
+<s> <user> basically you can fit on sparse , but ca n't predict </s>
+<s> <user> hmm , got it , it 's because [ <unk#a#(-./:]_`> ) does n't support it . </s>

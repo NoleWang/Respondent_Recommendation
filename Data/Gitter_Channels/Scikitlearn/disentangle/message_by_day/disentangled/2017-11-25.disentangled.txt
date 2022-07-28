@@ -1,0 +1,12 @@
+[06:40] <53eb987c107e137846baa89d> Does running tests using `make test` differs from tests run using `pytest`?
+--------------------------------------------------------------------------------------------------
+[12:41] <55d21ee30fc9f982beadabb8> @gxyd Check the Makefile: https://github.com/scikit-learn/scikit-learn/blob/master/Makefile#L39
+--------------------------------------------------------------------------------------------------
+[13:05] <53eb987c107e137846baa89d> So that would mean `make test` actually runs `pytest` with different parameters (or options)?
+[15:23] <55d21ee30fc9f982beadabb8> `make test` run `make test-code` `make test-sphinxext` `make test-doc
+[15:23] <55d21ee30fc9f982beadabb8> therefore it is equivalent to
+--------------------------------------------------------------------------------------------------
+[15:24] <55d21ee30fc9f982beadabb8> ``` pytest --showlocals -v sklearn pytest --showlocals -v doc/sphinxext/ pytest $(shell find doc -name '*.rst' | sort) ```
+--------------------------------------------------------------------------------------------------
+[16:04] <53eb987c107e137846baa89d> Yup, I understand now. Thanks.
+--------------------------------------------------------------------------------------------------

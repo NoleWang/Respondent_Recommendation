@@ -1,0 +1,8 @@
+[09:33] <56b0a775e610378809bf7a7c> @amueller I think the issue #6857 is solved by #6886. Can you confirm it was what you wanted ? Thx ;)
+--------------------------------------------------------------------------------------------------
+[18:58] <5761a537c2f0db084a1e0fe7> Hi all. I just wanted to ask, is there anything else I should do in https://github.com/scikit-learn/scikit-learn/pull/6874 or just wait? :)
+--------------------------------------------------------------------------------------------------
+[20:43] <53135b495e986b0712efc453> @yenchenlin @nelson-liu The GSoC midterms are approaching. Hope you guys are ready with your blogs posts? :)
+--------------------------------------------------------------------------------------------------
+[21:32] <56c4f19ae610378809c1f8ae> soon :shipit: :)
+--------------------------------------------------------------------------------------------------

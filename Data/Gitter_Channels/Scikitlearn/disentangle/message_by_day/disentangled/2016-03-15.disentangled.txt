@@ -1,0 +1,11 @@
+[05:33] <56c625c3e610378809c22760> just had a small doubt; how to compile a .cpp file into a python extension? I generate the cpp file by using --cplus extension but how can I compile after this? Is there an easier way to do the whole process?
+--------------------------------------------------------------------------------------------------
+[05:57] <56c625c3e610378809c22760> no probs. running `python setup.py build_ext --inplace` from source works plus you can see the command for compiling a c++ file into a python extension
+--------------------------------------------------------------------------------------------------
+[15:43] <54c630d6db8155e6700f168d> Hey everybody, I'm struggling a little bit with understanding how I'm going to deploy a scikit learn algorithm which has been implemented using scaled feature values
+[15:45] <54c630d6db8155e6700f168d> You see, I'm creating a calculator which'll do a logistic classification based upon a few values given by the user.
+[15:51] <54c630d6db8155e6700f168d> And I don't get how  I can scale the values I get from the user using the same scaler as I used in the algorithm itself.
+[15:51] <54c630d6db8155e6700f168d> Would love to get help if anybody's interested !
+--------------------------------------------------------------------------------------------------
+[19:15] <56cc7481e610378809c304aa> @perborgen  I'm not sure if this is what you're looking for but, if you're using preprocessing.StandardScaler, you could set scale_, mean_ and variance_ explicitly once you've gotten those values from fitting the scalar with your training set. You'd only need to persist those somehow.
+--------------------------------------------------------------------------------------------------

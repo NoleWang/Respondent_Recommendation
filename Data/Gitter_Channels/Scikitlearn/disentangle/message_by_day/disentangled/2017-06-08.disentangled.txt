@@ -1,0 +1,21 @@
+[05:16] <584bec30d73408ce4f3c127e> Hello, I need some help with C++ Coding
+--------------------------------------------------------------------------------------------------
+[09:15] <54d4a1d6db8155e6700f853b> @MoreToDo have you tried stackoverflow?
+--------------------------------------------------------------------------------------------------
+[10:04] <54b2524adb8155e6700e8a8e> I've requested some very minor changes at #8096 and gather that @dalmia won't complete it. A volunteer to take it over?
+--------------------------------------------------------------------------------------------------
+[11:54] <53135b495e986b0712efc453> Need any reviews anyone?
+--------------------------------------------------------------------------------------------------
+[12:12] <547d8325db8155e6700da60b> @jnothman  do you still need someone for #8096 ??
+[12:13] <54b2524adb8155e6700e8a8e> Yes
+--------------------------------------------------------------------------------------------------
+[12:20] <55d21ee30fc9f982beadabb8> @raghavrv I will need one soon
+[12:22] <55d21ee30fc9f982beadabb8> https://github.com/scikit-learn/scikit-learn/pull/9058 he it goes
+--------------------------------------------------------------------------------------------------
+[12:28] <53135b495e986b0712efc453> Aye master on it :)
+--------------------------------------------------------------------------------------------------
+[12:54] <547d8325db8155e6700da60b> @jnothman see #9059
+--------------------------------------------------------------------------------------------------
+[13:57] <5634e15116b6c7089cb8f9f2> hey all, please point me to a "Definitive g"
+[13:58] <5634e15116b6c7089cb8f9f2> hey all, don't mean to bother but please I'd appreciate if I could be pointed to a "Definitive guide to using Scikit-Learn" -style tutorial walkthrough. Peace <unconvertable>
+--------------------------------------------------------------------------------------------------

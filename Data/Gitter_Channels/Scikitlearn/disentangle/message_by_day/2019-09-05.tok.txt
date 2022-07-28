@@ -1,0 +1,2 @@
+<s> <user> does anyone know why the base <unka> for <unka`> is <unka`> , instead of <unka`> with <unka'=> ? i am working on adding a new type of tree . <unka@> <unka@> </s>
+<s> <user> no idea . it does n't make much sense for <unka`> to allow for a splitter that is n't <unka'> imo . would you want to submit a pr to <unka> the parameter ? </s>

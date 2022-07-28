@@ -1,0 +1,5 @@
+[17:00] <54d4a1d6db8155e6700f853b> Can you give an example of such an X? Sorry I'm being slow. The X example you gave above has shape (n_samples, 1)
+--------------------------------------------------------------------------------------------------
+[18:44] <5a1fcc56d73408ce4f810256> What are the typical approaches used for time series based classification decisions. Appreciate any pointers. I am planning to start with decision trees to somehow learn features based on class transitions. ( I only expect a couple of class transitions amongst
+[18:46] <5a1fcc56d73408ce4f810256> Classes which got renamed over time but Essentially carry similar features - say classes a1, a2,a3) besides the vanilla classification problem against classes b1,b2 and c1.
+--------------------------------------------------------------------------------------------------

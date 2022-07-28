@@ -1,0 +1,43 @@
+[15:13] <53135b495e986b0712efc453> `"Need Review"` - #5907, #5823, #5703, #5568, #4115, #5883, #5983, #5971, #5971, #5945, #5929, #5815, #5920  and PRs ready for merge - #5981, #5946, #5925 and Issues (or PRs) which need a removal of `"Need Contributor"` - #5986, #5876, #5868, #5824, #5789, # 5738, #5583, #5367, #5298, #5269, #4804  (Going a bit overboard with the usage of tags - take with a grain of salt - * a "Stalled Work" tag (hoping Gael doesn't oppose ;) ) -  #5316 (and a lot more...) (this tag could be added after the author of the PR  says he is no longer interested / have time to work on it or doesn't respond with the status in a month's time, this will help people who wish to work on the related issue, understand that their new PR is welcome... we could just add the `"Need Contributor"` back to the related issue... but people get confused why there is an existing PR for that issue) * a "Action Needed" tag - #4804 Along with `"Need Review"` to denote that review has been done and it needs the author to respond to the review... (So we can filter PRs for review like "Need Review" and !"Action Needed")
+[15:20] <53810862048862e761fa2887> @rvraghav93 2 of my PRs also need reviews, you think they need to be tagged ?
+[15:50] <53135b495e986b0712efc453> "Need Review" of course ;) Could you list them here??
+[15:51] <53135b495e986b0712efc453> Nevermind! @amueller #5414, #5270 
+[15:52] <53135b495e986b0712efc453> and awesome you've fixed #5689... sorry I tried and gave up...
+[15:58] <53810862048862e761fa2887> That's ok, that issue still hasn't been fixed, though. I was making a mistake by not passing randon_state, but there is no reason why that test should fail
+[16:22] <54d4a1d6db8155e6700f853b> should we tag all "MRG" ones with "needs review"?
+[16:23] <53135b495e986b0712efc453> I was wondering that... but that would be too much... So I was thinking maybe we could have only 20 odd `"Need Review"` tags at a time? How does that sound?
+[16:24] <53135b495e986b0712efc453> We have at most 10 serious reviewers right?
+[16:24] <53135b495e986b0712efc453> The number of `[MRG*` issues are over 150
+[16:25] <54d4a1d6db8155e6700f853b> I tagged all of them, but we should untag those that actually wait for the person doing the review to get back
+[16:25] <54d4a1d6db8155e6700f853b> well how do you choose the 20 ?
+[16:25] <53135b495e986b0712efc453> By most recently commented...
+[16:27] <54d4a1d6db8155e6700f853b> how does that make sense?
+[16:27] <54d4a1d6db8155e6700f853b> if someone created the perfect pull request and no dev reviewed it for 2 years, then it will be never reviewed
+[16:29] <53135b495e986b0712efc453> Well rules are meant to be broken... :P We could have 10 more for such PRs? Or not... probably that was a stupid suggestion... nevermind ;) 
+[16:30] <53135b495e986b0712efc453> But there will be a question on how do we get to decide that 10 probably.. so its better that all `[MRG*` is "need review" tagged...
+[16:32] <54d4a1d6db8155e6700f853b> we should remove the ones where we are waiting on the contributor to address comments
+[16:35] <53135b495e986b0712efc453> Okay that sounds better :) If I catch something like that I'll just ping u here... and how about `"Work Stalled"` for stalled PRs?
+[16:35] <54d4a1d6db8155e6700f853b> that is the same as PR ;)
+[16:36] <53135b495e986b0712efc453> haha... I mean like it-not-gonna-be-updated-anymore PRs ;)
+[16:39] <54d4a1d6db8155e6700f853b> ?
+[16:42] <53135b495e986b0712efc453> For example in [this comment](https://github.com/scikit-learn/scikit-learn/issues/5229#issuecomment-149628243) the author of #5316 said that he is not working on it anymore... There are quite a few PRs like that and a few more where the author has stopped responding... I was wondering out aloud if we could tag those with `"Work stalled"`...
+[17:04] <54d4a1d6db8155e6700f853b> or close them?
+[17:05] <54d4a1d6db8155e6700f853b> well how do you know if something is stalled and what would be the benefit of the tag?
+[17:06] <53135b495e986b0712efc453> that is better... but I feel it should be done only for stalled PRs which have a related issue open and we should include a comment in the issue that "There was a stalled PR ##### That was closed due to inactivity"... but I am afraid that closing might be a bit rude?
+[17:06] <53135b495e986b0712efc453> I was thinking of doing a random search from time to time ;)
+[17:07] <53135b495e986b0712efc453> for comments  by authors saying so or comments which ask for status that go unresponded for more than a month...
+[17:28] <54d4a1d6db8155e6700f853b> @rvraghav93 is waterponey colocated with you?
+[17:28] <53135b495e986b0712efc453> Ah no why?
+[17:28] <54d4a1d6db8155e6700f853b> do you know who he is?
+[17:28] <54d4a1d6db8155e6700f853b> he is in paris, right?
+[17:29] <54d4a1d6db8155e6700f853b> I met so many people at the sprint.
+[17:31] <54d4a1d6db8155e6700f853b> right you are with alex. hm...
+[17:32] <53135b495e986b0712efc453> Ah he was sitting with us... but I am unable to recollect who he is...
+[17:33] <54d4a1d6db8155e6700f853b> hehe ok
+[21:06] <561a58f7d33f749381a8ff2f> any Dutch :P?
+[22:27] <5525b91815522ed4b3deb7d6> @amueller @rvraghav93 In sympy we have "PR: Author's turn". It is put once the PR is reviewed and we are waiting on the author to address the comments. This way it is sometime easier to identify stalled one's.  :smile: 
+[22:31] <54d4a1d6db8155e6700f853b> @vighneshbirodkar multi-class AUC might also be interesting: #3298
+[22:32] <54d4a1d6db8155e6700f853b> @vighneshbirodkar the ada-grad stuff here #3729 would be cool but is likely to be a bigger project
+[22:33] <54d4a1d6db8155e6700f853b> @leosartaj how often do you reassign them? if the PR is quite active, it changes often who's turn it is. Or do you only do that if it is stalled for a while?
+[22:33] <54d4a1d6db8155e6700f853b> it might be helpful
+[22:34] <5525b91815522ed4b3deb7d6> I have seen it to work best: 1. It is a big PR. Reviews take time. 2. Author replies in a while. Probably not a good idea when the PR is quite active. Works well for slower one's.

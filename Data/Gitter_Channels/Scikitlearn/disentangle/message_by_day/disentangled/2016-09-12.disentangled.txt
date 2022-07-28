@@ -1,0 +1,9 @@
+[08:35] <56f0af1085d51f252aba1606> Hi guys,  I meet a MemoryError problem when using minibatch k-means for clustering a data set with 1,700,000 rows and 5 cols. My desktop has 8G RAM and the scikit-learn version is 0.17.1. I searched google and found a same issue fixed by updating sklearn (https://github.com/scikit-learn/scikit-learn/issues/3048). Due to the algorithm of minibatch kmeans, I think 8G RAM should be enough. Anyone has ideas about this situation? Thanks!
+--------------------------------------------------------------------------------------------------
+[13:35] <53135b495e986b0712efc453> > @raghavrv can you maybe work at making the new grid-search docs render correctly?  @amueller Sorry I missed the chat. Where does it not render correctly?
+--------------------------------------------------------------------------------------------------
+[17:06] <54d4a1d6db8155e6700f853b> @raghavrv there are a bunch of errors when generating the sphinx doc
+[17:06] <54d4a1d6db8155e6700f853b> @CasiaFan have you tried ``init="random"``
+--------------------------------------------------------------------------------------------------
+[23:37] <57d73afd40f3a6eec064e7a0> @amueller  dude tell me what are some cool things i can do with sci-kit learn and i promise i'll do them.
+--------------------------------------------------------------------------------------------------

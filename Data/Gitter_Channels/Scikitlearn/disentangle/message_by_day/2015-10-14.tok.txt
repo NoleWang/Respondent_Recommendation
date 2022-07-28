@@ -1,0 +1,33 @@
+<s> <user> i can confirm that ! ( numpy pip installed ) </s>
+<s> <user> URL/http:/ URL/stackoverflow.com/ <unk#a/> </s>
+<s> <user> <unk#a(.`> , <unk#a).`> is <unka`> from <unka`> <unk#.`> </s>
+<s> <user> setting the <unka`> at <unka_`> stage fixes these failures ... do we need a travis build for 1.10 or should we update one to check for numpy <unk#.> ? ADDRESS_( <unka)?@_> - pr at <unk##> </s>
+<s> <user> <unka@> la multi ani !! :p </s>
+<s> <user> i finally took the time to fix the <unka> machine to update the dev/ website . </s>
+<s> <user> it seems to work correctly but let me know if you spot problems . there is a couple of broken example in master . </s>
+<s> <user> <unka@> i would like to release the beta tomorrow . <unka@> is working on the <unka> <unk#.> release right now . </s>
+<s> <user> thanks <unk#a@> :) </s>
+<s> <user> <unka@> cool . anything i should look at in <unka> ? </s>
+<s> <user> <unka@> the numpy <unk#.> looks bad . can you confirm ? </s>
+<s> <user> <unka@> i 'm still catching up with github notifications and my health sucks :-/ </s>
+<s> <user> numpy <unk#.> need fixes but seemingly not too complicated </s>
+<s> <user> i have not checked the <unka> issue </s>
+<s> <user> ok . just got to <unka> notification inbox zero . i 'll have a <unka> dirty <unka> <unka> and then look at <unka> and other issues that we <unka> tagged for 0.17 </s>
+<s> <user> the doc build seems to be working . pushed 30 seconds ago ! awesomeness !! thanks <unka@> ! </s>
+<s> <user> ( and sorry for the constant nagging about it ) </s>
+<s> <user> > the doc build seems to be working . pushed 30 seconds ago : i just did a fix :) </s>
+<s> <user> URL/http:/ <unka-./> <unka./_> is not rendered </s>
+<s> <user> meh </s>
+<s> <user> and <unka-./_> </s>
+<s> <user> there are errors in some examples </s>
+<s> <user> i need to deploy an http server to publish the doc build log . </s>
+<s> <user> +1 a dns </s>
+<s> <user> do n't have time to do that tonight though </s>
+<s> <user> that would be sweet . sure </s>
+<s> <user> <unk#a@> do you want to build the docs and see if you find the errors ? </s>
+<s> <user> or i 'll do it . </s>
+<s> <user> i have n't checked doc build errors or testing errors recently </s>
+<s> <user> +1 for the dirty <unka> <unka> :) </s>
+<s> <user> i 'll go and get some dinner now , see you later . </s>
+<s> <user> sure :) it would be good to get URL/https:/ URL/github.com/ <unk#a-/> merged . i 'll add a <unka> now </s>
+<s> <user> also URL/https:/ URL/github.com/ <unk#a-/> </s>

@@ -1,0 +1,5 @@
+[01:36] <58a9a221d73408ce4f4b6740> @glemaitre  I have implemented a DecisionTree version in order to gain some insight regarding your fix #8458 .My approach during split is to remove the feature we split on and each child node doesn't contain that feature. But again we are going to have to look at say n-1 features .How did you overcome that. Your help can go a long way into helping me. Also I can make the code available to you. its actually from a book. Thanks.
+[23:33] <58a9a221d73408ce4f4b6740> thanks @glemaitre .
+--------------------------------------------------------------------------------------------------
+[16:06] <55d21ee30fc9f982beadabb8> @shubham0704 The idea is to keep a list of splitter and when scanning a feature, each sample is distributed to the given splitter to evaluate if this is a best split. Once the feature is scanned, all the potential splits have been evaluated with a single scan.
+--------------------------------------------------------------------------------------------------

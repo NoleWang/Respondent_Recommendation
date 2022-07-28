@@ -1,0 +1,5 @@
+<s> <user> does anyone have any tips for making an api proposal go smoothly ? ( e.g . the structure of a good proposal , good examples of existing <unka> ) context : i was hoping to start working on a proposal for adding <unka> sampling to <unka> , going off of thomas 's recommendations . </s>
+<s> <user> ah , just found the <unka> template . </s>
+<s> <user> i think adding features like that is usually discussed in the issues <unka@> <unka> have been a bit more on the general api rather than specific features </s>
+<s> <user> it can be just an issue like this one , for example URL/https:/ URL/github.com/ <unk#a-/> </s>
+<s> <user> ah , thanks for the clarification , <unka@> ! </s>

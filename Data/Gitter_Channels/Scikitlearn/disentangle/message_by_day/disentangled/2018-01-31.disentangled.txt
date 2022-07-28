@@ -1,0 +1,2 @@
+[19:59] <59e7b052d73408ce4f7aa075> I would like to include data loading/augmentation as the first step of a pipeline, so I can optimize parameters. But I see no way of doing so because of the signature of TransformerMixin (no place for class labels to be returned) . Any ideas?
+--------------------------------------------------------------------------------------------------

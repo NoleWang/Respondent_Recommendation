@@ -1,0 +1,1 @@
+<s> <user> i get warning that some columns are <unka> . is there any utility to find out which columns they are ? </s>

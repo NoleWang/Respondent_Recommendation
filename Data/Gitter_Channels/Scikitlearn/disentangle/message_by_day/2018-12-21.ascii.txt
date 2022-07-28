@@ -1,0 +1,3 @@
+[18:52] <5b97b76ed73408ce4fa7b2da> Hello everyone , I am a noobie with scikit , interested in datascience , can anyone give me trusted quick reference and reading material link , Thanks 
+[18:53] <54d4a1d6db8155e6700f853b> https://jakevdp.github.io/PythonDataScienceHandbook/ @Ritzing (free online)
+[18:55] <5b97b76ed73408ce4fa7b2da> Thanks @amueller 

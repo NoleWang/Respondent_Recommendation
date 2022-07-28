@@ -1,0 +1,3 @@
+<s> <user> ok i have a set of market returns . but i want to explain the returns using a set of features , then find the hierarchy and find an equal <unka> <unka> that minimizes <unka> . how can this be done ? </s>
+<s> <user> <unka`> i have a set of market returns . but i want to explain the returns using a set of features , then find the <unka`> </s>
+<s> <user> this much idk how to do , i can figure out the rest . </s>

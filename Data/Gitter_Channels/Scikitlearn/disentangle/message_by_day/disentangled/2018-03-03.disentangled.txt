@@ -1,0 +1,17 @@
+[19:40] <564789be16b6c7089cbab8b7> I would like to cluster about 100,000  vectors according to the Pearson distance https://en.wikipedia.org/wiki/Pearson_correlation_coefficient#Pearson's_distance  . Which clustering method would support that?
+[19:40] <564789be16b6c7089cbab8b7> many of them seem to want the Euclidean distance
+--------------------------------------------------------------------------------------------------
+[19:48] <59afadccd73408ce4f748432> @lesshaste
+[19:48] <564789be16b6c7089cbab8b7> hi
+--------------------------------------------------------------------------------------------------
+[19:50] <564789be16b6c7089cbab8b7> @guyome80  I am hoping you might be about to tell me about clustering...
+[19:50] <59afadccd73408ce4f748432> Oups, sorry, wrong message...
+--------------------------------------------------------------------------------------------------
+[19:53] <570d14d6187bb6f0eadf1582> You can try k-medoids
+--------------------------------------------------------------------------------------------------
+[19:53] <59afadccd73408ce4f748432> I was thinking about a preprocessing method (Standardscaler) instead of clustering...
+--------------------------------------------------------------------------------------------------
+[19:54] <570d14d6187bb6f0eadf1582> K-medoids isnt released yet, but it support any distance metric you wish. you might copy paste the class or build from the branch. The complexity is worse then k means, for 100k should be good
+--------------------------------------------------------------------------------------------------
+[23:01] <57379367c43b8c601972f35d> hi
+--------------------------------------------------------------------------------------------------

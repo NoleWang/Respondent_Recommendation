@@ -1,0 +1,19 @@
+<s> <user> <unka@> you need to <unka> those missing values ( using <unka.`> ) first before passing on to the <unka`> . </s>
+<s> <user> <unka@> i got you ! can you give <unk##> another quick review ? </s>
+<s> <user> <unka@> thanks a lot ! are there easy ways to get more advanced strategies ? regression , nearest neighbors ? </s>
+<s> <user> <unka@> thanks for the ping . done ... some minor comments and +1 :) </s>
+<s> <user> <unka@> you around ? ;) </s>
+<s> <user> hey everyone , i have a <unka_> for you ! </s>
+<s> <user> <unk`> def <unka(_> ): <unconvertable > """ turns a <unka> <unka(> ) - -> <unka(> ) <unconvertable > <unconvertable > pipeline into single weights and bias . """ <unconvertable > <unconvertable > assert <unka(._> )) == { <unka'> , <unka'> } <unconvertable > <unconvertable > <unka> = <unka'.[_> ] <unconvertable > <unconvertable > sc = <unka'.[_> ] <unconvertable > <unconvertable > w = ( <unka._> <unka._> ) <unconvertable > <unconvertable > b = <unka._> - ( <unka._> <unka()._> ) <unconvertable > <unconvertable > return ( w , b ) <unk`> </s>
+<s> <user> for those doing <unka> regression , this turns a <unka> + <unka> pipeline into a single <unka+> matrix </s>
+<s> <user> you use it like this : <unk`> x = <unk#a(.> , 512 ) <unka,> = <unka(_> ) assert <unka(.> <unka(._> ), <unka(.> ) + b ) <unka%> <unka(._> ) <unk#=> > 10 loops , best of 3 : 122 ms per loop <unka%> <unka(.> ) + b <unk#=> > the slowest run took <unk#.> times longer than the fastest . this could mean that an intermediate result is being cached . <unk#=> > 1000 loops , best of 3 : 265 us per loop <unk`> </s>
+<s> <user> the speedup is significant </s>
+<s> <user> the real funny part is that the resulting calculation runs only on a single core , even though it 's hundreds of times faster than <unka> vanilla pipeline </s>
+<s> <user> now , i have 1800 of these <unka> to run . it 's much faster to do a ( <unk#,> ) * ( 512 , n ) matrix operation than to call 1800 pipelines in sequence </s>
+<s> <user> hmm , thats pretty interesting </s>
+<s> <user> this makes me wonder if <unka> could n't benefit from some pipeline optimization tricks ? i know i'd love like a <unka`> class </s>
+<s> <user> but of course there could be other possible ways to <unka-> other combinations of linear <unka> ( e.g . <unka> and random <unka> are the same thing ) </s>
+<s> <user> for that question , i suggest you raise an issue ; not everyone is on checks <unka> :) </s>
+<s> <user> i want to build a recommendation system for movies . what are all things i should learn . i am presently doing <unka> course with basics in python , web dev and java . </s>
+<s> <user> i had completed ml course by andrew ng and ml through case study by carlos on <unka> </s>
+<s> <user> </s>

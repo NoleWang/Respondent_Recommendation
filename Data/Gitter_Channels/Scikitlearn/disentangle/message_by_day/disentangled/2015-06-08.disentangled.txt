@@ -1,0 +1,55 @@
+[00:53] <54e07d4015522ed4b3dc0856> That is my opinion. Though it is weird cause that is what people call it. So I am of 2 minds at once
+[00:54] <54e07d4015522ed4b3dc0856> But the paper citation stuff is really pretty shady so that is tough too.
+--------------------------------------------------------------------------------------------------
+[02:33] <54e07d6515522ed4b3dc0858> Do we care about being googlable for this?
+--------------------------------------------------------------------------------------------------
+[11:16] <53135b495e986b0712efc453> Just a general question... Is there a way to track changes in a particular module and get notified if that gets merged? (w.r.t #4294) (ref [comment](https://github.com/scikit-learn/scikit-learn/pull/4829#issuecomment-109952865))
+[11:27] <53135b495e986b0712efc453> Ah its easier to just check the history of the file ;) sorry for the noise!
+--------------------------------------------------------------------------------------------------
+[13:53] <54d4a1d6db8155e6700f853b> @kastnerkyle btw I'm going to seriously start on the tutorials now, I was pretty busy with other things before
+[13:54] <54d4a1d6db8155e6700f853b> @vene I think we should use the word Extreme Learning Machine in the narrative and maybe as a remark in the docstrings, but not as the name.
+[13:54] <54d4a1d6db8155e6700f853b> Like "This can be used to implement so-called Extreme Learning Machines" or something like that
+--------------------------------------------------------------------------------------------------
+[14:16] <54e07d6515522ed4b3dc0858> That's probably wise.
+--------------------------------------------------------------------------------------------------
+[14:17] <54e07d6515522ed4b3dc0858> Also, scikit-learn should have the power to change the way researchers call algorithms. Maybe our naming decision will fix this mess a bit.
+--------------------------------------------------------------------------------------------------
+[14:18] <54e07d6515522ed4b3dc0858> I've seen researchers calling svms SMO because that's what the solver class is called in Weka
+--------------------------------------------------------------------------------------------------
+[14:20] <54d4a1d6db8155e6700f853b> omg
+--------------------------------------------------------------------------------------------------
+[14:40] <54e07d6515522ed4b3dc0858> I remember Fabian had started wrapping liblinear's CD solver. Now that SAG is joining the family of solvers available for logistic regression, we might be able to simplify the codebase by picking that up
+[14:40] <54e07d6515522ed4b3dc0858> assuming it matches the interface of scipy optimizers
+[14:41] <54e07d6515522ed4b3dc0858> https://github.com/fabianp/pytron/
+[14:42] <54e07d6515522ed4b3dc0858> (question triggered by @amueller's [comment](https://github.com/scikit-learn/scikit-learn/pull/4738#issuecomment-108592200))
+--------------------------------------------------------------------------------------------------
+[18:22] <54d4a1d6db8155e6700f853b> @kastnerkyle when do you have time to discuss the tutorial? Do you think we should put exercises after each sections or do "morning lecture, morning exercises, afternoon lecture, afternoon exercises"? Maybe multiple short breaks would be good? four hours is such a long time. Maybe a four 45 blocks with 15 minutes exercises? Not sure.
+--------------------------------------------------------------------------------------------------
+[20:35] <550f53e215522ed4b3dda5f6> Hi, I am almost done the derivation draft. I fixed some typos and errors, and completed the DP part. What is left is the lower bound and predictive distribution for   two cases. I think I could finish it tomorrow. The difference from current derivation includes, the initial parameters and the updating functions for Wishart distribution. The rest of them are the same. I hope I could find out the reason of the latter.
+[20:43] <550f53e215522ed4b3dda5f6> With regards to the new names of DPGMM and VBGMM, I think these two names are not suitable, just like someone calls SVM as SMO. Actually, the models are Bayesian GMM, Dirichlet Process Bayesian GMM (DPGMM is often used) respectively. Both of them are solved by variational inference. In other words, VBGMM is not a good name. The new names, I think, should have the meaning of 'Bayesian GMM solved by VB', 'DP(B)GMM solved by VB'.
+--------------------------------------------------------------------------------------------------
+[21:17] <54d4a1d6db8155e6700f853b> @tw991 the two PRs with the mlp code are #3939 and #3204. #3204 contains adagrad
+[21:18] <54d4a1d6db8155e6700f853b> @xuewei4d I agree wrt VB. It should be "bayesian GMM"
+[21:19] <54d4a1d6db8155e6700f853b> or something similar
+--------------------------------------------------------------------------------------------------
+[22:24] <54e07d4015522ed4b3dc0856> @amueller I have time. Just started my internship today so I should be able to take a look at it now :) I think 45 min blocks + excercises is good but we should also budget for questions *during*. And hopefully we will not be only 2 who can help when questions arise - maybe some advanced sklearn users in audience can help too
+[22:25] <54e07d4015522ed4b3dc0856> Though I am expecting more question during advanced section for sure. We could do that in 30/30 blocks
+[22:26] <54e07d4015522ed4b3dc0856> if necessary. Also the first day tutorial might inform us of mods to make for second day
+--------------------------------------------------------------------------------------------------
+[22:27] <54d4a1d6db8155e6700f853b> @kastnerkyle cool. I basically just copied the 2013 as a start, but I want to do some reorganization. I'm not entirely certain about the structure and the cluster stuff
+[22:29] <54d4a1d6db8155e6700f853b> I am now going through the lectures again and I'll draft a new toc tomorrow. I think having a bit more intro about what ML is in the beginning would be good, and I'll try to recycle some of my diagrams
+[22:30] <54d4a1d6db8155e6700f853b> Actually the current notebooks are pretty close to the toc in the proposal, with a bit of reorganization
+[22:35] <54d4a1d6db8155e6700f853b> @kastnerkyle is there any part you'd like to work on particularly so that we don't conflict? Also, when do you have time or a beer in the city?
+[22:36] <54d4a1d6db8155e6700f853b> I think I'd like to work on the intro for now.
+--------------------------------------------------------------------------------------------------
+[22:51] <54e07d4015522ed4b3dc0856> I am planning right now to pop in over the weekend. So if you have a day or time which is good I am game. I am probably stronger talking about PCA, GP and friends than random forests, SVM and the like if we are gonna go into theoretical aspects. But if not then I have no preference.
+[23:17] <54e07d4015522ed4b3dc0856> Also I am terrible at the text preprocessor stuff. But I think it is important
+[23:17] <54e07d4015522ed4b3dc0856> DictVectorizer etc. Might be a crucial thing for examples. Raw text -> classification ala your troll detection model
+--------------------------------------------------------------------------------------------------
+[23:26] <54d4a1d6db8155e6700f853b> I don't think we will do much theory, and I don't think we should include GPs. I want to talk a bit more about details about some of the commonly used supervised models.
+[23:29] <54d4a1d6db8155e6700f853b> I think Sunday would work for me.
+--------------------------------------------------------------------------------------------------
+[23:45] <54e07d4015522ed4b3dc0856> OK cool. I will let you know later in the week what is up but I can try to be in NY on Sunday. What part are you in?
+--------------------------------------------------------------------------------------------------
+[23:57] <54d4a1d6db8155e6700f853b> I'm in east village but I'm pretty free on Sunday, so I could travel a bit
+--------------------------------------------------------------------------------------------------

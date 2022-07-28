@@ -1,0 +1,10 @@
+<s> <user> <unk#a@> it probably depends , what dataset do you mean in particular ? </s>
+<s> <user> i think based on their mails we should n't worry too much about including it . </s>
+<s> <user> could someone merge <unk##> ? :) </s>
+<s> <user> why is that <unka> ? </s>
+<s> <user> but sure </s>
+<s> <user> when attempting to import from the old <unka_`> module which is deprecated ... i noticed a weird behaviour in ipython ... simply <unka> brings up the <unka> warning ... is that normal ... ? <unk`> from <unka._> import <unk#a-./:_> : <unka> : this module has been deprecated in favor of the <unka_> module into which all the <unka> classes and functions are moved . also note that the interface of the new cv <unka> are different from that of this module . refer <unka._> for more info . " refer <unka._> for more info .", <unka> ) <unk`> </s>
+<s> <user> notice the warning start after <unka<`> > ` </s>
+<s> <user> <unka@> that was failing <unk##> ;) thanks for the merge ! </s>
+<s> <user> that 's expected if the <unka> warning is at module level afaik </s>
+<s> <user> okay ! thanks :) </s>

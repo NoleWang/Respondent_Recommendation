@@ -1,0 +1,25 @@
+<s> <user> hi everyone </s>
+<s> <user> i want to apply the elastic net to do sparse feature selection on my data , but i only want a subset of the features to be <unka> ( and the rest of the features to be <unka> ) </s>
+<s> <user> theres probably nothing that supports this right now in <unka-> , right ? </s>
+<s> <user> not too keen on <unka-> the algorithms myself haha , so id figure id ask . </s>
+<s> <user> i also find it interesting that the elastic net is not mentioned anywhere on the [ feature selection <unka(-./:]_> ), since it tends to avoid the problem that the <unka> has of selecting an individual variable out of a group of highly correlated features ... </s>
+<s> <user> <unk##> and <unk##> sould be closed </s>
+<s> <user> <unka@> you should comment that on the original <unka> , <unka> is fairly <unka-> </s>
+<s> <user> <unka@> i wonder if you could give a look to <unk##> </s>
+<s> <user> <unka@> i 'm crazy busy today and tomorrow ( ending a job today , starting a new tomorrow ). i 'll try to catch up with the issue tracker soon but feel free to ping me again . </s>
+<s> <user> ok np </s>
+<s> <user> <unka@> what 's the convention when two pr are opened for the same bug ? </s>
+<s> <user> it 's a minor one ... very very very minor documentation issue . </s>
+<s> <user> <unka@> you tell them both and maybe give a recommendation on which offers a better solution ? </s>
+<s> <user> <unka@> if they are both ready to merge , merge one and explain apologize to the other ? </s>
+<s> <user> :d </s>
+<s> <user> if you have a better idea , i 'm all ears </s>
+<s> <user> well , there is a second <unka> needed , if you'd like to review two <unk#a-> documentation change </s>
+<s> <user> sure </s>
+<s> <user> <unk##> and <unk##> </s>
+<s> <user> the first one is better . </s>
+<s> <user> the first one is also first . this can be merged with one review as minor docs . </s>
+<s> <user> i think we try a mixture of nice and pragmatic </s>
+<s> <user> that 's what i figured </s>
+<s> <user> are the scipy docs down or is it just me ? URL/https:/ <unka./> <unka./> </s>
+<s> <user> <unka@> it is down </s>

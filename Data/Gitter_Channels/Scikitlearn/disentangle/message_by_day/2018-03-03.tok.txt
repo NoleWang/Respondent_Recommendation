@@ -1,0 +1,10 @@
+<s> <user> i would like to cluster about 100,000 vectors according to the <unka> distance URL/https:/ URL/en.wikipedia.org/ <unka#'/_> . which clustering method would support that ? </s>
+<s> <user> many of them seem to want the <unka> distance </s>
+<s> <user> <unka@> </s>
+<s> <user> hi </s>
+<s> <user> <unk#a@> i am hoping you might be about to tell me about clustering ... </s>
+<s> <user> oups , sorry , wrong message ... </s>
+<s> <user> you can try <unka-> </s>
+<s> <user> i was thinking about a <unka> method ( <unka> ) instead of clustering ... </s>
+<s> <user> <unka-> isnt released yet , but it support any distance metric you wish . you might copy paste the class or build from the branch . the complexity is worse then k means , for 100k should be good </s>
+<s> <user> hi </s>

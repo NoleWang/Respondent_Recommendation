@@ -1,0 +1,11 @@
+[07:06] <54d4a1d6db8155e6700f853b> @Rahulvks have you looked at the text classification tutorial? http://scikit-learn.org/dev/tutorial/text_analytics/working_with_text_data.html
+[07:06] <54d4a1d6db8155e6700f853b> you can also find several examples in the examples gallery: http://scikit-learn.org/dev/auto_examples/index.html
+[13:39] <565b339a16b6c7089cbc9958> @amueller, can you please help me out with this issue??
+[13:39] <565b339a16b6c7089cbc9958> I was trying to work on an easy bug regarding RobustScaler under sklearn.preprocessing  when i checked the data.py file in the given file hierarchy, the robust scaler class does exist and i'm not able to figure out why is it giving me an import error I've even tried to run the plot_robust_scaling.py in the examples folder but then again I end up with the same import error.
+[13:40] <565b339a16b6c7089cbc9958> I currently use a mac operating on OS X 10.11
+[13:41] <565b339a16b6c7089cbc9958> and tried importing the code on python3
+[13:45] <565b339a16b6c7089cbc9958> [![Screen Shot 2015-12-01 at 7.13.59 PM.png](https://files.gitter.im/scikit-learn/scikit-learn/KIc6/thumb/Screen-Shot-2015-12-01-at-7.13.59-PM.png)](https://files.gitter.im/scikit-learn/scikit-learn/KIc6/Screen-Shot-2015-12-01-at-7.13.59-PM.png)
+[15:23] <561a58f7d33f749381a8ff2f> @SumedhArani  Old version, it is really new
+[18:42] <561a58f7d33f749381a8ff2f> @SumedhArani  What I meant was... you're importing an old version of scikit, while you might be looking at some other source code. Try to see the path of sklearn.preprocessing module after importing sklearn.preprocessing
+[18:42] <561a58f7d33f749381a8ff2f>     import sklearn.preprocessing
+[18:43] <561a58f7d33f749381a8ff2f>     sklearn.preprocessing

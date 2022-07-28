@@ -1,0 +1,10 @@
+[20:09] <5d8b71ded73408ce4fcc0322> Can you help me please !!
+[20:10] <5d8b71ded73408ce4fcc0322> How can i reach to each tree in random forest algorithm 
+[20:10] <54d4a1d6db8155e6700f853b> the estimators_ attribute, check the docs
+[20:11] <5d8b71ded73408ce4fcc0322> I want to extract the rules for every tree i get the following code put there is an error in it 
+[20:13] <5d8b71ded73408ce4fcc0322> model=RandomForestClassifier(n_estamator=10)
+[20:15] <5d8b71ded73408ce4fcc0322> model.fit(iris.data,iris.target)
+[20:15] <5d8b71ded73408ce4fcc0322> estamator =model.n_estamator_[5]
+[20:18] <5d8b71ded73408ce4fcc0322> The error is ''RandomForestClassifier object has no attribute 'n_estimators_'
+[20:18] <5d8b71ded73408ce4fcc0322> how can i write this line please 
+[20:19] <5d8b71ded73408ce4fcc0322> estimator=model.n_estimators_[5]

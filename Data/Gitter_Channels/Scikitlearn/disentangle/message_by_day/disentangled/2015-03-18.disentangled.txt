@@ -1,0 +1,206 @@
+[14:48] <5385f2fe048862e761fa2d40> Can anyone explain to me how to implement Affinity Propogation in Map/Reduce? http://www.chinacloud.cn/upload/2015-01/15011111364805.pdf
+[14:48] <5385f2fe048862e761fa2d40> I don't really understand the paper
+[14:48] <5385f2fe048862e761fa2d40> and the English is pretty much well... chinese :P
+--------------------------------------------------------------------------------------------------
+[14:54] <541a528b163965c9bc2053de> scikit-learn is not a community of mapreduce users so I doubt you will get good feedback on here. You might rather ask on a discussion forum with spark or mahout users. I am not sure that using the hadoop mareduce API is a good thing for iterative machine learning anyway. It's probably better to build upon higher level parallel construct like allreduce or the spark API in general.
+--------------------------------------------------------------------------------------------------
+[14:55] <5385f2fe048862e761fa2d40> The thing is that I have a huge dataset and I don't want to use K-Means since that means I have to guess the optimal number of clusters each time
+[14:56] <541a528b163965c9bc2053de> Also if you still want to ask questions about the paper on a discussion forum, you should ask specific questions, otherwise you probably won't get any interesting answer.
+[14:56] <5385f2fe048862e761fa2d40> I have no idea where to start
+[14:56] <5385f2fe048862e761fa2d40> How do I adapt the existing algorithm to be parallel?
+[14:56] <5385f2fe048862e761fa2d40> I'm not much of an ML guy but I'm trying to learn
+--------------------------------------------------------------------------------------------------
+[14:56] <541a528b163965c9bc2053de> Use minibatch kmeans on a subset with init_size=int(1e4) and batch_size=int(1e3)
+--------------------------------------------------------------------------------------------------
+[14:59] <541a528b163965c9bc2053de> if you are trying to learn, start with smaller datasets (e.g. a random subset) where algo run fast. To learn stuff you will have to fail many times to learn from your mistakes. If each failures take days of cluster programming and execution you will learn slowly :) By working on a subset that fits in memory on your laptop you will learn much faster.
+[14:59] <5385f2fe048862e761fa2d40> But working on a subset of the data is meaningless
+[14:59] <5385f2fe048862e761fa2d40> I can't even work on 10,000 nodes
+[15:00] <541a528b163965c9bc2053de> Also your clustering will fail not because of the algorithm but because of the way you extract features and fail to normalize them, see for instance: https://www.youtube.com/watch?v=TC5cKYBZAeI
+[15:01] <541a528b163965c9bc2053de> > I can't even work on 10,000 nodes  What are "nodes"?
+[15:02] <541a528b163965c9bc2053de> > But working on a subset of the data is meaningless  I am not sure about that. If you are "not much of an ML guy", start with a smaller / simpler problem first.
+[15:03] <5385f2fe048862e761fa2d40> I asked our ML guy. Working with 10,000 data points is meaningless in my context
+[15:03] <5385f2fe048862e761fa2d40> nodes = data points in the matrix
+[15:03] <541a528b163965c9bc2053de> minibatch kmeans can work with millions of high dimensional points, as long as they fit in memory
+[15:04] <541a528b163965c9bc2053de> init_size is just a parameter for the subset used to initialize the centroids
+[15:04] <5385f2fe048862e761fa2d40> But I still have to optimize the number of clusters
+[15:05] <541a528b163965c9bc2053de> you will have to do that anyway, whatever the algorithm
+[15:05] <541a528b163965c9bc2053de> there is always at least one hyperparameter that controls directly or indirectly the number of clusters
+[15:06] <5385f2fe048862e761fa2d40> As far as I understand AF figures that out
+[15:08] <541a528b163965c9bc2053de> it does something by default that might or might not reflect what you expect to be a "good" number of clusters
+--------------------------------------------------------------------------------------------------
+[15:08] <5385f2fe048862e761fa2d40> I'm working with geolocation data (x, y)
+[15:08] <5385f2fe048862e761fa2d40> I think that eucelidian distances is a good choice
+[15:08] <541a528b163965c9bc2053de> but hyperparameters such as "preference" in the scikit-learn implementation of AP will impact the clustering outcome
+[15:09] <5385f2fe048862e761fa2d40> 200 milion
+[15:11] <5385f2fe048862e761fa2d40> x & y are coordinates
+[15:12] <5385f2fe048862e761fa2d40> GPS degrees
+--------------------------------------------------------------------------------------------------
+[15:09] <541a528b163965c9bc2053de> yes +1 for euclidean distance for geo data.
+[15:09] <541a528b163965c9bc2053de> How many samples?
+--------------------------------------------------------------------------------------------------
+[15:10] <541a528b163965c9bc2053de> If you use scikit-learn master you might want to try DBSCAN on a 1M subset with eps the distance in meters of two points that are close enough to be considered part of a common cluster (assuming x and y are meters as well)
+[15:11] <541a528b163965c9bc2053de> the implementation of DBSCAN in sklearn 0.15.2 will be much to slow.
+[15:12] <541a528b163965c9bc2053de> > x & y are coordinates  I understand, but which unit? meters, km, miles, GPS degrees?
+[15:13] <541a528b163965c9bc2053de> they decide how much GPS degrees should be considered close points. Start with lower values to generate smaller clusters.
+[15:14] <541a528b163965c9bc2053de> Birch is probably a good candidate as well if you want to compress your 200M points into a smaller summary dataset.
+--------------------------------------------------------------------------------------------------
+[15:11] <54d4a1d6db8155e6700f853b> affinity propagation is not a great method imho. people rarely use it in practice I think, in particular not on such large data
+[15:11] <54d4a1d6db8155e6700f853b> dbscan or birch or any other method that selects the number of clusters are much likelier candidates
+[15:15] <54d4a1d6db8155e6700f853b> otherwise we keep duplicating fixes
+--------------------------------------------------------------------------------------------------
+[15:14] <54d4a1d6db8155e6700f853b> btw @ogrisel if you have the time, it would be awesome if you could work through some of the MRG + 1 PRs. There is a ton of them
+[15:14] <541a528b163965c9bc2053de> But it's probably harder to use correctly.
+[15:14] <541a528b163965c9bc2053de> @amueller alright.
+--------------------------------------------------------------------------------------------------
+[15:15] <5385f2fe048862e761fa2d40> It's 200M unique points
+[15:16] <5385f2fe048862e761fa2d40> That's why I was looking at map/reduce
+--------------------------------------------------------------------------------------------------
+[15:22] <541a528b163965c9bc2053de> ``` >>> 200e6 * 2 * 8 / 1e9 3.2 ```  3.2GB of double precision floats => it fits in memory
+[15:22] <541a528b163965c9bc2053de> minibatch kmeans and birch can eat it
+[15:22] <541a528b163965c9bc2053de> yes AF is not scalable
+--------------------------------------------------------------------------------------------------
+[15:22] <5385f2fe048862e761fa2d40> AF raises MemoryError
+--------------------------------------------------------------------------------------------------
+[15:22] <5385f2fe048862e761fa2d40> Unless you're able to run it on multiple nodes which makes it scalable
+--------------------------------------------------------------------------------------------------
+[15:23] <541a528b163965c9bc2053de> I am pretty sure that minibatch kmeans will converge in less than an hour
+[15:23] <54d4a1d6db8155e6700f853b> @omerzimp why are you so set on AF?
+[15:23] <541a528b163965c9bc2053de> try on 1M first, look at the results (plot the clusters of on map)
+[15:23] <5385f2fe048862e761fa2d40> Because I like automatic things :P
+[15:25] <541a528b163965c9bc2053de> and sometimes you have "natural" clusters at differrent scales (nested clusters)
+[15:25] <541a528b163965c9bc2053de> in your data
+[15:25] <541a528b163965c9bc2053de> so there is no "true" / "good" number of clusters
+--------------------------------------------------------------------------------------------------
+[15:24] <54d4a1d6db8155e6700f853b> it is a lot less automatic than any of the other methods
+[15:24] <54d4a1d6db8155e6700f853b> it is really hard to tune
+[15:24] <541a528b163965c9bc2053de> k=10 for KMeans is as automatic as preference=median for AP
+--------------------------------------------------------------------------------------------------
+[15:24] <5385f2fe048862e761fa2d40> And I really want to learn to apply ML on M/R
+[15:24] <541a528b163965c9bc2053de> it's not automatic, it's lying to you
+--------------------------------------------------------------------------------------------------
+[15:24] <54d4a1d6db8155e6700f853b> all clustering algorithms have parameters that influence the number of clusters. some are explicit, like k-means, some are implicit, as in mean-shift, dbscan and birch.
+[15:24] <541a528b163965c9bc2053de> exactly
+[15:25] <54d4a1d6db8155e6700f853b> only AF has the most non-intuitive parametrization of the implicit assumptions
+[15:25] <54d4a1d6db8155e6700f853b> yeah I think it is rare that you have a single scale. either there are clusters on multiple levels or none at all ;)
+--------------------------------------------------------------------------------------------------
+[15:25] <5385f2fe048862e761fa2d40> That's why the presented AF M/R is hierarchical
+--------------------------------------------------------------------------------------------------
+[15:26] <541a528b163965c9bc2053de> the good number depends on what kind of application you want to use the result of the clustering for
+[15:26] <54d4a1d6db8155e6700f853b> there is also AgglomerativeClustering, which is much faster and easier to understand than AF
+[15:26] <54d4a1d6db8155e6700f853b> and provides a hierarchical clustering
+[15:28] <541a528b163965c9bc2053de> no, but for 200M points x 2D it's probably overkill to use a cluster
+[15:28] <541a528b163965c9bc2053de> but you can use the spark MLlib clustering implementations if you really want to use a cluster
+[15:29] <54d4a1d6db8155e6700f853b> well ok if your point is to understand how to implement AF on MR then go for that. I just don't see why you would want to do that, as AF is a crappy algorithm.
+[15:29] <54d4a1d6db8155e6700f853b> There are a also papers about implementing good clustering algorithms on MR
+--------------------------------------------------------------------------------------------------
+[15:26] <5385f2fe048862e761fa2d40> AF also has a hierarchical version but not in sklearn
+[15:26] <5385f2fe048862e761fa2d40> just saying yeh?
+[15:28] <5385f2fe048862e761fa2d40> Because I have a paper on it that explains (somewhat) how to implement it in M/R which is something that I want to be able to understand and implement
+[15:28] <5385f2fe048862e761fa2d40> The number will increase and we have other jobs executing with even more data
+--------------------------------------------------------------------------------------------------
+[15:27] <541a528b163965c9bc2053de> but is probably not scalable to 200MB unless you impose neighbors constraints which will be similar to DBSCAN or Birch
+[15:27] <54d4a1d6db8155e6700f853b> I am just asking why you want AF.
+[15:27] <5385f2fe048862e761fa2d40> even if you run it on multiple nodes?
+--------------------------------------------------------------------------------------------------
+[15:30] <541a528b163965c9bc2053de> do not focus on MR, they are better ways to distribute machine learning on a cluster: spark and the H20 runtime
+[15:31] <541a528b163965c9bc2053de> http://mahout.apache.org/ : even mahout is moving away from mapreduce: 25 April 2014 - Goodbye MapReduce  The Mahout community decided to move its codebase onto modern data processing systems that offer a richer programming model and more efficient execution than Hadoop MapReduce. Mahout will therefore reject new MapReduce algorithm implementations from now on. We will however keep our widely used MapReduce algorithms in the codebase and maintain them.  We are building our future implementations on top of a DSL for linear algebraic operations which has been developed over the last months. Programs written in this DSL are automatically optimized and executed in parallel on Apache Spark.  Furthermore, there is an experimental contribution undergoing which aims to integrate the h20 platform into Mahout.
+--------------------------------------------------------------------------------------------------
+[15:33] <5385f2fe048862e761fa2d40> We're using Druid over here
+[15:38] <5385f2fe048862e761fa2d40> And the jobs are written in python. Not java
+--------------------------------------------------------------------------------------------------
+[15:39] <541a528b163965c9bc2053de> @amueller I merged @lesteve's PR with doc fixes. I have to catch my bus. Will probably reconnect later tonight.
+[15:40] <541a528b163965c9bc2053de> spark and h20 are JVM stuff as well. But it's a detail in practice. What matters is how the memory is used, how the algo scales and can it be efficiently be distributed on a cluster or not.
+[15:40] <5385f2fe048862e761fa2d40> I know spark
+[15:40] <5385f2fe048862e761fa2d40> I haven't written anything that uses it yet
+--------------------------------------------------------------------------------------------------
+[15:41] <5385f2fe048862e761fa2d40> We got disco and druid over here
+[15:41] <54d4a1d6db8155e6700f853b> @ogrisel cool :) there are sooo many reviews to be done....
+[15:41] <541a528b163965c9bc2053de> yes
+[15:41] <5385f2fe048862e761fa2d40> There's much better python support there
+--------------------------------------------------------------------------------------------------
+[15:41] <5385f2fe048862e761fa2d40> I'm trying AgglomerativeClustering on 10k points to see what happens in comparance to K-MEANS
+--------------------------------------------------------------------------------------------------
+[15:46] <5385f2fe048862e761fa2d40> @ogrisel Do you know a Python library that is similar to mahout?
+[15:46] <54d4a1d6db8155e6700f853b> btw @ogrisel if we merge one Pr every day, we will still be going at Chrismas (if no-one opens any more).
+[15:47] <54d4a1d6db8155e6700f853b> omerzimp there is none. Pyspark is the closest, I'd think. there are also python interfaces for h2o and graphlab/dato
+--------------------------------------------------------------------------------------------------
+[15:48] <5385f2fe048862e761fa2d40> I already have Druid (druid.io) and pydruid
+[15:48] <5385f2fe048862e761fa2d40> I'm talking about a batched implementation of ML algos in Python that integrates with tools like spark or druid
+[15:48] <5385f2fe048862e761fa2d40> I can adapt spark to druid
+--------------------------------------------------------------------------------------------------
+[15:52] <5385f2fe048862e761fa2d40> @ogrisel I tried AgglomerativeClustering and I can't find where to fetch the cluster centers from
+[15:52] <54d4a1d6db8155e6700f853b> np.unique(clustering.labels_)
+[15:53] <5385f2fe048862e761fa2d40> I only get the cluster numbers
+[15:53] <5385f2fe048862e761fa2d40> ``` In [34]: np.unique(ac.labels_) Out[34]:  array([ 0,  1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11, 12, 13, 14, 15, 16,        17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33,        34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50,        51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67,        68, 69]) ```
+[15:54] <5385f2fe048862e761fa2d40> k means has an attribute that contains the cluster centers
+[15:56] <5385f2fe048862e761fa2d40> @amueller Can you explain what I'm looking at right now?
+--------------------------------------------------------------------------------------------------
+[18:10] <541a528b163965c9bc2053de> `ac.labels_` gives you the cluster membeship of each sample (row) in the matrix `X` with shape `(n_samples, n_features)`, in your case `n_features==2`
+[18:11] <541a528b163965c9bc2053de> `AgglomerativeClustering` has no notion of center. The clusters can have non-convex (e.g. folded) shapes.
+[18:12] <541a528b163965c9bc2053de> Same for `DBSCAN` (and `Birch` to some extent).
+[18:13] <541a528b163965c9bc2053de> (Minibatch) k-means makes the convex clusters assumption, hence the cluster centers are meaningful and computed by default.
+[19:26] <541a528b163965c9bc2053de> I agree.
+--------------------------------------------------------------------------------------------------
+[18:15] <541a528b163965c9bc2053de> Although whatever the clustering algorithm you can always compute the center of mass of any cluster a posteriori with basic numpy operations: ```python center_of_cluster_42 = X[ac.labels_ == 42].mean(axis=0) ``` assuming `X` is a numpy array.
+--------------------------------------------------------------------------------------------------
+[18:22] <54d4a1d6db8155e6700f853b> Btw, AF also has no notion of centers ;)
+[19:30] <54d4a1d6db8155e6700f853b> yeah definitely
+--------------------------------------------------------------------------------------------------
+[19:13] <54d4a1d6db8155e6700f853b> hurray, thanks for merging the OMP fix @ogrisel. I'm quite confident that it is the right fix, but only time will actually tell ^^
+--------------------------------------------------------------------------------------------------
+[19:26] <541a528b163965c9bc2053de> It's no big deal if it fails though. We can still re-add the travis skip as a temporary fix.
+--------------------------------------------------------------------------------------------------
+[19:39] <54d4a1d6db8155e6700f853b> I was confused by all the commits showing up twice in my notifications, but just realized they are for the two branches ^^
+[19:40] <54d4a1d6db8155e6700f853b> Merging this one soon will probably also help: #4370 not sure if it needs two reviews, it is just removing deprecated stuff
+[19:41] <54d4a1d6db8155e6700f853b> Just don't backport it ;)
+[19:41] <54d4a1d6db8155e6700f853b> btw, did we set a date for 0.16?
+[19:41] <54d4a1d6db8155e6700f853b> I guess 0.16.0
+--------------------------------------------------------------------------------------------------
+[19:43] <5474d9eadb8155e6700d8178> Hey which do you feel is better? `if n is not None` or `if n`?
+--------------------------------------------------------------------------------------------------
+[19:46] <54d4a1d6db8155e6700f853b> they are different. If you want to ask "if n is not None" you should do that.
+[19:47] <54d4a1d6db8155e6700f853b> the second one will also be false if n is 0
+--------------------------------------------------------------------------------------------------
+[19:47] <5474d9eadb8155e6700d8178> Ah! explicit is always better as usual :) thanks!!
+--------------------------------------------------------------------------------------------------
+[19:56] <5474d9eadb8155e6700d8178> @ogrisel @amueller could you kindly take a look at this comment - https://github.com/scikit-learn/scikit-learn/pull/4294#issuecomment-83123205 - This stands in the way of completion of the rest of the PR...
+--------------------------------------------------------------------------------------------------
+[19:56] <541a528b163965c9bc2053de> No official date for 0.16.0 but maybe we could target next thursday?
+--------------------------------------------------------------------------------------------------
+[19:57] <54d4a1d6db8155e6700f853b> fine with me
+[19:58] <54d4a1d6db8155e6700f853b> @ragv currently the PR doesn't yet use the new method in the GridSearchCV etc, right? Isn't that the big thing to do for that PR?
+[19:59] <54d4a1d6db8155e6700f853b> I agree. lets do next thursday (the 26th)
+[20:01] <54d4a1d6db8155e6700f853b> have you fixed cross_val_score?
+[20:01] <54d4a1d6db8155e6700f853b> and make sure to keep them backward compatible with custom CV objects people might have written
+[20:01] <54d4a1d6db8155e6700f853b> I also commented on you question in the issue
+--------------------------------------------------------------------------------------------------
+[19:58] <541a528b163965c9bc2053de> from the 30th of March to April 1st we have a team retreat at work so I won't be able to work on the release. Then there is the oreilly webcast & PyData Paris and it would be great to have it released at that time.
+--------------------------------------------------------------------------------------------------
+[19:59] <5474d9eadb8155e6700d8178> @amueller Oh! I haven't touched `grid_search.py` :/ Thanks! I'll work on that for now :)
+--------------------------------------------------------------------------------------------------
+[20:02] <5474d9eadb8155e6700d8178> Not yet! Thanks a lot!! :) and okay sure! ( Sorry for pestering :p )
+--------------------------------------------------------------------------------------------------
+[20:11] <541a528b163965c9bc2053de> @amueller off to the movie theater to watch citizenfour. Will resume PR reviews tomorrow morning a bit, otherwise Friday. See you!
+[20:11] <54d4a1d6db8155e6700f853b> thanks, that's awesome! have fun!
+[20:12] <54d4a1d6db8155e6700f853b> I'll try to figure out the test that crashes on all kind of weird combinations of python and numpy
+--------------------------------------------------------------------------------------------------
+[20:16] <54c084dbdb8155e6700eed4c> @amueller I was also chanting while standing on one leg, and waving burning sage around during the test passes, not sure if that's relevant.
+[20:20] <54d4a1d6db8155e6700f853b> :feelsgood:
+--------------------------------------------------------------------------------------------------
+[20:21] <54d4a1d6db8155e6700f853b> thanks for your extensive investigation, this one is .... interesting
+[20:22] <54d4a1d6db8155e6700f853b> /play bezos
+[20:23] <54d4a1d6db8155e6700f853b> damn, would have been to good if that worked
+--------------------------------------------------------------------------------------------------
+[20:25] <54d4a1d6db8155e6700f853b> the selection of sounds supported by campfire is great: http://www.emoji-cheat-sheet.com/
+--------------------------------------------------------------------------------------------------
+[20:28] <54c084dbdb8155e6700eed4c> haha. yeah no problem. i can investigate more, but having two systems that build without failing is nice too
+[20:30] <54d4a1d6db8155e6700f853b> Well if you want, you can try to track down what are the changes in python and numpy that cause this to fail ;)
+[20:31] <54d4a1d6db8155e6700f853b> I have to work on organizational stuff for the rest of the day, so I can't track this down much further at the moment
+[20:32] <54c084dbdb8155e6700eed4c> i was skimming through python's change log and nothing stood out. will take a more in depth glance at both this evening.
+--------------------------------------------------------------------------------------------------
+[20:33] <54d4a1d6db8155e6700f853b> just if you have nothing better to do ;) I'm not sure about how to move forward. It seems strange that it works with the much older version on travis and not with the newer versions. What you could do is create a virtualenv with the travis 2.6 version of python and numpy and see if that also fails for you
+[20:38] <54c084dbdb8155e6700eed4c> ill try to do that on the linux box tonight.
+[20:38] <54d4a1d6db8155e6700f853b> thanks
+--------------------------------------------------------------------------------------------------
+[20:48] <54d4a1d6db8155e6700f853b> btw @ogrisel is there a reason not to enable OS X with travis?
+--------------------------------------------------------------------------------------------------

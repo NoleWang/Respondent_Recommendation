@@ -1,0 +1,12 @@
+<s> <user> does <unka> have an equivalent of <unka> and <unka_> in <unka> ? i have a <unka> model with tuned <unka> and i want to see if <unka> is better </s>
+<s> <user> <unka@> not right now . do you want to open an issue as a feature request ? i would recommend first comparing with the default parameters of <unka> </s>
+<s> <user> ok , i can try with the defaults . i will open a request if i remember </s>
+<s> <user> there also is no <unka_> </s>
+<s> <user> no , but there is <unka_> ( which is not the same but similar ) </s>
+<s> <user> <unka@> yea , that is likely good enough . while i have you . i did send you and <unka> an email about entity embedding as we discussed at <unka> </s>
+<s> <user> oh that was you ! sorry i did n't connect your handle to you in-person . i 've been in <unka-> mode and just procrastinating ;) </s>
+<s> <user> i 'm not sure when i 'll have time to look at it tbh , in particular because it 's unlikely we can directly integrate with <unka> . i did n't forget about it but my list of todos is pretty long ... </s>
+<s> <user> maybe i should add it to my class hand have my students do it ;) </s>
+<s> <user> yup , i tend to not use real name on the internet . anyway , as i say in the email . it might be better as a <unka> learn add on . a separate but dependant package . there are a number of them . </s>
+<s> <user> <unka@> are you thinking of using entity embedding for transfer learning ? </s>
+<s> <user> no , <unka> encoding . if you have many level it is great . i saw like a 5% <unka> improvement </s>

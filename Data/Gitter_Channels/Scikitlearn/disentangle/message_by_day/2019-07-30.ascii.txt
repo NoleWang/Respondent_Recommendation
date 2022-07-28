@@ -1,0 +1,4 @@
+[12:34] <5bf776ebd73408ce4fafd6e3> Thanks @NicolasHug 
+[14:02] <5d36d216d73408ce4fc6ba51> Please the best c# tutorial online
+[14:03] <5d36d216d73408ce4fc6ba51> Give me ideas
+[18:37] <54d4a1d6db8155e6700f853b> @Emoruwa since you're not the first one asking this here: what gave you the idea of asking about C# in a channel about a Python library for machine learning?

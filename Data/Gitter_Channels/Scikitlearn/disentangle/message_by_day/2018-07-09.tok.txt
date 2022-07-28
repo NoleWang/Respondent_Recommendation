@@ -1,0 +1,34 @@
+<s> <user> i am going to guess it is </s>
+<s> <user> hello , i 'm just not getting anywhere . i have a regression ann with four inputs and want to draw a <unka> plot . so two variable variables and two fixed . does anyone have an example or can you give me a hint how i do this ? </s>
+<s> <user> > is the score being printed the <unka_> score ? </s>
+<s> <user> accuracy for <unka> and r2 for <unka> </s>
+<s> <user> <unka@> sorry i was really asking a a <unka> question . i think it prints whatever you used when defining <unka> </s>
+<s> <user> so it depends what <unka> from which class is it <unka> but i assume <unka`> </s>
+<s> <user> as in " <unk#a(=> , <unk#a=_> , <unka'=_> , <unk#a=> , <unk#a-=_> )" </s>
+<s> <user> where <unka> is defined as <unka_> </s>
+<s> <user> but i could be wrong of course </s>
+<s> <user> <unka> is not something in <unka-> so i am not aware of how it works or implemented actually </s>
+<s> <user> of course .. sorry for asking a slightly off topic question here </s>
+<s> <user> no problem but looking quickly at their base class , score is calling the associated string score from <unka> </s>
+<s> <user> so i think that your guess was good </s>
+<s> <user> great , thanks ! </s>
+<s> <user> on another topic , i have lots ( 1000s ) of pairs of vectors . for each pair on the left there is exactly one pair on the right that it should be associated with </s>
+<s> <user> i could make a <unka> problem out of it by <unka> the vectors and <unka> them with 0 or 1 but <unk#a/> of the labels would be 1 . that is the fraction of 1 labels would be tiny </s>
+<s> <user> is there a standard way to approach this sort of problem ? </s>
+<s> <user> i am not really familiar </s>
+<s> <user> but it could something linked to metric learning </s>
+<s> <user> oh that sounds interesting </s>
+<s> <user> in which you want to know the relative distance between pairs </s>
+<s> <user> and know which pairs have the minimal distance </s>
+<s> <user> URL/https:/ URL/github.com/ <unka-/> </s>
+<s> <user> thanks .. i will see if that is appropriate the main restriction is that i need to do out of sample prediction </s>
+<s> <user> i did also look at <unka> learn 's kernel <unka> </s>
+<s> <user> might that work ? </s>
+<s> <user> you would need to feed in a full set of distances which would only ever be 0 or 1 </s>
+<s> <user> i do n't know if that is generally a bad idea for kernel <unka> </s>
+<s> <user> URL/http:/ <unka-./> <unka./> </s>
+<s> <user> i do n't have enough background there :) </s>
+<s> <user> me neither ! </s>
+<s> <user> i would presume that having a continuous distance is what you would need </s>
+<s> <user> i need to find a nice expert online as i do n't know anyone in real life who could help </s>
+<s> <user> that 's my intuition too </s>

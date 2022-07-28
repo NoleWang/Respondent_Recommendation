@@ -1,0 +1,12 @@
+[03:44] <52a485b6ed5ab0b3bf04fab6> I opened an issue here https://github.com/scikit-learn/scikit-learn/issues/6513
+--------------------------------------------------------------------------------------------------
+[04:47] <53810862048862e761fa2887> @amueller I fixed a bug in Brian's code that was causing the low rank output to be scaled differently. It optimizes the objective better than the last PCP implementation.
+--------------------------------------------------------------------------------------------------
+[15:24] <56cad8a7e610378809c2bef5> roles of data structure and algorithm in open source?
+--------------------------------------------------------------------------------------------------
+[20:54] <564789be16b6c7089cbab8b7> I was reading https://github.com/scikit-learn/scikit-learn/pull/5974#issuecomment-194840168
+[20:54] <564789be16b6c7089cbab8b7> can anyone explain what MV means?
+--------------------------------------------------------------------------------------------------
+[22:31] <53135b495e986b0712efc453> Missing Value ;)
+[22:32] <53135b495e986b0712efc453> And yes thanks please share your thoughts on it.
+--------------------------------------------------------------------------------------------------

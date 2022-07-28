@@ -1,0 +1,7 @@
+<s> <user> how much memory i need with <unka> ? </s>
+<s> <user> i have data with shape ( <unk#> , 500 ) and i use <unka=_> , but it gives me memory error </s>
+<s> <user> i think i have 8g limit for memory on that machine where i 'm running it </s>
+<s> <user> <unka@> well , <unk#a(=`> , <unk#a().=_> , <unk#)`> generates an array with <unk#> features , so if you do that for all of your <unk#> rows , it would produce a <unk#a./~> gb array ( 64 bit floats ) and 8 gb ram wont be enough .. </s>
+<s> <user> <unka@> ok , thanks :) </s>
+<s> <user> if i use 32 bit floats , would that be half of it ? like <unk#a/~> ? </s>
+<s> <user> <unka@> true that could work .. </s>

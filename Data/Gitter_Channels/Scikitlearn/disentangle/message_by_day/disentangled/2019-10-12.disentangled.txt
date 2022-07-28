@@ -1,0 +1,10 @@
+[08:30] <5a58e8b8d73408ce4f87dd73> could somebody share a good example for class docstrings in scikit-learn that we could use as a sort of template? thanks!
+--------------------------------------------------------------------------------------------------
+[08:30] <5a7aea3dd73408ce4f8c133a> @janjagusch https://github.com/scikit-learn/scikit-learn/blob/master/sklearn/compose/_column_transformer.py#L37 ?
+--------------------------------------------------------------------------------------------------
+[08:39] <5da1908ed73408ce4fcda13f> Here is the issue search string "is:issue is:open examples class docs involves:adrinjalali"
+[08:39] <5da1908ed73408ce4fcda13f> https://github.com/scikit-learn/scikit-learn/issues/3846
+--------------------------------------------------------------------------------------------------
+[11:07] <5da1908ed73408ce4fcda13f> Hey guys who is veerlosar on Githib? just want to talk about OneVsRestClassifier example
+[11:08] <5da1908ed73408ce4fcda13f> https://github.com/scikit-learn/scikit-learn/pull/15200/
+--------------------------------------------------------------------------------------------------

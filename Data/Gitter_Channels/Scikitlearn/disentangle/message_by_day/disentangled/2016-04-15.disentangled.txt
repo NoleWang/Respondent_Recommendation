@@ -1,0 +1,17 @@
+[01:14] <557fdd5f15522ed4b3e1f9bd> @vene makes sense, thanks.
+--------------------------------------------------------------------------------------------------
+[01:20] <54e07d6515522ed4b3dc0858> I think our chi2 feature selector is asking these lines
+[01:35] <54e07d6515522ed4b3dc0858> *along these lines
+--------------------------------------------------------------------------------------------------
+[09:04] <56c625c3e610378809c22760> Thanks a lot @Zintinio and @vene for the help! Yes I want to use that count matrix for some further calculations. Also, yes I'm making the assumption that if a doc is labeled X then the term belonging to that doc also belongs to the category X. Basically if a particular term occurs in a document categorized as X, then in the term-cat matrix the entry correspoding to that term and cat (X in this case) is updated by one. I then assign certain weights for each term for each category and see how much that term contributes to each category. This is in turn used in performing feature selection.
+--------------------------------------------------------------------------------------------------
+[11:16] <570beab4187bb6f0eadeef70> hey all, is there anyone experienced using LSTM-RNN for labeling each frame of a video data
+--------------------------------------------------------------------------------------------------
+[11:49] <53135b495e986b0712efc453> @oakkas re-posting the same question will not get you a response ;) If you have a particular question that is not suitable for a quick discussion, I would suggest that you post it as a thread to our mailing list or stackoverflow. If people know about it and your question interests them, they will respond in detail.
+[11:52] <53135b495e986b0712efc453> That being said, LSTM-RNN is deep learning stuff that is not a part of scikit-learn. You would be better off contacting the Mailing List of some deep learning library like theano, tensorflow or caffe... Or even better like I said before stackoverflow.
+--------------------------------------------------------------------------------------------------
+[15:24] <54d4a1d6db8155e6700f853b> reddit seems to be decent for deep learning discussions these days
+--------------------------------------------------------------------------------------------------
+[20:03] <53810862048862e761fa2887> Any idea whats happening here ? Due to some reason numpy does not print strings with quotes
+[20:03] <53810862048862e761fa2887> https://travis-ci.org/scikit-learn/scikit-learn/jobs/123430159
+--------------------------------------------------------------------------------------------------

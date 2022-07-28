@@ -1,0 +1,2 @@
+[03:32] <58183b57d73408ce4f323e33> Does anyone know what is the precision used in metrics calculation in sklearn. I'm asking because I see significant differences in calculated metrics between sklearn and xgboost which might be occuring due to precision issues.
+--------------------------------------------------------------------------------------------------

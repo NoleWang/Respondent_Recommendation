@@ -1,0 +1,24 @@
+[01:12] <55e8e8690fc9f982beaf992f> Hey guys! What's the best way to perform Kernel Logistic Regression or Import Vector Machine (or anything that will do binary classification + output probabilities) with SkLearn or some other python package? I can't seem to find anything. Does no one ever use KLR or IVM ?
+[01:13] <54d4a1d6db8155e6700f853b> I have not heard of IVM. and yes, no-one ever uses KernelLogisticRegression because it scales even worse than SVMs ;)
+[01:14] <55e8e8690fc9f982beaf992f> Thanks, but I don't have that much data, so I wanted to use it since I really need probabilistic outputs. I don't care about scaling for now.
+[01:14] <54d4a1d6db8155e6700f853b> @AAnoosheh you can use SVM(probabilities=True) which will use Platt's method for calibration of the decision function. Or you can use CallibratedClassifierCV to use Isotonic REgression to calibrate an SVM
+[01:14] <54d4a1d6db8155e6700f853b> you can use Nystrom together with LogisticRegression
+[01:14] <54d4a1d6db8155e6700f853b> just set n_components in Nystroem to n_samples and it will give you exact kernel logistic regression
+[01:15] <55e8e8690fc9f982beaf992f> @amueller  Isn't the Platt's method really expensive? Or is SVM+Platt's similar expense to KLR?
+[01:15] <54d4a1d6db8155e6700f853b> make_pipe(Nystroem(n_components=n_samples), LogisticRegression())
+[01:15] <54d4a1d6db8155e6700f853b> does kernel logistic regression
+[01:16] <54d4a1d6db8155e6700f853b> platt's method in libsvm does 5-fold cross-validation, so it is 5 times as expensive at one SVM.
+[01:17] <54d4a1d6db8155e6700f853b> I don't even know how one would implement KLR in any efficient way, as the dual is dense
+[01:17] <54d4a1d6db8155e6700f853b> I guess you could do SMO or a similar coordinate descent solver?
+[01:18] <54d4a1d6db8155e6700f853b> anyhow, I would expect SVM+Platt do be much faster than KLR, unless you set the parameters such that all samples are support vectors
+[01:19] <55e8e8690fc9f982beaf992f> Interesting, thanks.  Also this is the IVM; just heard of it recently: http://www.ipb.uni-bonn.de/ivm/?L=1
+[01:21] <54d4a1d6db8155e6700f853b> interesting. that's my almer mater but I haven't heard of that professor
+[01:21] <54d4a1d6db8155e6700f853b> paper is here: http://papers.nips.cc/paper/2059-kernel-logistic-regression-and-the-import-vector-machine.pdf
+[01:21] <54d4a1d6db8155e6700f853b> you can set n_components to a smaller number in Nystroem for an approximation of kernel logistic regression
+[01:22] <54d4a1d6db8155e6700f853b> ah the improved paper is foerstner
+[01:22] <54d4a1d6db8155e6700f853b> makes sense
+[01:23] <54d4a1d6db8155e6700f853b> if you have benchmarks that show IVM is superior to svm + platt let me know ;)
+[01:25] <54d4a1d6db8155e6700f853b> ah IVM is kernel logistic regression with one-step look-ahead greedy selection of the non-zero dual coefficients.
+[01:29] <54d4a1d6db8155e6700f853b> I think people are just not so excited about kernels any more, so people don't really care for practical implementations of kernels
+[01:39] <55e8e8690fc9f982beaf992f> Perfect, thanks @amueller 
+[07:00] <564789be16b6c7089cbab8b7> @amueller I didn't realise people don't really care about kernels any more. Is this because everyone has moved on to random forests and deep learning?

@@ -1,0 +1,59 @@
+<s> <user> <unk#a@> ah thanks ... i do have some small thoughts in fact </s>
+<s> <user> <unk#a@> first .. what are the dotted lines ? </s>
+<s> <user> <unk#a@> and what is the bootstrap you refer to ? ( sorry these are naive questions ) </s>
+<s> <user> also , one standard way to handle missing values when using a random forest is just to treat them as <unka> values . that is make a new feature " x is missing " and set it to 1 if it is missing . </s>
+<s> <user> would it be worth comparing to that approach ? </s>
+<s> <user> i found the bootstrap option so please cancel that part of my question :) </s>
+<s> <user> yes ! you are right . this approach does exactly the same thing . it tries to send the missing values to the best partition as if it were a <unka> variable . </s>
+<s> <user> btw <unka> we have github reactions to comments and pr comments ... </s>
+<s> <user> :) </s>
+<s> <user> <unk#a@> is n't that a lot simpler in that case ? </s>
+<s> <user> sorry . i do n't get you . simpler in which case ? </s>
+<s> <user> oh wait you mean make a new feature for " x is missing " ... hmm no this approach does not do that ... </s>
+<s> <user> but how will you do that ? what will you do with the missing values in the features which are not " this feature is missing " ? </s>
+<s> <user> what i do in practice is make the feature <unka> if it is missing and then just run <unka> </s>
+<s> <user> which handles it all for me </s>
+<s> <user> that just explodes your feature space no ? also could you give me a minimal code example so i can be sure to follow what you mean . </s>
+<s> <user> it creates one new feature per feature at most </s>
+<s> <user> so at most doubles </s>
+<s> <user> i do n't have any code here sorry </s>
+<s> <user> no my question is lets say i have a data <unka`> = [[ 1.2 <unk,]> [ 2.2 <unk,]> [ <unka,.]`> how does your new data ( after your <unka> for missing values ) look like ? </s>
+<s> <user> </s>
+<s> <user> i think it looks like [[ <unk#,.> ], [ <unk#,.> ], [ 0,1 ]] </s>
+<s> <user> assuming i am parsing this correctly </s>
+<s> <user> you just add one more feature for each feature that can have a missing value </s>
+<s> <user> <unk#a@> does this make sense ? </s>
+<s> <user> <unk#a@> i am not sure what you mean by " what will you do with the missing values in the features which are not " this feature is missing "" </s>
+<s> <user> say we have 10 features and the 10th feature has missing values . we now have 11 features right ? will that mean we amplify the importance of the 10th feature and not the other features ? anyway this is an interesting case for comparison . i will compare that and let you know how it performs in comparison with the implemented method . </s>
+<s> <user> my intuition is that , at a higher level , both these methods are similar ... </s>
+<s> <user> both as in the one that you propose and my implementation at <unk##> </s>
+<s> <user> <unk#a@> " will that mean we amplify the importance of the 10th feature and not the other features ?" that had n't occurred to me as a possibility as the 11th feature is only ever 1 or 0 </s>
+<s> <user> i would love to see the results of your testing on this </s>
+<s> <user> <unk#a@> " we now have 11 features right ? " yes </s>
+<s> <user> " as the 11th feature is only ever 1 or 0 " - correct ! but i 'm not sure if the feature importance will now be shared between the 10th and 11th feature or will be independently assigned ... have to look into it . nevertheless this is a good comparison for my method . another thing that i tried was replacing the missing values by the <unk#a*> across all the features ... this seems to not perform as well as the implementation . thanks for your inputs ! please feel free to share more thoughts ! </s>
+<s> <user> <unk#a@> thanks . i should say that i am particularly interested in <unka> variables so things like replacing missing values by huge values never occurs to me :) </s>
+<s> <user> <unk#a@> were the dotted lines the timings ? i mean in the graphs </s>
+<s> <user> <unk#a@> you make a very interesting point about feature importance . </s>
+<s> <user> yes ! the dotted lines are time taken for <unka_`> . i 'm now trying to plot the time taken for a single fit . </s>
+<s> <user> <unk#a@> thanks . </s>
+<s> <user> <unk#a@> actually <unka> values in general make the <unka> strategies for missing values tricky , or at least different </s>
+<s> <user> i think this is an important use case </s>
+<s> <user> i think the <unka> strategy for <unka> value should be <unka'> or <unka'> instead of <unka'> no ? </s>
+<s> <user> and if the <unka> support is introduced ( in URL/https:/ URL/github.com/ <unk#a),-/> handling missing values in <unka> features is not difficult . the missing simply becomes an additional category . </s>
+<s> <user> <unk#a@> mode could work but i am not sure what <unka> would mean as there is no natural ordering </s>
+<s> <user> <unk#a@> i really hope URL/https:/ URL/github.com/ <unk#a-/> makes progress </s>
+<s> <user> yes correct . <unka> is not appropriate . </s>
+<s> <user> <unk##> is next on my list , ( as <unk##> is brought to a <unka> state ). </s>
+<s> <user> although mode is a little worrying too .. imagine lots of categories which occur <unk#,> or 10 times . it 's not clear the missing ones should be given to the category that occurs 10 times </s>
+<s> <user> <unk#a@> great and a huge thank you . </s>
+<s> <user> :d </s>
+<s> <user> i think we need a smarter <unka> for <unka> values </s>
+<s> <user> yes that is a valid point . </s>
+<s> <user> the best way to handle is to consider missing to be a separate category . </s>
+<s> <user> right ! </s>
+<s> <user> actually , and this is somewhat off topic sorry , there is a nice problem where you have numerical values but some of them should really be treated as categories </s>
+<s> <user> so 10 is nowhere near 11 , say , but 1000 is near 1001 </s>
+<s> <user> you can imagine this comes from some measurements of the output of a computer </s>
+<s> <user> what i do in that case is put the feature in twice , once as numerical and once as <unka> and let the rf work it :) </s>
+<s> <user> but that only works if the number of different numerical values is not too large </s>
+<s> <user> end of off topic :) </s>

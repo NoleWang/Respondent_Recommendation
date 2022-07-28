@@ -1,0 +1,6 @@
+[19:14] <5af5ab1fd73408ce4f98f85e> HI
+--------------------------------------------------------------------------------------------------
+[21:55] <55d21ee30fc9f982beadabb8> @gonesbuyo_twitter it is a regressor. The meaningful method is `predict`
+--------------------------------------------------------------------------------------------------
+[22:06] <5acfdfffd73408ce4f95738d> Hi! Read all that I found about RandomForestClassifier. Is it possible in any way from 100 trees to make 1 common? The fact that I want to move the logic of the tree with cut-off thresholds in another program. With one tree it is easy to do. And here is how to be with 100 trees from a random forest? Only  if  operator will get a few hundred. Or maybe to calculate importance of characteristics using random forest and then build 1 the  decision tree with relevant signs? What can you advise on this problem in General?
+--------------------------------------------------------------------------------------------------

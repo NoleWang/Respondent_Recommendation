@@ -1,0 +1,8 @@
+[04:12] <56a34c16e610378809bdc988> Hi fellows, please read the abstract of this page and have a look at it quickly :
+[04:12] <56a34c16e610378809bdc988> http://arxiv.org/pdf/1211.1513.pdf
+[04:13] <56a34c16e610378809bdc988> Can this be a good addition to the lib ?
+[04:13] <56a34c16e610378809bdc988> And I can see 401 Open PRs. They are not being merged quickly. Do they need some reviewing ? I can assist in best possible ways.
+[12:22] <561d08d0d33f749381a937bf> How can you tell that the input and response for the the iris data set are .data and .target? 
+[12:23] <561d08d0d33f749381a937bf> For digits, its something else.  Where does that information come from?
+[12:26] <5525b91815522ed4b3deb7d6> @Fredilly Take a look [here](http://scikit-learn.org/stable/datasets/index.html#datasets)
+[12:50] <561d08d0d33f749381a937bf> @leosartaj <unconvertable>

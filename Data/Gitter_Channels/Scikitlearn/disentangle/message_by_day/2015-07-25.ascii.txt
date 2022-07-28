@@ -1,0 +1,6 @@
+[09:16] <53135b495e986b0712efc453> Hey! I'll add one tonight! :)
+[14:29] <53135b495e986b0712efc453> Vlad is choosing k in KNN a good example for LOLO? (About labeled data I was thinking like some N samples from M patients and we leave one patient out for validation to make sure we are able to generalise to other patients too)
+[14:29] <53135b495e986b0712efc453> Sounds good?
+[14:29] <53135b495e986b0712efc453> I am unable to find a nice example for LOLO otherwise :/
+[14:29] <53135b495e986b0712efc453> any suggestions?
+[15:47] <53135b495e986b0712efc453> Also if you find time could you take a look at #4826

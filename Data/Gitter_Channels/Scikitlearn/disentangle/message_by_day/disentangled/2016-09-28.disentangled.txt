@@ -1,0 +1,35 @@
+[08:09] <57e4ea1140f3a6eec066d9b4> hello! I am Satya Prakash wanting to work with scikit package and as it involves ML stuff I am intrested in it so any one please give me location to start and also looking forward to contribute in GSOC2017 any guidance will be really helpful
+--------------------------------------------------------------------------------------------------
+[11:44] <56ed0b8885d51f252ab9a1b8> Hello! I am new with this stuff, I intend extracting features from gray-scale images and then further do analysis using Decision Tree algorithm  but it doesn't seem working.I will appreciate any guidance. Below is a screenshot of my work. Thank you
+[11:44] <56ed0b8885d51f252ab9a1b8> %matplotlib inline from matplotlib import pyplot as plt import numpy as np from skimage import io  count = 0  images = io.imread_collection('/home/data/Desktop/IMAGES/GRAY-SCALE/*.jpg')        x_images = np.vstack(images)   while count < len(images):      new_x = (x_images[count])     new_y =(images.files[count])             print(new_y)     print(new_x)      count = count + 1
+[11:46] <56ed0b8885d51f252ab9a1b8>  %matplotlib inline from matplotlib import pyplot as plt import numpy as np from skimage import io  count = 0  images = io.imread_collection('/home/data/Desktop/IMAGES/GRAY-SCALE/*.jpg')        x_images = np.vstack(images)   while count < len(images):      new_x = (x_images[count])     new_y =(images.files[count])             print(new_y)     print(new_x)      count = count + 1  from sklearn.tree import DecisionTreeClassifier from sklearn.cross_validation import train_test_split from sklearn.metrics import confusion_matrix from sklearn.metrics import accuracy_score   features = x_images  targetVariable = new_y  featureTrain,featureTest,TargetTrain,TargerTest = train_test_split(features, targetVariable, test_size = 0.2)  model = DecisionTreeClassifier() fittedModel = fit.model(featureTrain,targetTrain) predictions = fittedModel.predict()  print(predictions) #print(TargetTest,predictions) #print(accuracy_score(TargetTest,predictions))
+[12:53] <56ed0b8885d51f252ab9a1b8> Thanks a lot
+--------------------------------------------------------------------------------------------------
+[11:48] <57b3fd8640f3a6eec05fe0e8> Doesn't seem to be working as in you get errors? if so what? or do you mean the code words but it's not doing wwhat you want it to do?
+--------------------------------------------------------------------------------------------------
+[11:50] <56ed0b8885d51f252ab9a1b8> I get an error when i run the algorithm...
+[11:52] <57b3fd8640f3a6eec05fe0e8> Did you paste the error as well?
+--------------------------------------------------------------------------------------------------
+[11:53] <56ed0b8885d51f252ab9a1b8> This is the error am getting  --------------------------------------------------------------------------- NameError                                 Traceback (most recent call last) <ipython-input-1-b657a0ea1003> in <module>()       5        6  ----> 7 features = x_images       8        9 targetVariable = new_y  NameError: name 'x_images' is not defined
+--------------------------------------------------------------------------------------------------
+[12:12] <56ed0b8885d51f252ab9a1b8> Is there any line of code that can help extract features from these images(gray-scale) so I can further do analysis using decision Tree algorithm...@ItchyJunk...??
+--------------------------------------------------------------------------------------------------
+[12:44] <57b3fd8640f3a6eec05fe0e8> Hmm, not sure. I'll let someone who know better answer you. but looks like it's just x_image variable being used without being declared? is x_image supposed to be an array or string or something? x_image = [] or x_image = ''  would be the needed step.
+--------------------------------------------------------------------------------------------------
+[20:56] <56c4f19ae610378809c1f8ae> stable docs down, is this intended?
+[20:56] <56c4f19ae610378809c1f8ae> @amueller @ogrisel
+--------------------------------------------------------------------------------------------------
+[20:58] <54d4a1d6db8155e6700f853b> @nelson-liu typo, sorry about that!
+[20:59] <56c4f19ae610378809c1f8ae> nvm, just saw https://github.com/scikit-learn/scikit-learn.github.io/commit/d6c6bd03f4cabbce20a3ac579c243abe0c4f2235
+[20:59] <56c4f19ae610378809c1f8ae> ah ok
+[20:59] <56c4f19ae610378809c1f8ae> thanks :smile:
+--------------------------------------------------------------------------------------------------
+[21:06] <54d4a1d6db8155e6700f853b> should now be up as 0.18 :)
+--------------------------------------------------------------------------------------------------
+[21:13] <56c4f19ae610378809c1f8ae> :fireworks: yay!
+--------------------------------------------------------------------------------------------------
+[21:49] <56ed0b8885d51f252ab9a1b8> Hello! is there any simple way of extracting features from fifty  gray scale images for further analysis? few lines of code would be much appreciated.Thanks
+[22:03] <56ed0b8885d51f252ab9a1b8>  I tried using numerical matrix of each  Grayscale image as a feature for further analysis but it doesn't working. Any guidance would help.Thanks
+--------------------------------------------------------------------------------------------------
+[22:03] <56c4f19ae610378809c1f8ae> have you looked at something like [the mnist example](http://scikit-learn.org/stable/auto_examples/classification/plot_digits_classification.html)
+--------------------------------------------------------------------------------------------------

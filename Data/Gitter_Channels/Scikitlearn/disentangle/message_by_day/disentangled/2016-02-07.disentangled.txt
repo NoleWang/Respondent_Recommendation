@@ -1,0 +1,8 @@
+[16:39] <56a34c16e610378809bdc988> Veteran contributors, please have a look at the link above ^^^
+[16:40] <56a34c16e610378809bdc988> If you think this can be a good addition to the lib, I will try to implement it. I have read it quickly once, if I get a yes, I will thoroughly go through it and start implementing it as a new class.
+[16:40] <56a34c16e610378809bdc988> it is named the "K-Plane Regression"
+[20:34] <56a34c16e610378809bdc988> Oh,ok. I haven't see the specifications of the paper, will check it whether it meets the requirements. If not, I will upload it separate l
+[20:35] <56a34c16e610378809bdc988> It can get it reviewed and added as related projects.
+--------------------------------------------------------------------------------------------------
+[17:45] <5363a92c048862e761fa03c3> @karandesai-96 Have a look at [FAQs](http://scikit-learn.org/stable/faq.html#can-i-add-this-new-algorithm-that-i-or-someone-else-just-published)
+--------------------------------------------------------------------------------------------------

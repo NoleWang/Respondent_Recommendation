@@ -1,0 +1,2 @@
+[18:59] <5a314ce4d73408ce4f83281f> Hi, anyone replicated IDL SMOOTH function in python successfully ? I infact want to use smooth2 function adopted by JHUAPL (https://github.com/callumenator/idl/blob/master/external/JHUAPL/SMOOTH2.PRO) which uses smooth function of IDL. Eagerly waiting !
+--------------------------------------------------------------------------------------------------

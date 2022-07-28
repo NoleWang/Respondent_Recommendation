@@ -1,0 +1,6 @@
+[09:53] <564789be16b6c7089cbab8b7> HistGradientBoostingClassifier seems to have no n_jobs argument.  Is there any way set the number of threads/cores?
+[16:31] <5baf7d9ad73408ce4fa9c9b2> You should use the  OMP_NUM_THREADS env variable https://scikit-learn.org/stable/computing/parallelism.html#openmp-based-parallelism
+[16:35] <564789be16b6c7089cbab8b7> @NicolasHug  thank you. Is anyone working on adding n_jobs for this classifier?
+[16:35] <564789be16b6c7089cbab8b7> it would make it inline with the other classifiers
+[16:36] <564789be16b6c7089cbab8b7> and can it be done in the script itself?
+[18:01] <5baf7d9ad73408ce4fa9c9b2> it's been discussed but we ended up staying with the status quo https://github.com/scikit-learn/scikit-learn/issues/14265

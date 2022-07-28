@@ -1,0 +1,36 @@
+<s> <user> </s>
+<s> <user> </s>
+<s> <user> </s>
+<s> <user> </s>
+<s> <user> </s>
+<s> <user> </s>
+<s> <user> should there be need contrib tag in <unk##> ? </s>
+<s> <user> <unka@> <unk##> ? there are like 90 odd examples to be added ;) ADDRESS_( <unka@_> and others - do you feel this one would be useful or should he pick something else from the recently tagged pool of issues to work on ?) </s>
+<s> <user> here too ( need contrib to be removed ) - <unk##> </s>
+<s> <user> <unka@> could you please remove the " need contributor " tag from <unk##> , <unk##> , <unk##> , <unk##> , <unk##> , <unk##> ? </s>
+<s> <user> all done </s>
+<s> <user> thanks <unka:> : </s>
+<s> <user> <unka@> also from this one - <unk#> and maybe assign it to arthur ? ( sorry for repeatedly pinging you ;) ) </s>
+<s> <user> done </s>
+<s> <user> unfortunately , i cannot assign to people outside of the <unka-> team </s>
+<s> <user> dunno why </s>
+<s> <user> this one can be closed - <unk##> </s>
+<s> <user> ( it was fixed by <unk##> ) </s>
+<s> <user> <unka@> in <unka._> , the <unka> parallel loop is slowed by thread locking , which is weird with the <unka> backend </s>
+<s> <user> issue <unk##> is actually a batch of small issues on <unka> that fails on read only memory map data once <unka_> process memory map without copying their content unnecessarily . i guess it could be labelled as easy as it could be addressed by new contributors </s>
+<s> <user> <unka@> if you are able to find time could you review <unk##> ? ;) </s>
+<s> <user> wow , this is <unka> gift you are giving me there </s>
+<s> <user> :p :p </s>
+<s> <user> i never touched these modules though </s>
+<s> <user> lol okay :d i am eagerly waiting for andy ;) </s>
+<s> <user> hi guys , not sure if that 's the place to ask but i 'm looking for a way to use a <unka-> instead of already having the target value next to the features . so i'd like to put in the features as usual but do n't know the results yet . this is because i do n't know them and also do n't want to run them since it would take to long to do this with a <unka-> . i 'm hoping to save time by using a more advanced search mechanism instead that i can feed a function that then puts out the results . i 've only found examples so far where the target values are already known . any help on what to look for ? </s>
+<s> <user> can anyone get me ? i 'm in the lobby </s>
+<s> <user> another thing i 'm looking for is a function that i can give a sample of numbers , let 's say a np array of 1000 numbers and then have that function create a sample of n numbers with the same distribution characteristics as the input numbers ... </s>
+<s> <user> </s>
+<s> <user> olivier is coming ! </s>
+<s> <user> wohoo wifi </s>
+<s> <user> \o/ </s>
+<s> <user> <unka@> can we trigger <unka> on URL/https:/ URL/github.com/ <unk#a-/> again ? </s>
+<s> <user> btw , if you add an entry to <unka.> , please include a link to the github issue pull request ! </s>
+<s> <user> hello , i am trying to understand the current gradient boosting code </s>
+<s> <user> can someone point out where step 3 is being performed ? according to the this URL/https:/ URL/en.wikipedia.org/ <unka#/_> </s>

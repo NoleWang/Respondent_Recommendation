@@ -1,0 +1,3 @@
+[00:38] <53135b495e986b0712efc453> @amueller reviews for  rvraghav93/scikit-learn#4 please? :grin:
+[00:39] <53135b495e986b0712efc453> (2 comments of Joel are yet  to be addressed there)
+[17:21] <54d4a1d6db8155e6700f853b> Sorry I'm still quite sick and stressed. I'll get to it asap

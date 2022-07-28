@@ -1,0 +1,18 @@
+<s> <user> <unk#a@> i think <unka@> meant that the <unka`> class does not have a reference to that user guide . </s>
+<s> <user> <unk#a@> just created a pull request could you let me know if things are okay ? </s>
+<s> <user> thanks for the pr ! i 'll look into that :) </s>
+<s> <user> <unka@> could you share your suggestions about URL/https:/ URL/github.com/ <unk#a#-/> please ? </s>
+<s> <user> it would be great if one could <unka> boosted trees ( e.g . <unka> ) too </s>
+<s> <user> <unka@> in <unka-> you can </s>
+<s> <user> <unka> no idea </s>
+<s> <user> if you look at URL/http:/ <unka-./> <unka-/> and scroll down to URL/https:/ URL/raw.githubusercontent.com/ <unka-./> can you do that sort of thing in <unka-> ? </s>
+<s> <user> <unka@> sorry i meant that for you </s>
+<s> <user> well for <unka-> trees yes , for <unka> trees obviously not , because that has nothing to do with <unka> ? </s>
+<s> <user> that would go into the <unka> package ... </s>
+<s> <user> err has nothing to do with <unka-> </s>
+<s> <user> oh i must have missed this completely . would you mind pointing me to the docs for <unka> tree visualization ? </s>
+<s> <user> i take your <unka> point of course :) i only ever use it through <unka-> so sometimes forget it is n't part of it </s>
+<s> <user> well you can plot each tree in the <unka_`> </s>
+<s> <user> true .. they seem to have a nice trick for plotting one merged tree </s>
+<s> <user> i am still intrigued if one can derive a single decision tree from an <unka> of trees which is easier to interpret and almost as good as a <unka/> </s>
+<s> <user> this would seem potentially useful </s>

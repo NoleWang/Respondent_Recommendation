@@ -1,0 +1,22 @@
+[09:28] <541a528b163965c9bc2053de> @amueller I think I understand part of the pbm for the _gram_omp failure on old scipy although I cannot reproduce it in ubuntu 12.04 docker container with scipy 0.9.0. Will submit a PR.
+[14:06] <54d4a1d6db8155e6700f853b> @ogrisel thanks! I tried vagrant but didn't reproduce
+[14:13] <541a528b163965c9bc2053de> I think we can merge.
+[14:17] <541a528b163965c9bc2053de> @amueller #4743
+[14:37] <54d4a1d6db8155e6700f853b> damn, yeah I'm stupid of not having seen that @ogrisel 
+[14:40] <541a528b163965c9bc2053de> Hopefully, this will fix the issue. But travis is so slow nowadays. I opened #4749 to tackle travis speed on the longer term.
+[14:41] <54d4a1d6db8155e6700f853b> pretty sure that will fix the issue
+[14:53] <54e07d4015522ed4b3dc0856> #4749 would be really, really nice. I did not know travis was starting to support that - awesome!
+[15:08] <54d4a1d6db8155e6700f853b> @ogrisel so do you definitely want to do 0.16.2? I'm not sure. Maybe if we have the jaccard fix?
+[15:17] <54d4a1d6db8155e6700f853b> Btw, @ogrisel if you have time reviews of these should be quick: #4741 #4739 #4714
+[15:18] <54d4a1d6db8155e6700f853b> maybe we should have added some more whatsnew entries
+[18:45] <54e07e1715522ed4b3dc0866> This is not necessarily for sklearn (more for say mne-python, nilearn, sklearn-theano, etc): would the change mentioned in the blog post referenced in #4749 make certain data-intense (but fast) test cases possible with datasets stored in S3?
+[18:49] <54d4a1d6db8155e6700f853b> depends on how large, right? I guess we don't know which datacenter, but even between datacenters I think ec2 is pretty fast
+[18:54] <54e07e1715522ed4b3dc0866> ah yes - I thought that data was represented in several locations and always near to where you need it, but that is probably wishful thinking. Cost-wise,  as far as I understand data transfer from S3 to EC2 machines is free, so that shouldn't be a hindrance. Then the only question is whether practically out of these containers one can 'see' S3 as one can from EC2.
+[19:21] <54e07d4015522ed4b3dc0856> probably not without some kind of credentials or something - you would have to authorize the EC2 instance that it is "OK" to access your s3 data
+[19:24] <54d4a1d6db8155e6700f853b> well that is the same for all s3 access, right? ec2 machines are no different from any other machines on the internet wrt to s3 access iirc
+[19:33] <54e07d4015522ed4b3dc0856> I am thinking more if your data was in a private S3 bucket - in the case where people are accessing your data publicly it would be fine though it would cost $$
+[19:33] <54e07d4015522ed4b3dc0856> but if you wanted to only allow data access for,  say, nightly tests on master branch to cut down cost, you would need some kind of authorization.
+[19:34] <54e07d4015522ed4b3dc0856> So if Amazon gives free S3 to open source (or Travis), that would work. But otherwise I don't think we can rely on it without a bill.
+[21:20] <54d4a1d6db8155e6700f853b> @ogrisel do you think we can ask intel for an MKL licence for building our wheels?
+[21:21] <54d4a1d6db8155e6700f853b> I just realized that if I wanted to test the neural nets with mkl I have to wait until we release and continuum builds it for me... that seems slightly silly...
+[22:14] <54d4a1d6db8155e6700f853b> hum, thinking about it again, how do we build this on travis? That uses MKL, right?

@@ -1,0 +1,6 @@
+[04:31] <55a7b5b08a7b72f55c3f96ef> I don't know much about Python but it seems that it works close to how .bat executables work. Can scikit-learn be used to create new files based on input?
+[04:32] <55a7b5b08a7b72f55c3f96ef> E.g. input customer profile and it generates a recommended real estate proposal
+[09:09] <564789be16b6c7089cbab8b7> @Qoyyuum  yes but this is the wrong place to ask basic python questions
+[14:06] <56b0a775e610378809bf7a7c> Hi everyone !!!  @amueller I was watching the pull request #4802. It seems blocked for several months now. Do you know what's the problem ?  I've seen that a lot of new codes was submitted at the same time. I image it's a real problem for the reviewers. Maybe it could be easier for them to divide the work of the GSoC in several pull request. Do you think it's a good solution ? I can work on it if you want. 
+[22:13] <54d4a1d6db8155e6700f853b> @tguillemot @ogrisel was mostly working on this. There was some bug there. I'm not sure about the exact status at the moment
+[22:13] <54d4a1d6db8155e6700f853b> has anyone seen this error on travis before? https://travis-ci.org/scikit-learn/scikit-learn/jobs/108346382 @ogrisel ?

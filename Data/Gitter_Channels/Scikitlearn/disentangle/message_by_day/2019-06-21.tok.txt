@@ -1,0 +1,47 @@
+<s> <user> if you are doing image <unka> using <unka> learn , do you have to convert the images into 1d arrays first ? </s>
+<s> <user> yes </s>
+<s> <user> <unka@> hmm ... that seems to lose some vital information </s>
+<s> <user> i .. e that pixels next to each other are related </s>
+<s> <user> you can look at an example of <unka_`> to see that the <unk#a> images are transformed to 1d 64 arrays </s>
+<s> <user> you can use a <unka-> <unka> neural network to extract interesting features </s>
+<s> <user> or you can use <unka-> hog features for instance . depending on the kinds of images , it might be enough . </s>
+<s> <user> > you can use a <unka-> <unka> neural network to extract interesting features which a much better approach </s>
+<s> <user> hog features ? </s>
+<s> <user> <unka> of oriented gradients ? </s>
+<s> <user> <unka> of oriented gradients </s>
+<s> <user> yes </s>
+<s> <user> URL/https:/ <unka-./> <unka./_> </s>
+<s> <user> all very interesting thanks . it seems a weakness somehow in the general <unka-> <unka> model that it ca n't take advantage of 2d data </s>
+<s> <user> i think that i have 2 quick examples showing a bit how things can be connected : </s>
+<s> <user> URL/https:/ <unka-./> <unka#-./_> </s>
+<s> <user> URL/https:/ URL/github.com/ <unk#a-/> </s>
+<s> <user> i suppose even in 1d random <unka> etc are <unka> to permutations of the input array </s>
+<s> <user> <unka@> thanks </s>
+<s> <user> yes , you have to do feature engineering first . you can consider the 2d conv layers before the final flatten global average <unka> as a feature extractor and the last fully connected layers as a standard <unka> . it 's just that both the feature extraction and the <unka> are trained <unka-> together </s>
+<s> <user> it 's only really the <unka> that take advantage of the neighborhood of pixels i suppose </s>
+<s> <user> <unka@> right . </s>
+<s> <user> but <unka> , ( <unka> ) neural networks are almost always the good solution for image <unka> , unless you have very specific prior knowledge on the image you want to classify . </s>
+<s> <user> i wonder if random <unka> could be changed to take arrays of pairs , say , as inputs </s>
+<s> <user> <unka@> that 's true but i am also thinking of time series data </s>
+<s> <user> where it makes a big difference if two values are from successive times or not </s>
+<s> <user> > it 's only really the <unka> that take advantage of the neighborhood of pixels i suppose no : if you have deep conv layers with <unka> ( <unka> or max <unka> for instance ) the conv layers can capture large high level complex patterns that span a large <unka> field . </s>
+<s> <user> <unka@> you said no but i read your answer as yes :) </s>
+<s> <user> we need an example of some standard feature engineering you can do on time windows for time series <unka> <unka> . </s>
+<s> <user> <unka@> that would be good to see </s>
+<s> <user> i misread the original quote , then yes . </s>
+<s> <user> but what i meant is that deep conv net can model non-local patterns </s>
+<s> <user> <unka@> yes . what i meant is that without any <unka> you do n't get to see local patterns </s>
+<s> <user> on an nn topic , is there software to give you a good guess at a reasonable architecture for a <unka> task ? i saw <unka> but it 's pretty heavy . </s>
+<s> <user> if you really want to use decision trees for image <unka> you might be interested in URL/https:/ <unka./> <unk#a./> but this is not ( and will not ) be implemented in <unka-> ;) </s>
+<s> <user> <unka@> thanks ! why wo n't it be implemented ? because it does n't work or coding resources ? </s>
+<s> <user> i do n't know what is the practical state of the art for architecture search for image <unka> </s>
+<s> <user> really i am secretly interested in time series </s>
+<s> <user> because it is not a standard , established method . </s>
+<s> <user> <unka@> got you </s>
+<s> <user> image <unka> was just interesting because the data is in 2d </s>
+<s> <user> URL/https:/ <unka-./> <unka#-./> </s>
+<s> <user> but even in 1d it seems unclear to me what the right thing to do is </s>
+<s> <user> <unka@> i have read those guidelines ! they seem very sensible to me </s>
+<s> <user> URL/https:/ <unka-./> <unka#-./> </s>
+<s> <user> i greatly admire how <unka> learn is run in general </s>
+<s> <user> <unka@> i read that second link too :) </s>

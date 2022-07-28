@@ -1,0 +1,1 @@
+<s> <user> hello everyone , does anyone know how to solve nonlinear equations of a trained <unka> model ?? i mean i have a trained <unka> model <unka()`> and i want to solve equations like <unka()=`> where c is a constant ? </s>

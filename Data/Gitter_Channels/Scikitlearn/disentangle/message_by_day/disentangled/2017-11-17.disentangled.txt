@@ -1,0 +1,5 @@
+[16:37] <54d4a1d6db8155e6700f853b> @VHRanger you mean pomegranate?
+--------------------------------------------------------------------------------------------------
+[16:38] <54d4a1d6db8155e6700f853b> @ssequeira if your interested in DPs, maybe check out our LDA? I feel it could use some love, and I also think having a gibbs sampling version would be nice
+[16:39] <54d4a1d6db8155e6700f853b> not sure if we also want a gibbs sampling version of the GMM
+--------------------------------------------------------------------------------------------------

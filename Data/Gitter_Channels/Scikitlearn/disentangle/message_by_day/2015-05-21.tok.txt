@@ -1,0 +1,26 @@
+<s> <user> yes i think one of the anaconda builds on travis is <unka> - do you have the academic version of anaconda ? it is free for you and would allow a <unka> env with <unka> if i remember right </s>
+<s> <user> yeah i do . but what <unka> does <unka> link against ? anaconda does n't come with the library to link against , right ? </s>
+<s> <user> the academic version does </s>
+<s> <user> you have to register with <unka.> address - not sure how travis has it but i am sure they have some license from continuum </s>
+<s> <user> interesting , i have to check . i thought i had the academic license but i ran into trouble when trying to built <unka> using it </s>
+<s> <user> > yes i think one of the anaconda builds on travis is <unka> - do you have the academic version of anaconda ? it is free for you and would allow a <unka> env with <unka> if i remember right on travis we just use the one month evaluation period of <unka> in anaconda . as a travis build tend to last less than one month , it works :) </s>
+<s> <user> <unka> probably does not build against <unka> on travis with anaconda , but the included numpy and scipy packages are linked against it . </s>
+<s> <user> <unka@> would you mind reviewing the <unka> ? i have n't added the early stopping yet , but mostly because i did n't see a case where it helped </s>
+<s> <user> also , i 'm not sure how much the adaptive learning rate helps </s>
+<s> <user> sgd is <unka> effective ;) and i am surprised you did n't find a case where early stopping helped . but how are you testing against validation data inside <unka> api ? i have been hacking my own code to take <unka(> , y , <unka=_> , <unka=_> ) </s>
+<s> <user> i really should help review that code but <unka> is <unka> :( </s>
+<s> <user> yeah it would be great if you could help </s>
+<s> <user> do you know what the right gain is in the initialization for the different <unka-> ? </s>
+<s> <user> i tested against validation data currently using <unka-> . </s>
+<s> <user> but what i am implementing right now is doing a split inside fit </s>
+<s> <user> what do you mean by gain ? <unka> are mostly ( in my exp ) about how tricky it is to get the right settings of the <unka/> gradient explosion or vanishing </s>
+<s> <user> <unka> init is normally the " right thing " for basically all nets , though i hear orthogonal is good too . </s>
+<s> <user> i do n't know that you should expect a gain in performance on many tasks due to init settings , but you will certainly tell when you want to apply a net to a brand new dataset </s>
+<s> <user> you need to multiply the <unk#a(/_> + <unka_> ) by a constant that is dependent on whether you do <unka> , <unka> or <unka> </s>
+<s> <user> in <unka> that is called the gain factor </s>
+<s> <user> ah ok . i usually go by this , page 15 </s>
+<s> <user> URL/http:/ <unka./> <unk#a./> </s>
+<s> <user> 4 * for <unka> , <unka> </s>
+<s> <user> 1 * for <unka> </s>
+<s> <user> should be <unk#a(/_> + <unka_> ) </s>
+<s> <user> though i guess you could pull out the 6 and adjust the " gain " to compensate . i just stick to the script </s>

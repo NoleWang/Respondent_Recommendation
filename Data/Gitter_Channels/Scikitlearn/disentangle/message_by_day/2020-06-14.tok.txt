@@ -1,0 +1,1 @@
+<s> <user> hi <unka@> random forest is a collection of models which can be trained independently and can be <unka> : i guess for the <unka> you are using the <unka> , you can scale the training through the <unka_> parameter when you <unka> it , something like <unk`> <unk#a(=_> , <unk#a-=_> ) <unk`> </s>

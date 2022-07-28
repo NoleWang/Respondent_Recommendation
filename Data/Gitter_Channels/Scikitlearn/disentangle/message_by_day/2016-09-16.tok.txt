@@ -1,0 +1,10 @@
+<s> <user> <unka@> yes i do , at least i 'm a contributor of the package ; i 'm a <unka> at <unka> . </s>
+<s> <user> <unka@> thanks for taking a look . so to clarify : <unka`> is 3d , e.g . <unka(_`> , <unka_> , <unka)_`> and we want to fit an <unka> across all features for each dimension separately , such that we end up with <unka_`> <unka> , and therefore <unka_`> scores . </s>
+<s> <user> our <unka`> is indeed similar to <unka> 's , but <unka> 's does everything at once ( <unka> how to move across dimensions of an <unka> scan , <unka/> <unka> , do the whole thing within a cv etc ); by contrast we implemented a <unka-> object : i.e . fit different <unka> over different dimensions of the data , but do n't summarize or combine these <unka> . we can thus pipeline the search light : e.g . <unka(_`> ), <unka()`> and <unka_> this <unka> </s>
+<s> <user> however , we ca n't apply <unka_`> because this functions requires that the score is a float , not an array . </s>
+<s> <user> but perhaps there s a way in <unka> to get <unka_> compatible with arrays ? i.e . if one wants to retrieve the <unka-> confusion matrix , instead of the average score ? </s>
+<s> <user> <unka@> have we met ? sorry if i forgot :( </s>
+<s> <user> <unka@> also check out URL/https:/ URL/github.com/ <unk#a#-/> </s>
+<s> <user> <unka@> briefly at a <unka> </s>
+<s> <user> yes <unk##> seems indeed relevant . if you allow <unka_`> to have <unka> metrics that are not float but custom ( e.g . numpy arrays ), then our problem is solved at the <unka> level : we would directly do <unka()_`> where by default <unka().`> , <unka)`> <unka`> shape being <unka(_`> , <unka_> , <unka)_`> returns an array of <unka_`> </s>
+<s> <user> <unka@> i think that would be the best . we already want that for <unk#a_> without averaging for example , where you get one for each class . </s>

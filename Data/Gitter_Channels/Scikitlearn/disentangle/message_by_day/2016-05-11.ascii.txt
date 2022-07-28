@@ -1,0 +1,90 @@
+[02:29] <53135b495e986b0712efc453> @amueller By making GridSearchCV work well with EstimatorCV did you mean implementing generalized cross-validation? (https://github.com/scikit-learn/scikit-learn/issues/1626)
+[02:30] <557c765a15522ed4b3e1de4f> is anyone here very competitive about the relative capabilities of scikit-learn and R?  @amueller ?
+[09:22] <557c765a15522ed4b3e1de4f> ... because with the R package I just pushed to my git, I would really enhjoy some trash talking
+[14:47] <54d4a1d6db8155e6700f853b> @elbamos well I'd like to be scikit-learn as good as possible, and if you have an implementation that is much better than ours in some respect, I'd love to have your input ;)
+[14:48] <54d4a1d6db8155e6700f853b> @elbamos what did you push?
+[14:48] <54d4a1d6db8155e6700f853b> @rvraghav93 well part of that. I want to be able to use an EstimatorCV in GridSearchCV.
+[14:49] <54d4a1d6db8155e6700f853b> @rvraghav93 like using a CV object in a pipeline.
+[14:51] <54d4a1d6db8155e6700f853b> if you find a way to enable ``make_pipeline(StandardScaler(), LogisticRegressionCV())`` grid-searchable, that would be a start
+[14:52] <54d4a1d6db8155e6700f853b> or ``make_pipeline(SelectPercentile(...), LogisticRegressionCV())``
+[16:24] <557c765a15522ed4b3e1de4f> @amueller largevis. It's like tsne but efficient on ultra large datasets because it scales in O(n). The algo is only two weeks old, they haven't presented their reference code yet. You have a few hours to catch up though - I found a bug in my C++ code that's gonna take me a while to fix
+[17:43] <54d4a1d6db8155e6700f853b> ^^ I don't think this is a race.
+[17:43] <54d4a1d6db8155e6700f853b> you could also add python wrappers to your R package
+[17:44] <54d4a1d6db8155e6700f853b> barnes-hut t-sne is also O(n) right?
+[17:46] <54d4a1d6db8155e6700f853b> @elbamos  I hope it's BSD licensed ;)
+[17:46] <56c4f19ae610378809c1f8ae> barnes hut t-sne is O(N log N)
+[17:46] <56c4f19ae610378809c1f8ae> http://arxiv.org/abs/1301.3342
+[17:47] <54d4a1d6db8155e6700f853b> hm makes sense
+[17:47] <54d4a1d6db8155e6700f853b> @elbamos let me know if you have an mnist picture ;)
+[20:35] <557c765a15522ed4b3e1de4f> they say (n log n) i actually think its a little worse, at least as implemented.  whether largeVis really scales remains to be seen -- in theory its O(n) holding everything else constant, but when you grow n, you add nearest neighbors and sgd iterations too. 
+[20:36] <557c765a15522ed4b3e1de4f> @amueller Will do ;) Should be tonight actually -- the algo is working now on small data sets (does iris beautifully) but something is making it segfault when i scale up to mnist.  working on it now
+[20:36] <557c765a15522ed4b3e1de4f> oh, and if I were in your shoes, I would totally agree its not a race
+[21:06] <561a58f7d33f749381a8ff2f> hey guys, about decision tree
+[21:06] <561a58f7d33f749381a8ff2f> how do we visualize it?
+[21:07] <56c4f19ae610378809c1f8ae> you can export it to graphviz
+[21:07] <56c4f19ae610378809c1f8ae> see http://scikit-learn.org/stable/modules/generated/sklearn.tree.export_graphviz.html
+[21:07] <561a58f7d33f749381a8ff2f> oh, randomforests do not have this?
+[21:07] <561a58f7d33f749381a8ff2f> that's my actual question
+[21:08] <561a58f7d33f749381a8ff2f> no `rf.tree_`
+[21:09] <56c4f19ae610378809c1f8ae> no `rf.tree_`, but theres something else that I think you want
+[21:09] <561a58f7d33f749381a8ff2f> `feature_importances_` not
+[21:09] <56c4f19ae610378809c1f8ae> you can use `randomforest.estimators_` to get a  list of DecisionTreeRegressors
+[21:09] <561a58f7d33f749381a8ff2f> I want to actually convert a randomforest into categorical variables
+[21:10] <561a58f7d33f749381a8ff2f> ahhh, the separate instances do have the tree
+[21:10] <561a58f7d33f749381a8ff2f> awesome :)
+[21:10] <56c4f19ae610378809c1f8ae> yup, then just `export_graphviz` on all of them
+[21:12] <561a58f7d33f749381a8ff2f> I have the idea that the categorical variables as binary decisions in a sparse matrix would be awesome 
+[21:12] <561a58f7d33f749381a8ff2f> have RF as a preprocessing
+[21:12] <561a58f7d33f749381a8ff2f> and then do sparse Ridge on top of it
+[21:13] <561a58f7d33f749381a8ff2f> or NN
+[21:17] <561a58f7d33f749381a8ff2f> rf.tree_.feature and .tree_.threshold are the ones huh :)
+[21:19] <56c4f19ae610378809c1f8ae> hmm wheres `tree.feature_`?
+[21:19] <56c4f19ae610378809c1f8ae> it seems like it would be what you want though
+[21:20] <561a58f7d33f749381a8ff2f> `tree_.feature`, `tree_.threshold`
+[21:20] <561a58f7d33f749381a8ff2f> yea it works
+[21:21] <56c4f19ae610378809c1f8ae> nice, good to hear
+[21:22] <561a58f7d33f749381a8ff2f> it could basically transform a non-linear problem to a linear one, well.. if it can be captured by a decision tree
+[21:25] <557c765a15522ed4b3e1de4f> @nelson-liu If your plan is to treat each tree's prediction as a a distinct categorical variable and then make your actual prediction by applying ridge regression or some other mechanism to those variables, I will bet you 10:1 odds that (a) you never implement this algorithm because of the dimensionality of what you'd have to feed into the ridge regression, or (b) if you do implement it, it overfits
+[21:26] <561a58f7d33f749381a8ff2f> I was thinking to PCA it perhaps lol
+[21:26] <56c4f19ae610378809c1f8ae> 
+[21:27] <561a58f7d33f749381a8ff2f> or at least to remove too strongly correlating kind of duplicates
+[21:28] <561a58f7d33f749381a8ff2f> @elbamos  I thought it more of a preprocessing step
+[21:29] <561a58f7d33f749381a8ff2f> indeed it'd be too intense
+[21:29] <557c765a15522ed4b3e1de4f> oops sorry nelson, i mixed your two chats up
+[21:31] <561a58f7d33f749381a8ff2f> what about from a single decision tree?
+[21:32] <561a58f7d33f749381a8ff2f> is there a situation in which you could imagine that using the leaf node's id as a binary var for a next model useful?
+[21:32] <561a58f7d33f749381a8ff2f> as kind of feature engineering step
+[21:32] <557c765a15522ed4b3e1de4f> wanna try something funky for preprocessing that would probably work?  take your data and cut it into square cunks, like if your data is 1000 dimensional, chop it into one 31 * 31 square and one 7 * 7 square.  The run a convolution over both squares using a kernel initialized to have mean 0 and unit norm.  you can control the amount of dimensional reduction by controlling the size of the kernel.
+[21:32] <5537027215522ed4b3df56ab> I think I've seen people use node ids as IVs before for the next estimator
+[21:33] <5537027215522ed4b3df56ab> and they got "better" results
+[21:33] <561a58f7d33f749381a8ff2f> that sounds very interesting elbamos
+[21:34] <5537027215522ed4b3df56ab> Some people on kaggle at least improved their model by a fraction of a percent. It's very empirical, but was useful in their case.
+[21:34] <557c765a15522ed4b3e1de4f> @lqdc that's just the effect of a suppressor variable on overfitting.  
+[21:35] <5537027215522ed4b3df56ab> i.e. less overfitting because the number of splits is regularized?
+[21:36] <561a58f7d33f749381a8ff2f> googled suppressor: one variable that increases the effect of another var
+[21:36] <561a58f7d33f749381a8ff2f> lol
+[21:36] <561a58f7d33f749381a8ff2f> strange naming
+[21:36] <561a58f7d33f749381a8ff2f> I'm interested for this particular challenge: http://blackboxchallenge.com/
+[21:37] <561a58f7d33f749381a8ff2f> super nasty one
+[21:38] <5537027215522ed4b3df56ab> Hey guys, I have a question: How do you deal with unrealistic estimates for probabilities for some estimators?  I tried using CIs (#6773), which were fine in my case, but apparently this is not the preferred approach.
+[21:39] <5537027215522ed4b3df56ab> Is that competition for spam filtering?
+[21:39] <5537027215522ed4b3df56ab> i can imagine mail.ru dealing with lots of that
+[21:39] <561a58f7d33f749381a8ff2f> it's a reinforcement learning comp
+[21:40] <561a58f7d33f749381a8ff2f> on each round (there are ~1.2m)
+[21:40] <557c765a15522ed4b3e1de4f> @lqdc no, any time you add a variable to your training data, performance on the training data will improve slightly, regardless of whether there's a genuine relationship.  That's just the math.  Its called a "suppressor" variable because it suppresses the true error.  But the result is just increased overfitting. 
+[21:40] <561a58f7d33f749381a8ff2f> you get 35 values  
+[21:40] <561a58f7d33f749381a8ff2f> you can influence the 36th variable by choosing 1 out of 4 actions
+[21:41] <561a58f7d33f749381a8ff2f> the 36th var goes from -1.1 to 1.1
+[21:41] <561a58f7d33f749381a8ff2f> every round you also get the reward
+[21:41] <561a58f7d33f749381a8ff2f> reward can be super delayed
+[21:41] <561a58f7d33f749381a8ff2f> rules unclear
+[21:41] <561a58f7d33f749381a8ff2f> 35 vars are roughly between -18 and 12 or something, mostly around -1 to 1
+[21:41] <557c765a15522ed4b3e1de4f> @lqdc if you want an example of this, create a 20 * 100 normally distributed random matrix, and 20 randomly selected labels.  split the data into a training and a test set by row.  Run randomforest over the training data, trying to predict the labels.  observe your error (it will be zero).  then run the generated model on your test set. 
+[21:42] <561a58f7d33f749381a8ff2f> it is very non-linear
+[21:42] <557c765a15522ed4b3e1de4f> this is why having features that don't truly correlate leads to inferior performance
+[21:44] <5537027215522ed4b3df56ab> But let's say the original random forest made an incorrect estimate for a split on some variable for which there was little data. Then just getting to that variable in some of the trees would be additional information
+[21:45] <5537027215522ed4b3df56ab> i.e. trees too deep and too few of them
+[21:45] <557c765a15522ed4b3e1de4f> no, it wouldn't.  it would be a reduction in information. 
+[21:46] <557c765a15522ed4b3e1de4f> a prediction based on a training data set can't ever contain any more information than the amount of information in the training set plus the amount of information in the example.
+[21:48] <5537027215522ed4b3df56ab> sure, but an incorrect decision based on original information by an upstream estimator can be worse than just the original information in a downstream estimator. IE you are recovering information that was lost
+[21:48] <5537027215522ed4b3df56ab> I'll try to construct a synthetic test for this

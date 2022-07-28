@@ -1,0 +1,4 @@
+<s> <user> can <unka> fail in subtle and obvious ways ? i might have uncovered a bug . </s>
+<s> <user> demonstration here : URL/https:/ URL/github.com/ <unk#a%-./> </s>
+<s> <user> never mind , found the <unka> in <unka-> <unka> and possibly other <unka> <unconvertable > scaling the variables made the problem disappear . </s>
+<s> <user> <unka@> hi any body please , i am beginner ,how can i update 3.6 to 3.8 python version on window 10 , 64 bit ? _ </s>

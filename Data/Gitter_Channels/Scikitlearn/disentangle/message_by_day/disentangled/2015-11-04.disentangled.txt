@@ -1,0 +1,13 @@
+[06:09] <53810862048862e761fa2887> http://cs.nyu.edu/~vnb222/temp/user_guide.pdf
+[06:10] <53810862048862e761fa2887> I can see figures overflowing in some pages ?
+--------------------------------------------------------------------------------------------------
+[18:50] <54d4a1d6db8155e6700f853b> thanks for having a look
+[18:51] <54d4a1d6db8155e6700f853b> when I called "make dist" there were latex errors and the build didn't finish
+--------------------------------------------------------------------------------------------------
+[21:05] <54d4a1d6db8155e6700f853b> does anyone have matplotlib 1.5 to test the examples?
+[21:06] <54d4a1d6db8155e6700f853b> I'm trying to pip install it in my conda env. I'm sure that's going to go great
+[21:21] <54d4a1d6db8155e6700f853b> @MechCoder if you're bored, you can have a look at https://github.com/scikit-learn/scikit-learn/pull/5721
+[22:35] <54d4a1d6db8155e6700f853b> if anyone wants to help me find out why "clustering" isn't properly linked on the website, that would also be sweet ^^
+--------------------------------------------------------------------------------------------------
+[21:52] <54d4a1d6db8155e6700f853b> https://github.com/scikit-learn/scikit-learn/issues/5724 is also fun
+--------------------------------------------------------------------------------------------------

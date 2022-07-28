@@ -1,0 +1,8 @@
+[07:36] <5474d9eadb8155e6700d8178> since `svd_flip` is public, do you also want `_deterministic_vector_sign_flip` to be made public too, or I'll leave it as such?
+--------------------------------------------------------------------------------------------------
+[12:51] <541a528b163965c9bc2053de> keep it private
+[12:51] <541a528b163965c9bc2053de> svd_flip should probably not have been private in the first place.
+[12:52] <541a528b163965c9bc2053de> BTW it's probably better to have this kind of specific technical discussions in the comment threads of the issue itself rather than on gitter
+--------------------------------------------------------------------------------------------------
+[12:52] <5474d9eadb8155e6700d8178> Thanks! and yes sure!
+--------------------------------------------------------------------------------------------------

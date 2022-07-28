@@ -1,0 +1,21 @@
+<s> <user> <unk#a@> btw , please also ping <unka@> when asking <unka> questions , he is <unka@> 's <unka-> ;) </s>
+<s> <user> okay . i forgot to ping him in the last comment . </s>
+<s> <user> <unka@> <unka@> status update ... the main part of data independent <unka> is done .... all the new split validate tests pass ... working on grid search tests :) will do the documentations and examples after pushing the grid search tests and an initial round of reviews ( so as to finalize implementation ) :) </s>
+<s> <user> one minor question </s>
+<s> <user> will ask at the pr itself ... </s>
+<s> <user> thanks <unk#a@> . i am super busy right now but i 'll review your blog post and pr in the afternoon </s>
+<s> <user> sure please take ur time :) i 'll be done with all the tests by then <unka:> : </s>
+<s> <user> hi <unk#a@> , thanks for the update ! i 'll do my best and try to review tonight as well . </s>
+<s> <user> thanks a lot ! :) </s>
+<s> <user> i sent you detailed comments on the blog post per pm so as not to flood the channel . i still think it would be good to add an example that is currently impossible and will be possible with your contribution </s>
+<s> <user> has anyone ever seen gcc errors with printf in <unka> code ? </s>
+<s> <user> <unk#a./:_> : error : format not a string literal and no format arguments [ <unka-=> ] <unka(_> ); </s>
+<s> <user> i get that on my box but not on travis . </s>
+<s> <user> <unk#a@> so i should review <unk##> , right ? </s>
+<s> <user> no wait , that is not the right one </s>
+<s> <user> <unk#a@> you should reference the issues you are working on in the blog post ;) </s>
+<s> <user> any <unka> for URL/https:/ URL/github.com/ <unk#a-/> btw ? </s>
+<s> <user> or maybe URL/https:/ URL/github.com/ <unk#a-/> ? </s>
+<s> <user> sorry , tonight is a bit tough for me for a more thorough review . i 'll be on top of things in the morning . </s>
+<s> <user> no worries <unka> :) </s>
+<s> <user> thanks for the reviews ! will address them asap :) </s>

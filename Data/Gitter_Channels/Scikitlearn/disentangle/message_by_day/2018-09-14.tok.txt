@@ -1,0 +1,4 @@
+<s> <user> hi . i 'm a student and am new to <unka> . one of my peers told me that once i get a job , i ca n't and should n't use <unka> for professional projects . is this true ? is not <unka> completely open source and free to use ? </s>
+<s> <user> which license does it come under ? </s>
+<s> <user> if the response is too detailed to be mentioned in a chat , please respond on my email : <unk#a_> ADDRESS_@gmail.com thanks for your help . looking forward to replies . </s>
+<s> <user> <unka-@> just look at github : URL/https:/ URL/github.com/ <unka-/> </s>

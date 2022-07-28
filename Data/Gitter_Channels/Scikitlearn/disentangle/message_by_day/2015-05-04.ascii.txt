@@ -1,0 +1,4 @@
+[09:27] <541a528b163965c9bc2053de> @trevorstephens  ```python try:     from sklearn.utils.validation import NotFittedError except ImportError:     # backward compat for scikit-learn < 0.16.0     class NotFittedError(Exception):         pass ```  should work.
+[13:39] <54d4a1d6db8155e6700f853b> @ogrisel what do you think of #4661 ?
+[14:58] <54d4a1d6db8155e6700f853b> after three years, I'm apparently still confused by scale_C vs n_samples
+[16:27] <54d4a1d6db8155e6700f853b> @ogrisel if you have time, your input on #4597 would be nice.

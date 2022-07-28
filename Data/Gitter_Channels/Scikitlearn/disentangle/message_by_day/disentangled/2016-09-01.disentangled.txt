@@ -1,0 +1,6 @@
+[06:26] <579e492240f3a6eec05d5245> Hi, how do you guys do dl experiments (in terms of infrastructure). Will Amazon ec2 instances suffice for research purposes? Thanks for your help.
+--------------------------------------------------------------------------------------------------
+[10:26] <57b3fd8640f3a6eec05fe0e8> @kennetham I know very little about language processing, but in theory, it sounds like it would work? pretty sure  you'll find out why it doesn't when you code it out :P
+--------------------------------------------------------------------------------------------------
+[22:59] <562a7da216b6c7089cb80965> @vyraun it realls depends on the scale of the analysis that you're doing. I'm a neuroscientist who works mostly with fMRI data, which can be pretty big, so our labs tend to have dedicated computers with many cores and a good deal of RAM, but I could certainly replicate that environment on ec2 if I wanted to pay as I went
+--------------------------------------------------------------------------------------------------

@@ -1,0 +1,58 @@
+<s> <user> i found it ... i think it should be renamed :) </s>
+<s> <user> which one should be renamed ? </s>
+<s> <user> " <unka(> , <unka[> , <unka_> ]) returns the <unka> of <unka> <unk#a^> of the prediction ." this is confusing i think . it 's really a correlation <unka> . why is it called <unk#a^> ? </s>
+<s> <user> it is a value between -1 and 1 </s>
+<s> <user> as far as i can tell </s>
+<s> <user> <unk#a@> ^^ </s>
+<s> <user> hey guys , would it make sense to contribute confidence intervals for linear models ? </s>
+<s> <user> because without standard errors for each <unka> estimated from test data , it 's hard to interpret <unka> </s>
+<s> <user> i work with data that changes over time , so in my case i need confidence intervals on output <unka> for new samples . when using the standard output <unka> , they are sometimes wrong and confidence intervals would help figure out a ) how wrong you are and b ) which <unka> have lower standard errors over time for more robust feature selection </s>
+<s> <user> <unka@> not really . training <unk#a^> is between 0 and 1 , but on unseen data it can become negative . and " <unka> of <unka> " is an established term in statistics . </s>
+<s> <user> <unka@> hi . if it 's an established term then that is what we should use . maybe a very brief explanation of the range it can take on test data and why could be added ? </s>
+<s> <user> <unka@> i managed to get these scores [ <unk#-.> <unk#-.> <unk#-.> ] . what is the range ? it clearly is n't -1 to 1 </s>
+<s> <user> it 's <unka-> to 1 , i think . </s>
+<s> <user> <unka@> that 's interesting . it would be great if something definitive and clear could be added to the docs about this . please :) </s>
+<s> <user> <unka@> have you read this ? URL/http:/ <unka-./> <unk#a#-./_> </s>
+<s> <user> the intuition is : a model can never do worse than <unka> the mean *on training <unka*> . ( at least a linear model that can set all its <unka> to 0 ) but it can do much worse on test data if it <unka> . </s>
+<s> <user> on " hard " regression problems ( few samples , many irrelevant features ) <unka/> can lead you to believe you're doing well , if you do n't compare against a dummy baseline that <unka> the mean , or something simple like that . i 've fallen in this trap . </s>
+<s> <user> <unka@> oops ! i had n't read that . sorry that 's my bad </s>
+<s> <user> <unka@> i seem to have a hard regression problem currently :( </s>
+<s> <user> hey , if anyone has any remote remote , designer , devops or sysadmin jobs they can post them at URL/http:/ <unka./> </s>
+<s> <user> <unka@> did you try feature selection ? </s>
+<s> <user> <unka@> confidence intervals are cool , but it seems more in the domain of <unka> . and i think it 's actually already implemented in <unka> . </s>
+<s> <user> [ for ols at <unka#(./:]_> ) </s>
+<s> <user> seems like it 's there for [ <unka#(./:]_> ) too </s>
+<s> <user> <unka@> i did n't .. i just assumed that <unka> does n't really benefit from that . is that wrong ? </s>
+<s> <user> i have n't used random <unka> much , dunno . </s>
+<s> <user> <unka@> i think problem is that i have 140 samples where i am used to 100s of thousands </s>
+<s> <user> so my intuition for what works is wrong </s>
+<s> <user> i never actually managed to get random <unka> to outperform linear models on the <unka> i worked with </s>
+<s> <user> which are usually <unk#a<> samples </s>
+<s> <user> <unka@> that 's a very interesting observation ! i have found them to be great when i have a mix of <unka> and numerical values and lots of data </s>
+<s> <user> <unka@> maybe i should send you my data to see what you can make of it :) </s>
+<s> <user> because i am completely failing currently </s>
+<s> <user> hello guys , is there anyone familiar with <unka> fused type ? <unka`> <unka> <unka> <unka> fused <unka_> : <unka.> <unka.> def <unka(_> ): <unka> <unka_> <unka.> a = 127 <unka(_> ) <unk`> </s>
+<s> <user> oh theres a typo </s>
+<s> <user> following script dosnt work ... <unka`> <unka> <unka> <unka> fused <unka_> : <unka.> <unka.> def <unka(_> ): <unka> <unka_> a = <unk#.> <unka(_> ) <unk`> </s>
+<s> <user> can somebody tell me whats the problem ? </s>
+<s> <user> can you assign <unk#.> to a char normally ? </s>
+<s> <user> yes </s>
+<s> <user> what is it supposed to do ? it does n't <unka> to me to assign a float to a char </s>
+<s> <user> really ? </s>
+<s> <user> but it works for me ... </s>
+<s> <user> thx for your help ! </s>
+<s> <user> it is not assign a float to a char </s>
+<s> <user> it is to declare a type that can accept either <unka.> or <unka.> </s>
+<s> <user> yes , the type is declared correctly . but you ca n't <unka> and assign to it like that , apparently </s>
+<s> <user> it should work if you make it a function argument , if i understand correctly </s>
+<s> <user> i mean , what are you trying to do in this example ? why do you want your type to be generic if you're assigning a float to it ? </s>
+<s> <user> oh yeah i simplify the code alot </s>
+<s> <user> it 's not that ; i do n't think it makes sense to assign a literal to a fused type </s>
+<s> <user> this works , for example : </s>
+<s> <user> <unk`> <unka%> <unka> <unka> <unka> fused <unka_> : <unka.> <unka.> <unka> <unka_> <unk#a(_> x ): return x + 1 def <unka(_> ): <unka> <unka.> a = 1 <unk#a(_> )) <unka()_`> </s>
+<s> <user> note i 'm declaring and assigning to a char , not to a <unka_> . but i can pass it to a function that takes <unka_> </s>
+<s> <user> i see </s>
+<s> <user> thanks for the <unka> </s>
+<s> <user> in theory i'd imagine , for your example , that the compiler *could* just specialize your <unka_> to a float when you assign to it . but i can see why they did n't implement that , it does n't really have a point . </s>
+<s> <user> are you familiar with c++ templates ? </s>
+<s> <user> <unka@> thanks . sorry , i 'm still travelling . how does it compare in terms of runtime ? </s>

@@ -1,0 +1,5 @@
+<s> <user> hi , does apply in <unka(.> ) iterate over each columns in 'df' <unka-> and pass them to <unka'> function as a series ? </s>
+<s> <user> <unka@> , you are right , however , i also tried to execute the above code too using <unka%`> magic also from <unka.`> <unka> <unka_`> but still did not work . was it supposed to be like that ? </s>
+<s> <user> <unka`> <unka%> # requires numpy headers from <unka._> <unka> stack s = <unk#a(> ) <unka(.> ) > > > attributeerror : <unka'._> object has no attribute 'top' <unk`> </s>
+<s> <user> i found the source code so well written , fascinating and really want to be able to get the development environment up and running . </s>
+<s> <user> weird , the above code will work if i replace `s = <unk#a()`> with <unka`> stack s = <unk#a()`> , i believe this must have something to do with static type declaration . </s>

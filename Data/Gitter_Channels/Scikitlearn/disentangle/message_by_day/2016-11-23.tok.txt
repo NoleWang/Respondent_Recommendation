@@ -1,0 +1,7 @@
+<s> <user> hi guys . i 'm a beginning <unka> researcher in data science and trying to run <unka> svm model on 500k models . </s>
+<s> <user> <unka*> </s>
+<s> <user> it 's taking 5 terms of life to complete . can someone help point me in the right direction for how i should <unka> this ? </s>
+<s> <user> <unka@> try using <unka> instead of <unka> , you can see in the documentation the following the implementation is based on <unka> . the fit time complexity is more than <unka> with the number of samples which makes it hard to scale to dataset with more than a couple of 10000 samples . </s>
+<s> <user> hi <unka@> , thanks a lot . i ran this and it completes very quickly now . can you explain how the testing works with the <unka-> ? </s>
+<s> <user> <unka@> does it automatically just split the input data into <unka/> for me ? </s>
+<s> <user> <unka@> it works the same way as an <unka> you will have to do the split yourself and then call <unka.> or run f1 evaluation </s>

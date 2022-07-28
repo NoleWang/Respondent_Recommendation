@@ -1,0 +1,25 @@
+[04:48] <56c4f19ae610378809c1f8ae> hi everyone
+[04:49] <56c4f19ae610378809c1f8ae> I want to apply the elastic net to do sparse feature selection on my data, but I only want a subset of the features to be regularized (and the rest of the features to be unregularized)
+[04:49] <56c4f19ae610378809c1f8ae> theres probably nothing that supports this right now in scikit-learn, right?
+[04:49] <56c4f19ae610378809c1f8ae> not too keen on re-implementing the algorithms myself haha, so Id figure Id ask.
+[04:55] <56c4f19ae610378809c1f8ae> I also find it interesting that the elastic net is not mentioned anywhere on the [feature selection page](http://scikit-learn.org/stable/modules/feature_selection.html), since it tends to avoid the problem that the lasso has of selecting an individual variable out of a group of highly correlated features...
+[09:39] <5626239616b6c7089cb79f22> #7659 and #7671 sould be closed
+[14:35] <56c4f19ae610378809c1f8ae> @waterponey you should comment that on the original PRs, gitter is fairly low-visibility
+[15:37] <55d21ee30fc9f982beadabb8> @amueller I wonder if you could give a look to #6509
+[15:38] <54d4a1d6db8155e6700f853b> @glemaitre I'm crazy busy today and tomorrow (ending a job today, starting a new tomorrow). I'll try to catch up with the issue tracker soon but feel free to ping me again.
+[15:39] <55d21ee30fc9f982beadabb8> ok np
+[15:39] <5759dd0dc2f0db084a1d128d> @amueller what's the convention when two PR are opened for the same bug?
+[15:40] <5759dd0dc2f0db084a1d128d> It's a minor one... very very very minor documentation issue.
+[15:40] <54d4a1d6db8155e6700f853b> @NelleV you tell them both and maybe give a recommendation on which offers a better solution?
+[15:41] <54d4a1d6db8155e6700f853b> @NelleV if they are both ready to merge, merge one and explain / apologize to the other?
+[15:41] <5759dd0dc2f0db084a1d128d> :D
+[15:41] <54d4a1d6db8155e6700f853b> If you have a better idea, I'm all ears
+[15:41] <5759dd0dc2f0db084a1d128d> well, there is a second reviewer needed, if you'd like to review two 2-liners documentation change
+[15:41] <54d4a1d6db8155e6700f853b> sure
+[15:42] <5759dd0dc2f0db084a1d128d> #7783 and #7784
+[15:42] <5759dd0dc2f0db084a1d128d> The first one is better.
+[15:45] <54d4a1d6db8155e6700f853b> the first one is also first.  this can be merged with one review as minor docs.
+[15:48] <54d4a1d6db8155e6700f853b> I think we try a mixture of nice and pragmatic
+[15:48] <5759dd0dc2f0db084a1d128d> That's what I figured
+[19:43] <54d4a1d6db8155e6700f853b> are the scipy docs down or is it just me? https://docs.scipy.org/doc/numpy/reference/generated/numpy.corrcoef.html
+[20:09] <55d21ee30fc9f982beadabb8> @amueller It is down

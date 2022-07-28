@@ -1,0 +1,9 @@
+[15:10] <567f5d7716b6c7089cc043a8> any takers on https://github.com/scikit-learn-contrib/imbalanced-learn/issues/616? it's a good first issue.
+[15:10] <55d21ee30fc9f982beadabb8> a first good issue?
+[15:11] <55d21ee30fc9f982beadabb8> a find it a bit harsh :)
+[15:14] <567f5d7716b6c7089cc043a8> lol, I'm just a messenger, Joel tagged it as such :D
+[15:14] <55d21ee30fc9f982beadabb8> Basically, I was starting to solve the issue yesterday
+[15:16] <55d21ee30fc9f982beadabb8> While making `master` work with `master` is easy (just change the import path), the challenging part is to make work out-of-date version with a newer scikit-learn.
+[15:16] <55d21ee30fc9f982beadabb8> In the latest case, we need to make some `try except ImportError` as you suggested I think
+[15:18] <567f5d7716b6c7089cc043a8> Yep. If you're already at it, please leave a comment so that others don't start working on it ;)
+[15:19] <55d21ee30fc9f982beadabb8> Yep I just cross-reference my PR 

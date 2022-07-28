@@ -1,0 +1,2 @@
+[12:57] <5684304216b6c7089cc0a229> Hi, I am the "maintainer" (more like caretaker) of hmmlearn (which was split out of sklearn a couple of years ago); I tried moving the CI to azure and realized that the macOS tests were failing (previously testing was only done on linux (travis) and windows (appveyor)) but can't test locally on macOS, would anyone be willing to have a look? https://dev.azure.com/anntzer/hmmlearn/_build/results?buildId=170  Thanks!
+--------------------------------------------------------------------------------------------------

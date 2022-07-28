@@ -1,0 +1,58 @@
+[14:32] <564789be16b6c7089cbab8b7> @amueller  I am sure this isn't helpful but... http://www.texample.net/tikz/examples/neural-network/ is at least pretty
+--------------------------------------------------------------------------------------------------
+[16:03] <54d4a1d6db8155e6700f853b> thanks @lesshaste. I'd prefer python code but I have something similar than that now
+--------------------------------------------------------------------------------------------------
+[17:07] <564789be16b6c7089cbab8b7> @amueller  I know already this is a dim question but.. I notice scikit-learn has said no to adding deep learning. However we do already have MLP and some people working on improving that code (e.g. adding dropout). Is there a clean line between MLPs and deep learning?
+[17:09] <564789be16b6c7089cbab8b7> I assume that an MLP with 20 layers is not deep learning for example?
+[17:12] <564789be16b6c7089cbab8b7> it seems that the three main types of neural networks are feed-forward, convolutional and recurrent.  If we just look at feed-forward neural networks, I am wondering if there is a clear view of what is in and what is out of scope?
+[17:14] <564789be16b6c7089cbab8b7> no is a perfectly acceptable answer :)
+--------------------------------------------------------------------------------------------------
+[17:19] <54d4a1d6db8155e6700f853b> @lesshaste neural networks are by now basically synonymous with deep learning. convnets are actually feed-forward nets
+[17:19] <54d4a1d6db8155e6700f853b> I think the agreed scope is feed forward without convolutions
+--------------------------------------------------------------------------------------------------
+[17:20] <564789be16b6c7089cbab8b7> @amueller  ok.. I ask as a recent mailing list question was "I'm interested in deep learning and wanna contribute to scikit-learn and try out for GSoC next summer. I was wondering if scikit-learn is looking to expand its neural nets package."
+[17:20] <54d4a1d6db8155e6700f853b> and no support for custom architectures, i.e. you can specify a list with the number of nodes in each hidden layer, but they will all have the same activation function and there are no skip connections etc
+[17:20] <564789be16b6c7089cbab8b7> and the answer was no
+[17:21] <564789be16b6c7089cbab8b7> v. interesting re: custom architectures
+[17:21] <54d4a1d6db8155e6700f853b> yeah we're not gonna expand beyond the model that is there. we want to make the mlp as good as possible, so we will add dropout, and if there is a consensus for a better of-the-shelf optimizer than adam, I think we'll be happy to add that, too
+[17:21] <564789be16b6c7089cbab8b7> it is highly unclear to me how much the bells and whistles actually make a difference when you measure classification performance
+[17:23] <54d4a1d6db8155e6700f853b> there was a GSOC last year, but it did't finish yet :-/
+--------------------------------------------------------------------------------------------------
+[17:21] <54d4a1d6db8155e6700f853b> have you read sanders posts on the galazy zoo and plankton competitions?
+[17:22] <564789be16b6c7089cbab8b7> ah no... could you point me to them please?
+[17:22] <54d4a1d6db8155e6700f853b> http://benanne.github.io/2014/04/05/galaxy-zoo.html
+--------------------------------------------------------------------------------------------------
+[17:22] <564789be16b6c7089cbab8b7> on the topic of gsoc.. it would be great if someone could fix/rewrite the variational Bayes module
+[17:22] <54d4a1d6db8155e6700f853b> http://benanne.github.io/2015/03/17/plankton.html
+[17:22] <54d4a1d6db8155e6700f853b> the GMM you mean?
+[17:24] <564789be16b6c7089cbab8b7> http://scikit-learn.org/stable/modules/generated/sklearn.mixture.VBGMM.html
+[17:24] <564789be16b6c7089cbab8b7> reading your link...
+--------------------------------------------------------------------------------------------------
+[17:26] <564789be16b6c7089cbab8b7> @amueller  I read that article.. it's still not clear to me how much worse you would do with a simpler architecture. But I do think that image tasks seem uniquely well suited to convolutional networks
+[17:26] <564789be16b6c7089cbab8b7> however I notice that neural networks are now being used more for non-image based tasks on kaggle
+[17:27] <564789be16b6c7089cbab8b7> @amueller  I think you told me that VBGMM was basically broken.. but I may have remembered that wrong
+[17:30] <564789be16b6c7089cbab8b7> sounds wonderful
+--------------------------------------------------------------------------------------------------
+[17:28] <54d4a1d6db8155e6700f853b> there is a pull request with a rewrite of the vbgmm
+[17:28] <54d4a1d6db8155e6700f853b> but it is not finished
+[17:28] <54d4a1d6db8155e6700f853b> and the status is unclear to me
+[17:28] <54d4a1d6db8155e6700f853b> I'm a bit preoccupied with writing a book
+[17:29] <54d4a1d6db8155e6700f853b> that I want to finish early spring
+[17:29] <54d4a1d6db8155e6700f853b> it's a machine learning book for programmers without a lot of math (because there are many good stats / ml books out there already)
+[17:30] <54d4a1d6db8155e6700f853b> it aims to be very practical
+[17:31] <54d4a1d6db8155e6700f853b> thanks :)
+[17:31] <54d4a1d6db8155e6700f853b> (and I'll go back to that now ;)
+[17:31] <54d4a1d6db8155e6700f853b> check out the GMM rewrite pull request if you are interested
+--------------------------------------------------------------------------------------------------
+[17:29] <564789be16b6c7089cbab8b7> oh great! On machine learning?
+[17:29] <54d4a1d6db8155e6700f853b> machine learning in scikit-learn
+[17:29] <54d4a1d6db8155e6700f853b> err machine learning with python
+--------------------------------------------------------------------------------------------------
+[17:30] <564789be16b6c7089cbab8b7> I look forward to it!
+--------------------------------------------------------------------------------------------------
+[17:31] <564789be16b6c7089cbab8b7> although I am a little worried that ML is going to be overtaken by neural network mumbo jumbo :)
+[17:31] <564789be16b6c7089cbab8b7> I will do.. thanks
+[17:31] <564789be16b6c7089cbab8b7> good luck!
+[17:31] <564789be16b6c7089cbab8b7> (p.s. did you consider cloning yourself? :) )
+[17:32] <564789be16b6c7089cbab8b7> (as everyone wants your attention)
+--------------------------------------------------------------------------------------------------

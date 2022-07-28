@@ -1,0 +1,14 @@
+<s> <user> hi guys i m having a doubt if i train a <unka> and pickle it . how to make it relearn everytime when i introduce a new test example . is it like everytime i want to predict something i need to <unka> with updated training set or will the updating can happen on the go .? </s>
+<s> <user> <unka@> in my opinion <unka> with every new test example is a bad idea , mainly because it will change the accuracy characteristics of your model over time . not necessarily always towards the better . some <unka> methods support very natural " updating " . otherwise you can look into " <unka> learning " which may be better suited to your task if you need to learn " online " . </s>
+<s> <user> it may also be a good idea to keep the new examples in a special " out of sample " test set , and evaluate ongoing accuracy on that test set . </s>
+<s> <user> <unka@> thank you :) </s>
+<s> <user> hi i have a txt file containing words and corresponding word vectors . i want to plot this using <unka> </s>
+<s> <user> can anyone point me to good example ? </s>
+<s> <user> hi , i have read a few articles on word <unka> and <unka> but am new to these topics . some of the websites were </s>
+<s> <user> URL/https:/ <unka./> <unka/> </s>
+<s> <user> URL/http:/ <unka./> <unk#a-/> </s>
+<s> <user> and i came across this just now .. URL/https:/ <unka./> <unk#a-/> hope it is helpful . </s>
+<s> <user> hey folks , id like to understand the implementation of the random <unka> . is there a specific reason why <unka(_> ) is a function and not a method ? </s>
+<s> <user> because it is a helper which is called inside the <unka`> method . </s>
+<s> <user> the <unka_`> param that you set at the initialization of <unka`> controls the number of processes used by <unka`> ... </s>
+<s> <user> the <unka`> uses <unka`> 's <unka`> to run the <unka_`> helper in batches to build <unka_`> trees at a time . </s>

@@ -1,0 +1,27 @@
+<s> <user> i have a stupid general question here : what are possible ways to do key <unka/> extraction from a large text <unka> ? </s>
+<s> <user> <unka@> have you tried <unka> ? </s>
+<s> <user> <unka-@> not really . how does it compare to document <unka> ? </s>
+<s> <user> text rank tries to order sentences by their importance </s>
+<s> <user> a sentence is of more importance if it talks about a large number of things and thus gets a higher score . </s>
+<s> <user> then is it good bad for a short sentence that contains potential keyword ? </s>
+<s> <user> bad i meant </s>
+<s> <user> from what i 've used it , bad </s>
+<s> <user> so what do you suggest as an alternative ? </s>
+<s> <user> it generally gives a long sentence talking about lots kf things </s>
+<s> <user> can you give me an example of an output you would expect ? </s>
+<s> <user> you can give this a try , but i have no idea what kind of output to expect . </s>
+<s> <user> URL/http:/ <unka-./> <unka./_> </s>
+<s> <user> <unka@> i would like to have a <unka> of conversation </s>
+<s> <user> conversation , by nature , could be short </s>
+<s> <user> for example we are having one , what would you expect the summary to be ? </s>
+<s> <user> i guess the summary would be about text <unka> and keyword extraction </s>
+<s> <user> you can try the <unka> example i posted . </s>
+<s> <user> would you want an <unka> summary or an <unka> one ? i used <unka> once to get <unka> <unka> of a conversation and it seemed to work well , though i did n't compare it with other methods </s>
+<s> <user> i do n't know of any such technique . since i had worked with text rank i thought i'd give my 2 cents </s>
+<s> <user> <unka> is fine for me </s>
+<s> <user> just pick 2 most important sentences and display </s>
+<s> <user> you could experiment with both these methods and explore about other ones too , and see which one gives you the desired results , i used <unka> as a quick hack in a <unka> so i 'm no expert in this regard </s>
+<s> <user> <unka:> : </s>
+<s> <user> <unka-@> thanks , i will try <unka> first </s>
+<s> <user> i would like to go into deep learning approach later </s>
+<s> <user> <unka-@> tried <unka> , not too bad </s>

@@ -1,0 +1,2 @@
+[17:16] <5684304216b6c7089cc0a229> that's... curiouser and curiouser.  I don't get the warnings with the exact same versions of everything (AFAICT, except that cpython is from conda), whether with pip-installed numpy and scipy or conda-forge ones.
+--------------------------------------------------------------------------------------------------

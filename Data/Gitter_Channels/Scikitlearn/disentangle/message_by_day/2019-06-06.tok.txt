@@ -1,0 +1,8 @@
+<s> <user> URL/https:/ <unka./> <unka-/> </s>
+<s> <user> anyone on windows ? </s>
+<s> <user> i am trying to run a script with just " python script.py " but i am getting missing module errors and i am sure i should have this installed </s>
+<s> <user> <unka*> </s>
+<s> <user> check the spellings of the modules you have imported </s>
+<s> <user> and also check whether the modules you imported contain that specific module </s>
+<s> <user> and just as shortcut run pip install on all the modules to ensure everything has been properly installed </s>
+<s> <user> it also depends on the version of python you are using </s>

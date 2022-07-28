@@ -1,0 +1,6 @@
+[16:40] <53135b495e986b0712efc453> Is there a way to install sklearn to python package namespace under a different name (say `skmaster`) it would be nice to have two versions of scikit-learn installed under different names to compare against master...
+--------------------------------------------------------------------------------------------------
+[18:09] <53810862048862e761fa2887> @raghavrv You can open 2 different shells and activate 2 different environments in them ?
+--------------------------------------------------------------------------------------------------
+[18:11] <56c4f19ae610378809c1f8ae> it'd be useful to be able to run both in the same script for easy comparison / benchmarking
+--------------------------------------------------------------------------------------------------

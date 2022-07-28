@@ -1,0 +1,41 @@
+<s> <user> i have <unka/> : generally , for new algorithms , are there any reasons that <unka-> would prefer a <unka/> implementation over a <unka> implementation ? the only thing i can think of is if the efficiency gain for the <unka> version so minimal that it 's not worth the added complexity . but , are there any other reasons ? </s>
+<s> <user> <unka@> yes , mostly readability and <unka> </s>
+<s> <user> there is another potential reason in the future : using the <unka_> protocol and possibly <unka> 37 , pure numpy algorithm could directly be ported to gpu or distributed <unka> <unka> , while that 's not possible for <unka> implementations . </s>
+<s> <user> ( this does n't say anything about how efficient that would be though ) </s>
+<s> <user> there is even a ( very hypothetical ) future even where we might add both <unka> and numpy for some algorithms so we have a fallback in case the array is not a numpy array ( this sounds weird ; we need a numpy implementation if the array is not native numpy , but that 's the way it would be lol ) </s>
+<s> <user> goodness , thank you . this is very valuable ! </s>
+<s> <user> i 'm writing a uni report for my <unka-> term comparing numpy to <unka> ( specifically in the context of <unk##> ), and it felt a little too <unka-> of me to say " <unka> faster , <unka> better " ( lol ) i figured there was more <unka> there , so thank you . </s>
+<s> <user> the main thing is really <unka> . in general , there 's also the fact that you have to compile <unka> , so distribution becomes much harder . but in <unka> we already made that investment so the additional burden is relatively small . </s>
+<s> <user> also , new contributors might not be familiar with <unka> . </s>
+<s> <user> a comparison with <unka> might also be interesting if you want to go all out ;) </s>
+<s> <user> i 've got a tab open with <unka> too , ehe . </s>
+<s> <user> too many tabs , really ! </s>
+<s> <user> if i may pick your brain a little more , what about <unka> do you feel makes it more difficult to maintain ? </s>
+<s> <user> <unka> has a lot to do with code readability and people who are comfortable with that language . <unka> is both less readable ( especially when you do c instead of python in it ) and far fewer people know it than python . it 's more of a people issue than a language itself issue . if you go to <unka> 's community , they're very comfortable with c++ and in that community c++ is very <unka> . </s>
+<s> <user> another point is that while numpy is reasonably straightforward to use and understand , <unka> can act in magical ways that are not necessarily intuitive even with some experience ( this is even more true for <unka> btw ). URL/https:/ URL/github.com/ <unk#a-/> is an example </s>
+<s> <user> <unka@> , <unka@> , and <unka@> : i appreciate that you 've taken the time to share your thoughts ! i now have many great starting points for further reading , so thank you . :) </s>
+<s> <user> > another point is that while numpy is reasonably straightforward to use and understand , <unka> can act in magical ways that are not necessarily intuitive even with some experience i guess this might be a natural consequence of numpy being designed for array operations and used as the backbone for python <unka/> , while <unka> can be applied more generally . so , i would imagine that numpy has <unka-> common <unka-> , but that someone might have to recreate themselves using <unka> ... </s>
+<s> <user> > ( especially when you do c instead of python in it ) <unka@> just to clarify , is this referring to wrapping external c code ? i.e . URL/https:/ <unka./> <unka./_> </s>
+<s> <user> <unka@> no he means writing code that is closer to c than python </s>
+<s> <user> you can use pointers etc </s>
+<s> <user> in <unka> </s>
+<s> <user> ah ! good to know . thanks . :) </s>
+<s> <user> in which case you have to do manual memory allocation , which python programmers might not be familiar with </s>
+<s> <user> URL/https:/ URL/github.com/ <unk#a#-./_> </s>
+<s> <user> ah ! this actually came up in the extension i was writing ... i had been allocating space using <unka.`> and was curious about how i might do that without python . malloc came up in search results but i left it at the time . thanks for linking that line , <unka@> . :d </s>
+<s> <user> well <unka.> will create a python object which will be memory managed </s>
+<s> <user> this conversation probably further <unka> the above point of <unka> being less obvious ;) </s>
+<s> <user> hehehe exactly . i 'm having a " do n't know what i do n't know " moment here , where i realize there 's much more to <unka> than i had thought . </s>
+<s> <user> you can look at the history of the tree <unka> files and you 'll probably find some fun bugs we fixed over the years </s>
+<s> <user> URL/https:/ URL/github.com/ <unk#a-/> </s>
+<s> <user> so , if i 'm understanding correctly , the " python version " ( so to speak ) of <unka> memory management would be to create a <unka> into a python object that already has its memory managed automatically . but , that <unka> loc you linked up there does n't seem like it uses <unka> at all . just , dealing directly with a c array ? although , iirc from reading , <unka> are relatively new to <unka> , and it seems like you can use them with c arrays too . </s>
+<s> <user> > URL/https:/ URL/github.com/ <unk#a-/> oh ho ho , interesting . thanks for finding that link . :d </s>
+<s> <user> yes and we use both ways , usually for historical reasons . i think there used to be a speed difference between raw pointers and memory views but i do n't think there is any more </s>
+<s> <user> " for historical reasons " -> another point for <unka> , then , hehe :p </s>
+<s> <user> i hope the benchmarks for the enhancement i 'm working on go well , then . i'd love to be able to open a pr and get a code review for what i 've written ... i imagine i 'm making lots of newbie <unka> <unka> at this stage , heh . :d </s>
+<s> <user> so , i guess one last question i have is , it seems like for contributors , it might be worth exploring numpy optimizations just as much as it is <unka> optimizations ? e.g . replacing for loops in an algorithm with <unka> operations when possible to try and push the pure python implementation closer to <unka> </s>
+<s> <user> although , i guess that sometimes leads to less readable python code , e.g . with fancy np indexing </s>
+<s> <user> so many <unka> ... this is all very interesting , hehe . </s>
+<s> <user> we do prefer numpy if it 's possible , and we prefer like numpy , but if we have to pick , we pick fast numpy over readable numpy , i think </s>
+<s> <user> that 's good to know ... i 'll have to revisit the slower <unka/> implementation that i had converted to <unka> , then , before i can really put this to rest . :) </s>
+<s> <user> in the past it happened to me to spend time on a <unka> implementation , then realize that it could be as fast or faster with just numpy with a better <unka> approach . so spending time on numpy optimization as a first step is useful in any case . and of course profiling code ( with e.g . <unka> ) is very helpful to make sure that the optimized code is actually the performance bottleneck .. </s>

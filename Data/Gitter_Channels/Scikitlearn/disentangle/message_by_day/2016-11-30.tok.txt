@@ -1,0 +1,1 @@
+<s> <user> hi <unka,> is it possible to join two image feature vectors as a vector and use it to train a model for <unka> ( example is raw pixel feature vector and color <unka> feature vector of an <unka).> would appreciate your help , thank you . </s>

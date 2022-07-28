@@ -1,0 +1,75 @@
+[12:19] <53135b495e986b0712efc453> @amueller Sorry I saw the chat just now! I'll build the docs and look for errors  :)
+[12:50] <5571fe1015522ed4b3e17d90> @rvraghav93 I was planning to look at the broken examples too. Let me know if we can split the work between the two of us.
+[12:53] <53135b495e986b0712efc453> Yes sure! I'm looking at http://scikit-learn.org/dev/auto_examples/model_selection/plot_roc.html
+[12:53] <53135b495e986b0712efc453> Let me know if you want to take over...
+[12:55] <5571fe1015522ed4b3e17d90> Do you have a list of all the broken examples? I am generating the doc right now but if you already have the full list I could look at another broken example.
+[12:58] <53135b495e986b0712efc453> Wait Andy posted one more broken link right? - [scikit-learn.org/dev/auto_examples/preprocessing/plot_function_transformer.html](scikit-learn.org/dev/auto_examples/preprocessing/plot_function_transformer.html) Unless you are more than 20% done with the doc generation I'll generate the list and let you know shortly :) I need to generate the docs with plots for the one of my PRs anyway...so I could save you the trouble... If you want please take over the http://scikit-learn.org/dev/auto_examples/model_selection/plot_roc.html too... that seems to be due to a problem in importing (`from scipy import stats` seems to fail(?))
+[13:01] <53135b495e986b0712efc453> Is there a way to work with 2 branches at once? :P
+[13:11] <5571fe1015522ed4b3e17d90> OK I'll take a look at http://scikit-learn.org/dev/auto_examples/model_selection/plot_roc.html
+[13:16] <541a528b163965c9bc2053de> > Is there a way to work with 2 branches at once?  clone the scikit-learn repo twice, create 2 conda env or 2 virtualenvs and `pip install -e .` each repo in each env.
+[13:17] <53135b495e986b0712efc453> Okay!! thanks :)
+[13:22] <541a528b163965c9bc2053de> @amueller any review for the joblib sync #5399? It reverts a broken experimental change in the pickle format that was in introduced in joblib 0.9.0b2 (hence not part of scikit-learn 0.16.1). See:  https://github.com/joblib/joblib/blob/master/CHANGES.rst#release-092
+[14:03] <5571fe1015522ed4b3e17d90> I generated the doc locally so I am going to create one ticket by broken example. FWIW I found 5 broken examples: examples/applications/plot_tomography_l1_reconstruction.py examples/ensemble/plot_random_forest_embedding.py examples/manifold/plot_lle_digits.py examples/model_selection/plot_roc.py examples/svm/plot_rbf_parameters.py
+[14:03] <5571fe1015522ed4b3e17d90> Note the tomography one is broken only for numpy 1.10
+[14:05] <53135b495e986b0712efc453> you did doc with plots right? How did it get over so fast? It takes forever on my machine :/ Anyway let me know if you want me to look into any of those while you work on other things...
+[14:09] <5571fe1015522ed4b3e17d90> yeah make html. Too ~25 minutes on my machine.
+[14:13] <541a528b163965c9bc2053de> Let's split the work on fixing the examples.
+[14:14] <53135b495e986b0712efc453> I'll take the last 2 if no one else is working on it?
+[14:14] <541a528b163965c9bc2053de> plot_roc and plot_rbf_parameters? sure I have a look at something else.
+[14:15] <53135b495e986b0712efc453> yea!
+[14:15] <541a528b163965c9bc2053de> I will have a look at plot_random_forest_embedding.py
+[14:15] <5571fe1015522ed4b3e17d90> I can take plot_lle_digits should be trivial
+[14:17] <5571fe1015522ed4b3e17d90> @rvraghav93 the plot_roc one is due to the roc_curves not all having the same shape, not sure why ...
+[14:24] <541a528b163965c9bc2053de> RandomTreesEmbedding looks like a real regression :(
+[14:35] <54d4a1d6db8155e6700f853b> I'm back
+[14:39] <5571fe1015522ed4b3e17d90> I did the plot_tomography_l1_reconstruction fix while I was at it.
+[14:39] <54d4a1d6db8155e6700f853b> @ogrisel are you planning on uploading the website for the rc? No, right?
+[14:49] <54d4a1d6db8155e6700f853b> I think it would be nice to fix https://github.com/scikit-learn/scikit-learn/issues/5324
+[14:49] <54d4a1d6db8155e6700f853b> should I go for that?
+[14:50] <54d4a1d6db8155e6700f853b> oh right there is https://github.com/scikit-learn/scikit-learn/pull/5402
+[15:10] <53135b495e986b0712efc453> Is there a reason why we don't have the `requirements.txt` in our repo?
+[15:17] <54d4a1d6db8155e6700f853b> yeah because it would need to include numpy and scipy and we don't want people to install this via pip on linux
+[15:17] <54d4a1d6db8155e6700f853b> is anyone doing #5407 ?
+[15:19] <53135b495e986b0712efc453> Okay.. and yes I am...
+[15:26] <54d4a1d6db8155e6700f853b> http://scikit-learn.org/dev/modules/classes.html is entirely broken
+[15:26] <54d4a1d6db8155e6700f853b> it's the sphinx version with the fun
+[15:38] <54d4a1d6db8155e6700f853b> btw, do we want to fix the "FutureWarning: elementwise comparison failed; returning scalar instead, but in the future will perform elementwise comparison" ?
+[15:39] <54d4a1d6db8155e6700f853b> @ogrisel which version of sphinx is on the doc build bot?
+[16:52] <54d4a1d6db8155e6700f853b> @ogrisel I mean it is not really release related but for the build bot we need to fix the sphinx version to 1.2.3 not sure how to do that with a salt state
+[16:52] <54d4a1d6db8155e6700f853b> oh wait, just  name = sphinx == 1.2.3
+[17:03] <541a528b163965c9bc2053de> > @ogrisel are you planning on uploading the website for the rc? No, right?  Updating the /stable/ part? No I don't think we should do it for the beta.
+[17:05] <54d4a1d6db8155e6700f853b> I agree.
+[17:05] <54d4a1d6db8155e6700f853b> so the plotting examples are "not that critical" for the release. Though it would be nice to fix them
+[17:06] <541a528b163965c9bc2053de> for the final they are
+[17:07] <54d4a1d6db8155e6700f853b> yeah but not for the rc.
+[17:07] <54d4a1d6db8155e6700f853b> I thought you wanted to do an RC/beta today? Or the full release?
+[17:07] <541a528b163965c9bc2053de> @amueller  >  which version of sphinx is on the doc build bot?  It using the latest stable version installed by pip: https://github.com/scikit-learn/sklearn-docbuilder/blob/master/srv/salt/sklearn-docbuilder.sls#L107
+[17:08] <541a528b163965c9bc2053de> It's not updated as long as the machine does not crash and we restart it though (which is very rare).
+[17:08] <54d4a1d6db8155e6700f853b> yeah that is no good. I just sent you a PR to fix it to 1.2.3
+[17:08] <54d4a1d6db8155e6700f853b> current stable doesn't build the api docs
+[17:08] <541a528b163965c9bc2053de> ok
+[17:09] <54d4a1d6db8155e6700f853b> https://github.com/scikit-learn/sklearn-docbuilder/pull/6
+[17:15] <541a528b163965c9bc2053de> I just put some instructions to let you try to run it. If it fails, tell me and I will do it.
+[17:20] <54d4a1d6db8155e6700f853b> ok. gotta grab some lunch now
+[17:20] <54d4a1d6db8155e6700f853b> @rvraghav93 if you're bored you can try to bisect https://github.com/scikit-learn/scikit-learn/issues/5267
+[17:20] <541a528b163965c9bc2053de> do you want me to do the sklearn-docbuilder stuff?
+[17:21] <541a528b163965c9bc2053de> you can always give it a try later
+[17:21] <541a528b163965c9bc2053de> guten Appetit!
+[17:23] <54d4a1d6db8155e6700f853b> merci
+[17:23] <54d4a1d6db8155e6700f853b> I can try it later
+[17:23] <54d4a1d6db8155e6700f853b> I don't see any fires at the moment
+[17:23] <541a528b163965c9bc2053de> ok
+[17:24] <54d4a1d6db8155e6700f853b> fixing more warnings in master and fixing the doc-build would be nice
+[17:24] <541a528b163965c9bc2053de> ok
+[17:24] <54d4a1d6db8155e6700f853b> how about the "FutureWarning: elementwise comparison failed; returning scalar instead, but in the future will perform elementwise comparison" ? from numpy?
+[17:24] <54d4a1d6db8155e6700f853b> anyhow, my stomach demands attention
+[19:10] <54d4a1d6db8155e6700f853b> website build is fixed. Thanks @ogrisel 
+[19:12] <541a528b163965c9bc2053de> good
+[19:13] <54d4a1d6db8155e6700f853b> what is the timeline? how long will you be around today?
+[19:30] <54d4a1d6db8155e6700f853b> many of the the "elementwise comparison failed; returning scalar instead, but in the future will perform elementwise comparison"  are due to us comparing parameters that might be arrays to strings. like ``if init == "something"``
+[19:36] <541a528b163965c9bc2053de> I will soon logout. I wanted to do the RandomTreeEmbedding example fix but we can do that after the cut of the 0.17.X branch.
+[19:36] <541a528b163965c9bc2053de> Do you want to cut it today? Otherwise I can do it tomorrow morning (Paris time).
+[19:37] <541a528b163965c9bc2053de> I just merged the joblib upgrade
+[19:52] <54d4a1d6db8155e6700f853b> cool.
+[19:52] <54d4a1d6db8155e6700f853b> I'll fix "FutureWarning: elementwise comparison failed; returning scalar instead, but in the future will perform elementwise comparison" in a couple of minutes. I'd like to include that in the RC. Then you can cut it tomorrow morning?
+[20:10] <54d4a1d6db8155e6700f853b> https://github.com/scikit-learn/scikit-learn/pull/5413

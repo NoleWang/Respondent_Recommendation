@@ -1,0 +1,5 @@
+<s> <user> hello , i 'm ml student and i 'm loving <unka-> . altough , i 'm struggling using <unka> . i'd like to set <unka> as <unka_> but it says " <unka> does not implement <unka_> function " . is there anyway i can customize this to accept this learner and others ? </s>
+<s> <user> i also tried to create a <unka> of <unka> , and then using <unka> with <unka> as <unka_> , but no success </s>
+<s> <user> <unka@> you ca n't use <unka> with <unka> because <unka> does not support sample weights and <unka> requires the the <unka_`> parameter to support sample weights ( it 's in the <unka> ). <unka> works by <unka-> some of the samples , so support for sw is mandatory . there 's no way around it unfortunately . </s>
+<s> <user> oh </s>
+<s> <user> <unka@> do you recommend another option to achieve this ? i really need an <unka> of <unka> <unka> , even if it 's not <unka-> </s>

@@ -1,0 +1,3 @@
+[07:48] <54fdd51a15522ed4b3dd04b7> Hi all, i see a bunch of `unused variables` alert  in lgtm. https://lgtm.com/projects/g/scikit-learn/scikit-learn/alerts/?mode=tree&ruleFocus=6780086 Would this be a useful PR?
+[15:20] <54d4a1d6db8155e6700f853b> @whiletruelearn not if they are in externals or backports. otherwise yes.
+[16:40] <5bc6614fd73408ce4fabae05> How wants to code in a kaggle team! 

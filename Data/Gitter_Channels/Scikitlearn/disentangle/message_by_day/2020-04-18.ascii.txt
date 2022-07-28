@@ -1,0 +1,1 @@
+[18:28] <5e9b457bd73408ce4fe0e90c> I need to write a custom random_selection(for random selection of feature i.e "max_feature" and subset of train data i.e. "subsample") module in scikit-learn to be used with sklearn.ensemble.RandomForestClassifier and GradientBoostingClassifier. Can someone point to some example/documentation/discussion etc.?

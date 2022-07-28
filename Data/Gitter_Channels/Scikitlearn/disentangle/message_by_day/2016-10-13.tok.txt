@@ -1,0 +1,15 @@
+<s> <user> yes i have </s>
+<s> <user> by version do you mean release # ? <unka@> </s>
+<s> <user> whats the error you are getting right now ? </s>
+<s> <user> > does <unka_> in <unka.\_> mean time that it took to predict classes ( in <unka> case ) and <unka> the relevant evaluation scores ? <unka@> yes . <unka_`> corresponds to the training time ... </s>
+<s> <user> <unka-@> what does your <unka.> line for <unka> look like ? i 've tried <unk#a-.=> and <unk#a.=> both give me errors </s>
+<s> <user> it does n't seem like <unka> interacts with pip3 freeze . when i use pip3 freeze it displays the version as 0.0 when im using 0.18 </s>
+<s> <user> collecting <unk#a.=> ( from -r <unka.> ( line 3 )) could not find a version that satisfies the requirement <unk#a.=> ( from -r <unka.> ( line 3 )) ( from versions : 0.0 ) no matching distribution found for <unk#a.=> ( from -r <unka.> ( line 3 )) </s>
+<s> <user> hmm thats odd . my pip outputs <unk#a-.=`> perfectly fine </s>
+<s> <user> although i am on python 2 , so ill try with 3 </s>
+<s> <user> <unk`> <unka> create --name test <unk#a=> source activate test pip install numpy scipy <unka> <unka-> $ pip --version pip <unk#.> from DIR/users/ <unka/> <unk#a/> <unka/> DIR/test/ DIR/lib/ <unk#a./> DIR/site-packages/ ( python 3.5 ) $ pip freeze <unk#a.=> <unk#a.=> <unk#a-.=> <unk#a.=> <unk`> seemed to work for me </s>
+<s> <user> <unka@> </s>
+<s> <user> alright . im using pip <unk#.> , maybe i need to update </s>
+<s> <user> did it work with 0.17 ? </s>
+<s> <user> yeah it did </s>
+<s> <user> ok ill try updating pip , thanks </s>

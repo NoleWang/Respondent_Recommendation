@@ -1,0 +1,5 @@
+[02:45] <589208e2d73408ce4f4770c4> Thanks @greed2411 . Retraining on the new architecture works.
+--------------------------------------------------------------------------------------------------
+[18:06] <564789be16b6c7089cbab8b7> I have a few thousand points on a line and most of them are in a dense part with a few hundred spread out more widely. What is a good way to find the dense part?
+[18:06] <564789be16b6c7089cbab8b7> This looks like a clustering problem with one cluster plus noise
+--------------------------------------------------------------------------------------------------

@@ -1,0 +1,2 @@
+<s> <user> <unka@> there is no way currently to know if something has been fitted . the " <unka> " way is to try and predict . if it has n't been fitted , it will raise an appropriate error . but you need to know the number of features is might have been fitted with . </s>
+<s> <user> <unka@> did you have time to set up the doc build server yet ? </s>

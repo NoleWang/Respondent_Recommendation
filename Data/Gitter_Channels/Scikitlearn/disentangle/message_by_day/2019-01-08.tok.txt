@@ -1,0 +1,5 @@
+<s> <user> hi , i have been seeing some conversation in the mailing list regarding an upcoming dev sprint . i have made a couple of contributions at the tail end of last year and it 's one of my goals this year to see if i can contribute more . </s>
+<s> <user> will this be an event which i will be able to participate remotely as well or do i need to be france to participate ? </s>
+<s> <user> i have a minor question on making open-source contributions .. traditionally , before i decide to change a file , i always first do a <unka`> <unka`> to get the updated version . i then switch to the branch i created initially , and then make the changes , and do the <unka`> add .` , commit and push , and then submit a pull request . correct ? </s>
+<s> <user> is the same procedure followed for making contribution to this library ? i do 'git <unka'> everytime ? </s>
+<s> <user> is this a bug ? URL/https:/ URL/stackoverflow.com/ <unk#a-/> </s>

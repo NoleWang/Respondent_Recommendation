@@ -1,0 +1,2 @@
+[10:15] <567f5d7716b6c7089cc043a8> @enoch-sun We don't really support those Python versions anymore. You can try and figure it out with some other persisting models such as ONNX or PMML, but you'll be mostly on your own
+--------------------------------------------------------------------------------------------------

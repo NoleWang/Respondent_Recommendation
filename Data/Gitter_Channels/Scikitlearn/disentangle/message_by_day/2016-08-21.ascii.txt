@@ -1,0 +1,8 @@
+[00:12] <56f2390385d51f252aba4de9> Does anyone know how the images are generated in the "example gallery" documentation?Im trying to contribute an example but the plot legend and title are cut off on the html page in my local build.
+[09:53] <564789be16b6c7089cbab8b7> @mlliou112  I don't think dropout has been implemented yet which afaik is crucial for getting good out of sample prediction performance
+[09:53] <564789be16b6c7089cbab8b7> I once saw a PR for it I think but I am not sure what happened
+[09:56] <564789be16b6c7089cbab8b7> https://github.com/scikit-learn/scikit-learn/issues/6175 and https://github.com/glennq/scikit-learn/tree/mlp_dropout_new . Maybe these are stalled?
+[11:05] <564789be16b6c7089cbab8b7> on a similar note... has https://github.com/scikit-learn/scikit-learn/pull/4899 stalled? I am hugely looking forward it. 
+[15:24] <57b3fd8640f3a6eec05fe0e8> http://www.telegraph.co.uk/technology/2016/01/28/first-driverless-buses-travel-public-roads-in-the-netherlands/
+[15:32] <564789be16b6c7089cbab8b7> @ItchyJunk  yes but what's the point :) Bus drivers take a lot of passengers so I can't believe it saves much money
+[19:43] <57b3fd8640f3a6eec05fe0e8> @_@ what the point of automating vehicles? 

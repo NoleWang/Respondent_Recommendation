@@ -1,0 +1,2 @@
+<s> <user> hi there any clue for identify text from one document to another ? </s>
+<s> <user> we are working on a prototype for fake news </s>

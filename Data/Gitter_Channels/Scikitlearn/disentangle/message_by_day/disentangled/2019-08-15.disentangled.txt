@@ -1,0 +1,12 @@
+[11:12] <5810cd4cd73408ce4f3101ce> Hey channel, ive being working on vectorizing regression tree with Numpy, and i have achieved some speed up against the cython version of sklearn.  in case anyone is interested, here is the link https://github.com/yupbank/np_decision_tree#regression-with-mae
+[11:19] <5810cd4cd73408ce4f3101ce> on median data(10000*100), with MAE criteria, achieved 20 times speed up :)
+[13:51] <5810cd4cd73408ce4f3101ce> lol, you are right, actually with max_depth=10, i only get 5 times faster.
+--------------------------------------------------------------------------------------------------
+[12:52] <567f5d7716b6c7089cc043a8> still haven't checked the code in depth. But it's definitely interesting @yupbank . What do you think @NicolasHug ?
+--------------------------------------------------------------------------------------------------
+[12:55] <5810cd4cd73408ce4f3101ce> i havent clean the code yet, and also working on a blog post explainning what i did, and add some CI to it.  But i would love to have some extra inputs before i proceed, e.g. reviews.
+[12:58] <567f5d7716b6c7089cc043a8> I don't think it'd be easy, but I'd love to see if it actually passes our tree tests, and if it doesn't why not and which tests. Feel free to ping me when you write the blog post.
+[12:59] <5810cd4cd73408ce4f3101ce> sure.. that would be nice,
+--------------------------------------------------------------------------------------------------
+[13:50] <5baf7d9ad73408ce4fa9c9b2> @yupbank pretty cool stuff! I took a quick glance at the tree grower and the `greedy_split` function and it looks good as far as I can tell. I wouldn't advertise benchmarks with only `max_depth=1` though ;) Please definitely ping us when you write the blog post!!
+--------------------------------------------------------------------------------------------------

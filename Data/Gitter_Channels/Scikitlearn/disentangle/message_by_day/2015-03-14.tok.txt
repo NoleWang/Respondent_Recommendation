@@ -1,0 +1,5 @@
+<s> <user> since <unka_`> is public , do you also want <unka_`> to be made public too , or i 'll leave it as such ? </s>
+<s> <user> keep it private </s>
+<s> <user> <unka_> should probably not have been private in the first place . </s>
+<s> <user> btw it 's probably better to have this kind of specific technical discussions in the comment threads of the issue itself rather than on <unka> </s>
+<s> <user> thanks ! and yes sure ! </s>

@@ -1,0 +1,2 @@
+[13:18] <595a8627d73408ce4f6b61ba> perhaps use bayesian classifier if predicting something from tweets 
+[13:18] <595a8627d73408ce4f6b61ba> it worked in some works ive come across

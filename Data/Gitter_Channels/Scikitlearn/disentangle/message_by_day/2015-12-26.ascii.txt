@@ -1,0 +1,2 @@
+[18:07] <53135b495e986b0712efc453> @aron-bordin Welcome to scikit-learn! Please check if any of [these](https://github.com/scikit-learn/scikit-learn/labels/Need%20Contributor) issues interest you and start working on it. Let me know if I can be of any help!
+[18:11] <567ed70316b6c7089cc03bc2> @rvraghav93 Thx, I'll check them

@@ -1,0 +1,14 @@
+[02:21] <5537027215522ed4b3df56ab> @vene  That makes sense but stats models doesn't deal with a million features
+[02:22] <5537027215522ed4b3df56ab> basically the whole lib doesn't work for omre than like 20 features
+[17:42] <5537027215522ed4b3df56ab> @lesshaste sounds good
+--------------------------------------------------------------------------------------------------
+[08:56] <564789be16b6c7089cbab8b7> Also statsmodels in general is not developed very quickly or actively. I used to follow it but gave up.
+--------------------------------------------------------------------------------------------------
+[11:16] <54e07d6515522ed4b3dc0858> Maybe there is a way to initialize the statsmodels result object with our coefs.
+[11:16] <54e07d6515522ed4b3dc0858> And use their post processing
+--------------------------------------------------------------------------------------------------
+[16:42] <564789be16b6c7089cbab8b7> @vene  that's a nice idea.
+--------------------------------------------------------------------------------------------------
+[16:47] <564789be16b6c7089cbab8b7> @lqdc  Do you want to open an issue with an example large enough that  statsmodels can't cope?
+[16:47] <564789be16b6c7089cbab8b7> and paste in @vene's thought maybe
+--------------------------------------------------------------------------------------------------

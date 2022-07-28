@@ -1,0 +1,4 @@
+[10:06] <5d722e7fd73408ce4fca2f1f> Hi All, I`m getting the following error while executing the python setup.py install  error: Command "cl.exe /c /nologo /Ox /W3 /GL /DNDEBUG /MT -IC:\Users\Moti\Anaconda3\envs\motidevs\lib\site-packages\numpy\core\include /EHsc /Tpsklearn\svm\src\libsvm\libsvm_template.cpp /Fobuild\temp.win-amd64-3.7\sklearn\svm\src\libsvm\libsvm_template.obj" failed with exit status 127  Do you have any idea? Thanks!
+--------------------------------------------------------------------------------------------------
+[21:15] <579618a040f3a6eec05c5e42> Any scikit devs who can shed some light on why `calibration_curve` is only for binary estimators?
+--------------------------------------------------------------------------------------------------

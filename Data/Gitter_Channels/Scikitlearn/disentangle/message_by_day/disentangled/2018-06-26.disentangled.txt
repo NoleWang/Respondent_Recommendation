@@ -1,0 +1,2 @@
+[07:10] <5957e40fd73408ce4f6b27e0> @loginofdeath Hi, I am using this pipeline object pipe = Pipeline( 		[ 			('fresh', 			 FeatureAugmenter(column_id='index', column_sort='tick', default_fc_parameters=MinimalFCParameters())), 			('scaler', StandardScaler())  		]) If I fit_transform it on the train data and get some features, will I get the same features on the test data too so that I can give it  to a classifier?
+--------------------------------------------------------------------------------------------------

@@ -1,0 +1,8 @@
+<s> <user> i do n't want to <unka> this chat so if there 's a more appropriate place please redirect me . i 'm working on an ml library which draws a lot of inspiration from <unka> . i'd love to talk with some of the devs on <unka> who may be able to share some insights into things they'd like to be able to <unka/> differently . or things that they think have worked really well that i might not appreciate . </s>
+<s> <user> <unka@> you around now ? </s>
+<s> <user> <unka@> which language ? </s>
+<s> <user> <unka@> have you read the api paper ? and there are talks by me and by <unka> about the api design </s>
+<s> <user> <unka@> it 's written in rust . happy to share here if you want . i also gave a talk on it yesterday that i would be happy to share . i have n't read the api paper or seen the talks . would you be able to provide me links to those ? thanks ! </s>
+<s> <user> <unka@> heres the paper : URL/https:/ <unka./> <unk#a./> </s>
+<s> <user> <unka-@> thanks ! </s>
+<s> <user> i really like how the transformer interface is described . it 's a problem i have n't found a nice way to tackle yet in my own work . </s>

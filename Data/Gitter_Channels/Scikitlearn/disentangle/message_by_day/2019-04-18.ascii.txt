@@ -1,0 +1,3 @@
+[18:32] <564789be16b6c7089cbab8b7> I know this is going to sound like I am complaining, but I am not. In 2015 I suggested adding Gower similarity/dissimilarity to our metrics. https://github.com/scikit-learn/scikit-learn/issues/5884 . It is now April 2019 and the PR is still in the works https://github.com/scikit-learn/scikit-learn/pull/9555
+[18:36] <564789be16b6c7089cbab8b7> It feels like someone  could have coded up the dissimilarity score in a day and written tests in a week. Is this sort of 4 year period normal or something worth exploring?
+[18:38] <564789be16b6c7089cbab8b7> In fact it was implemented in 2017 I see in the issue as a jupyter notebook 

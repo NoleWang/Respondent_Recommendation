@@ -1,0 +1,18 @@
+[11:58] <54e07d6515522ed4b3dc0858> @rvraghav93 there was a question on the mailing list very relevant to what you are working on
+[12:16] <53135b495e986b0712efc453> Thanks for pinging me!! I'll look into it and reply :)
+[12:17] <53135b495e986b0712efc453> Also if you could spare a few mins could you let me know if there is anything left to be done for the #4294 :) I wish to get started on the next goal (sample props) asap :) 
+[12:30] <54e07d6515522ed4b3dc0858> I need to review it, it will take a bit more than a few minutes
+[12:30] <54e07d6515522ed4b3dc0858> I hope I can do it today
+[12:43] <53135b495e986b0712efc453> Thanks :)) also do you feel it is an apt time to send a mail on the mailing list requesting for the comments on sample props? (ML instead of issue since it will reach a wider audience)
+[12:51] <54e07d6515522ed4b3dc0858> I'd discuss in the issue first
+[12:57] <53135b495e986b0712efc453> Okay! Thanks!
+[12:58] <54e07d6515522ed4b3dc0858> There is already discussion in progress there
+[12:58] <54e07d6515522ed4b3dc0858> It seems like the appropriate place
+[13:00] <54e07d6515522ed4b3dc0858> That's just my 2c
+[13:00] <54e07d6515522ed4b3dc0858> After polling dev opinion, you can summarize and post on the ML too
+[13:02] <54e07d6515522ed4b3dc0858> As for Luca's question, you could advertise how that sort of thing is possible with your branch, introduce the new API and see whether it suits his needs. It's good to get the users' point of view.
+[13:03] <54e07d6515522ed4b3dc0858> Also it might attract another round of review, which would be great
+[14:33] <550f53e215522ed4b3dda5f6> Thanks @vene. I had an internet connection problem.
+[14:34] <550f53e215522ed4b3dda5f6> I cannot login gitter yesterday.
+[15:12] <53135b495e986b0712efc453> @vene okay :) thanks!!
+[19:34] <550f53e215522ed4b3dda5f6> Hi, when I am using %timeit on one function, how to disable caching intermediate results?

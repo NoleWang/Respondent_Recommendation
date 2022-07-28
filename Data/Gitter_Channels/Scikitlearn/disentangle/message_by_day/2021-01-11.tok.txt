@@ -1,0 +1,14 @@
+<s> <user> URL/https:/ URL/github.com/ <unk#a-/> </s>
+<s> <user> hey , </s>
+<s> <user> can someone help me understand if i can start working on this ? </s>
+<s> <user> how exactly does prediction work for gradient boosted trees ? in a random forest you just get a prob from every tree and average them i think . is this different for gradient boosted trees ? </s>
+<s> <user> <unka@> in gradient boosting , one directly <unka> a loss function . for binary <unka> in <unka-> this is the log loss , much like <unka> regression . what the trees predict is the <unka-> ratio ( <unka(_> )) and it 's passed into a <unka> to get a probability ( <unka(_> )) </s>
+<s> <user> this is a self plug but this might help : URL/http:/ <unka-./> <unka/_> </s>
+<s> <user> <unka@> thank you . in low level terms , what happens at prediction time ? is something computed for every tree separately and then <unka> ? </s>
+<s> <user> <unka_> is the sum of all the tree values , not the average </s>
+<s> <user> see URL/https:/ <unka./> <unka./_> </s>
+<s> <user> i 've <unka-> <unka-> for an <unk#a> system and i 'm receiving the following error when testing , does anyone have any suggestions for where the issue may lie ? </s>
+<s> <user> <unk`> file " <unka./_> " , line 40 , in <unka._> <unka> : buffer <unka> mismatch , expected <unka'_> but got <unka'> <unka'> <unk`> </s>
+<s> <user> it looks like it could be something 32bit vs 64bit related but from what i can see the <unka.`> build system just imports from <unka`> which i would expect to handle this all properly </s>
+<s> <user> so i 'm wondering if this is n't a cross compile issue and is maybe just an assumption made in the code that the argument will be 64bit ? </s>
+<s> <user> <unka@> thanks </s>

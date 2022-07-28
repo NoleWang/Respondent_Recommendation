@@ -1,0 +1,6 @@
+<s> <user> hey is anyone coming for <unka> <unka> from here ? </s>
+<s> <user> only india ;) </s>
+<s> <user> hi guys , i recently re-installed the dev version of <unka> , and i get an <unka> error <unk`> from <unka.> import <unk#a_> <unka.> <unka> fatal error : cannot load <unka._> or <unka._> . <unk`> if i do n't first call a <unka> function ( e.g . call <unka()._`> first prevents the error , but calling <unka()._`> does n't ) </s>
+<s> <user> do you have an idea where i should look to track this error down ? </s>
+<s> <user> update <unka> ? </s>
+<s> <user> <unka@> yep looking forward to your talk there ! </s>

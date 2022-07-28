@@ -1,0 +1,12 @@
+<s> <user> hm ... anyone have an idea why github stopped notifying me for comments on pull requests i created ? </s>
+<s> <user> ok i was just <unka> , never mind </s>
+<s> <user> . </s>
+<s> <user> ? </s>
+<s> <user> i 'm trying to check if we missed anything in <unka> for 0.17 by running a diff against 0.16 </s>
+<s> <user> some idiot changed the <unka> of all the classes so all files are changed </s>
+<s> <user> sorry that . was a typo .. ( <unka> android app sucks ... :/ ) and lol <unka*`> hopes i do n't show up in the git <unka*`> :p </s>
+<s> <user> there is an android <unka> app ? hm ... </s>
+<s> <user> yea its just the mobile site wrapped as an app ... too slow and buggy ... :/ </s>
+<s> <user> meh </s>
+<s> <user> they updated it </s>
+<s> <user> anyone want to make the pdf docs build on <unk#a.> ? ^^ </s>

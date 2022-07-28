@@ -1,0 +1,4 @@
+[17:50] <5d1b67bcd73408ce4fc51274> okay super basic question, but does anyone know how to determine if a KNN model (Sklearn-KNN) is overfitting the data
+--------------------------------------------------------------------------------------------------
+[17:51] <5d1b67bcd73408ce4fc51274> I am trying to run it on the MNIST digits dataset, but the accuracy seems way too high
+--------------------------------------------------------------------------------------------------

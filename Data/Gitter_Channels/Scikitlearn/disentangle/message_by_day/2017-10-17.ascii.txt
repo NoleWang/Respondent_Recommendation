@@ -1,0 +1,5 @@
+[14:45] <59c93e97d73408ce4f774b70> HI, I am trying to prepare training data for hand written recognition for Tibetan language. As i have to prepare thousand of it. I want to make sure i am making the correct format of pixel values for Tibetan character for machine learning. I tried a single Tibetan alphabet image of size 32*32 pixel. I got the pixel values but i am not able to plot its back in python using matplotlib.pyplot.
+[16:51] <59d187cfd73408ce4f782f22> hey guys I have X_test and X_train data. Does anyone know how I can divide it so I can have two different two of each for two different models? 
+[16:51] <59d187cfd73408ce4f782f22> trying to make a pipeline
+[16:52] <59c93e97d73408ce4f774b70> @angelotc  you got one data file ?
+[17:00] <59d187cfd73408ce4f782f22> nope I didn't use test_train_split to make X_test and X_train 

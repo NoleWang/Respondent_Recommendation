@@ -1,0 +1,18 @@
+[03:44] <5581814615522ed4b3e20c6a> What is the best way to save the trained models other than Pickle?
+[03:53] <55a487245e0d51bd787b4e45> @BastinRobin Quite unfortunately, there isn't an easy path to that in sklearn.
+[03:53] <55a487245e0d51bd787b4e45> @BastinRobin You're looking for a format to store some arrays and some random parameters? What are your constraints?
+[06:11] <575664f0c43b8c601978412c> hello ,everyone
+[09:46] <5581814615522ed4b3e20c6a> @mikegraham I just want to know if pickle is the best or not for storing
+[10:01] <564789be16b6c7089cbab8b7> @BastinRobin  It's OK ... imho sklearn is crying out for someone to volunteer to implement a better solution
+[14:02] <57565ad2c43b8c6019783fbb> Where would I have to go if I want to learn about A.Is
+[14:17] <56e9685085d51f252ab91b6d> Hello everyone
+[14:17] <56e9685085d51f252ab91b6d> I've made a pipeline for a classification problem
+[14:18] <56e9685085d51f252ab91b6d> learning goes fast thanks to parallel with n_jobs=-1
+[14:19] <56e9685085d51f252ab91b6d> but when i use the predict function, it goes very slow, and only one process is used
+[14:19] <56e9685085d51f252ab91b6d> is there a way to make prediction in parallel?
+[17:17] <55a487245e0d51bd787b4e45> @BastinRobin pickle is a very problematic solution: it is fragile, not safely transferable, not explicitly specified, etc. It is all that sklearn is geared to and it will be a lot of work to use something else.
+[17:18] <55a487245e0d51bd787b4e45> @BastinRobin For a narrow use case, you can hack something up. There isn't a more general solution
+[17:19] <55a487245e0d51bd787b4e45> @kmehl Probably not with plain sklearn, but you can probably make a specialized evaluator for the slow parts. Have you profiled? Where is the time being spent?
+[17:27] <564789be16b6c7089cbab8b7> @mikegraham  would making a better solution make a good discrete project? There are quite a lot of people who are keen to work on scikit learn it seems so if it was clearly advertised it might get someone to bite
+[17:29] <564789be16b6c7089cbab8b7> I think a good solution would be very popular
+[18:09] <55a487245e0d51bd787b4e45> @lesshaste I don't know how welcome it would be -- it would be a lot of work and a huge maintenance burden.

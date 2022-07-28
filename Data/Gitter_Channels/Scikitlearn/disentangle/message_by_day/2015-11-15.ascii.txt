@@ -1,0 +1,12 @@
+[06:51] <5395efa3a9176b500d1cd7fb> `make clean; make` finishes fine, but then? should i `make install` as usual for C-progs?
+[11:53] <53135b495e986b0712efc453> yes.. does that succeed now?
+[16:46] <5395efa3a9176b500d1cd7fb> ```bash $ make install make: *** No rule to make target `install'.  Stop. ```
+[19:34] <54d4a1d6db8155e6700f853b> do you want to globally install? or user install or build in the folder?
+[19:35] <54d4a1d6db8155e6700f853b> python setup.py install or python setup.py develop or python setup.py build_ext -i do some of these
+[21:41] <5395efa3a9176b500d1cd7fb> yes, but i have been advised above not to use that.
+[21:43] <5395efa3a9176b500d1cd7fb> i want to just install for my user account, what is the advised sequence of commands (as written above, `python setup.py install` failed).
+[21:49] <5634e8e116b6c7089cb8fa99> @michaelaye it would be
+[21:49] <5634e8e116b6c7089cb8fa99> python setup.py install --user
+[21:51] <5395efa3a9176b500d1cd7fb> hah, after the full run of make clean; make the `python setup.py install` actually worked now. thanks for your help.
+[21:52] <5395efa3a9176b500d1cd7fb> in case u wonder, i still need to self-compile even so im a conda user,  b/c i have pinned my numpy to 1.9.* b/c numpy 1.10 has performance probs with character arrays.
+[21:52] <5395efa3a9176b500d1cd7fb> and theres no scikit-learn for conda py3.5 numpy  1.9 on offer in conda.

@@ -1,0 +1,4 @@
+[19:41] <5c03c22dd73408ce4fb0b61d> Anyone know anything about why the keras.io room is blocked? Says github users only. I think there is a glitch?
+--------------------------------------------------------------------------------------------------
+[19:42] <5668c71116b6c7089cbe1ea3> Yes, it is a glitch with gitter. They link accounts but sign-in still matters.
+--------------------------------------------------------------------------------------------------

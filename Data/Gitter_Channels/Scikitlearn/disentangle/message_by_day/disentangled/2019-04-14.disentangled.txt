@@ -1,0 +1,2 @@
+[10:54] <5b58594ed73408ce4fa23ee3> Hi, what's the reason why none of the CV iterators support single splits (i.e. `n_splits=1`)?
+--------------------------------------------------------------------------------------------------

@@ -1,0 +1,38 @@
+[14:08] <56a34c16e610378809bdc988> Yes, even I am thinking about it. Also, I will try to implement ths on certain public datasets I know. I'll see if it gives consistent results.
+[14:09] <56a34c16e610378809bdc988> It will consume sometime though.
+[14:29] <55a7b5b08a7b72f55c3f96ef> Hey all!
+[14:29] <55a7b5b08a7b72f55c3f96ef> Just started thinking about building up Machine Learning for a problem I'm facing and hopefully SciKit-Learn would help solve it
+[14:30] <55a7b5b08a7b72f55c3f96ef> Is this the best place to ask for it?
+[18:39] <564789be16b6c7089cbab8b7> does anyone know any good software for clustering big graphs? It seems scikit learn doesn't have stochastic block model support yet sadly
+[20:22] <54d4a1d6db8155e6700f853b> what's happening with appveyor?
+[20:22] <54d4a1d6db8155e6700f853b> @ogrisel?
+[20:22] <54d4a1d6db8155e6700f853b> https://ci.appveyor.com/project/sklearn-ci/scikit-learn/build/1.0.5177/job/tjveqfpn8bcdyrks
+[21:06] <564789be16b6c7089cbab8b7> @amueller  You mentioned a time series CV object in the mailing list. I would love to see that too
+[21:07] <54d4a1d6db8155e6700f853b> Depending on how you parametrize, it's pretty easy to write
+[21:07] <54d4a1d6db8155e6700f853b> if you assume homogeneous samples, you can just do a slight modification of kfold
+[21:08] <54d4a1d6db8155e6700f853b> if you want to use a time index, it becomes way trickier (as we need to get a time series object in)
+[21:09] <564789be16b6c7089cbab8b7> to be honest I am not even 100% sure of the best way to do CV on time series data. If you sample randomly from the series you are likely ruin your feature vectors. What is the right approach?
+[21:10] <564789be16b6c7089cbab8b7> oh actually I think I see
+[21:38] <564789be16b6c7089cbab8b7> what do you mean by using a time index?
+[21:43] <54d4a1d6db8155e6700f853b> lets say each datapoint is a day. and you want to use 5 fold on 100 days
+[21:43] <54d4a1d6db8155e6700f853b> then training set 1 is days 0-20, test set 1 is 20-40
+[21:43] <54d4a1d6db8155e6700f853b> training set 2 is 0-40, test set 2 is 40-60 etc
+[21:44] <54d4a1d6db8155e6700f853b> but say for each day you have some arbitrary number of datapoints. Then you need to know which day a datapoint belongs to.
+[21:44] <54d4a1d6db8155e6700f853b> actually, it's not that hard, it just needs a "label" attribute... 
+[21:50] <54d4a1d6db8155e6700f853b> see http://stats.stackexchange.com/questions/14099/using-k-fold-cross-validation-for-time-series-model-selection for example
+[21:51] <564789be16b6c7089cbab8b7> thanks
+[21:51] <564789be16b6c7089cbab8b7> so in short.. it would be great :)
+[21:52] <564789be16b6c7089cbab8b7> I am not sure what you call it but there is also event data which is slightly different from time series data. That is you have a sequence of times when events happen as opposed to labels at every second, say.
+[21:52] <564789be16b6c7089cbab8b7> is there any support for that sort of data?
+[21:52] <54d4a1d6db8155e6700f853b> that is what I mean
+[21:53] <564789be16b6c7089cbab8b7> oh I see!
+[21:53] <54d4a1d6db8155e6700f853b> with "having an arbitrary number of datapoint for every day"
+[21:53] <564789be16b6c7089cbab8b7> ah ok... so I am very interested in that
+[21:53] <54d4a1d6db8155e6700f853b> then you would need to specify a label
+[21:53] <564789be16b6c7089cbab8b7> although how exactly you build your feature vectors is also less obvious I think
+[21:55] <564789be16b6c7089cbab8b7> people who do machine learning on neuronal firing data are particularly interested in this
+[22:00] <54d4a1d6db8155e6700f853b> the feature vector is a different problem ;)
+[22:01] <54d4a1d6db8155e6700f853b> I think most people that do time series analysis are not necessarily in the sciences ;)
+[22:02] <564789be16b6c7089cbab8b7> ah :)
+[22:02] <564789be16b6c7089cbab8b7> then I am the odd one out :)
+[22:05] <564789be16b6c7089cbab8b7> on a different note, when I pip install scikit-learn, are all the C and Fortran dependencies compiled from source or are any binaries used? 

@@ -1,0 +1,13 @@
+<s> <user> quick poll : did you all notice the <unka> compiler package update and have you trashed all your legacy environments ? am i the only one that did n't hear about that ? </s>
+<s> <user> i have had a lot of problems lately with <unka> , but i do n't know if they are related to the new compiler packages . basically whatever small change i want to do , it wants to <unka/> a whole set of other packages ( eg it always wants to downgrade my <unka-> numpy 1.13 to defaults numpy 1.11 when installing a package that is in no way depending ( also no through its deps ) on numpy ) </s>
+<s> <user> huh </s>
+<s> <user> at a certain point it even just wanted to remove numpy </s>
+<s> <user> URL/https:/ URL/github.com/ <unk#a/> </s>
+<s> <user> are you mixing old and new packages by any chance ? </s>
+<s> <user> possibly , but as a user i should not be needed to be aware of that </s>
+<s> <user> these are all " old " packages . i guess <unka-> only uses old packages ? </s>
+<s> <user> that 's what i though , but i was just told in the <unka> issue tracker that i need to discard any old environment </s>
+<s> <user> or at least not try to upgrade anything or compile anything </s>
+<s> <user> they can say that maybe for environments that depend on defaults , but i have environments that are mainly <unka-> ( because they eg depend on <unka> things that are ( or were ) broken on defaults ), and there just updating a <unka-> package should still work , without having it pull in defaults ( <unka-> should take priority ) </s>
+<s> <user> yeah , true </s>
+<s> <user> that sounds possibly unrelated ;) </s>

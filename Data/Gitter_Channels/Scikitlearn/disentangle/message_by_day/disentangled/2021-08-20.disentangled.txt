@@ -1,0 +1,6 @@
+[10:38] <611f80036da03739848392b1> Hello Everyone, I am a newbie to open source with basic knowledge about scikit-learn and want to contribute to this repository. Can anyone tell me how should I start? I have basic knowledge about generating my first PR and solving good first issues. Now I want to fix bugs and do some code contributions but I am unable to understand the issues. Can anyone guide me?
+--------------------------------------------------------------------------------------------------
+[18:04] <54d4a1d6db8155e6700f853b> Hi @KiranHipparagi , thanks for wanting to contribute! Have you read the contributor's guide? I would suggest you look for issues tagged "good first issue". Many of those are multi-part issues where you can pick just a part to work on
+[18:05] <54d4a1d6db8155e6700f853b> see https://scikit-learn.org/dev/developers/contributing.html and https://github.com/scikit-learn/scikit-learn/labels/good%20first%20issue for good first issues
+[18:07] <54d4a1d6db8155e6700f853b> this one might be good to get started: https://github.com/scikit-learn/scikit-learn/issues/20308
+--------------------------------------------------------------------------------------------------

@@ -1,0 +1,73 @@
+[00:16] <5474d9eadb8155e6700d8178> > Also is this a correct place to discuss this or the Mailing list might be better for such questions?  NM! I've copied this to the ML, so as to reach a wider audience :) Please let me know your views there!
+[08:33] <541a528b163965c9bc2053de> @ragv +1 for a GSoC on cross-validation improvements. I can volunteer to be a mentor on that one.
+[08:34] <5474d9eadb8155e6700d8178> Thanks!! :D would you be able to take a look at my proposal at https://github.com/scikit-learn/scikit-learn/wiki/GSoC-2015-Proposal:-Multiple-metric-support-for-CV-and-grid_search-and-other-general-improvements and let me know your views?
+[08:37] <541a528b163965c9bc2053de> will do.
+[08:39] <5474d9eadb8155e6700d8178> Thanks! :)
+[12:58] <54d4a1d6db8155e6700f853b> @ragv I don't know about NG's course, but for the books, sklearn is useless for the exercises, right? They are mostly mathematical proofs. How would sklearn help with that?
+[12:59] <541a528b163965c9bc2053de> @ragv I think we should focus your GSoC on improving cross-val, writing a generic tutorial to ML is interesting but too long to do in addition to a GSoC
+[13:00] <541a528b163965c9bc2053de> for the cross-val, we could have the data-independent refactoring and then for the second part of the GSoC experiment with high level helper API to do out-of-core cross-validation for models that support partial_fit
+[13:01] <54d4a1d6db8155e6700f853b> I thought we wanted to do multiple metrics?
+[13:01] <541a528b163965c9bc2053de> I have personally not started to thing about what such an API would look like but I think this is an important use case
+[13:01] <541a528b163965c9bc2053de> multiple metrics is interesting as well
+[13:02] <54d4a1d6db8155e6700f853b> btw have you looked at any of the gsoc proposals yet?
+[13:02] <541a528b163965c9bc2053de> but https://github.com/scikit-learn/scikit-learn/pull/4294 should definitely be part of the GSoC
+[13:02] <541a528b163965c9bc2053de> just https://github.com/scikit-learn/scikit-learn/wiki/GSoC-2015-Proposal:-Multiple-metric-support-for-CV-and-grid_search-and-other-general-improvements
+[13:21] <54d4a1d6db8155e6700f853b> I guess I need to review them all...
+[14:31] <54d4a1d6db8155e6700f853b> btw, @ogrisel I thought about doing the split of the ``utils`` module into the private and public modules, that people have been talking about for ever. What do you think about that?
+[14:45] <54c084dbdb8155e6700eed4c> Hey all, I have noticed [here](http://sourceforge.net/p/scikit-learn/mailman/message/24403926/) and [here](http://mail.scipy.org/pipermail/scipy-dev/2010-January/013709.html) that there was once a genetic algorithm module in scikits.learn, it appears to have been removed mostly due to code rot, maybe API differences too, but does anyone know if there is an underlying general issue with genetic algorithms that are not scikit-learn friendly? 
+[14:46] <54c084dbdb8155e6700eed4c> For context, I am writing a symbolic regression class that constrains genetic programming's flexibility to the main use cases found in scikit-learn (regression, classification, transformation) and sticks with the existing scikit-learn API style. So just wanted to check in to ensure I'm not going off the deep end as I'm nearing a functional regressor already... Though still a fair ways from a PR :smile: 
+[14:59] <54d4a1d6db8155e6700f853b> @ogrisel green button on https://github.com/scikit-learn/scikit-learn/pull/4432/files to avoid merge conflicts?
+[15:01] <54d4a1d6db8155e6700f853b> @trevorstephens genetic algorithms are probably going off the mariana trench. what is your application of symbolic regression?
+[15:02] <54c084dbdb8155e6700eed4c> haha. what do you mean by application? where would it be used?
+[15:04] <54c084dbdb8155e6700eed4c> its just a regressor, except that the final result is expressed as a non-linear equation.
+[15:04] <54c084dbdb8155e6700eed4c> could also be used for automated feature extraction in a supervised transformer
+[15:06] <54c084dbdb8155e6700eed4c> basic idea is to take an initial sample of random equations and apply genetic operations such as mutation, reproduction, etc to the fittest individuals in a population. the equations are expressed like LISP trees... well im just using python lists, but similar structure
+[15:09] <541a528b163965c9bc2053de> @amueller about the split of utils I have no strong opinions. I am +1 on introducing new private utils with a `_` prefix.
+[15:09] <54d4a1d6db8155e6700f853b> Ok you are just building a regressor. By application I mean: does this ever work better than a random forest? Also, is that what people currently use in symbolic regression? And does that work better than greedy expansions of variables in a linear model?
+[15:09] <54d4a1d6db8155e6700f853b> @ogrisel would you still have them in the ``.utils`` module? I thought about introducing ``._utils`` and just moving (backward-compatible) all the non-public API there?
+[15:10] <54d4a1d6db8155e6700f853b> but maybe I should rather spend my time on reviewing the LDA and GP PRs  or finishing the MLP.
+[15:10] <54d4a1d6db8155e6700f853b> Btw, for the MLP, I'm not 100% certain on how to do nesterovs momentum. I find the paper was not very clearly written, but maybe I was just tired
+[15:13] <54c084dbdb8155e6700eed4c> ive seen people using symbolic regression in combination with stacking on kaggle (the higgs boson comp was memorable) to extract new features that helped their gbm's latch onto some very interesting segments of the feature space. there is a lot of research into competitive results though i dont know if they have been compared to RFs
+[15:14] <54c084dbdb8155e6700eed4c> "Also, is that what people currently use in symbolic regression?", do you mean LISP trees? yes, it is very common. basically a flattened tree representation
+[15:16] <541a528b163965c9bc2053de> @amueller about the MLP PR, I have implemented an adaptative schedule for the learning rate here: https://github.com/ogrisel/scikit-learn/commit/3c4cc13b39fdb6a91be44a0977766e16d45ed5dc . It seems to be very useful in practice, although Ilya Sutskever recommends to use a validation set instead of the training score. Using a validation set is complicated from an API point of view though.
+[15:17] <541a528b163965c9bc2053de> Nesterov momentum is not that complicated. Have you read:  http://www.cs.toronto.edu/~fritz/absps/momentum.pdf ?
+[15:17] <541a528b163965c9bc2053de> it's mostly the ordering of the update.
+[15:19] <541a528b163965c9bc2053de> @amueller this experimental notebook might help http://nbviewer.ipython.org/github/ogrisel/notebooks/blob/master/Gradient.ipynb
+[15:21] <541a528b163965c9bc2053de> also I am currently experimenting with a from scratch implementation in theano to have a comparision point (and more NN experience): http://nbviewer.ipython.org/github/ogrisel/notebooks/blob/master/representations/MNIST%20experiments.ipynb
+[15:22] <541a528b163965c9bc2053de> about the utils stuff it does not seem to be particularly high priority to me but feel free to work on that if you find it important yourself.
+[15:26] <54d4a1d6db8155e6700f853b> I read the momentum pdf. but I'll have a look at your notebook. I feel we should merge this asap as it has been lying around for so long. adding monitoring etc can always be done afterwards
+[15:26] <54d4a1d6db8155e6700f853b> and the use of a validation set would be great but is a whole other can of worms
+[15:27] <54d4a1d6db8155e6700f853b> @trevorstephens sorry for being ambiguous. I meant are people using genetic programming for symbolic regression.
+[15:33] <541a528b163965c9bc2053de> I am not sure we should merge that early. The optimizer is clearly suboptimal, the one in my branch seems to be much more robust but changes the meaning of the 'constant' hyperparameter.
+[15:34] <541a528b163965c9bc2053de> I think it's very important to have a robust hyperparameter by default.
+[15:34] <541a528b163965c9bc2053de> But I want to focus on the 0.16 release first.
+[15:37] <541a528b163965c9bc2053de> @trevorstephens encourage you to implement that as a third party project first. If it proves empirically useful then we might consider it for inclusion in the future. But Genetic Programming stuff is culturally very different from the sklearn spirit. Especially we do not want to have a generic Evoluationary Algorithm module as part of sklearn as the API would not be suited for it.
+[15:38] <541a528b163965c9bc2053de> A black box Genetic programming solver hidden in a SymbolicRegressor estimator might be interesting though.
+[15:39] <541a528b163965c9bc2053de> but it's utility would have to be proven first. So better implement that in a dedicated python package first.
+[15:47] <54d4a1d6db8155e6700f853b> @ogrisel is there much to do for 0.16?
+[15:48] <54d4a1d6db8155e6700f853b> @ogrisel is there anything to be done for the EML branch? It has no +1 yet.
+[16:04] <54d4a1d6db8155e6700f853b> this one would be nice: https://github.com/scikit-learn/scikit-learn/pull/4350
+[16:11] <54d4a1d6db8155e6700f853b> https://github.com/scikit-learn/scikit-learn/pull/4436 just passed
+[16:46] <5474d9eadb8155e6700d8178> @amueller @ogrisel Thanks for the reviews!! Based on your comments I'll replace that section of my prop. with a more significant work > They are mostly mathematical proofs. How would sklearn help with that?  I was thinking more on the lines of http://www-bcf.usc.edu/~gareth/ISL/code.html.. But like you said for the practical part of it, we do have some nice books! Perhaps out of GSoC, it would  be better if I simply cleaned up existing examples and added a few more perhaps! 
+[17:07] <54c084dbdb8155e6700eed4c> @amueller , yes, it is the 'classic' use of GP. 
+[17:09] <54c084dbdb8155e6700eed4c> @ogrisel . "A black box Genetic programming solver hidden in a SymbolicRegressor estimator might be interesting though." Yep. That's exactly what I'm going after. Though understand if you don't want it in the package yet, makes perfect sense.
+[17:10] <54c084dbdb8155e6700eed4c> FWIW, here's the (did I mention super-early) code: https://github.com/trevorstephens/scikit-learn/blob/genetic_programming/sklearn/genetic.py
+[17:12] <54c084dbdb8155e6700eed4c> running is as simple as `gp = SymbolicRegressor(random_state=415)`  `gp.fit(diabetes.data, diabetes.target)`  `print gp.program_`
+[17:24] <541a528b163965c9bc2053de> @amueller I am working on pinpointing numpy version issues for #3747 at the moment
+[17:25] <541a528b163965c9bc2053de> ho you merged it already.
+[17:25] <541a528b163965c9bc2053de> Did you do the backport as well ?
+[17:25] <541a528b163965c9bc2053de> I am not sure about the 1.9 version comparison in the test
+[17:25] <541a528b163965c9bc2053de> I am testing with numpy 1.8.0
+[17:28] <541a528b163965c9bc2053de> Ok the tests pass with 1.8 as well :)
+[17:31] <541a528b163965c9bc2053de> @trevorstephens would be great to extract that as a new library. You can write some sklearn compat tests with stuff in`sklearn.utils.estimator_checks`.
+[17:32] <541a528b163965c9bc2053de> you can make it easy to install by writing a simple setup.py.
+[17:33] <541a528b163965c9bc2053de> As you don't need compiled extensions, you don't need the complicated numpy.distutils, you can just use the regular distutils or setuptools.
+[17:33] <541a528b163965c9bc2053de> you could name your project symbolicregressor or something
+[17:33] <541a528b163965c9bc2053de> symregressor
+[17:34] <54c084dbdb8155e6700eed4c> billie-gene has a nice ring to it
+[17:34] <54c084dbdb8155e6700eed4c> :smile: 
+[17:37] <541a528b163965c9bc2053de> @ragv I would move generic tutorial out of the scope of your GSoC but you can expand the documentation item of your GSoC proposal to include a tutorial on how to do proper cross-validation: how to select the CV strategy for a given problem, how to use stratification, how to check that the i.i.d. assumption is not violated...
+[18:05] <54c084dbdb8155e6700eed4c> thanks for the advice as well @ogrisel 
+[18:11] <5474d9eadb8155e6700d8178> @ogrisel Thanks for the suggestion! On it :) Do the other sections look okay...?
+[18:15] <541a528b163965c9bc2053de> I have to go now, I will review the other sections and give you finer feedback tomorrow
+[18:15] <5474d9eadb8155e6700d8178> Okay! bye :)

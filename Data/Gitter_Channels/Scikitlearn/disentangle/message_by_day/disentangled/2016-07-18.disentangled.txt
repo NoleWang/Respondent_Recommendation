@@ -1,0 +1,13 @@
+[10:00] <564789be16b6c7089cbab8b7> I am trying to follow the example at http://scikit-learn.org/stable/auto_examples/model_selection/plot_roc.html but using a random forest. It seems decision_function doesn't exist for the random forest classifier
+[10:01] <564789be16b6c7089cbab8b7> what should I use instead (sorry for the simple question)?
+[10:02] <564789be16b6c7089cbab8b7> it is this line that is causing the problem y_score = classifier.fit(X_train, y_train).decision_function(X_test)
+[14:45] <564789be16b6c7089cbab8b7> ok cancel that..silly me
+[15:54] <564789be16b6c7089cbab8b7> how can you mix calibratedclassifier and onevsrestclassifier? I just want to do classifier = OneVsRestClassifier(RandomForestClassifier()) but with the classifier correctly calibrated
+[19:59] <564789be16b6c7089cbab8b7> apologies if this is slightly OT but.. my really simple xgboost code for the MNIST data set is way slower than ExtraTreesClassifer http://paste.ubuntu.com/19943014/ . What am I doing wrong?
+--------------------------------------------------------------------------------------------------
+[14:59] <55d6ea0d0fc9f982beae242d> Using KNN in sklearn, is there anyway to have the weights be based on the labels of datapoints? More specifically, I have some unbalanced data and would like to combat this by weighting samples of less common labels higher. I could of course just add copies of the under represented classes but this adds some non determinism if I choose the extra copies randomly so I thought just weighting them would be better.  Is this possible?
+--------------------------------------------------------------------------------------------------
+[15:03] <56c4f19ae610378809c1f8ae> Hmm I don't think so. You could just set a random seed for sampling up if you're worried about reproducibility.
+--------------------------------------------------------------------------------------------------
+[15:21] <55d6ea0d0fc9f982beae242d> yep sure, but should I add a feature request for this?
+--------------------------------------------------------------------------------------------------

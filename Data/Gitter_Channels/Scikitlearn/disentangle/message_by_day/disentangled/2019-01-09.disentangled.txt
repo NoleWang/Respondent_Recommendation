@@ -1,0 +1,7 @@
+[04:21] <5a1fcc56d73408ce4f810256> [![image.png](https://files.gitter.im/scikit-learn/scikit-learn/gww6/thumb/image.png)](https://files.gitter.im/scikit-learn/scikit-learn/gww6/image.png)
+[04:22] <5a1fcc56d73408ce4f810256> Can someone help me on why words of 1 characters are not available as features here?
+--------------------------------------------------------------------------------------------------
+[08:49] <5c34f182d73408ce4fb408a6> Hello World,I am new.Can someone link me up on how I can start contributing.
+--------------------------------------------------------------------------------------------------
+[09:55] <567f5d7716b6c7089cc043a8> @sameshl https://scikit-learn.org/dev/developers/index.html
+--------------------------------------------------------------------------------------------------

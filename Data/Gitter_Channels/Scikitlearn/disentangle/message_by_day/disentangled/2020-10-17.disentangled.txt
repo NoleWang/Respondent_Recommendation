@@ -1,0 +1,4 @@
+[07:20] <5f7ac1dcd73408ce4ff0af34> Hello, everyone! I aim to implement an experimental Artificial Neuron-Glia Network (ANGN) for a  research project. I am not sure why (despite being 13 years in research community) I was not able to find any code for it. Any insights would be highly appreciated.
+--------------------------------------------------------------------------------------------------
+[07:26] <5f7ac1dcd73408ce4ff0af34> For those of you unfamiliar with ANGN. Following image is the proposed architecture of a single unit of the network. [![image.png](https://files.gitter.im/541a528c163965c9bc2053e1/geth/thumb/image.png)](https://files.gitter.im/541a528c163965c9bc2053e1/geth/image.png)
+--------------------------------------------------------------------------------------------------

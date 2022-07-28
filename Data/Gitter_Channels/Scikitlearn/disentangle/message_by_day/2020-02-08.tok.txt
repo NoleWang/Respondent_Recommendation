@@ -1,0 +1,10 @@
+<s> <user> can you help me please !! </s>
+<s> <user> how can i reach to each tree in random forest algorithm </s>
+<s> <user> the <unka_> attribute , check the docs </s>
+<s> <user> i want to extract the rules for every tree i get the following code put there is an error in it </s>
+<s> <user> <unk#a(=_> ) </s>
+<s> <user> <unka(,.> ) </s>
+<s> <user> <unka> <unk#a.=[_> ] </s>
+<s> <user> the error is <unka'> object has no attribute <unka'_> </s>
+<s> <user> how can i write this line please </s>
+<s> <user> <unk#a.=[_> ] </s>

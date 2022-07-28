@@ -1,0 +1,7 @@
+<s> <user> okay :) </s>
+<s> <user> btw from discussions at <unk##> i do n't think <unk##> will be in soon ... should it still be tagged 1.7 ? </s>
+<s> <user> i agree , <unka-> . </s>
+<s> <user> where is the best place to find help on <unka> issues for <unka> ? i 'm having trouble using <unka> and neither stackoverflow nor googling are helping . </s>
+<s> <user> what kind of issue ? </s>
+<s> <user> i 'm trying to use the <unka_> function ( or even the confusion matrix function ) and i 've transformed my <unka> using an <unka> <unka> so it 's type is " <unka-> " but the predicted values are in the form of binary . </s>
+<s> <user> so i get a " <unka> : ca n't handle mix of <unka-> and binary " error , but <unka-> seems to be supported according to line 93 in <unka.> </s>

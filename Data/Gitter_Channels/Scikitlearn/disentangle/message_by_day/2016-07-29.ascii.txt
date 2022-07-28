@@ -1,0 +1,8 @@
+[16:24] <56c9d685e610378809c29d5d> I don't want to derail this chat so if there's a more appropriate place please redirect me.  I'm working on an ML library which draws a lot of inspiration from sklearn. I'd love to talk with some of the devs on sklearn who may be able to share some insights into things they'd like to be able to change/do differently. Or things that they think have worked really well that I might not appreciate.
+[18:01] <54d4a1d6db8155e6700f853b> @raghavrv you around now?
+[18:01] <54d4a1d6db8155e6700f853b> @AtheMathmo which language?
+[18:02] <54d4a1d6db8155e6700f853b> @AtheMathmo have you read the API paper? And there are talks by me and by Gael about the api design
+[23:12] <56c9d685e610378809c29d5d> @amueller It's written in rust. Happy to share here if you want. I also gave a talk on it yesterday that I would be happy to share.  I haven't read the API paper or seen the talks. Would you be able to provide me links to those? Thanks!
+[23:14] <56c4f19ae610378809c1f8ae> @AtheMathmo heres the paper: https://arxiv.org/abs/1309.0238
+[23:15] <56c9d685e610378809c29d5d> @nelson-liu thanks!
+[23:48] <56c9d685e610378809c29d5d> I really like how the transformer interface is described. It's a problem I haven't found a nice way to tackle yet in my own work.

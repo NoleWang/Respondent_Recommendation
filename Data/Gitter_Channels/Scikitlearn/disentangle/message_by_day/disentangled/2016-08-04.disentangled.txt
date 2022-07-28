@@ -1,0 +1,8 @@
+[08:02] <56e7a3c885d51f252ab8d6ce> hello guysss i m new here and what t learn data science can anyone suggest good stuff for learning data science
+--------------------------------------------------------------------------------------------------
+[09:56] <5729ef37c43b8c60197119b1>  @phalodi You will probably get more info on Quora or even just doing a search on Google.  This area is more suited to specific scikit-learn development.
+--------------------------------------------------------------------------------------------------
+[11:55] <56b0a775e610378809bf7a7c> @amueller @ogrisel coveralls is still down, can you reset it ?
+--------------------------------------------------------------------------------------------------
+[20:05] <57a39e9340f3a6eec05df999> hey guys, i'm new here. i just want to confirm if anyone has successfully installed cuda in ubuntu 16.04 for theano gpu usage?
+--------------------------------------------------------------------------------------------------

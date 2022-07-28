@@ -1,0 +1,15 @@
+<s> <user> reviews on <unk##> would be good .... </s>
+<s> <user> thanks <unka@> :) </s>
+<s> <user> <unka:> : </s>
+<s> <user> is <unk##> an easy one ? if so could you tag it with " need <unka> " . i found a contributor looking for an issue ;) ([ <unk#a#(-./:]> ) ) </s>
+<s> <user> we need to merge URL/https:/ URL/github.com/ <unk#a-/> first </s>
+<s> <user> i have a probably lame question regarding <unka> code - why is that we do n't delete all the free the memory of all the members in the <unka> ? ( ref [ the <unka> of <unka`> <unk#a#(-./:]_> )) </s>
+<s> <user> what do you think should be freed and is n't ? </s>
+<s> <user> any other attribute say <unka_`> ? ( fair warning this could be a very dumb question but i am quite new to <unka> ;)) </s>
+<s> <user> it should be freed , but where it is freed depends on the context of the code . for example , any object declared in python should not get freed with <unka`> and python 's gc will pick it up . if an object is declared here and not freed , it might be getting freed elsewhere </s>
+<s> <user> ahh !! that explains a lot ! thanks :) </s>
+<s> <user> so basically <unka_`> of this splitter will hold the reference to the mem block managed elsewhere ( or probably by the python gc ) correct ? </s>
+<s> <user> yes </s>
+<s> <user> thanks !! </s>
+<s> <user> i wo n't be surprised if that is infact a numpy array </s>
+<s> <user> yes it is .. it will be user specified so ... now i understand this better ! </s>

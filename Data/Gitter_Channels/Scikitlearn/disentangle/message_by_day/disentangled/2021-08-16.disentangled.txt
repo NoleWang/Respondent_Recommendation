@@ -1,0 +1,2 @@
+[18:36] <5b58594ed73408ce4fa23ee3> Hi all, how do you manage your changelog? Any useful tools or files that you could point me too?
+--------------------------------------------------------------------------------------------------

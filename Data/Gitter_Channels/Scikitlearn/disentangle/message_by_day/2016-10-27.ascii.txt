@@ -1,0 +1,7 @@
+[06:44] <581195aed73408ce4f3124fe> @saket1192 can anyone help me out with NLTK python i got hindi POS tagger and Hindi parser ,but I am not able to excess it. m new to this so i need some help for my in-house project 
+[15:28] <53135b495e986b0712efc453> Andy, for #7724, do you want me to send a PR to his branch to speed up the process?
+[15:28] <53135b495e986b0712efc453> @amueller 
+[15:29] <54d4a1d6db8155e6700f853b> @raghavrv hm not sure. I mean I'd like to finish up this week, but there is no super rush
+[15:51] <53135b495e986b0712efc453> Okie so I'll clean up that as a test, comment there and wait for him to make the changes. If it still remains at the end of the week unaddressed, ping me so I can carry forward the work...
+[15:52] <54d4a1d6db8155e6700f853b> ok cool
+[22:24] <53135b495e986b0712efc453> Anyone here wants to pick up an easy doc issue? - #7772 

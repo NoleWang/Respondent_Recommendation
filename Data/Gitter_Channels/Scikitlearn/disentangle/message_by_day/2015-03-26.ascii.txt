@@ -1,0 +1,164 @@
+[01:08] <5474d9eadb8155e6700d8178> Will I be able to edit my prop after 27th? :p 
+[01:10] <54d4a1d6db8155e6700f853b> I don't think so. the mentors might
+[01:10] <54d4a1d6db8155e6700f853b> but you should not count on it ;)
+[01:11] <5474d9eadb8155e6700d8178> Okay! Would you be able to take a look at the revised prop and leave your comments? :)
+[01:11] <54d4a1d6db8155e6700f853b> tomorrow. It's 21h in NYC
+[01:12] <5474d9eadb8155e6700d8178> Oh!! Sorry :P how are you today btw?
+[01:20] <5474d9eadb8155e6700d8178> melange's formatting is very bad :neutral_face:  The wiki pages look neat compared to melage ... 
+[01:20] <550f53e215522ed4b3dda5f6> You could copy paste, I think
+[01:21] <54d4a1d6db8155e6700f853b> still sick, meh
+[01:21] <5474d9eadb8155e6700d8178> Thats bad :/ tc! 
+[01:21] <5474d9eadb8155e6700d8178> Hey @xuewei4d :)
+[01:21] <550f53e215522ed4b3dda5f6> GSOC 2016: melange
+[01:22] <5474d9eadb8155e6700d8178> I tried but its still very bad :(
+[01:22] <5474d9eadb8155e6700d8178> This site was useful for me tho :D - http://markable.in/editor/
+[01:22] <5474d9eadb8155e6700d8178> I edited entirely in md and copy pasted the html code into melange :P
+[01:23] <550f53e215522ed4b3dda5f6> This is what I did. I use sublime to preview markdown, then copy paste html page
+[01:24] <5474d9eadb8155e6700d8178> haha... subl seems to be better in so many ways... hmm I guess time to move away from vim...
+[01:27] <54d4a1d6db8155e6700f853b> noooo don't do it ;)
+[01:28] <5474d9eadb8155e6700d8178> Thanks atleast I got one person saying that :O Every other person I meet recommends subl or pycharm... I love vim but hate them ranting about their shiny editors :p 
+[01:28] <5474d9eadb8155e6700d8178> What do you use? :)
+[02:36] <54d4a1d6db8155e6700f853b> vim
+[02:36] <54d4a1d6db8155e6700f853b> ;)
+[02:36] <54d4a1d6db8155e6700f853b> I should probably switch at some point
+[03:23] <54c084dbdb8155e6700eed4c> "i've been using vim for three years, but that's only because i cant figure out how to exit"
+[07:47] <541a528b163965c9bc2053de> @trevorstephens you released gplearn? nice!
+[07:48] <541a528b163965c9bc2053de> you should create an `examples/` folder with a sample script on some regression dataset from scikit-learn (e.g. load_boston) and another on a synthetic data
+[07:48] <541a528b163965c9bc2053de> where you know the symbolic ground truth
+[10:18] <541a528b163965c9bc2053de> @amueller I am checking the documentation of the 0.16.X branch. It looks good. Will run trough the release checklist next.
+[10:19] <541a528b163965c9bc2053de> let me know if you find any release blocker in the mean time.
+[10:31] <5385f2fe048862e761fa2d40> I think that everyone in this room should read http://www.amazon.com/Scaling-Machine-Learning-Distributed-Approaches/dp/0521192242
+[10:31] <5385f2fe048862e761fa2d40> This is f***ing awesome!
+[10:32] <541a528b163965c9bc2053de> Thanks
+[10:59] <5385f2fe048862e761fa2d40> np
+[14:45] <54d4a1d6db8155e6700f853b> I didn't know about it. But it seems a bit dated (2011)
+[14:46] <54d4a1d6db8155e6700f853b> @ogrisel no blockers that I know of. Anything you want me to work on?
+[14:47] <54d4a1d6db8155e6700f853b> scheduling the release for the day before the GSoC deadline was a genious move on our part ^^
+[14:49] <54d4a1d6db8155e6700f853b> this needs backporting I think: https://github.com/scikit-learn/scikit-learn/pull/4448
+[14:49] <5385f2fe048862e761fa2d40> @amueller I'm sure there is a new edition somewhere
+[14:53] <54d4a1d6db8155e6700f853b> @omerzimp I wouldn't expect that.
+[14:56] <54c084dbdb8155e6700eed4c> Hi @ogrisel . Just reserved the name on Pypi and am getting the hang of all the code review tools last few days. Still a long way to go before I'm satisfied enough to release it. Definitely need to add a lot of tests (coverage at 4% haha), documentation, examples, etc etc. But it'll get there
+[14:58] <54c084dbdb8155e6700eed4c> I'd plan on some practical examples like boston, and then another like x^3 + x^2 + x + 1 or something, maybe in two dims
+[14:58] <54c084dbdb8155e6700eed4c> Maybe I'll try to write some docs for sklearn on the process of setting up your own <plugin>learn or something
+[15:00] <5474d9eadb8155e6700d8178> First step would be to build at a nice testing framework (#3810) I feel :)
+[15:02] <54c084dbdb8155e6700eed4c> So long as it remains stable. A lot of thought right now going into how I'll support various versions of sklearn. I may need to grab a copy of a lot of the tests and utils to keep from being harassed by bug reports
+[15:02] <54c084dbdb8155e6700eed4c> Since those don't go through deprication cycles so far as I know
+[15:02] <54c084dbdb8155e6700eed4c> But yeah, that looks like a good start @ragv 
+[15:12] <54d4a1d6db8155e6700f853b> @ogrisel I just did the backport
+[15:21] <541a528b163965c9bc2053de> ok, thanks
+[15:22] <541a528b163965c9bc2053de> about the version number, shall we use 0.16.0 or 0.16?
+[15:22] <541a528b163965c9bc2053de> Last time we did 0.15.0. But I used 0.16b1 instead of 0.16.0b1
+[15:22] <541a528b163965c9bc2053de> I think we should do 0.16.0 for lexicographical sorting of folders and stuff like that
+[15:34] <541a528b163965c9bc2053de> @amueller shall we do the `git log <last_release>.. | git shortlog -s -n` report for this release, or not?
+[15:35] <541a528b163965c9bc2053de> as you said earlier it, this vanity contest might encourage contributors not to squash their PR by default (and it does not reflect review work).
+[15:38] <54d4a1d6db8155e6700f853b> I'm -0. We could do alphabetical order?
+[15:39] <54d4a1d6db8155e6700f853b> Is 0.16.0 according to the pep thing? I think 0.16.0b1 was not, so we didn't do it. I think 0.16.0 is good
+[15:40] <54d4a1d6db8155e6700f853b> The whatsnew already mentioned the contributors next to the changes. Maybe that's enough vanity? That encourages cool things ;)
+[15:41] <54d4a1d6db8155e6700f853b> FUCK again broke the SVC trying to rebase on master. That is really finnicky
+[15:46] <54d4a1d6db8155e6700f853b> @ogrisel can you do me a favor and physically force @GaelVaroquaux to review #4189 so we can merge it? I only pick him because no-one else is in physical proximity ;)
+[15:48] <54d4a1d6db8155e6700f853b> why is fabian so high up in the commits?
+[15:48] <54d4a1d6db8155e6700f853b> oh I think my git log was wrong
+[15:49] <5474d9eadb8155e6700d8178> >  physically force @GaelVaroquaux to review #4189  Haha :laughing: 
+[15:51] <54d4a1d6db8155e6700f853b> @ogrisel any parts of the release you want me to do? update the links in the website? built the website?
+[17:47] <541a528b163965c9bc2053de> all 0.16b1 0.16.0b1 0.16 0.16.0 are valid according to pep 440
+[17:48] <541a528b163965c9bc2053de> +1 for not including the stats
+[17:48] <550f53e215522ed4b3dda5f6> +1 0.16.0
+[17:48] <541a528b163965c9bc2053de> I had to leave the office early (going to a meetup to try and hire graduating students to work on sklearn next year) ...
+[17:48] <541a528b163965c9bc2053de> ok for 0.16.0 then
+[17:49] <541a528b163965c9bc2053de> Let's merge #4189: it's mostly a fix, no new API, no hyperparams, no documentation or example to update. It should not be controversial.
+[17:50] <541a528b163965c9bc2053de> git log 0.15.2..0.16.X | git shortlog -s -n
+[17:51] <541a528b163965c9bc2053de> if you want the stats
+[17:53] <541a528b163965c9bc2053de> @amueller I let you do the cherry-pick for https://github.com/scikit-learn/scikit-learn/pull/4189/commits into 0.16.X
+[17:53] <541a528b163965c9bc2053de> to fix your ranking for 0.16.0 commit number :)
+[18:01] <5474d9eadb8155e6700d8178> @ogrisel @amueller Any final comments on my revised prop? I made it a bit ambitious but I think it is doable with full time involvement. WDYT?
+[18:02] <541a528b163965c9bc2053de> not there? let me do it. Then I will change the version number and start fixing the links in the doc.
+[18:05] <54d4a1d6db8155e6700f853b> @ogrisel I'm back
+[18:05] <54d4a1d6db8155e6700f853b> just out for lunch
+[18:07] <54d4a1d6db8155e6700f853b> @ragv I'll do it in a bit
+[18:07] <541a528b163965c9bc2053de> argl actually the cherry-pick of #4189 is not trivial. We probably also need to bacport #4326 too but this one is not trivial either...
+[18:07] <541a528b163965c9bc2053de> I have to go to the meetup soon, I won't have time to do the #4189 backport today.
+[18:07] <54d4a1d6db8155e6700f853b> I'll do it, I can release afterwards.
+[18:07] <5474d9eadb8155e6700d8178> Thanks... sorry for hijacking into your 0.16 discussions... :)
+[18:07] <541a528b163965c9bc2053de> @ragv let me do another pass on your proposal
+[18:08] <54d4a1d6db8155e6700f853b> damn I though #4326 was in
+[18:08] <541a528b163965c9bc2053de> no pbm, it's our fault to have scheduled to do the release on the same week as the GSoC deadline
+[18:08] <541a528b163965c9bc2053de> maybe it is in then
+[18:09] <541a528b163965c9bc2053de> I had conflicts that looked non trivial when picking #4189 so it did a git reset --hard on my sandbox
+[18:11] <54d4a1d6db8155e6700f853b> #4326 was before branching even
+[18:16] <54d4a1d6db8155e6700f853b> @ogrisel it was the docstring stuff by @ragv that caused the cherry-pick error. I backported it
+[18:16] <54d4a1d6db8155e6700f853b> pushed to 0.16.X should be fine now
+[18:21] <5474d9eadb8155e6700d8178> Yayy I got 50 commits :P
+[18:22] <54d4a1d6db8155e6700f853b> @ogrisel what is the status now? do you want to do it or should I? Also, should we have a "highlights" section in whatsnew?
+[18:25] <54d4a1d6db8155e6700f853b> maybe not
+[18:26] <54d4a1d6db8155e6700f853b> next we should push the 0.16.0 version, trigger the buildbot, and move the docs, right?
+[18:27] <54d4a1d6db8155e6700f853b> are you working on any of these?
+[18:30] <541a528b163965c9bc2053de> @ragv I would move the out-of-core cross-val as a low priority optional in case everything else is implemented first.
+[18:30] <541a528b163965c9bc2053de> I doubt we will have the time to implement everything else but one never knows :)
+[18:31] <54d4a1d6db8155e6700f853b> hum, https://github.com/scikit-learn/scikit-learn/pull/4420 would have been nice, but without a review by a PLS person I'm doubtful
+[18:31] <541a528b163965c9bc2053de> if you feel like it
+[18:31] <541a528b163965c9bc2053de> @amueller would be great to have a highlight section.
+[18:31] <54d4a1d6db8155e6700f853b> ok
+[18:31] <5474d9eadb8155e6700d8178> 
+[18:31] <54d4a1d6db8155e6700f853b> @ogrisel I'll make a quick PR so you can review
+[18:32] <541a528b163965c9bc2053de> other than that, version change to 0.16.0, update the links in the menus for the doc, put the 0.16.0 tag and push it, update the submodule in the MacPython repo to get travis build wheels for OSX, wait for appveyor to do the same for windows. Then let me know, I will manually test install on my mac and a windows VM
+[18:33] <5474d9eadb8155e6700d8178> @ogrisel Okay! Thanks for the review.... :) Should I perhaps concentrate on gen cv and early stopping for the month of July?
+[18:36] <5474d9eadb8155e6700d8178> Except for the month of July, I believe I have framed a satisfactory (to myself :p) timeline. It is the month of July I am not quite sure, what I will get to work on that could be useful for sk and also be feasible for me...
+[18:40] <541a528b163965c9bc2053de> my presentation will start soon, then there will be beers so I won't be of any use tonight.
+[18:40] <541a528b163965c9bc2053de> but if appveyor and macpython / travis are all green, I can do the manual tests tomorrow morning
+[18:41] <541a528b163965c9bc2053de> and build the doc to rsync the new version.
+[18:42] <54d4a1d6db8155e6700f853b> https://github.com/amueller/scikit-learn/commit/dbe3cd33145677cdae9bdbcbef0c3791bf94bca3
+[18:42] <541a528b163965c9bc2053de> @ragv don't worry too much, I think there is a lot of testing /  benchmarking / polishing / documentation cleaning to do
+[18:42] <54d4a1d6db8155e6700f853b> can you have a brief look at the commit https://github.com/amueller/scikit-learn/commit/dbe3cd33145677cdae9bdbcbef0c3791bf94bca3 @ogrisel ?
+[18:43] <5474d9eadb8155e6700d8178> @ogrisel Thanks I'll just remove ooc... pl let me know if you feel I should do any more modifications to my prop :)
+[18:43] <541a528b163965c9bc2053de> @amueller maybe put a word on the input validation stuff: "Improved and more consistent error messages when fitting estimators on invalid input data."
+[18:44] <541a528b163965c9bc2053de> LSH is Locality-sensitive hashing
+[18:44] <541a528b163965c9bc2053de> not local-sensitive hashing.
+[18:45] <541a528b163965c9bc2053de> Maybe reword as "Scalable approximate nearest neighbors search with Locality-sensitive hashing forests"
+[18:45] <541a528b163965c9bc2053de> the auto-tuning part could still be improved :)
+[18:46] <541a528b163965c9bc2053de> Maybe we should explicitly mention DBSCAN for the speed improvements
+[18:46] <54d4a1d6db8155e6700f853b> ok
+[18:46] <541a528b163965c9bc2053de> "speed improvements, notably DBSCAN, ..."
+[18:47] <541a528b163965c9bc2053de> or maybe the phrasing is bad
+[18:47] <54d4a1d6db8155e6700f853b> input validation was already mostly in 0.14, right?
+[18:47] <541a528b163965c9bc2053de> 0.15
+[18:47] <541a528b163965c9bc2053de> but it has been improved: the utils were there in 0.15 but they were not consistently used throughout the code base.
+[18:47] <54d4a1d6db8155e6700f853b> that's what I ment
+[18:48] <54d4a1d6db8155e6700f853b> yeah
+[18:48] <54d4a1d6db8155e6700f853b> true
+[18:48] <541a528b163965c9bc2053de> remember the work you did in test_common over the past 6 months :P ?
+[18:48] <54d4a1d6db8155e6700f853b> - Improved error messages and better validation when using malformed input data.
+[18:48] <541a528b163965c9bc2053de> great phrasing :+1:
+[18:49] <54d4a1d6db8155e6700f853b> what I did when in test_common is mostly a blur ;) I remember touching every single file during the last sprint when removing check_arrays lol
+[18:49] <541a528b163965c9bc2053de> :)
+[18:50] <54d4a1d6db8155e6700f853b> DBSCAN mentioning jay or nay?
+[18:50] <54d4a1d6db8155e6700f853b> maybe also "Many speed improvements, reduced memory requirements, bug-fixes and better default settings."
+[18:50] <541a528b163965c9bc2053de> as you wish.
+[18:50] <541a528b163965c9bc2053de> I think many users are interested in DBSCAN
+[18:52] <541a528b163965c9bc2053de> @ragv I think your proposal is fine
+[18:53] <54d4a1d6db8155e6700f853b> https://github.com/amueller/scikit-learn/commit/4aaaaae3ecdea54f5bd6d073a712efc389668529
+[18:54] <541a528b163965c9bc2053de> Looks great to me
+[18:55] <541a528b163965c9bc2053de> Don't forget to cherry-pick the paragraph both in master and 0.16.
+[18:55] <54d4a1d6db8155e6700f853b> ok. I'll push it, do the docs stuff and push the docs. I think we can do this now.
+[18:55] <54d4a1d6db8155e6700f853b> whatsnew changes will go to both branches
+[18:57] <5474d9eadb8155e6700d8178> @ogrisel thanks :D
+[19:00] <541a528b163965c9bc2053de> thanks
+[19:10] <54d4a1d6db8155e6700f853b> @ogrisel have you looked at Vinayak's proposal by any chance?
+[19:17] <550f53e215522ed4b3dda5f6> Hi, I am wondering how many slots does scikit-learn have this year, if it is not a top secret? I remember the number is 4 in 2014.
+[19:20] <54d4a1d6db8155e6700f853b> https://wiki.python.org/moin/SummerOfCode/FrequentlyAskedQuestions#How_many_slots_does_python_get.3F__How_many_does_project_.24x_get.3F
+[19:21] <54d4a1d6db8155e6700f853b> we currently have 5 mentors registered (if no one else registered) which means we would get a max of 5 slots
+[19:31] <550f53e215522ed4b3dda5f6> OK. Thanks! Hope we have 5.
+[19:48] <551061f615522ed4b3ddb1c0> Hello everyone! Just got an invitation to join the chat here. Any final bit of advice on my proposal?
+[19:49] <5474d9eadb8155e6700d8178> @amueller 
+[19:49] <5474d9eadb8155e6700d8178> ^
+[19:49] <54d4a1d6db8155e6700f853b> ?
+[19:49] <5474d9eadb8155e6700d8178> Sorry wrong key presses :worried: 
+[19:50] <54d4a1d6db8155e6700f853b> hi @bryandeng I have to look at your proposal again. Sorry, we are a bit busy today, we are also doing a perfectly timed release today
+[19:51] <54d4a1d6db8155e6700f853b> The work-load seemed a bit light. The proposal on the idea page was not super fleshed out, unfortunately
+[19:51] <54d4a1d6db8155e6700f853b> Maybe you can give a bit more background on the improvements for the existing algorithms. currently it is only half a sentence.
+[19:53] <54d4a1d6db8155e6700f853b> Do you have any other ideas in the semi-supervised scope?
+[19:53] <551061f615522ed4b3ddb1c0> Got it.
+[19:58] <551061f615522ed4b3ddb1c0> I think I can implement more than one semi-supervised algorithms, candidates of which can be discussed in the community bonding period.
+[20:06] <54d4a1d6db8155e6700f853b> I know it is pretty late now, but it would be great if you could propose some. In the other semi-supervised proposal I mentioned transductive SVMs. I'm not entirely sure they are the best way to go, but at least they are a common benchmark. The more your proposal shows you are familiar with the material and already looked into it, the better
+[20:34] <551061f615522ed4b3ddb1c0> OK. My original intention to write like this is that I want to serve the needs of the community to the greatest extent. Since what algorithms we most want in sklearn.semi_supervised hasn't been fully discussed in the community, I decided not to show personal preferences. Now I'll pick some algorithms according to my understandings.
+[20:39] <54d4a1d6db8155e6700f853b> I understand your motivation, and it would have been better if we could have had a broader discussion previously on the mailing list. Unfortunately, mostly because of lack of time of the developers, that didn't happen.
+[20:40] <54d4a1d6db8155e6700f853b> For your proposal to be strong, you do need to say more than you currently say, though.

@@ -1,0 +1,4 @@
+[15:43] <530c03e25e986b0712efafb8> http://matthewrocklin.com/blog/work/2016/04/20/dask-distributed-part-5
+--------------------------------------------------------------------------------------------------
+[16:43] <56c4f19ae610378809c1f8ae> I read this blog post recently describing how the Atom editor developers manage github issues, and i think lots of the advice given could apply to  scikit-learn as well! http://blog.atom.io/2016/04/19/managing-the-deluge-of-atom-issues.html
+--------------------------------------------------------------------------------------------------

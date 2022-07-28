@@ -1,0 +1,61 @@
+<s> <user> welcome everybody to the sprint ! </s>
+<s> <user> hey all ! </s>
+<s> <user> hello folks ! i 'm having an issue building <unka> from source . i 've included my full logs here ( URL/http:/ URL/pastebin.com/ <unk#a/> ). i 'm using <unka> with anaconda . has anyone seen any issues with <unka./_> failing to compile ? this looks a lot like my error URL/https:/ URL/github.com/ <unk#a,-/> but i do n't understand the resolution . </s>
+<s> <user> which version of python are you using ? </s>
+<s> <user> <unk`> ( root ) <unconvertable > <unka-> <unka(:> ) <unka> version <unk#a-.> ( set by DIR/users/ <unka/> DIR/src/ <unka-/> <unka-./> ) <unk`> </s>
+<s> <user> which is 3.5 </s>
+<s> <user> i think that might be your issue </s>
+<s> <user> possible to build against an 3.4 ? </s>
+<s> <user> suppose i 've found an easy issue to address , having a needs contributor label . how do i claim this as my own ? </s>
+<s> <user> comment on it </s>
+<s> <user> <unka@> i tried building against 3.4.3 , i had the same issue . i can try 3.4.0 . </s>
+<s> <user> URL/http:/ <unka-./> <unka./> </s>
+<s> <user> here is the documentation on contributing code , for the person who just asked : URL/http:/ <unka-./> <unka#-./> </s>
+<s> <user> <unka@> i had issues with required libs being built against different versions . but i 'm not using <unka`> </s>
+<s> <user> when i run `make` on a forked branch of master , i get 1 error and 1 failure . here is the traceback for the error URL/http:/ URL/pastebin.com/ <unk#a/> it involves reading a jpeg with pil , which has n't been working for me the past few weeks . i have pillow 3.0.0 installed </s>
+<s> <user> looking at URL/https:/ URL/github.com/ <unk#a-/> </s>
+<s> <user> looking at <unk#> , and need to <unka> the built path mentioned in the bug with the path in the source . bug mentions <unka#-./:_> , but the source path is actually <unka./_> . after updating such a doc , what is to be done to verify all is well before submitting a pr ? </s>
+<s> <user> when i run <unka'> on my branch , the build fails . here is the traceback : URL/http:/ URL/pastebin.com/ <unka#/> any help appreciated . </s>
+<s> <user> i got the same error as <unka@> any ideas why it does n't " make " ? </s>
+<s> <user> me too i have the same problem <unka@> <unka@> </s>
+<s> <user> any <unka> text gurus ? </s>
+<s> <user> answering my own question , `make <unka`> builds html docs under <unka/_> </s>
+<s> <user> any traction on that make test error with the infinite value ? </s>
+<s> <user> hi all , if anybody would like to review my pull request for <unka'> <unka> to <unka'> in documentation , it is here : </s>
+<s> <user> URL/https:/ URL/github.com/ <unk#a-/> </s>
+<s> <user> hi <unka@> i do n't know if i'd say guru , but i understand it fairly well . </s>
+<s> <user> i 'm going to take a stab at URL/https:/ URL/github.com/ <unk#a-./> </s>
+<s> <user> i have a pr for an error that happens in the tests : URL/https:/ URL/github.com/ <unk#a-/> </s>
+<s> <user> fwiw : i bypassed the build issue with <unka`> by installing anaconda directly . </s>
+<s> <user> <unka@> <unk##> can be closed ... </s>
+<s> <user> <unka@> where can i find you ? i am red head in red flannel </s>
+<s> <user> has anyone found an issue that they are working on that is simple and would enjoy more collaboration ? </s>
+<s> <user> is there a norm against implementing visualization methods directly within an <unka> module ? </s>
+<s> <user> <unka@> <unka@> can i work on issue <unk##> with you ? </s>
+<s> <user> what kind of visualisation methods do you mean ? <unka@> </s>
+<s> <user> <unk#a@> like i was considering adding a plotting method to the <unka> module that would graph the <unka-> scores for each subset of features . just a simple line graph with <unka_> on the <unka-> and <unka_> on the <unka-> . </s>
+<s> <user> i am going to work on issue <unk##> </s>
+<s> <user> edited pull request and ready to merge <unk##> </s>
+<s> <user> i 'm looking into <unk##> </s>
+<s> <user> we're looking into <unk##> </s>
+<s> <user> for someone interested in figuring out a segfault , you can take a stab at URL/https:/ URL/github.com/ <unk#a-/> </s>
+<s> <user> btw , fixing any errors in the build of the documentation ( running make or make html in the doc folder ) or fixing any warnings in the tests is also very welcome </s>
+<s> <user> <unka@> <unka@> and i submitted pr for <unk##> - add contributors for 0.16 and 0.17 to docs </s>
+<s> <user> <unka@> and i are taking a stab at <unk##> </s>
+<s> <user> is the problem with the news group downloads b/c the underlying data has moved to a new web site ? URL/https:/ URL/github.com/ <unk#a-/> </s>
+<s> <user> i had a look at the segfault -- i cannot reproduce when using <unka%> inside an ipython notebook . using either of the new matplotlib methods to fetch the yahoo data . </s>
+<s> <user> pull request for the single dead link : URL/https:/ URL/github.com/ <unk#a#-/> </s>
+<s> <user> <unka@> is issue <unka-> for <unka-> learning <unk##> still available ? </s>
+<s> <user> <unka@> <unka@> just asked me about it . </s>
+<s> <user> it is probably not as easy as the other issues . please check with him if he is working on it </s>
+<s> <user> <unka@> i 'm just looking into it now -- not sure whether i 'll attack it . are you at the code sprint . thanks <unka@> </s>
+<s> <user> <unka@> probably is ;) you can also use the physical audio channel </s>
+<s> <user> <unka@> made changes you requested : URL/https:/ URL/github.com/ <unk#a-/> </s>
+<s> <user> hey , i just wanted to check if anyone has claimed URL/https:/ URL/github.com/ <unk#a-/> yet ? </s>
+<s> <user> <unka_> <unka-./:@_> </s>
+<s> <user> oops </s>
+<s> <user> can someone review my change here : URL/https:/ URL/github.com/ <unk#a-/> </s>
+<s> <user> coupla <unka> here : URL/https:/ URL/github.com/ <unk#a-/> URL/https:/ URL/github.com/ <unk#a-/> </s>
+<s> <user> is <unka@> in sf at the sprint ? </s>
+<s> <user> yes </s>
+<s> <user> probably </s>

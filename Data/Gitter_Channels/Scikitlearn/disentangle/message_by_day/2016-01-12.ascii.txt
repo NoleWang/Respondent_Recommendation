@@ -1,0 +1,13 @@
+[20:53] <5395efa3a9176b500d1cd7fb> I get a 404 on http://scikit-learn.org/stable/faq/
+[22:17] <55901c1b15522ed4b3e2f949> @rvraghav93  I'll finish reviewing soon
+[22:18] <55901c1b15522ed4b3e2f949> I have two talks coming up soon which I need to work on
+[22:19] <53135b495e986b0712efc453> @jmschrei Please take your time! Thanks heaps for your reviews!!
+[22:20] <55901c1b15522ed4b3e2f949> I'm going to take a stab at parallelizing trees after yours is merged.
+[22:20] <55901c1b15522ed4b3e2f949> I've never liked the criterion objects so I'm considering getting rid of them.
+[22:20] <55901c1b15522ed4b3e2f949> But I think Gilles might not approve. <_<
+[22:20] <53135b495e986b0712efc453> And pass score-like objects??
+[22:21] <55901c1b15522ed4b3e2f949> I don't know. At least make them stateless, so it can be a single criterion despite the number of threads.
+[22:21] <55901c1b15522ed4b3e2f949> I think the tree module, while pretty efficient, is kind of a mess.
+[22:23] <53135b495e986b0712efc453> Really? I found it organized ;) Anyway do let me know if you feel I can be of any help. Alex has asked me to work on the trees for the next few months!!
+[22:29] <55901c1b15522ed4b3e2f949> Okay
+[22:29] <55901c1b15522ed4b3e2f949> I've been working with mxnet for a bit now but I might have more time soon.

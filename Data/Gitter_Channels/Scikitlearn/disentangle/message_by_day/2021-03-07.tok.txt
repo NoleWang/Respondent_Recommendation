@@ -1,0 +1,2 @@
+<s> <user> <unk#a@> i think we stopped generating pdf versions and simply provide the html files , so the docs look like just as on the website . generating pdfs involved latex and it was difficult to maintain ( random failures every now and then , etc ) </s>
+<s> <user> if you really want pdfs you can try converting the docs to pdf with <unka> </s>

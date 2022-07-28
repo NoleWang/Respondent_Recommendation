@@ -1,0 +1,5 @@
+<s> <user> hi guys , i meet a <unka> problem when using <unka> <unka-> for clustering a data set with <unk#,> rows and 5 <unka> . my desktop has 8g ram and the <unka-> version is <unk#.> . i searched google and found a same issue fixed by updating <unka> ( URL/https:/ URL/github.com/ <unk#a-/> ). due to the algorithm of <unka> <unka> , i think 8g ram should be enough . anyone has ideas about this situation ? thanks ! </s>
+<s> <user> > <unka@> can you maybe work at making the new <unka-> docs render correctly ? <unka@> sorry i missed the chat . where does it not render correctly ? </s>
+<s> <user> <unka@> there are a bunch of errors when generating the sphinx doc </s>
+<s> <user> <unka@> have you tried <unka"=`> </s>
+<s> <user> <unka@> dude tell me what are some cool things i can do with <unka-> learn and i promise i 'll do them . </s>

@@ -1,0 +1,4 @@
+<s> <user> i 'm really wondering if there would be ways to " cache " things in the pipeline </s>
+<s> <user> i mean ... when you're doing a grid search ... if you use some kind of static transformation in it </s>
+<s> <user> e.g . you use a <unka> that has no variation in parameters and it is put in the pipeline , i suspect that if you have some alpha values changing in a <unka(> ) in the pipeline , it still does the static <unka> endlessly ? </s>
+<s> <user> <unka({> <unka'> : <unka> , <unka'> : ridge }) grid = { <unka'_> : [ 0.1 , 1 , 10 <unk]}> </s>

@@ -1,0 +1,4 @@
+<s> <user> hello <unka> i m new here and what t learn data science can anyone suggest good stuff for learning data science </s>
+<s> <user> <unka@> you will probably get more info on <unka> or even just doing a search on google . this area is more suited to specific <unka-> development . </s>
+<s> <user> <unka@> <unka@> <unka> is still down , can you reset it ? </s>
+<s> <user> hey guys , i 'm new here . i just want to confirm if anyone has successfully installed cuda in ubuntu 16.04 for <unka> gpu usage ? </s>

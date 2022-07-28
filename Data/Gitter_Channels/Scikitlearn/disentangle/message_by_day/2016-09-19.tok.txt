@@ -1,0 +1,7 @@
+<s> <user> hello , is this the right place to ask beginners ml questions ? </s>
+<s> <user> i think <unka> or stackoverflow would be better </s>
+<s> <user> thank you for asking </s>
+<s> <user> as an intermediate ml <unka> still <unka> from being a noob , i found both of those communities very off putting in getting assistance . on cross validated , i was literally told that the answers to a question i asked were " in any basic <unka> text " . they are invaluable resources to be sure , but not the place to learn as a beginner . i would advise trying to find a community around one of the <unka> - <unka> , <unka> , ... perhaps even reddit </s>
+<s> <user> i am biased in which i would choose as i got a lot out of the <unka> ml <unka> and have found their slack community inviting and informative . </s>
+<s> <user> hello , how would one extract decision paths from a decision tree <unka> ? i mean i would like to get something like , " if x < 1 and ... then class 1 " </s>
+<s> <user> thank you <unka@> and <unka-@> </s>

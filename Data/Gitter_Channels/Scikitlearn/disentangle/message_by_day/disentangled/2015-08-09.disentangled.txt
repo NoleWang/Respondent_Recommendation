@@ -1,0 +1,24 @@
+[09:06] <53135b495e986b0712efc453> I feel we could add more to the doc string of the dataset loaders... (perhaps a description or at least a link?)  For example in the diabetes documentation no domain related info is given...
+[09:07] <53135b495e986b0712efc453> domain related as in no info as to what the targets represent or what the various attributes are?
+[09:09] <53135b495e986b0712efc453> @amueller @agramforte said there were delays in the visa process ;( I've tried pestering him too :P I really hope I'd be there by September at the least :|
+--------------------------------------------------------------------------------------------------
+[13:02] <54e07d6515522ed4b3dc0858> Most of them have readmes after loading, I guess.
+--------------------------------------------------------------------------------------------------
+[18:14] <54d4a1d6db8155e6700f853b> wasn't the diabetes fixed recently?
+[18:14] <54d4a1d6db8155e6700f853b> @rvraghav93 last time I checked there were still unresolved comments on the model selection PR.
+--------------------------------------------------------------------------------------------------
+[18:19] <53135b495e986b0712efc453> No it is still the same AFAIK... Yes a few... I'm working on them :) I'm actually finishing up on my blog post! Will publish the same in a few mins... Would you be around? If so I'll trouble you for a review!
+[18:20] <54d4a1d6db8155e6700f853b> I can try. I'm pretty busy at the moment but I'll have a look
+[18:20] <54d4a1d6db8155e6700f853b> Does anyone know where @ogrisel is? Holidays?
+[18:22] <53135b495e986b0712efc453> `/ogrisel` ;)
+[18:29] <53135b495e986b0712efc453> Performing a vim search for @ogrisel ;)
+[21:43] <53135b495e986b0712efc453> @amueller @vene This is my new blog post... could you check it and let me know if it looks okay?
+[21:43] <53135b495e986b0712efc453> http://rvraghav93.blogspot.in/2015/08/gsoc-2015-new-cross-validation.html
+[22:45] <54d4a1d6db8155e6700f853b> I'll check it tomorrow
+--------------------------------------------------------------------------------------------------
+[18:28] <54d4a1d6db8155e6700f853b> ?
+[18:31] <54d4a1d6db8155e6700f853b> ah ^^
+--------------------------------------------------------------------------------------------------
+[22:55] <54d4a1d6db8155e6700f853b> Can this get another review: https://github.com/scikit-learn/scikit-learn/pull/4924 so we can merge it before  https://github.com/scikit-learn/scikit-learn/pull/4421 ?
+[22:55] <54d4a1d6db8155e6700f853b> also we should really work on https://github.com/scikit-learn/scikit-learn/pull/4421
+--------------------------------------------------------------------------------------------------

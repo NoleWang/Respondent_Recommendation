@@ -1,0 +1,30 @@
+[17:50] <54d4a1d6db8155e6700f853b> Don't worry about asking the libSVM author. We can't use SVM^light because of licensing issues, also we don't want to wrap more c code.
+[17:50] <54d4a1d6db8155e6700f853b> @bryandeng sorry for the late reply. Don't worry too much about it, I think your proposal is quite good already.
+--------------------------------------------------------------------------------------------------
+[18:02] <54d4a1d6db8155e6700f853b> A review on #4541 would be cool, as that might be an additional nice fix for 0.16.1
+--------------------------------------------------------------------------------------------------
+[18:03] <54d4a1d6db8155e6700f853b> [not the weird .dtype column part, the part where having dataframes with dtype object inside doesn't get correctly cast]
+--------------------------------------------------------------------------------------------------
+[18:03] <551061f615522ed4b3ddb1c0> @amueller I'm glad that you like it. And sorry for being inactive on Github these days. I'm writing a term paper (Hausarbeit) and playing with deep neural networks. I'll come back to scikit-learn this week. It's still during semester break so I have pretty much time.
+--------------------------------------------------------------------------------------------------
+[18:17] <54d4a1d6db8155e6700f853b> cool :) yeah being a bit more active would be great.
+[18:18] <54d4a1d6db8155e6700f853b> You are welcome to help us with the MLP if you like ;)
+[18:18] <54d4a1d6db8155e6700f853b> does anyone know how to disable the comments by coverall?
+--------------------------------------------------------------------------------------------------
+[18:51] <54c084dbdb8155e6700eed4c> [![Untitled.png](https://files.gitter.im/scikit-learn/scikit-learn/hYei/thumb/Untitled.png)](https://files.gitter.im/scikit-learn/scikit-learn/hYei/Untitled.png)
+[18:51] <54c084dbdb8155e6700eed4c> should show up at the bottom of https://coveralls.io/r/scikit-learn/scikit-learn for the owner(s)
+--------------------------------------------------------------------------------------------------
+[19:04] <54c084dbdb8155e6700eed4c> assuming you mean PR bot comments @amueller ... Otherwise check the notifications tab to turn off emails, etc. which i think is personalized per user.. https://coveralls.io/r/scikit-learn/scikit-learn/notifications/email
+--------------------------------------------------------------------------------------------------
+[20:02] <54d4a1d6db8155e6700f853b> I don't have that showing up at the bottom, maybe because I'm not an owner. Which is weird since I'm a repo owner
+[21:11] <54d4a1d6db8155e6700f853b> yeah I logged in
+--------------------------------------------------------------------------------------------------
+[20:34] <54c084dbdb8155e6700eed4c> That's strange. Are you logged into coveralls? It uses your GH login but I don't think it automatically logs you in
+--------------------------------------------------------------------------------------------------
+[21:47] <54c084dbdb8155e6700eed4c> maybe this? https://github.com/lemurheavy/coveralls-public/issues/199
+--------------------------------------------------------------------------------------------------
+[21:54] <54c084dbdb8155e6700eed4c> ie visit https://coveralls.io/refresh?private=true ...?
+--------------------------------------------------------------------------------------------------
+[21:56] <54c084dbdb8155e6700eed4c> or this if you dont want coveralls to know about private repos perhaps: https://developer.github.com/v3/orgs/members/#publicize-a-users-membership
+[21:59] <54c084dbdb8155e6700eed4c> though im pretty sure you're a public owner of skl. \
+--------------------------------------------------------------------------------------------------

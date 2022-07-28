@@ -1,0 +1,1 @@
+[02:10] <58c984f9d73408ce4f50e4cb> hi everyone, i was tasked with setting up a dev environment for our teams projects and I accidentally installed the latest version of sklearn instead of .17      is there a way to downgrade myself? or do I have to uninstall and reinstall?

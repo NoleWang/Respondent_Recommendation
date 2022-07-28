@@ -1,0 +1,2 @@
+<s> <user> :) </s>
+<s> <user> maybe you should make all boxes have the same width and left align the content : <unka`> <unka> <unka(> ) split : <= <unk#.> entropy : <unk#.> samples : 48 value : 0 , 47 , 1 class : <unka> <unk`> </s>

@@ -1,0 +1,2 @@
+<s> <user> hi , everyone . my name is manish and it 's nice to meet you all . i used sk learn for one of my projects this summer and i really love this library . i want to start contributing to it . i 'm new to open source stuff and i do n't know how to get started . i checked issues under good first issue label but i 'm not able to understand anything . can anyone plz guide me with this ?? </s>
+<s> <user> <unka@> welcome ! the easiest way is probably to ask directly on the issue . have you checked out the contributors guide ? </s>

@@ -1,0 +1,39 @@
+[18:10] <5474d9eadb8155e6700d8178> Now that we have appveyor tests, there is an appveyor integration for gitter that we could configure!
+[18:10] <54d4a1d6db8155e6700f853b> we've had appveyor tests for a long time ;)
+[18:10] <54d4a1d6db8155e6700f853b> we just didn't look at them
+[18:14] <5474d9eadb8155e6700d8178> Oh! I didn't know that :)
+[18:37] <54d4a1d6db8155e6700f853b> what needs to be done for integration?
+[19:00] <5474d9eadb8155e6700d8178> Try Settings --> Integrations --> appveyor. Use this webhook https://webhooks.gitter.im/e/0dc8e57cd38105aeb1b4 :)
+[19:01] <5474d9eadb8155e6700d8178> @ragv wonders who added the webhook :O
+[19:01] <5474d9eadb8155e6700d8178> `/me` messages look too large in gitter :/
+[19:02] <5474d9eadb8155e6700d8178> @ogrisel Seems to have added that from the git blame... I think he would have integrated it already (why aren't we getting notifications then?) Hmm... 
+[19:15] <5474d9eadb8155e6700d8178> BTW there seems to be a chrome app for gitter for linux users - https://chrome.google.com/webstore/detail/gitter/ldhcdmnhbafhckhidlhdbeekpifobpdc
+[20:32] <54d4a1d6db8155e6700f853b> landscape.io does not seem to be very mature yet. but could be cool and carl is pretty responsive
+[20:38] <52f10c205e986b0712ef525f> hello! yes, seems there are still several kinks to work out in the PR comparison logic
+[20:38] <52f10c205e986b0712ef525f> working on it!
+[20:46] <54d4a1d6db8155e6700f853b> haha didn't know you were here. Well your help is much appreciated!
+[20:46] <52f10c205e986b0712ef525f> @ragv just sent me an invite to the chatroom, probably to stop me cluttering up PR comments :)
+[20:47] <54d4a1d6db8155e6700f853b> :) comment whereever you like
+[20:48] <5474d9eadb8155e6700d8178> @carlio Not at all :) I added you so we could ping and trouble you whenever we hit a snag with landscape :p :P Thanks for the nice work!
+[20:50] <54d4a1d6db8155e6700f853b> @carlio so does a push to a PR trigger a restart? I realize there would be some delay, though on the master branch landscape.io was pretty fast. Coveralls takes like a day to visit a PR if ever
+[20:57] <52f10c205e986b0712ef525f> @amueller Yes, Landscape gets a GitHub push hook to trigger the check, so it should start within a few seconds. It's a bit wobbly right now. It also polls every 5 minutes or so (legacy behaviour for before I set up the push hooks to trigger on PRs)
+[21:01] <5474d9eadb8155e6700d8178> Does this (push to trigger) work for the old PRs too?
+[21:02] <52f10c205e986b0712ef525f> kinda, if they get a new pull request than yes
+[21:02] <52f10c205e986b0712ef525f> er, sorry
+[21:02] <52f10c205e986b0712ef525f> if they get a new commit
+[21:03] <5474d9eadb8155e6700d8178> Thats awesome! I'll try out ;)
+[21:05] <54d4a1d6db8155e6700f853b> This one didn't get a report for half an hour: https://github.com/scikit-learn/scikit-learn/pull/4381 still pending or something up there?
+[21:06] <54d4a1d6db8155e6700f853b> slow travis today :-/
+[21:08] <54d4a1d6db8155e6700f853b> maybe we should ask around if someone wants to pay 250 USD / month for more travis power ^^
+[21:08] <52f10c205e986b0712ef525f> I sort of broke it a bit but it's running now
+[21:16] <5474d9eadb8155e6700d8178> 
+[21:16] <5474d9eadb8155e6700d8178> @amueller I think you can manually restart it... In the travis build page there is an option to log in, once logged in you should get the option for restarting it...  
+[21:18] <5474d9eadb8155e6700d8178> incase you didn't know that already...
+[21:20] <54d4a1d6db8155e6700f853b> @ragv I know I can restart travis. The problem with travis is not that it is not restarting, the problem is that is is queueing.
+[21:22] <5474d9eadb8155e6700d8178> Ah... okay! Sorry for the noise!
+[21:48] <54d4a1d6db8155e6700f853b> closing issues as non-issues is fun. anyhow, I gotta run. ttyl
+[21:48] <54d4a1d6db8155e6700f853b> btw, which time zone are you on @ragv?
+[21:48] <5474d9eadb8155e6700d8178> See ya! I am in India GMT+05:30 :D
+[22:00] <5474d9eadb8155e6700d8178> Just throwing in a minor suggestion! We could perhaps have another CI build and test in parallel... like codeship / wercker... Let me know your opinion about that when you get online again!! both seem to be very easy to setup!
+[22:01] <52f10c205e986b0712ef525f> (I have nothing to do with this repository but I'm a big fan of circle-ci)
+[22:01] <5474d9eadb8155e6700d8178> Thanks for the suggestion! :)

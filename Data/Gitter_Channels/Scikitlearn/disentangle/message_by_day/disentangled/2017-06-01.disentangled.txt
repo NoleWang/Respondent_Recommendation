@@ -1,0 +1,4 @@
+[00:23] <551c051b15522ed4b3de2fea> @nok - its a very cool language, and it has bindings to sklearn :)
+--------------------------------------------------------------------------------------------------
+[07:23] <56aba3aee610378809bedf43> @nok thanks. Previously I thought only the vectors present on the boundary lines were only considered to be support vectors, but all the misclassified and the vectors on the boundary lines are support vector so if we increase C the number of support vectors will decrease.
+--------------------------------------------------------------------------------------------------

@@ -1,0 +1,9 @@
+[02:37] <57b3fd8640f3a6eec05fe0e8> @arita37 Not sure what you are asking? are you asking how to import the scikit in your python code? In which case, you just import it like any module. I might be misunderstanding though.
+--------------------------------------------------------------------------------------------------
+[14:52] <57b71cc040f3a6eec0605326> Hey. Is it me or the current python version does not have neural networks ? I followed that : http://scikit-learn.org/dev/modules/neural_networks_supervised.html and got an import error with "from sklearn.neural_network import MLPClassifier"
+[14:53] <57b71cc040f3a6eec0605326> Ok thanks a lo
+[14:53] <57b71cc040f3a6eec0605326> t
+--------------------------------------------------------------------------------------------------
+[14:52] <56c4f19ae610378809c1f8ae> neural nets are in 0.18, not 0.17.1 (which is the stable version)
+[14:52] <56c4f19ae610378809c1f8ae> theres a release coming soon, but you can get it in the meanwhle by downloading and installing the master branch
+--------------------------------------------------------------------------------------------------

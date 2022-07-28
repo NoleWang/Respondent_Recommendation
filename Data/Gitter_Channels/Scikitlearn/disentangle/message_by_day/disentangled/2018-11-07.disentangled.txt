@@ -1,0 +1,19 @@
+[09:39] <541a528b163965c9bc2053de> Hi all, I am trying to update the DNS of scikit-learn.org to enable https, and it broke. Working on fixing it.
+[09:40] <541a528b163965c9bc2053de> For reference I was trying to follow the instructions from https://github.com/scikit-learn/scikit-learn/issues/12278
+[09:41] <541a528b163965c9bc2053de> It works again \o/
+[09:42] <541a528b163965c9bc2053de> I did nothing more, it just took a bit of time apparently.
+--------------------------------------------------------------------------------------------------
+[09:42] <567f5d7716b6c7089cc043a8> woohooo
+[09:42] <567f5d7716b6c7089cc043a8> now computer says yes :P
+--------------------------------------------------------------------------------------------------
+[09:49] <589b9e0fd73408ce4f490ba4> Now I won't be able  to use scikit-learn.org with Airports wifi one of the remaining websites that doesn't use https to get redirected to the network sign-in. So this can break some use cases :) Great that it happened, can confirm it works!
+[09:49] <541a528b163965c9bc2053de> http://8.8.8.8
+[09:50] <541a528b163965c9bc2053de> It should trigger sign-in pages on open wifi networks.
+[09:52] <589b9e0fd73408ce4f490ba4> Yeah, but scikit-learn.org was smoother to type on a French keyboard  :)
+[09:53] <589b9e0fd73408ce4f490ba4> Just kidding, thanks for making it happen!
+--------------------------------------------------------------------------------------------------
+[15:13] <54d4a1d6db8155e6700f853b> sweet!
+[15:13] <54d4a1d6db8155e6700f853b> example.com walso works @rth
+--------------------------------------------------------------------------------------------------
+[20:31] <579618a040f3a6eec05c5e42> hi folks, sorry to bother. I've came across an old scikit example on GPs for which I can't seem to find any documentation or example on how to translate it to the current version: ``` from sklearn.gaussian_process import GaussianProcess gp = GaussianProcess(corr='cubic', theta0=1e-2, thetaL=1e-4, thetaU=1E-1,                      random_start=100) xfit = np.linspace(0, 10, 1000) yfit, MSE = gp.predict(xfit[:, np.newaxis], eval_MSE=True) ``` I understand that's GPR but the parameters have changed, so `corr=cubic` and `thetas` don't really exist. Anyone has any idea how to translate this to version 0.20?
+--------------------------------------------------------------------------------------------------

@@ -1,0 +1,2 @@
+[19:49] <54c084dbdb8155e6700eed4c> Hey @amueller , I'm trying to decide between heckling the presenter at the scikit-learn tutorial @ ODSC or learning some d3.js ... Do you have a strong opinion on the matter? :smile:
+--------------------------------------------------------------------------------------------------

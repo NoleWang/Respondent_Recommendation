@@ -1,0 +1,13 @@
+[09:48] <56aa7e09e610378809beb481> hi
+[14:14] <53135b495e986b0712efc453> Hello @unautre 
+[14:15] <53135b495e986b0712efc453> BTW Can anyone give a final review on https://github.com/scikit-learn/scikit-learn/pull/5568 (@amueller @ogrisel @vighneshbirodkar?)
+[15:54] <56b80528e610378809c05a48> Sorry to disturb. Can anyone please help review on #6371  and #6395 ? A merge can urge me to face my midterm tomorrow :pray: 
+[16:12] <54d4a1d6db8155e6700f853b> @rvraghav93 I'll try to review #5568 today
+[16:38] <56c625c3e610378809c22760> Just had a doubt regarding issue #6443. How is it that this failure is not happening on travis but is just happening locally? Shouldn't both be synced atleast for the same python version?
+[17:04] <56c625c3e610378809c22760> Is anybody else getting this error on their system or is it just me :/
+[17:22] <53135b495e986b0712efc453> @amueller Thanks a tonnnnnne for the review!
+[17:22] <53135b495e986b0712efc453> @yenchenlin1994 I can have a look...
+[17:33] <54d4a1d6db8155e6700f853b> @rvraghav93 sorry for being kinda offline at the moment. I really wanna get going with the book ;)
+[17:33] <54d4a1d6db8155e6700f853b> btw, do you know if anyone started working on the multiple metrics? I think @MechCoder asked me about it.
+[18:14] <56b80528e610378809c05a48> @rvraghav93 thanks a lot!
+[18:37] <56c625c3e610378809c22760> could someone also help review #6176 and #6173 if time permits :P

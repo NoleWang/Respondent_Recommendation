@@ -1,0 +1,9 @@
+[07:14] <56aba3aee610378809bedf43> Thanks @amueller. Can you also help me the following *In predict_proba of SVC* > Notes > The probability model is created using cross validation, so the results can be slightly different than those obtained by predict. Also, it will produce meaningless results on very small datasets.  What do we mean by cross validation in case of prediction, what I get by cross validation is that the training data is divided into K sets, and K-1 is used for training while the 1 set is used for testing.
+[07:15] <56aba3aee610378809bedf43> And it is repeated K times
+[07:15] <54d4a1d6db8155e6700f853b> check out the paper by platt
+[07:15] <54d4a1d6db8155e6700f853b> it's linked to in the description
+[07:15] <54d4a1d6db8155e6700f853b> predict_proba uses platt scaling internally
+[07:22] <54d4a1d6db8155e6700f853b> Probabilistic Outputs for Support Vector Machines and Comparisons to Regularized Likelihood Methods, J. Platt, (1999)
+[07:22] <56aba3aee610378809bedf43> Thanks 
+[07:23] <54d4a1d6db8155e6700f853b> maybe also Predicting Good Probabilities with Supervised Learning, A. Niculescu-Mizil & R. Caruana, ICML 2005 
+[21:49] <551c051b15522ed4b3de2fea> `DBSCAN` takes a long time relative to K-means.

@@ -1,0 +1,6 @@
+[11:12] <564789be16b6c7089cbab8b7> Does https://github.com/scikit-learn/scikit-learn/milestone/22 need updating?
+--------------------------------------------------------------------------------------------------
+[11:46] <54c80b5ddb8155e6700f2708> Hi! Does anyone know how to show percentage of similarity of predicted data to one of train data?
+[11:46] <54c80b5ddb8155e6700f2708> And how to group train data by labels?
+[11:46] <54c80b5ddb8155e6700f2708> thanks
+--------------------------------------------------------------------------------------------------

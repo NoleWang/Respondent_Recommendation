@@ -1,0 +1,6 @@
+[01:52] <5eeb9b35d73408ce4fe749bc> Ah, I had never heard of snakeviz! I was just using cProfile + pStats. Thank you, @rth. :)
+--------------------------------------------------------------------------------------------------
+[02:05] <5eeb9b35d73408ce4fe749bc> I appreciate the advice, too. I did jump right into Cython, so some planning ahead of time might have saved some trouble!
+--------------------------------------------------------------------------------------------------
+[04:02] <5b965bf1d73408ce4fa77f24> checkout computer vision pre-trained model   https://github.com/balavenkatesh3322/CV-pretrained-model
+--------------------------------------------------------------------------------------------------

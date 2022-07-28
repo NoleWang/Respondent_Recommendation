@@ -1,0 +1,26 @@
+<s> <user> <unka@> did you see this notebook <unka/~> the google blog post from earlier ? URL/https:/ URL/github.com/ <unka./> </s>
+<s> <user> wow ! :o </s>
+<s> <user> it generates things that look like this URL/https:/ <unka-./> <unk#a-./_> </s>
+<s> <user> too awsome ! </s>
+<s> <user> <unka@> do you have any suggestions for a practical example for nested cv using lolo ... ? :) any dataset public domain problem ( like iris <unka> )? </s>
+<s> <user> i ca n't think of any <unka> with meaningful groups </s>
+<s> <user> you could generate one yourself </s>
+<s> <user> okay !! </s>
+<s> <user> like a regression problem with multiple noisy observations per subject </s>
+<s> <user> if you accidentally leave observations of the same subject in both train and test <unka> , you 'll get overly optimistic results </s>
+<s> <user> ( i 'm just thinking out loud , this might not be right ) say you have 2 features and the target is <unka`> = <unk#a_> + <unk#a_> + <unka`> but <unk#a`> is very correlated within the same subject and <unk#a> is essentially independent . </s>
+<s> <user> like if <unk#a`> is <unka> the label of the subject + noise , and <unk#a`> is just noise </s>
+<s> <user> say maybe <unk#a_`> the person 's weight ( fluctuates slightly but not a lot ) and <unk#a_`> is how many minutes the person walked outside today </s>
+<s> <user> <unka@> yeah saw the blog post . pretty cool </s>
+<s> <user> i have to work on the scipy tutorial today , sorry </s>
+<s> <user> is there a good way to use an <unka> to encode several columns of <unka> variables ? </s>
+<s> <user> you probably want <unka> </s>
+<s> <user> ( only it does n't do strings at the moment which makes me sad ) </s>
+<s> <user> this is exactly what i want . but i need to encode those string <unka> values to integers so i can use it :) </s>
+<s> <user> you could make it a dict and use dict <unka> ... or use <unka> ? </s>
+<s> <user> i was really surprised when i recently realized that there is no good way to do this in <unka> . you can open an issue if you like </s>
+<s> <user> i am actually using <unka> . i 've done this various hacky ways in the past </s>
+<s> <user> would making the <unka> accept strings be relatively straight forward or are there design problems blocking it ? i'd love to issue a pr for that </s>
+<s> <user> it seemed slightly non-trivial but did n't look blocking . maybe open an issue and ping <unka@> what he thinks of it </s>
+<s> <user> <unk#+:> : </s>
+<s> <user> sweet thanks </s>

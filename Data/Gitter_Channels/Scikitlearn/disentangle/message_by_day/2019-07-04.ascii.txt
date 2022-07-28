@@ -1,0 +1,4 @@
+[20:26] <5bc98094d73408ce4fabf741> How I get the individual components from classification_report?
+[20:26] <5bc98094d73408ce4fabf741> I found this: https://stackoverflow.com/questions/39662398/scikit-learn-output-metrics-classification-report-into-csv-tab-delimited-format
+[20:27] <5bc98094d73408ce4fabf741> sorry, this: https://stackoverflow.com/questions/48417867/access-to-numbers-in-classification-report-sklearn
+[20:28] <5bc98094d73408ce4fabf741> but the output_dict=True doesn't seem to work, I am receiving an error stating this parameter does not exist on the classification_report function, I also don't trust precision_recall_fscore_support, plus it misses accuracy

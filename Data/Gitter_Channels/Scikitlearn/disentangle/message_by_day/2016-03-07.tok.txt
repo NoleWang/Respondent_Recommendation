@@ -1,0 +1,2 @@
+<s> <user> <unka@> someone just told me that doing <unka> upgrade --all breaks <unka-> . i think that 's related to the ci failure </s>
+<s> <user> yeah , they started bundling <unka> with everything . to fix this , you should try to install <unka`> first and then install everything else that is <unka> dependent . </s>

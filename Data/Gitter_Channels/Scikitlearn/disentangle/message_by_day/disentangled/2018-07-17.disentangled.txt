@@ -1,0 +1,169 @@
+[05:27] <54e07d0815522ed4b3dc0850> Sorry, I missed the reply about the hangout. Let's do it when you guys are up, and maybe an hour or so after you have started. That gives you time to get organized.
+--------------------------------------------------------------------------------------------------
+[12:57] <54e07d0815522ed4b3dc0850> https://github.com/scikit-learn/scikit-learn/issues/11536 is blocker and needs a discussion
+--------------------------------------------------------------------------------------------------
+[13:43] <5a280cdcd73408ce4f820b9c> scikit-learn/scikit-learn#11557 ready for review
+--------------------------------------------------------------------------------------------------
+[14:16] <547d8325db8155e6700da60b> @amueller #11577
+--------------------------------------------------------------------------------------------------
+[14:40] <589b9e0fd73408ce4f490ba4> @ogrisel  could you have a look at a small BLAS related change in https://github.com/scikit-learn/scikit-learn/pull/11420 by @jakirkham Thanks.
+--------------------------------------------------------------------------------------------------
+[14:54] <54d4a1d6db8155e6700f853b> quick reviews on #11593 please?
+--------------------------------------------------------------------------------------------------
+[14:54] <53232ac75e986b0712efe3af> @amueller https://github.com/scikit-learn/scikit-learn/pull/11592
+--------------------------------------------------------------------------------------------------
+[15:09] <547d8325db8155e6700da60b> @amueller  maybe you can merge #11124
+[15:12] <547d8325db8155e6700da60b> (or anyone who can click the green button !0
+[15:12] <547d8325db8155e6700da60b> )
+--------------------------------------------------------------------------------------------------
+[15:13] <54e07d1515522ed4b3dc0852> review https://github.com/scikit-learn/scikit-learn/pull/11535 ?
+[15:13] <54e07d0815522ed4b3dc0850> @massich : done for #11124
+[15:15] <54e07d0815522ed4b3dc0850> @agramfort : done
+--------------------------------------------------------------------------------------------------
+[15:15] <5b4c47d0d73408ce4fa101b0> @GaelVaroquaux can you have a look at #11589 ?
+--------------------------------------------------------------------------------------------------
+[15:17] <54e07d0815522ed4b3dc0850> The travis backlog is starting to be a major problem. Does someone have a contact at travis to ask them if they could bump our plan for the day?
+[15:17] <54e07d0815522ed4b3dc0850> @jbschiratti : on it
+--------------------------------------------------------------------------------------------------
+[15:17] <547d8325db8155e6700da60b> Can I get comments in #11563 maybe it can be merged without CI
+[15:18] <54d4a1d6db8155e6700f853b> I don't have a contact. I had talked to them in the past, sometimes it works. You're in the same time zone as them @GaelVaroquaux ;)
+[15:23] <54d4a1d6db8155e6700f853b> btw I think https://github.com/scikit-learn/scikit-learn/pull/11570 should basically be good t ogo
+--------------------------------------------------------------------------------------------------
+[15:25] <54d4a1d6db8155e6700f853b> @GaelVaroquaux are you contacting travis?
+--------------------------------------------------------------------------------------------------
+[15:35] <54e07d0815522ed4b3dc0850> What contact should I use?
+[15:35] <54e07d0815522ed4b3dc0850> For travis?
+--------------------------------------------------------------------------------------------------
+[15:39] <55d21ee30fc9f982beadabb8> By the way I'll like to have discussion regarding Stacking and the issue of fit.transform != fit_transform such that we can unlock the PR
+[15:39] <55d21ee30fc9f982beadabb8> I know this is not for the coming release thought
+--------------------------------------------------------------------------------------------------
+[15:39] <54d4a1d6db8155e6700f853b> they have an email thing on the website @GaelVaroquaux
+[15:39] <54d4a1d6db8155e6700f853b> support@travis-ci.com
+[16:39] <54d4a1d6db8155e6700f853b> well but this sounds like we need a slep
+[16:39] <54d4a1d6db8155e6700f853b> so the outcome of this discussion is: we disagree so far
+[16:39] <54d4a1d6db8155e6700f853b> I'll write a slep, we can discuss it and we can vote
+--------------------------------------------------------------------------------------------------
+[15:40] <54e07d0815522ed4b3dc0850> If we want to do a hangout, it's in the next hour or so.
+[15:40] <54e07d0815522ed4b3dc0850> @amueller : on it
+[16:03] <54e07d0815522ed4b3dc0850> Good with the call.
+[16:03] <54e07d0815522ed4b3dc0850> Do you want to call me
+[16:04] <54e07d0815522ed4b3dc0850> When you do, I'll run in the room next door, and whoever wants will join me
+--------------------------------------------------------------------------------------------------
+[15:40] <54d4a1d6db8155e6700f853b> are there particular topics for the hangout? the stacking fit_transform? pandas column names? the governance doc?
+[15:41] <54e07d0815522ed4b3dc0850> All these seem important
+--------------------------------------------------------------------------------------------------
+[15:44] <54e07d0815522ed4b3dc0850> Done for travis. We'll see what they reply
+--------------------------------------------------------------------------------------------------
+[15:53] <54d4a1d6db8155e6700f853b> whether we should backport estimator-tags to the RC branch if I can finish it within a week lol ;)
+[15:53] <54d4a1d6db8155e6700f853b> (semi-kidding)
+[15:53] <54d4a1d6db8155e6700f853b> should we do the call?
+--------------------------------------------------------------------------------------------------
+[16:05] <541a528b163965c9bc2053de> I'll try to call you.
+--------------------------------------------------------------------------------------------------
+[16:37] <541a528b163965c9bc2053de> we can call you by phone on a free mobile
+--------------------------------------------------------------------------------------------------
+[16:52] <560313510fc9f982beb1a331> > The travis backlog is starting to be a major problem.  There is an auto-cancellation feature for PRs with outdated commits  ref: https://blog.travis-ci.com/2017-03-22-introducing-auto-cancellation
+[16:53] <560313510fc9f982beb1a331> There's a similar feature for PRs on AppVeyor
+[16:53] <560313510fc9f982beb1a331> HTH
+--------------------------------------------------------------------------------------------------
+[16:53] <55d21ee30fc9f982beadabb8> I think that we have that
+[16:53] <55d21ee30fc9f982beadabb8> activated
+--------------------------------------------------------------------------------------------------
+[16:55] <589b9e0fd73408ce4f490ba4> yes, both in Travis and AppVeyor, but not circle ci..
+--------------------------------------------------------------------------------------------------
+[16:56] <55d21ee30fc9f982beadabb8> @amueller The PR regarding the n_estimators=100 in Forest is ready for review
+[16:56] <55d21ee30fc9f982beadabb8> https://github.com/scikit-learn/scikit-learn/pull/11542
+--------------------------------------------------------------------------------------------------
+[16:59] <53232ac75e986b0712efe3af> @GaelVaroquaux and other people there: are you OK with switching the default in `ColumnTransformer` from `remainder='passthrough'` to `remainder='drop'` ?
+--------------------------------------------------------------------------------------------------
+[17:01] <541a528b163965c9bc2053de> The motivation is that silently passing through uniquely identifying columns (e.g. a user id) will lead to catastrophic  overfitting that beginner users will have a hard time to debug.
+[17:01] <54d4a1d6db8155e6700f853b> also changing the mode of one-hot-encoder to sparse=False in the "new mode"
+[17:02] <541a528b163965c9bc2053de> Furthermore, it would also make most of our examples a bit more concise.
+--------------------------------------------------------------------------------------------------
+[17:03] <5b4e20f7d73408ce4fa13b54> appveyor is failing very quickly (less than 1min) for a lot of PRs
+--------------------------------------------------------------------------------------------------
+[17:07] <560313510fc9f982beb1a331> We have a script for fast cancelling old builds in c-f. Here's a [usage example]( https://github.com/conda-forge/numpy-feedstock/blob/0d8089f7d346fabaa8bf1ea948d89a9c42e9f9c8/.circleci/fast_finish_ci_pr_build.sh#L3-L4 ). This works on Travis CI, AppVeyor, and CircleCI as long as the proper environment variables are supplied  ref: https://github.com/conda-forge/conda-forge-ci-setup-feedstock/blob/master/recipe/ff_ci_pr_build.py
+--------------------------------------------------------------------------------------------------
+[17:14] <55d21ee30fc9f982beadabb8> https://github.com/scikit-learn/scikit-learn/pull/11583
+--------------------------------------------------------------------------------------------------
+[17:17] <5a280cdcd73408ce4f820b9c> scikit-learn/scikit-learn#11585 on sparse PCA needs review
+[17:18] <55d21ee30fc9f982beadabb8> I will look at it now
+--------------------------------------------------------------------------------------------------
+[17:20] <547d8325db8155e6700da60b> https://github.com/scikit-learn/scikit-learn/pull/11599
+--------------------------------------------------------------------------------------------------
+[17:22] <589b9e0fd73408ce4f490ba4> Thanks @jakirkham , that's very useful. I'll look into it.
+--------------------------------------------------------------------------------------------------
+[17:24] <547d8325db8155e6700da60b> here's how appveyor kills all but last commit https://github.com/conda-forge/staged-recipes/blob/master/.appveyor.yml#L19-L23
+[17:26] <547d8325db8155e6700da60b> https://github.com/conda-forge/staged-recipes/blob/master/.circleci/fast_finish_ci_pr_build.sh
+[17:26] <547d8325db8155e6700da60b> here's for CircleCI
+--------------------------------------------------------------------------------------------------
+[17:33] <5a83f33dd73408ce4f8d133f> https://github.com/scikit-learn/scikit-learn/pull/11526 is also ready for a last review/merge
+--------------------------------------------------------------------------------------------------
+[17:40] <54e07d0815522ed4b3dc0850> Travis bumped our resources!!
+[17:40] <54e07d0815522ed4b3dc0850> They rock
+[17:40] <54e07d0815522ed4b3dc0850> We'll need to thank them
+--------------------------------------------------------------------------------------------------
+[18:15] <5a280cdcd73408ce4f820b9c> I'm off until tomorrow guys.  You can have a look at scikit-learn/scikit-learn#11596 and continue if you wanna merge quickly.
+--------------------------------------------------------------------------------------------------
+[18:26] <54e07d0815522ed4b3dc0850> Hey, does anybody understand what the problem is on appveyor: https://ci.appveyor.com/project/sklearn-ci/scikit-learn/build/1.0.23610/job/fab9oqavus2wy8sa ?
+[18:26] <54e07d0815522ed4b3dc0850> It's happening on several PR. I don't love the smell of it.
+--------------------------------------------------------------------------------------------------
+[18:48] <5a83f33dd73408ce4f8d133f> https://github.com/scikit-learn/scikit-learn/pull/11578 is almost green on tests, ready for a second review
+--------------------------------------------------------------------------------------------------
+[19:00] <54d4a1d6db8155e6700f853b> looks like travis bumped up to 10 according to @jorisvandenbossche
+[19:02] <54d4a1d6db8155e6700f853b> @GaelVaroquaux did you tweet about it?
+[19:02] <54d4a1d6db8155e6700f853b> we should also tweet to enthought maybe?
+--------------------------------------------------------------------------------------------------
+[19:03] <54e07d0815522ed4b3dc0850> Yes, travis did bump up to 10.
+[19:03] <54e07d0815522ed4b3dc0850> It makes a big different
+[19:04] <54e07d0815522ed4b3dc0850> I didn't tweet, but I'll thank them in the blog post
+--------------------------------------------------------------------------------------------------
+[19:05] <54d4a1d6db8155e6700f853b> can someone riddle me this? https://github.com/scikit-learn/scikit-learn/pull/11542
+[19:06] <54d4a1d6db8155e6700f853b> SAG test failure on python2.7 in the n_estimators=100 branch?!
+[19:08] <54d4a1d6db8155e6700f853b> @GaelVaroquaux you mean the appveyor, not the tranvis I mentioned, right?
+[19:11] <54d4a1d6db8155e6700f853b> ok cool
+--------------------------------------------------------------------------------------------------
+[19:06] <5571fe1015522ed4b3e17d90> No idea about the AppVeyor problem but it does seem to happen quite often.
+--------------------------------------------------------------------------------------------------
+[19:06] <541a528b163965c9bc2053de> @GaelVaroquaux the appveyor issue is recent. One possibility might be that have changed something in their API and that breaks and that broke our trick to automatically cancel / skip builds on PRs that have received new push events in the mean time.
+[19:08] <54e07d0815522ed4b3dc0850> OK, but it's a random failure?
+[19:08] <54e07d0815522ed4b3dc0850> I'll merge the PRs despite of it.
+--------------------------------------------------------------------------------------------------
+[19:09] <541a528b163965c9bc2053de> I don't know if it's random with a very high likelihood or if it's a deterministic failure. It might be a temporary outage.
+[19:09] <54e07d0815522ed4b3dc0850> Yes, I mean appveor
+--------------------------------------------------------------------------------------------------
+[19:12] <55d21ee30fc9f982beadabb8> Somebody to open the door of Enthought ;)
+--------------------------------------------------------------------------------------------------
+[19:12] <5571fe1015522ed4b3e17d90> I have AppVeyor enabled in my fork and I have some green builds recently: https://ci.appveyor.com/project/lesteve/scikit-learn/history
+[19:13] <5571fe1015522ed4b3e17d90> This could well be the HTTP request we use which is problematic.
+--------------------------------------------------------------------------------------------------
+[19:18] <5571fe1015522ed4b3e17d90> I'll look at the AppVeyor problem more in details.
+--------------------------------------------------------------------------------------------------
+[19:22] <54e07d0815522ed4b3dc0850> Thanks Loic!
+--------------------------------------------------------------------------------------------------
+[19:30] <54d4a1d6db8155e6700f853b> my current reading is that we shouldn't have done the error_score deprecation in ``_fit_and_score`` but in BaseSearchCV. But it depends on what we want to do in learning_curve, cross_validate and cross_val_score (and other places I haven't thought of)
+[19:30] <54d4a1d6db8155e6700f853b> https://github.com/scikit-learn/scikit-learn/issues/11576
+--------------------------------------------------------------------------------------------------
+[19:51] <53232ac75e986b0712efe3af> @amueller column transformer remainder change: https://github.com/scikit-learn/scikit-learn/pull/11603
+--------------------------------------------------------------------------------------------------
+[19:52] <547d8325db8155e6700da60b> https://github.com/scikit-learn/scikit-learn/pull/11604
+[19:52] <547d8325db8155e6700da60b> try to fix appveyor !
+--------------------------------------------------------------------------------------------------
+[20:13] <547d8325db8155e6700da60b> @amueller https://github.com/scikit-learn/scikit-learn/pull/11570/files#r203161922
+--------------------------------------------------------------------------------------------------
+[20:34] <54d4a1d6db8155e6700f853b> so @rth made the good point that the deprecation warning thing should be removed in the release
+--------------------------------------------------------------------------------------------------
+[20:40] <5a83f33dd73408ce4f8d133f> my PR is green now if someones wants to be the 2nd reviewer: https://github.com/scikit-learn/scikit-learn/pull/11578
+--------------------------------------------------------------------------------------------------
+[20:44] <5571fe1015522ed4b3e17d90> We looked at AppVeyor with Sik. There is a work-around in master and all the current running AppVeyor builds have been killed. Just push a new commit in your branch if you want AppVeyor to run again or ask me while I have a sklearn-ci tab opened.
+--------------------------------------------------------------------------------------------------
+[20:53] <541a528b163965c9bc2053de> I will also cancel all the circle ci builds as the queue is far too long. We can restart new builds on new PR (preferably recently opened ones, or those with a recent master merge commit).
+--------------------------------------------------------------------------------------------------
+[22:01] <547d8325db8155e6700da60b> any comments here https://github.com/scikit-learn/scikit-learn/pull/11213
+[22:01] <547d8325db8155e6700da60b> ??
+--------------------------------------------------------------------------------------------------
+[22:06] <547d8325db8155e6700da60b> @lesteve https://github.com/scikit-learn/scikit-learn/pull/11213
+[22:08] <547d8325db8155e6700da60b> sorry https://github.com/scikit-learn/scikit-learn/pull/11552
+--------------------------------------------------------------------------------------------------
+[22:42] <547d8325db8155e6700da60b> @lesteve https://github.com/scikit-learn/scikit-learn/pull/11563
+--------------------------------------------------------------------------------------------------

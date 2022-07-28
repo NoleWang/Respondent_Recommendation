@@ -1,0 +1,2 @@
+[14:38] <5b4b30e3d73408ce4fa0eefc> Hello, is there a simple way how to make a polynomial regression of given degree?
+--------------------------------------------------------------------------------------------------

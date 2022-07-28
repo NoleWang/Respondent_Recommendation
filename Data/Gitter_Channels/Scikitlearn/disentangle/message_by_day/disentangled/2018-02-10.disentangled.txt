@@ -1,0 +1,2 @@
+[17:30] <55a487245e0d51bd787b4e45> @xidorn5 I can't speak for the sklearn team, but generally sklearn is intended to target the most widespread, widely-cited, well-established methods for the core package, and to allow third-party packages a lot of freedom in implementing less-established advancements from the literature.
+--------------------------------------------------------------------------------------------------

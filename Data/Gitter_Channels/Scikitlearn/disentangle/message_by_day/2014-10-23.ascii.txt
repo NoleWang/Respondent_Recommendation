@@ -1,0 +1,4 @@
+[19:59] <544906e2db8155e6700cdd16> I don't know if this is the right place but I need some advice on how to train a classifier using a data set with multiple feature types: text, integers, floats, dates
+[20:00] <544906e2db8155e6700cdd16> any idea?
+[20:01] <544906e2db8155e6700cdd16> My first approach was to convert each feature to binary, example: feature 1 -> "the word w_i is in column j?" , feature 2 -> "the value in column j is greater than 10?", feature 3 -> "the month in the date of column j was abril?", etc.
+[20:04] <544906e2db8155e6700cdd16> by the way, Oliver Grisel: Hi! :D

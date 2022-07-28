@@ -1,0 +1,4 @@
+[08:50] <5cafacbfd73408ce4fbd7ec2> Morning all I want to know if scikit-learn 1.1 will be released in late 2021?
+--------------------------------------------------------------------------------------------------
+[09:17] <567f5d7716b6c7089cc043a8> There will be minor releases this year (1.0.1 for instance), but the next major release will be next year.
+--------------------------------------------------------------------------------------------------

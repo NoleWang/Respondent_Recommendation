@@ -1,0 +1,10 @@
+<s> <user> <unka@> i cannot find this one <unka$\> = <unk#a\{}> ( <unk#a_> + <unka$)}> ( URL/http:/ <unka-./> <unk#a#./> ) in <unka> 's source code </s>
+<s> <user> is n't that the same as <unka> ? </s>
+<s> <user> <unka@> i 've opened <unka./`> , i ca n't locate that same formula . i found this one which is different : <unka`> eta = <unk#a> ( 1 + lambda * <unk#a> * <unka);`> </s>
+<s> <user> <unk#a@> open an issue or ask the mailing list maybe ? </s>
+<s> <user> <unka@> thanks i 'll open an issue on github </s>
+<s> <user> <unk#+:> : </s>
+<s> <user> for demonstration purposes , i would like to track the <unka> centers during each iteration of the fit . is that possible with <unka> <unka> , e.g . with a callback ? </s>
+<s> <user> i will try to run <unka> for one iteration at a team , initializing the centers with the centers from the previous <unka> . that should do the trick . </s>
+<s> <user> yeah that should work . at that point it 's easy enough to implement it yourself as well though ;) </s>
+<s> <user> <unk#a:> : </s>

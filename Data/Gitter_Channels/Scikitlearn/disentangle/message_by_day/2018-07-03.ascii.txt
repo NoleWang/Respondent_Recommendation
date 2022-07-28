@@ -1,0 +1,1 @@
+[16:56] <5b11caa3d73408ce4f9b96b5> @kirk86  I don't know about tensorflow. But keras has wrappers to make models a part of sklearn workflow. I think you can take a look at the source for these wrappers. Here's the link: https://keras.io/scikit-learn-api/

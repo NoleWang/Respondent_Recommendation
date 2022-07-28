@@ -1,0 +1,15 @@
+<s> <user> hi all , </s>
+<s> <user> i am new to <unka> , and i really like this stuff . i want to contribute , but i think , i must use <unka> to a good level . and then start diving into methods . can you suggest me a way to start ? at end i want to be a one of the core contributor of <unka> , no matter how much time or years it takes . </s>
+<s> <user> a good place to start is to try <unka> <unka> </s>
+<s> <user> and i can start using <unka> from basics here ? </s>
+<s> <user> are you trying to learn <unka> or are yout rying to learn data science ? </s>
+<s> <user> i think the former , but the best way to do so much s to learn basic data science imo </s>
+<s> <user> *is to learn </s>
+<s> <user> well it seems to me they are very different learning tasks </s>
+<s> <user> if the goal is to eventually contribute , you'd want knowledge of how the various algorithms work , what their use cases are , etc . the easiest way to do this imo is to just use them in various applications . </s>
+<s> <user> yes <unka> . i am a <unka> , and i want to <unka> into <unka> functions and contribute . right way is to <unka> my basics . i think i can go with what <unka-@> suggested . </s>
+<s> <user> does n't make any sense to me but <unka> </s>
+<s> <user> <unka@> according to you , what is the right approach , if someone wants to be a good contributor to <unka> ? </s>
+<s> <user> if the goal is to contribute , then [ <unka#(-./:]> ) has already answered your question </s>
+<s> <user> thanks <unk#a@> <unka@> <unka-@> </s>
+<s> <user> <unk#a@> to answer your question : implementing a <unka-> algorithm is hard . its not enough to be able to program . you have to really understand the <unka*> , and debugging the math is challenging . and you have to also understand how data scientists actually use these algorithms . </s>

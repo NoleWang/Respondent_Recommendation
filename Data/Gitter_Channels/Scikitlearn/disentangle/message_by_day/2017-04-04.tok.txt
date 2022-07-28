@@ -1,0 +1,6 @@
+<s> <user> looking at the digits dataset , the <unka`> says " <unka:> of instances : <unk#> " but when i examine the shape of the <unka`> , <unka`> , and <unka`> , they all have <unk#> instances . is this a documentation error or could i be missing something when i loaded the data ? </s>
+<s> <user> a curious observation : <unk`> from <unka._> import <unka> v = <unka(> ) <unka"(,.[> " ]) <unk`> the result is <unk`> <unk#a<> sparse matrix of type <unka'<> <unk#a'.> > ' with 0 stored elements in compressed sparse row format > <unk`> it seems that <unka> will transform any single word into zero vector . do i miss anything ? </s>
+<s> <user> look like the default " word " analyzer will transform single character into empty list <unk`> analyzer = <unka(._> ) <unka"(> " ) <unk`> <unk`> [ ] <unk`> </s>
+<s> <user> hi any good book for <unka> </s>
+<s> <user> folks , whats the easiest way to figure out the top features used by <unka> for prediction ? im using <unka> to extract features . </s>
+<s> <user> so , <unka_`> doesnt do what i expected it to do . </s>

@@ -1,0 +1,7 @@
+[16:17] <58d6965fd73408ce4f539cff> Hello guys ! I'm a beginner in Machine Learning, do you recommend me a tutorial for  working on a dataset with sikit-learn ?
+--------------------------------------------------------------------------------------------------
+[16:18] <54d4a1d6db8155e6700f853b> @aniked we have two tutorials on our website, there is some on kaggle.com and there's videos on my website
+[16:18] <54d4a1d6db8155e6700f853b> amueller.io
+--------------------------------------------------------------------------------------------------
+[20:22] <57f68cf5d73408ce4f2c567d> @aniked Try intro to ML by udacity.
+--------------------------------------------------------------------------------------------------

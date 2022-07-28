@@ -1,0 +1,2 @@
+[11:16] <55d054b70fc9f982bead8af7> Hi forks, I am trying import ```from sklearn.model_selection import cross_val_score``` but it had an error ```ImportError: No module named 'sklearn.model_selection'``` and I installed scikit-learn package but I don't know what matter for me , I cannot import this module to my project. I am using python 3.5. Can you help me ? Many thanks :D
+--------------------------------------------------------------------------------------------------

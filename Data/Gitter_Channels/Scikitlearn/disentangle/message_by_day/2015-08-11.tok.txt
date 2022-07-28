@@ -1,0 +1,17 @@
+<s> <user> ' </s>
+<s> <user> <unka@> i checked <unka.> usages in my code , i think it is ok . i did n't write sth into the diagonal elements of an array . </s>
+<s> <user> i just added the verbose flag back into mixture modules . what else should i do before soft pencil down ? <unka@> <unka@> </s>
+<s> <user> <unka@> thanks for the review !! i could n't find a nice dataset to illustrate lolo :/ there is one dataset inside the proprietary <unka`> package ( <unka_> ... i 'll have to mail them and ask if it can be used in a blog post ... moreover it is a matlab package so i 'll have to convert it to a csv file ) do you have any suggestions ?? earlier i recall yourself suggesting search query ... could you expand a bit on that pl ?? </s>
+<s> <user> and i can load <unka.> :o that seems to be a pretty famous reference for <unka> ... </s>
+<s> <user> does someone know how to " restart " a <unka> build ? the build for a pr failed with some weird errors that i am pretty confident have nothing to do with the contents of the pr <unk##> . </s>
+<s> <user> simplest way would be to push a commit make some <unka> to your previous comment , squash and force push it ... </s>
+<s> <user> <unk#a@> you can always create a <unka> dataset </s>
+<s> <user> okay ! i 'll look on how to create one ... any tips ?? :) </s>
+<s> <user> also could you take a look at <unk##> ? </s>
+<s> <user> thanks , <unka> is doing its thing :) </s>
+<s> <user> :) </s>
+<s> <user> <unka> does n't seem to test the model selection module :/ do i have to add something somewhere ? </s>
+<s> <user> <unka@> <unka@> </s>
+<s> <user> <unk#a@> regarding the dataset : you can take the <unka> dataset and invent arbitrary group ids ( as you already have ), but generate a new <unka`> based on a formula you come up with ( a function of one or two features and also of the <unka_> ) </s>
+<s> <user> or you could just use <unka_`> with a large number of blobs and arbitrarily assign half of them to the positive and half to the negative class . then the blob assignment is the <unka_> . imagine if half a blob is in training and half in testing , a <unka> like <unka> will predict really well . </s>
+<s> <user> makes sense ? </s>

@@ -1,0 +1,9 @@
+[14:41] <55f3a7830fc9f982beb071a9> Does anyone know a good reference for how the verbose arguement acts?
+--------------------------------------------------------------------------------------------------
+[18:56] <57a061aa40f3a6eec05d8d26> how does decision tree find the cut point?
+--------------------------------------------------------------------------------------------------
+[18:57] <56c4f19ae610378809c1f8ae> haha youre getting yourself into a pretty deep rabbit hole here ;) do you mean decision trees in general or specifically scikit-learns implementation
+[18:57] <57a061aa40f3a6eec05d8d26> scikit-learn's implementation
+[18:58] <56c4f19ae610378809c1f8ae> ill pm you, its a bit convoluted and i dont want to spam the channel. is that ok?
+[18:58] <57a061aa40f3a6eec05d8d26> yes, it's ok
+--------------------------------------------------------------------------------------------------

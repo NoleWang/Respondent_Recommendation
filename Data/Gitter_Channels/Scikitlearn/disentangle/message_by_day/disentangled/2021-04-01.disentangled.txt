@@ -1,0 +1,8 @@
+[07:15] <564789be16b6c7089cbab8b7> @NicolasHug  that is surprising. I normally agree with all the decisions of scikit learn devs
+--------------------------------------------------------------------------------------------------
+[07:17] <564789be16b6c7089cbab8b7> I have two questions about HistGradientBoostingClassifier.  a) When using early stopping do you end up with the "best model" according to the validation loss or the most recent one after it stops?
+[07:18] <564789be16b6c7089cbab8b7> b) Is the validation set chosen by  HistGradientBoostingClassifier chosen at random and is it the same set for every iteration of the training?
+[07:18] <564789be16b6c7089cbab8b7> maybe these should be asked on github as an issue?
+--------------------------------------------------------------------------------------------------
+[08:33] <5baf7d9ad73408ce4fa9c9b2> a) there's no notion of best model. early stopping stops the training process  if the score hasn't improved by more than `tol` in the last  `n_iter_no_change` iterations. The score can be the loss or an arbitrary scorer and it can be computed on the training set or on the validation set b) yes and yes
+--------------------------------------------------------------------------------------------------

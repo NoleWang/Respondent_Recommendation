@@ -1,0 +1,1 @@
+[11:22] <55d21ee30fc9f982beadabb8> @djokester You can check out the [contributors guide](http://scikit-learn.org/stable/developers/contributing.html)

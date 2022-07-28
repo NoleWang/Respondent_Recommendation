@@ -1,0 +1,40 @@
+[00:35] <53135b495e986b0712efc453> @ogrisel @amueller Could you cancel all my appveyor builds. I forgot to use the CI skip and it seems to block other PRs...
+--------------------------------------------------------------------------------------------------
+[00:59] <55495eb515522ed4b3dffb00> @mikegraham Thanks!
+--------------------------------------------------------------------------------------------------
+[01:40] <56c4f19ae610378809c1f8ae> @rvraghav93 what is this ci skip you speak of?
+--------------------------------------------------------------------------------------------------
+[06:55] <54c630d6db8155e6700f168d> Hey all! I have a question regarding CountVectorizer. Is is possible to 'reverse engineer' the original text from the vectors?
+[06:56] <54c630d6db8155e6700f168d> I'm wondering as I just wrote an article on our methods, and I want to share our vectorized data, but cannot share if it's possible for people to figure out the original input text based on this (as the original text contains sensitive info).
+[06:57] <54c630d6db8155e6700f168d> For reference, here is the article: https://medium.com/xeneta/boosting-sales-with-machine-learning-fbcf2e618be3
+--------------------------------------------------------------------------------------------------
+[07:03] <56c4f19ae610378809c1f8ae> haha I saw this on hacker news earlier
+[07:03] <56c4f19ae610378809c1f8ae> I dont think its possible to reverse engineer countvectorizer
+[07:03] <54c630d6db8155e6700f168d> @nelson-liu Cool
+[07:04] <54c630d6db8155e6700f168d> Even if you have access to the vectorizer through a file (using joblib)
+[07:04] <54c630d6db8155e6700f168d> ?
+[07:06] <56c4f19ae610378809c1f8ae> yup, seems like it
+--------------------------------------------------------------------------------------------------
+[07:06] <56c4f19ae610378809c1f8ae> the countvectorizer code is here, https://github.com/scikit-learn/scikit-learn/blob/master/sklearn/feature_extraction/text.py it doesnt store the raw documents
+[07:07] <56c4f19ae610378809c1f8ae> although its possible ofc to get the vocabulary, so if individual words are sensitive then that might pose a problem.
+--------------------------------------------------------------------------------------------------
+[07:29] <54c630d6db8155e6700f168d> I see. And if you have the vocabulary, and the vectors, you can kind of recreate keyword-based descriptions.
+[07:31] <54c630d6db8155e6700f168d> I think I'll rather just share the vectorized descriptions, and not the joblib vectorizer.
+[07:31] <54c630d6db8155e6700f168d> That'll make it impossible to guess the words, right?
+[07:31] <54c630d6db8155e6700f168d> Really appreciate your help @nelson-liu :)
+--------------------------------------------------------------------------------------------------
+[07:48] <56c4f19ae610378809c1f8ae> Yup that is correct @perborgen
+[07:48] <54c630d6db8155e6700f168d> Thanks!
+--------------------------------------------------------------------------------------------------
+[07:49] <56c4f19ae610378809c1f8ae> What do you mean vectorized descriptions actually?
+--------------------------------------------------------------------------------------------------
+[08:45] <54c630d6db8155e6700f168d> Sorry for my late reply.  I mean after using the CountVectorizer to turn text into vectors.
+[08:45] <54c630d6db8155e6700f168d> That's what I refer to aws 'vectorized descriptions' (as my input text is company descriptions).
+--------------------------------------------------------------------------------------------------
+[12:21] <564789be16b6c7089cbab8b7> @mikegraham What's your view on the spark 2 serialization format ?
+--------------------------------------------------------------------------------------------------
+[12:37] <53135b495e986b0712efc453> @nelson-liu If you add `[ci skip]` to a commit message, Appveyor/Travis will skip the tests for that commit... This could be useful if you just push your unfinished work (for a review or to switch computers)...
+--------------------------------------------------------------------------------------------------
+[19:20] <55a487245e0d51bd787b4e45> @lesshaste As in kyro or something else?
+[19:20] <55a487245e0d51bd787b4e45> @lesshaste In any event, I'm probably not fit to weigh in :)
+--------------------------------------------------------------------------------------------------

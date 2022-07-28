@@ -1,0 +1,12 @@
+[04:08] <57be017740f3a6eec0612914> @vyraun i suggest you use AWS EMR directly, which supports hadoop and spark 1.x.
+[04:09] <57be017740f3a6eec0612914> you can quickly try it w/o spending hours on setting up the cluster.
+[04:10] <57be017740f3a6eec0612914> who is taking the Udacity "Intro to ML" class here?
+[04:14] <57008ddd187bb6f0eadd989b> I'm takin Stanford (coursera) and MIT (OCW) ML classes
+[04:16] <57be017740f3a6eec0612914> @tjgerot you are awesome. I took a few Stanford lessons and feel difficult.
+[04:19] <57008ddd187bb6f0eadd989b> Haha I usually have to watch them 2-3 times over. They start off head first in the math and I haven't taken calc yet so it's been pretty slow learning. But MIT posts a lot of their courses on YouTube, so I'm going through the Artificial Intelligence course, much easier. How's the Udemy one?
+[04:20] <57be017740f3a6eec0612914> Udacity's "intro ML" is good. the tools (sklearn, ntlk) they use is more recent, not R, octave, numpy. see results quick :)
+[04:28] <579e492240f3a6eec05d5245> 
+[04:31] <579e492240f3a6eec05d5245> @txie thanks for the suggestion. Will try <unconvertable>
+[04:42] <579e492240f3a6eec05d5245> 
+[19:41] <564a0e2916b6c7089cbaead6> Are there plans for a codesprint at #ODSC this year?
+[19:43] <564a0e2916b6c7089cbaead6> @txie I am just about completed with the Udacity ML Nanodegree. 

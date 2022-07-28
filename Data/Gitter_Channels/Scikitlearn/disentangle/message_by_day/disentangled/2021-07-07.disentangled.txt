@@ -1,0 +1,9 @@
+[19:37] <5baebfaed73408ce4fa9bd25> Hello, I am wondering why this PR (https://github.com/scikit-learn/scikit-learn/pull/18758) doesn't show up at the top here: https://github.com/scikit-learn/scikit-learn/pulls  Is it because I had submitted it a long time ago, but my recent changes are considered updates?
+--------------------------------------------------------------------------------------------------
+[19:38] <55d21ee30fc9f982beadabb8> I think that PRs are ordered by PR numbers by default in github
+[19:42] <5baebfaed73408ce4fa9bd25> Oh, wow, that's interesting.  Not what I would have expected.
+--------------------------------------------------------------------------------------------------
+[19:44] <55d21ee30fc9f982beadabb8> However, you have the option of "Sort by recently updated". This would actually be a good default while reviewing :)
+--------------------------------------------------------------------------------------------------
+[20:11] <5baebfaed73408ce4fa9bd25> Yes, that's what I was looking for (and expecting as a default). Thanks!
+--------------------------------------------------------------------------------------------------

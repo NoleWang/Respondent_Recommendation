@@ -1,0 +1,9 @@
+[09:42] <564789be16b6c7089cbab8b7> @rvraghav93  actually it might be worth saying what I do in practice. I run dictvectorizer with categorical variables and then missing values just become another category. It would be great to compare to that approach as it works quite well, at least when I use a decision tree based classifier/regressor
+[09:43] <564789be16b6c7089cbab8b7> maybe it wouldn't work so well with other classifiers but that would also be good to know
+--------------------------------------------------------------------------------------------------
+[14:24] <561d08d0d33f749381a937bf> Is there any point to train_test_split when I could be simply using GridSearchCV?
+--------------------------------------------------------------------------------------------------
+[16:10] <564789be16b6c7089cbab8b7> @Fredilly  speed?
+--------------------------------------------------------------------------------------------------
+[19:20] <56c4c780e610378809c1f19a> Hello, please review my pull request: https://github.com/scikit-learn/scikit-learn/pull/5900
+--------------------------------------------------------------------------------------------------

@@ -1,0 +1,7 @@
+<s> <user> master 's <unka-> badge says failing , but i fail to find the build which fails , is the badge wrong ? or am i looking at the wrong place ? </s>
+<s> <user> there is an issue with the ssh key in the deploy step in the master branch : URL/https:/ <unka./> <unka-/> </s>
+<s> <user> here is the end of the log of the last failure : <unk`> ... rewrite <unka./> ( 73% ) + git push error : the key you are authenticating with has been marked as read only . fatal : could not read from remote repository . please make sure you have the correct access rights and the repository exists . exited with code 128 <unk`> </s>
+<s> <user> the <unka-> github user has a user ssh key named " <unka-> " that should be able to push to the <unka-.> repo . however i do n't understand how the <unka> job is supposed to have access to this ssh private key . </s>
+<s> <user> the recent changes in the <unka-./`> do not seem to be related in any way to the ssh key configuration . </s>
+<s> <user> should n't that be inside a section in <unka-> holding " secrets " ? and then giving access to those values to jobs via environment variables or something ? i have no idea how <unka-> works though . </s>
+<s> <user> yes i believe so but i did not see anything related to this in the circle ci settings menus and i am not the one who configured it in the first place so i am not sure what has changed and what should be done to restore the push . </s>

@@ -1,0 +1,8 @@
+[14:34] <57a061aa40f3a6eec05d8d26> Is there any post-pruning implementation in scikit for decision trees?
+--------------------------------------------------------------------------------------------------
+[16:20] <57781008c2f0db084a211eda> Any suggestions for how to implement handwriitten signature verification in Python ?
+--------------------------------------------------------------------------------------------------
+[17:13] <530c03e25e986b0712efafb8> General question, why haven't tensor factorizations (like Parafac, Tucker) become more widely adopted?  (or, are they widely adopted and I'm not aware?)
+--------------------------------------------------------------------------------------------------
+[17:43] <530c03e25e986b0712efafb8> (I apologize for being somewhat off topic here)
+--------------------------------------------------------------------------------------------------

@@ -1,0 +1,32 @@
+[04:55] <56f4e1b785d51f252abab7d7> @ItchyJunk OOOoo? gridsearchcv allows multiple calls to `.fit`?
+--------------------------------------------------------------------------------------------------
+[05:03] <56f4e1b785d51f252abab7d7> OOOOOOOOH, yea, I am using sgdclassifier, lemme try (: > It's definitely not possible now. I'm not familiar with sklearn's code at all, but looks like a call to `fit` may be replaced with a call to `partial_fit`, when it is supported.
+--------------------------------------------------------------------------------------------------
+[05:21] <56f4e1b785d51f252abab7d7> well after a quick test i am able to do multiple `.fit` calls, but not sure whether the classifier uses all the training set tho
+[08:31] <56f4e1b785d51f252abab7d7> i misread for some reason
+[08:31] <56f4e1b785d51f252abab7d7> *facepalm*
+[08:31] <56f4e1b785d51f252abab7d7> argh... markdown
+--------------------------------------------------------------------------------------------------
+[05:55] <56f4e1b785d51f252abab7d7> I really need to get some sleep, i misread and thought this is already implemented #facepalm > It's definitely not possible now. I'm not familiar with sklearn's code at all, but looks like a call to `fit` may be replaced with a call to `partial_fit`, when it is supported.
+--------------------------------------------------------------------------------------------------
+[08:30] <57b3fd8640f3a6eec05fe0e8> @Jeffrey04 multiple .fit is not the same as calling 1 .fir for the 2M data apparent.y
+[08:31] <56f4e1b785d51f252abab7d7> yea, I realized that
+[08:31] <57b3fd8640f3a6eec05fe0e8> ^.^
+[08:31] <57b3fd8640f3a6eec05fe0e8> Oh, the general agreement here was you should have a way to narrow you 2 mil down to .5 mil better training data
+[08:33] <57b3fd8640f3a6eec05fe0e8> But i was curious about the memory management itself .. so partial_fit and warm start was mentioned for some cases..
+[08:33] <57b3fd8640f3a6eec05fe0e8> So is there a way for you to narrow it down or was that not the case? :P
+--------------------------------------------------------------------------------------------------
+[09:12] <56f4e1b785d51f252abab7d7> @ItchyJunk that's what I did previously, i was wondering if that's the proper way to do it
+[09:13] <56f4e1b785d51f252abab7d7> if i fetch fair enough random sample for gridsearchcv, I probably should get parameters that should be quite close to the "ideal" ones
+[09:13] <56f4e1b785d51f252abab7d7> then i can proceed and retrain the proper model with the not-so-ideal parameters
+[09:14] <56f4e1b785d51f252abab7d7> ^ my previous workaround
+--------------------------------------------------------------------------------------------------
+[09:15] <56f4e1b785d51f252abab7d7> also I am trying to break into multiple smaller classifiers, so each classifier should be built with much smaller dataset
+[09:15] <56f4e1b785d51f252abab7d7> so whenever i try to classify some data, i would run through all of them, and pick the best result with highest probability or something
+--------------------------------------------------------------------------------------------------
+[09:18] <57b3fd8640f3a6eec05fe0e8> Yeah I suppose if the difference is small enough, approximation should be fine.
+--------------------------------------------------------------------------------------------------
+[15:49] <5730c2dcc43b8c601971eca1> Quick question:  After having downloaded scikit-learn on my machine, How can I compile the modified code package to iPython (ie import sklearn2 as sk ?) . Where should I put the repository scikit-learn so Python can recognize it ?
+--------------------------------------------------------------------------------------------------
+[16:24] <565b64bd16b6c7089cbc9de9> @Jeffrey04 I do think it is quite easy to add, as far as I can understand sklearn's code.
+--------------------------------------------------------------------------------------------------

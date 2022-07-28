@@ -1,0 +1,2 @@
+[10:19] <54b2524adb8155e6700e8a8e> @JVanloofsvelt np.exp is the inverse of np.log... Just apply that to get probabilities.
+[23:45] <5a6e6050d73408ce4f8a8f8b> hello world

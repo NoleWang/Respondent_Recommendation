@@ -1,0 +1,10 @@
+[11:06] <564789be16b6c7089cbab8b7> hi @rvraghav93
+--------------------------------------------------------------------------------------------------
+[16:24] <53135b495e986b0712efc453> Hey :)
+--------------------------------------------------------------------------------------------------
+[16:50] <53135b495e986b0712efc453> your suggestion of `rpart` is great! `rpart` seems to do surrogate splits and handles the missing values pretty well.. but I guess its a bit computationally intensive, so I am going with Gilles' suggestion of finding the best split, with all the missing values sent to either side of the split (left or right).... Lets see how it works... This one modifies a loooot of code and I'm struggling with refactoring - procrastination - refactoring - giving up - getting back up and all other cycles in between ;P Hope I can gift a missing value supporting tree for christmas ;)
+[16:51] <53135b495e986b0712efc453> (rant w.r.t #5870)
+--------------------------------------------------------------------------------------------------
+[17:28] <564789be16b6c7089cbab8b7> @rvraghav93  great!
+[17:28] <564789be16b6c7089cbab8b7> I look forward to it :)
+--------------------------------------------------------------------------------------------------

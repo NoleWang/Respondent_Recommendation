@@ -1,0 +1,5 @@
+[08:02] <5d77583cd73408ce4fca7b58> how can i start committing to the open source
+--------------------------------------------------------------------------------------------------
+[08:08] <567f5d7716b6c7089cc043a8> @Anj-ali you can start by going through our contributing guides: https://scikit-learn.org/dev/developers/contributing.html#contributing
+[08:09] <5d77583cd73408ce4fca7b58> thank you Sir, surely i will do that
+--------------------------------------------------------------------------------------------------

@@ -1,0 +1,4 @@
+<s> <user> hi , does anyone know about any plans that might exist involving the release cycle or timeline in moving <unka> package out of it 's experimental version ? thanks , i 'm hoping to use it and it looks great for my use case ! </s>
+<s> <user> <unk![> screenshot <unk#-> <unk#a()-./:]> ) </s>
+<s> <user> hi , i want to apply <unka> <unka> regression to compute winning <unka> for each <unka> in my races . the data i want to feed in my model look like the image above . i 'm tring to understand how should i feed the target class to my model because every race can have a different number of <unka> , the target class for race a has 5 <unka> , instead target class for race b has just 4 <unka> . is there a way to model this using <unka-> ? </s>
+<s> <user> <unk#a@> we hope to fix some issues by the next release . but no guarantees </s>

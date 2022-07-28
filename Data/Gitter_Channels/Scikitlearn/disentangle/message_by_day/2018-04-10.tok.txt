@@ -1,0 +1,3 @@
+<s> <user> <unk#a@> i think the issue is n't fixed . the only feasible solution is <unka> it over there in the new architecture , and yes it seems to be because of different architectures , not because it 's windows and ubuntu , it happens even on ubuntu and another version of ubuntu </s>
+<s> <user> have a look at this URL/https:/ URL/github.com/ <unk#a-/> </s>
+<s> <user> in general , what are good starting points for <unka_`> in random forest <unka> ? i find that <unk#.`> gives me decent results but im afraid im <unka> . </s>

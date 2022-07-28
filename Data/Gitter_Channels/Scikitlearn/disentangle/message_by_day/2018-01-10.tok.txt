@@ -1,0 +1,10 @@
+<s> <user> sorry , i cant think of anything right now . i think you would benefit from a few more easy issues . URL/https:/ URL/github.com/ <unk#a%&+-/=?> might help , but as you know , were much better at adding the <unconvertable > help wanted <unconvertable > tag than removing it . do you want to help me build a bot to manage that ?? i have ideas ... </s>
+<s> <user> ping <unka@> </s>
+<s> <user> yes , i 'll am willing to work on that . </s>
+<s> <user> will you open an issue for that ? </s>
+<s> <user> please let me know if any assistance is needed </s>
+<s> <user> sure . thanks . </s>
+<s> <user> URL/https:/ <unka-./> <unk#a-/> </s>
+<s> <user> why ca n't i use <unka.> ? </s>
+<s> <user> works fine locally </s>
+<s> <user> <unka.> was not there in scipy <unk#.> which is the minimal version required by <unka-> </s>

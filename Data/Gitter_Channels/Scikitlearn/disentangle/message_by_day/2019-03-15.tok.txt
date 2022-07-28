@@ -1,0 +1,15 @@
+<s> <user> hello everyone , i have a quick question regarding normalization ( <unka-> ) of output values . usually you are supposed to use normalization only on the training data set and then apply those stats to the validation and test set . but for instance , my prediction variable is a single percentage value ranging [ 0 , 100% ]. and i know for sure that in the " real world " regarding my problem statement , that i will get samples ranging form 60 - 100% . but my training set is to small and does not contain enough data points including all possible output values . so here comes my question : should i stay with my initial statement ( normalization only on training data ) or should i apply the maximum possible value of 100% for my output value to <unka()-> of the normalization step ? </s>
+<s> <user> are you doing regression ? typically <unka> max scaling is used on the feature vector values that are inputs into the <unka> . not necessarily on the outputs of the <unka> </s>
+<s> <user> yes , regression </s>
+<s> <user> another silly idea was to squash my output value into the range [ 0,1 ] by applying <unk#a/> . does that make sense ? </s>
+<s> <user> thats just chaning how you look at it , not really changing the properties of it </s>
+<s> <user> just checking i understand your problem though . you are saying in your training set , you have min max output of something like .2 - .6 and so you are scaling that to <unk#-> . </s>
+<s> <user> it depends on the problem you are trying to solve . you 'll have to decide if it is appropriate for your problem or not . </s>
+<s> <user> what min max scaling does in that case is stretch the <unka> between .2 and .6 to a higher resolution , and then make <unka> outside .2 or .6 equal to each other </s>
+<s> <user> if that makes sense to do will be application specific </s>
+<s> <user> maybe i 'm just dump . so , my target value ranges from something like 60% - 100% and i 'm trying to predict it by using <unka/> . my understanding is that i have to scale my output value that it matches my output activation function ( <unka> ). but i got cought up with normalization in general and the correct usage on <unka,> and test data . </s>
+<s> <user> that 's how i got confused </s>
+<s> <user> ok , yeah so any scaling that you do on your training data . you will want to apply those same normalization to the validation and test data </s>
+<s> <user> you can also set the normalization of the training to be what you expect from your real data </s>
+<s> <user> exactly , but what if my training set does n't include all possible <unka> for my output value due to the small sample size . usually that would just mean , i would have to include more samples . but that is not possible at this point . so furthermore this leads to the situation that my test sample will have output values which are not present in the training set . one solution would be to give the model the information in advance that the max possible range of the output value will be 100% . </s>
+<s> <user> but this idea contradicts the literature </s>

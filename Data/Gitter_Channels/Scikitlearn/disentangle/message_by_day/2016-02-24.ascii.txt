@@ -1,0 +1,3 @@
+[22:06] <54e07d6515522ed4b3dc0858> any reason why `GradientBoostingClassifier`'s `decision_function` does not allow sparse data? ([relevant line](https://github.com/scikit-learn/scikit-learn/blob/master/sklearn/ensemble/gradient_boosting.py#L1469))
+[22:06] <54e07d6515522ed4b3dc0858> basically you can fit on sparse, but can't predict
+[22:07] <54e07d6515522ed4b3dc0858> Hmm, got it, it's because [`predict_stages`](https://github.com/scikit-learn/scikit-learn/blob/master/sklearn/ensemble/_gradient_boosting.pyx#L101) doesn't support it.

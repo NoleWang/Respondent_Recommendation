@@ -1,0 +1,1 @@
+[10:04] <5cdeaebed73408ce4fc08df3> Hello Is the `accuracy_at_k` (https://scikit-learn.org/stable/modules/generated/sklearn.metrics.top_k_accuracy_score.html#sklearn.metrics.top_k_accuracy_score) an implementation of the `hit ratio at k`(https://www.researchgate.net/publication/344486356_Hit_ratio_An_Evaluation_Metric_for_Hashtag_Recommendation) Thanks 

@@ -1,0 +1,13 @@
+<s> <user> i am wondering if i have misunderstood URL/https:/ URL/github.com/ <unk#a#-/> . is the question if <unka(> ) is fast in c ? </s>
+<s> <user> the thing is nan in ieee std has two possible representations ( <unka> , which is the quiet nan where we explicitly specify values to be nan and <unka> where nan is a signal nan and is a ( possibly unexpected ) result of numeric computation , like in <unka> 's comment ... ) so <unka> was wondering if that would make <unka_`> computation in <unka/> less efficient ... your <unka> point was correct in that <unka> does use a consistent nan representation for both <unka/> ( atleast that is what i understood from that link ), whereas numpy does n't have one ... i think it wo n't really affect the speed ... but i am not sure ... i am currently working on benchmarking that ... </s>
+<s> <user> <unk#a@> interesting ! in c you really just have to do <unka!=> which is true iff x = nan . this is exactly one comparison </s>
+<s> <user> <unk#a@> i also looked at the assembly that you get from <unka(> ) from gcc which is quite interesting too :) </s>
+<s> <user> could you share ? </s>
+<s> <user> <unk#a@> sure .. using math.h , <unka(> ) compiles to jmp <unka_> . however return x ! = x compiles to xor eax , eax <unka> <unk#a> , <unk#a> setp al ret </s>
+<s> <user> <unk#a@> however it turns out gcc had a performance bug and bleeding edge <unka(> ) compiles to something closer to the latter assembly .. does this make sense ? </s>
+<s> <user> i am not sure if the latter <unka!=> will work in all compilers ... but that is the most effective way to check for nan afaik ... in general , iirc <unka`> will handle the <unka(> ) effectively ( i.e not distinguish between multiple nan representations ) </s>
+<s> <user> <unk#a@> i think you are right <unk#a> <unka> the use of a macro for this . <unka!=> certainly works in gcc however and i assume all sensible compilers </s>
+<s> <user> <unk#a@> if you are interesting .. this was the gcc performance bug URL/https:/ <unka./> <unk#a./=?_> . fixed on <unk#-> </s>
+<s> <user> <unk#a@> i looked it up .. it seems any <unk#a> compliant c compiler is guaranteed to do <unka!=> correctly that is <unka!=> iff x is nan </s>
+<s> <user> <unk#a@> it is specified in URL/http:/ <unka-./> <unk#a#&,-./=> section <unk#a.> relational operators </s>
+<s> <user> but in any case ... <unka(> ) is much easier to read and gcc will compile it properly soon :) ( i do n't really understand the math.h versus <unka.> point in any case ) </s>

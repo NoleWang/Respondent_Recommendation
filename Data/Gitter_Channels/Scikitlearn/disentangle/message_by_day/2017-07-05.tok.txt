@@ -1,0 +1,48 @@
+<s> <user> <unka@> , <unka> is not intended for features . </s>
+<s> <user> <unka@> so given my feature is <unka> , should i just replace the levels with integers , or spread it across columns ? </s>
+<s> <user> we have had discussions on this topic on the mailing list . either should work alright with trees . integers will require deeper trees to select for ( or against ) a single category . so the model parameters need to be tuned to whichever approach you take . </s>
+<s> <user> <unka@> great . how can i see this discussion and learn more . i 'm not on this list </s>
+<s> <user> URL/https:/ <unka./> <unk#a-/> suggests you are better off with integers , fwiw </s>
+<s> <user> <unka@> thanks a lot </s>
+<s> <user> hello </s>
+<s> <user> docs for nearest neighbors says " the most naive neighbor search implementation involves the brute-force computation of distances between all pairs of points in the dataset ... " . why it is so ? </s>
+<s> <user> because <unka> and <unka> require true metrics and dense data ; and because brute force <unka> distances may be faster for small <unka> . </s>
+<s> <user> i mean , why it is <unka> ( <unk#a(^> <unk)?> why you have to compute distances between all pairs of points ? i 'm trying to understand the time complexity of the <unka> , that 's why i ask . </s>
+<s> <user> hmm , it is hard to say . it is the nature of <unka> . you can find some visualization of <unka> on the internet and you will understand </s>
+<s> <user> well , let 's say for one new data point </s>
+<s> <user> how do you know the <unka-> neighbors of this new one ? </s>
+<s> <user> calculate distance from this new point to all training points and keep k closest ? </s>
+<s> <user> yep </s>
+<s> <user> exactly </s>
+<s> <user> so for one data point you need n calculation </s>
+<s> <user> yes </s>
+<s> <user> so ? </s>
+<s> <user> is n't it then like <unka(> ), not <unk#a(^> ) ? </s>
+<s> <user> :d </s>
+<s> <user> cool </s>
+<s> <user> let me check again </s>
+<s> <user> :d </s>
+<s> <user> i suppose it means you find <unka> for all n </s>
+<s> <user> i can understand that , but why i would like to do that ? </s>
+<s> <user> hmm , i have no answer for this in fact </s>
+<s> <user> :d </s>
+<s> <user> URL/https:/ <unka./> <unk#a-/> </s>
+<s> <user> URL/https:/ <unka./> <unk#a-./> </s>
+<s> <user> yes , i was just reading that ... the example i gave was from that </s>
+<s> <user> ( <unka> i mean ) </s>
+<s> <user> yep , they say the same thing </s>
+<s> <user> it seems that people just think it different ways . and probably different implementations . </s>
+<s> <user> that 's why they differ </s>
+<s> <user> i wouldnt say so . brute-force <unka> is very straightforward </s>
+<s> <user> well , the answer at the cross validated says it depends on " <unka> choices " </s>
+<s> <user> does n't it mean different implementations ? </s>
+<s> <user> <unka(> ) is referring to the cost <unka*> <unka*> . if you have n queries , then the cost is <unk#a(^> ) </s>
+<s> <user> and by per query i mean per instance in your query </s>
+<s> <user> with a binary tree index , the k neighbor search should be <unka(> log n ) <unka*> <unka*> ( ignoring some factor related to d ) </s>
+<s> <user> ok , it 's just confusing when the complexity of brute force is stated to be <unk#a(^> ) i.e . n queries in <unka(> ) time but for <unka-> it 's stated to be <unka(> n ) i.e . only for one query . or am i missing something here ? </s>
+<s> <user> should it be made more clear in the docs that it refers to computing nearest neighbors for n query points ? </s>
+<s> <user> also , i looked at code and if i 'm not mistaken , it calculates <unka> distances between query points and training points using <unka(_> ) function . in this case , if there 's m query points , it would be <unka(> ) and only if m is close to n in size , then it 's <unk#a(^> ), right ? </s>
+<s> <user> sure . a pull request is welcome which removes the <unk#^> . i think the current implementation is actually something like <unka(> log k ) ... </s>
+<s> <user> ok . where does the log k come from ? </s>
+<s> <user> we sort the k neighbors so nearest is output first . which we perhaps need not be doing . </s>
+<s> <user> oh , i saw that on the code ... thanks for helping </s>

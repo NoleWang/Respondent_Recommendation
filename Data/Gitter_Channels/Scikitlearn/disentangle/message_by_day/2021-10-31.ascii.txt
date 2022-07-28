@@ -1,0 +1,12 @@
+[13:20] <matrix-zacchiro:matrix.org> hey, i'm unclear on whether this channel is for user- or developer-related questions (or both)? can someone clarify? i don't want to bother others with off-topic questions :-)
+[13:22] <matrix-zacchiro:matrix.org> > hey, i'm unclear on whether this channel is for user- or developer-related questions (or both)? can someone clarify? i don't want to bother others with off-topic questions :-)  oh, i guess the topic answers that (thanks)
+[13:38] <matrix-zacchiro:matrix.org> so, for the actual Q:
+[13:39] <matrix-zacchiro:matrix.org> i'm trying to use sklearn.clustering.DBSCAN on a large document corpus (coming from gensim, converted to numpy sparse matrix)
+[13:39] <matrix-zacchiro:matrix.org> the matrix is this:
+[13:39] <matrix-zacchiro:matrix.org> <6748785x4974743 sparse matrix of type '<class 'numpy.float64'>'         with 677079990 stored elements in Compressed Sparse Column format> 
+[13:40] <matrix-zacchiro:matrix.org> that's ~5M documents with ~7M features (TFIDF-weighted words)
+[13:40] <matrix-zacchiro:matrix.org> i'm trying to cluster this using DBSCAN(n_jobs=64).fit(corpus_csc)
+[13:41] <matrix-zacchiro:matrix.org> how do I know if it will ever terminate? there seems to be no way of having a progress indication
+[13:41] <matrix-zacchiro:matrix.org> (RAM doesn't seem to be an issue for now, it's running on a machine with 1 TiB RAM, but it's sitting at ~70 GiB for now)
+[13:42] <matrix-zacchiro:matrix.org> it's been going on for ~3 days now, any guess on whether it has any chances of terminating in reasonable time?
+[13:43] <matrix-zacchiro:matrix.org> (or how to enable progress logging, if that's possible)

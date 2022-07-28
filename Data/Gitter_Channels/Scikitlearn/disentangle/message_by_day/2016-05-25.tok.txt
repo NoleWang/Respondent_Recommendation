@@ -1,0 +1,16 @@
+<s> <user> given an <unka> <unka`> , is there a standard way to determine if the <unka> has previously been fit ? check if any <unk*_`> attributes are present ( e.g . <unka_`> )? </s>
+<s> <user> i do believe there is a fitted attribute </s>
+<s> <user> hmmm , if there is it does n't seem to be present on all <unka> . </s>
+<s> <user> maybe this might help ? URL/https:/ URL/github.com/ <unk#a#-./_> </s>
+<s> <user> oops wrong link </s>
+<s> <user> although that might be helpful </s>
+<s> <user> i was meaning to send this : URL/https:/ URL/github.com/ <unk#a#-./> </s>
+<s> <user> yeah , that 's useful if you know what attributes to check for . oh well . </s>
+<s> <user> thanks for the links . </s>
+<s> <user> is there any <unka> you have in mind ? </s>
+<s> <user> or is this one youve built yourself </s>
+<s> <user> or are you just looking for a more general solution </s>
+<s> <user> general solution preferably . </s>
+<s> <user> i 'm working with <unka-> and <unka> ( which does things <unka> ). it'd be nice to be able to catch <unka-> errors at graph build time instead of at execution time . </s>
+<s> <user> not necessary though , just nice :) </s>
+<s> <user> that makes sense , hmm yeah im not too sure how to do that sorry :( </s>

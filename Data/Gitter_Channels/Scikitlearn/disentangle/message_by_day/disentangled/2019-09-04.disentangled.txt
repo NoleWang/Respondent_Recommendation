@@ -1,0 +1,8 @@
+[10:16] <57fc82e4d73408ce4f2d5a7b> Hi, does apply in df.apply(fun) iterate over each columns in 'df' data-frame and pass them to 'fun' function as a series?
+--------------------------------------------------------------------------------------------------
+[17:05] <5a32fea2d73408ce4f836261> @thomasjpfan, you are right, however, I also tried to execute the above code too using `%%cython` magic also from `sklearn.tree cimport _utils` but still did not work. Was it supposed to be like that?
+[17:07] <5a32fea2d73408ce4f836261> ```python %%cython # requires numpy headers from sklearn.tree._utils cimport Stack s = Stack(10) print(s.top) >>> AttributeError: 'sklearn.tree._utils.Stack' object has no attribute 'top' ```
+[17:09] <5a32fea2d73408ce4f836261> I found the source code so well written, fascinating and really want to be able to get the development environment up and running.
+--------------------------------------------------------------------------------------------------
+[17:56] <5a32fea2d73408ce4f836261> Weird, the above code will work if I replace `s = Stack(10)` with `cdef  Stack s = Stack(10)`, I believe this must have something to do with static type declaration.
+--------------------------------------------------------------------------------------------------

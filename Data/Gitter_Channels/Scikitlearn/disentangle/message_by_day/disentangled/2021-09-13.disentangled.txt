@@ -1,0 +1,7 @@
+[10:28] <613f27626da0373984858a1f> Morning all
+--------------------------------------------------------------------------------------------------
+[10:30] <613f27626da0373984858a1f> I was kind of curious . Ive been dragging my feet using torch and I was wondering does this lib offer anything over torch ? Maybe this is better suited for the low level scientist trying to learn theory ? Or is it just an alternative ?
+[10:31] <613f27626da0373984858a1f> Omg Im trapped
+--------------------------------------------------------------------------------------------------
+[16:15] <5baf7d9ad73408ce4fa9c9b2> @makingglitches pytorch and scikit-learn operate at different levels of abstractions but simply put in terms of scope, pytorch is for deep-learning while scikit-learn is for the rest of ML that's *not* deep learning. So one might be better suited than the other, depending on the theory that you're interested in.
+--------------------------------------------------------------------------------------------------

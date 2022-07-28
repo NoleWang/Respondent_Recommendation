@@ -1,0 +1,2 @@
+[12:04] <57430fe4c43b8c60197476d9> It says on the PyParis page that the scikit-learn dev sprint is going to happen during the conference - but this [link](https://github.com/scikit-learn/scikit-learn/wiki/Upcoming-events) mentions it happening a week before. Will there be 2 sprints in Paris?
+[20:28] <547efb1fdb8155e6700dad1a> DataScience Digest, Issue #7 - http://bit.ly/2p9NaRc  Please share;)

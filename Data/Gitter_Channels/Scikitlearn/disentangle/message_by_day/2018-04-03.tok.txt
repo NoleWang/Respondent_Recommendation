@@ -1,0 +1,5 @@
+<s> <user> hi , i am a beginner and i try to predict an anomaly in different systems , i have different parameters , which i can use to do more precise prediction . i have a general question , is there a way to do prediction without know with parameters should i use ? sometimes , i do n't have all parameters values , so i am thinking if there is a away to do prediction with a minimum parameters </s>
+<s> <user> google feature selection </s>
+<s> <user> <unka@> <unka@> more like <unka> ? </s>
+<s> <user> <unka@> the " python data science handbook " is a great introduction and available online for free and in notebook format . </s>
+<s> <user> <unka@> if i may ask , have you looked at mine as well ? i feel the two are somewhat similar in scope , but tbh i have n't looked into <unka> 's book in that much detail </s>

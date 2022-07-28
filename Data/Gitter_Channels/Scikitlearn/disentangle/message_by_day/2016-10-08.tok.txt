@@ -1,0 +1,5 @@
+<s> <user> hm is there a way to see how many issues i closed today ? </s>
+<s> <user> <unka@> understood , thx ! </s>
+<s> <user> is there anything to do <unka> on <unka> ? </s>
+<s> <user> <unka@_> not really right now . you can just use numpy though </s>
+<s> <user> <unka.> is the thing you want to look at iirc </s>

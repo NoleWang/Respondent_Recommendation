@@ -1,0 +1,3 @@
+[21:56] <551c051b15522ed4b3de2fea> hi all
+[21:56] <551c051b15522ed4b3de2fea> I am doing some testing with gradient descent and labeled data. For X, I have selected two features: one sort of nonsense, and one the EXACT (binary) label. I train on a 66% subset of this data my precision/recall for `y = 1` is 0.00. how is this possible?
+[21:56] <551c051b15522ed4b3de2fea> ```              precision    recall  f1-score   support            0       0.94      1.00      0.97      4194           1       0.00      0.00      0.00       247  avg / total       0.89      0.94      0.92      4441 ```

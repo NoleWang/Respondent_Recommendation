@@ -1,0 +1,4 @@
+<s> <user> i need some help </s>
+<s> <user> means i write codes in pycharm and it will execute in windows cmd prompt </s>
+<s> <user> <unka> </s>
+<s> <user> help me </s>

@@ -1,0 +1,2 @@
+[09:39] <541a528b163965c9bc2053de> @Pritom-Mazhi `oecd_bli[oecd_bli["INEQUALITY"]=="TOT"]` selects the all the lines of a pandas dataframe named `oecd_bli` where the `INEQUALITY` column has value `"TOT"` All the other lines are dropped.
+--------------------------------------------------------------------------------------------------

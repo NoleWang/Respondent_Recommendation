@@ -1,0 +1,6 @@
+<s> <user> question : does it make sense to go through the <unka> and make sure the default values are mentioned for each optional parameter , preferably with a consistent format ? or should we just try to enforce it for new <unka> and leave the rest alone ? there are some funny cases though ( URL/http:/ <unka-./> <unka#./> ) </s>
+<s> <user> <unka@> making sure defaults are there would be great . consistent formatting has the issue that there 's gonna be a lot of changes creating lots of conflicts with existing <unka> . </s>
+<s> <user> but it 'll be hard to search for missing defaults without a consistent format :-/ </s>
+<s> <user> <unka@> why would it create a conflict with existing <unka> , if those <unka> have n't change the line corresponding to the parameter ? and if they have , it does make sense for them to follow whatever convention we choose anyway , does n't it ? </s>
+<s> <user> i think it 's enough if there 's changes around the line for it to create a conflict </s>
+<s> <user> hmm , fair enough . so no easy way to fix . although i 'm not sure how much it would bug pr <unka> to fix those conflicts . well , i guess then we 'll leave it as is . unless you have a better solution . </s>

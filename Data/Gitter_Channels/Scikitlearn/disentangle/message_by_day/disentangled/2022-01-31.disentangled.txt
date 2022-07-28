@@ -1,0 +1,2 @@
+[15:48] <567f5d7716b6c7089cc043a8> That's indeed curious @amy12xx , I've opened and issue, and you can follow the discussion there: https://github.com/scikit-learn/scikit-learn/issues/22348
+--------------------------------------------------------------------------------------------------

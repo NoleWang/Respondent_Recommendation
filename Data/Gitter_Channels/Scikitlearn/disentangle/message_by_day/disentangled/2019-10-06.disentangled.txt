@@ -1,0 +1,4 @@
+[09:24] <567f5d7716b6c7089cc043a8> @MrAE you can use a cpp vector in cython. But since you're changing the splitrecord struct, you'll need to change the code in quite a lot of places.
+--------------------------------------------------------------------------------------------------
+[20:01] <5c2cf216d73408ce4fb369e2> Hi, I have some basic question about local docs build for scikit. I've been trying to modify docs inside API for some file in `sklearn/linear_model` and followed instructions in Contributors Guide. But after few attempts the `make` command inside `/docs` does not seem to modify local docs build inside `_build`. In the browser,  API docs didn't change although I modified the sources. Am I missing something?
+--------------------------------------------------------------------------------------------------

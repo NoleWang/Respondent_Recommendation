@@ -1,0 +1,5 @@
+[15:28] <54d4a1d6db8155e6700f853b> @davidgasquez this channel is more for scikit-learn project development. SO is usually good.
+[15:29] <54d4a1d6db8155e6700f853b> @davidgasquez I don't think there is any best practice for analysis code. I usually have a module that lives somewhere with the code. but you don't usually want your data under version control...
+--------------------------------------------------------------------------------------------------
+[16:36] <5624bbb016b6c7089cb77b2a> @amueller Sorry for the question in the wrong place. Thanks for the reply!
+--------------------------------------------------------------------------------------------------

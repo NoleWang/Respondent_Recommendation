@@ -1,0 +1,1 @@
+<s> <user> when a pr generates html doc , where to see it ? </s>

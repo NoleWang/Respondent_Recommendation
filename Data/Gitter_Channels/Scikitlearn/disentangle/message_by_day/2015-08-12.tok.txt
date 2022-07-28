@@ -1,0 +1,11 @@
+<s> <user> <unka@> <unka@> could you confirm if [ <unk#a#(-./:]> ) can be left untouched ?? </s>
+<s> <user> <unka@> thanks !!! and yes it helps ! i 'll modify the example that way !! using <unka_`> , i will also be able to illustrate it graphically :) </s>
+<s> <user> also could anyone help me with [ <unk#a#(-./:]> ) failure :/ i am unable to comprehend why this test should fail :| </s>
+<s> <user> <unk#a@> regarding the failure : maybe the <unka> should have the random seed fixed ? </s>
+<s> <user> <unk#a@> btw were you aware that semantics of <unka.> are changing ? in new versions , <unka.> returns a view . not sure that is relevant , i have n't reviewed this parts in detail </s>
+<s> <user> ( hm sorry sent that before ) </s>
+<s> <user> <unk#a@> i 'm sorry , i do n't think i 'll be able to review before the pencil down . i 'm pretty busy and have to look at <unk#a@> 's work . i 'm not sure where <unka@> is . </s>
+<s> <user> where is <unka> btw ? </s>
+<s> <user> <unka@> no it passes in master ... it used to pass in my branch too ... since i squashed a few commits i am unable to get the exact point at which it broke <unka:> : </s>
+<s> <user> you can always git bisect </s>
+<s> <user> but have you tried that piece of code locally in ipython with <unka_> to none vs other fixed values ? </s>

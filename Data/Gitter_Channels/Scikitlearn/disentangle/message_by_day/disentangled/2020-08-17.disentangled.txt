@@ -1,0 +1,2 @@
+[11:37] <5f0ac63ad73408ce4fe95ce0> is it possible to directly assign: VotingClassifier.fit_transform.__doc__ = "Return class labels or probabilities for X for each estimator."  #18150
+--------------------------------------------------------------------------------------------------

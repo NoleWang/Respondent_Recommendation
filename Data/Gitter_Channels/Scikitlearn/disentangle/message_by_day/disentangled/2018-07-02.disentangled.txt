@@ -1,0 +1,2 @@
+[16:59] <579618a040f3a6eec05c5e42> Hi folks, excuse my ignorant question. I was wondering if it is possible to pass a tensorflow model into scikit OneVsRestClassifier, if I expose fit and predict methods in the tensorflow model? I couln't find an example when I googled it.
+--------------------------------------------------------------------------------------------------

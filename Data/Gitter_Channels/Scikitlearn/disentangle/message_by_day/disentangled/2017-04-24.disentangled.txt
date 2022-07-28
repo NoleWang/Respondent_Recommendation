@@ -1,0 +1,4 @@
+[13:59] <58af2e9dd73408ce4f4c72db> Can i use datetime variable as independent variable in case of building a classification model like Random Forest.? I'm a new to data science. Great if someone can help. Thanks
+--------------------------------------------------------------------------------------------------
+[14:22] <551c051b15522ed4b3de2fea> since your datetime variable will be unique per observation, what do you expect to gain by making it a feature?
+--------------------------------------------------------------------------------------------------

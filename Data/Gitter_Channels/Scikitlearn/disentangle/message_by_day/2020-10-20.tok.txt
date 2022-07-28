@@ -1,0 +1,2 @@
+<s> <user> hi team , i am trying to make a recommendation engine for a food delivery app . i was going through different things like market basket <unka> etc .. company have huge amount of data for orders from different customers . could you please help me on where to start ? </s>
+<s> <user> hello , i am trying to use <unka> linear regression to predict <unka> from <unka> dataset , and when <unka> the score of prediction , i am getting a negative answer , can anyone please tell me the meaning of this </s>

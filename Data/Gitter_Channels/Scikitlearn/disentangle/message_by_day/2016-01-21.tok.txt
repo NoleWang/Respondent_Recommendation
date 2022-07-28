@@ -1,0 +1,6 @@
+<s> <user> does <unka> <unka> uses <unka> <unka> gray algorithm for <unka> generation ? </s>
+<s> <user> have a look at this - URL/http:/ <unka./> <unk#a-./> </s>
+<s> <user> <unk#a@> how does that answer the question ? <unka@> no it 's just using <unka> 's algorithm </s>
+<s> <user> sorry i assumed he wanted vector <unka> </s>
+<s> <user> well yeah he asked which algorithm is implemented in <unka> . scipy 's <unka> implements the same algorithm as <unka> does </s>
+<s> <user> okay <unka:> : ( i stupidly assumed since it was a <unka> module , maybe it does it using <unka> as <unka> seems to be the preferred <unka> for <unka> ) </s>

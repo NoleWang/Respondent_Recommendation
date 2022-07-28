@@ -1,0 +1,9 @@
+<s> <user> i am trying to follow the example at URL/http:/ <unka-./> <unka./_> but using a random forest . it seems <unka_> does n't exist for the random forest <unka> </s>
+<s> <user> what should i use instead ( sorry for the simple question )? </s>
+<s> <user> it is this line that is causing the problem <unka_> = <unka(._> , <unka()._> ) </s>
+<s> <user> ok cancel that .. silly me </s>
+<s> <user> using <unka> in <unka> , is there anyway to have the weights be based on the labels of <unka> ? more specifically , i have some <unka> data and would like to combat this by <unka> samples of less common labels higher . i could of course just add copies of the under represented classes but this adds some non <unka> if i choose the extra copies randomly so i thought just <unka> them would be better . is this possible ? </s>
+<s> <user> hmm i do n't think so . you could just set a random seed for sampling up if you're worried about <unka> . </s>
+<s> <user> yep sure , but should i add a feature request for this ? </s>
+<s> <user> how can you mix <unka> and <unka> ? i just want to do <unka> = <unka(> )) but with the <unka> correctly calibrated </s>
+<s> <user> apologies if this is slightly ot but .. my really simple <unka> code for the <unka> data set is way slower than <unka> URL/http:/ URL/paste.ubuntu.com/ <unk#a/> . what am i doing wrong ? </s>

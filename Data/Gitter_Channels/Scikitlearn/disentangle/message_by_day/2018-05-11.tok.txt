@@ -1,0 +1,3 @@
+<s> <user> hi </s>
+<s> <user> <unka@_> it is a <unka> . the meaningful method is <unka`> </s>
+<s> <user> hi ! read all that i found about <unka> . is it possible in any way from 100 trees to make 1 common ? the fact that i want to move the logic of the tree with <unka-> <unka> in another program . with one tree it is easy to do . and here is how to be with 100 trees from a random forest ? only if operator will get a few hundred . or maybe to calculate importance of characteristics using random forest and then build 1 the decision tree with relevant signs ? what can you advise on this problem in general ? </s>

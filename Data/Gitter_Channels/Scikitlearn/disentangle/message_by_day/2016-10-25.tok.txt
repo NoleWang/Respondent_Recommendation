@@ -1,0 +1,38 @@
+<s> <user> <unka@> take andrew ng 's <unka> course and by my book ;) URL/https:/ URL/www.amazon.com/ <unk#a&+-/=?_> </s>
+<s> <user> <unka@> do you have any issue that needs fixing or review for <unk#.`> ? </s>
+<s> <user> <unka@> URL/https:/ URL/github.com/ <unk#a%+-./=?> ;) </s>
+<s> <user> and URL/https:/ URL/github.com/ <unk#a%+-./=?> </s>
+<s> <user> so two things that would be great are fixing this : URL/https:/ URL/github.com/ <unk#a-/> ( i 'm investigating but getting <unka-> ) </s>
+<s> <user> and a <unka-> test for this : URL/https:/ URL/github.com/ <unk#a-/> </s>
+<s> <user> <unka@> okay ! btw for <unk##> , you can try <unka`> -ls URL/https:/ URL/goo.gl/ <unka/> | git apply -v <unka-> ; git commit -m " <unka> <unka> <unka";`> to clear up the cache and make tests pass ... ( resetting the cache at travis seems to not work ... ) </s>
+<s> <user> have addressed your comments at <unk##> </s>
+<s> <user> <unka@> for <unk##> do you want me to <unka-> his commits and add a test or do we wait for him to add it ? </s>
+<s> <user> either way . first find a test ? </s>
+<s> <user> for <unka.`> with a [ <unka> <unka#(-./:]> ), is there any way the <unka> knows if the outer <unka> is in the midst of a <unka`> or <unka`> ( or similar )? </s>
+<s> <user> whether the kernel knows ? well if <unka=> it 's probably fit </s>
+<s> <user> yeah , that was first <unka> that came to mind </s>
+<s> <user> but no , there is no flag or anything . the kernel shoud n't know </s>
+<s> <user> why do you want that ? </s>
+<s> <user> ok . i know others have done work on this , but trying to implement <unka> as a <unka> </s>
+<s> <user> use <unka> if you want to do <unka> ;) </s>
+<s> <user> idea is that during outer <unka`> call , there 's an <unka> class that <unka> the various kernels , learns the gamma weights and stores them , then returns the combined <unka> </s>
+<s> <user> but during <unka`> it uses the stored weights </s>
+<s> <user> yeah , i suppose i could go to <unka> . i just like <unka> so dang much </s>
+<s> <user> i think i did implement <unka> with <unka> at some point ... </s>
+<s> <user> hm </s>
+<s> <user> i suppose so long as the weight learning is deterministic , it 's effectively <unka> , so that <unka> would work </s>
+<s> <user> i.e ., if you're <unka> the training data , it works the same as fitting the training data </s>
+<s> <user> well you should implement your own class that calls the kernels , i would say </s>
+<s> <user> you can always just <unka> it and use a liner model on the combined embedding ;) </s>
+<s> <user> yeah , i previously built that , too , but trying to see if i can fit this within the <unka`> spec </s>
+<s> <user> <unka> it ? </s>
+<s> <user> nvm , presume you're talking about the <unka`> class from kernel <unka> family </s>
+<s> <user> compute the <unka> feature map ( see <unka> class ), which makes the svm problem a linear problem in that feature space . <unka> is just doing a linear model on <unka> features </s>
+<s> <user> i guess it 's a group <unka> , though </s>
+<s> <user> ah , that makes sense </s>
+<s> <user> my <unka> case is multiple kernels of same functional form but defined on <unka-> <unka> of the feature space </s>
+<s> <user> which is very group <unka-> </s>
+<s> <user> thanks <unka@> ! if you come across your <unka> code , would appreciate a link , but no worries if it 's not close at hand </s>
+<s> <user> ah , but that <unka> is n't going to have access to <unka`> , even if <unka> is doing a fit , so that kind of sinks learning weights based on labels </s>
+<s> <user> seems like feature <unka> is the way to go ( if i 'm going to fit this into <unka> ) </s>
+<s> <user> hello , i am using <unka.> . if there 's some cases that are at equal distance from the query point , the number of neighbors might be larger than <unka_> . is there a way to find how many neighbors there actually were , i.e . counting the neighbors with equal distance . </s>

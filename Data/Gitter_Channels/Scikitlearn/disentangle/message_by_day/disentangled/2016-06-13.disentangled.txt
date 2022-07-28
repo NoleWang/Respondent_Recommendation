@@ -1,0 +1,28 @@
+[00:37] <53135b495e986b0712efc453> @krishnakalyan3 I think @amueller meant that the `GPRegressor` class does not have a reference to that user guide.
+--------------------------------------------------------------------------------------------------
+[08:51] <56333d0d16b6c7089cb8d5c7> @rvraghav93 just created a pull request could you let me know if things are okay?
+--------------------------------------------------------------------------------------------------
+[14:32] <53135b495e986b0712efc453> Thanks for the PR! I'll look into that :)
+--------------------------------------------------------------------------------------------------
+[14:41] <53135b495e986b0712efc453> @amueller Could you share your suggestions about https://github.com/scikit-learn/scikit-learn/pull/6380#issuecomment-185699518 please?
+--------------------------------------------------------------------------------------------------
+[16:55] <564789be16b6c7089cbab8b7> it would be great if one could visualise boosted trees (e.g. xgboost) too
+--------------------------------------------------------------------------------------------------
+[17:34] <54d4a1d6db8155e6700f853b> @lesshaste in scikit-learn you can
+[17:34] <54d4a1d6db8155e6700f853b> xgboost no idea
+--------------------------------------------------------------------------------------------------
+[18:11] <564789be16b6c7089cbab8b7> if you look at http://www.r-bloggers.com/an-introduction-to-xgboost-r-package/ and scroll down to https://raw.githubusercontent.com/dmlc/web-data/master/xgboost/xgb.plot.multi.png can you do that sort of thing in scikit-learn?
+[18:12] <564789be16b6c7089cbab8b7> @amueller  Sorry I meant that for you
+[18:13] <564789be16b6c7089cbab8b7> oh I must have missed this completely.  Would you mind pointing me to the docs for ensembled tree visualization?
+[18:14] <564789be16b6c7089cbab8b7> I take your xgboost point of course :) I only ever use it through scikit-learn so sometimes forget it isn't part of it
+--------------------------------------------------------------------------------------------------
+[18:13] <54d4a1d6db8155e6700f853b> well for scikit-learn trees yes, for xgboost trees obviously not, because that has nothing to do with xgboost?
+[18:13] <54d4a1d6db8155e6700f853b> that would go into the xgboost package...
+[18:13] <54d4a1d6db8155e6700f853b> err has nothing to do with scikit-learn
+--------------------------------------------------------------------------------------------------
+[18:40] <54d4a1d6db8155e6700f853b> well you can plot each tree in the ``estimators_``
+--------------------------------------------------------------------------------------------------
+[18:40] <564789be16b6c7089cbab8b7> true.. they seem to have a nice trick for plotting one merged tree
+[18:41] <564789be16b6c7089cbab8b7> I am still intrigued if one can derive a single decision tree from an ensemble of trees which is easier to interpret and almost as good as a classifier/regressor
+[18:41] <564789be16b6c7089cbab8b7> this would seem potentially useful
+--------------------------------------------------------------------------------------------------

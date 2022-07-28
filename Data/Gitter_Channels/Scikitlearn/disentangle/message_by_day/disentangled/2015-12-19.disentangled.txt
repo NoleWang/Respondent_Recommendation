@@ -1,0 +1,4 @@
+[17:54] <53135b495e986b0712efc453> I sometimes have a feeling he already has.... ^^
+--------------------------------------------------------------------------------------------------
+[18:00] <53135b495e986b0712efc453> @kaichogami Apologies for the late response! That indeed looks like a bug... Apparently `_fit_binary` seems to handle the case of constant `y`. Could you also fix this and add a test too?
+--------------------------------------------------------------------------------------------------

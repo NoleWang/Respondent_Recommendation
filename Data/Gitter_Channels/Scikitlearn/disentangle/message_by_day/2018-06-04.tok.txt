@@ -1,0 +1,2 @@
+<s> <user> <unk#a@> i think we should <unka> <unka(=> ). it seems weird to me </s>
+<s> <user> but i would just try a bunch and see what makes sense . there 's no general rule </s>

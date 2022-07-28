@@ -1,0 +1,4 @@
+[12:21] <53135b495e986b0712efc453> @amueller Could we just have the `return self` fix refactored out of #6141 for 0.18.1?
+[17:54] <5761eefbc2f0db084a1e1a53> @nok  something I've been looking for!
+[22:14] <574454a0c43b8c601974a563> @tonnamb Ty!
+[22:59] <57fed465d73408ce4f2dd5f6> Hey everyone, with sklearn.metrics.roc_curve, is there a way to manually specify the thresholds/cutoffs I want to test at?

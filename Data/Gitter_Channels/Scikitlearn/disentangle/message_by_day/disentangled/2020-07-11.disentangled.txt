@@ -1,0 +1,42 @@
+[00:36] <5eeb9b35d73408ce4fe749bc> My above request has been addressed by @NicolasHug. Thanks! :D
+--------------------------------------------------------------------------------------------------
+[13:29] <54d4a1d6db8155e6700f853b> Good morning :)
+--------------------------------------------------------------------------------------------------
+[13:36] <5f09bedad73408ce4fe951c0> Hello!  Is there anyone who can assist me in using scikit's normalized mutual information for real, continuous climate data?
+--------------------------------------------------------------------------------------------------
+[13:37] <54d4a1d6db8155e6700f853b> @bfiranski as far as I know, it's only implemented for discrete data. computing mutual information for continuous data requires making distributional assumptions
+[13:38] <54d4a1d6db8155e6700f853b> We actually have a non-parametric mutual information for feature selection (between a continuous and a discrete distribution). Are both your distributions discrete?
+--------------------------------------------------------------------------------------------------
+[13:38] <5f09bedad73408ce4fe951c0> I was wondering about that because I was getting non-nonsensical results
+[13:38] <5f09bedad73408ce4fe951c0> many thanks!
+[13:39] <5f09bedad73408ce4fe951c0> no, i just kept on getting near unity results no matter what i tried - related data, unrelated data, two noise arrays
+[13:42] <5f09bedad73408ce4fe951c0> i tried that one as well, it seemed to behave a bit better, but as you know, is not normalized to a metric.  my problem is that, as you also likely know, estimates of entropy to normalize it are highly dependent on resolution
+--------------------------------------------------------------------------------------------------
+[13:39] <5f09bedad73408ce4fe951c0> both are real i.e. temperature and pollution concentration
+[13:39] <54d4a1d6db8155e6700f853b> hm you didn't get a warning? You should have gotten a warning, I think :-/
+--------------------------------------------------------------------------------------------------
+[13:40] <54d4a1d6db8155e6700f853b> can you please open an issue on the issue tracker for that? I think we should provide an error or at least a warning
+[13:40] <5f09bedad73408ce4fe951c0> okay
+[13:40] <54d4a1d6db8155e6700f853b> if both of your variables are univariate, you might want to look at  https://scikit-learn.org/stable/modules/generated/sklearn.feature_selection.mutual_info_regression.html#sklearn.feature_selection.mutual_info_regression
+[13:41] <54d4a1d6db8155e6700f853b> however, that's just one particular estimate of the mutual information.
+[13:43] <54d4a1d6db8155e6700f853b> exactly, which is why you need some distributional model of the entropy, which is why we don't really do that
+[13:44] <54d4a1d6db8155e6700f853b> I think most people would use a regression analysis or something like that to answer the question you want to answer, unless you are relatively certain about how to model the distributions
+[13:44] <54d4a1d6db8155e6700f853b> btw, there's a cool non-parameteric estimate using euclidean minimum spanning trees
+--------------------------------------------------------------------------------------------------
+[13:44] <5f09bedad73408ce4fe951c0> it's not an easy thing to do it seems, thanks for your input!
+--------------------------------------------------------------------------------------------------
+[13:45] <5f09bedad73408ce4fe951c0> hahaha!  you are talking to an atmospheric scientist who has, sadly, no stats and is way in over their head :)
+[13:45] <54d4a1d6db8155e6700f853b> then I'd suggest a regression model, I think
+--------------------------------------------------------------------------------------------------
+[13:47] <5f09bedad73408ce4fe951c0> there are some papers on using k-nearest neighbour for entropy which supposedly works well for continuous data, but i wanted to confirm that scikit wasn't appropriate before going down that rabbit hole
+[13:51] <54d4a1d6db8155e6700f853b> yes that's the default, and that's what the mutual_info_regression uses
+[13:51] <54d4a1d6db8155e6700f853b> and you can probably use that as a starting point and only have to modify it slightly
+--------------------------------------------------------------------------------------------------
+[13:53] <5f09bedad73408ce4fe951c0> that is good news!  many thanks for providing a direction. for now i am going to report the non-warning issue you requested
+[13:54] <54d4a1d6db8155e6700f853b> thanks!
+--------------------------------------------------------------------------------------------------
+[14:08] <5f09bedad73408ce4fe951c0> Just to be sure we are on the same page, here is what my results are:
+[14:08] <5f09bedad73408ce4fe951c0> ```noise=np.arange(500) wavelength=np.linspace(0.01,1,500)*1e-6  # testing the normalized MI score between wavelength and noise - should return near zero for totally unrelated data sets constant_normalized_mi=normalized_mutual_info_score(wavelength,noise) ``` output: 1.0
+--------------------------------------------------------------------------------------------------
+[14:09] <54d4a1d6db8155e6700f853b> yeah it should just error on floats, I think
+--------------------------------------------------------------------------------------------------

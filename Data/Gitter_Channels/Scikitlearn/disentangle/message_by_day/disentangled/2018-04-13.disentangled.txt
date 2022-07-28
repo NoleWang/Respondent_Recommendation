@@ -1,0 +1,11 @@
+[05:13] <5886855fd73408ce4f4586d8> hello everyone
+--------------------------------------------------------------------------------------------------
+[05:13] <56bb7a56e610378809c0cb2c> `D3XT3R` HoL
+[05:13] <56bb7a56e610378809c0cb2c> `D3XT3R` a
+--------------------------------------------------------------------------------------------------
+[05:50] <5886855fd73408ce4f4586d8> did everyone really stop talking  as soon as I showed up?
+--------------------------------------------------------------------------------------------------
+[17:16] <5a4f6d1cd73408ce4f864c42> @quant12345 you can look into the class's attributes. Say if you are using an instance called `mlp` belonging to ` MLPClassifier` class, you can check them at `mlp.coefs_` and `mlp.intercepts_` after fitting/training the model. More on this here : http://scikit-learn.org/stable/modules/generated/sklearn.neural_network.MLPClassifier.html#sklearn.neural_network.MLPClassifier
+--------------------------------------------------------------------------------------------------
+[17:37] <5acfdfffd73408ce4f95738d> @greed2411                                                                                                                                          Thank you, for the answer. That is, the "mlp.coefs_ " weights for sign, "mlp.intercepts_ " predicted class labels. There is an example with three classes. I multiplied the signs by weight. The values of each class were obtained: 1.	0.40-043 2.	0.47-0.51 3.	0.24-0.35 Is it possible to get from the function thresholds, which determine the belonging to each class?  regards
+--------------------------------------------------------------------------------------------------

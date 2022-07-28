@@ -1,0 +1,10 @@
+<s> <user> does the default <unka> just leave you with 2 features ? </s>
+<s> <user> as stated in the [ <unka#(-./:]> ), <unk#a=_`> is the default value . </s>
+<s> <user> does that mean you end up with 2 features ? </s>
+<s> <user> i am not clear what a cluster means here </s>
+<s> <user> <unka@> ( thank you ) </s>
+<s> <user> yes , the examples and the user guide will give you a better idea on how it works and what it does : URL/https:/ <unka-./> <unka#-./> </s>
+<s> <user> thank you </s>
+<s> <user> i am surprised it works so well for my regression problem ! </s>
+<s> <user> i think we could add it to the <unka> as well . i think it 's clear from the user guide but why not add it to the <unka> ? </s>
+<s> <user> i agree that its <unka> can be substantially improved :d the examples can also see some love </s>

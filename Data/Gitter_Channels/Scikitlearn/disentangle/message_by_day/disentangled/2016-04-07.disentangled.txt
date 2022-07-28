@@ -1,0 +1,42 @@
+[16:18] <56b80528e610378809c05a48> Hey guys
+--------------------------------------------------------------------------------------------------
+[16:19] <56b80528e610378809c05a48> Whats the recommended way to recompile a single .pyx file after I modify it?
+[16:22] <56b80528e610378809c05a48> Yeah @nelson-liu you are right, only compile is not what I want haha
+--------------------------------------------------------------------------------------------------
+[16:20] <53135b495e986b0712efc453> You just do the `python setup.py build_ext` or `python setup.py build_ext -i` (for inplace building) again. It generates c and recompiles for the changed cython sources only.
+[16:21] <53135b495e986b0712efc453> ;)
+--------------------------------------------------------------------------------------------------
+[16:20] <56c4f19ae610378809c1f8ae> if you just want to compile, you could do `cython primes.pyx`. but you probably want to build in place again for it all to work together.
+[16:21] <56c4f19ae610378809c1f8ae> yup, what @rvraghav93 said
+--------------------------------------------------------------------------------------------------
+[16:21] <56b80528e610378809c05a48> oh okay thanks for your quick help :smile:
+--------------------------------------------------------------------------------------------------
+[16:29] <53135b495e986b0712efc453> > Anyone can help me review [this PR]?  ![](https://i.imgur.com/FNqNVVw.png) ;P
+[16:30] <56c4f19ae610378809c1f8ae> lol we should put that in contributing.rst :P haha  just kidding
+[16:30] <56b80528e610378809c05a48> hahahahaha
+[16:30] <56b80528e610378809c05a48> good idea
+[16:30] <53135b495e986b0712efc453> (just kidding) we should add THIS in the PR template ;P
+--------------------------------------------------------------------------------------------------
+[16:44] <56b80528e610378809c05a48> :satisfied:
+--------------------------------------------------------------------------------------------------
+[17:04] <54e07d6515522ed4b3dc0858> Do we have a make target to cythonize only what's needed?
+--------------------------------------------------------------------------------------------------
+[17:13] <53135b495e986b0712efc453> By only what's needed, you mean to say - Only specific modules?
+--------------------------------------------------------------------------------------------------
+[17:33] <55866cb115522ed4b3e23aa4> is python 3.x fully supported by scikit
+[17:33] <56c4f19ae610378809c1f8ae> yes, it should be.
+[17:34] <56c4f19ae610378809c1f8ae> i know 3.5 is fully supported
+[17:34] <56c4f19ae610378809c1f8ae> its been tested with 3.4 / 3.5, and 3.3 should also work. not sure about 3.1 or 3.2
+--------------------------------------------------------------------------------------------------
+[17:35] <55866cb115522ed4b3e23aa4> in that case if i want to get into contributing to scikit, using python 3 syntax for `print` should not be a problem in pull requests
+[17:36] <56c4f19ae610378809c1f8ae> indeed
+[17:36] <56c4f19ae610378809c1f8ae> if you look at https://github.com/scikit-learn/scikit-learn/search?utf8=%E2%9C%93&q=print, youll see that the <unconvertable> print' statements are all functions
+[17:37] <56c4f19ae610378809c1f8ae> make sure to `from __future__ import print_function`, though.
+--------------------------------------------------------------------------------------------------
+[19:28] <56c4f19ae610378809c1f8ae> @rvraghav93 / others working with the tree module - if youve read breimans <unconvertable> Classification and Regression Trees, would you recommend it as a resource to get familiar with the theory?
+[20:33] <56c4f19ae610378809c1f8ae> might as well tag @glouppe as well
+--------------------------------------------------------------------------------------------------
+[20:42] <56c63d67e610378809c22b14> i'd like to do classification/regression with multiple outputs, but each example only has the observed labels for one of the outputs. Although the DataSet object has entires for masks, which seems like it should fit the bill, I'm getting the impression that the masks only works for rnns and not for feedfoward classification/regression nets. Is that correct?
+--------------------------------------------------------------------------------------------------
+[20:44] <56c4f19ae610378809c1f8ae> can you link the example you were looking at?
+--------------------------------------------------------------------------------------------------

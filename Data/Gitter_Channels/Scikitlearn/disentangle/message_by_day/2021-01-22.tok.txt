@@ -1,0 +1,52 @@
+<s> <user> <unka-@> pay ? </s>
+<s> <user> <unka@> :) </s>
+<s> <user> a really simple question . currently i do <unka(._> , <unka_> ). if i want to use balanced accuracy instead , is there a similar one line solution ? </s>
+<s> <user> <unka(._`> ), <unka)_`> </s>
+<s> <user> this is a one liner solution if you omit the import :) </s>
+<s> <user> we do n't allow to switch the default score in <unka.`> to be more explicit </s>
+<s> <user> so you need to get the prediction and call the score function </s>
+<s> <user> you also have the possibility to use the <unka> api but this is not a one liner </s>
+<s> <user> thanks ! </s>
+<s> <user> <unk`> <unka> = <unka"(_> " ) <unka(> , x , y ) <unk`> </s>
+<s> <user> actually you could <unka"()_`> , x , <unka)`> but i think that we do n't head toward readable code :) </s>
+<s> <user> <unka@> i like it . thank you </s>
+<s> <user> i have a different more general question . i am doing binary <unka> . i would like to maximize the number of items in the positive class that get a probability higher than any probability from the negative class . does this correspond to a known loss function ? </s>
+<s> <user> let me edit it to get rid of the word score ... </s>
+<s> <user> URL/https:/ URL/github.com/ <unk#a-/> </s>
+<s> <user> you might want this things maybe </s>
+<s> <user> basically , this is tuning the threshold of the <unka> when doing the predict from the <unka_> </s>
+<s> <user> otherwise , <unka_`> or <unka_`> will allow you to play on the inner loss </s>
+<s> <user> while training </s>
+<s> <user> <unka@> thank you . i have n't fully understood how to use your suggestions for my problem but i will have a think </s>
+<s> <user> maybe it could go on <unka-> discussions as well :) </s>
+<s> <user> i think so </s>
+<s> <user> i might have misunderstood the use-case ( a small example with specific number might help :)) </s>
+<s> <user> i can give one in about 90 minutes </s>
+<s> <user> > maybe it could go on <unka-> discussions as well :) +1 . as mentioned in URL/https:/ URL/github.com/ <unk#a#-/> my feeling ( and probably others feeling ) is that <unka> is not the best place for q&a . i guess a reasonable approach is to create a discussion and then ping on <unka> if you feel you have not received an answer after some time </s>
+<s> <user> <unka@> thanks . i do like the interactive nature of <unka> to a ) improve the question and/or b ) realise i should n't have asked it in the first place :) </s>
+<s> <user> yeah i agree the threshold about " what is ok to ask on <unka> " is not very clear . i would favour an approach as i mention above discussion + ping on <unka> after some time . it is not as much interactive but it is a better investment of <unka> time since the question + answer will be findable by googling ( contrary to <unka> ) </s>
+<s> <user> makes sense </s>
+<s> <user> <unka> should come with a feature that you cannot <unka-> in your discussion feed </s>
+<s> <user> because this is a bit what happens in reality :) </s>
+<s> <user> :) </s>
+<s> <user> this is n't a full example but hopefully it will help clarify . say my positive class items get 0.1 , 0.3 , 0.7 , 0.9 from <unka_> and my negative class items get 0.01 , 0.2 , 0.2 , 0.5 . then two of the positive class items get a prob ( 0.7 , 0.9 ) larger than the largest prob ( 0.5 ) from the negative class . </s>
+<s> <user> <unka@> does that make it any clearer ? </s>
+<s> <user> so the cutoff <unka> intend to change the probability from 0.5 to another threshold </s>
+<s> <user> such that you can for instance the maximum number of <unka> of the positive label </s>
+<s> <user> <unka@> yes . but the cutoff is a function of the probs that the negative class items are given </s>
+<s> <user> my example of 0.5 above was n't a great choice :) </s>
+<s> <user> oh you want to <unka> your learning step </s>
+<s> <user> i see </s>
+<s> <user> in some way , i could think about a boosting strategy as <unka> , but instead of learning new learner <unka> <unka> samples , you want to favor specific samples from the positive class . </s>
+<s> <user> i do n't know if there is something in active learning allowing such stuff </s>
+<s> <user> but i am not knowing so much in this area </s>
+<s> <user> thanks . i was going to post on discussions but i ca n't think of a suitable title :) </s>
+<s> <user> " <unka> sample weight for online learning " </s>
+<s> <user> posted </s>
+<s> <user> with the link there is even more chances that someone answers <unka:> : URL/https:/ URL/github.com/ <unk#a-/> </s>
+<s> <user> <unka@> thanks :) </s>
+<s> <user> argh ... i hate how easy it is to be confusing . </s>
+<s> <user> <unka@> do you think my post is clear now ? </s>
+<s> <user> i guess it 's equivalent to maximizing true positives when you have 0 false positives ... ? </s>
+<s> <user> now i am tempted to try one of the options mentioned in the discussions . now really sure which one though </s>
+<s> <user> *not </s>

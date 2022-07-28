@@ -1,0 +1,8 @@
+[08:35] <5cdeaebed73408ce4fc08df3> Hello,  I'm trygin to use `SimpleImputer(strategy='most_frequent')` in Pipeline on dataframe with ~ 1.5 M samples but I take a lot of time  Is it normal ? If so, are there some alternatives to solve this issue ?  ``` def vectorizer_df(input_data, categorical_cols, numerical_cols):  	categorical_pipe = Pipeline([ 	    ('imputer', SimpleImputer(strategy='most_frequent')) 	])  	numerical_pipe = Pipeline([ 	    ('imputer', SimpleImputer(strategy='median')), 	    ('bucketizer', KBinsDiscretizer(n_bins=10, strategy='uniform', encode='ordinal'))  # ordinal 	])  	preprocessing = ColumnTransformer( 	    [('cat', categorical_pipe, categorical_cols), 	     ('num', numerical_pipe, numerical_cols) 	     ])  	vectorizer_pipeline = Pipeline([ 	    ('vectorize', preprocessing) 	])  	return vectorizer_pipeline.fit_transform(input_data) ```  Thanks
+[10:42] <55d21ee30fc9f982beadabb8> @razou which version of scikit-learn are you using?
+[10:43] <55d21ee30fc9f982beadabb8> We merged the following improvement in 0.24 -> https://github.com/scikit-learn/scikit-learn/pull/18987
+[10:43] <55d21ee30fc9f982beadabb8> that make it efficient to work with string while it was not really possible before
+[10:45] <55d21ee30fc9f982beadabb8> because it was too slow
+[11:00] <5cdeaebed73408ce4fc08df3> Thanks @glemaitre  I'm using ``` scikit-learn==0.22.2.post1 sklearn-crfsuite==0.3.6 ``` 
+[11:03] <55d21ee30fc9f982beadabb8> yep so this should be the reason. You can update to 0.24 via conda-forge or PyPI and it should work better
+[11:20] <5cdeaebed73408ce4fc08df3> Thanks @glemaitre  for your answers (y)

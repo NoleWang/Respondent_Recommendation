@@ -1,0 +1,68 @@
+[09:18] <58d1e48dd73408ce4f52af1b> Hello - are we allowed to put links to SO questions here ?
+[09:20] <58d1e48dd73408ce4f52af1b> @amueller Ok then here you go - https://stackoverflow.com/questions/51627721/typeerror-with-scikit-learns-balltree
+--------------------------------------------------------------------------------------------------
+[09:19] <54d4a1d6db8155e6700f853b> @winash12 you can but I wouldn't encourage it, I guess?
+[09:19] <54d4a1d6db8155e6700f853b> Generally it's better to ask on stackoverflow
+[09:19] <58d1e48dd73408ce4f52af1b> @amueller  yes understood
+[09:19] <58d1e48dd73408ce4f52af1b> i had an issue with BallTree
+[09:19] <58d1e48dd73408ce4f52af1b> Can I ask here ?
+[09:19] <54d4a1d6db8155e6700f853b> I mean if you're about to ask the same question again then post the SO link ;)
+[09:23] <54d4a1d6db8155e6700f853b> what's the type of bt.data ?
+[09:24] <54d4a1d6db8155e6700f853b> and what's the type of ``matches``?
+[09:26] <54d4a1d6db8155e6700f853b> no the type
+[09:26] <54d4a1d6db8155e6700f853b> type(bt.data), type(matches)
+--------------------------------------------------------------------------------------------------
+[09:25] <58d1e48dd73408ce4f52af1b> So like in scipy it must be the coordinates of point
+[09:25] <58d1e48dd73408ce4f52af1b> in this case x and y
+[09:26] <58d1e48dd73408ce4f52af1b> hang on let me run my toy example
+[09:28] <58d1e48dd73408ce4f52af1b> type(matches) is a list
+[09:28] <54d4a1d6db8155e6700f853b> you can use "points" instead of "bt.data"
+[09:29] <58d1e48dd73408ce4f52af1b> So in kdtree the bt.data equivalent is numpy ndarray
+[09:31] <54d4a1d6db8155e6700f853b> yeah here it's not. I opened https://github.com/scikit-learn/scikit-learn/issues/11728
+[09:31] <54d4a1d6db8155e6700f853b> but you already have the numpy array, it's just points
+[09:31] <54d4a1d6db8155e6700f853b> ``points`` that is
+[09:34] <54d4a1d6db8155e6700f853b> together with like 500 other people or something ;)
+[09:34] <54d4a1d6db8155e6700f853b> I'm the person that opened the most issues, I think. Dubious honor.
+--------------------------------------------------------------------------------------------------
+[09:27] <54d4a1d6db8155e6700f853b> ok that's what I thought. bt.data is a memory view, the docs are wrong :-/
+--------------------------------------------------------------------------------------------------
+[09:33] <58d1e48dd73408ce4f52af1b> @amueller  An honor to converse with the author of scikit-learn !
+[09:33] <58d1e48dd73408ce4f52af1b> Thank you for opening the issue on github !!
+[09:33] <54d4a1d6db8155e6700f853b> I'm not "the author" by any means
+[09:33] <58d1e48dd73408ce4f52af1b> co-author ?
+[09:33] <54d4a1d6db8155e6700f853b> I guess
+[09:36] <58d1e48dd73408ce4f52af1b> Thank you for opening mine :)
+--------------------------------------------------------------------------------------------------
+[09:37] <54d4a1d6db8155e6700f853b> you can just do np.array on bt.data to get a numpy array for now, but you already have the array as ``points`` so there's really no need...
+[09:40] <58d1e48dd73408ce4f52af1b> yes thanks. I have accepted your answer on SO as well :) Hopefully I will be notified that the problem has been fixed so I can reinstall scikit-learn
+[09:42] <58d1e48dd73408ce4f52af1b> I had another question. I had a offline conversation with another core developer of  scikit-learn
+[09:43] <58d1e48dd73408ce4f52af1b> I want to use BallTree with https://en.wikipedia.org/wiki/Great-circle_distance and that core developer warned me against it and asked me to use Haversine instead.
+[09:43] <58d1e48dd73408ce4f52af1b> Any reason why ?
+[09:44] <58d1e48dd73408ce4f52af1b> PyProj provides great circle distances and I can define a custom metric. What is the objection in doing this ?
+[09:45] <58d1e48dd73408ce4f52af1b> Not sure what pyproj is doing - https://jswhit.github.io/pyproj/pyproj.Geod-class.html#fwd
+[09:45] <58d1e48dd73408ce4f52af1b> but the author told me it is the  most accurate
+--------------------------------------------------------------------------------------------------
+[09:44] <54d4a1d6db8155e6700f853b> that wiki pages says the harvesine formula is more stable?
+[09:44] <54d4a1d6db8155e6700f853b> not my area of expertise but look at the wiki page
+[09:44] <54d4a1d6db8155e6700f853b> that's probably what pyproj is using or should be using?
+--------------------------------------------------------------------------------------------------
+[09:48] <58d1e48dd73408ce4f52af1b> Can I raise this as a issue on github as people on my project want to use pyproj ?
+--------------------------------------------------------------------------------------------------
+[09:54] <54d4a1d6db8155e6700f853b> you can ask on pyproj? who did you talk to as sklearn? Jake?
+[09:54] <58d1e48dd73408ce4f52af1b> yes you are right. I did ask  Jake
+[09:55] <58d1e48dd73408ce4f52af1b> No I mean I do not understand how asking pyproj would help. The question is why I cannot use pyproj's great circle distance with scikit-learn
+[09:58] <54d4a1d6db8155e6700f853b> I think you can
+[09:59] <54d4a1d6db8155e6700f853b> ask jake what he meant lol
+--------------------------------------------------------------------------------------------------
+[09:59] <54d4a1d6db8155e6700f853b> jake is unlikely to reply to an issue on github
+--------------------------------------------------------------------------------------------------
+[10:00] <58d1e48dd73408ce4f52af1b> By the way I used points in that code example and I get another error -` File "testballtree.py", line 23, in main     x1,y1 = bt.points[matches].T AttributeError: 'sklearn.neighbors.ball_tree.BallTree' object has no attribute 'points'`
+[10:01] <58d1e48dd73408ce4f52af1b> np.array gives the same exception as the one I showed on SO
+--------------------------------------------------------------------------------------------------
+[10:01] <54d4a1d6db8155e6700f853b> not bt.points. your array points
+[10:01] <58d1e48dd73408ce4f52af1b> aah OK
+--------------------------------------------------------------------------------------------------
+[10:58] <58d1e48dd73408ce4f52af1b> I think PyProj uses the Vincenty formula
+--------------------------------------------------------------------------------------------------
+[13:42] <572d9bc3c43b8c601971985f> hello
+--------------------------------------------------------------------------------------------------

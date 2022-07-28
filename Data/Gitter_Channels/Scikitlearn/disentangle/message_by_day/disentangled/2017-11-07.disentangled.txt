@@ -1,0 +1,4 @@
+[15:26] <598c6a46d73408ce4f70da78> Hi, is there a way to remove samples using a pipeline? I was looking at FunctionTransformer but I don't see how it will modify the y values
+--------------------------------------------------------------------------------------------------
+[15:45] <576e76e2c2f0db084a1fdb14> @cs_hanes_twitter  `imbalanced-learn` has a `Pipeline` object that lets you remove samples. Also, there is WIP for a `FunctionSampler` that lets you use arbitrary functions confirming the `scikit-learn`'s object oriented API.
+--------------------------------------------------------------------------------------------------

@@ -1,0 +1,3 @@
+<s> <user> <unka@> here is the place to start : URL/https:/ <unka-./> <unka./> . this doc presents how to browse the issue tracker to find issues to tackle . ideally , it 's best to start with a small issue or improvement to an <unka> class or function that you use yourself on a regular basis . </s>
+<s> <user> <unka@> yes but <unka> does not work at amazon :) i remembered that <unka> had an <unka-> cloud and it could have been useful to better support <unka-> on arm but it 's no longer the case apparently . </s>
+<s> <user> <unka@> thank you </s>

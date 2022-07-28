@@ -1,0 +1,6 @@
+<s> <user> <unka@> neither of them work for me . btw , which files should i put them in ? i tried to put it both files <unka./> and <unka./_> . </s>
+<s> <user> modify <unka.> if youre doing this for testing ?? </s>
+<s> <user> is there a contributor who wants to work on an easy issue with a moderate amount of work ? <unk##> : create a new <unka.> module for <unka> </s>
+<s> <user> i am relatively free . i have currently <unk##> which may get completed by the end of this week . so , i am willing to take it . </s>
+<s> <user> for a longer project ( potentially a gsoc ), contributors might be interested in <unka> api : URL/https:/ URL/github.com/ <unk#a#-/> </s>
+<s> <user> <unka@> i can work on <unk##> . </s>

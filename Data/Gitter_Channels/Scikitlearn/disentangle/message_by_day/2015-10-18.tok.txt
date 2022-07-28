@@ -1,0 +1,8 @@
+<s> <user> <unka@> start with one that fix related stuff if it 's your first pr . it 's easier to give you feedback to get started . </s>
+<s> <user> does anyone know a good " real world " dataset for regression on which <unka> helps ? in <unka> and boston linear regression does as well as any other linear model , which is sad . the only examples for <unka> we have are using <unka_`> </s>
+<s> <user> so <unka> is from the lars paper , but lars does n't actually make better <unka> than ols on <unka> ..... </s>
+<s> <user> how about high dim . data , say movie review stars from text </s>
+<s> <user> yeah that would work . but i do n't want to go too high dim . i settled for <unka> features on boston , which works well </s>
+<s> <user> it 's for the book , and i do n't want to explain bag of words at this point . not sure i want to explain <unka> features , but it 's a little easier . </s>
+<s> <user> might be an interesting example for <unka-> data </s>
+<s> <user> ( for the examples folder i mean ) </s>

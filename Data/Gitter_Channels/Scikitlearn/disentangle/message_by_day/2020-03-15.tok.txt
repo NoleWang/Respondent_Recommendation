@@ -1,0 +1,2 @@
+<s> <user> hi , i want to write a new <unka-> compatible <unka> where the behaviour of <unka/> depends on a " strategy " <unka-> ( similar to <unka> but the behaviour is more complicated ). is there any other <unka/> pattern to implement this apart from making case <unka> within <unka/> ? </s>
+<s> <user> <unka@> if the different " strategies " share common code , the conveniently named strategy design pattern might be worth using </s>

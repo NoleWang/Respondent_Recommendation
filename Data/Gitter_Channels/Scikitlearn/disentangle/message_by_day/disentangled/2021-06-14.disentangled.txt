@@ -1,0 +1,6 @@
+[10:49] <564789be16b6c7089cbab8b7> What would people recommend for clustering strings (e.g. english words) of the same length?
+--------------------------------------------------------------------------------------------------
+[10:57] <564789be16b6c7089cbab8b7> or is this better off at github discuss?
+--------------------------------------------------------------------------------------------------
+[11:05] <5baf7d9ad73408ce4fa9c9b2> It really depends on the kind of data that you have. If you have a corpus of documents LDA would be one way to get cluster/topics https://scikit-learn.org/stable/modules/generated/sklearn.decomposition.LatentDirichletAllocation.html You could also try pre-trained embeddings like word2vec and the likes  why do they have to be of the same length?
+--------------------------------------------------------------------------------------------------

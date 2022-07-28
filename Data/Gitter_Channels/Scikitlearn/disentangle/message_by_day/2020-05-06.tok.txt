@@ -1,0 +1,2 @@
+<s> <user> hi , anyone with <unka> knowledge who would have an idea what is going on in here : URL/https:/ URL/github.com/ <unk#a#-./_> to me , it seems like a node is being <unka> by an array of nodes , which is given as a pointer index . also , it looks like the index arithmetic is done on the smaller value , causing supposedly a negative index . </s>
+<s> <user> is it just the index being <unka> here , or is there something else happening here ? </s>

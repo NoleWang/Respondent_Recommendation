@@ -1,0 +1,7 @@
+<s> <user> hey hey . i 'm kinda back , though somehow in dallas . </s>
+<s> <user> and i only have <unk#a/~> unread github notifications </s>
+<s> <user> ... </s>
+<s> <user> <unka@> how did you enjoy <unka> ? </s>
+<s> <user> it was pretty awesome :) met a lot of interesting people . are you <unka-> this week ? i have to do some <unka> stuff for gsoc but the rest of the week should be free for release things . </s>
+<s> <user> i was having a look at the <unka> pr and trying to understand why the actual <unka> is always lower than alpha . i am working on something else tonight . will resume tomorrow . i think i have an idea . </s>
+<s> <user> > and i only have <unk#a/~> unread github notifications haha :p </s>

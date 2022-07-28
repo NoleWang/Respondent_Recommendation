@@ -1,0 +1,2 @@
+[14:19] <54d4a1d6db8155e6700f853b> FYI in case anyone is interested here's a quick intro video to contributing to sklearn: https://www.youtube.com/watch?v=5OL8XoMMOfA&feature=youtu.be I probably forgot a couple of things, this one is made with the upcoming data umbrella sprint in mind
+--------------------------------------------------------------------------------------------------

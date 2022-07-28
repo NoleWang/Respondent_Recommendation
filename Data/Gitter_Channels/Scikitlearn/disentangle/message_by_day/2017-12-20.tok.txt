@@ -1,0 +1,6 @@
+<s> <user> hello everyone , how can i help with this project ? </s>
+<s> <user> here in <unka_`> URL/http:/ <unka-./> <unka./_> , what is centers ? it says : <unk`> centers : int or array of shape [ <unka_> , <unka_> ], optional ( <unk#a=> ) the number of centers to generate , or the fixed center locations . <unk`> the number of centers to generate . i do n't understand this . </s>
+<s> <user> <unka@> see URL/http:/ <unka-./> <unka./> </s>
+<s> <user> i think i got some idea using its different values in plots . ( centers of normal distribution ) </s>
+<s> <user> yep . the center of each blob ( cluster ) </s>
+<s> <user> thanks <unka@> </s>

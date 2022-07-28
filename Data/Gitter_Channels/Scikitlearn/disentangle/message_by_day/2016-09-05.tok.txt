@@ -1,0 +1,7 @@
+<s> <user> just out of curiousity , for <unka`> i am trying multiple <unka().`> calls , and the code didnt throw any exceptions , can i assume it is possible to fit my whole collection into it with multiple <unka().`> calls ? </s>
+<s> <user> probably no ? </s>
+<s> <user> oh ? </s>
+<s> <user> so subsequent <unka().`> calls overwrite the previous call ? </s>
+<s> <user> ok , apparently that 's the case s : </s>
+<s> <user> <unk#a@> yes . you're correct . each <unka`> call will overwrite previous calls . some <unka> have <unka_`> for what you're looking for , which is n't easily <unka> for each <unka> . </s>
+<s> <user> nice , i guessed correctly = ) </s>

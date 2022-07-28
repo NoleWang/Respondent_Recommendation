@@ -1,0 +1,1 @@
+[11:27] <565b64bd16b6c7089cbc9de9> Hi, is  `skl.svm.LinearSVC` handling unknown/NaN values? I couldn't find that information in the class documentation page

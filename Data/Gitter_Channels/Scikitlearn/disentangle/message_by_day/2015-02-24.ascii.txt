@@ -1,0 +1,29 @@
+[13:23] <5474d9eadb8155e6700d8178> How do I make sure the cython sources are compiled when I rebuild for testing? ( related to #4288 ) ?
+[14:06] <541a528b163965c9bc2053de> cython path/to/file.pyx
+[14:07] <5474d9eadb8155e6700d8178> Thanks! :)
+[22:25] <541a528b163965c9bc2053de> @amueller here I mean
+[22:28] <54d4a1d6db8155e6700f853b> so much sense
+[22:29] <54d4a1d6db8155e6700f853b> sorry about that
+[22:29] <54d4a1d6db8155e6700f853b> btw what time is it in Paris? Are you in Paris?
+[22:30] <541a528b163965c9bc2053de> yes I am in paris
+[22:30] <541a528b163965c9bc2053de> it's almost midnight
+[22:31] <541a528b163965c9bc2053de> I am rebasing #3945 then going to bed
+[22:34] <54d4a1d6db8155e6700f853b> sweet, thanks. tomorrow I will be in the office earlier. Thanks for working late :)
+[22:35] <54d4a1d6db8155e6700f853b> For some reason I tagged the old SVC.sparse_decision_function PR with 0.16, but not my new one. That doesn't make sense. Do you think I should tag my PR or untag the old?
+[22:41] <541a528b163965c9bc2053de> Actually I was primarily working on dl-machine this evening :)
+[22:41] <541a528b163965c9bc2053de> > For some reason I tagged the old SVC.sparse_decision_function PR with 0.16, but not my new one. That doesn't make sense. Do you think I should tag my PR or untag the old?  I am not sure which is which
+[22:42] <54d4a1d6db8155e6700f853b> dl-machine?
+[22:42] <54d4a1d6db8155e6700f853b> rephrasing my question: should the sparse decision function be tagged for 0.16 or not (i.e. is it a priority to go into the release)
+[22:44] <54d4a1d6db8155e6700f853b> ah, I see. Are you working with torch or theano primarily?
+[22:45] <541a528b163965c9bc2053de> https://github.com/deeplearningparis/dl-machine
+[22:46] <541a528b163965c9bc2053de> setting up tutorial material for a workshop on theano, but adding support for torch was easy so I added it.
+[22:46] <541a528b163965c9bc2053de> +1 for including the sparse decision function fix
+[22:46] <54d4a1d6db8155e6700f853b> cool
+[22:46] <54d4a1d6db8155e6700f853b> ok
+[22:47] <54d4a1d6db8155e6700f853b> that means 23 PRs left for the release lol
+[22:47] <541a528b163965c9bc2053de> :)
+[22:48] <54d4a1d6db8155e6700f853b> have a good night. Hope we make some more progress on the PRs this week
+[22:48] <541a528b163965c9bc2053de> Even if we don't fix them all prior to friday (the first beta) it's fine. As long as we only include fixes in the 0.16.X branch once the beta is cut.
+[22:48] <541a528b163965c9bc2053de> thanks
+[22:50] <541a528b163965c9bc2053de> good night, see you tomorrow!
+[23:00] <54d4a1d6db8155e6700f853b> good night :)

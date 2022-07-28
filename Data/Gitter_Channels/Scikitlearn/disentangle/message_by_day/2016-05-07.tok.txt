@@ -1,0 +1,18 @@
+<s> <user> hey guys i 'm new here </s>
+<s> <user> needed some help regarding machine learning </s>
+<s> <user> whats up ? :) </s>
+<s> <user> i 've just started studying about machine learning </s>
+<s> <user> and everywhere i read that machine learning course on <unka> by andrew ng </s>
+<s> <user> is good to begin with </s>
+<s> <user> but it is not focused on python </s>
+<s> <user> and i want to use machine learning in python </s>
+<s> <user> so should i consider learning from somewhere else ? </s>
+<s> <user> help me out </s>
+<s> <user> you can do the assignments in python if you want to </s>
+<s> <user> if you can do machine learning in one language , youll have little to no trouble switching languages :) </s>
+<s> <user> and what would you recommend on some good resources </s>
+<s> <user> good resources for what specifically ? </s>
+<s> <user> or anything that can help me learn faster </s>
+<s> <user> i 'm not sure i have just started </s>
+<s> <user> maybe how to implement the algorithms in python </s>
+<s> <user> where should i learn that from </s>

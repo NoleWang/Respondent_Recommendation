@@ -1,0 +1,7 @@
+<s> <user> i recall <unka@> or <unka@> using <unka> for that i think . ( ref : URL/https:/ <unka./> <unk#a)-/=?> </s>
+<s> <user> i 've been using setuptools but <unka> is also an option </s>
+<s> <user> i added instructions for setuptools in the stub project </s>
+<s> <user> hm anyone wanna review <unk##> ? </s>
+<s> <user> i think we should really move forward with <unka> </s>
+<s> <user> is it possible to <unka> and test a single module alone without building <unka-> fully ? </s>
+<s> <user> if you compile <unka-> it only compiles changed files . </s>

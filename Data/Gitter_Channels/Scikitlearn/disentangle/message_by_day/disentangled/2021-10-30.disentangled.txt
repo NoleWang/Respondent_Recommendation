@@ -1,0 +1,16 @@
+[13:33] <5d7033aad73408ce4fca0665> If we run this command after setup `pytest maint_tools/test_docstrings.py -k sklearn.utils.extmath.cartesian`, we got  platform linux -- Python 3.8.10, pytest-6.2.5, py-1.10.0, pluggy-1.0.0 rootdir: /workspaces/scikit-learn, configfile: setup.cfg plugins: cov-3.0.0 collected 0 items / 2 skipped                                                                                                   =================================================== short test summary info =================================================== SKIPPED [2] maint_tools/test_docstrings.py:12: could not import 'numpydoc.validate': No module named 'numpydoc' ===================================================== 2 skipped in 0.47s ======================================================
+--------------------------------------------------------------------------------------------------
+[13:36] <55d21ee30fc9f982beadabb8> you need to install numpydoc via pip or conda
+[13:36] <5d7033aad73408ce4fca0665> Okay
+[13:36] <55d21ee30fc9f982beadabb8> otherwise the test is skipped
+[13:36] <55d21ee30fc9f982beadabb8> we dont impose it because this is an optional dependency
+--------------------------------------------------------------------------------------------------
+[13:37] <5d7033aad73408ce4fca0665> Working on #21350 issue
+--------------------------------------------------------------------------------------------------
+[13:43] <5d7033aad73408ce4fca0665> ===================================================== test session starts ===================================================== platform linux -- Python 3.8.10, pytest-6.2.5, py-1.10.0, pluggy-1.0.0 rootdir: /workspaces/scikit-learn, configfile: setup.cfg plugins: cov-3.0.0 collected 2110 items / 2109 deselected / 1 selected                                                                             maint_tools/test_docstrings.py .                                                                                        [100%]  ============================================= 1 passed, 2109 deselected in 0.98s ==============================================
+[13:44] <5d7033aad73408ce4fca0665> now, we got passed, then we make a PR for it ?
+--------------------------------------------------------------------------------------------------
+[14:04] <55d21ee30fc9f982beadabb8> yes
+--------------------------------------------------------------------------------------------------
+[14:29] <5d7033aad73408ce4fca0665> > yes  Done!
+--------------------------------------------------------------------------------------------------

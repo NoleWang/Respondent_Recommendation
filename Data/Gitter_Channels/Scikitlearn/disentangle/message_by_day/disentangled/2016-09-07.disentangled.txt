@@ -1,0 +1,23 @@
+[03:48] <578a4f87c2f0db084a23455f> Guys from scikit-learn team, could someone check and add +1 to this https://github.com/scikit-learn/scikit-learn/pull/6116 ?
+--------------------------------------------------------------------------------------------------
+[04:20] <57c97e4040f3a6eec062f82d> hello, i am begin learn deep learning
+[04:21] <57c97e4040f3a6eec062f82d> i am reading http://www.deeplearningbook.org/
+--------------------------------------------------------------------------------------------------
+[12:37] <57430fe4c43b8c60197476d9> Does scikit-learn already have or intend to have metric-learning algorithms included?
+--------------------------------------------------------------------------------------------------
+[17:34] <53fdba59163965c9bc200ba2> Hi  guys. Id to `train_test_split` but on `stratify` I need of a multi-label data. Any idea how can I do, it?
+--------------------------------------------------------------------------------------------------
+[17:39] <53fdba59163965c9bc200ba2> On my Pandas a had 4 columns. `[X, y, area, stratify]`. On `stratify` I populated with a string concatenation of `area` and `y` values. But this hack does not working.
+[17:40] <53fdba59163965c9bc200ba2> `train_test_split(df[X], df[y], test_size=0.3, stratify=df[stratify])`I got the error: `ValueError: The least populated class in y has only 1 member, which is too few. The minimum number of labels for any class cannot be less than 2.`
+--------------------------------------------------------------------------------------------------
+[20:47] <564789be16b6c7089cbab8b7> Why is there exit() in the middle of the code at http://scikit-learn.org/stable/auto_examples/applications/topics_extraction_with_nmf_lda.html ?
+[20:52] <564789be16b6c7089cbab8b7> the code has nmf = NMF(n_components=n_topics, random_state=1, alpha=.1, l1_ratio=.5).fit(tfidf) exit() print("done in %0.3fs." % (time() - t0))
+--------------------------------------------------------------------------------------------------
+[20:54] <57b3fd8640f3a6eec05fe0e8> idk maybe NMF does something that requires you to exit() to go back into your code?
+[20:54] <564789be16b6c7089cbab8b7> @ItchyJunk  that would be surprising
+[20:54] <564789be16b6c7089cbab8b7> exit is a synonym for quit I believe
+[20:55] <564789be16b6c7089cbab8b7> surely it's a typo?
+[20:55] <57b3fd8640f3a6eec05fe0e8> ok, it quits out of what ever NMF does to get back to your code
+[20:56] <564789be16b6c7089cbab8b7> you don't think it's a bug?
+[20:59] <57b3fd8640f3a6eec05fe0e8> it might be..
+--------------------------------------------------------------------------------------------------

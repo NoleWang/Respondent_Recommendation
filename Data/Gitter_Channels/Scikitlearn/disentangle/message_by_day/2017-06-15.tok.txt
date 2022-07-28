@@ -1,0 +1,2 @@
+<s> <user> hi guys ,i m coding in c ,and i want to store values from a txt file to an array any idea ? </s>
+<s> <user> <unka@> bad chance that <unka-> is in python </s>

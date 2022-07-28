@@ -1,0 +1,51 @@
+[08:02] <56b80528e610378809c05a48> @lesshaste Hello,
+[08:03] <56b80528e610378809c05a48> Can you annser my question above?
+[08:03] <56b80528e610378809c05a48> If I got 1 sample for 1st day, 2 samples for 2nd day and 3 samples for 3rd day, then I decide to do 2 folds heterogeneous cv, what will happen?
+[08:53] <564789be16b6c7089cbab8b7> @yenchenlin1994  I am not sure exactly how you are doing the heterogeneous case I have to admit. Why are you splitting by days? 
+[08:53] <564789be16b6c7089cbab8b7> maybe @amueller has a better idea what is going on in this case
+[08:53] <564789be16b6c7089cbab8b7> does R have anything for the heterogeneous case?
+[09:26] <53135b495e986b0712efc453> @lesshaste Do you have any good datasets in mind with missing values for benching?
+[09:29] <564789be16b6c7089cbab8b7> @rvraghav93  is this for time series data or something else?
+[09:29] <53135b495e986b0712efc453> I tried to test my implementation of MCAR and NMAR (missingness correlated with class 1) on the covtype dataset and looks like the implementation in #5974 seems to perform slightly better than or as good as imputation for NMAR cases, which was expected and really bad performance for the MCAR case, which is also expected as it tries to extract information out of utter randomness.
+[09:29] <564789be16b6c7089cbab8b7> CAR == completely at random. What is MAR again?
+[09:30] <564789be16b6c7089cbab8b7> ok I am back in context :)
+[09:30] <53135b495e986b0712efc453> MAR is one where the missingness is dependent on either the missing values or the observed values (`X`). MCAR is where the missingness is totally random... and NMAR is where the missingness is correlated with the target...
+[09:31] <53135b495e986b0712efc453> for our case we can assume MAR and MCAR are similar for they both will perform better with imputation...
+[09:31] <564789be16b6c7089cbab8b7> @rvraghav93  I think you mean MNAR 
+[09:31] <564789be16b6c7089cbab8b7> missing not at random
+[09:31] <53135b495e986b0712efc453> or Not Missing At Random ;)
+[09:32] <53135b495e986b0712efc453> hehe both mean the same... some papers use MNAR and some NMAR I think
+[09:32] <564789be16b6c7089cbab8b7> not missing at random sounds too much like the data is not missing to me :)
+[09:33] <53135b495e986b0712efc453> Ah hmm
+[09:34] <564789be16b6c7089cbab8b7> but to answer you question.. I don't have any great test sets sorry.. but when I have a moment I will search online to see if I can find smoe
+[09:34] <53135b495e986b0712efc453> Okay thanks!!
+[09:35] <564789be16b6c7089cbab8b7> does R use any particular test set for this?
+[09:36] <53135b495e986b0712efc453> I don't know this implementation seems intuitive and is supported by Ding and Simonoff's paper but apparently none of the R packages use this... A lot use multiple techniques of imputation and rpart alone uses a surrogate split method...
+[09:37] <564789be16b6c7089cbab8b7> ah...
+[09:37] <564789be16b6c7089cbab8b7> http://www.stat.columbia.edu/~gelman/arm/missing.pdf is quite definitive too
+[09:37] <564789be16b6c7089cbab8b7> of course what would be great would be to test your method against rpart on the same data :)
+[09:37] <53135b495e986b0712efc453> Okay thanks for the link
+[09:38] <53135b495e986b0712efc453> Yea :/ thats what I am planning to do now and see how good it performs...
+[09:38] <564789be16b6c7089cbab8b7> is this the paper you are using http://people.stern.nyu.edu/jsimonof/jmlr10.pdf ?
+[09:38] <53135b495e986b0712efc453> yeapp
+[09:39] <53135b495e986b0712efc453> That seems to be pretty detailed... I am gonna give it a thorough read now and see how I can reproduce their results...
+[09:39] <53135b495e986b0712efc453> That and rpart
+[09:41] <53135b495e986b0712efc453> @jmschrei Your thoughts on #5974 ?
+[09:41] <564789be16b6c7089cbab8b7> @rvraghav93  too much to read! http://link.springer.com/article/10.1007/s10115-011-0424-2 :)
+[09:41] <564789be16b6c7089cbab8b7> @rvraghav93  I think what you are doing is awesome :)
+[09:42] <564789be16b6c7089cbab8b7> and I really love the way things are done by the devs at scikit learn
+[09:42] <53135b495e986b0712efc453> :)
+[09:42] <53135b495e986b0712efc453> thanks for the links!
+[09:42] <564789be16b6c7089cbab8b7> what I particularly love is the way that methods are rejected if they can't be shown to actually work on publicly available data!
+[09:43] <564789be16b6c7089cbab8b7> if only everything was so evidence based
+[09:44] <564789be16b6c7089cbab8b7> and also the aim to automate everything :)  I am excited by the PR to automate the choice of the number of clusters for example when clustering
+[09:45] <564789be16b6c7089cbab8b7> @rvraghav93  can you access that paper I linked to?
+[10:08] <564789be16b6c7089cbab8b7> @rvraghav93  the paper I linked to also has links public data sets it uses to test its missing value imputation .  They are all fro http://archive.ics.uci.edu/ml/ I think
+[10:10] <564789be16b6c7089cbab8b7> @rvraghav93  there is even a "missing values?" field I see :) E.g. https://archive.ics.uci.edu/ml/datasets/Horse+Colic
+[16:36] <53135b495e986b0712efc453> Oops @lesshaste Thanks for correcting me... Its MNAR not NMAR :( I've been using it wrongly all along
+[18:36] <564789be16b6c7089cbab8b7> np :)
+[18:38] <564789be16b6c7089cbab8b7> @rvraghav93  do you think of any those "missing values" data sets could be useful?
+[20:45] <564789be16b6c7089cbab8b7> I just asked this on the hyper-parameter optimization PR but maybe it was better for here. I don't know how relevant this is but have generic optimization methods such as basin hopping been considered and rejected for hyper-parameter optimization? 
+[21:50] <53135b495e986b0712efc453> Yea thanks the adult dataset is reasonably big and has missing values... I'm gonna try that out by encoding all the categorical values as we don't have categorical value support yet...
+[21:54] <564789be16b6c7089cbab8b7> @rvraghav93 sounds good. 
+[22:42] <5624bbb016b6c7089cb77b2a> Any answer to [this](https://github.com/scikit-learn/scikit-learn/pull/2805)?

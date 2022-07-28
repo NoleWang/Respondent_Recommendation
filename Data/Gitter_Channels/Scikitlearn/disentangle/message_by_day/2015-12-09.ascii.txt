@@ -1,0 +1,24 @@
+[00:05] <54d4a1d6db8155e6700f853b> man @agramfort is killing it on the issue tracker
+[00:09] <53135b495e986b0712efc453> xD
+[01:28] <53135b495e986b0712efc453> Btw can u create the "Need Review" Tag??
+[09:03] <565b49ee16b6c7089cbc9b44> Hey! I've found that http://scikit-learn.org/stable/modules/generated/sklearn.cross_validation.StratifiedKFold.html#sklearn.cross_validation.StratifiedKFold if called under `print` shows first argument as named `labels`, but you actually cannot pass it this way. Is it intentional?
+[12:57] <53135b495e986b0712efc453> A lot of issues need the `"Need Contributor"` tag removed - https://github.com/scikit-learn/scikit-learn/labels/Need%20Contributor
+[14:57] <54d4a1d6db8155e6700f853b> @vighneshbirodkar maybe ping @ogrisel or @lesteve about the joblib thing
+[15:00] <54d4a1d6db8155e6700f853b> rvraghav93: can you list the issues that need the "need contributor" removed?
+[15:06] <53810862048862e761fa2887> Hello @ogrisel , @lesteve , I can see a fix for #5956 by setting `copy_cov=True` on this line https://github.com/scikit-learn/scikit-learn/blob/master/sklearn/decomposition/dict_learning.py#L296
+[15:17] <53810862048862e761fa2887> Also, passing `mmap_mode=readwrite' to `joblib.Parallel` gives a file descriptor error, but passing `mmap_mode=c' works, 
+[15:17] <53810862048862e761fa2887> I am yet to find out what 'c' means for it,  I wasn't able to find any documentation
+[15:21] <53810862048862e761fa2887> Ok, see stands for Copy on write, is passing that ok ?
+[16:41] <54d4a1d6db8155e6700f853b> added the needs review tag
+[16:43] <53135b495e986b0712efc453> Yay yay :p I'll just send u a list for both (removal of need cont and addtn of need rev) 
+[17:10] <54d4a1d6db8155e6700f853b> sent where?
+[17:10] <54d4a1d6db8155e6700f853b> ah sorry future
+[17:36] <54d4a1d6db8155e6700f853b> @rvraghav93 sorry I'm a bit out of touch with what is happening at the moment. Have you worked on the multiple metrics stuff yet?
+[17:42] <54d4a1d6db8155e6700f853b> @vighneshbirodkar would you be fine with a non-ml project? I think doing the website build would be cool #5578 #4986
+[17:43] <54d4a1d6db8155e6700f853b> Otherwise the multiple metrics would be very high priority to me unless @rvraghav93 worked on it. It might be that we need to first merge ragav's improvements / code deletions though
+[17:44] <53135b495e986b0712efc453> Hey no I am breaking my head over tree code ;(
+[17:44] <53135b495e986b0712efc453> Sorry I will try my best to start it by this weekend :)
+[17:45] <53135b495e986b0712efc453> There are a few minor PRS of mine which u might want to consider for review xD 
+[17:57] <54d4a1d6db8155e6700f853b> sorry, not much time for reviews for the rest of the year :-/
+[17:58] <53810862048862e761fa2887> Are Transformers also expected not to do anything in place ?
+[18:44] <54d4a1d6db8155e6700f853b> yes

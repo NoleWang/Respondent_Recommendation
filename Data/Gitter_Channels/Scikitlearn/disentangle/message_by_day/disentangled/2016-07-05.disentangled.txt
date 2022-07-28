@@ -1,0 +1,21 @@
+[05:08] <5581814615522ed4b3e20c6a> hi guys i m having a doubt If i train a classifier and pickle it. How to make it relearn everytime when i introduce a new test example. Is it like everytime i want to predict something i need to retrain with updated training set or will the updating can happen on the go.?
+[06:39] <5581814615522ed4b3e20c6a> @akloster  thank you :)
+--------------------------------------------------------------------------------------------------
+[05:31] <54317aec163965c9bc208ec9> @BastinRobin In my opinion retraining with every new test example is a bad idea, mainly because it will change the accuracy characteristics of your model over time. Not necessarily always towards the better.  Some Bayesian methods support very natural "updating". Otherwise you can look into "Reinforcement learning" which may be better suited to your task if you need to learn "online".
+[05:33] <54317aec163965c9bc208ec9> It may also be a good Idea to keep the new examples in a special "out of sample" test set, and evaluate ongoing accuracy on that test set.
+--------------------------------------------------------------------------------------------------
+[09:31] <5757de1ec43b8c6019787b6c> Hi  I have a txt file containing words and corresponding word vectors . I want to plot this using tSNE
+[09:31] <5757de1ec43b8c6019787b6c> Can anyone point me to good example ?
+--------------------------------------------------------------------------------------------------
+[09:44] <553d32d715522ed4b3df8b92> Hi, I have read a few articles on word embeddings and tsne but am new to these topics. Some of the websites were
+[09:44] <553d32d715522ed4b3df8b92> https://lvdmaaten.github.io/tsne/
+[09:45] <553d32d715522ed4b3df8b92> http://blog.christianperone.com/2016/01/voynich-manuscript-word-vectors-and-t-sne-visualization-of-some-patterns/
+[09:47] <553d32d715522ed4b3df8b92> And I came across this just now.. https://www.quora.com/How-do-I-visualise-word2vec-word-vectors/answer/Vered-Shwartz hope it is helpful.
+--------------------------------------------------------------------------------------------------
+[19:29] <54b4f2d1db8155e6700e99c0> Hey Folks, Id like to understand the implementation of the Random Forests. Is there a specific reason why _parallel_build_trees() is a function and not a method?
+--------------------------------------------------------------------------------------------------
+[23:42] <53135b495e986b0712efc453> Because it is a helper which is called inside the `fit` method.
+[23:42] <53135b495e986b0712efc453> The `n_jobs` param that you set at the initialization of `RandomForestClassifier` controls the number of processes used by `fit`...
+--------------------------------------------------------------------------------------------------
+[23:47] <53135b495e986b0712efc453> The `fit`  uses `joblib`'s `delayed` to run the `_parallel_build_trees` helper in batches to build `n_jobs` trees at a time.
+--------------------------------------------------------------------------------------------------

@@ -1,0 +1,2 @@
+[01:28] <5b27cec1d73408ce4f9dbcaf> @ziweiwu which line is the error on?
+[08:12] <55d21ee30fc9f982beadabb8> Apparently you have string in your data which you try to convert into numeric

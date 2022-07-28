@@ -1,0 +1,2 @@
+<s> <user> hello ( i am back and i will try not to flood the your screen ) </s>
+<s> <user> using <unka-> <unk#.> and <unka-> <unk#.> , i try to export a pipeline embedding an <unka> . the data contains only <unka> floating point features . <unka_> prompts an error : <unka'.> object has no attribute <unka'> any idea please ? </s>

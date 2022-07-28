@@ -1,0 +1,8 @@
+[01:13] <5cf106a0d73408ce4fc1d8b2> https://www.quora.com/Go-vs-Python-which-is-better-for-AI
+[17:36] <5bc98094d73408ce4fabf741> anyone on windows?
+[17:36] <5bc98094d73408ce4fabf741> I am trying to run a script with just "python script.py" but I am getting missing module errors and I am sure I should have this installed
+[17:36] <5bc98094d73408ce4fabf741> these*
+[18:24] <5cf106a0d73408ce4fc1d8b2> Check the spellings of the modules you have imported
+[18:24] <5cf106a0d73408ce4fc1d8b2> And also check whether the modules you imported contain that specific module
+[18:25] <5cf106a0d73408ce4fc1d8b2> And just as shortcut run pip install on all the modules to ensure everything has been properly installed
+[18:27] <5cf106a0d73408ce4fc1d8b2> It also depends on the version of python you are using

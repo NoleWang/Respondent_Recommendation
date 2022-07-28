@@ -1,0 +1,3 @@
+[14:07] <5d10a5b9d73408ce4fc459a6> I can't seem to get to make the virtual environment with sphinxgallery  conda create -n sklearndev numpy scipy matplotlib pytest sphinx cython ipykernel sphinxgallery  or   conda create -n sklearndev numpy scipy matplotlib pytest sphinx cython ipykernel sphinx-gallery
+[14:11] <5d10a5b9d73408ce4fc459a6> never mind! the solution is in the other gitter chat!
+--------------------------------------------------------------------------------------------------

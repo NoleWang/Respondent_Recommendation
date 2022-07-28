@@ -1,0 +1,1 @@
+[11:07] <57330f91c43b8c6019723dab> Hi, everybody.  I wouild like to make a system to recognize coins. I have made database with coins text information and a couple images for every coin. My hypothesis is to use dectloscopic approach to recognize coins. May be someone know componen or library that I can use?  Thanks.

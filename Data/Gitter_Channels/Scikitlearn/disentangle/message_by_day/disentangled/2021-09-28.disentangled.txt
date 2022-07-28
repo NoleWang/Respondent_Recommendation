@@ -1,0 +1,10 @@
+[18:06] <614fb4c06da03739848687d4>  @adrinjalali #21148
+--------------------------------------------------------------------------------------------------
+[19:28] <55d21ee30fc9f982beadabb8> When the documentation CIs are finished
+[19:29] <55d21ee30fc9f982beadabb8> there will be a "ci/circleci: doc artifact <unconvertable> Link to 0/doc/_changed.html " line
+[19:29] <55d21ee30fc9f982beadabb8> You can clicked on "Details"
+[19:29] <55d21ee30fc9f982beadabb8> It will redirect to an HTML page where you will have hyperlinks to each documentation page that has been generated
+[19:30] <55d21ee30fc9f982beadabb8> in PRs we only generate documentation pages where there is a modification
+--------------------------------------------------------------------------------------------------
+[21:35] <614fb4c06da03739848687d4> @glemaitre great, found it - thanks!
+--------------------------------------------------------------------------------------------------

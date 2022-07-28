@@ -1,0 +1,9 @@
+[00:53] <55f1d9790fc9f982beb04bb2> @piotr-mamenas yeah as long as you are randomly sampling, you can either upsample from the smaller class or down sample..  or use an algorithm that can tolerate unbalanced data.. you could even turn the problem into an anomaly detection one.. if the smaller class has only very few data points.. There are other techniques like SMOTE .. that you could look into.. as well.
+--------------------------------------------------------------------------------------------------
+[10:06] <5bc98094d73408ce4fabf741> Thanks for the answers @amueller and @rahulunair , I wasn't aware you have models for working with imbalanced data sets specifically, how do they fare against large sparse matrices, I am talking word vectors?
+[18:52] <5bc98094d73408ce4fabf741> Thanks @rahulunair your response is much appreciated, I will take a look at it.
+--------------------------------------------------------------------------------------------------
+[16:49] <55f1d9790fc9f982beb04bb2> @piotr-mamenas I would consider the word vectors as the input embeddings? and if you are looking to classify something, you can look into SVMs that deal with unbalanced classes, essentially it weights the unbalanced class differently.. scikit-learn has a section for that: https://scikit-learn.org/stable/modules/svm.html
+[16:54] <55f1d9790fc9f982beb04bb2> or try a tree based algorithms to see how your accuracy numbers and ROC curve is
+[16:54] <55f1d9790fc9f982beb04bb2> for accuracy , check out: https://scikit-learn.org/stable/modules/generated/sklearn.metrics.balanced_accuracy_score.html
+--------------------------------------------------------------------------------------------------

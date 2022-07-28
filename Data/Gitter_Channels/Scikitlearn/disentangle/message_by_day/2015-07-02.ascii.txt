@@ -1,0 +1,26 @@
+[14:45] <54e07d6515522ed4b3dc0858> @amueller did you see this notebook ~~re~~implementing the google blog post from earlier? https://github.com/google/deepdream/blob/master/dream.ipynb
+[14:49] <53135b495e986b0712efc453> wow! :O
+[14:50] <54e07d6515522ed4b3dc0858> it generates things that look like this https://slack-files.com/files-tmb/T04T7B1ST-F074J6EDD-5630fb79d2/frames_360.png
+[14:51] <53135b495e986b0712efc453> too awsome!
+[14:56] <53135b495e986b0712efc453> @vene Do you have any suggestions for a practical example for nested cv using LOLO... ? :) Any dataset / public domain problem (like iris classification)?
+[14:57] <54e07d6515522ed4b3dc0858> I can't think of any datasets with meaningful groups
+[14:57] <54e07d6515522ed4b3dc0858> you could generate one yourself
+[14:58] <53135b495e986b0712efc453> Okay!!
+[15:00] <54e07d6515522ed4b3dc0858> like a regression problem with multiple noisy observations per subject
+[15:02] <54e07d6515522ed4b3dc0858> if you accidentally leave observations of the same subject in both train and test folds, you'll get overly optimistic results
+[15:11] <54e07d6515522ed4b3dc0858> (I'm just thinking out loud, this might not be right) say you have 2 features and the target is `y = w_1 + w_2 + noise` but `w1` is very correlated within the same subject and w2 is essentially independent. 
+[15:12] <54e07d6515522ed4b3dc0858> like if `w1` is essentialy the label of the subject + noise, and `w2` is just noise
+[15:13] <54e07d6515522ed4b3dc0858> say maybe `w_1`is the person's weight (fluctuates slightly but not a lot) and `w_2` is how many minutes the person walked outside today
+[15:22] <54d4a1d6db8155e6700f853b> @vene yeah saw the blog post. pretty cool
+[15:22] <54d4a1d6db8155e6700f853b> I have to work on the scipy tutorial today, sorry
+[20:37] <5425a933163965c9bc206e53> Is there a good way to use an LabelEncoder to encode several columns of categorical variables?
+[20:38] <54d4a1d6db8155e6700f853b> you probably want OneHotEncoder
+[20:38] <54d4a1d6db8155e6700f853b> (only it doesn't do strings at the moment which makes me sad)
+[20:38] <5425a933163965c9bc206e53> This is exactly what I want. But I need to encode those string categorical values to integers so I can use it :)
+[20:39] <54d4a1d6db8155e6700f853b> you could make it a dict and use dict vectorizer... or use pandas?
+[20:39] <54d4a1d6db8155e6700f853b> I was really surprised when I recently realized that there is no good way to do this in sklearn. you can open an issue if you like
+[20:39] <5425a933163965c9bc206e53> I am actually using pandas. I've done this various hacky ways in the past
+[20:40] <5425a933163965c9bc206e53> Would making the OneHotEncoder accept strings be relatively straight forward or are there design problems blocking it? I'd love to issue a PR for that
+[20:55] <54d4a1d6db8155e6700f853b> it seemed slightly non-trivial but didn't look blocking. maybe open an issue and ping @jnothman what he thinks of it
+[20:55] <5425a933163965c9bc206e53> :+1:
+[20:57] <54d4a1d6db8155e6700f853b> sweet thanks

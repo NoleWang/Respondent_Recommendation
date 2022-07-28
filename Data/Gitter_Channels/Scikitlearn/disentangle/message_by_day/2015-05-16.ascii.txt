@@ -1,0 +1,7 @@
+[04:49] <54c084dbdb8155e6700eed4c> @bdholt1 
+[04:49] <54c084dbdb8155e6700eed4c> oops
+[04:49] <54c084dbdb8155e6700eed4c> haha
+[04:51] <54c084dbdb8155e6700eed4c> what i meant to say, was, @amueller .. sorry, i noticed your tag on #4732 today and then your #4711 comment asking for a new issue. Rather crazy week, will see if I can solve it though.
+[04:51] <54c084dbdb8155e6700eed4c> and hi @bdholt1  :smile: 
+[16:45] <550f53e215522ed4b3dda5f6> Yes. I am currently reading the Murphy's paper 'Fitting a Conditional Gaussian Distribution'. That's the paper described three kinds of co-variance matrix in current  GMM implementation. But it seems a little harder to understand in terms of notations. @amueller 
+[16:46] <53135b495e986b0712efc453> @amueller yeah ;) :P working on completing my exiting PRs :)

@@ -1,0 +1,46 @@
+[08:48] <53135b495e986b0712efc453> I can confirm that! (numpy pip installed)
+[08:59] <53135b495e986b0712efc453> http://stackoverflow.com/a/14270230/3109769
+--------------------------------------------------------------------------------------------------
+[09:08] <53135b495e986b0712efc453> `np.cancast(np.float64, np.int64)` is `False` from `numpy 1.10.1`
+--------------------------------------------------------------------------------------------------
+[10:53] <53135b495e986b0712efc453> Setting the `dtype` at `check_array` stage fixes these failures... Do we need a travis build for 1.10 or should we update one to check for numpy 1.10.1? (@ogrisel?) - PR at #5398
+[11:05] <53135b495e986b0712efc453> @vene la multi ani!! :P
+--------------------------------------------------------------------------------------------------
+[12:19] <541a528b163965c9bc2053de> I finally took the time to fix the docbuilder machine to update the dev/ website.
+[12:19] <541a528b163965c9bc2053de> It seems to work correctly but let me know if you spot problems. There is a couple of broken example in master.
+--------------------------------------------------------------------------------------------------
+[12:28] <541a528b163965c9bc2053de> @amueller I would like to release the beta tomorrow. @lesteve is working on the joblib 0.9.0 release right now.
+--------------------------------------------------------------------------------------------------
+[12:38] <54e07d6515522ed4b3dc0858> Thanks @rvraghav93 :)
+--------------------------------------------------------------------------------------------------
+[14:46] <54d4a1d6db8155e6700f853b> @ogrisel cool. Anything I should look at in partticular?
+[14:46] <54d4a1d6db8155e6700f853b> @ogrisel the numpy 1.10.1 looks bad. can you confirm?
+--------------------------------------------------------------------------------------------------
+[14:55] <54d4a1d6db8155e6700f853b> @ogrisel I'm still catching up with github notifications and my health sucks :-/
+--------------------------------------------------------------------------------------------------
+[17:04] <541a528b163965c9bc2053de> numpy 1.10.1 need fixes but seemingly not too complicated
+[17:04] <541a528b163965c9bc2053de> I have not checked the LogisticRegressionCV issue
+--------------------------------------------------------------------------------------------------
+[18:09] <54d4a1d6db8155e6700f853b> Ok. just got to sklearn notification inbox zero. I'll have a celebratory dirty chai latte and then look at LogisticRegressionCV and other issues that we enthusiastically tagged for 0.17
+[18:10] <54d4a1d6db8155e6700f853b> the doc build seems to be working. pushed 30 seconds ago! Awesomeness!! Thanks @ogrisel !
+[18:10] <54d4a1d6db8155e6700f853b> (and sorry for the constant nagging about it )
+[18:12] <54d4a1d6db8155e6700f853b> and scikit-learn.org/dev/auto_examples/preprocessing/plot_function_transformer.html
+[18:13] <54d4a1d6db8155e6700f853b> that would be sweet. sure
+[18:13] <54d4a1d6db8155e6700f853b> @rvraghav93 do you want to build the docs and see if you find the errors?
+[18:13] <54d4a1d6db8155e6700f853b> or I'll do it.
+[18:13] <54d4a1d6db8155e6700f853b> I haven't checked doc build errors or testing errors recently
+--------------------------------------------------------------------------------------------------
+[18:11] <541a528b163965c9bc2053de> > the doc build seems to be working. pushed 30 seconds ago:  I just did a fix :)
+[18:11] <54d4a1d6db8155e6700f853b> http://scikit-learn.org/dev/auto_examples/model_selection/plot_roc.html is not rendered
+[18:11] <54d4a1d6db8155e6700f853b> meh
+--------------------------------------------------------------------------------------------------
+[18:12] <541a528b163965c9bc2053de> there are errors in some examples
+[18:12] <541a528b163965c9bc2053de> I need to deploy an HTTP server to publish the doc build log.
+[18:13] <541a528b163965c9bc2053de> +1 a DNS
+[18:13] <541a528b163965c9bc2053de> don't have time to do that tonight though
+[18:14] <541a528b163965c9bc2053de> +1 for the dirty chai latte :)
+[18:15] <541a528b163965c9bc2053de> I'll go and get some dinner now, see you later.
+--------------------------------------------------------------------------------------------------
+[18:38] <54d4a1d6db8155e6700f853b> sure :) It would be good to get https://github.com/scikit-learn/scikit-learn/pull/4478 merged. I'll add a whatsnew now
+[18:41] <54d4a1d6db8155e6700f853b> also https://github.com/scikit-learn/scikit-learn/pull/5395
+--------------------------------------------------------------------------------------------------

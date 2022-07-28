@@ -1,0 +1,2 @@
+<s> <user> hi together , i like to write custom transformers which should not rely on <unka> as a dependency but should be usable in <unka> pipelines anyway ( if necessary ). is that possible by simply providing <unka`> and <unka_`> methods ? i assume not looking at [ <unk#a#(-./:]> ). thanks for any help . </s>
+<s> <user> <unk#a-@> also look into hands on machine learning with <unka-> and tensorflow </s>

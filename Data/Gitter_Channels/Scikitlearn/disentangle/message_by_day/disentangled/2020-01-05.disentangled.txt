@@ -1,0 +1,2 @@
+[22:14] <55d21ee30fc9f982beadabb8> I would probably found cool to have an entitled the blog post with something "Limitations and Caveats ..." instead of "What's wrong ...". This said I think that there are some criticisms that should be discussed by opening issues to come up with adequate solutions.
+--------------------------------------------------------------------------------------------------

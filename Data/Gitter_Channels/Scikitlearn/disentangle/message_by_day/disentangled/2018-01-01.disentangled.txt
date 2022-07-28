@@ -1,0 +1,4 @@
+[06:50] <58b46af0d73408ce4f4d3f2c> Does scikit learn have support for sparse Gaussian processes, like with variational learning?
+[06:50] <58b46af0d73408ce4f4d3f2c> Is that a feature that's on the list?
+[06:50] <58b46af0d73408ce4f4d3f2c> *to be implemented list
+--------------------------------------------------------------------------------------------------

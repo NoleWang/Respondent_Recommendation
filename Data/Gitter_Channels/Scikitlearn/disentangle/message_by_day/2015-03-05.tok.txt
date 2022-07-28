@@ -1,0 +1,77 @@
+<s> <user> <unka@> sorry i was feeling sick yesterday night and i did not go online . </s>
+<s> <user> i started thinking about it , we can do : - general intro to ml in python with <unka-> - couple of words on the project organization and the team of contributors - highlight of some new stuff in 0.16 : improvement on speed or <unka> of some methods such as : - <unka> - clustering ( i am preparing a notebook comparing <unka> , <unka> , <unka> and <unka> on 100k <unka> 2d points to simulate someone working to extract point of interests from raw geo location data ( e.g . gsm phone records ) - new approximate nearest neighbors search with <unka> then for the future we could talk about <unka> and <unka> improvements under review in the pipeline </s>
+<s> <user> i forgot , i also wanted to say a couple of words about probability calibration </s>
+<s> <user> right , calibration is not on my list . is it in <unka> ? </s>
+<s> <user> oh , and a title </s>
+<s> <user> hope you are feeling better today </s>
+<s> <user> news from <unka-> 0.16 and <unka-> gems for the next release . ?? </s>
+<s> <user> sounds good to me </s>
+<s> <user> i am half feeling better , really weird </s>
+<s> <user> some hours i feel sick and then completely fine for a while </s>
+<s> <user> that 's weird </s>
+<s> <user> i played a bit with clustering on <unk#a> points in 2d </s>
+<s> <user> URL/http:/ <unka./> <unk#a%./_> </s>
+<s> <user> <unka> is 3x faster than <unk#.> </s>
+<s> <user> mb <unka> is still the fastest although it does not deal with <unka> as <unka> does </s>
+<s> <user> cool :) and there are still faster <unka> variants in the <unka> </s>
+<s> <user> there is a pretty new pr on that i think </s>
+<s> <user> <unka> core set extraction seems to works great but the final affinity clustering pass is not as scalable as the core set extraction </s>
+<s> <user> what 's on todays agenda for the release ? </s>
+<s> <user> or what was for you ;) </s>
+<s> <user> no progress on <unka> i see </s>
+<s> <user> would you mind having a look at URL/https:/ URL/github.com/ <unk#a-/> </s>
+<s> <user> i guess i start reviewing the <unka-> <unka> now . or is there anything to review left ? </s>
+<s> <user> delaying the beta even more seems a bit silly to me , but the only other option is to merge the remaining urgent fixes with fewer reviews </s>
+<s> <user> i am having a look at the <unka> . let 's release the beta tomorrow . whatever the review state of the remaining <unka> . we will do backports for the fixes afterwards for the second beta . </s>
+<s> <user> you want a second beta ? alright .... </s>
+<s> <user> maybe not </s>
+<s> <user> it depends how stable we find the beta </s>
+<s> <user> i would like to merge this URL/https:/ URL/github.com/ <unk#a-/> before cutting the beta branch </s>
+<s> <user> go for it . it should n't interfere with anything . </s>
+<s> <user> ok </s>
+<s> <user> do you think we should get this one in soon : URL/https:/ URL/github.com/ <unk#a-/> </s>
+<s> <user> if it 's ready soon , +1 for a backport to the <unk#a.> branch . </s>
+<s> <user> ok </s>
+<s> <user> maybe we can do : beta tomorrow , continue backports of fixes and target 0.16 in 2 or 3 weeks . and if we fix additional important bugs , <unk#.> in a month and half </s>
+<s> <user> yeah , sounds good . </s>
+<s> <user> we should really release more regularly . </s>
+<s> <user> i will be in <unka> at that point but you can do the <unk#.> with the help of others if i am not responsive enough at that point . </s>
+<s> <user> alright . i do n't think i 'll make it this year . </s>
+<s> <user> you are not coming to scipy are you ? </s>
+<s> <user> nope </s>
+<s> <user> i was planning to attend <unka> as a <unka-> because is just 1h by train </s>
+<s> <user> :) sweet </s>
+<s> <user> hey :) could you help me with <unk##> ? i do n't understand a few things ... when testing you said i could use <unka> data right ? but which <unka> do i test against ? ( or if you might have time could you take over ?) </s>
+<s> <user> try a tree ? or use <unka(> ). </s>
+<s> <user> i 'll have a look soon . </s>
+<s> <user> will grid search propagate the parameters from <unka`> to <unka`> ? </s>
+<s> <user> and thanks :) </s>
+<s> <user> probably with <unka_`> . but i'd rather go with a tree , which should work </s>
+<s> <user> okay i 'll push in sometime ... pl see if i am in the right direction or kindly take over ... sorry for having kept you waiting over that :) </s>
+<s> <user> a small doubt do you use multiple monitors ? ;) </s>
+<s> <user> no why ? </s>
+<s> <user> just curious how <unka@> could be online and commenting at the same time :o i am online sometimes while i work since i use vim in a transparent guake terminal over the <unka> chat window ... :) </s>
+<s> <user> no transparency here . i technically have a laptop monitor and a large one , but in the office i currently only use the large one . still <unka-> too much . </s>
+<s> <user> i have the <unka> tab just always open </s>
+<s> <user> ah :d :) </s>
+<s> <user> are you working on URL/https:/ URL/github.com/ <unk#a-/> now or should i go for it ? i only have like 2 hours of work left today , though ;) </s>
+<s> <user> please go for it :) :p most <unka> do n't seem to support sparse y ... :) </s>
+<s> <user> <unk`> <unk=> error : <unka'(._> , <unka'-> , none ) <unk-> traceback ( most recent call last ): file " DIR/usr/ DIR/local/ DIR/lib/ DIR/python2.7/ DIR/dist-packages/ <unka/> <unka./> " , line 197 , in <unka> <unka(*.> ) file " ... <unka-/> <unka/> <unka/> <unka/> <unka./_> " , line <unk#> , in <unka_> <unka_> ) file " ... <unka-/> <unka/> <unka/> <unka./> " , line 221 , in fit " number of <unka%=> " % ( <unka(> ), <unka_> )) <unka> : number of <unk#a=> does not match number of <unk#a=> <unk-> > > begin captured stdout << <unk-> <unk`> perhaps the <unka()`> needs to be changed to <unka()_`> here ... </s>
+<s> <user> maybe ... but with dense y it works ? </s>
+<s> <user> even after changing to <unka()_`> the error seems to persist :| </s>
+<s> <user> ok let me look at it tomorrow </s>
+<s> <user> thanks !! :) </s>
+<s> <user> i am working on the polishing of the <unka-> <unka> </s>
+<s> <user> running the tests and should merge soon . </s>
+<s> <user> yeah i saw . cool :) </s>
+<s> <user> i 'm thinking about the <unka_> <unka> </s>
+<s> <user> i have not read the reference . do you ? </s>
+<s> <user> i meant " have you ?" not " do you ?" </s>
+<s> <user> skimmed . but it makes more sense . i 'll post a regression test in a second . </s>
+<s> <user> great ! </s>
+<s> <user> alright , i will call it a day . see you tomorrow ! </s>
+<s> <user> alright . you work soo much later than i do .... have a good night and see you tomorrow </s>
+<s> <user> ++ </s>
+<s> <user> <unka@> , just so you're aware , when i was messing with how to structure the <unka'> <unka_> implementations , i noticed <unka-> numerical differences in some little toy test <unka> between a couple of different implementations that <unka> only in where or how i was <unka> , say sample weight and bootstrap weights . </s>
+<s> <user> i'd expect that the change in <unk##> will definitely change the way small floating point differences are evaluated . this obviously has a big effect in trees as magnitude does n't matter , just <unka> improvement ... so the outputs using <unka_> between implementations will likely be different for <unka> , probably trees . not that this really matters as they are both entering @ 0.16 </s>
+<s> <user> long story short , i think <unka> and linear models could potentially change a little bit with <unk##> , though not as bad as trees i 'm guessing . i 'm not sure what " promise " is made to users about <unka> between <unka-> versions ... </s>

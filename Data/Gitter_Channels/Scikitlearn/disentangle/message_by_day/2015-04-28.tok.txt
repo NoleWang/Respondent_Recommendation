@@ -1,0 +1,9 @@
+<s> <user> greetings ! i 've done a pure python implementation of the <unka-> algorithm for clustering <unka> data : URL/https:/ URL/github.com/ <unka/> </s>
+<s> <user> it 's <unka> after the <unka-> code in <unka> . any interest in this ? </s>
+<s> <user> congratulations ! <unka@> <unk#a@> <unka-@> </s>
+<s> <user> though not accepted into gsoc <unka:> : , i 'll continue working on the tasks proposed . </s>
+<s> <user> great , thanks :) </s>
+<s> <user> i 'm sorry you did n't make it , we did n't have enough <unka> for all the projects . </s>
+<s> <user> <unka@> we could link to your code in related projects , but i think we decided against including <unka> in the past because it was very slow . is that not the case ? i forgot the details . </s>
+<s> <user> <unka@> in pure python , it 's almost exactly an order of magnitude slower than <unka-> . but it scales roughly the same as <unka-> in terms of number of points ( but worse in terms of <unka_> and dimensions ) </s>
+<s> <user> it 's less that an order of magnitude , actually . let 's say 5 to 10 times slower . </s>

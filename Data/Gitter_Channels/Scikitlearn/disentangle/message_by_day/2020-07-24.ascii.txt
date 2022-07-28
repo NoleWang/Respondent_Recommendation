@@ -1,0 +1,4 @@
+[08:45] <55d21ee30fc9f982beadabb8> It is bit tricky but you need to follow the links to get to this page: https://dev.azure.com/scikit-learn/scikit-learn/_build/results?buildId=20118&view=logs&j=13650d7c-49e8-54f3-0598-c3480d1c1e4f&t=97f2162d-a0c4-54dc-9fce-2fceef7172e3
+[08:48] <55d21ee30fc9f982beadabb8> So to do so: click on "details" on checks frame in the PR page. It will lead you to a page where you have only the "Bash exited with code'1'" most of the time. In this page you can go on the bottom and click on "View more details on Azure Pipelines ". It will redirect you on the azure where you can see the terminal output
+[08:48] <55d21ee30fc9f982beadabb8> and there you will get which test is failing and what are the reason
+[08:49] <55d21ee30fc9f982beadabb8> usually you can reproduce those locally afterwards

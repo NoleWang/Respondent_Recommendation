@@ -1,0 +1,2 @@
+[13:50] <57a061aa40f3a6eec05d8d26> In RandomForestClassifier, if the max_features is sqrt or log2, does it round it to nearest int or what?
+--------------------------------------------------------------------------------------------------

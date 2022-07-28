@@ -1,0 +1,5 @@
+[01:13] <53135b495e986b0712efc453> Could someone remove the need contrib tags from issues which have a PR open? @amueller @ogrisel @glouppe ?
+[01:15] <53135b495e986b0712efc453> #5943 #4639 #4808 #4883 #5029 #5298 #5318 #5952
+--------------------------------------------------------------------------------------------------
+[01:19] <53135b495e986b0712efc453> Also since there was sufficient interest in mailing list (by sufficient interest I mean the +1 from Joel and +0(?) from Andy ;)), could some one add the "Need Review" tag pl? Once added I have a list of PRs to be tagged ;)
+--------------------------------------------------------------------------------------------------

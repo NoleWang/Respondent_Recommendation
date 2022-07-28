@@ -1,0 +1,7 @@
+[09:36] <5b3f6eedd73408ce4f9fd9e7> Hi, i will try to predict customer lifetime period. My dataset has information about customer lifetime period. Should i set this column as target and do regression for predict it?
+--------------------------------------------------------------------------------------------------
+[15:16] <567f5d7716b6c7089cc043a8> @MahmoudElsayad you probably would need algorithms which deal well with time series challenges, such as HMM or RNN (mostly LSTM related) models, which are not included in scikit-learn. You may find more information in the following places: - https://hmmlearn.readthedocs.io/en/latest/ - https://machinelearningmastery.com/make-predictions-time-series-forecasting-python/ - https://machinelearningmastery.com/time-series-prediction-lstm-recurrent-neural-networks-python-keras/
+[15:29] <567f5d7716b6c7089cc043a8> @talatccan that would be a start. But please note that issues such as preprocessing and scaling your inputs and/or outputs, and hyperparameters of your models, may substantially affect your results. You can refer to the resources posted above your message for more information.
+--------------------------------------------------------------------------------------------------
+[16:48] <5bbc5d22d73408ce4faacee2> What all do you think is the future scope of ML and AI in the field of data science
+--------------------------------------------------------------------------------------------------

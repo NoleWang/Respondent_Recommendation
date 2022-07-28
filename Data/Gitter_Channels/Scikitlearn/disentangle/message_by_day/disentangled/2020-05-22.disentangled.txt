@@ -1,0 +1,10 @@
+[13:22] <5e7de2b6d73408ce4fde36e6> At the bottom of the scikit-learn website it says " <unconvertable> 2007 - 2019, scikit-learn developers (BSD License)". I assume it should be 2020 instead of 2019, right? If yes, I'm happy to make an issue and fix it.
+--------------------------------------------------------------------------------------------------
+[14:12] <5baf7d9ad73408ce4fa9c9b2> Thanks for noticing @marenwestermann , this is already fixed in the dev version https://scikit-learn.org/dev/user_guide.html
+--------------------------------------------------------------------------------------------------
+[14:45] <5e7de2b6d73408ce4fde36e6> Thanks for pointing it out! I'll have a look there first next time.
+--------------------------------------------------------------------------------------------------
+[16:53] <5b58594ed73408ce4fa23ee3> Hi, do you have any useful resources for thinking about legal issues in open source (e.g. governance, sponsoring, contributor license agreements)? Would be much appreciated, thanks! :)
+--------------------------------------------------------------------------------------------------
+[17:44] <5baf7d9ad73408ce4fa9c9b2> @mloning I think this book https://producingoss.com/ covers some of these topics
+--------------------------------------------------------------------------------------------------

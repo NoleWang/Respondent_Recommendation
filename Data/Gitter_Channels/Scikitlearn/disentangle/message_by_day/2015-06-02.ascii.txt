@@ -1,0 +1,5 @@
+[07:37] <53135b495e986b0712efc453> @Barmaley-exe thanks! :) @xuewei4d apologies for the same ;)
+[18:28] <54e07d6515522ed4b3dc0858> @amueller @llllllllll worst name, or *best* name? :smile: 
+[18:34] <54e07d4015522ed4b3dc0856> I think you could go a level further @l1Ill11IIlll111III
+[18:34] <54e07d4015522ed4b3dc0856> just totally destroy people with certain fonts
+[20:45] <550f53e215522ed4b3dda5f6> Hi, @rvraghav93 I think you need to update the RSS feed of your blog in Terri's website, (link)[https://github.com/terriko/gsoc/blob/master/blog-aggregator-configs/config2015.ini]

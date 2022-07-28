@@ -1,0 +1,2 @@
+[23:52] <5e925802d73408ce4fe01b38> Hello, I was using sklearn.svm.SVC and it took five hours.  I did get good results, but I am wondering if scikit-learn has an ETA (Estimated time to Arrival) setting, which shows the estimated time for the program to run.
+--------------------------------------------------------------------------------------------------

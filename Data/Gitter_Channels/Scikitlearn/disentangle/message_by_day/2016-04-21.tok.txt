@@ -1,0 +1,5 @@
+<s> <user> sorry too late to reply : i commented on your post . i think besides the randomized parameter search or exhaustive grid search use case , the other common machine learning use case that really benefit from distributed training is gradient boosted trees . the implementation of boosted trees in <unka-> is not really <unka> to <unka-> distribution in its current form . however <unka> is really mature in that regard and already provides hadoop <unka> integration . i think it would run great on top of <unka.> . they also plan better integration with <unka> <unka> but this is still on the roadmap . </s>
+<s> <user> i am a little concerned about example URL/http:/ <unka-./> <unka#-./_> </s>
+<s> <user> there is not blue bar for the second feature </s>
+<s> <user> and smaller bar for the forth one </s>
+<s> <user> thus i am not sure how the example proves that feature selection improves svm .. </s>

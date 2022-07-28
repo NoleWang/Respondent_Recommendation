@@ -1,0 +1,4 @@
+[22:53] <matrix-auw9da:matrix.org> ok I have a set of market returns. But I want to explain the returns using a set of features, then find the hierarchy and find an equal weighted portfolio that minimizes variance. How can this be done?
+[22:53] <matrix-auw9da:matrix.org> ``ok I have a set of market returns. But I want to explain the returns using a set of features, then find the hierarchy``
+[22:54] <matrix-auw9da:matrix.org> this much Idk how to do, I can figure out the rest.
+--------------------------------------------------------------------------------------------------

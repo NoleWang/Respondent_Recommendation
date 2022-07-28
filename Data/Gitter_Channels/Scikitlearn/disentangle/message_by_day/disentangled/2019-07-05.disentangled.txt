@@ -1,0 +1,2 @@
+[23:24] <5c77a43ed73408ce4fb93081> @piotr-mamenas Please check the version of sklearn you are using. I believe `output_dict` was added in 0.20.
+--------------------------------------------------------------------------------------------------

@@ -1,0 +1,3 @@
+[18:46] <5c9bc1dad73408ce4fbc0304> Hi anyone can please assist me to 
+[18:46] <5c9bc1dad73408ce4fbc0304> Install anaconda on Ubuntu
+[20:42] <567f5d7716b6c7089cc043a8> have you tried an online tutorial and failed @SadiaAman ?

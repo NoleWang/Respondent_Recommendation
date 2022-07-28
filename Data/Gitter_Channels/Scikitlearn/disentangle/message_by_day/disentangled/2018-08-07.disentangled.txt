@@ -1,0 +1,2 @@
+[22:26] <5a2c58c8d73408ce4f8294ba> Hey, I notices something strange in the documentation. For the GradientBoostingClassifier is says the criterion=friedman_mse for the default. I would have expected criterion=gini like in RandomForestClassifier since mse is typically used for regression not classificaiton. The text is the same as in GradientBoostingRegressor. Is it possible that it was copied by accident?
+--------------------------------------------------------------------------------------------------

@@ -1,0 +1,73 @@
+<s> <user> <unka@> this is a great resource too : URL/https:/ URL/www.youtube.com/ <unk#a&-/=?> </s>
+<s> <user> thanks <unka@> </s>
+<s> <user> say you have over 9000 features which you would like to significantly reduce , what outside of <unka> you can use to put down that number ? </s>
+<s> <user> you may use <unka> regression , for instance </s>
+<s> <user> what is <unka> ? </s>
+<s> <user> URL/https:/ URL/en.wikipedia.org/ <unka/_> </s>
+<s> <user> <unka> is a linear way of reducing your dimensions to a few principal components . you can use neural networks for a non-linear approach for the same </s>
+<s> <user> basically the last hidden layer of your neural network is a representation of your input in much the same way <unka> to principal components is </s>
+<s> <user> the number of dimensions of this representation will be the number of <unka> in the last hidden layer </s>
+<s> <user> ohk thanks <unka@> </s>
+<s> <user> <unka@> does it work with sparse <unka> so i can use it with <unka> <unka> text ? </s>
+<s> <user> <unka*> </s>
+<s> <user> as far as i know , it works with sparse <unka> , but i myself havent use it for such situations </s>
+<s> <user> i see <unka> which uses <unka> underneath for the <unka> of sparse <unka> suggested by <unka> team </s>
+<s> <user> but this method lets me go down only by about 200 features which is just not enough . </s>
+<s> <user> and i need to cut it down say to 2000 features so i do n't spend days training one model </s>
+<s> <user> <unka> is not using <unka> underneath : <unka> is the application of ( truncated ) <unka> to text data represented as bag of words ( e.g . <unka-> vectors ). </s>
+<s> <user> <unka> is a generic mathematical tool , <unka> is one specific application of <unka> to text mining . </s>
+<s> <user> <unka-@> <unk#a> features is huge ! are you having such a big feature set because youre considering each word in the vocabulary as a feature ? </s>
+<s> <user> <unka> is <unka> on centered data . </s>
+<s> <user> yes it is , not entire vocabulary , i have stop words filtered out and <unka> extracted </s>
+<s> <user> thats not the recommended approach when doing <unka> </s>
+<s> <user> <unk#a> features features is pretty low number of features for bag of words vectors . bag of words is very very sparse . </s>
+<s> <user> look at <unk#a> to get dense vectors </s>
+<s> <user> what would be the recommended way ? </s>
+<s> <user> <unka> is also recommended to get dense vectors </s>
+<s> <user> depends on your use case .. what are you trying to solve ? </s>
+<s> <user> <unka> on <unka-> bag of words is a good fast <unka> used as baseline for text <unka> clustering and information retrieval text mining . </s>
+<s> <user> i have a set of classes with labelled data which i want to build several binary output models from , each model would just output 0 , 1 to highlight whenever the article belongs to a class or not ( 1 class per model ) </s>
+<s> <user> <unka> on <unka-> vectors should be a good and fast baseline . you can also try : <unka-> = > <unka> = > <unka> or <unka> and <unka-> = > <unka> = > <unka> <unka> as alternatives . </s>
+<s> <user> but this stays with the <unka> approach , how would it handle the 9600 or so features ? </s>
+<s> <user> you can also try to include features derived from <unka> word vectors ( e.g . <unk#a> or <unka> ) and some fancy neural networks with <unka> or <unka> but i would try the above <unka> first . </s>
+<s> <user> > but this stays with the <unka> approach , how would it handle the 9600 or so features ? how is this a problem ? <unka> works fine on high <unka> sparse data </s>
+<s> <user> about the first question : <unka> is not always a good idea depending on what you are try to predict . </s>
+<s> <user> i asked that question the other day and wrote about it , <unka> might lose the context of whole sentences so in theory they will lower the accuracy but that 's also a way to lower the amount of data to process </s>
+<s> <user> lets see the <unka> regression approach then </s>
+<s> <user> thanks </s>
+<s> <user> <unka@> this looks suprisingly good , it was training just for a few seconds on a set of only 3500 articles and the confusion matrix looks like this : </s>
+<s> <user> <unk#a([> , 19 ], [ 0 , 0 <unk,]> <unk#a=> ) </s>
+<s> <user> accuracy : <unk#.> </s>
+<s> <user> if it looks to good , there must be something wrong </s>
+<s> <user> is your data well balanced ? maybe you need to shuffle the original dataset before do <unka> regression . </s>
+<s> <user> it would be good also to use cross validation to get the answer if your model is really so good </s>
+<s> <user> yeah , i am checking it . </s>
+<s> <user> <unk#a([> , 19 ], [ 0 , 0 <unk,]> <unk#a=> ) means that the mode always predict the class 0 . it 's the constant <unka> ( probably caused too much bias <unka> ) </s>
+<s> <user> your test data is actually <unka> with 19 to <unk#> ratio . <unk#> ( 12 + <unk#> ) == 0.99 accuracy which is weird because this does not match your reported accuracy . </s>
+<s> <user> <unka-@> i hope you did a proper train test split :) </s>
+<s> <user> you should use a balanced accuracy or roc <unka> or precision recall <unka-> score to evaluate your model instead of the raw accuracy . </s>
+<s> <user> <unk`> <unka> : recall is <unka-> and being set to 0.0 due to no true samples . <unka'> , 'true' , average , <unka_> ) <unk`> </s>
+<s> <user> the train test split was <unk#.:> ratio </s>
+<s> <user> it ca n't predict <unk#.> with constant class because you got <unk#/> samples class 1 , and the tp is <unk#> </s>
+<s> <user> and train test split takes into account balance of classes from what i know </s>
+<s> <user> <unka@> </s>
+<s> <user> the overall class balance of the entire dataset is a difficult topic , the type of class i am trying to detect may appear in every <unk#/> articles but as said i have 1200 samples of " 1 " and 3800 samples of " 0 " so i am guessing increasing the " 0 " sample would prove beneficial generally </s>
+<s> <user> check the content of your <unka_`> : the recall warning seems to indicate that you only have negative samples ( samples from the majority class ) in your test set . </s>
+<s> <user> ok got it <unka@> </s>
+<s> <user> <unk`> accuracy : <unk#.> precision : <unk#.> recall : <unk#.> <unk`> </s>
+<s> <user> <unk`> <unk#a([> , 6 ], [ 221 , 86 <unk,]> <unk#a=> ) <unk`> </s>
+<s> <user> looks different now </s>
+<s> <user> i <unka> the dataset on the train test split and it changed completely as you can see </s>
+<s> <user> but the score is anyway pretty impressive considering the sample and no <unka> tuning </s>
+<s> <user> thanks </s>
+<s> <user> you may also try <unka> <unka> split instead of the regular one - URL/https:/ <unka-./> <unka./_> </s>
+<s> <user> i will check it out , thanks <unka@> </s>
+<s> <user> you're welcome </s>
+<s> <user> anyone has <unk#$> million dollars by the way ? : p </s>
+<s> <user> oh and that 's what i like , i added 6000 articles to the 0 class and i already have <unk#.> </s>
+<s> <user> <unk`> <unk#a([> , 7 ], [ 235 , 47 <unk,]> <unk#a=> ) <unk`> </s>
+<s> <user> accuracy is rather meaningless for <unka> problems . look at precision and recall and plot the precision recall curve . here a recall of 0.2 might be too bad for your <unka> to be useful . it depends on the application of your <unka> </s>
+<s> <user> if you do parameter tuning of your text <unka> pipeline , use <unka"=_> " or " <unk#a_> " . </s>
+<s> <user> see the end of this tutorial on how to build a pipeline and do parameter tuning : URL/https:/ <unka-./> <unka#-./_> </s>
+<s> <user> that will be useful , thanks <unka@> </s>
+<s> <user> hi guys does <unka> sdk or articles available for go language </s>

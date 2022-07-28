@@ -1,0 +1,5 @@
+<s> <user> <unk![> screenshot from <unk#-> <unk#a()-./:]> ) </s>
+<s> <user> hi everyone . an svm model i created returns an error when i fit with my x and y data . below is a print out of my x and y values and the error message . i transformed the y values to <unka> values as well . </s>
+<s> <user> the same error is generated when i use random forest and naive <unka> </s>
+<s> <user> do n't <unka> <unka`> </s>
+<s> <user> and it will work </s>

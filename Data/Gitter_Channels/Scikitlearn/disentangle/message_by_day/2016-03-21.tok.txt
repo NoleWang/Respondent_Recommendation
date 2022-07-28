@@ -1,0 +1,7 @@
+<s> <user> <unka@> <unk#a@> <unka-@> <unk#a@> please make sure you submit your <unka> soon into the <unka> website . i believe the deadline is in less than 3 days ... thanks and good luck :) </s>
+<s> <user> will do , thanks for the reminder ! </s>
+<s> <user> i 'm not sure who else is interested . if there is any other interested person , please make sure you submit it within the next 3 days as you wo n't be able to do so after the deadline ... ( do n't worry about it being perfect . <unka*> make sure that you clearly outline , at a high level what you wish to achieve within the <unka*> ... ) </s>
+<s> <user> hi everyone , ( i 'm not sure this is the best place to ask ; else let me know .). i 'm trying to <unka-> a <unka> clustering and retrieve the most likely cluster : <unk`> <unka> = <unka(> ) for x in x : dist = <unka(_> ) <unka()._> )) <unk`> although the clusters are very similar across iterations , the cluster labels are ( obviously ) random . do you know how i can aggregate these labels to find the most robust clusters across iterations : e.g . <unka_`> = <unka(.[> for sample in <unka)]`> </s>
+<s> <user> hmm , you should <unka-> to stackoverflow . theyd probably be more responsive </s>
+<s> <user> <unka-@> ok thanks ! </s>
+<s> <user> URL/http:/ <unka./> <unk#a-/> </s>

@@ -1,0 +1,13 @@
+<s> <user> hey guys , i was going through the issues on github , so have a few questions regarding neural network <unka(/> ): </s>
+<s> <user> 1 . i think <unka> has already been implemented , is the pr already merged with the 'master' branch </s>
+<s> <user> 2 . what are the other things in the pipeline related to neural networks </s>
+<s> <user> also , are there any plans for implementing word vectors in <unka-> ? </s>
+<s> <user> <unka@> ? </s>
+<s> <user> iirc there was a proposal to add <unk#a> awhile ago but it got <unka> pretty quickly since <unka> is already a thing </s>
+<s> <user> also i dont think <unka> is implemented merged , see URL/https:/ URL/github.com/ <unk#a-/> </s>
+<s> <user> heres the <unk#a> one URL/https:/ URL/github.com/ <unk#a-/> </s>
+<s> <user> <unka-@> true that . and although <unka> is pretty straight forward to use , do you think that , if we had the <unk#a> module in <unka-> itself , then one does n't have to rely on two different libraries , besides , we already have couple of existing <unka> methods for text , in that way you can simply try word vectors instead of <unka/> vectors etc . </s>
+<s> <user> i dont think thats worth implementing <unk#a/> in <unka-> though ; as <unka> said in the issue > text modelling probably requires more than just machine learning , including specific rules . thus i think that <unk#a> belongs more in <unka> ( where it already is ) than in <unka-> : it is a model very tuned to text . </s>
+<s> <user> and <unka> does indeed have a <unka-> interface ( or should have one soon i believe ) </s>
+<s> <user> yeah right , just went through it . i think as <unka@> mentioned in this issue , i'd rather add it in URL/https:/ URL/github.com/ <unka-./> </s>
+<s> <user> yup or perhaps URL/https:/ URL/github.com/ <unka-/> </s>

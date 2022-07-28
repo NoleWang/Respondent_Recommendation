@@ -1,0 +1,12 @@
+[09:28] <54d4a1d6db8155e6700f853b> please everybody check scikit-learn.github.io/ and stable and dev and 0.16 subfolders
+[09:28] <54d4a1d6db8155e6700f853b> https://github.com/scikit-learn/scikit-learn/issues/4993
+[09:28] <54d4a1d6db8155e6700f853b> report issues there
+[09:58] <54d4a1d6db8155e6700f853b> added 0.15
+[11:56] <54d4a1d6db8155e6700f853b> ok looking good now.
+[11:56] <54d4a1d6db8155e6700f853b> waiting for the dns move
+[15:17] <54e07d6515522ed4b3dc0858> dns is up over here, thanks @amueller!
+[15:25] <54e07d6515522ed4b3dc0858> hi @rvraghav93 
+[19:27] <54d4a1d6db8155e6700f853b> @xuewei4d sorry for the lack of feedback, but would you have time to look at this: https://github.com/scikit-learn/scikit-learn/pull/1292#issuecomment-122038677 ?
+[19:28] <54d4a1d6db8155e6700f853b> @rvraghav93 I'll have more time on wednesday to look at your code
+[19:40] <550f53e215522ed4b3dda5f6> Yes. He is right. I have fixed this problem in https://github.com/scikit-learn/scikit-learn/pull/4802/files#diff-a498a8ef6ad37ebc525591d722e0a7ceR220
+[19:43] <550f53e215522ed4b3dda5f6> The kmeans initialization in GMM is not good. It only initializes the means_. My PR will initialize the responsibilities first, then all parameters including means, weights, covars.

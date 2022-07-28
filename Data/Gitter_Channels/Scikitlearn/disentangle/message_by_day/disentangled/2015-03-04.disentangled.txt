@@ -1,0 +1,6 @@
+[00:47] <5474d9eadb8155e6700d8178> @amueller for the partial_fit tests PR do you think there is still a lot of testing code that could be reduced/removed?
+--------------------------------------------------------------------------------------------------
+[15:11] <54d4a1d6db8155e6700f853b> I'm not really sure
+--------------------------------------------------------------------------------------------------
+[17:12] <54d4a1d6db8155e6700f853b> @ogrisel are you there and do you have time to talk about an outline for the webcast?
+--------------------------------------------------------------------------------------------------

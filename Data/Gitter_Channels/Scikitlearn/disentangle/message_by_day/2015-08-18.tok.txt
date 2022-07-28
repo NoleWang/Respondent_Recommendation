@@ -1,0 +1,5 @@
+<s> <user> anyone interested in giving some feedback on URL/https:/ URL/github.com/ <unk#a-/> ? </s>
+<s> <user> <unka@> sorry , feedback often takes some time . it sounds like a good idea to me , though i 'm not the authority on this subject . </s>
+<s> <user> when designing the <unka> , we did n't have " most entries are zero all the time " in mind , which is the case for hashing . </s>
+<s> <user> <unka@> no worries , thanks for the feedback ! i 'll spend some more time on benchmarking the sparse structure </s>
+<s> <user> <unk#a@> : gentle reminder that friday is the firm gsoc <unka-> date . </s>

@@ -1,0 +1,11 @@
+<s> <user> <unk![> <unka()-./:]> ) </s>
+<s> <user> hello everybody , i have a doubt - why is the number of nodes in hidden layer always 1 more than number of nodes in input layer ? </s>
+<s> <user> how do we set that number of nodes in hidden layer . in most cases i see this type of representation as shown in diagram </s>
+<s> <user> <unka@> " always " ? </s>
+<s> <user> i mean in most cases that i came across <unka@> </s>
+<s> <user> <unka@> i am not aware of this being a standard practice . do you mean in actual cases or just <unka> ? </s>
+<s> <user> i mean <unka> .in most youtube videos i see this type of representation <unka@> </s>
+<s> <user> <unka@> it 's probably what 's convenient for the creator to draw . </s>
+<s> <user> <unka@> . so is there any standard rule to know how many nodes we can set for the hidden layer ? </s>
+<s> <user> <unka@> it varies wildly what ends up working well . there is an old rule of thumb for <unka-> models of <unka'> of input nodes and output <unka'> , but that is even <unka> than most rules of thumb . </s>
+<s> <user> ok , thank you <unka@> </s>

@@ -1,0 +1,6 @@
+[16:48] <53135b495e986b0712efc453> @vighneshbirodkar Ah yes. Thanks for the response :) When cythonize.dat is rewritten (for some reason, say build clean etc) and I have a build error at say the 5th cython file the cythonize.dat is not updated with the hash records of first 4. This makes it to cythonize the first 4 again and again until 5th (and all subsequent) cython file compiles without error... 
+[16:48] <53135b495e986b0712efc453> Also could anyone review https://github.com/scikit-learn/scikit-learn/pull/6254 please?
+[16:48] <53135b495e986b0712efc453> @ogrisel ?
+[18:15] <5572bf2d15522ed4b3e182a1> Can I use a plain `linear_model.RANSACRegressor()` in `cross_validation.cross_val_score`?  Currently I am getting a `ValueError: No inliers found, possible cause is setting residual_threshold (None) too low.`
+[18:30] <5572bf2d15522ed4b3e182a1> Nevermind, seems to be a problem with my data
+[23:46] <53135b495e986b0712efc453> @amueller We should add this :P - https://github.com/domgetter/NCoC

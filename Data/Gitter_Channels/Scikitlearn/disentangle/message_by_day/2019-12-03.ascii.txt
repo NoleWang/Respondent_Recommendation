@@ -1,0 +1,1 @@
+[12:33] <564e507e16b6c7089cbb6551> Thanks @NicolasHug , you  were right I was actually not even setting that parameter (`solver='auto'`). With solver=sag, it returns the # of iterations

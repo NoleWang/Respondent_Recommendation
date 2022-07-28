@@ -1,0 +1,2 @@
+<s> <user> <unka@> is n't <unka> guaranteed to produce an optimal solution irrespective of the value of <unka`> ? i am referring to equation 5.1 [ <unka(./:]~> ) </s>
+<s> <user> <unka`> is <unka> by a factor which should be 0 for all feasible solutions . </s>

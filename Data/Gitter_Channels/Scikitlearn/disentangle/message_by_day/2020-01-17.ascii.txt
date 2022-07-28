@@ -1,0 +1,4 @@
+[00:12] <5a7dae0ad73408ce4f8c6d2e> Why does `GradientBoostingClassifier` use `DecisionTreeRegressor` instead of `DecisionTreeClassifier`?
+[06:34] <55a361b55e0d51bd787b3315> @NicolasHug Worked!
+[12:19] <5baf7d9ad73408ce4fa9c9b2> @jacobcvt12 because gradient boosting tries to predict gradients which are always continuous targets, even in the case of classification. With a log loss (as used in sklearn) these gradients are homogeneous to a log-odds ratio, and are then passed through a sigmoid function to become a probability between [0, 1]
+[12:20] <5baf7d9ad73408ce4fa9c9b2> self plug: http://nicolas-hug.com/blog/around_gradient_boosting

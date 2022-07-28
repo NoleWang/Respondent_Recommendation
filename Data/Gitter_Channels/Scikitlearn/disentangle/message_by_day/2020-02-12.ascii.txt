@@ -1,0 +1,2 @@
+[09:48] <5d837603d73408ce4fcb7845> Hey guys! New here. Got a question: why oob_score computing isn't done in parallel like the predict method from RandomForestRegressor?
+[10:55] <5e352127d73408ce4fd863d1> Hi there,  I'm new here... quick question, I'm recently using MLFLOW to manage model lifecycle... I've used it with some scikit-learn models and TensorFlow. Any opinion about mlflow framework? just wanted to know other experiences

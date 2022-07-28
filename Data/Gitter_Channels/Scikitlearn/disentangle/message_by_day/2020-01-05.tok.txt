@@ -1,0 +1,1 @@
+<s> <user> i would probably found cool to have an entitled the blog post with something " limitations and caveats ... " instead of " what 's wrong ... " . this said i think that there are some <unka> that should be discussed by opening issues to come up with adequate solutions . </s>

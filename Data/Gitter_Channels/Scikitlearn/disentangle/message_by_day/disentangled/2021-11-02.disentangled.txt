@@ -1,0 +1,2 @@
+[19:20] <567f5d7716b6c7089cc043a8> my guess is most of the time is spent on ball_tree or kd_tree in nearestneighbors. If I were to investigate, I'd add a few logging info in those areas to see what's happening, but probably most of them are in cython space. We don't really have logging in those areas, if you want to figure it out, you should add it to your copy of scikit-learn and see where the time is spent.
+--------------------------------------------------------------------------------------------------

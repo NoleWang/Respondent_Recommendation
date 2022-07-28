@@ -1,0 +1,6 @@
+<s> <user> <unka@> that 's what i am doing locally , i work with a jupyter notebook with a separate tensorflow + <unka> environment installed and used with " activate " and <unka> </s>
+<s> <user> i was asking because i 've got a separate lightweight service running inside of container and i wanted to keep it limited to just pip and relevant libs on production </s>
+<s> <user> in the container i do n't want to use <unka> </s>
+<s> <user> <unka-@> have you considered <unka> as a lightweight alternative ? URL/https:/ <unka./> <unka./> </s>
+<s> <user> i think there is also the odd <unka> image to build of </s>
+<s> <user> <unka-@> use a venv and pip install everything you need in it . you can also prepare a lightweight <unka> environment with some tricks : URL/https:/ URL/twitter.com/ <unk#a/_> </s>

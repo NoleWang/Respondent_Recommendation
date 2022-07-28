@@ -1,0 +1,1 @@
+<s> <user> hi , is <unk##> ( move to <unka.> ) still under consideration as gsoc <unk#'> project ? i pinged there earlier to work on it but realised that it is not that small to do within a week or two . i migrated <unka> 's testing framework from nose to <unka.> and am willing to take up the same here <unka:> : </s>

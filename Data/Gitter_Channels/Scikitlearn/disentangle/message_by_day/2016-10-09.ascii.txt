@@ -1,0 +1,10 @@
+[05:32] <56a34c16e610378809bdc988> @amueller not sure, bu pulse can give really good insights
+[05:32] <56a34c16e610378809bdc988> https://github.com/scikit-learn/scikit-learn/pulse
+[05:35] <56a34c16e610378809bdc988> Hi, I had a feature request
+[05:36] <56a34c16e610378809bdc988> can we have a `mean_squared_log_error` or a `root_mean_squared_log_error` in `sklearn.metrics` ?
+[05:36] <56a34c16e610378809bdc988> former is preferred looking at the current set of metrics
+[05:37] <56a34c16e610378809bdc988> Frequent competitions on kaggle have this evaluation metric
+[05:37] <56a34c16e610378809bdc988> https://www.kaggle.com/competitions?sortBy=prize&group=all&page=1&site=main&eval=rmsle
+[05:38] <56a34c16e610378809bdc988> for now, i make a new column in my dataframe by taking `np.log(1 + x)` transformation, and then calculate `mean_squared_error` on it. Then while making a submission I reverse it as `np.exp(x) - 1`.
+[05:39] <56a34c16e610378809bdc988> Thoughts ?
+[05:40] <56a34c16e610378809bdc988> [![blob](https://files.gitter.im/scikit-learn/scikit-learn/VhqO/thumb/blob.png)](https://files.gitter.im/scikit-learn/scikit-learn/VhqO/blob)

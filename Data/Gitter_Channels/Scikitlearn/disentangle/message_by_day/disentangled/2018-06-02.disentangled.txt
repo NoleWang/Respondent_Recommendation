@@ -1,0 +1,6 @@
+[02:28] <5b11caa3d73408ce4f9b96b5> Is there a reason Scikit doesnt parallelize predict ?
+--------------------------------------------------------------------------------------------------
+[02:31] <5b11caa3d73408ce4f9b96b5> Since estimator wont mutate as a part of the computation, would it be safe to use it across the threads ?
+--------------------------------------------------------------------------------------------------
+[03:32] <54d4a1d6db8155e6700f853b> it's often slower, depending on estimator and dataset size
+--------------------------------------------------------------------------------------------------

@@ -1,0 +1,10 @@
+<s> <user> > <unk![> <unka()-./:]> ) can anyone explain line 6-7 update work , if example that would be great </s>
+<s> <user> <unka@> hi sir </s>
+<s> <user> google <unka> <unka> ?? </s>
+<s> <user> hello , why does <unka_`> " eats " prints from <unka`> ? when i set verbose on pipeline i dont see any verbosity and when i have debug step in the pipeline that prints shape of the data it also doesnt print anything but when i execute the pipeline manualy it prints all the thing above </s>
+<s> <user> hello ! new , hopefully soon to be contributor here , i am working with a team of fellow data science majors who have recently submitted a pull request for documentation . would love some guidance or suggestions as we have n't heard anything back yet and are working on more as we speak ! thanks in advance ! </s>
+<s> <user> nice to have you on board <unka@> . review time is our main bottleneck , and therefore it may take some time before a <unka> can get to check your pr . what 's your pr number ? </s>
+<s> <user> thank you so much , understandably so ! we are pr <unk##> and really just added a couple lines of documentation </s>
+<s> <user> <unka@> thanks again for responding , even if someone has a minute to let us know if we are on the right track that would be super helpful ! </s>
+<s> <user> i am running the same version of <unka> but once the pipeline outputs the verbose when in <unka_> and the other time it doesnt , could it be something <unka> jupyter ? </s>
+<s> <user> <unka@> probably it'd be easier to track the problem if you open an issue with a reproducible bit of code </s>

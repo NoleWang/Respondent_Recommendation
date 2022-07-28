@@ -1,0 +1,3 @@
+<s> <user> hi , how do you guys do dl experiments ( in terms of infrastructure ). will amazon ec2 instances suffice for research purposes ? thanks for your help . </s>
+<s> <user> <unka@> i know very little about language processing , but in theory , it sounds like it would work ? pretty sure you 'll find out why it does n't when you code it out :p </s>
+<s> <user> <unka@> it <unka> depends on the scale of the analysis that you're doing . i 'm a <unka> who works mostly with <unka> data , which can be pretty big , so our labs tend to have dedicated computers with many cores and a good deal of ram , but i could certainly replicate that environment on ec2 if i wanted to pay as i went </s>

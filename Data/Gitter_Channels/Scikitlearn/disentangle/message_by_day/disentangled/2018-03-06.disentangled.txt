@@ -1,0 +1,5 @@
+[17:53] <59ff9cd4d73408ce4f7d44f2> Hi guys
+--------------------------------------------------------------------------------------------------
+[17:54] <59ff9cd4d73408ce4f7d44f2> What's the... eh, correct way to test C extensions without exposing the original class?
+[17:57] <59ff9cd4d73408ce4f7d44f2> oops, wrong room, sorry :worried:
+--------------------------------------------------------------------------------------------------

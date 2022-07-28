@@ -1,0 +1,25 @@
+<s> <user> <unk#a@> what do you plan to write about in this week 's blog post ? </s>
+<s> <user> nested cv !! is that okay ? hey btw do u happen to have a link of the mailing list thread that u had mentioned previously ? i am unable to find it :/ </s>
+<s> <user> and i 'll resume work on cross validation as soon as i am done with fit reset partial fit tests ... :) </s>
+<s> <user> <unk#a@> the discussion was here . i think this thread has some very valuable insight about evaluation in machine learning . URL/http:/ URL/sourceforge.net/ <unk#a-/> </s>
+<s> <user> thanks !! </s>
+<s> <user> i would acknowledge <unka@> and <unka@> and maybe even link to the thread too . </s>
+<s> <user> the " extreme " example ( where the dataset has two consistent but different <unka> ) would make for a nice running example </s>
+<s> <user> okay and yes sure !! </s>
+<s> <user> and i am 2 blog posts behind -_- nested cv was supposed to be last sunday 's ! for this sunday can i post about online learning <unka_`> support in <unka> and the usefulness of the proposed tests ( in ensuring <unka_`> behaves as expected )? </s>
+<s> <user> that sounds good , i think you can do a smaller post about this <unka-> week . this is more internal stuff , it 's hard to write too much interesting stuff about it . </s>
+<s> <user> okay !! </s>
+<s> <user> maybe talk about how useful it is to have common tests that enforce api conventions to future code as well </s>
+<s> <user> sure ! :) </s>
+<s> <user> <unka@> what do you think ? </s>
+<s> <user> also <unk#a@> could you put down a brief plan for what you think we can get done in the next 2-3 weeks ? </s>
+<s> <user> a bit of structure might be useful , and i think this is better than just going back to the original timeline , since things are always in flow :) </s>
+<s> <user> sure i 'll do that ! :) </s>
+<s> <user> any comment on <unk##> ? i mean in terms of class definition . most of methods are not implemented yet , but i hope i am on the right track . </s>
+<s> <user> btw irc is totally unused during <unka> </s>
+<s> <user> ^^ </s>
+<s> <user> btw <unk#a@> what is the status of the <unka-> cv ? </s>
+<s> <user> sorry i was out for the weekend </s>
+<s> <user> it would be great if you could catch up on the blog posts . the irc bridge is really not that important </s>
+<s> <user> and i saw there was a lot of discussion on the assert helpers . are they needed for any of the gsoc <unka> ? </s>
+<s> <user> i just wanted to finish it off as it was lying around for a long time :/ i 'll resume work on it by tomorrow :) planning to finish off my blog post , the helpers and tests by today :) </s>

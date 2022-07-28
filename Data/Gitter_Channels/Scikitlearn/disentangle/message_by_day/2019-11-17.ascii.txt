@@ -1,0 +1,4 @@
+[08:13] <5dd100ecd73408ce4fd140ae> hi
+[08:14] <5dd100ecd73408ce4fd140ae> anyone there to help
+[18:22] <5dbd6437d73408ce4fcfbf0f> Hi @qazi1002 @eliseo looks like you need some NLP for this project...can you provide more info about which kind of help do you need? Are you meant to use specifically scikit-learn for this? Also, not sure that this is the proper place where to talk about this - topics should be strictly focused on scikit-learn development/bug fixing/etc.
+[19:41] <567f5d7716b6c7089cc043a8> I don't think we have a strict policy for this channel being related to the dev only. But in the interest of the rest of the community being able to use the answers we give to your questions related to the usage, posting them on stackoverflow or other related forums may be more appropriate.

@@ -1,0 +1,44 @@
+[07:11] <5910079ed73408ce4f5dc467> If after 6th epoch of perceptron ,  our perceptron is getting converged but I have set n_iter parameter as 10 , will the  values of weights that are obtained at 6th epoch as well as 10th epoch  be optimal or Is it like the weight values at 6th epoch be more optimal than 10th epoch? Need some clarifications .
+[08:18] <5910079ed73408ce4f5dc467> Ok I'll share the code soon...
+--------------------------------------------------------------------------------------------------
+[08:05] <596d505dd73408ce4f6d9602> I don't know the perceptron implementation of scikit-learn but convergence with Delta rule is guaranteed only for linearly separable problem
+--------------------------------------------------------------------------------------------------
+[08:25] <596d505dd73408ce4f6d9602> <unconvertable> I will take a look, I'm dev a perceptron in go (on github) and I want also to implement a multilevel + backprop framework (so guys, if you are interested, please join :D :D)
+[08:27] <596d505dd73408ce4f6d9602> About convergence: I don't remember maths related to "is monotonous descent or not"
+[08:29] <596d505dd73408ce4f6d9602> But definitely is guaranteed under the assumption of linearly separability (I have demonstration, if you want)
+--------------------------------------------------------------------------------------------------
+[16:56] <5581814615522ed4b3e20c6a> @ogrisel I have pickled my model using Joblib. Now i am pickling the LabelEncoder used to build the dataset also. So i can use it when prediction. Is it a right path?
+--------------------------------------------------------------------------------------------------
+[17:18] <541a528b163965c9bc2053de> How did you use the LabelEncder? To transform input features or the target variable? Most scikit-learn classifiers will automatically use a label encoder internally so you don't need to do it externally.
+[17:19] <541a528b163965c9bc2053de> If it's used to transform  input features it's better to use a pipeline.
+[17:19] <541a528b163965c9bc2053de> there is a PR for a ColumnTransformer under way.
+[17:20] <541a528b163965c9bc2053de> You can copy the code in your own project if you want it to be compatible with sklearn 0.18.2 and the future 0.19. ColumnTransformer will be part of 0.20.
+[17:20] <5581814615522ed4b3e20c6a> oh thats great
+[17:21] <541a528b163965c9bc2053de> you can follow progress at: https://github.com/scikit-learn/scikit-learn/pull/9012
+--------------------------------------------------------------------------------------------------
+[17:19] <5581814615522ed4b3e20c6a> Only for couple of categorical variables
+[17:19] <541a528b163965c9bc2053de> an pickle the full pipeline
+[17:19] <5581814615522ed4b3e20c6a> like State
+[17:20] <5581814615522ed4b3e20c6a> @ogrisel i dont get u
+--------------------------------------------------------------------------------------------------
+[17:23] <5581814615522ed4b3e20c6a> I am currently planning serving prediction via RESTapi
+[17:23] <5581814615522ed4b3e20c6a> So mostly ppl will upload their dataset
+[17:23] <5581814615522ed4b3e20c6a> my models automatically are preprocessed (imputing, labelEncoding for Object types, Scaling)
+[17:24] <5581814615522ed4b3e20c6a> as its encoded i need to have those encoding instance for cross validating my new predictions right
+[17:26] <5581814615522ed4b3e20c6a> Thats perfect
+[17:26] <5581814615522ed4b3e20c6a> Thank you @ogrisel  for instant reply :)
+[17:27] <5581814615522ed4b3e20c6a> exactly.. thank u :)
+--------------------------------------------------------------------------------------------------
+[17:25] <541a528b163965c9bc2053de> Then write all the preprocessing logics in a transformer (as done in ColumnTransformer for instance) and use a pipeline: http://scikit-learn.org/stable/modules/pipeline.html to combine it with the supervised classification or regression model.
+[17:25] <541a528b163965c9bc2053de> Then you can pickle the full pipeline for deployment.
+--------------------------------------------------------------------------------------------------
+[17:26] <541a528b163965c9bc2053de> Don't forget to snapshot the training for a given version of the model to be deployed. This way you can make sure you can retrain a similar model from the same data when you decide to upgrade the scikit-learn version.
+[17:27] <5581814615522ed4b3e20c6a> Yes i do remember it :)
+[17:27] <541a528b163965c9bc2053de> model pickles are not guaranteed to work across different scikit-learn versions.
+--------------------------------------------------------------------------------------------------
+[17:32] <541a528b163965c9bc2053de> @BastinRobin BTW if you deploy your model with several python processes running on the same host (e.g. gunicorn workers), you should use `joblib.dump(pipeline, '/path/to/store/model.pkl')` to save the model and `joblib.load('/path/to/store/model.pkl', mmap_mode='r')` to load the model parameters in read-only shared memory and save memory usage on your production servers.
+[17:34] <5581814615522ed4b3e20c6a> Yes i am doing the same
+[17:34] <5581814615522ed4b3e20c6a> its a perfect suggestion
+--------------------------------------------------------------------------------------------------
+[18:36] <56f4f5b885d51f252ababa4e> @amueller Noticing your latest issue, there is another malformed class at: http://scikit-learn.org/stable/modules/cross_validation.html#group-k-fold
+--------------------------------------------------------------------------------------------------

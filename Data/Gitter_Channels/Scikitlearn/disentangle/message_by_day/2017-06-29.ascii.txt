@@ -1,0 +1,13 @@
+[13:00] <55502d0c15522ed4b3e03330> when I use `GridSearchCV`, how can I find the actual parameters being used for a classifier?
+[13:01] <55502d0c15522ed4b3e03330> the `get_params` method seems to print everything in the search grid
+[13:01] <541a528b163965c9bc2053de> `grid_search.best_params_` after fit
+[13:01] <55502d0c15522ed4b3e03330> ah ok
+[13:01] <55502d0c15522ed4b3e03330> thanks Olivier :)
+[14:09] <54d4a1d6db8155e6700f853b> test #9032
+[22:35] <5572219415522ed4b3e17f0c> I'm using sklearn '0.15.0b1'.  I think I found a bug - when using lm.Ridge, if XtX is singular, the problem is still solved but sample_weight is ignored.  Is this worth filing an issue for?  I tried searching to see if this has been reported/resolved but I didn't find anything
+[22:36] <54d4a1d6db8155e6700f853b> @hhuuggoo that's a *really* old version and a beta release. Can you please update to master and see if the problem persists?
+[22:36] <5572219415522ed4b3e17f0c> yea I'll check
+[22:48] <5572219415522ed4b3e17f0c> ok cool looks like it's correct in sklearn 0.18.2
+[22:48] <54d4a1d6db8155e6700f853b> great :)
+[23:43] <54d4a1d6db8155e6700f853b> I'm close to defeating my arch enemy, dot: https://user-images.githubusercontent.com/449558/27715089-d81ef462-5d02-11e7-806b-87ac0753ecbe.png
+[23:44] <54d4a1d6db8155e6700f853b> (pure matplotlib)

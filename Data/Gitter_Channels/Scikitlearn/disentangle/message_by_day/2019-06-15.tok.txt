@@ -1,0 +1,8 @@
+<s> <user> i wonder what you guys think . </s>
+<s> <user> say you have a terrible <unka> text data set that you <unka> , <unk#:> ratio </s>
+<s> <user> binary <unka> </s>
+<s> <user> would you consider it a bad practice to lower the <unka> by duplicating <unka> the first class ? </s>
+<s> <user> so practically speaking , if i have 1000 articles with class 0 and 50000 with class 1 , just copy each one of the class 0 to get another set of 1000 articles and push it into the training set so i have a <unk#:> ratio instead ? </s>
+<s> <user> similar to how its done with image <unka> </s>
+<s> <user> another thing , how would you measure quality of scrapped data provided from 3rd party data science firm ? text . </s>
+<s> <user> i would assume if i do cluster analysis on the data and get word frequency per cluster i should be able to see more or less but that does n't give me a full picture </s>

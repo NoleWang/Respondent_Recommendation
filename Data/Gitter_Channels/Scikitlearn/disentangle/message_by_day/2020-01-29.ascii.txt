@@ -1,0 +1,8 @@
+[09:09] <54f621ca15522ed4b3dcc151> This PR by me is also with the Paris Sprint https://github.com/scikit-learn/scikit-learn/pull/16256
+[09:12] <54e07d1515522ed4b3dc0852> I'll start by completing https://github.com/scikit-learn/scikit-learn/pull/11296/files at Paris Sprint
+[09:23] <593bb72fd73408ce4f663d44> I am working on this Issue https://github.com/scikit-learn/scikit-learn/issues/12542 as part of the Paris Sprint
+[09:36] <5d43be47d73408ce4fc78bde> I'm working on the issue scikit-learn/scikit-learn#12730 at the Paris Sprint
+[09:59] <54f621ca15522ed4b3dcc151> I'm working on GenericUnivariateSelect of https://github.com/scikit-learn/scikit-learn/issues/11000
+[10:03] <5e314a9cd73408ce4fd81532> I'm working on random_state descriptions for _weight_boosting of  scikit-learn/scikit-learn#16264 
+[10:51] <589b9e0fd73408ce4f490ba4> Please also comment in the issues to indicate the topic you are working on  @DatenBiene @ksslng @martinagvilas @maskani-moh so that other people don't work on the same things.
+[15:29] <5e314ae8d73408ce4fd81550> I'm working on a documentation for _coordinate_descent scikit-learn/scikit-learn#16285 related to the issue scikit-learn/scikit-learn#15761 at the Paris Sprint

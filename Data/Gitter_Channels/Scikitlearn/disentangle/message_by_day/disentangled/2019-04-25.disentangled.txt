@@ -1,0 +1,22 @@
+[17:05] <5aecc12bd73408ce4f982900> Ah got itthanks! @NicolasHug
+--------------------------------------------------------------------------------------------------
+[18:45] <5ba59281d73408ce4fa8fbb5> hi anyone here?
+[18:45] <5ba59281d73408ce4fa8fbb5> while using librosa I 'm getting this error ImportError: cannot import name '_inplace_contiguous_isotonic_regression'
+[18:46] <5ba59281d73408ce4fa8fbb5> I tried googling it but I got nothing
+[18:46] <5ba59281d73408ce4fa8fbb5> please help
+[18:48] <5ba59281d73408ce4fa8fbb5> hmmm ok thanks let me try it on librosa
+[18:49] <5ba59281d73408ce4fa8fbb5> can u plz give a one liner pip code to downgrade it
+[18:49] <5ba59281d73408ce4fa8fbb5> ?
+--------------------------------------------------------------------------------------------------
+[18:48] <541a528b163965c9bc2053de> This is private API that is not guaranteed to stay stable across scikit-learn releases, maybe librosa was meant to be used with a specific version of scikit-learn. Please check with its documentation or asking its developers and make sure that you have the correct version of scikit-learn.
+--------------------------------------------------------------------------------------------------
+[18:48] <55d21ee30fc9f982beadabb8> https://github.com/librosa/librosa/blob/master/setup.py#L50
+[18:48] <55d21ee30fc9f982beadabb8> could be that > 0.19 could be problematic
+--------------------------------------------------------------------------------------------------
+[18:49] <55d21ee30fc9f982beadabb8> pip install scikit-learn==0.18
+[18:50] <5ba59281d73408ce4fa8fbb5> thanks a lot
+--------------------------------------------------------------------------------------------------
+[18:57] <5ba59281d73408ce4fa8fbb5> now I m getting another error ImportError: cannot import name 'astype'
+[18:59] <5ba59281d73408ce4fa8fbb5> plz help
+[19:01] <5ba59281d73408ce4fa8fbb5> I have python 3.8.Does it matter by that too ?
+--------------------------------------------------------------------------------------------------

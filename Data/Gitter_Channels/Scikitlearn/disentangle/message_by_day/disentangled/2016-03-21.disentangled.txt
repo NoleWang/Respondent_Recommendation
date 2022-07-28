@@ -1,0 +1,13 @@
+[19:44] <53135b495e986b0712efc453> @dsquareindia @maniteja123 @nelson-liu @yenchenlin1994 Please make sure you submit your proposals soon into the withgoogle website. I believe the deadline is in less than 3 days... Thanks and good luck :)
+--------------------------------------------------------------------------------------------------
+[19:45] <56c4f19ae610378809c1f8ae> Will do, thanks for the reminder!
+--------------------------------------------------------------------------------------------------
+[19:47] <53135b495e986b0712efc453> I'm not sure who else is interested. If there is any other interested person, please make sure you submit it within the next 3 days as you won't be able to do so after the deadline... (don't worry about it being perfect. **Just make sure that you clearly outline, at a high level what you wish to achieve within the timeslot**...)
+--------------------------------------------------------------------------------------------------
+[20:34] <55a36f535e0d51bd787b3400> Hi everyone, (I'm not sure this is the best place to ask; else let me know.).  I'm trying to cross-val a KMeans clustering and retrieve the most likely cluster:  ``` kmeans = list() for x in X:     dist = pairwise_distances(x)     kmeans.append(KMeans().fit_predict(dist)) ```  Although the clusters are very similar across iterations, the cluster labels are (obviously) random.  Do you know how I can aggregate these labels to find the most robust clusters across iterations: e.g.  `cluster_idx = scipy.stats.mode([sample for sample in kmeans])`
+--------------------------------------------------------------------------------------------------
+[21:24] <56c4f19ae610378809c1f8ae> Hmm, you should x-post to stackoverflow. Theyd probably be more responsive
+--------------------------------------------------------------------------------------------------
+[21:24] <55a36f535e0d51bd787b3400> @nelson-liu ok thanks!
+[21:36] <55a36f535e0d51bd787b3400> http://stats.stackexchange.com/questions/202883/how-to-combine-the-results-of-several-clustering-with-scikit-learn
+--------------------------------------------------------------------------------------------------

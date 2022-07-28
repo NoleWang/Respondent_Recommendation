@@ -1,0 +1,4 @@
+<s> <user> take a look at the list itself and it 'll become clear . you have 2 chunks . first you use the first chunk as train and second chunk as test set . then , you use the second chunk as train and first chunk as test set . </s>
+<s> <user> i should not call them chunks . they're <unka> . two <unka> :) </s>
+<s> <user> yes , i understand that , but why can it not give me a single train and a single test set ( <unk#a=_`> ) as <unka_`> does ? because it 's then not really <unka> anymore ? </s>
+<s> <user> i guess <unka_`> is a bit of a misnomer . <unka_`> would 've been clearer maybe . </s>

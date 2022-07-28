@@ -1,0 +1,59 @@
+<s> <user> ok looking now . key question - does <unka> still work ? </s>
+<s> <user> i was under the impression that it broke at some point a ways back but i am not super informed on these things </s>
+<s> <user> the hashing stuff <unka-> stuff seems like maybe we should do it *before* parallel . it is quite nice i think . now onto <unka_> </s>
+<s> <user> i think we should focus on py 3.4 compat - seeing at least a few print blah in there . i can work on that if you want ? </s>
+<s> <user> also ... describing all the different types of sparse <unka> may not be pleasant in the intro . maybe leave them there but gloss over <unka> of different representations ? if you know guts i am all for it - but i am definitely a high-level sparse matrix user . i use what works normally and check stack overflow </s>
+<s> <user> should we add an image telling what <unka> and <unka> are ? or just say what it is . for sure <unka*> will ask :) </s>
+<s> <user> <unk#a@> do you think changing the handling of the <unka\_> will have a significant impact on the runtime performance ? besides bishop 's <unka> do you have another " standard " <unka> <unka> of the <unka> <unka> in mind ? </s>
+<s> <user> +1 for not introducing a deep hierarchy of <unka> for <unka> but ok for using <unka> class and possibly a <unka_> abstract base class if that can help <unka> too redundant code . </s>
+<s> <user> <unka@> i have not tried to launch a <unka> instance in a long time but the project is still active . the configuration might have changed a bit ( e.g . amis ids ) so it should be possible to adapt it to make it run again . however i would not do that during a tutorial if you are not a regular user yourself . you can just mention that it exists in passing . </s>
+<s> <user> is it just me or this page takes forever to load :@ - i 've been trying since yesterday ;( URL/https:/ <unka-./> <unk#a-/> </s>
+<s> <user> it works here </s>
+<s> <user> thanks a lot for checking :) </s>
+<s> <user> try URL/https:/ <unk#a./> <unk#a-./> </s>
+<s> <user> if it does not work , i can paste-bin it for you </s>
+<s> <user> thankss a ton for this txt log link ! will be really useful for me ! :d and yea it does work :) </s>
+<s> <user> hey <unka@> btw could you check why <unk`> from <unka.> import <unka_> from <unka.> import <unka> import warnings <unka'(.> , <unka> ) import numpy as np <unk#a(.[_> , 2 , 3 <unk),]> <unk#a(.[> , 5 , 6 <unk)]> <unk`> does n't raise the intended warning ? am sure i must be missing something simple here :| </s>
+<s> <user> <unk#a@> which pr number is this again ? </s>
+<s> <user> <unk##> :) </s>
+<s> <user> please do take a look if you are able to find time :) </s>
+<s> <user> this warning is only raised for old versions of numpy </s>
+<s> <user> < 1.7 </s>
+<s> <user> if <unka_> < ( 1 , 7 , 2 ) and <unka(_> ) </s>
+<s> <user> ahhh ... thanks !! </s>
+<s> <user> <unka@> <unka@> <unka> now deserves a mention along with URL/https:/ <unka./> <unk#a-./> i think . </s>
+<s> <user> would be of interest for many of the same people who care about <unka> </s>
+<s> <user> also useful , although not directly related : - URL/http:/ <unka./> <unka/> - URL/http:/ <unka./> <unka/> </s>
+<s> <user> i have not yet found to the time to test any of those </s>
+<s> <user> <unka@> the distinction is that whether <unka\_> depends on <unka\_> . <unka> and <unk#a(> ) models that dependence . in the literature , some work has that <unka,> work does not . i think those are two kinds of modeling . modeling the dependence would give more accurate approximation . the exercise <unk#.> in <unka> says if you have many data , the pdf of <unka(\> , <unka\> ) will become a delta function , which recover the classic em algorithm . but the pdf of current <unka> distribution will not , since the <unka> of <unka\> is fixed . for <unka> , i would intend to build a <unka> and with different <unka> for different variables . for example , there are 8 <unka> <unka> . full , diag , <unka> , tied , times <unka> or not . then <unka> could be implemented by <unka> from base class and combined with one of 8 <unka> for <unka> variables . i do n't know <unka> should be taken as a <unka> class . i would prefer to let <unka> includes the <unka> . </s>
+<s> <user> i would rather keep the <unka> choice as an <unka-> of the class instead of <unka> it a <unka-> . </s>
+<s> <user> side remark , i think for the full <unka> type , it might be interesting to experiment with a <unka> <unka> such as <unka-> , at least in the maximum likelihood em <unka> . if that can improve the <unka-> <unka-> we might consider it for inclusion . </s>
+<s> <user> so the <unka> would be like <unka`> <unka(> , <unka),`> <unka(> , <unka)`> ? </s>
+<s> <user> URL/http:/ <unka-./> <unka./_> </s>
+<s> <user> <unk#a@> please feel free to open a [ wip ] pr with that <unka> with <unka> base classes so that we can have a discussion on concrete code . </s>
+<s> <user> also private classes should start with a <unk_`> . </s>
+<s> <user> ok . i will try to build some <unka> :) </s>
+<s> <user> thanks </s>
+<s> <user> so what about the approximation ? do you like to consider the dependence ? </s>
+<s> <user> <unka@> the " rendered notebooks " are still the old ones . i have n't redone them . i agree we should do more <unka-> stuff before doing clusters . </s>
+<s> <user> <unka@> i am currently somewhere around 3 . and 4 . </s>
+<s> <user> URL/http:/ <unka-./> <unka./_> the section <unka'> seems has a little problem . '+' sign is interpreted as a list mark . </s>
+<s> <user> indeed we need to escape this . </s>
+<s> <user> > so what about the approximation ? do you like to consider the dependence ? it depends how the runtime , memory usage and the complexity of the code base will evolve if we do so :) i am still clear about the details . reading <unka> at the moment . it would be great if we could have an example that demonstrates that the <unka> <unka> joins the solution of the <unka> estimate on some toy dataset </s>
+<s> <user> <unka> <unka> wolf <unka> is not a priority as we already have the <unka_`> hack to <unka> the <unka> estimation . but i think we should keep it in mind and it would be great to explore the importance of <unka> <unka> , especially on high dim data </s>
+<s> <user> great . i would continue to work on the pr <unk##> </s>
+<s> <user> i think we should also improve the examples to discuss model selections for <unka> . i started to run some experiments here : URL/https:/ URL/github.com/ <unk#a%./> </s>
+<s> <user> i have to go offline now , see you later . </s>
+<s> <user> i tried some toy experiments with <unka> before , but it did not work correctly . may i ask why would you like to do model selection for <unka> ? see you </s>
+<s> <user> <unka@> i noticed the other ones were shorter and swapped . only got to 2.x but i can try to do some <unka> tonight . </s>
+<s> <user> <unka@> cool :) i 'm working on the intro to <unka> currently </s>
+<s> <user> <unk#a@> could you have a look at <unk##> ? </s>
+<s> <user> gotcha . </s>
+<s> <user> where is the discussion about <unk##> ? </s>
+<s> <user> i mean on the ml . thanks~ </s>
+<s> <user> the conclusion was that we want to raise a value error </s>
+<s> <user> that is <unka> it for now and raise a value error in the future </s>
+<s> <user> <unk#a@> URL/https:/ URL/sourceforge.net/ <unk#a#%-./> </s>
+<s> <user> ok . </s>
+<s> <user> <unka@> what do you think about adding a <unka`> option to <unka_> and <unka> ADDRESS_( <unka@_> or anyone else feel also free to chime in ;) ? </s>
+<s> <user> i feel it would be useful for <unka=> </s>

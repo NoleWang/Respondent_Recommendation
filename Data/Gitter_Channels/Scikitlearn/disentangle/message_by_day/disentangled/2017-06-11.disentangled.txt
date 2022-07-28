@@ -1,0 +1,2 @@
+[10:59] <541a528b163965c9bc2053de> @jeffwong and the contributors doc: http://scikit-learn.org/stable/developers/contributing.html
+--------------------------------------------------------------------------------------------------

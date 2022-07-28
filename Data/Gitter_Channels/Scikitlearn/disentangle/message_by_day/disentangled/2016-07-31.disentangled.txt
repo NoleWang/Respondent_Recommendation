@@ -1,0 +1,3 @@
+[23:26] <56c4f19ae610378809c1f8ae> is there anyway to run gridsearchcv and save _all_ all of the models you train to disk?
+[23:27] <56c4f19ae610378809c1f8ae> or is it only possible to get the `best_estimator_` and then just save that
+--------------------------------------------------------------------------------------------------

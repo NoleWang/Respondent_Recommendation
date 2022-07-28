@@ -1,0 +1,13 @@
+<s> <user> hi guys ! i want to contribute to the <unka> learn open source . i am new to this . can anyone give me any direction as to where to start with ? </s>
+<s> <user> <unka-@> have a look at the contributors guide : URL/http:/ <unka-./> <unka./> </s>
+<s> <user> nice ! a lot of information !! thanks <unka@> ! </s>
+<s> <user> the best way to contribute is to actually use <unka-> for a project of yours to identify which part needs improving from your users point of view . </s>
+<s> <user> i have been reading the documentation and want to use it for <unka> projects . </s>
+<s> <user> have not used it extensively besides from some <unka> and regression tasks </s>
+<s> <user> <unka@> <unka`> -s -v ` will display something only if the test fail . you can always put a <unka`> your printing :) or use a proper debugger maybe </s>
+<s> <user> no , i think it worked . none of the test failed , but i simply put a <unka`> statement and it worked just fine . </s>
+<s> <user> i am thinking you confuse that with something else . </s>
+<s> <user> ups right , this is <unka-`> that does show only at <unka`> </s>
+<s> <user> seeing in documentation ? ( refer me to it if you are ). </s>
+<s> <user> <unka-`> , <unka-> show locals in <unka> ( disabled by <unka).`> </s>
+<s> <user> that 's also seems useful , thanks <unka@> . </s>

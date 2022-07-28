@@ -1,0 +1,1 @@
+<s> <user> <unka@> i need help regarding software development ... as i am beginner so i want to get some tips for developing softwares ... i want to develop software that reads the smart id cards using card reader . </s>

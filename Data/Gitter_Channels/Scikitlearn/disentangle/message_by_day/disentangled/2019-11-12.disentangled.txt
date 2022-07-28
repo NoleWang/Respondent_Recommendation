@@ -1,0 +1,3 @@
+[19:18] <5dcb056cd73408ce4fd0cb72> hi there any clue for identify text from one document to another?
+[19:19] <5dcb056cd73408ce4fd0cb72> we are working on a prototype for fake news
+--------------------------------------------------------------------------------------------------

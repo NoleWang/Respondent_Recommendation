@@ -1,0 +1,4 @@
+<s> <user> hey people </s>
+<s> <user> is this place active ? </s>
+<s> <user> is there a real time communication platform for <unka> learn ? </s>
+<s> <user> thanks !! </s>

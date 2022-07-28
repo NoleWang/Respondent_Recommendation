@@ -1,0 +1,12 @@
+[09:20] <56b80528e610378809c05a48> Hello @amueller , sorry for disrupting you. Could you please answer my question in #6322 ?
+--------------------------------------------------------------------------------------------------
+[09:20] <541a528b163965c9bc2053de> For TF-IDF vectorization, normalizing by l2 norm makes BoW representation more invariant to doc length (similar idea but rephrased :).
+--------------------------------------------------------------------------------------------------
+[09:35] <56c4f19ae610378809c1f8ae> Maybe a bit off topic, but should the topic in the IRC channel be changed to reflect the release of 0.17.1? (Does anyone ever use the IRC anymore? Ive been on it for the past week and havent seen a single message in the channel)
+--------------------------------------------------------------------------------------------------
+[09:37] <541a528b163965c9bc2053de> I don't remember who has op rights. I think I do but I don't remember the password of my NickServ account.
+--------------------------------------------------------------------------------------------------
+[09:40] <56c4f19ae610378809c1f8ae> seems like only @amueller does, or thats what `/msg chanserv access #scikit-learn LIST` is reporting.
+--------------------------------------------------------------------------------------------------
+[12:34] <53135b495e986b0712efc453> @ogrisel could you close this - https://github.com/scikit-learn/scikit-learn/issues/5622
+--------------------------------------------------------------------------------------------------

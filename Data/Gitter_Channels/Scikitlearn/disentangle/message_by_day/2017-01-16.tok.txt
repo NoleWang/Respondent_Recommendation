@@ -1,0 +1,25 @@
+<s> <user> <unk#a-@> sweet ! good you two ! </s>
+<s> <user> <unka@> ok thanks </s>
+<s> <user> anybody recommend any starter guides for <unka-> ? </s>
+<s> <user> whats the best way to get into this ? </s>
+<s> <user> <unk#a@> my book ;) </s>
+<s> <user> lol . what book ? </s>
+<s> <user> or <unka> book ? </s>
+<s> <user> URL/https:/ URL/www.amazon.com/ <unk#a&+-/=?_> </s>
+<s> <user> URL/https:/ URL/www.amazon.com/ <unk#a&-/=?_> </s>
+<s> <user> ( if you get mine , make sure it 's the second print that just came out ) </s>
+<s> <user> there 's also a bunch of free tutorials linked on the website : </s>
+<s> <user> ok awesome thanks . </s>
+<s> <user> URL/http:/ <unka-./> <unka./> </s>
+<s> <user> what 's your background ? </s>
+<s> <user> my book is " no math " . <unka> is " some math " </s>
+<s> <user> i recommend reading mine alongside <unka> book or elements of statistical learning if your <unka-> </s>
+<s> <user> cs </s>
+<s> <user> just saw your update on the book . congrats <unka@> </s>
+<s> <user> thanks . it 's mostly all the worst typos . </s>
+<s> <user> and obviously someone pointed out something real bad just after it got finished lol </s>
+<s> <user> :) </s>
+<s> <user> <unk#a@> there 's also a bunch of free tutorials on my website : <unka.> </s>
+<s> <user> <unka@> thanks for the advice </s>
+<s> <user> in the past i have also found the following book to be very helpful " machine <unka-> the art and science of algorithms that make sense of data " . <unka@> . whats your opinion about the same <unka@> ? </s>
+<s> <user> <unka@> have n't read that one . i like max <unka> 's book though </s>

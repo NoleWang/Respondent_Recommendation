@@ -1,0 +1,4 @@
+[18:19] <559c8ad915522ed4b3e39cec> @Akash-Sharma-1 try intro to machine learning course on udacity. Its free and uses skikit library.
+[19:24] <5ba621efd73408ce4fa90312> @anandvimal thanks for help
+[19:24] <5ba621efd73408ce4fa90312> I am gonna jump straight into it
+[19:37] <559c8ad915522ed4b3e39cec> It also has a full project in the end to practice the complete ml flow. 

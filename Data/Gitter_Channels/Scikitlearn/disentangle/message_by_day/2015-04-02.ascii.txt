@@ -1,0 +1,17 @@
+[14:46] <54d4a1d6db8155e6700f853b> sprinters here?
+[14:49] <54d4a1d6db8155e6700f853b> I feel excluded :-/
+[15:23] <541a528b163965c9bc2053de> hi @amueller sorry I was in the metro to get back home for the webcast
+[15:24] <541a528b163965c9bc2053de> there are still people at the sprint but I think nobody is on gitter
+[15:25] <541a528b163965c9bc2053de> maybe @NelleV is on IRC
+[15:28] <541a528b163965c9bc2053de> @amueller the call starts in 3 mins right? I wanted to make sure that I am not off by one hour because of the summer time stuff.
+[15:34] <54d4a1d6db8155e6700f853b> @ogrisel you are on time :) 
+[15:34] <54d4a1d6db8155e6700f853b> at least the same time I think it is
+[15:35] <541a528b163965c9bc2053de> I will call with my phone
+[17:12] <541a528b163965c9bc2053de> good!
+[17:12] <541a528b163965c9bc2053de> :)
+[18:07] <550f53e215522ed4b3dda5f6> sprinter? Is there any event recently? So many new PRs ...
+[18:17] <541a528b163965c9bc2053de> yes there was a short one day sprint in Paris today (it should be over now). There was ~15 people in the room when I was there earlier this afternoon.
+[18:19] <550f53e215522ed4b3dda5f6> Glad to see these new contributors. :)
+[18:54] <5474d9eadb8155e6700d8178> Wow looking forward to  participating in one!!! :D :D
+[22:12] <54d4a1d6db8155e6700f853b> ragv you'll be at the epi-center of sprints soon, I heard :)
+[22:12] <54d4a1d6db8155e6700f853b> I home I can come to paris for the next one, will be awesome!

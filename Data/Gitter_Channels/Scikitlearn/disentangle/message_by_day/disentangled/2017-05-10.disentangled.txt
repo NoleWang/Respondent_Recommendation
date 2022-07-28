@@ -1,0 +1,4 @@
+[15:49] <58fd3abed73408ce4f5a7b40> anybody here with experience handling EEG data ?  I'll be very grateful if you could answer a few questions
+--------------------------------------------------------------------------------------------------
+[17:54] <55d21ee30fc9f982beadabb8> @fel-mazo You have maybe more chance to find people on the mailing list of MNE: http://martinos.org/mne/stable/index.html
+--------------------------------------------------------------------------------------------------

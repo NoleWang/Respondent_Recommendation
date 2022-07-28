@@ -1,0 +1,1 @@
+[01:59] <54c084dbdb8155e6700eed4c> Have not read any history on this, but https://github.com/scikit-learn/scikit-learn/blob/master/sklearn/utils/validation.py#L636 might help? Need to know what attributes get set when fitted for a given est though I think. I think if you grep'd the repo you could find an exhaustive list of those being used to check.

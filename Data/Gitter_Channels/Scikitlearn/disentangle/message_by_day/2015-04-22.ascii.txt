@@ -1,0 +1,7 @@
+[02:09] <5537027215522ed4b3df56ab> Hey guys, I know this is slightly off topic, but is there any recommendation regarding structured/sequence learning libraries in Python?
+[02:10] <5537027215522ed4b3df56ab> I have been using crfsuite but unforunately it's only first order and not very good for named entity recognition
+[02:11] <5537027215522ed4b3df56ab> The Stanford NER Java lib is crazy huge/unwieldy -_-
+[02:19] <5537027215522ed4b3df56ab> nm looks like @amueller has ChainCRF in PyStruct! I hope it's fast. Please be fast.
+[02:30] <5537027215522ed4b3df56ab> even has great docs =)
+[07:04] <541a528b163965c9bc2053de> PyStruct and seqlearn are two projects maintained by scikit-learn developers (@amueller and @larsmans respectively). 
+[14:30] <54d4a1d6db8155e6700f853b> @ldqc the docs are new and work in progress ;) pystruct implements maximum margin learning and perceptron, seqlearn implements HMMs and perceptron,  I think. So both don't implement maximum likelihood CRFs

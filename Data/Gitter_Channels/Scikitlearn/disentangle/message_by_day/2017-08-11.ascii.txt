@@ -1,0 +1,3 @@
+[15:54] <553d0d7b15522ed4b3df8a67> would there be a way to include some of the changes suggested by https://stackoverflow.com/questions/26851553/sklearn-agglomerative-clustering-linkage-matrix into agglomerative clustering to plot dendrograms of the model?
+[15:55] <54d4a1d6db8155e6700f853b> @jzf2101 can you open an issue, or check if there's already one? I think there were previous requests to draw dendrograms, which I think would be a great feature
+[15:55] <54d4a1d6db8155e6700f853b> I haven't read the question in full but there were some issues in supporting this in the past

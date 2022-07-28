@@ -1,0 +1,18 @@
+[09:12] <53eb987c107e137846baa89d> Using `make html` in the `doc` directory I get the following error (on master branch) ``` Exception occurred:   File "/home/gxyd/anaconda3/lib/python3.6/site-packages/sphinx_gallery/gen_gallery.py", line 322, in sumarize_failing_examples     "\n" + "-" * 79) ValueError: Here is a summary of the problems encountered when running the examples  Unexpected failing examples: /home/gxyd/dev/scikit-learn/examples/ensemble/plot_feature_transformation.py failed leaving traceback: Traceback (most recent call last):   File "/home/gxyd/anaconda3/lib/python3.6/site-packages/sphinx_gallery/gen_rst.py", line 450, in execute_code_block     exec(code_block, example_globals)   File "<string>", line 15, in <module> ImportError: cannot import name 'CategoricalEncoder'   /home/gxyd/dev/scikit-learn/examples/ensemble/plot_gradient_boosting_early_stopping.py failed leaving traceback: Traceback (most recent call last):   File "/home/gxyd/anaconda3/lib/python3.6/site-packages/sphinx_gallery/gen_rst.py", line 450, in execute_code_block     exec(code_block, example_globals)   File "<string>", line 40, in <module> TypeError: __init__() got an unexpected keyword argument 'validation_fraction' ```
+--------------------------------------------------------------------------------------------------
+[09:13] <53232ac75e986b0712efe3af> Are you sure you installed the development version?
+--------------------------------------------------------------------------------------------------
+[09:14] <53232ac75e986b0712efe3af> It seems as you are building the master docs but with a released version of sklearn for running the examples
+[09:14] <53eb987c107e137846baa89d> Well that is what I thought initially.
+[09:15] <53eb987c107e137846baa89d> But how can I force I make it to use the development version.
+[09:15] <53eb987c107e137846baa89d> Would I need to modify the `PATH` variable?
+--------------------------------------------------------------------------------------------------
+[09:17] <53eb987c107e137846baa89d> I get things like ``` /home/gxyd/anaconda3/lib/python3.6/site-packages/sklearn/model_selection/_search.py:docstring of sklearn.model_selection.GridSearchCV:166: WARNING: Undefined substitution referenced: "param_kernel|param_gamma|param_degree|split0_test_score". /home/gxyd/anaconda3/lib/python3.6/site-packages/sklearn/model_selection/_search.py:docstring of sklearn.model_selection.GridSearchCV:166: WARNING: Undefined substitution referenced: "...". ``` While running `make html` which made me inclined towards the thing you are saying.
+[11:16] <53eb987c107e137846baa89d> As I can see for `-e` option: ``` Install  a  project  in editable mode (i.e.  setuptools "develop               mode") from a local project path or a VCS url. ```
+--------------------------------------------------------------------------------------------------
+[11:12] <53232ac75e986b0712efe3af> @gxyd I typically have a 'development' environment in which I install the master version (with `pip install -e .`)
+--------------------------------------------------------------------------------------------------
+[11:58] <53eb987c107e137846baa89d> @jorisvandenbossche thanks. That seems to be working just fine for me right now.
+--------------------------------------------------------------------------------------------------
+[16:27] <5a1847bed73408ce4f801f28> hello
+--------------------------------------------------------------------------------------------------

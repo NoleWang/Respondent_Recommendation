@@ -1,0 +1,3 @@
+<s> <user> hi guys </s>
+<s> <user> what 's the ... eh , correct way to test c extensions without exposing the original class ? </s>
+<s> <user> oops , wrong room , sorry <unka:> : </s>

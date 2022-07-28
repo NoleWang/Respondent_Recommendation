@@ -1,0 +1,2 @@
+[08:12] <5581814615522ed4b3e20c6a> @ogrisel  Is there a better recommendation on using timeseries data in realtime. Is it good to store it or use any tools to get realtime inputs
+--------------------------------------------------------------------------------------------------

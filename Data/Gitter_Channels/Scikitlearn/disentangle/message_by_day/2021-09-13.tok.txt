@@ -1,0 +1,4 @@
+<s> <user> morning all </s>
+<s> <user> i was kind of curious . ive been dragging my feet using torch and i was wondering does this lib offer anything over torch ? maybe this is better suited for the low level scientist trying to learn theory ? or is it just an alternative ? </s>
+<s> <user> omg im trapped </s>
+<s> <user> <unka@> <unka> and <unka-> operate at different levels of <unka> but simply put in terms of scope , <unka> is for <unka-> while <unka-> is for the rest of ml that 's *not* deep learning . so one might be better suited than the other , depending on the theory that you're interested in . </s>

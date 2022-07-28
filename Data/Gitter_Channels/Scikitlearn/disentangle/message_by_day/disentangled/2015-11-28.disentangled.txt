@@ -1,0 +1,11 @@
+[08:23] <564789be16b6c7089cbab8b7> @rvraghav93  thanks. I opened an issue. It would be very interesting to know what exactly scikit-learn is missing from that list and if the things that are missing are worthwhile.
+--------------------------------------------------------------------------------------------------
+[12:19] <561a58f7d33f749381a8ff2f> Guys what about adding an interface to OneHotEncoder and other transformers that can take a matrix and only operate on certain columns? E.g. if max_unique_values < 5 per column or whatever....
+[12:19] <561a58f7d33f749381a8ff2f> I'm not sure how to use this encoder directly on a matrix mixed of continuous variables and categorical variables.
+[12:19] <561a58f7d33f749381a8ff2f> Some others must have battled this?
+[12:20] <561a58f7d33f749381a8ff2f> Also, is pd.get_dummies a solution here? I don't see though how it would work with train + test together....
+--------------------------------------------------------------------------------------------------
+[20:59] <53135b495e986b0712efc453> @kootenpv I don't think we have a workaround for this ATM ;( We are working on making the pipeline objects more flexible...
+--------------------------------------------------------------------------------------------------
+[23:39] <561a58f7d33f749381a8ff2f> @rvraghav93  How are you solving that situation then? I understand if there is no solution, but there must be some way to "work around" it, no? Just a list of transformers for each variable or something?
+--------------------------------------------------------------------------------------------------

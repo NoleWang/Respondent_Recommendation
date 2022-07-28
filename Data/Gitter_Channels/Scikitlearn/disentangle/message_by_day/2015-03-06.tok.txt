@@ -1,0 +1,54 @@
+<s> <user> unfortunately we cannot promise much for those cases . it would be interesting to check the actual impact of the correct <unka> on some <unka> though . </s>
+<s> <user> <unka@> <unka@> could we use <unk#.`> - <unka().`> for <unk##> ( with the assumption that , it would n't be considered a magic no . since 0.5 is a standard symmetric scaling factor ?) to scale it to <unk#(-.`> , <unk#).`> ? </s>
+<s> <user> <unka@> fair enough . i 'll try to find some time this weekend to run some experiments . i agree that the new implementation is more intuitive , just throwing it out there . </s>
+<s> <user> thanks </s>
+<s> <user> <unka@> shall we try to cut the <unk#a.> branch ? </s>
+<s> <user> <unka@> feel free . do we want to backport the <unka> stuff then ? or take <unka@> 's +1 ? </s>
+<s> <user> let 's do the <unka> merge now </s>
+<s> <user> i think it 's tested enought both by the <unka> tests and the probability calibration tests to be correct . </s>
+<s> <user> i feel the same way </s>
+<s> <user> do you want to press the green button or should i do the <unka> dance ? </s>
+<s> <user> <unka@> 's fix is not in a pr ... </s>
+<s> <user> i pressed the green button . </s>
+<s> <user> ok . and merge the other fix on top ? it has my +1 and yours </s>
+<s> <user> let 's create the pr ourselves from his branch :) </s>
+<s> <user> should i create pr or just merge ? </s>
+<s> <user> i guess we want to run travis once </s>
+<s> <user> yes better create the pr from his branch to get travis to run it . </s>
+<s> <user> i 'm on it </s>
+<s> <user> actually it 's not possible to create the pr directly from his branch as we need to get rid of the past commits : </s>
+<s> <user> URL/https:/ URL/github.com/ <unk#a-./:> </s>
+<s> <user> that are redundant with your own pr </s>
+<s> <user> i let you do the <unka-> </s>
+<s> <user> i did a <unka> thing </s>
+<s> <user> URL/https:/ URL/github.com/ <unk#a-/> </s>
+<s> <user> should we wait for feedback on URL/https:/ URL/github.com/ <unk#a-/> and then backport it ? </s>
+<s> <user> warnings in the beta seem not that bad </s>
+<s> <user> yes +1 for waiting for this one </s>
+<s> <user> <unka@> unfortunately i wo n't have time to cut the branch tonight . i have to go now . feel free to do it , push a commit with the <unk#a.> version number ( that follows <unk#a-> ) and push a tag with pointing to it . that should get the ci workers to build the wheels . if everything goes well we should be able to push the release to <unka> ( after testing on URL/https:/ <unka./> <unka/> first ) using <unka-> . </s>
+<s> <user> i will be busy tomorrow ( we organize a deep learning workshop in paris ) and on sunday i should be mostly offline . </s>
+<s> <user> i can push the release on <unka> on monday if <unka> works well . </s>
+<s> <user> ok , then i 'll do it this afternoon . mail to mailing list after <unka> push ? or wait for <unka> ? </s>
+<s> <user> travis is slow today ... </s>
+<s> <user> are there instructions on the wheel <unka> in the docs ? </s>
+<s> <user> i would like to wait for <unka> and <unka> : URL/https:/ URL/github.com/ <unka-/> </s>
+<s> <user> wrong copy and paste </s>
+<s> <user> i meant : URL/https:/ URL/github.com/ <unka-/> </s>
+<s> <user> what version number do you leave on master after doing the beta ? still <unk#a-.> ? </s>
+<s> <user> i changed the master to follow <unk#a-> , so it 's <unk#a.> at the moment </s>
+<s> <user> it should move to <unk#a.> once the <unk#a.> branch has been cut . </s>
+<s> <user> i granted you push rights to URL/https:/ URL/github.com/ <unka-/> </s>
+<s> <user> ok , was n't sure if we do that after the beta or the release , but makes sense if we branch . </s>
+<s> <user> thanks </s>
+<s> <user> once the <unka-> <unk#a.> tag has been pushed to our github repo , we have to update the git <unka> of URL/https:/ URL/github.com/ <unka-/> to point to it to get the travis bots of that repo to build all the mac osx wheels for that release . </s>
+<s> <user> ok </s>
+<s> <user> merge this on green then branching ? URL/https:/ URL/github.com/ <unk#a-/> </s>
+<s> <user> yes </s>
+<s> <user> i have to go now , sorry for leaving you alone . </s>
+<s> <user> andy could you quickly take a look at <unk##> to see if the test to be satisfied is correct . i 'm using that as an objective for that pr ! ( i 'll iterate different fixes till that test is satisfied ... ) </s>
+<s> <user> i 've reopened <unk##> as <unk##> since <unk##> wo n't reopen ( more precisely , github wo n't track branches against which closed <unka> were raised ... so <unk##> remains at <unk#+-> even after pushing the new commit to that branch and hence wo n't reopen as it brings about no change ) sorry for wasting an issue no .! :/ </s>
+<s> <user> sorry , as i 'll have to take care of the beta now , so i wo n't have time to look into the issue </s>
+<s> <user> okay no problem :) </s>
+<s> <user> <unka@> so if we do n't build <unka/> the docs on beta , what should the links in the navigation of the " documentation " page be ? i guess we have to fix them later .... </s>
+<s> <user> because now there will not be any 0.16 documentation online </s>
+<s> <user> pushed the tag , updated the <unka> wheels . </s>

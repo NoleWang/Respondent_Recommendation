@@ -1,0 +1,5 @@
+[16:30] <matrix-bmoroz82:matrix.org> Does Scikit support regression parameters with multidimensional data structure, e.g., 3-dimensional point data? I would like to perform a regression to predict the position of a 3-dimensional point (x,y,z) using other known 3-dimensional points while weighting by inverse-distance. I have a small sample of dependents Y comprised (xi, yi, zi) and a complete set of independents X1, X2, X3, ... each comprised of (xi, yi, zi). I would like to test a simple model Y = X1 + X2 + ...
+[18:18] <matrix-bmoroz82:matrix.org> <unconvertable> appreciated
+--------------------------------------------------------------------------------------------------
+[17:59] <55d21ee30fc9f982beadabb8> you probably want to look at the following: https://scikit-learn.org/stable/modules/multiclass.html#multioutput-regression
+--------------------------------------------------------------------------------------------------

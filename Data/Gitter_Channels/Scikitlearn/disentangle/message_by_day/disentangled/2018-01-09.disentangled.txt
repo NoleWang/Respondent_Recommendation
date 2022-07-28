@@ -1,0 +1,6 @@
+[01:26] <54b2524adb8155e6700e8a8e> sklearn/utils/estimator_checks.py includes assertions run on each estimator to check that it behaves according to Scikit-learns conventions.
+--------------------------------------------------------------------------------------------------
+[02:55] <54b2524adb8155e6700e8a8e> @ssequeira, I dont think we have any planned enhancements to gaussian processes except for easier access to a linear kernel in #8373
+--------------------------------------------------------------------------------------------------
+[06:37] <53eb987c107e137846baa89d> @jnothman (as you are aware) I'm currently working on https://github.com/scikit-learn/scikit-learn/pull/10083 and the other remaining PR is https://github.com/scikit-learn/scikit-learn/pull/10273 (has been inactive for sometime, but I'll get to that), do you think this would be a good time for me to get to medium-level issues?  If the answer to above question is somwhat yes, then, I've been searching for a medium-level issue (non-documentation issue), one which will require a few months of work. Better if there are a series of medium-level issues on the same topic that you guys need someone to contribute on?
+--------------------------------------------------------------------------------------------------

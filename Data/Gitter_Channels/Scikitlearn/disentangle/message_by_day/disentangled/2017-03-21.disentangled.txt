@@ -1,0 +1,6 @@
+[04:57] <5657989e16b6c7089cbc5309> @El-moro hi there! A first step is to take a look at the [tutorial](http://scikit-learn.org/stable/tutorial/basic/tutorial.html) for scikit-learn. [This GitHub repo](https://github.com/hangtwenty/dive-into-machine-learning) might also be a good start for places to get your hands on data science and machine learning.
+--------------------------------------------------------------------------------------------------
+[12:10] <58cea98cd73408ce4f5208c2> hello guys
+--------------------------------------------------------------------------------------------------
+[18:18] <57f68cf5d73408ce4f2c567d> Hey!!  Would implementing dropout in current Neural Network module count as proposal for GSOC?   "https://www.cs.toronto.edu/~hinton/absps/JMLRdropout.pdf"
+--------------------------------------------------------------------------------------------------

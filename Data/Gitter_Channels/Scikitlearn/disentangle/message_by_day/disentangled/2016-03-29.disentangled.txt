@@ -1,0 +1,17 @@
+[10:44] <564789be16b6c7089cbab8b7> hi @rvraghav93
+--------------------------------------------------------------------------------------------------
+[17:32] <551061f615522ed4b3ddb1c0> Anyone can help on https://github.com/scikit-learn/scikit-learn/issues/6574?
+--------------------------------------------------------------------------------------------------
+[18:10] <564789be16b6c7089cbab8b7> @nelson-liu   I love your GSOC proposal by the way
+--------------------------------------------------------------------------------------------------
+[18:13] <56c4f19ae610378809c1f8ae> thanks @lesshaste :)
+--------------------------------------------------------------------------------------------------
+[19:40] <55901c1b15522ed4b3e2f949> The GMM documentation says that all components are initialized to mean 0, identity covariance.
+[19:40] <55901c1b15522ed4b3e2f949> How is it possible to update the components if each component is identical?
+--------------------------------------------------------------------------------------------------
+[19:45] <55901c1b15522ed4b3e2f949> I vaguely recall something about sklearn using kmeans++ to initialize the components somewhere. Maybe I'm imagining things.
+--------------------------------------------------------------------------------------------------
+[22:22] <55901c1b15522ed4b3e2f949> The code seems to imply it uses a round of kmeans to initialize the components, but the documentation doesn't say that.
+--------------------------------------------------------------------------------------------------
+[22:50] <53135b495e986b0712efc453> @lesshaste Hello! Sorry I've been a bit busy lately. ;(
+--------------------------------------------------------------------------------------------------

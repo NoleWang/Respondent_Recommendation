@@ -1,0 +1,10 @@
+<s> <user> hi all </s>
+<s> <user> *hi all* </s>
+<s> <user> hi , i have a doubt on <unka`> in the <unka._`> package . </s>
+<s> <user> i see that <unka> like the which occur frequently in all documents i am trying , have an <unka> value of 1 </s>
+<s> <user> shouldnt the <unka> value be 0 ( because log of 1 is 0 )? </s>
+<s> <user> the example documents i am using are : </s>
+<s> <user> > [" the quick brown fox jumped over the lazy dog .", " the dog .", " the fox " ] </s>
+<s> <user> i suspect the log is not being taken , how do i configure the <unka> to take the log and get an <unka> of 0 ? </s>
+<s> <user> i think i figured out he <unka> calculation . it seems to be <unka(/`> ) + 1` . where <unka`> is the total number of documents and <unka`> is the number of documents a particular term appears in </s>
+<s> <user> so for the word the it is <unk#a(/`> ) + 1` = <unk#+`> , which is why the value is 1 . how do i configure the <unka> not to add the 1 ? </s>

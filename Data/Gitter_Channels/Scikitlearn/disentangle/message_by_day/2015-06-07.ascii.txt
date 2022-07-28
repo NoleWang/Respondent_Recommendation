@@ -1,0 +1,8 @@
+[00:49] <54d4a1d6db8155e6700f853b> thanks :)
+[11:50] <53135b495e986b0712efc453> Why do we have the `_check_cv` function? It is called by `check_cv` which does nothing additionally? Am I missing something? https://github.com/scikit-learn/scikit-learn/blob/master/sklearn/cross_validation.py#L1431
+[12:11] <53135b495e986b0712efc453> It should be removed... I opened a PR #4829 for that... Please review @vene @amueller ! :)
+[12:11] <53135b495e986b0712efc453> and @ogrisel
+[21:54] <54e07d6515522ed4b3dc0858> @amueller can `sklearn.utils.testing.ignore_warnings` ignore *specific types of warnings*?
+[21:54] <54e07d6515522ed4b3dc0858> the code looks odd
+[21:55] <54e07d6515522ed4b3dc0858> (this is in reference to #4824)
+[22:31] <54e07d6515522ed4b3dc0858> so have we decided to just never use the words "extreme learning machine" in docstrings/documentation? 

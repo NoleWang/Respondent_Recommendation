@@ -1,0 +1,5 @@
+[13:50] <541a528b163965c9bc2053de> Heads up: if you use conda and upgrade your env, you might get a crash when using `n_jobs>=2`. This is caused by an updated version of intel-openmp in the default channel of conda. I reported the issue upstream as https://github.com/ContinuumIO/anaconda-issues/issues/11294 and the problem is tracked in this PR on the scikit-learn side: https://github.com/scikit-learn/scikit-learn/pull/15020
+--------------------------------------------------------------------------------------------------
+[13:53] <541a528b163965c9bc2053de> The error message is `OMP: Error #13: Assertion failure at z_Linux_util.cpp(2361)` reported by the dying worker process.
+[13:53] <541a528b163965c9bc2053de> Which in turns causes loky to raise: `TerminatedWorkerError: A worker process managed by the executor was unexpectedly terminated. This could be caused by a segmentation fault while calling the function or by an excessive memory usage causing the Operating System to kill the worker. The exit codes of the workers are {SIGABRT(-6)}`.
+--------------------------------------------------------------------------------------------------

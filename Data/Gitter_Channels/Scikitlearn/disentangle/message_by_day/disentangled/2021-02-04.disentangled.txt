@@ -1,0 +1,29 @@
+[09:45] <5d6e5defd73408ce4fc9e1a2> Hello all
+[09:45] <5d6e5defd73408ce4fc9e1a2> I am new to this chatroom
+[09:45] <5d6e5defd73408ce4fc9e1a2>  i have a question regarding dataset imbalance, can someone help me out ?
+--------------------------------------------------------------------------------------------------
+[10:11] <55d21ee30fc9f982beadabb8> @SyedMuhamadYasir  You can freely ask your question and you might get an answer
+--------------------------------------------------------------------------------------------------
+[10:12] <5d6e5defd73408ce4fc9e1a2> @glemaitre  thank you, i am going to ask right now
+--------------------------------------------------------------------------------------------------
+[10:12] <5d6e5defd73408ce4fc9e1a2> I have a dataset which is for binary classification ( or at least we are approaching it from a binary classification perspective )  There are a total of 2.5 million rows, with label 0 belonging to around 220000 (2.2 million) rows and label 1 belonging to around 321000 (0.3 million) rows , there are around 45 features.  The imbalance approaches a ratio of around 1 : 7  My problem is very straightforward, even WITHOUT any data preprocessing if i try to classify the data  the classification algorithms, no matter what parameters are set, give around 99% in ALL performance metrics ( accuracy, precision, recall, f1 score etc )  This would probably suggest a bad case of overfitting but i am not sure, feel free to explain and add your opinion regarding what could be the reason  I tried to visualize the graph using TSNE and saw that the entire data is shaped like an ellipse and there is heavy overlap between both the labels. This means that (1) data is badly imbalanced (2) data is badly overlapped , i highly doubt i can use anomaly detection there as all the 'anomalies' (label 1) are sitting close with the 'normal' (label 0) data  any suggestions on how i should proceed ?
+--------------------------------------------------------------------------------------------------
+[10:18] <55d21ee30fc9f982beadabb8> I am not sure that I would give to much weight with what you observe with TSNE.
+[10:19] <55d21ee30fc9f982beadabb8> While accuracy will be boost for sure, the precision and recall will be good measure with imbalance problem.
+[10:19] <55d21ee30fc9f982beadabb8> You can use the `balanced_accuracy_score` instead of `accuracy_score` as a baseline.
+[10:21] <55d21ee30fc9f982beadabb8> I would say that one potential error would be to forget to set `pos_label` in precision/recall if it is not `1` (that does not seem to be the case).
+[10:21] <55d21ee30fc9f982beadabb8> You can probably look at the entire confusion matrix to be sure that the stats seem correct
+[10:23] <55d21ee30fc9f982beadabb8> Then if you still get good results by properly cross-validated your experiment, everything should be fine.
+--------------------------------------------------------------------------------------------------
+[10:25] <5d6e5defd73408ce4fc9e1a2> thank you, i see some really good points in your answer than i can experiment with
+[10:25] <5d6e5defd73408ce4fc9e1a2> however, it is important to tell you the context of the problem
+[10:25] <5d6e5defd73408ce4fc9e1a2> so you can understand what i am trying to do exactly
+[10:26] <5d6e5defd73408ce4fc9e1a2> I am trying to do a Feature Selection / Feature Reduction task
+--------------------------------------------------------------------------------------------------
+[10:27] <5d6e5defd73408ce4fc9e1a2> since the original dataset, without any preprocessing and with ALL features, gives near perfect results, it will annul the validity of using any type of Feature Reduction techniques
+[10:28] <5d6e5defd73408ce4fc9e1a2> i will try out what you said in your answer, but i thought that it would be better to let you know the entire context and the actual reason for why exactly we need 'bad' results before applying any feature reduction
+[10:30] <5d6e5defd73408ce4fc9e1a2> > It might still allow you to fit and predict faster and this probably what feature selection is best at.  that .. is actually a very good point, thanks !
+[10:31] <5d6e5defd73408ce4fc9e1a2> @glemaitre  Je vous remercie  :)
+--------------------------------------------------------------------------------------------------
+[10:28] <55d21ee30fc9f982beadabb8> It might still allow you to fit and predict faster and this probably what feature selection is best at.
+--------------------------------------------------------------------------------------------------

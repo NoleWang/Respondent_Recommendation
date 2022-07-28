@@ -1,0 +1,7 @@
+[00:47] <5634e8e116b6c7089cb8fa99> can GaussianProcessRegressor fail in subtle and obvious ways? I might have uncovered a bug.
+--------------------------------------------------------------------------------------------------
+[00:53] <5634e8e116b6c7089cb8fa99> demonstration here: https://github.com/tanimislam/sharing-github/blob/master/DEMO%20GPR%20MISUNDERSTANDING.ipynb
+[18:31] <5634e8e116b6c7089cb8fa99> never mind, found the subtlety in scikit-learns GPR and possibly other regressors <unconvertable> scaling the variables made the problem disappear.
+--------------------------------------------------------------------------------------------------
+[20:07] <5dbe0c1fd73408ce4fcfc84a> @tanimislam hi any body Please, I am beginner ,how can i update 3.6 to 3.8 python version on window 10 , 64 bit ? _
+--------------------------------------------------------------------------------------------------

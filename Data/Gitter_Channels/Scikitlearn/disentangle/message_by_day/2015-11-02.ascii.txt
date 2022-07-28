@@ -1,0 +1,40 @@
+[00:34] <54c084dbdb8155e6700eed4c> @amueller #5164 re-opened by accident? 
+[00:35] <54d4a1d6db8155e6700f853b> @trevorstephens thanks for the mail. #5164 reports more issues
+[00:37] <54c084dbdb8155e6700eed4c> np
+[00:37] <54c084dbdb8155e6700eed4c> i thought that one was limited to graphviz?
+[00:37] <54c084dbdb8155e6700eed4c> there are a couple of other issues with other 32-bit fails\
+[00:38] <54d4a1d6db8155e6700f853b> yeah
+[00:38] <54d4a1d6db8155e6700f853b> I never thought about the fact that anyone can edit the wiki and there is no tracking... hum
+[00:39] <54c084dbdb8155e6700eed4c> there's tracking
+[00:39] <54c084dbdb8155e6700eed4c> click 'edits'
+[00:39] <54c084dbdb8155e6700eed4c> sorry 'revisions'
+[00:39] <54c084dbdb8155e6700eed4c> under the title
+[00:41] <54c084dbdb8155e6700eed4c> i moved the recent paris sprint info to 'past sprints' 
+[00:42] <54c084dbdb8155e6700eed4c> do core contribs get notified of the changes to wiki?
+[00:44] <54d4a1d6db8155e6700f853b> not that I know of.  maybe I could subscribe
+[00:44] <54d4a1d6db8155e6700f853b> yeah I saw, looks good :)
+[00:47] <54d4a1d6db8155e6700f853b> reviews for https://github.com/scikit-learn/scikit-learn/pull/5661 would also be welcome
+[00:48] <54d4a1d6db8155e6700f853b> @trevorstephens the review suggestions are not explicitly for you, I just like to spam the channel ;)
+[00:59] <54c084dbdb8155e6700eed4c> haha ok. i have no familiarity with tsne anyhow :-/ but int64? i didn't even know that existed! number of ants to stack to get to the moon?
+[01:01] <54d4a1d6db8155e6700f853b> damn, I confused #5534 and #5164
+[01:01] <54d4a1d6db8155e6700f853b> you were right, #5164 should have been closed
+[01:01] <54c084dbdb8155e6700eed4c> thought so. just the one failure
+[01:03] <54c084dbdb8155e6700eed4c> anyone who has a spare cycle and cares about package organization, comments about the location of `partial_dependence` in #5653 welcome :-)
+[03:50] <54d4a1d6db8155e6700f853b> anyone who as spare cycles, I just opened 7 pull requests, 4 of which are release blockers ^^
+[03:52] <53810862048862e761fa2887> @amueller Where did you see the `OneHotEncoder` warnings ?
+[03:52] <54d4a1d6db8155e6700f853b> I just commented
+[03:52] <54d4a1d6db8155e6700f853b> also, don't worry about it tonight ;)
+[03:54] <53810862048862e761fa2887> No warnings on python 2.7.6 and numpy 1.8.2
+[03:57] <54d4a1d6db8155e6700f853b> yeah you need numpy 1.10
+[03:57] <54d4a1d6db8155e6700f853b> I think
+[04:42] <53810862048862e761fa2887> Reproduced it, but yeah, I am better of looking at this tomorrow :D
+[18:04] <54d4a1d6db8155e6700f853b> I would really like to get some feedback on how to treat the 32bit test failures
+[18:09] <53810862048862e761fa2887> Could you tell me more about them ?
+[18:18] <54d4a1d6db8155e6700f853b> the 32bit failures? They are precision issues and I don't know whether to reduce the precision or ignore the tests or what else to do.
+[18:21] <53810862048862e761fa2887> Do you have some logs somwhere ?
+[18:21] <53810862048862e761fa2887> somewhere*
+[18:40] <54c084dbdb8155e6700eed4c> @amueller , on #5682, would a test to ensure an index error is not thrown for the second example i gave be sufficient?
+[18:41] <54c084dbdb8155e6700eed4c> or test the value error string ?
+[18:43] <54d4a1d6db8155e6700f853b> Testing the value error string would be good
+[18:43] <54d4a1d6db8155e6700f853b>  @vighneshbirodkar logs are here: https://github.com/scikit-learn/scikit-learn/issues/5534 but it is more a question to the other core devs on how we handle this.
+[18:50] <53810862048862e761fa2887> Ok

@@ -1,0 +1,6 @@
+<s> <user> that example shows you what to do , does n't it ? </s>
+<s> <user> do n't think anyone here has used <unka> </s>
+<s> <user> i can build it myself but its more a question of if there are standard images . maybe this is more or a <unka> question since it is about making a consistent collection of packages . </s>
+<s> <user> i would suggest you guys take a look at <unka> . there are not any good <unka> for <unka> learn for the whole train test deploy . would be good for adoption of <unka> . <unka> , i am sure you have no shortage of projects </s>
+<s> <user> i was visiting the <unka> team like a month ago </s>
+<s> <user> cool . my team uses <unka> a lot and we are just getting started with <unka> for deployment . we do everything locally now but will move to aws for train and predict . we will try to come up with a good example for the deployment and maybe add it to their existing examples . </s>

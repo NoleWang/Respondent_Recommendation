@@ -1,0 +1,3 @@
+[03:16] <5921d334d73408ce4f612e46> Hello, I'm trying to understand the RCV1 dataset, so I can run some analysis on it. Please has anyone worked with it before? 
+[03:16] <5921d334d73408ce4f612e46> I'd also be grateful to receive help in understanding how to work with CSR
+[23:27] <5a764508d73408ce4f8b90d6> Any good book for machine learning with python?

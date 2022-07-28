@@ -1,0 +1,4 @@
+[01:53] <589856bdd73408ce4f4866a2> Guys need some advice on Networkx. What's the best way to learn it. Need to perform some clustering on stackoverflow dump.
+[15:16] <551c051b15522ed4b3de2fea> @Pratyush3196_twitter the networkx docs are really good, but be aware that its not memory efficient AT ALL so youre not going to be able to use it at scale.
+[15:25] <589856bdd73408ce4f4866a2> Should I prefer Gephi over Networkx? @sbromberger 
+[15:29] <551c051b15522ed4b3de2fea> @Pratyush3196_twitter networkx is good. How big are your graphs?

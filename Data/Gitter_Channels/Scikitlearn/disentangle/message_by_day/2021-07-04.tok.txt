@@ -1,0 +1,2 @@
+<s> <user> <unka-> custom compilation : is it possible to pass custom gcc flags during <unka-> build as described here URL/https:/ <unka-./> <unka./_> </s>
+<s> <user> the documentation uses pip install . but since the <unka> files get compiled in a c file first before finally compiled into a so file , i wondered if it was possible to pass custom gcc flags in the intermediate stage </s>

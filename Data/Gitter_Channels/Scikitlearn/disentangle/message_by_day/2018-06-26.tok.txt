@@ -1,0 +1,1 @@
+<s> <user> <unka@> hi , i am using this pipeline object pipe = <unka(> [ ( <unka'> , <unka'(=_> , <unka'=_> , <unka(=_> <unk),> ( <unka'> , <unka(> )) ]) if i <unka_> it on the train data and get some features , will i get the same features on the test data too so that i can give it to a <unka> ? </s>

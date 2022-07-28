@@ -1,0 +1,2 @@
+[13:35] <53135b495e986b0712efc453> That would be extremely space costly for some models. For instance knn basically stores your training data. If you decide to store all the models that would explode the memory. This is why it is not implemented. Do you have any specific use case where you need this? Also the `results_`give you more statistics than before. Finally you could always loop through all the parameters and retrain the models if you need.
+--------------------------------------------------------------------------------------------------

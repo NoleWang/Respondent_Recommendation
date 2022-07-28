@@ -1,0 +1,2 @@
+[04:47] <56a34c16e610378809bdc988> Hi, https://github.com/scikit-learn/scikit-learn/pull/7655 is ready. Can any core team member help me improve it ? :D
+--------------------------------------------------------------------------------------------------

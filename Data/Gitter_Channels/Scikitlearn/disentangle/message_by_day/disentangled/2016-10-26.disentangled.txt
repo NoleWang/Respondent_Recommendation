@@ -1,0 +1,15 @@
+[01:17] <56ed0b8885d51f252ab9a1b8>  Hi guys can anyone help me with some lines of code on how to extract features from 400,000 images dateset using color histogram...in a vector form?? Thank you.
+--------------------------------------------------------------------------------------------------
+[04:21] <561be13fd33f749381a91e6e> although joblib exists, I'm curious if people have experience using dill to pickle both arrays and models.
+[04:23] <561be13fd33f749381a91e6e> as well as experience with cloudpickle
+--------------------------------------------------------------------------------------------------
+[12:14] <58109daad73408ce4f30f654> Is there any algorithm to make understand the sentence in english.. Actually the meaning of sentence
+--------------------------------------------------------------------------------------------------
+[14:03] <57a061aa40f3a6eec05d8d26> My code takes about 4seconds to run when using just NearestNeighbors(), but if I use n_jobs=-1 argument, it takes 8.5 minutes. Why it does this?
+--------------------------------------------------------------------------------------------------
+[16:23] <54d4a1d6db8155e6700f853b> @mkoske depending on how much data you have, parallelization might make it slower. Starting the jobs has some overhead. Try n_jobs=2
+--------------------------------------------------------------------------------------------------
+[16:53] <57a061aa40f3a6eec05d8d26> @amueller I think it is 2, since I have 2 cores, right? I'm using the digits dataset for testing
+--------------------------------------------------------------------------------------------------
+[17:02] <561be13fd33f749381a91e6e> @nilkanthshirodkar apologies, my native tongue is gibberish.  ^_^  Here's the meaning:  Lately, I've been using [dill](https://github.com/uqfoundation/dill) instead of `joblib.dump` to serialize models.  While dill can pickle the object itself,  it can also recursively pickle the object definition, which means you don't need to import the object's class(es) ahead of time.   Unfortunately, I get a variety of file handle errors when dumping some* scikit models using dill, and I'm not sure why.  I know there have been [thoughts to integrate dill into joblib itself](https://github.com/scikit-learn/scikit-learn/issues/5623).  And I'm curious to know if others have had similar experiences with dill or [cloudpickle](https://github.com/cloudpipe/cloudpickle).
+--------------------------------------------------------------------------------------------------

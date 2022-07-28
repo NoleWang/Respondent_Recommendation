@@ -1,0 +1,5 @@
+[06:55] <5e3f3d7cd73408ce4fd915a4> Hi, I'm wondering why this test is checking for float64 specifically (as opposed `dtype.kind == "f"`)? https://github.com/scikit-learn/scikit-learn/blob/2218ec46227c92301ac6837c4a8ae9b8dc5d3960/sklearn/utils/estimator_checks.py#L1735
+[19:39] <5baf7d9ad73408ce4fa9c9b2> @adriangb no real reason. This is typically the kind of check that's probably a bit too strict for non-internal estimators. We're working on making the `check_estimator` suite less restrictive (https://github.com/scikit-learn/scikit-learn/issues/13969). BTW @glemaitre , any progress on that? (I don't mean to rush you by any means, just wondering  :) )
+[21:10] <5e3f3d7cd73408ce4fd915a4> Great, I left a comment on that PR for the record.
+[21:12] <5e3f3d7cd73408ce4fd915a4> Would there be any chance that tolerances might be relaxed as well? There are several checks that check rtol/atol to <1e-7, which makes it very flaky when the estimator internally uses <=32 bit precision.
+[21:16] <5e3f3d7cd73408ce4fd915a4> @urosn do you mean like this: ```python estimator.fit(X, [1, 2, 3, 4.5]) estimator.predict(X)  # [1.1, 2.3, 2.7, 4.4] ``` ?

@@ -1,0 +1,5 @@
+[17:06] <5b11caa3d73408ce4f9b96b5> @ucalyptus https://stackoverflow.com/questions/15274696/importerror-in-importing-from-sklearn-cannot-import-name-check-build
+--------------------------------------------------------------------------------------------------
+[17:14] <5b11caa3d73408ce4f9b96b5> Can anyone help me with this: https://stats.stackexchange.com/questions/350520/evaluation-of-machine-learning-model-in-production ?
+[17:15] <5b11caa3d73408ce4f9b96b5> TL;DR - I'm trying to evaluate a model in production. I need advice on what metrics to use ( excluding explicit evaluation on a data set ).
+--------------------------------------------------------------------------------------------------

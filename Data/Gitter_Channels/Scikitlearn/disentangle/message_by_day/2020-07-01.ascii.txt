@@ -1,0 +1,2 @@
+[16:43] <54d4a1d6db8155e6700f853b> @GF-Huang you can use the metric parameter
+[17:13] <5efcc3d8d73408ce4fe8707d> Upvote vscode issue to allow colorfull output when fitting with Sklearn. https://github.com/microsoft/vscode-python/issues/12615

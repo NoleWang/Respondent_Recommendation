@@ -1,0 +1,6 @@
+[11:10] <564789be16b6c7089cbab8b7> I noticed scikit-learn is taking part in GSoC. I was wondering if https://github.com/scikit-learn/scikit-learn/issues/5736 would make a nice projecet?
+[11:10] <564789be16b6c7089cbab8b7> it has the advantage not being too technical I think
+[20:13] <564789be16b6c7089cbab8b7> @glemaitre  OK thanks
+--------------------------------------------------------------------------------------------------
+[12:49] <55d21ee30fc9f982beadabb8> @lesshaste The projects should be in line with the proposals specified there: https://github.com/scikit-learn/scikit-learn/wiki/Google-summer-of-code-(GSOC)-2017
+--------------------------------------------------------------------------------------------------

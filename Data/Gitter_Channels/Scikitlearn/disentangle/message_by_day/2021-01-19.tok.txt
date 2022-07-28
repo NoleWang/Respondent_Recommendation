@@ -1,0 +1,1 @@
+<s> <user> i am building a <unka> and have 10,000 examples of the positive class . i can generate any amount from the negative class . is there a standard way to take advantage of the unlimited amount of data from the negative class ? </s>

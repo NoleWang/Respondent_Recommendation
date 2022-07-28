@@ -1,0 +1,2 @@
+[06:59] <58d1e48dd73408ce4f52af1b> Hello - for BallTree can I use a user defined metric as great circle distance calculated from PyProj ? I believe the answer is YES but just confirming it here on gitter
+[07:02] <58d1e48dd73408ce4f52af1b> as shown in this SO answer - https://stackoverflow.com/questions/21052509/sklearn-knn-usage-with-a-user-defined-metric

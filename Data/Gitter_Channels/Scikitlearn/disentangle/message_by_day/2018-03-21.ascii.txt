@@ -1,0 +1,1 @@
+[17:53] <5796009e40f3a6eec05c5aa0> @satishjasthi , I would use Pycharm if the command line version of git is giving you trouble.  Then, do the [visual merge conflict resolution](https://www.jetbrains.com/help/idea/resolving-conflicts.html).    

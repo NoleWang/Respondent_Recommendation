@@ -1,0 +1,33 @@
+<s> <user> <unka@> i do n't know if this helps : i ran <unk`> from scipy import <unka> import numpy as np m , n = 9 , 6 a = <unka(.> , n ) + <unk#a(*.> , n ) u , s , <unka> = <unka(.> ) <unka(.> , <unka.> , <unka.> ) <unk`> <unka`> says : <unk`> <unk#> <unk#.> <unk#.> <unk#.> <unk#.> <unka<> <unka._> > <unk#a(:_> ) 900 <unk#.> <unk#.> <unk#.> <unk#.> { built-in method <unka.> } 1 <unk#.> <unk#.> <unk#.> <unk#.> <unk#a(.:_> ) <unk#/> <unk#.> <unk#.> <unk#.> <unk#.> <unk#a(.:_> ) <unk#/> <unk#.> <unk#.> <unk#.> <unk#.> { built-in method <unka._> } <unk#/> <unk#.> <unk#.> <unk#.> <unk#.> { built-in method <unka.> } 190 <unk#.> <unk#.> <unk#.> <unk#.> { built-in method <unka.> } <unk#/> <unk#.> <unk#.> <unk#.> <unk#.> { built-in method <unka._> } <unk`> ( sorted by second column ) <unk`> 9 <unk#.> <unk#.> <unk#.> <unk#.> <unk#a(.:_> ) 9 <unk#.> <unk#.> <unk#.> <unk#.> <unk#a(.:_> ) 9 <unk#.> <unk#.> <unk#.> <unk#.> { method <unka'> of <unka'> objects } 9 <unk#.> <unk#.> <unk#.> <unk#.> { method <unka'> of <unka'> objects } 9 <unk#.> <unk#.> <unk#.> <unk#.> <unk#a(.:> ) 9 <unk#.> <unk#.> <unk#.> <unk#.> <unk#a(.:> ) 9 <unk#.> <unk#.> <unk#.> <unk#.> <unk#a(.:_> ) 900 <unk#.> <unk#.> <unk#.> <unk#.> <unka<> <unka._> > <unk#a(:_> ) 900 <unk#.> <unk#.> <unk#.> <unk#.> { built-in method <unka.> } 936 <unk#.> <unk#.> <unk#.> <unk#.> <unka<> <unka._> > <unk#a(:<> > ) 96 <unk#.> <unk#.> <unk#.> <unk#.> <unk#a(.:<> > ) <unk#/> <unk#.> <unk#.> <unk#.> <unk#.> { built-in method <unka._> } 1 <unk#.> <unk#.> <unk#.> <unk#.> <unk#a(.:_> ) 1 <unk#.> <unk#.> <unk#.> <unk#.> <unk#a(.:_> ) <unk`> ( sorted by third column ) </s>
+<s> <user> this is on the 24 core machine </s>
+<s> <user> <unka@> when i run this code : <unk`> <unka_> , <unka_> = <unka(=_> , # <unka> ( pipeline ) <unka=> , # features matrix <unka=> , # target vector <unka'=_> , <unk#a(,=_> ), # test these <unka-> <unk#a=> , # <unk#a-> <unka-> <unka'=_> ) # use negative validation <unk`> directly on the host ( with 24 cores ) i get DIR/~30/ seconds . when i run it directly on localhost ( 4 cores , 8 threads ) i get around 30-40 seconds as well . when i run inside docker with cpu limit of 6 cores and 6gb ram , it needs almost 10 minutes . inside a virtualbox with 2 cores .. around 30 seconds , seems <unka> does not play well with docker limitations which uses the cfs scheduler : [ <unka#(-./:]_> ) </s>
+<s> <user> also found out that if i adjust <unka_`> to <unk#a(),`> code runs much faster ( i am no data scientist ) </s>
+<s> <user> it seems <unka_`> does not really profit from <unka/> . i get almost same results on intel i7 ( 4 cores ) and intel xeon ( 24 cores ). the problem is that if the validation curve runs on the xeon machines .. it uses all cores and the machine is overloaded , which makes no sense , really :) </s>
+<s> <user> <unk#a=`> makes it faster as well </s>
+<s> <user> how should i install the dependencies for local development of <unka-> ? </s>
+<s> <user> <unka@> URL/https:/ <unka-./> <unka#-./_> </s>
+<s> <user> i'd recommend using <unka> and doing <unka`> install numpy scipy <unka> matplotlib <unka> <unk#a> sphinx <unka-`> or something like that </s>
+<s> <user> <unka@> by the way , numpy and scipy from <unka> perform somehow faster than from pip </s>
+<s> <user> but i still have n't found out why </s>
+<s> <user> <unk#a@> thats <unka> vs <unka> possibly </s>
+<s> <user> but could also be how they are configured by default </s>
+<s> <user> i.e . how many threads they use etc </s>
+<s> <user> <unka@> how can i reconfigure numpy and scipy to use max threads e.g . 6 ? </s>
+<s> <user> i have no <unka`> ( from <unka> or pip ) </s>
+<s> <user> pip has no <unka> ;) </s>
+<s> <user> ( so far ) </s>
+<s> <user> URL/https:/ URL/stackoverflow.com/ <unk#a-/> </s>
+<s> <user> URL/https:/ <unka./> <unka/> </s>
+<s> <user> <unk#a@> i do n't think that helps given that numpy and scipy will not be linked against it </s>
+<s> <user> this saved my life <unka@> </s>
+<s> <user> well in your script n and m are way too small to show anything useful </s>
+<s> <user> it reduced my validation curve </s>
+<s> <user> from <unk#a> to 15 seconds </s>
+<s> <user> <unka@> this is a life saver </s>
+<s> <user> what did ? </s>
+<s> <user> URL/https:/ URL/stackoverflow.com/ <unk#a-/> </s>
+<s> <user> these envs </s>
+<s> <user> ah </s>
+<s> <user> well stackoverflow saved your live </s>
+<s> <user> <unka*> </s>
+<s> <user> it 's good for performance tweaks </s>

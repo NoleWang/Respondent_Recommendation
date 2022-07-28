@@ -1,0 +1,16 @@
+<s> <user> ah got <unka> ! <unka@> </s>
+<s> <user> hi anyone here ? </s>
+<s> <user> while using <unka> i 'm getting this error importerror : cannot import name <unka'_> </s>
+<s> <user> i tried googling it but i got nothing </s>
+<s> <user> please help </s>
+<s> <user> this is private api that is not guaranteed to stay stable across <unka-> releases , maybe <unka> was meant to be used with a specific version of <unka-> . please check with its documentation or asking its developers and make sure that you have the correct version of <unka-> . </s>
+<s> <user> URL/https:/ URL/github.com/ <unk#a#./> </s>
+<s> <user> could be that > 0.19 could be problematic </s>
+<s> <user> hmmm ok thanks let me try it on <unka> </s>
+<s> <user> can u plz give a one liner pip code to downgrade it </s>
+<s> <user> ? </s>
+<s> <user> pip install <unk#a-.=> </s>
+<s> <user> thanks a lot </s>
+<s> <user> now i m getting another error importerror : cannot import name <unka'> </s>
+<s> <user> plz help </s>
+<s> <user> i have python <unk#a.> it matter by that too ? </s>

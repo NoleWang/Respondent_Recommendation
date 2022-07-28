@@ -1,0 +1,6 @@
+<s> <user> <unk#a@_> sir you can join <unk#a> or <unka> mit course on introduction to programming using python </s>
+<s> <user> <unka@> dear sir , how to join this , is it free ? please send me link <unka@> <unka@> <unka@> </s>
+<s> <user> <unka@> sir , when will you online acc . to your indian time ?? i need to discuss few things </s>
+<s> <user> please </s>
+<s> <user> <unka@> i can explain or tell you in details </s>
+<s> <user> <unk#a@_> i am also new like for learning python </s>

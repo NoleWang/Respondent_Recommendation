@@ -1,0 +1,99 @@
+[14:02] <54d4a1d6db8155e6700f853b> @ogrisel do you have a second?
+[14:18] <5581814615522ed4b3e20c6a> How scikit can help beginners?
+[14:18] <53135b495e986b0712efc453> @BastinRobin http://scikit-learn.org/stable/tutorial/
+[14:27] <541a528b163965c9bc2053de> @amueller yes, sorry I was on the phone
+[14:29] <541a528b163965c9bc2053de> > TIL: don't try to make a learning curve example with a non-parametric model > because the training error doesn't go up with the number of samples  this is actually an interesting example if you constrast it with the learning curve of a parametric model
+[14:36] <54d4a1d6db8155e6700f853b> yeah, but maybe to advanced for an introductory course.
+[14:37] <54d4a1d6db8155e6700f853b> never mind, I was confused by the timing of https://github.com/scikit-learn/scikit-learn/pull/4844, but I think the code is just overly complicated
+[17:16] <53135b495e986b0712efc453> Anybody around? :) I have a few (probably lame) questions regarding nested CV!
+[17:46] <54e07d6515522ed4b3dc0858> hi @rvraghav93 
+[17:49] <54d4a1d6db8155e6700f853b> yeah I'm around
+[17:49] <54d4a1d6db8155e6700f853b> I have a meeting in 10 minutes but I'll answer stuff here
+[17:53] <53135b495e986b0712efc453> Why is nested CV not generically possible with our current API... I understand what needs to be done to make the iterators data indep. but I don't get why nested cv is difficult as Mathieu had commented in that issue description... `cross_val_score(GridSearchCV(est, ....))` would be enough right?
+[17:55] <54e07d6515522ed4b3dc0858> this works currently if you use e.g. `cv=3` in the inner one
+[17:55] <54d4a1d6db8155e6700f853b> if anyone has time, the timing on #4844 really confuses me btw.
+[17:55] <54d4a1d6db8155e6700f853b> Slicing an euclidean distance into smaller bits makes the code run faster?!
+[17:55] <54e07d6515522ed4b3dc0858> but if you need to pass a CV object that takes y, what do you set y to?
+[17:56] <54d4a1d6db8155e6700f853b> or even n_samples. If the size of your dataset is not divisible by the cv in the outer loop, the training sets in the inner loop will have different lengths
+[17:57] <54e07d6515522ed4b3dc0858> exactly
+[17:57] <54e07d6515522ed4b3dc0858> or LeaveOneLabelOut
+[17:57] <54e07d6515522ed4b3dc0858> (such a nesting bug with LOLO bit me really hard a few months ago)
+[17:58] <54e07d6515522ed4b3dc0858> (:baby: :baby_bottle:) 
+[17:58] <54e07d6515522ed4b3dc0858> I can't even get my emoji right, I'm useless
+[17:59] <53135b495e986b0712efc453> This is a general apology for all lame questions that may follow :P please bear with me!
+[17:59] <53135b495e986b0712efc453> Ok so the inner loop does hyper param optimization using a separate cross validation and finds the best model which the outer loop uses to find the cross validated score... why should these two affect each other? ( Like apologized earlier, please bear with me :( )
+[18:00] <54e07d6515522ed4b3dc0858> don't even think that you have a GridSearch on the inside
+[18:00] <54e07d6515522ed4b3dc0858> consider the simpler case with just a cross_val_score inside a cross_val_score
+[18:01] <53135b495e986b0712efc453> [offtopic - I think gitter supports only a subset of the emojis ;) ]
+[18:01] <54e07d6515522ed4b3dc0858> [the bracket messed it up I think: :baby: :baby_bottle: ]
+[18:01] <53135b495e986b0712efc453> ah :P
+[18:01] <550f53e215522ed4b3dda5f6> If I need to discuss  the current code, should I open a new issue or add comments on my working PR which is addressing the issues?
+[18:02] <54e07d6515522ed4b3dc0858> hi @xuewei4d 
+[18:02] <54e07d6515522ed4b3dc0858> what do you mean by current code?
+[18:02] <53135b495e986b0712efc453> and if its not too much trouble could you give me a line or two of code that will help me clearly understand this?
+[18:02] <550f53e215522ed4b3dda5f6> I mean the code of master branch
+[18:02] <54e07d6515522ed4b3dc0858> if it's in the context of GMMs I think commenting in your PR would work well
+[18:02] <550f53e215522ed4b3dda5f6> ok.
+[18:02] <54e07d6515522ed4b3dc0858> since most people who could answer are already following the PR
+[18:03] <54e07d6515522ed4b3dc0858> also you could use `git blame` and ping the author(s) of the piece of code
+[18:04] <54e07d6515522ed4b3dc0858> BTW I still am in favor of `GaussianMixture` vs `GaussianMixtureModel`
+[18:05] <54e07d6515522ed4b3dc0858> @rvraghav93 let's think about it
+[18:05] <54e07d6515522ed4b3dc0858> say we have a dataset (X, y) with 100 samples and want to use `KFold`
+[18:05] <54e07d6515522ed4b3dc0858> we need to fill in the blanks in the following
+[18:06] <54e07d6515522ed4b3dc0858> 
+[18:06] <54e07d6515522ed4b3dc0858> 
+[18:06] <53135b495e986b0712efc453> you can edit gitter chat messages :)
+[18:07] <54e07d6515522ed4b3dc0858> ``` clf = GridSearchCV(grid, cv=KFold(n_samples=?, n_folds=3)) cross_val_score(clf, X, y, cv=KFold(n_samples=?, n_folds=3)) ```
+[18:08] <54e07d6515522ed4b3dc0858> (ignore the fact that the parameter is currently called `n` and not `n_samples`)
+[18:09] <54e07d6515522ed4b3dc0858> how would you fill the question marks?
+[18:09] <54e07d6515522ed4b3dc0858> the one on the 2nd line is easy
+[18:10] <53135b495e986b0712efc453> won't both be 100?
+[18:10] <53135b495e986b0712efc453> :P
+[18:10] <53135b495e986b0712efc453> ahhhh I get it !
+[18:10] <54e07d6515522ed4b3dc0858> no, because the inner `clf` (the GridSearchCV) only gets a fold each time
+[18:10] <53135b495e986b0712efc453> yes.. sory.. this is too lame :| 
+[18:10] <54e07d6515522ed4b3dc0858> if `len(X)` were `99`, you could set the first `?` to `66` I think
+[18:11] <53135b495e986b0712efc453> 
+[18:11] <53135b495e986b0712efc453> thanks a lot :)
+[18:11] <54e07d6515522ed4b3dc0858> but 1) this would be hacky 2) users shouldn't need to do this kind of error-prone math 3) this doesn't work at all for many cross-val strategies
+[18:12] <53135b495e986b0712efc453> This is clear now!! Will finish up my blog and resume the work :) Thanks!! 
+[18:12] <54e07d6515522ed4b3dc0858> oh God why does gitter display inline gifs?
+[18:12] <54e07d6515522ed4b3dc0858> I'm starting to understand Gael's hate for it :D
+[18:12] <53135b495e986b0712efc453> Is it bad? :P I'll remove :P
+[18:13] <53135b495e986b0712efc453> haha!
+[18:13] <54e07d6515522ed4b3dc0858> also the fact that you can delete and edit messages is a bit worrysome
+[18:13] <53135b495e986b0712efc453> but u can do so only for 10 minutes... 
+[18:14] <54e07d6515522ed4b3dc0858> anyway, glad I could help, if you want me to take a look at the blogpost I'll be around today
+[18:15] <53135b495e986b0712efc453> sure!! I'll publish in an hour or two! and also post it to our ML...
+[18:15] <53135b495e986b0712efc453> btw if you have time could you check if the current implementation of the assert helpers look okay?
+[18:16] <54e07d6515522ed4b3dc0858> I will try to do this later today
+[18:17] <53135b495e986b0712efc453> Thanks! whats your timezone btw?
+[18:17] <54e07d6515522ed4b3dc0858> EST (I think)
+[18:17] <54e07d6515522ed4b3dc0858> it's 2pm
+[18:17] <53135b495e986b0712efc453> okay :)
+[18:17] <54e07d6515522ed4b3dc0858> 2:17
+[18:28] <54e07d6515522ed4b3dc0858> @amueller for #4844 do you get the same timing on your computer?
+[18:45] <54d4a1d6db8155e6700f853b> @rvraghav93 btw, midterm is rather soon...
+[18:47] <54d4a1d6db8155e6700f853b> @vene yeah. The student just showed me that doing array ** 2 is super-linear in the array size
+[18:47] <54e07d6515522ed4b3dc0858> how about array *= array?
+[18:47] <54d4a1d6db8155e6700f853b> so if you want to square an array it is faster to do so by chunking it... that seems wrong
+[18:48] <54e07d6515522ed4b3dc0858> even with chunks of size 2?
+[18:48] <54e07d6515522ed4b3dc0858> how about size 1? That would just be a loop over the items
+[18:50] <54d4a1d6db8155e6700f853b> for the code in #4844 chunks of size 1 are fastest
+[18:50] <54d4a1d6db8155e6700f853b> %timeit array *= array doesn't work lol
+[18:50] <54d4a1d6db8155e6700f853b> having the loop over samples be the fastest just seems so wrong
+[18:51] <54e07d6515522ed4b3dc0858> I was thinking in #4844 there might be some indexing thing, but if you narrowed it down to np.pow, that's very wrong
+[18:53] <54e07d6515522ed4b3dc0858> how about np.square?
+[18:54] <54e07d6515522ed4b3dc0858> This works though (but adds the overhead of a copy)
+[18:54] <54e07d6515522ed4b3dc0858> ``` In [11]: %timeit Xco = X.copy(); Xco *= Xco The slowest run took 4.31 times longer than the fastest. This could mean that an intermediate result is being cached 1000 loops, best of 3: 969 <unconvertable> s per loop  In [12]: %timeit Xco = X.copy(); Xco ** 2 1000 loops, best of 3: 1.25 ms per loop  In [13]: %timeit Xco = X.copy() The slowest run took 4.42 times longer than the fastest. This could mean that an intermediate result is being cached 1000 loops, best of 3: 525 <unconvertable> s per loop ```
+[18:57] <54e07d6515522ed4b3dc0858> `[elem * elem for row in Xco for elem in row]` is much slower
+[19:08] <53135b495e986b0712efc453> @amueller you mean Gsoc midterm? it usually comes in July only right?
+[19:09] <54e07d6515522ed4b3dc0858> @rvraghav93 it's June 26
+[19:09] <54e07d6515522ed4b3dc0858> it opens June 26 until July 3rd I mean
+[19:12] <53135b495e986b0712efc453> Ah its from 26 - 3 july... How much would you like to see me completed with my goals before the midterm? I am thinking  1. model_selection refactoring 2. Data independent CV Iterators. 3. Multiple Metric support - I won't be able to complete this though :/  Does it look okay?
+[19:15] <54e07d6515522ed4b3dc0858> I think 1&2 completed (in such a way in which there's a MRG branch where all tests pass and one can do nested CV nicely) would be good. But by MRG I mean MRG :)
+[19:15] <54e07d6515522ed4b3dc0858> @amueller, what do you think?
+[20:12] <54d4a1d6db8155e6700f853b> yeah 1 & 2 merged would be great
+[20:17] <54d4a1d6db8155e6700f853b> I also thought there was something wrong with the slicing but I'm very confused now :-/
+[20:18] <54d4a1d6db8155e6700f853b> and the problem is both in the squaring and in the outer product computation
+[20:18] <54d4a1d6db8155e6700f853b> I feel stupid for not seeing what is happening

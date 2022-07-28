@@ -1,0 +1,3 @@
+<s> <user> i 'm looking to take a set of attributes about an object in the real world , and then determine a set of products that would best fit it based on these attributes . would this be a good fit for using a decision tree ? </s>
+<s> <user> these set of products would be values calculated from the attributes themselves </s>
+<s> <user> i am not looking for any type of prediction though , just a method of representing logic branches nicely in some pretty complex business rules </s>

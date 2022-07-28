@@ -1,0 +1,18 @@
+[00:32] <53135b495e986b0712efc453> @jmschrei No my concern is that the model_selection tests are not at all run by appveyor... only travis seems to detect the module and run the tests...
+[00:38] <53135b495e986b0712efc453> Is that because there are no public python sources in `model_selection`? (all three are private)
+[05:17] <53135b495e986b0712efc453> @vene You had earlier said that the doc for labels param was not apt... Does `" Class labels to be assigned to the samples and used while splitting the dataset into test/train set."` sound like a good doc for `labels` param?
+[05:17] <53135b495e986b0712efc453> (of `split(X, y, labels)`?)
+--------------------------------------------------------------------------------------------------
+[07:16] <55901c1b15522ed4b3e2f949> The unit tests are failing on my machine. raise self.failureException("ImportError('No module named sag_fast'm) != None")
+[07:16] <55901c1b15522ed4b3e2f949> Ubuntu 64 bit, they were all running fine on Friday.
+--------------------------------------------------------------------------------------------------
+[07:34] <55e5c37d0fc9f982beaf4d61> did you miss a make in ?
+[07:37] <55901c1b15522ed4b3e2f949> Yep
+--------------------------------------------------------------------------------------------------
+[13:19] <54d4a1d6db8155e6700f853b> @rvraghav93 it shouldn't be "class labels" they are not class labels. maybe group labeles?
+[13:19] <54d4a1d6db8155e6700f853b> also not really assigned to the samples?
+--------------------------------------------------------------------------------------------------
+[16:25] <553e8e1015522ed4b3df97f7> Guys, I opened this PR https://github.com/scikit-learn/scikit-learn/pull/5271 to fix a minor typo in doc/modules/neighbors.rst L470
+[16:28] <553e8e1015522ed4b3df97f7> I'll do a git grep to check for more typos, if there are any
+[16:31] <553e8e1015522ed4b3df97f7> :sweat_smile:
+--------------------------------------------------------------------------------------------------

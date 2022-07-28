@@ -1,0 +1,47 @@
+[07:26] <54d4a1d6db8155e6700f853b> good morning :)
+--------------------------------------------------------------------------------------------------
+[07:27] <54d4a1d6db8155e6700f853b> @vighneshbirodkar For the one hot encoder: that
+[07:27] <54d4a1d6db8155e6700f853b> that's why I said try to do check_array, and if we get a string type back, instead make it an object type.
+[07:28] <54d4a1d6db8155e6700f853b> your example will give a string type
+[07:28] <54d4a1d6db8155e6700f853b> if we detect that and instead convert with an explicit object dtype, it'll work
+--------------------------------------------------------------------------------------------------
+[07:44] <54bd0a4fdb8155e6700ed136> good morning
+--------------------------------------------------------------------------------------------------
+[07:44] <541a528b163965c9bc2053de> good morning
+--------------------------------------------------------------------------------------------------
+[07:44] <54bd0a4fdb8155e6700ed136> hey, by any chance, what would you recommend for a good introduction to linear models? (to be recommended as reading materials for a workshop with an audience of physicists)
+[07:45] <54bd0a4fdb8155e6700ed136> (covering linear regression, lasso, svm, etc)
+[08:21] <54bd0a4fdb8155e6700ed136> okay, thanks Kyle
+[11:11] <54bd0a4fdb8155e6700ed136> =(
+[11:17] <54bd0a4fdb8155e6700ed136> Given my +1 and partial reviews from @amueller, @ngoix and @jmschrei, can we merge #5487?
+[11:38] <54bd0a4fdb8155e6700ed136> thanks alex :)
+--------------------------------------------------------------------------------------------------
+[08:18] <54e07d4015522ed4b3dc0856> good morning - @ogrisel might comment more but I would probably say elements of statistical learning
+[08:18] <54e07d4015522ed4b3dc0856> or the intro version of that (can't remember the name)
+[08:19] <54e07d4015522ed4b3dc0856> "Introduction to Statistical Learning"
+--------------------------------------------------------------------------------------------------
+[08:22] <541a528b163965c9bc2053de> I don't have a better suggestion
+--------------------------------------------------------------------------------------------------
+[08:56] <54bd0a4fdb8155e6700ed136> is it me or github is very slow at the moment?
+[10:29] <541a528b163965c9bc2053de> it seems fine now
+--------------------------------------------------------------------------------------------------
+[10:40] <54d4a1d6db8155e6700f853b> @glouppe you just missed the introduction of the scikit-learn advancement proposal
+--------------------------------------------------------------------------------------------------
+[12:48] <54e07d4015522ed4b3dc0856> @glouppe I think it is important to note that SLAP is our new acronym...
+--------------------------------------------------------------------------------------------------
+[13:13] <54d4a1d6db8155e6700f853b> @kastnerkyle @GaelVaroquaux called the repo "enhancement" :-/ https://github.com/scikit-learn/enhancement_proposals
+[13:13] <54d4a1d6db8155e6700f853b> stupid git question: how to I update a local branch that is a pr/1234 branch?
+[13:13] <54d4a1d6db8155e6700f853b> i.e. that comes from a pull request
+[16:36] <54d4a1d6db8155e6700f853b> I think I'll have to head out soon
+[16:36] <54d4a1d6db8155e6700f853b> @kastnerkyle that is not working yet, there is a PR
+--------------------------------------------------------------------------------------------------
+[14:36] <54e07d4015522ed4b3dc0856> does anyone know if CircleCI is pushing the doc to github? Or just creating an artifact that some other thing can get
+[14:36] <54e07d4015522ed4b3dc0856> I am trying to make CircleCI push a doc (for another project) after succesful build
+--------------------------------------------------------------------------------------------------
+[15:02] <54d4a1d6db8155e6700f853b> https://skll.readthedocs.org/en/latest/run_experiment.html#param-grids-optional
+[15:04] <54d4a1d6db8155e6700f853b> https://github.com/EducationalTestingService/skll/blob/5ea61b8dfc23570e661468457a262b6c2242daa9/skll/learner.py#L62
+--------------------------------------------------------------------------------------------------
+[16:55] <54e07d4015522ed4b3dc0856> ok - I got the build part working on sklearn-theano pretty easily, and I think Fred will take a look at it for Theano as well. This is a lot better than a cron job...
+[19:32] <54d4a1d6db8155e6700f853b> indeed
+[19:32] <54d4a1d6db8155e6700f853b> lol I don't think I wrote a line of code this week
+--------------------------------------------------------------------------------------------------

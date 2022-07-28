@@ -1,0 +1,18 @@
+[20:15] <5586719a15522ed4b3e23add> Hi everyone,  I am new to this room, found it through gitter listing. I am a usual scikit-learn user. Would this be a place to know more about projects using the tool? Thanks!
+--------------------------------------------------------------------------------------------------
+[20:16] <56c4f19ae610378809c1f8ae> Hmm not quite, thus room is mainly used for developer chat.
+--------------------------------------------------------------------------------------------------
+[20:27] <5586719a15522ed4b3e23add> @nelson-liu Hi, I guess you are referring to me? > Hmm not quite, thus room is mainly used for developer chat.  I see... I guess that it is the desired use. A quick scroll-up seems to show a plethora of different interesting topics... :) I will respect the main interest of the founders though. Thanks for the info! I hope there is no issue is I stay as observer meanwhile?
+[20:28] <56c4f19ae610378809c1f8ae> Of course, we definitely talk about other things :)
+[20:29] <5586719a15522ed4b3e23add> Thanks!! :)
+--------------------------------------------------------------------------------------------------
+[20:31] <56c4f19ae610378809c1f8ae> Np! BTW, does anyone have a 32 bit machine (ideally linux) and would be willing to spare a few minutes to pull down some code from one of my branches and run a nosetests?
+[20:33] <56c4f19ae610378809c1f8ae> Yeah I mean running a 32 bit OS  I mean haha
+[20:34] <56c4f19ae610378809c1f8ae> Ah got it. I have some tests failing on appveyor, only when running on windows 32 bit though.  I'm considering setting up a vm to debug, but I'm also curious if it breaks on Linux 32 bit bc it's a lot easier to get Linux set up and running on a vm vs windows haha
+--------------------------------------------------------------------------------------------------
+[20:31] <557c765a15522ed4b3e1de4f> a 32-bit linux machine?
+--------------------------------------------------------------------------------------------------
+[20:33] <557c765a15522ed4b3e1de4f> yeah i caught what you meant, its just my time machine is in the shop
+--------------------------------------------------------------------------------------------------
+[20:49] <557c765a15522ed4b3e1de4f> hah yeah i don't even try to support windows
+--------------------------------------------------------------------------------------------------

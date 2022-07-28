@@ -1,0 +1,11 @@
+<s> <user> <unka@> if you want to use <unka> + <unka> check out <unka> : URL/https:/ URL/github.com/ <unka/> </s>
+<s> <user> <unka@> i was wondering if you could mention what is the benefit of <unka> compared to the <unka> and <unka> ? </s>
+<s> <user> it 's a pretty long list . some <unka-> specific ones are : </s>
+<s> <user> ( was on mobile ) * allows <unka> of <unka> , allow <unka> and <unka> to work properly * allows you to use <unka-/> models to <unka> ( especially important since some <unka-> models have " extra " outputs ) * working <unka_> ( random state in <unka> is pretty complicated ) * adds <unka_`> and <unka_`> * your models can dynamically adjust the <unka> input/output shape to the data ( previously , that had to be hardcoded ) * support for <unka_`> in the same format as other <unka> <unka> ( including <unka"=_`> ). * a lot of compatibility improvements , stuff like implementing <unka_`> and <unka_`> * allows you to <unka-> parameters for <unka> and losses via [ routed <unka#(-./:]> ). </s>
+<s> <user> some not <unka> specific advantages : * is actively maintained ( the tf team may [ <unk#a#(-./:]> ) the wrappers in tf ) * has actual [ <unka(./:]> ) </s>
+<s> <user> i should write this stuff down somewhere in a docs page <unka:_> : </s>
+<s> <user> ok so this us super useful :). thanks for maintaining such wrapper </s>
+<s> <user> basically , it would be great to have the info ( regarding the <unka> and <unka-> ) in the landing page . when reading it i was kinda <unka> about it :) </s>
+<s> <user> i hope it 's useful ! and yep totally agreed , i opened myself an issue to add it to our docs <unka.> </s>
+<s> <user> we could also add this to our " related projects " </s>
+<s> <user> it would be great if you did ! probably could also update <unka`> deep learning library capable of running on top of either tensorflow or <unka`> -> <unka`> , the official high-level deep learning api for <unka`> </s>

@@ -1,0 +1,6 @@
+[16:14] <5810cd4cd73408ce4f3101ce> why would there be any randomness in choosing splits? since decision_tree is  a greedy algorithm, find the best feature to split
+[16:14] <5810cd4cd73408ce4f3101ce> @adrinjalali ^
+--------------------------------------------------------------------------------------------------
+[16:19] <567f5d7716b6c7089cc043a8> @yupbank  I suggest you look for `random_state` in [here](https://github.com/scikit-learn/scikit-learn/blob/7389dbac82d362f296dc2746f10e43ffa1615660/sklearn/tree/_splitter.pyx) to better understand how it's working.
+[16:19] <5810cd4cd73408ce4f3101ce> Thanks man, i understand how the code works...  but i dont understand why are we doing this
+--------------------------------------------------------------------------------------------------

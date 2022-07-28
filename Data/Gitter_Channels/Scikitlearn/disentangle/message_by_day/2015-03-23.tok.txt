@@ -1,0 +1,73 @@
+<s> <user> > also is this a correct place to discuss this or the mailing list might be better for such questions ? nm ! i 've copied this to the ml , so as to reach a wider audience :) please let me know your views there ! </s>
+<s> <user> <unka@> +1 for a gsoc on <unka-> improvements . i can volunteer to be a mentor on that one . </s>
+<s> <user> thanks !! :d would you be able to take a look at my proposal at URL/https:/ URL/github.com/ <unk#a-/:_> and let me know your views ? </s>
+<s> <user> will do . </s>
+<s> <user> thanks ! :) </s>
+<s> <user> <unka@> i do n't know about ng 's course , but for the books , <unka> is useless for the exercises , right ? they are mostly mathematical <unka> . how would <unka> help with that ? </s>
+<s> <user> <unka@> i think we should focus your gsoc on improving <unka-> , writing a generic tutorial to ml is interesting but too long to do in addition to a gsoc </s>
+<s> <user> for the <unka-> , we could have the <unka-> <unka> and then for the second part of the gsoc experiment with high level helper api to do <unka-> <unka-> for models that support <unka_> </s>
+<s> <user> i thought we wanted to do multiple metrics ? </s>
+<s> <user> i have personally not started to thing about what such an api would look like but i think this is an important use case </s>
+<s> <user> multiple metrics is interesting as well </s>
+<s> <user> btw have you looked at any of the gsoc <unka> yet ? </s>
+<s> <user> but URL/https:/ URL/github.com/ <unk#a-/> should definitely be part of the gsoc </s>
+<s> <user> just URL/https:/ URL/github.com/ <unk#a-/:_> </s>
+<s> <user> i guess i need to review them all ... </s>
+<s> <user> btw , <unka@> i thought about doing the split of the <unka`> module into the private and public modules , that people have been talking about for ever . what do you think about that ? </s>
+<s> <user> hey all , i have noticed [ <unk#a(-./:]> ) and [ <unk#a(-./:]> ) that there was once a <unka> algorithm module in <unka.> , it appears to have been removed mostly due to code rot , maybe api differences too , but does anyone know if there is an underlying general issue with <unka> algorithms that are not <unka-> friendly ? </s>
+<s> <user> for context , i am writing a symbolic regression class that <unka> <unka> programming 's flexibility to the main use cases found in <unka-> ( regression , <unka> , transformation ) and sticks with the existing <unka-> api style . so just wanted to check in to ensure i 'm not going off the deep end as i 'm nearing a functional <unka> already ... though still a fair ways from a pr <unka:> : </s>
+<s> <user> <unka@> green button on URL/https:/ URL/github.com/ <unk#a-/> to avoid merge conflicts ? </s>
+<s> <user> <unka@> <unka> algorithms are probably going off the <unka> trench . what is your application of symbolic regression ? </s>
+<s> <user> haha . what do you mean by application ? where would it be used ? </s>
+<s> <user> its just a <unka> , except that the final result is expressed as a non-linear equation . </s>
+<s> <user> could also be used for automated feature extraction in a <unka> transformer </s>
+<s> <user> basic idea is to take an initial sample of random equations and apply <unka> operations such as <unka> , reproduction , etc to the <unka> individuals in a population . the equations are expressed like lisp trees ... well im just using python lists , but similar structure </s>
+<s> <user> <unka@> about the split of utils i have no strong opinions . i am +1 on introducing new private utils with a <unk_`> prefix . </s>
+<s> <user> ok you are just building a <unka> . by application i mean : does this ever work better than a random forest ? also , is that what people currently use in symbolic regression ? and does that work better than greedy expansions of variables in a linear model ? </s>
+<s> <user> <unka@> would you still have them in the <unka.`> module ? i thought about introducing <unka._`> and just moving ( <unka-> ) all the <unka-> api there ? </s>
+<s> <user> but maybe i should rather spend my time on reviewing the <unka> and gp <unka> or finishing the <unka> . </s>
+<s> <user> btw , for the <unka> , i 'm not 100% certain on how to do <unka> momentum . i find the paper was not very clearly written , but maybe i was just tired </s>
+<s> <user> ive seen people using symbolic regression in combination with stacking on <unka> ( the <unka> boson comp was <unka> ) to extract new features that helped their <unka> 's latch onto some very interesting segments of the feature space . there is a lot of research into competitive results though i dont know if they have been compared to <unka> </s>
+<s> <user> " also , is that what people currently use in symbolic regression ?", do you mean lisp trees ? yes , it is very common . basically a <unka> tree representation </s>
+<s> <user> <unka@> about the <unka> pr , i have implemented an <unka> schedule for the learning rate here : URL/https:/ URL/github.com/ <unk#a-/> . it seems to be very useful in practice , although <unka> <unka> recommends to use a validation set instead of the training score . using a validation set is complicated from an api point of view though . </s>
+<s> <user> <unka> momentum is not that complicated . have you read : URL/http:/ <unka./> <unka./~> ? </s>
+<s> <user> it 's mostly the ordering of the update . </s>
+<s> <user> <unka@> this experimental notebook might help URL/http:/ <unka./> <unka./> </s>
+<s> <user> also i am currently experimenting with a from scratch implementation in <unka> to have a comparision point ( and more nn experience ): URL/http:/ <unka./> <unk#a%./> </s>
+<s> <user> about the utils stuff it does not seem to be particularly high priority to me but feel free to work on that if you find it important yourself . </s>
+<s> <user> i read the momentum pdf . but i 'll have a look at your notebook . i feel we should merge this asap as it has been lying around for so long . adding monitoring etc can always be done afterwards </s>
+<s> <user> and the use of a validation set would be great but is a whole other can of worms </s>
+<s> <user> <unka@> sorry for being ambiguous . i meant are people using <unka> programming for symbolic regression . </s>
+<s> <user> i am not sure we should merge that early . the optimizer is clearly suboptimal , the one in my branch seems to be much more robust but changes the meaning of the <unka'> <unka> . </s>
+<s> <user> i think it 's very important to have a robust <unka> by default . </s>
+<s> <user> but i want to focus on the 0.16 release first . </s>
+<s> <user> <unka@> encourage you to implement that as a third party project first . if it proves <unka> useful then we might consider it for inclusion in the future . but <unka> programming stuff is <unka> very different from the <unka> spirit . especially we do not want to have a generic <unka> algorithm module as part of <unka> as the api would not be suited for it . </s>
+<s> <user> a black box <unka> programming solver hidden in a <unka> <unka> might be interesting though . </s>
+<s> <user> but it 's utility would have to be proven first . so better implement that in a dedicated python package first . </s>
+<s> <user> <unka@> is there much to do for 0.16 ? </s>
+<s> <user> <unka@> is there anything to be done for the eml branch ? it has no +1 yet . </s>
+<s> <user> this one would be nice : URL/https:/ URL/github.com/ <unk#a-/> </s>
+<s> <user> URL/https:/ URL/github.com/ <unk#a-/> just passed </s>
+<s> <user> <unka@> <unka@> thanks for the reviews !! based on your comments i 'll replace that section of my prop . with a more significant work > they are mostly mathematical <unka> . how would <unka> help with that ? i was thinking more on the lines of URL/http:/ <unka-./> <unka./~> but like you said for the practical part of it , we do have some nice books ! perhaps out of gsoc , it would be better if i simply cleaned up existing examples and added a few more perhaps ! </s>
+<s> <user> <unka@> , yes , it is the 'classic' use of gp . </s>
+<s> <user> <unka@> . " a black box <unka> programming solver hidden in a <unka> <unka> might be interesting though ." yep . that 's exactly what i 'm going after . though understand if you do n't want it in the package yet , makes perfect sense . </s>
+<s> <user> fwiw , here 's the ( did i mention <unka-> ) code : URL/https:/ URL/github.com/ <unka-./_> </s>
+<s> <user> running is as simple as <unka`> = <unk#a()=_`> <unka(.`> , <unka).`> <unka`> <unka._`> </s>
+<s> <user> <unka@> i am working on <unka> numpy version issues for <unk##> at the moment </s>
+<s> <user> ho you merged it already . </s>
+<s> <user> did you do the backport as well ? </s>
+<s> <user> i am not sure about the 1.9 version comparison in the test </s>
+<s> <user> i am testing with numpy <unk#.> </s>
+<s> <user> ok the tests pass with 1.8 as well :) </s>
+<s> <user> <unka@> would be great to extract that as a new library . you can write some <unka> compat tests with stuff <unka._`> . </s>
+<s> <user> you can make it easy to install by writing a simple setup.py . </s>
+<s> <user> as you do n't need compiled extensions , you do n't need the complicated <unka.> , you can just use the regular <unka> or setuptools . </s>
+<s> <user> you could name your project <unka> or something </s>
+<s> <user> <unka> </s>
+<s> <user> <unka-> has a nice ring to it </s>
+<s> <user> <unka:> : </s>
+<s> <user> <unka@> i would move generic tutorial out of the scope of your gsoc but you can expand the documentation item of your gsoc proposal to include a tutorial on how to do proper <unka-> : how to select the cv strategy for a given problem , how to use <unka> , how to check that the <unka.> . assumption is not violated ... </s>
+<s> <user> thanks for the advice as well <unka@> </s>
+<s> <user> <unka@> thanks for the suggestion ! on it :) do the other sections look okay ... ? </s>
+<s> <user> i have to go now , i will review the other sections and give you finer feedback tomorrow </s>
+<s> <user> okay ! bye :) </s>

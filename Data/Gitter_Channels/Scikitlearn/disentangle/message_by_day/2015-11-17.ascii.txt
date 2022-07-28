@@ -1,0 +1,4 @@
+[06:46] <5395efa3a9176b500d1cd7fb> looks like the dataset for the scipy2015 tutorial sessions is not coming down? http://cs.stanford.edu/people/alecmgo/trainingandtestdata.zip download does not start.
+[06:46] <5395efa3a9176b500d1cd7fb> im using the fetch_data script in your github repo.
+[06:49] <5395efa3a9176b500d1cd7fb> ah worked now, just took ages for the 81 MB with no bytes flowing for minutes...
+[13:24] <53135b495e986b0712efc453> @jonoleson I am unable to gauge how useful that usecase is... Once you convince @amueller it is useful enough (:P) you can add a plotting function similar to the `plot_partial_dependence` (in `ensemble/partial_dependence.py`)...  (But IMHO that particular usecase seems simple enough to not warrant a plotting helper function!)

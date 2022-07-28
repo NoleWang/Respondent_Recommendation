@@ -1,0 +1,16 @@
+[04:03] <54e07d6515522ed4b3dc0858> I don't recall us having one.
+--------------------------------------------------------------------------------------------------
+[15:08] <56c3065ce610378809c1ab7d> hi, pls i will need some explanation. if i have a honeypot logfile, and i want to apply neural network to the logfile, so i can get analysis type of the logfile, which i want to use to generate intrusion signature.
+--------------------------------------------------------------------------------------------------
+[15:11] <54d4a1d6db8155e6700f853b> @ikennarene what is your question?
+--------------------------------------------------------------------------------------------------
+[15:15] <56c3065ce610378809c1ab7d>  i am thinking of applying classification and clustering algorithm on a honeypot logfile, after which i want to generate intrusion signature based on the algorithm results, pls can i get more explanation on this, and approach i can use if possible. thanks
+--------------------------------------------------------------------------------------------------
+[18:13] <54d4a1d6db8155e6700f853b> so you want to detect intrusions? Do you know which ones were intrusions or not?
+--------------------------------------------------------------------------------------------------
+[19:30] <56c3065ce610378809c1ab7d> @amueller unknown
+--------------------------------------------------------------------------------------------------
+[19:44] <54d4a1d6db8155e6700f853b> try outlier detections methods like isolationforest
+--------------------------------------------------------------------------------------------------
+[21:50] <56c4f19ae610378809c1f8ae> hi everyone. Im working with countvectorizer, and I already have a corpus that has been pretokenized and everything. How would i extract ngrams from it? setting `analyzer=str.split()` breaks the ngram_range argument. Would i have to write my own analyzer? setting the default (`analyzer=word`) does not work for me because that strips punctuation and I want to keep punctuation.
+--------------------------------------------------------------------------------------------------

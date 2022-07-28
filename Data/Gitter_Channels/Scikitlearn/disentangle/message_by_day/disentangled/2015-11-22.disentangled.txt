@@ -1,0 +1,60 @@
+[04:03] <5576063e15522ed4b3e19cc3> This looks interesting :) https://github.com/google/skflow
+--------------------------------------------------------------------------------------------------
+[05:16] <55901c1b15522ed4b3e2f949> People certainly do care about kernels, @lesshaste
+[05:17] <55901c1b15522ed4b3e2f949> "Random forests and deep learning" are certainly not the solution to everything.
+--------------------------------------------------------------------------------------------------
+[07:07] <564789be16b6c7089cbab8b7> @tw991  Thanks!
+--------------------------------------------------------------------------------------------------
+[07:08] <564789be16b6c7089cbab8b7> @jmschrei  It would lovely to see a blog post investigating that question more deeply.
+--------------------------------------------------------------------------------------------------
+[08:51] <55901c1b15522ed4b3e2f949> Investigating what question?
+[08:52] <55901c1b15522ed4b3e2f949> If people use other methods than RF and deep learning?
+[21:30] <55901c1b15522ed4b3e2f949> That's pretty interesting, I didn't know that was a thing.
+--------------------------------------------------------------------------------------------------
+[11:08] <564789be16b6c7089cbab8b7> @jmschrei  I didn't quite mean that :) If you look at kaggle winners their main tools are quite consistent  (GBRT and/or deep learning).  I was thinking of a blog post titled "Where kernels methods still rule" explaining with examples where they are still the best approach
+[20:50] <564789be16b6c7089cbab8b7> @jmschrei  that's very interesting... although I am a little surprised by the trees being slow
+[20:54] <564789be16b6c7089cbab8b7> @jmschrei I think you would be a great person to write a blog post on this. It's very interesting and not universally understood
+--------------------------------------------------------------------------------------------------
+[20:47] <55901c1b15522ed4b3e2f949> My understanding is high frequency trading uses kernel methods pretty extensively, because they need speed and tree based approaches are rather slow
+[20:48] <55901c1b15522ed4b3e2f949> So they'll usually use some form of logistic kernel regression
+[20:48] <55901c1b15522ed4b3e2f949> "Rather slow" in the HFT sense, not in the normal person sense, at making predictions
+[20:50] <55901c1b15522ed4b3e2f949> Kernel methods are also pretty good for variable length sequences. For example in bioinformatics, the 'spectrum kernel SVM' is frequently used to compare protein sequences to each other to do domain classification or such.
+[20:50] <55901c1b15522ed4b3e2f949> I mean, kernels extend far past just matrices of data. There are kernels to compare tree based structures, or graphs, to each other.
+[20:50] <55901c1b15522ed4b3e2f949> Why?
+[20:51] <55901c1b15522ed4b3e2f949> Doing an inner product is super fast, compared to traversing n binary trees.
+[20:51] <55901c1b15522ed4b3e2f949> I'm not trying to demean either RF or deep learning, which are super powerful, but kaggle competitions are a small subset of ML problems out there.
+[20:52] <55901c1b15522ed4b3e2f949> You haven't even touched my favorite models, probabilistic graphical models. People use Bayes nets, HMMs, GMMs all the time.
+[20:52] <55901c1b15522ed4b3e2f949> Very fast for a normal person, but it's still orders of magnitude slower than an inner product using BLAS, and in the HFT sense, microseconds count.
+[20:54] <55901c1b15522ed4b3e2f949> I also imagine you can put a logistic kernel machine on a GPU, but can't put trees on a gpu easily.
+[20:54] <55901c1b15522ed4b3e2f949> What do you think it should cover?
+--------------------------------------------------------------------------------------------------
+[20:52] <564789be16b6c7089cbab8b7> @jmschrei  only because there is a line of research on producing minimum and forests or even a single decision tree with similar performance to a random forest and all you are doing is comparisons. 1000 comparisons is very fast
+--------------------------------------------------------------------------------------------------
+[20:59] <564789be16b6c7089cbab8b7> I am trying and failing to find some papers on inferring a singe decision tree from a random forest currently
+[21:03] <564789be16b6c7089cbab8b7> I can't seem to find the papers now... :(
+[21:04] <564789be16b6c7089cbab8b7> @jmschrei  Well... that would be up to the author :)  But how about a set of topics intersecting with... timings for prediction using random forests versus kernel methods, spectrum kernel SVM and how it is applied to variable length sequences. This would be even cooler if there were a test dataset and we could see how well a straightforward application of GBRT does in comparison,  practical examples with real data for kernels to compare tree based structures, or graphs and a comparison with what one would have to do using GBRT
+[21:06] <564789be16b6c7089cbab8b7> that sort of thing :)
+[21:07] <564789be16b6c7089cbab8b7> Basically, concrete classification or regression tasks where there is  a clearly understandable objective function and we can see how kernel methods are easier or just do better
+--------------------------------------------------------------------------------------------------
+[21:16] <55901c1b15522ed4b3e2f949> I don't think it's possible to infer a single tree from an entire random forest, except in special circumstances
+[21:20] <55901c1b15522ed4b3e2f949> That also doesn't look exactly the same as turning a RF into a single decision tree
+[21:21] <55901c1b15522ed4b3e2f949> I thought you meant turn a RF into a single tree which mimiced it identically
+--------------------------------------------------------------------------------------------------
+[21:18] <564789be16b6c7089cbab8b7> @jmschrei  there is work on this. I am just struggling to find the papers again!
+[21:18] <55901c1b15522ed4b3e2f949> I'd love to se it
+[21:19] <564789be16b6c7089cbab8b7> @jmschrei  can you read http://link.springer.com/chapter/10.1007/978-3-319-18356-5_20 ?
+[21:19] <55901c1b15522ed4b3e2f949> The abtract
+[21:20] <564789be16b6c7089cbab8b7> not the whole paper?
+[21:20] <55901c1b15522ed4b3e2f949> No :(
+[21:20] <564789be16b6c7089cbab8b7> ok.. let me try harder.. the papers I am referring to are in the "related work" section of that paper
+[21:21] <564789be16b6c7089cbab8b7> 2 seconds :)
+--------------------------------------------------------------------------------------------------
+[21:23] <564789be16b6c7089cbab8b7> @jmschrei  here is one https://www.researchgate.net/profile/Ulf_Johansson5/publication/221008645_One_tree_to_explain_them_all/links/0deec52ff78d51398e000000.pdf
+[21:24] <564789be16b6c7089cbab8b7> @jmschrei  here is another http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.69.6595&rep=rep1&type=pdf
+[21:24] <564789be16b6c7089cbab8b7> @jmschrei  this is a copy and paste of the related work section https://bpaste.net/show/54f0d4433bca
+[21:25] <564789be16b6c7089cbab8b7> let me know if you want any of the papers
+--------------------------------------------------------------------------------------------------
+[21:56] <564789be16b6c7089cbab8b7> I don't know how well known it is.. or how useful  :)
+[21:58] <564789be16b6c7089cbab8b7> It would be great to understand how practically important http://jmlr.org/proceedings/papers/v37/beygelzimer15.pdf is too!
+[21:59] <564789be16b6c7089cbab8b7> section 5 claims it does better than vowpal wabbit
+--------------------------------------------------------------------------------------------------

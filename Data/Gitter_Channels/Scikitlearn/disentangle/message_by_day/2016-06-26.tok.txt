@@ -1,0 +1,7 @@
+<s> <user> <unka@> what is the issue ? </s>
+<s> <user> <unka@> it seemed that the student <unka> were overdue </s>
+<s> <user> <unka@> ( at this point , i think there is a risk of <unka> being blacklisted from gsoc ) </s>
+<s> <user> <unka@> i submitted my student eval days ago </s>
+<s> <user> okay seems like it has been resolved </s>
+<s> <user> everything is resolved and good thanks for all your hard work </s>
+<s> <user> thanks for the update :) </s>

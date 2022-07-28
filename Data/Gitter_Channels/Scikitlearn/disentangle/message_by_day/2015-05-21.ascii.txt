@@ -1,0 +1,26 @@
+[00:06] <54e07d4015522ed4b3dc0856> Yes I think one of the anaconda builds on Travis is MKL - do you have the academic version of Anaconda? It is free for you and would allow a conda env with MKL if I remember right
+[01:31] <54d4a1d6db8155e6700f853b> yeah I do. but what blas does sklearn link against? anaconda doesn't come with the library to link against, right?
+[02:26] <54e07d4015522ed4b3dc0856> The academic version does
+[02:26] <54e07d4015522ed4b3dc0856> you have to register with .edu address - not sure how Travis has it but I am sure they have some license from Continuum
+[03:30] <54d4a1d6db8155e6700f853b> interesting, I have to check. I thought I had the academic license but I ran into trouble when trying to built sklearn using it
+[07:24] <541a528b163965c9bc2053de> >  Yes I think one of the anaconda builds on Travis is MKL - do you have the academic version of Anaconda? It is free for you and would allow a conda env with MKL if I remember right  on travis we just use the one month evaluation period of MKL in anaconda. As a travis build tend to last less than one month, it works :)
+[07:26] <541a528b163965c9bc2053de> sklearn probably does not build against MKL on travis with anaconda, but the included numpy and scipy packages are linked against it.
+[16:40] <54d4a1d6db8155e6700f853b> @ogrisel would you mind reviewing the mlp? I haven't added the early stopping yet, but mostly because I didn't see a case where it helped
+[16:41] <54d4a1d6db8155e6700f853b> Also, I'm not sure how much the adaptive learning rate helps
+[18:44] <54e07d4015522ed4b3dc0856> SGD is unreasonably effective ;) and I am surprised you didn't find a case where early stopping helped. But how are you testing against validation data inside sklearn API? I have been hacking my own code to take fit(X, y, valid_X=None, valid_y=None)
+[18:45] <54e07d4015522ed4b3dc0856> I really should help review that code but NIPS is looming :(
+[18:46] <54d4a1d6db8155e6700f853b> yeah it would be great if you could help
+[18:46] <54d4a1d6db8155e6700f853b> do you know what the right gain is in the initialization for the different non-linearities?
+[18:49] <54d4a1d6db8155e6700f853b> I tested against validation data currently using warm-start.
+[18:49] <54d4a1d6db8155e6700f853b> but what I am implementing right now is doing a split inside fit
+[19:07] <54e07d4015522ed4b3dc0856> what do you mean by gain? initializations are mostly (in my exp) about how tricky it is to get the right settings of the optimizer/avoid gradient explosion or vanishing
+[19:07] <54e07d4015522ed4b3dc0856> glorot init is normally the "right thing" for basically all nets, though I hear orthogonal is good too.
+[19:08] <54e07d4015522ed4b3dc0856> I don't know that you should expect a gain in performance on many tasks due to init settings, but you will certainly tell when you want to apply a net to a brand new dataset
+[19:51] <54d4a1d6db8155e6700f853b> you need to multiply the 1/sqrt(fan_in + fan_out) by a constant that is dependent on whether you do relu, tanh or sigm
+[19:51] <54d4a1d6db8155e6700f853b> in lasagna that is called the gain factor
+[23:06] <54e07d4015522ed4b3dc0856> Ah ok. I usually go by this, page 15
+[23:06] <54e07d4015522ed4b3dc0856> http://arxiv.org/pdf/1206.5533v2.pdf
+[23:06] <54e07d4015522ed4b3dc0856> 4 * for  sigm, tanh
+[23:06] <54e07d4015522ed4b3dc0856> 1 * for relu
+[23:07] <54e07d4015522ed4b3dc0856> should be sqrt(6/fan_in + fan_out)
+[23:07] <54e07d4015522ed4b3dc0856> though I guess you could pull out the 6 and adjust the "gain" to compensate. I just stick to the script

@@ -1,0 +1,1 @@
+<s> <user> i implemented a <unka-> parameter search variety of grid search years ago . it was n't hard then , but it might be now ;) not sure if that 's all you mean ... </s>

@@ -1,0 +1,15 @@
+<s> <user> hello , i 'm not sure that <unka> is proper place to ask this question , if so please point me the right place . i have a problem with building the whole project , when i do `make` i get this tests result : <unka`> ( <unk#a=> , <unk#a)=`> <unk`> error : <unka._> ... <unka> : arrays used as <unka> must be of integer ( or boolean ) type <unk`> <unka._> = <unk#.> <unka._> = 1.6.2 thank you </s>
+<s> <user> hey <unk#a@> ... do you have a particular pr number for which this test fails ... or incase you have n't already , could you just raise one so we can all see the modified code that caused this test failure ? :) </s>
+<s> <user> and btw this is indeed the place to ask such questions :) </s>
+<s> <user> tests fail in master branch . there is no my changes . it seems like problem is in my environment . </s>
+<s> <user> <unk#a@> the problem might be in <unka> . testing does n't cover all possible combinations of platforms and third-party libraries . i suggest you create an issue and put all debug information about failed <unka> </s>
+<s> <user> <unk#a@> , that test behaves differently whether <unka> is installed or not . i assume the error occurs on the <unka-> code path . <unka> is known to break api often . this is a problem with the test , in my opinion , but your installation seems to be mostly functional . the test might pass if you update <unka> . still , could you raise an issue for this on github ? it 's something i think we should fix . what is the other error , by the way ? you said you get 2 errors but only showed us one . </s>
+<s> <user> <unk#a@> , since this is a <unka-> indexing issue , could you look into it ? if you use anaconda you can easily set up a virtual environment with a specific version of <unka> . </s>
+<s> <user> sure i 'll look into it :) </s>
+<s> <user> also , <unk#a@> , when you said pr number above , did you mean opening a github issue ? </s>
+<s> <user> <unka@> , will open an issue , the second error is the same . </s>
+<s> <user> since <unk#a@> was asking about raising a pr a few chats above , i assumed he had been working on something which had failed the tests ;) so i suggested that he raise a pr ... not that the failure is in master ... that is moot :p </s>
+<s> <user> *now </s>
+<s> <user> ah i see </s>
+<s> <user> :d </s>
+<s> <user> <unk#a@> what test do you get the error for , i mean ? </s>

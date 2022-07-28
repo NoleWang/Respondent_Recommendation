@@ -1,0 +1,3 @@
+<s> <user> hey guys , i have a question regarding <unka> process . it seems to me that is taking for ever to converge even with the <unk#a-=_> option . the data is very high <unka> . any suggestions to speed up the convergence ? any tricks i should be aware of ? last but not least i 've noticed that the option of <unk#a-=_`> included only in a number of algorithms . why was that the case ? what is the logic behind it to include it only in a subset of the algorithms that <unka> offers ? </s>
+<s> <user> are there no newcomer issues to solve at URL/https:/ URL/github.com/ <unka-/> </s>
+<s> <user> i want to start contributing here </s>

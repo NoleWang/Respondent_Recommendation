@@ -1,0 +1,52 @@
+[02:15] <564e507e16b6c7089cbb6551> @amueller because I'm trying to cluster an image and for that I've found in the literature that it's possible to take into account the spatial context (neighbourhood) when using fuzzy c-means. But, I would be really interested to know if GMM offer this possibility as well in image clustering (considering the spatial dimension besides the intensity), although I had issues with the GMM on matlab when operating on a multi-dimensional data (multivariate gaussians).
+--------------------------------------------------------------------------------------------------
+[09:08] <53135b495e986b0712efc453> The number of open PRs are slowly increasing... From 300 to 368 :O
+[09:09] <53135b495e986b0712efc453> We should have one sprint just for reviewing ;) That would be awesome!
+--------------------------------------------------------------------------------------------------
+[09:18] <53135b495e986b0712efc453> BTW github's new repo layout is good! ;)
+[09:18] <53135b495e986b0712efc453> everything on top...
+--------------------------------------------------------------------------------------------------
+[11:08] <564789be16b6c7089cbab8b7> @rvraghav93 That's a great idea!
+--------------------------------------------------------------------------------------------------
+[13:14] <564e507e16b6c7089cbb6551> When clustering an image (distribution of pixel intensities), is it possible using GMM (implemented in scikit-learn) to include the spatial context besides the pixel brightness during the clustering (GMM using multivariate gaussian distribution)?
+--------------------------------------------------------------------------------------------------
+[13:15] <564789be16b6c7089cbab8b7> @h4k1m0u  That's quite a tricky question (I am not an expert).  I suspect your best bet for getting a high quality answer would be actually implement a solution using GMM on some publicly available data and show the problem. Can you do that?
+[13:16] <564789be16b6c7089cbab8b7> even better if you can find another system that does exactly what you want and compare them
+[13:16] <564789be16b6c7089cbab8b7> There is nothing as compelling to a developer as a worked example :)
+[15:58] <564789be16b6c7089cbab8b7> @h4k1m0u  It's very useful you have code that does it. Your question is good but I wonder if this the right place for it. If you are not asking for a new feature or asking about an existing one maybe a stackexchange site would work better
+[19:01] <564789be16b6c7089cbab8b7> @h4k1m0u  sorry I wasn't very helpful!
+[19:02] <564789be16b6c7089cbab8b7> please feel free to post the url to the question here
+--------------------------------------------------------------------------------------------------
+[14:04] <564e507e16b6c7089cbb6551> @lesshaste I know that what I'm trying to do has already been achieved with fuzzy c-means (including the neighborhood context) to the clustering (see [Zhang and Chen 2004] A novel kernelized fuzzy C-means algorithm with application in medical image segmentation). But, since the fuzzy c-means is not implemented in scikit-learn, I'm looking for something similar but with GMM.
+[14:39] <564e507e16b6c7089cbb6551> @lesshaste yes in python (https://github.com/scikit-fuzzy/scikit-fuzzy)
+[18:09] <564e507e16b6c7089cbb6551> @lesshaste ok I will try to test the GMM implemented in scikit-learn, to cluster images (taking into account the spatial context). Otherwise, I will ask my question in stackoverflow... thanks..
+--------------------------------------------------------------------------------------------------
+[14:13] <564789be16b6c7089cbab8b7> is there code in some other language for fuzzy c-means?
+--------------------------------------------------------------------------------------------------
+[20:12] <564e507e16b6c7089cbb6551> @lesshaste it's okay, my issue is not really related to machine learning (clustering). just an image processing issue (maybe I should ask to the scikit-image community): http://stackoverflow.com/questions/33834883/include-the-spatial-context-of-pixels-during-image-clustering
+--------------------------------------------------------------------------------------------------
+[21:08] <54d4a1d6db8155e6700f853b> @h4k1m0u the standard is to also include the x and y coordinates. slic for example is just k-means on x,y,lab
+[21:08] <54d4a1d6db8155e6700f853b> same for quickshift
+[21:08] <54d4a1d6db8155e6700f853b> look at the image segmentation module in scikit-image. it does what you want.
+--------------------------------------------------------------------------------------------------
+[21:14] <54d4a1d6db8155e6700f853b> @h4k1m0u answert on SO, too
+[21:14] <54d4a1d6db8155e6700f853b> @MechCoder starting to review your HuberEstimator. Teaches you to be careful what you wish for ;)
+--------------------------------------------------------------------------------------------------
+[21:33] <54d4a1d6db8155e6700f853b> @rvraghav93 please don't ping joel, he is offline at the moment.
+--------------------------------------------------------------------------------------------------
+[21:39] <53135b495e986b0712efc453> Yes I heard about him... Thats so sad... :/ Hope he stays strong!! And yes sure I won't... (BTW are you telling me in the context of any particular comment where I accidentally pinged him or are you just letting me know?)
+[22:01] <53135b495e986b0712efc453> BTW I just realized you are down to your last but one task in your TODO... That means I am next :smiling_imp:
+[22:01] <53135b495e986b0712efc453> (Don't worry I've a very small list - #5823 #5703 #5568 #4115)
+[22:02] <53135b495e986b0712efc453> :P
+--------------------------------------------------------------------------------------------------
+[22:23] <54d4a1d6db8155e6700f853b> No, there is like three more tasks :P Still on Huber, then Vighnes and Tian
+[22:24] <54d4a1d6db8155e6700f853b> you pinged Joel 5 days ago somewhere. How did you hear. He did not post publicly, so I think we should not make it overtly public.
+--------------------------------------------------------------------------------------------------
+[22:34] <53135b495e986b0712efc453> Check PM :)
+[22:37] <53135b495e986b0712efc453> well then `amueller._todo_queue.put_nowait([5823, 5703, 5568, 4115])` ^_^
+--------------------------------------------------------------------------------------------------
+[22:42] <54d4a1d6db8155e6700f853b> http://i.imgur.com/aOChOa2.png
+[22:42] <54d4a1d6db8155e6700f853b> (note the last line)
+--------------------------------------------------------------------------------------------------
+[22:46] <53135b495e986b0712efc453> In my defence `put_no wait` fails when the thread is busy... so u dont have to worry about it :p I'll work on something else at the moment :grin:
+--------------------------------------------------------------------------------------------------

@@ -1,0 +1,5 @@
+[10:23] <541a528b163965c9bc2053de> @razou sorry I mixed 2 conversations. Ignore the bit on Cohen's Kappa then.
+[10:24] <541a528b163965c9bc2053de> @razou your code snippet works with `clf.fit(X=train_x, Y=train_y)` instead of `clf.fit(X=train_x, Y=train_y_encoded)`.
+--------------------------------------------------------------------------------------------------
+[16:47] <5cdeaebed73408ce4fc08df3> Thanks @ogrisel  for answers (y)
+--------------------------------------------------------------------------------------------------

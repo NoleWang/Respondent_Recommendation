@@ -1,0 +1,2 @@
+<s> <user> hi all , i`m getting the following error while executing the python setup.py install error : command " <unka.> DIR/c/ <unka/> <unka/> <unk#a/> DIR/gl/ <unka/> <unka/> <unk#a-:\> <unka/> <unka./\_> <unk#a-./\_> " failed with exit status 127 do you have any idea ? thanks ! </s>
+<s> <user> any <unka> devs who can shed some light on why <unka_`> is only for binary <unka> ? </s>

@@ -1,0 +1,4 @@
+[12:43] <5acfdfffd73408ce4f95738d> @glemaitre Solved the problem by turning class 0 into 1.                                                              But it's still not clear what kind of data I get by setting label=0. Updated the code and added two videos with label=0 and label=1. I put the code and videos [here](https://ai.stackexchange.com/questions/32127/how-to-get-precision-and-recall-from-function-precision-recall-curve-for-class/)  It is quite possible that I am difficult to understand, since English is not my native language. There is no opportunity to practice in English.
+[12:47] <5acfdfffd73408ce4f95738d> 
+[13:24] <55d21ee30fc9f982beadabb8> turning class 0 to 1 is equivalent to change `pos_label=0` without changing the label.
+[13:28] <5acfdfffd73408ce4f95738d> Thanks!

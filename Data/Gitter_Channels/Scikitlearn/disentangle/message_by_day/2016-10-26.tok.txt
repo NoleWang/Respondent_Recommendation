@@ -1,0 +1,8 @@
+<s> <user> hi guys can anyone help me with some lines of code on how to extract features from <unk#,> images <unka> using color <unka> ... in a vector form ?? thank you . </s>
+<s> <user> although <unka> exists , i 'm curious if people have experience using <unka> to pickle both arrays and models . </s>
+<s> <user> as well as experience with <unka> </s>
+<s> <user> is there any algorithm to make understand the sentence in english .. actually the meaning of sentence </s>
+<s> <user> my code takes about <unk#a> to run when using just <unka(> ), but if i use <unk#a-=_> argument , it takes 8.5 minutes . why it does this ? </s>
+<s> <user> <unka@> depending on how much data you have , <unka> might make it slower . starting the jobs has some overhead . try <unk#a=_> </s>
+<s> <user> <unka@> i think it is 2 , since i have 2 cores , right ? i 'm using the digits dataset for testing </s>
+<s> <user> <unka@> apologies , my native tongue is gibberish . ^_^ here 's the meaning : lately , i 've been using [ <unka(./:]> ) instead of <unka.`> to <unka> models . while <unka> can pickle the object itself , it can also recursively pickle the object definition , which means you do n't need to import the object 's <unka(> ) ahead of time . unfortunately , i get a variety of file handle errors when dumping <unka*> <unka> models using <unka> , and i 'm not sure why . i know there have been [ thoughts to integrate <unka> into <unka> <unk#a(-./:]> ). and i 'm curious to know if others have had similar experiences with <unka> or [ <unka(./:]> ). </s>

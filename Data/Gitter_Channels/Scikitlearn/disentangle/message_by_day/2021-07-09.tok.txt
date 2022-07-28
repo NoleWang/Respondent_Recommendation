@@ -1,0 +1,6 @@
+<s> <user> i see that the <unka._> passes the value <unka_> in the <unka(_> ) procedure as an argument . the <unka_> is calculated using <unk#a.[_> ] whereas <unka(_> ) expects an <unka_> argument . <unka_> is defined as <unka._> which i assume is only 32 bit signed integer . so how is the binary tree built in cases when <unka_> is greater than this value - let 's say <unk#a> data points ? </s>
+<s> <user> in default python , this would 've been handled by increasing the data size to long long implicitly . does <unka> take care of it ? i do n't see any methods to take care of such scenario in the <unka-> implementation code . </s>
+<s> <user> except for that <unka_> - <unka_> < 2 will be true in this case ( due to signed integer overflow ?) and the node 0 will be made a leaf node . but this is an unexpected behaviour , right ? </s>
+<s> <user> <unka@> : maximum value for <unk#a> is <unk#a/~> not <unk#a> . so probably no one has tried using it with more than 2 billion samples . not sure it 's really an issue for the near future . </s>
+<s> <user> +1 to check for that overflow though . </s>
+<s> <user> <unka.:@> thanks for pointing it out . a silly mistake on my part . </s>

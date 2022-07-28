@@ -1,0 +1,33 @@
+<s> <user> hey ! did someone deal with this <unka> dilemma when working with <unka> ? URL/https:/ URL/stackoverflow.com/ <unk#a-/> </s>
+<s> <user> if anyone wants to help the <unka> run smoothly , please help tag issues appropriately with " easy " " need contributor " and " sprint " </s>
+<s> <user> looks like all " easy " " need contributor " issues already have <unka> awaiting review ... </s>
+<s> <user> so review sprint ? </s>
+<s> <user> ;) </s>
+<s> <user> if you have experienced macos users who know a thing or two about numerical stability , clang , accelerate <unka> . </s>
+<s> <user> URL/https:/ URL/github.com/ <unk#a-/> </s>
+<s> <user> this is blocking the <unk#a.> wheels on macos </s>
+<s> <user> sprint will be on saturday ;) </s>
+<s> <user> there is also a 32 bit linux issue in the feature importance test </s>
+<s> <user> the test is probably too strict , i am currently investigating with docker </s>
+<s> <user> the saga solver on macos is a real bug but it 's probably not easy to debug . </s>
+<s> <user> hm yeah it would be cool to have some easy issues but it looks like the issue tracker does n't really have a lot right now :-/ </s>
+<s> <user> i will add one to improve ci on master to test 32 bit linux and another to test macos </s>
+<s> <user> " easy " </s>
+<s> <user> ;) </s>
+<s> <user> it 's easy in the sense that you do n't need to know python programming or machine learning </s>
+<s> <user> but you need to know system and travis stuff </s>
+<s> <user> i wo n't have time to work on those tomorrow , i need to review a long journal paper ... + other admin stuff to do over the we </s>
+<s> <user> URL/https:/ URL/github.com/ <unk#a-/> </s>
+<s> <user> i gave some <unka> docker commands and scripts + references to docs to get started </s>
+<s> <user> hi <unka@> just saw your tweet about advocating the need for fair and <unka-> prediction . we at <unka.> have been looking into this topic and open sourced our first step in that direction . URL/https:/ URL/github.com/ <unka./> if possible checkout our roadmap . how do others feel about the idea ? </s>
+<s> <user> <unka@> so that builds upon lime ? what functionality are you adding to it ? </s>
+<s> <user> <unka@> so the idea is to balance between global and local interpretation . at global level : model agnostic <unka> , model agnostic variable importance as of <unka(> flavor of it , work is in progress to add other flavors ); local level : its currently our forked version of <unka(_> improvements in the way local samples are <unka_> ). there is also support for <unka(_> has access to the environment in which model is <unka_> ) and <unka(_> is deployed in the <unka_> ) </s>
+<s> <user> here is a nice example of <unka> to evaluate third part models URL/https:/ URL/github.com/ <unka./_> </s>
+<s> <user> <unka> example : URL/https:/ URL/github.com/ <unk#a%./_> </s>
+<s> <user> <unka@> did you break master ;) </s>
+<s> <user> <unka@> it 's green : URL/https:/ <unka-./> <unka-/> </s>
+<s> <user> <unka@> URL/https:/ <unka./> <unk#a&-/=?_> </s>
+<s> <user> it 's <unka_> </s>
+<s> <user> ugh </s>
+<s> <user> random failure i think </s>
+<s> <user> yeah true </s>

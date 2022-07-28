@@ -1,0 +1,32 @@
+<s> <user> i am trying to update my local <unka-> folder by using <unka`> pull upstream <unka`> but then i am getting this : <unk`> <unka()_> <unka$-/:@_~> git pull upstream master from URL/https:/ URL/github.com/ <unka-/> * branch master -> <unka_> updating <unk#a> .. <unk#a> error : the following <unka> working tree files would be overwritten by merge : <unka./_> <unka./_> <unka./_> <unka./_> <unka./_> <unka./_> <unka./_> <unka./_> please move or remove them before you can merge . aborting <unk`> i messed up some merge conflicts although that i was not in <unka`> branch . what would be the best approach to resolve this ? </s>
+<s> <user> hmm </s>
+<s> <user> im presuming you want to preserve the <unka> working tree files ? </s>
+<s> <user> assuming you do n't care about any local changes to your master branch or <unka> changes : <unka`> git checkout master git reset <unka-> <unka/> <unk`> </s>
+<s> <user> btw , you should never commit anything to your local master . always use branches . </s>
+<s> <user> <unka@> i am building the wheels for osx and windows for <unk#.> , how did you sync with <unka> people ? </s>
+<s> <user> <unka@> i emailed them . give me a minute </s>
+<s> <user> the <unk#.> tag is already public </s>
+<s> <user> i am ready to upload :) </s>
+<s> <user> just email <unka_> <unka.@_> </s>
+<s> <user> actually no , i would like to run a couple more tests . </s>
+<s> <user> i <unka'> peter wang , which might have helped the process lol </s>
+<s> <user> alright i will sync up with them </s>
+<s> <user> thanks for working on the release again , and sorry i 'm not more help </s>
+<s> <user> i 'm doing a company visit today and also i 'm dead sick . hurray ^^ </s>
+<s> <user> no <unka> :) hope you 'll feel better soon . btw thanks for the <unka> berlin <unka> :) </s>
+<s> <user> <unka@> ah caught you on <unka> - now could you please review and merge this - <unk##> ? :p </s>
+<s> <user> done :) </s>
+<s> <user> merci ;) </s>
+<s> <user> i thought your french lessons would only start next month ;) </s>
+<s> <user> next month i 'll progress to full sentences in french ^_^ </s>
+<s> <user> i sent an email to continuum . </s>
+<s> <user> <unka-@> </s>
+<s> <user> <unka-@> i think i accidentally committed in <unka`> which resulted in that . <unka@> thank you , that helped me . i do use different branches . will be extra careful next time ! :) </s>
+<s> <user> <unka-> <unk#.> is online ! </s>
+<s> <user> <unka:> : </s>
+<s> <user> <unka:> : </s>
+<s> <user> <unka@> got it , glad you got it fixed ! </s>
+<s> <user> never knew that the <unka> channel was this active ! <unka-@> please add this to the doc ! </s>
+<s> <user> yeah i find it a bit odd that it isnt in there already ... searching <unka> in the repos issue history even shows many people referencing <unka> talking on it . at least its much more active than irc :p </s>
+<s> <user> haha yeah true </s>
+<s> <user> </s>

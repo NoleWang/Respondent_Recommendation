@@ -1,0 +1,7 @@
+<s> <user> hello , is there an easy way to get leaf node count from decision tree ? i can get total node count , but is there a way to get also leaf node count ? </s>
+<s> <user> <unka@> first get <unka._`> <unka_> i think it 's called . then count the number of elements where the value is - 1 , those are leaves </s>
+<s> <user> <unk`> in [ 1 ]: from <unka.> import <unka_> in [ 2 ]: from <unka.> import <unka> in [ 3 ]: boston = <unka(_> ) in [ 4 ]: tree = <unka(> ) in [ 5 ]: <unka(.> , <unka.> ) in [ 6 ]: <unka_> = <unka._> in [ 7 ]: <unka_> = <unka._> in [ 8 ]: <unka_> = <unka._> in [ 9 ]: <unka_> = 0 in [ 10 ]: for i in <unka_> : ... : if i == -1 : ... : <unka_> += 1 ... : in [ 11 ]: for i in <unka_> : ... : if i == -1 : ... : <unka_> += 1 ... : in [ 12 ]: <unka_> <unk#a[> ]: 940 <unk`> </s>
+<s> <user> oops , sorry you only have to go through it once ..... </s>
+<s> <user> going through it twice is double counting </s>
+<s> <user> since <unka_> and <unka_> are -1 if they dont have a left or right child , ( thus leaf ) and a node cant have only a left or a right child . </s>
+<s> <user> ok , thanks . i 'll do that </s>

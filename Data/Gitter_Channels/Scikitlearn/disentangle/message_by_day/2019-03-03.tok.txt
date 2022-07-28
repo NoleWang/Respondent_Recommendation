@@ -1,0 +1,6 @@
+<s> <user> why do we use random numbers in machine learning ? </s>
+<s> <user> i do n't quite get it </s>
+<s> <user> <unka@> there can be many uses of random numbers . for example if you are working on a dataset of a hundred thousand images and you need to check the result randomly , then you might use a <unka(> ) function i guess . also , that was just an example . i didnt quite understood the context of your question . hope you got your answer but if not then you could be more specific and someone would give you the answer you are looking for . </s>
+<s> <user> i was going through <unka> beginner 's tutorial and abit of cnn model tutorial . i found that the first thing to do after importing modules is to fix random seed for <unka> , for random numbers . that 's what i do n't understand </s>
+<s> <user> <unk`> from <unka.> import dense import numpy # fix random seed for <unka> <unk#a(.> ) <unk`> </s>
+<s> <user> <unka@> so basically when you are watching a tutorial and coding along with it , you can use fix seed for the same result as in the tutorial you are watching . just for the sake of same random number generation throughout the code whenever a random number is generated . </s>

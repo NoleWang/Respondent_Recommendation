@@ -1,0 +1,25 @@
+[00:03] <54d4a1d6db8155e6700f853b> reviews on #4936 would be good ....
+[00:04] <54d4a1d6db8155e6700f853b> thanks @leosartaj :)
+--------------------------------------------------------------------------------------------------
+[00:04] <5525b91815522ed4b3deb7d6> :smile:
+--------------------------------------------------------------------------------------------------
+[15:26] <53135b495e986b0712efc453> Is #5995 an easy one? If so could you tag it with "Need contribs". I found a contributor looking for an issue ;) ([ref](https://github.com/scikit-learn/scikit-learn/issues/5879#issuecomment-162382187) )
+--------------------------------------------------------------------------------------------------
+[15:34] <54d4a1d6db8155e6700f853b> we need to merge https://github.com/scikit-learn/scikit-learn/pull/5578 first
+--------------------------------------------------------------------------------------------------
+[16:54] <53135b495e986b0712efc453> I have a probably lame question regarding cython code - Why is that we don't delete all the free the memory of all the members in the destructor? (Ref [the destructor of `Splitter` class](https://github.com/scikit-learn/scikit-learn/blob/master/sklearn/tree/_splitter.pyx#L105))
+--------------------------------------------------------------------------------------------------
+[16:58] <53810862048862e761fa2887> What do you think should be freed and isn't ?
+--------------------------------------------------------------------------------------------------
+[17:05] <53135b495e986b0712efc453> Any other attribute say `sample_weight`? (Fair warning this could be a very dumb question but I am quite new to cython ;))
+--------------------------------------------------------------------------------------------------
+[17:08] <53810862048862e761fa2887> It should be freed, but where it is freed depends on the context of the code. For example, any object declared in Python should not get freed with `free` and Python's GC will pick it up. If an object is declared here and not freed, it might be getting freed elsewhere
+[17:09] <53135b495e986b0712efc453> Ahh!! That explains a lot! Thanks :)
+--------------------------------------------------------------------------------------------------
+[17:17] <53135b495e986b0712efc453> so basically `sample_weight` of this splitter will hold the reference to the mem block managed elsewhere (or probably by the python GC) correct?
+[17:17] <53810862048862e761fa2887> Yes
+[17:17] <53135b495e986b0712efc453> Thanks!!
+--------------------------------------------------------------------------------------------------
+[17:17] <53810862048862e761fa2887> I won't be surprised if that is infact a numpy array
+[17:18] <53135b495e986b0712efc453> Yes it is.. It will be user specified so... Now I understand this better!
+--------------------------------------------------------------------------------------------------

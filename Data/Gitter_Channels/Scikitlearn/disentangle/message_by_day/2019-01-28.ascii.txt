@@ -1,0 +1,3 @@
+[15:42] <59afadccd73408ce4f748432> @farman32 the OneHotEncoder should be used on numerical features. So, for instance, use it on your r LabekEncoder, but reshaped : OneHotEncoder.fit_transform(r.reshape(-1,1).toarray(=
+[15:43] <59afadccd73408ce4f748432> Oups... toarray()!
+[16:43] <59afadccd73408ce4f748432> @ronitneve_twitter interesting http://arxiv.org/abs/1802.10135

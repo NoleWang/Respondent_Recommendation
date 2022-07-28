@@ -1,0 +1,1 @@
+[16:35] <56ed0b8885d51f252ab9a1b8> Hi everyone,please is it possible to join two image feature vectors as a vector and use it to train a model for classification (example is raw pixel feature vector and color histogram feature vector of an image).I would appreciate your help, thank you.

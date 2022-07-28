@@ -1,0 +1,3 @@
+[04:20] <5ee61de0d73408ce4fe6d981> Would be nice to have scikit at @pyconindia sprints this year! Link to submit https://t.co/LZ0Hz0fa2I?amp=1
+[10:41] <5f5369edd73408ce4fee2138> Suppose,i want to run a grid search  using KNN as te estimator with 5 to 6 k values and i want to see "accuracy" for each K values,is there any way?
+[17:20] <5f5369edd73408ce4fee2138> Anyone?

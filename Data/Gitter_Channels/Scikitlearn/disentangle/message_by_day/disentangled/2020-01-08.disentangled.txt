@@ -1,0 +1,97 @@
+[00:02] <5c77a43ed73408ce4fb93081> For your use case, how did you learn the entity embeddings?
+--------------------------------------------------------------------------------------------------
+[00:02] <5a2c58c8d73408ce4f8294ba> yea, this is a must otherwise they are not tied to your target
+[00:09] <5a2c58c8d73408ce4f8294ba> here is the proof it works https://github.com/entron/entity-embedding-rossmann
+[00:09] <5a2c58c8d73408ce4f8294ba> and the paper https://arxiv.org/abs/1604.06737
+--------------------------------------------------------------------------------------------------
+[00:35] <5a2c58c8d73408ce4f8294ba> @amueller so I am unable to run HistGradientBoostingRegressor because you use np.isnan '''  File "C:\Anaconda3\lib\site-packages\sklearn\ensemble\_hist_gradient_boosting\gradient_boosting.py", line 151, in fit     has_missing_values = np.isnan(X_train).any(axis=0).astype(np.uint8)'''
+[00:36] <5a2c58c8d73408ce4f8294ba> There is a "bug" if you have mixed types. Which is pretty common.   https://stackoverflow.com/questions/59637976/potential-bug-in-np-isnan-for-mixed-types-on-pandas-dataframe
+[16:52] <5a2c58c8d73408ce4f8294ba> Normally Pandas passes through with numpy functions fine so you do not have a dependence technically. It is pretty common in practice to use pandas in this way as it makes it more simple to keep your features organized
+[17:05] <5a2c58c8d73408ce4f8294ba> clf.fit(X_train.values , y_train.values) works but clf.fit(X_train, y_train) does not. The issue seems to be that I am passing a dataframe
+[17:06] <5a2c58c8d73408ce4f8294ba> I can just do clf.fit(X_train.values , y_train.values)
+--------------------------------------------------------------------------------------------------
+[01:58] <5a2c58c8d73408ce4f8294ba> Maybe switch to pd.isnull or do u npt want pandas dependance?
+--------------------------------------------------------------------------------------------------
+[12:39] <55d21ee30fc9f982beadabb8> @DrEhrfurchtgebietend we don't want dependence on pandas. However, I would have expected to have `X_train` to be a NumPy array at that stage.
+[12:43] <55d21ee30fc9f982beadabb8> Uhm we used a `check_X_y` earlier in `fit`. Could you open a bug report with a minimal example.
+[16:59] <55d21ee30fc9f982beadabb8> nop
+[17:03] <55d21ee30fc9f982beadabb8> But a minimal example will help :P
+[17:18] <55d21ee30fc9f982beadabb8> normally yest
+--------------------------------------------------------------------------------------------------
+[16:55] <55d21ee30fc9f982beadabb8> but `pd.isnull` will require an import of pandas?
+[16:56] <5a2c58c8d73408ce4f8294ba> That is only one possible solution.
+[16:56] <55d21ee30fc9f982beadabb8> Do you have a minimal code example because I am unsure of what is your input
+[16:57] <55d21ee30fc9f982beadabb8> because the HistGradientBoostingClassifier will not support mixed type
+[17:00] <55d21ee30fc9f982beadabb8> This is where I am confused because the array should be converted into float 64 when passing in `check_X_y`. So I would really like a minimal code example
+[17:00] <55d21ee30fc9f982beadabb8> it should failed before the line that you pointed out which is interesting
+[17:04] <55d21ee30fc9f982beadabb8> Basically this line should do the conversion: https://github.com/scikit-learn/scikit-learn/blob/master/sklearn/ensemble/_hist_gradient_boosting/gradient_boosting.py#L104
+--------------------------------------------------------------------------------------------------
+[16:58] <5a2c58c8d73408ce4f8294ba> OK, that is the crux of the issue. If the algorithm does not support mixed types then I will just cast it beforehand. Is there a preferred type?
+[16:58] <5a2c58c8d73408ce4f8294ba> GradientBoostingRegressor supports mixed types
+[17:00] <5a2c58c8d73408ce4f8294ba> Well GradientBoostingRegressor it runs with a mix of float64, int64, bool in a dataframe
+[17:01] <5a2c58c8d73408ce4f8294ba> I am trying to upgrade to HistGradientBoostingRegressor and hit this error
+[17:01] <55d21ee30fc9f982beadabb8> internally they will all be converted to float64
+[17:02] <55d21ee30fc9f982beadabb8> all of them
+[17:02] <5a2c58c8d73408ce4f8294ba> OK perhaps that conversion needs to be done in HistGradientBoostingRegressor before  np.isnan is called
+[17:02] <55d21ee30fc9f982beadabb8> it is done in `check_X_y` which is called before
+[17:02] <55d21ee30fc9f982beadabb8> but apparently it is not working as expected
+[17:03] <5a2c58c8d73408ce4f8294ba> yea, it would seem that way
+[17:03] <5a2c58c8d73408ce4f8294ba> I do not have one since I am just swapping out GradientBoostingRegressor for HistGradientBoostingRegressor in a huge package.
+[17:04] <5a2c58c8d73408ce4f8294ba> Ill play around a bit and get back to you
+--------------------------------------------------------------------------------------------------
+[17:06] <55d21ee30fc9f982beadabb8> X_train.values will not give a numpy array necessarly
+[17:07] <55d21ee30fc9f982beadabb8> oh sorry this is the way it works. so it should give you a numpy array
+[17:08] <55d21ee30fc9f982beadabb8> you can always check by hand
+[17:09] <55d21ee30fc9f982beadabb8> ```python X, y = check_X_y(X_train, y_train, dtype=[np.float64], force_all_finite=False) ```
+[17:09] <55d21ee30fc9f982beadabb8> to check what X is looking like
+[17:09] <55d21ee30fc9f982beadabb8> and the same by passing `X_train.values`
+[17:09] <55d21ee30fc9f982beadabb8> to spot difference
+--------------------------------------------------------------------------------------------------
+[17:14] <5a2c58c8d73408ce4f8294ba> yes there is a difference. For example with a date originally 2011.  ```sklearn.utils.check_X_y(X_train, y_train, dtype=[np.float64], force_all_finite=False)``` gives the original 2011
+[17:14] <5a2c58c8d73408ce4f8294ba> but  ```sklearn.utils.check_X_y(X_train.values, y_train.values, dtype=[np.float64], force_all_finite=False)``` gives 2.011e+03 which I presume is how it would show it as a float
+[17:16] <5a2c58c8d73408ce4f8294ba> dtype('O') yes
+[17:16] <5a2c58c8d73408ce4f8294ba> in the second dtype('float64')
+[17:17] <5a2c58c8d73408ce4f8294ba> I have a fix with X_train.values so I am good but I would think this issue will come up a lot as HistGradientBoostingRegressor becomes popular
+[17:18] <5a2c58c8d73408ce4f8294ba> Is this then a bug in sklearn.utils.check_X_y. Was it designed to handle being passed dataframes?
+--------------------------------------------------------------------------------------------------
+[17:15] <55d21ee30fc9f982beadabb8> `X.dtype` is `object` in the first case?
+[17:17] <55d21ee30fc9f982beadabb8> Uhm this is really weird
+--------------------------------------------------------------------------------------------------
+[17:17] <55d21ee30fc9f982beadabb8> dtype=[np.float64] should force the conversion
+--------------------------------------------------------------------------------------------------
+[17:19] <55d21ee30fc9f982beadabb8> this would be in `check_array` in `sklearn.utils.validation.py`
+[17:20] <55d21ee30fc9f982beadabb8> might be a side effect of this https://github.com/scikit-learn/scikit-learn/pull/15797/files
+[17:23] <55d21ee30fc9f982beadabb8> ups
+[17:23] <55d21ee30fc9f982beadabb8> we might have forgot to backport the fix in 0.22.1
+[17:25] <55d21ee30fc9f982beadabb8> uhm no it is fine
+[17:25] <55d21ee30fc9f982beadabb8> can you check the version of scikit-learn
+[17:25] <55d21ee30fc9f982beadabb8> are you using `0.22.0` because we corrected the bug in `0.22.1`
+--------------------------------------------------------------------------------------------------
+[17:26] <5a2c58c8d73408ce4f8294ba> yup hold on
+[17:26] <5a2c58c8d73408ce4f8294ba> 0.22
+[17:26] <5a2c58c8d73408ce4f8294ba> 0.22.1 not ready in conda yet
+[17:28] <5a2c58c8d73408ce4f8294ba> This issue only happens if X_train has a float in it already
+[17:28] <5a2c58c8d73408ce4f8294ba> I have a minimum example.
+--------------------------------------------------------------------------------------------------
+[17:29] <5a2c58c8d73408ce4f8294ba> ```  import pandas as pd import sklearn import numpy as np  raw_data = {'Binary 1': [True, True, False, False, True],      'Binary 2': [False, False, True, True, False],      'age': [42, 52, 36, 24, 73],      'preTestScore': [4.4, 24.1, 31.3, 2.2, 3.1],     'postTestScore': [25.7, 94.5, 57.0, 62.2, 70.9]} df = pd.DataFrame(raw_data, columns = ['Binary 1', 'Binary 2', 'age', 'preTestScore', 'postTestScore'])    X_train = df[['Binary 1', 'Binary 2', 'age', 'preTestScore']]   y_train = df['postTestScore']  print(X_train.dtypes)  X, y = sklearn.utils.check_X_y(X_train, y_train, dtype=[np.float64], force_all_finite=False)  print(X.dtype)  X, y = sklearn.utils.check_X_y(X_train.values, y_train.values, dtype=[np.float64], force_all_finite=False)  print(X.dtype)   X_train = df[['Binary 1', 'Binary 2', 'age']]   y_train = df['postTestScore']  X, y = sklearn.utils.check_X_y(X_train, y_train, dtype=[np.float64], force_all_finite=False)  print(X.dtype)  X, y = sklearn.utils.check_X_y(X_train.values, y_train.values, dtype=[np.float64], force_all_finite=False)  print(X.dtype) ```
+[17:30] <5a2c58c8d73408ce4f8294ba> Sorry the markdown is not working as I would expect. Does this work for you?
+--------------------------------------------------------------------------------------------------
+[17:31] <55d21ee30fc9f982beadabb8> Jump a line after the 3 quotes
+[17:32] <55d21ee30fc9f982beadabb8> you can install from conda-forge
+[17:32] <55d21ee30fc9f982beadabb8> we upload the packages yesterday
+[17:32] <55d21ee30fc9f982beadabb8> or via PyPI
+[17:32] <55d21ee30fc9f982beadabb8> yes it was the bug
+--------------------------------------------------------------------------------------------------
+[17:34] <5a2c58c8d73408ce4f8294ba> so in 0.22.1 the last 4 print statements all give float64?
+[17:34] <55d21ee30fc9f982beadabb8> let me try but it should
+[17:35] <5a2c58c8d73408ce4f8294ba> OK sure. Thanks so much for the real time tech support. This is some high quality service
+[17:35] <5a2c58c8d73408ce4f8294ba> Awesome. I will update.
+--------------------------------------------------------------------------------------------------
+[17:35] <55d21ee30fc9f982beadabb8> ``` Binary 1           bool Binary 2           bool age               int64 preTestScore    float64 dtype: object float64 float64 float64 float64 ```
+--------------------------------------------------------------------------------------------------
+[18:44] <5a2c58c8d73408ce4f8294ba> I cannot update ``` conda install scikit-learn=0.22.1 ```  does not work
+--------------------------------------------------------------------------------------------------
+[20:13] <55d21ee30fc9f982beadabb8> `conda install scikit-learn -c conda-forge`
+[20:13] <55d21ee30fc9f982beadabb8> the package are only upload to conda-forge
+[20:13] <55d21ee30fc9f982beadabb8> conda is managing directly the default channel and it can take a bit more time
+--------------------------------------------------------------------------------------------------

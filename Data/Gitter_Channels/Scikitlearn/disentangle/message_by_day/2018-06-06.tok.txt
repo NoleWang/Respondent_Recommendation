@@ -1,0 +1,8 @@
+<s> <user> you should put the code for the <unka> class in an <unka> module that his installed somewhere in the python path in the python where you load the model . </s>
+<s> <user> alternatively , you can use <unka.`> <unka`> instead of <unka> . it will be slightly less efficient if your model has large numpy arrays as attributes but this is probably not a problem in practice . </s>
+<s> <user> the first solution that you mention works . i read that <unka> pickles by remembering the paths to objects </s>
+<s> <user> so , if i create a function in an interactive session , there is no path to that function . putting that into an <unka> module makes it work </s>
+<s> <user> <unka@> coming back to the <unka> issue . the way i was using it in another script was by <unka> the function . </s>
+<s> <user> now , i 'm trying to use the pipeline object inside a class . in the <unka_> , i try to load the model , it throws the same error again . i tried defining the function inside the <unka_> , but still the pickle does n't see the function . any workaround for this ? </s>
+<s> <user> here is the paste : URL/https:/ URL/pastebin.com/ <unk#a./> </s>
+<s> <user> open to suggestions from others . </s>

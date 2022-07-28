@@ -1,0 +1,69 @@
+[00:09] <56b80528e610378809c05a48> Great thanks for your reminder!
+--------------------------------------------------------------------------------------------------
+[06:13] <56c625c3e610378809c22760> I had some doubts regarding the project which I have listed in my [proposal](https://github.com/scikit-learn/scikit-learn/wiki/%5BDevashish%5D-GSoC-2016-project-proposal:-Adding-fused-types-to-Cython-files) itself.  It would be wonderful if anyone could give their opinions on them. Thanks!
+[06:15] <56b80528e610378809c05a48> Hello @dsquareindia , you mean the type issue in ensemble?
+--------------------------------------------------------------------------------------------------
+[06:17] <56c625c3e610378809c22760> yeah there wouldn't be a huge difference by adding fused types there right? I could work on that later after crucial modules have already been worked on. wdyt?
+[06:17] <56b80528e610378809c05a48> Yeah I think so
+--------------------------------------------------------------------------------------------------
+[06:19] <56c4f19ae610378809c1f8ae> I agree with yen
+--------------------------------------------------------------------------------------------------
+[11:39] <564789be16b6c7089cbab8b7> hi @rvraghav93
+--------------------------------------------------------------------------------------------------
+[13:43] <53135b495e986b0712efc453> Hi!
+--------------------------------------------------------------------------------------------------
+[14:50] <564789be16b6c7089cbab8b7> @rvraghav93  Hi. Have you a moment to discuss the categorical features/random forest/benchmark issue?
+--------------------------------------------------------------------------------------------------
+[15:07] <53135b495e986b0712efc453> @lesshaste Yup!
+--------------------------------------------------------------------------------------------------
+[15:09] <564789be16b6c7089cbab8b7> @rvraghav93  great!  So... a) what is going on? :) What I mean is, do xgboost and H20 actually support categorical variables at all?
+--------------------------------------------------------------------------------------------------
+[15:19] <53135b495e986b0712efc453> Yes apparently they do... :/ We are working on that and we'll become awesome in a few more months B)
+--------------------------------------------------------------------------------------------------
+[15:20] <564789be16b6c7089cbab8b7> @rvraghav93  ok but the comment on the PR was that it would actually not help
+[15:20] <564789be16b6c7089cbab8b7> which is what confused me
+--------------------------------------------------------------------------------------------------
+[15:23] <53135b495e986b0712efc453> No I definitely do think introducing native support for categorical variables would indeed speed up our rf
+[15:25] <53135b495e986b0712efc453> Hmmm I didn't see that.. Give me a moment!
+--------------------------------------------------------------------------------------------------
+[15:25] <564789be16b6c7089cbab8b7> "It looks like they are using decision tree-based classifiers (i.e., RandomForestClassifier and GradientBoostingClassifier) rather than extra-random tree-based classifiers. And it looks like their dataset's categorical features (airlines, origin & destination airports) probably have cardinality > 64. These two factors together mean NOCATS can't be used."
+[15:25] <564789be16b6c7089cbab8b7> did you see that?
+[15:28] <564789be16b6c7089cbab8b7> thanks
+--------------------------------------------------------------------------------------------------
+[15:34] <53135b495e986b0712efc453> Okay so I think before benchmarking against H2O and xgb. We need to make the splitting of categories locally optimal (we should decide what way the categories go at each split) and not just globally optimal. Then if the cardinality is > 64, we need to investigate why they support such high cardinality and whether or not we could do the same...
+[15:34] <53135b495e986b0712efc453> I think even R has restrictions on the cardinality of the categorical features...
+[15:35] <53135b495e986b0712efc453> How about rpart? I hear good things about it...
+--------------------------------------------------------------------------------------------------
+[15:35] <564789be16b6c7089cbab8b7> R does but the R RF code is bad
+[15:35] <564789be16b6c7089cbab8b7> well.. the default version is.. there are better versions and people also use xgboost with R
+[15:37] <564789be16b6c7089cbab8b7> rpart maybe be better .. hmm which version do they use in their benchmark?
+[15:39] <564789be16b6c7089cbab8b7> http://www.wise.io/tech/benchmarking-random-forest-part-1 is another example that shows how bad R randomForest is though
+[15:39] <564789be16b6c7089cbab8b7> ok thanks.  There is also H20 but I don't know how well their implementation us
+[15:41] <564789be16b6c7089cbab8b7> in any case.. it would be great to have somewhere where concrete improvements relevant to that benchmark could be discussed. It all seems slightly confusing at the moment
+--------------------------------------------------------------------------------------------------
+[15:39] <53135b495e986b0712efc453> Also one another thing to note is that xgboost works somewhat differently compared to sklearn's rf as they seem to use approximate splitting and a second order objective as described in the paper that got recently published by Tianqi Chen...  You should look into that paper... I think there is a section which briefly explains why they are faster than us... I haven't had time to take a good look into that paper. But if you do, please share your insights...
+[15:41] <53135b495e986b0712efc453> I think our top priority, as far as the tree based modules are concerned, is to merge the missing value support and the categorical variable support soon into scikit-learn... Once that is done we can think of making it better comparing it with xgboost...
+[15:42] <53135b495e986b0712efc453> Maybe if these two are done, I'll see if I can make a blog post with readable code that compares the rf implementations... ;)
+[15:42] <53135b495e986b0712efc453> yupp!
+[15:43] <53135b495e986b0712efc453> No that one is a condensed version... wait
+[15:44] <53135b495e986b0712efc453> http://arxiv.org/pdf/1603.02754v1.pdf
+--------------------------------------------------------------------------------------------------
+[15:42] <56b80528e610378809c05a48> you mean [this paper ](http://learningsys.org/papers/LearningSys_2015_paper_32.pdf)
+[15:42] <56b80528e610378809c05a48> ?
+--------------------------------------------------------------------------------------------------
+[15:45] <56b80528e610378809c05a48> Oh I am really interest in gradient boosting since Microsoft use it to [learn how to play Minecraft](http://research.microsoft.com/en-us/um/people/alekha/arxiv_geql.pdf)
+[15:46] <56b80528e610378809c05a48> Thanks for the link and sorry to interrupt :worried:
+[15:47] <56b80528e610378809c05a48> :smile:
+--------------------------------------------------------------------------------------------------
+[15:45] <53135b495e986b0712efc453> Or maybe both are same... I'm not sure... The last link is the one that I have on my table accumulating dust... Have to read it soon :@
+[15:45] <564789be16b6c7089cbab8b7> @rvraghav93 That's a great idea!
+[15:47] <53135b495e986b0712efc453> np
+--------------------------------------------------------------------------------------------------
+[15:47] <564789be16b6c7089cbab8b7> @yenchenlin1994  interruptions welcome :)
+--------------------------------------------------------------------------------------------------
+[15:48] <564789be16b6c7089cbab8b7> @rvraghav93  one more dim question.. :) I see in the NOCATS PR (RandomForestClassifier, full, One-hot) AUC: 0.712132537822 and  (RandomForestClassifier, truncated(8), NOCATS) AUC: 0.668807372591
+[15:48] <564789be16b6c7089cbab8b7> why is the second so much worse than the first?
+[15:50] <564789be16b6c7089cbab8b7> is it the truncated part?
+[15:50] <564789be16b6c7089cbab8b7> I assume so.. so is there no example that shows NOCATS doing better?
+[15:50] <564789be16b6c7089cbab8b7> I am not sure I understood "the full dataset with NOCATS categorical splitting (actually no random forest in this case),"
+--------------------------------------------------------------------------------------------------

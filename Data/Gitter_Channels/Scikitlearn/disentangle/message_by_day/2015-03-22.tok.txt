@@ -1,0 +1,6 @@
+<s> <user> given that there is a huge interest among students in learning about ml , do you think it would be within the scope <unka/> to <unka> to have all the exercises and/or concepts , from a good quality book ( <unka> <unka> murphy ) or an academic course like ng 's <unk#a> ( not the less <unka> <unka> version ), implemented using <unka> ? or perhaps we could instead enhance our tutorials and examples , to be a self study guide to learn about ml ? i was planning to include this in my gsoc proposal ... does it seem like an useful idea ? ( also is this a correct place to discuss this or the mailing list might be better for such questions ?) </s>
+<s> <user> or would it be better if i simply add more examples ? </s>
+<s> <user> yes please ! </s>
+<s> <user> i really want to learn ml and it 's pretty hard as it is </s>
+<s> <user> an extensive tutorial would be lovely . </s>
+<s> <user> thanks for the response !! lets wait for a confirmation from the core devs , since any additional code does come with its own maintenance cost ... they would be the best at judging if that additional maintenance is worth the benefit it offers :) </s>

@@ -1,0 +1,16 @@
+[04:48] <551084ad15522ed4b3ddb3b0> Greetings! I've done a pure Python implementation of the k-modes algorithm for clustering categorical data: https://github.com/nicodv/kmodes
+[04:49] <551084ad15522ed4b3ddb3b0> It's modeled after the k-means code in sklearn. Any interest in this?
+--------------------------------------------------------------------------------------------------
+[12:59] <551061f615522ed4b3ddb1c0> Congratulations! @ragv @xuewei4d @Barmaley-exe
+[13:02] <551061f615522ed4b3ddb1c0> Though not accepted into GSoC :worried: , I'll continue working on the tasks proposed.
+--------------------------------------------------------------------------------------------------
+[15:57] <54d4a1d6db8155e6700f853b> great, thanks :)
+--------------------------------------------------------------------------------------------------
+[15:58] <54d4a1d6db8155e6700f853b> I'm sorry you didn't make it, we didn't have enough mentors for all the projects.
+--------------------------------------------------------------------------------------------------
+[22:07] <54d4a1d6db8155e6700f853b> @nicodv we could link to your code in related projects, but I think we decided against including kmodes in the past because it was very slow. is that not the case? I forgot the details.
+--------------------------------------------------------------------------------------------------
+[23:35] <551084ad15522ed4b3ddb3b0> @amueller In pure Python, it's almost exactly an order of magnitude slower than k-means. But it scales roughly the same as k-means in terms of number of points (but worse in terms of n_clusters and dimensions)
+--------------------------------------------------------------------------------------------------
+[23:50] <551084ad15522ed4b3ddb3b0> It's less that an order of magnitude, actually. Let's say 5 to 10 times slower.
+--------------------------------------------------------------------------------------------------

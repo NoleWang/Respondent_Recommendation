@@ -1,0 +1,7 @@
+<s> <user> hi ! any tips regarding <unka> vs . class <unka> ? contrary to e.g . <unka> , there is no <unka_> parameter . without doing anything , i get high precision but tiny recall . </s>
+<s> <user> i guess i could just <unka-> the dataset manually ( adding copies of the less represented class ) but that feels dirty . surely there 's a better way ? </s>
+<s> <user> <unka@> , you could use the function <unka_`> found at URL/https:/ URL/github.com/ <unk#a#-./_> like so : from <unka._> import <unka_> # " auto " class weights <unka> proportional to class frequencies <unka_> = <unka"(_> " , y ) # dict to define them yourself with { <unka_> : weight } <unka_> = <unk#a(_{> : 2 , 2 : 1 }, y ) ... then just feed that as <unka_> to the fit method </s>
+<s> <user> geeze . apparently python comments are taken to mean bold ... but you get the idea <unka:> : </s>
+<s> <user> it 's a private util function , so not really advertised . its used under the hood in <unk#.> 's random forest and decision tree <unka> . </s>
+<s> <user> oh , that sounds pretty nice ! thanks , i 'll try that out . i completely forgot about the option to also pass the sample weights to <unka(> ) method instead of specifying class weights in constructor . </s>
+<s> <user> yep , it 's kind of sort of an indirect method to <unka/> . </s>

@@ -1,0 +1,1 @@
+[09:41] <5a5a272ad73408ce4f880912> Hello! I have taken machine learning class from udacity and now there's a problem while loading a pickle file. The file is just 15MB and I've 4GB RAM. Anyone who can get me through this problem?

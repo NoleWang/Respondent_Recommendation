@@ -1,0 +1,21 @@
+[14:37] <5634e15116b6c7089cb8f9f2> Hi all, I am having issues installing scipy for scikit-learn. Is winPython a good workaround?
+[16:24] <5634e15116b6c7089cb8f9f2> *thumbsUp
+[16:24] <5634e15116b6c7089cb8f9f2> Thanks a million
+--------------------------------------------------------------------------------------------------
+[15:55] <55d21ee30fc9f982beadabb8> @Ij888 I personally opted for conda.
+--------------------------------------------------------------------------------------------------
+[15:57] <5634e15116b6c7089cb8f9f2> Okay thanks @glemaitre! Can I safely use pip and conda side by side?
+[15:57] <55d21ee30fc9f982beadabb8> pip is included in conda
+[15:57] <55d21ee30fc9f982beadabb8> I never add problem with up to now
+--------------------------------------------------------------------------------------------------
+[20:07] <5633b77d16b6c7089cb8e50e> I'm persisting a random forest classifier using joblib, and in another process loading it. If I use sample_weights in fit, when I load the model it produces all 0 predictions. If I turn off sample_weights and train, everything is fine. During kfold validation, both settings produce expected results. Any ideas?
+--------------------------------------------------------------------------------------------------
+[20:11] <55d21ee30fc9f982beadabb8> @ccarter-cs If this is something that you can reproduce with a simple snippet
+[20:11] <55d21ee30fc9f982beadabb8> you can open an issue
+[20:12] <5633b77d16b6c7089cb8e50e> @glemaitre Alright, I'll try to minimize. Was just wanting a spot check.
+[20:12] <55d21ee30fc9f982beadabb8> you can use a simple `iris` dataset or something like that.
+[20:13] <55d21ee30fc9f982beadabb8> it always easier to find out when there is code to check.
+[20:13] <55d21ee30fc9f982beadabb8> if this is really a bug, this is a win-win :D
+--------------------------------------------------------------------------------------------------
+[20:14] <5633b77d16b6c7089cb8e50e> ty for your help
+--------------------------------------------------------------------------------------------------

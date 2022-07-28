@@ -1,0 +1,3 @@
+<s> <user> hi , my name is zoe <unka> . i am currently working on neutron and photon transport problems . i have some questions and maybe one of you can help me . </s>
+<s> <user> sure , do n't hesitate to write them here . </s>
+<s> <user> thanks ! i have a list of <unka> with their <unka> ( position , direction , energy and <unka> weight ). this variables are correlated . i want to fit that curves and later sample new <unka> . i want to know how <unka-> keep the correlation . i 'm sorry if it is a beginner question . and thanks again . </s>

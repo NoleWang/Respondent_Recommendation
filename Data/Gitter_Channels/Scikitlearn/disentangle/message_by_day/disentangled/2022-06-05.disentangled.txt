@@ -1,0 +1,6 @@
+[04:41] <56805cf416b6c7089cc051b2> Any suggestions on how to get my PR reviewed?
+--------------------------------------------------------------------------------------------------
+[06:11] <628dfd066da03739849737d8> If your PR is ready, you can add [MRG] to the title of PR. You can check the PR checklist: https://scikit-learn.org/dev/developers/contributing.html#pull-request-checklist. And I found the wiki have some reviewers you can ping: https://github.com/scikit-learn/scikit-learn/wiki/Available-reviewers.
+--------------------------------------------------------------------------------------------------
+[06:15] <56805cf416b6c7089cc051b2> Thanks! I didn't know about that checklist
+--------------------------------------------------------------------------------------------------

@@ -1,0 +1,3 @@
+[16:33] <5acfdfffd73408ce4f95738d> In order not to be verbose, I place a link to the question [stackexchange](https://ai.stackexchange.com/questions/17334/interpretation-of-feature-selection-based-on-the-model) no one answered me There, but there is a desire to understand. I apologize in advance for my poor English).  
+[17:54] <5dbd6437d73408ce4fcfbf0f> @quant12345 as already replied to your post, have a read to this: https://scikit-learn.org/stable/auto_examples/inspection/plot_permutation_importance.html#sphx-glr-auto-examples-inspection-plot-permutation-importance-py  In RF, feature importance is affected by features able to overfit the model.
+[22:06] <5acfdfffd73408ce4f95738d> @gbroccolo Thanks!

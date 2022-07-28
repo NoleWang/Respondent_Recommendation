@@ -1,0 +1,4 @@
+<s> <user> <unka@> <unka@> <unka> google summer of code , the consensus amongst the core developers seems to be that we need all of the three conditions : a good student , a good focussed project with <unka> goals that will produce something within the time constraints , and one mentor ( ideally two <unka> actually ) who has enough spare bandwidth during this time . it just was not the case last year . it 's hard to tell what will happen next year for sure . potentially interested gsoc students are more than encouraged to get involved in <unka-> so they get to know the project and we get to know them . </s>
+<s> <user> <unka@> maybe add something to the <unka> front page about this ? </s>
+<s> <user> it 's always good to advertise :) </s>
+<s> <user> <unka@> thanks for the information . i am continuously trying to understand the codebase by solving bugs . it 's more comfortable for me now . thanks :) </s>

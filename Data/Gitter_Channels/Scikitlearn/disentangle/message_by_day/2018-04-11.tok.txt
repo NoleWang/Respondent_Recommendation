@@ -1,0 +1,3 @@
+<s> <user> thanks <unk#a@> . <unka> on the new architecture works . </s>
+<s> <user> i have a few thousand points on a line and most of them are in a dense part with a few hundred spread out more widely . what is a good way to find the dense part ? </s>
+<s> <user> this looks like a clustering problem with one cluster plus noise </s>

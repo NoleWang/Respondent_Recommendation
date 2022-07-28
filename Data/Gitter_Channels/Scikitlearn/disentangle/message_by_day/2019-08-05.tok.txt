@@ -1,0 +1,19 @@
+<s> <user> <unka@> look at things tagged as " good first issue " and " help wanted " as outlined in the contributing guide </s>
+<s> <user> hello guys , maybe anyone can help me out here . i am running following validation code : <unk`> <unka_> , <unka_> = <unka(=_> , # <unka> ( pipeline ) <unka=> , # features matrix <unka=> , # target vector <unka'=_> , <unk#a(,=_> ), # test these <unka-> <unk#a=> , # <unk#a-> <unka-> <unka'=_> ) # use negative validation <unk`> in the same <unka.`> file on different machines , which i would name <unk##`> <unka`> , <unk##`> <unka`> , <unk##`> <unka`> , <unk##`> <unka`> localhost and staging have both i7 cpus , localhost needs around <unk#a> for the validation , staging needs around <unk#-> seconds live ( #3 ) and live ( #4 ) need almost 10 minutes for executing the validation - both of these servers have intel cpus with 48 threads . in order to get more " trustworthy " numbers i <unka> the images and run them on the servers . anyone has an idea why the speed is so different ? </s>
+<s> <user> how many cores do you have in localhost and staging ? </s>
+<s> <user> could be that you're <unka> processes in the <unka> and <unka> actually hurts you </s>
+<s> <user> <unka@> localhost and staging are both with i7 ( 4 cores and 8 threads ) </s>
+<s> <user> what 's pipeline ? </s>
+<s> <user> so the number of cores is the likely difference , right ? </s>
+<s> <user> yeah , live 3 and live 4 have 48 threads , 24 cores . pipeline : <unk`> from <unka._> import <unka> model = <unka(> ) from <unka.> import <unka> <unka_> = <unk#a(=> , <unka=_> ) from <unka.> import pipeline pipeline = <unka'([> , <unka_> ), ( <unka'> , model <unk)]> <unk`> </s>
+<s> <user> after profiling , i saw this ( slowest time on bottom , sorted by 3rd column ): <unk`> <unk#> <unk#.> <unk#.> <unk#.> <unk#.> { built-in method <unka.> } 245 <unk#.> <unk#.> <unk#.> <unk#.> <unk#a(.:_> ) <unk#> <unk#.> <unk#.> <unk#.> <unk#.> <unk#a(.:_> ) <unk`> just executed <unka`> -m <unka> <unka.`> </s>
+<s> <user> can you try to benchmark just calling <unka> directly without any <unka> around it ? </s>
+<s> <user> if that 's a pure scipy issues that would be good to isolate </s>
+<s> <user> how can i isolate it , make a separate <unka.`> and run <unka`> on it ? </s>
+<s> <user> make a py file that calls <unka.> without using <unka> </s>
+<s> <user> lol i am killing the sorting in the pull requests in the issue tracker with adding tags . sorry lol </s>
+<s> <user> i will try this and report here . any ideas what could be the reason ? localhost and staging are intel i7 , <unk#a> and <unk#a> are xeon cpus , do you think <unka> would improve speed or setting up the environment in another way ? ( tensorflow recommends custom compile for speed for example ) </s>
+<s> <user> how did you install numpy and scipy ? if you did custom compilation that might be a reason . if you install binaries they will use <unka> or <unka> , either of which should be quite fast </s>
+<s> <user> using <unka> , numpy <unk#a.> i think </s>
+<s> <user> they are using <unka> </s>
+<s> <user> well that should work </s>

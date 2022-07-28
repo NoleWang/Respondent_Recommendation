@@ -1,0 +1,3 @@
+[02:15] <57b3fd8640f3a6eec05fe0e8> https://plus.google.com/+VincentVanhoucke/posts/8T7DSJhGY3u
+[15:19] <572748b5c43b8c601970c18f> did in room speak about opencv???
+[15:22] <572748b5c43b8c601970c18f> i want to make real-time  object tracking with open-cv in python and i want to sent cordinate of object to tracking module??? who can help me. Thank a lot .;-)

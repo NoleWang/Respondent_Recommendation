@@ -1,0 +1,5 @@
+[05:00] <575b0eccc2f0db084a1d3a41> Now it also works for me. Had tried with two different networks yesterday... didn't work that time..
+[05:01] <575b0eccc2f0db084a1d3a41> anyway, I wanted to ask what version of LAPACK (libblas.so) does sklearn use (assuming it uses it. If not, what blas library is used)?
+--------------------------------------------------------------------------------------------------
+[16:41] <564789be16b6c7089cbab8b7> If I have a neural network classifier I can easily simulate data from the probability distribution implied by the classifier. Can this be done for any of the classifiers in scikit learn?
+--------------------------------------------------------------------------------------------------

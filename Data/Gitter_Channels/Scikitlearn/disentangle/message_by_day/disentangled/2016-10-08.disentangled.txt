@@ -1,0 +1,9 @@
+[03:50] <54d4a1d6db8155e6700f853b> hm is there a way to see how many issues I closed today?
+--------------------------------------------------------------------------------------------------
+[04:10] <57f553ebd73408ce4f2c1766> @amueller understood, thx!
+--------------------------------------------------------------------------------------------------
+[15:31] <57f4f049d73408ce4f2bfae9> Is there anything to do discretization on scikilearn?
+--------------------------------------------------------------------------------------------------
+[16:45] <54d4a1d6db8155e6700f853b> @Piperod__twitter not really right now. You can just use numpy though
+[16:45] <54d4a1d6db8155e6700f853b> numpy.digitize is the thing you want to look at iirc
+--------------------------------------------------------------------------------------------------

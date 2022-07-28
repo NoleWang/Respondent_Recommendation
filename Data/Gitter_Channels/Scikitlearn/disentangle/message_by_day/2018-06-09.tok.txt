@@ -1,0 +1,3 @@
+<s> <user> hello </s>
+<s> <user> i 'm facing an issue in importing svm </s>
+<s> <user> <unk-> importerror traceback ( most recent call last ) <unk#a-<> > in <module > ( ) --- -> 1 from <unka> import svm DIR/root/ <unk#a/> DIR/lib/ DIR/python2.7/ DIR/site-packages/ <unka/> <unka./_> in <module > ( ) 61 # process , as it may not be compiled yet 62 else : -- -> 63 from . import <unka_> 64 from <unka.> import clone 65 <unka_> # avoid <unka> unused variable error importerror : cannot import name <unka_> </s>

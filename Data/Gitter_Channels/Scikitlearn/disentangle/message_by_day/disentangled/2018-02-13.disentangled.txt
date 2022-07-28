@@ -1,0 +1,4 @@
+[09:23] <58dabed4d73408ce4f5463b2> @Pimp_Fada_twitter https://books.google.com/books/about/Introduction_to_Machine_Learning_with_Py.html
+--------------------------------------------------------------------------------------------------
+[09:25] <58dabed4d73408ce4f5463b2> Introduction to Machine Learning with Python: A Guide for Data Scientists https://www.amazon.com/dp/1449369413/ref=cm_sw_r_cp_apa_47QGAbZNXX58Z
+--------------------------------------------------------------------------------------------------

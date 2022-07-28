@@ -1,0 +1,8 @@
+<s> <user> <unk#a@> i will be around this week . i agree a 4th person would be nice , maybe <unka@> can take a look . ps : do n't forget about the blog ! </s>
+<s> <user> <unk#a@> i 'll be around but i 'll also have to work on some other things . when are you going to paris . </s>
+<s> <user> <unk#a@> get well soon ! </s>
+<s> <user> <unka@> are you project owner on <unka> ? we need to do something : URL/http:/ <unka./> <unk#a-/> otherwise all <unka> have failing tests . </s>
+<s> <user> that was easy : URL/https:/ URL/github.com/ <unk#a-/> </s>
+<s> <user> ah , i found the <unka> integration stuff ^^ <unka@> sent me that at some point </s>
+<s> <user> so the <unka> builds are running again and i 'm excited to see what happens with <unk##> ^^ </s>
+<s> <user> hum .. <unka@> i still need help :-/ URL/https:/ <unka./> <unk#a-./> </s>

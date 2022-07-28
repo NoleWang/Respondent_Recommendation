@@ -1,0 +1,63 @@
+<s> <user> <unka@> <unka@> do we need <unka`> in <unk##> ? why ca n't we just pass the labels in <unka(`> , y , <unka)`> instead of having a new class ? ( same for <unka`> ) </s>
+<s> <user> <unka@> <unka> does n't test model selection </s>
+<s> <user> <unk![> <unk#a()-./:]> ) </s>
+<s> <user> <unk![> <unk#a()-./:]> ) </s>
+<s> <user> 1st image you can see one of <unka> builds passing successfully despite a failing test in <unka_> , in the 2nd you can see travis working correctly ... </s>
+<s> <user> URL/https:/ <unka./> <unk#a#-./> - after <unka.`> <unka._`> should have been tested ... </s>
+<s> <user> any clues to debug this ? </s>
+<s> <user> <unk![> <unk#a()-./:]> ) </s>
+<s> <user> the newest merge seems to have modified <unka._> </s>
+<s> <user> which merge ? </s>
+<s> <user> " <unka> add sag solver in <unka> and ridge " </s>
+<s> <user> indeed </s>
+<s> <user> git log <unka./_> </s>
+<s> <user> i will <unka> it from the current <unka._> </s>
+<s> <user> <unka> . weird that it got changed </s>
+<s> <user> running the tests locally to check that i did no break anything . </s>
+<s> <user> yeah </s>
+<s> <user> pushed the <unka> tree code to master directly </s>
+<s> <user> <unka> is failing ? </s>
+<s> <user> or is that from the previous tree code </s>
+<s> <user> ah , <unka> is really behind </s>
+<s> <user> here is the state of the queue : URL/https:/ <unka./> <unka-/> </s>
+<s> <user> okay , cool </s>
+<s> <user> <unk#a@> which pr is that ? </s>
+<s> <user> <unka> does not run the <unka> , maybe a <unka> is failing ? </s>
+<s> <user> <unka@> i 'm in ;) </s>
+<s> <user> sorry meetings stuff </s>
+<s> <user> no <unka> </s>
+<s> <user> i 'll do <unk##> and then the <unka> example </s>
+<s> <user> the <unka> is starting to look good btw <unk##> </s>
+<s> <user> <unk##> should be good to go ( it 's just <unka> that is slow as a dog today ) </s>
+<s> <user> have you seen this : URL/https:/ <unka./> <unk#a-./> ? </s>
+<s> <user> <unk##> should also be ok , but could be made shorter </s>
+<s> <user> > have you seen this : URL/https:/ <unka./> <unk#a-./> ? hum that 's bad </s>
+<s> <user> yeah </s>
+<s> <user> this is also new to me : URL/https:/ <unka./> <unk#a-./> </s>
+<s> <user> wait that is the same </s>
+<s> <user> sorry </s>
+<s> <user> that 's weird that it only fails on 32 bit python , both 2 and 3 . it 's seems completely unrelated to the architecture . </s>
+<s> <user> maybe it 's just random ? </s>
+<s> <user> the fact that we get it with python 2 is really weird : it means that it cannot be caused by the use of the <unka> context start method in <unka> because this does not exist under python 2 . </s>
+<s> <user> here the failing pattern is different : URL/https:/ <unka./> <unk#a-./> </s>
+<s> <user> <unka@> <unk##> and no it was not a <unka> ... i specifically made a failing test inside model selection to confirm my observation ... :) </s>
+<s> <user> maybe this is caused by a change in the way nose run the tests . </s>
+<s> <user> i will open an issue to track this problem </s>
+<s> <user> <unka/~> but this is localized to <unka_> right ? maybe i am doing something <unka?~> </s>
+<s> <user> also <unka@> <unka@> do we need the new <unka`> and <unka`> as separate classes or can we specify the labels in <unka(`> , y , <unka)`> in the ( new ) <unka`> class itself ? </s>
+<s> <user> <unk##> </s>
+<s> <user> <unk#a@> your issue is probably not related to the <unka> problem we are discussing ( which has to do with <unka> <unk##> ) </s>
+<s> <user> oh sorry i thought it was a reply to my comment ... :d any ideas on how to debug mine ? </s>
+<s> <user> <unk#a@> do you have a windows machine at hand ? you can try to replicate it locally by following the install <unka> in <unka.> </s>
+<s> <user> <unk#a@> they do somewhat different things . what is the benefit of putting them in the same class ? </s>
+<s> <user> <unka`> is <unka`> with <unka`> ( somewhat like group labels ) specifying that the points in the same label should not be used for both testing and training right ? would it benefit from grouping together ? </s>
+<s> <user> <unka@> unfortunately i will have to leave soon and wo n't be able to work on the release this we . i think we should fix the <unka> issue before cutting the branch . i have opened a pr there <unk##> to try a <unka> even though i do n't understand the problem . </s>
+<s> <user> i can work on that on monday if that does not work </s>
+<s> <user> i added some quick benchmark in the comments of <unk##> . </s>
+<s> <user> <unka> has a network problem on the fast infra and so the queue is running on the old azure based infra </s>
+<s> <user> this is why the build are slower than usual </s>
+<s> <user> i do n't know if that explains the weird <unka> issue though ( it seems unlikely ) </s>
+<s> <user> ok i have to go </s>
+<s> <user> see you later </s>
+<s> <user> ok ttyl . can you work on the release next week ? </s>
+<s> <user> <unka@> <unka@> actually that wo n't make sense especially when we want to group <unka`{|}> and <unka`{|}> together making <unka> an option as suggested by joel ! sorry for the noise ... i 'll add it as such :) </s>

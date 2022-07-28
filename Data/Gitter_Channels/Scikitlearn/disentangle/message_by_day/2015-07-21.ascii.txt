@@ -1,0 +1,3 @@
+[13:02] <555b8aa615522ed4b3e0a160> @ogrisel AppVeyor is blocked on a build
+[22:10] <5583486615522ed4b3e220e5> Hi, I'm fairly new to machine learning/deep learning, but I'm currently working on a project where I want to classify some biological images. I want to initially run an unsupervised clustering of similar images that don't have  labels. Later on I want to take a set of labeled images and run some type of deep learning algorithm to aid in classifying the images. What are some ways i can get started? Any help would be really appreciated, thank you!
+[22:42] <53135b495e986b0712efc453> Hi @vene @amueller sorry! Got a bit busy :/ will resume work in a few hours!! :)

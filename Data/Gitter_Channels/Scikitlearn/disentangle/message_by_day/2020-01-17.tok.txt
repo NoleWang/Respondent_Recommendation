@@ -1,0 +1,4 @@
+<s> <user> why does <unka`> use <unka`> instead of <unka`> ? </s>
+<s> <user> <unka@> worked ! </s>
+<s> <user> <unk#a@> because gradient boosting tries to predict gradients which are always continuous targets , even in the case of <unka> . with a log loss ( as used in <unka> ) these gradients are <unka> to a <unka-> ratio , and are then passed through a <unka> function to become a probability between [ 0 , 1 ] </s>
+<s> <user> self plug : URL/http:/ <unka-./> <unka/_> </s>

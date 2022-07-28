@@ -1,0 +1,18 @@
+[04:47] <589856bdd73408ce4f4866a2> @sbromberger. I am using it on the 200gb stackexchange dump.
+[04:48] <551c051b15522ed4b3de2fea> how many nodes/edges?
+[04:48] <589856bdd73408ce4f4866a2> Around 180345
+[04:50] <551c051b15522ed4b3de2fea> nodes?
+[04:50] <551c051b15522ed4b3de2fea> how many edges? and have you tried loading this into networkx?
+[04:50] <589856bdd73408ce4f4866a2> But all of them won't be mapped. Lots of tags contain null so wont map them. Networkx has pretty straightforward documentaion. I read through it but gephi looks quite exquisite.
+[04:55] <589856bdd73408ce4f4866a2> @sbromberger It's my first DS project. Learning by doing so could use some good advice.
+[04:55] <551c051b15522ed4b3de2fea> gephi is a different package with different goals. It really depends on what you want to do.
+[04:56] <551c051b15522ed4b3de2fea> if you want to visualize data and play around with it in a gui, gephi is better suited. If you want to run advanced graph analysis, networkx is probably better.
+[04:56] <551c051b15522ed4b3de2fea> but both have limitations.
+[04:59] <589856bdd73408ce4f4866a2> Can I apply kmeans on the data on the gephi graphs? 
+[04:59] <551c051b15522ed4b3de2fea> I dont know.
+[05:00] <589856bdd73408ce4f4866a2> Okay. It can be done in Networkx. Isn't it?
+[05:06] <551c051b15522ed4b3de2fea> I dont believe it can.
+[05:07] <551c051b15522ed4b3de2fea> but there are many clustering algorithms available for each.
+[05:08] <551c051b15522ed4b3de2fea> http://stackoverflow.com/questions/40602158/how-to-draw-networkx-graph-based-on-k-means-cluster-label may help you.
+[05:10] <589856bdd73408ce4f4866a2> Thanks! That was a great help. Is this feature also available in Gephi in some way?
+[05:15] <551c051b15522ed4b3de2fea> I dont know.

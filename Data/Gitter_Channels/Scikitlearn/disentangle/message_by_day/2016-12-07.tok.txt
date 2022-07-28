@@ -1,0 +1,8 @@
+<s> <user> <unka@> they will be . for what application were you thinking ? </s>
+<s> <user> wow i have n't been here in a while .. whoops </s>
+<s> <user> they 've been around for a long while , why the delay ? and more importantly , why the <unka> ? </s>
+<s> <user> in the context of machine learning they have n't been around that long , and i think for topic modeling for example they are only now becoming popular </s>
+<s> <user> they 've been around for <unka> for a while </s>
+<s> <user> which applications algorithms did you have in mind ? </s>
+<s> <user> i 've had a request to build implementations on top of <unka.> . i 'm polling to see how much value there is to the general community . </s>
+<s> <user> if you happen to have strong opinions about the value of various algorithms i'd enjoy getting your thoughts . </s>

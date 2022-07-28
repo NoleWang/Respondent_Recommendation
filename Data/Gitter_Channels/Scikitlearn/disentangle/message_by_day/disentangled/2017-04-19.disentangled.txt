@@ -1,0 +1,4 @@
+[06:49] <585cd30bd73408ce4f3ee4d2> ~~~ Testing ~~~
+--------------------------------------------------------------------------------------------------
+[13:36] <5586719a15522ed4b3e23add> Hi everyone,  (it seems that this channel changed its purpose...? anyway)  I don't want to bother the group but I recently posted [an issue when running kNN's](http://stackoverflow.com/questions/43284115/sklearn-knn-sklearn-neighbors-kneighbors-function-producing-unexpected-result)? It is in stackoverflow with the suggested changes by other users - still downgraded though.  Does anyone can have a look? If not, which other place would be the best one to post my question? Also: what other tests should I try before posting anywhere else to be sure I did all I could to verify the problem was completely evaluated?
+--------------------------------------------------------------------------------------------------

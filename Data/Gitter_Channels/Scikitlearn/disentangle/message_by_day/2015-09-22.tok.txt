@@ -1,0 +1,6 @@
+<s> <user> URL/https:/ URL/github.com/ <unk#a-/> reviews for 0.17 ? </s>
+<s> <user> <unka@> this one would be good to fix : URL/https:/ URL/github.com/ <unk#a-/> </s>
+<s> <user> can <unka@> or someone else ok this ? URL/https:/ URL/github.com/ <unk#a-/> </s>
+<s> <user> it is a minor change and can be easily included in the upcoming release </s>
+<s> <user> <unka@> there are some warnings due to pil not being there . i can either install pil on travis or skip those tests like this URL/https:/ URL/github.com/ <unk#a#-./_> </s>
+<s> <user> <unk#a#-/> already has my +1 </s>

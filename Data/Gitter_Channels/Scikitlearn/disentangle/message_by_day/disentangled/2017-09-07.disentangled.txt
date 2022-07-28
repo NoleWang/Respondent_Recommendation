@@ -1,0 +1,7 @@
+[11:05] <59ad481bd73408ce4f743eb0> Hey I am a newbie. Would love to contribute to the organization. Can anyone guide me on this?
+--------------------------------------------------------------------------------------------------
+[11:16] <58b47262d73408ce4f4d4113> You may start by solving easy issues. Its available at https://github.com/scikit-learn/scikit-learn/issues?q=is%3Aissue+is%3Aopen+label%3AEasy
+[11:17] <58b47262d73408ce4f4d4113> Solve the ones which is not currently being attempted by anyone else. (I'm a newbie too :P )
+--------------------------------------------------------------------------------------------------
+[13:34] <59ad481bd73408ce4f743eb0> Alright. Thanks :smile:
+--------------------------------------------------------------------------------------------------

@@ -1,0 +1,52 @@
+[06:51] <56f4e1b785d51f252abab7d7> just out of curiousity, am I supposed to pour the whole dataset to `gridsearchcv.fit`?
+[06:54] <56f4e1b785d51f252abab7d7> my dataset has roughly 15M (* 500 features) in total, and I am testing with just 2M of them, I wanted to throw them all into `.fit` but kept getting out-of-memory warning (obviously)
+--------------------------------------------------------------------------------------------------
+[20:04] <57b3fd8640f3a6eec05fe0e8> Can you pass .5mil at a time 4 times?
+[20:05] <57b3fd8640f3a6eec05fe0e8> I mean if you are being limited by the memory.. probably make data set smaller? :)
+[20:07] <57b3fd8640f3a6eec05fe0e8> @shivakrishna9 depends on how you are trying to relate those 2.
+--------------------------------------------------------------------------------------------------
+[20:24] <56c4f19ae610378809c1f8ae> @Jeffrey04 a common thing people do to get around this is to just get more ram ;) might be worth looking into using an AWS machine or something for a little bit. Passing .5mil 4 times isnt really theoretically sound, because then its difficult to discern which model is actually the best because the results might be affected by the fact that the model only sees part of the dataset.
+--------------------------------------------------------------------------------------------------
+[20:49] <57b3fd8640f3a6eec05fe0e8> @nelson-liu ahh i see, but is a model with .5mil better then a model with .5mil * 4 model? There might be a chance for certain training set, the second is better?
+[20:50] <57b3fd8640f3a6eec05fe0e8> I mean, i think i see what you mean (error from each .5mil being fed adds up (maybe compounds)).
+--------------------------------------------------------------------------------------------------
+[20:51] <565b64bd16b6c7089cbc9de9> @Jeffrey04 It might be worth seeing how diverse is your data, perhaps you can neatly drop a certain percentage of it without impacting the model too much.
+--------------------------------------------------------------------------------------------------
+[20:52] <56c4f19ae610378809c1f8ae> sure, but the point of using GridSearchCV is to pick the best model for an unseen test set, is it not? <unconvertable> more data is better <unconvertable> is a common adage that is generally true. but lets say you have 1.5 million mislabeled samples (for some reason); if you were to  luckily select just the .5 million samples that were clean and train on them, youd do well. By selecting a subset of the data, youre inherently biasing the model a bit.
+[20:53] <56c4f19ae610378809c1f8ae> training on 4 partitions of a set and picking the one that does best on the most out of 4 != training on the whole set and picking the best one
+[20:54] <57b3fd8640f3a6eec05fe0e8> But that assumes there is an easy way to sort through the 2M to narrow it down to .5m. in which case, what the 2 of you recommended sounds good.
+[20:56] <57b3fd8640f3a6eec05fe0e8> I didn't mean have 4 separate trained instance.. hmm, but it any case, it's not possibly to feed .5 at a time , does it's stuff, frees some memory and you add to it? is what i was trying to ask.
+[20:58] <56c4f19ae610378809c1f8ae> ah sorry i misunderstood then. yeah, thats called <unconvertable> warm start. some models in scikit-learn implement it, but Im not sure if its gridsearchcv compatible...
+[21:00] <57b3fd8640f3a6eec05fe0e8> Ahh, i am very new to all of this so questions make more sense in my head than when i type. ^^
+[21:00] <56c4f19ae610378809c1f8ae> yeah, doesnt seem like gridsearchcv can use warm start
+[21:05] <56c4f19ae610378809c1f8ae> well warm start is only implemented for models where it makes theoretical sense to do it. like in SGD Estimators, warm start lets you start at a previous solution instead of randomly initializing.
+[21:05] <57b3fd8640f3a6eec05fe0e8> Ahh..
+[21:06] <56c4f19ae610378809c1f8ae> hmm I dont think so @nirizr but im not 100% sure
+--------------------------------------------------------------------------------------------------
+[21:03] <57b3fd8640f3a6eec05fe0e8> Is there any other keyword i can search for? "warm start scikit" isn't giving me anything that explains concepts. :s
+--------------------------------------------------------------------------------------------------
+[21:04] <565b64bd16b6c7089cbc9de9> Can gridsearchcv implement partial_fit for estimators that support it?
+--------------------------------------------------------------------------------------------------
+[21:14] <565b64bd16b6c7089cbc9de9> It's definitely not possible now. I'm not familiar with sklearn's code at all, but looks like a call to `fit` may be replaced with a call to `partial_fit`, when it is supported.
+--------------------------------------------------------------------------------------------------
+[21:15] <57b3fd8640f3a6eec05fe0e8> Thats good to know! partial_fit is something like a warm start then?
+[21:16] <57b3fd8640f3a6eec05fe0e8> This is a bit offtopic but : http://webhostingegg.com/vps/top-alternative-amazon-aws-ec2/
+[21:17] <57b3fd8640f3a6eec05fe0e8> Wondering if there were non aws recommendation.
+--------------------------------------------------------------------------------------------------
+[21:19] <565b64bd16b6c7089cbc9de9> `partial_fit` feeds the estimator with partial data iteratively, having it only process portions of all available data at a time. There are some considerations there (how to split the partitions, sizes, the order in which data is fed) and sklearn doesn't support that for gridsearchcv as far as I can tell.
+[21:21] <57b3fd8640f3a6eec05fe0e8> Ahh! thank you kindly for the detailed explanations!
+--------------------------------------------------------------------------------------------------
+[21:36] <57a061aa40f3a6eec05d8d26> @nelson-liu Hello! You gave me earlier (few days ago) short code snippet to count leaf nodes. But It seems not to work and I don't know why. The value for `leaf_count` variable seems to be even one more than `tree.node_count`.
+[21:39] <57a061aa40f3a6eec05d8d26> So, my tree has ~2300 leaf nodes :) That's large tree
+--------------------------------------------------------------------------------------------------
+[21:36] <56c4f19ae610378809c1f8ae> i mentioned after the snippet to remove one of the loops
+[21:36] <56c4f19ae610378809c1f8ae> so if you take out one of the for loops, that should do the trick
+--------------------------------------------------------------------------------------------------
+[21:37] <56c4f19ae610378809c1f8ae> ``` In [1]: from sklearn.datasets import load_boston In [2]: from sklearn.tree import DecisionTreeRegressor In [3]: boston = load_boston() In [4]: tree = DecisionTreeRegressor() In [5]: tree.fit(boston.data, boston.target) In [6]: internal_tree = tree.tree_ In [7]: left_children = internal_tree.children_left In [8]: right_children = internal_tree.children_right In [9]: leaf_count = 0 In [10]: for i in left_children:     ...:     if i == -1:     ...:         leaf_count += 1     ...: ```
+[21:37] <56c4f19ae610378809c1f8ae> because left_children is an array that maps each node to another node that is its left child
+[21:38] <56c4f19ae610378809c1f8ae> but if it has no left child, its marked as -1
+[21:38] <56c4f19ae610378809c1f8ae> a node cannot have a left child and no right child or no right child and a left chlid, so iterating through one of the children arrays is enough
+[21:38] <57a061aa40f3a6eec05d8d26> Ok, thanks :)
+--------------------------------------------------------------------------------------------------
+[22:50] <57b3fd8640f3a6eec05fe0e8> http://scikit-learn.org/stable/auto_examples/decomposition/plot_image_denoising.html  Didn't realize you can do crazy stuff like this.. :o
+--------------------------------------------------------------------------------------------------

@@ -1,0 +1,12 @@
+<s> <user> please everybody check <unka-./> and stable and dev and 0.16 subfolders </s>
+<s> <user> URL/https:/ URL/github.com/ <unk#a-/> </s>
+<s> <user> report issues there </s>
+<s> <user> added 0.15 </s>
+<s> <user> ok looking good now . </s>
+<s> <user> waiting for the dns move </s>
+<s> <user> dns is up over here , thanks <unka@> ! </s>
+<s> <user> hi <unk#a@> </s>
+<s> <user> <unk#a@> sorry for the lack of feedback , but would you have time to look at this : URL/https:/ URL/github.com/ <unk#a#-/> ? </s>
+<s> <user> <unk#a@> i 'll have more time on wednesday to look at your code </s>
+<s> <user> yes . he is right . i have fixed this problem in URL/https:/ URL/github.com/ <unk#a#-/> </s>
+<s> <user> the <unka> initialization in <unka> is not good . it only initializes the <unka_> . my pr will initialize the <unka> first , then all parameters including means , weights , <unka> . </s>

@@ -1,0 +1,11 @@
+[10:06] <589b9e0fd73408ce4f490ba4> @jakirkham not to my knowledge. What approaches were you considering and why do you think it might be beneficial?
+--------------------------------------------------------------------------------------------------
+[15:17] <530c03e25e986b0712efafb8> Is there an estimate on a release date of 0.20 ?  No pressure or expectations, I'm just doing some planning.  "No estimate" is also a fine response.
+--------------------------------------------------------------------------------------------------
+[15:53] <589b9e0fd73408ce4f490ba4> @mrocklin See https://github.com/scikit-learn/scikit-learn/pull/11838 for the 0.20.rc1 , probably several weeks later for the 0.20 final .
+[15:54] <530c03e25e986b0712efafb8> Thank you for the pointer @rth .  I should have been able to find that :)
+[18:51] <530c03e25e986b0712efafb8> That shouldn't take long :)
+--------------------------------------------------------------------------------------------------
+[16:06] <54d4a1d6db8155e6700f853b> hope to do the RC today or tomorrow but I'm an optimist ;)
+[16:07] <54d4a1d6db8155e6700f853b> I need to convince some more people that I'm right and they are wrong before we can do that, though
+--------------------------------------------------------------------------------------------------

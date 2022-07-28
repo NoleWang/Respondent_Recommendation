@@ -1,0 +1,4 @@
+[06:01] <541a528b163965c9bc2053de> :)
+--------------------------------------------------------------------------------------------------
+[06:04] <541a528b163965c9bc2053de> Maybe you should make all boxes have the same width and left align the content:  ```text petal width(cm) split: <= 1.65 entropy: 0.041 samples: 48 value: 0, 47, 1 class:  versicolor ```
+--------------------------------------------------------------------------------------------------

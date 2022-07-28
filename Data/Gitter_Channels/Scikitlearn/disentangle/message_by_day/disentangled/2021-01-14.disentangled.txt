@@ -1,0 +1,6 @@
+[17:18] <541a528b163965c9bc2053de> @jackmitch this looks like a bug indeed. I don't have a quick fix from the tip of my head but could you please open an issue on github to avoid forgetting about it? It's probably a temporary buffer that is assigned with an `np.int` instead of `np.intp` in our Cython code or wrapping Python code.
+[17:19] <541a528b163965c9bc2053de> Here is a similar bug we had in the past (a long time ago): https://github.com/scikit-learn/scikit-learn/commit/627c564faec36c783788b7488b4cf19a2535916c
+[17:20] <541a528b163965c9bc2053de> Ideally a PR would be appreciated because none of us will be able to reproduce it because we do not have access to such hardware.
+--------------------------------------------------------------------------------------------------
+[17:22] <541a528b163965c9bc2053de> Also if you want to submit a PR for our doc that documents how you cross-compile scikit-learn for armv7h, that could be useful knowledge to share. For instance it could be a new section at the end of this page: https://scikit-learn.org/dev/developers/advanced_installation.html
+--------------------------------------------------------------------------------------------------

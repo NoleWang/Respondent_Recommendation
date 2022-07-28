@@ -1,0 +1,56 @@
+[07:21] <54bd0a4fdb8155e6700ed136>
+[07:21] <54bd0a4fdb8155e6700ed136>
+[07:22] <54bd0a4fdb8155e6700ed136>
+[07:23] <54bd0a4fdb8155e6700ed136>
+[07:24] <54bd0a4fdb8155e6700ed136>
+[07:25] <54bd0a4fdb8155e6700ed136>
+--------------------------------------------------------------------------------------------------
+[08:37] <53135b495e986b0712efc453> should there be need contrib tag in #4687?
+[09:46] <53135b495e986b0712efc453> Thanks :beers:
+--------------------------------------------------------------------------------------------------
+[08:58] <53135b495e986b0712efc453> @zermelozf #3846 ? There are like 90 odd examples to be added ;) (@ogrisel and others - Do you feel this one would be useful or should he pick something else from the recently tagged pool of issues to work on?)
+[09:09] <53135b495e986b0712efc453> here too (need contrib to be removed) - #5322
+[11:46] <53135b495e986b0712efc453> @glouppe If you are able to find time could you review #4294 ? ;)
+[11:48] <53135b495e986b0712efc453> Lol okay :D I am eagerly waiting for Andy ;)
+--------------------------------------------------------------------------------------------------
+[09:44] <53135b495e986b0712efc453> @glouppe Could you please remove the "Need Contributor" tag from #5474, #4687, #5455, #5447, #5432, #5380 ?
+--------------------------------------------------------------------------------------------------
+[09:46] <54bd0a4fdb8155e6700ed136> all done
+--------------------------------------------------------------------------------------------------
+[10:04] <53135b495e986b0712efc453> @glouppe also from this one - 5290 and maybe assign it to Arthur? (sorry for repeatedly pinging you ;) )
+--------------------------------------------------------------------------------------------------
+[11:07] <54bd0a4fdb8155e6700ed136> done
+--------------------------------------------------------------------------------------------------
+[11:08] <54bd0a4fdb8155e6700ed136> unfortunately, I cannot assign to people outside of the scikit-learn team
+[11:08] <54bd0a4fdb8155e6700ed136> dunno why
+--------------------------------------------------------------------------------------------------
+[11:32] <53135b495e986b0712efc453> This one can be closed - #5060
+[11:33] <53135b495e986b0712efc453> (It was fixed by #5084)
+--------------------------------------------------------------------------------------------------
+[11:37] <555b8aa615522ed4b3e0a160> @ogrisel in sklearn.metrics.pairwise._parallel_pairwise, the joblib Parallel loop is slowed by thread locking, which is weird with the multiprocessing backend
+--------------------------------------------------------------------------------------------------
+[11:41] <55e5c37d0fc9f982beaf4d61> issue #5481 is actually a batch of small issues on estimators that fails on read only memory map data once check_array process memory map without copying their content unnecessarily. I guess it could be labelled as easy as it could be addressed by new contributors
+--------------------------------------------------------------------------------------------------
+[11:47] <54bd0a4fdb8155e6700ed136> wow, this is poisoned gift you are giving me there
+[11:47] <53135b495e986b0712efc453> :P :P
+[11:48] <54bd0a4fdb8155e6700ed136> I never touched these modules though
+--------------------------------------------------------------------------------------------------
+[12:25] <54d4ae8cdb8155e6700f858d> hi guys, not sure if that's the place to ask but I'm looking for a way to use a function-call instead of already having the target value next to the features. So I'd like to put in the features as usual but don't know the results yet. This is because I don't know them and also don't want to run them since it would take to long to do this with a grid-brute. I'm hoping to save time by using a more advanced search mechanism instead that I can feed a function that then puts out the results. I've only found examples so far where the target values are already known. Any help on what to look for?
+[12:28] <54d4ae8cdb8155e6700f858d> another thing I'm looking for is a function that I can give a sample of numbers, let's say a np array of 1000 numbers and then have that function create a sample of N numbers with the same distribution characteristics as the input numbers...
+[12:28] <53135b495e986b0712efc453>
+--------------------------------------------------------------------------------------------------
+[12:27] <54d4a1d6db8155e6700f853b> can anyone get me? I'm in the lobby
+--------------------------------------------------------------------------------------------------
+[12:29] <53135b495e986b0712efc453> Olivier is coming!
+--------------------------------------------------------------------------------------------------
+[13:10] <54d4a1d6db8155e6700f853b> wohoo wifi
+--------------------------------------------------------------------------------------------------
+[13:18] <541a528b163965c9bc2053de> \o/
+--------------------------------------------------------------------------------------------------
+[13:43] <54d4a1d6db8155e6700f853b> @ogrisel can we trigger circleci on https://github.com/scikit-learn/scikit-learn/pull/5451 again?
+--------------------------------------------------------------------------------------------------
+[16:21] <54d4a1d6db8155e6700f853b> Btw, if you add an entry to whatsnew.rst, please include a link to the github issue / pull request!
+--------------------------------------------------------------------------------------------------
+[17:38] <53810862048862e761fa2887> Hello, I am trying to understand the current Gradient Boosting code
+[17:39] <53810862048862e761fa2887> Can someone point out where step 3 is being performed ? According to the this https://en.wikipedia.org/wiki/Gradient_boosting#Algorithm
+--------------------------------------------------------------------------------------------------

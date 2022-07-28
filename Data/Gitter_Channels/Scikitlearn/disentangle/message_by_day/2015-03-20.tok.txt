@@ -1,0 +1,24 @@
+<s> <user> <unka@> ... you around ? should i also update <unka_`> for URL/https:/ URL/github.com/ <unk#a#-./_> and URL/https:/ URL/github.com/ <unk#a#-./_> ? both are explicitly <unka> . there 's a couple others that use fit between <unka> and <unka> too ... <unka> , <unka> , <unka> ... not sure i want to touch them for 0.16 though , would be more involved than a <unk#+-/> change </s>
+<s> <user> presumably all of the above get through tests somehow though ... </s>
+<s> <user> nm . i copied these questions to the pr . you can comment there if you like , but i think those do not call the offending np function </s>
+<s> <user> if the tests pass , i do n't think we need to do anything </s>
+<s> <user> thanks for all the merges <unka@> :) </s>
+<s> <user> as a thank you , i pinged you in 4 other issues ^^ </s>
+<s> <user> k . well <unk##> should be good then . it passes all tests locally on <unk#.> </s>
+<s> <user> thanks , looks good and i marked for backport </s>
+<s> <user> that will save us some eror reports on the new release ! </s>
+<s> <user> excellent </s>
+<s> <user> hey :) <unka@> <unka@> could i take up " multiple metric support for <unka-> and <unka> " as my gsoc project ... ? sorry for the delay in my proposal ... final semester takes up a lot of my time :| i chose that since so far no one has proposed for the same and also i am working on a related pr ... </s>
+<s> <user> yes , that would be good and could also tie into finishing up the <unka-> stuff you are working on </s>
+<s> <user> btw does anyone remember a pr adding more git <unka> docs to the developer documentation ? </s>
+<s> <user> i though someone did it but i ca n't find it any more </s>
+<s> <user> " git <unka> docs " you mean contributor docs ?? </s>
+<s> <user> docs for the contributors on how to do git magic , like <unka> , not merging in master , and squashing </s>
+<s> <user> we were talking about that somewhere ( ml ? issues ?) and i though someone made pr . but maybe that was just wishful thinking </s>
+<s> <user> apparently today is minor doc fix day . third push to master in a row . </s>
+<s> <user> <unka@> in a recent pr you posted " only 202 <unka> to go " . now it 's 227 . gsoc i guess ;) and that even with pretty aggressive merging ... </s>
+<s> <user> ( <unka> ) thats me :p joel had posted an issue asking for a better contributor docs ... i am still doing that :| btw i did update wiki with a neat tree <unka> the structure of our improved contributors guide ... URL/https:/ URL/github.com/ <unka-/> </s>
+<s> <user> something i spend way too much time doing when writing new stuff , or figuring out what 's happening in an existing method ( and perhaps there 's already an easy way that this dum dum does n't know ) ... but would adding the actual source code file in which a given developer func is located to the <unka.> <unka'> <unka> be helpful ? </s>
+<s> <user> ( only for <unka-> functions in utils i think ) </s>
+<s> <user> <unka> : <unka> should give you the source in ipython </s>
+<s> <user> that is magical ... thx ! but doesnt seem to tell the file it 's in . :-/ </s>

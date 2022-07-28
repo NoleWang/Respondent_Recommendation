@@ -1,0 +1,2 @@
+[20:29] <597cbd65d73408ce4f6f49d7> Can anyone recommend a pretrained model for text summarization with for instance Apache license for commercial use?
+--------------------------------------------------------------------------------------------------

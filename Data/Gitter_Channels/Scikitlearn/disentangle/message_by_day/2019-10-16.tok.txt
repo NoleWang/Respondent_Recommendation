@@ -1,0 +1,2 @@
+<s> <user> how to learn complete sk learn ? please give the resources ? </s>
+<s> <user> andreas <unka> 's book , introduction to machine learning with python : a guide for data scientists , is quite complete . you can also look at the user guides : URL/https:/ <unka-./> <unka./_> </s>

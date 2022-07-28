@@ -1,0 +1,17 @@
+<s> <user> i am trying ( x,y ) = <unk#a(=_> , <unk#a=_> , <unk#a=_> ) but it says <unka> : <unka_> * <unka_> must be smaller or equal 2 ** <unka_> </s>
+<s> <user> i just want to make a random <unka> problem with 3 classes . how can i do that ? </s>
+<s> <user> how about <unk`> <unk#a(=_> , <unk#a=_> , <unk#a=_> ) <unk`> ( i am also a beginner , but just trying here . you can ignore if you want someone more experienced to comment ) </s>
+<s> <user> there are quite a few other ( <unka)> which probably would need to be changed . see URL/http:/ <unka-./> <unka./_> </s>
+<s> <user> thanks .. ( <unka> , <unka> ) = <unk#a(=_> , <unk#a=_> , <unk#a=_> , <unk#a=_> ) works ! </s>
+<s> <user> this is slightly less intuitive than normal for <unka> learn </s>
+<s> <user> because ( <unka> , <unka> ) = <unk#a(=_> , <unk#a=_> , <unk#a=_> ) does not work </s>
+<s> <user> to be true , i am new to <unka-> and to machine learning as well . this is what <unka> me a lot that for every function we find a lot ( a lot ) of arguments . i would have thought to simply use <unka*`> and extract out the important information from it . but i think may be developers would have already given a good thought into this . </s>
+<s> <user> even if <unka-> is intuitive , <unka@> do not forget to read the doc : URL/http:/ <unka-./> <unka./_> </s>
+<s> <user> so if we still wish to have 2 clusters per classes </s>
+<s> <user> you need at least <unk#a=_`> minimum </s>
+<s> <user> i really want 120 </s>
+<s> <user> thanks </s>
+<s> <user> > to be true , i am new to <unka-> and to machine learning as well . this is what <unka> me a lot that for every function we find a lot ( a lot ) of arguments . i would have thought to simply use <unka*`> and extract out the important information from it . but i think may be developers would have already given a good thought into this . you can refer to [ this <unka(./:=?]> ) to see one of the problem of the <unka> :). </s>
+<s> <user> i have n't seen the video completely ( but in between i liked to point out ). but i have spent quite sometime with <unka> , and i definitely agree i used a lot of <unka*`> , <unka*`> . </s>
+<s> <user> i think i could say , that for a library having other libraries as dependencies it is better to use hard-coded arguments instead of <unka*`> , <unka*`> . </s>
+<s> <user> thanks for the video , i can sleep tight now :) </s>

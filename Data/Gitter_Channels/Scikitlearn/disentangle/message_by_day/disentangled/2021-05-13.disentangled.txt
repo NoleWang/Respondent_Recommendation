@@ -1,0 +1,6 @@
+[17:01] <609c828b6da03739847c7c73> Hi, my name is Zoe Prieto. I am currently working on neutron and photon transport problems. I have some questions and maybe one of you can help me.
+--------------------------------------------------------------------------------------------------
+[17:04] <matrix-rthy:matrix.org> Sure, don't hesitate to write them here.
+--------------------------------------------------------------------------------------------------
+[17:12] <609c828b6da03739847c7c73> Thanks! I have a list of particles with their caracteristics (position, direction, energy and stadistic weight). This variables are correlated. I want to fit that curves and later sample new particles. I want to know how scikit-learn keep the correlation. I'm sorry if it is a beginner question. And thanks again.
+--------------------------------------------------------------------------------------------------

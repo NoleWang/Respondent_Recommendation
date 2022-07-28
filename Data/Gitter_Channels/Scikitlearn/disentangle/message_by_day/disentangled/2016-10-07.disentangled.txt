@@ -1,0 +1,6 @@
+[23:48] <54d4a1d6db8155e6700f853b> wow this makes me shiver: https://github.com/scikit-learn/scikit-learn/pull/6348/files
+[23:49] <54d4a1d6db8155e6700f853b> @naokishibuya yes you should
+--------------------------------------------------------------------------------------------------
+[23:51] <54d4a1d6db8155e6700f853b> err sorry use ``_residues`` or  just compute them from the predictions?
+[23:51] <54d4a1d6db8155e6700f853b> np.sum((y_train - lr.predict(X_train)) ** 2)
+--------------------------------------------------------------------------------------------------

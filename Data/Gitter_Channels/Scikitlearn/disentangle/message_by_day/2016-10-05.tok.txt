@@ -1,0 +1,10 @@
+<s> <user> i got through my first contribution , can anyone suggest few more issues that are easy to solve . i wanted to get some confidence before going to the core <unka> structure . i also reviewed some fo the 'easy' labeled issues . <unka-@> any more low hanging fruit ? </s>
+<s> <user> <unka-@> good to know ! </s>
+<s> <user> <unk#a@> <unka@> one thing that 's also very appreciated is going through old issues and seeing if they are still relevant . </s>
+<s> <user> <unka@> will surely look into it </s>
+<s> <user> <unka@> you know that the ping on numpy was travis , the creator of numpy and scipy and ceo of continuum ? ;) </s>
+<s> <user> wow . i did n't know that o.o </s>
+<s> <user> hello , may i ask a question about <unka-> here ? </s>
+<s> <user> it 's related to the <unka> warning . </s>
+<s> <user> <unka> : function <unka_> is deprecated ; <unka_`> is deprecated and will be removed in 0.19 </s>
+<s> <user> i 'm wondering what should i use instead of <unka'_> to get residue values from <unka> ( fitted ) model . </s>

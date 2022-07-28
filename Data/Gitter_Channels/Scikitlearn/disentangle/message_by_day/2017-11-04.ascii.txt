@@ -1,0 +1,1 @@
+[17:25] <58b47262d73408ce4f4d4113> Hello, I am quite free after my semester ending examinations. I want to contribute more to scikit-learn. Apart from solving bugs (which currently I am doing with 6-8 merged PRs), how else can I contribute to scikit-learn? 

@@ -1,0 +1,22 @@
+[05:02] <5c34f182d73408ce4fb408a6> How should I build the docs for harversine_distances in my local repo? I ran `python setup.py install` but still I can't find it under `doc/modules/`
+[10:07] <5c34f182d73408ce4fb408a6> @lesteve Sure. Thanks for the help.
+[10:09] <5c34f182d73408ce4fb408a6> As a beginner contributor to this organisation, the arrangements of the docs did feel a bit tough to navigate. I will put my thoughts about it more concisely and then open a issue and PR for the same
+--------------------------------------------------------------------------------------------------
+[08:20] <55d21ee30fc9f982beadabb8> The documentation is another command line
+[08:21] <55d21ee30fc9f982beadabb8> ``` cd doc make html ``` should work all OS I think
+[08:22] <55d21ee30fc9f982beadabb8> then it will create a `_build/html` folder and you can search for the `index.html`
+--------------------------------------------------------------------------------------------------
+[08:39] <5571fe1015522ed4b3e17d90> @sameshl note this part of the contributing scikit-learn doc: https://scikit-learn.org/stable/developers/contributing.html#documentation
+[08:40] <5571fe1015522ed4b3e17d90> If you see ways the contributing doc can be improved while you face this "setup" issues, let us know or/and open PRs to improve the contributing docs!
+--------------------------------------------------------------------------------------------------
+[10:10] <567f5d7716b6c7089cc043a8> We're working on improving our contributing docs @sameshl, there's some discussion under #14582
+--------------------------------------------------------------------------------------------------
+[10:15] <5c34f182d73408ce4fb408a6> Thats great. Would love to contribute on https://github.com/scikit-learn/scikit-learn/issues/14582
+--------------------------------------------------------------------------------------------------
+[10:19] <5c34f182d73408ce4fb408a6> I am working on https://github.com/scikit-learn/scikit-learn/issues/14575. So I found the corresponding example under `sklearn/metrics/pairwise.py`.  My question is, are the examples run in the doc building process and output is generated or I am supposed to manually write the output of the example in the docstring of a function?
+[11:22] <567f5d7716b6c7089cc043a8> you should write the output in the example. The doc build will run the code and check if the generated output is the same as the one you put there. See https://docs.python.org/3.5/library/doctest.html for more info
+[11:32] <5c34f182d73408ce4fb408a6> Thanks @adrinjalali !
+--------------------------------------------------------------------------------------------------
+[19:57] <5ba59281d73408ce4fa8fbb5> Does anyone here knows a good source to learn rnn structure ?
+[19:59] <5ba59281d73408ce4fa8fbb5> Is it like replacing every hidden node with a rnn cell?
+--------------------------------------------------------------------------------------------------

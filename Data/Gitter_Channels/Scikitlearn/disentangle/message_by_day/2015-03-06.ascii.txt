@@ -1,0 +1,54 @@
+[09:36] <541a528b163965c9bc2053de> Unfortunately we cannot promise much for those cases. It would be interesting to check the actual impact of the correct heuristic on some datasets though. 
+[10:58] <5474d9eadb8155e6700d8178> @amueller @ogrisel could we use `0.5 - np.finfo(float).resolution` for #4295 (With the assumption that, it wouldn't be considered a magic no. since 0.5 is a standard symmetric scaling factor?) to scale it to `(-0.5, 0.5)`?
+[15:23] <54c084dbdb8155e6700eed4c> @ogrisel fair enough. I'll try to find some time this weekend to run some experiments. I agree that the new implementation is more intuitive, just throwing it out there.
+[15:25] <541a528b163965c9bc2053de> Thanks
+[16:02] <541a528b163965c9bc2053de> @amueller shall we try to cut the 0.16.X branch?
+[16:25] <54d4a1d6db8155e6700f853b> @ogrisel feel free. do we want to backport the isotonic stuff then? Or take @mjbommar's +1?
+[16:25] <541a528b163965c9bc2053de> Let's do the isotonic merge now
+[16:26] <541a528b163965c9bc2053de> I think it's tested enought both by the isotonic tests and the probability calibration tests to be correct.
+[16:26] <54d4a1d6db8155e6700f853b> I feel the same way
+[16:27] <54d4a1d6db8155e6700f853b> do you want to press the green button or should I do the rebase dance?
+[16:28] <54d4a1d6db8155e6700f853b> @mjbommar's fix is not in a PR...
+[16:30] <541a528b163965c9bc2053de> I pressed the green button.
+[16:31] <54d4a1d6db8155e6700f853b> ok. and merge the other fix on top? It has my +1 and yours
+[16:31] <541a528b163965c9bc2053de> Let's create the PR ourselves from his branch :)
+[16:31] <54d4a1d6db8155e6700f853b> Should I create PR or just merge?
+[16:31] <54d4a1d6db8155e6700f853b> I guess we want to run travis once
+[16:31] <541a528b163965c9bc2053de> Yes better create the PR from his branch to get travis to run it.
+[16:33] <54d4a1d6db8155e6700f853b> I'm on it
+[16:33] <541a528b163965c9bc2053de> actually it's not possible to create the PR directly from his branch as we need to get rid of the past commits:
+[16:33] <541a528b163965c9bc2053de> https://github.com/scikit-learn/scikit-learn/compare/master...mjbommar:issue-4297-infinite-isotonic
+[16:33] <541a528b163965c9bc2053de> that are redundant with your own PR
+[16:34] <541a528b163965c9bc2053de> I let you do the cherry-pick
+[16:40] <54d4a1d6db8155e6700f853b> I did a rebase thing
+[16:41] <54d4a1d6db8155e6700f853b> https://github.com/scikit-learn/scikit-learn/pull/4352
+[16:46] <54d4a1d6db8155e6700f853b> should we wait for feedback on https://github.com/scikit-learn/scikit-learn/pull/4322 and then backport it?
+[16:46] <54d4a1d6db8155e6700f853b> warnings in the beta seem not that bad
+[16:47] <541a528b163965c9bc2053de> yes +1 for waiting for this one
+[17:40] <541a528b163965c9bc2053de> @amueller unfortunately I won't have time to cut the branch tonight. I have to go now. Feel free to do it, push a commit with the 0.16b1 version number (that follows PEP-440) and push a tag with pointing to it. That should get the CI workers to build the wheels. If everything goes well we should be able to push the release to PyPI (after testing on https://testpypi.python.org/pypi first) using wheelhouse-uploader.
+[17:40] <541a528b163965c9bc2053de> I will be busy tomorrow (we organize a deep learning workshop in Paris) and on sunday I should be mostly offline.
+[17:41] <541a528b163965c9bc2053de> I can push the release on PyPI on Monday if appveyor works well.
+[17:41] <54d4a1d6db8155e6700f853b> Ok, then I'll do it this afternoon. Mail to mailing list after pypi push? Or wait for appveyor?
+[17:41] <541a528b163965c9bc2053de> travis is slow today...
+[17:42] <54d4a1d6db8155e6700f853b> Are there instructions on the wheel builts in the docs?
+[17:42] <541a528b163965c9bc2053de> I would like to wait for appveyor and MacPython : https://github.com/MacPython/wiki/wiki/Spinning-wheels
+[17:42] <541a528b163965c9bc2053de> wrong copy and paste
+[17:43] <541a528b163965c9bc2053de> I meant: https://github.com/MacPython/scikit-learn-wheels
+[17:43] <54d4a1d6db8155e6700f853b> what version number do you leave on master after doing the beta? Still 0.16-dev?
+[17:44] <541a528b163965c9bc2053de> I changed the master to follow PEP-440, so it's 0.16.dev0 at the moment
+[17:44] <541a528b163965c9bc2053de> It should move to 0.17.dev0 once the 0.16.X branch has been cut.
+[17:45] <541a528b163965c9bc2053de> I granted you push rights to https://github.com/MacPython/scikit-learn-wheels
+[17:45] <54d4a1d6db8155e6700f853b> Ok, wasn't sure if we do that after the beta or the release, but makes sense if we branch.
+[17:45] <54d4a1d6db8155e6700f853b> thanks
+[17:46] <541a528b163965c9bc2053de> once the scikit-learn 0.16b1 tag has been pushed to our github repo, we have to update the git submodules of https://github.com/MacPython/scikit-learn-wheels to point to it to get the travis bots of that repo to build all the Mac OSX wheels for that release.
+[17:48] <54d4a1d6db8155e6700f853b> ok
+[17:52] <54d4a1d6db8155e6700f853b> merge this on green then branching? https://github.com/scikit-learn/scikit-learn/pull/4352
+[17:52] <541a528b163965c9bc2053de> yes
+[17:53] <541a528b163965c9bc2053de> I have to go now, sorry for leaving you alone.
+[18:17] <5474d9eadb8155e6700d8178> Andy could you quickly take a look at #4228 to see if the test to be satisfied is correct. I'm using that as an objective for that PR! (I'll iterate different fixes till that test is satisfied...)
+[18:26] <5474d9eadb8155e6700d8178> I've reopened #4228 as #4354 since #4228 won't reopen (more precisely, github won't track branches against which closed PRs were raised... So #4228 remains at 0+0- even after pushing the new commit to that branch and hence won't reopen as it brings about no change) Sorry for wasting an issue no.! :/
+[18:42] <54d4a1d6db8155e6700f853b> Sorry, as I'll have to take care of the beta now, so I won't have time to look into the issue
+[18:43] <5474d9eadb8155e6700d8178> okay no problem :)
+[22:49] <54d4a1d6db8155e6700f853b> @ogrisel so if we don't build /upload the docs on beta, what should the links in the navigation of the "documentation" page be? I guess we have to fix them later....
+[22:50] <54d4a1d6db8155e6700f853b> because now there will not be any 0.16 documentation online
+[23:06] <54d4a1d6db8155e6700f853b> pushed the tag, updated the MacPython wheels.

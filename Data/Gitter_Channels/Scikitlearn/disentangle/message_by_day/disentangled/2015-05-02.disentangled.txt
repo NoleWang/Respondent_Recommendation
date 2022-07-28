@@ -1,0 +1,11 @@
+[00:35] <54df2ad815522ed4b3dc0295> Hi! Any tips regarding GradientBoostingClassifier vs. class imbalance?  Contrary to e.g. LogisticRegression, there is no class_weight parameter.  Without doing anything, I get high precision but tiny recall.
+[00:35] <54df2ad815522ed4b3dc0295> I guess I could just pre-process the dataset manually (adding copies of the less represented class) but that feels dirty.  Surely there's a better way?
+--------------------------------------------------------------------------------------------------
+[02:02] <54c084dbdb8155e6700eed4c> @pasky , you could use the function `compute_sample_weight` found at https://github.com/scikit-learn/scikit-learn/blob/master/sklearn/utils/class_weight.py#L68-L166 like so:  from sklearn.utils.class_weight import compute_sample_weight # "auto" class weights inversely proportional to class frequencies sample_weight = compute_sample_weight("auto", y) # dict to define them yourself with {class_symbol: weight} sample_weight = compute_sample_weight({1: 2, 2: 1}, y) ... then just feed that as sample_weight to the fit method
+[02:02] <54c084dbdb8155e6700eed4c> geeze. apparently python comments are taken to mean bold... but you get the idea :smile:
+[02:06] <54c084dbdb8155e6700eed4c> it's a private util function, so not really advertised. its used under the hood in 0.16.0's random forest and decision tree classifiers.
+--------------------------------------------------------------------------------------------------
+[02:23] <54df2ad815522ed4b3dc0295> Oh, that sounds pretty nice! Thanks, I'll try that out. I completely forgot about the option to also pass the sample weights to fit() method instead of specifying class weights in constructor.
+--------------------------------------------------------------------------------------------------
+[02:40] <54c084dbdb8155e6700eed4c> Yep, it's kind of sort of an indirect method to oversample/undersample.
+--------------------------------------------------------------------------------------------------

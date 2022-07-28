@@ -1,0 +1,39 @@
+<s> <user> now that we have <unka> tests , there is an <unka> integration for <unka> that we could configure ! </s>
+<s> <user> we 've had <unka> tests for a long time ;) </s>
+<s> <user> we just did n't look at them </s>
+<s> <user> oh ! i did n't know that :) </s>
+<s> <user> what needs to be done for integration ? </s>
+<s> <user> try settings - -> <unka> - -> <unka> . use this <unka> URL/https:/ <unka./> <unk#a/> :) </s>
+<s> <user> <unka@> wonders who added the <unka> :o </s>
+<s> <user> <unka/`> messages look too large in <unka> :/ </s>
+<s> <user> <unka@> seems to have added that from the git blame ... i think he would have integrated it already ( why are n't we getting notifications then ?) hmm ... </s>
+<s> <user> btw there seems to be a chrome app for <unka> for linux users - URL/https:/ URL/chrome.google.com/ <unka/> </s>
+<s> <user> <unka.> does not seem to be very mature yet . but could be cool and carl is pretty responsive </s>
+<s> <user> hello ! yes , seems there are still several kinks to work out in the pr comparison logic </s>
+<s> <user> working on it ! </s>
+<s> <user> haha did n't know you were here . well your help is much appreciated ! </s>
+<s> <user> <unka@> just sent me an invite to the chatroom , probably to stop me cluttering up pr comments :) </s>
+<s> <user> :) comment whereever you like </s>
+<s> <user> <unka@> not at all :) i added you so we could ping and trouble you whenever we hit a snag with landscape :p :p thanks for the nice work ! </s>
+<s> <user> <unka@> so does a push to a pr trigger a restart ? i realize there would be some delay , though on the master branch <unka.> was pretty fast . <unka> takes like a day to visit a pr if ever </s>
+<s> <user> <unka@> yes , landscape gets a github push hook to trigger the check , so it should start within a few seconds . it 's a bit wobbly right now . it also polls every 5 minutes or so ( legacy behaviour for before i set up the push hooks to trigger on <unka> ) </s>
+<s> <user> does this ( push to trigger ) work for the old <unka> too ? </s>
+<s> <user> kinda , if they get a new pull request than yes </s>
+<s> <user> er , sorry </s>
+<s> <user> if they get a new commit </s>
+<s> <user> thats awesome ! i 'll try out ;) </s>
+<s> <user> this one did n't get a report for half an hour : URL/https:/ URL/github.com/ <unk#a-/> still pending or something up there ? </s>
+<s> <user> slow travis today :-/ </s>
+<s> <user> maybe we should ask around if someone wants to pay 250 usd month for more travis power ^^ </s>
+<s> <user> i sort of broke it a bit but it 's running now </s>
+<s> <user> </s>
+<s> <user> <unka@> i think you can manually restart it ... in the travis build page there is an option to log in , once logged in you should get the option for restarting it ... </s>
+<s> <user> incase you did n't know that already ... </s>
+<s> <user> <unka@> i know i can restart travis . the problem with travis is not that it is not restarting , the problem is that is is queueing . </s>
+<s> <user> ah ... okay ! sorry for the noise ! </s>
+<s> <user> closing issues as <unka-> is fun . anyhow , i gotta run . ttyl </s>
+<s> <user> btw , which time zone are you on <unka@> ? </s>
+<s> <user> see ya ! i am in india <unk#a+:> :d </s>
+<s> <user> just throwing in a minor suggestion ! we could perhaps have another ci build and test in parallel ... like <unka> <unka> ... let me know your opinion about that when you get online again !! both seem to be very easy to setup ! </s>
+<s> <user> ( i have nothing to do with this repository but i 'm a big fan of <unka-> ) </s>
+<s> <user> thanks for the suggestion ! :) </s>

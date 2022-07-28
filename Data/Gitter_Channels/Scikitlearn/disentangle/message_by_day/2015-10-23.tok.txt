@@ -1,0 +1,20 @@
+<s> <user> <unka@> ... URL/http:/ <unka./> <unka-/> ... looking forward to it ! </s>
+<s> <user> <unka@> cool :) glad to have you there ! </s>
+<s> <user> will we have <unka> by today ? :) </s>
+<s> <user> and isolation forest ? </s>
+<s> <user> that would be very nice </s>
+<s> <user> sadly <unka> seems unlikely imo - lots of hard choices but it is getting closer . if there are other things to be reviewed i can take a look - i am also hopeful the <unka> fixes by <unka> will go today ( if they did n't last night ! ) </s>
+<s> <user> it 's been more than a year since the <unka> <unka> have started :/ </s>
+<s> <user> if these decisions are only about internals , we should try to be pragmatic at some point </s>
+<s> <user> yes it is mostly logical - some of the core logic is spread over several classes which makes it hard to reason about its behavior especially w.r.t to stopping <unka> . but andy has a student on it full-time ( ish ) who is quite good so i do n't think it will be much longer </s>
+<s> <user> and the documentation is basically done imo - which was a huge chunk of the work </s>
+<s> <user> anyone wants to review <unk##> ? </s>
+<s> <user> <unka@> but if it 's only <unka> , we do n't really need to do that for merging if it 's not public api , right ? </s>
+<s> <user> <unka@> things are looking positive for the <unka> - you might get your wish :d </s>
+<s> <user> \o/ </s>
+<s> <user> <unk##> is very close if anyone wants to review </s>
+<s> <user> we need to do <unk##> if anyone is looking for an issue to pick up </s>
+<s> <user> it 's needed for 0.17 </s>
+<s> <user> URL/https:/ URL/github.com/ <unk#a#-/> </s>
+<s> <user> URL/https:/ URL/github.com/ <unk#a#-/> </s>
+<s> <user> <unka@> it 's gonna happen . if travis ever runs </s>

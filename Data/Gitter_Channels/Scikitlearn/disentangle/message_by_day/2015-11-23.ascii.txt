@@ -1,0 +1,23 @@
+[03:16] <53810862048862e761fa2887> Hello  I have been trying a lot of stuff to get #5689 to pass the tests. I am not able to reproduce the failures locally using `conda`.  I have narrowed the failure down to one line Any ideas why this commit https://github.com/vighneshbirodkar/scikit-learn/commit/02bf4df3ccd9f2eec5f1c0519caff7fbe7257969 causes this test https://travis-ci.org/scikit-learn/scikit-learn/builds/92637403 to fail ?
+[15:12] <5653208916b6c7089cbbd390> Hi anyone know word2vec ?
+[15:13] <5653208916b6c7089cbbd390> I cant import Word2vec in python. Am facing error File "/usr/local/lib/python2.7/dist-packages/gensim-0.12.3-py2.7-linux-x86_64.egg/gensim/models/word2vec.py", line 690, in train     raise RuntimeError("you must first build vocabulary before training the model") RuntimeError: you must first build vocabulary before training the model
+[15:13] <5653208916b6c7089cbbd390> Kindly any one help me
+[15:13] <53135b495e986b0712efc453> Could you post a full code snippet?
+[15:13] <5653208916b6c7089cbbd390> ya sure 
+[15:14] <53135b495e986b0712efc453> If its too long (>10 lines) use pastebin... :)
+[15:16] <5653208916b6c7089cbbd390> Traceback (most recent call last):   File "<pyshell#0>", line 1, in <module>     import word2vec   File "word2vec.py", line 14, in <module>     model = word2vec.Word2Vec(sentences, size=100, window=4, min_count=1, workers=4)   File "/usr/local/lib/python2.7/dist-packages/gensim-0.12.3-py2.7-linux-x86_64.egg/gensim/models/word2vec.py", line 432, in __init__     self.train(sentences)
+[15:16] <5653208916b6c7089cbbd390> File "/usr/local/lib/python2.7/dist-packages/gensim-0.12.3-py2.7-linux-x86_64.egg/gensim/models/word2vec.py", line 690, in train     raise RuntimeError("you must first build vocabulary before training the model") RuntimeError: you must first build vocabulary before training the model
+[15:22] <53135b495e986b0712efc453> Oh I am sorry I didn't realize that you were asking about the library `word2vec`... This chat room is about scikit-learn :) This is not the correct place to ask... You would probably be better off, asking them at their mailing list... sorry :)
+[15:23] <5653208916b6c7089cbbd390> okay :+1: 
+[15:24] <5653208916b6c7089cbbd390> i searched there is no room for Word2vec and gensim :(
+[15:25] <53135b495e986b0712efc453> You could try - here - https://groups.google.com/forum/#!forum/gensim or here - https://radimrehurek.com/gensim/support.html :)
+[15:26] <5653208916b6c7089cbbd390> Thank you so much :+1:  :)
+[15:26] <53135b495e986b0712efc453> :)
+[15:33] <54e07d6515522ed4b3dc0858> @Rahulvks if you follow the directions in this blog post it should work: http://rare-technologies.com/word2vec-tutorial/
+[15:34] <54e07d6515522ed4b3dc0858> in particular, I suspect you are missing the middle step here: ``` >>> model = gensim.models.Word2Vec() # an empty model, no training >>> model.build_vocab(some_sentences)  # can be a non-repeatable, 1-pass generator >>> model.train(other_sentences)  # can be a non-repeatable, 1-pass generator ```
+[19:34] <53135b495e986b0712efc453> @vigneshbirodkar  did u try pdb?? Its good sometimes to debug frame by frame... Its a bit irritating to get started with but its worth it... (Just a humble suggestion ;) )
+[20:12] <53810862048862e761fa2887> @rvraghav93 I would have done that, but the tests don't fail on my system. 
+[20:16] <53135b495e986b0712efc453> Ah that's a drat... Only otherway is to skip all other tests temporarily and also skip 2.6, 2.7 tests and ram Travis till u figure it out :p (if u run only this one... u can run it in a minute I think) 
+[20:17] <53810862048862e761fa2887> I have narrowed down the failure to one line so far, but I still don't know why that line causes those tests to fail
+[20:19] <53135b495e986b0712efc453> The fit line right? Wait I'm bored... I'll try pulling ur branch... 
+[20:21] <53810862048862e761fa2887> Ok. Thanks. Make sure you go to that commit the last 2 or 3 commits I have been trying other stuff

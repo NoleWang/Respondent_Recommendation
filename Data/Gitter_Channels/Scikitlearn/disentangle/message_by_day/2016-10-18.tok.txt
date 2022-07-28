@@ -1,0 +1,2 @@
+<s> <user> decision trees support <unka> data or do i have to convert <unka> data into numbers ? </s>
+<s> <user> you have to convert <unka> data into numbers </s>

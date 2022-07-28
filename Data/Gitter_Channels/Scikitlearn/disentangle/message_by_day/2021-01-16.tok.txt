@@ -1,0 +1,5 @@
+<s> <user> hi , i 'm wondering why this test is checking for <unk#a> specifically ( as opposed <unka.`> == " <unka"`> )? URL/https:/ URL/github.com/ <unk#a#-./_> </s>
+<s> <user> <unka@> no real reason . this is typically the kind of check that 's probably a bit too strict for <unka-> <unka> . we're working on making the <unka_`> suite less restrictive ( URL/https:/ URL/github.com/ <unk#a-/> ). btw <unka@> , any progress on that ? ( i do n't mean to rush you by any means , just wondering :) ) </s>
+<s> <user> great , i left a comment on that pr for the record . </s>
+<s> <user> would there be any chance that <unka> might be relaxed as well ? there are several checks that check <unka/> to <unk#a-<> , which makes it very flaky when the <unka> internally uses <unk#<=> bit precision . </s>
+<s> <user> <unka@> do you mean like this : <unka`> <unka(.> , [ 1 , 2 , 3 , 4.5 ]) <unka(.> ) # [ 1.1 , 2.3 , 2.7 , 4.4 ] <unk`> ? </s>

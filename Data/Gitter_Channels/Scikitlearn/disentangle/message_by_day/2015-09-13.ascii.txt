@@ -1,0 +1,39 @@
+[00:58] <54d4a1d6db8155e6700f853b> @ogrisel the MLP is good to go, too, I think. do you want to merge it after release or before? I don't really see a reason not to merge now.
+[14:02] <553e8e1015522ed4b3df97f7> Hey guys, can we merge this? https://github.com/scikit-learn/scikit-learn/pull/4525
+[15:25] <54d4a1d6db8155e6700f853b> I think so. You have my +!
+[15:25] <54d4a1d6db8155e6700f853b> +1
+[15:28] <55901c1b15522ed4b3e2f949> I'm taking a quick look as well
+[15:30] <55901c1b15522ed4b3e2f949> Looks great, thanks for the work!
+[15:32] <55901c1b15522ed4b3e2f949> @rvraghav93 what is the status of your issue? I have a windows machine, I can take a quick look.
+[15:40] <54d4a1d6db8155e6700f853b> which issue is that?
+[15:43] <55901c1b15522ed4b3e2f949> I'm not sure, I just saw Olivier asked if he had a windows machine to reproduce an Appveyor issue,.
+[15:46] <54d4a1d6db8155e6700f853b> ah that is the joblib one that keeps appveyor from failing
+[15:47] <54d4a1d6db8155e6700f853b> just run the test suite
+[15:47] <55901c1b15522ed4b3e2f949> no, the joblib issue is a separate issue
+[15:48] <54d4a1d6db8155e6700f853b> ok then I don't know which one we are talking about
+[15:48] <55901c1b15522ed4b3e2f949> > [![appveyor2.png](https://files.gitter.im/scikit-learn/scikit-learn/gKbL/thumb/appveyor2.png)](https://files.gitter.im/scikit-learn/scikit-learn/gKbL/appveyor2.png)
+[16:01] <53135b495e986b0712efc453> @jmschrei thanks a lot!! In my PR #4294 the tests in the new module `model_selection` are not being run in appveyor... Any help would be really awesome!! :) I could use virtual box... but earlier I had little success doing so :(
+[16:03] <55901c1b15522ed4b3e2f949> That is a lot of files changed.
+[16:04] <53135b495e986b0712efc453> Yea :grin: 
+[16:06] <55901c1b15522ed4b3e2f949> You'll squash all these commits soon?
+[16:06] <53135b495e986b0712efc453> You can replicate that by simply creating a foo folder and a tests directory with a simple failing test :)
+[16:06] <53135b495e986b0712efc453> Yes that's a whole lot of commits ;) I'll probably squash it to less than 5
+[16:07] <53135b495e986b0712efc453> It will help tracking things easier.... 
+[16:09] <55901c1b15522ed4b3e2f949> I don't understand, is this a PR meant to refactor CV or reorganize the modules?
+[16:10] <53135b495e986b0712efc453> Both :p
+[16:11] <53135b495e986b0712efc453> Refractor as in making then data dependent... and reorganise into `model_selection` folder
+[16:11] <53135b495e986b0712efc453> *independent
+[16:13] <55901c1b15522ed4b3e2f949> Alright, I'm just going to look for bugs, this conversation is too long for me.
+[16:13] <53135b495e986b0712efc453> Haha okay :)
+[16:30] <55901c1b15522ed4b3e2f949> After months of developing in Ubuntu, I am remembering why Windows is such a pain.
+[16:34] <53135b495e986b0712efc453> ^_^
+[16:43] <54e07d6515522ed4b3dc0858> @rvraghav93 could you clarify what about the labels param I should comment on?
+[16:48] <55901c1b15522ed4b3e2f949> I am getting 12 failures
+[16:48] <55901c1b15522ed4b3e2f949> Mostly related to string format
+[16:48] <55901c1b15522ed4b3e2f949> Is this what you are getting, @rvraghav93 
+[17:15] <55901c1b15522ed4b3e2f949> These errors seem to stem from getting longs instead of ints
+[17:15] <55901c1b15522ed4b3e2f949> This manifests as getting (10L, 2L) instead of (10, 2)
+[17:37] <54d4a1d6db8155e6700f853b> I think we should fix these. @ogrisel didn't want to fix them I think.
+[17:37] <54d4a1d6db8155e6700f853b> I mean it does add clutter to the docstrings, but it is not rendered on the webpage
+[18:19] <55901c1b15522ed4b3e2f949> Is there any way to force numpy to use ints? I'm not finding anything, unfortunately.
+[18:19] <55901c1b15522ed4b3e2f949> In the shape, I mean.

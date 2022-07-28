@@ -1,0 +1,35 @@
+[08:42] <57908b05c2f0db084a23fc9a> Has anyone used Amazon Machine Learning... I am sorry if I have asked question in wrong chat room
+--------------------------------------------------------------------------------------------------
+[14:33] <56b0a775e610378809bf7a7c> Is there any problems with travis, appveyor, ... ?
+[14:34] <56b0a775e610378809bf7a7c> The new PR are not tested
+--------------------------------------------------------------------------------------------------
+[14:46] <54d4a1d6db8155e6700f853b> @87sanchavan_twitter yeah this is not a good place to ask. Go to stackoverflow
+[14:46] <54d4a1d6db8155e6700f853b> @tguillemot I noticed that yesterday. Can you point me towards a PR?
+--------------------------------------------------------------------------------------------------
+[14:48] <56b0a775e610378809bf7a7c> @amueller #6651 #7101
+[14:48] <56b0a775e610378809bf7a7c> That's strange because I saw that the travis works on it on the activity (on the right)
+--------------------------------------------------------------------------------------------------
+[15:13] <54d4a1d6db8155e6700f853b> fuck that was me
+--------------------------------------------------------------------------------------------------
+[15:14] <56b0a775e610378809bf7a7c> @amueller No pb ;)
+[15:14] <54d4a1d6db8155e6700f853b> Need to check with @ogrisel
+[15:17] <54d4a1d6db8155e6700f853b> @tguillemot can you try pushing again to one of the PRs?
+[15:21] <54d4a1d6db8155e6700f853b> can you try again?
+--------------------------------------------------------------------------------------------------
+[15:19] <56b0a775e610378809bf7a7c> @amueller Travis was launched on #6651
+[15:19] <56b0a775e610378809bf7a7c> but not circle or appveyor
+[15:21] <56b0a775e610378809bf7a7c> Just to know what was the problem ?
+[15:22] <56b0a775e610378809bf7a7c> ok for appveyor and travis
+--------------------------------------------------------------------------------------------------
+[15:20] <54d4a1d6db8155e6700f853b> now I only need to find out how access to appveyor and coveralls and circleci was granted
+[15:21] <56b0a775e610378809bf7a7c> ;)
+--------------------------------------------------------------------------------------------------
+[15:52] <54d4a1d6db8155e6700f853b> and again
+--------------------------------------------------------------------------------------------------
+[17:46] <54d4a1d6db8155e6700f853b> hm looks like I took away my ability to restart travis or clear the cache
+[17:46] <54d4a1d6db8155e6700f853b> great
+[17:48] <54d4a1d6db8155e6700f853b> ah, fixed
+--------------------------------------------------------------------------------------------------
+[19:50] <54d4a1d6db8155e6700f853b> @raghavrv you around?
+[19:51] <54d4a1d6db8155e6700f853b> @raghavrv Where is the warm start used in the gradient boosting CV?
+--------------------------------------------------------------------------------------------------

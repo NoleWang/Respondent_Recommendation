@@ -1,0 +1,3 @@
+<s> <user> <unka@> </s>
+<s> <user> <unka@> sure ! i have it on my to do list . just browsed it and seems an impressive work . eager to read it </s>
+<s> <user> <unka@> besides of books , i would recommend anyone visiting the materials you have posted regarding your university course on machine learning . i specially liked the fact of introducing <unka> tests , <unka> integration engines and git as essentials . keep up the good work ! </s>

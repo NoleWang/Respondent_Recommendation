@@ -1,0 +1,1 @@
+<s> <user> hello , i tried to use <unka> as cv for <unka> . i have two sets , first is for training and second is for validation . i made <unka> array so that for training set <unka> i put -1 and 0 for testing set . i get reasonable results to <unka._> , but when i test it with the second ( testing ) set , i get <unk#.> which is clearly not correct . why is that ? </s>

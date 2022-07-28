@@ -1,0 +1,2 @@
+<s> <user> python 2.7 does not support many modules that are supported by python 3.6 and other newer versions </s>
+<s> <user> <unka-@> on windows i would recommend you to use <unka> environments : URL/https:/ <unka./> <unka-./> ( or alternatively python 3 builtin venv module ) to get a fine control on the list of packages installed in the currently active environment </s>

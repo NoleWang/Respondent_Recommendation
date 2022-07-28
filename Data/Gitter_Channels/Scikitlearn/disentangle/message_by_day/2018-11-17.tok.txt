@@ -1,0 +1,3 @@
+<s> <user> hello . i am new to this community . i would love to contribute . can someone help me start </s>
+<s> <user> <unk#a@> the contributing guide ( URL/https:/ <unka-./> <unka./> ) is a very good place to start , and then you can try some of the " good first issue " ( URL/https:/ URL/github.com/ <unk#a%+-/=?> ) ones . </s>
+<s> <user> thanks i will start </s>

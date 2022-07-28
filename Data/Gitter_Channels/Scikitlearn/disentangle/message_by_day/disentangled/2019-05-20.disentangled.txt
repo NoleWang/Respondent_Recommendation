@@ -1,0 +1,12 @@
+[08:57] <58de4778d73408ce4f551e04> Hello all, I have a question regarding joblib's "vendor" distribution present in scikit-learn `0.20.X` : is it up to date with the latest release of joblib? I know that the latest version of scikit-learn (`0.21.X` and above) are now using joblib as a dependency directly but I need to use scikit-learn `0.20.X` for python 2.7 support. Thank you! :)
+[09:00] <58de4778d73408ce4f551e04> Thank you @ogrisel for this quick answer!
+--------------------------------------------------------------------------------------------------
+[08:59] <541a528b163965c9bc2053de> @jjerphan scikit-learn 0.20.3 is embedding joblib 0.13.0: https://github.com/scikit-learn/scikit-learn/blob/0.20.X/sklearn/externals/joblib/__init__.py#L109
+--------------------------------------------------------------------------------------------------
+[09:01] <541a528b163965c9bc2053de> if we release 0.20.4 we should think of upgrading the joblib version as well. You can also set the `SKLEARN_JOBLIB_SITE=1` environment variable to use an independently installed version of joblib instead of the vendored version.
+[09:01] <541a528b163965c9bc2053de> Note however that future versions of joblib might stop supporting python 2 as well, so better start thinking of upgrading to Python 3 in any case :)
+[09:02] <58de4778d73408ce4f551e04> Thanks for the tips ; I would like to upgrade but I sadly can't in my setup <unconvertable> sigh. :)
+[09:03] <58de4778d73408ce4f551e04> Are there any significant changes between joblib 0.13.0 and 0.13.2 ?
+[09:04] <541a528b163965c9bc2053de> Potentially important bugfixes: https://github.com/joblib/joblib/blob/master/CHANGES.rst
+[09:05] <58de4778d73408ce4f551e04> Yes, I just came across this.
+--------------------------------------------------------------------------------------------------

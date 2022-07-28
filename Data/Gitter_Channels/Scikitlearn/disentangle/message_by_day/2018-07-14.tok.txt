@@ -1,0 +1,50 @@
+<s> <user> <unka> !!! </s>
+<s> <user> hi all , i would like to know whether there is interest in adding a least absolute deviation regression with l1 penalty to <unka> . the optimization problem is very similar to the <unka> one , but it uses a l1 likelihood rather than l2 . </s>
+<s> <user> <unka@> that 's probably a better question for the mailing list . what 's the application ? robust regression ? how does it behave differently from <unka> in practice ? </s>
+<s> <user> <unka@> yes , thats mostly for robust regression . i dont have the answer on how it compares to <unka> right now , but i would guess least absolute deviation would work better on sparse settings . i will investigate that and follow up on the mailing list . thanks ! </s>
+<s> <user> :) </s>
+<s> <user> we're in 105 for now </s>
+<s> <user> a list of <unka/> <unka> are tagged " sprint " which could be good selection for the sprint . </s>
+<s> <user> URL/https:/ URL/github.com/ <unk#a%+-/=?> </s>
+<s> <user> also if you're new the ones tagged " good first issue " URL/https:/ URL/github.com/ <unk#a%+-/=?> </s>
+<s> <user> thanks <unka@> and <unka@> ! </s>
+<s> <user> i have a question about the issue here : URL/https:/ URL/github.com/ <unk#a-/> where should docker be run ? URL/https:/ URL/github.com/ <unk#a#-./> i assume that we should copy over install and testing scripts and run in a docker container , is that the right path ? </s>
+<s> <user> ran tests in the <unk#a> bit docker image . 13 failed , investigating why first </s>
+<s> <user> <unka@> yeah i think travis </s>
+<s> <user> <unka@> olivier is at the back of the room ;) </s>
+<s> <user> <unka@> you can report the errors you get in that issue about 32bit bits in any <unka-> it might be helpful for future reference .. </s>
+<s> <user> thanks i posted them here : URL/https:/ URL/github.com/ <unk#a-/> waiting for travis to build but i thikn i can start trying to debug locally </s>
+<s> <user> i 'm hungry </s>
+<s> <user> food ? </s>
+<s> <user> i agree this is time </s>
+<s> <user> :) </s>
+<s> <user> where should we go ? </s>
+<s> <user> whatever works where there is a <unka> option </s>
+<s> <user> the vietnamese place or the indian place ? or the food <unka> if they are there ? </s>
+<s> <user> can someone merge this please ? URL/https:/ URL/github.com/ <unk#a#-/> </s>
+<s> <user> done </s>
+<s> <user> URL/https:/ <unka-./> <unk#a./:> </s>
+<s> <user> can someone merge this one URL/https:/ URL/github.com/ <unk#a-/> </s>
+<s> <user> :) </s>
+<s> <user> <unka@> if you are ok with URL/https:/ URL/github.com/ <unk#a-/> should we merge it ? </s>
+<s> <user> hi all , quick question : how do i run a single test locally ? for example the <unka> ? thanks ! </s>
+<s> <user> make <unka-> </s>
+<s> <user> or <unka> file </s>
+<s> <user> great , thanks ! </s>
+<s> <user> to run a single test you can also run , <unk`> <unka> <unka/_> .. -k <unka-_> <unk`> providing both the path to the file and a part of the test name will make test collection faster . </s>
+<s> <user> see URL/http:/ <unka-./> <unka#-./> </s>
+<s> <user> URL/https:/ URL/github.com/ <unk#a-/> </s>
+<s> <user> i push some changes <unka@> <unka@> </s>
+<s> <user> james <unka> ADDRESS_( <unka)@_> would like to chat with us about how to make <unka> play nicer with <unka-> . if you have a preferred time today , let me know ! otherwise we 'll probably just drop by at a random time :- ). to sum up , in <unka> something check that the score returned by the metric is a number , so they <unka-> needs to call <unka.`> explicitly which has a bit of <unka> with the rest of their api ( everything is lazy ). </s>
+<s> <user> hi all , i 'm afraid i am still a bit <unka-> ( newbie here ). when running `make <unka`> , i can see errors ( like <unk#a-./:`> : <unka`> ) related to the <unka> in the <unka> , but `make <unka-`> does not surface these . </s>
+<s> <user> <unka@> we you want </s>
+<s> <user> ok , <unka`> <unka./:`> does the trick ! i guess that was in the docs , thanks again ! </s>
+<s> <user> fyi we 'll drop by in 5 -10 minutes </s>
+<s> <user> sorry i missed you <unka@> . </s>
+<s> <user> i merged the python 3.7 abc warning fix in <unk#a.> and triggered a new build on the <unka-/> repo </s>
+<s> <user> if it goes well i can push those wheels to <unka.> </s>
+<s> <user> i 'm getting a <unka> failure when building from source on master </s>
+<s> <user> it 's getting raised from <unka./> </s>
+<s> <user> has anyone else here run into this ? </s>
+<s> <user> sprint will end in 10 minutes </s>
+<s> <user> also : if you want to ask me something , you have 10 minutes because then i 'll f off </s>

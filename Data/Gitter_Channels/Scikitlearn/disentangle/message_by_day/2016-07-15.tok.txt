@@ -1,0 +1,28 @@
+<s> <user> is URL/https:/ URL/github.com/ <unka-/> still the recommended way to read in very large <unka> format files ? it is quote old now and <unka-> has been through many versions in the last 3 years </s>
+<s> <user> <unka@> might still be faster </s>
+<s> <user> <unka@> are you planning to continue work on the <unka> pr ? or would it be okay if i gave a hand ? ( either by push access to your repo or by <unka-> the commits ?) </s>
+<s> <user> <unka@> true </s>
+<s> <user> i have a general ml <unka> question .. i hope this is n't the wrong place . i have data which is labelled into a , b , c , d , e and other . in the end i just want to tell if new data is in <unka-> or other . that is perform a binary <unka> . <unka,> , d and e are very different from each other however . should i build 5 binary <unka> and combine them somehow or just go straight for a binary <unka-> versus other <unka> ? i am using a random forest currently . </s>
+<s> <user> i could try to build a <unka> <unka> but the class sizes are very <unka> and i am not sure how well rf <unka> with that </s>
+<s> <user> is there any tool to lint <unka> ? through working on the tree <unka.> files , ive noticed there are lots of style <unka> ... </s>
+<s> <user> <unka-@> URL/https:/ <unka./> <unk#a-./> </s>
+<s> <user> hmm is there any method that doesnt rely on pycharm ? e.g . <unk#a> <unk#a> or a similar standard </s>
+<s> <user> not that i am aware of sadly </s>
+<s> <user> <unka-@> URL/https:/ <unk#a./> <unk#a-/> </s>
+<s> <user> that 's a pretty up to date complaint </s>
+<s> <user> haha ok , so seems like one doesnt exist sadly . thanks for the help <unka@> :) </s>
+<s> <user> my pleasure .. any idea about my general <unka> query above by any chance ? </s>
+<s> <user> not really sure where the best place is for question like that so sorry it is a tiny bit ot for this <unka> </s>
+<s> <user> ive seen general ml questions here so it should ( ?) be fine ? i dont think rf <unka> very well with <unka> <unka> data ... do you have ample data for each of the classes ? </s>
+<s> <user> well i have millions of other records but only thousands of the <unka-> cases </s>
+<s> <user> is there anything better suited to the task ? </s>
+<s> <user> hmm have you looked into <unka> methods ? </s>
+<s> <user> do you mean just sampling the same record repeatedly ? i never saw the point in that to be honest </s>
+<s> <user> hmm i mean you can try taking a random sample of your data , then fit your model on one set and use a held out set to find good probability <unka> with an roc curve or something ... </s>
+<s> <user> and you dont have to sample the same record repeatedly , but take a random sample of your other classes to generate a synthetic balanced dataset </s>
+<s> <user> this answer on <unka> looks good , could be a starting point for more reading ? URL/http:/ <unka./> <unk#a-/> </s>
+<s> <user> thanks </s>
+<s> <user> " some methods , like random <unka> , do n't need any modifications ." i wonder how true that is </s>
+<s> <user> yeah , same . please let me know what ends up working best for you ? </s>
+<s> <user> there 's also URL/https:/ URL/github.com/ <unka,-/> which will soon become part of <unka-> </s>
+<s> <user> this looks great , thanks for the link <unka@> ! </s>

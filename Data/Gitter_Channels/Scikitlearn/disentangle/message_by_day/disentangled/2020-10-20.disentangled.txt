@@ -1,0 +1,4 @@
+[06:34] <5f8e7722d73408ce4ff1f8ea> HI Team,  I am trying to make a recommendation engine for a food delivery app. I was going through different things like Market Basket Analyisis etc.. Company have huge amount of data for orders from different customers. Could you please help me on where to start?
+--------------------------------------------------------------------------------------------------
+[12:59] <5c790377d73408ce4fb94f40> hello, I am trying to use sklearn linear regression to predict bonuses from enron dataset, and when chaching the score of prediction, I am getting a negative answer, can anyone please tell me the meaning of this
+--------------------------------------------------------------------------------------------------

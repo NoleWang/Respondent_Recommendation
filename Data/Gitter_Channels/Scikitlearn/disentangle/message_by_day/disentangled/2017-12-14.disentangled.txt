@@ -1,0 +1,20 @@
+[08:48] <5a1450bed73408ce4f7fa504> Hi guys! I want to contribute to the scikit learn open source. I am new to this. Can anyone give me any direction as to where to start with?
+[08:50] <5a1450bed73408ce4f7fa504> nice! a lot of information!! thanks  @ogrisel  !
+[08:50] <541a528b163965c9bc2053de> The best way to contribute is to actually use scikit-learn for a project of yours to identify which part needs improving from your users point of view.
+[08:50] <5a1450bed73408ce4f7fa504> I have been reading the documentation and want to use it for kaggle projects.
+[08:51] <5a1450bed73408ce4f7fa504> have not used it extensively besides from some classification and regression tasks
+--------------------------------------------------------------------------------------------------
+[08:49] <541a528b163965c9bc2053de> @ashish-ram have a look at the contributors guide: http://scikit-learn.org/stable/developers/contributing.html
+--------------------------------------------------------------------------------------------------
+[17:58] <55d21ee30fc9f982beadabb8> @gxyd  `pytest  -s -v ` will display something only if the test fail. You can always put a `raise`after your printing :) or use a proper debugger maybe
+--------------------------------------------------------------------------------------------------
+[17:59] <53eb987c107e137846baa89d> No, I think it worked. None of the test failed, but I simply put a `print` statement and it worked just fine.
+[18:01] <53eb987c107e137846baa89d> I am thinking you confuse that with something else.
+--------------------------------------------------------------------------------------------------
+[18:04] <55d21ee30fc9f982beadabb8> ups right, this is `-l` that does show only at `raise`
+--------------------------------------------------------------------------------------------------
+[18:05] <53eb987c107e137846baa89d> Seeing in documentation? (Refer me to it if you are).
+--------------------------------------------------------------------------------------------------
+[18:07] <55d21ee30fc9f982beadabb8> `-l, --showlocals      show locals in tracebacks (disabled by default).`
+[18:10] <53eb987c107e137846baa89d> That's also seems useful, thanks @glemaitre .
+--------------------------------------------------------------------------------------------------

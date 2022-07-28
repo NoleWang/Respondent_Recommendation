@@ -1,0 +1,14 @@
+[08:22] <57a0575540f3a6eec05d8bc7> can anyone pleaes tell me where should I start for data science
+--------------------------------------------------------------------------------------------------
+[08:23] <56b80528e610378809c05a48> Quora is your friend :)  https://www.quora.com/How-can-I-become-a-data-scientist-1
+[08:25] <56b80528e610378809c05a48> Its better to ask these kind of questions on quora (and youll get more responses), this place is more specific for scikit-learn development
+--------------------------------------------------------------------------------------------------
+[08:41] <57a0575540f3a6eec05d8bc7> @yenchenlin Thanks for this But I have concern with language whether I should go with python or R
+[08:41] <56b80528e610378809c05a48> I personally dont have much experience with R, so I cant answer this question, sorry.
+--------------------------------------------------------------------------------------------------
+[08:46] <57a0575540f3a6eec05d8bc7> @yenchenlin Currently I am working with python  and I am new to machine learning and for that I was asking
+--------------------------------------------------------------------------------------------------
+[10:02] <5644994d16b6c7089cba759b> correct choice.
+--------------------------------------------------------------------------------------------------
+[18:26] <54d4a1d6db8155e6700f853b> @leem2714 it depends a lot on what you want to do. Are you more interested in prediction or inference? What kind of methods would you like to use?
+--------------------------------------------------------------------------------------------------

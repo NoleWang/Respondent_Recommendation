@@ -1,0 +1,20 @@
+<s> <user> thanks <unka@> , that 's what i was thinking of , though i have several other <unka-> utils that i 've included in my package in order to avoid dependency <unka-> . only a few of them are actually used so it might not be that heavy , i guess , if i was to pick out only the ones that matter . maybe once i get <unk#.> released i'd think about making it more sensible on the utils . </s>
+<s> <user> <unka@> .. i think you know the appropriate emoji for dependency <unka-> <unka:> : </s>
+<s> <user> haha </s>
+<s> <user> and believe me , i have been there , more than once ;) </s>
+<s> <user> <unka@> the <unk##> issue is not really with <unka> , it is with <unka> , which does n't support read-only buffers . so my question was more : why does <unka> produce a read-only buffer there ? </s>
+<s> <user> ah , i have n't read your comment there , sorry </s>
+<s> <user> <unka@> indeed i read some more discussions in this thread : URL/https:/ <unka./> <unk#a-./> and then replied the following : URL/https:/ URL/github.com/ <unk#a#-/> </s>
+<s> <user> makes sense , but we can also not wait for the fix in <unka> . </s>
+<s> <user> <unka@> so i think we should maybe just copy the df in the " rare " situation that happens and throw a warning that people should use <unka.> to avoid the copy ? </s>
+<s> <user> calling <unka.`> will just force a copy if am not mistaken . the " real " fix can only be done in <unka> by using the <unka> type instead of a typed <unka> ( or even better in <unka> by adding support for readonly typed <unka> ). </s>
+<s> <user> i do n't think values will force a copy always . it is not writeable here , so i do n't think a copy was made . well the real fix is clearly in <unka> but we have to be backward compatible , so we need to do a workaround now matter what </s>
+<s> <user> indeed <unka.`> does not copy for single block data frames . but it does for multiple blocks dfs </s>
+<s> <user> can you reproduce the error with multiple block dfs ? </s>
+<s> <user> i posted my try at <unk##> </s>
+<s> <user> i cannot reproduce the error without manually assigning a readonly <unka> to <unk#a.[]_`> or replicating what the <unka.> class does ( that is replacing <unka.> instances by <unka.> instances at <unka> time ). </s>
+<s> <user> let me work on fixing the <unka.> with <unka'=_`> on structures that have numpy arrays with <unka=> inside . </s>
+<s> <user> in <unka> master </s>
+<s> <user> <unka@> do you know anything about the issue in <unk##> ? some warnings are not raised caught .... </s>
+<s> <user> ok going to bed now . tomorrow is second day of <unka> london . i gave a tutorial today . tomorrow i will just attend the conf and maybe work on <unka> issues if the talks are boring . </s>
+<s> <user> see you </s>

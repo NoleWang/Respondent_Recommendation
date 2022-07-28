@@ -1,0 +1,13 @@
+<s> <user> when i use <unka`> , how can i find the actual parameters being used for a <unka> ? </s>
+<s> <user> the <unka_`> method seems to print everything in the search grid </s>
+<s> <user> <unka._`> after fit </s>
+<s> <user> ah ok </s>
+<s> <user> thanks olivier :) </s>
+<s> <user> test <unk##> </s>
+<s> <user> i 'm using <unka> <unk#a'.> . i think i found a bug - when using <unka.> , if xtx is singular , the problem is still solved but <unka_> is ignored . is this worth filing an issue for ? i tried searching to see if this has been <unka/> but i did n't find anything </s>
+<s> <user> <unka@> that 's a *really* old version and a beta release . can you please update to master and see if the problem persists ? </s>
+<s> <user> yea i 'll check </s>
+<s> <user> ok cool looks like it 's correct in <unka> <unk#.> </s>
+<s> <user> great :) </s>
+<s> <user> i 'm close to defeating my arch enemy , dot : URL/https:/ <unka-./> <unk#a-./> </s>
+<s> <user> ( pure matplotlib ) </s>

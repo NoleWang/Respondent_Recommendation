@@ -1,0 +1,54 @@
+<s> <user> hello - are we allowed to put links to so questions here ? </s>
+<s> <user> <unk#a@> you can but i would n't encourage it , i guess ? </s>
+<s> <user> generally it 's better to ask on stackoverflow </s>
+<s> <user> <unka@> yes understood </s>
+<s> <user> i had an issue with <unka> </s>
+<s> <user> can i ask here ? </s>
+<s> <user> i mean if you're about to ask the same question again then post the so link ;) </s>
+<s> <user> <unka@> ok then here you go - URL/https:/ URL/stackoverflow.com/ <unk#a-/> </s>
+<s> <user> what 's the type of <unka.> ? </s>
+<s> <user> and what 's the type of <unka`> ? </s>
+<s> <user> so like in scipy it must be the coordinates of point </s>
+<s> <user> in this case x and y </s>
+<s> <user> no the type </s>
+<s> <user> <unka(.> ), <unka(> ) </s>
+<s> <user> hang on let me run my toy example </s>
+<s> <user> ok that 's what i thought . <unka.> is a memory view , the docs are wrong :-/ </s>
+<s> <user> <unka(> ) is a list </s>
+<s> <user> you can use " points " instead of " <unka.> " </s>
+<s> <user> so in <unka> the <unka.> equivalent is numpy <unka> </s>
+<s> <user> yeah here it 's not . i opened URL/https:/ URL/github.com/ <unk#a-/> </s>
+<s> <user> but you already have the numpy array , it 's just points </s>
+<s> <user> <unka`> that is </s>
+<s> <user> <unka@> an honor to converse with the author of <unka-> ! </s>
+<s> <user> thank you for opening the issue on github !! </s>
+<s> <user> i 'm not " the author " by any means </s>
+<s> <user> <unka-> ? </s>
+<s> <user> i guess </s>
+<s> <user> together with like 500 other people or something ;) </s>
+<s> <user> i 'm the person that opened the most issues , i think . dubious honor . </s>
+<s> <user> thank you for opening mine :) </s>
+<s> <user> you can just do <unka.> on <unka.> to get a numpy array for now , but you already have the array as <unka`> so there 's really no need ... </s>
+<s> <user> yes thanks . i have accepted your answer on so as well :) hopefully i will be notified that the problem has been fixed so i can reinstall <unka-> </s>
+<s> <user> i had another question . i had a offline conversation with another core developer of <unka-> </s>
+<s> <user> i want to use <unka> with URL/https:/ URL/en.wikipedia.org/ <unka-/_> and that core developer warned me against it and asked me to use <unka> instead . </s>
+<s> <user> any reason why ? </s>
+<s> <user> <unka> provides great circle distances and i can define a custom metric . what is the objection in doing this ? </s>
+<s> <user> that wiki pages says the <unka> formula is more stable ? </s>
+<s> <user> not my area of expertise but look at the wiki page </s>
+<s> <user> that 's probably what <unka> is using or should be using ? </s>
+<s> <user> not sure what <unka> is doing - URL/https:/ <unka./> <unka#-./> </s>
+<s> <user> but the author told me it is the most accurate </s>
+<s> <user> can i raise this as a issue on github as people on my project want to use <unka> ? </s>
+<s> <user> you can ask on <unka> ? who did you talk to as <unka> ? jake ? </s>
+<s> <user> yes you are right . i did ask jake </s>
+<s> <user> no i mean i do not understand how asking <unka> would help . the question is why i cannot use <unka> 's great circle distance with <unka-> </s>
+<s> <user> i think you can </s>
+<s> <user> ask jake what he meant lol </s>
+<s> <user> jake is unlikely to reply to an issue on github </s>
+<s> <user> by the way i used points in that code example and i get another error <unk-`> file " <unka.> " , line 23 , in main <unk#a,> = <unka.[]> attributeerror : <unka'._> object has no attribute <unka'`> </s>
+<s> <user> <unka.> gives the same exception as the one i showed on so </s>
+<s> <user> not <unka.> . your array points </s>
+<s> <user> aah ok </s>
+<s> <user> i think <unka> uses the <unka> formula </s>
+<s> <user> hello </s>

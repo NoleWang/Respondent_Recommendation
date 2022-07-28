@@ -1,0 +1,6 @@
+[08:16] <5571fe1015522ed4b3e17d90> @michaelaye Looks like the / at the end is the problem. http://scikit-learn.org/stable/faq.html works. I'll take a look at fixing the link on the main page.
+[11:55] <5571fe1015522ed4b3e17d90> @michaelaye the FAQ link at the bottom of the page is now fixed on the dev doc: http://scikit-learn.org/dev/
+--------------------------------------------------------------------------------------------------
+[21:09] <5395efa3a9176b500d1cd7fb> Ok, but the link on /stable is still broken, FYI.
+[21:10] <5395efa3a9176b500d1cd7fb> but good to know that it actually works without the /
+--------------------------------------------------------------------------------------------------

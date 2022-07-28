@@ -1,0 +1,11 @@
+[05:44] <5a2c58c8d73408ce4f8294ba> Do you mean something which has never been done with scikit-learn or something that has never been done in general? If the former then just look for feature request. If the latter I think it is safe to say all simple things have been done long ago.
+--------------------------------------------------------------------------------------------------
+[05:45] <5a429497d73408ce4f84e60d> Yeah its all done
+--------------------------------------------------------------------------------------------------
+[05:49] <5a2c58c8d73408ce4f8294ba> Well the intersection of novel and simple is nearly nonexistant in most developed fields
+--------------------------------------------------------------------------------------------------
+[12:13] <58bd1933d73408ce4f4ea7d6> am i supposed to know the internal functioning of all the scikit learn models?
+[12:14] <58bd1933d73408ce4f4ea7d6> because there are too many models
+[12:14] <58bd1933d73408ce4f4ea7d6> i just did the andrew ng course on coursera
+[12:14] <58bd1933d73408ce4f4ea7d6> he taught a few basic things.
+--------------------------------------------------------------------------------------------------

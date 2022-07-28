@@ -1,0 +1,10 @@
+<s> <user> hi , first of all , wish you all a happy new year . i am new to <unka> learn . i wanted to ask for help in working on issues which i have the ability to contribute . the issue regarding [ <unk#a(-./:]> ) seemed nice thing to work on . please let you know about your thoughts . i would be happy to work any other issue if this is beyond my scope . thanks :) </s>
+<s> <user> could you ping <unka@> and ask him if he 's still working on it ? if not please feel free to take it up . </s>
+<s> <user> thank you so much . will do that . </s>
+<s> <user> it would also help if some idea can be given regarding how to proceed . sorry for my doubts on trivial issues , but i am new to the api . afaik , i see that the multi class <unka> are right now implemented to turn a binary <unka> into a <unka> <unka> . this issue is intended to implement meta <unka> to turn binary <unka> to <unka> <unka> . are multi output <unka> same as the <unka-> <unka> like dt , rf ? and also let me know if it is better to ask the doubts in here or do it at some other place ? </s>
+<s> <user> the outline of what needs to be done here is - * make <unka_`> numbers of single output <unka> * train using <unka`> ( <unka_> x <unka)_`> , <unka`> ( <unka_> x <unka)_`> * predict using <unka(_`> x <unka)_`> * for <unka_`> in <unka()_`> - -> <unka_`> = <unka_`> , where <unka_`> is of shape <unka(_`> x <unk#)`> * vertically stack all the <unka_`> -s to get the final <unka_`> of shape <unka(_`> x <unka)_`> </s>
+<s> <user> and as far are <unka.`> is concerned , it should provide a meta <unka> that changes <unka/> single output to <unka/> <unka> ... </s>
+<s> <user> so essentially if you want <unka_> to be made a <unka> <unka> you should be able to do both - * <unka()=_`> * <unka()=_`> </s>
+<s> <user> you could add a test making sure both of them return the same <unka> </s>
+<s> <user> i copied this to the issue so <unka@> or anyone else can correct me if i am wrong . </s>
+<s> <user> also , i am unable to edit , we require it to be horizontally stacked , not vertically </s>

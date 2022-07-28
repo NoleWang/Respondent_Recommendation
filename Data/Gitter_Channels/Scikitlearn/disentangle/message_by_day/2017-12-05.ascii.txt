@@ -1,0 +1,17 @@
+[16:29] <564789be16b6c7089cbab8b7>  I am trying (X,y) = make_classification(n_features=20, n_samples=1000, n_classes=3) but it says ValueError: n_classes * n_clusters_per_class must be smaller or equal 2 ** n_informative
+[16:29] <564789be16b6c7089cbab8b7> I just want to make a random classification problem with 3 classes. How can I do that?
+[16:42] <53eb987c107e137846baa89d> How about ``` make_classification(n_classes=3, n_redundant=0, n_informative=20) ``` (I am also a beginner, but just trying here. You can ignore if you want someone more experienced to comment)
+[16:43] <53eb987c107e137846baa89d> There are quite a few other (default)arguments which probably would need to be changed. See http://scikit-learn.org/stable/modules/generated/sklearn.datasets.make_classification.html
+[16:43] <564789be16b6c7089cbab8b7> thanks.. (trainX, trainY) = make_classification(n_informative=20, n_redundant=0, n_samples=50000, n_classes=120) works!
+[16:43] <564789be16b6c7089cbab8b7> this is slightly less intuitive than normal for scikit learn
+[16:44] <564789be16b6c7089cbab8b7> because (trainX, trainY) = make_classification(n_informative=20, n_samples=50000, n_classes=120)  does not work
+[16:46] <53eb987c107e137846baa89d> To be true, I am new to scikit-learn and to machine learning as well. This is what intrigues me a lot that for every function we find a lot (a lot) of arguments. I would have thought to simply use `**kwargs` and extract out the important information from it. But I think may be developers would have already given a good thought into this.
+[17:00] <55d21ee30fc9f982beadabb8> Even if scikit-learn is intuitive, @lesshaste do not forget to read the doc: http://scikit-learn.org/stable/modules/generated/sklearn.datasets.make_classification.html
+[17:09] <55d21ee30fc9f982beadabb8> so if we still wish to have 2 clusters per classes
+[17:09] <55d21ee30fc9f982beadabb8> you need at least `n_informative=6` minimum
+[17:12] <564789be16b6c7089cbab8b7> I really want 120
+[17:12] <564789be16b6c7089cbab8b7> thanks
+[17:17] <55d21ee30fc9f982beadabb8> > To be true, I am new to scikit-learn and to machine learning as well. This is what intrigues me a lot that for every function we find a lot (a lot) of arguments. I would have thought to simply use `**kwargs` and extract out the important information from it. But I think may be developers would have already given a good thought into this.  You can refer to [this talk](https://www.youtube.com/watch?v=MQMbnhSthZQ) to see ONE of the problem of the kwarg :).
+[17:24] <53eb987c107e137846baa89d> I haven't seen the video completely (but in between I liked to point out). But I have spent quite sometime with SymPy, and I definitely agree I used a lot of `*args, **kwargs`.
+[17:48] <53eb987c107e137846baa89d> I think I could say, that for a library having other libraries as dependencies it is better to use hard-coded arguments instead of `*args, **kwargs`.
+[17:52] <53eb987c107e137846baa89d> Thanks for the video, I can sleep tight now :)

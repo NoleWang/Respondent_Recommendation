@@ -1,0 +1,9 @@
+[17:57] <58b47262d73408ce4f4d4113> Hello all, I want to take up a moder
+[17:58] <58b47262d73408ce4f4d4113> Hello all, I want to take up a moderate issue or something significant not currently being worked upon by anyone. Is there an issue or feature which needs quick attention?
+[18:01] <54d4a1d6db8155e6700f853b> @thechargedneutron have you worked on anything before? if not, go with those that say "good first issue"
+[18:01] <54d4a1d6db8155e6700f853b> oh actually you did, sorry
+[18:02] <54d4a1d6db8155e6700f853b> your name looked familiar lol
+[18:02] <58b47262d73408ce4f4d4113> Yeah, I have like 8-9 issues solved. And currently working on a moderate, but almost done. Hence looking for something more than just a bug
+[18:02] <54d4a1d6db8155e6700f853b> sorry I gotta run, I'll think about it
+[18:03] <54d4a1d6db8155e6700f853b> feature additions are usually pretty long-term
+[18:03] <58b47262d73408ce4f4d4113> I am like free for a month. So willing to take if there's a need

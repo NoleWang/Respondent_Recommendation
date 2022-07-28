@@ -1,0 +1,17 @@
+[01:01] <56ed0b8885d51f252ab9a1b8> In the mnist example only a single file is loaded but in my case am working with four distinct image files so i used the lines below to obtain a numerical matrix of each image before I apply a classifier.But I get this error message.   D_images = io.imread_collection('/home/data/Desktop/TEST-IMAGES/*.jpg')  x_images = np.vstack(D_images)      n_samples = len(D_images) data = D_images.reshape((n_samples, -1))   print(data)                             #### ERROR MESSAGE ### --------------------------------------------------------------------------- AttributeError                            Traceback (most recent call last) <ipython-input-23-825371324329> in <module>()       4        5 n_samples = len(D_images) ----> 6 data = D_images.reshape((n_samples, -1))       7 print(data)  AttributeError: 'ImageCollection' object has no attribute 'reshape'
+--------------------------------------------------------------------------------------------------
+[17:27] <57ed4d1c40f3a6eec0680da9> Hello everyone.
+--------------------------------------------------------------------------------------------------
+[17:28] <57decc9840f3a6eec065e9e2> Hi :smile:
+--------------------------------------------------------------------------------------------------
+[17:28] <57a5a74c40f3a6eec05e31c1> hello
+--------------------------------------------------------------------------------------------------
+[17:30] <57ed4d1c40f3a6eec0680da9> I want some help on project based learning in Recommendation systems... I started with movielens dataset but now I'm stuck. can anyone help me please.
+--------------------------------------------------------------------------------------------------
+[17:34] <562a7da216b6c7089cb80965> @Ben-Kobby are you sure you want to be reshaping `D_images` and not `x_images`?
+--------------------------------------------------------------------------------------------------
+[19:31] <561a58f7d33f749381a8ff2f> Guys... I'm super confused about `DeprecationWarning: This module was deprecated in version 0.18 in favor of the model_selection module into which all the refactored classes and functions are moved. Also note that the interface of the new CV iterators are different from that of this module. This module will be removed in 0.20.`
+[19:31] <561a58f7d33f749381a8ff2f> How can we make our modules compliant with older and newer versions?
+--------------------------------------------------------------------------------------------------
+[20:37] <56c4f19ae610378809c1f8ae> @kootenpv by modules do you mean modules that interface with scikit-learn?
+--------------------------------------------------------------------------------------------------

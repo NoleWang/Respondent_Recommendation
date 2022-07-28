@@ -1,0 +1,15 @@
+<s> <user> hi all , i am having issues installing scipy for <unka-> . is <unka> a good workaround ? </s>
+<s> <user> <unk#a@> i personally opted for <unka> . </s>
+<s> <user> okay thanks <unka@> ! can i safely use pip and <unka> side by side ? </s>
+<s> <user> pip is included in <unka> </s>
+<s> <user> i never add problem with up to now </s>
+<s> <user> <unka*> </s>
+<s> <user> thanks a million </s>
+<s> <user> i 'm persisting a random forest <unka> using <unka> , and in another process loading it . if i use <unka_> in fit , when i load the model it produces all 0 <unka> . if i turn off <unka_> and train , everything is fine . during <unka> validation , both settings produce expected results . any ideas ? </s>
+<s> <user> <unka-@> if this is something that you can reproduce with a simple snippet </s>
+<s> <user> you can open an issue </s>
+<s> <user> <unka@> alright , i 'll try to minimize . was just wanting a spot check . </s>
+<s> <user> you can use a simple <unka`> dataset or something like that . </s>
+<s> <user> it always easier to find out when there is code to check . </s>
+<s> <user> if this is really a bug , this is a <unka-> :d </s>
+<s> <user> ty for your help </s>

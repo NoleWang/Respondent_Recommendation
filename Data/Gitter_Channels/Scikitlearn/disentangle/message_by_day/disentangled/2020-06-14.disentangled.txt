@@ -1,0 +1,2 @@
+[18:18] <5dbd6437d73408ce4fcfbf0f> Hi @FranciscoPalomares Random Forest is a collection of models which can be trained independently and can be parallelised: I guess for the classification you are using the RandomForestClassifier, you can scale the training through the n_jobs parameter when you instantiate it, something like  ``` RandomForestClassifier(n_estimators=100, n_jobs=-1) ```
+--------------------------------------------------------------------------------------------------

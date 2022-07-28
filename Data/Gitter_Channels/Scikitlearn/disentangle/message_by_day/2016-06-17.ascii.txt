@@ -1,0 +1,16 @@
+[01:39] <5763118fc2f0db084a1e46cf> just in case you need machine learning engine in java/scala, checkout [smile](https://github.com/haifengl/smile), which includes many algorithms.
+[03:40] <564789be16b6c7089cbab8b7> hi..sorry if I missed it but does scikit learn support regularized greedy forests? https://arxiv.org/pdf/1109.0887.pdf 
+[03:42] <564789be16b6c7089cbab8b7> or is there a PR for it?
+[07:29] <56333d0d16b6c7089cb8d5c7> @amueller I was looking into this issue https://github.com/scikit-learn/scikit-learn/issues/6120. Could you let me know if the images need to be updated should I just fix the print message?.
+[08:55] <564789be16b6c7089cbab8b7> @amueller I am looking forward to buying your book!
+[12:14] <55d842e50fc9f982beae3dcf> 
+[14:19] <54d4a1d6db8155e6700f853b> @lesshaste regularized greedy forests has only 18 cites. so no to both ;)
+[14:44] <564789be16b6c7089cbab8b7> @amueller  that's interesting.  I was going by the usage in kaggle competitions. But I really like your quality control system and support it entirely :)
+[14:44] <54d4a1d6db8155e6700f853b> @lesshaste is it? what is it used for?
+[14:44] <564789be16b6c7089cbab8b7> https://github.com/TimSalimans/HiggsML 
+[14:45] <564789be16b6c7089cbab8b7> "This is the code for my second place finish in Kaggle's HiggsML challenge. It is a blend of a large number of boosted decision tree ensembles constructed using Regularized Greedy Forest."
+[14:45] <564789be16b6c7089cbab8b7> as an example
+[14:45] <54d4a1d6db8155e6700f853b> oh wait, is that the paper that describes the regularization used in XGBoost?
+[14:46] <564789be16b6c7089cbab8b7> I didn't think so but I could be wrong. there is a distinct piece of software called http://stat.rutgers.edu/home/tzhang/software/rgf/
+[15:04] <564789be16b6c7089cbab8b7> @amueller  were you thinking of https://arxiv.org/abs/1603.02754 ?
+[15:13] <564789be16b6c7089cbab8b7> hmm.. https://www.kaggle.com/c/higgs-boson/forums/t/10053/did-anyone-try-rgf-regularized-greedy-forest ... maybe can be ignored now that xgboost rules everything :)

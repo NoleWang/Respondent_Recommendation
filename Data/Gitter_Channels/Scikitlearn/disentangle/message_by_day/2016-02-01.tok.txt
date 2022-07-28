@@ -1,0 +1,3 @@
+<s> <user> <unka@> this channel is more for <unka-> project development . so is usually good . </s>
+<s> <user> <unka@> i do n't think there is any best practice for analysis code . i usually have a module that lives somewhere with the code . but you do n't usually want your data under version control ... </s>
+<s> <user> <unka@> sorry for the question in the wrong place . thanks for the reply ! </s>

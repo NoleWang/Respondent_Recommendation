@@ -1,0 +1,12 @@
+[00:00] <54d4a1d6db8155e6700f853b> hey hey. I'm kinda back, though somehow in Dallas.
+[00:01] <54d4a1d6db8155e6700f853b> And I only have ~400 unread github notifications
+--------------------------------------------------------------------------------------------------
+[08:05] <541a528b163965c9bc2053de> ...
+[08:05] <541a528b163965c9bc2053de> @amueller how did you enjoy strata?
+--------------------------------------------------------------------------------------------------
+[15:43] <54d4a1d6db8155e6700f853b> It was pretty awesome :) met a lot of interesting people. Are you bug-crunching this week? I have to do some organisational stuff for GSOC but the rest of the week should be free for release things.
+--------------------------------------------------------------------------------------------------
+[18:02] <541a528b163965c9bc2053de> I was having a look at the FDR PR and trying to understand why the actual FDR is always lower than alpha. I am working on something else tonight. Will resume tomorrow. I think I have an idea.
+--------------------------------------------------------------------------------------------------
+[20:40] <5474d9eadb8155e6700d8178> > And I only have ~400 unread github notifications  haha :p
+--------------------------------------------------------------------------------------------------

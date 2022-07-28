@@ -1,0 +1,11 @@
+<s> <user> does it work with sparse <unka> ? </s>
+<s> <user> i think it will </s>
+<s> <user> you can use <unka._`> that will return a matrix given a set of <unka> </s>
+<s> <user> and will work with <unka> , array , sparse matrix </s>
+<s> <user> great , thanks </s>
+<s> <user> depending what you are doing with <unka-> , we have some generator of <unka-> in <unka-> </s>
+<s> <user> URL/http:/ <unka-./> <unka#-./> </s>
+<s> <user> you can check the implementation if you want to bypass the <unka> stage </s>
+<s> <user> hi everyone </s>
+<s> <user> can i ask you something </s>
+<s> <user> is there autocomplete c# codes in komodo </s>

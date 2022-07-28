@@ -1,0 +1,35 @@
+<s> <user> to enable osx on travis we would need to adapt our ci script , but it should be doable . </s>
+<s> <user> how do i plot <unka> correctly ? </s>
+<s> <user> <unka@> are you looking for <unka> ? URL/https:/ URL/github.com/ <unk#a-/> or what do you want to plot ? </s>
+<s> <user> i have a scatter plot </s>
+<s> <user> i want to show where the clusters are and color them according to the number of data points in a cluster </s>
+<s> <user> what do you mean by where the clusters are ? a common way to plot a clustering is to plot he points and color by cluster membership </s>
+<s> <user> that 's exactly what i want but i want to rate them in green shades , yellow shades and red shades according to the number of data points in a cluster </s>
+<s> <user> or so what is the question ? how to get the right colors ? </s>
+<s> <user> yes </s>
+<s> <user> i do n't know how to get the number of data points in a cluster </s>
+<s> <user> you can get the number of clusters by <unka(._> ) </s>
+<s> <user> i need the number of <unka> in a cluster </s>
+<s> <user> yep that works </s>
+<s> <user> why does it work </s>
+<s> <user> URL/http:/ <unka./> <unka./> </s>
+<s> <user> and a label is the cluster number in this case ? </s>
+<s> <user> thanks . it 's pretty accurate </s>
+<s> <user> how come the results are very similar to <unka-> ? </s>
+<s> <user> also i still do n't understand where the cluster centers are </s>
+<s> <user> there are no cluster centers in <unka> clustering </s>
+<s> <user> ok that 's good to know </s>
+<s> <user> how do i check if a value would end up in a cluster ? i have predict in <unka-> but not in <unka> clustering </s>
+<s> <user> <unka@> is there a parallel version of <unka> clustering ? i see that <unka-> has one that uses <unka> </s>
+<s> <user> the <unka-> uses <unka> just to <unka> the restarts . there is no parallel version of <unka> clustering , but it should be pretty fast </s>
+<s> <user> the way the clustering is constructed there is not really a way to predict in <unka> clustering , but you could assign clusters to new points using nearest neighbors for example </s>
+<s> <user> i 've seen papers about <unka> them </s>
+<s> <user> <unka@> see URL/http:/ <unka./> <unk#a./~> </s>
+<s> <user> clause 3.3 </s>
+<s> <user> this seems to be somewhat tricky ... </s>
+<s> <user> but doable right ? </s>
+<s> <user> which version ? they talk about the locally oriented version which is described in a different paper </s>
+<s> <user> both are <unka> according to 3.3 </s>
+<s> <user> yes but they do n't say how </s>
+<s> <user> you have to look at other papers </s>
+<s> <user> i could but i have other things to do . and without looking at it , how should i say if it is doable ? </s>

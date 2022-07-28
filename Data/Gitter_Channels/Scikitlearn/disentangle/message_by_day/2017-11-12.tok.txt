@@ -1,0 +1,6 @@
+<s> <user> hi everyone . </s>
+<s> <user> i 'm a statistics graduate student and i 'm interested getting some foss ( and programming ) experience . </s>
+<s> <user> would it be a worthwhile endeavor to implement <unka> process mixture models in <unka> ? </s>
+<s> <user> yikes , sorry just noticed it 's already implemented ! </s>
+<s> <user> what would probably be useful on the other hand is a python framework for generalized finite mixture models </s>
+<s> <user> eg . where you specify a set of distributions and parameters to estimate and run the model without hardcoding the maximum likelihood equation yourself </s>

@@ -1,0 +1,6 @@
+[08:17] <5571fe1015522ed4b3e17d90> @lesshaste the exit() is not in the dev doc so it has been fixed in master. See http://scikit-learn.org/dev/auto_examples/applications/topics_extraction_with_nmf_lda.html.
+[15:02] <57430fe4c43b8c60197476d9> @amueller , is there any interest in merging the Metric Learning algorithm implemented [#4789](https://github.com/scikit-learn/scikit-learn/pull/4789) ? And whether any Metric Learning algorithms are in the pipeline?
+[15:02] <54d4a1d6db8155e6700f853b> @bhargavvader Yes there is interest. but currently we are mostly working on a release
+[15:03] <54d4a1d6db8155e6700f853b> only the things in PRs are in the pipeline AFAIK
+[15:03] <54d4a1d6db8155e6700f853b> @raghavrv can you maybe work at making the new grid-search docs render correctly?
+[15:20] <57430fe4c43b8c60197476d9> @amueller , cool, I'll start by giving it a shot. It can be reviewed after the release is done and you guys get some time :)

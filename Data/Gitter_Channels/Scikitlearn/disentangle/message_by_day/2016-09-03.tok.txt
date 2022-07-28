@@ -1,0 +1,6 @@
+<s> <user> hi guys . i'd like to learn how to use machine learn as a black box . do you recommend a book or course ? thanks </s>
+<s> <user> not sure what you mean by " black box " here . </s>
+<s> <user> URL/https:/ URL/gist.github.com/ <unk#a/> </s>
+<s> <user> here is some machine learning resources in general , if that helps . </s>
+<s> <user> sorry for that link expanding </s>
+<s> <user> now sure how to make it not do that </s>

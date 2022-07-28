@@ -1,0 +1,8 @@
+<s> <user> hey channel , ive being working on <unka> regression tree with numpy , and i have achieved some speed up against the <unka> version of <unka> . in case anyone is interested , here is the link URL/https:/ URL/github.com/ <unka#-/_> </s>
+<s> <user> on <unka> <unk#a(*> ), with mae criteria , achieved 20 times speed up :) </s>
+<s> <user> still have n't checked the code in depth . but it 's definitely interesting <unka@> . what do you think <unka@> ? </s>
+<s> <user> i havent clean the code yet , and also working on a blog post <unka> what i did , and add some ci to it . but i would love to have some extra inputs before i proceed , e.g . reviews . </s>
+<s> <user> i do n't think it'd be easy , but i'd love to see if it actually passes our tree tests , and if it does n't why not and which tests . feel free to ping me when you write the blog post . </s>
+<s> <user> sure .. that would be nice , </s>
+<s> <user> <unka@> pretty cool stuff ! i took a quick glance at the tree <unka> and the <unka_`> function and it looks good as far as i can tell . i would n't advertise benchmarks with only <unk#a=_`> though ;) please definitely ping us when you write the blog post !! </s>
+<s> <user> lol , you are right , actually with <unk#a=_> , i only get 5 times faster . </s>

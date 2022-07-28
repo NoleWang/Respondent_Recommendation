@@ -1,0 +1,10 @@
+<s> <user> hum , ci is a bit in a mess . there is going to be some work there </s>
+<s> <user> in the lastest commit on master there is just 1 test failing in one build . attempting to fix that in URL/https:/ URL/github.com/ <unk#a-/> <unka> and circle ci should be hopefully ok , the issue is mostly a very long queue .. </s>
+<s> <user> great ! i was about to look at this face issue ! thanks ! </s>
+<s> <user> ok , <unka@> : i reviewed it . travis will be done with it in <unk#a> . it needs a second review </s>
+<s> <user> <unk#a#-/> is green and needs a second review </s>
+<s> <user> travis is green in master <unka:> : ! </s>
+<s> <user> URL/https:/ <unka-./> <unk#a-/> </s>
+<s> <user> it seems that travis is failing again on one of the configuration . i have made a pr that should fix that : URL/https:/ URL/github.com/ <unk#a-/> </s>
+<s> <user> it fixes travis indeed . it would be good to have reviews <unka+> , as many <unka> are red because of this small issue </s>
+<s> <user> ok , i now realize that it was fixed in the mean time by downgrading the <unka> requirement on travis :). still good to have ! </s>

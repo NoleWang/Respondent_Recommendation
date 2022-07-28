@@ -1,0 +1,1 @@
+[04:32] <56a34c16e610378809bdc988> Hi, is #7319 (Move to py.test) still under consideration as gsoc '17 project ? I pinged there earlier to work on it but realised that it is not that small to do within a week or two. I migrated joblib's testing framework from nose to py.test and am willing to take up the same here :smile: 

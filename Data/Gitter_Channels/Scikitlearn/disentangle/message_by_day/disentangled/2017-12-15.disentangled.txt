@@ -1,0 +1,3 @@
+[21:05] <53eb987c107e137846baa89d> How can I run just doctests using pytest? Searching over the web I reached https://github.com/scikit-learn/scikit-learn/pull/9697, but still it isn't clear as how to do that.
+[21:12] <53eb987c107e137846baa89d> Perhaps it is better if documented in http://scikit-learn.org/stable/developers/advanced_installation.html#testing  also?
+--------------------------------------------------------------------------------------------------

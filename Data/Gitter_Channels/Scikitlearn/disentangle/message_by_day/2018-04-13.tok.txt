@@ -1,0 +1,6 @@
+<s> <user> hello everyone </s>
+<s> <user> <unk#a`> hol </s>
+<s> <user> <unk#a`> a </s>
+<s> <user> did everyone really stop talking as soon as i showed up ? </s>
+<s> <user> <unk#a@> you can look into the class 's attributes . say if you are using an instance called <unka`> belonging to ` <unka`> class , you can check them at <unka._`> and <unka._`> after <unka/> the model . more on this here : URL/http:/ <unka-./> <unka#./_> </s>
+<s> <user> <unk#a@> thank you , for the answer . that is , the " <unka._> " weights for sign , " <unka._> " predicted class labels . there is an example with three classes . i <unka> the signs by weight . the values of each class were obtained : 1 . <unk#-.> 2 . <unk#-.> 3 . <unk#-.> is it possible to get from the function <unka> , which determine the belonging to each class ? regards </s>

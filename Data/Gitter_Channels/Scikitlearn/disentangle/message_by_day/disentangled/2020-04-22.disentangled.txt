@@ -1,0 +1,10 @@
+[01:01] <5dc8e3cfd73408ce4fd09e96> What is the best score for the Iris Dataset?
+--------------------------------------------------------------------------------------------------
+[07:48] <567f5d7716b6c7089cc043a8> @Dgomzi you probably need to look at the source code for that.
+--------------------------------------------------------------------------------------------------
+[15:42] <537bc9bd048862e761fa2239> Hey! Is there a way of computing the dimensionality of a given dataset in scikit-learn? I have some high-dimensional data, which I believe reside on a lower-dimension manifold, the dimension of which is unknown. What I am looking for is some way of measuring the number of dimension of the manifold.
+--------------------------------------------------------------------------------------------------
+[16:21] <5e540a2fd73408ce4fda9945> Hey everyone! I wanted to know why sci-kit learn provides the quantile loss for GBRT but not for the SGDRegressor? I am aware that the quantile loss is non-smooth, however GBRT seems to calculate the subgradient at zero for that reason. Wouldn't this be applicable for SGD?
+--------------------------------------------------------------------------------------------------
+[18:23] <5dbe0c1fd73408ce4fcfc84a> @arturgvieira_twitter  hi sir
+--------------------------------------------------------------------------------------------------

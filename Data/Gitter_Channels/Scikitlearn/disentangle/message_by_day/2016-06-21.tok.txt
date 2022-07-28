@@ -1,0 +1,33 @@
+<s> <user> i have a question </s>
+<s> <user> after doing a git pull of <unka> repository </s>
+<s> <user> hi </s>
+<s> <user> say i am woking on a bug </s>
+<s> <user> how do i test my changes on the code ? </s>
+<s> <user> what do you mean test ? </s>
+<s> <user> like run the unit tests ? </s>
+<s> <user> nope </s>
+<s> <user> or run random python code that might use <unka-> on the version that you have modified </s>
+<s> <user> let say i added a print statement in one of the classes </s>
+<s> <user> that had a bug </s>
+<s> <user> ah . so you want the print statement to show up when it is run . </s>
+<s> <user> and i want to test that class in an ipython notebook </s>
+<s> <user> yup </s>
+<s> <user> so im not sure how you have it installed currently , but i uninstalled the pip version i had . then , i installed it again from source with <unka`> setup.py <unka`> </s>
+<s> <user> ah okay </s>
+<s> <user> then , whenver you change code in a compiled extension ( <unka.> file , say youre making changes to it or <unka> from upstream or switching branches ), you have to recompile with <unka`> setup.py <unka_> <unka-`> </s>
+<s> <user> the way you can tell if it is working is if you run </s>
+<s> <user> <unk`> in [ 1 ]: import <unka> in [ 2 ]: print <unka._> DIR/users/ <unka/> DIR/documents/ <unka/> <unka-/> <unka/> <unka./_> <unk`> </s>
+<s> <user> that should point to wherever youve cloned the <unka> repo </s>
+<s> <user> many thanks </s>
+<s> <user> :) </s>
+<s> <user> np , let me know if that worked for you </s>
+<s> <user> so every time a git pull is done </s>
+<s> <user> you recompile </s>
+<s> <user> with python setup.py <unka_> <unka-> </s>
+<s> <user> ? </s>
+<s> <user> uh you technically dont have to recompile if none of the <unka.> files are changed , but i generally do so anyway because i dont want to bother looking at what was pulled </s>
+<s> <user> its quick anyway </s>
+<s> <user> ok </s>
+<s> <user> thanks <unka-@> it worked </s>
+<s> <user> good to hear </s>
+<s> <user> i have limited data science experience , and reasonable programming experience . what are the best ways to get started ?? </s>

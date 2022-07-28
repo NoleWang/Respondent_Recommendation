@@ -1,0 +1,3 @@
+[20:45] <57ab24e040f3a6eec05ec701> I posted a question on Stack Overflow related to preprocessing-scaling my features taking the logarithm but column-based as with the `MaxAbsScaler` -- Question: http://stackoverflow.com/questions/41600349/scale-apply-function-sparse-matrix-logarithmically
+[20:45] <57ab24e040f3a6eec05ec701> Any help is much appreciated <unconvertable>
+--------------------------------------------------------------------------------------------------

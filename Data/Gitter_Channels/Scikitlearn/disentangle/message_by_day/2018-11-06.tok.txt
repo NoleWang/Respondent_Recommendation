@@ -1,0 +1,8 @@
+<s> <user> hi all ! how can i see a error in this build ? URL/https:/ <unka./> <unk#a&-/=?_> can you help me ? </s>
+<s> <user> hi all i am a newbie here only have coding experience but i would like to contribute in this project so where should i start with </s>
+<s> <user> <unka@> the contributing guides ( URL/http:/ <unka-./> <unka./> ) and the " good first issue " ones on github ( URL/https:/ URL/github.com/ <unk#a%+-/=?> ) are not a bad place to start , if you have n't checked them already . </s>
+<s> <user> <unka@_> you can download the build log there , and look for errors ( if there 's any ). but i 'm not sure why you're looking in that build log . those are mostly for the docs , and that particular one is for python2 , which is deprecated in master ( it 's still there cause future <unk#a.> releases still support python2 ). if you're trying to see some build logs and to check the tests , you probably need to check the <unka-> logs , not <unka-> . </s>
+<s> <user> <unka@> thank you ! i am looking in the <unka-> because my pr was labeled with an error , because of this problem and i did not find which was the error that was triggered . but now , i suppose this problem is not so serious ! tks ! </s>
+<s> <user> <unka@_> if you want , and the problem still exists , i can try and have a look if you paste here the pr number . </s>
+<s> <user> <unka@> here is my pr number <unk##> tks ! </s>
+<s> <user> <unka@> very tks ! i 'll fix my code ! your help was very important ! </s>

@@ -1,0 +1,3 @@
+[04:29] <5c3b550cd73408ce4fb482cc> Hello Everyone! I am New here, My name is Vedang and currently studying at IET-DAVV,Indore. Can someone please tell how can I start contributing. Thanks
+[12:56] <567f5d7716b6c7089cc043a8> @vedangj044 https://scikit-learn.org/dev/developers/index.html
+[13:05] <5c3b550cd73408ce4fb482cc> @adrinjalali thanks, i would look into it.

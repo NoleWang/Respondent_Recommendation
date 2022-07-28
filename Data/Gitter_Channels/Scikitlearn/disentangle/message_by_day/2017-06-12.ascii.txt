@@ -1,0 +1,12 @@
+[12:04] <54908b42db8155e6700dfe2d> Is there any way to incorporate cost matrix in SVM classification as is available in weka https://weka.wikispaces.com/CostSensitiveClassifier
+[16:00] <54d4a1d6db8155e6700f853b> @axay possibly the class_weight parameter, though that doesn't allow specifying a full matrix, only relative weights
+[16:00] <54d4a1d6db8155e6700f853b> It also depends a bit on whether you want to do that for training or for predicting with a trained model or both. It looks like weka influences the training.
+[16:03] <54908b42db8155e6700dfe2d> weka supports both afaik. My aim is to prevent misclassification of other labels as a target label
+[16:03] <54908b42db8155e6700dfe2d> for example if i have 3 labels A, B and C, I don't want A and C to be predicted as B
+[16:03] <54d4a1d6db8155e6700f853b> false positives for that label?
+[16:03] <54908b42db8155e6700dfe2d> yeah
+[16:04] <54d4a1d6db8155e6700f853b> I think it would make most sense to calibrate the prediction thresholds for that, but scikit-learn doesn't have tools for that yet.
+[16:04] <54d4a1d6db8155e6700f853b> you can try to change the class-weights, but the control they give is a bit indirect
+[16:05] <54d4a1d6db8155e6700f853b> do you know how weka implements this?
+[16:06] <54d4a1d6db8155e6700f853b> the scikit-learn class_weights for SVC are multipliers to C so that you get one C per class, as described in the libsvm paper
+[16:06] <54908b42db8155e6700dfe2d> no, haven't gone through their code yet.

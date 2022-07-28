@@ -1,0 +1,1 @@
+[07:03] <603cd4cc6da0373984649165> I wrote a [short blog post](https://www.bodyworkml.com/posts/scikit-learn-meet-production) that might be of interest to the community - deploying Scikit-Learn models to Kuberentes using [Bodywork](https://github.com/bodywork-ml/bodywork-core) (an open source deployment tool that I have developed).

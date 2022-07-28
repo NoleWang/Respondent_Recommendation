@@ -1,0 +1,6 @@
+[02:03] <56b80528e610378809c05a48> Hello @maniteja123 , can you tell me the results on Ubuntu 14.04, 32 bit VM machine?
+[02:03] <56b80528e610378809c05a48> thanks!
+[08:09] <564789be16b6c7089cbab8b7> hi... has there been any work in incorporating minhash to help cluster large sets of documents?
+[08:15] <564789be16b6c7089cbab8b7> also.. in this very highly cited paper "Clustering Large Graphs via the Singular Value Decomposition" http://www.cc.gatech.edu/fac/vempala/papers/dfkvv.pdf the main algorithm is to take a random submatrix (suitably chosen) to make the SVD computation feasible. Has this been proposed at all for sklearn?
+[11:31] <572c72eec43b8c60197173f7> <unconvertable> , .,... .....   <unconvertable> .,,
+[11:32] <572c72eec43b8c60197173f7> <unconvertable>

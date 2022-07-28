@@ -1,0 +1,6 @@
+<s> <user> i think it would be a good idea to encourage creating a github discussion ( rather than <unka> ) for anything else than simple <unka/> : URL/https:/ URL/github.com/ <unka-./> <unka> is not properly indexed by search engines so it is not a great use of time for people who answer questions . </s>
+<s> <user> i agree that " simple <unka/> " does not have a <unka-> defined boundary but in the case of <unka@> 's questions i think we have crossed this boundary a long time ago ... </s>
+<s> <user> <unka@> i understand and agree . </s>
+<s> <user> <unka@> then if you find the time maybe create a github discussion and post the link in the <unka> so that the discussion can continue in the github discussion ? </s>
+<s> <user> hello guys ! me and my friends are looking to tackle some open issues on <unka-> soon . we're very new so i would love a high level overview of the architecture . </s>
+<s> <user> can anyone help or point to some resources ? </s>

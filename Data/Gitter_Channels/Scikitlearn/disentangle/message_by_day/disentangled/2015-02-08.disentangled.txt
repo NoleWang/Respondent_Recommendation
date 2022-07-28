@@ -1,0 +1,8 @@
+[10:15] <5474d9eadb8155e6700d8178> Hey all! :) @ogrisel You might want to set up gitter to get live activity feeds on the right! Choose github and travis under integrations ( under settings )
+--------------------------------------------------------------------------------------------------
+[20:57] <541a528b163965c9bc2053de> @ragv done! thanks for the tip
+--------------------------------------------------------------------------------------------------
+[22:33] <541a528b163965c9bc2053de> It seems that I broke travis but I cannot reach the report page. Running the tests locally.
+--------------------------------------------------------------------------------------------------
+[22:50] <541a528b163965c9bc2053de> Ok fixing the broken tests ATM
+--------------------------------------------------------------------------------------------------

@@ -1,0 +1,35 @@
+[00:14] <57e4ea1140f3a6eec066d9b4> @amueller  after attending your talk I was really looking forward to it.
+--------------------------------------------------------------------------------------------------
+[00:14] <54d4a1d6db8155e6700f853b> Which one? Yesterday?
+[00:14] <54d4a1d6db8155e6700f853b> Or PyCon India?
+[00:16] <54d4a1d6db8155e6700f853b> If you don't mind and don't want to do it yourself next week, it would be great if you could open one.
+[00:18] <5759dd0dc2f0db084a1d128d> doing it right now
+--------------------------------------------------------------------------------------------------
+[00:15] <54d4a1d6db8155e6700f853b> We expect students to having contributed before applying for doing a GSoC with us. I haven't been around much the last two month, have you contributed so far?
+--------------------------------------------------------------------------------------------------
+[00:16] <5759dd0dc2f0db084a1d128d> @amueller I have not yet
+--------------------------------------------------------------------------------------------------
+[00:19] <5759dd0dc2f0db084a1d128d> if it is not done by next week, I'll try to tackle this during the docathon
+[00:19] <54d4a1d6db8155e6700f853b> thanks :)
+--------------------------------------------------------------------------------------------------
+[00:58] <5759dd0dc2f0db084a1d128d> I'll try to review some of the pull requests of the sprint btw
+[00:58] <5759dd0dc2f0db084a1d128d> so don't hesitate to ping me on PR that you think I could help review
+[00:58] <54d4a1d6db8155e6700f853b> thanks, that would be great :)
+[00:58] <54d4a1d6db8155e6700f853b> it will mostly be "easy fix" issues, I think
+[00:58] <54d4a1d6db8155e6700f853b> I tagged a bunch of stuff "sprint"
+[00:59] <54d4a1d6db8155e6700f853b> as you might have seen on the right here lol
+[01:00] <5759dd0dc2f0db084a1d128d> yep, I saw
+--------------------------------------------------------------------------------------------------
+[01:01] <54d4a1d6db8155e6700f853b> FYI thanks for being in the top 100 scikit-learn contributors and not making us look like the worst possible ;) For an article about the sprint tomorrow I was asked about the state of women contributing to sklearn. Since counting contributors in a meaningful way is hard, I settled for the top 100 reported by github..... which has a 99:1 ration men:women unless I miscounted :-/ well let's hope we can do something about that tomorrow
+[01:05] <5759dd0dc2f0db084a1d128d> using an infinite timeframe?
+[01:05] <54d4a1d6db8155e6700f853b> I think that's what the default is.
+[01:05] <5759dd0dc2f0db084a1d128d> yep, I am surprisingly still in the top 20 :)
+--------------------------------------------------------------------------------------------------
+[01:07] <5759dd0dc2f0db084a1d128d> I'm hoping to contribute more, but matplotlib is still taking a lot of my time
+[01:07] <54d4a1d6db8155e6700f853b> 2013 till now you are still in the top 20 ;) I'm not sure any other timeframe makes us look more diverse
+[01:08] <54d4a1d6db8155e6700f853b> matplotlib might need contributors even more, somehow it's not as "cool" as sklearn I fear. I wish I could contribute more there, but I can't even keep up with sklearn
+--------------------------------------------------------------------------------------------------
+[16:00] <55e7596f0fc9f982beaf75b6> Hi, If interested, there's a semantic segmentation problem waiting to be solved here : https://github.com/chromosome-seg/DeepFISH
+--------------------------------------------------------------------------------------------------
+[16:29] <54d4a1d6db8155e6700f853b> Started the sprint :) as you might have notices ;)
+--------------------------------------------------------------------------------------------------

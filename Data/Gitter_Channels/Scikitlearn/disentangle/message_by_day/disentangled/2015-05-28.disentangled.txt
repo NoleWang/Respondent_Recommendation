@@ -1,0 +1,7 @@
+[02:37] <54c084dbdb8155e6700eed4c> Hey @amueller , regarding #4767 , just remembered your #4347 now... do you think I should pause work there until that merges? Do you think it will be merged? Also applies to #4215 I suppose... I guess both of these PRs would not necessarily require deprecation since they would not be in a public release, but would be more work for you. Should I press on with @vmichel 's PR comments, or put both on hold pending renewed class_weight naming/implementation?
+[02:38] <54c084dbdb8155e6700eed4c> Reviewing these, I begin to feel that I am a one-trick pony :smiley:
+--------------------------------------------------------------------------------------------------
+[15:43] <54d4a1d6db8155e6700f853b> #4347 should be merged. There were no real reviews yet, though.
+[15:44] <54d4a1d6db8155e6700f853b> I'm pretty sure you have more tricks up your leave, though @trevorstephens ;)
+[15:45] <54d4a1d6db8155e6700f853b> I'm not sure, I would love some reviews for #4347. I'll rebase now. Maybe @ogrisel has time to have a look?
+--------------------------------------------------------------------------------------------------

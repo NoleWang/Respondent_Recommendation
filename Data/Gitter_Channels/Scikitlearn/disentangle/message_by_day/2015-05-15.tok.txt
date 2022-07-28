@@ -1,0 +1,9 @@
+<s> <user> <unk#a@> <unka@> oh that looks really good . one thing i noticed though is that there 's overlap between " api design " and our current " rolling your own <unka> " , and users do get confused about what they can and ca n't do in <unka_`> , and why things fail afterwards . do you have any ideas on how to make it better ? </s>
+<s> <user> we could use ideas from the existing page and make it into a single page or a section " custom designed <unka> " under " api design " ... btw i think i 'll start a pr for the same and it will be easier for you to comment and advice me ... :) </s>
+<s> <user> i was just wondering why we ca n't add <unka-> to github wiki pages :) </s>
+<s> <user> haha :d i 'll make it easier by raising a pr ;) but incase you want to comment to the wiki pages ... you could just edit it and add a comment <unka"(_> <unka:@_> this should be removed )" etc ... at the particular place and make it bold ... i 'll take note of the same :) </s>
+<s> <user> <unka@> i have wondered that myself from time to time ;) </s>
+<s> <user> <unk#a@> just showed up on irc and said he 's back :) </s>
+<s> <user> hi all ! </s>
+<s> <user> hey :) </s>
+<s> <user> my favourite gsoc students , <unk#a@> <unk#a@> <unka-@> how are things ? reading up on your projects ? ;) </s>

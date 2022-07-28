@@ -1,0 +1,76 @@
+<s> <user> <unka@> right , i forgot to fix the menu . is there a good way to upload just the html so you do n't have to optimize the pngs again ? </s>
+<s> <user> i was about to find a way to not optimize the png again :) </s>
+<s> <user> i tested on osx , now on testing on windows and the <unka> from linux in a docker container in </s>
+<s> <user> well i can rebuild the docs in the folder with the optimized png once i get into the office </s>
+<s> <user> if you want to wait for an hour </s>
+<s> <user> i already fetched them local with rsync </s>
+<s> <user> actually not locally , to some rackspace vm but this is the same </s>
+<s> <user> good </s>
+<s> <user> i just decided to stay at home , i 'm too sick </s>
+<s> <user> do you need help with anything ? otherwise i might turn around and sleep on </s>
+<s> <user> i think i can do it all . </s>
+<s> <user> let me know when you tweet so i can <unka> ;) </s>
+<s> <user> i have <unka> testing under windows as apparently the latest scipy from <unka> <unka> under python 3.4 is broken . </s>
+<s> <user> will try on python 2.7 instead </s>
+<s> <user> ok </s>
+<s> <user> for the gsoc do you think we need to do anything else in the short term ? we can still enable the edit mode on the gsoc <unka> that students on a case by case basis for 2 weeks after today 's deadline if we need to . </s>
+<s> <user> ok . well it would be good to reread the final versions . i did that only with like two of them . but we can do that later </s>
+<s> <user> yes </s>
+<s> <user> i 'll put some feedback on the <unka-> proposal ( directly as comment on <unka> ) </s>
+<s> <user> <unka@> i 'm still in the process of adding some stuff . will be finished in 40 minutes . </s>
+<s> <user> ok great </s>
+<s> <user> my proposal in the <unka-> has unnecessary html marks , like underscores . i think it comes from <unka-> , since i did not add them at all . i also submitted a dropbox link to a pdf version , just in case . </s>
+<s> <user> <unk#a@> can you try to clean up the formatting ? </s>
+<s> <user> yeah , i am on it . </s>
+<s> <user> thanks </s>
+<s> <user> ok . now it 's clean . copy/paste the html source code instead of paste into the <unka> own editor </s>
+<s> <user> ok great </s>
+<s> <user> <unka@> let 's the <unka> storm start ! </s>
+<s> <user> <unka> 0.16 <unka:> : </s>
+<s> <user> <unka:> : : </s>
+<s> <user> we should probably change the <unka> channel status like some do in irc ? </s>
+<s> <user> can you do it ? </s>
+<s> <user> i do n't remember by nickserv passwd </s>
+<s> <user> so i cannot do op stuff anymore </s>
+<s> <user> i meant here in <unka> but i 'll try the same for irc too :) </s>
+<s> <user> <unk![> <unk#a()-./:]> ) </s>
+<s> <user> <unka:> : </s>
+<s> <user> it says i need to be channel op to do that ... how do i become one ? </s>
+<s> <user> you need to find another op :) </s>
+<s> <user> which i think i used to be but cannot find my account info anymore </s>
+<s> <user> yea on it ;) </s>
+<s> <user> there might be others </s>
+<s> <user> maybe <unka@> and <unka@> are op </s>
+<s> <user> ops </s>
+<s> <user> not 100% sure though </s>
+<s> <user> <unka@> is around i 'll ask her :) ( her right ? :p ) </s>
+<s> <user> <unka-`> 0.16 is out ! URL/http:/ <unka-./> <unk#a./_> try out the same with " pip install <unk#a"-.=`> would be good ? </s>
+<s> <user> <unka`> install -u <unka-`> would do </s>
+<s> <user> <unka@> yes it 's " her " </s>
+<s> <user> ah :) btw only could do it for <unka> ( by double clicking on the channel status ) ;) </s>
+<s> <user> no problem </s>
+<s> <user> <unka:> : </s>
+<s> <user> i think i 'm the only irc op ;) </s>
+<s> <user> <unka@> the oreilly people asked for the slides for the <unka> on monday night ^^ we should probably talk about the content </s>
+<s> <user> yes </s>
+<s> <user> which topics do you want to cover ? </s>
+<s> <user> i am generic intro slides in there : URL/https:/ <unka./> <unk#a-/> </s>
+<s> <user> but they overlap a lot with the slides i presented for the 0.15 release . </s>
+<s> <user> and do not cover the new stuff </s>
+<s> <user> i can work on sunday on new slides to present stuff like <unka> forest , <unka> and or <unka> </s>
+<s> <user> we can use google docs to work <unka> on a new deck </s>
+<s> <user> those slides are in keynote , but feel free to do as many screen grabs as you want </s>
+<s> <user> i feel super sick , i hope i 'll be well enough tomorrow to work on new slides . but i also have to work on slides for a talk i give on monday :-/ </s>
+<s> <user> i think we should prepare a slide on <unka-> too </s>
+<s> <user> hope you will get better </s>
+<s> <user> google docs seems like a good idea </s>
+<s> <user> tomorrow is going to get complicated for me . but sunday i should be able to work on it for some reasonable amount of time . </s>
+<s> <user> i 'll try to make some slides on <unka-> , <unka> and the gp , ok ? we also need slide for <unka> , the <unka> path algorithm ( ?) and <unka> </s>
+<s> <user> do we want to talk about <unka> and do you already have slides for that ? </s>
+<s> <user> i forgot about calibration , i can do that indeed </s>
+<s> <user> no good slide for <unka> but would indeed say a couple of words about that </s>
+<s> <user> i can review the <unka> stuff </s>
+<s> <user> i can also do the calibration . i have no idea about <unka> . do you ? </s>
+<s> <user> i think i should go out and find a doctor now </s>
+<s> <user> a bit yes </s>
+<s> <user> ok take care </s>

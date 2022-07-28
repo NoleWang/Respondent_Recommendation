@@ -1,0 +1,5 @@
+<s> <user> what is the best score for the iris dataset ? </s>
+<s> <user> <unka@> you probably need to look at the source code for that . </s>
+<s> <user> hey ! is there a way of computing the <unka> of a given dataset in <unka-> ? i have some <unka-> data , which i believe reside on a <unka-> <unka> , the dimension of which is unknown . what i am looking for is some way of measuring the number of dimension of the <unka> . </s>
+<s> <user> hey everyone ! i wanted to know why <unka-> learn provides the <unka> loss for <unka> but not for the <unka> ? i am aware that the <unka> loss is <unka-> , however <unka> seems to calculate the <unka> at zero for that reason . would n't this be applicable for sgd ? </s>
+<s> <user> <unka@_> hi sir </s>

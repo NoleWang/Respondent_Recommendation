@@ -1,0 +1,13 @@
+<s> <user> hello , when i run <unka> <unka-:> <unka./_> i get an <unka'> while loading <unka'> error . how can i bypass this ? </s>
+<s> <user> could you provide the traceback <unk#a@> </s>
+<s> <user> <unka-.:@> by checking the [ <unka(-./:]_> ), <unka._`> is mean <unka-> score of the <unka_> . </s>
+<s> <user> so the <unka._`> is called on each fold ( supposing that you do <unka`> ) and <unka> . </s>
+<s> <user> > when i evaluate the same dataset with <unka(.> ) it depends what you mean . you might do something wrong here . calling a single time <unka`> will not give you an estimate of the <unka> of your model . if you reuse <unka_`> ( with best parameter set ), you need to evaluate on some <unka-> data . you might want to look the following example regarding why you need to nest <unka-> and <unka-> : URL/https:/ <unka-./> <unka#-./_> </s>
+<s> <user> <unk![> screenshot from <unk#-> <unk#a()-./:]> ) </s>
+<s> <user> <unka@> </s>
+<s> <user> as the message mentioned , it seems that <unka-> was not build </s>
+<s> <user> be sure to have activated the environment where you installed and built <unka-> </s>
+<s> <user> fyi : URL/https:/ <unka-./> <unka#-./_> </s>
+<s> <user> basically to install and build : <unka`> install --verbose <unka-> <unka-> .` </s>
+<s> <user> could work if the previous message steps where already done </s>
+<s> <user> apologies for the <unka> style post , but in a collaboration with microsoft , we just published a blog post on using compilation techniques to accelerate <unka> models for production , it 's also another route to run models on gpus ( and potentially other accelerators ) as well ! check it out if interested : URL/https:/ <unka./> <unk#a-/> </s>

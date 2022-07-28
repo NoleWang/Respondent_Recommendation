@@ -1,0 +1,15 @@
+[13:19] <55a36f535e0d51bd787b3400> @amueller yes I do, at least I'm a contributor of the package; I'm a postdoc at nyu.
+[13:21] <55a36f535e0d51bd787b3400> @dankessler thanks for taking a look. So to clarify: `X` is 3D, e.g. `(n_samples, n_features, n_dimensions)` and we want to fit an estimator across all features for each dimension separately, such that we end up with `n_dimensions` estimators, and therefore `n_dimensions` scores.
+[16:37] <55a36f535e0d51bd787b3400> @amueller briefly at a meetup
+[16:41] <55a36f535e0d51bd787b3400> yes #7388 seems indeed relevant. If you allow `cross_val_score` to have scoring metrics that are not float but custom (e.g. numpy arrays), then our problem is solved at the sklearn level: we would directly do `cross_val_score(SearchLight())` where by default `SearchLight().score(X, y)`with `X` shape being `(n_samples, n_features, n_dimensions)` returns an array of `n_dimensions`
+--------------------------------------------------------------------------------------------------
+[13:29] <55a36f535e0d51bd787b3400> Our `SearchLight` is indeed similar to nilearn's, but nilearn's does everything at once (parametrize how to move across dimensions of an MRI scan, fit/predict estimators, do the whole thing within a cv etc); by contrast we  implemented a single-purpose object: i.e. fit different classifiers over different dimensions of the data, but don't summarize or combine these classifiers. We can thus pipeline the search light : e.g. `make_pipeline(PrepareData(), SearchLight(Regressiont()))` and cross_val_predict this estimator
+[13:35] <55a36f535e0d51bd787b3400> However, we can't apply `cross_val_score` because this functions requires that the score is a float, not an array.
+--------------------------------------------------------------------------------------------------
+[13:37] <55a36f535e0d51bd787b3400> But perhaps there s a way in sklearn to get cross_val_score compatible with arrays? i.e. if one wants to retrieve the cross-validated confusion matrix , instead of the average score?
+--------------------------------------------------------------------------------------------------
+[16:00] <54d4a1d6db8155e6700f853b> @kingjr have we met? Sorry If I forgot :(
+[16:01] <54d4a1d6db8155e6700f853b> @kingjr also check out https://github.com/scikit-learn/scikit-learn/pull/7388#issuecomment-247565362
+--------------------------------------------------------------------------------------------------
+[21:02] <54d4a1d6db8155e6700f853b> @kingjr I think that would be the best. We already want that for f1_scores without averaging for example, where you get one for each class.
+--------------------------------------------------------------------------------------------------

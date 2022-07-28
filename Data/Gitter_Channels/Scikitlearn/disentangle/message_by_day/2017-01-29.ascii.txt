@@ -1,0 +1,2 @@
+[13:14] <580cd140d73408ce4f3039f6> Hi, is there any one with experience with Gaussian processes. Are 20 data points enough to fit a GP? Is there any way to overfit a GP?
+[15:49] <588b76ccd73408ce4f4674e7> iirc, I thought the "magic minimum" for gaussian  distributions was a sample of 30

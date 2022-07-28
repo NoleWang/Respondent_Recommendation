@@ -1,0 +1,2 @@
+[16:06] <54d4a1d6db8155e6700f853b> That's matrix completion with is not really easily supported by sklearn, because the algorithm doesn't deal with missing values. You could try fancyimpute or any from this list: https://www.quora.com/What-is-the-best-open-source-package-to-build-a-recommender-system-in-Python/answer/Xavier-Amatriain?srid=cgo
+[18:47] <54bd5965db8155e6700ed583> @amueller ok, thanks; that answers my question. I was just curious as to whether it  might be straightforward to do this in `scikit-learn` but I was just missing something obvious :)

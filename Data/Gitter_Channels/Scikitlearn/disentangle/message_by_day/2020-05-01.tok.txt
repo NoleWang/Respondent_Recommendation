@@ -1,0 +1,7 @@
+<s> <user> hi everyone ! </s>
+<s> <user> i 've got a few questions considering lin regression . these are mostly focussed on using <unka> learn , but i guess the questions are also applicable to all kinds of ml tools :) </s>
+<s> <user> [ more general <unka> of the questions : <unka> , <unka/> coding with mixed var . types for poly . <unk#a(-./:]> ) </s>
+<s> <user> [ and here the <unka/> specific <unka> of the problem with a focus on <unk#a(-./:]> ) </s>
+<s> <user> any help is welcome and appreciated . :) </s>
+<s> <user> since i did n't find any information on this topic anywhere in the user guide , i could also help with improving the user guide once i have more information :) </s>
+<s> <user> thank you <unka@> and <unka@> :) </s>

@@ -1,0 +1,5 @@
+<s> <user> thanks <unk#a@> . i 'll try to review soon . i have a couple of hundred emails i need to read , and we want to release this week , though </s>
+<s> <user> <unka@> ( or anyone else ) do you remember the recent blog post that explained <unka-> models as linear combinations ? </s>
+<s> <user> <unka@> do you mean <unka> ? </s>
+<s> <user> URL/https:/ URL/github.com/ <unk#a-/> </s>
+<s> <user> i do n't think that was it . there was a way to explain the prediction made for a single point as a simple function of the features somehow </s>

@@ -1,0 +1,4 @@
+[03:36] <5f7499a2d73408ce4ff04fe5> Hello, I was working on this issue https://github.com/scikit-learn/scikit-learn/issues/20435
+[03:37] <5f7499a2d73408ce4ff04fe5> However I was not able to find the file to contribute the documentation into, can someone please help me with that
+[13:42] <567f5d7716b6c7089cc043a8> @yashasvimisra2798 the documentation is generated from the docstrings in the `.py` files where those classes are implemented. You should look for classes which inherit that class, and find the relevant part of the docstring there.
+[18:49] <5f7499a2d73408ce4ff04fe5> Thanks, @adrinjalali I will look into it.

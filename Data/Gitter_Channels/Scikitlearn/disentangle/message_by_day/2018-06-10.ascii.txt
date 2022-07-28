@@ -1,0 +1,1 @@
+[01:45] <5a2c58c8d73408ce4f8294ba> Is there a reason sklearn.ensemble.partial_dependence only works on gradient boosting?

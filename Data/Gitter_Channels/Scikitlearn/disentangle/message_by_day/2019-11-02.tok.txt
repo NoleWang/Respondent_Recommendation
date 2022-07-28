@@ -1,0 +1,17 @@
+<s> <user> for the people joining the <unka-> sprint , you can find the instructions to install <unka-> from source at the following documentation page : URL/https:/ <unka-./> <unka#-./_> </s>
+<s> <user> in addition , you can find the contributing guide as the following address : URL/https:/ <unka-./> <unka./> </s>
+<s> <user> finally , if you are searching for an issue to work on , several issues have been tagged specifically for <unka> : URL/https:/ URL/github.com/ <unk#a%&+-/=?> you can set some other tags if you want (" good first issues " , etc .). you also free to search any issue that you are interested in on the issue tracker . </s>
+<s> <user> one example of a " good first issue " , particularly if you have never contributed to large open-source projects before is URL/https:/ URL/github.com/ <unk#a-/> aiming to improve <unka> . that would allow you to see how the contribution workflow works before tackling more complex issues . </s>
+<s> <user> also it 's useful to read the contribution guide at URL/https:/ <unka-./> <unka./> </s>
+<s> <user> hi <unka@> i just tried to run <unka_`> and looks like just 13 out of <unk#> tests pass . i suppose i can pick any <unka> to start to improve <unka> , am i right ? is there any scale of priorities ? </s>
+<s> <user> <unka@> yes , you can pick any <unka> that fails :) </s>
+<s> <user> thanks </s>
+<s> <user> hi <unka@> i'd like to pick <unka> </s>
+<s> <user> sure , please comment about it in the issue </s>
+<s> <user> would like to take care of one of the pr that has been labeled as <unka`> and <unka`> <unka`> . i suppose a new one can pick this and conclude the pr also taking into account the comments of the <unka> . what 's the best here ? create a new pr that refers to the already existing one ? </s>
+<s> <user> trying to take a look at URL/https:/ URL/github.com/ <unk#a-/> -- does this seem like a decent issue to tackle ? </s>
+<s> <user> <unka@> sure please comment there . are you part of the <unka> sprint ? </s>
+<s> <user> i 'm at the man <unka> </s>
+<s> <user> ah :) </s>
+<s> <user> i did n't realize there were two today lol </s>
+<s> <user> :) </s>

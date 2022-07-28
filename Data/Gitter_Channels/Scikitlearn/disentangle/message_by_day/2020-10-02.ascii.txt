@@ -1,0 +1,7 @@
+[15:05] <56a7cd59e610378809be543d> Hello, I would like to talk to the maintainers of scikit-learn about their infrastructure needs: https://scikit-learn.org/dev/about.html#infrastructure-support are you currently all set? Or are you looking for a cloud service provider to offer cloud infrastructures?
+[16:19] <55d21ee30fc9f982beadabb8> We are currently using Microsoft Azure/ CircleCI / Travis for our continuous integration and I think that we are pretty happy with the current services.
+[16:25] <55d21ee30fc9f982beadabb8> we might actually improve the testing for ARM but I think that some work has been done using Travis recently
+[16:30] <541a528b163965c9bc2053de> @remyleone I wouldn't mind having ssh access to ARM nodes from time to time to be able to interactively debug stuff. I the moment we use https://scikit-learn.org/dev/developers/tips.html#building-and-testing-for-the-arm64-platform-on-a-x86-64-machine which is kind of slow.
+[16:32] <541a528b163965c9bc2053de> hum I just read: https://www.theregister.com/2020/04/21/scaleway_arm64_cloud_end_of_life/
+[16:32] <541a528b163965c9bc2053de> so probably not interested in this :)
+[16:56] <56a7cd59e610378809be543d> Ok. Thank you very much :)

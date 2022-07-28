@@ -1,0 +1,3 @@
+[07:28] <5957e40fd73408ce4f6b27e0> can knn be used for One Class classification?
+[08:29] <564789be16b6c7089cbab8b7> Would it make sense for http://scikit-learn.org/stable/modules/generated/sklearn.manifold.MDS.html to have a transform method?
+[08:30] <564789be16b6c7089cbab8b7> Currently you can't train it on a training set and then use it on a test set it seems

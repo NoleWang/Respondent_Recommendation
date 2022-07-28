@@ -1,0 +1,11 @@
+<s> <user> <unka@> have you looked at the text <unka> tutorial ? URL/http:/ <unka-./> <unka./_> </s>
+<s> <user> you can also find several examples in the examples gallery : URL/http:/ <unka-./> <unka./_> </s>
+<s> <user> <unka@> , can you please help me out with this issue ?? </s>
+<s> <user> i was trying to work on an easy bug regarding <unka> under <unka.> when i checked the <unka.> file in the given file hierarchy , the robust scaler class does exist and i 'm not able to figure out why is it giving me an import error i 've even tried to run the <unka._> in the examples folder but then again i end up with the same import error . </s>
+<s> <user> i currently use a mac operating on os x 10.11 </s>
+<s> <user> and tried importing the code on python3 </s>
+<s> <user> <unk![> screen shot <unk#-> at <unk#.> <unk#a()-./:]> ) </s>
+<s> <user> <unka@> old version , it is really new </s>
+<s> <user> <unka@> what i meant was ... you're importing an old version of <unka> , while you might be looking at some other source code . try to see the path of <unka.> module after importing <unka.> </s>
+<s> <user> import <unka.> </s>
+<s> <user> <unka.> </s>

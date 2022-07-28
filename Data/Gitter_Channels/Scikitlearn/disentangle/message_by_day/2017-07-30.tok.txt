@@ -1,0 +1,2 @@
+<s> <user> hi all , any open easy issues need to be solved ? </s>
+<s> <user> hello does anyone know if there are any plans to add factor rotation to fa ? </s>

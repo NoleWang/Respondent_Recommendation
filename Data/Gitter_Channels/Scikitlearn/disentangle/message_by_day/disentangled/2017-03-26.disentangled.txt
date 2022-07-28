@@ -1,0 +1,11 @@
+[07:09] <55d21ee30fc9f982beadabb8> @aniked You can also got with the [book](http://shop.oreilly.com/product/0636920030515.do) of @amueller
+--------------------------------------------------------------------------------------------------
+[13:46] <58d7c559d73408ce4f53c7d3> Do you guys have any online courses/ bootcamp recommendation for someone that have been learning the basics of machine learning?
+[13:47] <58d7c559d73408ce4f53c7d3> I just finished the Machine Learning Coursera course and I would like to learn more deeply about the more advanced topics in machine learning.
+--------------------------------------------------------------------------------------------------
+[15:25] <58d6965fd73408ce4f539cff> @amueller  @geekSiddharth @glemaitre  thank you so much guys :)
+--------------------------------------------------------------------------------------------------
+[18:42] <54d4a1d6db8155e6700f853b> @tonyvanhain check out the replies to @aniked above.
+[18:43] <54d4a1d6db8155e6700f853b> I would rather not recommend bootcamps, as you'd have to pay for them usually, and some of them give me money ;)
+[18:44] <54d4a1d6db8155e6700f853b> There's really a whole bunch of good free material online, though
+--------------------------------------------------------------------------------------------------

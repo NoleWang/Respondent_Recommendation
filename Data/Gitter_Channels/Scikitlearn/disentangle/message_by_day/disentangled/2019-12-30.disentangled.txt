@@ -1,0 +1,7 @@
+[00:50] <5e094955d73408ce4fd54a90> Hi, does anyone know about any plans that might exist involving the release cycle or timeline in moving  IterativeImpute package out of it's experimental version? Thanks, I'm hoping to use it and it looks great for my use case!
+--------------------------------------------------------------------------------------------------
+[02:53] <5e0961a4d73408ce4fd54be5> [![Screenshot 2019-12-28 14.29.36.png](https://files.gitter.im/scikit-learn/scikit-learn/Xmzs/thumb/Screenshot-2019-12-28-14.29.36.png)](https://files.gitter.im/scikit-learn/scikit-learn/Xmzs/Screenshot-2019-12-28-14.29.36.png)
+[02:53] <5e0961a4d73408ce4fd54be5> Hi, I want to apply Multinomial Logistic Regression to compute winning probabilities for each contestant in my races. The Data I want to feed in my model look like the image above. I'm tring to understand how should I feed the target class to my model because every race can have a different number of runners, the target class for race A has 5 contestants, instead target class for race B has just 4 contestants.  Is there a way to model this using scikit-learn?
+--------------------------------------------------------------------------------------------------
+[16:43] <567f5d7716b6c7089cc043a8> @guptane6 we hope to fix some issues by the next release. But no guarantees
+--------------------------------------------------------------------------------------------------

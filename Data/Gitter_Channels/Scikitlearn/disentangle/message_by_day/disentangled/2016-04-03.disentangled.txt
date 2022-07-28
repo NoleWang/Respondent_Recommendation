@@ -1,0 +1,12 @@
+[09:27] <5592d95215522ed4b3e31c79> hello everyone
+--------------------------------------------------------------------------------------------------
+[12:02] <54e07d6515522ed4b3dc0858> Nrlson-liu it should be str.split rather than str.split()
+--------------------------------------------------------------------------------------------------
+[19:01] <56c4f19ae610378809c1f8ae> ah, yeah sorry that was a typo on my part. i ended up just making a custom analyzer.
+[19:05] <54e07d6515522ed4b3dc0858> str.split has worked for me
+--------------------------------------------------------------------------------------------------
+[19:13] <56c4f19ae610378809c1f8ae> using str.split seems to break ngram_range, though?
+--------------------------------------------------------------------------------------------------
+[19:15] <56c4f19ae610378809c1f8ae> e.g.  ``` >>> from sklearn.feature_extraction.text import CountVectorizer >>> ngram_vectorizer = CountVectorizer(analyzer=str.split, ngram_range=(1, 2)) >>> ngram_vectorizer.fit_transform(['The quick brown fox jumped over the lazy dog .']) <1x10 sparse matrix of type '<type 'numpy.int64'>' 	with 10 stored elements in Compressed Sparse Row format> >>> print ngram_vectorizer.get_feature_names() ['.', 'The', 'brown', 'dog', 'fox', 'jumped', 'lazy', 'over', 'quick', 'the] ```
+[19:15] <56c4f19ae610378809c1f8ae> looking at the code for `CountVectorizer`, it seems like the analyzer argument is also responsible for making ngrams. So `str.split` would only make unigrams?
+--------------------------------------------------------------------------------------------------

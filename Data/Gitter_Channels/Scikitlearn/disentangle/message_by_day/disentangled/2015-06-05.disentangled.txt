@@ -1,0 +1,92 @@
+[03:21] <54d4a1d6db8155e6700f853b> Pipeline is not a dict because it has a sequence, FeatureUnion is not a dict becaues I'm stupid.
+[03:21] <54d4a1d6db8155e6700f853b> Look at the issue, I went with dict.
+[03:21] <54d4a1d6db8155e6700f853b> why do you think sorting isn't good?
+[03:22] <54d4a1d6db8155e6700f853b> because people don't know which indices correspond to what?
+[03:22] <54d4a1d6db8155e6700f853b> damn I just spend two hours on that.
+--------------------------------------------------------------------------------------------------
+[03:28] <54e07d6515522ed4b3dc0858> Well if you put it that way
+--------------------------------------------------------------------------------------------------
+[03:29] <54e07d6515522ed4b3dc0858> It's not a lot different from classes_ being sorted. Which also is a bit confusing for the user. But it is cleaner.
+[03:29] <54e07d6515522ed4b3dc0858> It would be good to support OrderedDicts if e user so wishes
+--------------------------------------------------------------------------------------------------
+[13:00] <541a528b163965c9bc2053de> @xuewei4d wouldn't you happen to have a PDF version of PRML? I am working at home today and I left my hardcover copy in our lab.
+[18:57] <541a528b163965c9bc2053de> I don't remember...
+--------------------------------------------------------------------------------------------------
+[13:01] <550f53e215522ed4b3dda5f6>  Yes, I have
+--------------------------------------------------------------------------------------------------
+[13:03] <550f53e215522ed4b3dda5f6> https://www.dropbox.com/s/7u13hvokr1lh2fa/Pattern%20Recognition%20and%20Machine%20Learning.pdf?dl=0
+[13:05] <541a528b163965c9bc2053de> thanks :)
+--------------------------------------------------------------------------------------------------
+[13:38] <550f53e215522ed4b3dda5f6> :smile: Let me know if there is any problem in the derivation draft.
+--------------------------------------------------------------------------------------------------
+[14:04] <541a528b163965c9bc2053de> yeah sorry, I am slow to review your work. I have been busy helping a colleague with a nips submission this week. The deadline is tonight. I hope to be more responsive next week.
+--------------------------------------------------------------------------------------------------
+[17:25] <54d4a1d6db8155e6700f853b> @rvraghav93 any update on the generalized CV? It would really be great if you'd report more regularly so we can follow what is happening.
+--------------------------------------------------------------------------------------------------
+[17:57] <53135b495e986b0712efc453> Sory sory! :( will update that soon...!! I am unable to pass all the tests :/
+[17:59] <53135b495e986b0712efc453> BTW can I go ahead and add the exceptions module or should I wait for a reply from Lars (#4309)?
+--------------------------------------------------------------------------------------------------
+[18:01] <54d4a1d6db8155e6700f853b> even if tests are failing, you can still push
+[18:01] <53135b495e986b0712efc453> Okay :)
+[18:02] <54d4a1d6db8155e6700f853b> I am not saying "work harder" but "communicate more" ;)
+[18:02] <54d4a1d6db8155e6700f853b> making tests pass is not always easy, and it is hard for me or @vene to help if we don't see the code
+[18:02] <54d4a1d6db8155e6700f853b> do you need the exceptions module for the cv pr?
+--------------------------------------------------------------------------------------------------
+[18:03] <53135b495e986b0712efc453> Yes sure... apologies for the lack of regular communications :)
+[18:03] <53135b495e986b0712efc453> and yea it would be cleaner to put those in exceptions... coz we are already duplicating a lot of code it would be great if we could group those together into the exceptions module... (not a big issue though)
+[18:04] <54d4a1d6db8155e6700f853b> feel free to do it
+[18:04] <53135b495e986b0712efc453> Thanks :)
+--------------------------------------------------------------------------------------------------
+[18:24] <54d4a1d6db8155e6700f853b> @vene @ogrisel do you remember the estimator summary PR? I think it was by @mblondel ?
+[18:46] <54d4a1d6db8155e6700f853b> is there a more readable alternative to mgrid with complex numbers? this seems like the most horrifying hack.
+[20:58] <54d4a1d6db8155e6700f853b> but how do I solve my one-hot-encoding problem now? Should I change OneHotEncoder to work with strings?
+[20:59] <54e07d6515522ed4b3dc0858> That really should work
+[21:02] <54d4a1d6db8155e6700f853b> I can already hear gael shouting ^^
+--------------------------------------------------------------------------------------------------
+[19:03] <54d4a1d6db8155e6700f853b> maybe I'm imagining things...
+--------------------------------------------------------------------------------------------------
+[19:17] <54e07d6515522ed4b3dc0858> @amueller what are you referencing re: mgrid? is it in any scikit-learn code?
+--------------------------------------------------------------------------------------------------
+[19:52] <550f53e215522ed4b3dda5f6> I just noticed that the problem setting in the current derivation of DPMM is simpler than mine. You could find it in my new blog post http://xuewei4d.github.io/2015/06/05/gsoc-week2-vbgmm-and-gmm-api.html. @amueller @ogrisel @lesteve.
+--------------------------------------------------------------------------------------------------
+[20:05] <54d4a1d6db8155e6700f853b> @vene yes, in the examples. np.mgrid[1:2:10j] means "do ten steps from 1 to 2"
+[20:06] <54d4a1d6db8155e6700f853b> it is a multi-dimensional version of linspace
+[20:06] <54d4a1d6db8155e6700f853b> without the j it means "step"
+[20:07] <54d4a1d6db8155e6700f853b> so mgrid implements a multi-dimensional arange if the third argument is real, and a multi-dimensional linspace if it is complex.
+[20:08] <54d4a1d6db8155e6700f853b> not sure if :rage4: or :trollface:
+[21:06] <54d4a1d6db8155e6700f853b> what should the allowed input types for OneHotEncoder be?
+[21:06] <54d4a1d6db8155e6700f853b> currently it is integer arrays
+--------------------------------------------------------------------------------------------------
+[20:10] <54e07d6515522ed4b3dc0858> So there is no function for this without a slice api?
+--------------------------------------------------------------------------------------------------
+[20:13] <541a528b163965c9bc2053de> Thanks for the wrap-up @xuewei4d! I will have a deeper look at it next week.
+[20:15] <54d4a1d6db8155e6700f853b> @vene that is what I was asking
+[20:16] <54d4a1d6db8155e6700f853b> and the slicing API with complex number that do not mean steps seems a really awkward construct
+[20:19] <54d4a1d6db8155e6700f853b> isinstance(sparse.csr_matrix([[1, 2]]), containers.Mapping) == True. # that is all
+[20:19] <54d4a1d6db8155e6700f853b> gitter is weird
+[20:20] <541a528b163965c9bc2053de> will come back to you to discuss that on the relevant github issues next week
+[20:22] <541a528b163965c9bc2053de> BTW thanks for the effort to typeset the derivation in latex with clear formatting, this is well appreciated.
+--------------------------------------------------------------------------------------------------
+[20:19] <541a528b163965c9bc2053de> @xuewei4d about the API issues, we need to make sure that the score API (in particular the shape) is not conflicting with the score method of other models in scikit-learn in particular models that are not density estimators. I think we would have a `density` or `log_density` methods to have more explicit names and avoid conflicts
+--------------------------------------------------------------------------------------------------
+[20:20] <54d4a1d6db8155e6700f853b>  isinstance(sparse.csr_matrix([[1, 3], [5, 3]]), containers.Mapping) == True. # that is all
+--------------------------------------------------------------------------------------------------
+[20:45] <54d4a1d6db8155e6700f853b> @xuewei4d indeed, that is pretty cool
+[20:46] <54d4a1d6db8155e6700f853b> hum, if I want to one-hot encode ['paris', 'paris', 'london', 'new york'] I have to use ``LabelBinarizer``, not ``OneHotEncoder``. That seems odd.
+[20:46] <54d4a1d6db8155e6700f853b> And if it is ['paris', 'paris', 'london'] I only get a single column....
+--------------------------------------------------------------------------------------------------
+[20:47] <54e07d6515522ed4b3dc0858> @amueller the mapping thing is horrifying
+[20:47] <54d4a1d6db8155e6700f853b> more or less horrifying than the complex slicing?
+--------------------------------------------------------------------------------------------------
+[20:53] <54d4a1d6db8155e6700f853b> Ok so I want to do an example for the heterogeneous feature union / ColumnTransformer that processes `` ['paris', 'paris', 'london', 'new york'] `` as a categorical variable. Is this really not possible with scikit-learn?
+--------------------------------------------------------------------------------------------------
+[20:57] <54e07d6515522ed4b3dc0858> Less. CSR is naturally a dict-like structure
+[20:58] <54d4a1d6db8155e6700f853b> ;)
+--------------------------------------------------------------------------------------------------
+[21:04] <54e07d6515522ed4b3dc0858> We could code a gael-bot for gutter
+--------------------------------------------------------------------------------------------------
+[21:07] <54e07d6515522ed4b3dc0858> Anything that can be turned into a set and indexed?
+[21:08] <54d4a1d6db8155e6700f853b> sorry, I didn't get that
+--------------------------------------------------------------------------------------------------
+[21:54] <54e07d6515522ed4b3dc0858> list of strings should work too
+--------------------------------------------------------------------------------------------------

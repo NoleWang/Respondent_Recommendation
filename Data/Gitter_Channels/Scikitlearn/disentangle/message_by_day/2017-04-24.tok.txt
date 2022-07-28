@@ -1,0 +1,2 @@
+<s> <user> can i use datetime variable as independent variable in case of building a <unka> model like random forest .? i 'm a new to data science . great if someone can help . thanks </s>
+<s> <user> since your datetime variable will be unique per observation , what do you expect to gain by making it a feature ? </s>

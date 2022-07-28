@@ -1,0 +1,1 @@
+<s> <user> hi , i am running into some really wierd behavior on <unka> on an esxi host . although number of jobs is set to a fixed number , the spawned <unka.> will claim all available cores after the <unk#a-> task iteration and run into some sort of infinite loop </s>

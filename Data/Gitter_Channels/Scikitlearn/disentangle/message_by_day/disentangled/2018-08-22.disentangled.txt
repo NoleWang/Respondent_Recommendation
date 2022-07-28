@@ -1,0 +1,9 @@
+[01:51] <54d4a1d6db8155e6700f853b> the appveyor thing is mostly what's preventing me from doing the RC right now :-/
+--------------------------------------------------------------------------------------------------
+[07:01] <5582e83c15522ed4b3e21bef> @amueller there seem to be a few different issues. Very strange.
+[07:02] <5582e83c15522ed4b3e21bef> There are unicode differences. 'foo' vs. u'foo'
+[07:02] <5582e83c15522ed4b3e21bef> and there are also a lot of `, dtype=int32)`vs  `, dtype=int64)`
+--------------------------------------------------------------------------------------------------
+[15:21] <54d4a1d6db8155e6700f853b> @bgruening that's actually not the problem I was having, @jnothman has fixed my problem :)
+[15:22] <54d4a1d6db8155e6700f853b> We're supposed to be skipping doctests on 32bit and possibly on py27. or maybe there was a fix in the doctests for py27 changes? Anyone remember lol?
+--------------------------------------------------------------------------------------------------

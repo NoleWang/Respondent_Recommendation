@@ -1,0 +1,15 @@
+<s> <user> hi , is it possible to use different distance metrics for <unka`> ? i noticed that <unka`> and <unka`> are already implemented in <unka./`> . is there any quick dirty way to somehow specify these metrics instead of <unka> distance for <unka`> ? </s>
+<s> <user> is there a way to check what <unka> <unka-> is built with ? maybe like an info function or something ? </s>
+<s> <user> <unka@> there 's a pr for that ;) </s>
+<s> <user> but it 's whatever numpy is build with , i think </s>
+<s> <user> really , where 's that :) </s>
+<s> <user> <unk##> </s>
+<s> <user> merged actually ! </s>
+<s> <user> so you have it in master </s>
+<s> <user> <unka:> : </s>
+<s> <user> thank you </s>
+<s> <user> if it says <unka`> , does that mean <unka-> 's internal <unka> ? </s>
+<s> <user> i think we stopped shipping <unka> , did n't we ? </s>
+<s> <user> <unka@> not merged yet :) </s>
+<s> <user> <unka@> the method you are looking for is <unka()._`> </s>
+<s> <user> great thanks ! </s>

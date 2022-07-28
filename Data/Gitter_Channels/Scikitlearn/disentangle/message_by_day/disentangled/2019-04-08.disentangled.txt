@@ -1,0 +1,4 @@
+[22:02] <542e902b163965c9bc208763> I'm looking to take a set of attributes about an object in the real world, and then determine a set of products that would best fit it based on these attributes. Would this be a good fit for using a decision tree?
+[22:05] <542e902b163965c9bc208763> these set of products would be values calculated from the attributes themselves
+[22:08] <542e902b163965c9bc208763> I am not looking for any type of prediction though, just a method of representing logic branches nicely in some pretty complex business rules
+--------------------------------------------------------------------------------------------------

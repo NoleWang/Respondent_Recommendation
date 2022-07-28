@@ -1,0 +1,7 @@
+[00:06] <562aa0c916b6c7089cb80cd7> Do I need to have great knowledge about machine learning and AI to start with.
+[00:07] <562aa0c916b6c7089cb80cd7> or knowing some basic about it will help.
+[00:07] <562aa0c916b6c7089cb80cd7> I'm confused as of now I know python and some basic of machine learning and AI
+[00:47] <54d4a1d6db8155e6700f853b> @manipalsingh013 knowing some basics is good but even that is not necessary to get started
+[00:49] <562aa0c916b6c7089cb80cd7> all right @amueller . Thanks
+[03:42] <54c084dbdb8155e6700eed4c> Thanks for all your work @amueller, congrats on the release! :beers: 
+[03:47] <54c084dbdb8155e6700eed4c> btw sorry I missed your responses, I'll have a bit more of a tinker with MLP at some point 

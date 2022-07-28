@@ -1,0 +1,8 @@
+<s> <user> <unka@> i think this would be interesting to work on : URL/https:/ URL/github.com/ <unk#a-/> </s>
+<s> <user> does anyone have opinions about including issue numbers into <unka> ? </s>
+<s> <user> just that <unka> will <unka> github </s>
+<s> <user> :) </s>
+<s> <user> well we can stop using them then ;) also , <unka> the existence of github or the use ? </s>
+<s> <user> as long as the links still work it might be useful , even if we transition to the next version control system ;) </s>
+<s> <user> possibly the existence . but we could always save a copy of the issue text . </s>
+<s> <user> it seems useful to have the numbers . </s>

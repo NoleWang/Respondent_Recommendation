@@ -1,0 +1,43 @@
+<s> <user> <unka"`> <unka"`> - <unk##> , <unk##> , <unk##> , <unk##> , <unk##> , <unk##> , <unk##> , <unk##> , <unk##> , <unk##> , <unk##> , <unk##> , <unk##> and <unka> ready for merge - <unk##> , <unk##> , <unk##> and issues ( or <unka> ) which need a removal of <unka"`> <unka"`> - <unk##> , <unk##> , <unk##> , <unk##> , <unk##> , # <unk#> , <unk##> , <unk##> , <unk##> , <unk##> , <unk##> ( going a bit overboard with the usage of tags - take with a grain of salt - * a " stalled work " tag ( hoping <unka> does n't oppose ;) ) - <unk##> ( and a lot more ... ) ( this tag could be added after the author of the pr says he is no longer interested have time to work on it or does n't respond with the status in a month 's time , this will help people who wish to work on the related issue , understand that their new pr is welcome ... we could just add the <unka"`> <unka"`> back to the related issue ... but people get confused why there is an existing pr for that issue ) * a " action needed " tag - <unk##> along with <unka"`> <unka"`> to denote that review has been done and it needs the author to respond to the review ... ( so we can filter <unka> for review like " need review " and !" action needed " ) </s>
+<s> <user> <unk#a@> 2 of my <unka> also need reviews , you think they need to be tagged ? </s>
+<s> <user> " need review " of course ;) could you list them here ?? </s>
+<s> <user> nevermind ! <unka@> <unk##> , <unk##> </s>
+<s> <user> and awesome you 've fixed <unk##> ... sorry i tried and gave up ... </s>
+<s> <user> that 's ok , that issue still has n't been fixed , though . i was making a mistake by not passing <unka_> , but there is no reason why that test should fail </s>
+<s> <user> should we tag all " <unka> " ones with " needs review " ? </s>
+<s> <user> i was wondering that ... but that would be too much ... so i was thinking maybe we could have only 20 odd <unka"`> <unka"`> tags at a time ? how does that sound ? </s>
+<s> <user> we have at most 10 serious <unka> right ? </s>
+<s> <user> the number of <unka*[`> issues are over 150 </s>
+<s> <user> i tagged all of them , but we should <unka> those that actually wait for the person doing the review to get back </s>
+<s> <user> well how do you choose the 20 ? </s>
+<s> <user> by most recently commented ... </s>
+<s> <user> how does that make sense ? </s>
+<s> <user> if someone created the perfect pull request and no dev reviewed it for 2 years , then it will be never reviewed </s>
+<s> <user> well rules are meant to be broken ... :p we could have 10 more for such <unka> ? or not ... probably that was a stupid suggestion ... nevermind ;) </s>
+<s> <user> but there will be a question on how do we get to decide that 10 probably .. so its better that all <unka*[`> is " need review " tagged ... </s>
+<s> <user> we should remove the ones where we are waiting on the contributor to address comments </s>
+<s> <user> okay that sounds better :) if i catch something like that i 'll just ping u here ... and how about <unka"`> <unka"`> for stalled <unka> ? </s>
+<s> <user> that is the same as pr ;) </s>
+<s> <user> haha ... i mean like <unka-> <unka> ;) </s>
+<s> <user> ? </s>
+<s> <user> for example in [ this <unk#a#(-./:]> ) the author of <unk##> said that he is not working on it anymore ... there are quite a few <unka> like that and a few more where the author has stopped responding ... i was wondering out aloud if we could tag those with <unka"`> <unka"`> ... </s>
+<s> <user> or close them ? </s>
+<s> <user> well how do you know if something is stalled and what would be the benefit of the tag ? </s>
+<s> <user> that is better ... but i feel it should be done only for stalled <unka> which have a related issue open and we should include a comment in the issue that " there was a stalled pr <unk#> that was closed due to inactivity " ... but i am afraid that closing might be a bit rude ? </s>
+<s> <user> i was thinking of doing a random search from time to time ;) </s>
+<s> <user> for comments by authors saying so or comments which ask for status that go <unka> for more than a month ... </s>
+<s> <user> <unk#a@> is <unka> <unka> with you ? </s>
+<s> <user> ah no why ? </s>
+<s> <user> do you know who he is ? </s>
+<s> <user> he is in paris , right ? </s>
+<s> <user> i met so many people at the sprint . </s>
+<s> <user> right you are with alex . hm ... </s>
+<s> <user> ah he was sitting with us ... but i am unable to <unka> who he is ... </s>
+<s> <user> hehe ok </s>
+<s> <user> any dutch :p ? </s>
+<s> <user> <unka@> <unk#a@> in <unka> we have " pr : author 's turn " . it is put once the pr is reviewed and we are waiting on the author to address the comments . this way it is sometime easier to identify stalled one 's . <unka:> : </s>
+<s> <user> <unka@> <unka-> <unka> might also be interesting : <unk##> </s>
+<s> <user> <unka@> the <unka-> stuff here <unk##> would be cool but is likely to be a bigger project </s>
+<s> <user> <unka@> how often do you reassign them ? if the pr is quite active , it changes often who 's turn it is . or do you only do that if it is stalled for a while ? </s>
+<s> <user> it might be helpful </s>
+<s> <user> i have seen it to work best : 1 . it is a big pr . reviews take time . 2 . author replies in a while . probably not a good idea when the pr is quite active . works well for slower one 's . </s>

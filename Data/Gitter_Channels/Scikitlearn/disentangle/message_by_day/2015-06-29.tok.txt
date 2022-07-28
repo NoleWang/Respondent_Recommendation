@@ -1,0 +1,12 @@
+<s> <user> URL/http:/ <unka./> <unka/> </s>
+<s> <user> > <unka@> thats great !! btw why does n't <unka> do the doc tests ? only travis does it ? ( not that it should be of any concern ) because on windows some type <unka`> are slightly different ( i think for int vs long on python 2 iirc ) and some <unka> would have a different representation . porting the <unka> to be cross-platform would be painful . <unka> should be considered a way to check that the documentation is up to date with the code . so if it passes on one platform , we know that the doc is up to date . for unit tests on the other hand we want to test on all the supported platforms to make sure that the code is fully cross-platform . </s>
+<s> <user> thanks :) </s>
+<s> <user> <unka@> thanks for the link :) </s>
+<s> <user> note that last time i checked , the <unka.> vms were 32 bit only . </s>
+<s> <user> that might be a limitation in some cases . </s>
+<s> <user> good point . <unk#a@> you might be able to get a free windows license through msdn academic alliance or <unka> , if your university is <unka> with them . </s>
+<s> <user> i had a <unka> win7 for a while </s>
+<s> <user> i too got one via the ieee <unka> offer !! :d but never used it ;/ anyway the current failure is in 32 <unka/> python 2.6 .. so this should suffice for now :) </s>
+<s> <user> wow ! <unka@> the setup is super fast ... all i had to do was extract and open the <unka> file :o </s>
+<s> <user> i </s>
+<s> <user> btw could i start <unka> <unk##> ( multiple metric support ) in parallel ? but since this depends on the data <unka> pr , i am not sure how to proceed ... should i maybe start a ml thread to collect ideas ? </s>

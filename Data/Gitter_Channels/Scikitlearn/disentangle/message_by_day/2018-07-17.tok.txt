@@ -1,0 +1,108 @@
+<s> <user> sorry , i missed the reply about the hangout . let 's do it when you guys are up , and maybe an hour or so after you have started . that gives you time to get organized . </s>
+<s> <user> URL/https:/ URL/github.com/ <unk#a-/> is blocker and needs a discussion </s>
+<s> <user> <unk#a#-/> ready for review </s>
+<s> <user> <unka@> <unk##> </s>
+<s> <user> <unka@> could you have a look at a small <unka> related change in URL/https:/ URL/github.com/ <unk#a-/> by <unka@> thanks . </s>
+<s> <user> quick reviews on <unk##> please ? </s>
+<s> <user> <unka@> URL/https:/ URL/github.com/ <unk#a-/> </s>
+<s> <user> <unka@> maybe you can merge <unk##> </s>
+<s> <user> ( or anyone who can click the green button ! 0 </s>
+<s> <user> ) </s>
+<s> <user> review URL/https:/ URL/github.com/ <unk#a-/> ? </s>
+<s> <user> <unka@> : done for <unk##> </s>
+<s> <user> <unka@> : done </s>
+<s> <user> <unka@> can you have a look at <unk##> ? </s>
+<s> <user> the travis backlog is starting to be a major problem . does someone have a contact at travis to ask them if they could bump our plan for the day ? </s>
+<s> <user> <unka@> : on it </s>
+<s> <user> can i get comments in <unk##> maybe it can be merged without ci </s>
+<s> <user> i do n't have a contact . i had talked to them in the past , sometimes it works . you're in the same time zone as them <unka@> ;) </s>
+<s> <user> btw i think URL/https:/ URL/github.com/ <unk#a-/> should basically be good t <unka> </s>
+<s> <user> <unka@> are you contacting travis ? </s>
+<s> <user> what contact should i use ? </s>
+<s> <user> for travis ? </s>
+<s> <user> by the way i 'll like to have discussion regarding stacking and the issue of <unka.> ! = <unka_> such that we can unlock the pr </s>
+<s> <user> i know this is not for the coming release thought </s>
+<s> <user> they have an email thing on the website <unka@> </s>
+<s> <user> <unka_> <unka-.@_> </s>
+<s> <user> if we want to do a hangout , it 's in the next hour or so . </s>
+<s> <user> <unka@> : on it </s>
+<s> <user> are there particular topics for the hangout ? the stacking <unka_> ? <unka> column names ? the <unka> doc ? </s>
+<s> <user> all these seem important </s>
+<s> <user> done for travis . we 'll see what they reply </s>
+<s> <user> whether we should backport <unka-> to the rc branch if i can finish it within a week lol ;) </s>
+<s> <user> ( <unka-> ) </s>
+<s> <user> should we do the call ? </s>
+<s> <user> good with the call . </s>
+<s> <user> do you want to call me </s>
+<s> <user> when you do , i 'll run in the room next door , and whoever wants will join me </s>
+<s> <user> i 'll try to call you . </s>
+<s> <user> we can call you by phone on a free mobile </s>
+<s> <user> well but this sounds like we need a <unka> </s>
+<s> <user> so the outcome of this discussion is : we disagree so far </s>
+<s> <user> i 'll write a <unka> , we can discuss it and we can vote </s>
+<s> <user> > the travis backlog is starting to be a major problem . there is an <unka-> feature for <unka> with outdated commits ref : URL/https:/ <unka-./> <unk#a-/> </s>
+<s> <user> there 's a similar feature for <unka> on <unka> </s>
+<s> <user> hth </s>
+<s> <user> i think that we have that </s>
+<s> <user> activated </s>
+<s> <user> yes , both in travis and <unka> , but not circle ci .. </s>
+<s> <user> <unka@> the pr regarding the <unk#a=_> in forest is ready for review </s>
+<s> <user> URL/https:/ URL/github.com/ <unk#a-/> </s>
+<s> <user> <unka@> and other people there : are you ok with switching the default in <unka`> from <unka'=`> to <unka'=`> ? </s>
+<s> <user> the motivation is that silently passing through uniquely identifying columns ( e.g . a user id ) will lead to catastrophic <unka> that beginner users will have a hard time to debug . </s>
+<s> <user> also changing the mode of <unka-> to <unka=> in the " new mode " </s>
+<s> <user> furthermore , it would also make most of our examples a bit more concise . </s>
+<s> <user> <unka> is failing very quickly ( less than 1min ) for a lot of <unka> </s>
+<s> <user> we have a script for fast cancelling old builds in <unka-> . here 's a [ usage <unka(]> URL/https:/ URL/github.com/ <unk#a#-./_> ). this works on travis ci , <unka> , and <unka> as long as the proper environment variables are supplied ref : URL/https:/ URL/github.com/ <unka-./_> </s>
+<s> <user> URL/https:/ URL/github.com/ <unk#a-/> </s>
+<s> <user> <unk#a#-/> on sparse <unka> needs review </s>
+<s> <user> i will look at it now </s>
+<s> <user> URL/https:/ URL/github.com/ <unk#a-/> </s>
+<s> <user> thanks <unka@> , that 's very useful . i 'll look into it . </s>
+<s> <user> here 's how <unka> kills all but last commit URL/https:/ URL/github.com/ <unk#a#-./> </s>
+<s> <user> URL/https:/ URL/github.com/ <unka-./_> </s>
+<s> <user> here 's for <unka> </s>
+<s> <user> URL/https:/ URL/github.com/ <unk#a-/> is also ready for a last <unka/> </s>
+<s> <user> travis bumped our resources !! </s>
+<s> <user> they rock </s>
+<s> <user> we 'll need to thank them </s>
+<s> <user> i 'm off until tomorrow guys . you can have a look at <unk#a#-/> and continue if you wanna merge quickly . </s>
+<s> <user> hey , does anybody understand what the problem is on <unka> : URL/https:/ <unka./> <unk#a-./> ? </s>
+<s> <user> it 's happening on several pr . i do n't love the smell of it . </s>
+<s> <user> URL/https:/ URL/github.com/ <unk#a-/> is almost green on tests , ready for a second review </s>
+<s> <user> looks like travis bumped up to 10 according to <unka@> </s>
+<s> <user> <unka@> did you tweet about it ? </s>
+<s> <user> we should also tweet to <unka> maybe ? </s>
+<s> <user> yes , travis did bump up to 10 . </s>
+<s> <user> it makes a big different </s>
+<s> <user> i did n't tweet , but i 'll thank them in the blog post </s>
+<s> <user> can someone riddle me this ? URL/https:/ URL/github.com/ <unk#a-/> </s>
+<s> <user> sag test failure on python2.7 in the <unk#a=_> branch ?! </s>
+<s> <user> no idea about the <unka> problem but it does seem to happen quite often . </s>
+<s> <user> <unka@> the <unka> issue is recent . one possibility might be that have changed something in their api and that breaks and that broke our trick to automatically cancel skip builds on <unka> that have received new push events in the mean time . </s>
+<s> <user> ok , but it 's a random failure ? </s>
+<s> <user> i 'll merge the <unka> despite of it . </s>
+<s> <user> <unka@> you mean the <unka> , not the <unka> i mentioned , right ? </s>
+<s> <user> i do n't know if it 's random with a very high likelihood or if it 's a deterministic failure . it might be a temporary outage . </s>
+<s> <user> yes , i mean <unka> </s>
+<s> <user> ok cool </s>
+<s> <user> somebody to open the door of <unka> ;) </s>
+<s> <user> i have <unka> enabled in my fork and i have some green builds recently : URL/https:/ <unka./> <unka-/> </s>
+<s> <user> this could well be the http request we use which is problematic . </s>
+<s> <user> i 'll look at the <unka> problem more in details . </s>
+<s> <user> thanks <unka> ! </s>
+<s> <user> my current reading is that we should n't have done the <unka_> <unka> in <unka_`> but in <unka> . but it depends on what we want to do in <unka_> , <unka_> and <unka_> ( and other places i have n't thought of ) </s>
+<s> <user> URL/https:/ URL/github.com/ <unk#a-/> </s>
+<s> <user> <unka@> column transformer remainder change : URL/https:/ URL/github.com/ <unk#a-/> </s>
+<s> <user> URL/https:/ URL/github.com/ <unk#a-/> </s>
+<s> <user> try to fix <unka> ! </s>
+<s> <user> <unka@> URL/https:/ URL/github.com/ <unk#a#-/> </s>
+<s> <user> so <unka@> made the good point that the <unka> warning thing should be removed in the release </s>
+<s> <user> my pr is green now if someones wants to be the 2nd <unka> : URL/https:/ URL/github.com/ <unk#a-/> </s>
+<s> <user> we looked at <unka> with sik . there is a work-around in master and all the current running <unka> builds have been killed . just push a new commit in your branch if you want <unka> to run again or ask me while i have a <unka-> tab opened . </s>
+<s> <user> i will also cancel all the circle ci builds as the queue is far too long . we can restart new builds on new pr ( preferably recently opened ones , or those with a recent master merge commit ). </s>
+<s> <user> any comments here URL/https:/ URL/github.com/ <unk#a-/> </s>
+<s> <user> ?? </s>
+<s> <user> <unka@> URL/https:/ URL/github.com/ <unk#a-/> </s>
+<s> <user> sorry URL/https:/ URL/github.com/ <unk#a-/> </s>
+<s> <user> <unka@> URL/https:/ URL/github.com/ <unk#a-/> </s>

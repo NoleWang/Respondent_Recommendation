@@ -1,0 +1,9 @@
+[16:04] <54d4a1d6db8155e6700f853b> @mrocklin can you share your application domain?
+[16:06] <54d4a1d6db8155e6700f853b> @mkoske it means none of the values is masked out
+[16:06] <54d4a1d6db8155e6700f853b> i.e. it's a normal full array
+[17:10] <530c03e25e986b0712efafb8> @amueller I genuinely don't know the application domain.  Government types are asking for a general library for tensor decompositions in Python.
+[17:11] <530c03e25e986b0712efafb8> Which, while that ignorance is somewhat suboptimal, also means that we get to build software for the common case.
+[17:11] <530c03e25e986b0712efafb8> (this is somewhat typical in my world)
+[17:11] <54d4a1d6db8155e6700f853b> huh alright
+[17:12] <54d4a1d6db8155e6700f853b> well in machine learning, tensor decomposition applications are somewhat "new"
+[17:14] <530c03e25e986b0712efafb8> Given the wiggle room, how would you direct my time to best benefit the community if other people were paying for it?

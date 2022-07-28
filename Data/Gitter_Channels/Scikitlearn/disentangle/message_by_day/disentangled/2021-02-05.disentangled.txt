@@ -1,0 +1,4 @@
+[17:57] <5b444ca2d73408ce4fa03e12> hi, quick question, is there a preprocessor in sci-kit that allows me to split a feature into two?
+--------------------------------------------------------------------------------------------------
+[18:18] <5b444ca2d73408ce4fa03e12> ok, there's column transformer, I can use that
+--------------------------------------------------------------------------------------------------

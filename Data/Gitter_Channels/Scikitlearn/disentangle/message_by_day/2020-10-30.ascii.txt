@@ -1,0 +1,1 @@
+[16:40] <5f9c412fd73408ce4ff2ed47> Hello everyone, does anyone know how to solve nonlinear equations of a trained sklearn model?? I mean I have a trained sklearn model `f(x)` and I want to solve equations like `f(x)=c` where c is a constant?

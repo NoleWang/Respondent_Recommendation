@@ -1,0 +1,2 @@
+[08:34] <5b2f34c7d73408ce4f9e6615> https://chat.whatsapp.com/EY44e81jzzCFLXEkY0tjFc
+[20:11] <564789be16b6c7089cbab8b7> I have some 2d data which I think would be well classified by two straight intersecting lines. One straight line is logistric regression I believe but how can you get two straight lines as the decision boundary?

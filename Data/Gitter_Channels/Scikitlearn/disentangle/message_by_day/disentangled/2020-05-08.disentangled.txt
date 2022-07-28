@@ -1,0 +1,4 @@
+[11:31] <5eb542add73408ce4fe31aad> Hi, I'm trying to use Pipeline for combining feature extraction and clustering. I see that there are ways in sklearn for transforming a single column into one or more columns. What I would like to do is specify a new feature as a function of a number of features, inside a pipeline.  I looked at ColumnTransformer, FeatureUnion, and Pipeline, but neither of these enable what I am looking for. Do I have to create these new *features* before I put them in the pipeline? Or am I missing something int he documentation?
+--------------------------------------------------------------------------------------------------
+[16:02] <5baf7d9ad73408ce4fa9c9b2> @Bri9k_gitlab maybe the FunctionTransformer is what you're looking for?
+--------------------------------------------------------------------------------------------------

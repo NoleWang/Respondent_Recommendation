@@ -1,0 +1,1 @@
+[07:05] <56bb7a56e610378809c0cb2c> `algo_max` Mohammad Masudul Alam (Gitter): have you take results = GridSearchCV, results has a cv_results_ variable.. it should contain what you're looking for.

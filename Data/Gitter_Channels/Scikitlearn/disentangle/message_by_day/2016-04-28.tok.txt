@@ -1,0 +1,29 @@
+<s> <user> hi .. i have a binary <unka> task with 300 positive examples 300 million negative </s>
+<s> <user> is there a sensible way to handle this ? </s>
+<s> <user> what do you mean by " to handle " ? </s>
+<s> <user> well i would like to use the knowledge about the 300 million negative examples to learn what " normal " looks like </s>
+<s> <user> <unka@> i could just throw it at a random forest and ignore the massive skew . is that a sensible thing to do ? </s>
+<s> <user> <unka@> sorry , i do n't have enough knowledge yet to help you </s>
+<s> <user> <unka@> no problem at all </s>
+<s> <user> it would be nice if some of these were in <unka-> URL/https:/ URL/github.com/ <unka/> </s>
+<s> <user> if you think a linear model could work , you could optimize for <unka> by training on <unka> differences of positive and negative examples . </s>
+<s> <user> <unka@> an interesting suggestion . unfortunately it my case i do n't think linear models will work </s>
+<s> <user> also , there are a lot of pairs of positive and negative examples are n't there ? </s>
+<s> <user> there are a lot indeed , but you could <unka> <unka> the pairs and do <unka_> sgd iterations </s>
+<s> <user> it 's the idea used in <unka-> , which is pretty great </s>
+<s> <user> now i need to look up <unka-> ! :) </s>
+<s> <user> <unka@> but for my problem i ca n't see that linear models would work </s>
+<s> <user> the " numerical data " has special values that seem to indicate particular things . so <unk#,> have some meaning from <unk#-> do n't for example . except i do n't get told what those are </s>
+<s> <user> random <unka> are good at picking these out </s>
+<s> <user> true . you could <unka> the data , i guess . in random <unka> you can just use sample weights to deal with class <unka> . </s>
+<s> <user> actually it seems now you can actually use <unka"=_`> </s>
+<s> <user> the problem is its not clear a <unka> how to bin the numerical data , if that is what you mean </s>
+<s> <user> i am not 100% convinced that actually does anything :) </s>
+<s> <user> there is an issue about that i think </s>
+<s> <user> but i will certainly try that </s>
+<s> <user> it should <unka> the samples accordingly . the problem is , that is n't guaranteed to be better . </s>
+<s> <user> ah ok </s>
+<s> <user> that 's interesting </s>
+<s> <user> <unka@> i 'm not saying there is no bug there , i am not familiar with the code </s>
+<s> <user> but i 'm saying that , even with linear models , <unka"=_`> does not necessarily lead to better generalization </s>
+<s> <user> if you're into deep learning stuff , you can use a similar sampling strategy + <unka> training there . i think they call it " <unka> loss " in that world :) </s>

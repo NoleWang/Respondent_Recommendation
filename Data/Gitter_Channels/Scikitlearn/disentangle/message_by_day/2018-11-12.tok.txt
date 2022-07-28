@@ -1,0 +1,10 @@
+<s> <user> <unka@> here 's an example : <unk`> <unka'([> , <unka'> - brooklyn <unka'> , <unka'> <unka'> , <unk#'> street <unka'-/> , <unka'> , <unk#'> 31 <unka'> , <unk#'> <unka'> , <unka'> , <unka'> , <unk#'> <unka'> , <unka'> ], <unka=> ) <unk`> </s>
+<s> <user> <unk![> <unka()-./:]> ) </s>
+<s> <user> here <unka`> is ( <unka_> , 11 ) </s>
+<s> <user> these two are different examples , though ?! ok so do you want one <unka> for each column ? </s>
+<s> <user> <unka(*[_`> , <unka(> )) for c in <unka).]`> should do that . </s>
+<s> <user> but really status here is probably a <unka> variable - thought i guess <unka> also works for those </s>
+<s> <user> well unless there 's a space in one of the category names - so explictly saying these are <unka> might be better </s>
+<s> <user> > these two are different examples , though ? they are the same in the sense that the picture is <unka`> and the array above corresponds just to the first row of <unka`> . > but really status here is probably a <unka> variable true , its a <unka> value . </s>
+<s> <user> thanks ! </s>
+<s> <user> yeah well treating a single column is different from treating the table , and the single column example is exactly what <unka> does </s>

@@ -1,0 +1,78 @@
+[08:53] <564789be16b6c7089cbab8b7> @byo-ai  pay?
+[08:53] <564789be16b6c7089cbab8b7> @lesteve  :)
+--------------------------------------------------------------------------------------------------
+[08:54] <564789be16b6c7089cbab8b7> a really simple question. Currently I do clf.score(Xordinal_test, y_test). If I want to use balanced accuracy instead, is there a similar one line solution?
+--------------------------------------------------------------------------------------------------
+[09:28] <55d21ee30fc9f982beadabb8> `balanced_accuracy_score(clf.predict(X_ordinal_test), y_test)`
+[09:28] <55d21ee30fc9f982beadabb8> This is a one liner solution if you omit the import :)
+[09:29] <55d21ee30fc9f982beadabb8> We don't allow to switch the default score in `clf.score` to be more explicit
+[09:29] <55d21ee30fc9f982beadabb8> so you need to get the prediction and call the score function
+--------------------------------------------------------------------------------------------------
+[09:31] <55d21ee30fc9f982beadabb8> You also have the possibility to use the scorer API but this is not a one liner
+[09:31] <564789be16b6c7089cbab8b7> thanks!
+[09:32] <55d21ee30fc9f982beadabb8> ``` scorer = get_scorer("balanced_accuracy") scorer(clf, X, y) ```
+--------------------------------------------------------------------------------------------------
+[09:33] <55d21ee30fc9f982beadabb8> Actually you could `get_scorer("balanced_acccuracy")(clf, X, y)` but I think that we don't head toward readable code :)
+--------------------------------------------------------------------------------------------------
+[09:42] <564789be16b6c7089cbab8b7> @glemaitre I like it. Thank you
+[09:43] <564789be16b6c7089cbab8b7> I have a different more general question. I am doing binary classification. I would like to maximize the number of items in the positive class that get a probability higher than any probability from the negative class. Does this correspond to a known loss function?
+[09:46] <564789be16b6c7089cbab8b7> let me edit it to get rid of the word score...
+--------------------------------------------------------------------------------------------------
+[09:49] <55d21ee30fc9f982beadabb8> https://github.com/scikit-learn/scikit-learn/pull/16525
+[09:49] <55d21ee30fc9f982beadabb8> You might want this things maybe
+--------------------------------------------------------------------------------------------------
+[09:50] <55d21ee30fc9f982beadabb8> Basically, this is tuning the threshold of the argmax when doing the predict from the predict_proba
+[09:50] <55d21ee30fc9f982beadabb8> Otherwise, `sample_weigth` or `class_weigth` will allow you to play on the inner loss
+[09:50] <55d21ee30fc9f982beadabb8> while training
+--------------------------------------------------------------------------------------------------
+[09:55] <564789be16b6c7089cbab8b7> @glemaitre thank you. I haven't fully understood how to use your suggestions for my problem but I will have a think
+[09:55] <564789be16b6c7089cbab8b7> maybe it could go on scikit-learn discussions as well :)
+[09:55] <55d21ee30fc9f982beadabb8> I think so
+[09:56] <55d21ee30fc9f982beadabb8> I might have misunderstood the use-case (a small example with specific number might help :))
+--------------------------------------------------------------------------------------------------
+[10:00] <564789be16b6c7089cbab8b7> I can give one in about 90 minutes
+--------------------------------------------------------------------------------------------------
+[10:12] <5571fe1015522ed4b3e17d90> > maybe it could go on scikit-learn discussions as well :)  +1. As mentioned in https://github.com/scikit-learn/scikit-learn/discussions/19220#discussioncomment-298015 my feeling (and probably others feeling) is that gitter is not the best place for Q&A. I guess a reasonable approach is to create a discussion and then ping on gitter if you feel you have not received an answer after some time
+--------------------------------------------------------------------------------------------------
+[10:16] <564789be16b6c7089cbab8b7> @lesteve thanks. I do like the interactive nature of gitter to a) improve the question and/or b) realise I shouldn't have asked it in the first place :)
+--------------------------------------------------------------------------------------------------
+[10:29] <5571fe1015522ed4b3e17d90> Yeah I agree the threshold about "what is OK to ask on gitter" is not very clear. I would favour an approach as I mention above discussion + ping on gitter after some time. It is not as much interactive but it is a better investment of answerer time since the question + answer will be findable by googling (contrary to gitter)
+[10:29] <564789be16b6c7089cbab8b7> makes sense
+--------------------------------------------------------------------------------------------------
+[10:31] <55d21ee30fc9f982beadabb8> Gitter should come with a feature that you cannot scroll-up in your discussion feed
+[10:32] <55d21ee30fc9f982beadabb8> because this is a bit what happens in reality :)
+[10:33] <564789be16b6c7089cbab8b7> :)
+--------------------------------------------------------------------------------------------------
+[10:35] <564789be16b6c7089cbab8b7> This isn't a full example but hopefully it will help clarify. Say my positive class items get 0.1, 0.3, 0.7, 0.9 from predict_proba and my negative class items get 0.01, 0.2, 0.2, 0.5. Then two of the positive class items get a prob (0.7, 0.9) larger than the largest prob (0.5) from the negative class.
+[10:35] <564789be16b6c7089cbab8b7> @glemaitre does that make it any clearer?
+--------------------------------------------------------------------------------------------------
+[10:39] <55d21ee30fc9f982beadabb8> So the cutoff classifier intend to change the probability from 0.5 to another threshold
+[10:39] <55d21ee30fc9f982beadabb8> such that you can for instance the maximum number of predictions of the positive label
+--------------------------------------------------------------------------------------------------
+[10:41] <564789be16b6c7089cbab8b7> @glemaitre  yes. But the cutoff is a function of the probs that the negative class items are given
+[10:41] <564789be16b6c7089cbab8b7> my example of 0.5 above wasn't a great choice :)
+[11:45] <564789be16b6c7089cbab8b7> argh... I hate how easy it is to be confusing.
+[11:46] <564789be16b6c7089cbab8b7> @lesteve do you think my post is clear now?
+--------------------------------------------------------------------------------------------------
+[10:43] <55d21ee30fc9f982beadabb8> Oh you want to reinforce your learning step
+[10:43] <55d21ee30fc9f982beadabb8> I see
+--------------------------------------------------------------------------------------------------
+[10:45] <55d21ee30fc9f982beadabb8> In some way, I could think about a boosting strategy as AdaBoost, but instead of learning new learner favoring misclassified samples, you want to favor specific samples from the positive class.
+--------------------------------------------------------------------------------------------------
+[10:51] <55d21ee30fc9f982beadabb8> I don't know if there is something in active learning allowing such stuff
+[10:52] <55d21ee30fc9f982beadabb8> But I am not knowing so much in this area
+--------------------------------------------------------------------------------------------------
+[10:59] <564789be16b6c7089cbab8b7> thanks. I was going to post on discussions but I can't think of a suitable title :)
+--------------------------------------------------------------------------------------------------
+[11:00] <55d21ee30fc9f982beadabb8> "Reinforce sample weight for online learning"
+--------------------------------------------------------------------------------------------------
+[11:21] <564789be16b6c7089cbab8b7> posted
+--------------------------------------------------------------------------------------------------
+[11:34] <5571fe1015522ed4b3e17d90> with the link there is even more chances that someone answers :wink: https://github.com/scikit-learn/scikit-learn/discussions/19239
+[11:36] <564789be16b6c7089cbab8b7> @lesteve thanks :)
+--------------------------------------------------------------------------------------------------
+[12:43] <564789be16b6c7089cbab8b7> I guess it's equivalent to maximizing true positives when you have 0 false positives...?
+[16:30] <564789be16b6c7089cbab8b7> now I am tempted to try one of the options mentioned in the discussions. Now really sure which one though
+--------------------------------------------------------------------------------------------------
+[16:46] <564789be16b6c7089cbab8b7> *Not
+--------------------------------------------------------------------------------------------------

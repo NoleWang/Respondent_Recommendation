@@ -1,0 +1,40 @@
+<s> <user> <unka@> <unk##> re-opened by accident ? </s>
+<s> <user> <unka@> thanks for the mail . <unk##> reports more issues </s>
+<s> <user> np </s>
+<s> <user> i thought that one was limited to graphviz ? </s>
+<s> <user> there are a couple of other issues with other 32-bit <unka\> </s>
+<s> <user> yeah </s>
+<s> <user> i never thought about the fact that anyone can edit the wiki and there is no tracking ... hum </s>
+<s> <user> there 's tracking </s>
+<s> <user> click <unka'> </s>
+<s> <user> sorry <unka'> </s>
+<s> <user> under the title </s>
+<s> <user> i moved the recent paris sprint info to <unka'> <unka'> </s>
+<s> <user> do core <unka> get notified of the changes to wiki ? </s>
+<s> <user> not that i know of . maybe i could subscribe </s>
+<s> <user> yeah i saw , looks good :) </s>
+<s> <user> reviews for URL/https:/ URL/github.com/ <unk#a-/> would also be welcome </s>
+<s> <user> <unka@> the review suggestions are not explicitly for you , i just like to spam the channel ;) </s>
+<s> <user> haha ok . i have no familiarity with <unka> anyhow :-/ but <unk#a> ? i did n't even know that existed ! number of ants to stack to get to the moon ? </s>
+<s> <user> damn , i confused <unk##> and <unk##> </s>
+<s> <user> you were right , <unk##> should have been closed </s>
+<s> <user> thought so . just the one failure </s>
+<s> <user> anyone who has a spare cycle and cares about package organization , comments about the location of <unka_`> in <unk##> welcome :- ) </s>
+<s> <user> anyone who as spare cycles , i just opened 7 pull requests , 4 of which are release blockers ^^ </s>
+<s> <user> <unka@> where did you see the <unka`> warnings ? </s>
+<s> <user> i just commented </s>
+<s> <user> also , do n't worry about it tonight ;) </s>
+<s> <user> no warnings on python <unk#.> and numpy 1.8.2 </s>
+<s> <user> yeah you need numpy 1.10 </s>
+<s> <user> i think </s>
+<s> <user> reproduced it , but yeah , i am better of looking at this tomorrow :d </s>
+<s> <user> i would really like to get some feedback on how to treat the 32bit test failures </s>
+<s> <user> could you tell me more about them ? </s>
+<s> <user> the 32bit failures ? they are precision issues and i do n't know whether to reduce the precision or ignore the tests or what else to do . </s>
+<s> <user> do you have some logs somwhere ? </s>
+<s> <user> <unka*> </s>
+<s> <user> <unka@> , on <unk##> , would a test to ensure an index error is not thrown for the second example i gave be sufficient ? </s>
+<s> <user> or test the value error string ? </s>
+<s> <user> testing the value error string would be good </s>
+<s> <user> <unka@> logs are here : URL/https:/ URL/github.com/ <unk#a-/> but it is more a question to the other core devs on how we handle this . </s>
+<s> <user> ok </s>

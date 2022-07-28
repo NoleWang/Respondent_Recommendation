@@ -1,0 +1,3 @@
+[05:17] <5ef58225d73408ce4fe7f0dc> Hello, the question I meet is the socres returned from the function 'cross_val_score'  seem to be very different from the result of actual fitting process. This is the last training process where most of the valid loss are about 0.1. However the score I get from the 'cross_val_score' is about 0.49. The score I use is the 'neg mse' which is the similar to the loss function of the network  'mse'. I want to know why it happens and how to fix it. Thanks a lot.
+[05:17] <5ef58225d73408ce4fe7f0dc> [![image.png](https://files.gitter.im/541a528c163965c9bc2053e1/rNGu/thumb/image.png)](https://files.gitter.im/541a528c163965c9bc2053e1/rNGu/image.png)
+--------------------------------------------------------------------------------------------------

@@ -1,0 +1,23 @@
+<s> <user> if you use <unka> like this : scaler = <unk#a(=_> , 1 )) train = <unka(._> ) test = <unka(.> ) </s>
+<s> <user> are we guaranteed that test is in the range 0 to 1 ? </s>
+<s> <user> <unka@> the training set yes , the <unka-> not . </s>
+<s> <user> <unka@> ah right .. so what is the right thing to do here ? </s>
+<s> <user> the right thing to do for what ? </s>
+<s> <user> i need to scale the data to use <unka> ( <unka> ) </s>
+<s> <user> so i train on some set and the test on another </s>
+<s> <user> how should i scale the test set ? </s>
+<s> <user> if this method does n't guarantee it will be in the right range </s>
+<s> <user> is there a technical reason why it needs to be in this range ? </s>
+<s> <user> it will be in this range unless there are samples in the test set that are outside of the range of the training set </s>
+<s> <user> hmm .. i do n't actually know .. it 's just that all the docs says you should scale everything to be in the range 0 to 1 </s>
+<s> <user> yeah , then using <unka> in this way is exactly the right thing to do . </s>
+<s> <user> ok thanks .. it occurred to me that you could just scale the test set independently too </s>
+<s> <user> which would n't be " cheating " but would give you the guarantee </s>
+<s> <user> but maybe that is wrong </s>
+<s> <user> that will make it harder for the algorithm to generalize , because the meaning of the values in the training and test set will be different </s>
+<s> <user> true and good point </s>
+<s> <user> thank you </s>
+<s> <user> in a related question .. how would you do cv for time series data ? the only obvious method that i can think of is to randomly split the data into the first <unka%> of samples and the last ( <unk#a%)-> of samples and train and test accordingly . but that clearly has much less randomness than a normal cv and the different <unka> overlap hugely </s>
+<s> <user> i am confused by this example to visualize a decision tree . URL/http:/ <unka-./> <unka#./> in a script , how do you get to see the picture ? the example just finishes with > > > graph = <unka(._> ) > > > graph </s>
+<s> <user> in jupyter you can just put the graph object in a cell </s>
+<s> <user> it 'll show as image </s>

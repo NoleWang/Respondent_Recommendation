@@ -1,0 +1,37 @@
+<s> <user> <unk#a@> wow , it 's been a while since i 've seen an .ini file ! </s>
+<s> <user> haha </s>
+<s> <user> <unka@> <unka@> thinks it is the best . i just feel it is hard to type ;) </s>
+<s> <user> <unk#a@> which pr are you currently working on ? i think the data <unka> cv should have priority . </s>
+<s> <user> <unk#a@> in the blog post , " <unka> " should probably be " improve " </s>
+<s> <user> <unka@> good thing <unka> has autocompletion </s>
+<s> <user> can i ask a quick <unka> question here ? URL/https:/ URL/github.com/ <unk#a#./> it says r+ and <unka+> " will propagate the changes to disk " . should n't that be " will not propagate " ? </s>
+<s> <user> ping <unka@> ? </s>
+<s> <user> i am <unka> time and again by which <unka> and issues get attention </s>
+<s> <user> what do you mean ? the <unka> ? </s>
+<s> <user> <unka*> ? </s>
+<s> <user> yeah </s>
+<s> <user> i mean it is neat , but like 6 core devs in a day ? </s>
+<s> <user> i think it 's because all of us hacked up one at some point or another </s>
+<s> <user> yeah probably </s>
+<s> <user> but the <unka> thing did n't get as much attention , i think </s>
+<s> <user> i am <unka> happy about the <unka> </s>
+<s> <user> those are great . </s>
+<s> <user> for users who learn by hacking around in ipython , it was so easy to miss the user guide completely </s>
+<s> <user> well but from ipython you do n't get a clickable link , only a useless reference , right ? </s>
+<s> <user> good point ... but at least you know it exists </s>
+<s> <user> true </s>
+<s> <user> <unka@> <unka@> i think i need more time to write down all equations of <unka> and <unka> . currently i have those for full and diag <unka> . URL/https:/ URL/www.dropbox.com/ <unk#a./=?> </s>
+<s> <user> so you are missing <unka> ? should n't that be easiest ? </s>
+<s> <user> i 'll try to have a look tomorrow , but it would be great if <unka@> and <unka> could have a look </s>
+<s> <user> well , i read through <unka> and equations for full <unka> . since there are some repeated routines , i choose to do them in order of 'full' , <unka'> , <unka'> and <unka'> . </s>
+<s> <user> since <unka'> share some similarities with 'full' </s>
+<s> <user> ok </s>
+<s> <user> <unk#a@> " digits " is not the same dataset as <unka> , it is much smaller . in your blog post , you mention <unka> but link to a digits example . </s>
+<s> <user> <unk#a@> why do you use alpha when plotting points ? </s>
+<s> <user> <unk#a@> i feel this sentence is unclear : " even when the model is optimized with the <unka> of maximizing the score based upon the test set , there is still a chance of <unka> as the information about the test set can leak into the model and hence the model could be optimized for the test set alone ." it would be more explicit to say the information leaks via the selection of <unka> . </s>
+<s> <user> <unk#a@> and <unka-> does not entirely overcome this . <unka> to <unka-> is harder than <unka> to a single test set , but it is still possible , which is why people do nested <unka-> . </s>
+<s> <user> <unk#a@> <unka(._> , <unka_> ) is also not great btw . you can just use <unka.> </s>
+<s> <user> <unk#a@> talking about <unk#a=> for the svm is also a bit weird . this is an odd way that we used to select the default , which is 1 . <unka_> ,i think . </s>
+<s> <user> " which is why people do nested <unka-> " i think that 's where <unk#a@> is trying to lead to . </s>
+<s> <user> thanks , <unka@> . the text in the draft is kind of vague , but i think you could get ideas just looking at equations . </s>
+<s> <user> hope you do n't mind . </s>

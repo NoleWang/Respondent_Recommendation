@@ -1,0 +1,4 @@
+<s> <user> <unk#a-@> try intro to machine learning course on <unka> . its free and uses <unka> library . </s>
+<s> <user> <unka@> thanks for help </s>
+<s> <user> i am gonna jump straight into it </s>
+<s> <user> it also has a full project in the end to practice the complete ml flow . </s>

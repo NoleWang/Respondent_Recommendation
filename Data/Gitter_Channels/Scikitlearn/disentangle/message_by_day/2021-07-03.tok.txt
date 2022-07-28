@@ -1,0 +1,3 @@
+<s> <user> now it also works for me . had tried with two different networks yesterday ... did n't work that time .. </s>
+<s> <user> anyway , i wanted to ask what version of <unka> ( <unka.> ) does <unka> use ( assuming it uses it . if not , what <unka> library is used )? </s>
+<s> <user> if i have a neural network <unka> i can easily simulate data from the probability distribution implied by the <unka> . can this be done for any of the <unka> in <unka> learn ? </s>

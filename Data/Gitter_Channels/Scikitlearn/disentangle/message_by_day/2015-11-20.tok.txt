@@ -1,0 +1,35 @@
+<s> <user> <unka@> because i 'm trying to cluster an image and for that i 've found in the literature that it 's possible to take into account the spatial context ( neighbourhood ) when using fuzzy <unka-> . but , i would be really interested to know if <unka> offer this possibility as well in image clustering ( considering the spatial dimension besides the intensity ), although i had issues with the <unka> on matlab when operating on a <unka-> data ( <unka> <unka> ). </s>
+<s> <user> the number of open <unka> are slowly increasing ... from 300 to 368 :o </s>
+<s> <user> we should have one sprint just for reviewing ;) that would be awesome ! </s>
+<s> <user> btw github 's new repo layout is good ! ;) </s>
+<s> <user> everything on top ... </s>
+<s> <user> <unk#a@> that 's a great idea ! </s>
+<s> <user> when clustering an image ( distribution of pixel <unka> ), is it possible using <unka> ( implemented in <unka-> ) to include the spatial context besides the pixel brightness during the clustering ( <unka> using <unka> <unka> distribution )? </s>
+<s> <user> <unk#a@> that 's quite a tricky question ( i am not an expert ). i suspect your best bet for getting a high quality answer would be actually implement a solution using <unka> on some publicly available data and show the problem . can you do that ? </s>
+<s> <user> even better if you can find another system that does exactly what you want and compare them </s>
+<s> <user> there is nothing as compelling to a developer as a worked example :) </s>
+<s> <user> <unka@> i know that what i 'm trying to do has already been achieved with fuzzy <unka-> ( including the neighborhood context ) to the clustering ( see [ <unka> and chen 2004 ] a novel <unka> fuzzy <unka-> algorithm with application in medical image segmentation ). but , since the fuzzy <unka-> is not implemented in <unka-> , i 'm looking for something similar but with <unka> . </s>
+<s> <user> is there code in some other language for fuzzy <unka-> ? </s>
+<s> <user> <unka@> yes in python ( URL/https:/ URL/github.com/ <unka-/> ) </s>
+<s> <user> <unk#a@> it 's very useful you have code that does it . your question is good but i wonder if this the right place for it . if you are not asking for a new feature or asking about an existing one maybe a stackexchange site would work better </s>
+<s> <user> <unka@> ok i will try to test the <unka> implemented in <unka-> , to cluster images ( taking into account the spatial context ). otherwise , i will ask my question in stackoverflow ... thanks .. </s>
+<s> <user> <unk#a@> sorry i was n't very helpful ! </s>
+<s> <user> please feel free to post the url to the question here </s>
+<s> <user> <unka@> it 's okay , my issue is not really related to machine learning ( clustering ). just an image processing issue ( maybe i should ask to the <unka-> community ): URL/http:/ URL/stackoverflow.com/ <unk#a-/> </s>
+<s> <user> <unk#a@> the standard is to also include the x and y coordinates . <unka> for example is just <unka-> on <unka,> </s>
+<s> <user> same for <unka> </s>
+<s> <user> look at the image segmentation module in <unka-> . it does what you want . </s>
+<s> <user> <unk#a@> <unka> on so , too </s>
+<s> <user> <unka@> starting to review your <unka> . teaches you to be careful what you wish for ;) </s>
+<s> <user> <unk#a@> please do n't ping joel , he is offline at the moment . </s>
+<s> <user> yes i heard about him ... thats so sad ... :/ hope he stays strong !! and yes sure i wo n't ... ( btw are you telling me in the context of any particular comment where i accidentally pinged him or are you just letting me know ?) </s>
+<s> <user> btw i just realized you are down to your last but one task in your todo ... that means i am next <unka:_> : </s>
+<s> <user> ( do n't worry i 've a very small list - <unk##> <unk##> <unk##> <unk##> ) </s>
+<s> <user> :p </s>
+<s> <user> no , there is like three more tasks :p still on <unka> , then <unka> and <unka> </s>
+<s> <user> you pinged joel 5 days ago somewhere . how did you hear . he did not post publicly , so i think we should not make it <unka> public . </s>
+<s> <user> check pm :) </s>
+<s> <user> well then <unk#a(.[_`> , <unk#> , <unk#> , <unk#)]`> ^_^ </s>
+<s> <user> URL/http:/ URL/i.imgur.com/ <unk#a./> </s>
+<s> <user> ( note the last line ) </s>
+<s> <user> in my defence <unka_`> <unka`> fails when the thread is busy ... so u dont have to worry about it :p i 'll work on something else at the moment <unka:> : </s>

@@ -1,0 +1,2 @@
+[07:00] <58d1e48dd73408ce4f52af1b> @amueller I got BallTree to work with PyProj's inv()
+[07:14] <58d1e48dd73408ce4f52af1b> @amueller As mentioned by you in this issue - https://github.com/scikit-learn/scikit-learn/issues/6256 you are suggesting that the custom myfunc can be written in Cython which I am willing to do. But we are shipping a product. What happens when there is a new version of scikit-learn and what will happen to my Cython extension ?

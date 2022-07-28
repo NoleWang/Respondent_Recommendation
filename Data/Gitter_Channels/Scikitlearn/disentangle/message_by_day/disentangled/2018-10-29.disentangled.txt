@@ -1,0 +1,9 @@
+[06:59] <5668c71116b6c7089cbe1ea3> @MVenkat_28_gitlab well, I guess I mean for unregularized regression. Linear scaling mathematically should not have a direct impact for most models and methods. I think the linear scaling will just factor out of everything. Of course, it might help with numerical stability if the target has extreme values.  Basically, intuition is that for regression methods, min F(X) - y is same problem as min F(X) - \alpha * y but with a modified X. For example, you could just scale the weights of the last layer to get the different Y.   With SGD or whatever method you are using to solve, you could of course get different results with scaled y.   This is not a proof of course ... just found this: https://roamanalytics.com/2016/11/17/translation-and-scaling-invariance-in-regression-models/#Scaling-does-not-affect-unregularized-regression  which is potentially a good illustration of the details.
+[07:16] <5668c71116b6c7089cbe1ea3> @nisnt2411 Hi, I dunno I jumped in recently without even asking anything :). Seems like a mix of questions from people starting and a few technical discussions. (human) Latency is pretty high. Just try to help people who are stuck if you know some answers to questions I guess.
+--------------------------------------------------------------------------------------------------
+[08:31] <5b7c5fe0d73408ce4fa555ef> @cottrell thanks! I thought there might be some prerequisites .
+--------------------------------------------------------------------------------------------------
+[20:56] <54d4a1d6db8155e6700f853b> @nisnt2411 wanting to contribute. Python and ML knowledge is helpful ;)
+[20:56] <54d4a1d6db8155e6700f853b> start with the contributors guide and "good first issue" tag if you want to start helping
+[20:57] <54d4a1d6db8155e6700f853b> and yes, review latency is terribly high unfortunately
+--------------------------------------------------------------------------------------------------

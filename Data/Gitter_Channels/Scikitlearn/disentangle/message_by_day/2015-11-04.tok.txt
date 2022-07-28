@@ -1,0 +1,9 @@
+<s> <user> URL/http:/ <unka./> <unk#a./_~> </s>
+<s> <user> i can see figures overflowing in some pages ? </s>
+<s> <user> thanks for having a look </s>
+<s> <user> when i called " make dist " there were latex errors and the build did n't finish </s>
+<s> <user> does anyone have matplotlib 1.5 to test the examples ? </s>
+<s> <user> i 'm trying to pip install it in my <unka> env . i 'm sure that 's going to go great </s>
+<s> <user> <unka@> if you're bored , you can have a look at URL/https:/ URL/github.com/ <unk#a-/> </s>
+<s> <user> URL/https:/ URL/github.com/ <unk#a-/> is also fun </s>
+<s> <user> if anyone wants to help me find out why " clustering " is n't properly linked on the website , that would also be sweet ^^ </s>

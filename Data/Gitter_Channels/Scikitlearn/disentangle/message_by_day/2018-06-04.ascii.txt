@@ -1,0 +1,2 @@
+[02:04] <54d4a1d6db8155e6700f853b> @AMaini503 I think we should deprecate StandardScaler(mean=False). It seems weird to me
+[02:04] <54d4a1d6db8155e6700f853b> but I would just try a bunch and see what makes sense. There's no general rule

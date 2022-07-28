@@ -1,0 +1,9 @@
+<s> <user> hi , i would like to ask a question . i 'm building a chat bot , how does <unka-> learns the requests and predict a close enough accurate response ? how does <unka-> come into play in chat bots ? </s>
+<s> <user> <unka@> you know what neural network is or <unka> learning is or what <unka> chain is ? </s>
+<s> <user> URL/https:/ URL/en.wikipedia.org/ <unka-/> </s>
+<s> <user> <unka@> yes i do . but not an expert . care to share a little ? </s>
+<s> <user> using <unka-> , how do i build a answer and response using training and prediction ? </s>
+<s> <user> if you just want sample code there is plenty , if you wondering the mechanics behind it , there are different approaches . i'd look into different <unka> and see what they do . </s>
+<s> <user> URL/https:/ URL/en.wikipedia.org/ <unka/_> </s>
+<s> <user> example is , statistical analysis of words to see how likely is one word associated with the other . then use that to generate sentences </s>
+<s> <user> URL/https:/ <unka./> <unk#a-./> </s>

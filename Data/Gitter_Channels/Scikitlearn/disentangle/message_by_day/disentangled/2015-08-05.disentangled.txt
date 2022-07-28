@@ -1,0 +1,10 @@
+[18:26] <54d4a1d6db8155e6700f853b> @rvraghav93 how are things looking?
+--------------------------------------------------------------------------------------------------
+[18:32] <53135b495e986b0712efc453> Hey thanks a lot for the reviews!! Ive fixed most... Ill fix the rest (mostly trivial) and We are merging  that pr this weekend ;) u guys will be available right?? So we could have last minute reviews?? Also do u feel that or should have +3 since its a major refactpr??
+[18:32] <53135b495e986b0712efc453> Pr*
+[18:33] <53135b495e986b0712efc453> (Apologies for typo - using my mobile :( )
+--------------------------------------------------------------------------------------------------
+[23:36] <550f53e215522ed4b3dda5f6> Hey @amueller @ogrisel , I got some medical issues, and probably cannot work for GSoC project in the recent few days. Sorry. :worried:
+--------------------------------------------------------------------------------------------------
+[23:57] <54e07d6515522ed4b3dc0858> @xuewei4d sorry to hear that, get well soon!
+--------------------------------------------------------------------------------------------------

@@ -1,0 +1,19 @@
+<s> <user> hi , guys . just a quick question . </s>
+<s> <user> i 'm seriously considering investing my time to solving issues on <unka> , so as to work my way towards becoming a maintainer of the project itself . </s>
+<s> <user> i really think i would learn a lot in the process , and something i really like doing - contributing . for now , i think the best way for me is to send <unka> and try to solve issues as much as i can . </s>
+<s> <user> should i keep something specific in mind while doing so , is what i wanted to ask . thanks . :d </s>
+<s> <user> > for now , i think the best way for me is to send <unka> and try to solve issues as much as i can . </s>
+<s> <user> yes . just be sure to read the contributing guideline to be sure to not miss anything :) </s>
+<s> <user> i 've gone through it 5-6 times now . xd even went ahead with the <unka> thing , but still have to really understand how to really use it . </s>
+<s> <user> hi , we're trying to decide how to handle a <unka> <unka> api integration issue over at URL/https:/ URL/github.com/ <unk#a,/> i wanted to see if anyone in this group can chime in . the jist of it is how to support passing validation data to the <unka> . <unka> solves this by having a an <unka_`> parameter , but as is pointed out in that issue that means that calling with a different <unka`> , <unka`> would give you different results ( since the validation losses would be totally off ). </s>
+<s> <user> i think that right now we cannot do that . i vaguely recall a discussion where we discuss something linked with something close to the callback mechanism </s>
+<s> <user> yeah i could not find any <unka> <unka> that accepts extra data as a fit <unka> </s>
+<s> <user> or as an <unka_`> param for that matter </s>
+<s> <user> yep . i see that we have a recent feature request URL/https:/ URL/github.com/ <unk#a-/> </s>
+<s> <user> i will try to find the discussion back </s>
+<s> <user> we also put it in the road map : URL/https:/ <unka-./> <unka./> </s>
+<s> <user> the issue will be to find the right api . </s>
+<s> <user> yep . if i had to pick between the options that i currently see available , my gut feeling would be to make it a fit <unka> , but that 's just a knee jerk reaction </s>
+<s> <user> which is why i 'm asking here <unka:> : </s>
+<s> <user> we do n't have that in <unka-> and our validation data is always a subset of <unka-> as passed to fit . iirc <unka> adds new arguments to <unka`> </s>
+<s> <user> yeah i do see they have <unka_`> : <unka(`> or none , optional ( <unka=> )) <unconvertable > a list of ( x , y ) <unka> pairs to use as validation <unka`> </s>

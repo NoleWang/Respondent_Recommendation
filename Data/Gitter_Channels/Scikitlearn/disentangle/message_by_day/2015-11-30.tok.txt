@@ -1,0 +1,8 @@
+<s> <user> hey guys , i want to contribute to this project , how do i start ? </s>
+<s> <user> hi <unka@> , just dive into the issue tracker and see issues that are tagged easy and need contributor . </s>
+<s> <user> take a look at the developer guide too : URL/http:/ <unka-./> <unka/> </s>
+<s> <user> <unka-@> thanks is this issue tracker in the github page ?? and i have just started learning <unka> i have some knowledge of programming in python , can i directly go to issue tracker and try to solve something ?? </s>
+<s> <user> URL/https:/ URL/github.com/ <unk#a%+-/=?> </s>
+<s> <user> go through the easy issues , you should be able to solve most with a basic knowledge of python </s>
+<s> <user> thanks a lot <unka-@> </s>
+<s> <user> hi , anyone having sample svm text <unka> code in <unka> ? </s>

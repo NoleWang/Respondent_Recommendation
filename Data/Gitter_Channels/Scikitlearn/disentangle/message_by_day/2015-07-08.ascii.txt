@@ -1,0 +1,10 @@
+[14:18] <54d4a1d6db8155e6700f853b> @xuewei4d I think you should have a look at https://bitbucket.org/michaelchughes/bnpy/
+[14:18] <54d4a1d6db8155e6700f853b> It looks like it might be a good reference for the dp gmm
+[14:50] <550f53e215522ed4b3dda5f6> Thanks. I am looking into it.
+[20:30] <550f53e215522ed4b3dda5f6> Hi I have a question about git/github. How can I create a branch from a branch of other's forked repository?
+[21:15] <54e07d6515522ed4b3dc0858> You can add the fork as a remote with git remote add <name> <uri> 
+[21:22] <550f53e215522ed4b3dda5f6> I just tried, but there are too many conflicts. What should I do?
+[22:11] <54e07d6515522ed4b3dc0858> I don't see how "git remote add" could trigger conflicts, what exactly is the problem?
+[22:13] <54e07d6515522ed4b3dc0858> the way I'd do it is:  ``` git remote add xuewei4d https://github.com/xuewei4d/scikit-learn.git git fetch xuewei4d git checkout xuewei4d/<whatever-branch> git checkout -b <my-new-local-branch> ```
+[22:14] <54e07d6515522ed4b3dc0858> if the branch you want is a PR you can also use [this trick](https://gist.github.com/piscisaureus/3342247)
+[22:14] <54e07d6515522ed4b3dc0858> HTH

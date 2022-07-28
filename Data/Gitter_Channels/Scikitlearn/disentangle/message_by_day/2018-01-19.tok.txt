@@ -1,0 +1,6 @@
+<s> <user> URL/http:/ <unka-./> <unka./> </s>
+<s> <user> <unka@> most of the time yes </s>
+<s> <user> <unk#a@> svm does not handle <unka-> . but i am not sure that you have to hot one encode </s>
+<s> <user> <unk##> <unk##> completed , needs review </s>
+<s> <user> <unka@> i put 2 additional tests to do because i am almost sure that the solution in <unk##> is not working if we do n't introduce a <unka> to the transformer as proposed [ <unk#a(-./:]> ) </s>
+<s> <user> thanks , will check it out </s>

@@ -1,0 +1,2 @@
+<s> <user> in <unka-> , where <unka`> is a <unka> object . the dimension of the <unka$> variable is <unka$> . <unka$> consists of <unka$> points . in this code below <unka`> <unka_> , <unka_> = <unka(.> x , <unka=_> ) <unk`> why is n't <unka_`> an array of <unka$> <unka> <unka> of size <unka$> <unka\> <unka$> , where <unka$> is the <unka> of the <unka$> variable ? why is <unka_`> an array of <unka$> <unka> values ? </s>
+<s> <user> hey ... why is <unka/`> using a <unka_`> from my understanding greedy tree building algorithms dont need random ? </s>

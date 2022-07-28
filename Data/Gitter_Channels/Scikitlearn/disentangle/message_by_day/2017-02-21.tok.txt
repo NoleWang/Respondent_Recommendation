@@ -1,0 +1,7 @@
+<s> <user> hello everybody , i am new here ! it is nice to be here ! cheers </s>
+<s> <user> i have a question regarding applying the <unka> of the training set to a test set , for <unka> procedures . do we repeat this 10 times for <unk#a> ? </s>
+<s> <user> <unka@> <unk#a> is also fine but <unk#a> feels like standard . you can claim your accuracy better . lets dive in : if you have <unk#a=> . that is 5 <unka> what you do is to divide the data set into 5 sets of equal length say <unk#a,> ..... s5 . now you take s1 as test s2 ... s5 as training set and check accuracy . each of the set gets a chance to become a test <unka.> you would get 5 <unka-> average it and get the mean accuracy . usage : sometimes using a particular split you can get better results but in real world you model does n't performs good . so try some splits and get the average it helps you see the truth . </s>
+<s> <user> yes 10 times . </s>
+<s> <user> <unk#a@> thank you , do we apply the <unka/> of the train set to the test for each fold ? </s>
+<s> <user> cannot get what you are trying to ask <unka@> can you describe what you are trying to say a little more <unka> . </s>
+<s> <user> sure , i read that a prefered practise in pre processing is to standardize the train set and apply the configuration used for <unka> to the test set before we test with the <unka> . i wonder if we need to do this for each fold in <unk#a> . </s>

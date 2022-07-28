@@ -1,0 +1,7 @@
+[15:58] <54d4a1d6db8155e6700f853b> @nicolashug you here?
+[15:58] <5baf7d9ad73408ce4fa9c9b2> yup
+[15:58] <54d4a1d6db8155e6700f853b> so in lbfgs alpha = 1/C
+[15:59] <54d4a1d6db8155e6700f853b> I'm trying to figure out the loss computation for lbfgs first because we can most easily access the function
+[16:18] <54d4a1d6db8155e6700f853b> @NicolasHug https://pastebin.com/5Vv72rLc
+[16:18] <54d4a1d6db8155e6700f853b> these two are identical and identical to what's internally used
+[16:21] <54d4a1d6db8155e6700f853b> and if you want SGD to be equivalent to LogisticRegression, you have indeed to set alpha = 1/(C  * n_samples)

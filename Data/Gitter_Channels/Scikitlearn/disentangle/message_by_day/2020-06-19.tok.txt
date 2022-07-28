@@ -1,0 +1,7 @@
+<s> <user> hullo ! i took on <unk##> as a first issue for the <unka> <unka> . looking into it further , it seems like the scope of the issue is much larger than clarifying a single <unka> . i 'm unsure of whether to start poking away at it , or whether to start a larger discussion on the direction of <unka/> learning in <unka> . would love to hear thoughts . :) </s>
+<s> <user> hm honestly i think we're pretty consistent with the terms in the <unka> </s>
+<s> <user> > in some places , <unka/> functionality is explicit and indicated by the name of the function . </s>
+<s> <user> can you give an example of that ? </s>
+<s> <user> that 's for <unka-> , i guess ? </s>
+<s> <user> ah , i guess i went a bit overboard with my comment , seeing an issue where there was none . </s>
+<s> <user> i 'll focus on clarifying the <unka> <unka> , then . </s>

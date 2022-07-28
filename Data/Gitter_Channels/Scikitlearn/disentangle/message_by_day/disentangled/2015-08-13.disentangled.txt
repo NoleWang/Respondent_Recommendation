@@ -1,0 +1,44 @@
+[10:46] <53135b495e986b0712efc453> Thanks!! git bisect is cool... This seems to happen after the OnlinLDA pr.. (#3659)  I'll send a PR to fix the random state...
+--------------------------------------------------------------------------------------------------
+[10:55] <53135b495e986b0712efc453> Wait thats not right... Fixing random_state fixes this but I am unable to figure out why master doesn't fail..
+--------------------------------------------------------------------------------------------------
+[13:15] <54d4a1d6db8155e6700f853b> where is the random state not fixed?
+--------------------------------------------------------------------------------------------------
+[13:46] <53135b495e986b0712efc453> https://github.com/rvraghav93/scikit-learn/commit/97d4f3eaba284c07406b82a5d75d9da8196e95e7
+--------------------------------------------------------------------------------------------------
+[16:42] <54d4a1d6db8155e6700f853b> That's not in the LDA branch..
+[16:46] <54d4a1d6db8155e6700f853b> did you sent a PR, I didn't see it.
+--------------------------------------------------------------------------------------------------
+[16:54] <53135b495e986b0712efc453> No... I just added it as a commit to #4294.. and yea it has nothing to do with LDA... sorry I misread git bisect output...
+[16:54] <53135b495e986b0712efc453> Also appveyor is not testing model selection... why is that??
+--------------------------------------------------------------------------------------------------
+[17:10] <5478876cdb8155e6700d907b>
+[17:10] <5478876cdb8155e6700d907b>
+--------------------------------------------------------------------------------------------------
+[17:36] <54d4a1d6db8155e6700f853b> ah, but the commit is not in the addition to the examples. I'm not entirely certain but maybe it's better to merge these two so they are self-contained
+[17:36] <54d4a1d6db8155e6700f853b>  s/tests/examples/
+--------------------------------------------------------------------------------------------------
+[17:45] <53135b495e986b0712efc453> `E486: Pattern not found: tests` :p
+[17:46] <53135b495e986b0712efc453> Ok so you mean we can merge https://github.com/rvraghav93/scikit-learn/pull/3 into #4294 right?
+[17:46] <54d4a1d6db8155e6700f853b>  s/examples/tests I mean
+[17:46] <54d4a1d6db8155e6700f853b> yes
+[17:46] <53135b495e986b0712efc453> okay I'll do it now... https://github.com/rvraghav93/scikit-learn/pull/3 is just one commit..
+[17:46] <54d4a1d6db8155e6700f853b> ok
+[17:46] <54d4a1d6db8155e6700f853b> why do you think appveyor is not testing model selection?
+--------------------------------------------------------------------------------------------------
+[17:48] <53135b495e986b0712efc453> For the last few failures... Only travis seemed to be unhappy... appveyor didn't raise any errors... I'll confirm with a dummy failing test in a moment...
+[17:49] <53135b495e986b0712efc453> merged...
+[17:52] <53135b495e986b0712efc453> Is there a way to make travis build the documentation automatically and host it at a temporary place somewhere? (maybe using pythonanywhere.com + additional travis build just for docs)?
+[22:53] <53135b495e986b0712efc453> Sorry :/
+[22:54] <53135b495e986b0712efc453> http://rvraghav93.github.io/scikit-learn/doc/_build/html/stable/
+--------------------------------------------------------------------------------------------------
+[17:56] <54d4a1d6db8155e6700f853b> we have a setup hosted on rackspace but it is non-trivial and you don't have access, sorry
+[17:56] <54d4a1d6db8155e6700f853b> we should improve that.
+--------------------------------------------------------------------------------------------------
+[18:02] <53135b495e986b0712efc453> Could you review [this commit](https://github.com/rvraghav93/scikit-learn/commit/b5077d2f817b7c78782da3703c7cf4847809092a) which tests `_CVIterableWrapper` alone? Its a minor one... (And I did this since you said that there were no tests covering it.. (your comment got hidden..)...)
+[18:04] <54d4a1d6db8155e6700f853b> It looks ok
+--------------------------------------------------------------------------------------------------
+[22:46] <53135b495e986b0712efc453> This is the documentation - http://rvraghav93.github.io/scikit-learn/ Once this gets an OK I think #4294 is finally done :D
+--------------------------------------------------------------------------------------------------
+[22:48] <54e07d6515522ed4b3dc0858> @rvraghav93 that 404s for me
+--------------------------------------------------------------------------------------------------

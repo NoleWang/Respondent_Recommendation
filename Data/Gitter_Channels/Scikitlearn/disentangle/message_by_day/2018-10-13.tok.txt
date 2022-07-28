@@ -1,0 +1,4 @@
+<s> <user> hi , i will try to predict customer lifetime period . my dataset has information about customer lifetime period . should i set this column as target and do regression for predict it ? </s>
+<s> <user> <unka@> you probably would need algorithms which deal well with time series challenges , such as hmm or <unka> ( mostly <unka> related ) models , which are not included in <unka-> . you may find more information in the following places : - URL/https:/ <unka./> <unka/> - URL/https:/ <unka./> <unka-/> - URL/https:/ <unka./> <unka-/> </s>
+<s> <user> <unka@> that would be a start . but please note that issues such as <unka> and scaling your inputs and/or outputs , and <unka> of your models , may substantially affect your results . you can refer to the resources posted above your message for more information . </s>
+<s> <user> what all do you think is the future scope of ml and ai in the field of data science </s>

@@ -1,0 +1,3 @@
+[20:14] <54d4a1d6db8155e6700f853b> @kingjr There is an intend. I'm not sure I'd say there is a plan. I haven't caught up with #7388 and I'm not sure whether it will include returning arrays, probably not
+[20:15] <54d4a1d6db8155e6700f853b> @karandesai-96 yes, it's still a possible project. I'm not sure who would be mentoring, though.
+[20:15] <54d4a1d6db8155e6700f853b> @nareshshah139 which metric?

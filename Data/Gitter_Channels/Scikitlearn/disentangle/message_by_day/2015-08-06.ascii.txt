@@ -1,0 +1,8 @@
+[00:00] <54e07d6515522ed4b3dc0858> @rvraghav93 I will be around this week. I agree a 4th person would be nice, maybe @jnothman can take a look. PS: Don't forget about the blog!
+[02:30] <54d4a1d6db8155e6700f853b> @rvraghav93 I'll be around but I'll also have to work on some other things. When are you going to Paris.
+[02:30] <54d4a1d6db8155e6700f853b> @xuewei4d get well soon!
+[16:40] <54d4a1d6db8155e6700f853b> @ogrisel are you project owner on appveyor? we need to do something: http://help.appveyor.com/discussions/problems/2721-getting-message-error-creating-build-entry-please-contact-appveyor-support-in-every-build  otherwise all PRs have failing tests.
+[17:14] <54d4a1d6db8155e6700f853b> That was easy: https://github.com/scikit-learn/scikit-learn/pull/5093
+[17:24] <54d4a1d6db8155e6700f853b> ah, I found the appveyor integration stuff ^^ @ogrisel sent me that at some point
+[17:29] <54d4a1d6db8155e6700f853b> so the appveyor builds are running again and I'm excited to see what happens with #5093 ^^
+[17:42] <54d4a1d6db8155e6700f853b> hum.. @ogrisel I still need help :-/ https://ci.appveyor.com/project/sklearn-ci/scikit-learn/build/1.0.1490/job/26vknwf7qa70r868

@@ -1,0 +1,30 @@
+[12:30] <541a528b163965c9bc2053de> @amueller how do you test the feedstock without issue PRs?
+[19:13] <54d4a1d6db8155e6700f853b> there is no real way to test the feedstock
+[19:13] <54d4a1d6db8155e6700f853b> as far as I can tell
+[19:14] <54d4a1d6db8155e6700f853b> @ogrisel have you see this https://circleci.com/gh/scikit-learn/scikit-learn/5456?utm_campaign=build-failed&utm_medium=email&utm_source=notification ?
+[19:15] <541a528b163965c9bc2053de> Indeed, I'm on it.
+[19:17] <541a528b163965c9bc2053de> done
+[19:19] <541a528b163965c9bc2053de> If travis is green after this fix, I think we can tag 0.18rc2 and trigger the wheel builders. How is the feedstock going?
+[19:40] <541a528b163965c9bc2053de> @amueller shall I tag 0.18rc2?
+[19:41] <54d4a1d6db8155e6700f853b> @ogrisel sure
+[19:41] <54d4a1d6db8155e6700f853b> @ogrisel feedstock is been running for like an hour to build the 0.18rc1
+[19:46] <541a528b163965c9bc2053de> 0.18rc2 is on the launch pad
+[19:47] <541a528b163965c9bc2053de> I believe the wheels will be ready by tomorrow ;)
+[19:47] <54d4a1d6db8155e6700f853b> cool
+[19:48] <54d4a1d6db8155e6700f853b> Hopefully the conda packages too
+[19:48] <54d4a1d6db8155e6700f853b> I expect they arrive here: https://anaconda.org/conda-forge/repo?label=rc
+[19:48] <54d4a1d6db8155e6700f853b> I'll update the feedstock for 0.18.2
+[19:48] <541a528b163965c9bc2053de> great
+[19:49] <541a528b163965c9bc2053de> as soon as the conda package is ready any of us can fetch the wheels + build the sdist and publish to PyPI + tweet
+[19:51] <54d4a1d6db8155e6700f853b> sounds good
+[19:52] <54d4a1d6db8155e6700f853b> I think the conda package takes about 3h to build
+[19:52] <54d4a1d6db8155e6700f853b> a single entry of the matrix takes 30 minutes, there are 6
+[19:52] <54d4a1d6db8155e6700f853b> and they all run in the same job
+[21:30] <54d4a1d6db8155e6700f853b> @ogrisel do you want to fix the lbgfs thing or should I?
+[21:31] <54d4a1d6db8155e6700f853b> rc3? ;)
+[23:07] <54d4a1d6db8155e6700f853b> YES!
+[23:07] <54d4a1d6db8155e6700f853b> https://anaconda.org/conda-forge/scikit-learn/labels
+[23:08] <56c4f19ae610378809c1f8ae> :clap: 
+[23:27] <54d4a1d6db8155e6700f853b> ugh so conda users can't update
+[23:27] <54d4a1d6db8155e6700f853b> unless they use conda-forge
+[23:27] <54d4a1d6db8155e6700f853b> eh

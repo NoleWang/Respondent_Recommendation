@@ -1,0 +1,2 @@
+[11:32] <5799a0a940f3a6eec05cd618> Hosting TFUG Mysore first meetup : TensorFlow JS - Show and Tell by Jason Mayes  - Senior Developer Advocate at Google. 8 presenters showing what they have #MadeWithTFJS with epic demos lined up + more. RSVP now  http://meetu.ps/e/HTwBV/jYwqF/a
+--------------------------------------------------------------------------------------------------

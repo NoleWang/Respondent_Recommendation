@@ -1,0 +1,13 @@
+[07:16] <56f4e1b785d51f252abab7d7> just out of curiousity, for `RadiusNeighborsClassifier` I am trying multiple `.fit()` calls,  and the code didnt throw any exceptions, can I assume it is possible to fit my whole collection into it with multiple `.fit()` calls?
+--------------------------------------------------------------------------------------------------
+[07:17] <57b3fd8640f3a6eec05fe0e8> Probably no?
+--------------------------------------------------------------------------------------------------
+[07:51] <56f4e1b785d51f252abab7d7> oh?
+--------------------------------------------------------------------------------------------------
+[08:06] <56f4e1b785d51f252abab7d7> so subsequent `.fit()` calls overwrite the previous call?
+[08:52] <56f4e1b785d51f252abab7d7> ok, apparently that's the case S:
+--------------------------------------------------------------------------------------------------
+[10:00] <565b64bd16b6c7089cbc9de9> @Jeffrey04 Yes. You're correct. each `fit` call will overwrite previous calls. Some estimators have `partial_fit` for what you're looking for, which isn't easily achievable for each classifier.
+--------------------------------------------------------------------------------------------------
+[12:34] <57b3fd8640f3a6eec05fe0e8> Nice, I guessed correctly = )
+--------------------------------------------------------------------------------------------------

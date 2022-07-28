@@ -1,0 +1,30 @@
+[14:05] <53135b495e986b0712efc453> @nirizr You need to impute those missing values (using `sklearn.preprocessing.Imputer`) first before passing on to the `LinearSVC`.
+--------------------------------------------------------------------------------------------------
+[14:07] <56b80528e610378809c05a48> @raghavrv I got you! Can you give #7187 another quick review?
+--------------------------------------------------------------------------------------------------
+[14:08] <565b64bd16b6c7089cbc9de9> @raghavrv Thanks a lot! Are there easy ways to get more advanced strategies? regression, nearest neighbors?
+--------------------------------------------------------------------------------------------------
+[14:34] <53135b495e986b0712efc453> @yenchenlin Thanks for the ping. Done... Some minor comments and +1 :)
+--------------------------------------------------------------------------------------------------
+[15:52] <53135b495e986b0712efc453> @ogrisel you around? ;)
+--------------------------------------------------------------------------------------------------
+[16:02] <56212f4e16b6c7089cb74321> hey everyone, i have a _curiosity_ for you!
+[16:02] <56212f4e16b6c7089cb74321> ``` def pipeline_to_weights_and_bias(clf):    <unconvertable> """ Turns a SKLearn StandardScaler() --> LogisticRegression()  <unconvertable> <unconvertable> pipeline into single weights and bias. """  <unconvertable> <unconvertable> assert set(clf.named_steps.keys()) == {'logisticregression', 'standardscaler'}  <unconvertable> <unconvertable> lr = clf.named_steps['logisticregression']  <unconvertable> <unconvertable> sc = clf.named_steps['standardscaler']  <unconvertable> <unconvertable> W = (lr.coef_ / sc.scale_)  <unconvertable> <unconvertable> B = lr.intercept_ - (lr.coef_ / sc.scale_).dot(sc.mean_.T)  <unconvertable> <unconvertable> return (W, B) ```
+[16:02] <56212f4e16b6c7089cb74321> for those doing logistic regression, this turns a StandardScaler + LR pipeline into a single weight+bias matrix
+[16:03] <56212f4e16b6c7089cb74321> you use it like this: ``` X = np.random.randn(10000, 512) W,B = pipeline_to_weights_and_bias(clf) assert np.allclose( clf.decision_function(X), W.dot(X.T) + B )  %timeit clf.decision_function(X) #=> 10 loops, best of 3: 122 ms per loop  %timeit W.dot(X.T) + B #=> The slowest run took 7.54 times longer than the fastest. This could mean that an intermediate result is being cached. #=> 1000 loops, best of 3: 265 us per loop ```
+[16:03] <56212f4e16b6c7089cb74321> the speedup is significant
+--------------------------------------------------------------------------------------------------
+[16:03] <56212f4e16b6c7089cb74321> the real funny part is that the resulting calculation runs only on a single core, even though it's hundreds of times faster than sklearn vanilla pipeline
+[16:04] <56212f4e16b6c7089cb74321> now, i have 1800 of these classifiers to run. it's much faster to do a (1800,512) * (512, N) matrix operation than to call 1800 pipelines in sequence
+[16:05] <56212f4e16b6c7089cb74321> this makes me wonder if sklearn couldn't benefit from some pipeline optimization tricks? i know i'd love like a `FastAssortmentOfScaledLogisticRegressionClassifiers` class
+[16:05] <56212f4e16b6c7089cb74321> but of course there could be other possible ways to hand-tune other combinations of linear transformations (e.g. PCA and random projections are the same thing)
+--------------------------------------------------------------------------------------------------
+[16:04] <56c4f19ae610378809c1f8ae> hmm, thats pretty interesting
+--------------------------------------------------------------------------------------------------
+[16:07] <56c4f19ae610378809c1f8ae> for that question, I suggest you raise an issue; not everyone is on / checks gitter :)
+--------------------------------------------------------------------------------------------------
+[22:20] <564a00d016b6c7089cbae908> I want to build a recommendation system for movies. What are all things I should learn. I am presently doing undergraduate course with basics in python, web dev and java.
+--------------------------------------------------------------------------------------------------
+[22:33] <564a00d016b6c7089cbae908> I had completed ML course by Andrew ng and ML through case study by Carlos on coursera
+[22:33] <564a00d016b6c7089cbae908>
+--------------------------------------------------------------------------------------------------

@@ -1,0 +1,1 @@
+[17:27] <560313510fc9f982beb1a331> Has anyone played with memory pools or custom allocators in the context of scikit-learn?

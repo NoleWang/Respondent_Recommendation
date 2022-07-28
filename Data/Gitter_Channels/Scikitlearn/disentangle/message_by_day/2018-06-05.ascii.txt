@@ -1,0 +1,5 @@
+[05:00] <5b018bb2d73408ce4f9a05a7> Hello
+[12:57] <5841d067d73408ce4f3a4ecf> @kelux19 Hey people! ***   string[] name = {"Malin", "Manar", "Stefan", "Ali", "Alexandra", "Robert","Suzana" }; string[] property = { "kind", "bad", "talentfull", "helpfull", "nice", "melancholy", "egoistic" }; string[] role = { "teacher", "system developer", "student", "musician", "programmer", "actor", "doctor"};  *** how can i pick from these three arrays randomly, for example "Ali is a kind teacher"?
+[12:57] <5841d067d73408ce4f3a4ecf> its c# btw
+[16:37] <5b11caa3d73408ce4f9b96b5> @kelux19  I don't think so there is any api to scikit-learn in c#. But you might want to wait for others' answers as well.
+[17:30] <5b11caa3d73408ce4f9b96b5> I'm using  a custom tokenizer for the TfIDF. I trained the model and saved the pipeline object to a pickle file using joblib. However, when I try to load the pickle file in a different script, it throws an error: module '__main__' has no attribute 'MyTokenizer'. Am I pickling the model correctly ?

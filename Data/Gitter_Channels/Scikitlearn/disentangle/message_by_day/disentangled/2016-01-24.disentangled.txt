@@ -1,0 +1,4 @@
+[11:38] <53135b495e986b0712efc453> @jmschrei (This is probably a stupid idea), can we compute the accumulated sample_weights for all the samples and store it. (a double array of `n_samples` size)  Later we can compute the weighted n_samples for right or left by subtracting the last index's accumulated value from the first? (Would that speed up the impurity computation and also take us a step closer to having a state-less criterion?)
+[11:40] <53135b495e986b0712efc453> (There is also the class count that is being stored as a state, that also could be accumulated and stored but not sure if it would take up a lot of space.)
+[11:41] <53135b495e986b0712efc453> (Also we need not compute this accumulated sample_weights for all the samples, we could expand this 'cache' when we encounter new samples to avoid computing for samples well away any decision boundary?)
+--------------------------------------------------------------------------------------------------

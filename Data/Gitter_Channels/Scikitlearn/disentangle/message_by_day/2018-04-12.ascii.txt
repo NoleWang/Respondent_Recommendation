@@ -1,0 +1,1 @@
+[22:43] <5acfdfffd73408ce4f95738d> How to get weight for signs(Perceptron, binary classification)? In what function they are?

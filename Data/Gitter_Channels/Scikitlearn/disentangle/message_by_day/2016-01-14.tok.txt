@@ -1,0 +1,4 @@
+<s> <user> > ok , but the link on <unka/> is still broken , fyi . </s>
+<s> <user> yep this will be fixed on the next stable release </s>
+<s> <user> <unka@> do you mean the old or the new ? </s>
+<s> <user> </s>

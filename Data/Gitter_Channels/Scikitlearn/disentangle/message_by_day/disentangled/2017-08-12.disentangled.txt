@@ -1,0 +1,11 @@
+[04:47] <54c084dbdb8155e6700eed4c> Hey all, chipping away at #5653 and was wondering if there's any places in the codebase that check if fitted on any input estimator (where the est type is unknown) ?
+[04:50] <54c084dbdb8155e6700eed4c> https://github.com/scikit-learn/scikit-learn/blob/master/sklearn/ensemble/partial_dependence.py#L125 from #7464 is a little tricky to generalise
+--------------------------------------------------------------------------------------------------
+[05:13] <54c084dbdb8155e6700eed4c> hrmm. i think i can sneak it into the logic for ensembles and then check for other estimators in the fit stage. never mind!
+--------------------------------------------------------------------------------------------------
+[11:13] <57afd94d40f3a6eec05f5ad7> hi
+--------------------------------------------------------------------------------------------------
+[15:06] <5986271dd73408ce4f703d62> Hi, I've generated a big set of very high-dimensional embeddings (7300 verbs with 1700 dimensions each) from a QnA dataset. I'm trying to visualize them and what I do is to apply [`truncatedSVD`](http://scikit-learn.org/stable/modules/generated/sklearn.decomposition.TruncatedSVD.html#sklearn.decomposition.TruncatedSVD) (a PCA which centers the data) to obtain 50 dimensions and then pass those to [`TSNE`](http://scikit-learn.org/stable/modules/generated/sklearn.manifold.TSNE.html) in order to visualize them in 2d. The problem is that those embeddings include lots of verb conjugations and synonyms, so I would like to apply some type of algorithm to those high-dimensional embeddings (like kNN or cosine similarity) in order to obtain clusters or groups of similar embeddings represented by a single vector for each of those groups (without reducing their dimensionality since that is done later through SVD and TSNE). Does anybody know how to obtain that?
+--------------------------------------------------------------------------------------------------
+[20:17] <553d0d7b15522ed4b3df8a67> @amueller issue already exists but pr is still left open
+--------------------------------------------------------------------------------------------------

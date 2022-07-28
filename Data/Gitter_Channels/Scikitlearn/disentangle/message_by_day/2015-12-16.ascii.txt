@@ -1,0 +1,2 @@
+[20:18] <5363a92c048862e761fa03c3> @rvraghav93  [here](https://github.com/scikit-learn/scikit-learn/blob/master/sklearn/multiclass.py#L193) This line assumes  `Y` to be a sparse matrix. But if target variable `y` has only one class then  in  `Y = self.label_binarizer_.fit_transform(y)` `Y` becomes `numpy.ndarray` which makes `Y.tocsc()` fail. Is this intended?
+[20:35] <54d4a1d6db8155e6700f853b> there was some code to plot a neural network somewhere. does anyone remember where?

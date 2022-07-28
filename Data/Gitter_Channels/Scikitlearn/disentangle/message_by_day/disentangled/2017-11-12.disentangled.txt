@@ -1,0 +1,8 @@
+[00:54] <58b46af0d73408ce4f4d3f2c> Hi everyone.
+[00:54] <58b46af0d73408ce4f4d3f2c> I'm a statistics graduate student and I'm interested getting some FOSS (and programming) experience.
+[00:55] <58b46af0d73408ce4f4d3f2c> Would it be a worthwhile endeavor to implement Dirichlet Process mixture models in sklearn?
+[00:56] <58b46af0d73408ce4f4d3f2c> Yikes, sorry just noticed it's already implemented!
+--------------------------------------------------------------------------------------------------
+[16:19] <58ec2bf4d73408ce4f577ca0> what would probably be useful on the other hand is a python framework for generalized finite mixture models
+[16:20] <58ec2bf4d73408ce4f577ca0> eg. where you specify a set of distributions and parameters to estimate and run the model without hardcoding the maximum likelihood equation yourself
+--------------------------------------------------------------------------------------------------

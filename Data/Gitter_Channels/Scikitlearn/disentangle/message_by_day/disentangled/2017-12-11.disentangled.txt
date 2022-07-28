@@ -1,0 +1,11 @@
+[11:33] <58bd4178d73408ce4f4eaf1e> Hello Everyone,I am new to scikit-learn.I followed the advanced install instructions but when I run pytest sklearn. I get module not found error.So can anyone help me.
+--------------------------------------------------------------------------------------------------
+[16:11] <54d4a1d6db8155e6700f853b> @DrEhrfurchtgebietend omg that name lol
+--------------------------------------------------------------------------------------------------
+[16:46] <5a2c58c8d73408ce4f8294ba>  By far my favorite word. German
+[16:46] <5a2c58c8d73408ce4f8294ba> has most of my favorite words
+--------------------------------------------------------------------------------------------------
+[16:46] <54d4a1d6db8155e6700f853b> @DrEhrfurchtgebietend I know, I'm german ;)
+--------------------------------------------------------------------------------------------------
+[16:49] <5a2c58c8d73408ce4f8294ba> @amueller I had guessed based on your name. I use it in place of "awesome" just to get a reaction
+--------------------------------------------------------------------------------------------------

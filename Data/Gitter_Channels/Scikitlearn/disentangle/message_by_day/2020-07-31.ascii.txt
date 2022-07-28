@@ -1,0 +1,5 @@
+[16:06] <5e3f3d7cd73408ce4fd915a4> Hi all, I'm developing a wrapper that wraps Keras models with the Scikit-Learn API. I'd like some input from Scikit-Learn developers on what direction I should take the interface, I'd like to make it as aligned as possible with Scikit-Learn.
+[16:06] <5e3f3d7cd73408ce4fd915a4> The package is here: https://github.com/adriangb/scikeras
+[16:09] <5e3f3d7cd73408ce4fd915a4> Would any of you able to chat and give some input?
+[18:19] <589b9e0fd73408ce4f490ba4> @ldorigo You could  probably`' '.join(keywords)` and then use `CountVectorizer`?
+[18:21] <589b9e0fd73408ce4f490ba4> @adriangb The design choices in https://github.com/skorch-dev/skorch might be helpful, if you have specific question don't hesitate to ask.

@@ -1,0 +1,2 @@
+<s> <user> can anyone suggest a good " standard " dataset for evaluating the performance of a <unka/> package ? i 'm looking for something with a few hundred thousand rows . ( i 've tested on <unka> , and my machine does n't have the ram to handle <unk#a+> row <unka> .) </s>
+<s> <user> i don' think there are many standard <unka> </s>

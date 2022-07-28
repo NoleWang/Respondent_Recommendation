@@ -1,0 +1,12 @@
+[01:36] <576c83e3c2f0db084a1fa0c2> @nok  404 error on your link
+[08:47] <574454a0c43b8c601974a563> @alayassir https://github.com/nok/scikit-learn-model-porting (under active development)
+[10:19] <56333d0d16b6c7089cb8d5c7> @amueller could you please let me know how to proceed with https://github.com/scikit-learn/scikit-learn/issues/6120
+[17:32] <54e07d6515522ed4b3dc0858> It seems impossible to pass check_estimator for a sparse classifier that does not do multi-class out of the box.
+[17:33] <54e07d6515522ed4b3dc0858> Because of [this test](https://github.com/scikit-learn/scikit-learn/blob/51a765a/sklearn/utils/estimator_checks.py#L301)
+[17:36] <54e07d6515522ed4b3dc0858> @neale not sure what you mean by hierarchical learning, but in general any framework expansion of the neural network components is out of scope for scikit-learn
+[21:03] <55aee1ab0fc9f982beaa80a5> @vene why is that out of scope, there is a beta MLP module that works pretty well
+[21:03] <55aee1ab0fc9f982beaa80a5> Giving users the ability to build networks layer by layer should be feasible 
+[21:07] <54e07d6515522ed4b3dc0858> @neale I didn't say it's infeasable, it just doesn't fit within the simple API that scikit-learn strives for. There are great libraries that allow modular composition of deep nets, like Lasagne and Keras. Check out the scikit-learn [faq](http://scikit-learn.org/stable/faq.html) for more about this "vision".
+[21:09] <55aee1ab0fc9f982beaa80a5> @vene I hadn't seen that before, I got it now
+[21:09] <54e07d6515522ed4b3dc0858> Currently scikit-learn pipelines and feature unions are extremely simple objects, and steps in a pipeline cannot and do not communicate with each other, but instead are trained independently.
+[21:10] <55aee1ab0fc9f982beaa80a5> Yeah I always assumed the contributions weren't there, not that scikit actively stayed away from those kinds of models 

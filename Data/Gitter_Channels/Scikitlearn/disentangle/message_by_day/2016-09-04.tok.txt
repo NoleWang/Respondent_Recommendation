@@ -1,0 +1,14 @@
+<s> <user> hello <unka@> <unka-@> <unka@> i had a look at <unk##> . </s>
+<s> <user> well i agree , nose has some deprecated code now </s>
+<s> <user> shifting to <unka> can be a really good choice . </s>
+<s> <user> i recently completed gsoc 16 with <unka_> , i am staying there as a regular contributor , although i always wanted to get involved in an ml centric community . </s>
+<s> <user> throughout my project i have worked a lot with <unka> , and read a lot of its docs - i can take up this issue to solve on a regular basis . </s>
+<s> <user> while i have used a little of <unka> , i am planning to get comfortable with the codebase for sometime , and then move ahead with a series of <unka> . would you accept my <unka> a few weeks down the line ? </s>
+<s> <user> ( because i see you are choosing it for next gsoc ) </s>
+<s> <user> hi <unk#a-@> , thanks for inquiring ! id suggest you copy and paste your message onto the issue , since not everyone checks <unka> . </s>
+<s> <user> +1 on what <unka-@> said </s>
+<s> <user> <unka-@> very well :d </s>
+<s> <user> that would help it get more visibility + there might be nuances in the switch to consider that would require input from other developers , so best to see if you can get a solid green light there first </s>
+<s> <user> great , done . i 'll be happy to take it up if <unka:_> : <unka:_> : </s>
+<s> <user> great , id also be happy to pitch in :) i dont know too much about <unka.> and this seems like a good opportunity to learn </s>
+<s> <user> thanks <unka@> </s>

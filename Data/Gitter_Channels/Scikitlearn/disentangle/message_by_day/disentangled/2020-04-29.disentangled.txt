@@ -1,0 +1,4 @@
+[22:27] <567363d316b6c7089cbf1f13> Hey all, currently doing some dev loop on the pyx in the neighbors package
+[22:27] <567363d316b6c7089cbf1f13> any way to get a faster dev loop than `pip install --editable .`
+[22:27] <567363d316b6c7089cbf1f13> on ubuntu 16.04
+--------------------------------------------------------------------------------------------------

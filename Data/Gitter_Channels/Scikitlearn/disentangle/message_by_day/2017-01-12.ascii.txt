@@ -1,0 +1,2 @@
+[03:54] <56a34c16e610378809bdc988> @amueller Loic Esteve reviewed 20 of my PRs on joblib. :) We would probably complete by this weekend.
+[10:01] <57ab24e040f3a6eec05ec701> Thank you to scikit-learn contributors -- It seems to be a great community

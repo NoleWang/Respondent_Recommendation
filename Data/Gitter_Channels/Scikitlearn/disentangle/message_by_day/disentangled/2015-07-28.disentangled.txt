@@ -1,0 +1,27 @@
+[03:29] <5395efa3a9176b500d1cd7fb> just to let u know, cluster.DBSCAN (and I guess lots more) is not working with scipy 0.16.0 on OSX, at least not with a conda install (maybe the library is missing in the conda binary?) https://github.com/scipy/scipy/issues/5092
+[20:46] <5395efa3a9176b500d1cd7fb> well, others worked it, im just happy it does work again. ;) Its really scary if scipy doesnt work... ;)
+[20:46] <5395efa3a9176b500d1cd7fb> but thankfully, its so easy to quickly downgrade with conda: `conda install scipy=0.15`
+--------------------------------------------------------------------------------------------------
+[14:08] <54d4a1d6db8155e6700f853b> @rvraghav93 sorry for my proonged abscense. I am back from my travels and will catch up with all your activity
+[14:09] <54d4a1d6db8155e6700f853b> michaelaye: what is the error you get?
+[14:09] <54d4a1d6db8155e6700f853b> @michaelaye what is the error? I'm pretty sure that is working for other people.
+[20:46] <54d4a1d6db8155e6700f853b> kinda ;) well np.dot "doesn't work" so ....
+--------------------------------------------------------------------------------------------------
+[20:38] <54d4a1d6db8155e6700f853b> master is failing?
+[20:38] <54d4a1d6db8155e6700f853b> was that me?!
+[20:41] <54d4a1d6db8155e6700f853b> is there a way to see when master started failing?
+--------------------------------------------------------------------------------------------------
+[20:44] <54a2cde7db8155e6700e4190> https://travis-ci.org/scikit-learn/scikit-learn/builds
+[20:44] <54a2cde7db8155e6700e4190> May not just be master
+--------------------------------------------------------------------------------------------------
+[20:44] <5395efa3a9176b500d1cd7fb> @amueller i was not alone, e.g. https://github.com/ContinuumIO/anaconda-issues/issues/392 but its all fixed now.
+[20:45] <54d4a1d6db8155e6700f853b> @michaelaye glad you worked it out :)
+--------------------------------------------------------------------------------------------------
+[20:46] <54d4a1d6db8155e6700f853b> @TomAugspurger which makes it very hard to find out which are actual master commits and which are not
+--------------------------------------------------------------------------------------------------
+[22:25] <54d4a1d6db8155e6700f853b> great, the error was first here: 24e962cfe1c348d0c1de95f546b2091fe75a2c06
+[22:25] <54d4a1d6db8155e6700f853b> failure: https://travis-ci.org/scikit-learn/scikit-learn/jobs/72957365 success: https://travis-ci.org/scikit-learn/scikit-learn/jobs/72439348
+[22:25] <54d4a1d6db8155e6700f853b> and all the versions seem to be  the same
+--------------------------------------------------------------------------------------------------
+[22:42] <54d4a1d6db8155e6700f853b> ah, new scipy
+--------------------------------------------------------------------------------------------------

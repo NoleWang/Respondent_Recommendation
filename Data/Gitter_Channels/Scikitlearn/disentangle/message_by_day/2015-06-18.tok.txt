@@ -1,0 +1,126 @@
+<s> <user> <unka@> <unka@> my second blog post - URL/http:/ <unk#a./> <unk#a-./> </s>
+<s> <user> please take a look and let me know your views ! </s>
+<s> <user> i 'll also mail it to the ml as soon as i get a +1 from either of you ! :) </s>
+<s> <user> thanks . i 'll have a look tomorrow first thing in the morning </s>
+<s> <user> <unk#a@> i 'm still not sure about <unk##> , i hope i have time to look at it soon . in the meantime , once <unk##> is done , you could either look to finish URL/https:/ URL/github.com/ <unk#a-/> which is boring but straight-forward , or investigate how to make sure the two <unka-> algorithms always give the same results in <unk##> , which is more interesting but also more involved </s>
+<s> <user> <unk#a@> i think the book in your blog post is just by <unka> , and john <unka> <unka> is the publisher ( <unka> means something like publisher in german i think ) </s>
+<s> <user> oh <unka:> : thanks !! </s>
+<s> <user> but it 's a pretty simple idea and a pretty obscure book </s>
+<s> <user> i think you can explain it better <unka-> without including that </s>
+<s> <user> yeah </s>
+<s> <user> if anything i'd try to reference <unka> </s>
+<s> <user> ( which is what i always reference for everything ) </s>
+<s> <user> for <unka-> stuff i started referencing <unka'> thesis :) </s>
+<s> <user> i stil have not really read that :-/ </s>
+<s> <user> me neither , not fully , just the first two parts , but what i 've read is great , very readable . better than most ml <unka> . </s>
+<s> <user> sweet </s>
+<s> <user> so , <unk#a@> , could you simplify a bit the <unk#a-> description of nested cv that you currently have ? i find it a bit verbose , and it kind of makes everything seem more complicated than it is </s>
+<s> <user> okay ! i 'll remove that reference and make that description simpler :) </s>
+<s> <user> does the example seem okay ? </s>
+<s> <user> there are things that you can save for later in the blog post </s>
+<s> <user> such as " based on the selected <unka> technique . ( at present only one loss function ... " </s>
+<s> <user> hi , can anyone point me in the direction of a explanation of how to do model <unka> ? </s>
+<s> <user> you can leave this for a kicker later </s>
+<s> <user> okay ! thanks for the feedback :) <unk#a@> URL/http:/ <unka-./> <unka./> </s>
+<s> <user> sure ! i 'm still reading through the blog post so give me a few more minutes please </s>
+<s> <user> please take your time !! </s>
+<s> <user> thanks :) </s>
+<s> <user> <unk#a@> if you mean <unka> <unka> models , you might want the [ <unka#(-./:]> ) in the current development version , not available in the last stable release . </s>
+<s> <user> so , <unk#a@> i'd actually not manually calculate <unka_`> that way </s>
+<s> <user> if you want to show an example that 's currently possible , i would use <unk#a=`> instead </s>
+<s> <user> this currently does <unka> <unka> if given a <unka> dataset </s>
+<s> <user> ( i think ) </s>
+<s> <user> and then you can say something like ... </s>
+<s> <user> if you needed more customization , or a different cv such as <unka> , it would n't work anymore </s>
+<s> <user> oh i just noticed you do nested cv with a for loop </s>
+<s> <user> i 'm using version <unk#.> </s>
+<s> <user> <unk#a@> i would n't say cleaner way in the first sentence . many things are straight up not possible . i would say to enable <unka-> with <unka-> objects . or make it more flexible .... </s>
+<s> <user> <unk#a@> do you want to <unka> <unka> models ? then there is nothing to help you . though implementing a voting <unka> is pretty trivial . </s>
+<s> <user> <unk#a@> : " in each iteration ( split ), the dataset ( x , y ) is partitioned into training , validation <unka.`> " should be " into a training and a validation set " also there is a backtick </s>
+<s> <user> the no should be number . </s>
+<s> <user> also this thing " this becomes necessary especially when the dataset is too small to split it into three " </s>
+<s> <user> it kind of depends on your audience , but technically , it 's never too small ( unless you have two samples ) </s>
+<s> <user> i had all my models vote but it didnt really seem to work very well . this is my first machine learning experience so i 'm very new ! there is a <unka> style competition at my work . i was doing very well with <unka> but everyone is <unka> me with <unka> now ! </s>
+<s> <user> <unka@> would you not agree ? well you could argue it is always more robust . </s>
+<s> <user> <unka> is an <unka> ;) </s>
+<s> <user> i fully agree , i just want to phrase it more clearly </s>
+<s> <user> i feel the split in bullet points is not very clear </s>
+<s> <user> technically if the data is truly <unka> , it would n't matter , would it ? </s>
+<s> <user> i was told the best thing to do is combine like 5 different random <unka> , 5 different <unka> 5 extra trees etc </s>
+<s> <user> well that could work ... </s>
+<s> <user> <unka@> not sure what you mean </s>
+<s> <user> <unk#a@> i 'm not sure it is necessary do mention <unka> , it is pretty unrelated to the issue , right ? </s>
+<s> <user> so , say i have a bunch of data that i want to model . i 'll leave out , say , 25% as a test set , do <unka> on the train set , and report the score on the test set . this is probably the most straightforward way , right ? </s>
+<s> <user> but what if i got lucky with my choice of test set ? </s>
+<s> <user> well yeah </s>
+<s> <user> the <unka> will just be very high with a small dataset , right ? </s>
+<s> <user> usually yes </s>
+<s> <user> <unk#a@> the example with the code is pretty clear , why i feel the initial explanation is not . </s>
+<s> <user> well if your model is perfect and if your data is <unka> you can have small <unka> , right ? </s>
+<s> <user> <unk#a@> however , i would n't say you need to estimate <unka_> . it is not something you are guessing or using statistical methods on . you just need to know it . but you ca n't with the current setup </s>
+<s> <user> " the final result of the nested cv is the collection of n best models " </s>
+<s> <user> <unka@> i do n't think it is . if you have three data points <unka> from a <unka> , you use two for training and one for test , and your model is fitting a <unka> to it , the <unka> of the <unka-> will be high </s>
+<s> <user> <unka*> </s>
+<s> <user> even though the data is perfectly <unka> and you are using the true model </s>
+<s> <user> unless the 3rd point is exactly in the middle of the two test points </s>
+<s> <user> hmm </s>
+<s> <user> you're right </s>
+<s> <user> well if you have three points in a line and do <unk#a-> cross <unka> .... </s>
+<s> <user> <unka> of the estimate scales with the number of samples and <unka-> gives an unbiased estimate of the <unka> iirc </s>
+<s> <user> anyway i was only trying to say that it might not be clear what " too few samples to leave a test set out " means </s>
+<s> <user> it is indeed a question of <unka> </s>
+<s> <user> and because of the <unka> , you can get particularly lucky or unlucky if you do one single outer fold </s>
+<s> <user> on small data </s>
+<s> <user> so iris is small , and the outer cv <unka> in <unk#a@> 's example is not large </s>
+<s> <user> by <unka> do you mean to say the <unka> in the hyper param points or the performance of the best models ? </s>
+<s> <user> the performance of the best models </s>
+<s> <user> ok </s>
+<s> <user> > " the final result of the nested cv is the collection of n best models " you were going to say something about this right ? </s>
+<s> <user> actually i think you should pick an example that can currently not be made to work </s>
+<s> <user> i 'm fond of <unka> :) </s>
+<s> <user> if you use <unka> with <unk#a=> on iris </s>
+<s> <user> it will already be impossible </s>
+<s> <user> but that works if you do <unk#a=> , no ? </s>
+<s> <user> yes </s>
+<s> <user> let 's say you want to shuffle , though ;) </s>
+<s> <user> or you want <unka> </s>
+<s> <user> why you'd want <unka> is hard to explain </s>
+<s> <user> if it does n't shuffle by default that 's perfect ! </s>
+<s> <user> maybe a better example : use regression and say you want to shuffle </s>
+<s> <user> because we currently have no <unka> for regression </s>
+<s> <user> yep </s>
+<s> <user> what would <unka> look like on regression ? </s>
+<s> <user> draw a line , fit something to it , and oh no ! because we do n't shuffle we do n't generalize </s>
+<s> <user> that might suggest that the problem is not shuffling by default </s>
+<s> <user> discussion : URL/https:/ URL/github.com/ <unk#a-/> </s>
+<s> <user> <unka@> there are long arguments about that . shuffling might hide <unka> . if you data order has meaning , like being temporal , then shuffling will give you too optimistic results </s>
+<s> <user> i 'm just saying the phrasing should be such that it does n't lead to " just make shuffling default " </s>
+<s> <user> but instead to " oh , we need to be able to tweak parameters of the cv object " </s>
+<s> <user> i was thinking about adding a shuffle keyword to <unka> and <unka_> at multiple points </s>
+<s> <user> alright </s>
+<s> <user> but wait </s>
+<s> <user> no </s>
+<s> <user> the argument should be different </s>
+<s> <user> if you use <unk#a=> on the outside with iris </s>
+<s> <user> you ca n't use shuffle split on the inside </s>
+<s> <user> i 'm stupid </s>
+<s> <user> you ca n't ? </s>
+<s> <user> ca n't you use <unk#a=> both outside and inside ? </s>
+<s> <user> yes . but you ca n't use shuffle split on the inside </s>
+<s> <user> because shuffle split needs the number of samples </s>
+<s> <user> ah , yes </s>
+<s> <user> i think that is the right example </s>
+<s> <user> so say you want more iterations for the inner loop ? </s>
+<s> <user> first show an example with <unk#a=> both outside and inside </s>
+<s> <user> ? </s>
+<s> <user> alright </s>
+<s> <user> btw , what 's the intuition when choosing between <unka> with [ <unka?]> ? </s>
+<s> <user> the docs just say " finer control on the number of iterations and the proportion of samples " </s>
+<s> <user> i just shuffle first and do <unka> usually </s>
+<s> <user> well , you can control the number of <unka> and the test set size independently </s>
+<s> <user> because having too small a <unka-> will also give you a bad estimate </s>
+<s> <user> oh man , perfect post for a coffee break : URL/http:/ <unka./> <unk#a-./> </s>
+<s> <user> loving the low level ones </s>
+<s> <user> i think i 'll get a print of this for the office : URL/http:/ <unk#a./> <unk#a-./> </s>
+<s> <user> <unka@> i updated the <unk##> . would you like to take a look ? </s>
+<s> <user> <unka@> <unka@> i 've revised the blog post based on all your suggestions ... however the example is still an <unka> of a working nested cv . i thought once the data <unka> <unka> work is over ... i will show an example using lolo to highlight the benefit of having data <unka> ! please take a look now :) URL/http:/ <unk#a./> <unk#a-./> </s>

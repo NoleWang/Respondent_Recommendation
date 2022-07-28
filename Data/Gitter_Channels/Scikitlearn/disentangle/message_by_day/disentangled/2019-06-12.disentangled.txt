@@ -1,0 +1,15 @@
+[04:02] <5b3ed273d73408ce4f9fcb4e> does it work with sparse matrices?
+[11:13] <5b3ed273d73408ce4f9fcb4e> Great, thanks
+--------------------------------------------------------------------------------------------------
+[04:52] <5cf106a0d73408ce4fc1d8b2> I think it will
+--------------------------------------------------------------------------------------------------
+[11:12] <55d21ee30fc9f982beadabb8> you can use `sklearn.utils.safe_indexing` that will return a matrix given a set of indices
+[11:12] <55d21ee30fc9f982beadabb8> and will work with dataframe, array, sparse matrix
+[11:15] <55d21ee30fc9f982beadabb8> depending what you are doing with mini-batch, we have some generator of mini-batch in imbalanced-learn
+[11:15] <55d21ee30fc9f982beadabb8> http://imbalanced-learn.org/en/stable/api.html#module-imblearn.keras
+[11:15] <55d21ee30fc9f982beadabb8> you can check the implementation if you want to bypass the resampling stage
+--------------------------------------------------------------------------------------------------
+[14:13] <5cec1aa6d73408ce4fc17534> hi everyone
+[14:13] <5cec1aa6d73408ce4fc17534> can i ask you something
+[14:14] <5cec1aa6d73408ce4fc17534> is there autocomplete C# codes in komodo
+--------------------------------------------------------------------------------------------------

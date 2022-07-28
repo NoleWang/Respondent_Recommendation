@@ -1,0 +1,4 @@
+[08:41] <564789be16b6c7089cbab8b7> @rvraghav93  no problem at all!
+--------------------------------------------------------------------------------------------------
+[09:44] <564789be16b6c7089cbab8b7> http://scikit-learn.org/dev/auto_examples/ensemble/plot_isolation_forest.html has a nice looking example but it would be great if it had a little more explanation about the decision boundaries? Why are there 4 areas that are non-anomalous and not just two for example?
+--------------------------------------------------------------------------------------------------

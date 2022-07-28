@@ -1,0 +1,2 @@
+[14:41] <5695d48216b6c7089cc24ae7> Hi all, any open easy issues need to be solved?
+[22:36] <582cbfc5d73408ce4f365e2b> Hello does anyone know if there are any plans to add factor rotation to FA ?

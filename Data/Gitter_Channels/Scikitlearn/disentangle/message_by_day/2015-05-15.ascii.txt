@@ -1,0 +1,9 @@
+[08:29] <54e07d6515522ed4b3dc0858> @rvraghav93 @amueller oh that looks really good. One thing I noticed though is that there's overlap between "API design" and our current "rolling your own estimator", and users do get confused about what they can and can't do in `__init__`, and why things fail afterwards. Do you have any ideas on how to make it better?
+[12:43] <53135b495e986b0712efc453> We could use ideas from the existing page and make it into a single page or a section "Custom designed estimators" under "API design"... BTW I think I'll start a PR for the same and it will be easier for you to comment and advice me... :)
+[12:44] <54e07d6515522ed4b3dc0858> I was just wondering why we can't add line-comments to github wiki pages :)
+[12:46] <53135b495e986b0712efc453> haha :D I'll make it easier by raising a PR ;) But incase you want to comment to the wiki pages... You could just edit it and add a comment "(@vene: This should be removed)" etc... at the particular place and make it bold... I'll take note of the same :)
+[18:52] <54d4a1d6db8155e6700f853b> @vene I have wondered that myself from time to time ;)
+[20:54] <54d4a1d6db8155e6700f853b> @bdholt1 just showed up on IRC and said he's back :)
+[20:54] <55565ccb15522ed4b3e07834> hi all!
+[20:55] <54d4a1d6db8155e6700f853b> hey :)
+[20:58] <54d4a1d6db8155e6700f853b> My favourite GSOC students, @rvraghav93 @xuewei4d @Barmaley-exe how are things? Reading up on your projects? ;)

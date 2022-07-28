@@ -1,0 +1,12 @@
+<s> <user> hey , i 'm unclear on whether this channel is for <unka-> or <unka-> questions ( or both )? can someone clarify ? i do n't want to bother others with off-topic questions :- ) </s>
+<s> <user> > hey , i 'm unclear on whether this channel is for <unka-> or <unka-> questions ( or both )? can someone clarify ? i do n't want to bother others with off-topic questions :- ) oh , i guess the topic answers that ( thanks ) </s>
+<s> <user> so , for the actual q : </s>
+<s> <user> i 'm trying to use <unka.> on a large document <unka> ( coming from <unka> , converted to numpy sparse matrix ) </s>
+<s> <user> the matrix is this : </s>
+<s> <user> <unk#a<> sparse matrix of type <unka'<> <unk#a'.> > ' with <unk#> stored elements in compressed sparse column format > </s>
+<s> <user> that 's <unk#a/~> documents with <unk#a/~> features ( <unka-> words ) </s>
+<s> <user> i 'm trying to cluster this using <unk#a().=_> ) </s>
+<s> <user> how do i know if it will ever terminate ? there seems to be no way of having a progress indication </s>
+<s> <user> ( ram does n't seem to be an issue for now , it 's running on a machine with 1 tib ram , but it 's sitting at <unk#a/~> gib for now ) </s>
+<s> <user> it 's been going on for DIR/~3/ days now , any guess on whether it has any chances of terminating in reasonable time ? </s>
+<s> <user> ( or how to enable progress logging , if that 's possible ) </s>

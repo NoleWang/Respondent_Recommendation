@@ -1,0 +1,7 @@
+[08:01] <541a528b163965c9bc2053de> Sorry too late to reply: I commented on your post. I think besides the randomized parameter search or exhaustive grid search use case, the other common machine learning use case that really benefit from distributed training is gradient boosted trees. The implementation of boosted trees in scikit-learn is not really amenable to cluster-wise distribution in its current form. However xgboost is really mature in that regard and already provides hadoop yarn integration. I think it would run great on top of dask.distributed. They also plan better integration with pandas dataframe but this is still on the roadmap.
+--------------------------------------------------------------------------------------------------
+[15:18] <569ebe44e610378809bd2db4> I am a little concerned about example http://scikit-learn.org/stable/auto_examples/feature_selection/plot_feature_selection.html#example-feature-selection-plot-feature-selection-py
+[15:19] <569ebe44e610378809bd2db4> there is not blue bar for the second feature
+[15:19] <569ebe44e610378809bd2db4> and smaller bar for the forth one
+[15:19] <569ebe44e610378809bd2db4> thus I am not sure how the example proves that feature selection improves SVM..
+--------------------------------------------------------------------------------------------------

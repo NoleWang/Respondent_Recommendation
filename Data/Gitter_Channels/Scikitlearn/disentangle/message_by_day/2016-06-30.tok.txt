@@ -1,0 +1,15 @@
+<s> <user> any node wrapper for <unka> ? </s>
+<s> <user> hi everyone , i am <unka> and newbie in <unka-> :d </s>
+<s> <user> hi everyone , i have this : <unka`> = <unka(_> = 1000 , <unka_> = -1 ) <unka> = <unka'([> , <unka'(),> , <unka)]`> </s>
+<s> <user> fit the <unka> with all of the training set <unka`> = <unka(.> , <unka)`> where <unka`> & <unka`> are of size 4 </s>
+<s> <user> and i save it as a pickle object . </s>
+<s> <user> now , how can i extract those array of features and labels again ?? </s>
+<s> <user> any idea any one ? </s>
+<s> <user> what is it ? what specifically are you saving as a pickle object </s>
+<s> <user> the <unka`> variable . which is a pipeline class object . </s>
+<s> <user> <unka<> <unka'.> > </s>
+<s> <user> hmm as far as i know there is no way to get the input features and labels from a fitted <unka> ... </s>
+<s> <user> :( </s>
+<s> <user> <unk#a@> what would be the point of storing the dataset in the model ? </s>
+<s> <user> hello . i am using <unka> to try to predict lux values from a ios camera data . i have created some training data for multiple models of <unka/> , and have it working to some degree , but still get something like 20% error . </s>
+<s> <user> i am relatively new to <unka> , and am wondering where i can get feedback on my ipython notebook to improve my results . is this a good place ? if so , what is the best way to share a notebook and relevant external files ? </s>

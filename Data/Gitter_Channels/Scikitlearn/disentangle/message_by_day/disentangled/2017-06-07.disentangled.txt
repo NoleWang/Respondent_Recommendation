@@ -1,0 +1,111 @@
+[10:33] <54e07d0815522ed4b3dc0850> @jnothman : do you want to do a video hangout at some point, mostly to say hi and join the excitement?
+[10:34] <54e07d0815522ed4b3dc0850> @jnothman I believe that it's 8:30PM your time. We are currently having the lunch break. So maybe in a little while will be good. We can put you on a big screen
+--------------------------------------------------------------------------------------------------
+[10:35] <54b2524adb8155e6700e8a8e> I'm okay with small screens. Sounds like fun. I'm currently having my dinner too.
+--------------------------------------------------------------------------------------------------
+[10:41] <54e07d0815522ed4b3dc0850> OK, after dinner? Or will you be busy?
+[10:42] <54e07d0815522ed4b3dc0850> If you want: ping me on google hangout
+--------------------------------------------------------------------------------------------------
+[10:49] <54b2524adb8155e6700e8a8e> Should be alright when all the feasting is
+[10:49] <54b2524adb8155e6700e8a8e> over
+--------------------------------------------------------------------------------------------------
+[10:50] <54e07d0815522ed4b3dc0850> Everybody is gone to take a break outside now :)
+--------------------------------------------------------------------------------------------------
+[11:08] <54b2524adb8155e6700e8a8e> No hurry on my part! There's washing up to do.
+[11:08] <54e07d0815522ed4b3dc0850> When you want, everybody is back
+[11:22] <54b2524adb8155e6700e8a8e> Child calls.
+--------------------------------------------------------------------------------------------------
+[11:23] <54b2524adb8155e6700e8a8e> I'll be with you in a couple of mins
+--------------------------------------------------------------------------------------------------
+[11:23] <54d4a1d6db8155e6700f853b> @tguillemot also https://github.com/scikit-learn/scikit-learn/pull/9030 https://github.com/scikit-learn/scikit-learn/pull/9029
+[11:23] <54d4a1d6db8155e6700f853b> ;)
+--------------------------------------------------------------------------------------------------
+[11:35] <541a528b163965c9bc2053de> @jnothman I think @mblondel is going to ICML
+[11:35] <54b2524adb8155e6700e8a8e> Haha I think
+--------------------------------------------------------------------------------------------------
+[12:29] <54e07d0815522ed4b3dc0850> All sprinters: we are having a sample-props discussion from 15:00 to 16:00, and a group picture at 16:00 hopefully on the roof
+--------------------------------------------------------------------------------------------------
+[12:38] <56b0a775e610378809bf7a7c> if you want you can find a spec for sample-props  I have done several month ago to launch the discussion : https://github.com/tguillemot/sample_props_spec/blob/master/sample_props_spec_v2.md
+--------------------------------------------------------------------------------------------------
+[12:39] <54d4a1d6db8155e6700f853b> thanks @tguillemot, I'll reread
+--------------------------------------------------------------------------------------------------
+[12:41] <54e07d0815522ed4b3dc0850> Update: group picture: 16:30 sharp: Ibrahim will be there to bring us up to the roof
+--------------------------------------------------------------------------------------------------
+[12:51] <54d4a1d6db8155e6700f853b> simple fix for making BaseSearchCV (more) API compatible: https://github.com/scikit-learn/scikit-learn/pull/9038
+--------------------------------------------------------------------------------------------------
+[19:06] <55502d0c15522ed4b3e03330> hi all, I wish to calculate the confidence of an `SVC` prediction, but I have a hard time understanding the result I have fitting data like this ```python X = np.array([ 		[0, 0, 0, 0], 		[1, 1, 1, 1], 		[2, 2, 2, 2], 		[3, 3, 3, 3] 	])  y = np.array([ 	0, 1, 2, 3 	])  clf = svm.SVC(C=1, kernel='rbf', probability=True) clf.fit(X, y) ``` Then I predict the class for input `x = np.array([1, 2, 3, 4])`, and I the output makes sence ```python clf.predict([x]) # array([1]) ```  But the probability does not make sense at all ```python clf.predict_proba([x]) # array([[ 0.2550524 ,  0.16488868,  0.25497241,  0.3250865 ]]) ```  According to the probabilities, class `1` has the lowest possibility. Why is that?
+--------------------------------------------------------------------------------------------------
+[19:10] <54d4a1d6db8155e6700f853b> what's x?
+[19:10] <54d4a1d6db8155e6700f853b> @nlhkh check out the docs, it tells you that there can be inconsistencies between the probability estimate and the prediction, because of the platt scaling that is used to create the predictions
+[19:11] <54d4a1d6db8155e6700f853b> you can also look at decision_function and that should be consistent
+[19:12] <55502d0c15522ed4b3e03330> oh, sorry
+--------------------------------------------------------------------------------------------------
+[19:13] <55502d0c15522ed4b3e03330> ```python x = np.array([1, 1, 1, 1]) ```
+[19:13] <55502d0c15522ed4b3e03330> I tried the `decision_function` too
+[19:13] <55502d0c15522ed4b3e03330> Could you tell me a bit more what it means?
+--------------------------------------------------------------------------------------------------
+[19:14] <54d4a1d6db8155e6700f853b> I can explain to you what happens: the probability estimate uses cross-validation to create the probability estimates, but there's only one data point for each class, so the models will be pretty useless
+[19:14] <54d4a1d6db8155e6700f853b> because as soon as you leave out some points you leave out the whole class
+[19:15] <54d4a1d6db8155e6700f853b> if you're trying to understand the svm algorithm, don't look at the probabilities
+[19:15] <54d4a1d6db8155e6700f853b> what is your goal?
+[19:15] <54d4a1d6db8155e6700f853b> on this dataset?
+[19:15] <54d4a1d6db8155e6700f853b> ok. well then it will work
+[19:16] <54d4a1d6db8155e6700f853b> well the example is done in a way that breaks the method that is used to get the uncertainty
+--------------------------------------------------------------------------------------------------
+[19:15] <55502d0c15522ed4b3e03330> my goal is to determine how confident a prediction is
+[19:15] <55502d0c15522ed4b3e03330> so as to declare that a prediction is not reliable
+[19:15] <55502d0c15522ed4b3e03330> no
+--------------------------------------------------------------------------------------------------
+[19:15] <55502d0c15522ed4b3e03330> on a much bigger dataset
+[19:15] <55502d0c15522ed4b3e03330> this is just for example
+--------------------------------------------------------------------------------------------------
+[19:16] <55502d0c15522ed4b3e03330> so when I do this `clf.decision_function([x])`, I get this  ``` array([[-0.0296443 , -0.22257708, -0.22257708, -0.19293278, -0.19293278,         0.        ]]) ```
+[19:16] <55502d0c15522ed4b3e03330> how should I interprete these numbers?
+--------------------------------------------------------------------------------------------------
+[19:17] <54d4a1d6db8155e6700f853b> predict_proba they are estimated probabilities of the classes
+[19:17] <54d4a1d6db8155e6700f853b> for decision_function they are unnormalized, so higher means better but there is no absolute scale
+--------------------------------------------------------------------------------------------------
+[19:19] <54d4a1d6db8155e6700f853b> ```python import numpy as np from sklearn import svm X = np.array([         [0, 0, 0, 0],         [1, 1, 1, 1],         [2, 2, 2, 2],         [3, 3, 3, 3]     ]) X = np.repeat(X, 10, axis=0)  y = np.array([     0, 1, 2, 3     ]) y = np.repeat(y, 10)  clf = svm.SVC(C=1, kernel='rbf', probability=True) clf.fit(X, y) print(clf.predict([[1, 1, 1, 1]])) print(clf.predict_proba([[1, 1, 1, 1]])) ```
+[19:22] <55502d0c15522ed4b3e03330> ohhh, now it makes better sense
+[19:22] <55502d0c15522ed4b3e03330> so I do not have enough data for cross-validation
+--------------------------------------------------------------------------------------------------
+[19:23] <54d4a1d6db8155e6700f853b> in your example, yes
+[19:23] <55502d0c15522ed4b3e03330> so in this case
+[19:23] <55502d0c15522ed4b3e03330> the decision_function is `array([[-1.00000001,  0.        ,  0.3495638 ,  1.00000001,  1.        ,         0.5530018 ]])`
+[19:23] <55502d0c15522ed4b3e03330> the evaluation for class 1 is 0
+[19:23] <55502d0c15522ed4b3e03330> so close to 0 is better?
+[19:24] <55502d0c15522ed4b3e03330> isnt that the distance to the hyperplane?
+[19:24] <54d4a1d6db8155e6700f853b> no
+[19:24] <54d4a1d6db8155e6700f853b> with this code I get
+[19:24] <54d4a1d6db8155e6700f853b> [[ 1.89159397  3.5         0.9255003  -0.31709426]] In [ ]:
+[19:24] <54d4a1d6db8155e6700f853b> print(clf.decision_function([[1, 1, 1, 1]]))
+[19:24] <54d4a1d6db8155e6700f853b> higher is better
+[19:25] <55502d0c15522ed4b3e03330> I dont get the same output as yours
+[19:25] <55502d0c15522ed4b3e03330> no no
+[19:25] <55502d0c15522ed4b3e03330> I copied your code
+[19:25] <55502d0c15522ed4b3e03330> it returns an array of 6 elements
+[19:26] <54d4a1d6db8155e6700f853b> then you didn't copy my code
+[19:26] <54d4a1d6db8155e6700f853b> ohhh wait
+[19:26] <54d4a1d6db8155e6700f853b> sorry
+[19:26] <54d4a1d6db8155e6700f853b> set decision_function_shape='ovr'
+[19:26] <54d4a1d6db8155e6700f853b> if you have scikit-learn 0.17
+[19:26] <54d4a1d6db8155e6700f853b> you should upgrade to 0.18
+[19:26] <54d4a1d6db8155e6700f853b> SVC.decision_function is / was really weird as well
+--------------------------------------------------------------------------------------------------
+[19:25] <54d4a1d6db8155e6700f853b> there's a 3.5 for class 1, that's why class 1 is predicted
+[19:25] <54d4a1d6db8155e6700f853b> it's always the argmax of the decision function
+[19:25] <54d4a1d6db8155e6700f853b> you're running different code then ;)
+--------------------------------------------------------------------------------------------------
+[19:27] <55502d0c15522ed4b3e03330> it does say this "The decision_function_shape default value will change from 'ovo' to 'ovr' in 0.19. This will change the shape of the decision function returned by SVC. <unconvertable> :)
+[19:27] <54d4a1d6db8155e6700f853b> yeah
+[19:27] <54d4a1d6db8155e6700f853b> I wrote this ;)
+[19:27] <54d4a1d6db8155e6700f853b> make it ovr
+[19:27] <54d4a1d6db8155e6700f853b> then it'll have 4 elements
+[19:27] <54d4a1d6db8155e6700f853b> I'm on 0.19-dev
+[19:27] <54d4a1d6db8155e6700f853b> sorry about that
+[19:27] <55502d0c15522ed4b3e03330> I see :)
+[19:27] <55502d0c15522ed4b3e03330> it is an honor
+[19:28] <54d4a1d6db8155e6700f853b> ok starbucks is closing and I have to write a keynote
+[19:28] <54d4a1d6db8155e6700f853b> good luck
+[19:28] <55502d0c15522ed4b3e03330> have fun!
+--------------------------------------------------------------------------------------------------

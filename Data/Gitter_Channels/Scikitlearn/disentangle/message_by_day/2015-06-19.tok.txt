@@ -1,0 +1,10 @@
+<s> <user> okay i 'll sleep and finish this data <unka> before sunday <unka:> : my next blog on <unka/> should be on nested cv using the data <unka> lolo !! :) good night !! </s>
+<s> <user> btw is the 3 part explanation still verbose ? </s>
+<s> <user> <unk#a@> i 'll have a look in a bit . i still think you should definitely also show an example that is currently not working . i feel the current breakage is pretty bad and showing it <unka> how important your work is </s>
+<s> <user> okay :) will add one !! </s>
+<s> <user> hi , i adjusted the displaying of verbose messages in <unka`> , what do you think ? the extra messages displayed when <unk#a=> compared to those when <unk#a=> are put the same line with <unka'> . i think that would be more clear . <unka@> <unka@> </s>
+<s> <user> [ <unk#a#(-./:]> ) </s>
+<s> <user> i have finished the most methods of <unka_`> and methods of <unka`> related to full <unka> . i think it 's time to write tests before further implementation . in the master branch , the tests is implemented with <unka.`> , while simple testing functions for other modules . which one should i use ? </s>
+<s> <user> i think displaying verbose messages makes <unka`> a little messy . any better idea ? </s>
+<s> <user> <unk#a@> we usually prefer simple functions for testing . if you feel that using <unka> would simplify the testing code or make it more clear , you can use that , too . </s>
+<s> <user> okay . </s>

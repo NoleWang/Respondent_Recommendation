@@ -1,0 +1,3 @@
+<s> <user> you can check if there is any attribute that ends in " _ " . if not it 's not fitted . </s>
+<s> <user> unless it 's <unka> , like the <unka> that does not require any fit to start <unka> :p </s>
+<s> <user> hi nice to know this group exists </s>

@@ -1,0 +1,7 @@
+<s> <user> does <unka_> in <unka.\_> mean time that it took to predict classes ( in <unka> case ) and <unka> the relevant evaluation scores ? </s>
+<s> <user> if you fit <unka> with verbosity =1 , say and then pickle it </s>
+<s> <user> it seems you are stuck with this verbosity level forever . is that <unka/> ? </s>
+<s> <user> unless you can secretly set the verbosity level when doing <unka._> ? </s>
+<s> <user> > hi , i had a feature request <unk##> :) </s>
+<s> <user> i 'll be waiting eagerly for the reviews </s>
+<s> <user> has anyone successfully added <unka> to a <unka.> with a specific version ? </s>

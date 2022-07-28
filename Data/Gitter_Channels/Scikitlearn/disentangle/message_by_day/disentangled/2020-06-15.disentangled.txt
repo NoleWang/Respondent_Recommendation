@@ -1,0 +1,14 @@
+[14:32] <564789be16b6c7089cbab8b7> does the default FeatureAgglomeration just leave you with 2 features?
+--------------------------------------------------------------------------------------------------
+[16:51] <567f5d7716b6c7089cc043a8> as stated in the [docs](https://scikit-learn.org/dev/modules/generated/sklearn.cluster.FeatureAgglomeration.html#sklearn.cluster.FeatureAgglomeration), `n_clusters=2` is the default value.
+[16:51] <564789be16b6c7089cbab8b7> does that mean you end up with 2 features?
+[16:51] <564789be16b6c7089cbab8b7> I am not clear what a cluster means here
+[16:52] <564789be16b6c7089cbab8b7> @adrinjalali  (thank you)
+[16:54] <567f5d7716b6c7089cc043a8> yes, the examples and the user guide will give you a better idea on how it works and what it does: https://scikit-learn.org/dev/modules/clustering.html#hierarchical-clustering
+[16:55] <564789be16b6c7089cbab8b7> thank you
+[16:55] <564789be16b6c7089cbab8b7> I am surprised it works so well for my regression problem!
+--------------------------------------------------------------------------------------------------
+[16:56] <54d4a1d6db8155e6700f853b> I think we could add it to the docstring as well. I think it's clear from the user guide but why not add it to the docstring?
+--------------------------------------------------------------------------------------------------
+[16:57] <567f5d7716b6c7089cc043a8> I agree that its docstring can be substantially improved :D the examples can also see some love
+--------------------------------------------------------------------------------------------------

@@ -1,0 +1,25 @@
+[08:00] <564789be16b6c7089cbab8b7> does sklearn have tests that you can run?
+--------------------------------------------------------------------------------------------------
+[09:08] <55d21ee30fc9f982beadabb8> @lesshaste Do you mean https://github.com/scikit-learn/scikit-learn#testing
+--------------------------------------------------------------------------------------------------
+[09:54] <564789be16b6c7089cbab8b7> yes thanks
+--------------------------------------------------------------------------------------------------
+[09:57] <564789be16b6c7089cbab8b7> are some errors expected? For example "bagging.py:747: RuntimeWarning: divide by zero encountered in log "
+--------------------------------------------------------------------------------------------------
+[11:02] <55d21ee30fc9f982beadabb8> Sometimes, you can have error or warning raised by scipy and numpy which will be catch I think
+[11:02] <55d21ee30fc9f982beadabb8> the important things is that you get no output as
+[11:02] <55d21ee30fc9f982beadabb8> ``` Ran 20 tests in 0.238s  FAILED (errors=2) ```
+[11:03] <55d21ee30fc9f982beadabb8> or with failure
+[11:04] <564789be16b6c7089cbab8b7> @glemaitre  OK
+[11:04] <564789be16b6c7089cbab8b7> I think it is all works fine. I was trying to get TPOT to work which stalls mysteriously on OS X and I wanted to check it wasn't a scikit learn problem. It isn't.
+[11:04] <55d21ee30fc9f982beadabb8> Then if you fill this is a bug you probably want to put it back in the issue tracker in github
+[11:05] <564789be16b6c7089cbab8b7> it's a TPOT bug I think, not a scikit-learn one
+[11:05] <564789be16b6c7089cbab8b7> probably in fact a pathos bug
+--------------------------------------------------------------------------------------------------
+[21:31] <58cd4780d73408ce4f51d3cb> Hello, I am willing to get the frequency of keywords + ngrams over a Russian text. I am having troubles using the CountVectorizer, here is what I did so far:  ```python corpus = open("russian-text-file").read() corpus = nltk.regexp_tokenize(corpus, r'(?u)\\b\\w+\\b', gaps=True) cv = CountVectorizer(ngram_range=(1, 10), vocabulary=["list of russian keywords + ngrams"], token_pattern='(?u)\\b\\w+\\b') results = pd.DataFrame(cv.fit_transform(corpus).toarray(), columns=cv.get_feature_names()) results_sum = results.sum() ```  `results_sum` shows that none of the keywords or ngrams are present in the text. However when I searched manually I could find them. Also, this code snippet worked with english text. Any help is appreciated, thanks!
+--------------------------------------------------------------------------------------------------
+[22:06] <551c051b15522ed4b3de2fea> would someone mind interpreting a learning curve for me? Im not quite sure whether this represents an issue with my data.
+[22:07] <551c051b15522ed4b3de2fea> [![Screen Shot 2017-03-31 at 15.06.27.png](https://files.gitter.im/scikit-learn/scikit-learn/QgsH/thumb/Screen-Shot-2017-03-31-at-15.06.27.png)](https://files.gitter.im/scikit-learn/scikit-learn/QgsH/Screen-Shot-2017-03-31-at-15.06.27.png)
+[22:08] <551c051b15522ed4b3de2fea> it looks like were getting a 7% CV error, which is a bit high, but tolerable for this use case?
+[22:11] <551c051b15522ed4b3de2fea> my p/r values sort of suck
+--------------------------------------------------------------------------------------------------

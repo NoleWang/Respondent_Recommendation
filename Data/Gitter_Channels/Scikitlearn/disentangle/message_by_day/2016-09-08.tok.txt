@@ -1,0 +1,6 @@
+<s> <user> <unka@> the exit( ) is not in the dev doc so it has been fixed in master . see URL/http:/ <unka-./> <unka./_> </s>
+<s> <user> <unka@> , is there any interest in merging the metric learning algorithm implemented [ <unk#a#(-./:]> ) ? and whether any metric learning algorithms are in the pipeline ? </s>
+<s> <user> <unka@> yes there is interest . but currently we are mostly working on a release </s>
+<s> <user> only the things in <unka> are in the pipeline afaik </s>
+<s> <user> <unka@> can you maybe work at making the new <unka-> docs render correctly ? </s>
+<s> <user> <unka@> , cool , i 'll start by giving it a shot . it can be reviewed after the release is done and you guys get some time :) </s>

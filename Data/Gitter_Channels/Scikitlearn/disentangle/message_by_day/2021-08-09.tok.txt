@@ -1,0 +1,4 @@
+<s> <user> can i use a confusion matrix to see the accuracy of <unka(> vector regression ) ? </s>
+<s> <user> or is it only for <unka> ? </s>
+<s> <user> confusion matrix and derived metrics are only for <unka> </s>
+<s> <user> look at the regression metrics instead </s>

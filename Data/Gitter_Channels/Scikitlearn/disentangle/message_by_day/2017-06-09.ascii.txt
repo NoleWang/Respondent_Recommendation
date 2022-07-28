@@ -1,0 +1,2 @@
+[12:02] <59366dabd73408ce4f6504fd> Did you miss this http://scikit-learn.org/stable/ ?
+[17:34] <541a528b163965c9bc2053de> @Ij888  There is http://scikit-learn.org/stable/tutorial/index.html or you can buy a book such as: http://shop.oreilly.com/product/0636920030515.do

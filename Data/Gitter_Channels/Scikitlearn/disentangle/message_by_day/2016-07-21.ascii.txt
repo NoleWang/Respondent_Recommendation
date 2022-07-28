@@ -1,0 +1,5 @@
+[20:44] <564789be16b6c7089cbab8b7> hi.. I am trying to find the most important features in a large random forest and it takes about 1 second per feature and there are 10s of thousands of features. The random forest only took ten minutes to build in total.
+[20:44] <564789be16b6c7089cbab8b7> am I doing something wrong or is this expected?
+[21:20] <564789be16b6c7089cbab8b7> ah.. I think I might realise my mistake!
+[21:23] <564789be16b6c7089cbab8b7> for i in xrange(len(clf.feature_importances_)):     print clf.feature_importances_[i]
+[21:24] <564789be16b6c7089cbab8b7> does this recompute the whole feature_importances_ array in each step of the for loop?

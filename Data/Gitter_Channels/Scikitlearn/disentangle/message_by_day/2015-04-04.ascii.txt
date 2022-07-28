@@ -1,0 +1,2 @@
+[18:12] <54d4a1d6db8155e6700f853b> @ogrisel where was your mlp notebook again?
+[18:22] <54d4a1d6db8155e6700f853b> @ogrisel it looks like the current partial_fit goes over the data multiple times. That seems odd.

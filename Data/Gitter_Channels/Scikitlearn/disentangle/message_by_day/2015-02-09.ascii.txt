@@ -1,0 +1,1 @@
+[18:01] <5474d9eadb8155e6700d8178> Scikit learn has crossed 5000 stars on github :beer:

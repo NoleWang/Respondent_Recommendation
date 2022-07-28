@@ -1,0 +1,26 @@
+<s> <user> <unka@> the <unka> ( the <unka> in <unka_> called by <unka> ) only happens on scipy <unk#.> from ubuntu precise right ? what about skipping that test if scipy is too old ? </s>
+<s> <user> yeah , but we still support scipy <unk#.> , right ? </s>
+<s> <user> i tried reproducing but failed . i fear it is something silly like last time , where there was an if on the scipy version </s>
+<s> <user> have you tried to reproduce with ubuntu 12.04 ? </s>
+<s> <user> not yet </s>
+<s> <user> ok i can try tomorrow if you do n't do it in the mean time . </s>
+<s> <user> need to run now , see you later . </s>
+<s> <user> ok . i think i have a vagrant box , i 'll have a look </s>
+<s> <user> btw if you had time to look at the <unka> branch , this would be great </s>
+<s> <user> <unk#a@> could you maybe start with a first blog post on your plans for the summer ? </s>
+<s> <user> <unka@> <unk#a@> maybe we could find the time to sync and discuss an outline of the blog post . it 's also a good opportunity to think about the upcoming steps . </s>
+<s> <user> sure </s>
+<s> <user> btw , i think it 's good to be aware of each other 's time zones , so we can plan better . i 'm currently on central european ( summer ) time until sunday , and then new york time . ( we can take this to a private chat too if you want .) </s>
+<s> <user> where are you going vlad ? will you be around ? </s>
+<s> <user> i will actually be in new york for about a week , if everything goes well . i have to apply for a chinese visa . </s>
+<s> <user> afterwards it 's back to boring <unka> . </s>
+<s> <user> currently in <unka> for www </s>
+<s> <user> very beautiful city ! </s>
+<s> <user> nice ! when are you in nyc ? let 's have a beer ! </s>
+<s> <user> next week ? </s>
+<s> <user> sure ! yes , <unka-> i think . </s>
+<s> <user> gotta run for a while , talk to you later ! </s>
+<s> <user> ttyl ! </s>
+<s> <user> <unka@> i just <unka-> <unka@> about the blog post :) will make one before 20th and share the link :) </s>
+<s> <user> great ! </s>
+<s> <user> <unka@> btw we have this thing here were we hang out and chat ;) </s>

@@ -1,0 +1,2 @@
+<s> <user> <unka@> from what i understand <unka.`> is both the array of nodes *and* the address of the root node ( in c and thus in <unka> , an array is just a constant pointer on the first value of that array ) so <unka`> - <unka.`> will be positive and it correspond to the offset between the final node <unka`> and the root i.e . it corresponds to its index in the <unka.`> array </s>
+<s> <user> <unka@> ooh now i see , makes much more sense . i do n't program in c , so this has been quite cryptic . i appreciate the help , really ! </s>

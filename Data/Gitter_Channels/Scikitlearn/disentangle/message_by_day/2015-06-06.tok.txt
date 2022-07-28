@@ -1,0 +1,43 @@
+<s> <user> and how about lists of lists of strings ? </s>
+<s> <user> ;) </s>
+<s> <user> <unka@> what is the use case ? i'd just use <unka> without a <unka> there :d </s>
+<s> <user> in your example above , <unka'[`> , <unka'> , <unka'> , 'new <unka']`> is the entire column ( 4 values ) or a single value ? </s>
+<s> <user> if the former , <unka> would work , right ? </s>
+<s> <user> <unka@> try this : <unk`> x = [[ <unka'> , <unka'> , <unka'> ], [ <unka'> , <unka'> ]] <unka(=> x : <unka()._> ) <unk`> </s>
+<s> <user> the entire column </s>
+<s> <user> four samples </s>
+<s> <user> it is just one <unka> value </s>
+<s> <user> <unka> only works on integers </s>
+<s> <user> <unka> kind of works , but is not really made for this usecase and does n't really have a transformer interface </s>
+<s> <user> this works : <unk`> in [ 12 ]: x = [[ <unka'> ], [ <unka'> ], [ <unka'> ], [ 'new <unka'> ]] <unka(=> x : <unka()._> ) <unk#a[> ]: <unk#a([> , 0 , 1 ], [ 0 , 0 , 1 ], [ 1 , 0 , 0 ], [ 0 , 1 , 0 <unk)]> <unk`> </s>
+<s> <user> true . it seems odd to me , though . </s>
+<s> <user> is that the interface we want ? </s>
+<s> <user> i think <unka> should support it </s>
+<s> <user> what i meant yesterday is that it can support anything that 's an object </s>
+<s> <user> as long as you can assign integers to different objects you encounter </s>
+<s> <user> and i feel like i also want to support data that has one column that is city and one column that is color . but maybe <unka> is for that </s>
+<s> <user> ok but what is the type shape of x ? would you support this for x being a list of arbitrary objects ? or for x being an 2d array of arbitrary objects ? </s>
+<s> <user> i'd say list ( or 1d array ) of arbitrary objects </s>
+<s> <user> why 2d array ? for city and color ? </s>
+<s> <user> once you have more than one field of <unka> variables , you could encode them as <unka'(=> <unka'> , <unka'=> ) in which case <unka> works , right ? </s>
+<s> <user> or encode them as <unka'(=[> , <unka'> ], <unka'=[> , <unka'> ]) and then <unka> + <unka> should work </s>
+<s> <user> for your example you could do <unk`> x = { <unka'_> : [" long string 1 " , " long string 2 " ... ], <unka'> : <unk[{> <unka'=> , <unka'=> }, { <unka'=> , <unka'=> } ... ] <unk`> </s>
+<s> <user> and <unka(=_> ), <unka(=> ))) </s>
+<s> <user> i feel the nested <unka> are ugly . </s>
+<s> <user> i just updated the example but something is wrong :-/ </s>
+<s> <user> ah </s>
+<s> <user> <unka`> x = [ <unka'> , <unka'> , <unka'> , 'new <unka'> ] <unka(=> x : [ <unka().]_> ) <unk`> </s>
+<s> <user> is what i want </s>
+<s> <user> how do you do the code highlighting again ? </s>
+<s> <user> backticks </s>
+<s> <user> right </s>
+<s> <user> that works , but the analyzer lambda is super opaque </s>
+<s> <user> idea : why not <unka> <unka> and create a <unka> with the same interface </s>
+<s> <user> except if you pass it a 2d array , it would treat each column as a different implicit key </s>
+<s> <user> so then you can do <unka'[`> , <unka'> , 'new <unka'> , <unka']`> as well as <unka'[`> , <unka'> ], [ <unka'> , <unka'> ], ... <unk]`> </s>
+<s> <user> hm ... maybe just add that ? </s>
+<s> <user> i added a somewhat interesting example to the pr </s>
+<s> <user> yes but then it 's no longer a <unka*> <unka> :) </s>
+<s> <user> i meant just adding a different class with a different interface </s>
+<s> <user> or that </s>
+<s> <user> ithe example is very nice </s>

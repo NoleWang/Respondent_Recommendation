@@ -1,0 +1,15 @@
+<s> <user> as anybody encountered <unka> when trying to use <unka.> with <unka._> ? </s>
+<s> <user> what 's the error ? </s>
+<s> <user> <unka> : ca n't pickle <unka<> <unka.> at <unk#a> > : it 's not the same object as <unka.> </s>
+<s> <user> the code that i 'm using is - <unka_> = <unka(._> <unka.> , ( <unka'[_> ], ), ) </s>
+<s> <user> yeah you ca n't pickle instance methods like that </s>
+<s> <user> write a new function that is not a method and does the prediction . </s>
+<s> <user> i tried wrapping it into a function . it still throws the same error . </s>
+<s> <user> def <unka(*> ): func = <unk#a[> ] <unk#a(*[> <unk):]> </s>
+<s> <user> <unka_> = <unka(._> wrapper , ( <unka.> , <unka'[_> <unk),]> ) </s>
+<s> <user> make <unka> the argument , not <unka.> </s>
+<s> <user> okay , let me try that . </s>
+<s> <user> yes , it works . </s>
+<s> <user> <unka> <unka@> . where can i read more about this error ? </s>
+<s> <user> i do n't know . google <unka> instance methods , and you 'll see that 's not possible </s>
+<s> <user> <unka.> is a bit of a wild beast and not a normal class method , so you ca n't pickle it </s>

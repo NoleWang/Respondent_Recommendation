@@ -1,0 +1,5 @@
+[21:09] <54d4a1d6db8155e6700f853b> @jorisvandenbossche can you do me a favor and explain https://github.com/pandas-dev/pandas/issues/18801 to me?
+[21:10] <54d4a1d6db8155e6700f853b> or maybe @jnothman understands and can enlighten me
+--------------------------------------------------------------------------------------------------
+[21:12] <53eb987c107e137846baa89d> I wonder if Joel ever comes here, always busy with issues/PR. :)
+--------------------------------------------------------------------------------------------------

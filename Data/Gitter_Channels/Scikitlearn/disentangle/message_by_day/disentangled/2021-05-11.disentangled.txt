@@ -1,0 +1,6 @@
+[12:00] <56d028dbe610378809c39bd5> Hi! What week scheduled for release scikit-learn 1.0?
+--------------------------------------------------------------------------------------------------
+[13:09] <5baf7d9ad73408ce4fa9c9b2> There is no specific week scheduled @PetrovKP , but we try to release every 6 months  and the previous one was released in december
+--------------------------------------------------------------------------------------------------
+[13:11] <55d21ee30fc9f982beadabb8> So perfectly June but I think that for 1.0 we want a couple of feature to be inside the release so we might be delayed.
+--------------------------------------------------------------------------------------------------

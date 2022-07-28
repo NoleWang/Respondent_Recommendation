@@ -1,0 +1,33 @@
+[12:08] <5964e3b4d73408ce4f6c9e02> Hey! Did someone deal with this preprocessing dilemma when working with timeseries? https://stackoverflow.com/questions/45080001/how-to-preprocess-timeseries-test-data-to-make-a-classification-prediction
+[15:42] <54d4a1d6db8155e6700f853b> if anyone wants to help the sprints run smoothly, please help tag issues appropriately with "easy" "need contributor" and "sprint"
+[15:52] <54d4a1d6db8155e6700f853b> looks like all "easy" "need contributor" issues already have PRs awaiting review...
+[15:52] <54d4a1d6db8155e6700f853b> so review sprint?
+[15:52] <54d4a1d6db8155e6700f853b> ;)
+[16:24] <541a528b163965c9bc2053de> If you have experienced macOS users who know a thing or two about numerical stability, clang, Accelerate / OpenBLAS.
+[16:24] <541a528b163965c9bc2053de> https://github.com/scikit-learn/scikit-learn/issues/9351
+[16:25] <541a528b163965c9bc2053de> this is blocking the 0.19b1 wheels on macOS
+[16:25] <54d4a1d6db8155e6700f853b> sprint will be on saturday ;)
+[16:26] <541a528b163965c9bc2053de> there is also a 32 bit linux issue in the feature importance test
+[16:26] <541a528b163965c9bc2053de> the test is probably too strict, I am currently investigating with docker
+[16:27] <541a528b163965c9bc2053de> the saga solver on  macOS is a real bug but it's probably not easy to debug.
+[16:28] <54d4a1d6db8155e6700f853b> hm yeah it would be cool to have some easy issues but it looks like the issue tracker doesn't really have a lot right now :-/
+[16:29] <541a528b163965c9bc2053de> I will add one to improve CI on master to test 32 bit linux and another to test macOS
+[16:29] <54d4a1d6db8155e6700f853b> "easy"
+[16:29] <54d4a1d6db8155e6700f853b> ;)
+[16:30] <541a528b163965c9bc2053de> it's easy in the sense that you don't need to know python programming or machine learning
+[16:30] <541a528b163965c9bc2053de> but you need to know system and travis stuff
+[16:32] <541a528b163965c9bc2053de> I won't have time to work on those tomorrow, I need to review a long journal paper... + other admin stuff to do over the WE
+[16:46] <541a528b163965c9bc2053de> https://github.com/scikit-learn/scikit-learn/issues/9352
+[16:46] <541a528b163965c9bc2053de> I gave some boilerplate docker commands and scripts + references to docs to get started
+[18:18] <57ec309f40f3a6eec067e511> Hi @amueller just saw your tweet about advocating the need for fair and un-biased prediction. We at datascience.com have been looking into this topic and open sourced our first step in that direction. https://github.com/datascienceinc/Skater. If possible checkout our roadmap. How do others feel about the idea ? 
+[18:31] <54d4a1d6db8155e6700f853b> @pramitchoudhary so that builds upon lime? what functionality are you adding to it?
+[18:34] <57ec309f40f3a6eec067e511> @amueller so the idea is to balance between global and local interpretation. At global level: model agnostic pdp, model agnostic variable importance as of now(one flavor of it, work is in progress to add other flavors); local level: its currently our forked version of LIME(_some improvements in the way local samples are generated_). There is also support for InMemoryModel(_one has access to the environment in which model is build_) and DeployedModel(_model is deployed in the wild_)
+[18:37] <57ec309f40f3a6eec067e511> here is a nice example of DeployedModel to evaluate third part models  https://github.com/datascienceinc/Skater/blob/master/examples/third_party_model/algorithmia_indico.ipynb.
+[18:39] <57ec309f40f3a6eec067e511> InMemoryModel example: https://github.com/datascienceinc/Skater/blob/master/examples/credit_analysis/Credit%20Analysis.ipynb
+[18:49] <54d4a1d6db8155e6700f853b> @ogrisel did you break master ;)
+[18:52] <541a528b163965c9bc2053de> @amueller it's green: https://travis-ci.org/scikit-learn/scikit-learn/branches
+[18:52] <54d4a1d6db8155e6700f853b> @ogrisel https://circleci.com/gh/scikit-learn/scikit-learn/12068?utm_campaign=build-failed&utm_medium=email&utm_source=notification
+[18:54] <541a528b163965c9bc2053de> it's plot_stock_market
+[18:54] <54d4a1d6db8155e6700f853b> ugh
+[18:54] <541a528b163965c9bc2053de> random failure I think
+[18:54] <54d4a1d6db8155e6700f853b> yeah true

@@ -1,0 +1,6 @@
+[10:16] <564789be16b6c7089cbab8b7> @amueller  Thanks, that's interesting. I noticed that you can always use  http://scikit-learn.org/stable/modules/generated/sklearn.calibration.CalibratedClassifierCV.html to make probabilities
+--------------------------------------------------------------------------------------------------
+[16:02] <54d4a1d6db8155e6700f853b> yes you can
+--------------------------------------------------------------------------------------------------
+[18:56] <5b6fe633d73408ce4fa45408> I tagged my pull request with WIP. However,  right now, Id like if someone would have a look over it. Im not sure if my approach is the desired one. I could do some stuff on documentation of course, but it might be that my approach is declined entirely. So should I change the name of the request? For completeness: this is the pull request (https://github.com/scikit-learn/scikit-learn/pull/11891). Of course I know that time is precious for all of us.
+--------------------------------------------------------------------------------------------------

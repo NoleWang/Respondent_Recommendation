@@ -1,0 +1,7 @@
+<s> <user> <unk![> <unk#a()-./:]> ) </s>
+<s> <user> does anyone know if you need to be a repo owner to access <unka> artifacts ? supposedly you should be able to access the full documentation built by <unka> , but i do n't see the tab in the build results ... </s>
+<s> <user> need some help please </s>
+<s> <user> hi , have you used <unka> <unka> before ? i was wondering how you'd actually implement it ? # splitting <unka-> dataset into training set and test set using <unka> from <unka._> import <unka> <unka> = <unk#a(=_> ) <unka(> ) for <unka_> , <unka_> in <unka(.> ): <unka"(> :", <unka_> , " test :", <unka_> ) <unka_> = <unka_> = <unka_> = <unka_> = so after you have the indexes built , how do you actually use this to get your <unka/_> and <unka/_> ? from this point onwards , do you fit it to your model the same way ? thanks , joe </s>
+<s> <user> ahh no worries , solved it </s>
+<s> <user> misread documentation </s>
+<s> <user> hi everyone , i 'm <unka> an <unk#a> of pixels image using <unka> <unka> in <unka-> . i observed that sgd is that only <unka> that <unka> in a reasonable time ; the other <unka> tend to either run endlessly or to get stuck somehow . is it true what 's stated in this page ( URL/https:/ <unka./> <unk#a/> ) that above <unk#.> observations , one should stick with linear learning ( i.e . those that implement <unka_> , although i 'm really using it and the sgd is still working correctly )? </s>

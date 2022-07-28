@@ -1,0 +1,13 @@
+[00:46] <54d4a1d6db8155e6700f853b> wait, I think i confused it with k-mediod. Sorry, never mind. medians is just the l1 variant. that should be pretty easy to add to the current code, I think.
+[08:07] <541a528b163965c9bc2053de> how do you compute the ndim medians in l1 space?
+[18:38] <54d4a1d6db8155e6700f853b> per-coordinate median, right?
+[18:38] <551084ad15522ed4b3ddb3b0> from k-medians Wikipedia: "The median is computed in each single dimension in the Manhattan-distance formulation of the k-medians problem"
+[18:39] <551084ad15522ed4b3ddb3b0> but k-modes, my code, does not use Euclidean space because it clusters categorical variables
+[18:39] <551084ad15522ed4b3ddb3b0> so, quite different from k-medians or k-medoids
+[18:40] <54d4a1d6db8155e6700f853b> argh, ok, got double confused, then.
+[18:41] <54d4a1d6db8155e6700f853b> Feel free to sent a PR to include it as related project. We don't really have anything for categorical variables at the moment, and we haven't really figured out the API. How do you denote which variables are categorical and what are the inputs? Or are just all features assumed to be categorical?
+[18:43] <551084ad15522ed4b3ddb3b0> there's k-modes, for which all is assumed categorical; and there's k-prototypes (this combines k-modes and k-means), which receives X as a list of 2 arrays, one for numerical and one for categorical variables
+[18:45] <54d4a1d6db8155e6700f853b> ok. So this list would mess with the sklearn api a lot, for cross-validation tries to sample along the first axis.
+[18:48] <551084ad15522ed4b3ddb3b0> another option would be to take a single X, and a "is_categorical" variable that specifies which columns are categorical
+[18:50] <54d4a1d6db8155e6700f853b> yeah, that is what I think we would like to do for the forests, but I'm not sure. It is a bit awkward that they are float then, but not a big deal I guess
+[18:50] <54d4a1d6db8155e6700f853b> using pandas dataframes would also be an option, maybe not in scikit-learn though.

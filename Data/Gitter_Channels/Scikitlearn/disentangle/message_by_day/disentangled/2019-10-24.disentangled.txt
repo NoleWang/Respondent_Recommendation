@@ -1,0 +1,2 @@
+[18:12] <5571fe5f15522ed4b3e17d94> Hi all, I'm trying to help my team reduce creating new code when leveraging existing libraries might get the job done. Does anyone have thoughts on how the following can be accomplished? https://stackoverflow.com/q/58533004/1566074  Basically finding the optimal subgroups for a dataset to then feed into an estimator to reduce noise.
+--------------------------------------------------------------------------------------------------

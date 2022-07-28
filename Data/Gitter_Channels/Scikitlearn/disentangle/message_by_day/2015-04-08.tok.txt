@@ -1,0 +1,18 @@
+<s> <user> do n't worry about asking the <unka> author . we ca n't use <unka^> because of licensing issues , also we do n't want to wrap more c code . </s>
+<s> <user> <unka@> sorry for the late reply . do n't worry too much about it , i think your proposal is quite good already . </s>
+<s> <user> a review on <unk##> would be cool , as that might be an additional nice fix for <unk#.> </s>
+<s> <user> [ not the weird <unka.> column part , the part where having <unka> with <unka> object inside does n't get correctly cast ] </s>
+<s> <user> <unka@> i 'm glad that you like it . and sorry for being inactive on github these days . i 'm writing a term paper ( <unka> ) and playing with deep neural networks . i 'll come back to <unka-> this week . it 's still during semester break so i have pretty much time . </s>
+<s> <user> cool :) yeah being a bit more active would be great . </s>
+<s> <user> you are welcome to help us with the <unka> if you like ;) </s>
+<s> <user> does anyone know how to disable the comments by <unka> ? </s>
+<s> <user> <unk![> <unka()-./:]> ) </s>
+<s> <user> should show up at the bottom of URL/https:/ <unka./> <unka-/> for the <unka(> ) </s>
+<s> <user> assuming you mean pr bot comments <unka@> ... otherwise check the notifications tab to turn off emails , etc . which i think is personalized per user .. URL/https:/ <unka./> <unka-/> </s>
+<s> <user> i do n't have that showing up at the bottom , maybe because i 'm not an owner . which is weird since i 'm a repo owner </s>
+<s> <user> that 's strange . are you logged into <unka> ? it uses your gh login but i do n't think it automatically logs you in </s>
+<s> <user> yeah i logged in </s>
+<s> <user> maybe this ? URL/https:/ URL/github.com/ <unk#a-/> </s>
+<s> <user> ie visit URL/https:/ <unka./> <unka/=?> ... ? </s>
+<s> <user> or this if you dont want <unka> to know about private repos perhaps : URL/https:/ <unka./> <unk#a#-/> </s>
+<s> <user> though im pretty sure you're a public owner of <unka> . \ </s>

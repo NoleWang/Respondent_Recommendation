@@ -1,0 +1,10 @@
+<s> <user> hi , this is probably not the right forum to ask it , but not sure where else to go : how do i get permission to use the <unka-> machine learning map ( <unka-.> ) in a published document ? obviously with full citation ! thanks . available from this link : URL/http:/ <unka-./> <unka/_> </s>
+<s> <user> hi , is there any way to incorporate <unka-> in <unka> . by <unka-> i mean if a <unka> is being predicted class a with <unka> 0.7 , then if i add same <unka> again in the <unka> , then the prediction <unka> should increase from 0.7 like in case of neural nets . but looking at the mathematics , if the <unka> is not a support vector then it is not considered in cost function . then what should i do to increase the accuracy ? </s>
+<s> <user> self learning is a <unka-> for <unka-> learning and should work with any <unka> model . </s>
+<s> <user> i 'm not sure what you mean by a point being predicted with accuracy 0.7 </s>
+<s> <user> <unka_> of <unka> gives me a confidence score of 0.7 . can i seed it back into your model and hope that the next time confidence score for the same <unka> increase </s>
+<s> <user> that 's not the same as accuracy . and <unka> is not <unka> . and was it in the original training set ? <unka-> is for <unka-> learning </s>
+<s> <user> i think <unka> uses <unka_> that you can increase </s>
+<s> <user> hm ... </s>
+<s> <user> yeah sorry that was a mistake . what i want is once i deploy a model in production , it somehow keeps on improving . i was thinking that if the confidence score of an unseen data point is above a certain threshold ( say 0.7 ) i add it to the training set and <unka> . is it a good idea to use this with <unka> ? </s>
+<s> <user> yeah that can work . self learning can have problems with concept drift </s>

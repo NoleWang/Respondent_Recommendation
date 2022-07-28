@@ -1,0 +1,3 @@
+<s> <user> what would people recommend for clustering strings ( e.g . english words ) of the same length ? </s>
+<s> <user> or is this better off at github discuss ? </s>
+<s> <user> it really depends on the kind of data that you have . if you have a <unka> of documents <unka> would be one way to get <unka/> URL/https:/ <unka-./> <unka./> you could also try <unka-> <unka> like <unk#a> and the likes why do they have to be of the same length ? </s>

@@ -1,0 +1,20 @@
+[21:13] <53165e195e986b0712efc93c> Given an estimator `est`, is there a standard way to determine if the estimator has previously been fit? Check if any `*_` attributes are present (e.g. `coef_`)?
+[21:14] <53165e195e986b0712efc93c> Hmmm, if there is it doesn't seem to be present on all estimators.
+--------------------------------------------------------------------------------------------------
+[21:13] <56c4f19ae610378809c1f8ae> i do believe there is a fitted attribute
+--------------------------------------------------------------------------------------------------
+[21:15] <56c4f19ae610378809c1f8ae> maybe this might help? https://github.com/scikit-learn/scikit-learn/blob/master/sklearn/utils/estimator_checks.py#L1035
+[21:15] <56c4f19ae610378809c1f8ae> oops wrong link
+[21:15] <56c4f19ae610378809c1f8ae> although that might be helpful
+[21:15] <56c4f19ae610378809c1f8ae> i was meaning to send this: https://github.com/scikit-learn/scikit-learn/blob/master/sklearn/utils/validation.py#L650
+[21:17] <56c4f19ae610378809c1f8ae> is there any estimator you have in mind?
+[21:17] <56c4f19ae610378809c1f8ae> or is this one youve built yourself
+[21:17] <56c4f19ae610378809c1f8ae> or are you just looking for a more general solution
+[21:18] <56c4f19ae610378809c1f8ae> that makes sense, hmm yeah im not too sure how to do that sorry :(
+--------------------------------------------------------------------------------------------------
+[21:16] <53165e195e986b0712efc93c> Yeah, that's useful if you know what attributes to check for. Oh well.
+[21:17] <53165e195e986b0712efc93c> Thanks for the links.
+[21:17] <53165e195e986b0712efc93c> General solution preferably.
+[21:18] <53165e195e986b0712efc93c> I'm working with scikit-learn and dask (which does things lazily). It'd be nice to be able to catch not-fit errors at graph build time instead of at execution time.
+[21:18] <53165e195e986b0712efc93c> Not necessary though, just nice :)
+--------------------------------------------------------------------------------------------------

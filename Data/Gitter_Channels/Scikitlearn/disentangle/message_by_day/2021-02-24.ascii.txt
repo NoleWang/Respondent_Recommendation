@@ -1,0 +1,3 @@
+[09:24] <matrix-benny:michael-enders.com> Hello, can you tell me why GridSearchCV .best_score_ is worse than when I evaluate the same dataset with .score() ?
+[09:24] <matrix-benny:michael-enders.com> shouldn't those be the same?
+[09:32] <matrix-benny:michael-enders.com> or is it because .best_score_ is only evaluated on the test-cross validation split?

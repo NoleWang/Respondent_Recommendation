@@ -1,0 +1,8 @@
+<s> <user> hey guys , i hope you can help me out </s>
+<s> <user> i want to train a random forest <unka> , and my features are mainly <unka> </s>
+<s> <user> the thing is , the amount of possible labels per example is variable , so i ca n't easily dump it in a csv </s>
+<s> <user> i tried creating a <unk#a-> encoded csv but that would result in a <unk#a/~> file </s>
+<s> <user> so what i want is saving my <unka-> values in some data format ( maybe json , which supports arrays ), and <unka-> encoding on the fly during training </s>
+<s> <user> i 'm not sure where to start though , any clues ? </s>
+<s> <user> hmm i guess scipy sparse <unka> could help me here , then i just need to find a good file format </s>
+<s> <user> hello everyone ! my name is <unka> <unka> . i am interested in contributing to this project . i have been working with various machine learning algorithms an have <unka> in a few data analytics <unka> . can some one help me getting started ? </s>

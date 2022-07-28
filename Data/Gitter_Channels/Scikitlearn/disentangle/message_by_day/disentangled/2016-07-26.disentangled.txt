@@ -1,0 +1,33 @@
+[13:45] <565c21ed16b6c7089cbcae65> Hi guys i'm new to the room i'm working on a subject and i'm looking for someone that have experience with this subject to advice me and hopefully point me to the right direction, my project is as following a document classification i have a big data base with texts for all kind off categories holidays politics sport etc i already managed for now if if i enter a text to my code that it detects which category it belongs using SVM classifier
+[13:46] <565c21ed16b6c7089cbcae65> what i want to do next is to predict a category for a costumer but until now i don't know yet how to start this
+--------------------------------------------------------------------------------------------------
+[13:46] <564789be16b6c7089cbab8b7> do you have any training data?
+[13:47] <564789be16b6c7089cbab8b7> you want a recommendation system it seems
+[13:47] <564789be16b6c7089cbab8b7> have you looked up that general term?
+[16:35] <564789be16b6c7089cbab8b7> but it's completely offtopic here
+--------------------------------------------------------------------------------------------------
+[13:47] <565c21ed16b6c7089cbcae65> yes i do have a training data
+[13:47] <565c21ed16b6c7089cbcae65> yes i wnat to have a recommendation system
+[13:50] <565c21ed16b6c7089cbcae65> to explain more my situation  i'm doing in an internship and my company has a data base with tones of messages each text is tagged to a catogery
+--------------------------------------------------------------------------------------------------
+[13:51] <564789be16b6c7089cbab8b7> ok sure.. so the first thing to do is to look up recommendation systems really
+[13:51] <564789be16b6c7089cbab8b7> are you stuck somewhere?
+--------------------------------------------------------------------------------------------------
+[13:52] <565c21ed16b6c7089cbcae65> until now what i managed to do is classify this data and when i enter a text as an input my system manages to tell me to which catogery it belongs
+[13:53] <565c21ed16b6c7089cbcae65> now my next step is prediction i have to predict what a user wants i looked up some terms like recommendation system but didn't find something really helpfull what i can start with
+--------------------------------------------------------------------------------------------------
+[13:57] <564789be16b6c7089cbab8b7> try http://muricoca.github.io/crab/
+--------------------------------------------------------------------------------------------------
+[15:26] <565c21ed16b6c7089cbcae65> what do you think about pyspark
+[15:26] <564789be16b6c7089cbab8b7> it's perfectly fine :)
+--------------------------------------------------------------------------------------------------
+[15:38] <565c21ed16b6c7089cbcae65> im on a linux debian trying to install it
+[15:38] <565c21ed16b6c7089cbcae65> there some preinstalls to do
+[15:38] <565c21ed16b6c7089cbcae65> java 8 scala etc...
+--------------------------------------------------------------------------------------------------
+[16:36] <565c21ed16b6c7089cbcae65> i used scilearn for my code so i thought ill get some from info here but thank you ill stop bothering you guys
+--------------------------------------------------------------------------------------------------
+[19:55] <561a58f7d33f749381a8ff2f> guys, what do you think about this post :D http://stats.stackexchange.com/questions/225773/sparsity-as-missing-data-mle
+--------------------------------------------------------------------------------------------------
+[21:10] <54d4a1d6db8155e6700f853b> does anyone know anything about the sample_without_replacement  function... it's kinda weird
+--------------------------------------------------------------------------------------------------

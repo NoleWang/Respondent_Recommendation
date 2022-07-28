@@ -1,0 +1,17 @@
+[04:17] <57f33dd7d73408ce4f2b9adf> I got through my first contribution, can anyone suggest few more issues that are easy to solve. I wanted to get some confidence before going to the core progamming structure. I also reviewed some fo  the 'Easy' labeled issues.  @nelson-liu any more low hanging fruit?
+--------------------------------------------------------------------------------------------------
+[14:56] <54ec8cb715522ed4b3dc693b> @nelson-liu good to know!
+--------------------------------------------------------------------------------------------------
+[16:18] <54d4a1d6db8155e6700f853b> @vibrantabhi19 @thewhitetulip one thing that's also very appreciated is going through old issues and seeing if they are still relevant.
+--------------------------------------------------------------------------------------------------
+[16:19] <57f33dd7d73408ce4f2b9adf> @amueller Will surely look into it
+--------------------------------------------------------------------------------------------------
+[16:43] <54d4a1d6db8155e6700f853b> @raghavrv you know that the ping on numpy was Travis, the creator of numpy and scipy and CEO of continuum? ;)
+--------------------------------------------------------------------------------------------------
+[18:00] <53135b495e986b0712efc453> Wow. I didn't know that o.O
+--------------------------------------------------------------------------------------------------
+[19:30] <57f553ebd73408ce4f2c1766> hello, may I ask a question about sk-learn here?
+[19:30] <57f553ebd73408ce4f2c1766> It's related to the deprecation warning.
+[19:30] <57f553ebd73408ce4f2c1766> DeprecationWarning: Function residues_ is deprecated; ``residues_`` is deprecated and will be removed in 0.19
+[19:31] <57f553ebd73408ce4f2c1766> I'm wondering what should I use instead of 'residues_' to get residue values from LinearRegression (fitted) model.
+--------------------------------------------------------------------------------------------------

@@ -1,0 +1,68 @@
+[10:23] <56d577ffe610378809c46670> Hey, Can someone explain what's the difference between [MRG] and [MRG+1] in case of PR's?
+[10:30] <564789be16b6c7089cbab8b7> @manu-chroma  What does MRG stand for to start with?
+[10:39] <553d32d715522ed4b3df8b92> MRG is for the PR when it is ready for review, MRG + X is when X number of core developers are okay with PR. In general it is around 2 or 3.
+[10:39] <564789be16b6c7089cbab8b7> Cool. what does MRG actually stand for?
+[10:40] <553d32d715522ed4b3df8b92> Merge p0ppp
+[10:40] <564789be16b6c7089cbab8b7> oh :)
+[10:40] <553d32d715522ed4b3df8b92> Sorry.. typos..
+[10:40] <56d577ffe610378809c46670> @lesshaste https://github.com/scikit-learn/scikit-learn/blob/master/CONTRIBUTING.md#pull-request-checklist
+[10:40] <553d32d715522ed4b3df8b92> Merge is MRG and work in progress as WIP
+[10:41] <564789be16b6c7089cbab8b7> oh cool
+[10:42] <564789be16b6c7089cbab8b7> I have just tried for the first time to use xgboost with sklearn and am getting poor results and it is very slow.  I realise xgboost is not core scikit-learn but would any very kind person be able to give a newbie a hand please?
+[10:43] <564789be16b6c7089cbab8b7> my very simple sample script is just running on the MNIST digits data and it is at http://paste.ubuntu.com/20022811/  . What am I doing wrong?
+[10:54] <5508681715522ed4b3dd6630> Hello, I am trying to do MNIST task with data from Kaggle and not data in scikitlearn. I am getting accuracies ~90% using LinearSVC, SGDClassifier and KNeighborsClassifier.  But every algorithm just gives a label for a test image as output. That is fine.  I just wanted to have log probabilities of each class. For example if a test image is given- I want an array of length of classes with probabilities that test image is from this class.
+[10:54] <5508681715522ed4b3dd6630> Is there any way to do that using sklearn?
+[10:56] <564789be16b6c7089cbab8b7> @SnShine  Are you using predict_proba ?
+[10:58] <5508681715522ed4b3dd6630> No. 
+[10:58] <5508681715522ed4b3dd6630> I will go through that.
+[11:14] <553d32d715522ed4b3df8b92> @SnShine As @lesshaste said, this might probably be what you are looking for http://scikit-learn.org/stable/modules/generated/sklearn.svm.SVC.html#sklearn.svm.SVC.predict_proba
+[11:15] <553d32d715522ed4b3df8b92> @lesshaste Even I am a novice and haven't used XGBoost before but maybe the loss function needs to be changed for multiclass classification ?
+[11:27] <564789be16b6c7089cbab8b7> @maniteja123 Let me try that. There must be at least one xgboost here soon :)
+[11:36] <564789be16b6c7089cbab8b7> @maniteja123  According to https://github.com/dmlc/xgboost/blob/master/python-package/xgboost/sklearn.py it should use multi:softprob if the number of classes > 2 I think
+[11:42] <553d32d715522ed4b3df8b92> Yup I suppose you are right, it should set the objective automatically as in https://github.com/dmlc/xgboost/blob/master/python-package/xgboost/sklearn.py#L405.  Sorry I have no idea about the performance then. Just to know, what is the cv score you are getting using XGBoost ?
+[11:43] <564789be16b6c7089cbab8b7> I get [ 0.9323022 0.93157206 0.92796762 0.93271406 0.93854216] from 5-fold cv of xgboost and it takes a really really long time
+[11:43] <564789be16b6c7089cbab8b7> I get [ 0.96216538 0.96465548 0.96428146 0.96558295 0.9670081 ] from ExtraTreesClassifier and it is really quick
+[11:44] <564789be16b6c7089cbab8b7> I am clearly doing something wrong
+[11:48] <564789be16b6c7089cbab8b7> can you reproduce my problem?
+[11:48] <553d32d715522ed4b3df8b92> Oh thanks for the results. I too will try running the script on my machine and tune various parameters for the XgBoost model. 
+[11:49] <553d32d715522ed4b3df8b92> My machine doesn't have a good RAM. But will try to reproduce in VM and get back to you.
+[11:49] <564789be16b6c7089cbab8b7> thanks! It shouldn't need much RAM
+[11:50] <564789be16b6c7089cbab8b7> sadly the xgboost google group seems pretty dead as does their gitter room
+[11:51] <564789be16b6c7089cbab8b7> xgboost seems to use 1.6GB on my machine for that dataset
+[11:51] <553d32d715522ed4b3df8b92> http://xgboost.readthedocs.io/en/latest/python/python_api.html#module-xgboost.sklearn Have you looked at the ``evals_result`` dict mentioned in the docs
+[11:52] <564789be16b6c7089cbab8b7> no! Do you think it might help?
+[11:52] <564789be16b6c7089cbab8b7> (got to go out for 30 minutes.. thanks so much for looking at this!)
+[11:53] <553d32d715522ed4b3df8b92> Also this page http://xgboost.readthedocs.io/en/latest//parameter.html has ``eval_metric`` which has ``merror`` for multi class error
+[11:53] <553d32d715522ed4b3df8b92> I should thank you for getting me started to look into this :)
+[11:54] <553d32d715522ed4b3df8b92> I am not sure if it might help but it seemed relevant to multi class but was mentioned it was specific to the objective.``eval_metric [ default according to objective ]``. So do have a look and let us know if you get any insight. Thanks!
+[12:42] <564789be16b6c7089cbab8b7> Interesting.. I am currently also confused why it is so slow when everyone says how fast xgboost is!
+[12:45] <564789be16b6c7089cbab8b7> @maniteja123  just changing to objective="multi:softmax" increased the CV scores!
+[12:45] <564789be16b6c7089cbab8b7> for reasons I am 100% unclear about
+[12:47] <564789be16b6c7089cbab8b7> 
+[15:29] <553d32d715522ed4b3df8b92> Hi, sorry for the slow reply. That's great to know. Is the algorithm running faster now ?
+[15:30] <564789be16b6c7089cbab8b7> @maniteja123  no.. it is still super slow
+[15:32] <553d32d715522ed4b3df8b92> Oh okay. Hopefully someone experienced can provide an explanation for these results. 
+[15:32] <564789be16b6c7089cbab8b7> it would be great
+[15:32] <553d32d715522ed4b3df8b92> Have you tried asking on kaggle ?
+[15:32] <564789be16b6c7089cbab8b7> yes... I asked on the forum there and have no reply yet
+[15:32] <564789be16b6c7089cbab8b7> I mean I asked on the forum for the digits recognizer challenge
+[15:34] <553d32d715522ed4b3df8b92> Oh I see. I don't know any other forum. Maybe stack overflow ? (Sorry for my naive suggestions)
+[15:35] <564789be16b6c7089cbab8b7> my friend also asked on SO
+[15:35] <564789be16b6c7089cbab8b7> no answer :)
+[15:36] <553d32d715522ed4b3df8b92> Okay so I too am waiting for the rra
+[15:36] <553d32d715522ed4b3df8b92> *reply
+[15:37] <553d32d715522ed4b3df8b92> :-)
+[15:37] <564789be16b6c7089cbab8b7> one problem is that I don't understsand the parameters despite the huge number of "guides" online
+[15:37] <564789be16b6c7089cbab8b7> which make xgboost run slower or faster? Can you find the answer to that?
+[15:40] <553d32d715522ed4b3df8b92> Maybe having a look at this paper https://arxiv.org/pdf/1603.02754v3 can help  us in understanding the algorithm better ? I too shall try reading it once
+[15:40] <564789be16b6c7089cbab8b7> it's definitely worth reading
+[15:51] <553d32d715522ed4b3df8b92> @lesshaste have you tried with different number of threads ? I saw some issue about multi threading here https://github.com/dmlc/xgboost/issues/523
+[15:52] <564789be16b6c7089cbab8b7> hmmm... no not yet but that page does say it is fine in python
+[15:55] <553d32d715522ed4b3df8b92> Yeah sorry just read the whole issue. I just thought it might be a reason.
+[16:19] <564789be16b6c7089cbab8b7> @maniteja123  I have a much simpler question now :)  I simply want to modify http://scikit-learn.org/stable/auto_examples/model_selection/plot_roc.html for the digits dataset we are using
+[16:19] <564789be16b6c7089cbab8b7> have you managed to get that to work?
+[16:49] <553d32d715522ed4b3df8b92> @lesshaste if I understand you correctly you are referring to 
+[16:49] <553d32d715522ed4b3df8b92> The ROC for multi class right ?
+[16:52] <553d32d715522ed4b3df8b92> We need to binarize the output for that to work and plot for each of the classes ?
+[18:03] <564789be16b6c7089cbab8b7> @maniteja123  thanks.. that was indeed the  answer
+[18:26] <553d32d715522ed4b3df8b92> @lesshaste great. glad that it was helpful!

@@ -1,0 +1,28 @@
+[12:37] <5da2a33dd73408ce4fcdacee> Hi, guys. Just a quick question.
+--------------------------------------------------------------------------------------------------
+[12:37] <5da2a33dd73408ce4fcdacee> I'm seriously considering investing my time to solving issues on Scikit, so as to work my way towards becoming a maintainer of the project itself.
+[12:38] <5da2a33dd73408ce4fcdacee> I really think I would learn a lot in the process,  and something I really like doing - contributing. For now, I think the best way for me is to send PRs and try to solve issues as much as I can.
+[12:38] <5da2a33dd73408ce4fcdacee> should I keep something specific in mind while doing so, is what I wanted to ask. thanks. :D
+--------------------------------------------------------------------------------------------------
+[13:09] <55d21ee30fc9f982beadabb8> > For now, I think the best way for me is to send PRs and try to solve issues as much as I can.
+[13:09] <55d21ee30fc9f982beadabb8> yes. Just be sure to read the contributing guideline to be sure to not miss anything :)
+--------------------------------------------------------------------------------------------------
+[13:13] <5da2a33dd73408ce4fcdacee> I've gone through it 5-6 times now. xD Even went ahead with the asv thing, but still have to really understand how to really use it.
+--------------------------------------------------------------------------------------------------
+[19:30] <5e3f3d7cd73408ce4fd915a4> Hi, we're trying to decide how to handle a Keras / sklearn API integration issue over at https://github.com/adriangb/scikeras/issues/131, I wanted to see if anyone in this group can chime in. The jist of it is how to support passing validation data to the estimators. Skorch solves this by having a an `__init__` parameter, but as is pointed out in that issue that means that calling with a different `X, y` would give you different results (since the validation losses would be totally off).
+--------------------------------------------------------------------------------------------------
+[20:03] <55d21ee30fc9f982beadabb8> I think that right now we cannot do that. I vaguely recall a discussion where we discuss something linked with something close to the callback mechanism
+--------------------------------------------------------------------------------------------------
+[20:03] <5e3f3d7cd73408ce4fd915a4> Yeah I could not find any sklearn estimator that accepts extra data as a fit kwarg
+[20:04] <5e3f3d7cd73408ce4fd915a4> Or as an `__init__` param for that matter
+[20:05] <55d21ee30fc9f982beadabb8> yep. I see that we have a recent feature request https://github.com/scikit-learn/scikit-learn/issues/18748
+[20:05] <55d21ee30fc9f982beadabb8> I will try to find the discussion back
+[20:06] <55d21ee30fc9f982beadabb8> We also put it in the road map: https://scikit-learn.org/dev/roadmap.html
+[20:06] <55d21ee30fc9f982beadabb8> The issue will be to find the right API.
+[20:15] <5e3f3d7cd73408ce4fd915a4> Yeah I do see they have `eval_set`: `(list or None, optional (default=None)) <unconvertable> A list of (X, y) tuple pairs to use as validation sets`
+--------------------------------------------------------------------------------------------------
+[20:10] <5e3f3d7cd73408ce4fd915a4> Yep. If I had to pick between the options that I currently see available, my gut feeling would be to make it a fit kwarg, but that's just a knee jerk reaction
+[20:10] <5e3f3d7cd73408ce4fd915a4> which is why I'm asking here :laughing:
+--------------------------------------------------------------------------------------------------
+[20:13] <5baf7d9ad73408ce4fa9c9b2> We don't have that in scikit-learn and our validation data is always a subset of X-y as passed to fit. IIRC LightGBM adds new arguments to `fit`
+--------------------------------------------------------------------------------------------------

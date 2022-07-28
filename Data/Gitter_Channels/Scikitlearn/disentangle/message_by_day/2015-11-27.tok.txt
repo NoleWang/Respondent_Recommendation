@@ -1,0 +1,24 @@
+<s> <user> i always wonder what is the best way to apply transformers to a dataset </s>
+<s> <user> e.g . i want to <unka> only certain variables </s>
+<s> <user> x = [ <unka_> , <unka_> , <unka_> ] </s>
+<s> <user> then throw it in a pipeline </s>
+<s> <user> where a <unka> would only apply to the <unka> column </s>
+<s> <user> ( similar with a <unka> , only to columns where it " makes sense " ) </s>
+<s> <user> how do you guys solve this issue ? </s>
+<s> <user> <unka@> <unka@> why does <unka> not show 0.17 as the latest version ?? </s>
+<s> <user> URL/http:/ URL/sourceforge.net/ <unka-/> </s>
+<s> <user> <unk#a@> hi </s>
+<s> <user> i was attempting to read URL/http:/ <unka./> <unk#a./> . there is still a big gap between stats and machine learning ! </s>
+<s> <user> this part in particular where they explain which <unka> they will compare with : " for comparison , we also present results for several <unka-> methods for <unka-> <unka> , namely <unka> <unka> ( <unka> and <unka> , 2011 ), nearest <unka> <unka> ( <unka> et al ., 2003 ), <unka> <unka> <unka> <unka> analysis ( guo , <unka> and <unka> , 2007 ), and <unka> rules ( ir ) ( <unka> and <unka> , 2004 ), as well as for the base <unka-> <unka> applied in the original space " </s>
+<s> <user> does <unka-> have any of those ? </s>
+<s> <user> oh .. maybe <unka> <unka> are here ? URL/http:/ <unka-./> <unka#-./> </s>
+<s> <user> is our <unka> implementation the same as <unka> <unka> ( <unka> and <unka> , 2011 ) ? </s>
+<s> <user> on another note .. the two images at URL/http:/ <unka-./> <unka#-./_> look identical to me </s>
+<s> <user> are they meant to be different ? </s>
+<s> <user> we also have <unka> ^^ </s>
+<s> <user> <unk#a@> thanks .. i do n't even know what <unka> <unka> <unka> <unka> analysis and <unka> rules are </s>
+<s> <user> but the author of the paper is absolutely at the top of his field so i assume the new method is important </s>
+<s> <user> <unk#a@> do we have <unka*> <unka> as in URL/https:/ <unka./> <unka./> ? </s>
+<s> <user> ah no ... i am not sure how useful that is ? </s>
+<s> <user> and there is something wrong with the example that you had posted ... mind raising it as an issue for someone else to look into it ... ? <unka`> is supposed to have an effect ... ping <unka@> and <unka@> in your issue ... </s>
+<s> <user> and lol no i do n't either ... i am hoping it gets named to <unka> on steroids ... must be easier to rememeber ... on a serious note it seems to be a combination of regular <unka> with <unka> <unka> method ( thought you must have figured that out already ;)) </s>

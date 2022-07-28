@@ -1,0 +1,8 @@
+[06:23] <5f05657ed73408ce4fe9033c> thank you
+--------------------------------------------------------------------------------------------------
+[08:30] <5a25274ed73408ce4f819b55> I have a question regarding the usage of the FeatureUnion weights.  I recently had a typo in a key of the weights dictionary, which does not lead to a warning or an error. Suppose:  ```python features = FeatureUnion([   ('f0', my_fancy_extractor_0),   ('f1', my_fanyc_extractor_1), ], transformer_weights={   'f1': 1.5,   'f2': 1.0, }) ```  I understand that tranformers without any weights (e.g., `f0`) will implicitly have assigned a weight of 1.0 (i.e., it is not multiplied with anything), which seems intuitive, but trying to assign weights to a transformer that is not part of the FeatureUnion is simply ignored.  I would argue that it would be beneficial if a warning would be shown instead, as this is a very tedious problem to debug in my opinion. What do you think?
+--------------------------------------------------------------------------------------------------
+[09:47] <567f5d7716b6c7089cc043a8> I think this deserves an issue on the issue tracker with a small reproducible bit of code using the latest release. Input feature name validations are improving on our side, but there's still work to do.
+--------------------------------------------------------------------------------------------------
+[11:41] <5a25274ed73408ce4f819b55> Thank you @adrinjalali , i have submitted an issue: #17863
+--------------------------------------------------------------------------------------------------

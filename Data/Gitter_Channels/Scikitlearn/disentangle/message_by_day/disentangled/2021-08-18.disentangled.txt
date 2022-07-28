@@ -1,0 +1,8 @@
+[08:51] <567f5d7716b6c7089cc043a8> @RAVANv2 can only help if you tell us what the issue is :)
+--------------------------------------------------------------------------------------------------
+[13:02] <5fd8fff2d73408ce4ff69a39> Hi @adrinjalali, Actually, I solve it on my own :)
+--------------------------------------------------------------------------------------------------
+[20:02] <5fd8fff2d73408ce4ff69a39> Hi all, I made one PR on issue #20754 but it failing the linting job of black and showing the error "##[error]Bash exited with code '1'". Can anyone tell me where I am doing wrong? I am totally a newbie in open-source but I m really enjoying :)
+--------------------------------------------------------------------------------------------------
+[21:31] <567f5d7716b6c7089cc043a8> You can see how to fix that here: https://scikit-learn.org/dev/developers/contributing.html#pull-request-checklist You need to run black on your code
+--------------------------------------------------------------------------------------------------

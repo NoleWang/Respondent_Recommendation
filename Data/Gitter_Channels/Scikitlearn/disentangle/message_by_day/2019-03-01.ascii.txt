@@ -1,0 +1,1 @@
+[20:15] <541a528b163965c9bc2053de> scikit-learn 0.20.3 is online! https://scikit-learn.org/stable/whats_new.html#version-0-20-3

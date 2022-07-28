@@ -1,0 +1,7 @@
+[14:11] <564789be16b6c7089cbab8b7> @ogrisel:matrix.org  thank you
+[14:12] <564789be16b6c7089cbab8b7> I am really confused though...
+--------------------------------------------------------------------------------------------------
+[14:12] <564789be16b6c7089cbab8b7> model = xgbr.fit(X_train, y_train) print(model.score(X_test, y_test)) r = permutation_importance(model, X_test, y_test, n_repeats=30, random_state=0) for i in r.importances_mean.argsort()[::-1]:     print(f"{r.importances_mean[i]:.3f}" f" +/- {r.importances_std[i]:.3f}")
+--------------------------------------------------------------------------------------------------
+[14:13] <564789be16b6c7089cbab8b7> that simple code that give feature importance gives me a value over 1.20 for the top one. But how can you have a permutation feature importance higher than 1?
+--------------------------------------------------------------------------------------------------

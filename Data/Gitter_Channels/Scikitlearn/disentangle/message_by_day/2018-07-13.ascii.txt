@@ -1,0 +1,2 @@
+[00:13] <579618a040f3a6eec05c5e42> @AMaini503  thanks for the pointers I was trying to achieve the same outcome but with pure tf. Not luck so far :(
+[18:21] <59e7b052d73408ce4f7aa075> I am fitting several SVRS to images and get ~3MB pickled model file size for ~20MB image data. Does the pickle contain any redundant data (training or otherwise) or is that a reasonable size?

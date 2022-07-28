@@ -1,0 +1,12 @@
+[04:54] <5bd4b048d73408ce4facfb79> Hi guys.  I just have a doubt.  Is it better to scale down the target values before using it as ground truth for training a model or can we use the target values as such?
+[04:55] <5bd4b048d73408ce4facfb79> My target values are in the range of 100's currently.
+--------------------------------------------------------------------------------------------------
+[10:23] <5668c71116b6c7089cbe1ea3> @MVenkat_28_gitlab if you have one target that you are predicting, scaling should have no real effect. What models/approaches are you using ... maybe there is something I am not thinking about?
+[10:23] <5668c71116b6c7089cbe1ea3> so rounding error would be a concern if you had massive range in your targets
+[10:24] <5668c71116b6c7089cbe1ea3> And it is generally easier to start with a classifier rather than regressor ...
+--------------------------------------------------------------------------------------------------
+[14:38] <5bd4b048d73408ce4facfb79> I have only one target.  I'm currently using a regression neural network.
+[14:39] <5bd4b048d73408ce4facfb79> @cottrell how do you say that for one target scaling will make no effect?
+--------------------------------------------------------------------------------------------------
+[17:17] <5b7c5fe0d73408ce4fa555ef> hi, everyone i'm new here so anything i need to know?
+--------------------------------------------------------------------------------------------------

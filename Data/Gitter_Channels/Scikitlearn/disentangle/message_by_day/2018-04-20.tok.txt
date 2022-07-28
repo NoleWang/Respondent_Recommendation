@@ -1,0 +1,9 @@
+<s> <user> <unka@> if you dimension is low enough ( e.g . max 300 , the lower the better ), then density based clustering such as <unka> or URL/https:/ URL/github.com/ <unka-/> should work well for that case . </s>
+<s> <user> <unka@> thanks .. in my case the dimension is 1 </s>
+<s> <user> i will see what <unka> gives you . is it really happy to find just one cluster and ignore the <unka> ? </s>
+<s> <user> it 's worth a try with <unka> . you do not choose the number of cluster but the typical distance between two points that are to be considered as " core points " that is point in high density regions . </s>
+<s> <user> <unka@> ok thanks . <unka> in 1d it is :) </s>
+<s> <user> there are also a bunch of other <unka> . read the <unka-> docs and the <unka> docs to learn more about this family of <unka> . </s>
+<s> <user> will do </s>
+<s> <user> just shape you data as <unka(_`> , <unk#)`> that is <unk#a=_`> . </s>
+<s> <user> thanks </s>

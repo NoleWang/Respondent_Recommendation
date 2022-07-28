@@ -1,0 +1,11 @@
+<s> <user> i do n't quite understand <unk##> and <unk##> . what 's the problem there ? </s>
+<s> <user> the problem is that the results on <unka-> data are garbage with <unka=_> </s>
+<s> <user> results should be independent of the memory layout of the data . </s>
+<s> <user> if you run his code , the <unka-> are [ 0 , 0 , 1 ] which is clearly garbage , as the two last points are identical </s>
+<s> <user> i see . thanks ! </s>
+<s> <user> favourite bug of the day : a <unka> <unka> with a " <unka> " column </s>
+<s> <user> haha </s>
+<s> <user> <unka@> just saw your comment in <unka> . </s>
+<s> <user> i did some investigation several days ago . <unka> has a nice tutorial giving introduction on how to implement <unk#a> : URL/http:/ <unka./> <unk#a./~> </s>
+<s> <user> it introduces 5 implementations , of which <unka^> has corresponding implementation in c : URL/http:/ <unka./> . we may write a wrapper for it . </s>
+<s> <user> i can also consult the author of <unka> , professor lin , to get some suggestions . </s>

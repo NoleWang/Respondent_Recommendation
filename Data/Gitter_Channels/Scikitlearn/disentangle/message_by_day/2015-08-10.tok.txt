@@ -1,0 +1,18 @@
+<s> <user> <unka@> </s>
+<s> <user> sorry for the interruption . i am back , although not fully recovered . </s>
+<s> <user> hi <unka@> <unka@> , i just finished test cases for dp . where should i update the mixture documentation and the mixture examples ? </s>
+<s> <user> <unk#a@> great :) yeah , that sounds like a plan . </s>
+<s> <user> i think i finished what i must do . <unka@> mentioned the " mixture documentation " and " mixture examples " several days ago , but i do n't know where should i put . </s>
+<s> <user> <unka./> ? </s>
+<s> <user> ok . would it be better to add the animation ? <unka:> : </s>
+<s> <user> i do n't think this is a priority but it would be kinda nice . the actual implementation and tests are much more important obviously . sorry for the slow reviews :-/ </s>
+<s> <user> i agree . i think i could do the examples after the soft pencil down deadline . what else should i begin right now before next monday ? </s>
+<s> <user> never mind . <unka:_> : the equations for <unka> are really cumbersome . </s>
+<s> <user> i know ;) </s>
+<s> <user> <unk#a@> " in the year 2010 " i'd just say " in 2010 " </s>
+<s> <user> i think there 's a <unka> issue with the set up in your blog post . if you do plain <unka> in the outer loop , you can still have the same group label in the outer train and test . why not use <unka-> in both inner and outer ? </s>
+<s> <user> so at a " big picture " level i do n't see the point of the final section that looks at the <unka> . i think that 's common practice anyway , does n't seem specific to nested or <unka-> cv . </s>
+<s> <user> i would prefer if you showed an actual example of <unka> without lolo . your explanation of why it can happen is good , but it would be much better to illustrate it . </s>
+<s> <user> you suggested earlier using <unka> and generating some data based on the patient id . </s>
+<s> <user> <unk#a@> btw were you aware that semantics of <unka.> are changing ? in new versions , <unka.> returns a view . not sure that is relevant , i have n't reviewed this parts in detail </s>
+<s> <user> also i can n't load <unka.> </s>

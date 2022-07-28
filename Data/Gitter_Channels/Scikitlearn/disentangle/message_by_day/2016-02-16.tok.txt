@@ -1,0 +1,51 @@
+<s> <user> <unka@> hello , </s>
+<s> <user> can you <unka> my question above ? </s>
+<s> <user> if i got 1 sample for 1st day , 2 samples for 2nd day and 3 samples for 3rd day , then i decide to do 2 <unka> <unka> cv , what will happen ? </s>
+<s> <user> <unk#a@> i am not sure exactly how you are doing the <unka> case i have to admit . why are you splitting by days ? </s>
+<s> <user> maybe <unka@> has a better idea what is going on in this case </s>
+<s> <user> does r have anything for the <unka> case ? </s>
+<s> <user> <unka@> do you have any good <unka> in mind with missing values for <unka> ? </s>
+<s> <user> <unk#a@> is this for time series data or something else ? </s>
+<s> <user> i tried to test my implementation of <unka> and <unka> ( <unka> correlated with class 1 ) on the <unka> dataset and looks like the implementation in <unk##> seems to perform slightly better than or as good as <unka> for <unka> cases , which was expected and really bad performance for the <unka> case , which is also expected as it tries to extract information out of utter randomness . </s>
+<s> <user> car == completely at random . what is mar again ? </s>
+<s> <user> ok i am back in context :) </s>
+<s> <user> mar is one where the <unka> is dependent on either the missing values or the observed values ( <unka`> ). <unka> is where the <unka> is totally random ... and <unka> is where the <unka> is correlated with the target ... </s>
+<s> <user> for our case we can assume mar and <unka> are similar for they both will perform better with <unka> ... </s>
+<s> <user> <unk#a@> i think you mean <unka> </s>
+<s> <user> missing not at random </s>
+<s> <user> or not missing at random ;) </s>
+<s> <user> hehe both mean the same ... some papers use <unka> and some <unka> i think </s>
+<s> <user> not missing at random sounds too much like the data is not missing to me :) </s>
+<s> <user> ah hmm </s>
+<s> <user> but to answer you question .. i do n't have any great test sets sorry .. but when i have a moment i will search online to see if i can find <unka> </s>
+<s> <user> okay thanks !! </s>
+<s> <user> does r use any particular test set for this ? </s>
+<s> <user> i do n't know this implementation seems intuitive and is supported by ding and <unka> 's paper but apparently none of the r packages use this ... a lot use multiple techniques of <unka> and <unka> alone uses a <unka> split method ... </s>
+<s> <user> ah ... </s>
+<s> <user> URL/http:/ <unka./> <unka./~> is quite definitive too </s>
+<s> <user> of course what would be great would be to test your method against <unka> on the same data :) </s>
+<s> <user> okay thanks for the link </s>
+<s> <user> yea :/ thats what i am planning to do now and see how good it performs ... </s>
+<s> <user> is this the paper you are using URL/http:/ <unka./> <unk#a./> ? </s>
+<s> <user> <unka> </s>
+<s> <user> that seems to be pretty detailed ... i am gonna give it a thorough read now and see how i can reproduce their results ... </s>
+<s> <user> that and <unka> </s>
+<s> <user> <unka@> your thoughts on <unk##> ? </s>
+<s> <user> <unk#a@> too much to read ! URL/http:/ <unka./> <unk#a-./> :) </s>
+<s> <user> <unk#a@> i think what you are doing is awesome :) </s>
+<s> <user> and i really love the way things are done by the devs at <unka> learn </s>
+<s> <user> :) </s>
+<s> <user> thanks for the links ! </s>
+<s> <user> what i particularly love is the way that methods are rejected if they ca n't be shown to actually work on publicly available data ! </s>
+<s> <user> if only everything was so evidence based </s>
+<s> <user> and also the aim to automate everything :) i am excited by the pr to automate the choice of the number of clusters for example when clustering </s>
+<s> <user> <unk#a@> can you access that paper i linked to ? </s>
+<s> <user> <unk#a@> the paper i linked to also has links public data sets it uses to test its missing value <unka> . they are all fro URL/http:/ <unka./> <unka/> i think </s>
+<s> <user> <unk#a@> there is even a " missing values ?" field i see :) e.g . URL/https:/ <unka./> <unka+/> </s>
+<s> <user> oops <unka@> thanks for correcting me ... its <unka> not <unka> :( i 've been using it wrongly all along </s>
+<s> <user> np :) </s>
+<s> <user> <unk#a@> do you think of any those " missing values " data sets could be useful ? </s>
+<s> <user> i just asked this on the <unka-> optimization pr but maybe it was better for here . i do n't know how relevant this is but have generic optimization methods such as <unka> hopping been considered and rejected for <unka-> optimization ? </s>
+<s> <user> yea thanks the adult dataset is reasonably big and has missing values ... i 'm gonna try that out by encoding all the <unka> values as we do n't have <unka> value support yet ... </s>
+<s> <user> <unk#a@> sounds good . </s>
+<s> <user> any answer to [ <unk#a(-./:]> )? </s>

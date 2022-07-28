@@ -1,0 +1,102 @@
+[14:14] <54d4a1d6db8155e6700f853b> @ogrisel right, I forgot to fix the menu. Is there a good way to upload just the html so you don't have to optimize the pngs again?
+--------------------------------------------------------------------------------------------------
+[14:32] <541a528b163965c9bc2053de> I was about to find a way to not optimize the png again :)
+[14:33] <541a528b163965c9bc2053de> I tested on OSX, now on testing on windows and the sdist from linux in a docker container in //
+--------------------------------------------------------------------------------------------------
+[14:37] <54d4a1d6db8155e6700f853b> Well I can rebuild the docs in the folder with the optimized png once I get into the office
+[14:37] <54d4a1d6db8155e6700f853b> if you want to wait for an hour
+--------------------------------------------------------------------------------------------------
+[14:42] <541a528b163965c9bc2053de> I already fetched them local with rsync
+[14:42] <541a528b163965c9bc2053de> actually not locally, to some rackspace VM but this is the same
+[14:46] <54d4a1d6db8155e6700f853b> good
+[14:46] <54d4a1d6db8155e6700f853b> I just decided to stay at home, I'm too sick
+--------------------------------------------------------------------------------------------------
+[14:52] <54d4a1d6db8155e6700f853b> do you need help with anything? Otherwise I might turn around and sleep on
+[14:54] <541a528b163965c9bc2053de> I think I can do it all.
+--------------------------------------------------------------------------------------------------
+[14:54] <54d4a1d6db8155e6700f853b> let me know when you tweet so I can retweet ;)
+--------------------------------------------------------------------------------------------------
+[14:54] <541a528b163965c9bc2053de> I have pbm testing under windows as apparently the latest scipy from christoph gohlke under Python 3.4 is broken.
+[14:54] <541a528b163965c9bc2053de> will try on python 2.7 instead
+[14:55] <541a528b163965c9bc2053de> ok
+[14:56] <541a528b163965c9bc2053de> for the GSoC do you think we need to do anything else in the short term? We can still enable the edit mode on the GSoC proposals that students on a case by case basis for 2 weeks after today's deadline if we need to.
+[15:03] <541a528b163965c9bc2053de> yes
+[15:03] <541a528b163965c9bc2053de> I'll put some feedback on the semi-supervised proposal (directly as comment on melange)
+[15:16] <541a528b163965c9bc2053de> thanks
+[16:24] <541a528b163965c9bc2053de> can you do it?
+[16:25] <541a528b163965c9bc2053de> I don't remember by nickserv passwd
+[16:25] <541a528b163965c9bc2053de> so I cannot do op stuff anymore
+--------------------------------------------------------------------------------------------------
+[14:58] <54d4a1d6db8155e6700f853b> ok. well it would be good to reread the final versions. I did that only with like two of them. But we can do that later
+--------------------------------------------------------------------------------------------------
+[15:05] <551061f615522ed4b3ddb1c0> @ogrisel I'm still in the process of adding some stuff. Will be finished in 40 minutes.
+[15:06] <541a528b163965c9bc2053de> ok great
+--------------------------------------------------------------------------------------------------
+[15:09] <550f53e215522ed4b3dda5f6> My proposal in the google-melange has unnecessary html marks, like underscores. I think it comes from google-melange, since I did not add them at all. I also submitted a dropbox link to a PDF version, just in case.
+--------------------------------------------------------------------------------------------------
+[15:10] <541a528b163965c9bc2053de> @xuewei4d Can you try to clean up the formatting?
+[15:11] <550f53e215522ed4b3dda5f6> Yeah, I am on it.
+--------------------------------------------------------------------------------------------------
+[15:17] <550f53e215522ed4b3dda5f6> OK. Now it's clean. Copy/paste the html source code instead of paste into the melange own editor
+[15:18] <541a528b163965c9bc2053de> ok great
+--------------------------------------------------------------------------------------------------
+[16:22] <541a528b163965c9bc2053de> @amueller let's the tweeting storm start!
+--------------------------------------------------------------------------------------------------
+[16:23] <5474d9eadb8155e6700d8178> Yayy 0.16 :beers:
+[16:23] <541a528b163965c9bc2053de> :beers: :
+[16:23] <5474d9eadb8155e6700d8178> We should probably change the gitter channel status like some do in IRC?
+[16:27] <5474d9eadb8155e6700d8178> I meant here in gitter but I'll try the same for IRC too :)
+[16:27] <5474d9eadb8155e6700d8178> [![blob](https://files.gitter.im/scikit-learn/scikit-learn/g3A7/thumb/blob.png)](https://files.gitter.im/scikit-learn/scikit-learn/g3A7/blob)
+--------------------------------------------------------------------------------------------------
+[16:29] <550f53e215522ed4b3dda5f6> :beers:
+--------------------------------------------------------------------------------------------------
+[16:31] <5474d9eadb8155e6700d8178> It says I need to be channel op to do that... How do I become one?
+[16:34] <541a528b163965c9bc2053de> you need to find another op :)
+[16:34] <541a528b163965c9bc2053de> which I think I used to be but cannot find my account info anymore
+[16:34] <5474d9eadb8155e6700d8178> yea on it ;)
+[16:34] <541a528b163965c9bc2053de> there might be others
+[16:35] <541a528b163965c9bc2053de> maybe @NelleV and @amueller are op
+[16:35] <541a528b163965c9bc2053de> ops
+[16:35] <541a528b163965c9bc2053de> not 100% sure though
+--------------------------------------------------------------------------------------------------
+[16:35] <5474d9eadb8155e6700d8178> @NelleV is around I'll ask her :) (her right? :p)
+--------------------------------------------------------------------------------------------------
+[16:37] <5474d9eadb8155e6700d8178> `scikit-learn 0.16 is out! http://scikit-learn.org/0.16/whats_new.html... Try out the same with "pip install scikit-learn==0.16"` Would be good?
+[16:39] <541a528b163965c9bc2053de> `pip install -U scikit-learn` would do
+[16:39] <541a528b163965c9bc2053de> @ragv yes it's "her"
+[16:40] <5474d9eadb8155e6700d8178> Ah :) BTW Only could do it for gitter (by double clicking on the channel status) ;)
+[16:42] <541a528b163965c9bc2053de> no problem
+--------------------------------------------------------------------------------------------------
+[16:50] <551061f615522ed4b3ddb1c0> :beers:
+--------------------------------------------------------------------------------------------------
+[20:23] <54d4a1d6db8155e6700f853b> I think I'm the only IRC op ;)
+--------------------------------------------------------------------------------------------------
+[20:31] <54d4a1d6db8155e6700f853b> @ogrisel the oreilly people asked for the slides for the webcast on Monday night ^^ we should probably talk about the content
+[20:34] <541a528b163965c9bc2053de> yes
+[20:35] <541a528b163965c9bc2053de> which topics do you want to cover?
+--------------------------------------------------------------------------------------------------
+[20:36] <541a528b163965c9bc2053de> I am generic intro slides in there: https://speakerdeck.com/ogrisel/machine-learning-in-python-with-scikit-learn-1
+[20:36] <541a528b163965c9bc2053de> but they overlap a lot with the slides I presented for the 0.15 release.
+[20:36] <541a528b163965c9bc2053de> and do not cover the new stuff
+--------------------------------------------------------------------------------------------------
+[20:37] <541a528b163965c9bc2053de> I can work on sunday on new slides to present stuff like LSH Forest, DBSCAN and / or Birch
+[20:37] <541a528b163965c9bc2053de> we can use google docs to work collaboratively on a new deck
+[20:38] <541a528b163965c9bc2053de> those slides are in keynote, but feel free to do as many screen grabs as you want
+[20:41] <541a528b163965c9bc2053de> I think we should prepare a slide on t-SNE too
+[20:41] <541a528b163965c9bc2053de> Hope you will get better
+[20:42] <541a528b163965c9bc2053de> tomorrow is going to get complicated for me. But sunday I should be able to work on it for some reasonable amount of time.
+--------------------------------------------------------------------------------------------------
+[20:40] <54d4a1d6db8155e6700f853b> I feel super sick, I hope I'll be well enough tomorrow to work on new slides. But I also have to work on slides for a talk I give on Monday :-/
+[20:41] <54d4a1d6db8155e6700f853b> google docs seems like a good idea
+--------------------------------------------------------------------------------------------------
+[20:45] <54d4a1d6db8155e6700f853b> I'll try to make some slides on T-SNE, LDA and the GP, ok? We also need slide for Birch, the logistic path algorithm (?) and calibartion
+[20:45] <54d4a1d6db8155e6700f853b> do we want to talk about MLPs and do you already have slides for that?
+[20:46] <541a528b163965c9bc2053de> I forgot about calibration, I can do that indeed
+[20:46] <541a528b163965c9bc2053de> no good slide for MLPs but would indeed say a couple of words about that
+[20:46] <541a528b163965c9bc2053de> I can review the logistic stuff
+[20:47] <54d4a1d6db8155e6700f853b> I can also do the calibration. I have no idea about Birch. Do you?
+[20:47] <54d4a1d6db8155e6700f853b> I think I should go out and find a doctor now
+--------------------------------------------------------------------------------------------------
+[20:52] <541a528b163965c9bc2053de> a bit yes
+[20:52] <541a528b163965c9bc2053de> ok take care
+--------------------------------------------------------------------------------------------------

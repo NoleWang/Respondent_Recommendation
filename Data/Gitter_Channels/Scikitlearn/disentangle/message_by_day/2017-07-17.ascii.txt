@@ -1,0 +1,24 @@
+[14:29] <5581814615522ed4b3e20c6a> Consider if i am having a column of integers is there any strong suggestion whether to do classification or regression. @ogrisel @amueller 
+[14:30] <5581814615522ed4b3e20c6a> normally i use pandas dtypes to differentiate the problem
+[14:30] <5581814615522ed4b3e20c6a> if its object or int64 - classification
+[14:31] <5581814615522ed4b3e20c6a> if its float64 - regression
+[14:31] <5581814615522ed4b3e20c6a> is that right?
+[14:31] <541a528b163965c9bc2053de> it depends : if the integers encodes target classes / categories, then classification, if they represent a target quantity (e.g. ratings, prices...),  then a regression model should work
+[14:31] <541a528b163965c9bc2053de> it depends on what they mean, not their physical types
+[14:32] <5581814615522ed4b3e20c6a> @ogrisel i can understand. Is there any specific automation in such cases
+[14:34] <5581814615522ed4b3e20c6a> I wrote a function to see uniques of integer columns counts if its above 75% then i consider is regression
+[14:34] <5581814615522ed4b3e20c6a> is it a right thing
+[14:35] <541a528b163965c9bc2053de> pandas has a categorical datatype that you could use to make the distinction instead of using ambiguous integers.
+[14:35] <5581814615522ed4b3e20c6a> Perfect
+[14:35] <541a528b163965c9bc2053de> your heuristic should work most of the time, but then it can fail
+[14:36] <541a528b163965c9bc2053de> e.g. predicting ratings, you might get 80% of "4" in your training set and treat the probleme as classification instead of regression.
+[14:36] <5581814615522ed4b3e20c6a> Exactly
+[14:37] <5581814615522ed4b3e20c6a> Thank you @ogrisel 
+[14:37] <541a528b163965c9bc2053de> but that should work well enough anyway. But using classification metrics might not be the best metric.
+[14:51] <57ab46cf40f3a6eec05eccac> Hi, I have a quick question for you experts: I'm trying to use the function "model_selection.train_test_split()" but I need to make sure that only there are no transactions whose "coreID" appears both in the test and in the train set.  I generally have 100 transactions per core and I have a coreID for every transaction.  I basically want each "core" (I have thousands of them) to be either in train or in test. Any ideas to help?
+[14:51] <57ab46cf40f3a6eec05eccac> Thanks!!
+[14:53] <57ab46cf40f3a6eec05eccac> (my dataset is at the single transaction level though)
+[16:55] <547d8325db8155e6700da60b> @mario_avevo_twitter can you make it with the parameter **group** of split ?
+[16:55] <547d8325db8155e6700da60b> http://scikit-learn.org/stable/modules/generated/sklearn.model_selection.LeavePOut.html
+[16:57] <547d8325db8155e6700da60b> http://scikit-learn.org/stable/modules/generated/sklearn.model_selection.LeaveOneGroupOut.html
+[18:49] <57ab46cf40f3a6eec05eccac> thank you @massich I'll look into it!!

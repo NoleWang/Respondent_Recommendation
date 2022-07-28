@@ -1,0 +1,5 @@
+[07:05] <5d1b67bcd73408ce4fc51274> Hi everyone I have a quick question about the math behind the last step of Linear Discriminant Analysis (LDA) for dimensionality reduction. So I understand for the algorithm to calculate for k projection vector(s) you need to determine the eigenvector(s) that corresponds to the top k eigenvalue(s). But does anyone know what you do with those eigenvectors after you have calculated them? My guess is to multiply all of the eigenvectors (projection vectors) together and then multiply that with each point, x, in the original dataset to produce a new point y. Does this seem right? Thank you in advance
+[07:05] <5dbe0c1fd73408ce4fcfc84a> @nadimk1 hi sir
+[07:06] <5dbe0c1fd73408ce4fcfc84a> @nadimk1 I am new  in python . I want to ask that Lubuntu and window 10  can be run in  one machine
+[07:06] <5dbe0c1fd73408ce4fcfc84a> ?
+[17:32] <5d1b67bcd73408ce4fc51274> @anjumuaf123_twitter don't quote me on this, but I think you could probably run it in a virtual machine on your computer using virtualbox

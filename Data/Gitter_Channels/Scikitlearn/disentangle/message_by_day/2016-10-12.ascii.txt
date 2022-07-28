@@ -1,0 +1,7 @@
+[12:38] <57a061aa40f3a6eec05d8d26> Does mean_score_time in GridSearchCV.cv\_results_ mean time that it took to predict classes (in classification case) and calcuclate the relevant evaluation scores?
+[17:47] <564789be16b6c7089cbab8b7> if you fit randomforestclassifier with verbosity  =1, say and then pickle it
+[17:47] <564789be16b6c7089cbab8b7> it seems you are stuck with this verbosity level forever. Is that correct/wanted?
+[17:51] <564789be16b6c7089cbab8b7> unless you can secretly set the verbosity level when doing .predict_proba?
+[20:23] <56a34c16e610378809bdc988> > Hi, I had a feature request  #7655 :)
+[20:23] <56a34c16e610378809bdc988> I'll be waiting eagerly for the reviews
+[21:50] <55d213e50fc9f982beadaa87> has anyone successfully added sklearn to a requirements.txt with a specific version?

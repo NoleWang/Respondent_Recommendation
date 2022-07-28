@@ -1,0 +1,32 @@
+[09:57] <561a58f7d33f749381a8ff2f> I always wonder what is the best way to apply transformers to a dataset
+[09:58] <561a58f7d33f749381a8ff2f> e.g. I want to OneHotEncode only certain variables
+[09:58] <561a58f7d33f749381a8ff2f> X = [categorical_column, continuous_column, continuous_column]
+[09:59] <561a58f7d33f749381a8ff2f> then throw it in a pipeline
+[09:59] <561a58f7d33f749381a8ff2f> where a onehotencoder would only apply to the categorical column
+[09:59] <561a58f7d33f749381a8ff2f> (similar with a standardscaler, only to columns where it "makes sense")
+[09:59] <561a58f7d33f749381a8ff2f> how do you guys solve this issue?
+--------------------------------------------------------------------------------------------------
+[12:27] <53135b495e986b0712efc453> @ogrisel @amueller Why does sorceforge not show 0.17 as the latest version??
+[12:27] <53135b495e986b0712efc453> http://sourceforge.net/projects/scikit-learn/files/
+--------------------------------------------------------------------------------------------------
+[17:31] <564789be16b6c7089cbab8b7> @rvraghav93  hi
+--------------------------------------------------------------------------------------------------
+[17:32] <564789be16b6c7089cbab8b7> I was attempting to read http://arxiv.org/abs/1504.04595 . There is still a big gap between stats and machine learning!
+[17:32] <564789be16b6c7089cbab8b7> This part in particular where they explain which classifiers they will compare with: "For comparison, we also present results for several state-of-the-art methods for high-dimensional classification, namely Penalized LDA (Witten and Tibshirani, 2011), Nearest Shrunken Centroids (Tibshirani et al., 2003), Shrunken Centroids Regularized Discriminant Analysis (Guo, Hastie and Tibshirani, 2007), and Independence Rules (IR) (Bickel and Levina, 2004), as well as for the base classi- fier applied in the original space"
+[17:33] <564789be16b6c7089cbab8b7> does scikit-learn have any of those?
+[17:34] <564789be16b6c7089cbab8b7> oh..maybe shrunken centroids are here? http://scikit-learn.org/stable/modules/neighbors.html#nearest-shrunken-centroid
+[17:35] <564789be16b6c7089cbab8b7> is our LDA implementation the same as  Penalized LDA (Witten and Tibshirani, 2011) ?
+[17:37] <564789be16b6c7089cbab8b7> on another note.. the two images at http://scikit-learn.org/stable/auto_examples/neighbors/plot_nearest_centroid.html#example-neighbors-plot-nearest-centroid-py look identical to me
+[17:37] <564789be16b6c7089cbab8b7> are they meant to be different?
+--------------------------------------------------------------------------------------------------
+[22:13] <53135b495e986b0712efc453> we also have LDA ^^
+--------------------------------------------------------------------------------------------------
+[23:15] <564789be16b6c7089cbab8b7> @rvraghav93  thanks.. I don't even know what  Shrunken Centroids Regularized Discriminant Analysis and Independence Rules are
+[23:16] <564789be16b6c7089cbab8b7> but the author of the paper is absolutely at the top of his field so I assume the new method is important
+[23:17] <564789be16b6c7089cbab8b7> @rvraghav93  do we have *penalized* LDA as in https://faculty.washington.edu/dwitten/Papers/JRSSBPenLDA.pdf ?
+--------------------------------------------------------------------------------------------------
+[23:26] <53135b495e986b0712efc453> Ah no... I am not sure how useful that is?
+[23:29] <53135b495e986b0712efc453> And there is something wrong with the example that you had posted... Mind raising it as an issue for someone else to look into it...? `shrinkage` is supposed to have an effect... ping @robertlayton and @MechCoder in your issue...
+--------------------------------------------------------------------------------------------------
+[23:37] <53135b495e986b0712efc453> And lol no I don't either... I am hoping it gets named to LDA on steroids... must be easier to rememeber... on a serious note it seems to be a combination of regular LDA with shrunken centroids method (thought you must have figured that out already ;))
+--------------------------------------------------------------------------------------------------

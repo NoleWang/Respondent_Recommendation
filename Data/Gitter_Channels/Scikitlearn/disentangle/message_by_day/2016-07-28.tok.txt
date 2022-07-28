@@ -1,0 +1,24 @@
+<s> <user> has anyone used amazon machine learning ... i am sorry if i have asked question in wrong chat room </s>
+<s> <user> is there any problems with travis , <unka> , ... ? </s>
+<s> <user> the new pr are not tested </s>
+<s> <user> <unk#a@_> yeah this is not a good place to ask . go to stackoverflow </s>
+<s> <user> <unka@> i noticed that yesterday . can you point me towards a pr ? </s>
+<s> <user> <unka@> <unk##> <unk##> </s>
+<s> <user> that 's strange because i saw that the travis works on it on the activity ( on the right ) </s>
+<s> <user> fuck that was me </s>
+<s> <user> <unka@> no pb ;) </s>
+<s> <user> need to check with <unka@> </s>
+<s> <user> <unka@> can you try pushing again to one of the <unka> ? </s>
+<s> <user> <unka@> travis was launched on <unk##> </s>
+<s> <user> but not circle or <unka> </s>
+<s> <user> now i only need to find out how access to <unka> and <unka> and <unka> was granted </s>
+<s> <user> ;) </s>
+<s> <user> just to know what was the problem ? </s>
+<s> <user> can you try again ? </s>
+<s> <user> ok for <unka> and travis </s>
+<s> <user> and again </s>
+<s> <user> hm looks like i took away my ability to restart travis or clear the cache </s>
+<s> <user> great </s>
+<s> <user> ah , fixed </s>
+<s> <user> <unka@> you around ? </s>
+<s> <user> <unka@> where is the warm start used in the gradient boosting cv ? </s>

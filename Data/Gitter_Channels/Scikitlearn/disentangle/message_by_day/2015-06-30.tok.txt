@@ -1,0 +1,38 @@
+<s> <user> <unk#a@> let 's finish the data dependent cv first </s>
+<s> <user> sorry i have been offline for the last 4 days </s>
+<s> <user> no issues :) would you be able to spare a few mins to take a look at that ? :) </s>
+<s> <user> tomorrow </s>
+<s> <user> i have 300+ unread emails and it is <unk#:> </s>
+<s> <user> sure ;) i forgot its 11pm there :p </s>
+<s> <user> just one more question ! </s>
+<s> <user> sure </s>
+<s> <user> can i finish the documentation examples too ? </s>
+<s> <user> without waiting for the review ? </s>
+<s> <user> yeah sure </s>
+<s> <user> okay ! i 'll do that now ... :) gn :) </s>
+<s> <user> thanks </s>
+<s> <user> <unka@> <unka@> <unka@> are you happy with the changes in <unk##> ? :) </s>
+<s> <user> <unka@> sorry i can not review any time soon </s>
+<s> <user> a friendly reminder to all the <unka> that <unka-> are coming up this friday ! </s>
+<s> <user> i am writing the mid term evaluation , but i do n't think my pr could merge right now . do you think i need to pick <unka`> and <unka_`> out of my current pr and make it ready to merge ? <unka@> </s>
+<s> <user> <unk#a@> no , i do n't think you should do that </s>
+<s> <user> its fine if there is good progress </s>
+<s> <user> just submitted the evaluation form . hope everything is fine . </s>
+<s> <user> <unka> ... does anyone have access to <unka> 's gsoc evaluation ? apparently i am still not added correctly as a mentor ! working on getting the right access but would like to put an initial evaluation even if it means someone else <unka-> in my words . </s>
+<s> <user> is there a reason <unka> is n't in the metrics module , or would a pr for that be welcome ? </s>
+<s> <user> <unka@> what does <unka> stand for ? </s>
+<s> <user> root mean squared <unka> error . </s>
+<s> <user> same as <unka> , but take the <unka(_> + 1 ) and <unka(_> + 1 ) instead of just the values </s>
+<s> <user> is this a mainstream thing ? i see the first result is from <unka> :/ </s>
+<s> <user> i do n't know if it is . i am bringing it up because it is the evaluation metric for a competition i am starting on today </s>
+<s> <user> and i ca n't find anything relevant on google scholar quickly </s>
+<s> <user> seems like a good idea for variables with a lot of <unka> </s>
+<s> <user> but i 'm admittedly more of a programmer than a <unka> </s>
+<s> <user> anyway , you can easily define your custom metrics </s>
+<s> <user> yes , i 've done so . i just wondered if it would be generally useful and worth pushing upstream . </s>
+<s> <user> if you want you can prepare a pr </s>
+<s> <user> of course it would need tests and docs ( with references ) and maybe a <unka> example . </s>
+<s> <user> okay . that 's reasonable . not sure i can provide a <unka> reason to use it , other than it 's the metric for the competition i 'm working on </s>
+<s> <user> i do n't know whether it belongs in <unka-> by default . but i 'm <unka> because i personally never heard of this metric before . i 'm rather clueless though . it also may be the case that it 's been around under a different name </s>
+<s> <user> ugh . i just noticed that the <unka> , when given a class that implements <unka_> , converts the <unka> to masks and then back into <unka> . </s>
+<s> <user> i mean <unka> , not <unka> </s>

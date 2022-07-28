@@ -1,0 +1,10 @@
+[09:10] <567f5d7716b6c7089cc043a8> On circle-ci, when I look at our jobs, it says "Projects currently running on CircleCI 1.0 are no longer supported. Please migrate to CircleCI 2.0." up there, and the migrate thingy is a hyperlink. We already use circle-ci 2 in our pipeline scripts, but it'd be nice if we upgraded there as well I suppose.
+--------------------------------------------------------------------------------------------------
+[12:03] <5c03c22dd73408ce4fb0b61d> Just posted in pydata/pandas but someone suggested I ask here too:   Does anyone where the joblib folks hang out? I am trying some custom store backend stuff with pyarrow serializers and want to see if anyone else is messing around in this space. Feels like am between dask, joblib and pyarrow communities and want to make sure I'm not missing something someone else is already doing.
+--------------------------------------------------------------------------------------------------
+[16:08] <54d4a1d6db8155e6700f853b> @david-cottrell_gitlab joblib folks are here ;) I think it's primarily @lesteve and @ogrisel ?
+[16:09] <54d4a1d6db8155e6700f853b> pretty sure they haven't thought about pyarrow though
+[16:09] <54d4a1d6db8155e6700f853b> (but @ogrisel is probably the best person to know these three communities)
+--------------------------------------------------------------------------------------------------
+[16:34] <5c03c22dd73408ce4fb0b61d> @lesteve @ogrisel @amueller basically just wondering if there is some hidden trove of custom store backend hackers out there, there are some interesting use cases with using something like hyperdb (decentralized) as a store_backend for sharing the cache globally but it means swapping out all the pkl for something safer.  I am just playing around but I would suprised if someone hadn't gone down this route before.
+--------------------------------------------------------------------------------------------------

@@ -1,0 +1,101 @@
+[08:44] <5be4801ed73408ce4fae4cc6> Hello, anyone can explain what the format of the patches in https://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.image.extract_patches_2d.html is? https://www.reddit.com/r/scikit_learn/comments/iinxo7/whats_the_format_of_the_patches_returned_by/
+[08:45] <5be4801ed73408ce4fae4cc6> are the returned values corner points or what? Why are there duplicates?
+--------------------------------------------------------------------------------------------------
+[09:47] <55d21ee30fc9f982beadabb8> The documentation said: `array of shape (n_patches, patch_height, patch_width) or (n_patches, patch_height, patch_width, n_channels)`
+[09:47] <55d21ee30fc9f982beadabb8> n_patches is the number of patches
+[09:48] <55d21ee30fc9f982beadabb8> so `patches[0]` will be the small patch
+[09:48] <55d21ee30fc9f982beadabb8> on the image
+[09:48] <55d21ee30fc9f982beadabb8> 2d if this a gray image
+[09:48] <55d21ee30fc9f982beadabb8> 3d if this is a color image
+--------------------------------------------------------------------------------------------------
+[11:13] <5be4801ed73408ce4fae4cc6> That doesn't explain what the contents of the arrays are.
+--------------------------------------------------------------------------------------------------
+[12:28] <55d21ee30fc9f982beadabb8> The pixel values
+--------------------------------------------------------------------------------------------------
+[12:31] <5be4801ed73408ce4fae4cc6> RGB colors? Why are there two of the same?
+[12:32] <55d21ee30fc9f982beadabb8> RGB colors -> n_channels
+[12:32] <55d21ee30fc9f982beadabb8> > Why are there two of the same?
+[12:32] <55d21ee30fc9f982beadabb8> what do you mean?
+[12:32] <55d21ee30fc9f982beadabb8> which things are the same?
+[12:34] <5be4801ed73408ce4fae4cc6> so why are there two times RGB_1?
+[12:34] <55d21ee30fc9f982beadabb8> it depens of your input
+[12:34] <55d21ee30fc9f982beadabb8> if you are passing a numpy array with 3 dimension
+[12:34] <55d21ee30fc9f982beadabb8> with shape `(height, width, 3)` (because it is RGB
+[12:35] <55d21ee30fc9f982beadabb8> you will get an array of `(n_patches, patch_height, patch_width, 3)`
+[12:35] <5be4801ed73408ce4fae4cc6> so the arrays returned are "2x2"
+[12:35] <5be4801ed73408ce4fae4cc6> because that's patch size
+[12:35] <5be4801ed73408ce4fae4cc6> but I don't understand what RGB_1 and RGB_2 refer to?
+--------------------------------------------------------------------------------------------------
+[12:33] <5be4801ed73408ce4fae4cc6> each patch is a [ [[RGB_1] [RGB_1]] [[RGB_2] [RGB_2]]]
+--------------------------------------------------------------------------------------------------
+[12:36] <5be4801ed73408ce4fae4cc6> if one takes a 2x2 sample from the image then it should have 4 pixels?
+[12:36] <5be4801ed73408ce4fae4cc6> so 4 values
+[12:36] <55d21ee30fc9f982beadabb8> but there is no RGB1 in the documentation?
+[12:36] <55d21ee30fc9f982beadabb8> > if one takes a 2x2 sample from the image then it should have 4 pixels?
+[12:36] <5be4801ed73408ce4fae4cc6> I refer to the values in the example https://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.image.extract_patches_2d.html
+[12:37] <55d21ee30fc9f982beadabb8> it will be an array `(n_patches, 2, 2, 3)`
+[12:37] <55d21ee30fc9f982beadabb8> if this is an RGB image
+[12:37] <55d21ee30fc9f982beadabb8> or `(n_patches, 2, 2)` if this is gray-scale
+[12:37] <5be4801ed73408ce4fae4cc6> so it takes a 2x2 sample from the image and describes its pixel colors?
+[12:37] <5be4801ed73408ce4fae4cc6> this is what I assumed
+[12:38] <55d21ee30fc9f982beadabb8> it is just extracting a sub-image
+[12:38] <55d21ee30fc9f982beadabb8> with the same number of dimension
+[12:38] <5be4801ed73408ce4fae4cc6> but what are the 2d subarrays?
+[12:38] <5be4801ed73408ce4fae4cc6> [[RGB_1] [RGB_1]] [[RGB_2] [RGB_2]]
+[12:39] <55d21ee30fc9f982beadabb8> > [[RGB_1] [RGB_1]] [[RGB_2] [RGB_2]]
+[12:39] <5be4801ed73408ce4fae4cc6> do they correspond to columns or rows perhaps?
+[12:39] <5be4801ed73408ce4fae4cc6> in 2x2 matrix sense
+[12:39] <55d21ee30fc9f982beadabb8> I am sorry but this not specify anywhere in the doc
+[12:39] <5be4801ed73408ce4fae4cc6> how to know then what RGB_1 then refers to
+[12:39] <5be4801ed73408ce4fae4cc6> it's some pixel color, but which pixel is it?
+--------------------------------------------------------------------------------------------------
+[12:39] <55d21ee30fc9f982beadabb8> `[[RGB_1] [RGB_1]] [[RGB_2] [RGB_2]]` This is a (2, 2) numpy array
+[12:40] <55d21ee30fc9f982beadabb8> and this is is not RGB
+[12:41] <55d21ee30fc9f982beadabb8> they are only gray scale (because you have only one channel)
+[12:42] <55d21ee30fc9f982beadabb8> (2, 2, 3) would be 3-channel
+[12:43] <55d21ee30fc9f982beadabb8> > but I don't understand why (0,0)=(0,1) and (1,0)=(1,1)
+[12:43] <55d21ee30fc9f982beadabb8> it does not
+[12:43] <55d21ee30fc9f982beadabb8> it is a coincidence
+[12:43] <55d21ee30fc9f982beadabb8> for your specific image
+--------------------------------------------------------------------------------------------------
+[12:42] <5be4801ed73408ce4fae4cc6> if one uses the python list index convention, then one finds (0,0), (0,1), (1,0), (1,1)
+[12:42] <55d21ee30fc9f982beadabb8> `img[:, :, 0]` will be the red channel
+[12:43] <5be4801ed73408ce4fae4cc6> but I don't understand why (0,0)=(0,1) and (1,0)=(1,1)
+[12:43] <5be4801ed73408ce4fae4cc6> or is it just coincidence in this sample picture
+[12:43] <5be4801ed73408ce4fae4cc6> I see
+[12:47] <5be4801ed73408ce4fae4cc6> that's a bad example I find then
+[12:47] <5be4801ed73408ce4fae4cc6> given in the doc
+[12:47] <55d21ee30fc9f982beadabb8> I don't agree
+[12:48] <5be4801ed73408ce4fae4cc6> I think a good example would have very distinct values
+[12:48] <5be4801ed73408ce4fae4cc6> as in order to not suggest that they're somehow "ordered"
+[12:48] <55d21ee30fc9f982beadabb8> This is just a real life example
+--------------------------------------------------------------------------------------------------
+[12:48] <5be4801ed73408ce4fae4cc6> because those symmetries got me thinking about whether I'm even looking at a 2x2 patch in the actual image
+[12:48] <5be4801ed73408ce4fae4cc6> or some sklearn abstraction about it
+[12:49] <55d21ee30fc9f982beadabb8> The docstring give a real example
+[12:50] <55d21ee30fc9f982beadabb8> and the user guide
+[12:50] <55d21ee30fc9f982beadabb8> https://scikit-learn.org/stable/modules/feature_extraction.html#patch-extraction
+[12:50] <55d21ee30fc9f982beadabb8> is giving a synthetic example with fake RGB data
+[12:51] <5be4801ed73408ce4fae4cc6> is there an equivalent function that would spit out "rectangles"?
+[12:52] <5be4801ed73408ce4fae4cc6> like the geometries of the pixels
+[12:52] <55d21ee30fc9f982beadabb8> What do you mean rectangle?
+[12:52] <55d21ee30fc9f982beadabb8> here you can specify height and width
+[12:53] <55d21ee30fc9f982beadabb8> so you can specify the rectangle shape
+[12:53] <5be4801ed73408ce4fae4cc6> Yes it's possible with known pixel size to infer it
+[12:53] <5be4801ed73408ce4fae4cc6> but I was asking whether there exists such function already
+[12:53] <5be4801ed73408ce4fae4cc6> I've found this kind of application when one wants to crop pixel areas
+[12:54] <5be4801ed73408ce4fae4cc6> then one has to specify the area
+[12:54] <55d21ee30fc9f982beadabb8> I don't understand what you want sorry
+--------------------------------------------------------------------------------------------------
+[12:56] <5be4801ed73408ce4fae4cc6> extract_2d_patches that returns [[[corner1 corner2 length] ...
+[12:56] <5be4801ed73408ce4fae4cc6> so one knows what area the pixel covers
+--------------------------------------------------------------------------------------------------
+[12:58] <55d21ee30fc9f982beadabb8> You will not find in scikit-learn
+[12:58] <55d21ee30fc9f982beadabb8> you might want to look at scikit-image thought
+--------------------------------------------------------------------------------------------------
+[17:14] <5f52759ed73408ce4fee177a> Hi, does anyone know more about this efficiency warning?
+[17:14] <5f52759ed73408ce4fee177a> scikit-learn/sklearn/neighbors/_base.py:167: EfficiencyWarning: Precomputed sparse input was not sorted by data.   warnings.warn('Precomputed sparse input was not sorted by data.'
+[17:14] <5f52759ed73408ce4fee177a> so im passing in a csr_matrix, but the csr_matrix is not sorted by data  (it's sorted by indices). i looked at  the code, and it seems this warning is thrown whenever each row in the csr_matrix is not sorted, low->high
+[17:15] <5f52759ed73408ce4fee177a> however,  i can't figure out how to sort the matrix. no matter how i initialize it, the matrix sorts it by index, even if i pass  it in sorted by data
+[17:15] <5f52759ed73408ce4fee177a> does anyone know how to pass in the right data to get rid of this efficiency warning?
+--------------------------------------------------------------------------------------------------

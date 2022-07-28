@@ -1,0 +1,2 @@
+[19:53] <564789be16b6c7089cbab8b7> in sklearn.inspection.permutation_importance(estimator, X, y, *, scoring=None, n_repeats=5, n_jobs=None, random_state=None, sample_weight=None, max_samples=1.0 what is the default for scoring? 
+[19:53] <564789be16b6c7089cbab8b7> A " baseline metric, defined by scoring, is evaluated on a (potentially different) dataset defined by the x" so it has to be something

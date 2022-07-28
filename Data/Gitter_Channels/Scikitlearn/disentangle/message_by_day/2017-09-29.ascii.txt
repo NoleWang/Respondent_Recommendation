@@ -1,0 +1,35 @@
+[17:14] <5717ab2f659847a7aff3b583> hi
+[17:28] <54d4a1d6db8155e6700f853b> @Rebaiahmed hi
+[17:28] <5717ab2f659847a7aff3b583> i need some help
+[17:29] <5717ab2f659847a7aff3b583> for scholarship project
+[17:29] <54d4a1d6db8155e6700f853b> you can post your question here, but I recommend going to stackexchange and tag it with sklearn
+[17:29] <5717ab2f659847a7aff3b583> wait
+[17:29] <54d4a1d6db8155e6700f853b> see http://scikit-learn.org/dev/faq.html#what-s-the-best-way-to-get-help-on-scikit-learn-usage
+[17:29] <5717ab2f659847a7aff3b583> just i'm searching about
+[17:29] <5717ab2f659847a7aff3b583> sickit learn
+[17:29] <5717ab2f659847a7aff3b583> with django
+[17:29] <5717ab2f659847a7aff3b583> i want to implement machine learning
+[17:29] <5717ab2f659847a7aff3b583> into web project
+[17:30] <5717ab2f659847a7aff3b583> but i didn"t have any idea
+[17:30] <5717ab2f659847a7aff3b583> for the application 
+[17:30] <5717ab2f659847a7aff3b583> or the avalaible dataset
+[17:30] <54d4a1d6db8155e6700f853b> for an introduction, check out @jakevdp's free book: https://github.com/jakevdp/PythonDataScienceHandbook
+[17:31] <5717ab2f659847a7aff3b583> i have an experience with django and sickit-learn
+[17:32] <5717ab2f659847a7aff3b583> they are separated 
+[17:32] <5717ab2f659847a7aff3b583> i want an idea o combine them
+[17:33] <541a528b163965c9bc2053de> Build a recommender system for suggesting movies based on the movie lens data as a web application
+[17:33] <541a528b163965c9bc2053de> or a book recommender system using https://www.kaggle.com/zygmunt/goodbooks-10k
+[17:34] <5717ab2f659847a7aff3b583> good idea ;)
+[17:34] <541a528b163965c9bc2053de> I would recommend you to use [lightfm](https://github.com/lyst/lightfm) or [spotlight](https://github.com/maciejkula/spotlight) instead of scikit-learn though :)
+[17:35] <5717ab2f659847a7aff3b583> why ?
+[17:35] <5717ab2f659847a7aff3b583> what are the advantages ?
+[17:36] <541a528b163965c9bc2053de> Those libraries are dedicated to building recommender systems. Factorization machines and neural networks with categorical embeddings are known to be very good for building recommender systems but are not implemented in scikit-learn.
+[17:36] <541a528b163965c9bc2053de> (yet)
+[17:37] <5717ab2f659847a7aff3b583> ok good :D
+[17:37] <5717ab2f659847a7aff3b583> there is any other suggestion for other dataset
+[17:37] <5717ab2f659847a7aff3b583> for example
+[17:37] <5717ab2f659847a7aff3b583> client -ecommerce dataset 
+[17:37] <5717ab2f659847a7aff3b583> something ike this
+[17:38] <5717ab2f659847a7aff3b583> what do you think about Twitter Sentiment Analysis ?
+[17:39] <541a528b163965c9bc2053de> e-commerce: I don't know any out the time of my mind. For twitter you can use the sentiment140 dataset but I find sentiment analysis pretty useless personally.
+[17:39] <541a528b163965c9bc2053de> I have to go. Good luck for your project.

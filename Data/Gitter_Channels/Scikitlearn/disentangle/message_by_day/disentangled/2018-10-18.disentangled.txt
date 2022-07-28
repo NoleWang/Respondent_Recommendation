@@ -1,0 +1,2 @@
+[07:46] <5bbdfc48d73408ce4faaf97c>   Write a function to return the intercept as a float (rounded to the nearest 3 integers) of a linear regression model  def lin_reg_intercept(X_train, y_train):
+--------------------------------------------------------------------------------------------------

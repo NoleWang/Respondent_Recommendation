@@ -1,0 +1,5 @@
+[14:39] <5b4da81ed73408ce4fa12924> [![image.png](https://files.gitter.im/scikit-learn/scikit-learn/CO5c/thumb/image.png)](https://files.gitter.im/scikit-learn/scikit-learn/CO5c/image.png)
+[14:39] <5b4da81ed73408ce4fa12924> why in the lst  line this throws an error "value eror"
+[14:39] <5b4da81ed73408ce4fa12924> string to float?
+[14:41] <5b4da81ed73408ce4fa12924> [![image.png](https://files.gitter.im/scikit-learn/scikit-learn/Jl8c/thumb/image.png)](https://files.gitter.im/scikit-learn/scikit-learn/Jl8c/image.png)
+[14:41] <5b4da81ed73408ce4fa12924> ??

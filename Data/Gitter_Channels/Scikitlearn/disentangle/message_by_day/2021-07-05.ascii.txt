@@ -1,0 +1,3 @@
+[06:59] <575b0eccc2f0db084a1d3a41> Is there any option to build scikit-learn with DEBUG symbols?
+[11:55] <matrix-rthy:matrix.org> Yes, you can pass `CFLAGS` env variable https://stackoverflow.com/a/10867041/1791279
+[12:23] <575b0eccc2f0db084a1d3a41> thanks @rthy:matrix.org 

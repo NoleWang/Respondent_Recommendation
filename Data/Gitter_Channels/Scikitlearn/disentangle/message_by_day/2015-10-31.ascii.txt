@@ -1,0 +1,2 @@
+[14:42] <541a528b163965c9bc2053de> @amueller some appveyor builds seems to be fast again, especially on 64 bit for some reason: https://ci.appveyor.com/project/sklearn-ci/scikit-learn/build/1.0.3621
+[14:43] <541a528b163965c9bc2053de> maybe there is some variability in the platform

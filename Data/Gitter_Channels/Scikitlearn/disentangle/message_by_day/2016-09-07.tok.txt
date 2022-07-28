@@ -1,0 +1,16 @@
+<s> <user> guys from <unka-> team , could someone check and add +1 to this URL/https:/ URL/github.com/ <unk#a-/> ? </s>
+<s> <user> hello , i am begin learn deep learning </s>
+<s> <user> i am reading URL/http:/ <unka./> </s>
+<s> <user> does <unka-> already have or intend to have <unka-> algorithms included ? </s>
+<s> <user> hi guys . id to <unka_`> but on <unka`> i need of a <unka-> data . any idea how can i do , it ? </s>
+<s> <user> on my <unka> a had 4 columns . <unka[`> , y , area , <unka]`> . on <unka`> i populated with a string <unka> of <unka`> and <unka`> values . but this hack does not working . </s>
+<s> <user> <unka([_`> ], <unka[> ], <unk#a.=_> , <unka)=[]`> got the error : <unka`> : the least populated class in y has only 1 member , which is too few . the minimum number of labels for any class cannot be less than <unk#.`> </s>
+<s> <user> why is there exit( ) in the middle of the code at URL/http:/ <unka-./> <unka./_> ? </s>
+<s> <user> the code has <unka> = <unka(=_> , <unk#a=_> , <unk#a.=> , <unk#a().=_> ) exit( ) <unka"(> in <unk#a%.> ." % ( <unka(> ) - t0 )) </s>
+<s> <user> idk maybe <unka> does something that requires you to exit( ) to go back into your code ? </s>
+<s> <user> <unka@> that would be surprising </s>
+<s> <user> exit is a synonym for quit i believe </s>
+<s> <user> surely it 's a typo ? </s>
+<s> <user> ok , it quits out of what ever <unka> does to get back to your code </s>
+<s> <user> you do n't think it 's a bug ? </s>
+<s> <user> it might be .. </s>

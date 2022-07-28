@@ -1,0 +1,16 @@
+[20:56] <570beab4187bb6f0eadeef70> hey all, is there anyone experienced using LSTM-RNN for labeling each frame of a video data
+--------------------------------------------------------------------------------------------------
+[22:11] <55901c1b15522ed4b3e2f949> No,  but I can sound confident when I tell you stuff.
+--------------------------------------------------------------------------------------------------
+[22:12] <56c4f19ae610378809c1f8ae> haha :smile:
+--------------------------------------------------------------------------------------------------
+[22:14] <557fdd5f15522ed4b3e1f9bd> @dsquareindia I don't think your question is answerable as currently stated. How do you intend to map counts to categories?
+--------------------------------------------------------------------------------------------------
+[22:15] <54e07d6515522ed4b3dc0858> @dsquareindia it sounds like you want to use [LabelBinarizer](http://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.LabelBinarizer.html) to get a categorical one-hot Y, then just do Y.T * X
+[22:15] <54e07d6515522ed4b3dc0858> where X is the output of CountVectorizer. This should give you word counts per category.
+[22:16] <54e07d6515522ed4b3dc0858> (I'm using * instead of dot because X is sparse)
+[22:16] <557fdd5f15522ed4b3e1f9bd> @vene +1 I suppose @dsquareindia is making the claim that if a document is labeled X, then a term in that document should also belong to the category X.
+[22:16] <557fdd5f15522ed4b3e1f9bd> correct?
+--------------------------------------------------------------------------------------------------
+[22:49] <54e07d6515522ed4b3dc0858> You can find reason to count word-category occurrences without making that strong assumption. Maybe he's using the count matrix to do some other calculations afterwards.
+--------------------------------------------------------------------------------------------------

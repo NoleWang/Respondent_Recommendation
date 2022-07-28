@@ -1,0 +1,15 @@
+[06:09] <5693aff116b6c7089cc207c3> Hi all,
+[06:12] <5693aff116b6c7089cc207c3> I am new to sklearn, and I really like this stuff. I want to contribute, but I think, I must use sklearn to a good level. And then start diving into methods. Can you suggest me a way to start? At end I want to be a one of the core contributor of sklearn, no matter how much time or years it takes.
+[06:13] <56c4f19ae610378809c1f8ae> A good place to start is to try kaggle competitions
+[06:15] <5693aff116b6c7089cc207c3> And I can start using sklearn from basics here?
+[06:16] <557c765a15522ed4b3e1de4f> are you trying to learn sklearn or are yout rying to learn data science?
+[06:17] <56c4f19ae610378809c1f8ae> I think the former, but the best way to do so much s to learn basic data science imo
+[06:17] <56c4f19ae610378809c1f8ae> *is to learn 
+[06:17] <557c765a15522ed4b3e1de4f> well it seems to me they are very different learning tasks
+[06:19] <56c4f19ae610378809c1f8ae> If the goal is to eventually contribute, you'd want knowledge of how the various algorithms work, what their use cases are, etc. The easiest way to do this imo is to just use them in various applications. 
+[06:19] <5693aff116b6c7089cc207c3> Yes sklearn. I am a pythonist, and I want to dwelve into sklearn functions and contribute. Right way is to strengthen my basics. I think I can go with what @nelson-liu  suggested.
+[06:19] <557c765a15522ed4b3e1de4f> doesn't make any sense to me but whatevs
+[06:21] <5693aff116b6c7089cc207c3> @elbamos according to you, what is the right approach, if someone wants to be a good contributor to sklearn?
+[06:25] <56b80528e610378809c05a48> If the goal is to contribute, then [here](http://scikit-learn.org/stable/developers/contributing.html#easy-issues) has already answered your question
+[06:28] <5693aff116b6c7089cc207c3> Thanks @yenchenlin1994 @elbamos  @nelson-liu 
+[20:34] <557c765a15522ed4b3e1de4f> @harshul1610 To answer your question:  Implementing a machine-learning algorithm is hard.  Its not enough to be able to program.  You have to really understand the *math*, and debugging the math is challenging.  And you have to also understand how data scientists actually use these algorithms.   

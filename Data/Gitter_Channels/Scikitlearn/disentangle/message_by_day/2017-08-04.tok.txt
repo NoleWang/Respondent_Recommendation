@@ -1,0 +1,4 @@
+<s> <user> a toy for anyone who uses grid search , and particularly <unka@> : URL/https:/ URL/github.com/ <unka/> </s>
+<s> <user> very much in alpha status </s>
+<s> <user> <unka@> nice ! </s>
+<s> <user> what i 'm thinking about right now talking about with some people is to make it easier to implement <unka/> interfaces with <unka> . maybe not in <unka> , but i think it should be possible to use a <unka> approach that allows implementing arbitrary parallel search strategies with a common interface </s>

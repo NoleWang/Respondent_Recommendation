@@ -1,0 +1,5 @@
+<s> <user> hi .. i am trying to find the most important features in a large random forest and it takes about 1 second per feature and there are 10s of thousands of features . the random forest only took ten minutes to build in total . </s>
+<s> <user> am i doing something wrong or is this expected ? </s>
+<s> <user> ah .. i think i might realise my mistake ! </s>
+<s> <user> for i in <unka(._> )): print <unka.[_> ] </s>
+<s> <user> does this <unka> the whole <unka_> array in each step of the for loop ? </s>

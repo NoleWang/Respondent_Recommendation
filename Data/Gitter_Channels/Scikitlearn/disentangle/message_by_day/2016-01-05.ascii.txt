@@ -1,0 +1,3 @@
+[18:17] <567d7eca16b6c7089cc02a05> I am new to scikit and also want to contribute to, where should i start!
+[18:53] <55f3a7830fc9f982beb071a9> http://scikit-learn.org/stable/developers/
+[20:43] <53135b495e986b0712efc453> Start with easy issues that are tagged "Need Contributor"

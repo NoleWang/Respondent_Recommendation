@@ -1,0 +1,8 @@
+[07:56] <541a528b163965c9bc2053de> @oolongtea  Start with one that fix related stuff if it's your first PR. It's easier to give you feedback to get started.
+[19:23] <54d4a1d6db8155e6700f853b> does anyone know a good "real world" dataset for regression on which regularization helps? In diabetes and boston linear regression does as well as any other linear model, which is sad. the only examples for regularization we have are using ``make_regression``
+[19:32] <54d4a1d6db8155e6700f853b> so diabetes is from the lars paper, but lars doesn't actually make better predictions than ols on diabetes.....
+[20:00] <54e07d6515522ed4b3dc0858> How about high dim. data, say movie review stars from text
+[20:06] <54d4a1d6db8155e6700f853b> yeah that would work. but I don't want to go too high dim. I settled for polynomial features on boston, which works well
+[20:07] <54d4a1d6db8155e6700f853b> It's for the book, and I don't want to explain bag of words at this point. Not sure I want to explain polynomial features, but it's a little easier.
+[20:07] <54d4a1d6db8155e6700f853b> might be an interesting example for non-synthetic data
+[20:07] <54d4a1d6db8155e6700f853b> (for the examples folder I mean)

@@ -1,0 +1,9 @@
+[02:54] <56f8122085d51f252abb1414> pytest -s -v name-of-file-to-test.py should be enough
+[07:26] <57224267659847a7aff4ffce> Is this page for development using scikit or contributing to the project or both?
+[07:31] <58b47262d73408ce4f4d4113> For any type of queries and suggestions related to scikit-learn.
+[07:31] <58b47262d73408ce4f4d4113> There's a special dev room for developers of the project.
+[07:32] <57224267659847a7aff4ffce> Can I get a link for the room?
+[07:32] <57224267659847a7aff4ffce> Never mind
+[07:32] <57224267659847a7aff4ffce> Got it
+[07:33] <57224267659847a7aff4ffce> Thanks for the response though
+[07:37] <58b47262d73408ce4f4d4113> :smile: 

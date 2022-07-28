@@ -1,0 +1,4 @@
+<s> <user> just curious , </s>
+<s> <user> should every bug fix enhancement go into what 's new ? </s>
+<s> <user> <unka@> : i the data is a <unka> data so i labeled the classes 0,1 <unk#,> . will is it okay to use them as it is without <unka> ? </s>
+<s> <user> i encoded them as [ <unk#,[]> ] and [ 100 ] and that is what generated the error </s>

@@ -1,0 +1,37 @@
+[15:16] <54e07d6515522ed4b3dc0858> @xuewei4d wow, it's been a while since I've seen an .ini file!
+[15:22] <54d4a1d6db8155e6700f853b> haha
+[15:22] <54d4a1d6db8155e6700f853b> @vene @llllllllll thinks it is the best. I just feel it is hard to type ;)
+[15:23] <54d4a1d6db8155e6700f853b> @rvraghav93 which PR are you currently working on? I think the data independend CV should have priority.
+[15:48] <54d4a1d6db8155e6700f853b> @rvraghav93 in the blog post, "improvise" should probably be "improve"
+[16:08] <54e07d6515522ed4b3dc0858> @amueller good thing Gitter has autocompletion
+[16:10] <54e07d6515522ed4b3dc0858> Can I ask a quick joblib question here? https://github.com/joblib/joblib/blame/master/doc/memory.rst#L187 it says r+ and w+ "will propagate the changes to disk". Shouldn't that be "will NOT propagate"?
+[17:40] <54d4a1d6db8155e6700f853b> ping @ogrisel ?
+[19:15] <54d4a1d6db8155e6700f853b> I am fascinated time and again by which PRs and issues get attention
+[19:16] <54e07d6515522ed4b3dc0858> What do you mean? The CallableVectorizer?
+[19:16] <54e07d6515522ed4b3dc0858> *CallableTransformer?
+[19:18] <54d4a1d6db8155e6700f853b> yeah
+[19:18] <54d4a1d6db8155e6700f853b> I mean it is neat, but like 6 core devs in a day?
+[19:19] <54e07d6515522ed4b3dc0858> I think it's because all of us hacked up one at some point or another
+[19:19] <54d4a1d6db8155e6700f853b> yeah probably
+[19:19] <54d4a1d6db8155e6700f853b> but the FeatureUnion thing didn't get as much attention, I think
+[19:21] <54d4a1d6db8155e6700f853b> I am unreasonably happy about the backlinks
+[19:26] <54e07d6515522ed4b3dc0858> Those are great.
+[19:26] <54e07d6515522ed4b3dc0858> For users who learn by hacking around in IPython, it was so easy to miss the User Guide completely
+[19:30] <54d4a1d6db8155e6700f853b> well but from IPython you don't get a clickable link, only a useless reference, right?
+[19:31] <54e07d6515522ed4b3dc0858> good point... but at least you know it exists
+[19:34] <54d4a1d6db8155e6700f853b> true
+[20:13] <550f53e215522ed4b3dda5f6> @amueller @ogrisel I think I need more time to write down all equations of VBGMM and DPGMM. Currently I have those for full and diag covariance. https://www.dropbox.com/s/8hlbb7dlwllwcry/VBGMM.pdf?dl=0
+[20:16] <54d4a1d6db8155e6700f853b> so you are missing spherical? Shouldn't that be easiest?
+[20:17] <54d4a1d6db8155e6700f853b> I'll try to have a look tomorrow, but it would be great if @ogrisel and loic could have a look
+[20:20] <550f53e215522ed4b3dda5f6> Well, I read through  PRML and equations for full covariance. Since there are some repeated routines, I choose to do them in order of 'full', 'diag', 'sphere' and 'tied'.
+[20:21] <550f53e215522ed4b3dda5f6> since 'diag' share some similarities with 'full'
+[20:22] <54d4a1d6db8155e6700f853b> ok
+[20:23] <54d4a1d6db8155e6700f853b> @rvraghav93 "digits" is not the same dataset as MNIST, it is much smaller. in your blog post, you mention mnist but link to a digits example.
+[20:27] <54d4a1d6db8155e6700f853b> @rvraghav93 why do you use alpha when plotting points?
+[20:30] <54d4a1d6db8155e6700f853b> @rvraghav93 I feel this sentence is unclear: "Even when the model is optimized with the constrain of maximizing the score based upon the test set, there is still a chance of overfitting as the information about the test set can leak into the model and hence the model could be optimized for the test set alone."  it would be more explicit to say the information leaks via the selection of hyperparameters.
+[20:31] <54d4a1d6db8155e6700f853b> @rvraghav93 and cross-validation does not entirely overcome this. Overfitting to cross-validation is harder than overfitting to a single test set, but it is still possible, which is why people do nested cross-validation. 
+[20:32] <54d4a1d6db8155e6700f853b> @rvraghav93 grid.best_estimator_.score(X_test, y_test) is also not great btw. You can just use grid.score
+[20:32] <54d4a1d6db8155e6700f853b> @rvraghav93 talking about gamma=0 for the SVM is also a bit weird. This is an odd way that we used to select the default, which is 1. / n_features ,I think.
+[20:36] <54e07d6515522ed4b3dc0858> "which is why people do nested cross-validation" I think that's where @rvraghav93 is trying to lead to.
+[21:49] <550f53e215522ed4b3dda5f6> Thanks, @amueller . The text in the draft is kind of vague, but I think you could get ideas just looking at equations.
+[21:51] <550f53e215522ed4b3dda5f6> Hope you don't mind.

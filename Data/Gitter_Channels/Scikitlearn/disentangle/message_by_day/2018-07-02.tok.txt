@@ -1,0 +1,1 @@
+<s> <user> hi folks , excuse my ignorant question . i was wondering if it is possible to pass a tensorflow model into <unka> <unka> , if i expose fit and predict methods in the tensorflow model ? i coul n't find an example when i googled it . </s>

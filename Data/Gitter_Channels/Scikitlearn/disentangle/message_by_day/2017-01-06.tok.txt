@@ -1,0 +1,1 @@
+<s> <user> hi all . is there a plan for making <unka_`> accept <unka> <unka> metrics ( i.e . a <unka> that returns an array rather than a float )? i see that <unk##> may be related , but iiuc it mainly to compare different metrics . </s>

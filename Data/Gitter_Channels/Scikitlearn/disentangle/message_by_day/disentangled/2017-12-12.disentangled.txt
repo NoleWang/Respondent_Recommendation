@@ -1,0 +1,53 @@
+[15:54] <5a1450bed73408ce4f7fa504> Hello from Berlin!
+--------------------------------------------------------------------------------------------------
+[18:50] <53eb987c107e137846baa89d> How can I debug using the simple 'print' commands? This is what I tried:, I first put a `print( (blaaa, bllllaaaa))` in my code. Then if I run the tests using `pytest path/to/file.py` then I don't get output from the `print` statement, I get whatever was expected without the `print` statements. (I'm sure that running those test would definitely reach those `print` statements).  Has this got something to do with `*.pyx` files?
+--------------------------------------------------------------------------------------------------
+[19:19] <59d4f81ed73408ce4f789336> Hello developers! Am a newbie. Can someone provide me instructions link to build & run scikit-learn from source code. Am messing up with things.
+[20:23] <59d4f81ed73408ce4f789336> nope
+[20:24] <59d4f81ed73408ce4f789336> sklearn/tests/test_docstring_parameters.py:150: AssertionError
+[20:24] <59d4f81ed73408ce4f789336> ``1 failed, 8361 passed, 16 skipped, 5024 warnings in 293.63 seconds``
+[20:44] <59d4f81ed73408ce4f789336> m newbie. understanding issues and working is still tough despite working in python for long
+--------------------------------------------------------------------------------------------------
+[19:25] <53eb987c107e137846baa89d> I guess this http://scikit-learn.org/stable/developers/advanced_installation.html should probably work.
+--------------------------------------------------------------------------------------------------
+[20:02] <59d4f81ed73408ce4f789336> Am not getting how to put the cloned code to work. Help
+--------------------------------------------------------------------------------------------------
+[20:17] <53eb987c107e137846baa89d> are you able to do `make test` (without errors) on root scikit-learn directory?
+--------------------------------------------------------------------------------------------------
+[20:24] <53eb987c107e137846baa89d> if you could paste into a pastebin or somrthing that might help
+--------------------------------------------------------------------------------------------------
+[20:29] <59d4f81ed73408ce4f789336> https://pastebin.com/raw/1Q8PfyRf
+--------------------------------------------------------------------------------------------------
+[20:34] <54d4a1d6db8155e6700f853b> @ai-coder don't worry about that, that looks like ups messing up.
+[20:34] <54d4a1d6db8155e6700f853b> we need to fix that, though
+[20:34] <54d4a1d6db8155e6700f853b> though master if working
+[20:34] <54d4a1d6db8155e6700f853b> hm...
+[20:34] <54d4a1d6db8155e6700f853b> so might be that you're mixing different installations?
+[20:37] <54d4a1d6db8155e6700f853b> meant "us messing up" though I double checked, and it's correct
+--------------------------------------------------------------------------------------------------
+[20:36] <59d4f81ed73408ce4f789336> working now
+--------------------------------------------------------------------------------------------------
+[20:36] <53eb987c107e137846baa89d> It says: `1 failed, 8361 passed, 16 skipped, 5024 warnings in 293.63 seconds`, it does contain 'passed' non-zero value, does it indicate ruling out mixing installations?
+[20:36] <54d4a1d6db8155e6700f853b> lol
+[20:36] <53eb987c107e137846baa89d> Oh cool.
+[20:36] <53eb987c107e137846baa89d> What is 'ups messing up'?
+--------------------------------------------------------------------------------------------------
+[20:43] <59d4f81ed73408ce4f789336> what time will it take to get familiar with things over here?
+[20:43] <54d4a1d6db8155e6700f853b> ?
+--------------------------------------------------------------------------------------------------
+[20:45] <54d4a1d6db8155e6700f853b> well depends on what you mean with "getting familiar with things over here"... I've been doing machine learning for err.. 8 years and learn new stuff most days ;)
+[20:46] <59d4f81ed73408ce4f789336> I meant the open-source terms :smile:
+[20:49] <54d4a1d6db8155e6700f853b> I think you need -s -v ?
+[20:49] <54d4a1d6db8155e6700f853b> but I'm relatively new to pytest ;)
+--------------------------------------------------------------------------------------------------
+[20:48] <53eb987c107e137846baa89d> @amueller since you are here. Can you please answer this query of mine https://gitter.im/scikit-learn/scikit-learn?at=5a3024da540c78242db7aaaf ? (I think otherwise it might get lost upward)
+[20:48] <54d4a1d6db8155e6700f853b> same applies, I guess?
+[20:48] <54d4a1d6db8155e6700f853b> @gxyd how do you run pytest?
+[20:48] <59d4f81ed73408ce4f789336> yeah, sure. doing my best
+[20:49] <53eb987c107e137846baa89d> `pytest path/to/file.py`
+[20:49] <53eb987c107e137846baa89d> Nope I don't use `-s -v` arguments.
+[20:50] <53eb987c107e137846baa89d> Aah.
+[20:50] <53eb987c107e137846baa89d> It does work accordingly to what is expected.
+[20:50] <53eb987c107e137846baa89d> passing arguments is important I guess.
+[20:52] <53eb987c107e137846baa89d> I'm sure, I am even new (newer?) than you on pytest.
+--------------------------------------------------------------------------------------------------

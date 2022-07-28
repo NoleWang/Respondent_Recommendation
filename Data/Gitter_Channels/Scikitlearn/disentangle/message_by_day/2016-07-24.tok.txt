@@ -1,0 +1,6 @@
+<s> <user> hello <unk#a@> , can you tell me the results on ubuntu 14.04 , 32 bit vm machine ? </s>
+<s> <user> thanks ! </s>
+<s> <user> hi ... has there been any work in <unka> <unka> to help cluster large sets of documents ? </s>
+<s> <user> also .. in this very highly cited paper " clustering large graphs via the singular value <unka> " URL/http:/ <unka./> <unka./> the main algorithm is to take a random <unka> ( <unka> chosen ) to make the <unka> computation feasible . has this been proposed at all for <unka> ? </s>
+<s> <user> <unconvertable > , ., ... ..... <unconvertable > .,, </s>
+<s> <user> <unconvertable > </s>

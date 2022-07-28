@@ -1,0 +1,4 @@
+[08:28] <564b231816b6c7089cbb06f6> Hi. If I want to do multi-label classifications based on keywords that come from a large-ish vocabulary (~5.000), how do I need to encode the keywords so that an arbitrary amount of keywords can be used as predictors?
+[08:30] <564b231816b6c7089cbb06f6> If I one-hot encode them, how can I pass an arbitrary amount of one-hot encoded vectors to a classifier?
+[09:27] <564b231816b6c7089cbb06f6> Or, is it possible to use the outputs of a multilabelbinarizer as inputs to a classifier?
+--------------------------------------------------------------------------------------------------

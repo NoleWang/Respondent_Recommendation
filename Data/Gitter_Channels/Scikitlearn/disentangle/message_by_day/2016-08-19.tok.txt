@@ -1,0 +1,6 @@
+<s> <user> <unk#a@> not sure what you are asking ? are you asking how to import the <unka> in your python code ? in which case , you just import it like any module . i might be misunderstanding though . </s>
+<s> <user> hey . is it me or the current python version does not have neural networks ? i followed that : URL/http:/ <unka-./> <unka./_> and got an import error with " from <unka._> import <unka> " </s>
+<s> <user> neural nets are in 0.18 , not <unk#.> ( which is the stable version ) </s>
+<s> <user> theres a release coming soon , but you can get it in the <unka> by downloading and installing the master branch </s>
+<s> <user> ok thanks a lo </s>
+<s> <user> t </s>

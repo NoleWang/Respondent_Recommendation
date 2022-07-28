@@ -1,0 +1,50 @@
+[09:22] <5683764a16b6c7089cc092dc> hi everyone
+[09:22] <5683764a16b6c7089cc092dc> in SGDClassifier
+[09:22] <5683764a16b6c7089cc092dc> http://scikit-learn.org/stable/modules/generated/sklearn.linear_model.SGDClassifier.html
+[09:23] <5683764a16b6c7089cc092dc> how can I determine the baseline model?
+[09:23] <5683764a16b6c7089cc092dc> the doc said: "Linear classifiers (SVM, logistic regression, a.o.) with SGD training."
+[09:23] <5683764a16b6c7089cc092dc> how can I choose between SVM and logistic regression?
+[10:45] <5717ab2f659847a7aff3b583> it depends in your data 
+[10:46] <5717ab2f659847a7aff3b583> and what you want to predict
+[10:46] <5683764a16b6c7089cc092dc> hi
+[10:46] <5717ab2f659847a7aff3b583> continous data 
+[10:46] <5683764a16b6c7089cc092dc> I mean
+[10:46] <5683764a16b6c7089cc092dc> in the code
+[10:46] <5683764a16b6c7089cc092dc> how can I choose
+[10:46] <5717ab2f659847a7aff3b583> check the documentation :D
+[10:46] <5683764a16b6c7089cc092dc> yes, but I couldn't find
+[10:46] <5683764a16b6c7089cc092dc> that's why I ask here
+[10:47] <5717ab2f659847a7aff3b583> http://scikit-learn.org/stable/modules/svm.html
+[10:47] <5717ab2f659847a7aff3b583> http://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LinearRegression.html
+[10:47] <5717ab2f659847a7aff3b583> now ?
+[10:47] <5683764a16b6c7089cc092dc> it is SVM?
+[10:47] <5683764a16b6c7089cc092dc> but how can I use SVM as a base model with SGDClassifier?
+[10:49] <5683764a16b6c7089cc092dc> or suppose SVM is by default, how can I switch to logistic regression?
+[10:51] <5717ab2f659847a7aff3b583> or sorry , i didn't have depth knowledge in machine learning
+[10:51] <5683764a16b6c7089cc092dc> no problem, thanks for your help
+[10:51] <5717ab2f659847a7aff3b583> how to choose the algorithm
+[10:51] <5717ab2f659847a7aff3b583> i'am begineer
+[10:52] <5717ab2f659847a7aff3b583> i just follow some moocs
+[10:52] <5717ab2f659847a7aff3b583> @vinhqdang tell me your experience with machine learning ?
+[10:55] <55d21ee30fc9f982beadabb8> http://scikit-learn.org/stable/modules/generated/sklearn.linear_model.SGDClassifier.html#sklearn.linear_model.SGDClassifier
+[10:55] <55d21ee30fc9f982beadabb8> @vinhqdang you have to set the `loss` properly
+[10:56] <55d21ee30fc9f982beadabb8> `loss=hinge` correspond to the SVM while `loss=log` to logistic regression
+[10:56] <5683764a16b6c7089cc092dc> great, thanks
+[10:56] <5683764a16b6c7089cc092dc> do you know what functions correspond to other loss
+[10:57] <5683764a16b6c7089cc092dc> say, "modified_huber"
+[10:58] <55d21ee30fc9f982beadabb8> modified_huber is a smooth hinge loss
+[10:59] <5683764a16b6c7089cc092dc> is it possible to pass a custom loss to SGDClassifier
+[10:59] <5683764a16b6c7089cc092dc> ?
+[10:59] <55d21ee30fc9f982beadabb8> it does not seems so since it does not accept callable
+[10:59] <5717ab2f659847a7aff3b583> @glemaitre hi can you contact you in private
+[10:59] <5717ab2f659847a7aff3b583> ?
+[11:00] <5683764a16b6c7089cc092dc> great thanks
+[11:03] <5717ab2f659847a7aff3b583> @vinhqdang 
+[11:03] <55d21ee30fc9f982beadabb8> @vinhqdang If really you want to play with the loss
+[11:04] <55d21ee30fc9f982beadabb8> they are defined there https://github.com/scikit-learn/scikit-learn/blob/ef5cb84a805efbe4bb06516670a9b8c690992bd7/sklearn/linear_model/sgd_fast.pyx
+[11:04] <55d21ee30fc9f982beadabb8> in case that you want to implement your own
+[11:04] <5683764a16b6c7089cc092dc> yes, thanks
+[11:05] <55d21ee30fc9f982beadabb8> https://github.com/scikit-learn/scikit-learn/blob/ef5cb84a/sklearn/linear_model/stochastic_gradient.py#L901
+[11:05] <55d21ee30fc9f982beadabb8> then you can register it there
+[11:05] <5683764a16b6c7089cc092dc> I see
+[21:11] <54d4a1d6db8155e6700f853b> @vinhqdang I wouldn't use SGDClassifier for custom loss functions for learning. Just implement your own in pure python. It will not be fast but it's a good learning experience and much easier to understand

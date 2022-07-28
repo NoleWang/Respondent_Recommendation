@@ -1,0 +1,1 @@
+[16:04] <54d4a1d6db8155e6700f853b> we screwed up with the GSOC registration. I didn't remember you had to fill in melange and the form :-/

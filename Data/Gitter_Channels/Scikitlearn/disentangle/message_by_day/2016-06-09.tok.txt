@@ -1,0 +1,27 @@
+<s> <user> <unka@> <unka@> could you cancel all my <unka> builds . i forgot to use the ci skip and it seems to block other <unka> ... </s>
+<s> <user> <unka@> thanks ! </s>
+<s> <user> <unk#a@> what is this ci skip you speak of ? </s>
+<s> <user> hey all ! i have a question regarding <unka> . is is possible to <unka'> <unka'> the original text from the vectors ? </s>
+<s> <user> i 'm wondering as i just wrote an article on our methods , and i want to share our <unka> data , but cannot share if it 's possible for people to figure out the original input text based on this ( as the original text contains sensitive info ). </s>
+<s> <user> for reference , here is the article : URL/https:/ <unka./> <unk#a-/> </s>
+<s> <user> haha i saw this on hacker news earlier </s>
+<s> <user> i dont think its possible to reverse engineer <unka> </s>
+<s> <user> <unka-@> cool </s>
+<s> <user> even if you have access to the <unka> through a file ( using <unka> ) </s>
+<s> <user> ? </s>
+<s> <user> yup , seems like it </s>
+<s> <user> the <unka> code is here , URL/https:/ URL/github.com/ <unka-./_> it doesnt store the raw documents </s>
+<s> <user> although its possible ofc to get the vocabulary , so if individual words are sensitive then that might pose a problem . </s>
+<s> <user> i see . and if you have the vocabulary , and the vectors , you can kind of recreate <unka-> descriptions . </s>
+<s> <user> i think i 'll rather just share the <unka> descriptions , and not the <unka> <unka> . </s>
+<s> <user> that 'll make it impossible to guess the words , right ? </s>
+<s> <user> really appreciate your help <unka-@> :) </s>
+<s> <user> yup that is correct <unka@> </s>
+<s> <user> thanks ! </s>
+<s> <user> what do you mean <unka> descriptions actually ? </s>
+<s> <user> sorry for my late reply . i mean after using the <unka> to turn text into vectors . </s>
+<s> <user> that 's what i refer to aws <unka'> <unka'> ( as my input text is company descriptions ). </s>
+<s> <user> <unka@> what 's your view on the spark 2 <unka> format ? </s>
+<s> <user> <unka-@> if you add <unka[`> <unka]`> to a commit message , <unka/> will skip the tests for that commit ... this could be useful if you just push your unfinished work ( for a review or to switch computers ) ... </s>
+<s> <user> <unka@> as in <unka> or something else ? </s>
+<s> <user> <unka@> in any event , i 'm probably not fit to weigh in :) </s>

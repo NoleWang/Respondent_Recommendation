@@ -1,0 +1,5 @@
+<s> <user> hi everyone i have a quick question about the math behind the last step of linear <unka> analysis ( <unka> ) for <unka> reduction . so i understand for the algorithm to calculate for k projection <unka(> ) you need to determine the <unka(> ) that corresponds to the top k <unka(> ). but does anyone know what you do with those <unka> after you have calculated them ? my guess is to multiply all of the <unka> ( projection vectors ) together and then multiply that with each point , x , in the original dataset to produce a new point y . does this seem right ? thank you in advance </s>
+<s> <user> <unk#a@> hi sir </s>
+<s> <user> <unk#a@> i am new in python . i want to ask that lubuntu and window 10 can be run in one machine </s>
+<s> <user> ? </s>
+<s> <user> <unk#a@_> do n't quote me on this , but i think you could probably run it in a virtual machine on your computer using virtualbox </s>

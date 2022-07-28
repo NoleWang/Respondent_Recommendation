@@ -1,0 +1,30 @@
+<s> <user> thanks !! git bisect is cool ... this seems to happen after the <unka> pr .. ( <unk##> ) i 'll send a pr to fix the random state ... </s>
+<s> <user> wait thats not right ... fixing <unka_> fixes this but i am unable to figure out why master does n't fail .. </s>
+<s> <user> where is the random state not fixed ? </s>
+<s> <user> URL/https:/ URL/github.com/ <unk#a-/> </s>
+<s> <user> that 's not in the <unka> branch .. </s>
+<s> <user> did you sent a pr , i did n't see it . </s>
+<s> <user> no ... i just added it as a commit to <unk##> .. and yea it has nothing to do with <unka> ... sorry i misread git bisect output ... </s>
+<s> <user> also <unka> is not testing model selection ... why is that ?? </s>
+<s> <user> </s>
+<s> <user> </s>
+<s> <user> ah , but the commit is not in the addition to the examples . i 'm not entirely certain but maybe it 's better to merge these two so they are self-contained </s>
+<s> <user> SUB/s/ <unka/> <unka/> </s>
+<s> <user> <unk#a`> : pattern not found : <unka`> :p </s>
+<s> <user> ok so you mean we can merge URL/https:/ URL/github.com/ <unk#a-/> into <unk##> right ? </s>
+<s> <user> SUB/s/ <unka/> <unka/> i mean </s>
+<s> <user> yes </s>
+<s> <user> okay i 'll do it now ... URL/https:/ URL/github.com/ <unk#a-/> is just one commit .. </s>
+<s> <user> ok </s>
+<s> <user> why do you think <unka> is not testing model selection ? </s>
+<s> <user> for the last few failures ... only travis seemed to be unhappy ... <unka> did n't raise any errors ... i 'll confirm with a dummy failing test in a moment ... </s>
+<s> <user> merged ... </s>
+<s> <user> is there a way to make travis build the documentation automatically and host it at a temporary place somewhere ? ( maybe using <unka.> + additional travis build just for docs )? </s>
+<s> <user> we have a setup hosted on rackspace but it is non-trivial and you do n't have access , sorry </s>
+<s> <user> we should improve that . </s>
+<s> <user> could you review [ this <unk#a(-./:]> ) which tests <unka_`> alone ? its a minor one ... ( and i did this since you said that there were no tests covering it .. ( your comment got hidden .. ) ... ) </s>
+<s> <user> it looks ok </s>
+<s> <user> this is the documentation - URL/http:/ <unk#a./> <unka-/> once this gets an ok i think <unk##> is finally done :d </s>
+<s> <user> <unk#a@> that 404s for me </s>
+<s> <user> sorry :/ </s>
+<s> <user> URL/http:/ <unk#a./> <unka-/_> </s>

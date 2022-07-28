@@ -1,0 +1,1 @@
+<s> <user> <unka@> , i would use pycharm if the command line version of git is giving you trouble . then , do the [ visual merge conflict <unka(-./:]> ). </s>

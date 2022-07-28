@@ -1,0 +1,19 @@
+[04:04] <5629b22416b6c7089cb7f6f7> @lesshaste other options for imbalanced data: 1) when it is that skewed, try anomaly detection. 2) I found this downsampling+bagging from Wallace et. al. to be principled approach (https://scholar.google.com/scholar?cluster=225520837537786880&hl=en&as_sdt=0,5&as_vis=1)
+--------------------------------------------------------------------------------------------------
+[06:07] <53810862048862e761fa2887> @ogrisel @amueller  You think it's necessary to upload the wheels of the template project on Rackspace ? Granted the wheels won't be of much use, but it could serve as an example for projects which clone it.
+--------------------------------------------------------------------------------------------------
+[08:57] <54bd1809db8155e6700ed1e4> does anyone know when the argument `loss_func` was removed from GridSearchCV? Cannot find it in the changelog
+--------------------------------------------------------------------------------------------------
+[09:44] <56c4f19ae610378809c1f8ae> @HolgerPeters https://github.com/scikit-learn/scikit-learn/pull/3411
+[09:47] <56c4f19ae610378809c1f8ae> Seems like it was planned to be removed in 0.15, but might have been removed later. I couldnt find any mention of it in the changelog as well.
+--------------------------------------------------------------------------------------------------
+[09:49] <56c4f19ae610378809c1f8ae> date on that is july 17, 2014. 0.15.0 was released on July 15 2014, and 0.15.1 was released on Aug 1 2014. Im presuming it was thus gone by 0.15.1?
+--------------------------------------------------------------------------------------------------
+[13:15] <564789be16b6c7089cbab8b7> @cfperez  thanks very much
+[13:15] <564789be16b6c7089cbab8b7> @vene I will look up "contrastive loss" thanks
+--------------------------------------------------------------------------------------------------
+[13:17] <564789be16b6c7089cbab8b7> @cfperez  in my case I am wondering whether the extreme nature of the class imbalance (300 versus 300 millions) means that black box methods might not be appropriate
+[13:17] <564789be16b6c7089cbab8b7> that is i may have to do something other than try to infer the model from the data
+--------------------------------------------------------------------------------------------------
+[14:29] <54d4a1d6db8155e6700f853b> @vighneshbirodkar Sounds like a good idea
+--------------------------------------------------------------------------------------------------

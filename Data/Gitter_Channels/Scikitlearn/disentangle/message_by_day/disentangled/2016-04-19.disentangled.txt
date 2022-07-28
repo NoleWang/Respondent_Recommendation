@@ -1,0 +1,2 @@
+[00:24] <530c03e25e986b0712efafb8> Howdy folks, I've been playing with sklearn for an example using [dask.distributed](http://github.com/dask/distributed) `Futures`.  I suspect that I'm making poor choices regarding machine learning and would appreciate feedback.  https://gist.github.com/mrocklin/80b0d6f57dedc1628954ced5ef5500b0
+--------------------------------------------------------------------------------------------------

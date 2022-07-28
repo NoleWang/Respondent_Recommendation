@@ -1,0 +1,7 @@
+[14:58] <57a061aa40f3a6eec05d8d26> Hello, is there an easy way to get leaf node count from decision tree? I can get total node count, but is there a way to get also leaf node count?
+[16:35] <56c4f19ae610378809c1f8ae> @mkoske first get `tree._tree.left_children`and right_children I think it's called. Then count the number of elements where the value is - 1, those are leaves
+[16:42] <56c4f19ae610378809c1f8ae> ``` In [1]: from sklearn.datasets import load_boston In [2]: from sklearn.tree import DecisionTreeRegressor In [3]: boston = load_boston() In [4]: tree = DecisionTreeRegressor() In [5]: tree.fit(boston.data, boston.target) In [6]: internal_tree = tree.tree_ In [7]: left_children = internal_tree.children_left In [8]: right_children = internal_tree.children_right In [9]: leaf_count = 0 In [10]: for i in left_children:     ...:     if i == -1:     ...:         leaf_count += 1     ...: In [11]: for i in right_children:     ...:     if i == -1:     ...:         leaf_count += 1     ...: In [12]: leaf_count Out[12]: 940 ``` 
+[17:04] <56c4f19ae610378809c1f8ae> oops, sorry you only have to go through it once.....
+[17:05] <56c4f19ae610378809c1f8ae> going through it twice is double counting
+[17:13] <56c4f19ae610378809c1f8ae> since left_children and right_children are -1 if they dont have a left or right child, (thus leaf) and a node cant have only a left or a right child.
+[19:24] <57a061aa40f3a6eec05d8d26> Ok, thanks. I'll do that

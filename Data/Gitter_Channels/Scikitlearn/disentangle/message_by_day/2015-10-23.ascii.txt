@@ -1,0 +1,20 @@
+[02:59] <54c084dbdb8155e6700eed4c> @amueller ... http://opendatascicon.com/scikit-learn-code-sprint/ ... Looking forward to it!
+[07:13] <54d4a1d6db8155e6700f853b> @trevorstephens cool :) glad to have you there!
+[07:28] <54bd0a4fdb8155e6700ed136> will we have MLP by today? :)
+[07:28] <54bd0a4fdb8155e6700ed136> and isolation forest?
+[07:28] <54bd0a4fdb8155e6700ed136> that would be very nice
+[07:40] <54e07d4015522ed4b3dc0856> sadly mlp seems unlikely IMO - lots of hard choices but it is getting closer. if there are other things to be reviewed I can take a look - I am also hopeful the PCA fixes by Giorgio will go today (if they didn't last night!)
+[07:53] <54bd0a4fdb8155e6700ed136> it's been more than a year since the MLP PRs have started :/
+[07:53] <54bd0a4fdb8155e6700ed136> if these decisions are only about internals, we should try to be pragmatic at some point
+[08:41] <54e07d4015522ed4b3dc0856> yes it is mostly logical - some of the core logic is spread over several classes which makes it hard to reason about its behavior especially w.r.t to stopping criterion. But Andy has a student on it full-time (ish) who is quite good so I don't think it will be much longer
+[08:41] <54e07d4015522ed4b3dc0856> and the documentation is basically done IMO - which was a huge chunk of the work
+[13:22] <54d4a1d6db8155e6700f853b> anyone wants to review #5540 ?
+[13:23] <54d4a1d6db8155e6700f853b> @kastnerkyle but if it's only refactoring, we don't really need to do that for merging if it's not public API, right?
+[13:58] <54e07d4015522ed4b3dc0856> @glouppe things are looking positive for the MLP - you might get your wish :D
+[14:07] <54bd0a4fdb8155e6700ed136> \o/
+[14:23] <54e07d4015522ed4b3dc0856> #5299 is very close if anyone wants to review
+[14:34] <54d4a1d6db8155e6700f853b> we need to do ##5502 if anyone is looking for an issue to pick up
+[14:34] <54d4a1d6db8155e6700f853b> it's needed for 0.17
+[15:33] <54d4a1d6db8155e6700f853b> https://github.com/scikit-learn/scikit-learn/pull/5274#discussion-diff-42377195
+[15:33] <54d4a1d6db8155e6700f853b> https://github.com/scikit-learn/scikit-learn/pull/5565#issuecomment-150609391
+[16:52] <54e07d4015522ed4b3dc0856> @glouppe it's gonna happen. If Travis ever runs

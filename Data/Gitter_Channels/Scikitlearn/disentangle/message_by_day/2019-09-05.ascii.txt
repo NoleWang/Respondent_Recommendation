@@ -1,0 +1,2 @@
+[19:26] <5d5565e0d73408ce4fc880d5> Does anyone know why the base estimator for `ExtraTreesClassifier` is `ExtraTreeClassifier`, instead of `DecisionTreeClassifier` with splitter='random'?   I am working on adding a new type of tree. @NicolasHug @amueller 
+[19:37] <5baf7d9ad73408ce4fa9c9b2> No idea. It doesn't make much sense for `ExtraTreeClassifier` to allow for a splitter that isn't 'random' IMO. Would you want to submit a PR to deprecate the parameter?

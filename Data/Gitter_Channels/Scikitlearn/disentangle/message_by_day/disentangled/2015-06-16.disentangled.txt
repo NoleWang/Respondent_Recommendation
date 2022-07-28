@@ -1,0 +1,27 @@
+[06:24] <54f0341115522ed4b3dc8e00> hi there
+--------------------------------------------------------------------------------------------------
+[06:26] <54f0341115522ed4b3dc8e00> im using gridsearch to train a visual object detection pipeline with a few skimage transformers, pca and svm... since i acquired my larger dataset, gridsearch explodes in a very strange way <unconvertable> deep in python: http://nopaste.ghostdub.de/?1132 <unconvertable> and i cant quite make any sense of that :( ... would anyone happen to have an idea in which direction i could search?
+--------------------------------------------------------------------------------------------------
+[13:49] <54d4a1d6db8155e6700f853b> @Nebukadneza try with n_jobs=1 that should make it easier to debug
+--------------------------------------------------------------------------------------------------
+[14:26] <54f0341115522ed4b3dc8e00> with single threading it doesnt happen at all :(
+--------------------------------------------------------------------------------------------------
+[14:54] <54d4a1d6db8155e6700f853b> does all of it run through? it is maybe one specific parameter setting that does that
+[15:05] <54f0341115522ed4b3dc8e00> yes, it looks like all of it runs
+--------------------------------------------------------------------------------------------------
+[15:09] <54f0341115522ed4b3dc8e00> trying to dig into the delayed and multiprocessing pool with ipdb now Oo but i just dont see where this format-string-fu even comes from or what its used for Oo
+--------------------------------------------------------------------------------------------------
+[20:18] <53135b495e986b0712efc453> @vene Thanks for that ML link! It was really useful!!
+--------------------------------------------------------------------------------------------------
+[21:35] <54d4a1d6db8155e6700f853b> TIL: don't try to make a learning curve example with a non-parametric model
+--------------------------------------------------------------------------------------------------
+[21:37] <53135b495e986b0712efc453> Why do you say so? :)
+--------------------------------------------------------------------------------------------------
+[21:37] <54d4a1d6db8155e6700f853b> because the training error doesn't go up with the number of samples
+[21:39] <53135b495e986b0712efc453> Oh! TIL ^ :P
+--------------------------------------------------------------------------------------------------
+[23:08] <53135b495e986b0712efc453> Hey Andy,  Earlier you had given me the feedback for my 1st blogpost! Sorry for the delay in response...  > why do you use alpha when plotting points?  That makes it look a little faded and better... I think this was a suggestion by someone when I was working on silhoute plot example ;) Do you feel I should remove that?  > I feel this sentence is unclear: "Even when the model is optimized with the constrain of maximizing the score based upon the test set, there is still a chance of overfitting as the information about the test set can leak into the model and hence the model could be optimized for the test set alone." it would be more explicit to say the information leaks via the selection of hyperparameters.  Have updated so! Thanks!  > cross-validation does not entirely overcome this. Overfitting to cross-validation is harder than overfitting to a single test set, but it is still possible, which is why people do nested cross-validation.  Like Vlad said a few chats below yours, that was what I was getting at... I have reworded it to make it clear!  > grid.bestestimator.score(X_test, y_test) is also not great btw. You can just use grid.score  fixed :)  > talking about gamma=0 for the SVM is also a bit weird. This is an odd way that we used to select the default, which is 1. / n_features , I think.  I've fixed it to 0.5... which is (1 / n_features)  I am now working on the 2nd blog post (Nested CV) :)
+--------------------------------------------------------------------------------------------------
+[23:29] <53135b495e986b0712efc453> @amueller @vene I've also started a ML thread for my GSoC project to interact more! :)
+[23:33] <53135b495e986b0712efc453> http://sourceforge.net/p/scikit-learn/mailman/message/34213648/
+--------------------------------------------------------------------------------------------------

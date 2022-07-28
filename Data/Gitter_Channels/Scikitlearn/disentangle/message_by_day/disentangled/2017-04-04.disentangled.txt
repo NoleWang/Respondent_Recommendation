@@ -1,0 +1,11 @@
+[01:47] <578a5e75c2f0db084a23470c> Looking at the digits dataset, the `DESCR` says ":Number of Instances: 5620" but when I examine the shape of the `data`, `target`, and `images`,  they all have 1797 instances.  Is this a documentation error or could I be missing something when I loaded the data?
+--------------------------------------------------------------------------------------------------
+[10:29] <5495ae8fdb8155e6700e17c8> A curious observation: ``` from sklearn.feature_extraction.text import HashingVectorizer v = HashingVectorizer() v.transform(["a","b","c"]) ``` The result is  ``` <3x1048576 sparse matrix of type '<class 'numpy.float64'>' 	with 0 stored elements in Compressed Sparse Row format> ``` It seems that HashingVectorizer will transform any single word into zero vector. Do I miss anything?
+[11:06] <5495ae8fdb8155e6700e17c8> look like the default "word" analyzer will transform single character into empty list ``` analyzer = v.build_analyzer() analyzer("a") ```  ``` [] ```
+--------------------------------------------------------------------------------------------------
+[11:29] <58e381c1d73408ce4f55fa94> Hi any good book for Keras
+--------------------------------------------------------------------------------------------------
+[11:35] <5729ef37c43b8c60197119b1> Folks, whats the easiest way to figure out the top features used by RandomForestClassifier for prediction?  Im using DictVectorizer to extract features.
+--------------------------------------------------------------------------------------------------
+[22:20] <551c051b15522ed4b3de2fea> so, `class_weight` doesnt do what I expected it to do.
+--------------------------------------------------------------------------------------------------

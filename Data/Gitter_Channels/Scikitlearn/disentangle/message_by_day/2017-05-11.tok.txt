@@ -1,0 +1,10 @@
+<s> <user> from <unka.> import <unka> <unka> = <unk#a(=_> ) <unka(.> ) <unk#a_> = <unka(.> ) <unk#a(.[_> ], <unk#a.[_> ], <unka'=> ) </s>
+<s> <user> after doing the <unka> now i want to know which are the columns that have been selected by <unka> and only use those in my dataset df any idea how to get the column names selected by <unka> ? </s>
+<s> <user> <unka*> = <unk#a(=_> ) </s>
+<s> <user> say i have a large value of columns 400 and i want only 29 of them but i want the name of those 29 columns selected by <unka> </s>
+<s> <user> from df </s>
+<s> <user> can anybody help please ? </s>
+<s> <user> hi , in case i understood the use case right , you might want to look at <unka_> URL/http:/ <unka-./> <unka./_> for selecting features since <unka> doesnt select particular features but converts to <unka_> dimensions where each component is a <unka> sum of the features . hope it helps . </s>
+<s> <user> <unk#a@> <unk#+:> : <unka@> each component is a " bit of all columns " </s>
+<s> <user> <unka@> thanks ! </s>
+<s> <user> thanks </s>

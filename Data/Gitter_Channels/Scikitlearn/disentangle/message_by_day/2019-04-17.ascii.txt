@@ -1,0 +1,1 @@
+[16:10] <5b58594ed73408ce4fa23ee3> Yes, okay, but still why not return a single split? Any underlying design choice/complication?

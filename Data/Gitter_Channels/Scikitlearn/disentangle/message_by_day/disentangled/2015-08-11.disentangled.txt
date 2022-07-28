@@ -1,0 +1,25 @@
+[01:16] <554e8cf715522ed4b3e02ab6> '
+--------------------------------------------------------------------------------------------------
+[14:16] <550f53e215522ed4b3dda5f6> @amueller I checked np.diag usages in my code, I think it is OK. I didn't write sth into the diagonal elements of an array.
+[16:08] <550f53e215522ed4b3dda5f6> I just added the verbose flag back into mixture modules. What else should I do before soft pencil down? @amueller @ogrisel
+--------------------------------------------------------------------------------------------------
+[17:08] <53135b495e986b0712efc453> @vene Thanks for the review!! I couldn't find a nice dataset to illustrate LOLO :/ There is one dataset inside the proprietary `perClass` package (small_medical... I'll have to mail them and ask if it can be used in a blog post... moreover it is a matlab package so I'll have to convert it to a csv file)   Do you have any suggestions?? Earlier I recall yourself suggesting search query... could you expand a bit on that pl??
+[17:10] <53135b495e986b0712efc453> And I can load kernelsvm.tripod.com :O That seems to be a pretty famous reference for SVR...
+[18:59] <53135b495e986b0712efc453> Appveyor doesn't seem to test the model selection module :/ Do I have to add something somewhere?
+[18:59] <53135b495e986b0712efc453> @amueller @ogrisel
+--------------------------------------------------------------------------------------------------
+[17:18] <5478876cdb8155e6700d907b> does someone know how to "restart" a appveyor build? The build for a PR failed with some weird errors that I am pretty confident have nothing to do with the contents of the PR #5037.
+[18:50] <5478876cdb8155e6700d907b> thanks, appveyor is doing its thing :)
+[18:51] <53135b495e986b0712efc453> :)
+--------------------------------------------------------------------------------------------------
+[17:25] <53135b495e986b0712efc453> simplest way would be to push a commit / make some amends to your previous comment, squash and force push it...
+--------------------------------------------------------------------------------------------------
+[17:30] <54e07d6515522ed4b3dc0858> @rvraghav93 you can always create a syntethic dataset
+--------------------------------------------------------------------------------------------------
+[18:11] <53135b495e986b0712efc453> Okay! I'll look on how to create one... Any tips?? :)
+[18:11] <53135b495e986b0712efc453> Also could you take a look at #4919 ?
+--------------------------------------------------------------------------------------------------
+[23:56] <54e07d6515522ed4b3dc0858> @rvraghav93 regarding the dataset: you can take the diabetes dataset and invent arbitrary group ids (as you already have), but generate a new `y` based on a formula you come up with (a function of one or two features and also of the group_id)
+[23:57] <54e07d6515522ed4b3dc0858> or you could just use `make_blobs` with a large number of blobs and arbitrarily assign half of them to the positive and half to the negative class. Then the blob assignment is the group_id.  Imagine if half a blob is in training and half in testing, a classifier like KNN will predict really well.
+[23:58] <54e07d6515522ed4b3dc0858> Makes sense?
+--------------------------------------------------------------------------------------------------

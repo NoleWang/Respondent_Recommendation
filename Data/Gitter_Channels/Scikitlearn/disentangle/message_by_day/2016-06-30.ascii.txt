@@ -1,0 +1,15 @@
+[02:11] <576bb437c2f0db084a1f7ead> Any node wrapper for Scikitlearn?
+[03:45] <55d054b70fc9f982bead8af7> Hi everyone , I am Khanh and newbie in Scikit-learn :D 
+[11:39] <56ee4f3185d51f252ab9c4a1> Hi everyone, I have this: ```rf = RandomForestClassifier(n_estimators = 1000, n_jobs = -1)     clf = Pipeline([('preproc', StandardScaler()),('classifier', rf)])```
+[11:43] <56ee4f3185d51f252ab9c4a1> fit the classifier with all of the training set     ```data = clf.fit(features, labels)``` where ```features``` & ```labels``` are of size 4
+[11:44] <56ee4f3185d51f252ab9c4a1> And I save it as a Pickle object. 
+[11:44] <56ee4f3185d51f252ab9c4a1> Now, How can I extract those array of features and labels again??
+[11:44] <56ee4f3185d51f252ab9c4a1> Any idea any one?
+[11:48] <56c4f19ae610378809c1f8ae> what is it? What specifically are you saving as a Pickle object
+[12:08] <56ee4f3185d51f252ab9c4a1> the ```data``` variable. Which is a pipeline class object. 
+[12:08] <56ee4f3185d51f252ab9c4a1> <class 'sklearn.pipeline.Pipeline'>
+[12:21] <56c4f19ae610378809c1f8ae> hmm as far as i know there is no way to get the input features and labels from a fitted classifier...
+[12:39] <56ee4f3185d51f252ab9c4a1> :( 
+[16:03] <54d4a1d6db8155e6700f853b> @girisagar46 what would be the point of storing the dataset in the model?
+[19:14] <56818d2d16b6c7089cc06972> Hello. I am using sklearn to try to predict lux values from a iOS camera data. I have created some training data for multiple models of iPad/iPods, and have it working to some degree, but still get something like 20% error.
+[19:15] <56818d2d16b6c7089cc06972> I am relatively new to sklearn, and am wondering where I can get feedback on my iPython notebook to improve my results. Is this a good place? If so, what is the best way to share a notebook and relevant external files?

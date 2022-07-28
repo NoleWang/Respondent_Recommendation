@@ -1,0 +1,28 @@
+<s> <user> hello , what 's the difference between <unka_> and <unka_> in <unka.\_> ? </s>
+<s> <user> they are the mean of the score on the training <unka> vs the <unka-> <unka> </s>
+<s> <user> <unka@> </s>
+<s> <user> <unka@> so <unka-> <unka> means , that if i use e.g . <unk#a-> cross validation , there 's 10 <unka-> <unka> , i.e . dataset is split into 10 and then the model is trained on 9 of those and one is used for testing . and this is repeated until every one of those 10 is used as testing . right ? </s>
+<s> <user> yes </s>
+<s> <user> ok , so that part i understood </s>
+<s> <user> what is the training score then ? </s>
+<s> <user> scores are computed for each of the 10 iterations </s>
+<s> <user> and each iteration has a 9 <unka> that the model is trained on and one that it is tested on </s>
+<s> <user> the training score is the score on the training set , i.e . the 9 <unka> </s>
+<s> <user> so , is the model is evaluated on those 9 <unka> too , at same iteration ? </s>
+<s> <user> yes . training score meaning the data it was trained on </s>
+<s> <user> ok , i 'll recap so i make sure i understood correctly :) in my example , one iteration consists of building the model on 9 <unka> and testing it with both those 9 <unka> and <unka-> data . is this correct ? </s>
+<s> <user> yes </s>
+<s> <user> only the <unka-> test score is used to select the model </s>
+<s> <user> the training score is good monitor <unka> <unka> </s>
+<s> <user> ok , thanks for help </s>
+<s> <user> hm , you mean that if training score is high and test score is much smaller , then it <unka> ? </s>
+<s> <user> well if there is a large gap then you might want to <unka> more . if there is a very small gap you might want to try a more complex model </s>
+<s> <user> one more question . when i run my script , parallel reported that it took almost <unk#a> to complete . but when i sum all the fit and score times from <unka.\_> , the sum is significantly lower . why ? is it that parallel reports the total time my script was running and <unka> exact times that <unka> and fitting took ? </s>
+<s> <user> ca n't say without looking at your script </s>
+<s> <user> <unka@> nothing special , something like this : URL/https:/ URL/gist.github.com/ <unk#a/> </s>
+<s> <user> i use jupyter notebook and it shows some timing information on red background </s>
+<s> <user> i updated that gist to contain example similar to my use case . </s>
+<s> <user> i also updated my comment on that gist to explain </s>
+<s> <user> sorry not sure </s>
+<s> <user> i do n't have time to look into it right now </s>
+<s> <user> <unka@> ok , thanks anyway </s>

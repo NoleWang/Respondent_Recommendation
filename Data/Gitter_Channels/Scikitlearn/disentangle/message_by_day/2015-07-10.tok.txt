@@ -1,0 +1,18 @@
+<s> <user> <unk#a@> there was a question on the mailing list very relevant to what you are working on </s>
+<s> <user> thanks for pinging me !! i 'll look into it and reply :) </s>
+<s> <user> also if you could spare a few mins could you let me know if there is anything left to be done for the <unk##> :) i wish to get started on the next goal ( sample props ) asap :) </s>
+<s> <user> i need to review it , it will take a bit more than a few minutes </s>
+<s> <user> i hope i can do it today </s>
+<s> <user> thanks :)) also do you feel it is an apt time to send a mail on the mailing list requesting for the comments on sample props ? ( ml instead of issue since it will reach a wider audience ) </s>
+<s> <user> i'd discuss in the issue first </s>
+<s> <user> okay ! thanks ! </s>
+<s> <user> there is already discussion in progress there </s>
+<s> <user> it seems like the appropriate place </s>
+<s> <user> that 's just my 2c </s>
+<s> <user> after polling dev opinion , you can summarize and post on the ml too </s>
+<s> <user> as for <unka> 's question , you could advertise how that sort of thing is possible with your branch , introduce the new api and see whether it suits his needs . it 's good to get the users' point of view . </s>
+<s> <user> also it might attract another round of review , which would be great </s>
+<s> <user> thanks <unka@> . i had an internet connection problem . </s>
+<s> <user> i cannot login <unka> yesterday . </s>
+<s> <user> <unka@> okay :) thanks !! </s>
+<s> <user> hi , when i am using <unka%> on one function , how to disable caching intermediate results ? </s>

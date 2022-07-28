@@ -1,0 +1,55 @@
+[15:12] <54d4a1d6db8155e6700f853b> morning
+--------------------------------------------------------------------------------------------------
+[15:13] <541a528b163965c9bc2053de> morning :)
+--------------------------------------------------------------------------------------------------
+[15:13] <54d4a1d6db8155e6700f853b> or afternoon ;)_
+--------------------------------------------------------------------------------------------------
+[15:18] <54d4a1d6db8155e6700f853b> are you working on the isotonic stuff right now? Anything I should review?
+[15:19] <54d4a1d6db8155e6700f853b> ah, you are doing https://github.com/scikit-learn/scikit-learn/pull/4082, cool :)
+--------------------------------------------------------------------------------------------------
+[15:26] <541a528b163965c9bc2053de> yes #4082, I am resolving conflicts (both syntactic and logic), almost done. running the full test suite
+[15:27] <54d4a1d6db8155e6700f853b> cool
+[15:27] <541a528b163965c9bc2053de> previously I was trying to understand what's wrong with the isotonic transform (interp1d with kind='slinear')
+[15:27] <541a528b163965c9bc2053de> the bug you found (the infinite loop with zero sample weight) is something entirely different
+[15:27] <54d4a1d6db8155e6700f853b> yeah maybe that was a bad idea. but it was already broken before
+[15:28] <541a528b163965c9bc2053de> both are important bugs we should make a priority to fix IMHO.
+[15:28] <54d4a1d6db8155e6700f853b> I know the bugs are unrelated, but I thought the fix might be. I was thinking about removing the implementation of partial fit, which would make it easier to fix both bugs, I think
+[15:28] <541a528b163965c9bc2053de> I don't understand the details of any of the 2 bugs at the moment, feel free to investigate on your side
+[15:29] <541a528b163965c9bc2053de> Are you sure this is related to partial_fit?
+[15:30] <54d4a1d6db8155e6700f853b> args I meant fit_transform
+[15:30] <54d4a1d6db8155e6700f853b> err fit_predict?
+--------------------------------------------------------------------------------------------------
+[15:31] <54d4a1d6db8155e6700f853b> I kind of understand the infinite loop. there is a while x != y and if both are NAN then it never finishes. The easiest way to solve the problem is to remove data points with zero sample weight. But if you do that, you can not implement fit_predict the way it currently is.
+[15:31] <54d4a1d6db8155e6700f853b> The other way would be to take care of zero sample weight in the Cython code, but I don't understand that part 100%
+[15:32] <54d4a1d6db8155e6700f853b> fixed https://github.com/scikit-learn/scikit-learn/pull/4189
+[15:41] <54d4a1d6db8155e6700f853b> ok. I'll try to look into it more today. Now my tests are failing the same way yours are doing. But I had different results on my different laptop
+[15:42] <54d4a1d6db8155e6700f853b> this one is on 0.13.3
+[15:42] <54d4a1d6db8155e6700f853b> bye
+[19:54] <54d4a1d6db8155e6700f853b> which ones in particular? For the release only the tagged issues are important imho
+--------------------------------------------------------------------------------------------------
+[15:35] <541a528b163965c9bc2053de> ok, but this seem completely independent from the bug found in transform by mjbommard in #4185
+--------------------------------------------------------------------------------------------------
+[15:36] <54d4a1d6db8155e6700f853b> when I last checked, I had the impression that some of the inconsistencies come from the way that fit_transform is implemented. If it is indeed only an error in transform, then they are unrelated.
+[15:37] <54d4a1d6db8155e6700f853b> I'll double check.
+[15:39] <54d4a1d6db8155e6700f853b> it does look like fit_transform works correctly, never mind then
+[15:40] <54d4a1d6db8155e6700f853b> it seems different versions of scipy give different results
+--------------------------------------------------------------------------------------------------
+[15:40] <541a528b163965c9bc2053de> which version of scipy are you running and how the test fail in your case ?
+[15:41] <541a528b163965c9bc2053de> I need to run catch my shuttle. not sure I will be able to work on that further today but will catch up tomorrow
+[15:42] <541a528b163965c9bc2053de> bye
+--------------------------------------------------------------------------------------------------
+[15:45] <54d4a1d6db8155e6700f853b> what is the difference between "predict" and "transform" in isotonic regression?
+[15:45] <54d4a1d6db8155e6700f853b> ah, there is none. Isn't that slightly confusing?
+--------------------------------------------------------------------------------------------------
+[19:47] <541a528b163965c9bc2053de> It is, mayve we could deprecate transform in favor of predict.
+[19:47] <54d4a1d6db8155e6700f853b> fyi https://github.com/scikit-learn/scikit-learn/pull/4285 should be good
+[19:48] <54d4a1d6db8155e6700f853b> I had some weird behavior with the interp1d but I need to do some NYU stuff before I can investigate further
+--------------------------------------------------------------------------------------------------
+[19:53] <5474d9eadb8155e6700d8178> @amueller can I take up the newly tagged easy issues, assuming this will help u release the 0.16 beta cut or should I leave those for a new contributor instead?
+--------------------------------------------------------------------------------------------------
+[20:02] <5474d9eadb8155e6700d8178> I had meant #4298, #4296, #4292... but I just realized I had one unfinished 0.16 tagged PR - #4225... I'll work on it instead :)
+--------------------------------------------------------------------------------------------------
+[20:04] <54d4a1d6db8155e6700f853b> you can leave the three issues for new people, or you can go for them. But they are really low priority. Finishing up the other PRs you already have open might be better for us at the moment.
+--------------------------------------------------------------------------------------------------
+[20:09] <5474d9eadb8155e6700d8178> yea :) thanks!
+--------------------------------------------------------------------------------------------------

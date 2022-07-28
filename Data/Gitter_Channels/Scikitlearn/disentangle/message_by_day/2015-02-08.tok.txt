@@ -1,0 +1,4 @@
+<s> <user> hey all ! :) <unka@> you might want to set up <unka> to get live activity feeds on the right ! choose github and travis under <unka> ( under settings ) </s>
+<s> <user> <unka@> done ! thanks for the tip </s>
+<s> <user> it seems that i broke travis but i cannot reach the report page . running the tests locally . </s>
+<s> <user> ok fixing the broken tests atm </s>

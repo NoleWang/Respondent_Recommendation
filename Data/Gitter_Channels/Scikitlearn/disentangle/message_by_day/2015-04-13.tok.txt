@@ -1,0 +1,15 @@
+<s> <user> <unka@> when do the <unka> start ? any specific plans ? </s>
+<s> <user> <unka@> <unk##> supposed to be a speed improvement ? <unka> is just an instance check , so pretty <unka> compared to everything else . </s>
+<s> <user> yeh but it 's something :p </s>
+<s> <user> i contribute what i can </s>
+<s> <user> i would call this premature <unka> . it makes the code a bit longer and a bit harder to read , but does n't improve anything really . </s>
+<s> <user> feel free to close it </s>
+<s> <user> how <unka> is it when you have a lot of data points ? </s>
+<s> <user> hi <unka@> , sorry i was busy chatting in the real life , i had not checked the <unka> room yet </s>
+<s> <user> so the <unka> have just started today , we are 4 people at the <unka> table at the moment . </s>
+<s> <user> we are digging down easy fix issues for first time contributors </s>
+<s> <user> > i contribute what i can but you have to keep in mind that the goal of the project is to stay <unka> and therefore code simplicity is an asset . we need to find the right <unka-> between simplicity and performance . </s>
+<s> <user> <unka@> ok i 'll keep an eye on the tracker . </s>
+<s> <user> <unka@> the check is independent of the dataset size </s>
+<s> <user> <unka@> btw if anyone at the sprint wants a <unka-> , i recommend this one : URL/https:/ URL/github.com/ <unk#a-/> </s>
+<s> <user> no machine learning required ^^ </s>

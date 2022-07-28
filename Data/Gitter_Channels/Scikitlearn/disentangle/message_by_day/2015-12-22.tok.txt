@@ -1,0 +1,5 @@
+<s> <user> hi everyone ! i 'm trying to run a grid search on a dataset that is stored in a <unka> <unka> ( something very similar to this example URL/http:/ <unka-./> <unka#)-./_> when i run my code i get the next error message : " <unka> : cannot label index with a null key " i 've tried different approaches but i did n't be able to fix it . i have a working example that i can share with you if needed . </s>
+<s> <user> <unk#a@> could you paste your code into github <unka/> pastebin and post the link here please ? </s>
+<s> <user> yes , of course i can ! </s>
+<s> <user> URL/https:/ URL/gist.github.com/ <unk#a/> </s>
+<s> <user> let me know if you need anything else </s>

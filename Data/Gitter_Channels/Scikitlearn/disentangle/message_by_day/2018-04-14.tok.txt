@@ -1,0 +1,1 @@
+<s> <user> i do n't think <unka> works that way . you ca n't determine which neuron made it predict that output <unk#a@> . but try googling <unka.> not entirely sure either . </s>

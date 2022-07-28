@@ -1,0 +1,2 @@
+[12:58] <55d21ee30fc9f982beadabb8> @geekSiddharth You should probably address your proposal to the mailing list instead of the gitter. You have more chance to get the attention of the core developer.
+[12:58] <55d21ee30fc9f982beadabb8> Check the wiki page also regarding the topic which have an higher chance for the GSOC

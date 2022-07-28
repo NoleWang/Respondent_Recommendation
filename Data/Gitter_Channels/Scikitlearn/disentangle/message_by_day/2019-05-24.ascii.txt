@@ -1,0 +1,1 @@
+[00:20] <5bb35f10d73408ce4faa17f3> @zzj0402_gitlab What is cross correlation? What is the relationship between it and convolution? I am not sure if it's cross product between data and convolution is just flipping the signal from both data sets to negative?

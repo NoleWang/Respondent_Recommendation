@@ -1,0 +1,13 @@
+[03:40] <5be10c63d73408ce4fadfb10> Hi all! How can I see a error in this build?   https://circleci.com/gh/gilbertoolimpio/scikit-learn/11?utm_campaign=workflow-failed&utm_medium=email&utm_source=notification  Can you help me?
+--------------------------------------------------------------------------------------------------
+[08:58] <5b9b523bd73408ce4fa82230> Hi all I am a newbie here only have coding experience but I would like to contribute in this project so where should I start with
+--------------------------------------------------------------------------------------------------
+[09:01] <567f5d7716b6c7089cc043a8> @dwibedis the contributing guides (http://scikit-learn.org/dev/developers/contributing.html) and the "good first issue" ones on github (https://github.com/scikit-learn/scikit-learn/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22) are not a bad place to start, if you haven't checked them already.
+[09:05] <567f5d7716b6c7089cc043a8> @OlimpioGilberto_twitter you can download the build log there, and look for errors (if there's any). But I'm not sure why you're looking in that build log. those are mostly for the docs, and that particular one is for python2, which is deprecated in master (it's still there cause future 0.20.xxx releases still support python2). If you're trying to see some build logs and to check the tests, you probably need to check the travis-ci logs, not circle-ci.
+--------------------------------------------------------------------------------------------------
+[09:36] <5be10c63d73408ce4fadfb10> @adrinjalali Thank you! I am looking in the circle-ci because my PR was labeled with an error, because of this problem and I did not find which was the error that was triggered. But now, I suppose this problem is not so serious! Tks!
+[09:37] <567f5d7716b6c7089cc043a8> @OlimpioGilberto_twitter if you want, and the problem still exists, I can try and have a look if you paste here the PR number.
+[10:41] <5be10c63d73408ce4fadfb10> @adrinjalali Very tks! I'll fix my code! Your help was very important!
+--------------------------------------------------------------------------------------------------
+[09:46] <5be10c63d73408ce4fadfb10> @adrinjalali here is my PR number #12524 Tks!
+--------------------------------------------------------------------------------------------------

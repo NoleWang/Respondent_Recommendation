@@ -1,0 +1,73 @@
+[04:39] <5b3ed273d73408ce4f9fcb4e> @harshchaplot this is a great resource too: https://www.youtube.com/watch?v=bxe2T-V8XRs&list=PLiaHhY2iBX9hdHaRr6b7XevZtgZRa1PoU
+[05:48] <5cf106a0d73408ce4fc1d8b2> Thanks @srniranjan 
+[09:35] <5bc98094d73408ce4fabf741> Say you have over 9000 features which you would like to significantly reduce, what outside of PCA you can use to put down that number?
+[09:36] <5c13ca6dd73408ce4fb1f2d5> You may use lasso regression, for instance
+[09:36] <5cf106a0d73408ce4fc1d8b2> What is PCA?
+[09:37] <541a528b163965c9bc2053de> https://en.wikipedia.org/wiki/Principal_component_analysis
+[09:37] <5b3ed273d73408ce4f9fcb4e> PCA is a linear way of reducing your dimensions to a few Principal components. You can use Neural Networks for a non-linear approach for the same
+[09:38] <5b3ed273d73408ce4f9fcb4e> Basically the last hidden layer of your neural network is a representation of your input in much the same way projecting to principal components is
+[09:38] <5b3ed273d73408ce4f9fcb4e> The number of dimensions of this representation will be the number of neurons in the last hidden layer
+[09:41] <5cf106a0d73408ce4fc1d8b2> Ohk thanks @srniranjan 
+[09:43] <5bc98094d73408ce4fabf741> @gyrdym does it work with sparse matrices so I can use it with tfIds vectorized text?
+[09:43] <5bc98094d73408ce4fabf741> tfidf*
+[09:45] <5c13ca6dd73408ce4fb1f2d5> As far as I know, it works with sparse matrices, but I myself havent use it for such situations
+[09:45] <5bc98094d73408ce4fabf741> I see TruncatedSVD which uses LSA underneath for the decomposition of sparse matrices suggested by sklearn team
+[09:45] <5bc98094d73408ce4fabf741> but this method lets me go down only by about 200 features which is just not enough.
+[09:46] <5bc98094d73408ce4fabf741> and I need to cut it down say to 2000 features so I don't spend days training one model
+[09:46] <541a528b163965c9bc2053de> SVD is not using LSA underneath: LSA is the application of (truncated) SVD to text data represented as bag of words (e.g. TF-IDF vectors).
+[09:46] <541a528b163965c9bc2053de> SVD is a generic mathematical tool, LSA is one specific application of SVD to text mining.
+[09:47] <5b3ed273d73408ce4f9fcb4e> @piotr-mamenas 9k features is huge! Are you having such a big feature set because youre considering each word in the vocabulary as a feature?
+[09:47] <541a528b163965c9bc2053de> PCA is SVD on centered data.
+[09:47] <5bc98094d73408ce4fabf741> yes it is, not entire vocabulary, I have stop words filtered out and lemmas extracted
+[09:48] <5b3ed273d73408ce4f9fcb4e> Thats not the recommended approach when doing NLP
+[09:48] <541a528b163965c9bc2053de>  9k features features is pretty low number of features for bag of words vectors. Bag of Words is very very sparse.
+[09:48] <5b3ed273d73408ce4f9fcb4e> Look at word2vec to get dense vectors
+[09:48] <5bc98094d73408ce4fabf741> What would be the recommended way?
+[09:49] <5b3ed273d73408ce4f9fcb4e> Glove is also recommended to get dense vectors 
+[09:49] <5b3ed273d73408ce4f9fcb4e> Depends on your use case.. what are you trying to solve?
+[09:49] <541a528b163965c9bc2053de> SVD on TF-IDF / bag of words is a good fast preprocessing used as baseline for text classification / clustering and information retrieval / text mining.
+[09:54] <5bc98094d73408ce4fabf741> I have a set of classes with labelled data which I want to build several binary output models from, each model would just output 0, 1 to highlight whenever the article belongs to a class or not (1 class per model)
+[09:56] <541a528b163965c9bc2053de> LogisticRegression on TF-IDF vectors should be a good and fast baseline. You can also try: TF-IDF => TruncatedSVD => LogisticRegression or RandomForestClassifier and TF-IDF => NMF => LogisticRegression / RandomForestClassifier as alternatives.
+[09:58] <5bc98094d73408ce4fabf741> but this stays with the TfIdf approach, how would it handle the 9600 or so features?
+[09:58] <541a528b163965c9bc2053de> You can also try to include features derived from pretrained word vectors (e.g. word2vec or glove) and some fancy neural networks with keras or pytorch but I would try the above baselines first.
+[09:58] <541a528b163965c9bc2053de> > but this stays with the TfIdf approach, how would it handle the 9600 or so features?  How is this a problem? LogisticRegression works fine on high dimensional sparse data
+[10:00] <541a528b163965c9bc2053de> About the first question: lemmatization is not always a good idea depending on what you are try to predict.
+[10:01] <5bc98094d73408ce4fabf741> I asked that question the other day and wrote about it, lemmas might lose the context of whole sentences so in theory they will lower the accuracy but that's also a way to lower the amount of data to process
+[10:01] <5bc98094d73408ce4fabf741> Lets see the logistic regression approach then
+[10:01] <5bc98094d73408ce4fabf741> THanks
+[10:12] <5bc98094d73408ce4fabf741> @ogrisel this looks suprisingly good, it was training just for a few seconds on a set of only 3500 articles and the confusion matrix looks like this:
+[10:12] <5bc98094d73408ce4fabf741> array([[1262,   19],        [   0,    0]], dtype=int64)
+[10:15] <5bc98094d73408ce4fabf741> Accuracy:  0.985167837626854
+[10:15] <5bc98094d73408ce4fabf741> if it looks to good, there must be something wrong
+[10:30] <5c13ca6dd73408ce4fb1f2d5> Is your data well balanced? Maybe you need to shuffle the original dataset before do logistic regression. 
+[10:32] <5c13ca6dd73408ce4fb1f2d5> It would be good also to use cross validation to get the answer if your model is really so good
+[10:51] <5bc98094d73408ce4fabf741> Yeah, I am checking it.
+[11:20] <541a528b163965c9bc2053de> array([[1262,   19],        [   0,    0]], dtype=int64) means that the mode always predict the class 0. It's the constant predictor (probably caused too much bias / regularization)
+[11:22] <541a528b163965c9bc2053de> Your test data is actually imbalanced with  19 to 1262 ratio. 1262 / (12 + 1262) == 0.99 accuracy which is weird because this does not match your reported accuracy.
+[11:23] <541a528b163965c9bc2053de> @piotr-mamenas I hope you did a proper train test split :)
+[11:24] <541a528b163965c9bc2053de> You should use a balanced accuracy or ROC AUC or precision / recall / f-beta score to evaluate your model instead of the raw accuracy.
+[14:05] <5bc98094d73408ce4fabf741> ``` UndefinedMetricWarning: Recall is ill-defined and being set to 0.0 due to no true samples.   'recall', 'true', average, warn_for) ```
+[14:06] <5bc98094d73408ce4fabf741> the train test split was 0.75:0.25 ratio
+[14:08] <5bc98094d73408ce4fabf741> It can't predict 0.98 with constant class because you got 1200/5000 samples class 1, and the TP is 1262
+[14:10] <5bc98094d73408ce4fabf741> and train test split takes into account balance of classes from what I know
+[14:10] <5bc98094d73408ce4fabf741> @gyrdym 
+[14:12] <5bc98094d73408ce4fabf741> the overall class balance of the entire dataset is a difficult topic, the type of class I am trying to detect may appear in every 1/100 articles but as said I have 1200 samples of "1" and 3800 samples of "0" so I am guessing increasing the "0" sample would prove beneficial generally
+[14:16] <541a528b163965c9bc2053de> check the content of your `y_test`: the recall warning seems to indicate that you only have negative samples (samples from the majority class) in your test set.
+[14:23] <5bc98094d73408ce4fabf741> ok got it @ogrisel 
+[14:23] <5bc98094d73408ce4fabf741> ``` Accuracy:  0.8227946916471507 Precision:  0.9347826086956522 Recall:  0.28013029315960913 ```
+[14:24] <5bc98094d73408ce4fabf741> ``` array([[968,   6],        [221,  86]], dtype=int64) ``` 
+[14:24] <5bc98094d73408ce4fabf741> looks different now
+[14:25] <5bc98094d73408ce4fabf741> I shuffled the dataset on the train test split and it changed completely as you can see
+[14:26] <5bc98094d73408ce4fabf741> but the score is anyway pretty impressive considering the sample and no hyperparameter tuning
+[14:26] <5bc98094d73408ce4fabf741> thanks
+[14:27] <5c13ca6dd73408ce4fb1f2d5> You may also try stratified shuffled split instead of the regular one - https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.StratifiedShuffleSplit.html
+[14:28] <5bc98094d73408ce4fabf741> I will check it out, thanks @gyrdym 
+[14:28] <5c13ca6dd73408ce4fb1f2d5> You're welcome
+[14:34] <5bc98094d73408ce4fabf741> Anyone has 2$ million dollars by the way? : p
+[15:15] <5bc98094d73408ce4fabf741> oh and that's what I like, I added 6000 articles to the 0 class and I already have 0.92
+[15:15] <5bc98094d73408ce4fabf741> ``` array([[2492,    7],        [ 235,   47]], dtype=int64) ```
+[16:45] <541a528b163965c9bc2053de> Accuracy is rather meaningless for unbalanced problems. Look at precision and recall and plot the precision recall curve. Here a recall of 0.2 might be too bad for your classifier to be useful. It depends on the application of your classifier
+[16:47] <541a528b163965c9bc2053de> If you do parameter tuning of your text classification pipeline, use scoring="balanced_accuracy" or "f1_score".
+[16:48] <541a528b163965c9bc2053de> See the end of this tutorial on how to build a pipeline and do parameter tuning: https://scikit-learn.org/stable/tutorial/text_analytics/working_with_text_data.html#evaluation-of-the-performance-on-the-test-set
+[18:38] <5bc98094d73408ce4fabf741> That will be useful, thanks @ogrisel 
+[21:52] <5553244215522ed4b3e05112> hi guys does scikit sdk or articles available for go language

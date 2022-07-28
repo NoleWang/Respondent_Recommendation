@@ -1,0 +1,13 @@
+[23:18] <54d4a1d6db8155e6700f853b> @ogrisel you think we can release weekend or Monday? Should we talk to conda folks?
+[23:21] <54d4a1d6db8155e6700f853b> hm was about to reach out to asmeurer but I guess he is not the right contact any more ^^ http://asmeurer.github.io/blog/
+[23:23] <54d4a1d6db8155e6700f853b> trying ilanschnell now
+--------------------------------------------------------------------------------------------------
+[23:27] <53810862048862e761fa2887> @amueller are you back ?
+--------------------------------------------------------------------------------------------------
+[23:31] <54d4a1d6db8155e6700f853b> @vighneshbirodkar https://www.youtube.com/watch?v=Q2J9F2sJMT4
+--------------------------------------------------------------------------------------------------
+[23:32] <54d4a1d6db8155e6700f853b> sweet I didn't realize gitter embedded youtube videos. really important for github collaborations.
+--------------------------------------------------------------------------------------------------
+[23:33] <53810862048862e761fa2887> https://youtu.be/FJbmB9k2Y88
+[23:43] <54d4a1d6db8155e6700f853b> :D
+--------------------------------------------------------------------------------------------------

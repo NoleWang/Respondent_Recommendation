@@ -1,0 +1,5 @@
+[18:25] <560313510fc9f982beb1a331> > not to my knowledge. What approaches were you considering and why do you think it might be beneficial?   There are cases where we seem to be allocating very similar sized blocks for arrays repeatedly (e.g. enforcing Fortran order on inputs, applying LASSO repeatedly on similar sized arrays). The time for the allocations here is larger than I would naively expect, which makes me think that whatever default memory allocation scheme is running into issues.  Am debating the value of allocating a larger array that includes N such blocks and distributes sliced chunks of it for these allocation operations. This may be too naive, but this is my first thought. WDYT?
+--------------------------------------------------------------------------------------------------
+[18:52] <54d4a1d6db8155e6700f853b> does anyone get what I'm doing wrong with appveyor?
+[18:52] <54d4a1d6db8155e6700f853b> https://ci.appveyor.com/project/sklearn-wheels/scikit-learn-wheels/build/job/8ij4qa5mcayg8xr8
+--------------------------------------------------------------------------------------------------

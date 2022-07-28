@@ -1,0 +1,3 @@
+<s> <user> could i have <unka> example convert data frame and output cluster prediction with plot visualization ? </s>
+<s> <user> like this ? URL/https:/ <unka./> <unk#a/> </s>
+<s> <user> and how about convert string data frame to vector ? thanks anyway </s>

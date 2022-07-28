@@ -1,0 +1,23 @@
+<s> <user> hello i have been trying a lot of stuff to get <unk##> to pass the tests . i am not able to reproduce the failures locally using <unka`> . i have narrowed the failure down to one line any ideas why this commit URL/https:/ URL/github.com/ <unk#a-/> causes this test URL/https:/ <unka-./> <unk#a-/> to fail ? </s>
+<s> <user> hi anyone know <unk#a> ? </s>
+<s> <user> i cant import <unk#a> in python . am facing error file " DIR/usr/ DIR/local/ DIR/lib/ DIR/python2.7/ DIR/dist-packages/ <unk#a-./_> <unka/> <unka/> <unk#a./> " , line 690 , in train raise <unka"(> must first build vocabulary before training the model " ) <unka> : you must first build vocabulary before training the model </s>
+<s> <user> kindly any one help me </s>
+<s> <user> could you post a full code snippet ? </s>
+<s> <user> ya sure </s>
+<s> <user> if its too long ( > 10 lines ) use pastebin ... :) </s>
+<s> <user> traceback ( most recent call last ): file " <unk#a#<> > " , line 1 , in <module > import <unk#a> file " <unk#a.> " , line 14 , in <module > model = <unk#a(.> , <unk#a=> , <unk#a=> , <unk#a=_> , <unk#a=> ) file " DIR/usr/ DIR/local/ DIR/lib/ DIR/python2.7/ DIR/dist-packages/ <unk#a-./_> <unka/> <unka/> <unk#a./> " , line 432 , in <unka_> <unka(.> ) </s>
+<s> <user> file " DIR/usr/ DIR/local/ DIR/lib/ DIR/python2.7/ DIR/dist-packages/ <unk#a-./_> <unka/> <unka/> <unk#a./> " , line 690 , in train raise <unka"(> must first build vocabulary before training the model " ) <unka> : you must first build vocabulary before training the model </s>
+<s> <user> oh i am sorry i did n't realize that you were asking about the library <unk#a`> ... this chat room is about <unka-> :) this is not the correct place to ask ... you would probably be better off , asking them at their mailing list ... sorry :) </s>
+<s> <user> okay <unk#+:> : </s>
+<s> <user> i searched there is no room for <unk#a> and <unka> :( </s>
+<s> <user> you could try - here - URL/https:/ URL/groups.google.com/ <unka!#/> or here - URL/https:/ <unka./> <unka./> :) </s>
+<s> <user> thank you so much <unk#+:> : :) </s>
+<s> <user> :) </s>
+<s> <user> <unka@> if you follow the directions in this blog post it should work : URL/http:/ <unka-./> <unk#a-/> </s>
+<s> <user> in particular , i suspect you are missing the middle step here : <unk`> > > > model = <unk#a(.> ) # an empty model , no training > > > <unka(._> ) # can be a <unka-> , <unk#a-> generator > > > <unka(._> ) # can be a <unka-> , <unk#a-> generator <unk`> </s>
+<s> <user> <unka@> did u try pdb ?? its good sometimes to debug frame by frame ... its a bit irritating to get started with but its worth it ... ( just a humble suggestion ;) ) </s>
+<s> <user> <unk#a@> i would have done that , but the tests do n't fail on my system . </s>
+<s> <user> ah that 's a drat ... only otherway is to skip all other tests temporarily and also skip 2.6 , 2.7 tests and ram travis till u figure it out :p ( if u run only this one ... u can run it in a minute i think ) </s>
+<s> <user> i have narrowed down the failure to one line so far , but i still do n't know why that line causes those tests to fail </s>
+<s> <user> the fit line right ? wait i 'm bored ... i 'll try pulling ur branch ... </s>
+<s> <user> ok . thanks . make sure you go to that commit the last 2 or 3 commits i have been trying other stuff </s>

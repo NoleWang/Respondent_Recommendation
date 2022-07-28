@@ -1,0 +1,7 @@
+[02:02] <5fb60715d73408ce4ff46856> Actually, I tried that module yesterday. For a 100x1 array X as input, the RBF.__call__(X) is returning a 100x100 array. I was looking for a 100x1 array that can be used to create a new axis to the existing 1d data resulting in 2d data. But, by reading the docs I could not make sense of the returned 100x100 array. That is why I came here. > @salih.four_gitlab are you looking for this, https://scikit-learn.org/stable/modules/generated/sklearn.gaussian_process.kernels.RBF.html?  
+[02:05] <5fb60715d73408ce4ff46856> @Rubix982 
+[04:05] <5da2a33dd73408ce4fcdacee> Oh, okay, got your problem.  May or may not be able to check this out. Busy with University right now. Exams on the way next week. @salih.four_gitlab 
+[08:24] <5fb60715d73408ce4ff46856> Do well :thumbsup: . 
+[09:42] <5da2a33dd73408ce4fcdacee> Thank you.
+[22:44] <54d4a1d6db8155e6700f853b> @salih.four_gitlab for the RBF(X) you will always get a square matrix because it's the formula above between all rows in X. If you have a single vector, it should be 1x100. If you want to have the kernels with an existing set, it should be RBF(X, Y)
+[22:46] <54d4a1d6db8155e6700f853b> though I'm not sure what you're trying to achieve. That is indeed for the GP. we also have a rbf_kernel function (which does the same thing) if you just want to compute the kernel values

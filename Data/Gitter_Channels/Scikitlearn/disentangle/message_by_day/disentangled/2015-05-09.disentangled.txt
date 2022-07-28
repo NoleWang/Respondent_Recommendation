@@ -1,0 +1,4 @@
+[21:42] <54d4a1d6db8155e6700f853b> @rvraghav93 @ragv I know you don't have much time, but if you could point me again to where you did the improvement of the contrib docs, I could maybe work on that. I think having some more comments on git would really help some people.
+--------------------------------------------------------------------------------------------------
+[23:35] <54c084dbdb8155e6700eed4c> AFAIK I think the intended framework was just put on the wiki for now - https://github.com/scikit-learn/scikit-learn/wiki/Contributors-Guide
+--------------------------------------------------------------------------------------------------

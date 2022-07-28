@@ -1,0 +1,30 @@
+<s> <user> anything in particular that you would like me to review ? </s>
+<s> <user> did you have a look at this one yet : URL/https:/ URL/github.com/ <unk#a-/> i have n't really followed what is happening with the <unka_> etc in the metrics </s>
+<s> <user> hey :) sorry to interrupt you ... do you feel we could do the data <unka> . cv part first and later do the renaming ? </s>
+<s> <user> there are two roads we could go down : either doing both together , but using the fact to have a <unka> path for it . that would mean copying a lot of code for a while . or doing them separately . if we do them separately , i would do the cv objects first . also , i would n't do either for the 0.16 release , i think . </s>
+<s> <user> actually , i think the code duplication thing is not necessary , so we should just focus on the cv objects </s>
+<s> <user> <unka@> green button on URL/https:/ URL/github.com/ <unk#a-/> ( sign flip ) ? </s>
+<s> <user> okay ! so i 'll salvage <unk##> to do the cv related fixes alone ? </s>
+<s> <user> yeah that sounds like a good idea </s>
+<s> <user> thanks ! :) </s>
+<s> <user> just one more minor thing ... what is the expected range of scores ( w.r.t <unk##> ) ( could it by any chance be > = 40 ? ) </s>
+<s> <user> the <unka> should be between 0 and 1 as you <unka> , and the votes should n't be larger than the number of classes , right ? </s>
+<s> <user> if the values for <unka_`> ( previously <unka`> ) exceed 34 we get 1 which is not desirable ... i.e <unk#a()`> is 1 ... with 0.5 it extends upto 73 ... </s>
+<s> <user> or am i too paranoid ? perhaps <unka`> do not extend upto 34 ? </s>
+<s> <user> sorry , i do n't follow . scores can be arbitrary high . you say that it actually reaches 1 ? that seems a bit odd </s>
+<s> <user> i see ... maybe then we need to do 0.9 * <unka(> ) ? which would be just another magic value .... </s>
+<s> <user> sorry its at 37 .... and yea in my system <unk#a(`> ) == 0` ... would you mind confirming the same pl ? </s>
+<s> <user> you mean == 1 </s>
+<s> <user> in [ 9 ]: <unk#a(> ) <unk#a[> ]: <unk#a(.> ) in [ 10 ]: <unk#a(> ) <unk#a[> ]: <unk#a(.> ) </s>
+<s> <user> i commented on the issue and pinged <unka@> </s>
+<s> <user> yes :p sorry again ... </s>
+<s> <user> np . you are right , that is an issue </s>
+<s> <user> perhaps we could scale to <unk#[`> , <unk#]`> before mapping it using <unka> ? ( it would be a tad slower ) </s>
+<s> <user> that is also weird ;) </s>
+<s> <user> haha yea ;) </s>
+<s> <user> took me only 3 days to catch up with 7 days of <unka> notifications .... </s>
+<s> <user> now for some actual work </s>
+<s> <user> that was fast ;) what issue are you currently working on ? :) </s>
+<s> <user> i have to do some <unka> stuff now because i commited to some research projects . other than that , i 'm working on getting as many <unka> as possible that are tagged with 0.16 in , and writing as many <unka-> for 0.16 tagged issues as possible </s>
+<s> <user> mostly reviewing currently </s>
+<s> <user> <unka@> this one should also be simple : URL/https:/ URL/github.com/ <unk#a-/> </s>

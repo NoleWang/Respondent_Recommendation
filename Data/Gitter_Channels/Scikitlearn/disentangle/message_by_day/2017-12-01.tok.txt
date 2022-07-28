@@ -1,0 +1,9 @@
+<s> <user> hello all , i want to take up a moder </s>
+<s> <user> hello all , i want to take up a moderate issue or something significant not currently being worked upon by anyone . is there an issue or feature which needs quick attention ? </s>
+<s> <user> <unka@> have you worked on anything before ? if not , go with those that say " good first issue " </s>
+<s> <user> oh actually you did , sorry </s>
+<s> <user> your name looked familiar lol </s>
+<s> <user> yeah , i have like 8-9 issues solved . and currently working on a moderate , but almost done . hence looking for something more than just a bug </s>
+<s> <user> sorry i gotta run , i 'll think about it </s>
+<s> <user> feature additions are usually pretty long-term </s>
+<s> <user> i am like free for a month . so willing to take if there 's a need </s>

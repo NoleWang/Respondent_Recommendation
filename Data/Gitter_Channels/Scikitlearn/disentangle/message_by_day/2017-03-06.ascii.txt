@@ -1,0 +1,3 @@
+[17:47] <58bd932cd73408ce4f4ec329> Hi, I am new to the community.. and still a beginner. I would appreciate if you could share with me any documentation on the development process and ways to involve.. that information would be very helpful
+[17:47] <54d4a1d6db8155e6700f853b> http://scikit-learn.org/dev/developers/contributing.html
+[17:48] <58bd932cd73408ce4f4ec329> thanks Andreas :)

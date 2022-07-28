@@ -1,0 +1,24 @@
+<s> <user> +1 for a <unk#.> release with such bad bug fixes . </s>
+<s> <user> i created the milestone . however i have to work on my talks for <unka> now . maybe i can help for the <unk#.> release during the <unka> next week . </s>
+<s> <user> the <unka-> fortran layout bug might need another fix and we should check if the bug appears elsewhere , too .... </s>
+<s> <user> yes we could do a new common test for that , <unka> <unka@> 's <unka_`> utility . </s>
+<s> <user> or we could just use <unka_`> .... </s>
+<s> <user> ok , i 'll try to use his branch and see if that works ... </s>
+<s> <user> <unka_`> or <unka_`> would do as well . </s>
+<s> <user> btw , i had forgotten to upload the <unk#.> artifacts to sourceforge , this is fixed . </s>
+<s> <user> oh damn , i did n't think of that . </s>
+<s> <user> btw , can you ping <unka> on gsoc ? </s>
+<s> <user> we need to move forward </s>
+<s> <user> to get the right number of slots </s>
+<s> <user> i think <unka> is offline till tomorrow . </s>
+<s> <user> ok </s>
+<s> <user> ok back to my <unka> preparation </s>
+<s> <user> <unka@> i cherry picked some stuff in the <unk#a.> branch , i 'll work on the <unka> and then i think this should be good to go . </s>
+<s> <user> the <unka> is a major concern for me as we introduced something that seems to be pretty broken . </s>
+<s> <user> i agree . </s>
+<s> <user> <unka@> in your latest comment on <unk##> , you link to <unk##> itself . </s>
+<s> <user> fixed </s>
+<s> <user> should have been <unk##> </s>
+<s> <user> i'd like to think that <unk##> was n't as bad before i introduced <unka_`> and that i broke it and that <unka-> was n't always i that state ... </s>
+<s> <user> ok i was just being silly . there are no breakages with fortran ordering , at least not with default settings . </s>
+<s> <user> the <unka-> fix in <unk##> seems good .... </s>

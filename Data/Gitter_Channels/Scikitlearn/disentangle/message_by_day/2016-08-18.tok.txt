@@ -1,0 +1,22 @@
+<s> <user> <unka@> ooooo ? <unka> allows multiple calls to <unka.`> ? </s>
+<s> <user> <unka> , yea , i am using <unka> , lemme try ( : > it 's definitely not possible now . i 'm not familiar with <unka> 's code at all , but looks like a call to <unka`> may be replaced with a call to <unka_`> , when it is supported . </s>
+<s> <user> well after a quick test i am able to do multiple <unka.`> calls , but not sure whether the <unka> uses all the training set tho </s>
+<s> <user> i really need to get some sleep , i misread and thought this is already implemented <unka#> > it 's definitely not possible now . i 'm not familiar with <unka> 's code at all , but looks like a call to <unka`> may be replaced with a call to <unka_`> , when it is supported . </s>
+<s> <user> <unk#a@> multiple <unka.> is not the same as calling 1 <unka.> for the 2m data <unka.> </s>
+<s> <user> yea , i realized that </s>
+<s> <user> ^.^ </s>
+<s> <user> i misread for some reason </s>
+<s> <user> *facepalm* </s>
+<s> <user> argh ... markdown </s>
+<s> <user> oh , the general agreement here was you should have a way to narrow you 2 mil down to .5 mil better training data </s>
+<s> <user> but i was curious about the memory management itself .. so <unka_> and warm start was mentioned for some cases .. </s>
+<s> <user> so is there a way for you to narrow it down or was that not the case ? :p </s>
+<s> <user> <unka@> that 's what i did previously , i was wondering if that 's the proper way to do it </s>
+<s> <user> if i fetch fair enough random sample for <unka> , i probably should get parameters that should be quite close to the " ideal " ones </s>
+<s> <user> then i can proceed and <unka> the proper model with the <unka-> parameters </s>
+<s> <user> ^ my previous workaround </s>
+<s> <user> also i am trying to break into multiple smaller <unka> , so each <unka> should be built with much smaller dataset </s>
+<s> <user> so whenever i try to classify some data , i would run through all of them , and pick the best result with highest probability or something </s>
+<s> <user> yeah i suppose if the difference is small enough , approximation should be fine . </s>
+<s> <user> quick question : after having downloaded <unka-> on my machine , how can i compile the modified code package to ipython ( ie import <unk#a> as sk ?) . where should i put the repository <unka-> so python can recognize it ? </s>
+<s> <user> <unk#a@> i do think it is quite easy to add , as far as i can understand <unka> 's code . </s>

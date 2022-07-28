@@ -1,0 +1,29 @@
+<s> <user> how do i make sure the <unka> sources are compiled when i rebuild for testing ? ( related to <unk##> ) ? </s>
+<s> <user> <unka> <unka./> </s>
+<s> <user> thanks ! :) </s>
+<s> <user> <unka@> here i mean </s>
+<s> <user> so much sense </s>
+<s> <user> sorry about that </s>
+<s> <user> btw what time is it in paris ? are you in paris ? </s>
+<s> <user> yes i am in paris </s>
+<s> <user> it 's almost midnight </s>
+<s> <user> i am <unka> <unk##> then going to bed </s>
+<s> <user> sweet , thanks . tomorrow i will be in the office earlier . thanks for working late :) </s>
+<s> <user> for some reason i tagged the old <unka._> pr with 0.16 , but not my new one . that does n't make sense . do you think i should tag my pr or <unka> the old ? </s>
+<s> <user> actually i was primarily working on <unka-> this evening :) </s>
+<s> <user> > for some reason i tagged the old <unka._> pr with 0.16 , but not my new one . that does n't make sense . do you think i should tag my pr or <unka> the old ? i am not sure which is which </s>
+<s> <user> <unka-> ? </s>
+<s> <user> rephrasing my question : should the sparse decision function be tagged for 0.16 or not ( i.e . is it a priority to go into the release ) </s>
+<s> <user> ah , i see . are you working with torch or <unka> primarily ? </s>
+<s> <user> URL/https:/ URL/github.com/ <unka-/> </s>
+<s> <user> setting up tutorial material for a workshop on <unka> , but adding support for torch was easy so i added it . </s>
+<s> <user> +1 for including the sparse decision function fix </s>
+<s> <user> cool </s>
+<s> <user> ok </s>
+<s> <user> that means 23 <unka> left for the release lol </s>
+<s> <user> :) </s>
+<s> <user> have a good night . hope we make some more progress on the <unka> this week </s>
+<s> <user> even if we do n't fix them all prior to friday ( the first beta ) it 's fine . as long as we only include fixes in the <unk#a.> branch once the beta is cut . </s>
+<s> <user> thanks </s>
+<s> <user> good night , see you tomorrow ! </s>
+<s> <user> good night :) </s>

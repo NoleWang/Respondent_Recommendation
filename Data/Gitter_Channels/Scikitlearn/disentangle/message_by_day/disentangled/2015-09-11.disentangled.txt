@@ -1,0 +1,87 @@
+[02:10] <53135b495e986b0712efc453> @amueller @vene Do we need `LabelKFold` in #4294? Why can't we just pass the labels in `split(X, y, labels)` instead of having a new class? (Same for `LabelShuffleSplit`)
+[02:38] <53135b495e986b0712efc453> @ogrisel appveyor doesn't test model selection
+[02:39] <53135b495e986b0712efc453> [![appveyor.png](https://files.gitter.im/scikit-learn/scikit-learn/x9Q7/thumb/appveyor.png)](https://files.gitter.im/scikit-learn/scikit-learn/x9Q7/appveyor.png)
+--------------------------------------------------------------------------------------------------
+[02:41] <53135b495e986b0712efc453> [![appveyor2.png](https://files.gitter.im/scikit-learn/scikit-learn/gKbL/thumb/appveyor2.png)](https://files.gitter.im/scikit-learn/scikit-learn/gKbL/appveyor2.png)
+[02:41] <53135b495e986b0712efc453> 1st image you can see one of appveyor builds passing successfully despite a failing test in model_selection, in the 2nd you can see travis working correctly...
+[02:43] <53135b495e986b0712efc453> https://ci.appveyor.com/project/sklearn-ci/scikit-learn/build/1.0.2085/job/qd27oykpd2ubc1yr#L3734 - After `sklearn.mixture` `sklearn.model_selection` should have been tested...
+[02:43] <53135b495e986b0712efc453> Any clues to debug this?
+--------------------------------------------------------------------------------------------------
+[05:27] <53135b495e986b0712efc453> [![appveyorfinal.png](https://files.gitter.im/scikit-learn/scikit-learn/KW30/thumb/appveyorfinal.png)](https://files.gitter.im/scikit-learn/scikit-learn/KW30/appveyorfinal.png)
+--------------------------------------------------------------------------------------------------
+[14:13] <55901c1b15522ed4b3e2f949> The newest merge seems to have modified _tree.c
+--------------------------------------------------------------------------------------------------
+[14:13] <541a528b163965c9bc2053de> which merge?
+--------------------------------------------------------------------------------------------------
+[14:14] <55901c1b15522ed4b3e2f949> "ENH add sag solver in LinearRegression and Ridge"
+[14:14] <541a528b163965c9bc2053de> indeed
+[14:14] <541a528b163965c9bc2053de> git log sklearn/tree/_tree.c
+[14:14] <541a528b163965c9bc2053de> I will recythonize it from the current _tree.pyx
+[14:15] <55901c1b15522ed4b3e2f949> coolios. Weird that it got changed
+[14:15] <541a528b163965c9bc2053de> running the tests locally to check that I did no break anything.
+[14:15] <541a528b163965c9bc2053de> yeah
+--------------------------------------------------------------------------------------------------
+[14:27] <541a528b163965c9bc2053de> pushed the cythonized tree code to master directly
+--------------------------------------------------------------------------------------------------
+[14:28] <55901c1b15522ed4b3e2f949> appveyor is failing?
+[14:28] <55901c1b15522ed4b3e2f949> or is that from the previous tree code
+[14:28] <55901c1b15522ed4b3e2f949> ah, appveyor is really behind
+--------------------------------------------------------------------------------------------------
+[14:29] <541a528b163965c9bc2053de> here is the state of the queue: https://ci.appveyor.com/project/sklearn-ci/scikit-learn/history
+[14:29] <55901c1b15522ed4b3e2f949> okay, cool
+[14:30] <541a528b163965c9bc2053de> @rvraghav93 which PR is that?
+[14:30] <541a528b163965c9bc2053de> appveyor does not run the doctests, maybe a doctest is failing?
+--------------------------------------------------------------------------------------------------
+[15:06] <54d4a1d6db8155e6700f853b> @ogrisel I'm in ;)
+[15:06] <54d4a1d6db8155e6700f853b> sorry meetings stuff
+--------------------------------------------------------------------------------------------------
+[15:07] <541a528b163965c9bc2053de> no pbm
+--------------------------------------------------------------------------------------------------
+[15:09] <54d4a1d6db8155e6700f853b> I'll do #5104 and then the tsne example
+[15:09] <54d4a1d6db8155e6700f853b> the mlp is starting to look good btw #5214
+[15:09] <541a528b163965c9bc2053de> #5245 should be good to go (it's just appveyor that is slow as a dog today)
+[15:12] <54d4a1d6db8155e6700f853b> have you seen this: https://ci.appveyor.com/project/sklearn-ci/scikit-learn/build/1.0.2086/job/drvmlx86c9swelx4 ?
+[15:13] <54d4a1d6db8155e6700f853b> #5206 should also be ok, but could be made shorter
+--------------------------------------------------------------------------------------------------
+[15:14] <541a528b163965c9bc2053de> > have you seen this: https://ci.appveyor.com/project/sklearn-ci/scikit-learn/build/1.0.2086/job/drvmlx86c9swelx4 ?  Hum that's bad
+[15:18] <54d4a1d6db8155e6700f853b> yeah
+[15:18] <54d4a1d6db8155e6700f853b> this is also new to me: https://ci.appveyor.com/project/sklearn-ci/scikit-learn/build/1.0.2090/job/toaww87ohll9pxv9
+[15:19] <54d4a1d6db8155e6700f853b> wait that is the same
+[15:19] <54d4a1d6db8155e6700f853b> sorry
+--------------------------------------------------------------------------------------------------
+[15:19] <541a528b163965c9bc2053de> That's weird that it only fails on 32 bit Python, both 2 and 3. It's seems completely unrelated to the architecture.
+[15:20] <541a528b163965c9bc2053de> maybe it's just random?
+[15:21] <541a528b163965c9bc2053de> the fact that we get it with Python 2 is really weird: it means that it cannot be caused by the use of the multiprocessing context /  start method in  joblib because this does not exist under Python 2.
+--------------------------------------------------------------------------------------------------
+[15:22] <54d4a1d6db8155e6700f853b> here the failing pattern is different: https://ci.appveyor.com/project/sklearn-ci/scikit-learn/build/1.0.2090
+--------------------------------------------------------------------------------------------------
+[15:23] <53135b495e986b0712efc453> @ogrisel #4294 And no it was not a doctest... I specifically made a failing test inside model selection to confirm my observation... :)
+--------------------------------------------------------------------------------------------------
+[15:24] <541a528b163965c9bc2053de> maybe this is caused by a change in the way nose run the tests.
+[15:25] <541a528b163965c9bc2053de> I will open an issue to track this problem
+[15:28] <541a528b163965c9bc2053de> @rvraghav93 your issue is probably not related to the appveyor problem we are discussing (which has to do with multiprocessing #5254)
+--------------------------------------------------------------------------------------------------
+[15:25] <53135b495e986b0712efc453> ~~Okay but this is localized to model_selection right? maybe I am doing something incorrectly?~~
+[15:27] <53135b495e986b0712efc453> Also @amueller @vene do we need the new `LabelKFold` and `LabelShuffleSplit` as separate classes or can we specify the labels in `split(X, y, labels)` in the (new) `KFold` class itself?
+[15:27] <541a528b163965c9bc2053de> #5254
+[15:28] <53135b495e986b0712efc453> Oh sorry I thought it was a reply to my comment... :D Any ideas on how to debug mine?
+--------------------------------------------------------------------------------------------------
+[15:30] <541a528b163965c9bc2053de> @rvraghav93 do you have a windows machine at hand? you can try to replicate it locally by following the install stepts in appveyor.yml
+--------------------------------------------------------------------------------------------------
+[15:35] <54d4a1d6db8155e6700f853b> @rvraghav93 they do somewhat different things. What is the benefit of putting them in the same class?
+--------------------------------------------------------------------------------------------------
+[15:42] <53135b495e986b0712efc453> `LabelKFold` is `KFold` with `labels` (somewhat like group labels) specifying  that the points in the same label should not be used for both testing and training right? Would it benefit from grouping together?
+--------------------------------------------------------------------------------------------------
+[16:39] <541a528b163965c9bc2053de> @amueller unfortunately I will have to leave soon and won't be able to work on the release this WE. I think we should fix the appveyor issue before cutting the branch. I have opened a PR there #5255 to try a quickfix even though I don't understand the problem.
+[16:40] <541a528b163965c9bc2053de> I can work on that on monday if that does not work
+[16:40] <541a528b163965c9bc2053de> I added some quick benchmark in the comments of #5253.
+[16:47] <541a528b163965c9bc2053de> appveyor has a network problem on the fast infra and so the queue is running on the old Azure based infra
+[16:47] <541a528b163965c9bc2053de> this is why the build are slower than usual
+[16:48] <541a528b163965c9bc2053de> I don't know if that explains the weird multiprocessing issue though (it seems unlikely)
+[16:48] <541a528b163965c9bc2053de> ok I have to go
+[16:48] <541a528b163965c9bc2053de> see you later
+--------------------------------------------------------------------------------------------------
+[17:27] <54d4a1d6db8155e6700f853b> ok ttyl. Can you work on the release next week?
+--------------------------------------------------------------------------------------------------
+[17:50] <53135b495e986b0712efc453> @amueller @vene Actually that won't make sense especially when we want to group `Stratified{KFold|ShuffleSplit}` and `{KFold|ShuffleSplit}` together making stratify an option as suggested by Joel! Sorry for the noise... I'll add it as such :)
+--------------------------------------------------------------------------------------------------

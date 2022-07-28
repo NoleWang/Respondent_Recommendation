@@ -1,0 +1,35 @@
+<s> <user> hi </s>
+<s> <user> <unka@> hi </s>
+<s> <user> i need some help </s>
+<s> <user> for <unka> project </s>
+<s> <user> you can post your question here , but i recommend going to stackexchange and tag it with <unka> </s>
+<s> <user> wait </s>
+<s> <user> see URL/http:/ <unka-./> <unka#-./> </s>
+<s> <user> just i 'm searching about </s>
+<s> <user> <unka> learn </s>
+<s> <user> with django </s>
+<s> <user> i want to implement machine learning </s>
+<s> <user> into web project </s>
+<s> <user> but i did n"t have any idea </s>
+<s> <user> for the application </s>
+<s> <user> or the avalaible dataset </s>
+<s> <user> for an introduction , check out <unka@> 's free book : URL/https:/ URL/github.com/ <unka/> </s>
+<s> <user> i have an experience with django and <unka-> </s>
+<s> <user> they are separated </s>
+<s> <user> i want an idea o combine them </s>
+<s> <user> build a <unka> system for suggesting movies based on the movie lens data as a web application </s>
+<s> <user> or a book <unka> system using URL/https:/ <unka./> <unk#a-/> </s>
+<s> <user> good idea ;) </s>
+<s> <user> i would recommend you to use [ <unka(./:]> ) or [ <unka(./:]> ) instead of <unka-> though :) </s>
+<s> <user> why ? </s>
+<s> <user> what are the advantages ? </s>
+<s> <user> those libraries are dedicated to building <unka> systems . <unka> machines and neural networks with <unka> <unka> are known to be very good for building <unka> systems but are not implemented in <unka-> . </s>
+<s> <user> ( yet ) </s>
+<s> <user> ok good :d </s>
+<s> <user> there is any other suggestion for other dataset </s>
+<s> <user> for example </s>
+<s> <user> client <unka-> dataset </s>
+<s> <user> something ike this </s>
+<s> <user> what do you think about twitter sentiment analysis ? </s>
+<s> <user> <unka-> : i do n't know any out the time of my mind . for twitter you can use the <unk#a> dataset but i find sentiment analysis pretty useless personally . </s>
+<s> <user> i have to go . good luck for your project . </s>

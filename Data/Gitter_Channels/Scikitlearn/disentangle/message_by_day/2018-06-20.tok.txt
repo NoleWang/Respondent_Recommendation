@@ -1,0 +1,4 @@
+<s> <user> i see . i have solved this issue , what i did is to convert my df to <unka.> . </s>
+<s> <user> so only numerical datas are inputted into the algorithm </s>
+<s> <user> hey all , is there a way to pass a sentence like play some music to an ai model and after that chrome tab will open with a random youtube song ive been trying to figure out a way to do this for a while and i appreciate any advices or help </s>
+<s> <user> just curious if anyone has a way or approach how to wrap this up , advice is highly appreciated </s>

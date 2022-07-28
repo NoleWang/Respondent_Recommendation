@@ -1,0 +1,1 @@
+[08:27] <58e88d54d73408ce4f56ee47> hello, i am trying to use sklearn.svm.svc with l1 or l2 regularization and can't seem to find how to, can anyone please help with me some pointers? please see stackoverflow question  http://stackoverflow.com/questions/43407896/python-sklearn-non-linear-svm-penalty

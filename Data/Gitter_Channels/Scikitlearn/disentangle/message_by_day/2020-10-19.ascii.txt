@@ -1,0 +1,1 @@
+[20:58] <5dbd6437d73408ce4fcfbf0f> @kushaangupta have you tried with Tensorflow or PyTorch? You should be more able to implement customised topologies for network even at level of single neuron.

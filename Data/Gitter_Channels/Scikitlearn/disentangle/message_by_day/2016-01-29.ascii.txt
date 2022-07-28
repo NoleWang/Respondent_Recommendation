@@ -1,0 +1,7 @@
+[16:04] <53135b495e986b0712efc453> I recall @ogrisel or @amueller using twine for that I think. (Ref: https://gitter.im/scikit-learn/scikit-learn?at=552d71150e3138bb6be81ef4)
+[16:12] <54d4a1d6db8155e6700f853b> I've been using setuptools but twine is also an option
+[16:13] <53810862048862e761fa2887> I added instructions for setuptools in the stub project 
+[18:28] <54d4a1d6db8155e6700f853b> hm anyone wanna review #5270?
+[18:29] <54d4a1d6db8155e6700f853b> I think we should really move forward with OneHotEncoder
+[19:16] <53135b495e986b0712efc453> Is it possible to cythonize and test a single module alone without building scikit-learn fully?
+[19:37] <53810862048862e761fa2887> If you compile scikit-learn it only compiles changed files. 

@@ -1,0 +1,28 @@
+[13:16] <57a061aa40f3a6eec05d8d26> Hello, what's the difference between mean_test_score and mean_train_score in GridSearchCV.cv\_results_?
+[15:32] <54d4a1d6db8155e6700f853b> they are the mean of the score on the training folds vs the hold-out folds
+[15:32] <54d4a1d6db8155e6700f853b> @mkoske 
+[15:46] <57a061aa40f3a6eec05d8d26> @amueller So hold-out folds means, that if I use e.g. 10-fold cross validation, there's 10 hold-out folds, i.e. dataset is split into 10 and then the model is trained on 9 of those and one is used for testing . And this is repeated until every one of those 10 is used as testing. Right?
+[15:46] <54d4a1d6db8155e6700f853b> yes
+[15:48] <57a061aa40f3a6eec05d8d26> ok, so that part I understood
+[15:49] <57a061aa40f3a6eec05d8d26> what is the training score then? 
+[15:49] <54d4a1d6db8155e6700f853b> scores are computed for each of the 10 iterations
+[15:49] <54d4a1d6db8155e6700f853b> and each iteration has a 9 folds that the model is trained on and one that it is tested on
+[15:50] <54d4a1d6db8155e6700f853b> the training score is the score on the training set, i.e. the 9 folds
+[15:53] <57a061aa40f3a6eec05d8d26> So, is the model is evaluated on those 9 folds too, at same iteration?
+[15:54] <54d4a1d6db8155e6700f853b> yes. training score meaning the data it was trained on
+[16:01] <57a061aa40f3a6eec05d8d26> Ok, I'll recap so I make sure I understood correctly :) In my example, one iteration consists of building the model on 9 folds and testing it with both those 9 folds and hold-out data. Is this correct?
+[16:01] <54d4a1d6db8155e6700f853b> yes
+[16:02] <54d4a1d6db8155e6700f853b> only the hold-out test score is used to select the model
+[16:02] <54d4a1d6db8155e6700f853b> the training score is good monitor overfitting / underfitting
+[16:02] <57a061aa40f3a6eec05d8d26> Ok, thanks for help
+[16:03] <57a061aa40f3a6eec05d8d26> Hm, you mean that if training score is high and test score is much smaller, then it overfits?
+[16:04] <54d4a1d6db8155e6700f853b> well if there is a large gap then you might want to regularize more. if there is a very small gap you might want to try a more complex model
+[16:14] <57a061aa40f3a6eec05d8d26> One more question. When I run my script, Parallel reported that it took almost 3hours to complete. But when I sum all the fit and score times from GridSearchCV.cv\_results\_, the sum is significantly lower. Why? Is it that Parallel reports the total time my script was running and GridSearchCV exact times that scoring and fitting took?
+[16:16] <54d4a1d6db8155e6700f853b> can't say without looking at your script
+[17:13] <57a061aa40f3a6eec05d8d26> @amueller nothing special, something like this: https://gist.github.com/mkoske/1f9b92b3f214260278ea115507cea72d
+[17:13] <57a061aa40f3a6eec05d8d26> I use Jupyter Notebook and it shows some timing information on red background
+[17:19] <57a061aa40f3a6eec05d8d26> I updated that gist to contain example similar to my use case.
+[17:22] <57a061aa40f3a6eec05d8d26> I also updated my comment on that gist to explain
+[18:33] <54d4a1d6db8155e6700f853b> sorry not sure
+[18:33] <54d4a1d6db8155e6700f853b> I don't have time to look into it right now
+[20:11] <57a061aa40f3a6eec05d8d26> @amueller ok, thanks anyway

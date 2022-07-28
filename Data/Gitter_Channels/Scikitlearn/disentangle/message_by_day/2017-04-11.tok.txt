@@ -1,0 +1,3 @@
+<s> <user> i am getting a major error in dictionary learning . the error is segmentation fault ( core dumped ). </s>
+<s> <user> it is working fine for 100 images to train a dictionary but if i use 200 images to train a dictionary then i am getting segmentation fault ( core dumped ). </s>
+<s> <user> i <unka> my code and got this one : <unk#a:> in <unk#a_> ( ) from DIR/usr/ DIR/lib/ <unk#a./> </s>

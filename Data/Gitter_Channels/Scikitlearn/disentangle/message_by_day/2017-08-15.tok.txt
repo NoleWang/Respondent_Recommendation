@@ -1,0 +1,50 @@
+<s> <user> hi everyone </s>
+<s> <user> in <unka> </s>
+<s> <user> URL/http:/ <unka-./> <unka./_> </s>
+<s> <user> how can i determine the baseline model ? </s>
+<s> <user> the doc said : " linear <unka> ( svm , <unka> regression , <unka.> .) with sgd training ." </s>
+<s> <user> how can i choose between svm and <unka> regression ? </s>
+<s> <user> it depends in your data </s>
+<s> <user> and what you want to predict </s>
+<s> <user> hi </s>
+<s> <user> continous data </s>
+<s> <user> i mean </s>
+<s> <user> in the code </s>
+<s> <user> how can i choose </s>
+<s> <user> check the documentation :d </s>
+<s> <user> yes , but i could n't find </s>
+<s> <user> that 's why i ask here </s>
+<s> <user> URL/http:/ <unka-./> <unka./> </s>
+<s> <user> URL/http:/ <unka-./> <unka./_> </s>
+<s> <user> now ? </s>
+<s> <user> it is svm ? </s>
+<s> <user> but how can i use svm as a base model with <unka> ? </s>
+<s> <user> or suppose svm is by default , how can i switch to <unka> regression ? </s>
+<s> <user> or sorry , i did n't have depth knowledge in machine learning </s>
+<s> <user> no problem , thanks for your help </s>
+<s> <user> how to choose the algorithm </s>
+<s> <user> i'am <unka> </s>
+<s> <user> i just follow some <unka> </s>
+<s> <user> <unka@> tell me your experience with machine learning ? </s>
+<s> <user> URL/http:/ <unka-./> <unka#./_> </s>
+<s> <user> <unka@> you have to set the <unka`> properly </s>
+<s> <user> <unka=`> correspond to the svm while <unka=`> to <unka> regression </s>
+<s> <user> great , thanks </s>
+<s> <user> do you know what functions correspond to other loss </s>
+<s> <user> say , " <unka_> " </s>
+<s> <user> <unka_> is a smooth hinge loss </s>
+<s> <user> is it possible to pass a custom loss to <unka> </s>
+<s> <user> ? </s>
+<s> <user> it does not seems so since it does not accept <unka> </s>
+<s> <user> <unka@> hi can you contact you in private </s>
+<s> <user> ? </s>
+<s> <user> great thanks </s>
+<s> <user> <unka@> </s>
+<s> <user> <unka@> if really you want to play with the loss </s>
+<s> <user> they are defined there URL/https:/ URL/github.com/ <unk#a-./_> </s>
+<s> <user> in case that you want to implement your own </s>
+<s> <user> yes , thanks </s>
+<s> <user> URL/https:/ URL/github.com/ <unk#a#-./_> </s>
+<s> <user> then you can register it there </s>
+<s> <user> i see </s>
+<s> <user> <unka@> i would n't use <unka> for custom loss functions for learning . just implement your own in pure python . it will not be fast but it 's a good learning experience and much easier to understand </s>

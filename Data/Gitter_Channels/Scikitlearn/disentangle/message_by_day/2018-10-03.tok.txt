@@ -1,0 +1,7 @@
+<s> <user> <unka@> you here ? </s>
+<s> <user> yup </s>
+<s> <user> so in <unka> alpha = <unk#a/> </s>
+<s> <user> i 'm trying to figure out the loss computation for <unka> first because we can most easily access the function </s>
+<s> <user> <unka@> URL/https:/ URL/pastebin.com/ <unk#a/> </s>
+<s> <user> these two are identical and identical to what 's internally used </s>
+<s> <user> and if you want sgd to be equivalent to <unka> , you have indeed to set alpha = <unk#a(/> * <unka_> ) </s>

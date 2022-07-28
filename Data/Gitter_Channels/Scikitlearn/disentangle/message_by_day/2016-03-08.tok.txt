@@ -1,0 +1,11 @@
+<s> <user> > <unka> upgrade --all breaks <unka-> <unka-> installed from <unka> or built from the source prior to the upgrade ? what does break mean ? a specific test fails ? or a segfault at <unka`> <unka`> ? </s>
+<s> <user> <unka@> running <unka> upgrade twice actually makes it work again </s>
+<s> <user> it was a linking issue </s>
+<s> <user> there is a specific version of <unka> on <unka> that is not properly linked , but i think they fixed it now </s>
+<s> <user> ( and i meant installed from <unka> ) </s>
+<s> <user> ok great </s>
+<s> <user> <unka@> maybe also compare against URL/https:/ URL/github.com/ <unka/> </s>
+<s> <user> and possibly URL/https:/ URL/github.com/ <unka-/> </s>
+<s> <user> oh <unka@> you should definitely try URL/https:/ URL/gist.github.com/ <unk#a/> first </s>
+<s> <user> <unka@> brian says to read this book ^^ URL/http:/ <unka./> <unka./_~> </s>
+<s> <user> ( the variable names are taken from there , in particular 3.11 and 3.12 ) </s>

@@ -1,0 +1,4 @@
+[07:51] <541a528b163965c9bc2053de> @AMaini503  please provide a Minimal Complete Verifiable Example in your paste (http://matthewrocklin.com/blog/work/2018/02/28/minimal-bug-reports)
+--------------------------------------------------------------------------------------------------
+[21:58] <5b11caa3d73408ce4f9b96b5> I'm trying to get cluster assignments from the linkage matrix. So far, I know that I can use the fcluster to do that. But, how do I specify the n_clusters ?
+--------------------------------------------------------------------------------------------------

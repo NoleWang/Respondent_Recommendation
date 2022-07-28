@@ -1,0 +1,2 @@
+[20:23] <57b364d540f3a6eec05fce2b> Hello, everyone. Can anyone clarify to me how `OneVsRestClassifier` performs the classification to decide the output of each input? I am coding a RBF network for classification and the output layer is trained with `n_classes` linear regressors, then the final output is given by applying a softmax function. But `OneVsRestClassifier` could be useful, i just can't confirm if it uses a similar approach.
+--------------------------------------------------------------------------------------------------

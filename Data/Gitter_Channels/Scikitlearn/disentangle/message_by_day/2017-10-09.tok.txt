@@ -1,0 +1,2 @@
+<s> <user> <unka@> you need to use matplotlib to plot your results </s>
+<s> <user> sentiment analysis is good for articles , but yes i do agree it 's bad for twitter . </s>

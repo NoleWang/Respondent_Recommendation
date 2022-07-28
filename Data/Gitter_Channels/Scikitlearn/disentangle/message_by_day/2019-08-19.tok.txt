@@ -1,0 +1,4 @@
+<s> <user> omg omg omg , for l2 loss , if i replace <unka`> numpy as <unka`> with <unka`> <unka> as <unka`> , i get another 10x speed up for 1 split , but i would lost the edge when i have too many depth .. i need to <unka> my code ... </s>
+<s> <user> +1 </s>
+<s> <user> but i really like the fact that , switching to gpu is so trivial ... </s>
+<s> <user> have a question maybe someone can answer . trying to use a simple model on a set of data . about a couple thousand rows and only a dozen features , most are binary . i 'm training on <unka> regression , and found my model <unka> . so when i try to tune my <unka> , my accuracy remains entirely unchanged . has anyone seen this before or know why this is happening ? </s>

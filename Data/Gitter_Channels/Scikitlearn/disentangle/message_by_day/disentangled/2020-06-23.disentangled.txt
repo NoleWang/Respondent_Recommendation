@@ -1,0 +1,7 @@
+[18:49] <5eeb9b35d73408ce4fe749bc> Does anyone have any tips for making an API proposal go smoothly? (e.g. the structure of a good proposal, good examples of existing proposals)  Context: I was hoping to start working on a proposal for adding Gibbs sampling to LatentDirichletAllocation, going off of Thomas's recommendations.
+[18:51] <5eeb9b35d73408ce4fe749bc> Ah, just found the SLEP template.
+[18:53] <5eeb9b35d73408ce4fe749bc> Ah, thanks for the clarification, @adrinjalali!
+--------------------------------------------------------------------------------------------------
+[18:52] <567f5d7716b6c7089cc043a8> I think adding features like that is usually discussed in the issues @joshuacwnewton SLEPs have been a bit more on the general API rather than specific features
+[18:53] <567f5d7716b6c7089cc043a8> it can be just an issue like this one, for example https://github.com/scikit-learn/scikit-learn/issues/15346
+--------------------------------------------------------------------------------------------------

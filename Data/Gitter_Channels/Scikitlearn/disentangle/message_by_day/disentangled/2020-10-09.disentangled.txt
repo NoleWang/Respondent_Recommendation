@@ -1,0 +1,5 @@
+[07:41] <541a528b163965c9bc2053de> @anantgna here is the place to start: https://scikit-learn.org/dev/developers/contributing.html . This doc presents how to browse the issue tracker to find issues to tackle. Ideally, it's best to start with a small issue or improvement to an estimator class or function that you use yourself on a regular basis.
+[07:43] <541a528b163965c9bc2053de> @amueller  yes but Remy does not work at Amazon :) I remembered that scaleway had an ARM-based cloud and it could have been useful to better support scikit-learn on ARM but it's no longer the case apparently.
+--------------------------------------------------------------------------------------------------
+[09:25] <5f7f7040d73408ce4ff1073b> @ogrisel thank you
+--------------------------------------------------------------------------------------------------

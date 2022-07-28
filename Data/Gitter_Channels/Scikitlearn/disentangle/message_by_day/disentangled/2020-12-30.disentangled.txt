@@ -1,0 +1,5 @@
+[11:37] <5fec660ed73408ce4ff7a933> Hey people
+[11:38] <5fec660ed73408ce4ff7a933> Is this place active?
+[11:38] <5fec660ed73408ce4ff7a933> Is there a real time communication platform for scikit learn?
+[11:38] <5fec660ed73408ce4ff7a933> Thanks!!
+--------------------------------------------------------------------------------------------------

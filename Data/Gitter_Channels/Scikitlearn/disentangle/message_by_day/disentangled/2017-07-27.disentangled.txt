@@ -1,0 +1,6 @@
+[07:28] <5948fba7d73408ce4f68b048> Hi guys are there any c++ projects I can get involved in
+[07:28] <5948fba7d73408ce4f68b048> if yes please link me below
+--------------------------------------------------------------------------------------------------
+[15:44] <54d4a1d6db8155e6700f853b> @PriyaChincholikar lol this is a python package. We have a bunch of Cython though. But you can check out Shogun or MLPack
+[15:44] <54d4a1d6db8155e6700f853b> or xgboost
+--------------------------------------------------------------------------------------------------

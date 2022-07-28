@@ -1,0 +1,12 @@
+<s> <user> <unk#a@> : did n't we agree to not duplicate the code that does n't need to be duplicated ? eg the old <unka> , ca n't it be just imported from the new path ? </s>
+<s> <user> basically we 'll have duplicated functionality in the old and new cv classes for a while , but the rest of the things that were moved should just be imported from the new place , assuming their behavior with old-style cv classes does n't change . </s>
+<s> <user> +1 </s>
+<s> <user> <unka@> what do you think about the placement on the <unka`> argument in <unka_`> and the like ? </s>
+<s> <user> if we leave it at the end , we do n't need to duplicate that code either , right ? </s>
+<s> <user> ( about reducing duplicates ) already done at URL/https:/ URL/github.com/ <unk#a-/> :) </s>
+<s> <user> i also reused a few <unka> ... that is a bit hacky not sure if that 's correct !! </s>
+<s> <user> <unka@> discussion abt the labels arg here - URL/https:/ URL/github.com/ <unk#a#-/_> </s>
+<s> <user> i 'm curious about the [ <unka> ] convention i see being used on pull requests . does that just indicate that the author believes it 's ready to merge ? </s>
+<s> <user> i think i wrote a good test for pr <unk##> . i <unka> before because i thought it would be weird to test something that should be somewhere around 0.5 . but then i taught myself about <unka_> . </s>
+<s> <user> it was fun <unka> with some of you , i 'll be back on later today or this week to hopefully finish that <unka-> example . </s>
+<s> <user> <unka@> exactly ! it 's a way for <unka> to tell at a glance what state a pr is in . </s>

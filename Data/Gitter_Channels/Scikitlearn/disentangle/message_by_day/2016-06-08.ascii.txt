@@ -1,0 +1,38 @@
+[07:14] <564789be16b6c7089cbab8b7> @mikegraham  Ah. I am not 100% clear why it would be a huge maintenance problem. Doesn't that depend on whatever elegant solution someone comes up with? Or to put it another way, if the problem is stated in parts with "part 1) Devise a solution that minimises the maintenance needed" would this not be plausible?
+[07:15] <564789be16b6c7089cbab8b7> has someone done a survey to see what other solutions exist out there?
+[07:15] <564789be16b6c7089cbab8b7> For example in R or weka
+[07:16] <564789be16b6c7089cbab8b7> From a very quick look, the standard solution in R just seems to be saveRDS https://stat.ethz.ch/R-manual/R-devel/library/base/html/readRDS.html
+[07:19] <564789be16b6c7089cbab8b7> spark has this https://databricks.com/blog/2016/05/31/apache-spark-2-0-preview-machine-learning-model-persistence.html
+[07:20] <564789be16b6c7089cbab8b7> weka has https://weka.wikispaces.com/Saving+and+loading+models
+[08:32] <5571fe1015522ed4b3e17d90> @lesshaste  @BastinRobin  @mikegraham you can use joblib.dump (based on pickle with some optimization on numpy arrays) too, see http://scikit-learn.org/stable/modules/model_persistence.html#model-persistence for more details. There were some discussion on the mailing list IIRC about this for example http://thread.gmane.org/gmane.comp.python.scikit-learn/14905/focus=14909.
+[09:09] <564789be16b6c7089cbab8b7> @lesteve  Thanks. That mailing list thread is somehow slightly negative. I would love to see an objective and technical analysis of the situation.
+[09:10] <564789be16b6c7089cbab8b7> For example, what is wrong with developing the PMML idea?
+[09:12] <564789be16b6c7089cbab8b7> iirc  joblib.dump makes a large number of small files. One simple improvement would be to reduce the number of files to 1 or 2
+[09:13] <564789be16b6c7089cbab8b7> ah.. I see the other problems are mentioned
+[09:13] <5571fe1015522ed4b3e17d90> > For example, what is wrong with developing the PMML idea?
+[09:14] <5571fe1015522ed4b3e17d90> I don't think there is anything wrong per se. It's just that it is quite some work and it probably won't happen inside scikit-learn. Not an expert though. There may have been other discussions on the mailing list on this serialization issues. It does come up from time to time.
+[09:15] <564789be16b6c7089cbab8b7> OK thanks. I am just a big fan of having clearly stated tasks for keen volunteers to pick from. I feel lots of people want to contribute to scikit learn as it is so great :)
+[09:15] <5571fe1015522ed4b3e17d90> > iirc joblib.dump makes a large number of small files. One simple improvement would be to reduce the number of files to 1 or 2  For the record, joblib master creates only a single pickle file (and not one per numpy array as previously)
+[09:15] <541a528b163965c9bc2053de> PMML is a very verbose XML-based format. The new spark mllib lightweight format  would probably be better much more efficient.
+[09:15] <564789be16b6c7089cbab8b7> @ogrisel  Oh that sounds very interesting. 
+[09:16] <564789be16b6c7089cbab8b7> 
+[09:16] <541a528b163965c9bc2053de> @lesshaste it's from the link you just sent
+[09:16] <564789be16b6c7089cbab8b7> @ogrisel  the spark link?
+[09:16] <541a528b163965c9bc2053de> yes, didn't you read it?
+[09:17] <564789be16b6c7089cbab8b7> no I did :) I just sent a lot of links
+[09:17] <564789be16b6c7089cbab8b7> to be clear, the interesting part is that an expert (that's you) thinks it might be relevant
+[09:17] <564789be16b6c7089cbab8b7> my knowledge is very shallow in this area
+[09:22] <564789be16b6c7089cbab8b7> @lesteve  I didn't know  joblib master creates only a single pickle file. Thank you
+[09:22] <541a528b163965c9bc2053de> It's only in the master branch of joblib so far. It will be part of the next release.
+[09:23] <541a528b163965c9bc2053de> If someone starts implementing tools to save sklearn models to / load from the spark 2 serialization format, please reference the repo in https://github.com/scikit-learn/scikit-learn/blob/master/doc/related_projects.rst#interoperability-and-framework-enhancements
+[09:30] <541a528b163965c9bc2053de> This will require a good python parquet implementation. The most promising implementation should be the official https://github.com/apache/parquet-cpp but the python bindings are not ready yet but progress  is happening, see eg: http://wesmckinney.com/blog/pandas-and-apache-arrow/
+[10:23] <564789be16b6c7089cbab8b7> very interesting
+[13:34] <57565ad2c43b8c6019783fbb> any of you guys work with c++
+[14:13] <57565ad2c43b8c6019783fbb> Im trying to make an AI using python
+[15:13] <55a487245e0d51bd787b4e45> @lesshaste To avoid the problems of pickle in full, you need to be explicit. To be explicit, you need to have your data model change every time anything applicable changes.
+[19:46] <55495eb515522ed4b3dffb00> hello, I am seeing many feature scaling methods, but I cannot find things like RobustScaler and etc on the internet.
+[19:46] <55495eb515522ed4b3dffb00> what are they called in academic society?
+[21:06] <55495eb515522ed4b3dffb00> and what is difference between scale and standardscaler?
+[21:06] <55495eb515522ed4b3dffb00> is standardscaler just a class implementation of scale?
+[21:10] <55a487245e0d51bd787b4e45> @keonkim Yes, scale is a function that returns the result, StandardScaler can go in a pipeline or whatever.
+[21:12] <55a487245e0d51bd787b4e45> @keonkim I don't know that RobustScaler has a consistent academic name. To indicate what they did, someone might describe it. I've seen it contrasted with naive scaling by calling it "IQR", but that's not a formal name for the scaling technique, which merely uses the actual IQR to do its job. A lot of people might know what you mean if you just said "IQR scaling" or "Scaled to the IQR" though.

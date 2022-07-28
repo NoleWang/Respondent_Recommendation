@@ -1,0 +1,28 @@
+<s> <user> hey guys </s>
+<s> <user> whats the recommended way to recompile a single <unka.> file after i modify it ? </s>
+<s> <user> you just do the <unka`> setup.py <unka_`> or <unka`> setup.py <unka_> -i` ( for inplace building ) again . it generates c and recompiles for the changed <unka> sources only . </s>
+<s> <user> if you just want to compile , you could do <unka`> <unka.`> . but you probably want to build in place again for it all to work together . </s>
+<s> <user> yup , what <unk#a@> said </s>
+<s> <user> ;) </s>
+<s> <user> oh okay thanks for your quick help <unka:> : </s>
+<s> <user> yeah <unka-@> you are right , only compile is not what i want haha </s>
+<s> <user> > anyone can help me review [ this pr ]? <unk![> <unka(./:]> ) ;p </s>
+<s> <user> lol we should put that in <unka.> :p haha just kidding </s>
+<s> <user> hahahahaha </s>
+<s> <user> good idea </s>
+<s> <user> ( just kidding ) we should add this in the pr template ;p </s>
+<s> <user> <unka:> : </s>
+<s> <user> do we have a make target to <unka> only what 's needed ? </s>
+<s> <user> by only what 's needed , you mean to say - only specific modules ? </s>
+<s> <user> is python 3.x fully supported by <unka> </s>
+<s> <user> yes , it should be . </s>
+<s> <user> i know 3.5 is fully supported </s>
+<s> <user> its been tested with 3.4 3.5 , and 3.3 should also work . not sure about 3.1 or 3.2 </s>
+<s> <user> in that case if i want to get into contributing to <unka> , using python 3 syntax for <unka`> should not be a problem in pull requests </s>
+<s> <user> indeed </s>
+<s> <user> if you look at URL/https:/ URL/github.com/ <unk#a%&,-/=?> youll see that the <unconvertable > <unka'> statements are all functions </s>
+<s> <user> make sure to <unka`> <unka_> import <unka_`> , though . </s>
+<s> <user> <unk#a@> others working with the tree module - if youve read <unka> <unconvertable > <unka> and regression trees , would you recommend it as a resource to get familiar with the theory ? </s>
+<s> <user> might as well tag <unka@> as well </s>
+<s> <user> i'd like to do <unka/> with multiple outputs , but each example only has the observed labels for one of the outputs . although the dataset object has entires for masks , which seems like it should fit the bill , i 'm getting the impression that the masks only works for <unka> and not for <unka> <unka/> nets . is that correct ? </s>
+<s> <user> can you link the example you were looking at ? </s>

@@ -1,0 +1,7 @@
+[01:17] <601604b6d73408ce4ffa348b> Hi, is there any way to make it so that sklearn doesn't normalize the columns in PCA?
+[21:13] <55d21ee30fc9f982beadabb8> I don't think that we have a parameter to do that.
+[21:16] <55d21ee30fc9f982beadabb8> It would be weird to not normalize the columns since it is an assumption of PCA if I am not wrong
+[21:28] <55d21ee30fc9f982beadabb8> Not centering will make that you will get an intercept while transforming
+[21:33] <55d21ee30fc9f982beadabb8> Uhm now that I think about it, there is the TruncatedSVD
+[21:33] <55d21ee30fc9f982beadabb8> https://scikit-learn.org/stable/modules/generated/sklearn.decomposition.TruncatedSVD.html
+[21:33] <55d21ee30fc9f982beadabb8> This should do the job

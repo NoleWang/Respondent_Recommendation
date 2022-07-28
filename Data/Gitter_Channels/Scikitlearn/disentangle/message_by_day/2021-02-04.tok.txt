@@ -1,0 +1,21 @@
+<s> <user> hello all </s>
+<s> <user> i am new to this chatroom </s>
+<s> <user> i have a question regarding dataset <unka> , can someone help me out ? </s>
+<s> <user> <unka@> you can freely ask your question and you might get an answer </s>
+<s> <user> <unka@> thank you , i am going to ask right now </s>
+<s> <user> i have a dataset which is for binary <unka> ( or at least we are approaching it from a binary <unka> perspective ) there are a total of 2.5 million rows , with label 0 belonging to around <unk#> ( 2.2 million ) rows and label 1 belonging to around <unk#> ( 0.3 million ) rows , there are around 45 features . the <unka> approaches a ratio of around 1 : 7 my problem is very straightforward , even without any data <unka> if i try to classify the data the <unka> algorithms , no matter what parameters are set , give around 99% in all performance metrics ( accuracy , precision , recall , f1 score etc ) this would probably suggest a bad case of <unka> but i am not sure , feel free to explain and add your opinion regarding what could be the reason i tried to visualize the graph using <unka> and saw that the entire data is shaped like an <unka> and there is heavy overlap between both the labels . this means that ( 1 ) data is badly <unka> ( 2 ) data is badly overlapped , i highly doubt i can use anomaly detection there as all the <unka'> ( label 1 ) are sitting close with the 'normal' ( label 0 ) data any suggestions on how i should proceed ? </s>
+<s> <user> i am not sure that i would give to much weight with what you observe with <unka> . </s>
+<s> <user> while accuracy will be boost for sure , the precision and recall will be good measure with <unka> problem . </s>
+<s> <user> you can use the <unka_`> instead of <unka_`> as a baseline . </s>
+<s> <user> i would say that one potential error would be to forget to set <unka_`> in <unka/> if it is not <unk#`> ( that does not seem to be the case ). </s>
+<s> <user> you can probably look at the entire confusion matrix to be sure that the stats seem correct </s>
+<s> <user> then if you still get good results by properly <unka-> your experiment , everything should be fine . </s>
+<s> <user> thank you , i see some really good points in your answer than i can experiment with </s>
+<s> <user> however , it is important to tell you the context of the problem </s>
+<s> <user> so you can understand what i am trying to do exactly </s>
+<s> <user> i am trying to do a feature selection feature reduction task </s>
+<s> <user> since the original dataset , without any <unka> and with all features , gives near perfect results , it will <unka> the validity of using any type of feature reduction techniques </s>
+<s> <user> i will try out what you said in your answer , but i thought that it would be better to let you know the entire context and the actual reason for why exactly we need 'bad' results before applying any feature reduction </s>
+<s> <user> it might still allow you to fit and predict faster and this probably what feature selection is best at . </s>
+<s> <user> > it might still allow you to fit and predict faster and this probably what feature selection is best at . that .. is actually a very good point , thanks ! </s>
+<s> <user> <unka@> je vous <unka> :) </s>

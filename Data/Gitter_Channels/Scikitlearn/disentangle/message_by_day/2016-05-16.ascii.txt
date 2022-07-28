@@ -1,0 +1,3 @@
+[18:02] <54d4a1d6db8155e6700f853b> is there ever a case when the requirements.txt is parsed automatically?
+[18:03] <56c4f19ae610378809c1f8ae>  what do you mean? i occasionally run `pip install -r requirements.txt <unconvertable> upgrade`?
+[18:03] <56c4f19ae610378809c1f8ae> assuming versions are not pinned, of course

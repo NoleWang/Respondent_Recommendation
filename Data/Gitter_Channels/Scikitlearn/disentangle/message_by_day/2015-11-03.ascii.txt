@@ -1,0 +1,12 @@
+[17:29] <54d4a1d6db8155e6700f853b> hm... anyone have an idea why github stopped notifying me for comments on pull requests I created?
+[17:30] <54d4a1d6db8155e6700f853b> ok I was just hallucinating, never mind
+[20:01] <53135b495e986b0712efc453> .
+[20:14] <54d4a1d6db8155e6700f853b> ?
+[20:14] <54d4a1d6db8155e6700f853b> I'm trying to check if we missed anything in whatsnew for 0.17 by running a diff against 0.16
+[20:14] <54d4a1d6db8155e6700f853b> some idiot changed the docstrings of all the classes so all files are changed
+[20:21] <53135b495e986b0712efc453> sorry that . was a typo.. (gitter android app sucks... :/) and lol `*`silently hopes I don't show up in the git blame`*` :p
+[20:50] <54d4a1d6db8155e6700f853b> there is an android gitter app? hm...
+[20:51] <53135b495e986b0712efc453> yea its just the mobile site wrapped as an app... too slow and buggy... :/
+[20:52] <54d4a1d6db8155e6700f853b> meh
+[20:54] <53810862048862e761fa2887> They updated it
+[21:27] <54d4a1d6db8155e6700f853b> anyone want to make the pdf docs build on 0.17.X ? ^^

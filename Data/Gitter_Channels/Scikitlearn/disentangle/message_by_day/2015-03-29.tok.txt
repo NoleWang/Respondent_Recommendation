@@ -1,0 +1,14 @@
+<s> <user> <unka@> are you around ? </s>
+<s> <user> yes </s>
+<s> <user> are you feeling better ? </s>
+<s> <user> yeah , somewhat . so do we do only slides , no notebooks ? </s>
+<s> <user> apparently yes , this is a constraint of their platform apparently </s>
+<s> <user> ok . and use google presentation ? </s>
+<s> <user> actually it 's possible to have a screen share for live demo but it needs flash and or java </s>
+<s> <user> i would not count on it too much </s>
+<s> <user> we can use google doc and export the slides as pdf </s>
+<s> <user> i think </s>
+<s> <user> let 's try </s>
+<s> <user> i sent you an invite </s>
+<s> <user> thanks </s>
+<s> <user> that sounds like a good strategy </s>

@@ -1,0 +1,5 @@
+<s> <user> <unka> embedding does n't accept lists ... should that be considered an issue ? </s>
+<s> <user> the function or the class ? </s>
+<s> <user> the <unka`> method i had meant </s>
+<s> <user> are you sure ? that should be a common test . it might be that the common test does n't cover clustering yet . then this should be fixed . </s>
+<s> <user> yes <unk#a().[`> , <unk#)]`> does n't work ... ok i 'll fix it and add tests for that ... </s>

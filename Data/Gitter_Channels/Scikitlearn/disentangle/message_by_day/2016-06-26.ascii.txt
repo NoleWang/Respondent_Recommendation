@@ -1,0 +1,7 @@
+[04:41] <55901c1b15522ed4b3e2f949> @meflin what is the issue?
+[15:31] <55a487245e0d51bd787b4e45> @jmschrei It seemed that the student evals were overdue
+[15:32] <55a487245e0d51bd787b4e45> @jmschrei (At this point, I think there is a risk of sklearn being blacklisted from GSOC)
+[16:23] <55901c1b15522ed4b3e2f949> @mikegraham I submitted my student eval days ago
+[16:31] <55901c1b15522ed4b3e2f949> okay seems like it has been resolved
+[22:30] <5739265bc43b8c6019731a58> everything is resolved and good thanks for all your hard work
+[22:30] <53135b495e986b0712efc453> Thanks for the update :)

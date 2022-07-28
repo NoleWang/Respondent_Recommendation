@@ -1,0 +1,11 @@
+[08:03] <5657989e16b6c7089cbc5309> @flaviohenriquecbc nice report! Two suggestions. One, it would be nice to explain what the red and blue colors mean. I didn't get a strong sense of what those were when reading the Medium post or your final report PDF. And two, if you were to improve this accuracy of your models, maybe consider feature selection to narrow which words you use in your model, instead of using all of them. From your final report, it appears you used all of them, but if I missed that part of your analysis, forgive me. Thanks for sharing your work and results!
+[08:04] <5657989e16b6c7089cbc5309> @flaviohenriquecbc And feel free to share in the [freeCodeCamp DataScience](https://gitter.im/FreeCodeCamp/DataScience) room as well :wink:
+--------------------------------------------------------------------------------------------------
+[08:25] <58bef343d73408ce4f4f062f> thank you for your feedback, @erictleung .. i will try to implement what you said :)
+--------------------------------------------------------------------------------------------------
+[08:43] <58bef343d73408ce4f4f062f> actually the colors didn't mean anything.. it was a style that i used for the graphs
+--------------------------------------------------------------------------------------------------
+[17:43] <564e507e16b6c7089cbb6551> @amueller checked Bottou's sgd code in C++ (https://leon.bottou.org/projects/sgd), I'm not sure where that same formula used for the learning rate can be found there.
+--------------------------------------------------------------------------------------------------
+[20:21] <54d4a1d6db8155e6700f853b> @h4k1m0u which one?
+--------------------------------------------------------------------------------------------------

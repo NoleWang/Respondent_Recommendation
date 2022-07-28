@@ -1,0 +1,48 @@
+[04:53] <54b2524adb8155e6700e8a8e> @arnawldo, LabelEncoder is not intended for features.
+[06:02] <5799ed1c40f3a6eec05ce0b3> @jnothman so given my feature is categorical,  should I just replace the levels with integers, or spread it across columns?
+[06:44] <54b2524adb8155e6700e8a8e> We have had discussions on this topic on the mailing list. Either should work alright with trees. Integers will require deeper trees to select for (or against) a single category. So the model parameters need to be tuned to whichever approach you take.
+[06:56] <5799ed1c40f3a6eec05ce0b3> @jnothman great. How can I see this discussion and learn more. I'm not on this list
+[07:00] <54b2524adb8155e6700e8a8e> https://roamanalytics.com/2016/10/28/are-categorical-variables-getting-lost-in-your-random-forests/ suggests you are better off with integers, fwiw
+[07:06] <5799ed1c40f3a6eec05ce0b3> @jnothman Thanks a lot
+[10:33] <57a061aa40f3a6eec05d8d26> Hello
+[10:35] <57a061aa40f3a6eec05d8d26> Docs for nearest neighbors says "The most naive neighbor search implementation involves the brute-force computation of distances between all pairs of points in the dataset...". Why it is so?
+[10:47] <54b2524adb8155e6700e8a8e> Because BallTree and KDTree require true metrics and dense data; and because brute force pairwise distances may be faster for small datasets.
+[10:49] <57a061aa40f3a6eec05d8d26> I mean, why it is pairwise (O(dn^2))? Why you have to compute distances between all pairs of points? I'm trying to understand the time complexity of the kNN, that's why I ask.
+[10:50] <5683764a16b6c7089cc092dc> hmm, it is hard to say. it is the nature of kNN. you can find some visualization of kNN on the Internet and you will understand
+[10:50] <5683764a16b6c7089cc092dc> well, let's say for  one new data point
+[10:51] <5683764a16b6c7089cc092dc> how do you know the k-nearest neighbors of this new one?
+[10:51] <57a061aa40f3a6eec05d8d26> calculate distance from this new point to all training points and keep k closest?
+[10:51] <5683764a16b6c7089cc092dc> yep
+[10:52] <5683764a16b6c7089cc092dc> exactly
+[10:52] <5683764a16b6c7089cc092dc> so for one data point you need n calculation
+[10:52] <57a061aa40f3a6eec05d8d26> yes
+[10:52] <5683764a16b6c7089cc092dc> so ?
+[10:53] <57a061aa40f3a6eec05d8d26> isn't it then like O(knd), not O(dn^2) ?
+[10:54] <5683764a16b6c7089cc092dc> :D
+[10:54] <5683764a16b6c7089cc092dc> cool
+[10:54] <5683764a16b6c7089cc092dc> let me check again
+[10:54] <5683764a16b6c7089cc092dc> :D
+[10:55] <5683764a16b6c7089cc092dc> I suppose it means you find kNN for all N
+[10:55] <57a061aa40f3a6eec05d8d26> I can understand that, but why I would like to do that?
+[10:57] <5683764a16b6c7089cc092dc> hmm, I have no answer for this in fact
+[10:57] <5683764a16b6c7089cc092dc> :D
+[10:58] <5683764a16b6c7089cc092dc> https://stats.stackexchange.com/questions/219655/k-nn-computational-complexity
+[10:58] <5683764a16b6c7089cc092dc> https://nlp.stanford.edu/IR-book/html/htmledition/time-complexity-and-optimality-of-knn-1.html
+[10:58] <57a061aa40f3a6eec05d8d26> Yes, I was just reading that... the example I gave was from that 
+[10:59] <57a061aa40f3a6eec05d8d26> (crossvalidated I mean)
+[10:59] <5683764a16b6c7089cc092dc> yep, they say the same thing
+[11:00] <57a061aa40f3a6eec05d8d26> It seems that people just think it different ways. And probably different implementations.
+[11:01] <57a061aa40f3a6eec05d8d26> That's why they differ
+[11:01] <5683764a16b6c7089cc092dc> I wouldnt say so. brute-force kNN is very straightforward
+[11:02] <57a061aa40f3a6eec05d8d26> Well, the answer at the Cross Validated says it depends on "algorithmic choices"
+[11:02] <57a061aa40f3a6eec05d8d26> Doesn't it mean different implementations?
+[11:07] <54b2524adb8155e6700e8a8e> O(knd) is referring to the cost *per query*. If you have n queries, then the cost is O(kn^2d)
+[11:09] <54b2524adb8155e6700e8a8e> and by per query I mean per instance in your query
+[11:09] <54b2524adb8155e6700e8a8e> With a binary tree index, the k neighbor search should be O(k log n) *per query* (ignoring some factor related to d)
+[11:15] <57a061aa40f3a6eec05d8d26> Ok, it's just confusing when the complexity of brute force is stated to be O(DN^2) i.e. N queries in O(DN) time but for KD-tree it's stated to be O(log N) i.e. only for one query. Or am I missing something here?
+[11:18] <57a061aa40f3a6eec05d8d26> Should it be made more clear in the docs that it refers to computing nearest neighbors for N query points?
+[11:37] <57a061aa40f3a6eec05d8d26> Also, I looked at code and if I'm not mistaken, it  calculates pairwise distances between query points and training points using pairwise_distances() function. In this case, if there's M query points, it would be O(DMN) and only if M is close to N in size, then it's O(DN^2), right?
+[11:40] <54b2524adb8155e6700e8a8e> sure. a pull request is welcome which removes the ^2. I think the current implementation is actually something like O(knd log k)...
+[11:52] <57a061aa40f3a6eec05d8d26> Ok. Where does the log k come from?
+[12:15] <54b2524adb8155e6700e8a8e> we sort the k neighbors so nearest is output first. which we perhaps need not be doing.
+[12:17] <57a061aa40f3a6eec05d8d26> Oh, I saw that on the code... thanks for helping

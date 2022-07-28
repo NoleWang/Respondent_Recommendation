@@ -1,0 +1,4 @@
+<s> <user> hi guys trying to analyze a data set for <unka> employee <unka> </s>
+<s> <user> can you please suggest that linear regression is good or i need to use a time series model . my dataset is </s>
+<s> <user> URL/https:/ <unka./> <unka+/> </s>
+<s> <user> based on its description , the dataset you linked does not look like <unka> data : it 's a table of feature data and one can probably make the <unka.> assumption . this is not a series of events with a timestamp for each with a progressing time dependency . for <unka> regression of the number of hours of <unka> , i would indeed try linear regress ion ( + some feature engineering ) and compare with a more complex model such as <unka> </s>

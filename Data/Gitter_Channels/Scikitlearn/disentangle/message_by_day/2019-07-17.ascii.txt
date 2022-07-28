@@ -1,0 +1,2 @@
+[17:11] <5ba59281d73408ce4fa8fbb5> how can i use yolo to detect numbers in sudoku puzzle?
+[17:11] <5ba59281d73408ce4fa8fbb5> I want to read those numbers but Canny, Hough, contour aren't working any good

@@ -1,0 +1,10 @@
+<s> <user> hi everyone , i need some help in implementing <unka.> in c++ . i 've been searching it for a while but could n't find good <unka/> so far . is there any library out there which can solve sparse <unka> in c++ ? </s>
+<s> <user> have you checked <unka> ? they might have something </s>
+<s> <user> not yet , will check </s>
+<s> <user> <unka@> , there is <unka> , URL/https:/ <unka./> <unk#a,-./> i have n't read the complete article , but it does have the phrase " sparse matrix " in it . </s>
+<s> <user> yup , i 've tried the sparse coding module of that but could n't get the right results from as , not as good as <unka> , so i thought that it might not be the way to go </s>
+<s> <user> ah , okay ! what other solutions have you tried ? would like to know . </s>
+<s> <user> i 'm also trying <unka> solver of <unka> library . i 've used it in a similar application </s>
+<s> <user> that 's cool ! </s>
+<s> <user> took help of <unka> people and it worked using the sparse coder interface :) just to mention it requires initializing dictionary and a call to encode . i realized that it 's very similar to <unka> sparse coder </s>
+<s> <user> hi ! i am new </s>

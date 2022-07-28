@@ -1,0 +1,14 @@
+<s> <user> hello everyone , i want to contribute to <unka-> . can someone please direct me towards the documentation to get started ? thanks . </s>
+<s> <user> have you read the contributing guide ? </s>
+<s> <user> thats a good start . </s>
+<s> <user> yes sir , i did give it a read . however , not having worked with such a huge library before , the code base seems a bit intimidating . can you please tell me as to how long would it take to understand the code before i can make any contribution ? </s>
+<s> <user> well you dont have to understand everything to begin contributing </s>
+<s> <user> the different methods implemented are largely independent of each other </s>
+<s> <user> okay sir , thanks for letting me know . i 'll try to solve any issue marked 'easy' to <unka-> as mentioned in the guide then . </s>
+<s> <user> <unka@> thanks a lot for the correction , am suppose to <unka> <unka_> instead ... </s>
+<s> <user> hi , this is one error that i always seem to encounter when i pull from upstream ( using <unk#a.> ) even after executing `sudo <unka`> : <unk`> importerror : DIR/home/ <unka/> <unka/> <unka-/> <unka/> <unka/> <unka./_> : undefined symbol : <unka_> <unk`> any solutions to this ? </s>
+<s> <user> i 'm trying to import <unka> here </s>
+<s> <user> this is the full traceback : <unk`> <unk-> importerror traceback ( most recent call last ) <unk#a-<> > in <module > ( ) --- -> 1 from <unka._> import <unka> DIR/home/ <unka/> <unka/> <unka-/> <unka/> <unka/_> <unka./_> in <module > ( ) 10 # complete documentation . 11 -- -> 12 from <unka.> import <unka> 13 14 from <unka.> import <unka> , <unka> DIR/home/ <unka/> <unka/> <unka-/> <unka/> <unka/_> <unka./> in <module > ( ) 30 from .. <unka.> import <unka_> 31 from .. utils import <unka_> -- -> 32 from .. <unka.> import <unka_> 33 from .. <unka.> import <unka_> , <unka_> 34 from .. <unka.> import <unka_> DIR/home/ <unka/> <unka/> <unka-/> <unka/> <unka/> <unka./> in <module > ( ) 24 from <unka._> import <unka_> 25 from .. <unka.> import <unka> -- -> 26 from <unka._> import <unka_> 27 from <unka.> import <unka_> 28 from .. exceptions import <unka> importerror : DIR/home/ <unka/> <unka/> <unka-/> <unka/> <unka/> <unka./_> : undefined symbol : <unka_> <unk`> </s>
+<s> <user> i 'm getting pretty much the same error as reported [ <unk#a(-./:]> ). </s>
+<s> <user> i have <unka> installed however i still get this error <unka:> : </s>
+<s> <user> reported it here : URL/https:/ URL/github.com/ <unk#a-/> </s>

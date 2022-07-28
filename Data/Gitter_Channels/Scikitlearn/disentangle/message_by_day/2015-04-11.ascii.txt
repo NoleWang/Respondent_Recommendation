@@ -1,0 +1,6 @@
+[09:13] <5385f2fe048862e761fa2d40> @amueller I noticed it a while after I sent that message 
+[09:13] <5385f2fe048862e761fa2d40> Why not just nest it in the if?
+[09:23] <5385f2fe048862e761fa2d40> @amueller Here's a PR that does just that https://github.com/scikit-learn/scikit-learn/pull/4570
+[09:24] <5385f2fe048862e761fa2d40> Also am I missing something in https://github.com/scikit-learn/scikit-learn/pull/4568 ?
+[10:01] <5385f2fe048862e761fa2d40> How good is the test coverage?
+[10:01] <5385f2fe048862e761fa2d40> I'm not sure if I broke something or not

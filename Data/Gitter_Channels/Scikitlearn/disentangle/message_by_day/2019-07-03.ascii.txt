@@ -1,0 +1,3 @@
+[19:25] <5bd32ac1d73408ce4facdf3c> Hey guys, so I'm new to scikit, so please bear with me. I have a pandas dataframe that looks like this: [email, businessId, manager, app1, app2, app3, ... , app170] So essentially one row defines one user that has either a 1 or NaN on each of the appX columns specifying if they have that app or not. 
+[19:26] <5bd32ac1d73408ce4facdf3c> What I want is a classifier that given email, businessId, and manager ....would return a list of apps should have
+[19:27] <5bd32ac1d73408ce4facdf3c> I've got the data in that format as i specified, what are the models do you guys think would b good for creating this type of classifier? And how would i go about this in general?

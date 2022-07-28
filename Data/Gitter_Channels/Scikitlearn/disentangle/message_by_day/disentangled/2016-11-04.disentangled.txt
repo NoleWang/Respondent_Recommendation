@@ -1,0 +1,2 @@
+[23:29] <57475b90c43b8c601975254f> @nelson-liu  Thanks, I checked and there is no scikit-neuralnetwork gitter channel, and haven't gotten an answer to this issue when I asked on the github, but I'll post to StackOverflow.  Thanks
+--------------------------------------------------------------------------------------------------

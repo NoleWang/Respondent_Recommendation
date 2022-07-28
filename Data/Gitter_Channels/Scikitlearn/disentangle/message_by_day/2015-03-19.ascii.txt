@@ -1,0 +1,35 @@
+[09:22] <541a528b163965c9bc2053de> to enable OSX on travis we would need to adapt our CI script, but it should be doable.
+[10:14] <5385f2fe048862e761fa2d40> how do I plot AgglomerativeClustering correctly?
+[13:10] <54d4a1d6db8155e6700f853b> @omerzimp are you looking for dendograms? https://github.com/scikit-learn/scikit-learn/pull/3464 or what do you want to plot?
+[13:11] <5385f2fe048862e761fa2d40> I have a scatter plot
+[13:11] <5385f2fe048862e761fa2d40> I want to show where the clusters are and color them according to the number of data points in a cluster
+[13:12] <54d4a1d6db8155e6700f853b> what do you mean by where the clusters are? A common way to plot a clustering is to plot he points and color by cluster membership
+[13:13] <5385f2fe048862e761fa2d40> That's exactly what I want but I want to rate them in green shades, yellow shades and red shades according to the number of data points in a cluster
+[13:14] <54d4a1d6db8155e6700f853b> or so what is the question? how to get the right colors?
+[13:15] <5385f2fe048862e761fa2d40> yes
+[13:15] <5385f2fe048862e761fa2d40> I don't know how to get the number of data points in a cluster
+[13:15] <54d4a1d6db8155e6700f853b> you can get the number of clusters by np.bincount(agg.labels_)
+[13:16] <5385f2fe048862e761fa2d40> I need the number of datapoints in a cluster
+[13:17] <5385f2fe048862e761fa2d40> Yep that works
+[13:17] <5385f2fe048862e761fa2d40> why does it work
+[13:18] <54d4a1d6db8155e6700f853b> http://docs.scipy.org/doc/numpy/reference/generated/numpy.bincount.html
+[13:21] <5385f2fe048862e761fa2d40> and a label is the cluster number in this case?
+[13:26] <5385f2fe048862e761fa2d40> thanks. It's pretty accurate
+[13:26] <5385f2fe048862e761fa2d40> How come the results are very similar to K-MEANS?
+[13:27] <5385f2fe048862e761fa2d40> Also I still don't understand where the cluster centers are
+[14:28] <54d4a1d6db8155e6700f853b> there are no cluster centers in agglomerative clustering
+[14:34] <5385f2fe048862e761fa2d40> Ok that's good to know
+[14:34] <5385f2fe048862e761fa2d40> How do I check if a value would end up in a cluster? I have predict in K-MEANS but not in agglomerative clustering
+[14:39] <5385f2fe048862e761fa2d40> @amueller Is there a parallel version of agglomerative clustering? I see that K-MEANS has one that uses joblib
+[14:53] <54d4a1d6db8155e6700f853b> the k-means uses joblib just to parallelize the restarts. there is no parallel version of agglomerative clustering, but it should be pretty fast
+[14:53] <54d4a1d6db8155e6700f853b> the way the clustering is constructed there is not really a way to predict in agglomerative clustering, but you could assign clusters to new points using nearest neighbors for example
+[15:02] <5385f2fe048862e761fa2d40> I've seen papers about parallelizing them
+[15:12] <5385f2fe048862e761fa2d40> @amueller See http://www.cs.cornell.edu/~kb/publications/irt08.pdf
+[15:14] <5385f2fe048862e761fa2d40> Clause 3.3
+[16:26] <54d4a1d6db8155e6700f853b> this seems to be somewhat tricky...
+[16:26] <5385f2fe048862e761fa2d40> but doable right?
+[16:27] <54d4a1d6db8155e6700f853b> which version? they talk about the locally oriented version which is described in a different paper
+[16:28] <5385f2fe048862e761fa2d40> Both are parallelizable according to 3.3
+[16:29] <54d4a1d6db8155e6700f853b> yes but they don't say how
+[16:29] <5385f2fe048862e761fa2d40> You have to look at other papers
+[16:29] <54d4a1d6db8155e6700f853b> I could but I have other things to do. and without looking at it, how should I say if it is doable?

@@ -1,0 +1,3 @@
+<s> <user> do we need to have the notifications for test failures in <unka> activity bar ... would n't notifications on pr activity suffice ? </s>
+<s> <user> <unka@> </s>
+<s> <user> <unk#a@> we can try adding them in <unka> . if it 's too noisy , we can remove it . </s>

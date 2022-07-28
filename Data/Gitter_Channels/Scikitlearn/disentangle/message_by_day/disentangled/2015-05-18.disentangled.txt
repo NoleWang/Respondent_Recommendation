@@ -1,0 +1,28 @@
+[15:42] <54d4a1d6db8155e6700f853b> @rvraghav93 cool :)
+--------------------------------------------------------------------------------------------------
+[15:43] <54d4a1d6db8155e6700f853b> @xuewei4d have you talked with your mentors yet?
+[15:43] <54d4a1d6db8155e6700f853b> it would be great to get a first blog post from both of you ;)_
+--------------------------------------------------------------------------------------------------
+[17:28] <550f53e215522ed4b3dda5f6> Not yet. I will email them soon. I have published a post several days ago, which is an introduction to my project and myself.
+[17:31] <550f53e215522ed4b3dda5f6> I am trying to derive the updating functions of VBGMM with other three kinds of covariance matrix, sphere, diag and tied following PRML.
+--------------------------------------------------------------------------------------------------
+[17:47] <54d4a1d6db8155e6700f853b> Xuewei4d: did you mail your blog post to the mailing list? maybe I overlooked it, sorry
+[17:48] <54d4a1d6db8155e6700f853b> xuewei4d: that sounds great. Make sure you have your mentors looped in so they know what is going on!
+[17:52] <54d4a1d6db8155e6700f853b> btw @ogrisel are you around?
+[17:56] <54d4a1d6db8155e6700f853b> I think it is good practice to post each blog post to the mailing list for maximum visibility
+[17:57] <54d4a1d6db8155e6700f853b> I have to admit I didn't rss subscribe, and I don't usually use RSS, so i am likely to miss it if you don't post ;)
+[17:57] <54d4a1d6db8155e6700f853b> @rvraghav93 btw why did you change your github handle?
+[17:58] <54d4a1d6db8155e6700f853b> @rvraghav93 also: for wrapping up the partial_fit testing, I think the most important part is to simplify _compare_attributes
+--------------------------------------------------------------------------------------------------
+[17:54] <550f53e215522ed4b3dda5f6> Ohh, I will post it into the mailing list. Sorry.
+--------------------------------------------------------------------------------------------------
+[19:37] <54d4a1d6db8155e6700f853b> any one here familiar enough with LDA to do a final review?
+[20:54] <54d4a1d6db8155e6700f853b> master is broken with a heisenfailure
+[20:54] <54d4a1d6db8155e6700f853b> I don't like it
+--------------------------------------------------------------------------------------------------
+[22:36] <54d4a1d6db8155e6700f853b> anyone who has an opinion on how back-links from the references to the user-guide should look like should speak here or be forever silent: https://github.com/scikit-learn/scikit-learn/pull/4723
+--------------------------------------------------------------------------------------------------
+[22:37] <53135b495e986b0712efc453> @amueller Sorry for the confusion... I just merged my github profiles ragv and the old one rvraghav93 into one to sync with my email rvraghav93@gmail.com ... :) I earlier created ragv as a temporary profile...  And yea I just pushed it ;) could you pl take a look? :)
+[22:39] <54d4a1d6db8155e6700f853b> ok, I will. not sure I have time to go through all of it now
+[22:39] <53135b495e986b0712efc453> Sure :)
+--------------------------------------------------------------------------------------------------

@@ -1,0 +1,8 @@
+<s> <user> can anyone pleaes tell me where should i start for data science </s>
+<s> <user> <unka> is your friend :) URL/https:/ <unka./> <unk#a-/> </s>
+<s> <user> its better to ask these kind of questions on <unka> ( and youll get more responses ), this place is more specific for <unka-> development </s>
+<s> <user> <unka@> thanks for this but i have concern with language whether i should go with python or r </s>
+<s> <user> i personally dont have much experience with r , so i cant answer this question , sorry . </s>
+<s> <user> <unka@> currently i am working with python and i am new to machine learning and for that i was asking </s>
+<s> <user> correct choice . </s>
+<s> <user> <unk#a@> it depends a lot on what you want to do . are you more interested in prediction or <unka> ? what kind of methods would you like to use ? </s>

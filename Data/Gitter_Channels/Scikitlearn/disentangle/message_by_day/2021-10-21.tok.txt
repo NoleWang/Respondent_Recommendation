@@ -1,0 +1,4 @@
+<s> <user> <unka@> solved the problem by turning class 0 into 1 . but it 's still not clear what kind of data i get by setting <unk#a=> . updated the code and added two videos with <unk#a=> and <unk#a=> . i put the code and videos [ <unk#a(-./:]> ) it is quite possible that i am difficult to understand , since english is not my native language . there is no opportunity to practice in english . </s>
+<s> <user> </s>
+<s> <user> turning class 0 to 1 is equivalent to change <unk#a=_`> without changing the label . </s>
+<s> <user> thanks ! </s>

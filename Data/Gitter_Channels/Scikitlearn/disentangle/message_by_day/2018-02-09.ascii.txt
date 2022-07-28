@@ -1,0 +1,1 @@
+[08:02] <59b159b1d73408ce4f74c00d> @itsmegaurav check out https://stats.stackexchange.com/questions/224051/one-hot-vs-dummy-encoding-in-scikit-learn

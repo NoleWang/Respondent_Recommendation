@@ -1,0 +1,2 @@
+<s> <user> <unk#a@> <unka@> i know you do n't have much time , but if you could point me again to where you did the improvement of the contrib docs , i could maybe work on that . i think having some more comments on git would really help some people . </s>
+<s> <user> afaik i think the intended framework was just put on the wiki for now - URL/https:/ URL/github.com/ <unka-/> </s>

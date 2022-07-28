@@ -1,0 +1,7 @@
+[09:35] <564789be16b6c7089cbab8b7> I have one hot encoded feature vectors which I am using for multiclass classification.  If in my training set there is a feature which is always 0, what happens in testing when it comes across one that is a 1 for the feature?
+--------------------------------------------------------------------------------------------------
+[11:33] <matrix-rthy:matrix.org> @lesshaste: By default OHE would error. You would need to set `handle_unknown='ignore'` to ignore it.
+--------------------------------------------------------------------------------------------------
+[13:58] <564789be16b6c7089cbab8b7> @rthy:matrix.org thanks.  Do you know if that would be the same for logistic regression for example?
+[15:34] <564789be16b6c7089cbab8b7> can sklearn.metrics.pairwise be made to work for hamming or levenshtein distance?
+--------------------------------------------------------------------------------------------------

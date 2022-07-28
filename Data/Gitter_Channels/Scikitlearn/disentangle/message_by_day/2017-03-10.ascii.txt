@@ -1,0 +1,3 @@
+[16:52] <530c03e25e986b0712efafb8> Question: how large are typical parameter sets to `GridSearchCV`? 
+[16:53] <530c03e25e986b0712efafb8> And how large are larger-than-typical parameter sets?
+[16:55] <530c03e25e986b0712efafb8> @jcrist and I are trying to decide how much we should care about overheads in Dask+sklearn work

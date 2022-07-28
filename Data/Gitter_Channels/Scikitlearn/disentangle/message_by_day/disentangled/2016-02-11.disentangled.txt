@@ -1,0 +1,36 @@
+[08:40] <56b0a775e610378809bf7a7c> Ok. @ogrisel I'm the new engineer of Telecom and I'm working full time on scikit-learn, so tell me what I can do to help.
+--------------------------------------------------------------------------------------------------
+[12:38] <541a528b163965c9bc2053de> Hi all @tguillemot , I replied to your email. Won't have time to follow up on that before next week though.
+[12:40] <541a528b163965c9bc2053de> @amueller merge #6260 ?
+--------------------------------------------------------------------------------------------------
+[12:42] <56b0a775e610378809bf7a7c> @ogrisel No problem. Thx
+--------------------------------------------------------------------------------------------------
+[15:38] <564789be16b6c7089cbab8b7> @amueller  Do you think it is worth my opening an issue about CV and time series data?
+--------------------------------------------------------------------------------------------------
+[15:40] <56b80528e610378809c05a48> Hello @lesshaste , here is one https://github.com/scikit-learn/scikit-learn/issues/6322
+--------------------------------------------------------------------------------------------------
+[15:54] <54d4a1d6db8155e6700f853b> @ogrisel merged #6260
+[15:55] <54d4a1d6db8155e6700f853b> @ogrisel I can work on #6332 and the bug fixes in ~2 hours, not earlier
+--------------------------------------------------------------------------------------------------
+[16:09] <564789be16b6c7089cbab8b7> @yenchenlin1994  thanks! How do I upvote it :)
+[16:10] <564789be16b6c7089cbab8b7> @yenchenlin1994  there were two interesting cases I think. One where you have some value for each time tick and one where you can have different numbers of events per day
+[16:11] <564789be16b6c7089cbab8b7> I have joined it! Can you upvote there?
+[16:11] <564789be16b6c7089cbab8b7> @yenchenlin1994  I see both cases are already listed by amueller
+[16:11] <56b80528e610378809c05a48> Yes
+[16:12] <564789be16b6c7089cbab8b7> umm... how? By adding a comment or is there some upvote button?
+[16:13] <564789be16b6c7089cbab8b7> in any case I am very pleased you are taking this on
+[16:13] <564789be16b6c7089cbab8b7> thank you
+[16:15] <564789be16b6c7089cbab8b7> oh I see .. sorry :)
+[19:07] <564789be16b6c7089cbab8b7> me too :)
+--------------------------------------------------------------------------------------------------
+[16:10] <56b80528e610378809c05a48> @lesshaste  Join Github!
+--------------------------------------------------------------------------------------------------
+[16:14] <56b80528e610378809c05a48> Oh about upvote ... I mean join Github as a software engineer and add this function :)
+[16:14] <56b80528e610378809c05a48>
+--------------------------------------------------------------------------------------------------
+[19:04] <54d4a1d6db8155e6700f853b> loool @yenchenlin1994
+[19:04] <54d4a1d6db8155e6700f853b> (and I approve ;)
+--------------------------------------------------------------------------------------------------
+[19:15] <564789be16b6c7089cbab8b7> although it's hard to visualise, is it true that the clustering algorithms perform roughly as the examples in https://github.com/scikit-learn/scikit-learn/pull/6305 when you increase the dimension?
+[19:15] <564789be16b6c7089cbab8b7> Maybe there is some numerical score that could be given on higher dimension data sets?
+--------------------------------------------------------------------------------------------------

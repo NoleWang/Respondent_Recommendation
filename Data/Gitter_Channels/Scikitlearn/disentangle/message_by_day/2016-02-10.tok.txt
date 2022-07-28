@@ -1,0 +1,6 @@
+<s> <user> i do n't know much about python but it seems that it works close to how .bat executables work . can <unka-> be used to create new files based on input ? </s>
+<s> <user> e.g . input customer profile and it generates a recommended real estate proposal </s>
+<s> <user> <unka@> yes but this is the wrong place to ask basic python questions </s>
+<s> <user> hi everyone !!! <unka@> i was watching the pull request <unk##> . it seems blocked for several months now . do you know what 's the problem ? i 've seen that a lot of new codes was submitted at the same time . i image it 's a real problem for the <unka> . maybe it could be easier for them to divide the work of the gsoc in several pull request . do you think it 's a good solution ? i can work on it if you want . </s>
+<s> <user> <unka@> <unka@> was mostly working on this . there was some bug there . i 'm not sure about the exact status at the moment </s>
+<s> <user> has anyone seen this error on travis before ? URL/https:/ <unka-./> <unk#a-/> <unka@> ? </s>

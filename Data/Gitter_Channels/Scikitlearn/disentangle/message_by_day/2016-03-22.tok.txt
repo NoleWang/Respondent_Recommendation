@@ -1,0 +1,48 @@
+<s> <user> great thanks for your reminder ! </s>
+<s> <user> i had some doubts regarding the project which i have listed in my [ <unk#a%(-./:]> ) itself . it would be wonderful if anyone could give their opinions on them . thanks ! </s>
+<s> <user> hello <unka@> , you mean the type issue in <unka> ? </s>
+<s> <user> yeah there would n't be a huge difference by adding fused types there right ? i could work on that later after crucial modules have already been worked on . <unka> ? </s>
+<s> <user> yeah i think so </s>
+<s> <user> i agree with <unka> </s>
+<s> <user> hi <unk#a@> </s>
+<s> <user> hi ! </s>
+<s> <user> <unk#a@> hi . have you a moment to discuss the <unka> <unka/> <unka/> issue ? </s>
+<s> <user> <unka@> yup ! </s>
+<s> <user> <unk#a@> great ! so ... a ) what is going on ? :) what i mean is , do <unka> and h20 actually support <unka> variables at all ? </s>
+<s> <user> yes apparently they do ... :/ we are working on that and we 'll become awesome in a few more months b ) </s>
+<s> <user> <unk#a@> ok but the comment on the pr was that it would actually not help </s>
+<s> <user> which is what confused me </s>
+<s> <user> no i definitely do think introducing native support for <unka> variables would indeed speed up our rf </s>
+<s> <user> " it looks like they are using decision <unka-> <unka> ( i.e ., <unka> and <unka> ) rather than <unka-> <unka-> <unka> . and it looks like their dataset 's <unka> features ( <unka> , origin & destination <unka> ) probably have <unka> > 64 . these two factors together mean <unka> ca n't be used ." </s>
+<s> <user> did you see that ? </s>
+<s> <user> hmmm i did n't see that .. give me a moment ! </s>
+<s> <user> thanks </s>
+<s> <user> okay so i think before benchmarking against h2o and <unka> . we need to make the splitting of categories locally optimal ( we should decide what way the categories go at each split ) and not just globally optimal . then if the <unka> is > 64 , we need to investigate why they support such high <unka> and whether or not we could do the same ... </s>
+<s> <user> i think even r has restrictions on the <unka> of the <unka> features ... </s>
+<s> <user> r does but the r rf code is bad </s>
+<s> <user> how about <unka> ? i hear good things about it ... </s>
+<s> <user> well .. the default version is .. there are better versions and people also use <unka> with r </s>
+<s> <user> <unka> maybe be better .. hmm which version do they use in their benchmark ? </s>
+<s> <user> URL/http:/ <unka./> <unk#a-/> is another example that shows how bad r <unka> is though </s>
+<s> <user> also one another thing to note is that <unka> works somewhat differently compared to <unka> 's rf as they seem to use approximate splitting and a second order objective as described in the paper that got recently published by <unka> chen ... you should look into that paper ... i think there is a section which briefly explains why they are faster than us ... i have n't had time to take a good look into that paper . but if you do , please share your insights ... </s>
+<s> <user> ok thanks . there is also h20 but i do n't know how well their implementation us </s>
+<s> <user> in any case .. it would be great to have somewhere where concrete improvements relevant to that benchmark could be discussed . it all seems slightly confusing at the moment </s>
+<s> <user> i think our top priority , as far as the tree based modules are concerned , is to merge the missing value support and the <unka> variable support soon into <unka-> ... once that is done we can think of making it better comparing it with <unka> ... </s>
+<s> <user> maybe if these two are done , i 'll see if i can make a blog post with readable code that compares the rf implementations ... ;) </s>
+<s> <user> you mean [ this paper <unk#a(./:]_> ) </s>
+<s> <user> ? </s>
+<s> <user> yupp ! </s>
+<s> <user> no that one is a condensed version ... wait </s>
+<s> <user> URL/http:/ <unka./> <unk#a./> </s>
+<s> <user> oh i am really interest in gradient boosting since microsoft use it to [ learn how to play <unka(-./:]_> ) </s>
+<s> <user> or maybe both are same ... i 'm not sure ... the last link is the one that i have on my table <unka> dust ... have to read it soon :@ </s>
+<s> <user> <unk#a@> that 's a great idea ! </s>
+<s> <user> thanks for the link and sorry to interrupt <unka:> : </s>
+<s> <user> np </s>
+<s> <user> <unk#a@> interruptions welcome :) </s>
+<s> <user> <unka:> : </s>
+<s> <user> <unk#a@> one more dim question .. :) i see in the <unka> pr ( <unka> , full , <unka-> ) <unka> : <unk#.> and ( <unka> , <unk#a(> ), <unka> ) <unka> : <unk#.> </s>
+<s> <user> why is the second so much worse than the first ? </s>
+<s> <user> is it the truncated part ? </s>
+<s> <user> i assume so .. so is there no example that shows <unka> doing better ? </s>
+<s> <user> i am not sure i understood " the full dataset with <unka> <unka> splitting ( actually no random forest in this case <unk"),> </s>

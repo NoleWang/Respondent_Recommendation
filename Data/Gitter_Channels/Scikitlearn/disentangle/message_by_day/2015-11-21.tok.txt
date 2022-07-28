@@ -1,0 +1,24 @@
+<s> <user> hey guys ! what 's the best way to perform kernel <unka> regression or import vector machine ( or anything that will do binary <unka> + output <unka> ) with <unka> or some other python package ? i ca n't seem to find anything . does no one ever use <unka> or <unka> ? </s>
+<s> <user> i have not heard of <unka> . and yes , no-one ever uses <unka> because it scales even worse than <unka> ;) </s>
+<s> <user> thanks , but i do n't have that much data , so i wanted to use it since i really need <unka> outputs . i do n't care about scaling for now . </s>
+<s> <user> <unka@> you can use <unka(=> ) which will use <unka> 's method for calibration of the decision function . or you can use <unka> to use <unka> regression to calibrate an svm </s>
+<s> <user> you can use <unka> together with <unka> </s>
+<s> <user> just set <unka_> in <unka> to <unka_> and it will give you exact kernel <unka> regression </s>
+<s> <user> <unka@> is n't the <unka> 's method really expensive ? or is <unka+> 's similar expense to <unka> ? </s>
+<s> <user> <unka(=_> ), <unka(> )) </s>
+<s> <user> does kernel <unka> regression </s>
+<s> <user> <unka> 's method in <unka> does <unk#a-> <unka-> , so it is 5 times as expensive at one svm . </s>
+<s> <user> i do n't even know how one would implement <unka> in any efficient way , as the dual is dense </s>
+<s> <user> i guess you could do smo or a similar coordinate descent solver ? </s>
+<s> <user> anyhow , i would expect <unka+> do be much faster than <unka> , unless you set the parameters such that all samples are support vectors </s>
+<s> <user> interesting , thanks . also this is the <unka> ; just heard of it recently : URL/http:/ <unka-./> <unk#a/=?> </s>
+<s> <user> interesting . that 's my <unka> mater but i have n't heard of that professor </s>
+<s> <user> paper is here : URL/http:/ <unka./> <unk#a-./> </s>
+<s> <user> you can set <unka_> to a smaller number in <unka> for an approximation of kernel <unka> regression </s>
+<s> <user> ah the improved paper is <unka> </s>
+<s> <user> makes sense </s>
+<s> <user> if you have benchmarks that show <unka> is superior to svm + <unka> let me know ;) </s>
+<s> <user> ah <unka> is kernel <unka> regression with <unka-> <unka-> greedy selection of the non-zero dual <unka> . </s>
+<s> <user> i think people are just not so excited about kernels any more , so people do n't really care for practical implementations of kernels </s>
+<s> <user> perfect , thanks <unka@> </s>
+<s> <user> <unka@> i did n't realise people do n't really care about kernels any more . is this because everyone has moved on to random <unka> and deep learning ? </s>

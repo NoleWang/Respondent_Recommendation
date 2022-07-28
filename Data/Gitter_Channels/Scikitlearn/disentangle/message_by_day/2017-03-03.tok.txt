@@ -1,0 +1,6 @@
+<s> <user> <unka@> it was a problem with my predict code . i was not <unka> values for a feature that does n't matter in the non sample <unka> case , but apparently does with the <unka> samples . i 've learned my lesson on using the same processing on both sides . = ) </s>
+<s> <user> <unka-@> <unk#+:> : </s>
+<s> <user> hey is <unka> not in gsoc 2017 ? </s>
+<s> <user> please all , what diy level apps can i build with <unka-> ? so far i feel as if i have answers but no problems ! </s>
+<s> <user> <unka@> it is if we find good students ;) </s>
+<s> <user> <unka@> have you opened an issue on the <unka_> issue we discussed ? could be good for the sprint tomorrow . </s>

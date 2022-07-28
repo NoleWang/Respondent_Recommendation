@@ -1,0 +1,4 @@
+<s> <user> why would there be any randomness in choosing splits ? since <unka_> is a greedy algorithm , find the best feature to split </s>
+<s> <user> <unka@> ^ </s>
+<s> <user> <unka@> i suggest you look for <unka_`> in [ <unk#a(-./:]_> ) to better understand how it 's working . </s>
+<s> <user> thanks man , i understand how the code works ... but i dont understand why are we doing this </s>

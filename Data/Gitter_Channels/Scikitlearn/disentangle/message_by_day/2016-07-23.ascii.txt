@@ -1,0 +1,14 @@
+[08:53] <56b80528e610378809c05a48> Hello can anyone help me on this [test-failing](https://github.com/scikit-learn/scikit-learn/pull/6913#issuecomment-234704911) issue?
+[08:56] <56b80528e610378809c05a48> My test pass on 64-bit computer but fail on 32-bit computer, and the occurs at [this line](https://github.com/yenchenlin/scikit-learn/blob/cd-fused-types/sklearn/src/cblas/ATL_srefaxpy.c#L131).
+[08:59] <56b80528e610378809c05a48> I wonder what is the difference to call [ATL_srefaxpy.c](https://github.com/yenchenlin/scikit-learn/blob/cd-fused-types/sklearn/src/cblas/ATL_srefaxpy.c) on 32-bit and 64-bit computer when fitting `np.float32` data?
+[10:09] <553d32d715522ed4b3df8b92> Hi everyone, just a small question. Is the link to ``nose`` package [here](http://scikit-learn.org/stable/developers/advanced_installation.html#testing) the expected one ?
+[10:12] <553d32d715522ed4b3df8b92> @yenchenlin1994 the tests are failing on AppVeyor , so it is Windows environment right ? Is it failing on 32 bit machines working on ubuntu or mac too ?
+[10:13] <56b80528e610378809c05a48> Good point. I am not sure about ubuntu but not on mac
+[10:13] <56b80528e610378809c05a48> @maniteja123 thanks.
+[10:14] <56b80528e610378809c05a48> And the link you pointed out seems obviously wrong :smile: 
+[10:15] <553d32d715522ed4b3df8b92> Yeah the other day someone was asking about the testing instructions and then I accidentally stumbled upon this. I just thought it should be clarified once !
+[10:24] <553d32d715522ed4b3df8b92> And in case you don't have access to one, I can checkout your branch and check on my machine. I am running Ubuntu 14.04 on 32 bit VM machine.
+[10:25] <56b80528e610378809c05a48> I only try to reproduce it using 32-bit Python but run on an 64-bit mac
+[10:26] <56b80528e610378809c05a48> thanks a lot!
+[10:27] <56b80528e610378809c05a48> It looks good on 32-bit Python with 64-bit mac
+[10:32] <553d32d715522ed4b3df8b92> Oh okay. I have no other idea about the possibility for the error. Sorry.

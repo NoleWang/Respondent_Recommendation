@@ -1,0 +1,9 @@
+[19:11] <564789be16b6c7089cbab8b7> oh verbosity = 2 does that
+[19:11] <564789be16b6c7089cbab8b7> is it possible to get tpot to optimize the ROC when doing classification?
+[19:12] <564789be16b6c7089cbab8b7> oh that is there too
+[19:12] <564789be16b6c7089cbab8b7> sorry
+--------------------------------------------------------------------------------------------------
+[19:59] <564789be16b6c7089cbab8b7> If you have this code:
+[19:59] <564789be16b6c7089cbab8b7> tpot = TPOTClassifier(generations=20, population_size=50, scoring='roc_auc', verbosity=2, n_jobs=-1) tpot.fit(X_train, y_train) print("TPOT score", tpot.score(X_test, y_test))
+[19:59] <564789be16b6c7089cbab8b7> is the score being printed the roc_auc score?
+--------------------------------------------------------------------------------------------------

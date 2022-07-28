@@ -1,0 +1,9 @@
+<s> <user> thanks <unka@> . can you also help me the following *in <unka_> of <unka*> > notes > the probability model is created using cross validation , so the results can be slightly different than those obtained by predict . also , it will produce meaningless results on very small <unka> . what do we mean by cross validation in case of prediction , what i get by cross validation is that the training data is divided into k sets , and <unk#a-> is used for training while the 1 set is used for testing . </s>
+<s> <user> and it is repeated k times </s>
+<s> <user> check out the paper by <unka> </s>
+<s> <user> it 's linked to in the description </s>
+<s> <user> <unka_> uses <unka> scaling internally </s>
+<s> <user> <unka> outputs for support vector machines and comparisons to <unka> likelihood methods , j . <unka> , ( 1999 ) </s>
+<s> <user> thanks </s>
+<s> <user> maybe also <unka> good <unka> with <unka> learning , a . <unka-> & r . <unka> , <unka> 2005 </s>
+<s> <user> <unka`> takes a long time relative to <unka-> . </s>

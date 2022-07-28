@@ -1,0 +1,1 @@
+[20:40] <5a2c58c8d73408ce4f8294ba> Much of that has to do with code versioning not really the deployment method. PKL + docker is a common method mentioned in the Guillaume's links

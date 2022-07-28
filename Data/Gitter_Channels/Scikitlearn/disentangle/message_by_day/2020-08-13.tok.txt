@@ -1,0 +1,1 @@
+<s> <user> hello , everyone . can anyone clarify to me how <unka`> performs the <unka> to decide the output of each input ? i am coding a <unka> network for <unka> and the output layer is trained with <unka_`> linear <unka> , then the final output is given by applying a <unka> function . but <unka`> could be useful , i just ca n't confirm if it uses a similar approach . </s>

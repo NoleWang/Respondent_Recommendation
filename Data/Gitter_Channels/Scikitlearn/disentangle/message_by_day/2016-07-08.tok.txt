@@ -1,0 +1,3 @@
+<s> <user> is there a way to install <unka> to python package namespace under a different name ( say <unka`> ) it would be nice to have two versions of <unka-> installed under different names to compare against master ... </s>
+<s> <user> <unka@> you can open 2 different shells and activate 2 different environments in them ? </s>
+<s> <user> it'd be useful to be able to run both in the same script for easy comparison benchmarking </s>

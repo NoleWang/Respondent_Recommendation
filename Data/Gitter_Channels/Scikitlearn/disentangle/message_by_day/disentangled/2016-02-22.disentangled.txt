@@ -1,0 +1,31 @@
+[09:20] <56c4f19ae610378809c1f8ae> hey @ogrisel not sure if youre around, but Im having some issues rebasing commits in https://github.com/scikit-learn/scikit-learn/pull/6417. I took the original contributors commits and rebased master on top of it. However, I am trying to squash it now and am unable to. Do you have any advice as to how to fix this?
+--------------------------------------------------------------------------------------------------
+[10:03] <541a528b163965c9bc2053de> @nelson-liu done
+--------------------------------------------------------------------------------------------------
+[10:04] <541a528b163965c9bc2053de> I meant I gave it a review. It seems squashed enough to me. What problems do you have?
+--------------------------------------------------------------------------------------------------
+[10:05] <56c4f19ae610378809c1f8ae> Ah, thanks! well, commit https://github.com/nelson-liu/scikit-learn/commit/6209098c38cb7aa4e7aad381407da6f42fe7b464 has quite a long diff, and Id rather not pollute the commit history with that
+[10:05] <56c4f19ae610378809c1f8ae> additionally, itd be nice to squash the commits into 1 instead of having 4 separate commits
+--------------------------------------------------------------------------------------------------
+[10:14] <56c4f19ae610378809c1f8ae> when I currently try to squash the commits, i get a bunch of merge conflicts and such. running `git rebase -i HEAD~3` (to squash my last 3 commits) ends up for some reason pulling up interactive rebase for ~211 commits onto https://github.com/nelson-liu/scikit-learn/commit/09672f516d8592fb82f42e5da3ee0f29210d7366, even though the head is at https://github.com/nelson-liu/scikit-learn/commit/8bea87efc7f6db484f583c15d36a775d82381ef3
+--------------------------------------------------------------------------------------------------
+[10:17] <541a528b163965c9bc2053de> Right I did no see that from the github diff view of the PR. Indeed this comment should be removed.
+[10:19] <541a528b163965c9bc2053de> I would start over again from the original contributor's PR. Squash the top commits first, then rebase on master and fix the conflicts. Then add your changes on top and squash again.
+[10:20] <541a528b163965c9bc2053de> nelson-liu/scikit-learn@6209098 has many changes with conflict markers that should not be part of this PR.
+[10:21] <541a528b163965c9bc2053de> The commits in https://github.com/scikit-learn/scikit-learn/pull/5968 are clean though.
+[10:21] <56c4f19ae610378809c1f8ae> got it
+--------------------------------------------------------------------------------------------------
+[10:29] <56c4f19ae610378809c1f8ae> how do you generally resolve merge conflicts? im using `git mergetool`, which is opening opendiff on my osx machine
+[10:30] <56c4f19ae610378809c1f8ae> wondering if this might be why conflict markers are there?
+--------------------------------------------------------------------------------------------------
+[10:40] <56c4f19ae610378809c1f8ae> anyway, I just pushed a new version at https://github.com/scikit-learn/scikit-learn/pull/6419. can you let me know if there are any issues?
+[10:42] <56c4f19ae610378809c1f8ae> ah ok, i wasnt aware that you could just do it through the text editor. I think ive properly done it in the last PR, could you let me know?
+--------------------------------------------------------------------------------------------------
+[10:41] <541a528b163965c9bc2053de> edit the files with the conflicts,  look for section with conflict markers, edit the code to replace the segments in conflict with the expected code segment and remove the markers
+[10:42] <541a528b163965c9bc2053de> check that there are no other files with conflict markers and then `git add` the files where you resolved the conflicts and `git rebase --continue`
+--------------------------------------------------------------------------------------------------
+[18:43] <54d4a1d6db8155e6700f853b> does anyone have a good example of when l2 normalizer is useful? I only ever really use l1
+[22:38] <54d4a1d6db8155e6700f853b> hm... good point, but slightly to advanced ^^
+--------------------------------------------------------------------------------------------------
+[18:43] <541a528b163965c9bc2053de> if you want to compute cosine similarities: preprocess the data once and then use np.dot.
+--------------------------------------------------------------------------------------------------

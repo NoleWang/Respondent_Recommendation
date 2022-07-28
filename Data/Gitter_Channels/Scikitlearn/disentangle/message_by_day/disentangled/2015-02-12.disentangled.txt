@@ -1,0 +1,9 @@
+[09:45] <541a528b163965c9bc2053de> Hi @amueller sorry I was offline for the past couple of days as I had to attend local events. Today I will be working on clusterlib with a colleague. tomorrow I will be available to review PRs on sklearn
+--------------------------------------------------------------------------------------------------
+[13:36] <54d4a1d6db8155e6700f853b> Alright. Next week I'll be at strata, though, and won't have much time. We should settle on a timeline for release.
+[15:09] <54d4a1d6db8155e6700f853b> Sounds good :)
+--------------------------------------------------------------------------------------------------
+[13:50] <541a528b163965c9bc2053de> What about setting the objective of cutting the first beta on Friday Feb 27.
+[13:51] <541a528b163965c9bc2053de> Then one beta every two weeks.
+[13:51] <541a528b163965c9bc2053de> And release end of March?
+--------------------------------------------------------------------------------------------------

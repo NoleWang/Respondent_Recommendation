@@ -1,0 +1,3 @@
+[07:05] <5967287ad73408ce4f6cf2a7> Could I have Kmeans example convert data frame and output cluster prediction with Plot visualization?
+[14:41] <59b94206d73408ce4f7598d4> like this? https://beta.gryd.us/notebook/published/fJevxtDmjFfo5nGYs4A4bC/
+[15:23] <5967287ad73408ce4f6cf2a7> and how about convert string data frame to vector? Thanks anyway

@@ -1,0 +1,2 @@
+<s> <user> URL/https:/ <unka./> <unk#a/> </s>
+<s> <user> i have some 2d data which i think would be well classified by two straight <unka> lines . one straight line is <unka> regression i believe but how can you get two straight lines as the decision boundary ? </s>

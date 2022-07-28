@@ -1,0 +1,41 @@
+<s> <user> hey <unka@> ! by soft or hard i mean to refer to soft clustering or hard clustering - which if i understand correctly , soft clustering refers to when <unka> can co-exist in different clusters whereas with hard clustering they can only exist in one cluster . </s>
+<s> <user> i have 16 gb of ram </s>
+<s> <user> using complete linkage </s>
+<s> <user> how could i go about <unka> the distance matrix in a <unka> way ? </s>
+<s> <user> i do n't know if i got this right so far : </s>
+<s> <user> from <unka.> import <unka_> from <unka.> import <unka> <unka> = <unka(_> , <unka'=> , <unk#a-=_> ) for chunk in <unka> : clustering = <unk#a(,.=_> , <unka'=> , <unka'().=> ) </s>
+<s> <user> <unka(._> ) </s>
+<s> <user> <unka@_> you could try URL/https:/ <unka-./> <unka#-./> </s>
+<s> <user> <unka@_> you should call <unka_> directly i think as it does <unka> internally . though i now realized <unka> might already be doing . also <unka> clustering is hard clustering <unka@> i was thinking about that , but should n't <unka> be already <unka> using the <unka_> parameter ? cc <unka@> </s>
+<s> <user> interestingly i actually tried the code i shared above on a small example and it worked , but on the 100k <unka> it just exported 1 cluster , and the amount of <unka> in that was around 750 which really confused me . i still have no idea what happened . </s>
+<s> <user> by calling it directly , do you mean something like this : " for chunk in <unka(_> , <unka'=> , <unk#a-=_> ):" </s>
+<s> <user> or this : <unk#a(,.=_> , <unka'=> , <unka'().=_> , <unka'=> , <unk#a-=_> )) </s>
+<s> <user> <unka@> do you mean using this in place of <unka> clustering or for <unka> <unka> the distance matrix ? </s>
+<s> <user> <unka@> i tried both , i assume you mean the first as that one works . the second gives me an error . " <unka> : expected 2d array , got <unka> array instead : <unka<=> object <unka_> at <unk#a> > . <unka> your data either using <unk#a(-.> , 1 ) if your data has a single feature or <unk#a(.> , -1 ) if it contains a single sample ." </s>
+<s> <user> oops ! now i see where i was wrong </s>
+<s> <user> and why those 100k data points only exported 1 cluster </s>
+<s> <user> in the toy example , i did this : <unka> = <unka(_> , <unka'=> , <unk#a-=_> ) for chunk in <unka> : clustering = <unk#a(,.=_> , <unka'=> , <unka'().=> ) </s>
+<s> <user> i set the parameter metric to <unka'> in <unka> distances </s>
+<s> <user> and i set affinity to <unka'> in <unka> </s>
+<s> <user> when i then tried to do this with the 100k <unka> </s>
+<s> <user> i forgot to change <unka'> to <unka'> in <unka> </s>
+<s> <user> now i 'm getting this new error : " <unka> : distance matrix should be square , got matrix of shape { <unka.> }" </s>
+<s> <user> after making that change </s>
+<s> <user> i hope i 'm making some other stupid mistake rather than this being a consequence of a large input </s>
+<s> <user> so far i do n't see any difference between the toy example and the code i 'm using for the 100k <unka> </s>
+<s> <user> this is what i 'm using for the 100k <unka> : </s>
+<s> <user> <unka_> = <unka(_> , <unka'=> , <unk#a-=_> , <unk#a=_> ) for chunk in <unka(_> , <unk#a=> ): with <unka(._> ) as captured : clustering = <unk#a(,.=_> , <unka'=> , <unka'().=> ) </s>
+<s> <user> <unka@_> i do n't think that using <unka> on chunks of the distance matrix would give you anything meaningful . i meant using <unka`> <unka> a sparse distance matrix , but then i 'm not sure if <unka`> actually supports sparse distance <unka> . you wo n't be able to compute a dense as for 100k samples that would be <unk#a/~> . generally <unka> does n't scale well with default options ( URL/https:/ <unka./> <unka./_> ) so i would suggest starting with a smaller dataset and progressively increase the number of samples to see how it scales . you may run into performance issues before memory ones . <unka@> i have n't looked at the code in detail , but internally it never uses <unka_`> on the full dataset . </s>
+<s> <user> hm . i was wondering if we need to add an example of doing some <unka> clustering </s>
+<s> <user> <unka@> does this mean that besides a sparse distance matrix ( i 'll give it a shot soon ), there 's really no way to do this all at the same time without a more powerful computer ? so far what i 've been doing is doing the clustering in chunks , meaning <unka> the data ( <unk#a> data points at a time ) and then creating clusters from those . however , to me this is undesirable because of course ( in my case ) i get sentences which are in separate clusters which should more preferably be in one . i thought one idea to mitigate this is to calculate the <unka> of each cluster , and then after all the <unk#a> chunks are done , to compare <unka> and then merge if they're below a certain distance threshold . of course this loses the benefit of having the leaves & children info though . </s>
+<s> <user> i ask because eventually , i want to do this with around 1 million vectors </s>
+<s> <user> also curious why you say that using <unka> on chunks of the distance matrix would n't give any meaningful results . is it for the same reason i said above on getting different clusters which should really be one cluster ? </s>
+<s> <user> <unka@_> looks like single linkage should scale better for <unka> clustering URL/https:/ URL/github.com/ <unk#a#-/> well i mean it 's just awkward to work with n separate clustering , but you can if you are comfortable with it . </s>
+<s> <user> <unka@> very useful , thank you ! </s>
+<s> <user> also i think think <unka> or <unka> might scale better if want a hierarchy of clusters . if you have 1m samples that certainly going to put constraints on the algorithms you can use ( cf above linked <unka> docs for a comparison ) unless you can accept working on a <unka> dataset . </s>
+<s> <user> awesome ! helpful charts . wanted to ask what you meant by " n separate clustering " </s>
+<s> <user> i assume you mean what i described above with splitting the data ? </s>
+<s> <user> yes , i mean that if you do <unka()._`> in a loop , as mentionned in your above code , at each iteration you are going to get a new clustering . all previous information is erased when you call fit , it 's not a <unka_`> . so that would be just equivalent to running the this clustering on n <unka> of the full dataset i think . </s>
+<s> <user> ah makes sense , thank you </s>
+<s> <user> i might try the <unka'-> approach i talked about where i just compare <unka> ( or try to apply complete linkage ) of clusters from different chunks and then merge , and sort of testing that against what <unka> clustering would normally do and see how the results vary . do you think this would yield expected results ( all points above 70% similarity should be grouped ) or should i instead go with <unka> ? my one need is not specifying the number of clusters , but instead a distance threshold of some kind . </s>
+<s> <user> sorry never mind , i did n't know about <unka> ! i gotta do more research on <unka> as i 'm not that familiar with it . </s>

@@ -1,0 +1,53 @@
+[02:32] <56c4f19ae610378809c1f8ae>  weve reached 7000 PRs / issues :octocat:  not sure if its a cause for celebration, though :)
+--------------------------------------------------------------------------------------------------
+[07:27] <564789be16b6c7089cbab8b7> @vene oh cool!
+--------------------------------------------------------------------------------------------------
+[07:39] <564789be16b6c7089cbab8b7> Another basic question.. I have some data which is mixed categorical and numerical. There are various different ways I could preprocess it before trying to train my classifier. At the moment I just have a python script which I have to edit and rerun. Is there some neat way, using pipelines maybe(?) to make this all more systematic?  I would like to do the equivalent of gridsearch really but with the different ways of preprocessing the data
+--------------------------------------------------------------------------------------------------
+[12:05] <56c4f19ae610378809c1f8ae> Well depends what you want to do? You could write your own transformers and that would work
+--------------------------------------------------------------------------------------------------
+[14:23] <54d4a1d6db8155e6700f853b> hey sprinters!
+[14:23] <56c4f19ae610378809c1f8ae> :wave:
+--------------------------------------------------------------------------------------------------
+[14:23] <54d4a1d6db8155e6700f853b> I tagged some issues with "sprint" that might be good entry points: https://github.com/scikit-learn/scikit-learn/issues?q=is%3Aopen+is%3Aissue+label%3ASprint
+[14:24] <54d4a1d6db8155e6700f853b> other good tags are "easy" and "needs contributor"
+[14:24] <54d4a1d6db8155e6700f853b> You can find the contributor guide here: http://scikit-learn.org/dev/developers/index.html
+[14:26] <54d4a1d6db8155e6700f853b> Please start with something very simple, happy to talk about more complicated issues. You can also start reviewing other pull requests, or see if there are pull requests that have been stalled for a long time.
+--------------------------------------------------------------------------------------------------
+[14:43] <56c4f19ae610378809c1f8ae> @lesshaste thinking more about it, transformers are probably what you want. there are a bunch of preprocessing tools within the library natively but if youre writing your own scripts, its pretty trivial to wrap them in a transformer and put them into a pipeline
+[14:46] <54d4a1d6db8155e6700f853b> Ok pasted the above message here: https://github.com/scikit-learn/scikit-learn/wiki/Scipy-2016-Sprint-instructions
+--------------------------------------------------------------------------------------------------
+[14:46] <56b0a775e610378809bf7a7c> Hey sprinters. Thanks for helping us. Tell us if you need help for something. Have a good sprints.
+--------------------------------------------------------------------------------------------------
+[14:48] <56c4f19ae610378809c1f8ae> if anyone needs help on things or setting up dev environment or finding things to start, id be happy to help
+--------------------------------------------------------------------------------------------------
+[15:00] <54d4a1d6db8155e6700f853b> Btw, if any issue says "change X", if this is an API change or if it changes behavior of the code, instead of actually changing it, you need to deprecate the old behavior http://scikit-learn.org/dev/developers/contributing.html#deprecation
+[15:27] <54d4a1d6db8155e6700f853b> btw, if you find bugs or stuff is not working properly, also feel free to open issues or talk to me or the other developers
+[15:29] <54d4a1d6db8155e6700f853b> so if you want to create a new conda environment for the sprint, you should create one with all the dependencies, fork and clone the repo, and then do pip install -e . (while in the scikit-learn folder that you cloned)
+[16:39] <54d4a1d6db8155e6700f853b> sure, thanks :)
+[23:10] <54d4a1d6db8155e6700f853b> FYI, there are issues that need contributors that don't have any of the tags. the tags are a very rough approximation to the state of the issues
+--------------------------------------------------------------------------------------------------
+[15:33] <53135b495e986b0712efc453> Hi to sprinters from Paris! Have fun! :)
+[15:36] <56b0a775e610378809bf7a7c> @raghavr are you working today ?
+--------------------------------------------------------------------------------------------------
+[16:05] <53135b495e986b0712efc453> I got bored at home and came to the lab. The Internet speed is very good here ;) And I will be glad to help if there is any PR to review. :)
+--------------------------------------------------------------------------------------------------
+[16:17] <56d577ffe610378809c46670> @nelson-liu Hey, I'm a beginner in ML. I was looking for some good first time issues which don't involve completing documention. I went through the list of issues on GitHub but would really appreciate if you or anyone could point to any specific issue for beginners. Thanks.
+--------------------------------------------------------------------------------------------------
+[16:21] <56c4f19ae610378809c1f8ae> this PR stalled and might be a good place to pick back up? https://github.com/scikit-learn/scikit-learn/issues/6670
+[16:25] <56d577ffe610378809c46670> Sure, I'll ping if I face any  problems.
+--------------------------------------------------------------------------------------------------
+[16:26] <54d4a1d6db8155e6700f853b> I tried to make sure all the issues that are still available are tagged as "need contributors"
+--------------------------------------------------------------------------------------------------
+[16:33] <578a5f01c2f0db084a23472d> Hi @amueller , I have some time and since there is a scikit learn sprint going on now, I was thinking of contributing remotely from Tuebingen. Is this possible?  I will be glad to work on some documentation stuff.
+[16:33] <54d4a1d6db8155e6700f853b> @btabibian hey. Any contributions are always welcome :)
+[16:34] <54d4a1d6db8155e6700f853b> the ones that are tagged sprint are very easy ones. If there is something that strikes your fancy, let me know!
+[16:34] <54d4a1d6db8155e6700f853b> (I mean other than the sprint ones)
+[16:34] <578a5f01c2f0db084a23472d> I go for the most easy ones now :D, maybe this: https://github.com/scikit-learn/scikit-learn/issues/6865 ? :)
+--------------------------------------------------------------------------------------------------
+[16:44] <54d4a1d6db8155e6700f853b> For anyone joining recently important links and advice is here: https://github.com/scikit-learn/scikit-learn/wiki/Scipy-2016-Sprint-instructions
+[19:55] <54d4a1d6db8155e6700f853b> does anyone want to pick this up? https://github.com/scikit-learn/scikit-learn/pull/5551
+[21:01] <54d4a1d6db8155e6700f853b> I'll be in 103 for a bit
+--------------------------------------------------------------------------------------------------
+[23:22] <56b0a775e610378809bf7a7c> If you need a review of your PR just add @tguillemot in the PR and I will have a look
+--------------------------------------------------------------------------------------------------

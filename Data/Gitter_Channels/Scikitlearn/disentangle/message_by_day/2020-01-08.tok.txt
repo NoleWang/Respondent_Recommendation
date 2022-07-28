@@ -1,0 +1,78 @@
+<s> <user> for your use case , how did you learn the entity <unka> ? </s>
+<s> <user> yea , this is a must otherwise they are not tied to your target </s>
+<s> <user> here is the proof it works URL/https:/ URL/github.com/ <unka-/> </s>
+<s> <user> and the paper URL/https:/ <unka./> <unk#a./> </s>
+<s> <user> <unka@> so i am unable to run <unka> because you use <unka.> <unk'> file " <unk#a-.:\_> " , line 151 , in fit <unka_> = <unk#a'().=_> </s>
+<s> <user> there is a " bug " if you have mixed types . which is pretty common . URL/https:/ URL/stackoverflow.com/ <unk#a-/> </s>
+<s> <user> maybe switch to <unka.> or do u npt want <unka> <unka> ? </s>
+<s> <user> <unka@> we do n't want dependence on <unka> . however , i would have expected to have <unka_`> to be a numpy array at that stage . </s>
+<s> <user> uhm we used a <unka_`> earlier in <unka`> . could you open a bug report with a minimal example . </s>
+<s> <user> normally <unka> passes through with numpy functions fine so you do not have a dependence technically . it is pretty common in practice to use <unka> in this way as it makes it more simple to keep your features organized </s>
+<s> <user> but <unka.`> will require an import of <unka> ? </s>
+<s> <user> that is only one possible solution . </s>
+<s> <user> do you have a minimal code example because i am unsure of what is your input </s>
+<s> <user> because the <unka> will not support mixed type </s>
+<s> <user> ok , that is the crux of the issue . if the algorithm does not support mixed types then i will just cast it beforehand . is there a preferred type ? </s>
+<s> <user> <unka> supports mixed types </s>
+<s> <user> nop </s>
+<s> <user> this is where i am confused because the array should be converted into float 64 when passing in <unka_`> . so i would really like a minimal code example </s>
+<s> <user> it should failed before the line that you pointed out which is interesting </s>
+<s> <user> well <unka> it runs with a mix of <unk#a> , <unk#a> , bool in a <unka> </s>
+<s> <user> i am trying to upgrade to <unka> and hit this error </s>
+<s> <user> internally they will all be converted to <unk#a> </s>
+<s> <user> all of them </s>
+<s> <user> ok perhaps that conversion needs to be done in <unka> before <unka.> is called </s>
+<s> <user> it is done in <unka_`> which is called before </s>
+<s> <user> but apparently it is not working as expected </s>
+<s> <user> but a minimal example will help :p </s>
+<s> <user> yea , it would seem that way </s>
+<s> <user> i do not have one since i am just swapping out <unka> for <unka> in a huge package . </s>
+<s> <user> ill play around a bit and get back to you </s>
+<s> <user> basically this line should do the conversion : URL/https:/ URL/github.com/ <unk#a#-./_> </s>
+<s> <user> <unka(._> , <unka._> ) works but <unka(._> , <unka_> ) does not . the issue seems to be that i am passing a <unka> </s>
+<s> <user> i can just do <unka(._> , <unka._> ) </s>
+<s> <user> <unka._> will not give a numpy array <unka> </s>
+<s> <user> oh sorry this is the way it works . so it should give you a numpy array </s>
+<s> <user> you can always check by hand </s>
+<s> <user> <unka`> x , y = <unka(_> , <unka_> , <unk#a.=[> ], <unka=_> ) <unk`> </s>
+<s> <user> to check what x is looking like </s>
+<s> <user> and the same by passing <unka._`> </s>
+<s> <user> to spot difference </s>
+<s> <user> yes there is a difference . for example with a date originally 2011 . <unka(._`> , <unka_> , <unk#a.=[> ], <unka)=_`> gives the original 2011 </s>
+<s> <user> but <unka(._`> , <unka._> , <unk#a.=[> ], <unka)=_`> gives <unk#a+.> which i presume is how it would show it as a float </s>
+<s> <user> <unka.`> is <unka`> in the first case ? </s>
+<s> <user> <unka'(> ) yes </s>
+<s> <user> in the second <unk#a'(> ) </s>
+<s> <user> uhm this is really weird </s>
+<s> <user> i have a fix with <unka._> so i am good but i would think this issue will come up a lot as <unka> becomes popular </s>
+<s> <user> <unk#a.=[> ] should force the conversion </s>
+<s> <user> is this then a bug in <unka._> . was it designed to handle being passed <unka> ? </s>
+<s> <user> normally yest </s>
+<s> <user> this would be in <unka_`> in <unka.`> </s>
+<s> <user> might be a side effect of this URL/https:/ URL/github.com/ <unk#a-/> </s>
+<s> <user> ups </s>
+<s> <user> we might have forgot to backport the fix in <unk#.> </s>
+<s> <user> uhm no it is fine </s>
+<s> <user> can you check the version of <unka-> </s>
+<s> <user> are you using <unk#.`> because we corrected the bug in <unk#.`> </s>
+<s> <user> yup hold on </s>
+<s> <user> <unk#.> </s>
+<s> <user> <unk#.> not ready in <unka> yet </s>
+<s> <user> this issue only happens if <unka_> has a float in it already </s>
+<s> <user> i have a minimum example . </s>
+<s> <user> <unk`> import <unka> as pd import <unka> import numpy as np <unka_> = { <unka'> 1' : [ true , true , false , false , true ], <unka'> 2' : [ false , false , true , true , false ], <unka'> : [ 42 , 52 , 36 , 24 , 73 ], <unka'> : [ 4.4 , <unk#.> , <unk#.> , 2.2 , 3.1 ], <unka'> : [ <unk#.> , <unk#.> , <unk#.> , <unk#.> , <unk#.> <unk]}> df = <unka(._> , columns = [ <unka'> 1' , <unka'> 2' , <unka'> , <unka'> , <unka'> ]) <unka_> = <unka'[> 1' , <unka'> 2' , <unka'> , <unka'> ]] <unka_> = <unka'[> ] <unka(._> ) x , y = <unka(._> , <unka_> , <unk#a.=[> ], <unka=_> ) <unka(.> ) x , y = <unka(._> , <unka._> , <unk#a.=[> ], <unka=_> ) <unka(.> ) <unka_> = <unka'[> 1' , <unka'> 2' , <unka'> ]] <unka_> = <unka'[> ] x , y = <unka(._> , <unka_> , <unk#a.=[> ], <unka=_> ) <unka(.> ) x , y = <unka(._> , <unka._> , <unk#a.=[> ], <unka=_> ) <unka(.> ) <unk`> </s>
+<s> <user> sorry the markdown is not working as i would expect . does this work for you ? </s>
+<s> <user> jump a line after the 3 quotes </s>
+<s> <user> you can install from <unka-> </s>
+<s> <user> we upload the packages yesterday </s>
+<s> <user> or via <unka> </s>
+<s> <user> yes it was the bug </s>
+<s> <user> so in <unk#.> the last 4 print statements all give <unk#a> ? </s>
+<s> <user> let me try but it should </s>
+<s> <user> ok sure . thanks so much for the real time tech support . this is some high quality service </s>
+<s> <user> <unk`> binary 1 bool binary 2 bool age <unk#a> <unka> <unk#a> <unka> : object <unk#a> <unk#a> <unk#a> <unk#a> <unk`> </s>
+<s> <user> awesome . i will update . </s>
+<s> <user> i cannot update <unk`> <unka> install <unk#a-.=> <unk`> does not work </s>
+<s> <user> <unka`> install <unka-> -c <unka-`> </s>
+<s> <user> the package are only upload to <unka-> </s>
+<s> <user> <unka> is managing directly the default channel and it can take a bit more time </s>

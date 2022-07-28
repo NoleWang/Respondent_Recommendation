@@ -1,0 +1,12 @@
+[11:21] <541a528b163965c9bc2053de> You should put the code for the MyTokenizer class in an importable module that his installed somewhere in the python path in the Python where you load the model.
+[11:22] <541a528b163965c9bc2053de> Alternatively, you can use `cloudpickle.dump / load` instead of joblib. It will be slightly less efficient if your model has large numpy arrays as attributes but this is probably not a problem in practice.
+--------------------------------------------------------------------------------------------------
+[17:24] <5b11caa3d73408ce4f9b96b5> The first solution that you mention works. I read that joblib pickles by remembering the paths to objects
+[17:24] <5b11caa3d73408ce4f9b96b5> So, if I create a function in an interactive session, there is no path to that function. Putting that into an importable module makes it work
+--------------------------------------------------------------------------------------------------
+[20:48] <5b11caa3d73408ce4f9b96b5> @ogrisel Coming back to the pickling issue. The way I was using it in another script was by redefining the function.
+--------------------------------------------------------------------------------------------------
+[20:50] <5b11caa3d73408ce4f9b96b5> Now, I'm trying to use the pipeline object inside a class. In the __init__, I try to load the model, it throws the same error again. I tried defining the function inside the __init__, but still the pickle doesn't see the function. Any workaround for this ?
+[20:52] <5b11caa3d73408ce4f9b96b5> Here is the paste: https://pastebin.com/7rLmaxxJ.
+[20:54] <5b11caa3d73408ce4f9b96b5> Open to suggestions from others.
+--------------------------------------------------------------------------------------------------

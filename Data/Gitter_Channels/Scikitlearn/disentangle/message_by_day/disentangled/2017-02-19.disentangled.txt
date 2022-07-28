@@ -1,0 +1,2 @@
+[13:52] <58a9a221d73408ce4f4b6740> Hello friends, first time on gitter so introduction: I am Shubham Bhardwaj 2nd year computer science undergrad from VIT Vellore. I mostly contributed on back end tasks using python in Google Developers Group-VIT. But I made a transition to Machine Learning this Winter after taking a course on UDACITY. Looking forward to working and learning from all. Thanks.
+--------------------------------------------------------------------------------------------------

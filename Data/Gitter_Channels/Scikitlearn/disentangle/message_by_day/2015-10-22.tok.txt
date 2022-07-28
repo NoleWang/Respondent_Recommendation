@@ -1,0 +1,33 @@
+<s> <user> good morning :) </s>
+<s> <user> <unka@> for the one hot encoder : that </s>
+<s> <user> that 's why i said try to do <unka_> , and if we get a string type back , instead make it an object type . </s>
+<s> <user> your example will give a string type </s>
+<s> <user> if we detect that and instead convert with an explicit object <unka> , it 'll work </s>
+<s> <user> good morning </s>
+<s> <user> good morning </s>
+<s> <user> hey , by any chance , what would you recommend for a good introduction to linear models ? ( to be recommended as reading materials for a workshop with an audience of <unka> ) </s>
+<s> <user> ( covering linear regression , <unka> , svm , etc ) </s>
+<s> <user> good morning - <unka@> might comment more but i would probably say elements of statistical learning </s>
+<s> <user> or the intro version of that ( ca n't remember the name ) </s>
+<s> <user> " introduction to statistical learning " </s>
+<s> <user> okay , thanks kyle </s>
+<s> <user> i do n't have a better suggestion </s>
+<s> <user> is it me or github is very slow at the moment ? </s>
+<s> <user> it seems fine now </s>
+<s> <user> <unka@> you just missed the introduction of the <unka-> <unka> proposal </s>
+<s> <user> =( </s>
+<s> <user> given my +1 and partial reviews from <unka@> , <unka@> and <unka@> , can we merge <unk##> ? </s>
+<s> <user> thanks alex :) </s>
+<s> <user> <unka@> i think it is important to note that slap is our new acronym ... </s>
+<s> <user> <unka@> <unka@> called the repo " enhancement " :-/ URL/https:/ URL/github.com/ <unka-/_> </s>
+<s> <user> stupid git question : how to i update a local branch that is a <unk#a/> branch ? </s>
+<s> <user> i.e . that comes from a pull request </s>
+<s> <user> does anyone know if <unka> is pushing the doc to github ? or just creating an artifact that some other thing can get </s>
+<s> <user> i am trying to make <unka> push a doc ( for another project ) after succesful build </s>
+<s> <user> URL/https:/ <unka./> <unka#-./_> </s>
+<s> <user> URL/https:/ URL/github.com/ <unk#a#./> </s>
+<s> <user> i think i 'll have to head out soon </s>
+<s> <user> <unka@> that is not working yet , there is a pr </s>
+<s> <user> ok - i got the build part working on <unka-> pretty easily , and i think fred will take a look at it for <unka> as well . this is a lot better than a cron job ... </s>
+<s> <user> indeed </s>
+<s> <user> lol i do n't think i wrote a line of code this week </s>

@@ -1,0 +1,43 @@
+[01:31] <56333d0d16b6c7089cb8d5c7> I have a question
+[01:32] <56333d0d16b6c7089cb8d5c7> after doing a git pull of sklearn repository
+[01:32] <56333d0d16b6c7089cb8d5c7> say I am woking on a bug
+[01:32] <56333d0d16b6c7089cb8d5c7> how do I test my changes on the code?
+[01:32] <56c4f19ae610378809c1f8ae> what do you mean test?
+[01:32] <56c4f19ae610378809c1f8ae> like run the unit tests?
+[01:33] <56333d0d16b6c7089cb8d5c7> nope
+--------------------------------------------------------------------------------------------------
+[01:32] <56c4f19ae610378809c1f8ae> hi
+--------------------------------------------------------------------------------------------------
+[01:33] <56c4f19ae610378809c1f8ae> or run random python code that might use scikit-learn on the version that you have modified
+[01:33] <56333d0d16b6c7089cb8d5c7> let say i added a print statement in one of the classes
+[01:33] <56333d0d16b6c7089cb8d5c7> that had a bug
+[01:33] <56c4f19ae610378809c1f8ae> ah. so you want the print statement to show up when it is run.
+[01:34] <56333d0d16b6c7089cb8d5c7> and I want to test that class in an ipython notebook
+[01:34] <56333d0d16b6c7089cb8d5c7> yup
+--------------------------------------------------------------------------------------------------
+[01:35] <56c4f19ae610378809c1f8ae> so im not sure how you have it installed currently, but I uninstalled the pip version i had. then, I installed it again from source with `python setup.py develop`
+[01:35] <56333d0d16b6c7089cb8d5c7> ah okay
+[01:35] <56c4f19ae610378809c1f8ae> then, whenver you change code in a compiled extension (.pyx file, say youre making changes to it or repulling from upstream or switching branches), you have to recompile with `python setup.py build_ext --inplace`
+[01:36] <56c4f19ae610378809c1f8ae> the way you can tell if it is working is if you run
+[01:39] <56c4f19ae610378809c1f8ae> np, let me know if that worked for you
+--------------------------------------------------------------------------------------------------
+[01:36] <56c4f19ae610378809c1f8ae> ``` In [1]: import sklearn  In [2]: print sklearn.__file__ /Users/nelsonliu/Documents/Github/scikit-learn/sklearn/__init__.pyc ```
+[01:36] <56c4f19ae610378809c1f8ae> that should point to wherever youve cloned the sklearn repo
+[01:39] <56333d0d16b6c7089cb8d5c7> many thanks
+[01:39] <56333d0d16b6c7089cb8d5c7> :)
+--------------------------------------------------------------------------------------------------
+[01:40] <56333d0d16b6c7089cb8d5c7> so every time a git pull is done
+[01:41] <56333d0d16b6c7089cb8d5c7> you recompile
+--------------------------------------------------------------------------------------------------
+[01:41] <56333d0d16b6c7089cb8d5c7> with python setup.py build_ext --inplace
+[01:41] <56333d0d16b6c7089cb8d5c7> ?
+[01:49] <56333d0d16b6c7089cb8d5c7> ok
+--------------------------------------------------------------------------------------------------
+[01:41] <56c4f19ae610378809c1f8ae> uh you technically dont have to recompile if none of the .pyx files are changed, but i generally do so anyway because I dont want to bother looking at what was pulled
+[01:41] <56c4f19ae610378809c1f8ae> its quick anyway
+--------------------------------------------------------------------------------------------------
+[02:49] <56333d0d16b6c7089cb8d5c7> thanks @nelson-liu  it worked
+[02:49] <56c4f19ae610378809c1f8ae> good to hear
+--------------------------------------------------------------------------------------------------
+[21:26] <54f7c23815522ed4b3dcd290> I have limited data science experience, and reasonable programming experience. What are the best ways to get started??
+--------------------------------------------------------------------------------------------------

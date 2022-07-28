@@ -1,0 +1,2 @@
+[04:23] <53810862048862e761fa2887> @amueller Isn't ADMM guaranteed to produce an optimal solution irrespective of the value of `mu` ? I am referring to equation 5.1 [here](http://statweb.stanford.edu/~candes/papers/RobustPCA.pdf)
+[04:24] <53810862048862e761fa2887> `mu` is multiplied by a factor which should be 0 for all feasible solutions.

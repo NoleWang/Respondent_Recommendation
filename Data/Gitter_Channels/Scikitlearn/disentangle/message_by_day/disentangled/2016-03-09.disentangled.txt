@@ -1,0 +1,3 @@
+[13:09] <5478876cdb8155e6700d907b> hello guys, who do I badger about strange travis failures: https://github.com/scikit-learn/scikit-learn/pull/6166#issuecomment-194246460
+[13:09] <5478876cdb8155e6700d907b> in one it fails to find libgfortran and in the other some tests related to scorers and memmapping fail :-/
+--------------------------------------------------------------------------------------------------

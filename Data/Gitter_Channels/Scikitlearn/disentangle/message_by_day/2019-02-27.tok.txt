@@ -1,0 +1,10 @@
+<s> <user> i 'm having no luck with this building . can someone tell me which <unka> were in ? second floor , tight ? </s>
+<s> <user> 7th floor </s>
+<s> <user> should i come down to get you ? </s>
+<s> <user> african continent </s>
+<s> <user> doing a presentation on <unka> right now </s>
+<s> <user> for people at the sprint </s>
+<s> <user> <unka@> , what is the difference between <unka_`> and <unka_`> in optics ? </s>
+<s> <user> <unka@> by convention ( i think <unka> uses the same thing ) <unka_`> is the parameter used to do the nearest neighbor part , and <unka_`> is used when <unka_> the clusters from the <unka> distances . </s>
+<s> <user> we probably need to find a way to better explain these </s>
+<s> <user> hello guys ! im working on a movie dataset for <unka-> collaborative filtering . im able to get my <unka_> function working with for loop on a <unka> part of the dataset . i hear that utilizing <unka(> x : <unka<> > ) is much faster . anyone familar with converting ? </s>

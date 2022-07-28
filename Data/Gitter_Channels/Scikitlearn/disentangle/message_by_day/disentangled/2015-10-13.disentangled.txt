@@ -1,0 +1,20 @@
+[00:04] <54d4a1d6db8155e6700f853b> wow this is the worst: https://github.com/scikit-learn/scikit-learn/issues/5267
+--------------------------------------------------------------------------------------------------
+[09:19] <53135b495e986b0712efc453> Is having an issue for splitting the current utils into private/public worth it?
+--------------------------------------------------------------------------------------------------
+[19:33] <54d4a1d6db8155e6700f853b> not sure. we should get the model_selection stuff done first.
+[19:33] <54d4a1d6db8155e6700f853b> I'm catching up right now
+[19:33] <54d4a1d6db8155e6700f853b> ping @GaelVaroquaux are you here?
+[19:33] <54d4a1d6db8155e6700f853b> also ping @ogrisel
+[19:33] <54d4a1d6db8155e6700f853b> I might be able to help with releasing this week. should we? Or wait for the sprint?
+[22:45] <54d4a1d6db8155e6700f853b> we cam
+[22:45] <54d4a1d6db8155e6700f853b> we can't really merge model selection before releasing
+--------------------------------------------------------------------------------------------------
+[19:56] <53135b495e986b0712efc453> If we have the model selection merged by this week I can work on the multiple metric thing during sprint :)
+[19:56] <53135b495e986b0712efc453> You are coming right?
+[19:57] <53135b495e986b0712efc453> Gael is not in gitter ;)
+--------------------------------------------------------------------------------------------------
+[22:46] <54d4a1d6db8155e6700f853b> I just updated to numpy 1.10.1 and now I get a lot of test failures. Anyone else?
+[22:46] <54d4a1d6db8155e6700f853b> TypeError: Cannot cast ufunc subtract output from dtype('float64') to dtype('int64') with casting rule 'same_kind'
+[22:46] <54d4a1d6db8155e6700f853b> running conda
+--------------------------------------------------------------------------------------------------

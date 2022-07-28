@@ -1,0 +1,2 @@
+<s> <user> <unka@> thanks ! </s>
+<s> <user> using <unka.> i 'm able to guess what <unka/> the <unka(> ) <unka(> ) to , but how do i get the probability of the given sample occurring given that distribution ( not a <unka> average of all clusters )? </s>

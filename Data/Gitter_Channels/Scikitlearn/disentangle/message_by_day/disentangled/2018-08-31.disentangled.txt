@@ -1,0 +1,15 @@
+[19:11] <564789be16b6c7089cbab8b7> Is there a reason why LinearSVC doesn't have predict_proba?
+[19:12] <564789be16b6c7089cbab8b7> oh!  Hmm...
+[19:13] <564789be16b6c7089cbab8b7> http://scikit-learn.org/stable/modules/generated/sklearn.tree.DecisionTreeClassifier.html has predict_proba
+[19:13] <564789be16b6c7089cbab8b7> @amueller  I am confused why one is a probabilistic model but the other isn't
+[19:14] <564789be16b6c7089cbab8b7> I mean there is no randomness in the decision tree classifier
+--------------------------------------------------------------------------------------------------
+[19:12] <54d4a1d6db8155e6700f853b> @lesshaste yeah it's not a probabilistic model
+--------------------------------------------------------------------------------------------------
+[19:51] <54d4a1d6db8155e6700f853b> randomness has nothing to do with whether it's a probabilistic model. there's no randomness in logistic regression
+--------------------------------------------------------------------------------------------------
+[20:59] <564789be16b6c7089cbab8b7> @amueller  Yes sorry my mistake. Could you give a short reason why one is a probabilistic model and the other isn't?
+[21:00] <564789be16b6c7089cbab8b7> Please
+--------------------------------------------------------------------------------------------------
+[21:08] <54d4a1d6db8155e6700f853b> not really? There is a way to interpret a tree model in a probabilistic way but there is no way to interpret an SVM in a probabilistic way
+--------------------------------------------------------------------------------------------------

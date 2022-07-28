@@ -1,0 +1,16 @@
+<s> <user> hi , i am new to <unka-> , i want to contribute , can i get some guidance . frankly i am having problems in understanding the easy issues . sorry for being naive </s>
+<s> <user> hi <unka:> : , which issues are you solving ? </s>
+<s> <user> or trying to understand </s>
+<s> <user> i tried to understand more than one ... but i am unable to narrow down the scope of the problem </s>
+<s> <user> may you paste the link ? </s>
+<s> <user> URL/https:/ URL/github.com/ <unk#a-/> </s>
+<s> <user> this is one of them .... </s>
+<s> <user> i see , maybe you should leave a comments there and tag the issue opener for more specific <unka> . </s>
+<s> <user> doing this can help you make sure you are on the right path ! </s>
+<s> <user> actually i am not fimiliar with the <unka-> . so i dont know what to ask him </s>
+<s> <user> can you assign me a task , as a mentor </s>
+<s> <user> no haha , im not a pro here . </s>
+<s> <user> atleast you can guide me ! </s>
+<s> <user> i am lost in here .... and i want to get some task for myself </s>
+<s> <user> you can leave a comment about how you gonna solve this , and ask the issue opener whether you are correct . it looks like to implement a function based on [ this <unka(-./:]_> ) which can conveniently plot the confusion matrix , you can find doc of confusion matrix [ <unka#(-./:]_> ) </s>
+<s> <user> thanks <unka> </s>

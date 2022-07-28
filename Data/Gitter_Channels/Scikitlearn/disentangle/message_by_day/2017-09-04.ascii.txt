@@ -1,0 +1,4 @@
+[11:57] <58b47262d73408ce4f4d4113> @glemaitre  And what about next year? Is scikit-learn taking part next year? 
+[12:24] <55d21ee30fc9f982beadabb8> @thechargedneutron no idea. I think that the core devs will keep the community informed.
+[12:27] <58b47262d73408ce4f4d4113> @glemaitre Thanks :)
+[18:16] <56f8122085d51f252abb1414> @glemaitre thanks

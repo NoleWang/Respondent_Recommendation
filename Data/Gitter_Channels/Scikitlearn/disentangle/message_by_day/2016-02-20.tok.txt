@@ -1,0 +1,2 @@
+<s> <user> <unk#a@> and <unka@> i just uploaded a first draft of the issue pr template we were discussing , please let me know what you think :) its at <unk##> . </s>
+<s> <user> <unka@> here 's my two cents ... i think that the difference that you saw in the results is related to the metric used by <unka> to measure the performance : area under the ( roc ) curve . according to this issue ( URL/https:/ URL/github.com/ <unk#a-/> ) the <unka> score will give better scores if you feed it with <unka> instead of binary decisions . </s>

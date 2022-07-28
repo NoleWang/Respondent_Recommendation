@@ -1,0 +1,12 @@
+[14:06] <53135b495e986b0712efc453> Okay :)
+--------------------------------------------------------------------------------------------------
+[14:22] <53135b495e986b0712efc453> BTW from discussions at #4254 I don't think #4225 will be in soon... Should it still be tagged 1.7?
+--------------------------------------------------------------------------------------------------
+[17:00] <541a528b163965c9bc2053de> I agree, re-tagged.
+--------------------------------------------------------------------------------------------------
+[19:59] <5612e60ad33f749381a8600b> Where is the best place to find help on deprecation issues for scikit?  I'm having trouble using Multilabelbinarizer and neither stackoverflow nor googling are helping.
+[20:01] <53135b495e986b0712efc453> What kind of issue?
+--------------------------------------------------------------------------------------------------
+[20:05] <5612e60ad33f749381a8600b> I'm trying to use the accuracy_score function (or even the Confusion matrix function) and I've transformed my Ytest using an multilabel binarizer so it's type is "multilabel-indicator" but the predicted values are in the form of binary.
+[20:06] <5612e60ad33f749381a8600b> so I get a "ValueError: Can't handle mix of multilabel-indicator and binary" error, but multilabel-indicator seems to be supported according to line 93 in classification.py
+--------------------------------------------------------------------------------------------------

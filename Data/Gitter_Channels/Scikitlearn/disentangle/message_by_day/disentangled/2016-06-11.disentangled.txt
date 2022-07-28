@@ -1,0 +1,6 @@
+[00:01] <56333d0d16b6c7089cb8d5c7> 2nd question (https://github.com/scikit-learn/scikit-learn/issues/6857) I cannot find the file references.rst in  the scikit-learn/doc folder. Where is this file present?.
+--------------------------------------------------------------------------------------------------
+[02:21] <5582b5a615522ed4b3e21903> @krishnakalyan3 someone else who commented on that issue couldn't find it either. And neither could I from a quick look.
+--------------------------------------------------------------------------------------------------
+[09:39] <56333d0d16b6c7089cb8d5c7> @pdurbin  thank anyway :)
+--------------------------------------------------------------------------------------------------

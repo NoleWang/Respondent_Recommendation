@@ -1,0 +1,5 @@
+<s> <user> hello , i am wondering why this pr ( URL/https:/ URL/github.com/ <unk#a-/> ) does n't show up at the top here : URL/https:/ URL/github.com/ <unka-/> is it because i had submitted it a long time ago , but my recent changes are considered updates ? </s>
+<s> <user> i think that <unka> are ordered by pr numbers by default in github </s>
+<s> <user> oh , wow , that 's interesting . not what i would have expected . </s>
+<s> <user> however , you have the option of " sort by recently updated " . this would actually be a good default while reviewing :) </s>
+<s> <user> yes , that 's what i was looking for ( and expecting as a default ). thanks ! </s>

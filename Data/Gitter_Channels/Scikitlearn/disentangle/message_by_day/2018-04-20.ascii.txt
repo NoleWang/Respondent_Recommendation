@@ -1,0 +1,9 @@
+[08:15] <541a528b163965c9bc2053de> @lesshaste if you dimension is low enough (e.g. max 300, the lower the better), then density based clustering such as DBSCAN or https://github.com/scikit-learn-contrib/hdbscan should work well for that case.
+[09:24] <564789be16b6c7089cbab8b7> @ogrisel  Thanks.. in my case the dimension is 1
+[09:25] <564789be16b6c7089cbab8b7> I will see what dbscan gives you. Is it really happy to find just one cluster and ignore the outliers?
+[09:26] <541a528b163965c9bc2053de> it's worth a try with DBSCAN. You do not choose the number of cluster but the typical distance between two points that are to be considered as "core points" that is point in high density regions.
+[09:27] <564789be16b6c7089cbab8b7> @ogrisel  ok thanks. dbscan in 1d it is :)
+[09:27] <541a528b163965c9bc2053de> There are also a bunch of other hyperparams. Read the scikit-learn docs and the hdbscan docs to learn more about this family of estimators.
+[09:27] <564789be16b6c7089cbab8b7> will do
+[09:28] <541a528b163965c9bc2053de> just shape you data as `(n_samples, 1)` that is `n_features=1`.
+[09:30] <564789be16b6c7089cbab8b7> thanks

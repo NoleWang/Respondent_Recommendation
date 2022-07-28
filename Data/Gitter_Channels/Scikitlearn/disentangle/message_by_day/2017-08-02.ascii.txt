@@ -1,0 +1,4 @@
+[18:52] <56f8122085d51f252abb1414> Hi all, I was wondering if it is somehow possible to include a model into the mean of a Gaussian Process Regressor (just like one can choose a kernel) a fit for the mean as well? 
+[18:53] <54d4a1d6db8155e6700f853b> No, I don't think so. That's rarely done in GPs afaik
+[18:54] <54d4a1d6db8155e6700f853b> you can remove the global mean beforehand if you like
+[19:08] <56f8122085d51f252abb1414> Oh ok, thanks for the quick reply. I dont want to subtract the mean because sometimes subtracting things out of a dataset somehow changes its random nature...

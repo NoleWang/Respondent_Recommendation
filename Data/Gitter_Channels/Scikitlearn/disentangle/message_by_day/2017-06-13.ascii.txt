@@ -1,0 +1,10 @@
+[07:35] <593f94a1d73408ce4f66e9df> Hi, this is probably not the right forum to ask it, but not sure where else to go: How do I get permission to use the scikit-learn machine learning map (ML-map.png) in a published document? Obviously with full citation!  Thanks. Available from this link: http://scikit-learn.org/stable/tutorial/machine_learning_map/
+[09:45] <56aba3aee610378809bedf43> Hi, is there any way to incorporate self-learning in SVC. By self-learning I mean if a datapoint is being predicted class A with accurary 0.7, then if I add same datapoint again in the corpus, then the prediction accurary should increase from 0.7 like in case of Neural Nets. But looking at the mathematics, if the datapoint is not a support vector then it is not considered in cost function. Then what should I do to increase the accuracy?
+[09:46] <54d4a1d6db8155e6700f853b> Self learning is a meta-algorithm for semi-supervised learning and should work with any supervised model.
+[09:46] <54d4a1d6db8155e6700f853b> I'm not sure what you mean by a point being predicted with accuracy 0.7
+[09:48] <56aba3aee610378809bedf43> predict_proba of SVC gives me a confidence score of 0.7. Can I seed it back into your model and hope that the next time confidence score for the same datapoint increase  
+[09:50] <54d4a1d6db8155e6700f853b> that's not the same as accuracy. and SVC is not probabilistic. And was it in the original training set? self-learning is for semi-supervised learning
+[09:50] <54d4a1d6db8155e6700f853b> I think SVC uses sample_weight that you can increase
+[09:50] <54d4a1d6db8155e6700f853b> hm...
+[09:53] <56aba3aee610378809bedf43> yeah sorry that was a mistake. what I want is once I deploy a model in production, it somehow keeps on improving. I was thinking that if the confidence score of an unseen data point is above a certain threshold (say 0.7) i add it to the training set and retrain . Is it a good idea to use this with SVC ?
+[12:09] <54d4a1d6db8155e6700f853b> yeah that can work. self learning can have problems with concept drift

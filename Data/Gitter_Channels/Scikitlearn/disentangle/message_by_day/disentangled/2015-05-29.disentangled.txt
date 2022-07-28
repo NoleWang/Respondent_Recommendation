@@ -1,0 +1,2 @@
+[03:04] <54c084dbdb8155e6700eed4c> Well I'll leave #4215 alone for now then. If PassAgg gets merged, it should be pretty simple to change it over in your PR I guess. Unless you want me to advertise #4347 there? I'm fine either way.
+--------------------------------------------------------------------------------------------------

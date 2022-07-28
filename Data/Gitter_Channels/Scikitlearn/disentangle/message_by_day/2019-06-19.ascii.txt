@@ -1,0 +1,2 @@
+[22:58] <54d4a1d6db8155e6700f853b> @piotr-mamenas https://www.youtube.com/watch?v=EUiIydNBIbE&list=PL_pVmAaAnxIQGzQS2oI3OWEPT-dpmwTfA&index=10 and https://www.youtube.com/watch?v=Eix70D-H5ag&list=PL_pVmAaAnxIQGzQS2oI3OWEPT-dpmwTfA&index=11 are relevant to the first question
+[22:59] <54d4a1d6db8155e6700f853b> For imbalanced data I would worry about evaluation first

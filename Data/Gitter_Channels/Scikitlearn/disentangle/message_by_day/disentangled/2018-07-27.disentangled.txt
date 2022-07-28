@@ -1,0 +1,2 @@
+[03:34] <5a2c58c8d73408ce4f8294ba> Typically each pixel is encoded as rgb so 3 features per pixel. Sklearn can try to classify this with a number of algorithms but I suspect you will not get far. The pooling and covolutional layers in a NN are what gives the power for image classification. Sklearn does not have any NN beyond an MLP so you lose that ability.
+--------------------------------------------------------------------------------------------------

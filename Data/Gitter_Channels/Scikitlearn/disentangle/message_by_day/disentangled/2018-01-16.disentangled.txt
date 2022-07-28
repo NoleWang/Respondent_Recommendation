@@ -1,0 +1,12 @@
+[08:56] <53eb987c107e137846baa89d> @jnothman neither of them work for me. BTW, which files should I put them in? I tried to put it both files sklearn/utils/testing.py and sklearn/metrics/tests/test_common.py.
+--------------------------------------------------------------------------------------------------
+[09:36] <54b2524adb8155e6700e8a8e> Modify conftest.py if youre doing this for testing??
+--------------------------------------------------------------------------------------------------
+[12:34] <54b2524adb8155e6700e8a8e> Is there a contributor who wants to work on an Easy issue with a moderate amount of work? #9726: create a new sklearn.impute module for imputation
+--------------------------------------------------------------------------------------------------
+[12:36] <58b47262d73408ce4f4d4113> I am relatively free. I have currently #10206 which may get completed by the end of this week. So, I am willing to take it.
+--------------------------------------------------------------------------------------------------
+[12:54] <54b2524adb8155e6700e8a8e> For a longer project (potentially a GSoC), contributors might be interested in resampling API: https://github.com/scikit-learn/scikit-learn/issues/3855#issuecomment-357949997
+--------------------------------------------------------------------------------------------------
+[14:05] <56333d0d16b6c7089cb8d5c7> @jnothman I can work on #9726.
+--------------------------------------------------------------------------------------------------

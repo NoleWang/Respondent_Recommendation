@@ -1,0 +1,8 @@
+<s> <user> this pr by me is also with the paris sprint URL/https:/ URL/github.com/ <unk#a-/> </s>
+<s> <user> i 'll start by completing URL/https:/ URL/github.com/ <unk#a-/> at paris sprint </s>
+<s> <user> i am working on this issue URL/https:/ URL/github.com/ <unk#a-/> as part of the paris sprint </s>
+<s> <user> i 'm working on the issue <unk#a#-/> at the paris sprint </s>
+<s> <user> i 'm working on <unka> of URL/https:/ URL/github.com/ <unk#a-/> </s>
+<s> <user> i 'm working on <unka_> descriptions for <unka_> of <unk#a#-/> </s>
+<s> <user> please also comment in the issues to indicate the topic you are working on <unka@> <unka@> <unka@> <unka-@> so that other people do n't work on the same things . </s>
+<s> <user> i 'm working on a documentation for <unka_> <unk#a#-/> related to the issue <unk#a#-/> at the paris sprint </s>

@@ -1,0 +1,19 @@
+[22:28] <5a2c58c8d73408ce4f8294ba> Does HistGradientBoostingRegressor have an equivalent of subsample and max_features in GradientBoostingRegressor? I have a GradientBoostingRegressor model with tuned hyperparameters and I want to see if HistGradientBoostingRegressor is better
+--------------------------------------------------------------------------------------------------
+[22:30] <54d4a1d6db8155e6700f853b> @DrEhrfurchtgebietend not right now. Do you want to open an issue as a feature request? I would recommend first comparing with the default parameters of HistGradientBoosting
+[22:32] <5a2c58c8d73408ce4f8294ba> OK, I can try with the defaults. I will open a request if I remember
+[22:33] <5a2c58c8d73408ce4f8294ba> There also is no min_samples_split
+--------------------------------------------------------------------------------------------------
+[22:34] <54d4a1d6db8155e6700f853b> no, but there is min_samples_leaf (which is not the same but similar)
+--------------------------------------------------------------------------------------------------
+[22:36] <5a2c58c8d73408ce4f8294ba> @amueller Yea, that is likely good enough. While I have you. I did send you and Gael an email about entity embedding as we discussed at NeurIPS
+[22:37] <54d4a1d6db8155e6700f853b> oh that was you! sorry I didn't connect your handle to you in-person. I've been in grant-writing mode and just procrastinating ;)
+[22:40] <5a2c58c8d73408ce4f8294ba> Yup, I tend to not use real name on the internet. Anyway, as I say in the email. It might be better as a scikit learn add on. A separate but dependant package. There are a number of them.
+--------------------------------------------------------------------------------------------------
+[22:38] <54d4a1d6db8155e6700f853b> I'm not sure when I'll have time to look at it tbh, in particular because it's unlikely we can directly integrate with sklearn. I didn't forget about it but my list of todos is pretty long...
+[22:39] <54d4a1d6db8155e6700f853b> maybe I should add it to my class hand have my students do it ;)
+--------------------------------------------------------------------------------------------------
+[23:03] <5c77a43ed73408ce4fb93081> @DrEhrfurchtgebietend Are you thinking of using entity embedding for transfer learning?
+--------------------------------------------------------------------------------------------------
+[23:04] <5a2c58c8d73408ce4f8294ba> No, categorical encoding. If you have many level it is great. I saw like a 5% RMSE improvement
+--------------------------------------------------------------------------------------------------

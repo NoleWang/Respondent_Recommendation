@@ -1,0 +1,18 @@
+<s> <user> <unka@> there is a pr for stability scores , but evaluating clustering is really hard </s>
+<s> <user> hello <unka@> , </s>
+<s> <user> would you please answer the question i asked in this issue lately ? URL/https:/ URL/github.com/ <unk#a-/> oh and <unka> and <unka> should be separated into two classes , right ? </s>
+<s> <user> <unka@> thanks . i hope that pr works out . i seem to remember it had made quite a lot of progress </s>
+<s> <user> <unka@> URL/https:/ URL/github.com/ <unk#a-/> ? </s>
+<s> <user> <unka@> yes </s>
+<s> <user> <unka@> are you around ? </s>
+<s> <user> does anyone know if it is a better idea to form the <unka./_`> into a proper <unka`> + <unka`> file rather than importing the <unka> file at <unka._`> and <unka._`> . from [ <unka#(-./:]> ) ( thanks to <unka@> ) article , i understand that <unka> file gets included at both the places . would it be better to import than to include or am i missing something ? </s>
+<s> <user> ok i set up the travis correctly and reproduced locally , so i 'll spend the rest of the day fixing numpy dev compatibility </s>
+<s> <user> <unka@> i 'm free for the evening ( and weekend ). i am starting the work on multiple metric grid search ... ( i have some notes on how you had wanted it implemented ) i 'll ping you and joel if i get into trouble ;) </s>
+<s> <user> have you talked to <unka@> ? he was also thinking about the problem </s>
+<s> <user> it 's <unka> day on sunday , i might be busy ;) </s>
+<s> <user> also i want to make sure everything is ready for the <unk#.> release </s>
+<s> <user> yes i spoke to him too out of github ;) </s>
+<s> <user> cool </s>
+<s> <user> hehe :p have a nice time ;) </s>
+<s> <user> anyone who knows the sequential dataset well ? i 'm stumped on <unk##> </s>
+<s> <user> ok , all " fixed " </s>

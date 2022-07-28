@@ -1,0 +1,26 @@
+[01:49] <54e07d6515522ed4b3dc0858> @rvraghav93 you should have pinged me using my username, I didn't see your message. I'm behind the Great Firewall so my connectivity is poor until the 31st
+[01:51] <54e07d6515522ed4b3dc0858> To answer, I don't see why knn would be better or worse than anything else. The gist of the problem is the estimation of the score. If you use kfold instead of lolo you will overestimate.
+[01:53] <54e07d6515522ed4b3dc0858> The idea of validation is to estimate how your model would do in a realistic setting. If your observations are grouped and they arrive in groups, it's not realistic to assume that you can be able to train on some samples from the same groups that you will run it on.
+[01:55] <54e07d6515522ed4b3dc0858> I guess knn is likely to overestimate. But it's not a question of cchoosing k. It's one of methodology
+[01:57] <54e07d6515522ed4b3dc0858> Think of search queries. If real life users would look for exactly the same queries you have in your training set, 1nn can return perfect results. But that's not a realistic of interesting case.
+--------------------------------------------------------------------------------------------------
+[01:59] <54e07d6515522ed4b3dc0858> If you "contaminate" your evaluation with this kind of data you can think your system generalizes much better than it really does.
+[02:00] <54e07d6515522ed4b3dc0858> Because the model can implicitly learn to recognize the latent group label, and then get some of the test points predicted really well
+[02:00] <54e07d6515522ed4b3dc0858> I hope this makes sense. I gtg
+--------------------------------------------------------------------------------------------------
+[15:06] <550f53e215522ed4b3dda5f6> Excuse me, what kind of test cases should I write for some computation functions?
+--------------------------------------------------------------------------------------------------
+[15:32] <54d4a1d6db8155e6700f853b> which functions?
+--------------------------------------------------------------------------------------------------
+[15:40] <550f53e215522ed4b3dda5f6> like update functions...
+[15:43] <550f53e215522ed4b3dda5f6> https://github.com/scikit-learn/scikit-learn/pull/4802/files#diff-47bf98f4dd63f89baa089da3ffe28652R650
+[15:46] <550f53e215522ed4b3dda5f6> https://github.com/scikit-learn/scikit-learn/pull/4802/files#diff-47bf98f4dd63f89baa089da3ffe28652R197
+[16:47] <54d4a1d6db8155e6700f853b> not easily ;)
+[16:47] <54d4a1d6db8155e6700f853b> you could test it against simple cases that you worked out on paper and that are easy to check?
+[16:48] <54d4a1d6db8155e6700f853b> though that is rarely the case with formulas involving digamma functions :-/
+[16:50] <54d4a1d6db8155e6700f853b> Honestly I don't know. unit-testing variational inference ....
+--------------------------------------------------------------------------------------------------
+[18:07] <550f53e215522ed4b3dda5f6> OK.. I will try it against simple cases.
+--------------------------------------------------------------------------------------------------
+[19:01] <54d4a1d6db8155e6700f853b> reviews for #5049 and #5047 would be very welcome so we can fix travis
+--------------------------------------------------------------------------------------------------

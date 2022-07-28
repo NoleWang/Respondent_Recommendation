@@ -1,0 +1,5 @@
+[10:19] <561a58f7d33f749381a8ff2f> I'm really wondering if there would be ways to "cache" things in the Pipeline
+[10:20] <561a58f7d33f749381a8ff2f> I mean... when you're doing a grid search... if you use some kind of static transformation in it
+[10:21] <561a58f7d33f749381a8ff2f> E.g. you use a CountVectorizer that has no variation in parameters and it is put in the pipeline, I suspect that if you have some alpha values changing in a Ridge() in the pipeline, it still does the static CountVectorizer endlessly?
+[10:22] <561a58f7d33f749381a8ff2f>     Pipeline({       'countvectorizer': CountVectorizer,       'ridge': Ridge})          grid = {'ridge__alpha': [0.1, 1, 10]}
+--------------------------------------------------------------------------------------------------

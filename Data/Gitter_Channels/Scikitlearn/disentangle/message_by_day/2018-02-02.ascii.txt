@@ -1,0 +1,2 @@
+[01:00] <58b46af0d73408ce4f4d3f2c> As  a statistics graduate student, I'd love to add inferential tools to scikit-learn.
+[01:58] <58b46af0d73408ce4f4d3f2c> Would it be a worthwhile effort to implement conformal inference (http://www.stat.cmu.edu/~ryantibs/papers/conformal.pdf) ?

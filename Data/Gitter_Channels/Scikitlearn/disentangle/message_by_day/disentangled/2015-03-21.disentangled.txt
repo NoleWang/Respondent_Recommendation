@@ -1,0 +1,12 @@
+[09:09] <5474d9eadb8155e6700d8178> You could also do a `git grep "def function_name"` right? Thats the easiest I think! :)
+--------------------------------------------------------------------------------------------------
+[15:44] <54d4a1d6db8155e6700f853b> for the file you can use function.__file__
+[15:44] <54d4a1d6db8155e6700f853b> that is ``function.__file__``
+--------------------------------------------------------------------------------------------------
+[16:44] <54c084dbdb8155e6700eed4c> __file__ didnt work, but func.__code__ seems to get what i want. thanks!
+[16:44] <54c084dbdb8155e6700eed4c> that is `func.__code__`
+--------------------------------------------------------------------------------------------------
+[18:56] <54d4a1d6db8155e6700f853b> it might be that __file__ only works for modules, not functions
+[18:56] <54d4a1d6db8155e6700f853b> psource should give you the same as file
+[18:56] <54d4a1d6db8155e6700f853b> err code
+--------------------------------------------------------------------------------------------------

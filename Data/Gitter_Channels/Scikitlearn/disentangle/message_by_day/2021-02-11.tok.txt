@@ -1,0 +1,22 @@
+<s> <user> when i do <unka> on my matrix x how can i make the mapping the same for each column ? </s>
+<s> <user> currently it is different if there is one new value in a column that does n't occur in another column </s>
+<s> <user> hello happy <unka-> ! i need some help please . i want to serve an <unka> model . input = 144 columns ( medical records , some <unka> , some not ). output = <unka> . pipeline = <unka> + <unka> + <unka> . i am stuck with the <unka> . any example of such configuration somewhere ? google was not my friend . i was able to produce an <unka> model when bypassing the <unka> ... but i need it and want to avoid <unk#a> because <unka> performs much better without <unk#a> . anyone ? </s>
+<s> <user> <unka@> you probably want <unka> not the <unka> </s>
+<s> <user> also tree based models it 's better to use <unka> instead for <unka> features </s>
+<s> <user> > also tree based models it 's better to use <unka> instead for <unka> features i 'm not sure that 's true , using oe will make the trees treat categories as ordered values , but they're not . native <unka> support ( as in <unka> ) properly treats categories as <unka-> and can yield the same splits with less tree depth </s>
+<s> <user> yes , you are right . i guess i 'm too used to <unka-> tree based models not having native <unka> support ) </s>
+<s> <user> i agree with <unka@> in theory , but in practice the difference with <unka`> ( with tuned <unka> ) is typically negligible ;) </s>
+<s> <user> <unka@> using <unka`> is probably the pragmatic solution . <unka`> is only efficient if you use sparse output which are currently not supported by <unka> as far as i know . </s>
+<s> <user> <unka@> : what 's the issue with <unka> and <unka> ? ( i 'm the main author of <unka-> ). </s>
+<s> <user> <unka@> also you said " pipeline = <unka> + <unka> + <unka> ." but i assume you use a column transformer to separate to only scale the numerical features and encode the <unka> feature separately : URL/https:/ <unka-./> <unka#-./> btw , <unka> the numerical features if often useless for <unka-> models in general , and even more so for implementations such as <unka> than bin the features . </s>
+<s> <user> bonjour <unka@> , <unka@> , <unka.:@> , <unka@> . yes i do use a <unka> . maybe i should better express my needs . the training set is made of <unk#> rows . colums types are either floating points , integers ( and sadly <unka> does not provide the r <unka> handling of n/a ), <unka> , categories or list of categories . for instance , some category columns may have 2 or 10 numerical categories , some only have " string " categories , some have a list of <unka> or a list of <unka> . i have tried plenty of frameworks and among them , <unka> was the best . now , as i need to export the model and the pipeline in <unka-/> format , i need to wrap <unka> in something to keep the pipeline around . </s>
+<s> <user> <unka> 1.0 and later has support for explicit missing values in integer columns : URL/https:/ <unka./> <unka-./_> </s>
+<s> <user> <unka-> however will convert this to a float anyway ( but no big deal ). </s>
+<s> <user> <unka@> yes , no problem with pure int columns . </s>
+<s> <user> for the <unka> columns , try to use <unka> . in <unk#+.> we have better support for unknown categories at test time : URL/https:/ <unka-./> <unka./> although i am not sure that <unka-> has replicated that feature yet . </s>
+<s> <user> <unka@> maybe <unka@> knows ? </s>
+<s> <user> if you have specific problems exporting a pipeline with <unka> to <unka> , better report the exact error message with a simple reproduction case to URL/https:/ URL/github.com/ <unka-/> </s>
+<s> <user> i wrote this example about converting a pipeline including a <unka> model in a <unka-> pipeline : URL/http:/ <unka./> <unka-./_> </s>
+<s> <user> <unka@> thanks ! the <unka> link at the end of the page has a problem . in fact , that 's the example i started with . works fine without <unka> . </s>
+<s> <user> i forgot to tell an important thing : i do use <unka> to select the best <unka> and thus the best model . </s>
+<s> <user> i 'll investigate the issue with <unka> then . what is the error you get ? </s>

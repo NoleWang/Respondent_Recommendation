@@ -1,0 +1,10 @@
+[09:04] <54d4a1d6db8155e6700f853b> I'm having no luck with this building. Can someone tell me which contineny were in? Second floor, tight?
+[09:06] <567f5d7716b6c7089cc043a8> 7th floor
+[09:06] <567f5d7716b6c7089cc043a8> should I come down to get you?
+[09:07] <567f5d7716b6c7089cc043a8> african continent
+[13:01] <5988340fd73408ce4f706113> Doing a presentation on ONNX right now 
+[13:02] <5988340fd73408ce4f706113> for people at the sprint
+[15:40] <5c73c654d73408ce4fb8d721> @adrinjalali, what is the difference between `min_samples` and `min_cluster_size` in optics ?
+[18:06] <567f5d7716b6c7089cc043a8> @assiaben by convention (I think dbscan uses the same thing) `min_samples` is the parameter used to do the nearest neighbor part, and `min_cluster_size` is used when _extracting_ the clusters from the reachability distances.
+[18:06] <567f5d7716b6c7089cc043a8> we probably need to find a way to better explain these
+[21:51] <5c6af6cad73408ce4fb82b1c> hello guys! Im working on a movie dataset for item-item collaborative filtering. Im able to get my cosine_similarity function working with for loop on a trunkated part of the dataset. I hear that utilizing apply(lambda x: <func>) is much faster. Anyone familar with converting?

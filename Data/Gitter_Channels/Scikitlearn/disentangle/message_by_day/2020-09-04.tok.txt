@@ -1,0 +1,88 @@
+<s> <user> hello , anyone can explain what the format of the patches in URL/https:/ <unka-./> <unk#a./_> is ? URL/https:/ URL/www.reddit.com/ <unk#a/_> </s>
+<s> <user> are the returned values corner points or what ? why are there duplicates ? </s>
+<s> <user> the documentation said : <unka`> of shape ( <unka_> , <unka_> , <unka_> ) or ( <unka_> , <unka_> , <unka_> , <unka)_`> </s>
+<s> <user> <unka_> is the number of patches </s>
+<s> <user> so <unk#a[]`> will be the small patch </s>
+<s> <user> on the image </s>
+<s> <user> 2d if this a gray image </s>
+<s> <user> 3d if this is a color image </s>
+<s> <user> that does n't explain what the contents of the arrays are . </s>
+<s> <user> the pixel values </s>
+<s> <user> rgb colors ? why are there two of the same ? </s>
+<s> <user> rgb colors -> <unka_> </s>
+<s> <user> > why are there two of the same ? </s>
+<s> <user> what do you mean ? </s>
+<s> <user> which things are the same ? </s>
+<s> <user> each patch is a [ [[ <unk#a_> ] [ <unk#a_> ]] [[ <unk#a_> ] [ <unk#a_> <unk]> </s>
+<s> <user> so why are there two times <unk#a_> ? </s>
+<s> <user> it depens of your input </s>
+<s> <user> if you are passing a numpy array with 3 dimension </s>
+<s> <user> with shape <unka(`> , width , <unk#)`> ( because it is rgb </s>
+<s> <user> you will get an array of <unka(_`> , <unka_> , <unka_> , <unk#)`> </s>
+<s> <user> so the arrays returned are " 2x2 " </s>
+<s> <user> because that 's patch size </s>
+<s> <user> but i do n't understand what <unk#a_> and <unk#a_> refer to ? </s>
+<s> <user> if one takes a 2x2 sample from the image then it should have 4 pixels ? </s>
+<s> <user> so 4 values </s>
+<s> <user> but there is no <unk#a> in the documentation ? </s>
+<s> <user> > if one takes a 2x2 sample from the image then it should have 4 pixels ? </s>
+<s> <user> i refer to the values in the example URL/https:/ <unka-./> <unk#a./_> </s>
+<s> <user> it will be an array <unka(_`> , 2 , 2 , <unk#)`> </s>
+<s> <user> if this is an rgb image </s>
+<s> <user> or <unka(_`> , 2 , <unk#)`> if this is <unka-> </s>
+<s> <user> so it takes a 2x2 sample from the image and describes its pixel colors ? </s>
+<s> <user> this is what i assumed </s>
+<s> <user> it is just extracting a <unka-> </s>
+<s> <user> with the same number of dimension </s>
+<s> <user> but what are the 2d <unka> ? </s>
+<s> <user> [[ <unk#a_> ] [ <unk#a_> ]] [[ <unk#a_> ] [ <unk#a_> ]] </s>
+<s> <user> > [[ <unk#a_> ] [ <unk#a_> ]] [[ <unk#a_> ] [ <unk#a_> ]] </s>
+<s> <user> do they correspond to columns or rows perhaps ? </s>
+<s> <user> in 2x2 matrix sense </s>
+<s> <user> i am sorry but this not specify anywhere in the doc </s>
+<s> <user> how to know then what <unk#a_> then refers to </s>
+<s> <user> it 's some pixel color , but which pixel is it ? </s>
+<s> <user> <unk#a[_`> ] [ <unk#a_> ]] [[ <unk#a_> ] [ <unk#a]_`> this is a ( 2 , 2 ) numpy array </s>
+<s> <user> and this is is not rgb </s>
+<s> <user> they are only gray scale ( because you have only one channel ) </s>
+<s> <user> ( 2 , 2 , 3 ) would be <unk#a-> </s>
+<s> <user> if one uses the python list index convention , then one finds ( 0,0 ), ( 0,1 ), ( 1,0 ), ( 1,1 ) </s>
+<s> <user> <unka[`> :, :, <unk#]`> will be the red channel </s>
+<s> <user> but i do n't understand why ( <unk#(),=> ) and ( <unk#(),=> ) </s>
+<s> <user> or is it just coincidence in this sample picture </s>
+<s> <user> > but i do n't understand why ( <unk#(),=> ) and ( <unk#(),=> ) </s>
+<s> <user> it does not </s>
+<s> <user> it is a coincidence </s>
+<s> <user> for your specific image </s>
+<s> <user> i see </s>
+<s> <user> that 's a bad example i find then </s>
+<s> <user> given in the doc </s>
+<s> <user> i do n't agree </s>
+<s> <user> i think a good example would have very distinct values </s>
+<s> <user> as in order to not suggest that they're somehow " ordered " </s>
+<s> <user> this is just a real life example </s>
+<s> <user> because those <unka> got me thinking about whether i 'm even looking at a 2x2 patch in the actual image </s>
+<s> <user> or some <unka> abstraction about it </s>
+<s> <user> the <unka> give a real example </s>
+<s> <user> and the user guide </s>
+<s> <user> URL/https:/ <unka-./> <unka#-./_> </s>
+<s> <user> is giving a synthetic example with fake rgb data </s>
+<s> <user> is there an equivalent function that would spit out " rectangles " ? </s>
+<s> <user> like the <unka> of the pixels </s>
+<s> <user> what do you mean rectangle ? </s>
+<s> <user> here you can specify height and width </s>
+<s> <user> so you can specify the rectangle shape </s>
+<s> <user> yes it 's possible with known pixel size to infer it </s>
+<s> <user> but i was asking whether there exists such function already </s>
+<s> <user> i 've found this kind of application when one wants to crop pixel areas </s>
+<s> <user> then one has to specify the area </s>
+<s> <user> i do n't understand what you want sorry </s>
+<s> <user> <unk#a_> that returns <unk[> <unk#a> <unk#a> length ] ... </s>
+<s> <user> so one knows what area the pixel covers </s>
+<s> <user> you will not find in <unka-> </s>
+<s> <user> you might want to look at <unka-> thought </s>
+<s> <user> hi , does anyone know more about this efficiency warning ? </s>
+<s> <user> <unk#a-./:_> : <unka> : <unka> sparse input was not sorted by data . <unka'(.> sparse input was not sorted by <unka'.> </s>
+<s> <user> so im passing in a <unka_> , but the <unka_> is not sorted by data ( it 's sorted by <unka> ). i looked at the code , and it seems this warning is thrown whenever each row in the <unka_> is not sorted , low -> high </s>
+<s> <user> however , i ca n't figure out how to sort the matrix . no matter how i initialize it , the matrix sorts it by index , even if i pass it in sorted by data </s>
+<s> <user> does anyone know how to pass in the right data to get rid of this efficiency warning ? </s>

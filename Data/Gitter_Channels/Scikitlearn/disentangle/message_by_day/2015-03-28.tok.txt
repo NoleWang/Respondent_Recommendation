@@ -1,0 +1,11 @@
+<s> <user> thanks for all the work on releasing 0.16 guys ! it is much appreciated ! <unka:> : </s>
+<s> <user> <unka@> any reviews for <unk##> ? :) </s>
+<s> <user> there is an unrelated [ test <unk#a(-./:]> ) in python 3.4 <unk/:`> ` </s>
+<s> <user> [ using code formatted smiley in <unka> looks good <unka:`> ] </s>
+<s> <user> <unk#a@> you could also use commit headers like <unka`> <unka`> <unka`> <unka`> <unka`> etc ... to describe your commits <unk):`> just a minor suggestion ... feel free to ignore <unk):`> </s>
+<s> <user> sure . </s>
+<s> <user> <unka> means cosmetic ? </s>
+<s> <user> yeah <unk):`> </s>
+<s> <user> i think <unka@> is busy today and i 'm sick and need to make slides :-/ </s>
+<s> <user> i <unka-> travis for you though </s>
+<s> <user> thanks ! and take care <unk):`> </s>

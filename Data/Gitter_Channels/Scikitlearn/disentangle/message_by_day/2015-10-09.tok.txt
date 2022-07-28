@@ -1,0 +1,28 @@
+<s> <user> <unka@> i feel <unk##> can be included in 0.17 ?? it was already [ reviewed by <unk#a#(-./:]> ) a second review should make it <unka-> ? </s>
+<s> <user> opening my <unka> inbox now </s>
+<s> <user> everybody brace themselves for spam </s>
+<s> <user> ( by me ) </s>
+<s> <user> i 'm eagerly waiting ;) </s>
+<s> <user> did URL/https:/ URL/github.com/ <unk#a-/> </s>
+<s> <user> what is the right way to get a nice unique and consistent hash value for an <unka> ? </s>
+<s> <user> can i hash something like <unka(`> ), <unka(._> ), ... ` ? </s>
+<s> <user> with or without the part that is estimated from data ? without that should cover it . </s>
+<s> <user> lets say *with* </s>
+<s> <user> if <unka(._> ) contains a random state , we probably need to fix it to something ? </s>
+<s> <user> or rather , optionally with </s>
+<s> <user> well with is harder . i think we opted for storing the data along , right ? i think storing the class , <unka_> , and the data is enough . with a fixed <unka_> that is . </s>
+<s> <user> actually , what is the definition of unique consistent hash ? </s>
+<s> <user> should they be the same if a ) they are the same object [ probably not ] b ) they behave the same way ? c ) they are the same in memory ? i guess the answer is c )? </s>
+<s> <user> i 'm trying to solve this more generally and in isolation from the <unka> project . is there a consistent set of attributes on a <unka> that define it ? after i call <unka().`> there a set of attributes on the object that i can consistently check ? or does this vary <unka-> ? </s>
+<s> <user> if i understand you correctly , what you require is partly similar to the model similarity checking problem at <unk##> afaik you can only have a relative <unka> check and not <unka(> ) ( absolute ) hash value that can uniquely identify a <unka-> ... </s>
+<s> <user> <unka@> beware of <unka().=_`> that includes both the <unka> instances and their params </s>
+<s> <user> e.g .: <unka`> > > > from <unka.> import <unka> > > > from <unka.> import <unka> > > > from <unka.> import <unka_> > > > p = <unk#a(_> ), <unka(> )) > > > <unka(.=_> ) { <unka'_> : false , <unka'_> : none , <unka'_> : 3 , <unka'_> : true , <unka'_> : <unk#.> , <unka'> : <unk#a(.=> , <unk#a=_> , <unka=_> , <unk#a.=> , <unka=_> , <unk#a=> , <unka'=> , <unka'=> , <unk#a-=_> , <unka=> , <unka=_> , <unka=> , <unk#a.=> , <unka=> ), <unka'> : <unk([> <unka'> , <unka(=> , <unk#a=_> , <unka=> )), ( <unka'> , <unk#a(.=> , <unk#a=_> , <unka=_> , <unk#a.=> , <unka=_> , <unk#a=> , <unka'=> , <unka'=> , <unk#a-=_> , <unka=> , <unka=_> , <unka=> , <unk#a.=> , <unka=> <unk),]> <unka'_> : 200 , <unka'_> : -1 , <unka'_> : 3 , <unk#a'_> : 0.0 , <unka'_> : false , <unka'_> : true , <unka'> : <unka(=> , <unk#a=_> , <unka=> ), <unka'_> : 'auto' , <unka'_> : false , <unka'_> : 1.0 , <unka'_> : <unka'> , <unka'_> : none , <unka'_> : none } <unk`> </s>
+<s> <user> > after i call <unka().> there a set of attributes on the object that i can consistently check ? or does this vary <unka-> ? it varies on an <unka-> basis . </s>
+<s> <user> attributes learned from data ( by the call to fit ) ends in <unk_`> . </s>
+<s> <user> <unka_`> only returns constructor parameters ( aka <unka> ) not the fitted parameters </s>
+<s> <user> we do n't have a good abstraction to <unka> <unka> <unka> fitted models . </s>
+<s> <user> is there a way to check if a model is fitted ? </s>
+<s> <user> or to revert it to a <unka-> state ? </s>
+<s> <user> to revert to a <unka-> state you can use : <unka`> > > > from <unka.> import clone > > > <unka_> = <unka(_> ) <unk`> </s>
+<s> <user> the <unka`> name is not necessarily a good name ... </s>
+<s> <user> is there an equivalent for to ask if it is fitted ? </s>

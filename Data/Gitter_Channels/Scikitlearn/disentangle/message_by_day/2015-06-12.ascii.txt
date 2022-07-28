@@ -1,0 +1,29 @@
+[04:06] <5537027215522ed4b3df56ab> Hey guys, does anyone else have issues with big memory usage because of Python dicts going crazy with high dimentional data for text vectorizers?
+[04:07] <5537027215522ed4b3df56ab> I was gonna implement it as a Trie, but it would be a big change and maybe change external API unless we do a dict abstraction
+[04:08] <5537027215522ed4b3df56ab> i went from 50gb used to 200mb
+[04:08] <5537027215522ed4b3df56ab> so no need to use hashingvect
+[04:12] <5537027215522ed4b3df56ab> another tangentially related question... since the cost of creating a vectorizer with millions of features is so large in terms of memory, there is a need for preemptive feature selection
+[04:13] <5537027215522ed4b3df56ab> i mean for me... things like forward selection, mcmc based, etc. I am not sure if it belongs in scikit-learn
+[04:13] <5537027215522ed4b3df56ab> this is to avoid generating the large matrix with unnecessary features when they will likely be discarded anyway
+[12:11] <54e07d4015522ed4b3dc0856> @lqdc I like the idea of the Trie - even if we just called it something else (in case where it can't match external API) it sounds insanely useful. As for pre-emptive feature selection it would be cool if this can be done in a general way, but all the tricks I know are domain specific. Any ideas in that direction seem nice, since it is a real-world issue
+[14:52] <54d4a1d6db8155e6700f853b> @lqdc there is some very simple feature selection based in min_df and max_df. But that needs to built the whole dictionary first.
+[14:53] <54d4a1d6db8155e6700f853b> how large is your dictionary? The idea of a Trie came up before. So you actually implemented it?
+[15:56] <54d4a1d6db8155e6700f853b> some discussion on ties here: https://github.com/scikit-learn/scikit-learn/issues/2639
+[16:59] <5537027215522ed4b3df56ab> yeah looks like it's not happening
+[17:00] <5537027215522ed4b3df56ab> and yes, the feature selection would be for avoiding building the whole dict which perhaps wouldn't be a problem in the first place if we used a trie for medium-sized datasets
+[17:06] <5537027215522ed4b3df56ab> I don't remember the size of the dictionary exactly but it was taking up 50ish gb
+[17:10] <54d4a1d6db8155e6700f853b> what do you mean by "looks like it's not happening"?
+[17:11] <54d4a1d6db8155e6700f853b> the question is a bit how complex the code is and the speed and memory compared to C++ dicts and python dicts
+[17:17] <54d4a1d6db8155e6700f853b> in the PR, the memory footprint was 1/3 of CountVectorizer. You reported 1/200 above, right?
+[17:20] <5537027215522ed4b3df56ab> yeah
+[17:20] <5537027215522ed4b3df56ab> his earlier tests
+[17:20] <5537027215522ed4b3df56ab>       CountVectorizer(): 94MB;     CountVectorizer(ngram_range=(1,2): 666MB;     MarisaCountVectorizer(): 1.2MB;     MarisaCountVectorizer(ngram_range=(1,2)): 13.3MB; 
+[17:22] <5537027215522ed4b3df56ab> also he was doing it in a way that doesn't help my casse. basically  he made the python dict fist and then populated a trie with the dict then replaced the dict with the trie
+[17:23] <5537027215522ed4b3df56ab> the use case he has is build the vocab on a beefy machine then when you actually want to use it, unpickle and use
+[17:32] <5537027215522ed4b3df56ab> I was also using MARISA trie
+[17:44] <5537027215522ed4b3df56ab> but building it from the streaming input. anyway, as @larsmans put it in that thread, there is understandable hesitation of merging a large c++ dependency that no one fully understands besides people who wrote the trie I assume.
+[18:32] <54d4a1d6db8155e6700f853b> well but allowing it as an optional replacement might work
+[19:39] <544879efdb8155e6700cdb21> Hello, I have a question about pull requesting policy. I have a PR and I made some changes, what I should to do with new changes:  add new commit to PR, amend initial commit? I used to use amended commits, it keeps history look nice, but PR discussions seems ambiguous because of `outdated diffs`. 
+[19:43] <54d4a1d6db8155e6700f853b> Either is fine
+[19:43] <54d4a1d6db8155e6700f853b> usually we ask to squash commits before merging, so if you always amend you don't have to do that
+[19:44] <54d4a1d6db8155e6700f853b> the PR discussions are not handled in a great way by github, no matter which method you use.

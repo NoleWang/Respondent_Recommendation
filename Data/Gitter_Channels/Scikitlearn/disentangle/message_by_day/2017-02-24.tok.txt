@@ -1,0 +1,19 @@
+<s> <user> <unka@> i 'm probably not the right person to ask this either . it 's just an <unka-> , right ? URL/https:/ URL/en.wikipedia.org/ <unka-/> </s>
+<s> <user> <unka@> have you checked out <unka> ? that does that automatically </s>
+<s> <user> you can use <unka> if you want random splits of the data </s>
+<s> <user> what 's the objective that you want to use for selection ? </s>
+<s> <user> if you want to do it manually , you should n't leave them out by setting them to nan but by just <unka> the data and throwing out those rows . </s>
+<s> <user> <unka@> i am definitely not the right person to ask this , but <unka-> are used to compare different models , while <unka-> used for significance testing </s>
+<s> <user> <unka@> i *think* that in that specific case , the code compares 1 model ( <unka> regression model ) versus the null ( mean == 0 ), and thus it is identical </s>
+<s> <user> <unka@> now , as <unka-> are often use to compare models , they can be use for feature selection by comparing linear models with <unka> x1 and linear models with <unka> x1 and x2 . </s>
+<s> <user> <unka@> in practice , our <unka-> does not do this , and thus i think the stack exchange answer is wrong ( though i would have to look at the code ): our <unka-> just fit <unka> linear models , and rank them with the significance of the regression parameter ( with is computed with a <unka-> ) </s>
+<s> <user> am i making any sense ? </s>
+<s> <user> now , i have recently realized that sure <unka> screening and our <unka-> is the same . i think that might be worth mentioning somewhere , considering how widely used sis is . </s>
+<s> <user> yes that makes sense . i have n't checked the code but sounds plausible </s>
+<s> <user> the <unka_> and <unka_> docs are pretty bad imho </s>
+<s> <user> i have not heard of sis but that means nothing </s>
+<s> <user> yep ... i might work on that during the <unka> :) </s>
+<s> <user> cool :) </s>
+<s> <user> the sure <unka> screening paper is quite interesting . they do n't make the link between the cross correlation and the significance of the linear regression of x on y ( but it might be just that it is trivial for this community ), but it gives a good intuition on why this works better for feature selection than <unka> </s>
+<s> <user> it has over 1000 <unka> </s>
+<s> <user> <unka@> i guess my issue is that i dont want to throw out entire rows , because that will change the shape of the factors ( <unka$> = <unka$> ). i just want to hold out random elements during the fit ( analogous to <unka-> cv for regression ) and then use the <unka> error , i.e . <unka$\_{> , j <unka\> s } ( <unka_{> } - ( <unk#a$)^_{}> ( where <unka$> is the subset of <unka-> elements ), for the <unka-> </s>

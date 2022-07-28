@@ -1,0 +1,7 @@
+<s> <user> does running tests using `make <unka`> differs from tests run using <unka`> ? </s>
+<s> <user> <unka@> check the makefile : URL/https:/ URL/github.com/ <unk#a#-/> </s>
+<s> <user> so that would mean `make <unka`> actually runs <unka`> with different parameters ( or options )? </s>
+<s> <user> `make <unka`> run `make <unka-`> `make <unka-`> `make <unka-> </s>
+<s> <user> therefore it is equivalent to </s>
+<s> <user> <unk`> <unka> <unka-> -v <unka> <unka> <unka-> -v <unka/> <unka> <unka$(> find doc -name <unka'*.> | sort ) <unk`> </s>
+<s> <user> yup , i understand now . thanks . </s>

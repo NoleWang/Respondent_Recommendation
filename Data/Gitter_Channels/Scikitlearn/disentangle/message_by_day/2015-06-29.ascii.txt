@@ -1,0 +1,12 @@
+[13:18] <54e07d6515522ed4b3dc0858> http://dev.modern.ie/tools/vms/
+[13:22] <541a528b163965c9bc2053de> > @ogrisel thats great!! btw why doesn't appveyor do the doc tests? only travis does it? (not that it should be of any concern)  Because on windows some type `repr` are slightly different (I think for int vs long on Python 2 IIRC) and some doctests would have a different representation. Porting the doctests to be cross-platform would be painful. doctests should be considered a way to check that the documentation is up to date with the code. So if it passes on one platform, we know that the doc is up to date. For unit tests on the other hand we want to test on all the supported platforms to make sure that the code is fully cross-platform.
+[13:23] <53135b495e986b0712efc453> Thanks :)
+[13:23] <53135b495e986b0712efc453> @vene thanks for the link :)
+[13:35] <541a528b163965c9bc2053de> Note that last time I checked, the modern.io vms were 32 bit only.
+[13:35] <541a528b163965c9bc2053de> That might be a limitation in some cases.
+[13:46] <54e07d6515522ed4b3dc0858> good point. @rvraghav93 you might be able to get a free Windows license through MSDN Academic Alliance or dreamspark, if your university is partnered with them.
+[13:47] <54e07d6515522ed4b3dc0858> I had a dreamspark win7 for a while
+[14:37] <53135b495e986b0712efc453> I too got one via the IEEE comsoc offer!! :D but never used it ;/  Anyway the current failure is in 32 bit/ Python 2.6.. so this should suffice for now :)
+[14:42] <53135b495e986b0712efc453> wow! @vene The setup is super fast... All I had to do was extract and open the ova file :O
+[15:14] <54e07d6515522ed4b3dc0858> I
+[16:27] <53135b495e986b0712efc453> BTW could I start resurrecting #2759 (multiple metric support) in parallel? But since this depends on the data indep PR, I am not sure how to proceed... Should I maybe start a ML thread to collect ideas?

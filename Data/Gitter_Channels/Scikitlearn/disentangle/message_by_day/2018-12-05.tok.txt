@@ -1,0 +1,2 @@
+<s> <user> hi , i get following error when im trying to apply one hot to <unka> columns . i didnt understand what is problem exactly . error is : typeerror : wrong type for parameter <unka_`> . expected 'auto' , int or array of ints , got <unka<> <unka'.> > </s>
+<s> <user> and here is the my one hot code : <unka_> = ([ <unka(._> ) for c in <unka.> if c in <unka_> ]) <unka'(> <unka> columns : ' , <unka_> ) <unka> = <unka(=_> , <unka'=_> ) <unka_> = <unka()._> ) <unka_> = <unka()._> ) </s>

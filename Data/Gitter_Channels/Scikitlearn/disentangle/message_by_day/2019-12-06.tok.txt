@@ -1,0 +1,4 @@
+<s> <user> <unka@> , running the test locally on my linux i get a bunch of zero division warnings on the failing test , so you might be able to debug locally still </s>
+<s> <user> i get a single warning running tests locally but they still pass ... </s>
+<s> <user> yeah they pass but they probably should not . unless you do expect to get a zero division in the test , in which case you need to protect the call . the macos cis probably use different versions of numpy or scipy so that 's why they fail while the others do n't </s>
+<s> <user> i 'll look into it but it would be strange that different versions of numpy are being used </s>

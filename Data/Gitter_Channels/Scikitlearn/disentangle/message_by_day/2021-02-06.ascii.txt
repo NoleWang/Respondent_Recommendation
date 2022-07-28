@@ -1,0 +1,5 @@
+[11:28] <564789be16b6c7089cbab8b7> has anyone started a PR on dirichlet calibration of probabilities?
+[11:28] <564789be16b6c7089cbab8b7> I couldn't find it if they have
+[11:28] <564789be16b6c7089cbab8b7> as in this paper https://arxiv.org/abs/1910.12656
+[11:50] <567f5d7716b6c7089cc043a8> That's rather a new paper, and I'm not sure if it passes our inclusion criteria.
+[17:18] <5ee61de0d73408ce4fe6d981> I am getting some unrelated errors (azure pipeline stack trace) for a PR I just pushed. Anyone who can check and let me know how I can fix? https://github.com/scikit-learn/scikit-learn/pull/19387

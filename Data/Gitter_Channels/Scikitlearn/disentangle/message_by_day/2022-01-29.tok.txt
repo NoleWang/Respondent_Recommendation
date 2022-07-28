@@ -1,0 +1,5 @@
+<s> <user> hello guys while testing the file my test are getting skipped how to fix it <unk'> <unk=> test session starts <unk=> platform win32 -- python <unk#.> , <unk#a-.> , <unk#a-.> , <unk#a-.> <unka> : <unka-:\> , configfile : <unka.> plugins : <unk#a-.> collected 0 items 2 skipped <unk'> </s>
+<s> <user> what is the command you are using ? </s>
+<s> <user> <unka> <unka./_> -k <unka._> </s>
+<s> <user> i think you forgot to install documentation dependencies URL/https:/ <unka-./> <unka#-./> </s>
+<s> <user> <unka@> thanks ,now its working </s>

@@ -1,0 +1,2 @@
+<s> <user> i ca n't seem to get to make the virtual environment with <unka> <unka> create -n <unka> numpy scipy matplotlib <unka> sphinx <unka> <unka> <unka> or <unka> create -n <unka> numpy scipy matplotlib <unka> sphinx <unka> <unka> <unka-> </s>
+<s> <user> never mind ! the solution is in the other <unka> chat ! </s>

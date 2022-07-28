@@ -1,0 +1,8 @@
+<s> <user> hello , i 'm <unka> to use <unka'()=_`> in pipeline on <unka> with DIR/~/ 1.5 m samples but i take a lot of time is it normal ? if so , are there some alternatives to solve this issue ? <unk`> def <unka(_> , <unka_> , <unka_> ): <unka_> = <unka([> ( <unka'> , <unka'(=_> )) ]) <unka_> = <unka([> ( <unka'> , <unka'(=> )), ( <unka'> , <unk#a(=_> , <unka'=> , <unka'=> )) # <unka> ]) <unka> = <unka(> <unk([> 'cat' , <unka_> , <unka_> ), ( <unka'> , <unka_> , <unka_> ) ]) <unka_> = <unka([> ( <unka'> , <unka> ) ]) return <unka(._> ) <unk`> thanks </s>
+<s> <user> <unka@> which version of <unka-> are you using ? </s>
+<s> <user> we merged the following improvement in <unk#.> -> URL/https:/ URL/github.com/ <unk#a-/> </s>
+<s> <user> that make it efficient to work with string while it was not really possible before </s>
+<s> <user> because it was too slow </s>
+<s> <user> thanks <unka@> i 'm using <unk`> <unk#a-.=> <unk#a-.=> <unk`> </s>
+<s> <user> yep so this should be the reason . you can update to <unk#.> via <unka-> or <unka> and it should work better </s>
+<s> <user> thanks <unka@> for your answers ( y ) </s>

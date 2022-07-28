@@ -1,0 +1,3 @@
+[17:20] <5bbc5d22d73408ce4faacee2> Hi. Can you anyone tell me if there is any tutorial for ML ?
+[18:58] <54d4a1d6db8155e6700f853b> @KoulickS https://jakevdp.github.io/PythonDataScienceHandbook/
+[18:58] <54d4a1d6db8155e6700f853b> https://www.kaggle.com/kanncaa1/machine-learning-tutorial-for-beginners

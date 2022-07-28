@@ -1,0 +1,7 @@
+<s> <user> </s>
+<s> <user> <unka@> thank you for clarifying . </s>
+<s> <user> " the average complexity is given by <unka(> n t ), were n is the number of samples and t is the number of iteration . the worst case complexity is given by <unk#a(+/^> )) with n = <unka_> , p = <unka_> " . this is mentioned in the docs . what is " k " here ? also , is it <unka(> ), <unka> of all 3 parameters ? </s>
+<s> <user> hi guys , im going to <unka> this forum with a lot of newbee questions . feel free to kick me out anytime . ive got several ids just in case . </s>
+<s> <user> <unka@> lol . maybe try stackoverflow with the <unka> tag </s>
+<s> <user> that will get you replies more quickly and more willingly ;) </s>
+<s> <user> <unka@> k is the number of clusters , <unka> is the <unka> </s>

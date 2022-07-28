@@ -1,0 +1,2 @@
+<s> <user> hi , is there any one with experience with <unka> processes . are 20 data points enough to fit a gp ? is there any way to <unka> a gp ? </s>
+<s> <user> iirc , i thought the " magic minimum " for <unka> distributions was a sample of 30 </s>

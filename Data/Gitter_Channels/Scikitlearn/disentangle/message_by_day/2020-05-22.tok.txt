@@ -1,0 +1,5 @@
+<s> <user> at the bottom of the <unka-> website it says " <unconvertable > 2007 - 2019 , <unka-> developers ( bsd license )". i assume it should be 2020 instead of 2019 , right ? if yes , i 'm happy to make an issue and fix it . </s>
+<s> <user> thanks for noticing <unka@> , this is already fixed in the dev version URL/https:/ <unka-./> <unka./_> </s>
+<s> <user> thanks for pointing it out ! i 'll have a look there first next time . </s>
+<s> <user> hi , do you have any useful resources for thinking about legal issues in open source ( e.g . <unka> , sponsoring , contributor license agreements )? would be much appreciated , thanks ! :) </s>
+<s> <user> <unka@> i think this book URL/https:/ <unka./> covers some of these topics </s>

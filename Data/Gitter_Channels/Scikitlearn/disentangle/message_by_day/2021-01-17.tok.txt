@@ -1,0 +1,4 @@
+<s> <user> hi . i want to learn <unka-> from scratch . do we have an official book or guide ? </s>
+<s> <user> if not , i will be making notes . can i contribute one ? </s>
+<s> <user> hi <unk#a@> , there is plenty on resources in the docs . you can start with the [" getting started " <unka(-./:]_> ). </s>
+<s> <user> thank you </s>

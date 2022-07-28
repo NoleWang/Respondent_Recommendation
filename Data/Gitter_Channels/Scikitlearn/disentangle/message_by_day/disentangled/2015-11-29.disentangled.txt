@@ -1,0 +1,6 @@
+[17:20] <565b339a16b6c7089cbc9958> Hey guys!
+[17:20] <565b339a16b6c7089cbc9958> I was trying to work on an easy bug regarding RobustScaler under sklearn.preprocessing
+[17:21] <565b339a16b6c7089cbc9958> when i checked the data.py file in the given file hierarchy, the robust scaler class does exist and i'm not able to figure out why is it giving me an import error
+--------------------------------------------------------------------------------------------------
+[17:23] <565b339a16b6c7089cbc9958> I've even tried to run the plot_robust_scaling.py in the examples folder but then again I end up with the same import error.
+--------------------------------------------------------------------------------------------------

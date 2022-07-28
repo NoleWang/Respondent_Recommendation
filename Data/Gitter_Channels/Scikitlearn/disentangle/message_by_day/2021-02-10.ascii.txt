@@ -1,0 +1,1 @@
+[00:21] <60223b726da0373984618209> > I have a general question: If for my dataset a kneighbor classifier works well (compared to e.g. SVC and Random Forest),  are there other classifiers that might also work equally well?  I think it will depend on the data set.  It also depends on how you are pre-processing your data. So kinda hard to say without knowing more. 

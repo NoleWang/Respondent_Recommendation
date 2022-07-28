@@ -1,0 +1,6 @@
+<s> <user> does anyone know a good reference for how the verbose arguement acts ? </s>
+<s> <user> how does decision tree find the cut point ? </s>
+<s> <user> haha youre getting yourself into a pretty deep rabbit hole here ;) do you mean decision trees in general or specifically <unka-> implementation </s>
+<s> <user> <unka-> 's implementation </s>
+<s> <user> ill pm you , its a bit convoluted and i dont want to spam the channel . is that ok ? </s>
+<s> <user> yes , it 's ok </s>

@@ -1,0 +1,57 @@
+<s> <user> i think we should do <unk#.> soon . this is the only one i'd like to get in that has n't been merged : URL/https:/ URL/github.com/ <unk#a-/> </s>
+<s> <user> ok just got merged . i 'll need to do two backports and rewrite <unka> , then i think we are in good shape . </s>
+<s> <user> i agree . do you want me to backport <unk#> </s>
+<s> <user> ? </s>
+<s> <user> i 'm just doing it </s>
+<s> <user> ok </s>
+<s> <user> should i also backport your <unka> fix ? </s>
+<s> <user> <unka@> <unka> fix backport yes no ? otherwise tagging now </s>
+<s> <user> i do n't think it fixes any user bug in itself . </s>
+<s> <user> let 's tag </s>
+<s> <user> alright :) </s>
+<s> <user> gah , forgot to add an entry to the " news " on the website ... </s>
+<s> <user> :) </s>
+<s> <user> <unka> will have to do another 1h build :) </s>
+<s> <user> ok , fixed . i 'll update the mac build thing , i guess , and then we check the <unka> ... </s>
+<s> <user> and build the website and minimize the pngs ... fun :) </s>
+<s> <user> <unka> should be building </s>
+<s> <user> great </s>
+<s> <user> is it possible to <unka> on <unka> ? it 'll take 8 hours at least to run through the queue </s>
+<s> <user> yes i just did that </s>
+<s> <user> i will send you the password to the github account to log in and cancel restart builds </s>
+<s> <user> in your mail box </s>
+<s> <user> when <unka> stuff , it better to first <unka> ( cancel button ) the from the most recent to the most ancient queued job </s>
+<s> <user> why is that better ? </s>
+<s> <user> otherwise you get the next ancient job in state running , and canceling running jobs takes more time than queued jobs </s>
+<s> <user> btw , if you are interested in all of this windows build i gave a talk at <unka> on that : URL/https:/ URL/twitter.com/ <unk#a/> </s>
+<s> <user> off to lunch , see you later ! it 's great to have this release out this week . thanks so much ! </s>
+<s> <user> off to lunch ? oh , right , you are in my timezone now ^^ </s>
+<s> <user> <unka@> the windows build is up : URL/http:/ <unka-./> </s>
+<s> <user> the osx wheels are up as well : URL/http:/ <unka./> </s>
+<s> <user> oh cool . png 's are optimized , too . so i 'll upload the docs , then </s>
+<s> <user> do you want me to do the upload to <unka> and sourceforge or do you want to do it ? </s>
+<s> <user> the docs are up . can you do <unka> upload please ? </s>
+<s> <user> how do you upload the wheels btw ? </s>
+<s> <user> you can either use <unka_> or the <unka> command </s>
+<s> <user> maybe i 'll try <unka_> </s>
+<s> <user> or maybe you do it ;) i still get the " unknown url type error " </s>
+<s> <user> have you updated <unka-> ? </s>
+<s> <user> oh , right </s>
+<s> <user> now it works </s>
+<s> <user> it works with python 2.7 on a new virtualenv were i just pip installed <unka-> </s>
+<s> <user> yeah it does work . did you upload already ? </s>
+<s> <user> yes </s>
+<s> <user> i just did , with <unka> </s>
+<s> <user> to avoid tls man in the middle attacks :) </s>
+<s> <user> ok . what is <unka> ? </s>
+<s> <user> i 'm just <unka> the ann mail , ok ? </s>
+<s> <user> URL/https:/ <unka./> <unka/> </s>
+<s> <user> ok please go a ahead </s>
+<s> <user> for the ann </s>
+<s> <user> and the tweet </s>
+<s> <user> done </s>
+<s> <user> ah , <unka> makes sense ^^ </s>
+<s> <user> i 'll err ... <unka-> ( ?) the <unka> to 0.17 </s>
+<s> <user> ok </s>
+<s> <user> <unka@> is your <unka> still valid in light of the latest changes to <unk##> ? </s>
+<s> <user> i uploaded the release to sourceforge as well </s>

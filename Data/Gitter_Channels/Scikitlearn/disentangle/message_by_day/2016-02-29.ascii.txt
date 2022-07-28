@@ -1,0 +1,13 @@
+[16:29] <56d19aa5e610378809c3dde8> Hello! Can anyone tell me how can I make this python script ignore DS store files... very silly issue. I have this function, I've googled but I don't know where to put the code in my current function. Thank you!  def list_files(dir): 	r = [] 	subdirs = [x[0] for x in os.walk(dir)]  	for subdir in subdirs: 		files = os.walk(subdir).__next__()[2] 		if (len(files) > 0): 			for file in files: 				r.append(subdir + "/" + file) 	return r      the_list = list_files(file_rep)
+[16:39] <56c4f19ae610378809c1f8ae> I dont think this is necessarily the proper venue for your question. That being said, your code doesnt work properly on my mac. Theoretically though, you would wrap your `r.append()` statement in an if-block that checks if the filename is .DS_Store.
+[16:40] <54d4a1d6db8155e6700f853b> @thejivester you can go to stackoverflow
+[19:05] <56c4f19ae610378809c1f8ae> Did scikit-learn apply to Google summer of code? 
+[21:15] <54d4a1d6db8155e6700f853b> @nelson-liu it is under the umbrella of the PSF
+[21:16] <56c4f19ae610378809c1f8ae> Ah ok. I talked to Terri and she said that scikit-learn hasn't submitted a proposal yet, are there plans to do so? 
+[21:19] <54d4a1d6db8155e6700f853b> was the deadline already? Yes, there is a plan to submit a proposal
+[21:20] <56c4f19ae610378809c1f8ae> Oh OK, just wanted to know. The deadline is March 8th iirc
+[21:20] <56c4f19ae610378809c1f8ae> (don't quote me on that) 
+[21:20] <54d4a1d6db8155e6700f853b> 7th of march
+[21:31] <54d4a1d6db8155e6700f853b> @rvraghav93 do you have anything for the multiple metrics? I think it might be easier to work on that before trying to clean up
+[21:47] <54d4a1d6db8155e6700f853b> If you're busy with your other PRs, I can look into it.
+[22:38] <53135b495e986b0712efc453> Okay please go ahead. I am just fighting with the tree code. I am sorry :/ I will take up something else instead of it later.... 

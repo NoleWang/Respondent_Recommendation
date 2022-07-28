@@ -1,0 +1,39 @@
+[09:21] <5615bee3d33f749381a8a4f5> I have a stupid general question here: What are possible ways to do key words/sentenses extraction from a large text corpora?
+--------------------------------------------------------------------------------------------------
+[10:40] <553e8e1015522ed4b3df97f7> @bawongfai have you tried textrank?
+--------------------------------------------------------------------------------------------------
+[11:39] <5615bee3d33f749381a8a4f5> @vortex-ape not really. How does it compare to document vectorisation?
+[11:43] <5615bee3d33f749381a8a4f5> Then is it good bad for a short sentence that contains potential keyword?
+[11:44] <5615bee3d33f749381a8a4f5> bad i meant
+[11:45] <5615bee3d33f749381a8a4f5> So what do you suggest as an alternative?
+--------------------------------------------------------------------------------------------------
+[11:41] <53810862048862e761fa2887> Text rank tries to order sentences by their importance
+[11:42] <53810862048862e761fa2887> A sentence is of more importance  if it talks about a large number of things and thus gets a higher score.
+--------------------------------------------------------------------------------------------------
+[11:44] <53810862048862e761fa2887> From what I've used it, bad
+--------------------------------------------------------------------------------------------------
+[11:45] <53810862048862e761fa2887> It generally gives a long sentence talking about lots kf things
+[11:45] <53810862048862e761fa2887> Can you give me an example of an output you would expect?
+[11:48] <53810862048862e761fa2887> You can give this a try, but I have no idea what kind of output to expect.
+[11:48] <53810862048862e761fa2887> http://scikit-learn.org/stable/auto_examples/applications/topics_extraction_with_nmf.html
+--------------------------------------------------------------------------------------------------
+[11:48] <5615bee3d33f749381a8a4f5> @vighneshbirodkar I would like to have a summarisation of conversation
+[11:48] <5615bee3d33f749381a8a4f5> conversation, by nature, could be short
+[11:49] <5615bee3d33f749381a8a4f5> I guess the summary would be about text summarisation and keyword extraction
+[11:52] <53810862048862e761fa2887> You can try the nmf example I posted.
+--------------------------------------------------------------------------------------------------
+[11:49] <53810862048862e761fa2887> For example we are having one, what would you expect the summary to be ?
+--------------------------------------------------------------------------------------------------
+[11:52] <553e8e1015522ed4b3df97f7> would you want an abstractive summary or an extractive one? I used textrank once to get extractive summaries of a conversation and it seemed to work well, though I didn't compare it with other methods
+[11:53] <53810862048862e761fa2887> I don't know of any such technique. Since I had worked with text rank I thought I'd give my 2 cents
+[11:54] <5615bee3d33f749381a8a4f5> extractive is fine for me
+[11:54] <5615bee3d33f749381a8a4f5> Just pick 2 most important sentences and display
+--------------------------------------------------------------------------------------------------
+[11:58] <553e8e1015522ed4b3df97f7> You could experiment with both these methods and explore about other ones too, and see which one gives you the desired results, I used textrank as a quick hack in a hackathon so I'm no expert in this regard
+[11:59] <553e8e1015522ed4b3df97f7> :smile:
+--------------------------------------------------------------------------------------------------
+[12:01] <5615bee3d33f749381a8a4f5> @vortex-ape thanks, i will try textrank first
+[12:01] <5615bee3d33f749381a8a4f5> I would like to go into deep learning approach later
+--------------------------------------------------------------------------------------------------
+[15:26] <5615bee3d33f749381a8a4f5> @vortex-ape tried textrank, not too bad
+--------------------------------------------------------------------------------------------------

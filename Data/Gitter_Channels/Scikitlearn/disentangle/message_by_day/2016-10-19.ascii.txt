@@ -1,0 +1,6 @@
+[01:11] <58011513d73408ce4f2e472f> Hello -- does anyone know what's the best way to serialize scikit learn models to string/bytes etc, which can be stored in a database?
+[01:12] <58011513d73408ce4f2e472f> I have tried pickle -- but many people seem to advice against it.
+[01:12] <58011513d73408ce4f2e472f> joblib is good for writing to a file, but does not provide support to converting to string.
+[16:21] <57a061aa40f3a6eec05d8d26> Hello, are the neighbors returned by NearestNeighbors.kneighbors() always sorted by distance?
+[16:28] <553d32d715522ed4b3df8b92> Hi, I suppose it is sorted by distance - nearest( least distance) being the first element.
+[21:08] <57a061aa40f3a6eec05d8d26> If I use same estimator in a loop but with different subset of data, should I always call .fit(X, y) with the new subset?

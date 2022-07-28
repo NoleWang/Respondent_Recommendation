@@ -1,0 +1,3 @@
+[13:18] <599feaf2d73408ce4f72e9d5> Hello. I am new to this community. I would love to contribute. Can someone help me start
+[14:28] <567f5d7716b6c7089cc043a8> @Naman9639 the contributing guide (https://scikit-learn.org/dev/developers/contributing.html) is a very good place to start, and then you can try some of the "good first issue" (https://github.com/scikit-learn/scikit-learn/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22) ones.
+[15:36] <599feaf2d73408ce4f72e9d5> Thanks I will start

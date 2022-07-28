@@ -1,0 +1,1 @@
+[14:12] <5d285286d73408ce4fc5e475> the syscall is sched_setaffinity. is there any way hot to prevent it?

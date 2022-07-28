@@ -1,0 +1,1 @@
+<s> <user> i have to classify docs into two categories and if the docs does not belong to these two , then i have to identify them in other category i have training data for two . classes what algo or approach i can use ? </s>

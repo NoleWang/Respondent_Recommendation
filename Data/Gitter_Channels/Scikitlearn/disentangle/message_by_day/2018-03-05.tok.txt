@@ -1,0 +1,2 @@
+<s> <user> hi , further on my spell correct algo : is there a function that gives you the number of occurences of a word ( <unka-> )? i would expect that frequent words ( <unka> ) are often in the neighbourhood of other words ( <unka> ) </s>
+<s> <user> <unk#a@> further to my question before , can you also work with word vectors , like , count the number of vectors for a given word ? makes actually more sense </s>

@@ -1,0 +1,4 @@
+<s> <user> hi </s>
+<s> <user> anyone there to help </s>
+<s> <user> hi <unk#a@> <unka@> looks like you need some <unka> for this project ... can you provide more info about which kind of help do you need ? are you meant to use specifically <unka-> for this ? also , not sure that this is the proper place where to talk about this - topics should be strictly focused on <unka-> <unka/> <unka/> . </s>
+<s> <user> i do n't think we have a strict policy for this channel being related to the dev only . but in the interest of the rest of the community being able to use the answers we give to your questions related to the usage , posting them on stackoverflow or other related forums may be more appropriate . </s>

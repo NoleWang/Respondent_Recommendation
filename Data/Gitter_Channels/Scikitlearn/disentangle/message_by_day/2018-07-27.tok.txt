@@ -1,0 +1,1 @@
+<s> <user> typically each pixel is encoded as rgb so 3 features per pixel . <unka> can try to classify this with a number of algorithms but i suspect you will not get far . the <unka> and <unka> layers in a nn are what gives the power for image <unka> . <unka> does not have any nn beyond an <unka> so you lose that ability . </s>

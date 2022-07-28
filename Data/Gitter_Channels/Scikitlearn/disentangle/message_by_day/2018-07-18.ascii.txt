@@ -1,0 +1,10 @@
+[05:15] <54e07d0815522ed4b3dc0850> Hum, CI is a bit in a mess. There is going to be some work there
+[05:23] <589b9e0fd73408ce4f490ba4> In the lastest commit on master there is just 1 test failing in one build.  Attempting to fix that in https://github.com/scikit-learn/scikit-learn/pull/11617 Appveyor and Circle CI should be hopefully OK, the issue is mostly a very long queue.. 
+[05:32] <54e07d0815522ed4b3dc0850> Great! I was about to look at this face issue! Thanks!
+[05:35] <54e07d0815522ed4b3dc0850> OK, @rth: I reviewed it. Travis will be done with it in 20mn. It needs a second review
+[05:54] <54e07d0815522ed4b3dc0850>  scikit-learn/scikit-learn#11617  is green and needs a second review
+[06:09] <5571fe1015522ed4b3e17d90> Travis is green in master :fireworks: !
+[06:09] <5571fe1015522ed4b3e17d90> https://travis-ci.org/scikit-learn/scikit-learn/builds/405208107
+[17:45] <54e07d0815522ed4b3dc0850> It seems that travis is failing again on one of the configuration. I have made a PR that should fix that: https://github.com/scikit-learn/scikit-learn/pull/11625
+[17:54] <54e07d0815522ed4b3dc0850> It fixes travis indeed. It would be good to have reviews +merge, as many PRs are red because of this small issue
+[18:42] <54e07d0815522ed4b3dc0850> OK, I now realize that it was fixed in the mean time by downgrading the joblib requirement on travis :). Still good to have!

@@ -1,0 +1,6 @@
+[12:05] <5c7f95bad73408ce4fb9ca5e> [![image.png](https://files.gitter.im/scikit-learn/scikit-learn/DQTb/thumb/image.png)](https://files.gitter.im/scikit-learn/scikit-learn/DQTb/image.png)
+[12:06] <5c7f95bad73408ce4fb9ca5e> how to handle with this error?
+--------------------------------------------------------------------------------------------------
+[12:12] <5c7f95bad73408ce4fb9ca5e> Hey guys!!! Can someone suggest me any dataset available on kaggle which contains both numerical and textual data? I have to apply machine learning as well as nlp concepts on it.  refer this----->>>>https://www.kaggle.com/barelydedicated/bank-customer-churn-modeling
+[12:12] <5c7f95bad73408ce4fb9ca5e> @mukul09
+--------------------------------------------------------------------------------------------------

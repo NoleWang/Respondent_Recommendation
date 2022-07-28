@@ -1,0 +1,4 @@
+[21:09] <574454a0c43b8c601974a563> Now you can port a learned AdaBoost classifier based on pruned DecisionTree estimators to Java:
+[21:09] <574454a0c43b8c601974a563> https://github.com/nok/scikit-learn-model-porting/blob/master/examples/classification/adaboost_predict.py
+[21:10] <574454a0c43b8c601974a563> But note that the project is still under active development. :-)
+--------------------------------------------------------------------------------------------------

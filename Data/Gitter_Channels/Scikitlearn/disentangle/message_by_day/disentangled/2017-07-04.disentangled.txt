@@ -1,0 +1,4 @@
+[08:46] <5799ed1c40f3a6eec05ce0b3> Hello good people! If I may enquire,  is there any advantage for using one-hot encoding over label encoding with GradientBoosting algorithm?
+--------------------------------------------------------------------------------------------------
+[16:14] <590c8ffdd73408ce4f5d352d> Hi, Is there a particular clustering algorithm that works best with time series?
+--------------------------------------------------------------------------------------------------

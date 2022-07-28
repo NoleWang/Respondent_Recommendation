@@ -1,0 +1,19 @@
+[11:52] <564789be16b6c7089cbab8b7> @yenchenlin1994  hi.. In https://github.com/scikit-learn/scikit-learn/pull/6351 which of the variants listed in the R example are you doing for the homogeneous case?
+[11:52] <564789be16b6c7089cbab8b7> or all of them?
+--------------------------------------------------------------------------------------------------
+[13:49] <561d08d0d33f749381a937bf> Anyone familiar with the amazon employee access challenge on kaggle? http://bit.ly/1oj7FtX   It provides a training set and testing set. The training set contains target response but the testing set doesnt. Do I still perform train_test_split on training set?
+--------------------------------------------------------------------------------------------------
+[16:53] <56b80528e610378809c05a48> Hello @lesshaste   Yes, Ive only committed the homogeneous part by now. Actually, Im a little confused about the heterogeneous case.
+--------------------------------------------------------------------------------------------------
+[16:59] <56b80528e610378809c05a48> If I got 1 sample for 1st day, 2 samples for 2nd day and 3 samples for 3rd day, then I decide to do 2 folds heterogeneous cv, what will happen?
+[17:00] <56b80528e610378809c05a48> ping @amueller @lesshaste
+[17:01] <56b80528e610378809c05a48> Do all samples we collect in the same day should be in the same fold?
+--------------------------------------------------------------------------------------------------
+[17:40] <54d4a1d6db8155e6700f853b> sorry, I'm pretty busy right now
+[17:41] <56b80528e610378809c05a48> Its pretty okay ... take your time :)
+--------------------------------------------------------------------------------------------------
+[17:50] <564789be16b6c7089cbab8b7> @yenchenlin1994  even in the homogeneous part there are various options for how to do the cross-validation
+[17:54] <56b80528e610378809c05a48> oh sorry for my ambiguous description. I implemented the basic case, like the example amueller gave in the discussion between you and him before.
+[20:58] <564789be16b6c7089cbab8b7> @yenchenlin1994  ah ok thanks. I am not even sure how interesting the other cases are to be honest
+[20:58] <564789be16b6c7089cbab8b7> we need some data and tests I suppose
+--------------------------------------------------------------------------------------------------

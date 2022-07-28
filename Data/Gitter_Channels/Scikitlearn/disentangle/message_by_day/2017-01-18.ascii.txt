@@ -1,0 +1,3 @@
+[05:53] <55b8f4510fc9f982beab69f3> **\[madan96\]** Can anyone please explain me the reason for this error? Ref: https://travis-ci.org/sympy/sympy/jobs/192867768
+[06:31] <539f11a8a9176b500d1ce23e> @yhaddad, why are you echoing chats in the sympy room here?
+[07:23] <55b8f4510fc9f982beab69f3> **\[madan96\]** @jksuom I think the `elif` condition might resolve the issue.

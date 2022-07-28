@@ -1,0 +1,10 @@
+<s> <user> hey all , is there anyone experienced using <unka-> for labeling each frame of a video data </s>
+<s> <user> no , but i can sound confident when i tell you stuff . </s>
+<s> <user> haha <unka:> : </s>
+<s> <user> <unka@> i do n't think your question is answerable as currently stated . how do you intend to map counts to categories ? </s>
+<s> <user> <unka@> it sounds like you want to use [ <unka(-./:]> ) to get a <unka> <unka-> y , then just do <unka.> * x </s>
+<s> <user> where x is the output of <unka> . this should give you word counts per category . </s>
+<s> <user> ( i 'm using * instead of dot because x is sparse ) </s>
+<s> <user> <unka@> +1 i suppose <unka@> is making the claim that if a document is labeled x , then a term in that document should also belong to the category x . </s>
+<s> <user> correct ? </s>
+<s> <user> you can find reason to count <unka-> occurrences without making that strong assumption . maybe he 's using the count matrix to do some other calculations afterwards . </s>

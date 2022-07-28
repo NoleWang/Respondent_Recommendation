@@ -1,0 +1,5 @@
+[10:24] <56333d0d16b6c7089cb8d5c7> hello, I was working on https://github.com/scikit-learn/scikit-learn/issues/6120. I am not sure I understand what needs to be exactly needs to be changed.
+[10:25] <56333d0d16b6c7089cb8d5c7> what do I need to do in order to use only 20 components?
+--------------------------------------------------------------------------------------------------
+[15:53] <555687ea15522ed4b3e079c7> How would one submit a feature request on the documentation. With the addition of float elements to some hyper parameters it might be assumed that values can range from (0-1] , but in fact ranges often have a minimum i.e.( (0-1]*n_elements  must be greater than 2 , (0-.5] )
+--------------------------------------------------------------------------------------------------

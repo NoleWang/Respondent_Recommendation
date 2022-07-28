@@ -1,0 +1,10 @@
+<s> <user> <unk#a@> i think you should have a look at URL/https:/ <unka./> <unka/> </s>
+<s> <user> it looks like it might be a good reference for the dp <unka> </s>
+<s> <user> thanks . i am looking into it . </s>
+<s> <user> hi i have a question about <unka/> . how can i create a branch from a branch of other 's forked repository ? </s>
+<s> <user> you can add the fork as a remote with git remote add <name > <unka<> > </s>
+<s> <user> i just tried , but there are too many conflicts . what should i do ? </s>
+<s> <user> i do n't see how " git remote add " could trigger conflicts , what exactly is the problem ? </s>
+<s> <user> the way i'd do it is : <unk`> git remote add <unk#a> URL/https:/ URL/github.com/ <unk#a-./> git fetch <unk#a> git checkout <unk#a-/<> > git checkout -b <unka-<> > <unk`> </s>
+<s> <user> if the branch you want is a pr you can also use [ this <unk#a(./:]> ) </s>
+<s> <user> hth </s>

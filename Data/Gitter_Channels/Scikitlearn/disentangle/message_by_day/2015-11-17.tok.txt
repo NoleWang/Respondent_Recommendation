@@ -1,0 +1,4 @@
+<s> <user> looks like the dataset for the <unk#a> tutorial sessions is not coming down ? URL/http:/ <unka./> <unka./> download does not start . </s>
+<s> <user> im using the <unka_> script in your github repo . </s>
+<s> <user> ah worked now , just took ages for the 81 mb with no bytes flowing for minutes ... </s>
+<s> <user> <unka@> i am unable to gauge how useful that usecase is ... once you convince <unka@> it is useful enough ( :p ) you can add a plotting function similar to the <unka_`> ( in <unka./_`> ) ... ( but imho that particular usecase seems simple enough to not warrant a plotting helper function ! ) </s>

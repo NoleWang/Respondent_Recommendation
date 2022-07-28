@@ -1,0 +1,2 @@
+[19:24] <57922eec40f3a6eec05c04ef> Hi together, I like to write custom transformers which should not rely on sklearn as a dependency but should be usable in sklearn pipelines anyway (if necessary). Is that possible by simply providing `fit` and `fit_transform` methods? I assume not looking at [BaseEstimator](https://github.com/scikit-learn/scikit-learn/blob/7389dbac82d362f296dc2746f10e43ffa1615660/sklearn/base.py#L129). Thanks for any help.
+[21:16] <5bec622ed73408ce4faeed82> @Akash-Sharma-1 also look into hands on machine learning with scikitl-learn and tensorflow

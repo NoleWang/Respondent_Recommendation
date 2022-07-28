@@ -1,0 +1,2 @@
+[10:32] <54b2524adb8155e6700e8a8e> Seeing this a little late, @jcrist, you might try performing predict/transform, a `NotFittedError` should be indicative, but other errors may occur uninformatively.
+--------------------------------------------------------------------------------------------------

@@ -1,0 +1,44 @@
+[04:06] <564789be16b6c7089cbab8b7> is https://github.com/mblondel/svmlight-loader still the recommended way to read in very large libsvm format files? It is quote old now and scikit-learn has been through many versions in the last 3 years
+[18:39] <564789be16b6c7089cbab8b7> @amueller True
+--------------------------------------------------------------------------------------------------
+[14:33] <54d4a1d6db8155e6700f853b> @lesshaste might still be faster
+--------------------------------------------------------------------------------------------------
+[17:10] <53135b495e986b0712efc453> @vighneshbirodkar Are you planning to continue work on the GBCV PR? Or would it be okay if I gave a hand?  (Either by push access to your repo or by cherry-picking the commits?)
+--------------------------------------------------------------------------------------------------
+[18:41] <564789be16b6c7089cbab8b7> I have a general ML classification question.. I hope this isn't the wrong place. I have data which is labelled into A, B, C, D, E and Other. In the end I just want to tell if new data is in A-E or other. That is perform a binary classification. A,B,C, D and E are very different from each other however. Should I build 5 binary classifiers and combine them somehow or just go straight for a binary A-E versus Other classifier? I am using a random forest currently.
+[18:43] <564789be16b6c7089cbab8b7> I could try to build a multiclass classifiers but the class sizes are very imbalanced and I am not sure how well RF copes with that
+--------------------------------------------------------------------------------------------------
+[19:29] <56c4f19ae610378809c1f8ae> is there any tool to lint cython? through working on the tree .pyx files, ive noticed there are lots of style discrepancies...
+[19:30] <56c4f19ae610378809c1f8ae> hmm is there any method that doesnt rely on pycharm? e.g. pep8 flake8 or a similar standard
+--------------------------------------------------------------------------------------------------
+[19:29] <564789be16b6c7089cbab8b7> @nelson-liu https://www.jetbrains.com/help/pycharm/2016.1/cython-support.html
+[19:31] <564789be16b6c7089cbab8b7> not that I am aware of sadly
+[20:35] <564789be16b6c7089cbab8b7> thanks
+--------------------------------------------------------------------------------------------------
+[19:46] <564789be16b6c7089cbab8b7> @nelson-liu https://udiboy1209.github.io/2016-06-18-cython-needs-a-flake-and-lint-tool/
+[19:47] <564789be16b6c7089cbab8b7> that's a pretty up to date complaint
+[19:48] <564789be16b6c7089cbab8b7> my pleasure.. any idea about my general classification query above by any chance?
+[19:48] <564789be16b6c7089cbab8b7> not really sure where the best place is for question like that so sorry it is a tiny bit OT for this gitter
+--------------------------------------------------------------------------------------------------
+[19:47] <56c4f19ae610378809c1f8ae> haha ok, so seems like one doesnt exist sadly. thanks for the help @lesshaste :)
+--------------------------------------------------------------------------------------------------
+[19:50] <56c4f19ae610378809c1f8ae> ive seen general ML questions here so it should (?) be fine? I dont think RF copes very well with unbalanced multiclass data...do you have ample data for each of the classes?
+--------------------------------------------------------------------------------------------------
+[19:50] <564789be16b6c7089cbab8b7> well I have millions of Other records but only thousands of the A-E cases
+[19:51] <564789be16b6c7089cbab8b7> is there anything better suited to the task?
+[19:53] <564789be16b6c7089cbab8b7> do you mean just sampling the same record repeatedly? I never saw the point in that to be honest
+--------------------------------------------------------------------------------------------------
+[19:53] <56c4f19ae610378809c1f8ae> hmm have you looked into resampling methods?
+--------------------------------------------------------------------------------------------------
+[19:57] <56c4f19ae610378809c1f8ae> hmm i mean you can try taking a random sample of your data, then fit your model on one set and use a held out set to find good probability cutoffs with an ROC curve or something...
+[19:59] <56c4f19ae610378809c1f8ae> and you dont have to sample the same record repeatedly, but take a random sample of your other classes to generate a synthetic balanced dataset
+[20:00] <56c4f19ae610378809c1f8ae> this answer on crossvalidated looks good, could be a starting point for more reading? http://stats.stackexchange.com/questions/131255/class-imbalance-in-supervised-machine-learning
+--------------------------------------------------------------------------------------------------
+[20:36] <564789be16b6c7089cbab8b7> "Some methods, like random forests, don't need any modifications." I wonder how true that is
+--------------------------------------------------------------------------------------------------
+[21:06] <56c4f19ae610378809c1f8ae> yeah, same. please let me know what ends up working best for you?
+--------------------------------------------------------------------------------------------------
+[21:10] <54e07d6515522ed4b3dc0858> There's also https://github.com/fmfn/imbalanced-learn, which will soon become part of scikit-learn-contrib
+--------------------------------------------------------------------------------------------------
+[21:12] <56c4f19ae610378809c1f8ae> this looks great, thanks for the link @vene !
+--------------------------------------------------------------------------------------------------

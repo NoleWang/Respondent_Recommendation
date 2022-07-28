@@ -1,0 +1,2 @@
+[09:17] <5fa98f30d73408ce4ff3a641> Byo.ai an intelligent assistant to make people carbon neutral/positive. Anyone with experience with one or more general purpose programming languages including but not limited to: Python, Java, C/C++ (also Pytorch,) feel free to send your CV to work@byo.ai (passion for the environment, clean technologies and artificial intelligence is a plus!)
+--------------------------------------------------------------------------------------------------

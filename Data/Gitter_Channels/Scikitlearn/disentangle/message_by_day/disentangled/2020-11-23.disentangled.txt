@@ -1,0 +1,6 @@
+[09:19] <5f9fce72d73408ce4ff3159b> Hi. I am looking at the [Classification example](https://scikit-learn.org/stable/auto_examples/neural_networks/plot_mnist_filters.html). Do we only support `Dense` layer for neural networks for now? I was hoping to try some `AutoML` features of `scikit-learn` to create some convolution networks.
+--------------------------------------------------------------------------------------------------
+[09:22] <541a528b163965c9bc2053de> convolution neural networks are indeed not supported and out of the scope of scikit-learn. Please use a library dedicated to deep learning for this. If you need scikit-learn API compatibility, you can try: https://github.com/skorch-dev/skorch or https://www.tensorflow.org/api_docs/python/tf/keras/wrappers/scikit_learn .
+--------------------------------------------------------------------------------------------------
+[09:25] <5f9fce72d73408ce4ff3159b> Thanks. I think I will stick with tensorflow for now.
+--------------------------------------------------------------------------------------------------

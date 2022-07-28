@@ -1,0 +1,30 @@
+<s> <user> <unka@> how do you test the <unka> without issue <unka> ? </s>
+<s> <user> there is no real way to test the <unka> </s>
+<s> <user> as far as i can tell </s>
+<s> <user> <unka@> have you see this URL/https:/ <unka./> <unk#a&-/=?_> ? </s>
+<s> <user> indeed , i 'm on it . </s>
+<s> <user> done </s>
+<s> <user> if travis is green after this fix , i think we can tag <unk#a.> and trigger the wheel builders . how is the <unka> going ? </s>
+<s> <user> <unka@> shall i tag <unk#a.> ? </s>
+<s> <user> <unka@> sure </s>
+<s> <user> <unka@> <unka> is been running for like an hour to build the <unk#a.> </s>
+<s> <user> <unk#a.> is on the launch pad </s>
+<s> <user> i believe the wheels will be ready by tomorrow ;) </s>
+<s> <user> cool </s>
+<s> <user> hopefully the <unka> packages too </s>
+<s> <user> i expect they arrive here : URL/https:/ <unka./> <unka-/=?> </s>
+<s> <user> i 'll update the <unka> for <unk#.> </s>
+<s> <user> great </s>
+<s> <user> as soon as the <unka> package is ready any of us can fetch the wheels + build the <unka> and publish to <unka> + tweet </s>
+<s> <user> sounds good </s>
+<s> <user> i think the <unka> package takes about 3h to build </s>
+<s> <user> a single entry of the matrix takes 30 minutes , there are 6 </s>
+<s> <user> and they all run in the same job </s>
+<s> <user> <unka@> do you want to fix the <unka> thing or should i ? </s>
+<s> <user> rc3 ? ;) </s>
+<s> <user> yes ! </s>
+<s> <user> URL/https:/ <unka./> <unka-/> </s>
+<s> <user> <unka:> : </s>
+<s> <user> ugh so <unka> users ca n't update </s>
+<s> <user> unless they use <unka-> </s>
+<s> <user> eh </s>

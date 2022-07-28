@@ -1,0 +1,1 @@
+[12:16] <5910079ed73408ce4f5dc467>  Hi all,  Can I get some indepth resource on RFE(Recursive features elimination) ? I have went through the documentation but it will be good if I could get any detailed  example which uses RFE. 

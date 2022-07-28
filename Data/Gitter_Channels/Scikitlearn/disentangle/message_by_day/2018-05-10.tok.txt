@@ -1,0 +1,3 @@
+<s> <user> hi guys </s>
+<s> <user> i 'm getting an error when i try to train a <unka> using sparse ( csr ) numpy <unka> for both x and y </s>
+<s> <user> i get : <unk`> attributeerror : <unka'> object has no attribute <unka'_> <unk`> </s>

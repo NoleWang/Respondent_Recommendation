@@ -1,0 +1,15 @@
+<s> <user> hello ! i have a question about the use of <unka> . i have started working on a pull request with joseph lucas ( URL/https:/ URL/github.com/ <unka/> ) during the data umbrella sprint this <unka-> ( URL/https:/ URL/github.com/ <unk#a-/> ). i am trying to add a commit to this pull request ( while i have not created it , joseph has ). in order to do so , i want to send a pull request to joseph lucas on his branch . however , i do not understand why i the github interface does not propose his repo as base when i create the pull request ( while he has his own <unka-> repo URL/https:/ URL/github.com/ <unka)-./> what do you recommend i do ? i would prefer not to open a new pull request . </s>
+<s> <user> i think when you open a pr there 's a checkbox which says " show all forks " or something , and then it'd show you joseph 's fork as well . </s>
+<s> <user> github displays the following : open a pull request create a new pull request by comparing changes across two branches . if you need to , you can also compare across forks . when i click on " compare across forks " , it displays a list of forks ( base repository ), but joseph 's fork does not appear . ( the list seems too short to contain all forks of <unka-> ). github does not manage to find his fork even when i enter the repo name : <unka-/> . </s>
+<s> <user> yeah this seems be a github interface issue ( not 100% sure more of a wild guess ). </s>
+<s> <user> interesting , i 'm not sure then </s>
+<s> <user> i think if you go to a url like this : URL/https:/ URL/github.com/ <unka-./:> </s>
+<s> <user> you should be able to create a pr to <unka> repo </s>
+<s> <user> thanks ! that is exactly what i wanted : ) </s>
+<s> <user> there is this weird thing that if you use the " natural way " ( at least to me ) of creating a pr to <unka> fork it insists on creating a pr to the main repo ( <unka-/> ) </s>
+<s> <user> if you go there : URL/https:/ URL/github.com/ <unka-/> and click " new pull request " it creates the pr against <unka-/> from <unka> fork and as you noticed i was not able to change that to use <unka> fork as the target ( <unka*> it turns out clicking on the blue arrow between base and head fork is another work-around ) ... </s>
+<s> <user> i have sent the pull request to joseph . thanks for help . it is the first time i send a pull request to a contributor to update his pull request to the main repo . if he accepts my pull request ( to the branch of the pull request ), will it automatically update the pull request ( to the main repo ) with my commit ? </s>
+<s> <user> short answer : yes . longer answer : his pr is tied to his branch so as soon he merges your pr on his fork , his branch will be updated and your changes will appear on the pr to <unka-/> . </s>
+<s> <user> <unka-> : if you collaborate from time to time with <unka> a reasonable way to make that easier is that <unka> gives you write access to his fork . this way you can push directly to his branch without doing a pr on his fork . </s>
+<s> <user> <unka@> thanks for the " <unka-> " . i will ask him if he agrees to do so . it would be much easier : ) </s>
+<s> <user> sounds like a plan ! </s>

@@ -1,0 +1,15 @@
+<s> <user> wow this is the worst : URL/https:/ URL/github.com/ <unk#a-/> </s>
+<s> <user> is having an issue for splitting the current utils into private/public worth it ? </s>
+<s> <user> not sure . we should get the <unka_> stuff done first . </s>
+<s> <user> i 'm catching up right now </s>
+<s> <user> ping <unka@> are you here ? </s>
+<s> <user> also ping <unka@> </s>
+<s> <user> i might be able to help with releasing this week . should we ? or wait for the sprint ? </s>
+<s> <user> if we have the model selection merged by this week i can work on the multiple metric thing during sprint :) </s>
+<s> <user> you are coming right ? </s>
+<s> <user> <unka> is not in <unka> ;) </s>
+<s> <user> we cam </s>
+<s> <user> we ca n't really merge model selection before releasing </s>
+<s> <user> i just updated to numpy <unk#.> and now i get a lot of test failures . anyone else ? </s>
+<s> <user> typeerror : cannot cast <unka> subtract output from <unk#a'(> ) to <unk#a'(> ) with casting rule <unka'_> </s>
+<s> <user> running <unka> </s>

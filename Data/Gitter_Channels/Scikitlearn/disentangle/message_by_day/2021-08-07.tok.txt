@@ -1,0 +1,3 @@
+<s> <user> does <unka> support regression parameters with <unka> data structure , e.g ., <unk#a-> point data ? i would like to perform a regression to predict the position of a <unk#a-> point ( <unka,> ) using other known <unk#a-> points while <unka> by <unka-> . i have a small sample of <unka> y comprised ( xi , yi , zi ) and a complete set of <unka> x1 , x2 , x3 , ... each comprised of ( xi , yi , zi ). i would like to test a simple model y = x1 + x2 + ... </s>
+<s> <user> you probably want to look at the following : URL/https:/ <unka-./> <unka#-./> </s>
+<s> <user> <unconvertable > appreciated </s>

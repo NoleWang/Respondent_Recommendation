@@ -1,0 +1,3 @@
+<s> <user> any suggestions on how to get my pr reviewed ? </s>
+<s> <user> if your pr is ready , you can add [ <unka> ] to the title of pr . you can check the pr checklist : URL/https:/ <unka-./> <unka#-./> and i found the wiki have some <unka> you can ping : URL/https:/ URL/github.com/ <unka-./> </s>
+<s> <user> thanks ! i did n't know about that checklist </s>

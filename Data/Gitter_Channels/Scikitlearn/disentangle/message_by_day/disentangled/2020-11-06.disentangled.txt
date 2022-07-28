@@ -1,0 +1,4 @@
+[10:42] <5e7de2b6d73408ce4fde36e6> Hi scikit-learn team! I'll start a new job on 16 November and have some free time until then. I just wanted to let you know that I'll try to add all missing documentation for attributes by then (see #14312). There are only a few undocumented attributes left. So if anyone has time to review my PRs you (hopefully) could have all attributes documented by the end of next week. :) Nicolas and Adrin have already kindly started reviewing the PRs I sent in for this in the last few days.
+--------------------------------------------------------------------------------------------------
+[11:42] <5c8bb176d73408ce4fbac89c> Thanks @marenwestermann right in time for 0.24!
+--------------------------------------------------------------------------------------------------

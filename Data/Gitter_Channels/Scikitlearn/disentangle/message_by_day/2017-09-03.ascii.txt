@@ -1,0 +1,3 @@
+[18:50] <564789be16b6c7089cbab8b7> hi.. I want to do cross-validation but my data comes in groups. I have 10,000,000 rows in total and the sizes of the groups vary a lot. So I would really like to sample 100,000 rows first in proportion to the group sizes and then do the group cross-validation.  Is that possible?
+[19:43] <56f8122085d51f252abb1414> Is scikit-learn taking part on the Google Summer of Code this year? (I couldnt find anything for this year)
+[20:02] <55d21ee30fc9f982beadabb8> @mirca not this year

@@ -1,0 +1,4 @@
+[06:02] <59d187cfd73408ce4f782f22> @LaDilettante you need to use matplotlib to plot your results
+--------------------------------------------------------------------------------------------------
+[06:04] <59d187cfd73408ce4f782f22> Sentiment analysis is good for articles, but yes I do agree it's bad for Twitter.
+--------------------------------------------------------------------------------------------------

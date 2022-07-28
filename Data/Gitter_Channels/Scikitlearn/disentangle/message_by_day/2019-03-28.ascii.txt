@@ -1,0 +1,6 @@
+[06:51] <5c9b282cd73408ce4fbbf1ed> Can i join in with my github account?
+[09:05] <5c99f27ad73408ce4fbbd772> @wwf6688 just login with github account
+[09:06] <5c9b282cd73408ce4fbbf1ed> I can't open the website in China
+[09:06] <5c9b282cd73408ce4fbbf1ed> https://www.facebook.com/groups/2084179105032029/
+[09:30] <5c99f27ad73408ce4fbbd772> Try using vpn
+[09:31] <5c99f27ad73408ce4fbbd772> Shadowsocks or any other way

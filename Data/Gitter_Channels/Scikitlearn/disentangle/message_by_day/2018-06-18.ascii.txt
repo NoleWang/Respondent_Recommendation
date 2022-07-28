@@ -1,0 +1,6 @@
+[15:57] <5b27cec1d73408ce4f9dbcaf> What is the difference between logloss and cross entropy? Sorry I am a newbie in this field
+[22:27] <5a36ab82d73408ce4f83bb10> hey guys, I am trying to visualize a high dimensional RNA dataset with TSNE 
+[22:27] <5a36ab82d73408ce4f83bb10> [![image.png](https://files.gitter.im/scikit-learn/scikit-learn/6rZd/thumb/image.png)](https://files.gitter.im/scikit-learn/scikit-learn/6rZd/image.png)
+[22:27] <5a36ab82d73408ce4f83bb10> However I get the error 
+[22:27] <5a36ab82d73408ce4f83bb10> ValueError: could not convert string to float: 'sample_800'
+[22:27] <5a36ab82d73408ce4f83bb10> Any inputs on this? 

@@ -1,0 +1,5 @@
+<s> <user> hello </s>
+<s> <user> <unk#a@> hey people ! *** <unka[> ] name = <unk"{> <unka> " , " <unka> " , " stefan " , " ali " , " <unka> " , " <unka",> " }; <unka[> ] property = { " kind " , " bad " , " <unka> " , " helpfull " , " nice " , " <unka> " , " <unka> " }; <unka[> ] role = { " teacher " , " system developer " , " student " , " musician " , " programmer " , " <unka> " , " doctor " }; *** how can i pick from these three arrays randomly , for example " ali is a kind teacher " ? </s>
+<s> <user> its c# btw </s>
+<s> <user> <unk#a@> i do n't think so there is any api to <unka-> in c# . but you might want to wait for others' answers as well . </s>
+<s> <user> i 'm using a custom <unka> for the <unka> . i trained the model and saved the pipeline object to a pickle file using <unka> . however , when i try to load the pickle file in a different script , it throws an error : module <unka'_> has no attribute <unka'> . am i <unka> the model correctly ? </s>

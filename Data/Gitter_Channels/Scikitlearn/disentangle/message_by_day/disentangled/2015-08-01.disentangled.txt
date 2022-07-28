@@ -1,0 +1,3 @@
+[20:56] <550f53e215522ed4b3dda5f6> According to the emails from Prof.  Azzalini and Prof. Bowman, I think, we cannot use old-faithful data set without the permission of Royal Statistical Society. We cannot use data from R either, right?
+[20:56] <550f53e215522ed4b3dda5f6> @amueller @ogrisel
+--------------------------------------------------------------------------------------------------

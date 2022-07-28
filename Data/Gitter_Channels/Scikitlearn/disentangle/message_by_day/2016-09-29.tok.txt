@@ -1,0 +1,9 @@
+<s> <user> in the <unka> example only a single file is loaded but in my case am working with four distinct image files so i used the lines below to obtain a numerical matrix of each image before i apply a <unka.> i get this error message . <unka_> = <unka'(*-./_> ) <unka_> = <unka(._> ) <unka_> = <unka(_> ) data = <unka(._> , -1 )) <unka(> ) #### error message ### <unk-> attributeerror traceback ( most recent call last ) <unk#a-<> > in <module > ( ) 4 5 <unka_> = <unka(_> ) --- -> 6 data = <unka(._> , -1 )) 7 <unka(> ) attributeerror : <unka'> object has no attribute <unka'> </s>
+<s> <user> hello everyone . </s>
+<s> <user> hi <unka:> : </s>
+<s> <user> hello </s>
+<s> <user> i want some help on project based learning in recommendation systems ... i started with <unka> dataset but now i 'm stuck . can anyone help me please . </s>
+<s> <user> <unka-@> are you sure you want to be <unka> <unka_`> and not <unka_`> ? </s>
+<s> <user> guys ... i 'm super confused about <unka`> : this module was deprecated in version 0.18 in favor of the <unka_> module into which all the <unka> classes and functions are moved . also note that the interface of the new cv <unka> are different from that of this module . this module will be removed in <unk#.`> </s>
+<s> <user> how can we make our modules compliant with older and newer versions ? </s>
+<s> <user> <unka@> by modules do you mean modules that interface with <unka-> ? </s>

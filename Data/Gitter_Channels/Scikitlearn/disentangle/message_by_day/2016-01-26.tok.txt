@@ -1,0 +1,6 @@
+<s> <user> hey guys , anyone has an idea why <unka> regression does n't give realistic probability estimates ? </s>
+<s> <user> with the number of features is large ? </s>
+<s> <user> random forest on the other hand gives more realistic estimates </s>
+<s> <user> it is basically <unka> on the things that seem to happen only a few times in the dataset , because they are " good <unka> " mostly by chance . more aggressive l1 <unka> always results in poorer performance </s>
+<s> <user> perhaps if we had <unka> <unka> regression </s>
+<s> <user> <unka@> have you tried the calibration module ? </s>

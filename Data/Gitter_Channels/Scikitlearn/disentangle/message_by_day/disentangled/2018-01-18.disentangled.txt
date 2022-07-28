@@ -1,0 +1,7 @@
+[04:09] <55fc44590fc9f982beb11bbf> Just curious,
+[04:09] <55fc44590fc9f982beb11bbf> Should every bug fix / enhancement go into what's new?
+--------------------------------------------------------------------------------------------------
+[08:51] <589208e2d73408ce4f4770c4> @glemaitre: i the data is a multiclass data so i labeled the classes 0,1 ,2. will is it okay to use them as it is without onehotencoding?
+--------------------------------------------------------------------------------------------------
+[09:34] <589208e2d73408ce4f4770c4> i encoded them as [001],[010] and [100] and that is what generated the error
+--------------------------------------------------------------------------------------------------

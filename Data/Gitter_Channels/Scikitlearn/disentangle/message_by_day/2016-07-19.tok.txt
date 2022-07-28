@@ -1,0 +1,68 @@
+<s> <user> hey , can someone explain what 's the difference between [ <unka> ] and [ <unk#a+> ] in case of pr 's ? </s>
+<s> <user> <unka-@> what does <unka> stand for to start with ? </s>
+<s> <user> <unka> is for the pr when it is ready for review , <unka> + x is when x number of core developers are okay with pr . in general it is around 2 or 3 . </s>
+<s> <user> cool . what does <unka> actually stand for ? </s>
+<s> <user> merge <unk#a> </s>
+<s> <user> oh :) </s>
+<s> <user> sorry .. typos .. </s>
+<s> <user> <unka@> URL/https:/ URL/github.com/ <unka#-./> </s>
+<s> <user> merge is <unka> and work in progress as wip </s>
+<s> <user> oh cool </s>
+<s> <user> i have just tried for the first time to use <unka> with <unka> and am getting poor results and it is very slow . i realise <unka> is not core <unka-> but would any very kind person be able to give a newbie a hand please ? </s>
+<s> <user> my very simple sample script is just running on the <unka> digits data and it is at URL/http:/ URL/paste.ubuntu.com/ <unk#a/> . what am i doing wrong ? </s>
+<s> <user> hello , i am trying to do <unka> task with data from <unka> and not data in <unka> . i am getting <unka> <unk#a%/~> using <unka> , <unka> and <unka> . but every algorithm just gives a label for a test image as output . that is fine . i just wanted to have log <unka> of each class . for example if a test image is <unka-> i want an array of length of classes with <unka> that test image is from this class . </s>
+<s> <user> is there any way to do that using <unka> ? </s>
+<s> <user> <unka@> are you using <unka_> ? </s>
+<s> <user> no . </s>
+<s> <user> i will go through that . </s>
+<s> <user> <unka@> as <unka@> said , this might probably be what you are looking for URL/http:/ <unka-./> <unka#./_> </s>
+<s> <user> <unka@> even i am a novice and have n't used <unka> before but maybe the loss function needs to be changed for <unka> <unka> ? </s>
+<s> <user> <unk#a@> let me try that . there must be at least one <unka> here soon :) </s>
+<s> <user> <unk#a@> according to URL/https:/ URL/github.com/ <unka-./> it should use <unka:> if the number of classes > 2 i think </s>
+<s> <user> yup i suppose you are right , it should set the objective automatically as in URL/https:/ URL/github.com/ <unk#a#-./> sorry i have no idea about the performance then . just to know , what is the cv score you are getting using <unka> ? </s>
+<s> <user> i get [ <unk#.> <unk#.> <unk#.> <unk#.> <unk#.> ] from <unk#a-> cv of <unka> and it takes a really really long time </s>
+<s> <user> i get [ <unk#.> <unk#.> <unk#.> <unk#.> <unk#.> ] from <unka> and it is really quick </s>
+<s> <user> i am clearly doing something wrong </s>
+<s> <user> can you reproduce my problem ? </s>
+<s> <user> oh thanks for the results . i too will try running the script on my machine and tune various parameters for the <unka> model . </s>
+<s> <user> my machine does n't have a good ram . but will try to reproduce in vm and get back to you . </s>
+<s> <user> thanks ! it should n't need much ram </s>
+<s> <user> sadly the <unka> google group seems pretty dead as does their <unka> room </s>
+<s> <user> <unka> seems to use 1.6gb on my machine for that dataset </s>
+<s> <user> URL/http:/ <unka./> <unka#-./_> have you looked at the <unka_`> dict mentioned in the docs </s>
+<s> <user> no ! do you think it might help ? </s>
+<s> <user> ( got to go out for 30 minutes .. thanks so much for looking at this ! ) </s>
+<s> <user> also this page URL/http:/ <unka./> <unka./> has <unka_`> which has <unka`> for multi class error </s>
+<s> <user> i should thank you for getting me started to look into this :) </s>
+<s> <user> i am not sure if it might help but it seemed relevant to multi class but was mentioned it was specific to the <unka._`> [ default according to objective <unk]`> . so do have a look and let us know if you get any insight . thanks ! </s>
+<s> <user> interesting .. i am currently also confused why it is so slow when everyone says how fast <unka> is ! </s>
+<s> <user> <unk#a@> just changing to <unka":=> " increased the cv scores ! </s>
+<s> <user> for reasons i am 100% unclear about </s>
+<s> <user> </s>
+<s> <user> hi , sorry for the slow reply . that 's great to know . is the algorithm running faster now ? </s>
+<s> <user> <unk#a@> no .. it is still super slow </s>
+<s> <user> oh okay . hopefully someone experienced can provide an explanation for these results . </s>
+<s> <user> it would be great </s>
+<s> <user> have you tried asking on <unka> ? </s>
+<s> <user> yes ... i asked on the forum there and have no reply yet </s>
+<s> <user> i mean i asked on the forum for the digits <unka> challenge </s>
+<s> <user> oh i see . i do n't know any other forum . maybe stack overflow ? ( sorry for my naive suggestions ) </s>
+<s> <user> my friend also asked on so </s>
+<s> <user> no answer :) </s>
+<s> <user> okay so i too am waiting for the <unka> </s>
+<s> <user> <unka*> </s>
+<s> <user> :- ) </s>
+<s> <user> one problem is that i do n't <unka> the parameters despite the huge number of " guides " online </s>
+<s> <user> which make <unka> run slower or faster ? can you find the answer to that ? </s>
+<s> <user> maybe having a look at this paper URL/https:/ <unka./> <unk#a./> can help us in understanding the algorithm better ? i too shall try reading it once </s>
+<s> <user> it 's definitely worth reading </s>
+<s> <user> <unka@> have you tried with different number of threads ? i saw some issue about multi threading here URL/https:/ URL/github.com/ <unk#a/> </s>
+<s> <user> hmmm ... no not yet but that page does say it is fine in python </s>
+<s> <user> yeah sorry just read the whole issue . i just thought it might be a reason . </s>
+<s> <user> <unk#a@> i have a much simpler question now :) i simply want to modify URL/http:/ <unka-./> <unka./_> for the digits dataset we are using </s>
+<s> <user> have you managed to get that to work ? </s>
+<s> <user> <unka@> if i understand you correctly you are referring to </s>
+<s> <user> the roc for multi class right ? </s>
+<s> <user> we need to <unka> the output for that to work and plot for each of the classes ? </s>
+<s> <user> <unk#a@> thanks .. that was indeed the answer </s>
+<s> <user> <unka@> great . glad that it was helpful ! </s>

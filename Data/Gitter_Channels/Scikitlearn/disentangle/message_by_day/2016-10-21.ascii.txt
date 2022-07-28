@@ -1,0 +1,8 @@
+[01:07] <561be13fd33f749381a91e6e> @rajhans  I'm curious, if you were to store it in a db, what would you want to do with the record
+[01:30] <56c4f19ae610378809c1f8ae> @rajhans you could write the joblib file to disk, get a hash, and then store the hash? That might be a bit too much space for your application, though.
+[01:31] <561be13fd33f749381a91e6e> @nelson-liu is that what you do?  
+[04:28] <56c4f19ae610378809c1f8ae> no, I dont work with scikit-learn and databases. Im just postulating a possible solution to his answer
+[16:59] <56d8cf14e610378809c4e7e9> Having issues with akka netty
+[17:00] <56d8cf14e610378809c4e7e9> I have two services in akka communicating over netty tcp. How can I dockerize them. I am as of now getting an error 
+[17:01] <56d8cf14e610378809c4e7e9> Can anyone help me on this?
+[17:02] <56c4f19ae610378809c1f8ae> i dont think this is the proper place to ask a question about akka, this gitter room is for scikit-learn

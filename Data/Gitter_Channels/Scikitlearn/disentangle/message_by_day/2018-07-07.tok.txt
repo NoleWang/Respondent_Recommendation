@@ -1,0 +1,7 @@
+<s> <user> oh verbosity = 2 does that </s>
+<s> <user> is it possible to get <unka> to optimize the roc when doing <unka> ? </s>
+<s> <user> oh that is there too </s>
+<s> <user> sorry </s>
+<s> <user> if you have this code : </s>
+<s> <user> <unka> = <unk#a(=> , <unk#a=_> , <unka'=_> , <unk#a=> , <unk#a-=_> ) <unka(._> , <unka_> ) <unka"(> score " , <unka(._> , <unka_> )) </s>
+<s> <user> is the score being printed the <unka_> score ? </s>

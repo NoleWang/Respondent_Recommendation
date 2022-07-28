@@ -1,0 +1,30 @@
+<s> <user> does anyone understand what 's happening with <unka> ? seems like <unka> timeouts ? <unka@> ? </s>
+<s> <user> <unka@> do you have an opinion on URL/https:/ URL/github.com/ <unk#a#-/_> ? </s>
+<s> <user> <unka@> is there an issue tracking the <unka> pickle thing ? </s>
+<s> <user> yep , let me find it . </s>
+<s> <user> URL/https:/ URL/github.com/ <unk#a-/> </s>
+<s> <user> there is to pending pr waiting for an extra review to be merged </s>
+<s> <user> URL/https:/ URL/github.com/ <unk#a-/> </s>
+<s> <user> URL/https:/ URL/github.com/ <unk#a-/> </s>
+<s> <user> anyone interested in a reviewing a pr on <unka> support ? URL/https:/ URL/github.com/ <unk#a-/> it 's mostly a ci setup + very light changes to make tests pass .. maybe <unka@> ? :) </s>
+<s> <user> i gave my +1 </s>
+<s> <user> fyi i disabled the <unka> <unka> ( or tried to ?) because it 's confusing for the <unka> </s>
+<s> <user> any additional review on the <unka> is welcomed </s>
+<s> <user> URL/https:/ URL/github.com/ <unk#a-/> </s>
+<s> <user> anybody can review this one </s>
+<s> <user> URL/https:/ URL/github.com/ <unk#a-/> </s>
+<s> <user> does anyone know what happened here ? URL/https:/ URL/github.com/ <unk#a-/> </s>
+<s> <user> there 's something funky going on with the <unka_> <unka> </s>
+<s> <user> <unka@> </s>
+<s> <user> <unka@> when i post a future warning , am i to assume we are currently on version 0.20 of <unka-> learn ? </s>
+<s> <user> <unka@> right </s>
+<s> <user> ok , thanks ! </s>
+<s> <user> <unka@> it seems it was done on purpose </s>
+<s> <user> URL/https:/ URL/github.com/ <unk#a-/> </s>
+<s> <user> fixed in <unk##> </s>
+<s> <user> it 's unused in <unka> clustering but not feature <unka> which inherits the fit ... </s>
+<s> <user> oh right </s>
+<s> <user> ( and that 's why i do n't want <unka> warnings in the examples and tests ;) </s>
+<s> <user> <unka@> when i do a pull request , should it be against the master branch ? </s>
+<s> <user> it should be against master </s>
+<s> <user> thanks ! </s>

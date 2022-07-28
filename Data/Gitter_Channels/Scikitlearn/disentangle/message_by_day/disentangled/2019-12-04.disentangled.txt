@@ -1,0 +1,2 @@
+[01:24] <56e08c0d85d51f252ab801e4> Hi, semi random question but I can't find it in the docs - do y'all implement a consensus clustering evaluator that's not the bicluster one?
+--------------------------------------------------------------------------------------------------

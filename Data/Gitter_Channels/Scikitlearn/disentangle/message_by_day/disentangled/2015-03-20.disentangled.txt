@@ -1,0 +1,37 @@
+[03:26] <54c084dbdb8155e6700eed4c> @amueller ... you around? should i also update `y_numeric` for https://github.com/scikit-learn/scikit-learn/blob/master/sklearn/kernel_ridge.py#L144 and https://github.com/scikit-learn/scikit-learn/blob/master/sklearn/linear_model/stochastic_gradient.py#L868 ? Both are explicitly regressors. there's a couple others that use fit between classifiers and regressors too... gbm, adaboost, bagging... Not sure I want to touch them for 0.16 though, would be more involved than a +1/-1 change
+[03:27] <54c084dbdb8155e6700eed4c> presumably all of the above get through tests somehow though...
+--------------------------------------------------------------------------------------------------
+[04:14] <54c084dbdb8155e6700eed4c> nm. i copied these questions to the PR. you can comment there if you like, but i think those do not call the offending np function
+--------------------------------------------------------------------------------------------------
+[14:41] <54d4a1d6db8155e6700f853b> if the tests pass, I don't think we need to do anything
+--------------------------------------------------------------------------------------------------
+[15:45] <54d4a1d6db8155e6700f853b> thanks for all the merges @ogrisel :)
+[15:45] <54d4a1d6db8155e6700f853b> as a thank you, I pinged you in 4 other issues ^^
+--------------------------------------------------------------------------------------------------
+[15:51] <54c084dbdb8155e6700eed4c> K. Well #4422 should be good then. It passes all tests locally on 1.8.0
+[15:54] <54d4a1d6db8155e6700f853b> thanks, looks good and I marked for backport
+--------------------------------------------------------------------------------------------------
+[15:54] <54d4a1d6db8155e6700f853b> that will save us some eror reports on the new release!
+[15:57] <54c084dbdb8155e6700eed4c> excellent
+--------------------------------------------------------------------------------------------------
+[18:13] <5474d9eadb8155e6700d8178> Hey :) @ogrisel @amueller Could I take up "Multiple metric support for cross-validation and gridsearches" as my GSoC project...? Sorry for the delay in my proposal... Final semester takes up a lot of my time :| I chose that since so far no one has proposed for the same and also I am working on a related PR...
+--------------------------------------------------------------------------------------------------
+[18:16] <54d4a1d6db8155e6700f853b> yes, that would be good and could also tie into finishing up the cross-validation stuff you are working on
+[18:16] <54d4a1d6db8155e6700f853b> btw does anyone remember a PR adding more git rebase docs to the developer documentation?
+[18:16] <54d4a1d6db8155e6700f853b> I though someone did it but I can't find it any more
+[18:20] <54d4a1d6db8155e6700f853b> docs for the contributors on how to do git magic, like rebasing, not merging in master, and squashing
+[18:21] <54d4a1d6db8155e6700f853b> we were talking about that somewhere (ML? issues?) and I though someone made PR. but maybe that was just wishful thinking
+[18:21] <54d4a1d6db8155e6700f853b> apparently today is minor doc fix day. third push to master in a row.
+[20:05] <54d4a1d6db8155e6700f853b> trevorstephens: psource should give you the source in ipython
+--------------------------------------------------------------------------------------------------
+[18:17] <5474d9eadb8155e6700d8178> "git rebase docs" you mean contributor docs??
+--------------------------------------------------------------------------------------------------
+[18:52] <54d4a1d6db8155e6700f853b> @ogrisel in a recent PR you posted "only 202 PRs to go". Now it's 227. GSoC I guess ;) And that even with pretty aggressive merging...
+--------------------------------------------------------------------------------------------------
+[18:53] <5474d9eadb8155e6700d8178> (shamefully) Thats me :p Joel had posted an issue asking for a better contributor docs... I am still doing that :| btw I did update wiki with a neat tree outlining the structure of our improved contributors guide... https://github.com/scikit-learn/scikit-learn/wiki/Contributors-Guide
+--------------------------------------------------------------------------------------------------
+[19:26] <54c084dbdb8155e6700eed4c> Something I spend way too much time doing when writing new stuff, or figuring out what's happening in an existing method (and perhaps there's already an easy way that this dum dum doesn't know)... But would adding the actual source code file in which a given developer func is located to the sklearn.utils.x functions' docstrings be helpful?
+[19:28] <54c084dbdb8155e6700eed4c> (only for non-public functions in utils I think)
+--------------------------------------------------------------------------------------------------
+[20:08] <54c084dbdb8155e6700eed4c> that is magical... thx! but doesnt seem to tell the file it's in. :-/
+--------------------------------------------------------------------------------------------------

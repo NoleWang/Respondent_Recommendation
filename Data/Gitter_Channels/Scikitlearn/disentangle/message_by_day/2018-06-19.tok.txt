@@ -1,0 +1,2 @@
+<s> <user> <unka@> which line is the error on ? </s>
+<s> <user> apparently you have string in your data which you try to convert into numeric </s>

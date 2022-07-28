@@ -1,0 +1,25 @@
+[10:32] <53a5cf04a9176b500d1ced1a> Hi guys, how are you able to make imports like "from sklearn.some_module import some_func" from any python file. Have you changed sys.path from anywhere? Thanks
+[10:35] <53a5cf04a9176b500d1ced1a> Actually I was just browsing code.
+[10:35] <53a5cf04a9176b500d1ced1a> For example in this file
+[10:35] <53a5cf04a9176b500d1ced1a> https://github.com/scikit-learn/scikit-learn/blob/master/sklearn/covariance/tests/test_covariance.py
+[10:35] <53a5cf04a9176b500d1ced1a> We are able to do `from sklearn.utils.testing import something`
+[10:36] <53a5cf04a9176b500d1ced1a> I was wondering how were you able to do that? Is there any configuration for this?
+--------------------------------------------------------------------------------------------------
+[10:33] <56b80528e610378809c05a48> Can you `import sklearn`?
+--------------------------------------------------------------------------------------------------
+[10:38] <53a5cf04a9176b500d1ced1a> @yenchenlin1994 there?
+--------------------------------------------------------------------------------------------------
+[10:53] <5525b91815522ed4b3deb7d6> @SaurabhJha No, there isn't any. This is how the import system of python works.
+--------------------------------------------------------------------------------------------------
+[10:53] <56b80528e610378809c05a48> a [reference](http://stackoverflow.com/questions/448271/what-is-init-py-for)
+--------------------------------------------------------------------------------------------------
+[10:59] <56b80528e610378809c05a48> it shows how `__init.py__` works!
+[11:03] <53a5cf04a9176b500d1ced1a> yeah. cool
+--------------------------------------------------------------------------------------------------
+[11:04] <56b80528e610378809c05a48> Hope this answers your question :smile:
+[11:07] <53a5cf04a9176b500d1ced1a> yes. Thank you :)
+--------------------------------------------------------------------------------------------------
+[15:30] <56f2b66385d51f252aba60dd> Hi. Trying to use LogisticRegression with multi_class='multinomial'. Ending up with this error:  __init__() got an unexpected keyword argument 'multi_class'
+[15:30] <56f2b66385d51f252aba60dd> sklearn version is '0.15.2'
+[15:31] <56f2b66385d51f252aba60dd> Can anybody please help?
+--------------------------------------------------------------------------------------------------

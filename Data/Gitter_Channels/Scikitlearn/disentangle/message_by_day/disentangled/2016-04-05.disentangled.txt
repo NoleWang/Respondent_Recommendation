@@ -1,0 +1,38 @@
+[01:37] <553d32d715522ed4b3df8b92> @jnothman I am here now :)
+--------------------------------------------------------------------------------------------------
+[02:12] <54b2524adb8155e6700e8a8e> Okay. I think you're misinterpreting the numpy error's relevance to this situation.
+[02:13] <54b2524adb8155e6700e8a8e> But np.where(mask_matrix.max(axis=0))[0] might not quite work, because `mask_matrix.max(axis=0)` returns a 2d matrix.
+[02:14] <54b2524adb8155e6700e8a8e> `np.flatnonzero(mask_matrix.max(axis=0))` should fix that issue, though
+[02:16] <54b2524adb8155e6700e8a8e> I don't get at all how you could be getting an error on a *print* statement!
+[02:19] <54b2524adb8155e6700e8a8e> I hope you got that @maniteja123
+[02:19] <553d32d715522ed4b3df8b92> Yeah thanks, that was the reason for the ValueError
+[02:20] <553d32d715522ed4b3df8b92> But still didn't get the comment regarding the *print* statement :worried:
+--------------------------------------------------------------------------------------------------
+[02:22] <553d32d715522ed4b3df8b92> Also ``np.flatnonzero`` gives an error ``AttributeError: ravel not found``
+--------------------------------------------------------------------------------------------------
+[02:22] <54b2524adb8155e6700e8a8e> Oh. Okay. I'm not in the right frame of mind. This should be easy for me!
+[02:23] <54b2524adb8155e6700e8a8e> np.where(masked_matrix.max(axis=0).toarray().ravel())[0] should work!
+[02:23] <54b2524adb8155e6700e8a8e> or equivalently: `np.flatnonzero(masked_matrix.max(axis=0))`
+[02:23] <54b2524adb8155e6700e8a8e> or just
+[02:24] <54b2524adb8155e6700e8a8e> masked_matrix.nonzero()[1]
+[02:24] <54b2524adb8155e6700e8a8e> sorry,
+[02:24] <54b2524adb8155e6700e8a8e> `masked_matrix.max(axis=0).nonzero()[1]`
+--------------------------------------------------------------------------------------------------
+[02:30] <553d32d715522ed4b3df8b92> Thanks I got the idea now.  Will implement and get back to you.
+--------------------------------------------------------------------------------------------------
+[02:37] <553d32d715522ed4b3df8b92> ``` (0, 0)	4.0   (1, 0)	6.0   (2, 0)	7.0   (0, 1)	2.0   (1, 1)	3.66666666667   (2, 1)	6.0   (0, 2)	1.0   (1, 3)	1.0 ``` This is the transformed X for X = sp.csc_matrix([[-1, 2], [6, -1], [7, 6]]). I think it is working now as you expected.  Thanks for all the help.
+[02:37] <54b2524adb8155e6700e8a8e> Yay!
+[02:37] <54b2524adb8155e6700e8a8e> I hope you're able to go through the steps and understand how this is doing what we want too...
+[02:38] <553d32d715522ed4b3df8b92> Gotcha.. it is clearer now..
+[02:39] <553d32d715522ed4b3df8b92> just a question, when you call ``eliminate_zeros`` all the zero entries are removed. Doesn't that happen by default when the sparse matrix is built ?
+--------------------------------------------------------------------------------------------------
+[02:48] <553d32d715522ed4b3df8b92> Oh okay got it.. Building the matrix using the ``_with_data`` logic still populates the zeroes and needs to be manually removed to make it sparse.
+--------------------------------------------------------------------------------------------------
+[02:54] <553d32d715522ed4b3df8b92> I will add some tests for sparse matrices too. Is there anything else you want me to look into here ? I need to go to my college now. Won't have access to the internet. Sorry. Will reply by evening. Thanks again for all the help.
+--------------------------------------------------------------------------------------------------
+[14:00] <56a12a1de610378809bd831b> Hi all.  Is scikit-learn 0.17.1 the recommended version to use for new projects?  Thanks.
+--------------------------------------------------------------------------------------------------
+[15:23] <56c4f19ae610378809c1f8ae> @staffhorn generally, yes
+--------------------------------------------------------------------------------------------------
+[15:40] <56b80528e610378809c05a48> Anyone can help me review [this PR]? (https://github.com/scikit-learn/scikit-learn/pull/6593) :pray:
+--------------------------------------------------------------------------------------------------

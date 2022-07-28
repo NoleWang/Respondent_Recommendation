@@ -1,0 +1,12 @@
+[08:43] <564789be16b6c7089cbab8b7> K-plane regression appears to have 2 citations which makes it too early for scikit learn if I understand correctly (IIUC?)
+--------------------------------------------------------------------------------------------------
+[14:11] <54e07d6515522ed4b3dc0858> Not just 2 citations. 2 citations since 2013...
+--------------------------------------------------------------------------------------------------
+[14:23] <54e07d6515522ed4b3dc0858> Just curious, @karandesai-96, why are you interested in this method?
+--------------------------------------------------------------------------------------------------
+[14:39] <56a34c16e610378809bdc988> It has better results than mine, on a public data set I used once.
+[14:40] <56a34c16e610378809bdc988> Yeah, it seems too early for sklearn
+[14:40] <56a34c16e610378809bdc988> ^^ This was the only reason why I was curious to know how it yielded better results... xD
+--------------------------------------------------------------------------------------------------
+[17:19] <564789be16b6c7089cbab8b7> @karandesai-96  what works well is if you make a separate scikit learn compatible implementation and it can be added to http://scikit-learn.org/stable/related_projects.html potentially
+--------------------------------------------------------------------------------------------------

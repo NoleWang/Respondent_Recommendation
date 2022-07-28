@@ -1,0 +1,9 @@
+[20:34] <5c9a8be3d73408ce4fbbe82f> Does logistic regression support pandas dataframe as input for the X matrix?  https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html#sklearn.linear_model.LogisticRegression.fit  Does this then allow us to make use of the new attribute name: `feature_names_in`?
+[20:44] <55d21ee30fc9f982beadabb8> you can pass a daframe
+[20:44] <55d21ee30fc9f982beadabb8> currently `feature_names_in`would be useless in classifier and regressor
+[20:45] <55d21ee30fc9f982beadabb8> because we will convert into a numpy array to make the optimisation
+[20:45] <55d21ee30fc9f982beadabb8> the idea for the moment is to propagate feature names in the preprocessing steps
+[20:45] <55d21ee30fc9f982beadabb8> such that you for instance know the name of the columns of the numpy array that will be passed to the logistic regression (and potentially build the dataframe)
+[20:47] <55d21ee30fc9f982beadabb8> The work that could be done for classifier and regressor is to make that the fitted attribute could use the feature names to decorate themselves
+[20:48] <55d21ee30fc9f982beadabb8> but it can be still be easily done by getting the `feature_names_in` from the last preprocessing stage and create for instance a pandas series using the coefficients
+[20:48] <55d21ee30fc9f982beadabb8> but for the moment we try that we can move the feature names in the preprocessing

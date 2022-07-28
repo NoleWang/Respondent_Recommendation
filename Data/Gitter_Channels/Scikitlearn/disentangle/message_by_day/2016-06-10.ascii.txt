@@ -1,0 +1,4 @@
+[23:55] <56333d0d16b6c7089cb8d5c7> hello, I had a quick question.
+[23:56] <56333d0d16b6c7089cb8d5c7> I wanted to take up the issue https://github.com/scikit-learn/scikit-learn/issues/6867
+[23:56] <56333d0d16b6c7089cb8d5c7> I could some one please share the link to new gaussian process.
+[23:57] <56333d0d16b6c7089cb8d5c7> So the user guide is http://scikit-learn.org/stable/modules/gaussian_process.html

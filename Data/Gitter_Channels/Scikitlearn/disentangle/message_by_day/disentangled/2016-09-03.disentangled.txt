@@ -1,0 +1,8 @@
+[21:03] <53fdba59163965c9bc200ba2> Hi guys. I'd like to learn how to use machine learn as a black box. Do you recommend a book or course? Thanks
+--------------------------------------------------------------------------------------------------
+[22:44] <57b3fd8640f3a6eec05fe0e8> Not sure what you mean by "black box" here.
+[22:45] <57b3fd8640f3a6eec05fe0e8> https://gist.github.com/off99555/b6190df237562aa6e8c922c485dc7ad0
+[22:45] <57b3fd8640f3a6eec05fe0e8> Here is some machine learning resources in general, if that helps.
+[22:45] <57b3fd8640f3a6eec05fe0e8> Sorry for that link expanding
+[22:45] <57b3fd8640f3a6eec05fe0e8> now sure how to make it not do that
+--------------------------------------------------------------------------------------------------

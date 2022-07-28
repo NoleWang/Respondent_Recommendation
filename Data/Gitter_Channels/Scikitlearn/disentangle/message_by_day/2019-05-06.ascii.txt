@@ -1,0 +1,1 @@
+[07:21] <589b9e0fd73408ce4f490ba4> @aarck you could try to see if that dataset is uploaded on OpenML in which case it would be `datasets.load_openml`. If not, it's up to you to write a loader for this dataset (or upload it to OpenML).

@@ -1,0 +1,15 @@
+<s> <user> hi there </s>
+<s> <user> im using <unka> to train a visual object detection pipeline with a few <unka> transformers , <unka> and svm ... since i acquired my larger dataset , <unka> explodes in a very strange way <unconvertable > deep in python : URL/http:/ <unka./> <unk#a/?> <unconvertable > and i cant quite make any sense of that :( ... would anyone happen to have an idea in which direction i could search ? </s>
+<s> <user> <unka@> try with <unk#a=_> that should make it easier to debug </s>
+<s> <user> with single threading it doesnt happen at all :( </s>
+<s> <user> does all of it run through ? it is maybe one specific parameter setting that does that </s>
+<s> <user> yes , it looks like all of it runs </s>
+<s> <user> trying to dig into the delayed and <unka> pool with <unka> now oo but i just dont see where this <unka-> even comes from or what its used for oo </s>
+<s> <user> <unka@> thanks for that ml link ! it was really useful !! </s>
+<s> <user> til : do n't try to make a learning curve example with a <unka-> model </s>
+<s> <user> why do you say so ? :) </s>
+<s> <user> because the training error does n't go up with the number of samples </s>
+<s> <user> oh ! til ^ :p </s>
+<s> <user> hey andy , earlier you had given me the feedback for my 1st <unka> ! sorry for the delay in response ... > why do you use alpha when plotting points ? that makes it look a little faded and better ... i think this was a suggestion by someone when i was working on <unka> plot example ;) do you feel i should remove that ? > i feel this sentence is unclear : " even when the model is optimized with the <unka> of maximizing the score based upon the test set , there is still a chance of <unka> as the information about the test set can leak into the model and hence the model could be optimized for the test set alone ." it would be more explicit to say the information leaks via the selection of <unka> . have updated so ! thanks ! > <unka-> does not entirely overcome this . <unka> to <unka-> is harder than <unka> to a single test set , but it is still possible , which is why people do nested <unka-> . like vlad said a few chats below yours , that was what i was getting at ... i have <unka> it to make it clear ! > <unka(._> , <unka_> ) is also not great btw . you can just use <unka.> fixed :) > talking about <unk#a=> for the svm is also a bit weird . this is an odd way that we used to select the default , which is 1 . <unka_> , i think . i 've fixed it to 0.5 ... which is ( 1 <unka_> ) i am now working on the 2nd blog post ( nested cv ) :) </s>
+<s> <user> <unka@> <unka@> i 've also started a ml thread for my gsoc project to interact more ! :) </s>
+<s> <user> URL/http:/ URL/sourceforge.net/ <unk#a-/> </s>

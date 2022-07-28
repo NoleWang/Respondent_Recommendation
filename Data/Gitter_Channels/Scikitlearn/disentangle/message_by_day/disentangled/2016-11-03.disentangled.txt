@@ -1,0 +1,12 @@
+[12:22] <5770c02dc2f0db084a2017bd> Hey guys. Can someone help with this error I get
+[12:22] <5770c02dc2f0db084a2017bd>  when I do : `>>> dataset = fetch_mldata('MNIST original'` any idea why I get this error: OSError: could not read bytes the .mat file downloaded, it has 1498112 lines
+[12:22] <5770c02dc2f0db084a2017bd> The error itself is : `OSError: could not read bytes`
+[12:29] <5770c02dc2f0db084a2017bd> I tried : ```dataset = fetch_mldata('MNIST original', data_home='/Users/myname/Virtualenv/virt1/lib/python3.5/site-packages/sklearn/datasets/')``` aswell
+--------------------------------------------------------------------------------------------------
+[17:16] <56c4f19ae610378809c1f8ae> the cached data might be corrupted
+[17:16] <56c4f19ae610378809c1f8ae> try removing downloaded files and trying again
+--------------------------------------------------------------------------------------------------
+[19:03] <57475b90c43b8c601975254f> Are Pandas dataframes supported for use in scikit-neuralnetwork?  It appears so, via the Lasagne implementation according to https://recordnotfound.com/scikit-neuralnetwork-aigamedev-8422   but I keep getting errors when using a Pandas dataframe in sknn.
+--------------------------------------------------------------------------------------------------
+[23:05] <56c4f19ae610378809c1f8ae> @cpoptic this room is for scikit-learn, and the developers of scikit-learn arent involved in scikit-neuralnetwork. youd probably be better off asking your question in the scikit-neuralnetwork gitter (if there is one) or raising an issue on their github repo / posting to stackoverflow
+--------------------------------------------------------------------------------------------------

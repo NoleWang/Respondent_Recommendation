@@ -1,0 +1,7 @@
+[08:43] <5571fe1015522ed4b3e17d90> @mirca @thechargedneutron aboug Google Summer of Code, the consensus amongst the core developers seems to be that we need all of the three conditions: a good student, a good focussed project with accomplishable goals that will produce something within the time constraints, and one mentor (ideally two mentors actually) who has enough spare bandwidth during this time. It just was not the case last year. It's hard to tell what will happen next year for sure. Potentially interested GSoC students are more than encouraged to get involved in scikit-learn so they get to know the project and we get to know them.
+--------------------------------------------------------------------------------------------------
+[08:44] <564789be16b6c7089cbab8b7> @lesteve  maybe add something to the scikit front page about this?
+[08:44] <564789be16b6c7089cbab8b7> It's always good to advertise :)
+--------------------------------------------------------------------------------------------------
+[08:48] <58b47262d73408ce4f4d4113> @lesteve  Thanks for the information. I am continuously trying to understand the codebase by solving bugs. It's more comfortable for me now. Thanks :)
+--------------------------------------------------------------------------------------------------

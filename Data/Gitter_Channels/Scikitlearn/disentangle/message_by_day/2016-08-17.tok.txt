@@ -1,0 +1,37 @@
+<s> <user> just out of curiousity , am i supposed to pour the whole dataset to <unka.`> ? </s>
+<s> <user> my dataset has roughly 15m ( * 500 features ) in total , and i am testing with just 2m of them , i wanted to throw them all into <unka.`> but kept getting <unka-> warning ( obviously ) </s>
+<s> <user> can you pass <unk#a.> at a time 4 times ? </s>
+<s> <user> i mean if you are being limited by the memory .. probably make data set smaller ? :) </s>
+<s> <user> <unk#a@> depends on how you are trying to relate those 2 . </s>
+<s> <user> <unk#a@> a common thing people do to get around this is to just get more ram ;) might be worth looking into using an aws machine or something for a little bit . passing <unk#a.> 4 times isnt really theoretically sound , because then its difficult to discern which model is actually the best because the results might be affected by the fact that the model only sees part of the dataset . </s>
+<s> <user> <unka-@> ahh i see , but is a model with <unk#a.> better then a model with <unk#a.> * 4 model ? there might be a chance for certain training set , the second is better ? </s>
+<s> <user> i mean , i think i see what you mean ( error from each <unk#a.> being fed adds up ( maybe <unka> )). </s>
+<s> <user> <unk#a@> it might be worth seeing how diverse is your data , perhaps you can neatly drop a certain percentage of it without <unka> the model too much . </s>
+<s> <user> sure , but the point of using <unka> is to pick the best model for an unseen test set , is it not ? <unconvertable > more data is better <unconvertable > is a common <unka> that is generally true . but lets say you have 1.5 million <unka> samples ( for some reason ); if you were to luckily select just the .5 million samples that were clean and train on them , youd do well . by selecting a subset of the data , youre inherently <unka> the model a bit . </s>
+<s> <user> training on 4 partitions of a set and picking the one that does best on the most out of 4 ! = training on the whole set and picking the best one </s>
+<s> <user> but that assumes there is an easy way to sort through the 2m to narrow it down to <unk#a.> . in which case , what the 2 of you recommended sounds good . </s>
+<s> <user> i did n't mean have 4 separate trained instance .. hmm , but it any case , it 's not possibly to feed .5 at a time , does it 's stuff , frees some memory and you add to it ? is what i was trying to ask . </s>
+<s> <user> ah sorry i misunderstood then . yeah , thats called <unconvertable > warm start . some models in <unka-> implement it , but im not sure if its <unka> compatible ... </s>
+<s> <user> ahh , i am very new to all of this so questions make more sense in my head than when i type . ^^ </s>
+<s> <user> yeah , doesnt seem like <unka> can use warm start </s>
+<s> <user> is there any other keyword i can search for ? " warm start <unka> " is n't giving me anything that explains concepts . :s </s>
+<s> <user> can <unka> implement <unka_> for <unka> that support it ? </s>
+<s> <user> well warm start is only implemented for models where it makes theoretical sense to do it . like in sgd <unka> , warm start lets you start at a previous solution instead of randomly initializing . </s>
+<s> <user> ahh .. </s>
+<s> <user> hmm i dont think so <unka@> but im not 100% sure </s>
+<s> <user> it 's definitely not possible now . i 'm not familiar with <unka> 's code at all , but looks like a call to <unka`> may be replaced with a call to <unka_`> , when it is supported . </s>
+<s> <user> thats good to know ! <unka_> is something like a warm start then ? </s>
+<s> <user> this is a bit offtopic but : URL/http:/ <unka./> <unk#a-/> </s>
+<s> <user> wondering if there were non aws recommendation . </s>
+<s> <user> <unka_`> feeds the <unka> with partial data <unka> , having it only process portions of all available data at a time . there are some considerations there ( how to split the partitions , sizes , the order in which data is fed ) and <unka> does n't support that for <unka> as far as i can tell . </s>
+<s> <user> ahh ! thank you kindly for the detailed explanations ! </s>
+<s> <user> <unka-@> hello ! you gave me earlier ( few days ago ) short code snippet to count leaf nodes . but it seems not to work and i do n't know why . the value for <unka_`> variable seems to be even one more than <unka._`> . </s>
+<s> <user> i mentioned after the snippet to remove one of the loops </s>
+<s> <user> so if you take out one of the for loops , that should do the trick </s>
+<s> <user> <unk`> in [ 1 ]: from <unka.> import <unka_> in [ 2 ]: from <unka.> import <unka> in [ 3 ]: boston = <unka(_> ) in [ 4 ]: tree = <unka(> ) in [ 5 ]: <unka(.> , <unka.> ) in [ 6 ]: <unka_> = <unka._> in [ 7 ]: <unka_> = <unka._> in [ 8 ]: <unka_> = <unka._> in [ 9 ]: <unka_> = 0 in [ 10 ]: for i in <unka_> : ... : if i == -1 : ... : <unka_> += 1 ... : <unk`> </s>
+<s> <user> because <unka_> is an array that maps each node to another node that is its left child </s>
+<s> <user> but if it has no left child , its marked as -1 </s>
+<s> <user> a node cannot have a left child and no right child or no right child and a left <unka> , so <unka> through one of the children arrays is enough </s>
+<s> <user> ok , thanks :) </s>
+<s> <user> so , my tree has <unk#a/~> leaf nodes :) that 's large tree </s>
+<s> <user> URL/http:/ <unka-./> <unka./_> did n't realize you can do crazy stuff like this .. :o </s>

@@ -1,0 +1,8 @@
+<s> <user> <unka@> i 'm curious , if you were to store it in a db , what would you want to do with the record </s>
+<s> <user> <unka@> you could write the <unka> file to disk , get a hash , and then store the hash ? that might be a bit too much space for your application , though . </s>
+<s> <user> <unka-@> is that what you do ? </s>
+<s> <user> no , i dont work with <unka-> and databases . im just <unka> a possible solution to his answer </s>
+<s> <user> having issues with <unka> <unka> </s>
+<s> <user> i have two services in <unka> communicating over <unka> tcp . how can i <unka> them . i am as of now getting an error </s>
+<s> <user> can anyone help me on this ? </s>
+<s> <user> i dont think this is the proper place to ask a question about <unka> , this <unka> room is for <unka-> </s>

@@ -1,0 +1,38 @@
+<s> <user> yes , even i am thinking about it . also , i will try to implement ths on certain public <unka> i know . i 'll see if it gives consistent results . </s>
+<s> <user> it will consume sometime though . </s>
+<s> <user> hey all ! </s>
+<s> <user> just started thinking about building up machine learning for a problem i 'm facing and hopefully <unka-> would help solve it </s>
+<s> <user> is this the best place to ask for it ? </s>
+<s> <user> does anyone know any good software for clustering big graphs ? it seems <unka> learn does n't have <unka> block model support yet sadly </s>
+<s> <user> what 's happening with <unka> ? </s>
+<s> <user> <unka@> ? </s>
+<s> <user> URL/https:/ <unka./> <unk#a-./> </s>
+<s> <user> <unka@> you mentioned a time series cv object in the mailing list . i would love to see that too </s>
+<s> <user> depending on how you <unka> , it 's pretty easy to write </s>
+<s> <user> if you assume <unka> samples , you can just do a slight modification of <unka> </s>
+<s> <user> if you want to use a time index , it becomes way trickier ( as we need to get a time series object in ) </s>
+<s> <user> to be honest i am not even 100% sure of the best way to do cv on time series data . if you sample randomly from the series you are likely ruin your feature vectors . what is the right approach ? </s>
+<s> <user> oh actually i think i see </s>
+<s> <user> what do you mean by using a time index ? </s>
+<s> <user> lets say each <unka> is a day . and you want to use 5 fold on 100 days </s>
+<s> <user> then training set 1 is days <unk#-> , test set 1 is <unk#-> </s>
+<s> <user> training set 2 is <unk#-> , test set 2 is <unk#-> etc </s>
+<s> <user> but say for each day you have some arbitrary number of <unka> . then you need to know which day a <unka> belongs to . </s>
+<s> <user> actually , it 's not that hard , it just needs a " label " attribute ... </s>
+<s> <user> see URL/http:/ <unka./> <unk#a-/> for example </s>
+<s> <user> thanks </s>
+<s> <user> so in short .. it would be great :) </s>
+<s> <user> i am not sure what you call it but there is also event data which is slightly different from time series data . that is you have a sequence of times when events happen as opposed to labels at every second , say . </s>
+<s> <user> is there any support for that sort of data ? </s>
+<s> <user> that is what i mean </s>
+<s> <user> oh i see ! </s>
+<s> <user> with " having an arbitrary number of <unka> for every day " </s>
+<s> <user> ah ok ... so i am very interested in that </s>
+<s> <user> then you would need to specify a label </s>
+<s> <user> although how exactly you build your feature vectors is also less obvious i think </s>
+<s> <user> people who do machine learning on <unka> firing data are particularly interested in this </s>
+<s> <user> the feature vector is a different problem ;) </s>
+<s> <user> i think most people that do time series analysis are not necessarily in the <unka> ;) </s>
+<s> <user> ah :) </s>
+<s> <user> then i am the odd one out :) </s>
+<s> <user> on a different note , when i pip install <unka-> , are all the c and fortran dependencies compiled from source or are any binaries used ? </s>

@@ -1,0 +1,22 @@
+<s> <user> hello ! i am <unka> <unka> wanting to work with <unka> package and as it involves ml stuff i am intrested in it so any one please give me location to start and also looking forward to contribute in <unk#a> any guidance will be really helpful </s>
+<s> <user> hello ! i am new with this stuff , i intend extracting features from <unka-> images and then further do analysis using decision tree algorithm but it does n't seem <unka.> will appreciate any guidance . below is a screenshot of my work . thank you </s>
+<s> <user> <unka%> inline from matplotlib import <unka> as <unka> import numpy as np from <unka> import io count = 0 images = <unka'(*-./_> ) <unka_> = <unka(.> ) while count < <unka(> ): <unka_> = ( <unka[_> ]) <unka_> <unka(.=[> ]) <unka(_> ) <unka(_> ) count = count + 1 </s>
+<s> <user> <unka%> inline from matplotlib import <unka> as <unka> import numpy as np from <unka> import io count = 0 images = <unka'(*-./_> ) <unka_> = <unka(.> ) while count < <unka(> ): <unka_> = ( <unka[_> ]) <unka_> <unka(.=[> ]) <unka(_> ) <unka(_> ) count = count + 1 from <unka.> import <unka> from <unka._> import <unka_> from <unka.> import <unka_> from <unka.> import <unka_> features = <unka_> <unka> = <unka_> <unka,> = <unka(_> , <unka> , <unka_> = 0.2 ) model = <unka(> ) <unka> = <unka(,.> ) <unka> = <unka(.> ) <unka(> ) <unka#(,> ) <unka#(,_> )) </s>
+<s> <user> does n't seem to be working as in you get errors ? if so what ? or do you mean the code words but it 's not doing wwhat you want it to do ? </s>
+<s> <user> i get an error when i run the algorithm ... </s>
+<s> <user> did you paste the error as well ? </s>
+<s> <user> this is the error am getting <unk-> <unka> traceback ( most recent call last ) <unk#a-<> > in <module > ( ) 5 6 --- -> 7 features = <unka_> 8 9 <unka> = <unka_> <unka> : name <unka'_> is not defined </s>
+<s> <user> is there any line of code that can help extract features from these <unka(-> ) so i can further do analysis using decision tree <unka._> <unka.?@_> </s>
+<s> <user> hmm , not sure . i 'll let someone who know better answer you . but looks like it 's just <unka_> variable being used without being declared ? is <unka_> supposed to be an array or string or something ? <unka_> = [ ] or <unka_> = '' would be the needed step . </s>
+<s> <user> thanks a lot </s>
+<s> <user> stable docs down , is this intended ? </s>
+<s> <user> <unka@> <unka@> </s>
+<s> <user> <unka-@> typo , sorry about that ! </s>
+<s> <user> nvm , just saw URL/https:/ URL/github.com/ <unk#a-./> </s>
+<s> <user> ah ok </s>
+<s> <user> thanks <unka:> : </s>
+<s> <user> should now be up as 0.18 :) </s>
+<s> <user> <unka:> : yay ! </s>
+<s> <user> hello ! is there any simple way of extracting features from fifty gray scale images for further analysis ? few lines of code would be much <unka.> </s>
+<s> <user> i tried using numerical matrix of each grayscale image as a feature for further analysis but it does n't working . any guidance would <unka.> </s>
+<s> <user> have you looked at something like [ the <unka> <unka(-./:]_> ) </s>

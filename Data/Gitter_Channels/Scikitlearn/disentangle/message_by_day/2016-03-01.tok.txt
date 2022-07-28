@@ -1,0 +1,31 @@
+<s> <user> guys , take a look at URL/http:/ <unka-./> <unka-/> </s>
+<s> <user> right now the because of the code and website being hosted in the same root folder , the source files are available on that url </s>
+<s> <user> for example , URL/http:/ <unka-./> <unka-./> is that a problem ? </s>
+<s> <user> i registered <unka-.> and redirected it to the main site haha </s>
+<s> <user> [ URL/http:/ <unka(-./:]> <unka-./> ) </s>
+<s> <user> thats sweet ! you should ping <unka@> </s>
+<s> <user> on another note , does anyone know whether its possible to do multi-line links in markdown ? if not , maybe we can get a <unka-> link <unka> to make the <unka/> template more <unka> . </s>
+<s> <user> short things like [ URL/http:/ <unka./> <unka(./:]> ) </s>
+<s> <user> did you register <unka.> too ? :p </s>
+<s> <user> haha yeah <unka.> domains are free and quite applicable to a variety of projects i feel haha </s>
+<s> <user> smart move haha </s>
+<s> <user> was just trying to see if there was a way to cut down clutter in docs , so the idea of link shortening came up ( e.g . how google does <unka.> ) </s>
+<s> <user> really ? i am getting one then ;) </s>
+<s> <user> <unka-@> thanks for the nice idea :d </s>
+<s> <user> np = ) </s>
+<s> <user> aw , just got an email that for some reason [ <unka(.]> ) was already registered and that i dont have the rights to it . oh well , [ <unka(-.]> ) will do for link shortening . </s>
+<s> <user> in that vein , should we move the discussion about the issue pr template to URL/https:/ URL/github.com/ <unk#a-/> or just create a new issue ? </s>
+<s> <user> arrrgh some advertising company purchased <unka.> . it would have been cool to have it redirect to our page too ! </s>
+<s> <user> why is it important to have different domains ? </s>
+<s> <user> have you taken a look at the pr issue template ? </s>
+<s> <user> a lot of the links in there are very long , and since you ca n't create multi-line links in markdown it greatly <unka> readability </s>
+<s> <user> so i was thinking maybe use the <unka.> domain for link shortening internally </s>
+<s> <user> basically : it 's not important , just an idea haha </s>
+<s> <user> <unka@> i thought it would be cool to have a <unka.> domain :p btw <unka-@> there was a thread claiming those free <unka.> providers as scam . be careful ! </s>
+<s> <user> as for the link <unka> we should implement it at our main site . </s>
+<s> <user> yeah , thatd be great . i didnt know we had that sort of functionality </s>
+<s> <user> im <unka> up a new , more <unka-> version of the templates right now </s>
+<s> <user> sounds great ! </s>
+<s> <user> if only there was a way to default to preview mode or something ... but i feel like that would get cumbersome after awhile once youve learned the guidelines template . raw output is hard to format nicely . </s>
+<s> <user> in the end i 'm guessing github will realize they just need to improve their interface rather than providing these hacky workarounds </s>
+<s> <user> haha that would be ideal . made a pr at URL/https:/ URL/github.com/ <unk#a-/> </s>

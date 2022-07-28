@@ -1,0 +1,5 @@
+[03:15] <5944c1e5d73408ce4f67f652> Yes, I'm now going through the repo first. I'll then go for the issues. Thanks for the reply!
+[15:57] <54d4a1d6db8155e6700f853b> I wouldn't try going to the repo, it's a lot. I would start with the contributor docs
+[15:58] <54d4a1d6db8155e6700f853b> even understanding how we set up and run tests would probably take me a week to understand
+[21:21] <564789be16b6c7089cbab8b7> is there something in scikit learn for 4000 dimension regression where I know I only one or two of the coefficients to be non-zero?
+[21:26] <564789be16b6c7089cbab8b7> something like forward stepwise regression?

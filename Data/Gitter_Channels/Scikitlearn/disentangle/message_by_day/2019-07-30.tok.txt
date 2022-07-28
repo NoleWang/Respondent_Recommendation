@@ -1,0 +1,4 @@
+<s> <user> thanks <unka@> </s>
+<s> <user> please the best c# tutorial online </s>
+<s> <user> give me ideas </s>
+<s> <user> <unka@> since you're not the first one asking this here : what gave you the idea of asking about c# in a channel about a python library for machine learning ? </s>

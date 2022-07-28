@@ -1,0 +1,2 @@
+<s> <user> hey guys ! new here . got a question : why <unka_> computing is n't done in parallel like the predict method from <unka> ? </s>
+<s> <user> hi there , i 'm new here ... quick question , i 'm recently using <unka> to manage model lifecycle ... i 've used it with some <unka-> models and tensorflow . any opinion about <unka> framework ? just wanted to know other experiences </s>

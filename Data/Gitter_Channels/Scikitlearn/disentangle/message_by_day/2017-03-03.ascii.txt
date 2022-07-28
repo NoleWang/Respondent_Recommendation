@@ -1,0 +1,6 @@
+[00:31] <5633b77d16b6c7089cb8e50e> @glemaitre It was a problem with my predict code. I was not imputing values for a feature that doesn't matter in the non sample weighted case, but apparently does with the weighted samples. I've learned my lesson on using the same processing on both sides. =) 
+[08:47] <55d21ee30fc9f982beadabb8> @ccarter-cs :+1: 
+[15:03] <57e4ea1140f3a6eec066d9b4> Hey is sklearn not in GSOC 2017?
+[15:17] <5634e15116b6c7089cb8f9f2> Please all, what DIY level apps can I build with scikit-learn? So far I feel as if I have answers but no problems!
+[21:52] <54d4a1d6db8155e6700f853b> @SatyaPrakashDwibedi it is if we find good students ;)
+[21:52] <54d4a1d6db8155e6700f853b> @NelleV have you opened an issue on the f_regression issue we discussed? Could be good for the sprint tomorrow.

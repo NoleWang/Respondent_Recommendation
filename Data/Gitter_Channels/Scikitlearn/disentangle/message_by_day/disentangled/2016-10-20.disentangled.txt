@@ -1,0 +1,3 @@
+[02:03] <553d32d715522ed4b3df8b92> Is partial_fit suitable for your purpose ?
+[02:07] <553d32d715522ed4b3df8b92> Though not all estimators support it. [This](http://scikit-learn.org/stable/modules/scaling_strategies.html#incremental-learning) might be relevant. Hope I am understanding your use case right.
+--------------------------------------------------------------------------------------------------

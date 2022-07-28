@@ -1,0 +1,33 @@
+<s> <user> <unka@> thanks for the reply !! </s>
+<s> <user> <module <unka'.> from <unk#a'-./_> > </s>
+<s> <user> this is the output that i got on trying out what you told me ! </s>
+<s> <user> i 've recently upgraded my <unka> version and prior to which i had installed 0.16 version whose source code i have been referring to . </s>
+<s> <user> i 'll check out once again . </s>
+<s> <user> i used pip install -u <unka-> and it says the requirement is up to date . </s>
+<s> <user> hi anyone up here </s>
+<s> <user> yes ? </s>
+<s> <user> URL/https:/ URL/github.com/ <unk#a-/> </s>
+<s> <user> i would like to implement this if it is not already implemented ( i couldnt find this in <unka> library ) </s>
+<s> <user> the closest was <unka> embedding </s>
+<s> <user> i havent explained the idea of the algorithm in the issue but i can do that </s>
+<s> <user> and the applications of the same too , as in recent years its <unka> some popularity </s>
+<s> <user> how popular is it ? </s>
+<s> <user> also what kind of problems does it solve ? you may want to include the answer to the prev questions in your issue :) </s>
+<s> <user> i have n't looked into it exactly ... will do so and let you know my view :) </s>
+<s> <user> as already mentioned some very popular uses are web graph <unka> , page ranking algorithms </s>
+<s> <user> let me include some application based papers in the area </s>
+<s> <user> URL/http:/ <unka./> <unka./_~> </s>
+<s> <user> URL/http:/ <unka./> <unk#a./_> </s>
+<s> <user> i 'll let you know my views after i look into it . you may have to wait for core devs to respond to you in that issue before you can proceed . you can also make a detailed email to our mailing list linking your issue to attract more comments . </s>
+<s> <user> fot the other part of the questions :: it is used in a <unka-> setup and can be used at problems requiring local and global scales of information using some sort of label transfer but not limited to this </s>
+<s> <user> could you also add these questions and answers to the issue ? ( so that this discussion could reach a larger audience ) </s>
+<s> <user> hey <unka> , </s>
+<s> <user> i would like to know if someone has a parallel implementation of <unka> .. or knows how to use it on top of apache spark .. thanks in advance </s>
+<s> <user> i may be wrong but is n't our implementation parallel ? </s>
+<s> <user> no , the base one in <unka> learn is serial one .. i am trying now to use <unka> to <unka> it , but its really difficult as i am not aware of <unka> learn , and i dont have plenty of time :) .. would appreciate if someone can help </s>
+<s> <user> afaik <unka> in <unka-> is mostly done using <unka> ... maybe you should take a look at that ? </s>
+<s> <user> do u mean , i should try to edit the <unka> implementation to utilize <unka> , or u already using <unka> ? </s>
+<s> <user> i will do that </s>
+<s> <user> <unka@> .. if u mean <unka> , would u please let me know then ? </s>
+<s> <user> <unka@> i am sorry i was not reffering to <unka> </s>
+<s> <user> no problem </s>

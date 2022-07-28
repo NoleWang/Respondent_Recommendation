@@ -1,0 +1,12 @@
+<s> <user> <unka@> i am asking since you had raised the question on whether we had common tests for cv ... could i add " raise an issue to add common tests for cv <unka> " as a todo to be done after <unk#a+`> ? </s>
+<s> <user> i do n't think it 's important at the moment </s>
+<s> <user> ok ! thanks ! </s>
+<s> <user> hi , it looks like we do n't have old faithful data set , right ? </s>
+<s> <user> <unk#a@> no we do n't . as it 's very small i think we could include a copy in the <unka.`> folder as we do for iris ( just check that the copyright allow that but i am pretty sure it does ). </s>
+<s> <user> ok . i will check it out . i would like to repeat some experiments described on <unka> . <unka@> </s>
+<s> <user> would be a good sanity check indeed . </s>
+<s> <user> if you include the old faithful dataset , please do so in a separate pr and <unka> your <unka> pr on top of it to be able to merge the dataset pr first ( without waiting for the end of the <unka> work ) while still being able to use it in your <unka> examples . </s>
+<s> <user> got it . </s>
+<s> <user> <unka@> <unka@> <unka@> if you have a few mins to spare ... could you take a look at <unk##> and let me know if it looks okay so i can proceed with updating documentation and fixing examples in parallel with the main review ? in particular please let me know if you feel <unka_`> <unka_`> and the new <unka> of <unka_`> look okay ? </s>
+<s> <user> there is a copy of data in r , which has gpl license . it definitely does n't work . the original data is publish on <unka> . terms and conditions of use of <unka> prohibits the commercial use , but which is permitted under <unka-> 's <unka-> . so i do n't think we could add <unka-> data . <unka@> </s>
+<s> <user> [ terms and conditions of use of <unka(./:]> ) </s>

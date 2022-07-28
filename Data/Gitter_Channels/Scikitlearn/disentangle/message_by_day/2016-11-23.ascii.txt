@@ -1,0 +1,7 @@
+[00:14] <574c6042c43b8c601975bcdb> Hi guys. I'm a beginning undergrad researcher in data science and trying to run scikits svm model on 500k models.
+[00:14] <574c6042c43b8c601975bcdb> rows*
+[00:14] <574c6042c43b8c601975bcdb> It's taking 5 terms of life to complete. Can someone help point me in the right direction for how I should apporoach this?
+[01:58] <54dea33315522ed4b3dc0092> @Schachte Try using linearSVM instead of SVC, you can see in the documentation the following  The implementation is based on libsvm. The fit time complexity is more than quadratic with the number of samples which makes it hard to scale to dataset with more than a couple of 10000 samples. 
+[03:20] <574c6042c43b8c601975bcdb> hi @firetix , thanks a lot. I ran this and it completes very quickly now. Can you explain how the testing works with the clf-score?
+[03:20] <574c6042c43b8c601975bcdb> @firetix does it automatically just split the input data into test/train for me?
+[18:41] <54dea33315522ed4b3dc0092> @Schachte it works the same way as an SVC you will have to do the split yourself and then call .score or run f1 evaluation 

@@ -1,0 +1,154 @@
+<s> <user> can anyone explain to me how to implement affinity <unka> in <unka/> ? URL/http:/ <unka./> <unk#a-./> </s>
+<s> <user> i do n't really understand the paper </s>
+<s> <user> and the english is pretty much well ... chinese :p </s>
+<s> <user> <unka-> is not a community of mapreduce users so i doubt you will get good feedback on here . you might rather ask on a discussion forum with spark or <unka> users . i am not sure that using the hadoop <unka> api is a good thing for <unka> machine learning anyway . it 's probably better to build upon higher level parallel construct like <unka> or the spark api in general . </s>
+<s> <user> the thing is that i have a huge dataset and i do n't want to use <unka-> since that means i have to guess the optimal number of clusters each time </s>
+<s> <user> also if you still want to ask questions about the paper on a discussion forum , you should ask specific questions , otherwise you probably wo n't get any interesting answer . </s>
+<s> <user> i have no idea where to start </s>
+<s> <user> how do i adapt the existing algorithm to be parallel ? </s>
+<s> <user> use <unka> <unka> on a subset with <unk#a(=_> ) and <unk#a(=_> ) </s>
+<s> <user> i 'm not much of an ml guy but i 'm trying to learn </s>
+<s> <user> if you are trying to learn , start with smaller <unka> ( e.g . a random subset ) where algo run fast . to learn stuff you will have to fail many times to learn from your mistakes . if each failures take days of cluster programming and execution you will learn slowly :) by working on a subset that fits in memory on your laptop you will learn much faster . </s>
+<s> <user> but working on a subset of the data is meaningless </s>
+<s> <user> i ca n't even work on 10,000 nodes </s>
+<s> <user> also your clustering will fail not because of the algorithm but because of the way you extract features and fail to normalize them , see for instance : URL/https:/ URL/www.youtube.com/ <unk#a/=?> </s>
+<s> <user> > i ca n't even work on 10,000 nodes what are " nodes " ? </s>
+<s> <user> > but working on a subset of the data is meaningless i am not sure about that . if you are " not much of an ml guy " , start with a smaller simpler problem first . </s>
+<s> <user> i asked our ml guy . working with 10,000 data points is meaningless in my context </s>
+<s> <user> nodes = data points in the matrix </s>
+<s> <user> <unka> <unka> can work with millions of high <unka> points , as long as they fit in memory </s>
+<s> <user> <unka_> is just a parameter for the subset used to initialize the <unka> </s>
+<s> <user> but i still have to optimize the number of clusters </s>
+<s> <user> you will have to do that anyway , whatever the algorithm </s>
+<s> <user> there is always at least one <unka> that controls directly or indirectly the number of clusters </s>
+<s> <user> as far as i understand af figures that out </s>
+<s> <user> it does something by default that might or might not reflect what you expect to be a " good " number of clusters </s>
+<s> <user> i 'm working with <unka> data ( x , y ) </s>
+<s> <user> i think that <unka> distances is a good choice </s>
+<s> <user> but <unka> such as " preference " in the <unka-> implementation of ap will impact the clustering outcome </s>
+<s> <user> yes +1 for <unka> distance for geo data . </s>
+<s> <user> how many samples ? </s>
+<s> <user> 200 <unka> </s>
+<s> <user> if you use <unka-> master you might want to try <unka> on a 1m subset with eps the distance in meters of two points that are close enough to be considered part of a common cluster ( assuming x and y are meters as well ) </s>
+<s> <user> the implementation of <unka> in <unka> <unk#.> will be much to slow . </s>
+<s> <user> x & y are coordinates </s>
+<s> <user> affinity <unka> is not a great method imho . people rarely use it in practice i think , in particular not on such large data </s>
+<s> <user> <unka> or <unka> or any other method that selects the number of clusters are much <unka> candidates </s>
+<s> <user> > x & y are coordinates i understand , but which unit ? meters , km , miles , gps degrees ? </s>
+<s> <user> gps degrees </s>
+<s> <user> they decide how much gps degrees should be considered close points . start with lower values to generate smaller clusters . </s>
+<s> <user> <unka> is probably a good candidate as well if you want to compress your 200m points into a smaller summary dataset . </s>
+<s> <user> btw <unka@> if you have the time , it would be awesome if you could work through some of the <unka> + 1 <unka> . there is a ton of them </s>
+<s> <user> but it 's probably harder to use correctly . </s>
+<s> <user> <unka@> alright . </s>
+<s> <user> otherwise we keep duplicating fixes </s>
+<s> <user> it 's 200m unique points </s>
+<s> <user> that 's why i was looking at <unka/> </s>
+<s> <user> <unk`> > > > <unk#a> * 2 * 8 <unk#a> 3.2 <unk`> 3.2gb of double precision floats = > it fits in memory </s>
+<s> <user> <unka> <unka> and <unka> can eat it </s>
+<s> <user> af raises <unka> </s>
+<s> <user> yes af is not scalable </s>
+<s> <user> unless you're able to run it on multiple nodes which makes it scalable </s>
+<s> <user> i am pretty sure that <unka> <unka> will converge in less than an hour </s>
+<s> <user> <unka@> why are you so set on af ? </s>
+<s> <user> try on 1m first , look at the results ( plot the clusters of on map ) </s>
+<s> <user> because i like automatic things :p </s>
+<s> <user> it is a lot less automatic than any of the other methods </s>
+<s> <user> and i really want to learn to apply ml on <unka/> </s>
+<s> <user> it 's not automatic , it 's lying to you </s>
+<s> <user> it is really hard to tune </s>
+<s> <user> <unk#a=> for <unka> is as automatic as <unka=> for ap </s>
+<s> <user> all clustering algorithms have parameters that influence the number of clusters . some are explicit , like <unka-> , some are implicit , as in <unka-> , <unka> and <unka> . </s>
+<s> <user> exactly </s>
+<s> <user> only af has the most <unka-> <unka> of the implicit assumptions </s>
+<s> <user> and sometimes you have " natural " clusters at differrent scales ( nested clusters ) </s>
+<s> <user> in your data </s>
+<s> <user> so there is no " true " " good " number of clusters </s>
+<s> <user> that 's why the presented af <unka/> is hierarchical </s>
+<s> <user> yeah i think it is rare that you have a single scale . either there are clusters on multiple levels or none at all ;) </s>
+<s> <user> the good number depends on what kind of application you want to use the result of the clustering for </s>
+<s> <user> there is also <unka> , which is much faster and easier to understand than af </s>
+<s> <user> and provides a hierarchical clustering </s>
+<s> <user> af also has a hierarchical version but not in <unka> </s>
+<s> <user> just saying yeh ? </s>
+<s> <user> but is probably not scalable to 200mb unless you impose neighbors constraints which will be similar to <unka> or <unka> </s>
+<s> <user> i am just asking why you want af . </s>
+<s> <user> even if you run it on multiple nodes ? </s>
+<s> <user> no , but for 200m points x 2d it 's probably overkill to use a cluster </s>
+<s> <user> because i have a paper on it that explains ( somewhat ) how to implement it in <unka/> which is something that i want to be able to understand and implement </s>
+<s> <user> the number will increase and we have other jobs executing with even more data </s>
+<s> <user> but you can use the spark <unka> clustering implementations if you really want to use a cluster </s>
+<s> <user> well ok if your point is to understand how to implement af on mr then go for that . i just do n't see why you would want to do that , as af is a crappy algorithm . </s>
+<s> <user> there are a also papers about implementing good clustering algorithms on mr </s>
+<s> <user> do not focus on mr , they are better ways to distribute machine learning on a cluster : spark and the h20 runtime </s>
+<s> <user> URL/http:/ <unka./> : even <unka> is moving away from mapreduce : 25 april 2014 - goodbye mapreduce the <unka> community decided to move its codebase onto modern data processing systems that offer a <unka> programming model and more efficient execution than hadoop mapreduce . <unka> will therefore reject new mapreduce algorithm implementations from now on . we will however keep our widely used mapreduce algorithms in the codebase and maintain them . we are building our future implementations on top of a dsl for linear <unka> operations which has been developed over the last months . programs written in this dsl are automatically optimized and executed in parallel on apache spark . furthermore , there is an experimental contribution undergoing which aims to integrate the h20 platform into <unka> . </s>
+<s> <user> we're using druid over here </s>
+<s> <user> and the jobs are written in python . not java </s>
+<s> <user> <unka@> i merged <unka@> 's pr with doc fixes . i have to catch my bus . will probably reconnect later tonight . </s>
+<s> <user> spark and h20 are jvm stuff as well . but it 's a detail in practice . what matters is how the memory is used , how the algo scales and can it be efficiently be distributed on a cluster or not . </s>
+<s> <user> i know spark </s>
+<s> <user> i have n't written anything that uses it yet </s>
+<s> <user> we got disco and druid over here </s>
+<s> <user> <unka@> cool :) there are sooo many reviews to be done .... </s>
+<s> <user> yes </s>
+<s> <user> there 's much better python support there </s>
+<s> <user> i 'm trying <unka> on 10k points to see what happens in <unka> to <unka-> </s>
+<s> <user> <unka@> do you know a python library that is similar to <unka> ? </s>
+<s> <user> btw <unka@> if we merge one pr every day , we will still be going at <unka> ( if no-one opens any more ). </s>
+<s> <user> <unka> there is none . <unka> is the closest , i'd think . there are also python interfaces for h2o and <unka/> </s>
+<s> <user> i already have druid ( <unka.> ) and <unka> </s>
+<s> <user> i 'm talking about a <unka> implementation of ml <unka> in python that integrates with tools like spark or druid </s>
+<s> <user> i can adapt spark to druid </s>
+<s> <user> <unka@> i tried <unka> and i ca n't find where to fetch the cluster centers from </s>
+<s> <user> <unka(._> ) </s>
+<s> <user> i only get the cluster numbers </s>
+<s> <user> <unk`> in [ 34 ]: <unka(._> ) <unk#a[> ]: <unka([> 0 , 1 , 2 , 3 , 4 , 5 , 6 , 7 , 8 , 9 , 10 , 11 , 12 , 13 , 14 , 15 , 16 , 17 , 18 , 19 , 20 , 21 , 22 , 23 , 24 , 25 , 26 , 27 , 28 , 29 , 30 , 31 , 32 , 33 , 34 , 35 , 36 , 37 , 38 , 39 , 40 , 41 , 42 , 43 , 44 , 45 , 46 , 47 , 48 , 49 , 50 , 51 , 52 , 53 , 54 , 55 , 56 , 57 , 58 , 59 , 60 , 61 , 62 , 63 , 64 , 65 , 66 , 67 , 68 , 69 ]) <unk`> </s>
+<s> <user> k means has an attribute that contains the cluster centers </s>
+<s> <user> <unka@> can you explain what i 'm looking at right now ? </s>
+<s> <user> <unka._`> gives you the cluster <unka> of each sample ( row ) in the matrix <unka`> with shape <unka(_`> , <unka)_`> , in your case <unk#a=_`> </s>
+<s> <user> <unka`> has no notion of center . the clusters can have <unka-> ( e.g . folded ) shapes . </s>
+<s> <user> same for <unka`> ( and <unka`> to some extent ). </s>
+<s> <user> ( <unka> ) <unka-> makes the <unka> clusters assumption , hence the cluster centers are meaningful and computed by default . </s>
+<s> <user> although whatever the clustering algorithm you can always compute the center of mass of any cluster a <unka> with basic numpy operations : <unka`> <unk#a_> = <unka.[_> == <unk#a(.=]> ) <unk`> assuming <unka`> is a numpy array . </s>
+<s> <user> btw , af also has no notion of centers ;) </s>
+<s> <user> hurray , thanks for merging the <unka> fix <unka@> . i 'm quite confident that it is the right fix , but only time will actually tell ^^ </s>
+<s> <user> i agree . </s>
+<s> <user> it 's no big deal if it fails though . we can still re-add the travis skip as a temporary fix . </s>
+<s> <user> yeah definitely </s>
+<s> <user> i was confused by all the commits showing up twice in my notifications , but just realized they are for the two branches ^^ </s>
+<s> <user> merging this one soon will probably also help : <unk##> not sure if it needs two reviews , it is just removing deprecated stuff </s>
+<s> <user> just do n't backport it ;) </s>
+<s> <user> btw , did we set a date for 0.16 ? </s>
+<s> <user> i guess <unk#.> </s>
+<s> <user> hey which do you feel is better ? <unka`> n is not <unka`> or <unka`> <unka`> ? </s>
+<s> <user> they are different . if you want to ask " if n is not none " you should do that . </s>
+<s> <user> the second one will also be false if n is 0 </s>
+<s> <user> ah ! explicit is always better as usual :) thanks !! </s>
+<s> <user> <unka@> <unka@> could you kindly take a look at this comment - URL/https:/ URL/github.com/ <unk#a#-/> - this stands in the way of completion of the rest of the pr ... </s>
+<s> <user> no official date for <unk#.> but maybe we could target next thursday ? </s>
+<s> <user> fine with me </s>
+<s> <user> <unka@> currently the pr does n't yet use the new method in the <unka> etc , right ? is n't that the big thing to do for that pr ? </s>
+<s> <user> from the 30th of march to april 1st we have a team <unka> at work so i wo n't be able to work on the release . then there is the oreilly <unka> & <unka> paris and it would be great to have it released at that time . </s>
+<s> <user> i agree . lets do next thursday ( the 26th ) </s>
+<s> <user> <unka@> oh ! i have n't touched <unka._`> :/ thanks ! i 'll work on that for now :) </s>
+<s> <user> have you fixed <unka_> ? </s>
+<s> <user> and make sure to keep them backward compatible with custom cv objects people might have written </s>
+<s> <user> i also commented on you question in the issue </s>
+<s> <user> not yet ! thanks a lot !! :) and okay sure ! ( sorry for pestering :p ) </s>
+<s> <user> <unka@> off to the movie theater to watch <unka> . will resume pr reviews tomorrow morning a bit , otherwise friday . see you ! </s>
+<s> <user> thanks , that 's awesome ! have fun ! </s>
+<s> <user> i 'll try to figure out the test that crashes on all kind of weird combinations of python and numpy </s>
+<s> <user> <unka@> i was also <unka> while standing on one leg , and waving burning sage around during the test passes , not sure if that 's relevant . </s>
+<s> <user> <unka:> : </s>
+<s> <user> thanks for your extensive investigation , this one is .... interesting </s>
+<s> <user> <unka/> <unka> </s>
+<s> <user> damn , would have been to good if that worked </s>
+<s> <user> the selection of sounds supported by <unka> is great : URL/http:/ <unka-./> </s>
+<s> <user> haha . yeah no problem . i can investigate more , but having two systems that build without failing is nice too </s>
+<s> <user> well if you want , you can try to track down what are the changes in python and numpy that cause this to fail ;) </s>
+<s> <user> i have to work on organizational stuff for the rest of the day , so i ca n't track this down much further at the moment </s>
+<s> <user> i was skimming through python 's change log and nothing stood out . will take a more in depth glance at both this evening . </s>
+<s> <user> just if you have nothing better to do ;) i 'm not sure about how to move forward . it seems strange that it works with the much older version on travis and not with the newer versions . what you could do is create a virtualenv with the travis 2.6 version of python and numpy and see if that also fails for you </s>
+<s> <user> ill try to do that on the linux box tonight . </s>
+<s> <user> thanks </s>
+<s> <user> btw <unka@> is there a reason not to enable os x with travis ? </s>

@@ -1,0 +1,10 @@
+[06:55] <5cc7f07cd73408ce4fbf0399> hi all
+[07:41] <5cb72452d73408ce4fbdf818> *Hi all*
+[08:04] <5b3ed273d73408ce4f9fcb4e> Hi, I have a doubt on `TfidfVectorizer` in the `sklearn.feature_extraction.text` package.
+[08:05] <5b3ed273d73408ce4f9fcb4e> I see that stopwords like the which occur frequently in all documents I am trying, have an IDF value of 1
+[08:05] <5b3ed273d73408ce4f9fcb4e> Shouldnt the IDF value be 0 (because log of 1 is 0)?
+[08:06] <5b3ed273d73408ce4f9fcb4e> The example documents I am using are:
+[08:06] <5b3ed273d73408ce4f9fcb4e> > ["The quick brown fox jumped over the lazy dog.", 		"The dog.", 		"The fox"]
+[08:07] <5b3ed273d73408ce4f9fcb4e> I suspect the log is not being taken, how do I configure the vectorizer to take the log and get an IDF of 0?
+[09:58] <5b3ed273d73408ce4f9fcb4e> I think I figured out he IDF calculation. It seems to be `ln(N/df) + 1`. Where `N` is the total number of documents and `df` is the number of documents a particular term appears in
+[09:59] <5b3ed273d73408ce4f9fcb4e> So for the word the it is `ln(3/3) + 1` = `0+1`, which is why the value is 1. How do I configure the vectorizer not to add the 1?

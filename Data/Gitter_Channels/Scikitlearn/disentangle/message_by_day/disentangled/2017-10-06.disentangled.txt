@@ -1,0 +1,2 @@
+[21:04] <564789be16b6c7089cbab8b7> is it possible to use  the pearson correlation coefficient as the loss function when doing regression in scikit-learn?
+--------------------------------------------------------------------------------------------------

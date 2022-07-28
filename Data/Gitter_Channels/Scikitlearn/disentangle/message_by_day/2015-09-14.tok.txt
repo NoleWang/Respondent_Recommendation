@@ -1,0 +1,13 @@
+<s> <user> <unka@> no my concern is that the <unka_> tests are not at all run by <unka> ... only travis seems to detect the module and run the tests ... </s>
+<s> <user> is that because there are no public python sources in <unka_`> ? ( all three are private ) </s>
+<s> <user> <unka@> you had earlier said that the doc for labels param was not apt ... does ` " class labels to be assigned to the samples and used while splitting the dataset into <unka/> <unka".`> sound like a good doc for <unka`> param ? </s>
+<s> <user> ( of <unka(`> , y , <unka)`> ?) </s>
+<s> <user> the unit tests are failing on my machine . raise <unka"'(.> module named <unka_> 'm ) ! = none " ) </s>
+<s> <user> ubuntu 64 bit , they were all running fine on friday . </s>
+<s> <user> did you miss a make in ? </s>
+<s> <user> yep </s>
+<s> <user> <unk#a@> it should n't be " class labels " they are not class labels . maybe group <unka> ? </s>
+<s> <user> also not really assigned to the samples ? </s>
+<s> <user> guys , i opened this pr URL/https:/ URL/github.com/ <unk#a-/> to fix a minor typo in <unka./> <unk#a> </s>
+<s> <user> i 'll do a git grep to check for more typos , if there are any </s>
+<s> <user> <unka:_> : </s>

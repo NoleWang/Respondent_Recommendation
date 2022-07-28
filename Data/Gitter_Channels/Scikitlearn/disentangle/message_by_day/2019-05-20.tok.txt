@@ -1,0 +1,9 @@
+<s> <user> hello all , i have a question regarding <unka> 's " vendor " distribution present in <unka-> <unk#a.`> : is it up to date with the latest release of <unka> ? i know that the latest version of <unka-> ( <unk#a.`> and above ) are now using <unka> as a dependency directly but i need to use <unka-> <unk#a.`> for python 2.7 support . thank you ! :) </s>
+<s> <user> <unka@> <unka-> <unk#.> is embedding <unka> <unk#.> : URL/https:/ URL/github.com/ <unk#a#-./_> </s>
+<s> <user> thank you <unka@> for this quick answer ! </s>
+<s> <user> if we release <unk#.> we should think of upgrading the <unka> version as well . you can also set the <unk#a=_`> environment variable to use an independently installed version of <unka> instead of the <unka> version . </s>
+<s> <user> note however that future versions of <unka> might stop supporting python 2 as well , so better start thinking of upgrading to python 3 in any case :) </s>
+<s> <user> thanks for the tips ; i would like to upgrade but i sadly ca n't in my setup <unconvertable > sigh . :) </s>
+<s> <user> are there any significant changes between <unka> <unk#.> and <unk#.> ? </s>
+<s> <user> potentially important bugfixes : URL/https:/ URL/github.com/ <unka./> </s>
+<s> <user> yes , i just came across this . </s>

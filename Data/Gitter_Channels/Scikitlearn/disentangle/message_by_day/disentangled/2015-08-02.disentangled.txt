@@ -1,0 +1,16 @@
+[15:29] <54e07d6515522ed4b3dc0858> @xuewei4d It probably depends, what dataset do you mean in particular?
+--------------------------------------------------------------------------------------------------
+[21:23] <54d4a1d6db8155e6700f853b> I think based on their mails we shouldn't worry too much about including it.
+--------------------------------------------------------------------------------------------------
+[21:27] <53135b495e986b0712efc453> could someone merge #5077? :)
+--------------------------------------------------------------------------------------------------
+[22:32] <54d4a1d6db8155e6700f853b> why is that imporant?
+[22:32] <54d4a1d6db8155e6700f853b> but sure
+--------------------------------------------------------------------------------------------------
+[23:18] <53135b495e986b0712efc453> When attempting to import from the old `cross_validation` module which is deprecated... I noticed a weird behaviour in ipython... simply tabcompleting brings up the deprecation warning... is that normal...?  ``` from sklearn.cross_validation import KF/usr/local/lib/python2.7/site-packages/sklearn/cross_validation.py:40: DeprecationWarning: This module has been deprecated in favor of the model_selection module into which all the refactored classes and functions are moved. Also note that the interface of the new CV iterators are different from that of this module. Refer model_selection.split for more info.   "Refer model_selection.split for more info.", DeprecationWarning) ```
+[23:18] <53135b495e986b0712efc453> notice the warning start after `KF<tab>`
+[23:19] <53135b495e986b0712efc453> @amueller That was failing #4294 ;) Thanks for the merge!
+--------------------------------------------------------------------------------------------------
+[23:59] <54e07d6515522ed4b3dc0858> That's expected if the deprecation warning is at module level AFAIK
+[23:59] <53135b495e986b0712efc453> okay! Thanks :)
+--------------------------------------------------------------------------------------------------

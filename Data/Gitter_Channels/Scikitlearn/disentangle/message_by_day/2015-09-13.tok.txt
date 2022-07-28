@@ -1,0 +1,39 @@
+<s> <user> <unka@> the <unka> is good to go , too , i think . do you want to merge it after release or before ? i do n't really see a reason not to merge now . </s>
+<s> <user> hey guys , can we merge this ? URL/https:/ URL/github.com/ <unk#a-/> </s>
+<s> <user> i think so . you have my + ! </s>
+<s> <user> +1 </s>
+<s> <user> i 'm taking a quick look as well </s>
+<s> <user> looks great , thanks for the work ! </s>
+<s> <user> <unk#a@> what is the status of your issue ? i have a windows machine , i can take a quick look . </s>
+<s> <user> which issue is that ? </s>
+<s> <user> i 'm not sure , i just saw olivier asked if he had a windows machine to reproduce an <unka> issue ,. </s>
+<s> <user> ah that is the <unka> one that keeps <unka> from failing </s>
+<s> <user> just run the test suite </s>
+<s> <user> no , the <unka> issue is a separate issue </s>
+<s> <user> ok then i do n't know which one we are talking about </s>
+<s> <user> > <unk![> <unk#a()-./:]> ) </s>
+<s> <user> <unka@> thanks a lot !! in my pr <unk##> the tests in the new module <unka_`> are not being run in <unka> ... any help would be really awesome !! :) i could use virtual box ... but earlier i had little success doing so :( </s>
+<s> <user> that is a lot of files changed . </s>
+<s> <user> yea <unka:> : </s>
+<s> <user> you 'll squash all these commits soon ? </s>
+<s> <user> you can replicate that by simply creating a foo folder and a tests directory with a simple failing test :) </s>
+<s> <user> yes that 's a whole lot of commits ;) i 'll probably squash it to less than 5 </s>
+<s> <user> it will help tracking things easier .... </s>
+<s> <user> i do n't understand , is this a pr meant to <unka> cv or reorganize the modules ? </s>
+<s> <user> both :p </s>
+<s> <user> <unka> as in making then data dependent ... and <unka> into <unka_`> folder </s>
+<s> <user> <unka*> </s>
+<s> <user> alright , i 'm just going to look for bugs , this conversation is too long for me . </s>
+<s> <user> haha okay :) </s>
+<s> <user> after months of developing in ubuntu , i am remembering why windows is such a pain . </s>
+<s> <user> ^_^ </s>
+<s> <user> <unk#a@> could you clarify what about the labels param i should comment on ? </s>
+<s> <user> i am getting 12 failures </s>
+<s> <user> mostly related to string format </s>
+<s> <user> is this what you are getting , <unk#a@> </s>
+<s> <user> these errors seem to stem from getting longs instead of ints </s>
+<s> <user> this manifests as getting ( <unk#a> , <unk#a> ) instead of ( 10 , 2 ) </s>
+<s> <user> i think we should fix these . <unka@> did n't want to fix them i think . </s>
+<s> <user> i mean it does add clutter to the <unka> , but it is not rendered on the webpage </s>
+<s> <user> is there any way to force numpy to use ints ? i 'm not finding anything , unfortunately . </s>
+<s> <user> in the shape , i mean . </s>

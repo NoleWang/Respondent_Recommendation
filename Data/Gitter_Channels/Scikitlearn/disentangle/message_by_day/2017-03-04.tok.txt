@@ -1,0 +1,25 @@
+<s> <user> <unka@> after attending your talk i was really looking forward to it . </s>
+<s> <user> which one ? yesterday ? </s>
+<s> <user> or <unka> india ? </s>
+<s> <user> we expect students to having contributed before applying for doing a gsoc with us . i have n't been around much the last two month , have you contributed so far ? </s>
+<s> <user> <unka@> i have not yet </s>
+<s> <user> if you do n't mind and do n't want to do it yourself next week , it would be great if you could open one . </s>
+<s> <user> doing it right now </s>
+<s> <user> if it is not done by next week , i 'll try to tackle this during the <unka> </s>
+<s> <user> thanks :) </s>
+<s> <user> i 'll try to review some of the pull requests of the sprint btw </s>
+<s> <user> so do n't hesitate to ping me on pr that you think i could help review </s>
+<s> <user> thanks , that would be great :) </s>
+<s> <user> it will mostly be " easy fix " issues , i think </s>
+<s> <user> i tagged a bunch of stuff " sprint " </s>
+<s> <user> as you might have seen on the right here lol </s>
+<s> <user> yep , i saw </s>
+<s> <user> fyi thanks for being in the top 100 <unka-> contributors and not making us look like the worst possible ;) for an article about the sprint tomorrow i was asked about the state of women contributing to <unka> . since counting contributors in a meaningful way is hard , i settled for the top 100 reported by github ..... which has a <unk#:> ration <unka:> unless i <unka> :-/ well let 's hope we can do something about that tomorrow </s>
+<s> <user> using an infinite timeframe ? </s>
+<s> <user> i think that 's what the default is . </s>
+<s> <user> yep , i am surprisingly still in the top 20 :) </s>
+<s> <user> i 'm hoping to contribute more , but matplotlib is still taking a lot of my time </s>
+<s> <user> 2013 till now you are still in the top 20 ;) i 'm not sure any other timeframe makes us look more diverse </s>
+<s> <user> matplotlib might need contributors even more , somehow it 's not as " cool " as <unka> i fear . i wish i could contribute more there , but i ca n't even keep up with <unka> </s>
+<s> <user> hi , if interested , there 's a semantic segmentation problem waiting to be solved here : URL/https:/ URL/github.com/ <unka-/> </s>
+<s> <user> started the sprint :) as you might have notices ;) </s>

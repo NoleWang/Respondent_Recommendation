@@ -1,0 +1,14 @@
+[07:41] <591414ffd73408ce4f5eaf83> from sklearn.decomposition import PCA  pca = PCA(n_components=2) pca.fit(df) existing_2d = pca.transform(df) plt.scatter(existing_2d.T[0], existing_2d.T[1], c='b')
+[07:42] <591414ffd73408ce4f5eaf83> After doing the pca now I want to know which are the columns that have been selected by pca and only use those in my dataset df Any idea how to get the column names selected by pca?
+[07:43] <591414ffd73408ce4f5eaf83> *pca = PCA(n_components=29)
+[07:43] <591414ffd73408ce4f5eaf83> say I have a large value of columns 400 and I want only 29 of them but I want the name of those 29 columns selected by pca
+[07:44] <591414ffd73408ce4f5eaf83> from df
+[07:44] <591414ffd73408ce4f5eaf83> can anybody help please?
+[16:30] <591414ffd73408ce4f5eaf83> Thanks
+--------------------------------------------------------------------------------------------------
+[09:37] <553d32d715522ed4b3df8b92> Hi, in case I understood the use case right, you might want to look at feature_selection http://scikit-learn.org/stable/modules/feature_selection.html for selecting features since PCA doesnt select particular features but converts to n_components dimensions where each component is a weighted sum of the features. Hope it helps.
+--------------------------------------------------------------------------------------------------
+[09:41] <55d21ee30fc9f982beadabb8> @maniteja123 :+1:  @puneetmathurDS each component is a "bit of all columns"
+--------------------------------------------------------------------------------------------------
+[10:46] <58fd3abed73408ce4f5a7b40> @glemaitre thanks !
+--------------------------------------------------------------------------------------------------

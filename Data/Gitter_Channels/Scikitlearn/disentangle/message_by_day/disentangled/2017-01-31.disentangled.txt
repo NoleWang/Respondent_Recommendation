@@ -1,0 +1,4 @@
+[11:16] <57a061aa40f3a6eec05d8d26> How fast or slow is SpasePCA? I have a dataset of size about 15000 x 500 and it seems to take quite a while
+--------------------------------------------------------------------------------------------------
+[13:44] <54b4f2d1db8155e6700e99c0> Hey Folks, [Core question], is there a specific reason why `RandomForests` dont inherit from `BaseBagging`?
+--------------------------------------------------------------------------------------------------

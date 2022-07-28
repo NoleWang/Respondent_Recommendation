@@ -1,0 +1,12 @@
+<s> <user> how do i run tests ( unit tests ) locally after making some changes ? </s>
+<s> <user> would running `make` at the top-level directory be sufficient ? </s>
+<s> <user> though i did that now . but i would still like to know how to do it cleanly . </s>
+<s> <user> make test </s>
+<s> <user> hi all , could you tell what you think of this approach : URL/https:/ <unka./> <unka-/> ? </s>
+<s> <user> <unka@> i did n't go through your notebook in detail , but i think you might be interested in looking at URL/https:/ URL/github.com/ <unk#a-/> </s>
+<s> <user> that certainly relates to those transformers you implemented to apply certain transformers to certain columns </s>
+<s> <user> ( you call it <unka> ) </s>
+<s> <user> regarding the dummy encoder transformer , you also might want to look at URL/https:/ URL/github.com/ <unk#a-/> that implements a <unka> </s>
+<s> <user> further , you might be interested in URL/https:/ URL/github.com/ <unka-/> ( but i am also not very familiar with that , so not sure how the functionality there relates to the transformers you implemented ) </s>
+<s> <user> ( so as a summary , i agree with you that it currently is hard to do <unka-> <unka> in <unka> pipelines , but we are working to improve that . feedback on those linked <unka> project is always welcome ! ) </s>
+<s> <user> ok . thx for your answer . </s>

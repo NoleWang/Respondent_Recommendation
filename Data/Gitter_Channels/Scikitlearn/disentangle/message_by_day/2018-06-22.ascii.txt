@@ -1,0 +1,4 @@
+[13:19] <5b2cf725d73408ce4f9e4022> Hi guys trying to analyze a data set for predicting employee absenteeism
+[13:20] <5b2cf725d73408ce4f9e4022> Can you please suggest that linear regression is good or I need to use a time series model. My dataset is 
+[13:21] <5b2cf725d73408ce4f9e4022> https://archive.ics.uci.edu/ml/datasets/Absenteeism+at+work
+[13:34] <541a528b163965c9bc2053de> Based on its description, the dataset you linked does not look like timeseries data: it's a table of feature data and one can probably make the i.i.d assumption. This is not a series of events with a timestamp for each with a progressing time dependency.  For supervised regression of the number of hours of absenteism, I would indeed try linear regress ion (+ some feature engineering) and compare with a more complex model such as RandomForestRegressor

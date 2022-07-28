@@ -1,0 +1,9 @@
+<s> <user> any takers on URL/https:/ URL/github.com/ <unk#a-/?> it 's a good first issue . </s>
+<s> <user> a first good issue ? </s>
+<s> <user> a find it a bit harsh :) </s>
+<s> <user> lol , i 'm just a messenger , joel tagged it as such :d </s>
+<s> <user> basically , i was starting to solve the issue yesterday </s>
+<s> <user> while making <unka`> work with <unka`> is easy ( just change the import path ), the challenging part is to make work out-of-date version with a newer <unka-> . </s>
+<s> <user> in the latest case , we need to make some <unka`> except <unka`> as you suggested i think </s>
+<s> <user> yep . if you're already at it , please leave a comment so that others do n't start working on it ;) </s>
+<s> <user> yep i just <unka-> my pr </s>

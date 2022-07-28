@@ -1,0 +1,2 @@
+[19:36] <5ee529b7d73408ce4fe6ceb3> i am writing a neural network without any external libraries for MNIST with only 4 labels.In the train _labels.csv  file i have one hot encoded data(1000) for all samples, my doubt is how to call the data directly to the function in the code. iam using softmax as my activation function in output layer
+--------------------------------------------------------------------------------------------------

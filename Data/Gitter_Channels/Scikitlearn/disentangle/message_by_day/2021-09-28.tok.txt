@@ -1,0 +1,7 @@
+<s> <user> <unka@> <unk##> </s>
+<s> <user> when the documentation cis are finished </s>
+<s> <user> there will be a " <unka/> : doc artifact <unconvertable > link to <unk#a./_> " line </s>
+<s> <user> you can clicked on " details " </s>
+<s> <user> it will redirect to an html page where you will have hyperlinks to each documentation page that has been generated </s>
+<s> <user> in <unka> we only generate documentation pages where there is a modification </s>
+<s> <user> <unka@> great , found it - thanks ! </s>

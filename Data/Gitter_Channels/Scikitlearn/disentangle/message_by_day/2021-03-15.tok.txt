@@ -1,0 +1,4 @@
+<s> <user> i have one hot encoded feature vectors which i am using for <unka> <unka> . if in my training set there is a feature which is always 0 , what happens in testing when it comes across one that is a 1 for the feature ? </s>
+<s> <user> <unka@> : by default <unka> would error . you would need to set <unka'=_`> to ignore it . </s>
+<s> <user> <unka.:@> thanks . do you know if that would be the same for <unka> regression for example ? </s>
+<s> <user> can <unka.> be made to work for <unka> or <unka> distance ? </s>

@@ -1,0 +1,7 @@
+[11:44] <564789be16b6c7089cbab8b7> The docs for StratifiedShuffleSplit and StratifiedKFold are very similar. One says "This cross-validation object is a merge of StratifiedKFold and ShuffleSplit, which returns stratified randomized folds. The folds are made by preserving the percentage of samples for each class." and the other says "This cross-validation object is a variation of KFold that returns stratified folds. The folds are made by preserving the percentage of samples for each class."   I might not be the only person who finds this confusing
+[11:45] <564789be16b6c7089cbab8b7> what is the difference?
+[12:49] <564789be16b6c7089cbab8b7> is the only difference that the first one is randomized?
+--------------------------------------------------------------------------------------------------
+[18:15] <54d4a1d6db8155e6700f853b> there are no folds in StratifiedShuffleSplit
+[18:15] <54d4a1d6db8155e6700f853b> the number of iterations is independent of the training set size
+--------------------------------------------------------------------------------------------------

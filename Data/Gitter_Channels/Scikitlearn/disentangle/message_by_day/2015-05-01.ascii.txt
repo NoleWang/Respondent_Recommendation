@@ -1,0 +1,11 @@
+[02:41] <54c084dbdb8155e6700eed4c> Hey @amueller ... Just a FYI, ran your check_estimator API on my package. It works for the most part. Though I raise a copied version of the NotFittedError and get a fail since it isn't explicitly using the scikit-learn version (I wanted to support 0.15.2 as well so exported a bunch of functions to reside in gplearn.skutils.etc).
+[16:29] <54d4a1d6db8155e6700f853b> Thanks for the feedback. Is there a reason your NotFittedError doesn't inherit from the sklearn one? Well I guess actually we wanted people to be able to provide compatible code without needing to rely on sklearn.... hum...
+[16:30] <54d4a1d6db8155e6700f853b> @trevorstephens maybe I'm slow, how is that related to the remark in the parentheses?
+[16:48] <54c084dbdb8155e6700eed4c> NotFittedError was new in 0.16.0 I think, so I'd fail tests on my own Travis builds based on 0.15.2 if I tried to inherit from sklearn I guess
+[16:49] <54c084dbdb8155e6700eed4c> And to guard against other changes to the non-public API, I grabbed a few key utils modules from 0.16.0 and stuffed them into a folder in my project
+[16:51] <54c084dbdb8155e6700eed4c> I could potentially wrap all the important stuff in try blocks, like the fixes module in sklearn. But that seems like a lot of work given how interconnected some of the utils are
+[17:14] <54d4a1d6db8155e6700f853b> yeah no, don't do that. Actually we should aim at allowing people to pass tests without inheriting from sklearn.
+[17:29] <54d4a1d6db8155e6700f853b> @trevorstephens gael and I think we shouldn't check for NotFittedError, but a public one. I'm not sure if ValueError or AttributeError
+[17:32] <54c084dbdb8155e6700eed4c> that'd work. mine is a direct copy of the scikitlearn error. probably other's are using older code bases where I think a ValueError was directly raised when not fitted
+[18:34] <54c084dbdb8155e6700eed4c> actually maybe not... https://github.com/scikit-learn/scikit-learn/pull/4029/files shows a mix of both were in the code base. perhaps check for either of them. i think checking from both is overkill and makes an unnecessary burden on people who want to work with sklearn, but not require it.
+[20:36] <54d4a1d6db8155e6700f853b> yeah, probably.

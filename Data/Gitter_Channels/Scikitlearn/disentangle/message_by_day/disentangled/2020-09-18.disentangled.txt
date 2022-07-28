@@ -1,0 +1,11 @@
+[03:31] <551710ad15522ed4b3ddfadb> Hi all, I was wondering, does scikit support GPU accelerating?
+--------------------------------------------------------------------------------------------------
+[12:16] <5baf7d9ad73408ce4fa9c9b2> no https://scikit-learn.org/stable/faq.html#will-you-add-gpu-support
+--------------------------------------------------------------------------------------------------
+[16:30] <5f64da0cd73408ce4fef4a7c> Hi all, Ive been wanting to make use of the varimax rotation argument for sklearn.decomposition.FactorAnalysis (version 0.24dev0). So I created a conda environment with this version of sklearn (I have checked conda list, so definitely have the correct version installed), alongside hyperspy.  However when calling FactorAnalysis as follows: skl.decomposition.FactorAnalysis(rotation='varimax') I receive the following error: TypeError: __init__() got an unexpected keyword argument 'rotation'  The documentation for version 0.24 states:  <unconvertable> decomposition.FactorAnalysis now supports the optional argument rotation, which can take the value None, 'varimax' or 'quartimax'. <unconvertable>  Any ideas for what the problem might be?
+--------------------------------------------------------------------------------------------------
+[16:35] <5baf7d9ad73408ce4fa9c9b2> what does `sklearn.__version__` say?
+[16:36] <5baf7d9ad73408ce4fa9c9b2> (It works on `master` so you likely don't have the very latest version)
+--------------------------------------------------------------------------------------------------
+[16:38] <5f64da0cd73408ce4fef4a7c> Oh that's odd, it says my current version is 0.23.2  although conda says version is 0.24dev0
+--------------------------------------------------------------------------------------------------

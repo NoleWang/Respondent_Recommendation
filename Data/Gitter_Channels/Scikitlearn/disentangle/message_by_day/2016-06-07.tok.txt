@@ -1,0 +1,18 @@
+<s> <user> what is the best way to save the trained models other than pickle ? </s>
+<s> <user> <unka@> quite unfortunately , there is n't an easy path to that in <unka> . </s>
+<s> <user> <unka@> you're looking for a format to store some arrays and some random parameters ? what are your constraints ? </s>
+<s> <user> hello <unka,> </s>
+<s> <user> <unka@> i just want to know if pickle is the best or not for storing </s>
+<s> <user> <unka@> it 's ok ... imho <unka> is crying out for someone to volunteer to implement a better solution </s>
+<s> <user> where would i have to go if i want to learn about <unka.> </s>
+<s> <user> hello everyone </s>
+<s> <user> i 've made a pipeline for a <unka> problem </s>
+<s> <user> learning goes fast thanks to parallel with <unk#a-=_> </s>
+<s> <user> but when i use the predict function , it goes very slow , and only one process is used </s>
+<s> <user> is there a way to make prediction in parallel ? </s>
+<s> <user> <unka@> pickle is a very problematic solution : it is fragile , not safely <unka> , not explicitly specified , etc . it is all that <unka> is geared to and it will be a lot of work to use something else . </s>
+<s> <user> <unka@> for a narrow use case , you can hack something up . there is n't a more general solution </s>
+<s> <user> <unka@> probably not with plain <unka> , but you can probably make a specialized <unka> for the slow parts . have you <unka> ? where is the time being spent ? </s>
+<s> <user> <unka@> would making a better solution make a good discrete project ? there are quite a lot of people who are keen to work on <unka> learn it seems so if it was clearly advertised it might get someone to bite </s>
+<s> <user> i think a good solution would be very popular </s>
+<s> <user> <unka@> i do n't know how welcome it would be -- it would be a lot of work and a huge maintenance burden . </s>

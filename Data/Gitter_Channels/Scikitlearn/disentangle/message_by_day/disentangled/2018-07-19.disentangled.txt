@@ -1,0 +1,23 @@
+[06:24] <56a5a8fce610378809be08d1> Hi, is it possible to use different distance metrics for `kmeans`? I noticed that `cosine` and `manhattan` are already implemented in `metrics/pairwise.py`.  Is there any quick dirty way to somehow specify these metrics instead of euclidean distance for `kmeans`?
+--------------------------------------------------------------------------------------------------
+[20:08] <560313510fc9f982beb1a331> Is there a way to check what BLAS scikit-learn is built with? Maybe like an info function or something?
+[20:10] <560313510fc9f982beb1a331> :tada:
+[20:10] <560313510fc9f982beb1a331> Thank you
+--------------------------------------------------------------------------------------------------
+[20:08] <54d4a1d6db8155e6700f853b> @jakirkham there's a pr for that ;)
+[20:09] <54d4a1d6db8155e6700f853b> but it's whatever numpy is build with, I think
+[20:09] <560313510fc9f982beb1a331> Really, where's that :)
+[20:09] <54d4a1d6db8155e6700f853b> #11596
+[20:09] <54d4a1d6db8155e6700f853b> merged actually!
+[20:09] <54d4a1d6db8155e6700f853b> so you have it in master
+--------------------------------------------------------------------------------------------------
+[20:13] <560313510fc9f982beb1a331> If it says `cblas`, does that mean scikit-learn's internal BLAS?
+--------------------------------------------------------------------------------------------------
+[20:25] <54d4a1d6db8155e6700f853b> I think we stopped shipping blas, didn't we?
+--------------------------------------------------------------------------------------------------
+[20:33] <5b4c9e4bd73408ce4fa10b88> @amueller  not merged yet :)
+--------------------------------------------------------------------------------------------------
+[21:25] <5a280cdcd73408ce4f820b9c> @jakirkham the method you are looking for is `sklearn._build_utils.get_blas_info()`
+--------------------------------------------------------------------------------------------------
+[21:59] <560313510fc9f982beb1a331> Great thanks!
+--------------------------------------------------------------------------------------------------

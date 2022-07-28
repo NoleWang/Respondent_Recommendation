@@ -1,0 +1,14 @@
+<s> <user> hi all , i am trying to update the dns of <unka-.> to enable https , and it broke . working on fixing it . </s>
+<s> <user> for reference i was trying to follow the instructions from URL/https:/ URL/github.com/ <unk#a-/> </s>
+<s> <user> it works again \o/ </s>
+<s> <user> i did nothing more , it just took a bit of time apparently . </s>
+<s> <user> woohooo </s>
+<s> <user> now computer says yes :p </s>
+<s> <user> now i wo n't be able to use <unka-.> with <unka> wifi one of the remaining websites that does n't use https to get redirected to the network sign-in . so this can break some use cases :) great that it happened , can confirm it works ! </s>
+<s> <user> URL/http:/ <unk#a./> </s>
+<s> <user> it should trigger sign-in pages on open wifi networks . </s>
+<s> <user> yeah , but <unka-.> was smoother to type on a french keyboard :) </s>
+<s> <user> just kidding , thanks for making it happen ! </s>
+<s> <user> sweet ! </s>
+<s> <user> example.com <unka> works <unka@> </s>
+<s> <user> hi folks , sorry to bother . i 've came across an old <unka> example on gps for which i ca n't seem to find any documentation or example on how to translate it to the current version : <unk`> from <unka._> import <unka> gp = <unka'(=> , <unk#a-=> , <unk#a-=> , <unk#a-=> , <unk#a=_> ) <unka> = <unk#a(.> , 10 , 1000 ) <unka> , <unka> = <unka(.[> :, <unka.> ], <unka=_> ) <unk`> i understand that 's <unka> but the parameters have changed , so <unka=`> and <unka`> do n't really exist . anyone has any idea how to translate this to version 0.20 ? </s>

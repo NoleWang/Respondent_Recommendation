@@ -1,0 +1,9 @@
+<s> <user> hi all ! what is the current recommended was to save models and redistribute them . we tried URL/https:/ URL/github.com/ <unka-/> and similar concepts , but all do pickle the object at some point . this is not <unka> and breaks with different python versions etc ... is there any emerging standard . any hint how the ml community is tackling this at the moment or in the future ? </s>
+<s> <user> <unka@> use pickle from <unka> and build in a docker container . it seems to be the <unka> method but is not without flaws . in a standard local server deployment i rarely use the docker containers and just keep track of package versions . </s>
+<s> <user> <unka@> i consider this a very bad hack :) </s>
+<s> <user> is there no emerging standard :( </s>
+<s> <user> i would refer to the talk of <unka> <unka> at <unka> couple of days ago URL/https:/ <unka./> <unka#-/> </s>
+<s> <user> and more precisely </s>
+<s> <user> URL/https:/ URL/github.com/ <unka-/> </s>
+<s> <user> however , i did not check all the solution and i cannot ensure you that you will not get the <unka> issue that you mentioned . </s>
+<s> <user> thx for sharing <unka> </s>

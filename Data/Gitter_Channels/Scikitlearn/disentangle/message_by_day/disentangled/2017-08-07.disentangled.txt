@@ -1,0 +1,3 @@
+[17:46] <5759dd0dc2f0db084a1d128d> I'm looking at our GMM and the BIC derivation looks weird
+[17:50] <5759dd0dc2f0db084a1d128d> never mind... It's the score that is weird, and the BIC function corrects for that.
+--------------------------------------------------------------------------------------------------

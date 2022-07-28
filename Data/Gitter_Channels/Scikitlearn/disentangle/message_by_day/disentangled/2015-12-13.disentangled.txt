@@ -1,0 +1,4 @@
+[19:33] <54b4f2d1db8155e6700e99c0> Hey Folks, with PCA, if you fit with all the components, you should be able to transform with a subset of them only. If Im not wrong, this is currently not possible. Should I open an issue?
+--------------------------------------------------------------------------------------------------
+[22:47] <561a58f7d33f749381a8ff2f> @Djabbz  Sounds very strange. I don't think that's possible with PCA. Do you have literature where it says? As far as I know if you go compress 40 features into 10 features, you'd need measurements on all 40 features to result into 10.
+--------------------------------------------------------------------------------------------------

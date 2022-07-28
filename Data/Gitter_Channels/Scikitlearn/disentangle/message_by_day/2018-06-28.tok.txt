@@ -1,0 +1,5 @@
+<s> <user> as fast as possible :) </s>
+<s> <user> we are trying to finish up couple of issues and we would like to have a release candidate for scipy </s>
+<s> <user> however we might have some delay depending on how it will go :) </s>
+<s> <user> thanks for the response . given the " trying to have a release candidate for scipy " statement i 'm <unka> this as " weeks away " , not days and not months </s>
+<s> <user> yep </s>

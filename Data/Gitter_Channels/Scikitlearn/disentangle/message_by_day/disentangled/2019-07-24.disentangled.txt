@@ -1,0 +1,6 @@
+[05:18] <5bf776ebd73408ce4fafd6e3> Hello People,
+[05:19] <5bf776ebd73408ce4fafd6e3> Do we have any package like NLTK to support your languages other than English
+--------------------------------------------------------------------------------------------------
+[06:50] <54fdd51a15522ed4b3dd04b7> @venkyyuvy this looks
+[06:53] <54fdd51a15522ed4b3dd04b7> Like a good feature to have in LabelEncoder. Would this make sense as a feature @amueller
+--------------------------------------------------------------------------------------------------

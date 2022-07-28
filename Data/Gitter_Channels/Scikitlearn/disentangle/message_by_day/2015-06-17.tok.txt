@@ -1,0 +1,99 @@
+<s> <user> <unka@> do you have a second ? </s>
+<s> <user> how <unka> can help beginners ? </s>
+<s> <user> <unka@> URL/http:/ <unka-./> <unka/> </s>
+<s> <user> <unka@> yes , sorry i was on the phone </s>
+<s> <user> > til : do n't try to make a learning curve example with a <unka-> model > because the training error does n't go up with the number of samples this is actually an interesting example if you <unka> it with the learning curve of a <unka> model </s>
+<s> <user> yeah , but maybe to advanced for an introductory course . </s>
+<s> <user> never mind , i was confused by the timing of URL/https:/ URL/github.com/ <unk#a,-/> but i think the code is just overly complicated </s>
+<s> <user> anybody around ? :) i have a few ( probably lame ) questions regarding nested cv ! </s>
+<s> <user> hi <unk#a@> </s>
+<s> <user> yeah i 'm around </s>
+<s> <user> i have a meeting in 10 minutes but i 'll answer stuff here </s>
+<s> <user> why is nested cv not generically possible with our current api ... i understand what needs to be done to make the <unka> data <unka> . but i do n't get why nested cv is difficult as <unka> had commented in that issue description ... <unka(_`> , .... <unk)`> would be enough right ? </s>
+<s> <user> this works currently if you use e.g . <unk#a=`> in the inner one </s>
+<s> <user> if anyone has time , the timing on <unk##> really confuses me btw . </s>
+<s> <user> <unka> an <unka> distance into smaller bits makes the code run faster ?! </s>
+<s> <user> but if you need to pass a cv object that takes y , what do you set y to ? </s>
+<s> <user> or even <unka_> . if the size of your dataset is not <unka> by the cv in the outer loop , the training sets in the inner loop will have different lengths </s>
+<s> <user> exactly </s>
+<s> <user> or <unka> </s>
+<s> <user> ( such a <unka> bug with lolo bit me really hard a few months ago ) </s>
+<s> <user> ( <unka:> : <unka:_> :) </s>
+<s> <user> i ca n't even get my emoji right , i 'm useless </s>
+<s> <user> this is a general apology for all lame questions that may follow :p please bear with me ! </s>
+<s> <user> ok so the inner loop does hyper param optimization using a separate cross validation and finds the best model which the outer loop uses to find the cross validated score ... why should these two affect each other ? ( like <unka> earlier , please bear with me :( ) </s>
+<s> <user> do n't even think that you have a <unka> on the inside </s>
+<s> <user> consider the simpler case with just a <unka_> inside a <unka_> </s>
+<s> <user> [ offtopic - i think <unka> supports only a subset of the emojis ;) ] </s>
+<s> <user> [ the bracket messed it up i think : <unka:> : <unka:_> : ] </s>
+<s> <user> ah :p </s>
+<s> <user> if i need to discuss the current code , should i open a new issue or add comments on my working pr which is addressing the issues ? </s>
+<s> <user> hi <unk#a@> </s>
+<s> <user> what do you mean by current code ? </s>
+<s> <user> and if its not too much trouble could you give me a line or two of code that will help me clearly understand this ? </s>
+<s> <user> i mean the code of master branch </s>
+<s> <user> if it 's in the context of <unka> i think commenting in your pr would work well </s>
+<s> <user> ok . </s>
+<s> <user> since most people who could answer are already following the pr </s>
+<s> <user> also you could use <unka`> <unka`> and ping the <unka(> ) of the piece of code </s>
+<s> <user> btw i still am in favor of <unka`> vs <unka`> </s>
+<s> <user> <unk#a@> let 's think about it </s>
+<s> <user> say we have a dataset ( x , y ) with 100 samples and want to use <unka`> </s>
+<s> <user> we need to fill in the blanks in the following </s>
+<s> <user> </s>
+<s> <user> </s>
+<s> <user> you can edit <unka> chat messages :) </s>
+<s> <user> <unk`> <unka> = <unka(> , <unka(=_> ?, <unk#a=_> )) <unka(_> , x , y , <unka(=_> ?, <unk#a=_> )) <unk`> </s>
+<s> <user> ( ignore the fact that the parameter is currently called <unka`> and not <unka_`> ) </s>
+<s> <user> how would you fill the question marks ? </s>
+<s> <user> the one on the 2nd line is easy </s>
+<s> <user> wo n't both be 100 ? </s>
+<s> <user> :p </s>
+<s> <user> ahhhh i get it ! </s>
+<s> <user> no , because the inner <unka`> ( the <unka> ) only gets a fold each time </s>
+<s> <user> yes .. sory .. this is too lame :| </s>
+<s> <user> if <unka()`> were <unk#`> , you could set the first <unk?`> to <unk#`> i think </s>
+<s> <user> </s>
+<s> <user> thanks a lot :) </s>
+<s> <user> but 1 ) this would be hacky 2 ) users should n't need to do this kind of <unka-> math 3 ) this does n't work at all for many <unka-> strategies </s>
+<s> <user> this is clear now !! will finish up my blog and resume the work :) thanks !! </s>
+<s> <user> oh god why does <unka> display inline gifs ? </s>
+<s> <user> i 'm starting to understand <unka> 's hate for it :d </s>
+<s> <user> is it bad ? :p i 'll remove :p </s>
+<s> <user> haha ! </s>
+<s> <user> also the fact that you can delete and edit messages is a bit <unka> </s>
+<s> <user> but u can do so only for 10 minutes ... </s>
+<s> <user> anyway , glad i could help , if you want me to take a look at the <unka> i 'll be around today </s>
+<s> <user> sure !! i 'll publish in an hour or two ! and also post it to our ml ... </s>
+<s> <user> btw if you have time could you check if the current implementation of the assert helpers look okay ? </s>
+<s> <user> i will try to do this later today </s>
+<s> <user> thanks ! whats your timezone btw ? </s>
+<s> <user> est ( i think ) </s>
+<s> <user> it 's <unk#a> </s>
+<s> <user> okay :) </s>
+<s> <user> <unk#:> </s>
+<s> <user> <unka@> for <unk##> do you get the same timing on your computer ? </s>
+<s> <user> <unk#a@> btw , <unka> is rather soon ... </s>
+<s> <user> <unka@> yeah . the student just showed me that doing array ** 2 is <unka-> in the array size </s>
+<s> <user> how about array <unk*=> array ? </s>
+<s> <user> so if you want to square an array it is faster to do so by <unka> it ... that seems wrong </s>
+<s> <user> even with chunks of size 2 ? </s>
+<s> <user> how about size 1 ? that would just be a loop over the items </s>
+<s> <user> for the code in <unk##> chunks of size 1 are fastest </s>
+<s> <user> <unka%> array <unk*=> array does n't work lol </s>
+<s> <user> having the loop over samples be the fastest just seems so wrong </s>
+<s> <user> i was thinking in <unk##> there might be some indexing thing , but if you narrowed it down to <unka.> , that 's very wrong </s>
+<s> <user> how about <unka.> ? </s>
+<s> <user> this works though ( but adds the overhead of a copy ) </s>
+<s> <user> <unk`> in [ 11 ]: <unka%> <unka> = <unka(.> ); <unka> <unk*=> <unka> the slowest run took <unk#.> times longer than the fastest . this could mean that an intermediate result is being cached 1000 loops , best of 3 : <unk#> <unconvertable > s per loop in [ 12 ]: <unka%> <unka> = <unka(.> ); <unka> ** 2 1000 loops , best of 3 : 1.25 ms per loop in [ 13 ]: <unka%> <unka> = <unka(.> ) the slowest run took <unk#.> times longer than the fastest . this could mean that an intermediate result is being cached 1000 loops , best of 3 : 525 <unconvertable > s per loop <unk`> </s>
+<s> <user> <unka[`> * <unka> for row in <unka> for <unka> in <unka]`> is much slower </s>
+<s> <user> <unka@> you mean gsoc <unka> ? it usually comes in july only right ? </s>
+<s> <user> <unk#a@> it 's june 26 </s>
+<s> <user> it opens june 26 until july 3rd i mean </s>
+<s> <user> ah its from 26 - 3 july ... how much would you like to see me completed with my goals before the <unka> ? i am thinking 1 . <unka_> <unka> 2 . data independent cv <unka> . 3 . multiple metric support - i wo n't be able to complete this though :/ does it look okay ? </s>
+<s> <user> i think <unk#&> completed ( in such a way in which there 's a <unka> branch where all tests pass and one can do nested cv nicely ) would be good . but by <unka> i mean <unka> :) </s>
+<s> <user> <unka@> , what do you think ? </s>
+<s> <user> yeah 1 & 2 merged would be great </s>
+<s> <user> i also thought there was something wrong with the <unka> but i 'm very confused now :-/ </s>
+<s> <user> and the problem is both in the <unka> and in the outer product computation </s>
+<s> <user> i feel stupid for not seeing what is happening </s>

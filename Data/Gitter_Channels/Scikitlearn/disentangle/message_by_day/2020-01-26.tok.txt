@@ -1,0 +1,5 @@
+<s> <user> <unk![> <unk#a()-./:]> ) </s>
+<s> <user> hello , i 'm new to using pipelines and getting the above error 'last step of pipeline should implement fit or be the string <unka'> . i ca n't figure out how to overcome this step . please assist if you can . </s>
+<s> <user> <unka@_> you're passing a list , instead just pass the <unka> directly as in the example : <unka(_`> ), <unka(=> ), ... <unk)`> ` </s>
+<s> <user> i.e . remove the brackets . you can also remove the redundant parenthesis around the <unka> </s>
+<s> <user> thanks <unka@> it worked ! </s>

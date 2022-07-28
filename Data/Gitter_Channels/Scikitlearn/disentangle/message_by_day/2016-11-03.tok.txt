@@ -1,0 +1,8 @@
+<s> <user> hey guys . can someone help with this error i get </s>
+<s> <user> when i do : ` > > > dataset = <unka'(_> <unka'`> any idea why i get this error : oserror : could not read bytes the <unka.> file downloaded , it has <unk#> lines </s>
+<s> <user> the error itself is : <unka`> : could not read <unka`> </s>
+<s> <user> i tried : <unka`> = <unka'(_> <unka'> , <unk#a')-./=_`> aswell </s>
+<s> <user> the cached data might be corrupted </s>
+<s> <user> try removing downloaded files and trying again </s>
+<s> <user> are <unka> <unka> supported for use in <unka-> ? it appears so , via the <unka> implementation according to URL/https:/ <unka./> <unk#a-/> but i keep getting errors when using a <unka> <unka> in <unka> . </s>
+<s> <user> <unka@> this room is for <unka-> , and the developers of <unka-> arent involved in <unka-> . youd probably be better off asking your question in the <unka-> <unka> ( if there is one ) or raising an issue on their github repo posting to stackoverflow </s>

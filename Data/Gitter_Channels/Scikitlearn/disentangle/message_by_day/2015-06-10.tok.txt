@@ -1,0 +1,17 @@
+<s> <user> <unk`> from <unka.> import <unka_> from <unka.> import <unka> import warnings <unka'(.> , <unka> ) import numpy as np <unk#a(.[_> , 2 , 3 <unk),]> <unk#a(.[> , 5 , 6 <unk)]> <unk`> this code which is supposed to raise a warning does n't raise one ! however this one does -_- <unk`> from <unka.> import <unka_> from <unka.> import <unka> import warnings <unka'(.> , <unka> ) import numpy as np <unk#a(.[_> , 2 , 3 <unk),]> <unk#a(.[> , 5 , 6 <unk)]> <unk`> ref : URL/https:/ URL/github.com/ <unk#a#-./> </s>
+<s> <user> the <unka> model in URL/http:/ <unka-./> <unka-./> is not standard . the distribution of <unka\_> does not have <unka> depending on the gamma distribution . it is just a constant . i think that is why the current implementation is kind of weird .... </s>
+<s> <user> the <unka`> ( to be converted to <unka`> ) does n't seem to work as intended ! </s>
+<s> <user> how do you mean ? </s>
+<s> <user> please check the above code sample :) </s>
+<s> <user> the <unka`> in the above code is supposed to be <unka`> ... </s>
+<s> <user> it is being disabled at [ <unk#a#(-./:]> ) .. maybe it has something to do with it ? </s>
+<s> <user> nope i tried removing that line and this issue still persists ! </s>
+<s> <user> i am not very good with working with the warnings registry . </s>
+<s> <user> hmm okay ! thanks for looking into it :) does this issue seem worthy enough for a new issue on github ? </s>
+<s> <user> probably not . </s>
+<s> <user> maybe ping <unka@> ? </s>
+<s> <user> okay ! meanwhile i 'll also investigate :) </s>
+<s> <user> great ! </s>
+<s> <user> i noticed that <unka> code is a little messy . some functions should be <unka> , and the way of initializing parameters is not completely implemented . according to the <unka> draft , different <unka> of responsibility , weight , mean , <unka> could be combined together to represent <unka> , <unka> , <unka> . i think , in terms of <unka> , it is good to create bunches of <unka> with inheritance and then combine them on demand in just use one class to represent all three models with four types of <unka> . is that a good idea ? </s>
+<s> <user> usually we try to restrict inheritance to <unka> , so that there is no complex overloading of functions . if you can implement it by providing <unka> for the four <unka> types , that would be great . i 'm not sure how well these <unka> , though . </s>
+<s> <user> <unka@> it would be great if you could give me your feedback on my redoing of the notebooks . </s>

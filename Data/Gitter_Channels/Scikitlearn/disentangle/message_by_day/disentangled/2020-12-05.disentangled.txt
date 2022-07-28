@@ -1,0 +1,4 @@
+[23:15] <541a528b163965c9bc2053de> Thanks for the follow-up, indeed is not very intuitive. Maybe it's normal, maybe the documentation of the precompute argument could explain better how to deal with the sample_weight. Maybe this could be part of a new tests / doc improvements related to https://github.com/scikit-learn/scikit-learn/pull/17785.
+--------------------------------------------------------------------------------------------------
+[23:54] <5977a991d73408ce4f6ebde7> @ogrisel I'm happy to try to make the change myself - do you think it could be done as a PR to the docs for ElasticNet (and the other linear models that take precompute as an argument to their constructors and accept a sample_weight arg to `fit`)
+--------------------------------------------------------------------------------------------------

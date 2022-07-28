@@ -1,0 +1,134 @@
+<s> <user> <unka@> and after <unka-> and <unka> you review the gp rewrite ? ;) </s>
+<s> <user> hi <unka@> and <unka@> , i tried to adress all comments in <unk##> if you have time for a quick review :) </s>
+<s> <user> <unka@> <unka@> could i trouble you for a small doubt ? - URL/https:/ URL/github.com/ <unk#a#-/> </s>
+<s> <user> <unk#a@> commented there </s>
+<s> <user> thanks !! </s>
+<s> <user> yes i think <unka@> is right , returning <unka(.> ... ) should do it </s>
+<s> <user> is <unka_> in utils ? </s>
+<s> <user> no in <unka_> </s>
+<s> <user> so there will be a new version now in <unka_> </s>
+<s> <user> ah , yes </s>
+<s> <user> and the old version will behave the old way </s>
+<s> <user> perfect </s>
+<s> <user> is there any reason why we ca n't have it to return the <unka> ? </s>
+<s> <user> so there are instances when the <unka(._> , y )) does n't work ? </s>
+<s> <user> yes ! </s>
+<s> <user> that 's odd , that line contains enough information to know what the length should be </s>
+<s> <user> no ? </s>
+<s> <user> not without expanding it right ? i mean <unka(._`> , <unka)`> returns an <unka> ... </s>
+<s> <user> yeah just add <unka(._`> , y , <unka)`> </s>
+<s> <user> thanks ! </s>
+<s> <user> because we do n't want to <unka> the whole thing there . we usually know this anyhow </s>
+<s> <user> add it where ? i do n't get what you propose </s>
+<s> <user> return the cv and the <unka_> from <unka_> ? </s>
+<s> <user> add <unka(_`> , y , <unka)`> <unka(_`> , y , <unka)`> it to the new cv classes </s>
+<s> <user> this means you 'll have to change this line </s>
+<s> <user> URL/https:/ URL/github.com/ <unk#a#-./_> </s>
+<s> <user> right ? </s>
+<s> <user> yes ! </s>
+<s> <user> and you only need to support the new classes . i get it now , this is good . </s>
+<s> <user> sorry to pester again ! but why do you think we ca n't have <unka`> , <unka_> = <unka(_> ... <unk)`> ... is it so we can find the length without generating the cv ? </s>
+<s> <user> that will make it support old cv classes too right ? </s>
+<s> <user> what do you mean without generating the cv ? the <unka(._`> , y , <unka)`> des n't generate the cv , right ? </s>
+<s> <user> and the wrapper of the old classes can just call <unka_`> </s>
+<s> <user> yes ... but <unka(_> .. ) would ... is that why you are suggesting so ? :) </s>
+<s> <user> no , <unka_> does n't generate it either </s>
+<s> <user> not until you iterate over what it returns </s>
+<s> <user> right ? </s>
+<s> <user> yeah </s>
+<s> <user> well what do you mean by " generate " ? </s>
+<s> <user> i guess the same as you </s>
+<s> <user> <unka> the <unka> </s>
+<s> <user> oh ! so you do n't want it to <unka`> <unka(.> , y , ... <unk)`> ? then fine ! </s>
+<s> <user> no ! it should just return a <unka-> cv object , given either an old-style or a <unka-> one </s>
+<s> <user> or a number </s>
+<s> <user> ahh ! okay ! thanks :) </s>
+<s> <user> <unka@> stupid question but is the splitting of the lables into <unka> equivalent to <unka-> ? </s>
+<s> <user> <unka@> at least it is very similar . if i get it right for <unka-> we want to spread different weights into the smallest possible amount of bags ( all bags having the same size ). here the number of bags ( <unka> ) is fixed and we want them to have ( approximately ) the same weight at the end . </s>
+<s> <user> <unka@> thanks for the review :) </s>
+<s> <user> i 'm just trying to figure out if the optimal solution is np hard or not ;) </s>
+<s> <user> yes , i had the same problem when i first needed that functionality . </s>
+<s> <user> i think you can show <unka> with <unka-> by binary searching the <unka-> </s>
+<s> <user> your <unka> was always adding to the smallest bin , right ? </s>
+<s> <user> yes , starting with the biggest weights </s>
+<s> <user> yeah seems good . i suggested minor <unka> </s>
+<s> <user> should we try to merge <unk##> and <unk##> before <unk##> ? </s>
+<s> <user> yes , i 'm correcting it at the moment , thanks a lot ! </s>
+<s> <user> np . sorry for the delay . we have quite a few <unka> </s>
+<s> <user> <unka@> <unka@> do you want to review <unk##> ? </s>
+<s> <user> sure </s>
+<s> <user> this gives me an idea for renaming the ugly <unka`> in <unka`> into <unka_`> , <unka> ? </s>
+<s> <user> i suggested <unka_> </s>
+<s> <user> ( or <unka_> if we rename ) </s>
+<s> <user> why <unka-> ? </s>
+<s> <user> that 's the meaning of <unka_`> in <unk##> </s>
+<s> <user> if it 's an integer </s>
+<s> <user> it means you 'll have <unka_`> labels in the test set </s>
+<s> <user> <unka_> ? </s>
+<s> <user> but ok , makes sense </s>
+<s> <user> well , what i mean is , if <unka_`> is n't right , we should change it in <unk##> </s>
+<s> <user> <unka_`> is a bit ambiguous ( people could expect it to refer to samples , not labels ) </s>
+<s> <user> <unka@> in the current implementation i sort <unka> of ( weight , corresponding labels ). if i use <unka.> i will have to sort it anyway and keep the <unka> to the original labels , so the complexity would be the same , right ? </s>
+<s> <user> <unka_`> seems good !! </s>
+<s> <user> how about for <unka> , would you suggest <unka_`> ? </s>
+<s> <user> i would n't </s>
+<s> <user> ah ! okay <unka_`> it is ! </s>
+<s> <user> wait , both have their problems </s>
+<s> <user> <unk#a@> you're very quick to agree with things :) let 's think about it </s>
+<s> <user> :p </s>
+<s> <user> <unka_`> ? </s>
+<s> <user> <unka@> you have to sort it , the <unka> would be stored in <unka_`> </s>
+<s> <user> the <unka> comes from looping over <unka_> and then doing fancy indexing . i want to avoid the fancy indexing </s>
+<s> <user> in <unk##> <unka_`> and <unka_`> are natural because they're <unka> up to <unka`> . they're not the best names but they're the friendliest <unka> . </s>
+<s> <user> ( also , these parameter names are kind of mixing up test and validation ... ) </s>
+<s> <user> ( it 's hard to teach someone and <unka> for 10min about validation vs test , and then you code <unk#a.=_> ) </s>
+<s> <user> but ignoring this , <unka_`> makes sense for <unka> ( one could imagine even supporting <unka> and <unka_`> , but that 's not important ) </s>
+<s> <user> there are currently no common tests for <unka-> generators , right ? </s>
+<s> <user> there are ! <unka/_`> ? </s>
+<s> <user> which i 've <unka> into <unka._`> and <unka._`> </s>
+<s> <user> those are n't really common tests , it 's just regular tests </s>
+<s> <user> i mean something like URL/https:/ URL/github.com/ <unk#a#-./_> </s>
+<s> <user> oh ! okay !! </s>
+<s> <user> do you find the name of [ <unk#a#(-./:]_`> ) appropriate ? i just got totally <unka> by it . </s>
+<s> <user> how about <unka_`> ? </s>
+<s> <user> from the <unka> it checks whether it is a <unka> </s>
+<s> <user> so <unka_`> seems appropriate ? </s>
+<s> <user> also from the code . i was just curious whether there 's some obscure meaning of <unka`> that i was n't aware of . </s>
+<s> <user> <unka@> raised a good point in the pr : we probably still want to support passing <unka> </s>
+<s> <user> so maybe we want <unka_> indeed to return an <unka> ? </s>
+<s> <user> yes !! that seems like a nice solution to me :) </s>
+<s> <user> the thing is , after all the <unka> , we 'll want it to return the <unka-> cv object , right ? </s>
+<s> <user> and about that helper i think we can do without it ... its used only in one place ... i 'll remove that </s>
+<s> <user> imho <unka_> is used only internally right ? we will be able to do <unk`> for tr , te in <unka(_> ... ): ... <unk`> if we return <unka> ... </s>
+<s> <user> <unka@> there is not really a reason to do that , right ? the <unka_> is <unka> where we actually have x and y </s>
+<s> <user> <unk#a@> yeah </s>
+<s> <user> that will pass all the responsibility of proxying labels etc to <unka_> </s>
+<s> <user> i 'm not saying it 's a bad thing , just that it makes the function pretty heavy </s>
+<s> <user> will the api of the new cv objects ever be used outside of <unka_> then ? </s>
+<s> <user> proxying labels ? what do you mean ? </s>
+<s> <user> passing weights , labels ( <unka_> in general ) to the cv generator </s>
+<s> <user> it makes the function more heavy , but not that much . and no , then i think the <unka`> would only be called there . the <unka_`> will probably be called outside of it , which kind of makes it tricky again . </s>
+<s> <user> or we could have <unka_`> ? </s>
+<s> <user> currently we only have labels and they are present in all the function calls </s>
+<s> <user> what would that do ? </s>
+<s> <user> i mean rename <unka_`> to <unka_`> so ppl could use that ? </s>
+<s> <user> i have a crazy suggestion ... why do n't we <unka> <unka_`> along with this ? will it make the pr too big ? </s>
+<s> <user> tackle </s>
+<s> <user> i think we should change the name if it gets more responsibility but how would that impact how people can use it ? </s>
+<s> <user> please do n't include <unka_> changes in this pr </s>
+<s> <user> okay ;) </s>
+<s> <user> there is still quite a bit to do for this , i think </s>
+<s> <user> the main todo yet to be done is <unka_`> ... other are minor right ? documentation must be the next big thing ... fixing examples should be quite easy ... </s>
+<s> <user> well yes , the way we now discussed <unka_> there will be no changes to the <unka> code </s>
+<s> <user> yes :) </s>
+<s> <user> and make the tests pass </s>
+<s> <user> yep ! on it ! </s>
+<s> <user> alright :) </s>
+<s> <user> <unka@> currently the shuffle parameter is not used given the <unka> used ( i could shuffle the labels having a same weight but this case might not appear and the result could be misleading ). </s>
+<s> <user> <unka-> with the new notation it would be the labels having the same number of samples :) </s>
+<s> <user> oh , right . sorry . brainfart . then please remove the shuffle parameter . </s>
+<s> <user> for shuffling people could use <unk##> </s>
+<s> <user> thanks , done ! </s>
+<s> <user> i think it looks good now apart from minor cosmetic things that i commented on . maybe find another <unka> ;) </s>
+<s> <user> great , thanks a lot ! :) </s>
+<s> <user> <unka@> since you already saw the code , would you have time to take a look ? :) </s>

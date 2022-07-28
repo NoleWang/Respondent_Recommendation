@@ -1,0 +1,11 @@
+[14:11] <5cf106a0d73408ce4fc1d8b2> Can anybody please explain me batch decent gradient and the procedure to calculate it
+[14:12] <5cf106a0d73408ce4fc1d8b2> I have just started machine learning
+[14:12] <5cf106a0d73408ce4fc1d8b2> In python
+--------------------------------------------------------------------------------------------------
+[14:18] <5c13ca6dd73408ce4fb1f2d5> Batch gradient descent uses the whole dataset to calculate the gradient vector unlike mini-batch or stochastic gradient descent, thats the key point. The procedure in common words is: calculate partial derivatives for a cost function with respect to each coefficient using the whole dataset, make a gradient step, update coefficients
+--------------------------------------------------------------------------------------------------
+[14:28] <5c651687d73408ce4fb7c2c8> Hi there. Try this link for batch gradient descent in python
+[14:28] <5c651687d73408ce4fb7c2c8> https://towardsdatascience.com/gradient-descent-in-python-a0d07285742f
+--------------------------------------------------------------------------------------------------
+[15:29] <5cf106a0d73408ce4fc1d8b2> Thanks @isaacaugustus  and @gyrdym
+--------------------------------------------------------------------------------------------------

@@ -1,0 +1,7 @@
+[11:34] <53135b495e986b0712efc453> @amueller if you can spare a few minutes, review for https://github.com/scikit-learn/scikit-learn/pull/6697 please? ;)
+--------------------------------------------------------------------------------------------------
+[19:24] <54d4a1d6db8155e6700f853b> @rvraghav93 a few minutes, right :P thanks for the ping, though. I'll try to take a look.
+--------------------------------------------------------------------------------------------------
+[19:25] <53135b495e986b0712efc453> My hope is you'll get fully nerdsniped in those few minutes ;)
+[19:26] <53135b495e986b0712efc453> And with that PR merged multiple metric is just a few lines of code away B)
+--------------------------------------------------------------------------------------------------

@@ -1,0 +1,6 @@
+<s> <user> hey guys , is the <unka> clustering in <unka> learn soft or hard ? or is there a setting somewhere we could use to set that ? </s>
+<s> <user> also , while using <unka> clustering on 100k data points , my computer crashed . i assume this is because i did n't use the <unka'> parameter for caching ? or did i misunderstand something there ? </s>
+<s> <user> the memory parameter will not help you here . what do you mean by soft or hard ? </s>
+<s> <user> it might be useful to <unka> the distance matrix in a <unka> way </s>
+<s> <user> how much ram do you have ? </s>
+<s> <user> and which linkage mode are you using ? </s>

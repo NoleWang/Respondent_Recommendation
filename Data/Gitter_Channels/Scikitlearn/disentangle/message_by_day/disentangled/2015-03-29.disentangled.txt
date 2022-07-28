@@ -1,0 +1,18 @@
+[15:51] <54d4a1d6db8155e6700f853b> @ogrisel are you around?
+--------------------------------------------------------------------------------------------------
+[15:52] <541a528b163965c9bc2053de> yes
+[15:52] <541a528b163965c9bc2053de> are you feeling better?
+--------------------------------------------------------------------------------------------------
+[15:53] <54d4a1d6db8155e6700f853b> yeah, somewhat. So do we do only slides, no notebooks?
+[15:53] <541a528b163965c9bc2053de> apparently yes, this is a constraint of their platform apparently
+[15:53] <54d4a1d6db8155e6700f853b> ok. and use google presentation?
+--------------------------------------------------------------------------------------------------
+[15:55] <541a528b163965c9bc2053de> actually it's possible to have a screen share for live demo but it needs flash and or java
+[15:55] <541a528b163965c9bc2053de> I would not count on it too much
+[15:55] <541a528b163965c9bc2053de> we can use google doc and export the slides as PDF
+[15:55] <541a528b163965c9bc2053de> I think
+[15:55] <541a528b163965c9bc2053de> let's try
+[15:57] <541a528b163965c9bc2053de> I sent you an invite
+[15:58] <54d4a1d6db8155e6700f853b> thanks
+[15:58] <54d4a1d6db8155e6700f853b> That sounds like a good strategy
+--------------------------------------------------------------------------------------------------

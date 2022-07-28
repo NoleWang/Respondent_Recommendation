@@ -1,0 +1,4 @@
+[00:43] <561a58f7d33f749381a8ff2f> @amueller nice catch
+[10:55] <564789be16b6c7089cbab8b7> hi.. I was wondering if http://arxiv.org/pdf/1109.0887.pdf "Learning Nonlinear Functions Using Regularized Greedy Forest" is of interest? It was the method that came second in the kaggle higgs boson competition
+[11:01] <564789be16b6c7089cbab8b7> hmm.. I see that despite this it hasn't been cited many times
+[17:46] <54d4a1d6db8155e6700f853b> @kootenpv well it is a known longstanding issue

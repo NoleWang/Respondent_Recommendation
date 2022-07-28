@@ -1,0 +1,6 @@
+[11:14] <5921d334d73408ce4f612e46> Please does it make sense to find the optimal gamma for a polynomial kernel?
+[11:15] <5921d334d73408ce4f612e46> Most of the examples I've seen searching for gamma have the kernel as linear or rbf
+[11:16] <5921d334d73408ce4f612e46> I tried using grid search, but it doesn't seem to be the right function for getting the gamma in this case (it seems slow in processing)
+--------------------------------------------------------------------------------------------------
+[15:02] <56ed9a8885d51f252ab9b33f>
+--------------------------------------------------------------------------------------------------

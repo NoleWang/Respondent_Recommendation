@@ -1,0 +1,3 @@
+[11:32] <5c3cec52d73408ce4fb4aea1> I dump with joblib a model with all cpus (njobs = -1), when I load the model and predict, not use all cpus
+[17:00] <5dbe0c1fd73408ce4fcfc84a> hi sir  how to  ignore negative floating values in a data set ?
+[18:56] <589b9e0fd73408ce4f490ba4> @FranciscoPalomares Use `estimator.set_params(n_jobs=1)` after unpickling

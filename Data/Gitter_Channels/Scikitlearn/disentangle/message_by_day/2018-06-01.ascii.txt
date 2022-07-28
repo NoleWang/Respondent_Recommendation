@@ -1,0 +1,15 @@
+[22:39] <5b11caa3d73408ce4f9b96b5> As anybody encountered PicklingError when trying to use pipeline.predict with pool.apply_async ?
+[22:39] <54d4a1d6db8155e6700f853b> what's the error?
+[22:39] <5b11caa3d73408ce4f9b96b5> PicklingError: Can't pickle <function Pipeline.predict at 0x1c655cd08>: it's not the same object as sklearn.pipeline.Pipeline.predict
+[22:40] <5b11caa3d73408ce4f9b96b5> The code that I'm using is -  result_train = pool.apply_async( 		 			estimator.predict, 		 			(train_data['X'], ), 		 	)
+[22:41] <54d4a1d6db8155e6700f853b> yeah you can't pickle instance methods like that
+[22:41] <54d4a1d6db8155e6700f853b> write a new function that is not a method and does the prediction.
+[22:42] <5b11caa3d73408ce4f9b96b5> I tried wrapping it into a function. It still throws the same error.
+[22:42] <5b11caa3d73408ce4f9b96b5> def wrapper(*args): 	func = args[0] 	func(*args[1:])
+[22:42] <5b11caa3d73408ce4f9b96b5> result_train = pool.apply_async( 					wrapper, 					(estimator.predict, train_data['X']), 			)
+[22:42] <54d4a1d6db8155e6700f853b> make estimator the argument, not estimator.predict
+[22:43] <5b11caa3d73408ce4f9b96b5> Okay, let me try that.
+[22:45] <5b11caa3d73408ce4f9b96b5> Yes, it works.
+[22:46] <5b11caa3d73408ce4f9b96b5> Thanss @amueller. Where can I read more about this error ?
+[22:49] <54d4a1d6db8155e6700f853b> I don't know.  google pickling instance methods, and you'll see that's not possible
+[22:49] <54d4a1d6db8155e6700f853b> sklearn.pipeline.Pipeline.predict is a bit of a wild beast and not a normal class method, so you can't pickle it

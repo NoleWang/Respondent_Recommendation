@@ -1,0 +1,2 @@
+<s> <user> hello , everyone ! i aim to implement an experimental artificial <unka-> network ( <unka> ) for a research project . i am not sure why ( despite being 13 years in research community ) i was not able to find any code for it . any insights would be highly appreciated . </s>
+<s> <user> for those of you unfamiliar with <unka> . following image is the proposed architecture of a single unit of the network . <unk![> <unk#a()./:]> ) </s>

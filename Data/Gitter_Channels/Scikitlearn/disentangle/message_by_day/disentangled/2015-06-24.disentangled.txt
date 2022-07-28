@@ -1,0 +1,22 @@
+[03:05] <53135b495e986b0712efc453> @vene I am asking since you had raised the question on whether we had common tests for CV... could I add "Raise an issue to add common tests for CV iterators" as a todo to be done after `MRG+2`?
+--------------------------------------------------------------------------------------------------
+[03:07] <54e07d6515522ed4b3dc0858> I don't think it's important at the moment
+[03:09] <53135b495e986b0712efc453> OK! thanks!
+--------------------------------------------------------------------------------------------------
+[15:33] <550f53e215522ed4b3dda5f6> Hi, it looks like we don't have Old Faithful data set, right?
+--------------------------------------------------------------------------------------------------
+[17:26] <541a528b163965c9bc2053de> @xuewei4d no we don't. As it's very small I think we could include a copy in the `sklearn.datasets` folder as we do for iris (just check that the copyright allow that but I am pretty sure it does).
+--------------------------------------------------------------------------------------------------
+[19:42] <550f53e215522ed4b3dda5f6> OK. I will check it out. I would like to repeat some experiments described on PRML. @ogrisel
+--------------------------------------------------------------------------------------------------
+[20:00] <541a528b163965c9bc2053de> Would be a good sanity check indeed.
+--------------------------------------------------------------------------------------------------
+[20:02] <541a528b163965c9bc2053de> If you include the old faithful dataset, please do so in a separate PR and rebase your GMM PR on top of it to be able to merge the dataset PR first (without waiting for the end of the GMM work) while still being able to use it in your GMM examples.
+--------------------------------------------------------------------------------------------------
+[20:07] <550f53e215522ed4b3dda5f6> Got it.
+--------------------------------------------------------------------------------------------------
+[21:09] <53135b495e986b0712efc453> @vene @amueller @ogrisel If you have a few mins to spare... could you take a look at #4294 and let me know if it looks okay so I can proceed with updating documentation and fixing examples in parallel with the main review? In particular please let me know if you feel `len_cv` `iter_cv` and the new impl of `check_cv` look okay?
+--------------------------------------------------------------------------------------------------
+[23:37] <550f53e215522ed4b3dda5f6> There is a copy of data in R, which has GPL license. It definitely doesn't work. The original data is publish on JSTOR. Terms and Conditions of Use of JSTOR prohibits the commercial use, but which is permitted under sickout-learn's BSD-license. So I don't think we could add old-faithful data. @ogrisel
+[23:38] <550f53e215522ed4b3dda5f6> [Terms and Conditions of Use of JSTOR](http://www.jstor.org/page/info/about/policies/terms.jsp)
+--------------------------------------------------------------------------------------------------

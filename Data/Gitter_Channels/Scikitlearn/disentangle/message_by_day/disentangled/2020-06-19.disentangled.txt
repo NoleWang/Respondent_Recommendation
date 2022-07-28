@@ -1,0 +1,10 @@
+[20:18] <5eeb9b35d73408ce4fe749bc> Hullo! I took on #9602 as a first issue for the MLH Fellowship. Looking into it further, it seems like the scope of the issue is much larger than clarifying a single docstring. I'm unsure of whether to start poking away at it, or whether to start a larger discussion on the direction of multiclass/multilabel learning in sklearn. Would love to hear thoughts. :)
+--------------------------------------------------------------------------------------------------
+[21:29] <54d4a1d6db8155e6700f853b> hm honestly I think we're pretty consistent with the terms in the glossary
+[21:30] <54d4a1d6db8155e6700f853b> >  In some places, multiclass/multilabel functionality is explicit and indicated by the name of the function.
+[21:30] <54d4a1d6db8155e6700f853b> can you give an example of that?
+[21:30] <54d4a1d6db8155e6700f853b> that's for meta-estimators, I guess?
+--------------------------------------------------------------------------------------------------
+[21:58] <5eeb9b35d73408ce4fe749bc> Ah, I guess I went a bit overboard with my comment, seeing an issue where there was none.
+[22:01] <5eeb9b35d73408ce4fe749bc> I'll focus on clarifying the OVR docstring, then.
+--------------------------------------------------------------------------------------------------

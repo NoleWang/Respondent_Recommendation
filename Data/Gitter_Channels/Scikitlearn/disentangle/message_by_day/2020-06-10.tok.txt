@@ -1,0 +1,9 @@
+<s> <user> hello , i hope this is the right place for my question </s>
+<s> <user> i have a problem with a <unk#a-> . i simplified my problem to the following : there are 2 classes +1 and -1 and i have a <unka> for each of the classes <unk#.> ( class -1 ) and <unk#.> ( class 1 ) now that i trained a <unka> with those values i throw some random values to the <unka> to predict </s>
+<s> <user> i expect the decision limit to be in the center of the two example values </s>
+<s> <user> but even <unk#.> , the train data for class 1 is predicted as -1 </s>
+<s> <user> i even tried to move this to a 2d problem adding a 2nd feature to the values [ <unk#.> , 0 ] and [ <unk#.> , 0 ] but this did n't worked either </s>
+<s> <user> i have some data i want to so linear regression on . when i use <unka()._> , <unka[> ]) i get a score of over 0.96 </s>
+<s> <user> when i use <unk#a().=_> , <unka[> ]) i get a score of 0 </s>
+<s> <user> what am i doing wrong ? </s>
+<s> <user> what 's the complete code ? training set score or test set score ? </s>

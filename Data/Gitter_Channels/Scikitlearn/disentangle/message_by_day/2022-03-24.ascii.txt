@@ -1,0 +1,2 @@
+[17:33] <matrix-ogrisel:matrix.org> I think it's using `estimator.score(X_test, y_test)` by default.
+[17:33] <matrix-ogrisel:matrix.org> So accuracy for classifier and R2 for regressors.

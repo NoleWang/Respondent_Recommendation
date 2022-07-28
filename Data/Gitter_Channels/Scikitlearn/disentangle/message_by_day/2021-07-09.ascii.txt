@@ -1,0 +1,6 @@
+[11:58] <575b0eccc2f0db084a1d3a41> I see that the binary_tree.pxi passes the value num_samples in the _recursive_build() procedure as an argument. The num_samples is calculated using self.data_arr.shape[0] whereas _recursive_build() expects an ITYPE_t argument. ITYPE_t is defined as np.intp_t which I assume is only 32 bit signed integer. So how is the binary tree built in cases when n_samples is greater than this value - let's say 10million data points? 
+[12:00] <575b0eccc2f0db084a1d3a41> In default python, this would've been handled by increasing the data size to long long implicitly. Does cython take care of it? I don't see any methods to take care of such scenario in the scikit-learn implementation code.
+[12:07] <575b0eccc2f0db084a1d3a41> Except for that idx_end - idx_start < 2 will be true in this case (due to signed integer overflow?) and the node 0 will be made a leaf node. But this is an unexpected behaviour, right?
+[12:59] <matrix-rthy:matrix.org> @HarshVardhanKumar: maximum value for int32 is ~2e9 not 2e6. So probably no one has tried using it with more than 2 billion samples.  Not sure it's really an issue for the near future.
+[13:01] <matrix-rthy:matrix.org> +1 to check for that overflow though.
+[13:04] <575b0eccc2f0db084a1d3a41> @rthy:matrix.org  thanks for pointing it out. A silly mistake on my part.

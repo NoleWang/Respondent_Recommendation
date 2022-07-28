@@ -1,0 +1,5 @@
+[22:49] <589208e2d73408ce4f4770c4> [![Screenshot from 2018-01-17 22-43-24.png](https://files.gitter.im/scikit-learn/scikit-learn/aUpR/thumb/Screenshot-from-2018-01-17-22-43-24.png)](https://files.gitter.im/scikit-learn/scikit-learn/aUpR/Screenshot-from-2018-01-17-22-43-24.png)
+[22:50] <589208e2d73408ce4f4770c4> Hi everyone. an SVM model i created returns an error when i fit with my x and y data. below is a print out of my x and y values and the error message. I transformed the y values to onehotencoder values as well.  
+[22:53] <589208e2d73408ce4f4770c4> the same error is generated when i use random forest and naive bayes
+[23:22] <55d21ee30fc9f982beadabb8> Don't OneHotEncode `y`
+[23:22] <55d21ee30fc9f982beadabb8> and it will work

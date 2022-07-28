@@ -1,0 +1,9 @@
+[11:16] <5bc98094d73408ce4fabf741> @ogrisel that's what I am doing locally, I work with a jupyter notebook with a separate tensorflow + scikit environment installed and used with "activate" and conda
+[11:16] <5bc98094d73408ce4fabf741> I was asking because I've got a separate lightweight service running inside of container and I wanted to keep it limited to just pip and relevant libs on production
+[11:17] <5bc98094d73408ce4fabf741> In the container I don't want to use conda
+--------------------------------------------------------------------------------------------------
+[16:06] <5824aa0dd73408ce4f3501a2> @piotr-mamenas have you considered Miniconda as a lightweight alternative? https://docs.conda.io/en/latest/miniconda.html
+[16:07] <5824aa0dd73408ce4f3501a2> I think there is also the odd dockerhub image to build of
+--------------------------------------------------------------------------------------------------
+[20:46] <541a528b163965c9bc2053de> @piotr-mamenas use a venv and pip install everything you need in it. You can also prepare a lightweight conda environment with some tricks: https://twitter.com/jiminy_crist/status/1135637901457395712
+--------------------------------------------------------------------------------------------------

@@ -1,0 +1,2 @@
+[15:59] <564789be16b6c7089cbab8b7> Can any of the classifiers in scikit learn directly optimize auc as the loss function?
+[23:01] <6008674dd73408ce4ff94a9b> Hello all! I'm not a library developer, I'm a student developer and user of scikit-learn. Is there any work going on for scikit-learn to use Apple's ML Compute frameworks so that ML calculations can be accelerated by the 16-core neural engine in the recent Apple Silicon macs?

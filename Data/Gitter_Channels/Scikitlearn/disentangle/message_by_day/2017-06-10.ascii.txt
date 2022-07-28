@@ -1,0 +1,12 @@
+[07:16] <5634e15116b6c7089cb8f9f2> thanks @dohmatob and @ogrisel . I tried working through the docs on  http://scikit-learn.org/stable/tutorial/basic/tutorial.html but it got rather dense at the **Learning and predicting** section especially at `clf.fit(digits.data[:-1], digits.target[:-1])`. I am at a loss to what some of the parameters in `SVC(C=100.0, cache_size=200, class_weight=None, coef0=0.0, decision_function_shape=None, degree=3, gamma=0.001, kernel='rbf', max_iter=-1, probability=False, random_state=None, shrinking=True, tol=0.001, verbose=False)` represent. 
+[09:41] <541a528b163965c9bc2053de> you don't need to know the meaning of them all at first but you should check the API documentation of the SVC class at some point
+[10:05] <541a528b163965c9bc2053de> http://scikit-learn.org/stable/modules/generated/sklearn.svm.SVC.html
+[11:11] <5634e15116b6c7089cb8f9f2> thanks for the tip @ogrisel  <unconvertable>
+[12:08] <5784d86dc2f0db084a229ae0> Hey guys! I have an idea for an app and I was hoping i could find rediculously passionate people who could come work with me. it has machine learning integrated to bring progress to mankind.
+[17:11] <541a528b163965c9bc2053de> I think people in this room are ridiculously passionate (and incredibly busy) in building tools for other people to build apps to bring progress to mankind.
+[17:12] <541a528b163965c9bc2053de> ;)
+[17:12] <547d8325db8155e6700da60b> ajajajajaaj
+[19:00] <5784d86dc2f0db084a229ae0> @ogrisel Haha yeah that's pretty evident :') so you wouldn't be able to help me?
+[19:06] <541a528b163965c9bc2053de> I am sorry, no. You should probably setup a proof of concept of your own if you want to recruit others to join your project.
+[19:32] <593c448fd73408ce4f66554c> Hi, I am a veteran R/Rcpp developer wanting to transition to being a sklearn contributor. There are a lot of classes and I think a consistent coding style in the sklearn code base - I'm wondering if there are any docs or presentations on the overall architecture (class hierarchy, the way helper functions should be organized, etc) that could help me understand the flow and be able to contribute?
+[20:19] <55d21ee30fc9f982beadabb8> @jeffwong I would check the tutorial http://scikit-learn.org/stable/tutorial/index.html The introduction will give you the convention and bases regarding the estimator

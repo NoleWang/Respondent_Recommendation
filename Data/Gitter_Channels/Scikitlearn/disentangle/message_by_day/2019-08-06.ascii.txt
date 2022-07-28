@@ -1,0 +1,33 @@
+[06:38] <5a7aea3dd73408ce4f8c133a> @amueller I don't know if this helps: I ran ``` from scipy import linalg import numpy as np m, n = 9, 6 a = np.random.randn(m, n) + 1.j*np.random.randn(m, n) U, s, Vh = linalg.svd(a) print(U.shape,  s.shape, Vh.shape) ```  `cProfile` says: ```       394    0.004    0.000    0.017    0.000 <frozen importlib._bootstrap_external>:1233(find_spec)       900    0.004    0.000    0.004    0.000 {built-in method posix.stat}         1    0.006    0.006    0.006    0.006 lil.py:23(lil_matrix)     81/24    0.007    0.000    0.011    0.000 sre_compile.py:64(_compile)   402/399    0.011    0.000    0.022    0.000 {built-in method builtins.__build_class__}     212/1    0.023    0.000    0.222    0.222 {built-in method builtins.exec}       190    0.024    0.000    0.024    0.000 {built-in method marshal.loads}     39/37    0.038    0.001    0.043    0.001 {built-in method _imp.create_dynamic} ``` (sorted by second column)   ```         9    0.000    0.000    0.000    0.000 __future__.py:79(__init__)         9    0.000    0.000    0.000    0.000 _globals.py:77(__repr__)         9    0.000    0.000    0.000    0.000 {method 'encode' of 'str' objects}         9    0.000    0.000    0.000    0.000 {method 'keys' of 'dict' objects}         9    0.000    0.000    0.000    0.000 os.py:742(encode)         9    0.000    0.000    0.001    0.000 abc.py:151(register)         9    0.000    0.000    0.001    0.000 datetime.py:356(__new__)       900    0.001    0.000    0.005    0.000 <frozen importlib._bootstrap_external>:75(_path_stat)       900    0.004    0.000    0.004    0.000 {built-in method posix.stat}       936    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:321(<genexpr>)        96    0.000    0.000    0.000    0.000 enum.py:630(<lambda>)     39/37    0.038    0.001    0.043    0.001 {built-in method _imp.create_dynamic}         1    0.002    0.002    0.002    0.002 __init__.py:259(_reset_cache)         1    0.006    0.006    0.006    0.006 lil.py:23(lil_matrix) ``` (sorted by third column)
+[06:38] <5a7aea3dd73408ce4f8c133a> this is on the 24 core machine
+[06:43] <5a7aea3dd73408ce4f8c133a> @amueller when I run this code: ``` train_scores, valid_scores = validation_curve(estimator=pipeline,  # estimator (pipeline)                                               X=features,  # features matrix                                               y=target,  # target vector                                              param_name='pca__n_components',                                              param_range=range(1,50),  # test these k-values                                              cv=5,  # 5-fold cross-validation                                              scoring='neg_mean_absolute_error')  # use negative validation ```  directly on the host (with 24 cores) I get ~30 seconds. When I run it directly on localhost (4 cores, 8 threads) I get around 30-40 seconds as well. When I run inside docker with cpu limit of 6 cores and 6GB RAM, it needs almost 10 minutes. Inside a VirtualBox with 2 cores.. around 30 seconds, seems scikit does not play well with docker limitations which uses the CFS Scheduler: [link](https://docs.docker.com/config/containers/resource_constraints/#configure-the-default-cfs-scheduler)
+[06:47] <5a7aea3dd73408ce4f8c133a> Also found out that if I adjust `param_range` to `range(1,5)`the code runs much faster (I am no data scientist)
+[07:02] <5a7aea3dd73408ce4f8c133a> It seems `validation_curve` does not really profit from multithreading/multiprocessing. I get almost same results on intel i7 (4 cores) and intel xeon (24 cores). The problem is that if the validation curve runs on the xeon machines.. it uses all cores and the machine is overloaded, which makes no sense, really :) 
+[07:09] <5a7aea3dd73408ce4f8c133a> `cv=3` makes it faster as well
+[13:11] <5c34f182d73408ce4fb408a6> How should I install the dependencies for local development of scikit-learn?
+[14:26] <54d4a1d6db8155e6700f853b> @sameshl https://scikit-learn.org/stable/developers/advanced_installation.html#install-bleeding-edge
+[14:27] <54d4a1d6db8155e6700f853b> I'd recommend using conda and doing ``conda install numpy scipy cython matplotlib pytest flake8 sphinx sphinx-gallery`` or something like that
+[14:27] <5a7aea3dd73408ce4f8c133a> @amueller by the way, numpy and scipy from conda perform somehow faster than from pip
+[14:27] <5a7aea3dd73408ce4f8c133a> but I still haven't found out why
+[14:28] <54d4a1d6db8155e6700f853b> @katsar0v thats mkl vs openblas possibly
+[14:28] <54d4a1d6db8155e6700f853b> but could also be how they are configured by default
+[14:28] <54d4a1d6db8155e6700f853b> i.e. how many threads they use etc
+[14:28] <5a7aea3dd73408ce4f8c133a> @amueller how can I reconfigure numpy and scipy to use max threads e.g. 6?
+[14:28] <5a7aea3dd73408ce4f8c133a> I have no `mkl` (from conda or pip)
+[14:29] <54d4a1d6db8155e6700f853b> pip has no mkl ;)
+[14:29] <54d4a1d6db8155e6700f853b> (so far)
+[14:29] <54d4a1d6db8155e6700f853b> https://stackoverflow.com/questions/30791550/limit-number-of-threads-in-numpy
+[14:29] <5a7aea3dd73408ce4f8c133a> https://pypi.org/project/mkl/ 
+[14:31] <54d4a1d6db8155e6700f853b> @katsar0v I don't think that helps given that numpy and scipy will not be linked against it
+[14:34] <5a7aea3dd73408ce4f8c133a> this saved my life @amueller 
+[14:34] <54d4a1d6db8155e6700f853b> well in your script n and m are way too small to show anything useful
+[14:36] <5a7aea3dd73408ce4f8c133a> it reduced my validation curve
+[14:36] <5a7aea3dd73408ce4f8c133a> from 500s to 15 seconds
+[14:36] <5a7aea3dd73408ce4f8c133a> @amueller this is a life saver
+[14:36] <54d4a1d6db8155e6700f853b> what did?
+[14:36] <5a7aea3dd73408ce4f8c133a> https://stackoverflow.com/questions/30791550/limit-number-of-threads-in-numpy
+[14:36] <5a7aea3dd73408ce4f8c133a> these envs
+[14:36] <54d4a1d6db8155e6700f853b> ah
+[14:36] <54d4a1d6db8155e6700f853b> well stackoverflow saved your live
+[14:36] <54d4a1d6db8155e6700f853b> *life
+[14:37] <5a7aea3dd73408ce4f8c133a> It's good for performance tweaks

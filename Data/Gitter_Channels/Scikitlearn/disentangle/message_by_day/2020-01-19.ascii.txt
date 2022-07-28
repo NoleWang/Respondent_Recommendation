@@ -1,0 +1,1 @@
+[13:38] <56f3953b85d51f252aba800a> Hello, I would be very grateful for help or hint. What I would like to do is to somehow find pattern in text. Lets say you have forum and people or posting on it. I would like to find pattern which would indicate me what are they talking about the most. Thank you for hint.

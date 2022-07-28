@@ -1,0 +1,10 @@
+[06:08] <54b2524adb8155e6700e8a8e> Sorry, I cant think of anything right now. I think you would benefit from a few more easy issues. https://github.com/scikit-learn/scikit-learn/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3A%22help+wanted%22+-label%3A%22good+first+issue%22+ might help, but as you know, were much better at adding the <unconvertable> help wanted <unconvertable> tag than removing it. Do you want to help me build a bot to manage that?? I have ideas...
+[10:17] <54b2524adb8155e6700e8a8e> Ping @gxyd 
+[10:18] <53eb987c107e137846baa89d> Yes, I'll am willing to work on that.
+[10:18] <53eb987c107e137846baa89d> Will you open an issue for that?
+[15:53] <55fc44590fc9f982beb11bbf> Please let me know if any assistance is needed 
+[15:54] <53eb987c107e137846baa89d> Sure. Thanks.
+[19:37] <55fc44590fc9f982beb11bbf> https://travis-ci.org/scikit-learn/scikit-learn/jobs/327310192
+[19:37] <55fc44590fc9f982beb11bbf> Why can't I use scipy.sparse.random?
+[19:37] <55fc44590fc9f982beb11bbf> Works fine locally
+[20:15] <55d21ee30fc9f982beadabb8> scipy.sparse.random was not there in scipy 0.13.3 which is the minimal version required by scikit-learn

@@ -1,0 +1,2 @@
+[06:26] <5cb5be0ed73408ce4fbddb96> hi
+[21:03] <5872a729d73408ce4f421fb8> What version of OpenMP does scikit-learn require? Is 2.5 sufficient?

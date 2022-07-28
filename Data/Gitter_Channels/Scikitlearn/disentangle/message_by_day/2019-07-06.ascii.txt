@@ -1,0 +1,1 @@
+[13:02] <5bc98094d73408ce4fabf741> @thomasjpfan yup, I figured it out yesterday and after some fight with tensorflow dependencies I got it running

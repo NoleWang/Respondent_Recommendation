@@ -1,0 +1,8 @@
+[14:15] <570d14d6187bb6f0eadf1582> Hi, I want to pickup https://github.com/scikit-learn/scikit-learn/pull/7694 again - which branch should I merge to the my code -  0.19.X, master ?
+[14:22] <53eb987c107e137846baa89d> I think 'master' branch should be the one to go with.
+[20:20] <570d14d6187bb6f0eadf1582> That's what I try, but make seems to fail: https://gist.github.com/Kornel/11e69ef9fd2e9380a21991029fbecaf9#file-gistfile1-txt-L9473
+[20:21] <570d14d6187bb6f0eadf1582> I'm using python 3.6.3, 
+[20:21] <570d14d6187bb6f0eadf1582> ``` python -c "import numpy as np; import scipy as sp; print(np.__version__); print(sp.__version__)" 1.13.3 1.0.0```
+[20:21] <570d14d6187bb6f0eadf1582> and running simply make
+[21:53] <56f8122085d51f252abb1414> Hi everyone, simple question here: is the prior in, e.g., Ridge Regression, also applied to the intercept? See here: http://scikit-learn.org/stable/modules/linear_model.html#ridge-regression 
+[21:54] <56f8122085d51f252abb1414> By "prior" I mean the L2 regularization term. 

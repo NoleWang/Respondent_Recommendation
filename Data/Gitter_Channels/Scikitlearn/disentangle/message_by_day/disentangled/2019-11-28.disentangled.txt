@@ -1,0 +1,2 @@
+[13:53] <5671093916b6c7089cbede6a> I have two files that contain Event Name, Event City, Event Venue, Event State but in both files it's written in different ways or you can assume both the files are from different source.  I want to create a Machine learning-based algorithm that can do the matching.  I have tried with fuzzy-wuzzy to get string similarity. Can anyone please tell me if I want to solve this with Deep Learning what would be the approach. Thanks @amueller
+--------------------------------------------------------------------------------------------------

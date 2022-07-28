@@ -1,0 +1,29 @@
+[05:28] <57f33dd7d73408ce4f2b9adf> Hello everyone
+--------------------------------------------------------------------------------------------------
+[05:29] <57f33dd7d73408ce4f2b9adf> I just started using scikit-learn few weeks back and I am loving every bit of it.
+[05:30] <57f33dd7d73408ce4f2b9adf> I want to contribute to scikit-learn but not able to understand where to start
+[05:30] <57f33dd7d73408ce4f2b9adf> Can anyone guide me through
+--------------------------------------------------------------------------------------------------
+[12:46] <5770c02dc2f0db084a2017bd> @vibrantabhi19 their website has some contribution guidelines : http://scikit-learn.org/stable/developers/index.html
+--------------------------------------------------------------------------------------------------
+[14:18] <57f33dd7d73408ce4f2b9adf> Thanks @RohanVB. I went through these guidlines. Hope I can get over some issues and make my first PR.
+--------------------------------------------------------------------------------------------------
+[15:08] <56c4f19ae610378809c1f8ae> theres a low hanging fruit @ https://github.com/scikit-learn/scikit-learn/issues/7521
+--------------------------------------------------------------------------------------------------
+[16:13] <57f33dd7d73408ce4f2b9adf> Thank you @nelson-liu  I am up for it :)
+--------------------------------------------------------------------------------------------------
+[16:45] <54ec8cb715522ed4b3dc693b> Scikit learn is amazing! I just had a question regarding what is the plan of scikitlearn as tensorflow has written something called sci flow, which is intended to be replacement for scikit-learn. Please be advised that I still do not totally understand tensorflow!
+--------------------------------------------------------------------------------------------------
+[17:22] <57f33dd7d73408ce4f2b9adf> @nelson-liu The file testimonial.html is available only after we build the html docs.  And then in testimonials.html, even after fixing the issue we get 'working directory clean' So kindly help me with the file/code structure
+[17:23] <56c4f19ae610378809c1f8ae> you have to modify about.rst
+[17:23] <56c4f19ae610378809c1f8ae> thats the file name
+[17:23] <56c4f19ae610378809c1f8ae> the html files are built from rst source files, so modify the rst source
+--------------------------------------------------------------------------------------------------
+[17:23] <56c4f19ae610378809c1f8ae> i bet you could grep rangespan and find wher eyou want it
+[17:23] <56c4f19ae610378809c1f8ae> @thewhitetulip if youre referring to skflow, I dont think its a replacement for scikit-learn
+[17:24] <56c4f19ae610378809c1f8ae> and i dont think its their intention to be a replacement
+[17:24] <56c4f19ae610378809c1f8ae> skflow is useful for providing a scikit-learn interface to the deep learning capabilities of tensorflow, because scikit-learn does not do deep learning
+[17:24] <56c4f19ae610378809c1f8ae> they occupy different roles
+--------------------------------------------------------------------------------------------------
+[18:19] <57f33dd7d73408ce4f2b9adf> @nelson-liu Done, Kindly review my PR
+--------------------------------------------------------------------------------------------------

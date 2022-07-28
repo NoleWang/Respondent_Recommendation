@@ -1,0 +1,7 @@
+[16:24] <57dfed0240f3a6eec0660e8d> Hello, is this the right place to ask beginners ML questions?
+[17:05] <56c4f19ae610378809c1f8ae> I think crossvalidated or stackoverflow would be better
+[17:05] <56c4f19ae610378809c1f8ae> thank you for asking
+[18:00] <564a0e2916b6c7089cbaead6> As an intermediate ML practitioner still stinging from being a noob, I found both of those communities very off putting in getting assistance. On cross validated, I was literally told that the answers to a question I asked were "in any basic econometrics text". They are invaluable resources to be sure, but not the place to learn as a beginner. I would advise trying to find a community around one of the MOOCs - udacity, coursera, ... Perhaps even Reddit
+[18:01] <564a0e2916b6c7089cbaead6> I am biased in which I would choose as I got a lot out of the Udacity ML nanodegree and have found their slack community inviting and informative. 
+[18:30] <57a061aa40f3a6eec05d8d26> Hello, how would one extract decision paths from a decision tree classifier? I mean I would like to get something like, "if x < 1 and ... then class 1"
+[18:41] <57dfed0240f3a6eec0660e8d> Thank you @joshuacook and @nelson-liu 

@@ -1,0 +1,2 @@
+[12:45] <5dd100ecd73408ce4fd140ae> @gbroccolo  I need help regarding software development...as i am beginner so I want to get some tips for developing softwares... I want to develop software that reads the smart ID cards using card reader.
+--------------------------------------------------------------------------------------------------

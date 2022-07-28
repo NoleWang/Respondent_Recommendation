@@ -1,0 +1,5 @@
+<s> <user> hello guys i am getting this error can anybody please tell </s>
+<s> <user> importerror while loading <unka> <unka'-.:\> . <unk#a.:\_> : in <module > from . import <unka_> # <unka> : <unk#a> <unk#a.:\_> : in <module > <unka(_> ) <unk#a.:\_> : in <unka_> raise <unka(> e importerror : no module named <unka'._> e <unk_> e contents of <unka-:\_> : e setup.py <unka._> <unka._> e <unka_> e <unk_> e it seems that <unka-> has not been built correctly . e e if you have installed <unka-> from source , please do not forget e to build the package before using it : run <unka`> setup.py install` or e `make` in the source directory . e e if you have used an installer , please check that it is suited for your e python version , your operating system and your platform . </s>
+<s> <user> i have tried <unka> setup.py install too </s>
+<s> <user> which error ? please copy the command you used and the error message . </s>
+<s> <user> hello guys , i am having a lot of trouble creating a dummy <unka> with <unka-> . i asked a question with all the details in stackoverflow , can you please check what am i doing wrong ? link : URL/https:/ <unka./> <unk#a-/> </s>

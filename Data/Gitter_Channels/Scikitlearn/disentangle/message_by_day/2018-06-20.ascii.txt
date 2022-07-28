@@ -1,0 +1,4 @@
+[19:31] <5a36ab82d73408ce4f83bb10> I see. I have solved this issue, what I did is to convert my df to df.values. 
+[19:31] <5a36ab82d73408ce4f83bb10> so only numerical datas are inputted into the algorithm 
+[21:01] <5a32b032d73408ce4f835880> Hey all, Is there a way to pass a sentence like play some music to an AI model and after that chrome tab will open with a random YouTube song Ive been trying to figure out a way to do this for a while and I appreciate any advices or help
+[21:04] <5a32b032d73408ce4f835880> Just curious if anyone has a way or approach how to wrap this up, advice is highly appreciated

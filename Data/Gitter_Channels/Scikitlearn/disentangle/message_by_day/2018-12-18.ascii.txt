@@ -1,0 +1,2 @@
+[08:35] <541a528b163965c9bc2053de> @david-cottrell_gitlab I am not aware of any arrow-serializer aware store for joblib. As far as I know there is only pkl based things.
+[10:00] <5c03c22dd73408ce4fb0b61d> @ogrisel Thanks. 

@@ -1,0 +1,19 @@
+<s> <user> hello everyone </s>
+<s> <user> i just started using <unka-> few weeks back and i am loving every bit of it . </s>
+<s> <user> i want to contribute to <unka-> but not able to understand where to start </s>
+<s> <user> can anyone guide me through </s>
+<s> <user> <unk#a@> their website has some contribution guidelines : URL/http:/ <unka-./> <unka./> </s>
+<s> <user> thanks <unka@> . i went through these guidlines . hope i can get over some issues and make my first pr . </s>
+<s> <user> theres a low hanging fruit @ URL/https:/ URL/github.com/ <unk#a-/> </s>
+<s> <user> thank you <unka-@> i am up for it :) </s>
+<s> <user> <unka> learn is amazing ! i just had a question regarding what is the plan of <unka> as tensorflow has written something called sci flow , which is intended to be replacement for <unka-> . please be advised that i still do not totally understand tensorflow ! </s>
+<s> <user> <unka-@> the file <unka.> is available only after we build the html docs . and then in <unka.> , even after fixing the issue we get <unka'> directory clean' so kindly help me with the <unka/> structure </s>
+<s> <user> you have to modify <unka.> </s>
+<s> <user> thats the file name </s>
+<s> <user> the html files are built from rst source files , so modify the rst source </s>
+<s> <user> i bet you could grep <unka> and find wher eyou want it </s>
+<s> <user> <unka@> if youre referring to <unka> , i dont think its a replacement for <unka-> </s>
+<s> <user> and i dont think its their intention to be a replacement </s>
+<s> <user> <unka> is useful for providing a <unka-> interface to the deep learning capabilities of tensorflow , because <unka-> does not do deep learning </s>
+<s> <user> they occupy different roles </s>
+<s> <user> <unka-@> done , kindly review my pr </s>

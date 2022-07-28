@@ -1,0 +1,9 @@
+[14:08] <5474d9eadb8155e6700d8178> Given that there is a huge interest among students in learning about ML, do you think it would be within the scope of/beneficial to skl to have all the exercises and/or concepts, from a good quality book (ESL / PRML / Murphy) or an academic course like NG's CS229 (not the less rigorous coursera version), implemented using sklearn? Or perhaps we could instead enhance our tutorials and examples, to be a self study guide to learn about ML? I was planning to include this in my GSoC proposal... does it seem like an useful idea? (Also is this a correct place to discuss this or the Mailing list might be better for such questions?)
+[14:08] <5474d9eadb8155e6700d8178> Or would it be better if I simply add more examples?
+--------------------------------------------------------------------------------------------------
+[17:52] <5385f2fe048862e761fa2d40> Yes please!
+[17:52] <5385f2fe048862e761fa2d40> I really want to learn ML and it's pretty hard as it is
+[17:53] <5385f2fe048862e761fa2d40> An extensive tutorial would be lovely.
+--------------------------------------------------------------------------------------------------
+[17:55] <5474d9eadb8155e6700d8178> Thanks for the response!! Lets wait for a confirmation from the core devs, since any additional code does come with its own maintenance cost... They would be the best at judging if that additional maintenance is worth the benefit it offers :)
+--------------------------------------------------------------------------------------------------

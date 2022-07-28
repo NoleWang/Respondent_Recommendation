@@ -1,0 +1,9 @@
+[15:35] <54fdd51a15522ed4b3dd04b7> Hi, I have been seeing some conversation in the mailing list regarding an upcoming Dev sprint. I have made a couple of contributions at the tail end of last year and it's one of my goals this year to see if I can contribute more.
+[15:35] <54fdd51a15522ed4b3dd04b7> Will this be an event which I will be able to participate remotely as well or do I need to be France to participate?
+--------------------------------------------------------------------------------------------------
+[17:26] <5bd837dbd73408ce4fad4032> I have a minor question on making open-source contributions.. Traditionally, before I decide to change a file, I ALWAYS FIRST do a `git pull` to get the updated version. I then switch to the branch I created initially, and then make the changes, and do the `git add .`,  commit and push, and then submit a pull request. Correct?
+--------------------------------------------------------------------------------------------------
+[20:42] <5bd837dbd73408ce4fad4032> Is the SAME procedure followed for making contribution to this library? I do 'git pull' everytime?
+--------------------------------------------------------------------------------------------------
+[21:32] <5a2c58c8d73408ce4f8294ba> Is this a bug? https://stackoverflow.com/questions/54098749/how-can-i-make-gradientboostingregressor-work-with-a-baseestimator-in-scikit-lea
+--------------------------------------------------------------------------------------------------

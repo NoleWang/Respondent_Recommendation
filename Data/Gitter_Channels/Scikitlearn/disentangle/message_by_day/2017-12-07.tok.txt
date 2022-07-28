@@ -1,0 +1,26 @@
+<s> <user> hello everyone . anyone can point me to a mathematical proof of the objective function used in <unka> for the <unka> regression ? URL/http:/ <unka-./> <unka#-./_> im trying to demonstrate it starting from the <unka> likelihood in which the probability of a success is a <unka> function , however , the final likelihood expression that i arrive is not equivalent to <unka> . </s>
+<s> <user> <unka@> there 's nothing <unka> specific about this , this is *the* objective for binary <unka> regression ( with penalty ) </s>
+<s> <user> elements of statistical learning , chapter 4.4 </s>
+<s> <user> URL/https:/ <unka./> <unka/~> </s>
+<s> <user> the objective function for binary <unka> <unka> regression stems from the negative log likelihood of a linear <unka> the log odd ratio of the <unka> model . </s>
+<s> <user> the linear <unka> ( <unka.> . x + b ) is for the log odd ratio <unka(> ( 1 - p )) instead of p directly , where p is the parameter of the <unka> function . </s>
+<s> <user> i edited my comment as i made a mistake :) </s>
+<s> <user> <unka@> im arriving exactly at expression ( 4.20 ) of the book you mention . am i mistaken or ( 4.20 ) is different from URL/http:/ <unka-./> <unka#-./_> ? ( <unka> the <unka/> term ) </s>
+<s> <user> <unka@> exactly , through these assumptions i arrive at ( 4.20 ) ^ , which , to me , looks a little different from URL/http:/ <unka-./> <unka#-./_> . perhaps i am missing out something ? </s>
+<s> <user> i think you can simplify the 2 class case further . let me catch up with the notation </s>
+<s> <user> iirc <unka_> take values in { -1 , 1 } for the negative and positive classes respectively . this is not clear in the <unka-> doc . </s>
+<s> <user> why do you need to sum up the <unka_> and 1 - <unka_> cases ? in 4.19 we are only looking at the probability of gi </s>
+<s> <user> ah right one of them is always zero ... hm yeah could be the different encoding of <unka_> </s>
+<s> <user> did they use <unka(> , <unka> ) as the top of 4.18 or the bottom of 4.18 ? i guess if they are consistent , they use the top , but we might use the bottom one </s>
+<s> <user> but that just replaces classes 0 and 1 i guess </s>
+<s> <user> eh , i should be <unka> </s>
+<s> <user> :) </s>
+<s> <user> its not clear to me how ( 4.20 ) and <unka> docs are equivalent </s>
+<s> <user> have you tried replacing y by -1 and 1 like <unka> said ? </s>
+<s> <user> or maybe easier , try to expand <unka> doc for <unk#a-=> and <unk#a=> and then try to match that to the two terms in 4.20 </s>
+<s> <user> hum , ok ! that looks to be the answer </s>
+<s> <user> thank you ! </s>
+<s> <user> feel free to submit a pull request to improve the doc :) </s>
+<s> <user> URL/https:/ URL/github.com/ <unk#a#%-./=?_> </s>
+<s> <user> will do ! = ) </s>
+<s> <user> just mentioning explicitly the -1 and +1 values for <unka_> might be enough . </s>

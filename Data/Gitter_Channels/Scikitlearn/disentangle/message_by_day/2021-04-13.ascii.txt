@@ -1,0 +1,10 @@
+[13:59] <6075a37e6da03739847a0d9b> does using the fit function on a fitted model replace the fitted model, or update it?
+[14:01] <6075a37e6da03739847a0d9b> I'm trying to use a Lasso in a machine learning context, and I want to keep updating it with each test run I do
+[14:05] <6075a37e6da03739847a0d9b> obviously, I could in theory, take the model, and train it with the results of the particular test run, then merge the coefficents with the last model myself, but it would be better if I could avoid that
+[15:05] <55d21ee30fc9f982beadabb8> `fit` make a full training from scratch
+[15:05] <55d21ee30fc9f982beadabb8> `partial_fit` is doing an update
+[15:10] <6075a37e6da03739847a0d9b> @glemaitre thank you.  what kinds of models is partial_fit available for?
+[15:13] <6075a37e6da03739847a0d9b> hrm... it seems like all of the ones with that method only are for classification, not for regressed output.
+[15:16] <55d21ee30fc9f982beadabb8> SGD estimator is one of them
+[15:17] <6075a37e6da03739847a0d9b> oh perfect
+[15:19] <6075a37e6da03739847a0d9b> I will use that in the project my team is doing. Thanks for helping

@@ -1,0 +1,5 @@
+[08:09] <57f1894dd73408ce4f2b2588> @glemaitre thank you for the tip. however it isnt exactly what i was searching for. numpy.clip substitute values that are out of range. my plan is to remove the row (or column) that contain out-of-range values.
+--------------------------------------------------------------------------------------------------
+[10:03] <55d21ee30fc9f982beadabb8> There is not transformer which remove samples in scikit-learn I think
+[10:06] <55d21ee30fc9f982beadabb8> you could probably use the [`pandas.query`](http://pandas.pydata.org/pandas-docs/version/0.13.1/generated/pandas.DataFrame.query.html) to make such request
+--------------------------------------------------------------------------------------------------

@@ -1,0 +1,2 @@
+[17:07] <530c03e25e986b0712efafb8> I apologize for what I'm sure is a common question, but is there a schedule for a 0.20 release?  "No" or "a long time from now" are both useful answers.  I don't want this to be interpretted as "please do a release", I'm just planning some activities and knowing this would help
+--------------------------------------------------------------------------------------------------

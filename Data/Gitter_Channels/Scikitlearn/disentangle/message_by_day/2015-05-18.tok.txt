@@ -1,0 +1,20 @@
+<s> <user> <unk#a@> cool :) </s>
+<s> <user> <unk#a@> have you talked with your <unka> yet ? </s>
+<s> <user> it would be great to get a first blog post from both of you <unk);_> </s>
+<s> <user> not yet . i will email them soon . i have published a post several days ago , which is an introduction to my project and myself . </s>
+<s> <user> i am trying to derive the updating functions of <unka> with other three kinds of <unka> matrix , sphere , diag and tied following <unka> . </s>
+<s> <user> <unk#a> : did you mail your blog post to the mailing list ? maybe i overlooked it , sorry </s>
+<s> <user> <unk#a> : that sounds great . make sure you have your <unka> looped in so they know what is going on ! </s>
+<s> <user> btw <unka@> are you around ? </s>
+<s> <user> ohh , i will post it into the mailing list . sorry . </s>
+<s> <user> i think it is good practice to post each blog post to the mailing list for maximum visibility </s>
+<s> <user> i have to admit i did n't rss subscribe , and i do n't usually use rss , so i am likely to miss it if you do n't post ;) </s>
+<s> <user> <unk#a@> btw why did you change your github handle ? </s>
+<s> <user> <unk#a@> also : for wrapping up the <unka_> testing , i think the most important part is to simplify <unka_> </s>
+<s> <user> any one here familiar enough with <unka> to do a final review ? </s>
+<s> <user> master is broken with a <unka> </s>
+<s> <user> i do n't like it </s>
+<s> <user> anyone who has an opinion on how <unka-> from the references to the <unka-> should look like should speak here or be forever silent : URL/https:/ URL/github.com/ <unk#a-/> </s>
+<s> <user> <unka@> sorry for the confusion ... i just merged my github profiles <unka> and the old one <unk#a> into one to sync with my email <unk#a_> ADDRESS_@gmail.com ... :) i earlier created <unka> as a temporary profile ... and yea i just pushed it ;) could you pl take a look ? :) </s>
+<s> <user> ok , i will . not sure i have time to go through all of it now </s>
+<s> <user> sure :) </s>

@@ -1,0 +1,8 @@
+[12:15] <567f5d7716b6c7089cc043a8> question: does it make sense to go through the docstrings and make sure the default values are mentioned for each optional parameter, preferably with a consistent format? Or should we just try to enforce it for new PRs and leave the rest alone? There are some funny cases though (http://scikit-learn.org/dev/modules/generated/sklearn.ensemble.BaggingRegressor.html#sklearn.ensemble.BaggingRegressor)
+[12:19] <567f5d7716b6c7089cc043a8> @amueller why would it create a conflict with existing PRs, if those PRs haven't change the line corresponding to the parameter? And if they have, it does make sense for them to follow whatever convention we choose anyway, doesn't it?
+[12:21] <54d4a1d6db8155e6700f853b> I think it's enough if there's changes around the line for it to create a conflict
+[12:24] <567f5d7716b6c7089cc043a8> hmm, fair enough.  So no easy way to fix. Although I'm not sure how much it would bug PR submitters to fix those conflicts. Well, I guess then we'll leave it as is. Unless you have a better solution.
+--------------------------------------------------------------------------------------------------
+[12:16] <54d4a1d6db8155e6700f853b> @adrinjalali making sure defaults are there would be great. consistent formatting has the issue that there's gonna be a lot of changes creating lots of conflicts with existing PRs.
+[12:16] <54d4a1d6db8155e6700f853b> but it'll be hard to search for missing defaults without a consistent format :-/
+--------------------------------------------------------------------------------------------------

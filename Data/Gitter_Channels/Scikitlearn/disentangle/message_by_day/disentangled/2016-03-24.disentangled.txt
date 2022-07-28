@@ -1,0 +1,19 @@
+[05:53] <56f2dfde85d51f252aba689b> Hi @VarunKShetty , it seems that such parameter doesnt exist. Check the documentation to see which parameters can be used.
+--------------------------------------------------------------------------------------------------
+[09:16] <54c630d6db8155e6700f168d> @ksafford Thanks a lot, that helped!
+--------------------------------------------------------------------------------------------------
+[13:29] <5552313315522ed4b3e0482a> @VarunKShetty  LogisticRegression in 0.15.2 doesn't support multi_class, if you update to the 0.17.1 version it should work.
+--------------------------------------------------------------------------------------------------
+[19:03] <56f2b66385d51f252aba60dd> Thanks @dvdnglnd
+[19:03] <56f2b66385d51f252aba60dd> I'll now go figure out how to update it
+--------------------------------------------------------------------------------------------------
+[22:43] <56c4f19ae610378809c1f8ae> Hi everyone. I have a featureunion of several pipelines, is there any way I can turn the featureunion into a numpy array for use in other applications?
+[22:44] <56c4f19ae610378809c1f8ae> e.g. in this case, Im using scikit-learn to do the preprocessing, and keras for the learning
+--------------------------------------------------------------------------------------------------
+[23:32] <54e07d6515522ed4b3dc0858> You should be able to call transform to obtain an array
+[23:36] <54e07d6515522ed4b3dc0858> As long as your pipelines have only transformers and no predictors
+--------------------------------------------------------------------------------------------------
+[23:38] <54e07d6515522ed4b3dc0858> It doesn't really make sense to me to turn the "feature union" into an array, but to apply it on data to obtain an array. Or am I misunderstanding?
+[23:38] <56c4f19ae610378809c1f8ae> ah, no you arent misunderstanding, I was.
+[23:38] <56c4f19ae610378809c1f8ae> the featureunion is just a scaffold of various steps, which you then pass things into and get a numpy array. Is this what you were thinking?
+--------------------------------------------------------------------------------------------------

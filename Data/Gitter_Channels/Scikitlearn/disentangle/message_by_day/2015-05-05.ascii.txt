@@ -1,0 +1,20 @@
+[03:07] <54c084dbdb8155e6700eed4c> Thanks @ogrisel , that's what I was thinking of, though I have several other scikit-learn utils that I've included in my package in order to avoid dependency hell-fire. Only a few of them are actually used so it might not be that heavy, I guess, if I was to pick out only the ones that matter. Maybe once I get 0.1.0 released I'd think about making it more sensible on the utils.
+[03:13] <54c084dbdb8155e6700eed4c> @amueller .. I think you know the appropriate emoji for dependency hell-fire :smile: 
+[18:31] <54d4a1d6db8155e6700f853b> haha
+[18:32] <54d4a1d6db8155e6700f853b> And believe me, I have been there, more than once ;)
+[18:37] <54d4a1d6db8155e6700f853b> @ogrisel the #4597 issue is not really with pandas, it is with Cython, which doesn't support read-only buffers. So my question was more: why does joblib produce a read-only buffer there?
+[18:39] <54d4a1d6db8155e6700f853b> ah, I haven't read your comment there, sorry
+[21:27] <541a528b163965c9bc2053de> @amueller indeed I read some more discussions in this thread: https://mail.python.org/pipermail/cython-devel/2013-February/003384.html and then replied the following: https://github.com/pydata/pandas/issues/10043#issuecomment-99227037
+[21:27] <54d4a1d6db8155e6700f853b> makes sense, but we can also not wait for the fix in pandas.
+[21:28] <54d4a1d6db8155e6700f853b> @ogrisel so I think we should maybe just copy the DF in the "rare" situation that happens and throw a warning that people should use .values to avoid the copy?
+[21:35] <541a528b163965c9bc2053de> Calling `.values` will just force a copy if am not mistaken. The "real" fix can only be done in pandas by using the ndarray type instead of a typed memoryview (or even better in Cython by adding support for readonly typed memoryviews).
+[21:49] <54d4a1d6db8155e6700f853b> I don't think values will force a copy always. It is not writeable here, so I don't think a copy was made. Well the real fix is clearly in cython but we have to be backward compatible, so we need to do a workaround now matter what
+[22:05] <541a528b163965c9bc2053de> Indeed `.values` does not copy for single block data frames. but it does for multiple blocks dfs 
+[22:10] <54d4a1d6db8155e6700f853b>  can you reproduce the error with multiple block dfs?
+[22:10] <54d4a1d6db8155e6700f853b> I posted my try at #4597
+[22:24] <541a528b163965c9bc2053de> I cannot reproduce the error without manually assigning a readonly memmap to `df._data.blocks[0].values` or replicating what the joblib.pool.MemmapingPool class does (that is replacing np.ndarray instances by np.memmap instances at pickling time).
+[22:26] <541a528b163965c9bc2053de> Let me work on fixing the joblib.load with `mmap_mode='r'` on structures that have numpy arrays with dtype=object inside.
+[22:26] <541a528b163965c9bc2053de> in joblib master
+[22:48] <54d4a1d6db8155e6700f853b> @ogrisel do you know anything about the issue in #4421 ? some warnings are not raised / caught ....
+[23:23] <541a528b163965c9bc2053de> Ok going to bed now. Tomorrow is second day of strata london. I gave a tutorial today. Tomorrow I will just attend the conf and maybe work on sklearn issues if the talks are boring.
+[23:24] <541a528b163965c9bc2053de> see you

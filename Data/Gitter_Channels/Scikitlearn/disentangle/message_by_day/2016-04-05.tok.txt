@@ -1,0 +1,27 @@
+<s> <user> <unka@> i am here now :) </s>
+<s> <user> okay . i think you're misinterpreting the numpy error 's relevance to this situation . </s>
+<s> <user> but <unk#a().=[_> ] might not quite work , because <unk#a().=_`> returns a 2d matrix . </s>
+<s> <user> <unk#a().=_`> should fix that issue , though </s>
+<s> <user> i do n't get at all how you could be getting an error on a <unka*> statement ! </s>
+<s> <user> i hope you got that <unk#a@> </s>
+<s> <user> yeah thanks , that was the reason for the <unka> </s>
+<s> <user> but still did n't get the comment regarding the <unka*> statement <unka:> : </s>
+<s> <user> also <unka.`> gives an error <unka`> : <unka> not <unka`> </s>
+<s> <user> oh . okay . i 'm not in the right frame of mind . this should be easy for me ! </s>
+<s> <user> <unk#a().=[_> ] should work ! </s>
+<s> <user> or <unka> : <unk#a().=_`> </s>
+<s> <user> or just </s>
+<s> <user> <unk#a().[_> ] </s>
+<s> <user> sorry , </s>
+<s> <user> <unk#a().=[]_`> </s>
+<s> <user> thanks i got the idea now . will implement and get back to you . </s>
+<s> <user> <unk`> ( 0 , 0 ) 4.0 ( 1 , 0 ) 6.0 ( 2 , 0 ) 7.0 ( 0 , 1 ) 2.0 ( 1 , 1 ) <unk#.> ( 2 , 1 ) 6.0 ( 0 , 2 ) 1.0 ( 1 , 3 ) 1.0 <unk`> this is the transformed x for x = <unk#a(-.[_> , 2 ], [ 6 , -1 ], [ 7 , 6 <unk).]> i think it is working now as you expected . thanks for all the help . </s>
+<s> <user> yay ! </s>
+<s> <user> i hope you're able to go through the steps and understand how this is doing what we want too ... </s>
+<s> <user> gotcha .. it is clearer now .. </s>
+<s> <user> just a question , when you call <unka_`> all the zero entries are removed . does n't that happen by default when the sparse matrix is built ? </s>
+<s> <user> oh okay got it .. building the matrix using the <unka_`> logic still populates the zeroes and needs to be manually removed to make it sparse . </s>
+<s> <user> i will add some tests for sparse <unka> too . is there anything else you want me to look into here ? i need to go to my college now . wo n't have access to the internet . sorry . will reply by evening . thanks again for all the help . </s>
+<s> <user> hi all . is <unka-> <unk#.> the recommended version to use for new projects ? thanks . </s>
+<s> <user> <unka@> generally , yes </s>
+<s> <user> anyone can help me review [ this pr ]? ( URL/https:/ URL/github.com/ <unk#a-/> ) <unka:> : </s>

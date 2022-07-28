@@ -1,0 +1,15 @@
+[15:40] <54d4a1d6db8155e6700f853b> @ogrisel when do the sprints start? Any specific plans?
+[15:43] <54d4a1d6db8155e6700f853b> @omerzimp #4568 supposed to be a speed improvement? issparse is just an instance check, so pretty neglible compared to everything else.
+[15:44] <5385f2fe048862e761fa2d40> Yeh but it's something :P
+[15:44] <5385f2fe048862e761fa2d40> I contribute what I can
+[15:45] <54d4a1d6db8155e6700f853b> I would call this premature / overoptimizing. It makes the code a bit longer and a bit harder to read, but doesn't improve anything really.
+[15:47] <5385f2fe048862e761fa2d40> Feel free to close it
+[15:50] <5385f2fe048862e761fa2d40> How neglegable is it when you have a lot of data points?
+[17:06] <541a528b163965c9bc2053de> Hi @amueller, sorry I was busy chatting in the real life, I had not checked the gitter room yet
+[17:07] <541a528b163965c9bc2053de> So the sprints have just started today, we are 4 people at the sklearn table at the moment.
+[17:07] <541a528b163965c9bc2053de> We are digging down easy fix issues for first time contributors
+[17:13] <541a528b163965c9bc2053de> > I contribute what I can  But you have to keep in mind that the goal of the project is to stay maintainable and therefore code simplicity is an asset. We need to find the right trade-offs between simplicity and performance.
+[19:20] <54d4a1d6db8155e6700f853b> @ogrisel  ok I'll keep an eye on the tracker.
+[19:20] <54d4a1d6db8155e6700f853b> @omerzimp the check is independent of the dataset size
+[20:17] <54d4a1d6db8155e6700f853b> @ogrisel btw if anyone at the sprint wants a brain-teaser, I recommend this one: https://github.com/scikit-learn/scikit-learn/pull/4435
+[20:17] <54d4a1d6db8155e6700f853b> no machine learning required ^^

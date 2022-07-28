@@ -1,0 +1,4 @@
+[17:49] <577ebc96c2f0db084a21f545> @rishavroy1264bitmesra  I am not sure how you can exactly achieve this but what you are trying to achieve is a very hard problem. I feel WordNet shall be used for calculating the word distances for similarity/dissimilarity and even use tf-idf for sentence scoring. I know this is very vague for you've got some work to do..
+--------------------------------------------------------------------------------------------------
+[23:43] <58d98495d73408ce4f5421c4> Does someone have experience with using SE(3) poses as inputs? I am trying to find a good representation for the orientations. Some pros/cons, along with usage guidelines would be much appreciated as well. Thanks in advance
+--------------------------------------------------------------------------------------------------

@@ -1,0 +1,10 @@
+[00:08] <53135b495e986b0712efc453> @amueller Sorry I totally missed the chat... :( BTW the warm start is being set at [this line](https://github.com/scikit-learn/scikit-learn/pull/7071/files#diff-439a21b751083bf0e4a535e8f9075520R794)
+--------------------------------------------------------------------------------------------------
+[13:53] <54d4a1d6db8155e6700f853b> yeah found it finally ;)
+--------------------------------------------------------------------------------------------------
+[17:11] <578a4f87c2f0db084a23455f> Does "LGTM" mean +1, or it's kind of uncertain +1? Never seen this in other projects.
+--------------------------------------------------------------------------------------------------
+[17:13] <56b80528e610378809c05a48> Generally LGTM from a core contributor means +1
+[17:13] <578a4f87c2f0db084a23455f> Thanks!
+[17:13] <56b80528e610378809c05a48> You can then modify your PR title
+--------------------------------------------------------------------------------------------------

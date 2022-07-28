@@ -1,0 +1,27 @@
+[09:37] <53135b495e986b0712efc453> ``` from sklearn.utils.extmath import fast_dot from sklearn.exceptions import EfficiencyWarning import warnings warnings.simplefilter('always', EfficiencyWarning) import numpy as np fast_dot(np.array([1, 2, 3]), np.array([4, 5, 6])) ``` This code which is supposed to raise a warning doesn't raise one!  However this one does -_- ``` from sklearn.utils.extmath import _fast_dot from sklearn.exceptions import EfficiencyWarning import warnings warnings.simplefilter('always', EfficiencyWarning) import numpy as np _fast_dot(np.array([1, 2, 3]), np.array([4, 5, 6])) ```  Ref: https://github.com/scikit-learn/scikit-learn/blob/master/sklearn/utils/extmath.py#L151
+--------------------------------------------------------------------------------------------------
+[13:35] <550f53e215522ed4b3dda5f6> The GMM model in http://scikit-learn.org/stable/modules/dp-derivation.html is not standard. The distribution of \mu_k  does not have variance depending on the Gamma distribution. It is just a constant. I think that is why the current implementation is kind of weird....
+--------------------------------------------------------------------------------------------------
+[23:00] <53135b495e986b0712efc453> The `NonBLASDotWarning` (to be converted to `EfficiencyWarning`) doesn't seem to work as intended!
+--------------------------------------------------------------------------------------------------
+[23:01] <54d4a1d6db8155e6700f853b> how do you mean?
+--------------------------------------------------------------------------------------------------
+[23:02] <53135b495e986b0712efc453> Please check the above code sample :)
+[23:03] <53135b495e986b0712efc453> The `EfficiencyWarning` in the above code is supposed to be `NonBLASDotWarning`...
+--------------------------------------------------------------------------------------------------
+[23:05] <53135b495e986b0712efc453> It is being disabled at [utils/validation.py](https://github.com/scikit-learn/scikit-learn/blob/master/sklearn/utils/validation.py#L42).. maybe it has something to do with it?
+[23:06] <53135b495e986b0712efc453> Nope I tried removing that line and this issue still persists!
+--------------------------------------------------------------------------------------------------
+[23:07] <54d4a1d6db8155e6700f853b> I am not very good with working with the warnings registry.
+--------------------------------------------------------------------------------------------------
+[23:08] <53135b495e986b0712efc453> hmm okay! Thanks for looking into it :) Does this issue seem worthy enough  for a new issue on github?
+[23:09] <54d4a1d6db8155e6700f853b> probably not.
+[23:09] <54d4a1d6db8155e6700f853b> Maybe ping @ogrisel ?
+[23:09] <53135b495e986b0712efc453> Okay! meanwhile I'll also investigate :)
+[23:10] <54d4a1d6db8155e6700f853b> great!
+--------------------------------------------------------------------------------------------------
+[23:35] <550f53e215522ed4b3dda5f6> I noticed that gmm code is a little messy. Some functions should be decomposed, and the way of initializing parameters is not completely implemented. According to the derivation draft, different estimators of responsibility, weight, mean, covariance could be combined together to represent GMM, BGMM, DPGMM. I think, in terms of maintainability,  it is good to create bunches of estimators with inheritance and then combine them on demand in  just use one class to represent all three models with four types of covariance. Is that a good idea?
+--------------------------------------------------------------------------------------------------
+[23:51] <54d4a1d6db8155e6700f853b> usually we try to restrict inheritance to mixins, so that there is no complex overloading of functions. If you can implement it by providing mixins for the four covariance types, that would be great. I'm not sure how well these factorize, though.
+[23:51] <54d4a1d6db8155e6700f853b> @kastnerkyle it would be great if you could give me your feedback on my redoing of the notebooks.
+--------------------------------------------------------------------------------------------------

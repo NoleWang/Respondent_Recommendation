@@ -1,0 +1,7 @@
+[13:13] <58ab8421d73408ce4f4bbbb2> Hello everybody, I am new here! It is nice to be here ! Cheers
+[13:16] <58ab8421d73408ce4f4bbbb2> I have a question regarding applying the standardaization of the training set to a test set , for classification procedures. Do we repeat this 10 times for 10CV ? 
+[15:08] <58a9a221d73408ce4f4b6740> @faprz  5CV is also fine but 10CV feels like standard. You can claim your accuracy better. Lets dive in: If you have k=5. that is 5 folds what you do is to divide the data set into 5 sets of equal length say s1,s2.....s5. Now you take s1 as test s2...s5 as training set and check accuracy. Each of the set gets a chance to become a test set.Now you would get 5 accuracies- average it and get the mean accuracy. Usage: sometimes using a particular split you can get better results but in real world you model doesn't performs good. So try some splits and get the average it helps you see the truth.  
+[15:09] <58a9a221d73408ce4f4b6740> Yes 10 times.
+[16:14] <58ab8421d73408ce4f4bbbb2> @shubham0704 Thank you, do we apply the mean/std of the train set to the test for each fold ?
+[17:41] <58a9a221d73408ce4f4b6740> cannot get what you are trying to ask @faprz  can you describe what you are trying to say a little more elaborately.
+[19:20] <58ab8421d73408ce4f4bbbb2> Sure, I read that a prefered practise in pre processing is to standardize the train set and apply the configuration used for standardization to the test set before we test with the classifier. I wonder if we need to do this for each fold in 10CV.

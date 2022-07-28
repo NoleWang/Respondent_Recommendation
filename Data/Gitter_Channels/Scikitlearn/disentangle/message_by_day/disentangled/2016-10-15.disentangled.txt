@@ -1,0 +1,2 @@
+[03:00] <55a36f535e0d51bd787b3400> Hi Sklearn community. Is there a way to do clustering with a constrain such that there is an equal number of training samples in each cluster?
+--------------------------------------------------------------------------------------------------

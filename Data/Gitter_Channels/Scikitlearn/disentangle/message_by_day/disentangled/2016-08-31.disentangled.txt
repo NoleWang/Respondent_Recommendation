@@ -1,0 +1,9 @@
+[08:04] <55889fee15522ed4b3e27273> got it. thanks! i understand markov chain mechanics, but was wondering if there are other better alternatives
+[08:04] <55889fee15522ed4b3e27273> plus you mentioned tensorflow using syntaxnet, i think that is awesome
+--------------------------------------------------------------------------------------------------
+[08:08] <57b3fd8640f3a6eec05fe0e8> @kennetham ahh there are different algos each with their ups and downs i think.
+--------------------------------------------------------------------------------------------------
+[09:16] <55889fee15522ed4b3e27273> @ItchyJunk is it possible to use for example NLTK to do NLP parsing, then I use tf-idf and Bag of words to classify the tokens, and possibly attempt to make a prediction? does that even work?
+--------------------------------------------------------------------------------------------------
+[14:31] <54e09a6d15522ed4b3dc08d0> Hello everyone! Is anyone enrolling in Hinton's ML Coursera course https://www.coursera.org/learn/neural-networks ?
+--------------------------------------------------------------------------------------------------

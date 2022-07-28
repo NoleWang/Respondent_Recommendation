@@ -1,0 +1,1 @@
+[00:02] <57a061aa40f3a6eec05d8d26> I get warning that some columns are collinear. Is there any utility to find out which columns they are?

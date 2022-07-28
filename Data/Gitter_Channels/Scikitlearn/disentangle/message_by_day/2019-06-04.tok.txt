@@ -1,0 +1,7 @@
+<s> <user> can anybody please explain me batch decent gradient and the procedure to calculate it </s>
+<s> <user> i have just started machine learning </s>
+<s> <user> in python </s>
+<s> <user> batch gradient descent uses the whole dataset to calculate the gradient vector unlike <unka-> or <unka> gradient descent , thats the key point . the procedure in common words is : calculate partial derivatives for a cost function with respect to each <unka> using the whole dataset , make a gradient step , update <unka> </s>
+<s> <user> hi there . try this link for batch gradient descent in python </s>
+<s> <user> URL/https:/ <unka./> <unk#a-/> </s>
+<s> <user> thanks <unka@> and <unka@> </s>

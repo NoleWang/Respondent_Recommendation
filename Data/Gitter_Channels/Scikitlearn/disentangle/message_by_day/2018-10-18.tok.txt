@@ -1,0 +1,1 @@
+<s> <user> write a function to return the intercept as a float ( rounded to the nearest 3 integers ) of a linear regression model def <unka(_> , <unka_> ): </s>

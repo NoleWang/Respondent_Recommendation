@@ -1,0 +1,3 @@
+[16:51] <56bb7a56e610378809c0cb2c> `@ThatGeoGuy:matrix.org` Hey all, was wondering if anyone had any thoughts regarding https://github.com/scikit-learn/scikit-learn/issues/4682. I've been thinking about  the issue more and the more I think about it, it seems the appropriate choice would be to change the covariance scaling in `MinCovDet` from `n` to `n-1`
+[16:52] <56bb7a56e610378809c0cb2c> `@ThatGeoGuy:matrix.org` Or, barring that, rename `mcd.covariance_` to `mcd.scatter_`, since covariance usually implies that you did `n-1` scaling
+--------------------------------------------------------------------------------------------------

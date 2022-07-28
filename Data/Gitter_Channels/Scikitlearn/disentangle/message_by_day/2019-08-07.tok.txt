@@ -1,0 +1,15 @@
+<s> <user> how should i build the docs for <unka_> in my local repo ? i ran <unka`> setup.py install` but still i ca n't find it under <unka/`> </s>
+<s> <user> the documentation is another command line </s>
+<s> <user> <unk`> cd doc make html <unk`> should work all os i think </s>
+<s> <user> then it will create a <unka/_`> folder and you can search for the <unka.`> </s>
+<s> <user> <unka@> note this part of the contributing <unka-> doc : URL/https:/ <unka-./> <unka#./> </s>
+<s> <user> if you see ways the contributing doc can be improved while you face this " setup " issues , let us know or/and open <unka> to improve the contributing docs ! </s>
+<s> <user> <unka@> sure . thanks for the help . </s>
+<s> <user> as a beginner contributor to this organisation , the arrangements of the docs did feel a bit tough to navigate . i will put my thoughts about it more <unka> and then open a issue and pr for the same </s>
+<s> <user> we're working on improving our contributing docs <unka@> , there 's some discussion under <unk##> </s>
+<s> <user> thats great . would love to contribute on URL/https:/ URL/github.com/ <unk#a-/> </s>
+<s> <user> i am working on URL/https:/ URL/github.com/ <unk#a-./> so i found the corresponding example under <unka./`> . my question is , are the examples run in the doc building process and output is generated or i am supposed to manually write the output of the example in the <unka> of a function ? </s>
+<s> <user> you should write the output in the example . the doc build will run the code and check if the generated output is the same as the one you put there . see URL/https:/ URL/docs.python.org/ <unk#a./> for more info </s>
+<s> <user> thanks <unka@> ! </s>
+<s> <user> does anyone here knows a good source to learn <unka> structure ? </s>
+<s> <user> is it like replacing every hidden node with a <unka> cell ? </s>

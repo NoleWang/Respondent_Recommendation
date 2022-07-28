@@ -1,0 +1,7 @@
+[13:33] <5af2b904d73408ce4f98a88d> Hi everyone!
+[13:34] <5af2b904d73408ce4f98a88d> I've got a few questions considering lin regression. These are mostly focussed on using scikit learn, but I guess the questions are also applicable to all kinds of ML tools :)
+[13:36] <5af2b904d73408ce4f98a88d> [More general formulation of the questions: standardization, onehotencoding/dummy coding with mixed var. types for poly. reg](https://stats.stackexchange.com/questions/463894/feature-standardization-for-polynomial-regression-with-categorical-data)
+[13:37] <5af2b904d73408ce4f98a88d> [and here the python/sklearn specific formulation of the problem with a focus on onehotencoding](https://stats.stackexchange.com/questions/463690/multiple-regression-with-mixed-continuous-categorical-variables-dummy-coding-s)
+[13:38] <5af2b904d73408ce4f98a88d> any help is welcome and appreciated. :)
+[13:39] <5af2b904d73408ce4f98a88d> Since I didn't find any information on this topic anywhere in the user guide, I could also help with improving the user guide once I have more information :)
+[17:26] <567363d316b6c7089cbf1f13> Thank you @adrinjalali  and @NicolasHug :)

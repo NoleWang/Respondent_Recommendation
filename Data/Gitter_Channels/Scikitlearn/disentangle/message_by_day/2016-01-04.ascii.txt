@@ -1,0 +1,2 @@
+[05:03] <553d32d715522ed4b3df8b92> Thanks @rvraghav93 for the detailed explanation :-)
+[23:48] <54d4a1d6db8155e6700f853b> does someone have a face recognition example where using eigenfaces actually works better than raw pixels? I played around with lfw, but it seems to make results worse :-/

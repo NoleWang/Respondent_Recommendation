@@ -1,0 +1,8 @@
+<s> <user> hi guys . i just have a doubt . is it better to scale down the target values before using it as ground truth for training a model or can we use the target values as such ? </s>
+<s> <user> my target values are in the range of 100 's currently . </s>
+<s> <user> <unk#a@_> if you have one target that you are <unka> , scaling should have no real effect . what <unka/> are you using ... maybe there is something i am not thinking about ? </s>
+<s> <user> so rounding error would be a concern if you had massive range in your targets </s>
+<s> <user> and it is generally easier to start with a <unka> rather than <unka> ... </s>
+<s> <user> i have only one target . i 'm currently using a regression neural network . </s>
+<s> <user> <unka@> how do you say that for one target scaling will make no effect ? </s>
+<s> <user> hi , everyone i 'm new here so anything i need to know ? </s>

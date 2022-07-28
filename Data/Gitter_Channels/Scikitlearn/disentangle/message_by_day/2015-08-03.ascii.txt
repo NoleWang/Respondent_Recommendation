@@ -1,0 +1,14 @@
+[01:42] <53135b495e986b0712efc453> Just realised we crossed 7k stars!! :beers:
+[11:58] <550f53e215522ed4b3dda5f6> It is old-faithful data set. @vene 
+[14:36] <54d4a1d6db8155e6700f853b> wb @ogrisel :)
+[16:37] <54d4a1d6db8155e6700f853b> @vene can you have a look at the discussion topics at the top of #4294 ?
+[18:33] <54e07d6515522ed4b3dc0858> sure thing
+[20:00] <54e07d6515522ed4b3dc0858> I'm slightly confused by the PR that to @rvraghav93 's branch that removes the code reuse.
+[20:01] <54e07d6515522ed4b3dc0858> Is only the newest commit relevant? That commit seems to have some extra things squashed in it.
+[20:15] <54d4a1d6db8155e6700f853b> I haven't really looked at that recently
+[20:15] <54d4a1d6db8155e6700f853b> I think we should first get the one with all the duplication merged
+[20:16] <54d4a1d6db8155e6700f853b> what do you think about making the submodules private?
+[20:30] <54e07d6515522ed4b3dc0858> with underscores?
+[20:31] <54e07d6515522ed4b3dc0858> I think it's a good idea
+[20:32] <54d4a1d6db8155e6700f853b> yes, with underscores.
+[20:32] <54d4a1d6db8155e6700f853b> ok please say in the PR, then he can do that. apart from the docs /examples that is the only major thing left.

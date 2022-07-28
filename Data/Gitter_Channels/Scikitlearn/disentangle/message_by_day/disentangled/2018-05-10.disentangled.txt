@@ -1,0 +1,5 @@
+[18:47] <5986271dd73408ce4f703d62> Hi guys
+--------------------------------------------------------------------------------------------------
+[18:48] <5986271dd73408ce4f703d62> I'm getting an error when I try to train a MultiOutputRegressor using sparse (csr) numpy matrices for both X and y
+[18:49] <5986271dd73408ce4f703d62> I get: ``` AttributeError: 'MultiOutputRegressor' object has no attribute 'fit_transform' ```
+--------------------------------------------------------------------------------------------------

@@ -1,0 +1,2 @@
+[16:37] <54d4a1d6db8155e6700f853b> @mrocklin I talked to the person working on tensor factorization for LDA. That woudl be nice but I think they said it's not really ready yet. So I'm not sure there is a killer application. Maybe check out http://www.cs.columbia.edu/~djhsu/papers/power-jmlr.pdf
+--------------------------------------------------------------------------------------------------

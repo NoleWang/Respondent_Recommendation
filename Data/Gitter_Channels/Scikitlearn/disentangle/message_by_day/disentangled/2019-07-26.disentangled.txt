@@ -1,0 +1,4 @@
+[12:22] <58f1ce53d73408ce4f588a29> Hi
+--------------------------------------------------------------------------------------------------
+[12:27] <5baf7d9ad73408ce4fa9c9b2> @adityap31 we choose to only officially support English in our documentation, to avoid having to maintain different versions
+--------------------------------------------------------------------------------------------------

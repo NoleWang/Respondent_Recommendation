@@ -1,0 +1,1 @@
+[21:21] <5eeb997bd73408ce4fe7491d> Hi! Does anyone have any advice for tackling errors in the azure pipeline? We're failing for linux and windows and I can't find a descriptive error message as to why it's failing other than "Bash exited with code '1'." I'm on a mac. https://github.com/scikit-learn/scikit-learn/pull/17877/checks

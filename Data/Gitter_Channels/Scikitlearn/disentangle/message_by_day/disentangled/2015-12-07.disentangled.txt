@@ -1,0 +1,4 @@
+[19:10] <54d4a1d6db8155e6700f853b> @kootenpv not currently unfortunately https://github.com/scikit-learn/scikit-learn/pull/3951
+[19:11] <54d4a1d6db8155e6700f853b> dask-sklearn tries to get rid of that, but that's more of a prototype
+[19:11] <54d4a1d6db8155e6700f853b> see http://blaze.pydata.org/blog/2015/10/19/dask-learn/
+--------------------------------------------------------------------------------------------------

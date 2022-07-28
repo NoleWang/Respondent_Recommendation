@@ -1,0 +1,160 @@
+[06:11] <54bd0a4fdb8155e6700ed136> @rvraghav93 In addition to finding issues to fix at the sprint (which is great!), could you also try to promote reviewing :) You can tell people to look for PRs with the [MRG] tag, these are the ones ready for review
+--------------------------------------------------------------------------------------------------
+[06:56] <54d4a1d6db8155e6700f853b> @vighneshbirodkar you mean 2.3,  right?
+--------------------------------------------------------------------------------------------------
+[07:31] <54e07d4015522ed4b3dc0856> if anyone has a PR that needs review that is what I am focusing on - though some stuff may be outside my wheelhouse
+--------------------------------------------------------------------------------------------------
+[07:41] <54bd0a4fdb8155e6700ed136> @kastnerkyle #4294 would need some love, but this is huge
+[07:42] <54bd0a4fdb8155e6700ed136> (though both arnaud and andy have been reviewing it)
+[07:43] <54bd0a4fdb8155e6700ed136> #5291 maybe?
+[07:44] <54bd0a4fdb8155e6700ed136> or any help with all the mrg+1 PRs is welcome, so that we can have some of those merged
+--------------------------------------------------------------------------------------------------
+[07:52] <54d4a1d6db8155e6700f853b> @kastnerkyle https://github.com/scikit-learn/scikit-learn/pull/5358 ;)
+--------------------------------------------------------------------------------------------------
+[07:58] <54d4a1d6db8155e6700f853b> Anyone wanna weigh in on #5319 (adding k modes to related projects)
+[08:02] <54d4a1d6db8155e6700f853b> Anything anyone want's me to have a look at?
+--------------------------------------------------------------------------------------------------
+[08:16] <53135b495e986b0712efc453> I have an urgent bank work :( I'll be coming in the afternoon. Apologies :grin:
+[08:16] <53135b495e986b0712efc453> @glouppe sure!! Will do :)
+--------------------------------------------------------------------------------------------------
+[08:17] <541a528b163965c9bc2053de> @rvraghav93 no problem.
+[08:18] <541a528b163965c9bc2053de> @rvraghav93 hopefully by then I will have finished reviewing your CV PR ;)
+--------------------------------------------------------------------------------------------------
+[08:18] <54d4a1d6db8155e6700f853b> can we discuss #5023
+--------------------------------------------------------------------------------------------------
+[08:18] <54e07d4015522ed4b3dc0856> @amueller #5358 looks like a +2 now with @ogrisel
+[08:18] <541a528b163965c9bc2053de> @arthurmensch needs to rebase it first
+[08:19] <541a528b163965c9bc2053de> I mean #5358
+--------------------------------------------------------------------------------------------------
+[08:19] <54d4a1d6db8155e6700f853b> @ogrisel opinions on #5023 ?
+[08:19] <54d4a1d6db8155e6700f853b> I wanna ask gael and arnaud, too
+[08:20] <54d4a1d6db8155e6700f853b> lol https://github.com/scikit-learn/scikit-learn/pull/5498/files#r42594166
+[08:20] <54d4a1d6db8155e6700f853b> I think this is a first, Gael telling me to be more pragmatic
+[08:26] <54d4a1d6db8155e6700f853b> not sure I should screenshot
+--------------------------------------------------------------------------------------------------
+[08:50] <54d4a1d6db8155e6700f853b> @ogrisel you agree that GaussianProcesses should be removed in 0.20, right?
+[08:50] <54d4a1d6db8155e6700f853b> then we need to fix and backport
+--------------------------------------------------------------------------------------------------
+[08:54] <541a528b163965c9bc2053de> old GP is deprecated in 0.18, removed in 0.20
+[08:54] <541a528b163965c9bc2053de> indeed
+--------------------------------------------------------------------------------------------------
+[08:56] <54bd0a4fdb8155e6700ed136> ok my bad then
+[08:56] <54bd0a4fdb8155e6700ed136> i'll fix that
+[08:59] <54bd0a4fdb8155e6700ed136> done
+--------------------------------------------------------------------------------------------------
+[09:14] <541a528b163965c9bc2053de> #5504 and #5505 need contributors: those are documentation related issues. @rvraghav93: @amueller told me to tell you to leave those issues for others ;)
+[09:15] <54d4a1d6db8155e6700f853b> thanks @glouppe
+--------------------------------------------------------------------------------------------------
+[09:16] <54d4a1d6db8155e6700f853b> hm similarly here: #5452 we should change the version. or backport the deprecation to 0.17
+--------------------------------------------------------------------------------------------------
+[09:17] <54e07d4015522ed4b3dc0856> #5500 as well
+[09:17] <54e07d4015522ed4b3dc0856> documentation fixes
+--------------------------------------------------------------------------------------------------
+[09:21] <54d4a1d6db8155e6700f853b> ah needs contributor as well...
+--------------------------------------------------------------------------------------------------
+[09:39] <54d4a1d6db8155e6700f853b> @kastnerkyle if you are bored, maybe look at #5008 (needs reviews)
+--------------------------------------------------------------------------------------------------
+[10:21] <54d4a1d6db8155e6700f853b> I though #5141 was merged, whoops (randomized_svd default parameters and normalization)
+[10:21] <54d4a1d6db8155e6700f853b> reviews appreciated
+--------------------------------------------------------------------------------------------------
+[10:33] <54e07d4015522ed4b3dc0856> I am +1 on 5141
+[10:35] <54e07d4015522ed4b3dc0856> so it is +2 now - if tests pass you can go ahead and hit the button @amueller
+[10:51] <54e07d4015522ed4b3dc0856> I thought those were addressed, but we can let him hit the button instead
+--------------------------------------------------------------------------------------------------
+[10:40] <54bd0a4fdb8155e6700ed136> you can go ahead and merge Kyle :)
+--------------------------------------------------------------------------------------------------
+[10:40] <53810862048862e761fa2887> Yes @amueller , I mean 2.3
+--------------------------------------------------------------------------------------------------
+[10:46] <54e07d4015522ed4b3dc0856> @glouppe traaaaaaaaaaaaavis. so slow. it needs to hurry up before andy stops eating... he is faster than me :D
+[10:46] <54e07d4015522ed4b3dc0856> I'll never win the "merge button shootout"
+--------------------------------------------------------------------------------------------------
+[10:47] <54d4a1d6db8155e6700f853b> @vighneshbirodkar in ``update_terminal_region`` I think. not sure though
+[10:48] <54d4a1d6db8155e6700f853b> @ogrisel had some thoughts about doing only two power iterations, I think
+--------------------------------------------------------------------------------------------------
+[10:56] <54d4a1d6db8155e6700f853b> does anyone at the sprint have ibuprofene?
+[16:51] <54d4a1d6db8155e6700f853b> @vig
+[16:51] <54d4a1d6db8155e6700f853b> @vighneshbirodkar about the one hot encoder: we are fine if dtype=object, right?
+--------------------------------------------------------------------------------------------------
+[11:24] <54d4a1d6db8155e6700f853b> can people still look at travis logs? https://travis-ci.org/scikit-learn/scikit-learn/builds/86595504 for example?
+[11:24] <54d4a1d6db8155e6700f853b> I think travis just throttled our IP
+--------------------------------------------------------------------------------------------------
+[11:25] <54bd0a4fdb8155e6700ed136> keeps "loading" here
+[11:27] <54d4a1d6db8155e6700f853b> so it is not our IP
+[11:27] <54bd0a4fdb8155e6700ed136> https://www.traviscistatus.com/
+--------------------------------------------------------------------------------------------------
+[11:32] <541a528b163965c9bc2053de> H99 errors
+[11:32] <541a528b163965c9bc2053de> https://devcenter.heroku.com/articles/error-codes#h99-platform-error
+[11:32] <541a528b163965c9bc2053de> could be anything
+--------------------------------------------------------------------------------------------------
+[11:49] <53135b495e986b0712efc453> @ogrisel Lol okay ;) and thanks a lot for the reviews :)
+[11:49] <541a528b163965c9bc2053de> I still need to finish that one.
+--------------------------------------------------------------------------------------------------
+[12:19] <54d4a1d6db8155e6700f853b> I remember there was a discussion about how to call a function that gives uncertainty estimates on regression values. Where was that? I can't find it any more
+[12:26] <54d4a1d6db8155e6700f853b> We need reviews on #4490 and want to backport it.
+--------------------------------------------------------------------------------------------------
+[12:28] <54d4a1d6db8155e6700f853b> I'm going to lie on the couch in front of the room if anyone is looking for me. I'm beginning to question my decision to take a flight yesterday ^^
+--------------------------------------------------------------------------------------------------
+[12:51] <541a528b163965c9bc2053de> > I remember there was a discussion about how to call a function that gives uncertainty estimates on regression values. Where was that? I can't find it any more  `return_std` on the `predict` method of old GPs
+[12:52] <541a528b163965c9bc2053de> I thought we discussed the use of the same parameter for another non-GP regressor (I checked RidgeCV but it's not it apparently).
+--------------------------------------------------------------------------------------------------
+[13:56] <54d4a1d6db8155e6700f853b> That is doing interval predictions. that is slightly different. sometimes you want to evaluate the density at a certain point
+--------------------------------------------------------------------------------------------------
+[14:11] <53810862048862e761fa2887> @amueller While you are there, can you have a discussion with the other about the `OneHotEncoder` issue and in general how we can handle strings with it ?
+[14:12] <53810862048862e761fa2887> others*
+--------------------------------------------------------------------------------------------------
+[14:13] <54d4a1d6db8155e6700f853b> the joblib fun on windows is back: https://ci.appveyor.com/project/amueller/scikit-learn/build/1.0.1408/job/7sldjuplbqf2t31u
+[14:13] <54d4a1d6db8155e6700f853b> @vighneshbirodkar what was the open questions? if there are  columns with mixed strings and numbers?
+[16:53] <54d4a1d6db8155e6700f853b> so the problem is only if you pass a list?
+[16:57] <54d4a1d6db8155e6700f853b> but maybe the new code based on unique would work for both integers and objects? well ok that is not that important
+--------------------------------------------------------------------------------------------------
+[14:15] <53810862048862e761fa2887> Yes, specially an array with `1` and `"1"` in the same column
+[14:16] <53810862048862e761fa2887> @amueller What is your definition of "fun" ? :D
+--------------------------------------------------------------------------------------------------
+[14:17] <541a528b163965c9bc2053de> something that you cannot reproduce on your dev environment
+[14:17] <541a528b163965c9bc2053de> Maybe @TomDLT can give it a try.
+--------------------------------------------------------------------------------------------------
+[14:22] <53810862048862e761fa2887> I have faced similar issues before somewhere else.
+--------------------------------------------------------------------------------------------------
+[14:29] <541a528b163965c9bc2053de> Yes: it used to be very frequent in the past and at some point it stopped appearing. But now it's back. I am not sure whether it reveals a true problem in the way we use multiprocessing under windows or is caused by a problem on the appveyor CI infrastructure.
+[14:30] <53810862048862e761fa2887> I have windows on dual-boot, but I have to setup scikit-learn over there before I can run tests. Does anyone else over there have it ?
+[14:31] <541a528b163965c9bc2053de> I have a windows VM in the cloud that I use for such debugging. I can give it another try.
+[15:43] <53810862048862e761fa2887> @amueller You mean it could be computed by some function in `scipy.optimize` or similar ?
+--------------------------------------------------------------------------------------------------
+[15:02] <55e5c37d0fc9f982beaf4d61> PR #5492 is ready for review. Caching + removal of .c file seems to be working
+[15:03] <55e5c37d0fc9f982beaf4d61> It's a bit hackish though, waiting for some proper build system...
+--------------------------------------------------------------------------------------------------
+[15:18] <53810862048862e761fa2887> @amueller In `2.3` when they say "argmin" I assume there will be some sort of a loop ? I can't seem to find that anywhere
+[15:40] <54d4a1d6db8155e6700f853b> @vighneshbirodkar there doesn't necessarily be a loop
+--------------------------------------------------------------------------------------------------
+[15:42] <54d4a1d6db8155e6700f853b> @ogrisel I can not reproduce the issue with conda locally
+--------------------------------------------------------------------------------------------------
+[15:46] <541a528b163965c9bc2053de> FYI the https://ci.appveyor.com/project/amueller/scikit-learn/build/1.0.1408/job/7sldjuplbqf2t31u failure might be caused by the fact that this was deployed on @amueller's appveyor account which runs of a different infra than the one we should usually run on (that is using the @sklearn-ci account). I reconfigured the appveyor webhook on the scikit-learn repo and hopefully the future appveyor builds will run on the correct infra and not fail this way anymore. If this is not the case we will have to investigate.
+[15:46] <541a528b163965c9bc2053de> > @ogrisel I can not reproduce the issue with conda locally  So it might be a consequence of the past travis outage
+[15:47] <54d4a1d6db8155e6700f853b> @vighneshbirodkar  or there could be a closed form solution
+[15:47] <54d4a1d6db8155e6700f853b> @ogrisel yeah I think it was a fluke
+[16:46] <541a528b163965c9bc2053de> no have have not asked him, and yes we can talk about strings in ohe
+--------------------------------------------------------------------------------------------------
+[16:03] <53810862048862e761fa2887> If you see this https://github.com/scikit-learn/scikit-learn/blob/master/sklearn/ensemble/gradient_boosting.py#L254 for example,  only the learning late is multiplied.
+--------------------------------------------------------------------------------------------------
+[16:15] <54d4a1d6db8155e6700f853b> @vighneshbirodkar I'm not sure. Maybe ping @pprett ?
+[16:19] <54d4a1d6db8155e6700f853b> @ogrisel can we talk about handling strings in OneHotEncoder ?
+--------------------------------------------------------------------------------------------------
+[16:29] <54d4a1d6db8155e6700f853b> @ogrisel have you asked arnaud about the greater is better issue?
+--------------------------------------------------------------------------------------------------
+[16:52] <53810862048862e761fa2887> Yes
+--------------------------------------------------------------------------------------------------
+[16:55] <53810862048862e761fa2887> Yes, and I am assuming based on the dtype of the input, we will have 2 different pieces of code to process them (object and dtype)
+[16:55] <54d4a1d6db8155e6700f853b> why?
+[16:56] <53810862048862e761fa2887> Because the current code only works for integers
+[16:56] <54d4a1d6db8155e6700f853b> right.
+--------------------------------------------------------------------------------------------------
+[17:00] <54d4a1d6db8155e6700f853b> maybe we do ``check_array`` and if we get back a string dtype, we do the conversion again with dtype object. Does that solve all problems?
+[17:00] <53810862048862e761fa2887> Even with #5270 the code cannot support non-integer types
+[17:03] <53810862048862e761fa2887> the problem is if converting something like `[1, '1', 2 , 3 , 4]` to an integer, casting to integer works and gives wrong results
+--------------------------------------------------------------------------------------------------
+[17:36] <53810862048862e761fa2887> Now that I think about it, since the `LabelEncoder` has a lot of the functionality needed, instead have a subclass of `Pipeline` called `OneHotObjectEncoder`
+--------------------------------------------------------------------------------------------------
+[19:09] <54e07d6515522ed4b3dc0858> So the KNN docstrings mention from place to place the idea that `metric` can be `"precomputed"`, but I can't get that to work, the current code doesn't seem to implement it.
+[19:12] <54e07d6515522ed4b3dc0858> I can't seem to find any documentation or any open issues about this.
+[19:17] <54e07d6515522ed4b3dc0858> hmm I think it's fixed in master actually, sorry about the noise
+--------------------------------------------------------------------------------------------------

@@ -1,0 +1,9 @@
+<s> <user> ok i did a pass on the gsoc <unka> . i need to go to sleep now . tomorrow will be very busy with meetings and <unka> . </s>
+<s> <user> i will probably be back online on thursday morning to resume work on gsoc reviews and <unka> 0.16 release . </s>
+<s> <user> i might <unka-> some more things today , i have to check </s>
+<s> <user> <unka@> do you think we should probably fine tune landscape settings to avoid reporting <unka-> fixes that are probably ignored ... thing is without it raising red flags only for important issues that a core dev would normally frown upon ( like <unk#a> , imports , the <unka> format ), i am afraid this will eventually be ignored like the <unka> bot . :/ <unka> ? </s>
+<s> <user> the main problem is that it reports new problems that are not related to the code at all . </s>
+<s> <user> ah ... we 'll then just wait for it to get better ;) </s>
+<s> <user> maybe ;) </s>
+<s> <user> <unka@> do you think there is a chance <unka@> will review and or put his name next to some of the <unka> ? it would be nice to have <unka> <unka> . </s>
+<s> <user> <unka@> i backported some doc fixes and the faster <unka> features </s>

@@ -1,0 +1,3 @@
+[11:58] <5b018bb2d73408ce4f9a05a7> hello 
+[16:34] <5af3b5e8d73408ce4f98c40d> I'm facing an issue in importing svm
+[16:34] <5af3b5e8d73408ce4f98c40d> --------------------------------------------------------------------------- ImportError                               Traceback (most recent call last) <ipython-input-7-264c9a795a14> in <module>() ----> 1 from sklearn import svm  /root/miniconda2/lib/python2.7/site-packages/sklearn/__init__.py in <module>()      61     # process, as it may not be compiled yet      62 else: ---> 63     from . import __check_build      64     from .base import clone      65     __check_build  # avoid flakes unused variable error  ImportError: cannot import name __check_build

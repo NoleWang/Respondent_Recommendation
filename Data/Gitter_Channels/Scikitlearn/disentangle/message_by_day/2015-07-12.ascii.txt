@@ -1,0 +1,12 @@
+[00:38] <54e07d6515522ed4b3dc0858> @rvraghav93: didn't we agree to not duplicate the code that doesn't need to be duplicated? eg the old gridsearch, can't it be just imported from the new path?
+[01:02] <54e07d6515522ed4b3dc0858> basically we'll have duplicated functionality in the old and new CV classes for a while, but the rest of the things that were moved should just be imported from the new place, assuming their behavior with old-style CV classes doesn't change.
+[16:45] <54d4a1d6db8155e6700f853b> +1
+[16:47] <54e07d6515522ed4b3dc0858> @amueller what do you think about the placement on the `labels` argument in `cross_val_score` and the like?
+[16:49] <54e07d6515522ed4b3dc0858> If we leave it at the end, we don't need to duplicate that code either, right?
+[16:54] <53135b495e986b0712efc453> (About reducing duplicates) already done at https://github.com/rvraghav93/scikit-learn/pull/2 :)
+[16:55] <53135b495e986b0712efc453> I also reused a few docstrings... That is a bit hacky not sure if that's correct!!
+[16:58] <53135b495e986b0712efc453> @amueller discussion abt the labels arg here - https://github.com/scikit-learn/scikit-learn/pull/4294#discussion_r34417412
+[21:23] <55a13e9b5e0d51bd787b0bb6> I'm curious about the [MRG] convention I see being used on pull requests. Does that just indicate that the author believes it's ready to merge?
+[21:23] <55a13e9b5e0d51bd787b0bb6> I think I wrote a good test for PR #4961. I hesitated before because I thought it would be weird to test something that should be somewhere around 0.5. But then I taught myself about assert_almost_equal.
+[21:24] <55a13e9b5e0d51bd787b0bb6> It was fun sprinting with some of you, I'll be back on later today or this week to hopefully finish that k-means example.
+[21:52] <54e07d6515522ed4b3dc0858> @mrphilroth exactly! It's a way for reviewers to tell at a glance what state a PR is in.

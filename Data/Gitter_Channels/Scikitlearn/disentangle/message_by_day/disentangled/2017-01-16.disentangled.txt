@@ -1,0 +1,33 @@
+[15:09] <54d4a1d6db8155e6700f853b> @karandesai-96 sweet! Good you two!
+--------------------------------------------------------------------------------------------------
+[16:47] <55a36f535e0d51bd787b3400> @amueller ok thanks
+--------------------------------------------------------------------------------------------------
+[16:48] <5874edafd73408ce4f428857> Anybody recommend any starter guides for scikit-learn?
+[16:48] <5874edafd73408ce4f428857> Whats the best way to get into this?
+[16:48] <5874edafd73408ce4f428857> lol. What book?
+[16:49] <5874edafd73408ce4f428857> Ok awesome thanks.
+[16:50] <5874edafd73408ce4f428857> CS
+--------------------------------------------------------------------------------------------------
+[16:48] <54d4a1d6db8155e6700f853b> @aquan9 my book ;)
+[16:48] <54d4a1d6db8155e6700f853b> or sebastians book?
+[16:49] <54d4a1d6db8155e6700f853b> https://www.amazon.com/Introduction-Machine-Learning-Python-Scientists/dp/1449369413/ref=sr_1_1?ie=UTF8&qid=1479485017&sr=8-1&keywords=introduction+to+machine+learning+with+python
+[16:49] <54d4a1d6db8155e6700f853b> https://www.amazon.com/Python-Machine-Learning-Sebastian-Raschka/dp/1783555130/ref=pd_bxgy_14_img_2?_encoding=UTF8&psc=1&refRID=HA8X4W6W4KAK3RCZ7G85
+[16:49] <54d4a1d6db8155e6700f853b> (if you get mine, make sure it's the second print that just came out)
+[16:49] <54d4a1d6db8155e6700f853b> There's also a bunch of free tutorials linked on the website:
+[16:50] <54d4a1d6db8155e6700f853b> http://scikit-learn.org/stable/presentations.html
+[16:50] <54d4a1d6db8155e6700f853b> what's your background?
+[16:50] <54d4a1d6db8155e6700f853b> my book is "no math". sebastians is "some math"
+[16:50] <54d4a1d6db8155e6700f853b> I recommend reading mine alongside bishops book or elements of statistical learning if your math-minded
+[16:51] <54d4a1d6db8155e6700f853b> thanks. it's mostly all the worst typos.
+[16:51] <54d4a1d6db8155e6700f853b> And obviously someone pointed out something real bad just after it got finished lol
+[16:51] <57ec309f40f3a6eec067e511> :)
+--------------------------------------------------------------------------------------------------
+[16:50] <57ec309f40f3a6eec067e511> Just saw your update on the book. Congrats  @amueller
+--------------------------------------------------------------------------------------------------
+[16:52] <54d4a1d6db8155e6700f853b> @aquan9 there's also a bunch of free tutorials on my website: amueller.github.io
+--------------------------------------------------------------------------------------------------
+[16:58] <5874edafd73408ce4f428857> @amueller Thanks for the advice
+--------------------------------------------------------------------------------------------------
+[17:02] <57ec309f40f3a6eec067e511> In the past I have also found the following book to be very helpful "Machine Learning- The Art and Science of Algorithms that Make Sense of Data". @amueller . Whats your opinion about the same @amueller ?
+[17:06] <54d4a1d6db8155e6700f853b> @pramitchoudhary haven't read that one. I like Max Kuhn's book though
+--------------------------------------------------------------------------------------------------

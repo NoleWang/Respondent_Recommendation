@@ -1,0 +1,1 @@
+[15:55] <54a6f79fdb8155e6700e5114> How to train neural network and what i the best design of it if I have discrete/continual input and continual output?

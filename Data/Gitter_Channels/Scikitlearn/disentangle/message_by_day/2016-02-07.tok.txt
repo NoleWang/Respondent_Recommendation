@@ -1,0 +1,6 @@
+<s> <user> veteran contributors , please have a look at the link above ^^^ </s>
+<s> <user> if you think this can be a good addition to the lib , i will try to implement it . i have read it quickly once , if i get a yes , i will thoroughly go through it and start implementing it as a new class . </s>
+<s> <user> it is named the " <unka-> regression " </s>
+<s> <user> <unk#a-@> have a look at [ <unka#(-./:]> ) </s>
+<s> <user> <unka,> . i have n't see the specifications of the paper , will check it whether it meets the requirements . if not , i will upload it separate l </s>
+<s> <user> it can get it reviewed and added as related projects . </s>

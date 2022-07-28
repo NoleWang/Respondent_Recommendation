@@ -1,0 +1,2 @@
+[00:55] <5cf106a0d73408ce4fc1d8b2> Python 2.7 does not support many modules that are supported by python 3.6 and other newer versions 
+[11:34] <541a528b163965c9bc2053de> @piotr-mamenas on windows I would recommend you to use conda environments: https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html (or alternatively Python 3 builtin venv module) to get a fine control on the list of packages installed in the currently active environment

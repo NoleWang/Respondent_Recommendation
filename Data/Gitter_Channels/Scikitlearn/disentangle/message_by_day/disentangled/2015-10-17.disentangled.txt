@@ -1,0 +1,22 @@
+[00:37] <54d4a1d6db8155e6700f853b> @ogrisel do you understand this https://travis-ci.org/MacPython/scikit-learn-wheels/jobs/85847030 ?
+[00:37] <54d4a1d6db8155e6700f853b> install_scripts failed
+--------------------------------------------------------------------------------------------------
+[08:51] <541a528b163965c9bc2053de> @amueller it's weird I just did it (bdist_wheel) on my mac and I don't get the error.
+[08:51] <541a528b163965c9bc2053de> python 3.5.0 as well.
+--------------------------------------------------------------------------------------------------
+[08:55] <541a528b163965c9bc2053de> Maybe the version of the `wheel` project pre-installed on the travis host is too old for Python 3.5.0. Will change the config to make it upgrade it.
+[08:55] <541a528b163965c9bc2053de> > Requirement already satisfied (use --upgrade to upgrade): wheel in ./venv/lib/python3.5/site-packages
+--------------------------------------------------------------------------------------------------
+[16:42] <54d4a1d6db8155e6700f853b> @ogrisel I saw you commited something. did it fix it?
+[16:43] <54d4a1d6db8155e6700f853b> the weird gcc flags were... weird but I didn't see it come up again after I added the flags
+[16:43] <54d4a1d6db8155e6700f853b> ah, wheels work. we only need to sync master for the 3.3 fix
+--------------------------------------------------------------------------------------------------
+[16:48] <541a528b163965c9bc2053de> For 3.5 on the OSX  wheel builder, yes it's fixed (just ugraded the `wheel` package on travis).
+[16:48] <541a528b163965c9bc2053de> For your 3.3 fix that I merged I plan to only include it for the next release.
+[16:49] <541a528b163965c9bc2053de> I would like to have the tag match the content of the archive.
+--------------------------------------------------------------------------------------------------
+[17:57] <54d4a1d6db8155e6700f853b> What do you mean by that? that the version tag in the sklearn repo is the same as the wheel with the same name? makes sense.
+[17:58] <54d4a1d6db8155e6700f853b> I have to work on other stuff today. You are busy with Pycon FR right? it looks like #5008 would be good to have / review
+--------------------------------------------------------------------------------------------------
+[20:55] <560731310fc9f982beb1f438> I'd like to start contributing and work on #5089, so I was wondering if it's better to submit one PR with a lot of warning fixes or PRs in chunks that deal with one specific type of warning?
+--------------------------------------------------------------------------------------------------

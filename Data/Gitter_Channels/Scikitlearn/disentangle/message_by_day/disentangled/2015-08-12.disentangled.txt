@@ -1,0 +1,17 @@
+[14:31] <53135b495e986b0712efc453> @amueller @vene Could you confirm if [this](https://github.com/scikit-learn/scikit-learn/pull/4294/files#r35808353) can be left untouched??
+[14:32] <53135b495e986b0712efc453> @vene Thanks!!! And yes it helps! I'll modify the example that way!! Using `make_blobs`, I will also be able to illustrate it graphically :)
+--------------------------------------------------------------------------------------------------
+[14:45] <53135b495e986b0712efc453> Also could anyone help me with [this](https://travis-ci.org/scikit-learn/scikit-learn/jobs/75260268#L1509) failure :/ I am unable to comprehend why this test should fail :|
+--------------------------------------------------------------------------------------------------
+[15:58] <54e07d6515522ed4b3dc0858> @rvraghav93 regarding the failure: maybe the doctest should have the random seed fixed?
+--------------------------------------------------------------------------------------------------
+[17:03] <54d4a1d6db8155e6700f853b> @xuewei4d btw were you aware that semantics of np.diag are changing? in new versions, np.diag returns a view. Not sure that is relevant, I haven't reviewed this parts in detail
+[17:03] <54d4a1d6db8155e6700f853b> (hm sorry sent that before)
+[17:05] <54d4a1d6db8155e6700f853b> @xuewei4d I'm sorry, I don't think I'll be able to review before the pencil down. I'm pretty busy and have to look at @rvraghav93's work. I'm not sure where @ogrisel is.
+[17:06] <54d4a1d6db8155e6700f853b> Where is loic btw?
+--------------------------------------------------------------------------------------------------
+[19:24] <53135b495e986b0712efc453> @vene No it passes in master... it used to pass in my branch too... since I squashed a few commits I am unable to get the exact point at which it broke :sob:
+--------------------------------------------------------------------------------------------------
+[20:42] <54e07d6515522ed4b3dc0858> you can always git bisect
+[20:42] <54e07d6515522ed4b3dc0858> but have you tried that piece of code locally in ipython with random_state to None vs other fixed values?
+--------------------------------------------------------------------------------------------------

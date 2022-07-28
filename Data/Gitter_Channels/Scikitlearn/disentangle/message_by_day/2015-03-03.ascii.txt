@@ -1,0 +1,14 @@
+[15:05] <54d4a1d6db8155e6700f853b> looks like you got a lot of reviewing done already, sweet :)
+[15:05] <54d4a1d6db8155e6700f853b> care to weight in on the class_weight discussion?
+[16:07] <54d4a1d6db8155e6700f853b> we really need someone else for reviews :-/
+[19:13] <541a528b163965c9bc2053de> @agramfort are you around?
+[19:48] <54d4a1d6db8155e6700f853b> there is another bugfix here @ogrisel  https://github.com/scikit-learn/scikit-learn/pull/4326
+[19:48] <54d4a1d6db8155e6700f853b> I merged the RBM fix and docs after Kyle +1'ed
+[21:21] <541a528b163965c9bc2053de> Done.
+[21:21] <541a528b163965c9bc2053de> 15 left.
+[21:21] <541a528b163965c9bc2053de> 15 PRs left.
+[22:12] <54d4a1d6db8155e6700f853b> thanks
+[22:12] <54d4a1d6db8155e6700f853b> woah getting late again on your side ;)
+[22:12] <54d4a1d6db8155e6700f853b> 10PRs left I think
+[22:13] <54d4a1d6db8155e6700f853b> oh, wrong filter. 14PRs
+[22:14] <54d4a1d6db8155e6700f853b> the agglomerative clustering one I am not sure about. I don't know what the canonical meaning of alpha is. https://github.com/scikit-learn/scikit-learn/pull/3758

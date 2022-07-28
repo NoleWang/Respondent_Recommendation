@@ -1,0 +1,26 @@
+[14:00] <541a528b163965c9bc2053de> @amueller the heisenfailure (the nans in solve_triangular called by OMP) only happens on scipy 0.9.0 from ubuntu precise right? What about skipping that test if scipy is too old?
+[14:35] <54d4a1d6db8155e6700f853b> yeah, but we still support scipy 0.9.0, right?
+[14:35] <54d4a1d6db8155e6700f853b> I tried reproducing but failed. I fear it is something silly like last time, where there was an if on the scipy version
+[14:37] <541a528b163965c9bc2053de> Have you tried to reproduce with ubuntu 12.04?
+[14:40] <54d4a1d6db8155e6700f853b> not yet
+[14:40] <541a528b163965c9bc2053de> ok I can try tomorrow if you don't do it in the mean time.
+[14:40] <541a528b163965c9bc2053de> Need to run now, see you later.
+[14:42] <54d4a1d6db8155e6700f853b> ok. I think I have a vagrant box, I'll have a look
+[14:42] <54d4a1d6db8155e6700f853b> btw if you had time to look at the mlp branch, this would be great
+[15:08] <54d4a1d6db8155e6700f853b> @rvraghav93 could you maybe start with a first blog post on your plans for the summer?
+[15:23] <54e07d6515522ed4b3dc0858> @amueller @rvraghav93 Maybe we could find the time to sync and discuss an outline of the blog post. It's also a good opportunity to think about the upcoming steps.
+[15:32] <54d4a1d6db8155e6700f853b> Sure
+[15:34] <54e07d6515522ed4b3dc0858> BTW, I think it's good to be aware of each other's time zones, so we can plan better. I'm currently on Central European (Summer) Time until Sunday, and then New York time. (We can take this to a private chat too if you want.)
+[15:35] <54d4a1d6db8155e6700f853b> where are you going vlad? Will you be around?
+[15:39] <54e07d6515522ed4b3dc0858> I will actually be in New York for about a week, if everything goes well. I have to apply for a Chinese visa.
+[15:39] <54e07d6515522ed4b3dc0858> Afterwards it's back to boring Ithaca.
+[15:40] <54e07d6515522ed4b3dc0858> Currently in Florence for WWW
+[15:40] <54e07d6515522ed4b3dc0858> Very beautiful city!
+[15:43] <54d4a1d6db8155e6700f853b> nice! When are you in NYC? Let's have a beer!
+[15:43] <54d4a1d6db8155e6700f853b> next week?
+[15:45] <54e07d6515522ed4b3dc0858> Sure! Yes, Monday-Friday I think.
+[15:45] <54e07d6515522ed4b3dc0858> Gotta run for a while, talk to you later!
+[15:45] <54d4a1d6db8155e6700f853b> ttyl!
+[18:19] <53135b495e986b0712efc453> @amueller I just PM-ed @vene about the blog post :) Will make one before 20th and share the link :)
+[18:22] <54d4a1d6db8155e6700f853b> great!
+[18:57] <54d4a1d6db8155e6700f853b> @tomdlt btw we have this thing here were we hang out and chat ;)

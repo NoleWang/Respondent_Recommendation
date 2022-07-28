@@ -1,0 +1,3 @@
+[13:45] <54d4a1d6db8155e6700f853b> @vighneshbirodkar well the solutions are not feasible
+[13:46] <54d4a1d6db8155e6700f853b> and with very small mu they are very far from being feasible
+--------------------------------------------------------------------------------------------------

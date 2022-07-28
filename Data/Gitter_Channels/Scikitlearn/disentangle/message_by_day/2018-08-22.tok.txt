@@ -1,0 +1,6 @@
+<s> <user> the <unka> thing is mostly what 's preventing me from doing the rc right now :-/ </s>
+<s> <user> <unka@> there seem to be a few different issues . very strange . </s>
+<s> <user> there are unicode differences . 'foo' vs . <unka'> </s>
+<s> <user> and there are also a lot of ` , <unk#a)=`> ` , <unk#a)=`> </s>
+<s> <user> <unka@> that 's actually not the problem i was having , <unka@> has fixed my problem :) </s>
+<s> <user> we're supposed to be skipping <unka> on 32bit and possibly on <unk#a> . or maybe there was a fix in the <unka> for <unk#a> changes ? anyone remember lol ? </s>

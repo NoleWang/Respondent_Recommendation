@@ -1,0 +1,8 @@
+<s> <user> you could also do a <unka`> grep " def <unka"_`> right ? thats the easiest i think ! :) </s>
+<s> <user> for the file you can use <unka._> </s>
+<s> <user> that is <unka._`> </s>
+<s> <user> <unka_> didnt work , but <unka._> seems to get what i want . thanks ! </s>
+<s> <user> that is <unka._`> </s>
+<s> <user> it might be that <unka_> only works for modules , not functions </s>
+<s> <user> <unka> should give you the same as file </s>
+<s> <user> err code </s>

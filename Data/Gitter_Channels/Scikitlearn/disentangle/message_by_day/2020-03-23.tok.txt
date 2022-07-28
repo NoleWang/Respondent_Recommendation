@@ -1,0 +1,4 @@
+<s> <user> hi everyone , im a begginer and i want to contribute to <unka> learn . i have worked on few deep learning projects in <unka> . i cant find a good issue to work as someone is already assigned to it or somebody has already fixed it . can someone guide me to contributing in this repo </s>
+<s> <user> <unka`> i can see the chat 's packed <unka,> here 's my two cents i was going through the implementation of <unka> implemented in <unka> , under <unka._> . i noticed a part where you put <unk`> class <unka(> .. ): . . .. def <unka(> .. ): .. .. <unka(,.> ) .. return projection <unk`> now <unka.> does n't take two arguments , so what 's happening ? i tried replicating this in my console and i got error , also why is no variable storing that information ?. i 've created the corresponding [ <unk#a(-./:]> ). thanks for the help :) </s>
+<s> <user> <unka`> nvm issue solved thanks !! </s>
+<s> <user> <unka`> * nvm issue solved thanks nicolas hug ( <unka> ) . </s>

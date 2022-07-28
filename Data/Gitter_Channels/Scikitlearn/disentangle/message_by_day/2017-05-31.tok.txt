@@ -1,0 +1,11 @@
+<s> <user> does anyone happen to know if <unka-> implementation of coordinate descent ( for stuff like <unka> , <unka> , etc .) is <unka> ? </s>
+<s> <user> i.e ., does sample order matter ? </s>
+<s> <user> ( assuming random seeds are set and all that other stuff ) </s>
+<s> <user> i have been trying <unka> and have a doubt . c is referred to the penalty term , therefore with increase in the value of c , the algorithm try 's to reduce the number of wrong classified and with very high value of c it may <unka> the data . can we say that with <unka> , the number of support vectors would increase . and if we use a lower value of c the number of support vectors will be less ? </s>
+<s> <user> but the results i got were different , with small value of c , the model was <unka> and the number of support vectors were huge </s>
+<s> <user> can anyone explain , what is wrong with my thinking :p </s>
+<s> <user> no </s>
+<s> <user> do n't you know anything ? </s>
+<s> <user> <unka@> currently im not familiar with julia , but it seems to be easy . i will have a look at the necessary parts . </s>
+<s> <user> <unk#a@> URL/https:/ <unka./> <unk#a-/> </s>
+<s> <user> <unk#a@> furthermore the parameter <unka_`> of an <unka> gives you the number of used support vectors for each class : URL/https:/ URL/github.com/ <unk#a#-./> </s>

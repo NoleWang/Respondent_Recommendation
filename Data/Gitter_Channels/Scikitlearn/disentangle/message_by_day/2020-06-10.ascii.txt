@@ -1,0 +1,9 @@
+[11:05] <5ee0be30d73408ce4fe67f61> Hello, i hope this is the right place for my question
+[11:07] <5ee0be30d73408ce4fe67f61> i have a problem with a 1D-Classification. I simplified my problem to the following: There are 2 classes +1 and -1 and i have a trainvalue for each of the classes 0.0293294646367189  (class -1) and  0.025545042466768184 (class 1) Now that i trained a LinearSVC with those values i throw some random values to the classifier to predict
+[11:08] <5ee0be30d73408ce4fe67f61> i expect the decision limit to be in the center of the two example values
+[11:08] <5ee0be30d73408ce4fe67f61> but even 0.025545042466768184, the train data for class 1 is predicted as -1
+[11:10] <5ee0be30d73408ce4fe67f61> i even tried to move this to a 2D Problem adding a 2nd feature to the values [0.0293294646367189, 0] and [0.025545042466768184, 0] but this didn't worked either
+[15:49] <564789be16b6c7089cbab8b7> I have some data I want to so linear regression on. When I use LinearRegression().fit(X_scaled, y[policy]) I get a score of over 0.96
+[15:49] <564789be16b6c7089cbab8b7> when I use LassoLarsCV(cv=5).fit(X_scaled, y[policy]) I get a score of 0
+[15:50] <564789be16b6c7089cbab8b7> what am I doing wrong?
+[19:43] <54d4a1d6db8155e6700f853b> what's the complete code? Training set score or test set score?

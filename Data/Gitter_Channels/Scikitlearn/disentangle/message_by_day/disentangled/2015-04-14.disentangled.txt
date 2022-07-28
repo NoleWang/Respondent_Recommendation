@@ -1,0 +1,75 @@
+[15:33] <54d4a1d6db8155e6700f853b> I think we should do 0.16.1 soon. This is the only one I'd like to get in that hasn't been merged: https://github.com/scikit-learn/scikit-learn/pull/4541
+[15:46] <54d4a1d6db8155e6700f853b> ok just got merged. I'll need to do two backports and rewrite whatsnew, then I think we are in good shape.
+[15:49] <54d4a1d6db8155e6700f853b> I'm just doing it
+[15:49] <541a528b163965c9bc2053de> ok
+--------------------------------------------------------------------------------------------------
+[15:46] <541a528b163965c9bc2053de> I agree. Do you want me to backport 4541
+[15:46] <541a528b163965c9bc2053de> ?
+--------------------------------------------------------------------------------------------------
+[15:51] <54d4a1d6db8155e6700f853b> should I also backport your astype fix?
+--------------------------------------------------------------------------------------------------
+[16:02] <54d4a1d6db8155e6700f853b> @ogrisel astype fix backport yes / no? otherwise tagging now
+[16:02] <54d4a1d6db8155e6700f853b> alright :)
+--------------------------------------------------------------------------------------------------
+[16:02] <541a528b163965c9bc2053de> I don't think it fixes any user bug in itself.
+[16:02] <541a528b163965c9bc2053de> Let's tag
+--------------------------------------------------------------------------------------------------
+[16:05] <54d4a1d6db8155e6700f853b> gah, forgot to add an entry to the "news" on the website...
+[16:06] <541a528b163965c9bc2053de> :)
+--------------------------------------------------------------------------------------------------
+[16:06] <541a528b163965c9bc2053de> appveyor will have to do another 1h build :)
+[16:10] <54d4a1d6db8155e6700f853b> ok, fixed. I'll update the mac build thing, I guess, and then we check the sdists...
+[16:10] <54d4a1d6db8155e6700f853b> and build the website and minimize the PNGs ... fun :)
+--------------------------------------------------------------------------------------------------
+[16:15] <54d4a1d6db8155e6700f853b> macpython should be building
+--------------------------------------------------------------------------------------------------
+[16:20] <541a528b163965c9bc2053de> great
+--------------------------------------------------------------------------------------------------
+[17:00] <54d4a1d6db8155e6700f853b> is it possible to unqueue on appveyor? it'll take 8 hours at least to run through the queue
+[17:03] <541a528b163965c9bc2053de> yes I just did that
+[17:04] <541a528b163965c9bc2053de> I will send you the password to the github account to log in and cancel / restart builds
+[17:05] <541a528b163965c9bc2053de> in your mail box
+[17:05] <541a528b163965c9bc2053de> when unqueuing stuff, it better to first unqueue (cancel button) the from the most recent to the most ancient queued job
+[17:07] <54d4a1d6db8155e6700f853b> why is that better?
+[17:10] <54d4a1d6db8155e6700f853b> off to lunch? oh, right, you are in my timezone now ^^
+[19:28] <54d4a1d6db8155e6700f853b> oh cool. png's are optimized, too. So I'll upload the docs, then
+[20:18] <54d4a1d6db8155e6700f853b> I'll err... foward-port (?) the whatsnew to 0.17
+--------------------------------------------------------------------------------------------------
+[17:08] <541a528b163965c9bc2053de> otherwise you get the next ancient job in state running, and canceling running jobs takes more time than queued jobs
+[17:08] <541a528b163965c9bc2053de> BTW, if you are interested in all of this windows build I gave a talk at pycon on that: https://twitter.com/ogrisel/status/587326055171694594
+[17:09] <541a528b163965c9bc2053de> off to lunch, see you later! It's great to have this release out this week. Thanks so much!
+--------------------------------------------------------------------------------------------------
+[18:18] <541a528b163965c9bc2053de> @amueller the windows build is up: http://windows-wheels.scikit-learn.org/
+[18:19] <541a528b163965c9bc2053de> the OSX wheels are up as well: http://wheels.scipy.org/
+[19:31] <541a528b163965c9bc2053de> Do you want me to do the upload to PyPI and sourceforge or do you want to do it?
+--------------------------------------------------------------------------------------------------
+[19:57] <54d4a1d6db8155e6700f853b> The docs are up. Can you do pypi upload please?
+[19:57] <54d4a1d6db8155e6700f853b> how do you upload the wheels btw?
+[20:00] <54d4a1d6db8155e6700f853b> or maybe you do it ;) I still get the "unknown url type error"
+--------------------------------------------------------------------------------------------------
+[19:58] <541a528b163965c9bc2053de> you can either use upload_all or the twine command
+[19:58] <54d4a1d6db8155e6700f853b> maybe I'll try upload_all
+[20:01] <541a528b163965c9bc2053de> Have you updated wheelhouse-uploader ?
+[20:03] <54d4a1d6db8155e6700f853b> oh, right
+[20:03] <54d4a1d6db8155e6700f853b> now it works
+--------------------------------------------------------------------------------------------------
+[20:04] <541a528b163965c9bc2053de> it works with python 2.7 on a new virtualenv were I just pip installed wheelhouse-uploader
+[20:04] <54d4a1d6db8155e6700f853b> yeah It does work. Did you upload already?
+[20:05] <541a528b163965c9bc2053de> yes
+[20:06] <541a528b163965c9bc2053de> I just did, with twine
+[20:06] <541a528b163965c9bc2053de> to avoid TLS man in the middle attacks :)
+[20:06] <54d4a1d6db8155e6700f853b> ok. what is twine?
+[20:06] <54d4a1d6db8155e6700f853b> I'm just drafting the ann mail, ok?
+[20:07] <541a528b163965c9bc2053de> https://pypi.python.org/pypi/twine
+[20:07] <541a528b163965c9bc2053de> ok please go a ahead
+[20:07] <541a528b163965c9bc2053de> for the ANN
+[20:08] <541a528b163965c9bc2053de> and the tweet
+--------------------------------------------------------------------------------------------------
+[20:17] <54d4a1d6db8155e6700f853b> done
+[20:17] <54d4a1d6db8155e6700f853b> ah, twine makes sense ^^
+--------------------------------------------------------------------------------------------------
+[20:19] <541a528b163965c9bc2053de> ok
+--------------------------------------------------------------------------------------------------
+[21:10] <541a528b163965c9bc2053de> @amueller is your LGTM still valid in light of the latest changes to #4590?
+[21:17] <541a528b163965c9bc2053de> I uploaded the release to sourceforge as well
+--------------------------------------------------------------------------------------------------

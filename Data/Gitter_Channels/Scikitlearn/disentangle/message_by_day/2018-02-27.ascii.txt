@@ -1,0 +1,1 @@
+[04:14] <56d53608e610378809c45c8c> I guess I can just use the normal SVM and mirror one example along the origin. 

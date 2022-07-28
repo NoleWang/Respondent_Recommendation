@@ -1,0 +1,2 @@
+[04:05] <575b0eccc2f0db084a1d3a41> scikit-learn custom compilation: Is it possible to pass custom gcc flags during scikit-learn build as described here  https://scikit-learn.org/stable/developers/advanced_installation.html 
+[04:06] <575b0eccc2f0db084a1d3a41> the documentation uses pip install. But since the pyx files get compiled in a C file first before finally compiled into a SO file, I wondered if it was possible to pass custom gcc flags in the intermediate stage

@@ -1,0 +1,24 @@
+<s> <user> man <unka@> is killing it on the issue tracker </s>
+<s> <user> xd </s>
+<s> <user> btw can u create the " need review " tag ?? </s>
+<s> <user> hey ! i 've found that URL/http:/ <unka-./> <unka#./_> if called under <unka`> shows first argument as named <unka`> , but you actually cannot pass it this way . is it intentional ? </s>
+<s> <user> a lot of issues need the <unka"`> <unka"`> tag removed - URL/https:/ URL/github.com/ <unk#a%-/> </s>
+<s> <user> <unka@> maybe ping <unka@> or <unka@> about the <unka> thing </s>
+<s> <user> <unk#a> : can you list the issues that need the " need contributor " removed ? </s>
+<s> <user> hello <unka@> , <unka@> , i can see a fix for <unk##> by setting <unka=_`> on this line URL/https:/ URL/github.com/ <unk#a#-./_> </s>
+<s> <user> also , passing <unka'=_`> to <unka.`> gives a file descriptor error , but passing <unka'=_`> works , </s>
+<s> <user> i am yet to find out what 'c' means for it , i was n't able to find any documentation </s>
+<s> <user> ok , see stands for copy on write , is passing that ok ? </s>
+<s> <user> added the needs review tag </s>
+<s> <user> yay yay :p i 'll just send u a list for both ( removal of need cont and <unka> of need rev ) </s>
+<s> <user> sent where ? </s>
+<s> <user> ah sorry future </s>
+<s> <user> <unk#a@> sorry i 'm a bit out of touch with what is happening at the moment . have you worked on the multiple metrics stuff yet ? </s>
+<s> <user> <unka@> would you be fine with a <unka-> project ? i think doing the website build would be cool <unk##> <unk##> </s>
+<s> <user> otherwise the multiple metrics would be very high priority to me unless <unk#a@> worked on it . it might be that we need to first merge <unka> 's improvements code deletions though </s>
+<s> <user> hey no i am breaking my head over tree code ;( </s>
+<s> <user> sorry i will try my best to start it by this weekend :) </s>
+<s> <user> there are a few minor <unka> of mine which u might want to consider for review xd </s>
+<s> <user> sorry , not much time for reviews for the rest of the year :-/ </s>
+<s> <user> are transformers also expected not to do anything in place ? </s>
+<s> <user> yes </s>

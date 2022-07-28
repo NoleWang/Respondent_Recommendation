@@ -1,0 +1,3 @@
+[20:50] <58fbc160d73408ce4f5a4648> Can i talk C# in here?
+[20:50] <58fbc160d73408ce4f5a4648> I am new to here
+[22:00] <55d21ee30fc9f982beadabb8> @HamunSunga It does not seem the right gitter room since this is a scikit-learn room

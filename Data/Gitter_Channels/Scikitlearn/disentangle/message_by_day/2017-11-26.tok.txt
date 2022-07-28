@@ -1,0 +1,8 @@
+<s> <user> hi , i want to pickup URL/https:/ URL/github.com/ <unk#a-/> again - which branch should i merge to the my code - <unk#a.> , master ? </s>
+<s> <user> i think 'master' branch should be the one to go with . </s>
+<s> <user> that 's what i try , but make seems to fail : URL/https:/ URL/gist.github.com/ <unk#a#-/> </s>
+<s> <user> i 'm using python 3.6.3 , </s>
+<s> <user> <unk`> python -c " import numpy as np ; import scipy as sp ; <unka(._> ); <unka(._> )" <unk#.> <unk#.`> </s>
+<s> <user> and running simply make </s>
+<s> <user> hi everyone , simple question here : is the prior in , e.g ., ridge regression , also applied to the intercept ? see here : URL/http:/ <unka-./> <unka#-./_> </s>
+<s> <user> by " prior " i mean the l2 <unka> term . </s>

@@ -1,0 +1,6 @@
+[04:50] <6018a9a26da037398460d5ca> @glemaitre, solved. Thank you.
+--------------------------------------------------------------------------------------------------
+[08:58] <matrix-rthy:matrix.org> @binarybana: Interesting, you may want to send it on the mailing list (or in github discussions). I don't think that many people people check gitter..
+--------------------------------------------------------------------------------------------------
+[10:40] <567f5d7716b6c7089cc043a8> @binarybana really nice!
+--------------------------------------------------------------------------------------------------

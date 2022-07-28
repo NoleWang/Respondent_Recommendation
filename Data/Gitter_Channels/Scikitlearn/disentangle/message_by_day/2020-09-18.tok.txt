@@ -1,0 +1,6 @@
+<s> <user> hi all , i was wondering , does <unka> support gpu <unka> ? </s>
+<s> <user> no URL/https:/ <unka-./> <unka#-./> </s>
+<s> <user> hi all , ive been wanting to make use of the <unka> rotation argument for <unka.> ( version <unk#a.> ). so i created a <unka> environment with this version of <unka> ( i have checked <unka> list , so definitely have the correct version installed ), alongside <unka> . however when calling <unka> as follows : <unka'(.=> ) i receive the following error : typeerror : <unka(_> ) got an unexpected keyword argument <unka'> the documentation for version <unk#.> states : <unconvertable > <unka.> now supports the optional argument rotation , which can take the value none , <unka'> or <unka'> . <unconvertable > any ideas for what the problem might be ? </s>
+<s> <user> what does <unka._`> say ? </s>
+<s> <user> ( it works on <unka`> so you likely do n't have the very latest version ) </s>
+<s> <user> oh that 's odd , it says my current version is <unk#.> although <unka> says version is <unk#a.> </s>

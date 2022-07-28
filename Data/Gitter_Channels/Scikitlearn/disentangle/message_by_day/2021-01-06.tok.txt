@@ -1,0 +1,2 @@
+<s> <user> hi there ! i 'm developing an online <unka> learning thingy , and i just wanted to praise you guys for the quality of your code . it 's always a pleasure to read ! ( even though i always weep looking at <unka`> and its cool <unka/_`> , wondering whether i should rewrite something similar or re-use your code -- and <unka*> to do neither :p ) </s>
+<s> <user> thanks :) </s>

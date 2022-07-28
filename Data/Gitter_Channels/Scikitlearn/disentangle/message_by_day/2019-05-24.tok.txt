@@ -1,0 +1,1 @@
+<s> <user> <unk#a@_> what is cross correlation ? what is the relationship between it and <unka> ? i am not sure if it 's cross product between data and <unka> is just flipping the signal from both data sets to negative ? </s>

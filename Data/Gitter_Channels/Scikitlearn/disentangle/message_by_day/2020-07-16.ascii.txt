@@ -1,0 +1,41 @@
+[03:54] <5eeb9b35d73408ce4fe749bc> I have question/curiosity: generally, for new algorithms, are there any reasons that scikit-learn would prefer a Python/NumPy implementation over a Cython implementation?   The only thing I can think of is if the efficiency gain for the Cython version so minimal that it's not worth the added complexity. But, are there any other reasons?
+[03:55] <54d4a1d6db8155e6700f853b> @joshuacwnewton yes, mostly readability and maintainability
+[03:56] <54d4a1d6db8155e6700f853b> there is another potential reason in the future: using the __array_function__ protocol and possibly NEP 37, pure numpy algorithm could directly be ported to GPU or distributed dask datastructures, while that's not possible for Cython implementations.
+[03:56] <54d4a1d6db8155e6700f853b> (this doesn't say anything about how efficient that would be though)
+[03:57] <54d4a1d6db8155e6700f853b> There is even a (very hypothetical) future even where we might add both Cython and Numpy for some algorithms so we have a fallback in case the array is not a numpy array (this sounds weird; we need a numpy implementation if the array is not native numpy, but that's the way it would be lol)
+[04:03] <5eeb9b35d73408ce4fe749bc> Goodness, thank you. This is very valuable!
+[04:05] <5eeb9b35d73408ce4fe749bc> I'm writing a uni report for my co-op term comparing Numpy to Cython (specifically in the context of #9661), and it felt a little too one-sided of me to say "Cython faster, Cython better" (lol) I figured there was more nuance there, so thank you.
+[04:07] <54d4a1d6db8155e6700f853b> the main thing is really maintainability. In general, there's also the fact that you have to compile Cython, so distribution becomes much harder. But in sklearn we already made that investment so the additional burden is relatively small.
+[04:07] <54d4a1d6db8155e6700f853b> Also, new contributors might not be familiar with Cython.
+[04:07] <54d4a1d6db8155e6700f853b> A comparison with Numba might also be interesting if you want to go all out ;)
+[04:08] <5eeb9b35d73408ce4fe749bc> I've got a tab open with Numba too, ehe. 
+[04:08] <5eeb9b35d73408ce4fe749bc> Too many tabs, really!
+[04:09] <5eeb9b35d73408ce4fe749bc> If I may pick your brain a little more, what about Cython do you feel makes it more difficult to maintain?
+[09:27] <567f5d7716b6c7089cc043a8> maintainability has a lot to do with code readability and people who are comfortable with that language. Cython is both less readable (especially when you do C instead of Python in it) and far fewer people know it than Python. It's more of a people issue than a language itself issue. If you go to Shogun's community, they're very comfortable with C++ and in that community C++ is very maintainable.
+[10:13] <5baf7d9ad73408ce4fa9c9b2> another point is that while numpy is reasonably straightforward to use and understand, Cython can act in magical ways that are not necessarily intuitive even with some experience (this is even more true for Numba BTW). https://github.com/scikit-learn/scikit-learn/issues/17299 is an example 
+[14:48] <5eeb9b35d73408ce4fe749bc> @amueller, @adrinjalali, and @NicolasHug: I appreciate that you've taken the time to share your thoughts! I now have many great starting points for further reading, so thank you. :)
+[14:54] <5eeb9b35d73408ce4fe749bc> > another point is that while numpy is reasonably straightforward to use and understand, Cython can act in magical ways that are not necessarily intuitive even with some experience  I guess this might be a natural consequence of Numpy being designed for array operations and used as the backbone for Python DS/ML, while Cython can be applied more generally. So, I would imagine that Numpy has stress-tested common use-cases, but that someone might have to recreate themselves using Cython...
+[14:57] <5eeb9b35d73408ce4fe749bc> > (especially when you do C instead of Python in it)  @adrinjalali Just to clarify, is this referring to wrapping external C code? i.e. https://cython.readthedocs.io/en/latest/src/userguide/external_C_code.html
+[14:58] <54d4a1d6db8155e6700f853b>    @joshuacwnewton no he means writing code that is closer to C than Python
+[14:58] <54d4a1d6db8155e6700f853b> you can use pointers etc
+[14:58] <54d4a1d6db8155e6700f853b> in Cython
+[14:58] <5eeb9b35d73408ce4fe749bc> Ah! Good to know. Thanks. :)
+[14:59] <54d4a1d6db8155e6700f853b> in which case you have to do manual memory allocation, which Python programmers might not be familiar with
+[14:59] <54d4a1d6db8155e6700f853b> https://github.com/scikit-learn/scikit-learn/blob/master/sklearn/tree/_criterion.pyx#L260
+[15:02] <5eeb9b35d73408ce4fe749bc> Ah! This actually came up in the extension I was writing... I had been allocating space using `np.empty` and was curious about how I might do that without Python. Malloc came up in search results but I left it at the time.   Thanks for linking that line, @amueller. :D
+[15:02] <54d4a1d6db8155e6700f853b> well np.empty will create a python object which will be memory managed
+[15:06] <54d4a1d6db8155e6700f853b> This conversation probably further emphasizes the above point of cython being less obvious ;)
+[15:07] <5eeb9b35d73408ce4fe749bc> Hehehe exactly. I'm having a "don't know what I don't know" moment here, where I realize there's much more to Cython than I had thought. 
+[15:08] <54d4a1d6db8155e6700f853b> you can look at the history of the tree cython files and you'll probably find some fun bugs we fixed over the years
+[15:09] <54d4a1d6db8155e6700f853b> https://github.com/scikit-learn/scikit-learn/pull/8002/files
+[15:12] <5eeb9b35d73408ce4fe749bc> So, if I'm understanding correctly, the "Python version" (so to speak) of Cython memory management would be to create a memview into a Python object that already has its memory managed automatically. But, that Cython LOC you linked up there doesn't seem like it uses memviews at all. Just, dealing directly with a C array?  Although, IIRC from reading, memviews are relatively new to Cython, and it seems like you can use them with C arrays too.
+[15:13] <5eeb9b35d73408ce4fe749bc> > https://github.com/scikit-learn/scikit-learn/pull/8002/files  Oh ho ho, interesting. Thanks for finding that link. :D
+[15:14] <54d4a1d6db8155e6700f853b> yes and we use both ways, usually for historical reasons. I think there used to be a speed difference between raw pointers and memory views but I don't think there is any more
+[15:15] <5eeb9b35d73408ce4fe749bc> "For historical reasons" -> another point for maintainability, then, hehe :p
+[15:18] <5eeb9b35d73408ce4fe749bc> I hope the benchmarks for the enhancement I'm working on go well, then. I'd love to be able to open a PR and get a code review for what I've written... I imagine I'm making lots of newbie Cython missteps at this stage, heh. :D
+[15:30] <5eeb9b35d73408ce4fe749bc> So, I guess one last question I have is, it seems like for contributors, it might be worth exploring Numpy optimizations just as much as it is Cython optimizations? e.g. replacing for loops in an algorithm with vectorized operations when possible to try and push the pure Python implementation closer to Cython
+[15:30] <5eeb9b35d73408ce4fe749bc> Although, I guess that sometimes leads to less readable Python code, e.g. with fancy np indexing
+[15:32] <5eeb9b35d73408ce4fe749bc> So many tradeoffs... this is all very interesting, hehe.
+[15:33] <54d4a1d6db8155e6700f853b> We do prefer numpy if it's possible, and we prefer like numpy, but if we have to pick, we pick fast numpy over readable numpy, I think
+[15:35] <5eeb9b35d73408ce4fe749bc> That's good to know... I'll have to revisit the slower python/numpy implementation that I had converted to cython, then, before I can really put this to rest. :)
+[21:39] <589b9e0fd73408ce4f490ba4> In the past it happened to me to spend time on a Cython implementation, then realize that it could be as fast or faster with just numpy with a better algorithmic approach. So spending time on numpy optimization as a first step is useful in any case. And of course profiling code (with e.g. snakeviz) is very helpful to make sure that the optimized code is actually the performance bottleneck..

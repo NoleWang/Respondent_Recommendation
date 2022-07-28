@@ -1,0 +1,3 @@
+[14:03] <57c1cad340f3a6eec061a142> hi guys, I got some question about dimensional reduction using LDA
+[14:10] <5ab421aad73408ce4f92b961> @idahmed One of my latest favourites is Hands on machine learning with Scikit-Learn and Tensor flow by Aurelien Geron
+[14:12] <5ab421aad73408ce4f92b961> @hndr91 there is an issue opened at Github with some info to take into account

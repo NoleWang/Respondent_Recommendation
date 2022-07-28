@@ -1,0 +1,9 @@
+[10:59] <553e8e1015522ed4b3df97f7> I hope all of you in Paris are safe :worried:
+--------------------------------------------------------------------------------------------------
+[21:42] <5395efa3a9176b500d1cd7fb> master does not compile on py35 for me:
+--------------------------------------------------------------------------------------------------
+[21:43] <5395efa3a9176b500d1cd7fb> ```bash --------------------------------------------------------------------------- ImportError                               Traceback (most recent call last) <ipython-input-3-fa7b5efcaf90> in <module>() ----> 1 from planet4.clustering import ClusteringManager       2 from planet4 import p4io as io       3 from IPython.display import display       4 from ipywidgets import FloatText       5 from pathlib import Path  /Users/klay6683/Dropbox/src/planet4/planet4/clustering.py in <module>()      11 from ipywidgets import FloatText      12 from pathlib import Path ---> 13 from sklearn.cluster import DBSCAN      14       15 from . import markings, p4io  /Users/klay6683/miniconda3/envs/py35/lib/python3.5/site-packages/sklearn/cluster/__init__.py in <module>()       8                           estimate_bandwidth, get_bin_seeds)       9 from .affinity_propagation_ import affinity_propagation, AffinityPropagation ---> 10 from .hierarchical import (ward_tree, Ward, WardAgglomeration,      11                            AgglomerativeClustering, linkage_tree,      12                            FeatureAgglomeration)  ImportError: cannot import name 'Ward' ``` Did `python setup.py clean` beforehand.
+[21:48] <5395efa3a9176b500d1cd7fb> This also did not go away by checking out `0.17`.
+--------------------------------------------------------------------------------------------------
+[22:03] <53135b495e986b0712efc453> Could you try "make clean" then make...
+--------------------------------------------------------------------------------------------------

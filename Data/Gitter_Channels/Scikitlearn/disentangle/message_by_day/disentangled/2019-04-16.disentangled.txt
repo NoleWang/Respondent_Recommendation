@@ -1,0 +1,7 @@
+[18:44] <558c0fd615522ed4b3e2b943> Take a look at the list itself and it'll become clear. You have 2 chunks. First you use the first chunk as train and second chunk as test set. Then, you use the second chunk as train and first chunk as test set.
+[18:47] <558c0fd615522ed4b3e2b943> I should not call them chunks. They're folds. Two folds :)
+--------------------------------------------------------------------------------------------------
+[19:03] <5b58594ed73408ce4fa23ee3> Yes, I understand that, but why can it not give me a single train and a single test set (`n_splits=1`) as `split_train_test` does? Because it's then not really folds anymore?
+--------------------------------------------------------------------------------------------------
+[19:14] <558c0fd615522ed4b3e2b943> I guess `n_splits` is a bit of a misnomer. `n_folds` would've been clearer maybe.
+--------------------------------------------------------------------------------------------------

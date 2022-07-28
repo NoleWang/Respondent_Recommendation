@@ -1,0 +1,28 @@
+[14:03] <550f53e215522ed4b3dda5f6> @o
+--------------------------------------------------------------------------------------------------
+[14:09] <550f53e215522ed4b3dda5f6> Sorry for the interruption. I am back, although not fully recovered.
+[18:34] <550f53e215522ed4b3dda5f6> Hi @amueller @ogrisel , I just finished test cases for DP. Where should I update the mixture documentation and the mixture examples?
+--------------------------------------------------------------------------------------------------
+[18:35] <54d4a1d6db8155e6700f853b> @xuewei4d great :) yeah, that sounds like a plan.
+--------------------------------------------------------------------------------------------------
+[18:37] <550f53e215522ed4b3dda5f6> I think I finished what I must do.  @ogrisel mentioned the "mixture documentation" and "mixture examples" several days ago, but I don't know where should I put.
+[18:38] <54d4a1d6db8155e6700f853b> doc/modules/mixture.rst ?
+[18:40] <550f53e215522ed4b3dda5f6> OK. Would it be better to add the animation? :wink:
+--------------------------------------------------------------------------------------------------
+[18:41] <54d4a1d6db8155e6700f853b> I don't think this is a priority but it would be kinda nice. The actual implementation and tests are much more important obviously. sorry for the slow reviews :-/
+--------------------------------------------------------------------------------------------------
+[18:43] <550f53e215522ed4b3dda5f6> I agree. I think I could do the examples after the soft pencil down deadline. What else should I begin right now before next Monday?
+[18:44] <550f53e215522ed4b3dda5f6> Never mind. :sweat_smile: The equations for BGMM are really cumbersome.
+[18:46] <54d4a1d6db8155e6700f853b> I know ;)
+--------------------------------------------------------------------------------------------------
+[19:36] <54e07d6515522ed4b3dc0858> @rvraghav93  "in the year 2010" I'd just say "in 2010"
+--------------------------------------------------------------------------------------------------
+[19:40] <54e07d6515522ed4b3dc0858> I think there's a methodological issue with the set up in your blog post. If you do plain Kfold in the outer loop, you can still have the same group label in the outer train and test. Why not use leave-one-label-out in both inner and outer?
+[19:42] <54e07d6515522ed4b3dc0858> So at a "big picture" level I don't see the point of the final section that looks at the folds.  I think that's common practice anyway, doesn't seem specific to nested or group-aware CV.
+[19:43] <54e07d6515522ed4b3dc0858> I would prefer if you showed an actual example of overfitting without LOLO. Your explanation of why it can happen is good, but it would be much better to illustrate it.
+[19:44] <54e07d6515522ed4b3dc0858> You suggested earlier using KNN and generating some data based on the patient id.
+--------------------------------------------------------------------------------------------------
+[20:00] <54d4a1d6db8155e6700f853b> @xuewei4d btw were you aware that semantics of np.diag are changing? in new versions, np.diag returns a view. Not sure that is relevant, I haven't reviewed this parts in detail
+--------------------------------------------------------------------------------------------------
+[21:43] <54e07d6515522ed4b3dc0858> also I cann't load kernelsvm.tripod.com
+--------------------------------------------------------------------------------------------------

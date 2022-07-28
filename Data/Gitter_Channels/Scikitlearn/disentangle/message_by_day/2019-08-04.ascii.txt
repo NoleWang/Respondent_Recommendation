@@ -1,0 +1,3 @@
+[09:09] <564789be16b6c7089cbab8b7> @amueller  Thanks! I will take a look at mixtend which I didn't know about
+[09:10] <5bcb2df0d73408ce4fac1a51> Can anyone please provide a good source of how to deal with categorical data? It's very helpful and thanku
+[13:21] <5944c1e5d73408ce4f67f652> @amueller  Hi!! As you said I've gone through the contributing guides and set up the development environment. Can you plz tell me what should I do next. Thanks for the help!!

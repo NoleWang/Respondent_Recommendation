@@ -1,0 +1,33 @@
+<s> <user> if after 6th epoch of <unka> , our <unka> is getting <unka> but i have set <unka_> parameter as 10 , will the values of weights that are obtained at 6th epoch as well as 10th epoch be optimal or is it like the weight values at 6th epoch be more optimal than 10th epoch ? need some <unka> . </s>
+<s> <user> i do n't know the <unka> implementation of <unka-> but convergence with delta rule is guaranteed only for <unka> <unka> problem </s>
+<s> <user> ok i 'll share the code soon ... </s>
+<s> <user> <unconvertable > i will take a look , i 'm dev a <unka> in go ( on github ) and i want also to implement a <unka> + <unka> framework ( so guys , if you are interested , please join :d :d ) </s>
+<s> <user> about convergence : i do n't remember maths related to " is <unka> descent or not " </s>
+<s> <user> but definitely is guaranteed under the assumption of <unka> <unka> ( i have demonstration , if you want ) </s>
+<s> <user> <unka@> i have <unka> my model using <unka> . now i am <unka> the <unka> used to build the dataset also . so i can use it when prediction . is it a right path ? </s>
+<s> <user> how did you use the <unka> ? to transform input features or the target variable ? most <unka-> <unka> will automatically use a label encoder internally so you do n't need to do it externally . </s>
+<s> <user> if it 's used to transform input features it 's better to use a pipeline . </s>
+<s> <user> only for couple of <unka> variables </s>
+<s> <user> an pickle the full pipeline </s>
+<s> <user> like state </s>
+<s> <user> there is a pr for a <unka> under way . </s>
+<s> <user> <unka@> i dont get u </s>
+<s> <user> you can copy the code in your own project if you want it to be compatible with <unka> <unk#.> and the future 0.19 . <unka> will be part of 0.20 . </s>
+<s> <user> oh thats great </s>
+<s> <user> you can follow progress at : URL/https:/ URL/github.com/ <unk#a-/> </s>
+<s> <user> i am currently planning serving prediction via <unka> </s>
+<s> <user> so mostly ppl will upload their dataset </s>
+<s> <user> my models automatically are <unka> ( <unka> , <unka> for object types , scaling ) </s>
+<s> <user> as its encoded i need to have those encoding instance for cross validating my new <unka> right </s>
+<s> <user> then write all the <unka> <unka> in a transformer ( as done in <unka> for instance ) and use a pipeline : URL/http:/ <unka-./> <unka./> to combine it with the <unka> <unka> or regression model . </s>
+<s> <user> then you can pickle the full pipeline for deployment . </s>
+<s> <user> thats perfect </s>
+<s> <user> thank you <unka@> for instant reply :) </s>
+<s> <user> do n't forget to snapshot the training for a given version of the model to be deployed . this way you can make sure you can <unka> a similar model from the same data when you decide to upgrade the <unka-> version . </s>
+<s> <user> yes i do remember it :) </s>
+<s> <user> model pickles are not guaranteed to work across different <unka-> versions . </s>
+<s> <user> exactly .. thank u :) </s>
+<s> <user> <unka@> btw if you deploy your model with several python processes running on the same host ( e.g . gunicorn workers ), you should use <unka(.`> , <unka')./`> to save the model and <unka'(./`> , <unka')=_`> to load the model parameters in read-only shared memory and save memory usage on your production servers . </s>
+<s> <user> yes i am doing the same </s>
+<s> <user> its a perfect suggestion </s>
+<s> <user> <unka@> noticing your latest issue , there is another malformed class at : URL/http:/ <unka-./> <unka#-./_> </s>

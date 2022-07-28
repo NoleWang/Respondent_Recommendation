@@ -1,0 +1,3 @@
+<s> <user> completely new to contributing to <unka> . is there a recommended contributions guide ? considering fixing the memory issues with <unka-> . </s>
+<s> <user> <unka@> URL/http:/ <unka-./> <unka#./> </s>
+<s> <user> hi , i 'm new with machine learning , do you can help me for information ? </s>

@@ -1,0 +1,7 @@
+<s> <user> just had a small doubt ; how to compile a .cpp file into a python extension ? i generate the cpp file by using <unka-> extension but how can i compile after this ? is there an easier way to do the whole process ? </s>
+<s> <user> no probs . running <unka`> setup.py <unka_> <unka-`> from source works plus you can see the command for compiling a c++ file into a python extension </s>
+<s> <user> hey everybody , i 'm struggling a little bit with understanding how i 'm going to deploy a <unka> learn algorithm which has been implemented using scaled feature values </s>
+<s> <user> you see , i 'm creating a calculator which 'll do a <unka> <unka> based upon a few values given by the user . </s>
+<s> <user> and i do n't get how i can scale the values i get from the user using the same scaler as i used in the algorithm itself . </s>
+<s> <user> would love to get help if anybody 's interested ! </s>
+<s> <user> <unka@> i 'm not sure if this is what you're looking for but , if you're using <unka.> , you could set <unka_> , <unka_> and <unka_> explicitly once you 've gotten those values from fitting the <unka> with your training set . you'd only need to persist those somehow . </s>

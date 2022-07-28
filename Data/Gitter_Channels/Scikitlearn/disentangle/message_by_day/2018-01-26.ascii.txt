@@ -1,0 +1,1 @@
+[15:14] <551d48fa15522ed4b3de4121> Guys, the GaussianMixture model's score_samples() method return log-probabilities, I'm not sure how to calculate regular/percentage-wise probabilities from these, can anyone enlighten me?

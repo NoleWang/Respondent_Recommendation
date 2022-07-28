@@ -1,0 +1,5 @@
+<s> <user> <unka@> hot damn ! how can i implement a hello world style for this <unk![> <unka(-./:]> ) ... </s>
+<s> <user> URL/https:/ URL/www.youtube.com/ <unk#a-/=?> </s>
+<s> <user> <unk#a@> </s>
+<s> <user> yo <unk#a@> woot woot </s>
+<s> <user> <unk#a@> e.g . URL/https:/ URL/github.com/ <unka/> </s>

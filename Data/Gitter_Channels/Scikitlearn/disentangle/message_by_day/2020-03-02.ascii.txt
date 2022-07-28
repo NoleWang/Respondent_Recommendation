@@ -1,0 +1,1 @@
+[08:38] <5e540a2fd73408ce4fda9945> Hey everyone I recently discovered the partial_fit method for certain regressors such as SGDRegressor, I wondered if I can partial_fit the model with a decreasing learning rate, save it, then reload it and further train with partial_fit but with a different learning rate schedule as before? Thank you in advance

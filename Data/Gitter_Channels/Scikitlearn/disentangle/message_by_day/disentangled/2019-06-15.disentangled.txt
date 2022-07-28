@@ -1,0 +1,11 @@
+[16:51] <5bc98094d73408ce4fabf741> I wonder what you guys think.
+--------------------------------------------------------------------------------------------------
+[16:52] <5bc98094d73408ce4fabf741> Say you have a terrible unbalanced text data set that you vectorize, 1:50 ratio
+[16:52] <5bc98094d73408ce4fabf741> binary classification
+[16:53] <5bc98094d73408ce4fabf741> would you consider it a bad practice to lower the imbalance by duplicating proportionally the first class?
+[16:54] <5bc98094d73408ce4fabf741> so practically speaking, if I have 1000 articles with class 0 and 50000 with class 1, just copy each one of the class 0 to get another set of 1000 articles and push it into the training set so I have a 1:25 ratio instead?
+[16:55] <5bc98094d73408ce4fabf741> Similar to how its done with image classification
+--------------------------------------------------------------------------------------------------
+[18:29] <5bc98094d73408ce4fabf741> Another thing, how would you measure quality of scrapped data provided from 3rd party data science firm? Text.
+[18:31] <5bc98094d73408ce4fabf741> I would assume if i do cluster analysis on the data and get word frequency per cluster I should be able to see more or less but that doesn't give me a full picture
+--------------------------------------------------------------------------------------------------

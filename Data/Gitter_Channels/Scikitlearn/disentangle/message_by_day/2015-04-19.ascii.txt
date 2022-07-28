@@ -1,0 +1,7 @@
+[17:57] <54d4a1d6db8155e6700f853b> @agramfort https://github.com/scikit-learn/scikit-learn/pull/4550
+[17:59] <54d4a1d6db8155e6700f853b> @agramfort this one would be cool: https://github.com/scikit-learn/scikit-learn/pull/4534 
+[17:59] <54d4a1d6db8155e6700f853b> https://github.com/scikit-learn/scikit-learn/pull/4526
+[18:01] <54d4a1d6db8155e6700f853b> https://github.com/scikit-learn/scikit-learn/pull/4467
+[18:02] <54d4a1d6db8155e6700f853b> https://github.com/scikit-learn/scikit-learn/pull/4365
+[18:44] <54d4a1d6db8155e6700f853b> https://github.com/scikit-learn/scikit-learn/issues/3855
+[18:44] <54d4a1d6db8155e6700f853b> that last one is about changing the number of samples

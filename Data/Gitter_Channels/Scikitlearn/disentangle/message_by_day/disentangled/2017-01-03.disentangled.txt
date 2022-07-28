@@ -1,0 +1,4 @@
+[18:31] <54d4a1d6db8155e6700f853b> @mkoske depends on the criterion ;)
+[18:32] <54d4a1d6db8155e6700f853b> hm I can't build master because of some C++ linking issues :-/
+[18:38] <54d4a1d6db8155e6700f853b> ah right, I had that issue before on another box https://github.com/scikit-learn/scikit-learn/issues/7869
+--------------------------------------------------------------------------------------------------

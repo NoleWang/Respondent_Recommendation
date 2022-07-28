@@ -1,0 +1,2 @@
+<s> <user> <unka_`> will coins be always nicely centered and rotated in the same direction ? or scattered around the whole image and randomly rotated ? also one coin per image or multiple ? </s>
+<s> <user> <unka_`> found it .. there was a template matching example for coins in <unka> . is this of any help ? URL/https:/ <unka-./> <unka./_> </s>

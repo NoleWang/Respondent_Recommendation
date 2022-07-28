@@ -1,0 +1,7 @@
+[15:53] <564789be16b6c7089cbab8b7> https://github.com/scikit-learn/scikit-learn/pull/4899 is this just waiting review?
+[15:54] <564789be16b6c7089cbab8b7> and this lovely PR seems to have stalled https://github.com/scikit-learn/scikit-learn/issues/5736
+--------------------------------------------------------------------------------------------------
+[16:51] <53135b495e986b0712efc453> #4899 is waiting for more tests + reviews too.
+--------------------------------------------------------------------------------------------------
+[22:24] <54d4a1d6db8155e6700f853b> I'm super behind, sorry
+--------------------------------------------------------------------------------------------------

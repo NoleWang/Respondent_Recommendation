@@ -1,0 +1,13 @@
+<s> <user> i have a doubt in my code <unk`> from <unka.> import <unka> from <unka.> import <unka_> from <unka._> import <unka_> cancer = <unka(_> ) <unka_> , <unka_> , <unka_> , <unka_> = <unka(_> <unka.> , <unka.> , <unka.=> , <unk#a=_> ) tree = <unk#a(=_> ) <unka(._> , <unka_> ) <unka(._> , <unka_> )) <unka(._> , <unka_> )) <unk`> the first <unka_> is in <unka_> is used for getting the same result next time when we are gonna run the code . but i do n't get why is there a <unka_> in <unka> line ? and how does that work ? <unka@> .. </s>
+<s> <user> <unka@> there is some randomness in the decision tree . for instance a subset of feature can be taken at each note with a <unka> . having this in mind the <unka_> allows to have this part deterministic as well </s>
+<s> <user> <unka@> - thank you very much . thats helpful and i want to add that the book i was following written by <unka@> had a sentence saying " we fix the <unka_> in the tree , which is used for <unka> internally " . i was wondering about the mechanism of tie breaking thing . how is the tie breaking thing happens internally ? </s>
+<s> <user> </s>
+<s> <user> <unka@> you have posted the exact same message in URL/https:/ <unka./> <unka-/> too . that 's i believe a spammy behavior ... </s>
+<s> <user> hey guys , i am planning to build a ml and <unka> modelling <unka> in python . would like to know if anybody is interested to start the project with me ? </s>
+<s> <user> <unka@> at each node , a random set of feature will be used to find a best split . if there two features leading to a split with the same <unka> improvement , you get a tie . therefore , the first feature which was randomly picked up will be selected . </s>
+<s> <user> if you try multiple times , you will select one feature or the other which will lead to different trees architectures . therefore , <unka_> allows you to pick up always the same feature in case of a tie . </s>
+<s> <user> <unka@> how will it be different from current existing libraries ? </s>
+<s> <user> <unka@> would be much focused on <unka> uncertainty . </s>
+<s> <user> have you looked into <unk#a> and <unka> , and the libraries built on top of those ? </s>
+<s> <user> <unka@> yeah . i find them a bit compound and complex to use . would be nice to have something with the same apis design as <unka> </s>
+<s> <user> you should probably reach out in those communities then , if you 'll be building on top of it . i think that learning <unka> models like that is much more niche than classical machine learning . </s>
