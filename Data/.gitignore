@@ -1,0 +1,17 @@
+# Ignore GitHub credentials
+GitHubProfile/git_account.txt
+
+# Ignore Gitter credentials
+Gitter_Channels/gitter_account.txt
+
+# Ignore Angular chat logs in Gitter - too large
+Gitter_Channels/Angular/*
+
+# Ignore GitHub profile - too large
+GitHubProfile/*
+
+# Ignore glove embedding - too large
+Gitter_Channels/Scikitlearn/ISPY/glove.6B/*
+
+# Ignore irrelevant files
+tools/.ipynb_checkpoints/

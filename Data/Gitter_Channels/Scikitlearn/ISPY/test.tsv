@@ -1,0 +1,540 @@
+OQ	Hi@AlexDBlack, one question regarding  the MNISTAnomalyExample: when outputting the Worst(High Rec. Err) digits (or called outliers), are they correctly recognized ? In other words, they are recognized as ground-truth digits, but have large reconstruction error.  __eou__	user	0	1	1	2
+IG	anomaly detection and classification are different tasksthere is no "correctly recognized" in anomaly detection __eou__	agent	1	1	0	1
+FQ	the output Worst(High Rec. Err) digits are considered as anomalies/outliers? __eou__	user	0	1	0	0
+CC	yes __eou__	agent	0	1	0	0
+AE	if this is to demo a simple autocoder, it is fine. But if it is to demo the accuracy of the model, it is inadequate -- many outliers do not look like outliers. __eou__	user	0	1	0	0
+CC	thewzhang: the autocoder doesn\'t know what "outlier" means __eou__	agent	0	1	0	0
+FD	it is an example of using the values from the autoencoder to proximate what WE would consider outliers __eou__	agent	0	1	0	0
+PF	daredemo: , got it, thanks! __eou__	user	0	1	0	0
+
+OQ	How to get Layer instance of a specific vertex in ComputationGraph from custom BaseInputPreProcessor...  ?  I want to simply reach the weights of a layer (vertex) from another layer (vertex) during training...  __eou__	user	0	0	0	0
+
+OQ	but Adam,  I have 1 million records (each has 10 time series), so that means I have to create 1 million files with 10 record in each . I don't think it is a good choice ....  __eou__	user	0	1	1	2
+IG	That's what I do too (for other reasons) and it gives me just a few hundred files (batches of 150 examples) __eou__	agent	1	1	0	1
+FD	(note that I need multiple files for a single example, multiple inputs and outputs, but that shouldn't matter otherwise) __eou__	agent	1	1	0	1
+GG	thanks Ede,  __eou__	user	0	1	0	0
+
+OQ	Thanks Alex. Actually my data are stored in a database , and I planed to  load and convert them to CSV files so that I could use D4J built-in DataIterator, but it is not feasible to create a million files , so I am wondering there are other built-in methods for this  :)  __eou__	user	0	1	1	2
+CQ	if you have data in database, why would you need csv? __eou__	agent	0	1	0	0
+CQ	Because we don't have a JDBC record reader yet? __eou__	agent	0	1	0	0
+JK	:D __eou__	agent	0	1	0	0
+CQ	but he can read his data on his own, and just pass it via one of existing DataSetIterators that take jvm-originated data? __eou__	agent	0	1	0	0
+FD	we have bunch of those __eou__	agent	0	1	0	0
+IG	I was just trying to follow the tutorial . you know , I am new to D4J , so I am not familiar with how to create a custom DataSetIterator , so I started from the tutorial __eou__	user	0	1	0	0
+IG	right but JDBC straight from the source would be more straightforward :D __eou__	agent	1	1	0	1
+FQ	Is there any sample for loading data from database and put into RNN  ?@raver119@agibsonccc __eou__	user	0	1	0	0
+IG	CSV is also the best tested __eou__	agent	1	1	0	1
+
+OQ	hey, I'm trying to import a model from keras, which seems to be working, but I don't really understand how to include the json and hdf file in the output jar. I put them in a resources folder that's a resource root and they are present at the root of the jar file, but I get a no file found exception  __eou__	user	0	0	0	0
+
+OQ	Within class LenetMnistExample in deeplearning4j example package, when you train the model, how can you specify the input data label to fit the model? I only see you using model.fit(inputData) without specific the label with it.  __eou__	user	0	0	0	0
+PA	DataSet contains input and label fields __eou__	agent	0	0	0	0
+FQ	But if have separate dataset how can I combine them __eou__	user	0	0	0	0
+FD	for example by dataset input is 3 dimension and output is 1 dimensional output __eou__	user	0	0	0	0
+FD	Based on this link [<-LINK->] , Can I just declare it like this Dataset input = new Dataset(input,Label) while both input and label are NDArray with different dimension __eou__	user	0	0	0	0
+PA	input and label fields can be any INDArrays (that are appropriate for the network you are training, anyway) __eou__	agent	0	0	0	0
+FD	and yes, you create it using that constructor __eou__	agent	0	0	0	0
+PF	Thank __eou__	user	0	0	0	0
+
+OQ	Hi guys how are you  __eou__	user	0	0	0	0
+
+OQ	raver119: Let me train a new model in 0.7.0 and test it out once... if that fails too I will share the models and file an issue  __eou__	user	0	0	0	0
+AC	just post configurations you have, i'll do it faster :) __eou__	agent	0	0	0	0
+IG	i know where to look there :) __eou__	agent	0	0	0	0
+FD	raver119:  [<-LINK->] __eou__	user	0	0	0	0
+CQ	how big is corpus? is it sentences or documents? __eou__	agent	0	0	0	0
+FD	documents = set of sentences. i.e. text file. __eou__	agent	0	0	0	0
+CC	documents __eou__	user	0	0	0	0
+PF	amazing, thanks __eou__	agent	0	0	0	0
+FQ	how big is it? how many documents, and what's average size of single document in bytes? __eou__	agent	0	0	0	0
+IG	We have 3 different models  : 1 with 2 lakhs docs, 1 with 32k docs and last one with 476 docs... all have average 10-12 sentencesa __eou__	user	0	0	0	0
+FQ	lakhs <- what's that word means? __eou__	agent	0	0	0	0
+IG	0.2 mil __eou__	user	0	0	0	0
+PF	aha, thanks. __eou__	agent	0	0	0	0
+
+OQ	So I was having trouble finding out what that int array that used to be returned for that old getGameScreen. even was, there was no info about it on their site, so it\'s a little hard for me to figure out what I should do to get it into the correct format.  So I tried just converting to an int array (because that\'s what it expects) but it\'s complaining about "Mis matched lengths"  do I need to scale it somehow so it's equal size?  __eou__	user	0	1	1	2
+CQ	i can’t read your mind, sorry. give full exception as !gist please :) __eou__	agent	0	1	0	0
+IG	To use gist: paste your code/exception/large output log into [<-LINK->] , click 'Create Secret Gist' and paste URL link here __eou__	agent	0	1	0	0
+AC	Will do, one sec. Appreciate the patience. __eou__	user	0	1	0	0
+IG	 [<-LINK->]  __eou__	user	0	1	0	0
+NF	Oh shoot, my bad I used public. Won't do that again. __eou__	user	0	1	0	0
+GG	that doesnt matters __eou__	agent	0	1	0	0
+JK	so __eou__	agent	0	1	0	0
+IG	exception is at the bottom __eou__	user	0	1	0	0
+IG	one thing looks like a hint __eou__	agent	1	1	0	1
+FD	i guess your byte[] length is 1440000 __eou__	agent	1	1	0	1
+FD	and expected int[] length is  is 360000 __eou__	agent	1	1	0	1
+FD	which is 1440000 / 4 (sizeof int)  = 360000 __eou__	agent	1	1	0	1
+CQ	what their documentation says? :) __eou__	agent	0	1	0	0
+IG	 [<-LINK->]  __eou__	user	0	1	0	0
+FD	not crazy specific there __eou__	user	0	1	0	0
+CQ	InMemoryLookupTable.plotVocab needs UIConnection argument. where do I find examples for that? __eou__	agent	0	1	0	0
+NF	just says it's a byte array is all, and the previous api was just returning an int[] when you called getGameScreen() (no longer there), but I can't find any info on what that was either __eou__	user	0	1	0	0
+AE	raver119: So that 1440000 number is = to the number of pixles in an 800x600 image, which is the resolution i'm running the game __eou__	user	0	1	0	0
+JK	aha __eou__	agent	0	1	0	0
+CQ	so that’s probably rl4j expects lower resolution? __eou__	agent	0	1	0	0
+PF	possible... I didn't touch the resolution though so that'd be strange __eou__	user	0	1	0	0
+FD	I suppose I could step through and figure out where that 36000 number is coming from __eou__	user	0	1	0	0
+IG	from line 72 __eou__	agent	0	1	0	0
+FD	observationSpace = new ArrayObservationSpace<>(new int[]{game.getScreenHeight(), game.getScreenWidth(), 3}); __eou__	agent	0	1	0	0
+FD	i guess those options should be pr propagated to dl4j level __eou__	agent	0	1	0	0
+IG	raver119: Okay, was having workspace issues... back at it now.  So the issue is that the ind array is totally different for what you said it's expecting there, and the screen_buffer __eou__	user	0	1	0	0
+FD	what it's expecting is a shape of 800,600, 3 in an ndarray __eou__	user	0	1	0	0
+FD	what it's getting is a 1,360000 __eou__	user	0	1	0	0
+
+OQ	I am trting to load a saved keras model, and the backend is tensorflow. My environment is eclipse, java 1.8, CPU. this is my code:https://gist.github.com/kuluofenghun/581c8be86031bbe28112a3b91eb66214.js and this is my pom filehttps://gist.github.com/kuluofenghun/8fcdcaebffb84bd0b8a8b07afb662b40.jsBut it failed.  the error information is :Exception in thread "main" java.lang.NoClassDefFoundError: org/nd4j/shade/jackson/core/type/TypeReferenceI also try to use the git source. there is the same error in the deeplearning4j-modelimport project:The import org.nd4j.shade.jackson.core.type.TypeReference cannot be resolvedThe import org.nd4j.shade.jackson.databind.ObjectMapper cannot be resolvedHow to solve this question?  AlexDBlack: I have correct my pom file and remove the  nd4j-jackson in my pom filebut the error is stillException in thread "main" java.lang.NoClassDefFoundError: org/nd4j/shade/jackson/core/type/TypeReferenceI also tried the git source of dl4j, the are the same error in the project deeplearning4j-modelimport:The import org.nd4j.shade.jackson.core.type.TypeReference cannot be resolved  __eou__	user	0	1	1	2
+
+OQ	saudet: I did investigate that first but it seems that it doesn't really perform a sliding window, and then I'd have to convert each window to an indarray anyways which scares me  __eou__	user	0	1	1	2
+IG	crockpotveggies: well, it's kind of limited in what it can do, but it's fast __eou__	agent	1	1	0	1
+
+OQ	A further question.  I could not make/build the dl4j code base using IntelliJ.  For example, I tried to make the deeplearning4j-nn module, and received the follow error message:  __eou__	user	0	1	1	2
+CQ	truevines: did you follow the buildinglocally guide? __eou__	agent	0	1	0	0
+FD	That gives an end to end description of the setup __eou__	agent	0	1	0	0
+IG	Error:(22, 35) java: package org.nd4j.linalg.api.ndarray does not existError:(33, 31) java: cannot find symbolsymbol:   class INDArraylocation: class org.deeplearning4j.util.SummaryStatistics __eou__	user	0	1	0	0
+FD	But I could build the dl4j-examples with no issues. __eou__	user	0	1	0	0
+IG	You cant just import dl4j __eou__	agent	1	1	0	1
+FD	Its a 4 repo project __eou__	agent	1	1	0	1
+JK	Well duh __eou__	agent	0	1	0	0
+FD	Thats maven central ;) __eou__	agent	1	1	0	1
+FD	Big difference __eou__	agent	1	1	0	1
+FD	Seems like you skipped reading half of the docs :/ __eou__	agent	1	1	0	1
+FD	 [<-LINK->]  __eou__	agent	1	1	0	1
+FD	Go through this first __eou__	agent	1	1	0	1
+AE	Sorry about that.  I thought I could just download the codebase and build it. __eou__	user	0	1	0	0
+PF	Thanks for the information. __eou__	user	0	1	0	0
+IG	We dont have snapshots yet so you neef yo setup c code :D __eou__	agent	1	1	0	1
+FD	I appreciate the effort but dl4j isnt just 1 codebase __eou__	agent	1	1	0	1
+FD	Wee bit more complex than that :D __eou__	agent	1	1	0	1
+PF	Thanks. __eou__	user	0	1	0	0
+
+OQ	downloaded the most recent deeplearning4j/examples. The following occurs when I run the examples if they are related to mnist. Not sure if this is a known issue or not.o.d.b.MnistFetcher - Downloading mnist...<CODE>  __eou__	user	0	1	1	2
+IG	thewzhang: that's just a network connection problem __eou__	agent	1	1	0	1
+FD	try again, and if necessary, delete the MNIST directory in your home directory __eou__	agent	1	1	0	1
+PFAC	AlexDBlack: , thank you! I removed the MNIST directory and now it is working. Do not feel that it is a network connection problem. __eou__	user	0	1	0	0
+IG	it was most likely caused by a network connection issue while downloading __eou__	agent	0	1	0	0
+PF	thanks, Alex. MNISTAnomalyExample worked and MLPMnistTwoLayerExample is working. __eou__	user	0	1	0	0
+GG	great __eou__	agent	0	1	0	0
+IG	also: anomaly detection using a variational autoencoder should perform better... variational autoencoders will be available next release [<-ISSUE->]  __eou__	agent	0	1	0	0
+
+OQ	i spotted a pretrain boolean parameter in configuration  does this turn on Greedy Layer-Wise Unsupervised Pretraining for FFNN/RNN/CNN?  __eou__	user	0	0	0	0
+
+OQ	I thought someone at DL4J would like to know:  The PredictGenderTrain  dl4j example frequently does not learn/converge (~50% error through all epochs).   It seems to work reliably when I reduce the   learningRate = 0.005;//GF was .01      So, you might update source code.  __eou__	user	0	1	1	2
+AE	gforman44: pull request would be even better :D __eou__	agent	0	1	0	0
+FD	FYI: when it doesn\'t converge, it repeatedly gets:  "o.d.optimize.solvers.BaseOptimizer - Hit termination condition on iteration 0" errors. __eou__	user	0	1	0	0
+NF	agibsonccc: Sorry, I'm not that sophisticated with GIT yet. __eou__	user	0	1	0	0
+IG	 [<-LINK->]  __eou__	agent	0	1	0	0
+AE	doesn't hurt to learn :D it's only a few commands __eou__	agent	0	1	0	0
+IG	 [<-LINK->]  __eou__	agent	0	1	0	0
+FD	It's widely documented __eou__	agent	0	1	0	0
+AC	agibsonccc: OK, wow, I did it as a pull request.  That wasn't as hard as I thought.   You can quote me on that for future people. __eou__	user	0	1	0	0
+PF	haha awesome __eou__	agent	0	1	0	0
+PF	congrats! :D __eou__	agent	0	1	0	0
+JK	Merged :D welcome to the world of open source __eou__	agent	0	1	0	0
+PF	This is awesome. __eou__	user	0	1	0	0
+UF	Thanks for giving me a push, Adam. __eou__	user	0	1	0	0
+FD	I mean a pull. __eou__	user	0	1	0	0
+JK	Or whatever. __eou__	user	0	1	0	0
+JK	heh __eou__	agent	0	1	0	0
+
+OQ	perceptoid: are you going to open an issue for the dropout problem when using keras model? it would be great!  __eou__	user	0	1	1	2
+IG	benqua: I'm doing some tests to learn more. If the problem is obvious feel free to open the issue - I can't describe it just yet. __eou__	agent	1	1	0	1
+AE	perceptoid: the problem is not obvious for me (I don't know enough of the internal working of dl4j) but it seems it was for@raver119and@agibsonccc. Dropout has different meaning in keras and dl4j __eou__	user	0	1	0	0
+PF	benqua: right ok :D __eou__	agent	0	1	0	0
+AE	that's a simple fix __eou__	agent	0	1	0	0
+FD	That's why I was telling him to just do something without dropout for now while@turambarfixes this __eou__	agent	0	1	0	0
+FQ	ok. so no need to open an issue to track it down? __eou__	user	0	1	0	0
+
+OQ	[ERROR] Failed to execute goal org.apache.maven.plugins:maven-enforcer-plugin:1.4.1:enforce (enforce-default) on project dl4j-examples: Some Enforcer rules have failed. Look above for specific messages explaining why the rule failed. -> [Help 1]  __eou__	user	0	1	1	2
+IG	xtuyaowu: Welcome! Here's a link to Deeplearning4j's Gitter Guidelines, our documentation and other DeepLearning resources online. Please explore these and enjoy! [<-LINK->]  __eou__	agent	0	1	0	0
+CQ	xtuyaowu: what are you trying to do? __eou__	agent	0	1	0	0
+IG	You shouldn't get that by default.  __eou__	agent	1	1	0	1
+IG	i feel "building from source" attempt... __eou__	agent	0	1	0	0
+AE	probably :D __eou__	agent	0	1	0	0
+IG	I see "dl4j-examples" though __eou__	agent	0	1	0	0
+
+OQ	Hi I am having a little bit of trouble setting up all of the dependencies for spark. With this import line: import org.deeplearning4j.spark.impl.paramavg.ParameterAveragingTrainingMaster;  __eou__	user	0	1	1	2
+IG	anchitkolla: make sure all your dl4j versions are the same first of all __eou__	agent	1	1	0	1
+CQ	You saw our !examples right? __eou__	agent	0	1	0	0
+IG	Our latest examples available here: [<-LINK->]  __eou__	agent	1	1	0	1
+IG	Those has the pom.xmls you need __eou__	agent	1	1	0	1
+FD	Usually it's just dl4j-spark __eou__	agent	1	1	0	1
+FD	with the right scala version __eou__	agent	1	1	0	1
+FD	dl4j-spark_2.10 or dl4j-spark_2.11 __eou__	agent	1	1	0	1
+NF	yeah all of my spark import statements work except for that line. I am getting cannot resolve "paramavg".  __eou__	user	0	1	0	0
+
+OQ	agibsonccc: how can I use wordVectors in seq2seq?                                                                       input_word.put(new INDArrayIndex[]{NDArrayIndex.point(i), NDArrayIndex.all(), NDArrayIndex.point(j)}, vector );     the error:org.nd4j.linalg.api.buffer.BaseDataBuffer$2 cannot be cast to org.bytedeco.javacpp.DoublePointer  __eou__	user	0	0	0	0
+CQ	gguogguo11: Could you give a full stack trace? I know you can't use gist in china so please use tool.lu if possible __eou__	agent	0	0	0	0
+FD	Screenshots aren't usually good either __eou__	agent	0	0	0	0
+FD	Tough to look at __eou__	agent	0	0	0	0
+
+OQ	Hi, there. I am new to dl4j and trying to run it on an spark on yarn cluster. Is there any configuration to do with the cluster? I cannot find any document about it.  __eou__	user	0	1	1	2
+IG	Marcteen:  [<-LINK->]  __eou__	agent	1	1	0	1
+FD	not sure how you missed this :D __eou__	agent	1	1	0	1
+FD	we mention yarn and the like right in there __eou__	agent	1	1	0	1
+FD	including the memory configuration __eou__	agent	1	1	0	1
+FD	our !examples have spark in them as well __eou__	agent	1	1	0	1
+IG	Our latest examples available here: [<-LINK->]  __eou__	agent	1	1	0	1
+GG	agibsonccc: Thanks.  __eou__	user	0	1	0	0
+IG	It's just a spark job really __eou__	agent	1	1	0	1
+FD	It's nothing different than what you already do __eou__	agent	1	1	0	1
+FD	dl4j-spark is all you need __eou__	agent	1	1	0	1
+FD	you can look at our examples for that stuff __eou__	agent	1	1	0	1
+
+OQ	I am trying to look into dl4j core source so I figure out how to use UiConnectionInfo. mvn download sources does not seem to work. is dl4j core source available?  it would be helpful if someone at least put up a example that displays a plot on UiSever from beginning to end  otherwise, its time to give up  __eou__	user	0	1	1	2
+IG	bhomass: i’ve posted you a link few hours ago __eou__	agent	1	1	0	1
+FD	link to repo __eou__	agent	1	1	0	1
+FD	 [<-LINK->]  __eou__	agent	1	1	0	1
+FD	and download sources work as well __eou__	agent	1	1	0	1
+FD	it’s kinda requirement __eou__	agent	1	1	0	1
+UF	ok,  __eou__	user	0	1	0	0
+IG	it’s right there at maven __eou__	agent	0	1	0	0
+
+OQ	Anyone can help see my question mentioned before? I set the iteration score listener. In 0.6.0, I can get the "INFO" of the iteration scores. But In 0.7.1, there is no such score INFO although I set the listener as well.  __eou__	user	0	1	1	2
+IG	AllenWGX: nothing changed thete __eou__	agent	1	1	0	1
+FD	There __eou__	agent	1	1	0	1
+FD	The only thing it would be is your logging __eou__	agent	1	1	0	1
+FD	Check the commit logs yourself if you want __eou__	agent	1	1	0	1
+UFAC	ok, I will check then. __eou__	user	0	1	0	0
+
+OQ	 [<-LINK->]   agibsonccc: hi, my computer config is i3 cpu, and 8G ram. but when i run this example of  Word2VecSentimentRNN, it keeps in this state for a long time. does that mean my computer config not enough?  __eou__	user	0	1	1	2
+IG	yes __eou__	agent	1	1	0	1
+FD	ram isn’t enough __eou__	agent	1	1	0	1
+CQ	"i3"? __eou__	agent	0	1	0	0
+IG	nvm cpu, ram is an issue here __eou__	agent	0	1	0	0
+IG	yes __eou__	user	0	1	0	0
+AE	That will take forever to run anythin g:D __eou__	agent	0	1	0	0
+FD	ram too though __eou__	agent	0	1	0	0
+AE	i bet pc is swapping :) __eou__	agent	0	1	0	0
+IG	i asked u before, and you said you have run this in your lap, and it's 8G too ,hh __eou__	user	0	1	0	0
+AE	Well it\'s "possible" __eou__	agent	0	1	0	0
+AE	doesn't mean it's ideal :D __eou__	agent	0	1	0	0
+IG	adam’s laptop is slightly more then 8g :) __eou__	agent	0	1	0	0
+IG	My travel laptop is 24GB __eou__	agent	0	1	0	0
+UF	ok,  __eou__	user	0	1	0	0
+
+OQ	I have a quick question about [<-LINK->] : Why is the prefetchBuffer set to 24 by default when the javadocs on prefetchBuffer says it should generally be the same as the number of workers? 24 seems really high with only 4 workers  __eou__	user	0	0	0	0
+
+OQ	could you point to an example /doc how to provide dataset with multiple labels  (e.g. RecordReaderDataSetIterator ). The dataset has several labels, each can be yes or no (1 /0) , multiple "yes" could be set.  vedina: Welcome! Here's a link to Deeplearning4j's Gitter Guidelines, our documentation and other DeepLearning resources online. Please explore these and enjoy! [<-LINK->]   richgiomundo: Welcome! Here's a link to Deeplearning4j's Gitter Guidelines, our documentation and other DeepLearning resources online. Please explore these and enjoy! [<-LINK->]   __eou__	user	0	0	0	0
+PA	vedina: the iterator does that out of the box __eou__	agent	0	0	0	0
+FD	You just specify the number of labels and you're set __eou__	agent	0	0	0	0
+JK	hsali: Welcome! Here's a link to Deeplearning4j's Gitter Guidelines, our documentation and other DeepLearning resources online. Please explore these and enjoy! [<-LINK->]  __eou__	agent	0	0	0	0
+
+OQ	I have a question about how nd4j find the location of native .so files.  All native .so files are packaged into a nd4j-native-0.7.0-linux-x86-64.jar file. But when javacpp loads .so libraries, normally it needs java.library.path to find the .so libraries. But I didn't find this setting.  so I wonder how javacpp find the location of native .so files.  __eou__	user	0	1	1	2
+IG	xuzhongxing: it's based on the classpath __eou__	agent	1	1	0	1
+FD	javacpp has a loader class __eou__	agent	1	1	0	1
+NF	But when I was trying a simple example of javacpp, it said UnsatisfiedLinkError. I have to set LD_LIBRARY_PATH to suppress it. I have the .so file on my classpath. __eou__	user	0	1	0	0
+PA	AlexDBlack: I figured it out: __eou__	user	0	1	0	0
+AC 	I need to include platform name in the directory in the jar file that contains the .so files. __eou__	user	1	1	0	1
+UF	Thanks for pointing me to the source code of javacpp __eou__	user	0	1	0	0
+JK	sorry, @ the wrong person.@agibsonccc __eou__	user	0	1	0	0
+
+OQ	Hi Adam  how is it going?  __eou__	user	0	0	0	0
+IG	sunilkumartc: late in san francisco :D I'm passing out in a few __eou__	agent	0	0	0	0
+IG	I know.Its day in Bangalore,India __eou__	user	0	0	0	0
+PF	yup I usually live in japan __eou__	agent	0	0	0	0
+FD	I'm used to time zones __eou__	agent	0	0	0	0
+FD	1 of those things :D __eou__	agent	0	0	0	0
+FD	Anyways - have a good "day" feel free to ask questions, my colleagues are awake __eou__	agent	0	0	0	0
+PF	Cool.will do. __eou__	user	0	0	0	0
+
+OQ	Hi Guys  I've realized that my /tmp folder gets filled with tons of 'restoreXXXX' files, that I guess come from the use of the ModelSerializer.restoreMultiLayerNetwork(path) function.  Is there a way to regulate that?  __eou__	user	0	0	0	0
+FQ	app86: we can look in to that - could you file an !issue ? __eou__	agent	0	0	0	0
+AE	shouldn’t be. __eou__	agent	0	0	0	0
+FD	i usually call deleteOnExit __eou__	agent	0	0	0	0
+FD	but i’ll look into that now __eou__	agent	0	0	0	0
+JK	ah __eou__	agent	0	0	0	0
+FD	that’s not me __eou__	agent	0	0	0	0
+FQ	that’s probably earlystopping you use there? __eou__	agent	0	0	0	0
+CC	I used early stopping for the trainning, yes __eou__	user	0	0	0	0
+PF	right __eou__	agent	0	0	0	0
+AC	do as adam said __eou__	agent	0	0	0	0
+AC	file an issue __eou__	agent	0	0	0	0
+UF	Ok __eou__	user	0	0	0	0
+AC	just file an issue, and we’ll sort it out after release hits. it’s not really a big deal anyway __eou__	agent	0	0	0	0
+UF	Ok. __eou__	user	0	0	0	0
+
+OQ	Ok, the crux of my question lies here : DataSetIterator trainIter = new DataSetIterator(trainingDataSet,miniBatchSize); gives me compile error DataSetIterator is abstract, can't be instantiated  So, I was willing to know what should I implement  bikashg: How can I help someone who ignores me? :D  You ignore me and our docs  Not sure what else I can do for you here  :)  __eou__	user	0	1	1	2
+IG	DataSetIterator is an interface __eou__	agent	1	1	0	1
+FD	I'm not sure what else you expect __eou__	agent	1	1	0	1
+FD	I'm telling you exactly how to make your life easy __eou__	agent	1	1	0	1
+FD	You will  end up rewriting half the stuff we already did for you in recordreaderdatasetiterator __eou__	agent	1	1	0	1
+FD	We forced it to be 1 iterator for a reason __eou__	agent	1	1	0	1
+FD	we decoupled parsing logic from dataset handling and ndarray creation __eou__	agent	1	1	0	1
+FD	there's 1 billion reasons why that's a good idea __eou__	agent	1	1	0	1
+FD	 [<-LINK->]  __eou__	agent	1	1	0	1
+FD	150 lines of code __eou__	agent	1	1	0	1
+FD	This looksreally hard __eou__	agent	1	1	0	1
+FD	I mean no offense here I'm just not understanding what the resistance is __eou__	agent	1	1	0	1
+FD	We already did the work for you __eou__	agent	1	1	0	1
+UF	OK,  __eou__	user	0	1	0	0
+AC	I will get started with reading DataVec. The only "resistance" is that my Input is not a CSV and on first sight,  __eou__	user	0	1	0	0
+AE	it seemed to me that the only supported format was CSV __eou__	user	0	1	0	0
+
+OQ	I'm training a dnn + cnn model. The F1 score is around 50. But there are some warning that some classes are never predicted.  i did a quite check. I guess that there are around 50% of training data is labeled as type A. There are 5 types.  shall i create the dataset which is perfect balanced for 5 types?  __eou__	user	0	1	1	2
+CQ	What do you mean "dnn + cnn" model? __eou__	agent	0	1	0	0
+CQ	If you trained a conv net say that in plain english :D __eou__	agent	0	1	0	0
+IG	Beyond that yes, minibatches should always be balanced __eou__	agent	1	1	0	1
+FD	The intuition for minibatch learning comes from statistics __eou__	agent	1	1	0	1
+FD	If you have a minibatch it should ideally be as close to representative of your whole population as possible __eou__	agent	1	1	0	1
+CC	I mean danse layer + cnn. I used wrong word, i guess.... __eou__	user	0	1	0	0
+IG	The reason I ask about your model, is because batch size largely depends on dimensions of the data and kind of problem as well as number of labels __eou__	agent	0	1	0	0
+FD	Then say "conv net" :D __eou__	agent	0	1	0	0
+FD	so depending on how big your images are you could be like mnist where 1k is a good idea (small dimensions) or 32/64 like imagenet __eou__	agent	0	1	0	0
+FD	the label distribution will come down to batch size __eou__	agent	0	1	0	0
+AC	Ok. I merged a csv data and image data 100x100 pixel __eou__	user	0	1	0	0
+IG	but as evenly distributed as you can get would be better __eou__	agent	0	1	0	0
+FD	make sure to check our !tuning guide __eou__	agent	0	1	0	0
+CQ	Accuracy is low or network isn't learning?  __eou__	agent	0	1	0	0
+IG	 and [<-LINK->]  __eou__	agent	0	1	0	0
+NF	I read it, but want to learn more, for example about batch balancing __eou__	user	0	1	0	0
+PF	thanks for the answer __eou__	user	0	1	0	0
+
+OQ	last time i’ve checked dl4j vs caffe, it was 0.6.0 -> 0.7.0 transition, and time was pretty close.  __eou__	user	0	0	0	0
+AE	A lot can change in even 6 months __eou__	agent	0	0	0	0
+IG	We are pretty on par now __eou__	agent	0	0	0	0
+AC	I would run your own benchmark __eou__	agent	0	0	0	0
+IG	A 1 off paper will usually be biased towards research for 1 __eou__	agent	0	0	0	0
+IG	for 2 tensorflow isn't the fastest __eou__	agent	0	0	0	0
+FD	but you see people using it anyways __eou__	agent	0	0	0	0
+AE	for some things caffe was faster, for other dl4j was faster __eou__	user	0	0	0	0
+AC	I would just give it a shot first __eou__	agent	0	0	0	0
+IG	actually, any framework uses the same tools. __eou__	user	0	0	0	0
+IG	we have a standard lenetmnist benchmark [<-LINK->]  __eou__	agent	0	0	0	0
+IG	openmp for cpu __eou__	user	0	0	0	0
+PF	right __eou__	agent	0	0	0	0
+IG	we have cudnn too __eou__	agent	0	0	0	0
+IG	openblas/blas for blas __eou__	user	0	0	0	0
+FQ	based on the "last visited" dates it was finished around april? which means 0.4-rc3.8 (6 releases ago, and before our major c++ backend rewrite) __eou__	agent	0	0	0	0
+IG	cuda/cudnn for gpus __eou__	user	0	0	0	0
+PF	right __eou__	agent	0	0	0	0
+FD	yeah that was when we had java __eou__	agent	0	0	0	0
+FD	not c++ __eou__	agent	0	0	0	0
+IG	so you can’t really expect huge time differences now __eou__	user	0	0	0	0
+IG	it’s +- the same time frames, so only ecosystem should matter __eou__	user	0	0	0	0
+
+OQ	I made an app with dl4j and I want to deploy it on weblogic which is installed on a linux machine  __eou__	user	0	0	0	0
+CQ	enache2004: should be straightforward what are you running in to? __eou__	agent	0	0	0	0
+IG	it complains about java.lang.UnsatisfiedLinkError: no jnind4j in java.library.path __eou__	user	0	0	0	0
+CQ	just use nd4j-native-platform then? __eou__	agent	0	0	0	0
+AC	make sure your dependencies are up to date too __eou__	agent	0	0	0	0
+CC	I use a previous version of dl4j 3.9 __eou__	user	0	0	0	0
+JK	O_O __eou__	agent	0	0	0	0
+CQ	yup we've had 5-6 releases since then? __eou__	agent	0	0	0	0
+FQ	maybe more __eou__	agent	0	0	0	0
+AC	I would like to test it that version because everything was fine on my machine __eou__	user	0	0	0	0
+NF	I know..sorry __eou__	user	0	0	0	0
+IG	we aren't liable for versions before this __eou__	agent	0	0	0	0
+
+OQ	I still don't know why I get this: Warning: class 1 was never predicted by the model.  __eou__	user	0	1	1	2
+IR	again, can you confirm that you had class 1 in your test set? __eou__	agent	0	1	0	0
+FD	I verified each step and my training data path seems ok __eou__	user	0	1	0	0
+FD	yes..i have two folders __eou__	user	0	1	0	0
+FD	is face __eou__	user	0	1	0	0
+FD	no face __eou__	user	0	1	0	0
+PA	enache2004: track your data input pipeline. there were many changes there. __eou__	agent	0	1	0	0
+JK	 [<-CODE->]  __eou__	user	0	1	0	0
+CQ	enache2004: how about the model params? anything funky there? __eou__	agent	0	1	0	0
+FQ	for nueral net ? __eou__	user	0	1	0	0
+PA	yes __eou__	agent	0	1	0	0
+IR	everything is the same __eou__	user	0	1	0	0
+JK	that's strange __eou__	user	0	1	0	0
+PA	switching to 3.9 and works perfect __eou__	user	0	1	0	0
+FD	this is my model __eou__	user	0	1	0	0
+PA	enache2004: please don't do that __eou__	agent	0	1	0	0
+FD	use !gist __eou__	agent	0	1	0	0
+FD	To use gist: paste your code/exception/large output log into [<-LINK->] , click 'Create Secret Gist' and paste URL link here __eou__	agent	0	1	0	0
+JK	I like how is formatting :D __eou__	user	0	1	0	0
+JK	ok __eou__	user	0	1	0	0
+JK	 [<-LINK->]  __eou__	user	0	1	0	0
+FD	aha, another change applied is xavier weight init __eou__	agent	0	1	0	0
+FD	originally it was wrong __eou__	agent	0	1	0	0
+FD	now it's fixed __eou__	agent	0	1	0	0
+FD	original implementation is called XAVIER_LEGACY __eou__	agent	0	1	0	0
+FD	.weightInit(WeightInit.XAVIER) <----- this thing __eou__	agent	0	1	0	0
+FQ	so ...I will changed to ? __eou__	user	0	1	0	0
+FD	legacy? __eou__	user	0	1	0	0
+FD	the other think that I noticed is StandardScaler which is deprecated __eou__	user	0	1	0	0
+FD	could this change my results ? __eou__	user	0	1	0	0
+IR	not sure what was changed for StandardScaler... __eou__	agent	0	1	0	0
+FD	i mean it's just new implementation available, but don't know what was wrong with original __eou__	agent	0	1	0	0
+FQ	I don't know what to follow __eou__	user	0	1	0	0
+FD	to spend time to check if the latest version of dl4j has the native libraries fixed for linux __eou__	user	0	1	0	0
+FD	or to keep my 3.9 version and investigate the part with java.library.path __eou__	user	0	1	0	0
+
+OQ	raver119: I just tried to change "<artifactId>nd4j-native</artifactId>" to "<artifactId>nd4j-native-platform</artifactId>", but it doesn't work. It's also that error. can\'t find jniopenblas.dll  __eou__	user	0	1	1	2
+CQ	Give us a !gist of the full stack trace then __eou__	agent	0	1	0	0
+IG	To use gist: paste your code/exception/large output log into [<-LINK->] , click 'Create Secret Gist' and paste URL link here __eou__	agent	0	1	0	0
+FD	and add output of java —version please __eou__	agent	0	1	0	0
+IG	java version "1.8.0_111"Java(TM) SE Runtime Environment (build 1.8.0_111-b14)Java HotSpot(TM) 64-Bit Server VM (build 25.111-b14, mixed mode) __eou__	user	0	1	0	0
+CQ	yeah we'll need your full error __eou__	agent	0	1	0	0
+IG	 [<-LINK->]  __eou__	user	0	1	0	0
+PF	ahh __eou__	agent	0	1	0	0
+IG	add javacv as a dependency __eou__	agent	0	1	0	0
+FD	 [<-CODE->]  __eou__	agent	0	1	0	0
+AC	I 'll try it. __eou__	user	0	1	0	0
+NF	aha.. The fact is that it also doesn't work...the same error. __eou__	user	0	1	0	0
+IG	your error is definitely opencv related __eou__	agent	0	1	0	0
+JK	look at it __eou__	agent	0	1	0	0
+JK	oh wait __eou__	agent	0	1	0	0
+CC	I was looking at opencv :D __eou__	agent	0	1	0	0
+FD	I read that as opencv not openblas __eou__	agent	0	1	0	0
+FD	that's a bit weird __eou__	agent	0	1	0	0
+NF	my bad __eou__	agent	0	1	0	0
+CQ	if openblas isn't statically linked it might need to be installed? hm __eou__	agent	0	1	0	0
+JK	... __eou__	user	0	1	0	0
+NF	I'm not sure what the deal is on windows __eou__	agent	0	1	0	0
+NF	Yeah my bad :D let's move on here __eou__	agent	0	1	0	0
+IG	sorry we've ran in to that before __eou__	agent	1	1	0	1
+FD	pretty common cause __eou__	agent	1	1	0	1
+FD	usually people  need to install opencv in order to use it, it looks like something similar here __eou__	agent	1	1	0	1
+PA	markWZX: Installing openblas here: [<-LINK->] and putting this folder on your path should work __eou__	agent	1	1	0	1
+UF	OK. __eou__	user	0	1	0	0
+IG	Also if you don\'t know what I\'m talking about with "linking" you should at least vaguely know what that is __eou__	agent	1	1	0	1
+FD	Look, I can tell you're kinda impatient with this, but native stuff is more or less always like this on windows :D __eou__	agent	1	1	0	1
+
+OQ	Is the parameter "learningRateScoreBasedDecayRate" the same as learningRateDecayPolicy(LearningRatePolicy.Score).lrPolicyDecayRate ?  __eou__	user	0	0	0	0
+
+OQ	raver119: @agibsoncccOne Q. Today evening in my talk I'm planning to state that DL4J is the only FW capable of training NN in Jeff Dean Style Parameter Averaging on ApacheSpark (+ GPU support +support for all sorts of NN topologies) Is this correct? IMHO TensorFrames doesn't support parallel Parameter Averaging , correct?  __eou__	user	0	1	1	2
+IG	yup __eou__	agent	1	1	0	1
+FD	so tensorframes only allows ETL __eou__	agent	1	1	0	1
+FD	The main thing it had going for it was the catalyst compiler for tensorflow ops __eou__	agent	1	1	0	1
+FD	Italsohasn't seem a commit since august __eou__	agent	1	1	0	1
+FD	We also support configuring everything from a spark job __eou__	agent	1	1	0	1
+FD	Tensorframes for their JNI support used javacpp (which we maintain) __eou__	agent	1	1	0	1
+FD	So main differences: Community and Distributed __eou__	agent	1	1	0	1
+PF	Thanks a lot@agibsonccc __eou__	user	0	1	0	0
+CC	sure :D __eou__	agent	0	1	0	0
+IG	also tensorframes is based on dataframes, so no variable length data (images, time series etc) afaik __eou__	agent	1	1	0	1
+PF	right __eou__	agent	0	1	0	0
+
+OQ	I\'m trying to use the video Classification example and have created a directory with mp4 videos (videos created with JavacV <CODE>  is there an mp4 codec that is recommended, or will any of the mp4 codec options suffice?  __eou__	user	0	0	0	0
+
+OQ	When producing feature maps for convolution layer from previous pooling layer, to  my understanding, it's a full connection between all feature maps in pooling layer and one in convolution layer. Is this the groundtruth?  It is according to " [<-LINK->] "  __eou__	user	0	0	0	0
+
+OQ	qq95538: Welcome! Here's a link to Deeplearning4j's Gitter Guidelines, our documentation and other DeepLearning resources online. Please explore these and enjoy! [<-LINK->]   thank you, raver120,   __eou__	user	0	0	0	0
+AC	I am reading deeplearning4j.org/quickstart,  __eou__	agent	0	0	0	0
+PF	your advice is so kind. __eou__	agent	0	0	0	0
+
+OQ	@/allwe're planning on building Keras bindings for DL4J. Is anyone in this thread interested in and available for contributing (part-time, remote) to that? if so, pls DM me...  __eou__	user	0	0	0	0
+
+OQ	Hi guys, with Deeplearning4J can I reproduce the results achieved articles about artistic style transfer? I found several implementation on Tensorflow (e.g. [<-LINK->] ). Is there any similar example or tutorial also for Deeplearning4j?  __eou__	user	0	0	0	0
+
+OQ	im stuck after reading in the data..like how to pass the data to a CNN..any input into that.  __eou__	user	0	0	0	0
+CQ	well, do you have DataSet objects yet? __eou__	agent	0	0	0	0
+FD	that's why I was saying use CSVRecordReader + RecordReaderDataSetIterator __eou__	agent	0	0	0	0
+FD	then it's pretty straightforward __eou__	agent	0	0	0	0
+AC	ok. i wil try that..can i get back if i have any problem ? __eou__	user	0	0	0	0
+CC	sure. start with this: [<-LINK->] then adapt it based on my earlier comments (delimiter, regression, etc) __eou__	agent	0	0	0	0
+PFAC	ok..thank you.. i was following that example to read in the data. I wil explore further and wil try. Thank you __eou__	user	0	0	0	0
+
+OQ	I try to use  MatlabRecordReader but I can't understand how it works, anybody can explain me please?  __eou__	user	0	0	0	0
+
+OQ	the autoencoder example is quite simple... so I have still plenty of questions. first of all, there are many types of autoencoders such as Denoising autoencoder, Sparse autoencoder, Variational autoencoder, Contractive autoencoder... which does DL4J support?do I need to do something special to make an autoencoder that is  Denoising autoencoder, Sparse autoencoder, Variational autoencoder or Contractive autoencoder?  __eou__	user	0	1	1	2
+IG	variational autoencoder now available at current master __eou__	agent	1	1	0	1
+FD	alex merged it few days ago __eou__	agent	1	1	0	1
+PF	nice! __eou__	user	0	1	0	0
+IG	daredemo: There are small special things for each of the subtypes of autoencoders.  Sparse has a penalty (usually L1) which encourages sparse activation in the inner-most hidden layer.  Denoising adds noise on the input and attempts to reconstruct a noise free output.  Variational autoencoders instead learn a mean and standard deviation instead of an explicit internal state, then randomly generate a hidden state from those values and reconstruct. __eou__	agent	0	1	0	0
+FD	Of the bunch, denoising is perhaps the easiest to train, since you just had to do train(myExamples + noise, myExamples) __eou__	agent	0	1	0	0
+FQ	JosephCatrambone: I know the differences in the autoencoders. just wondering how to implement them in DL4J (for example the L1 stuff that you mentioned) __eou__	user	0	1	0	0
+CC	Ah.  Sry.  I misunderstood. __eou__	agent	0	1	0	0
+NF	In this respect, I can't really help.  I'm here for the ND4j stuff.  ;) __eou__	agent	0	1	0	0
+CQ	I mean, I know, but I don't know the exact math behind them __eou__	user	0	1	0	0
+GG	'tiz OK :D __eou__	user	0	1	0	0
+
+OQ	my original idea in 2003 was to build a robot that uses swarm technique to collaborative robots  then have like a dozen of them working together to do fun stuff  it's the reason I got a 3D printer  __eou__	user	0	0	0	0
+FD	It'd be really awesome if you can get a dozen of them running rl4j __eou__	agent	0	0	0	0
+JK	and just driving around. __eou__	agent	0	0	0	0
+JK	Automatically avoiding eachother. __eou__	agent	0	0	0	0
+FD	one of the goals was to use CV to build racing robots that could drive around a track as fast as Mindstorm motors can go __eou__	user	0	0	0	0
+FD	then people could have robot races __eou__	user	0	0	0	0
+FD	they could train the robots, post their models to github and share __eou__	user	0	0	0	0
+JK	instead of jumping right to that, I'm doing robot tag first __eou__	user	0	0	0	0
+JK	it's more like a robot time trial though, Pi doesn't have enough juice for robots to race each other __eou__	user	0	0	0	0
+FD	Yeah.  Maybe if you had a bunch of robots connected to tegra x1s __eou__	agent	0	0	0	0
+FD	"Data Loaded.  Vocabulary Size: 63674 Total lines: 40331236" Wow, that\'s not going to fit in RAM... __eou__	agent	0	0	0	0
+JK	haha... you refering to Nvidia's tegra... aren't those suckers still expensive __eou__	user	0	0	0	0
+FD	About $500ish was it? __eou__	agent	0	0	0	0
+FD	I'm thinking price range of under $30 __eou__	user	0	0	0	0
+JK	so that middle/high school kids and build them __eou__	user	0	0	0	0
+JK	having them go to their parents and say "Mom, can I have 600 to build a cool robot that races around a track?" __eou__	user	0	0	0	0
+JK	might get the response "sure, go get a job!" __eou__	user	0	0	0	0
+PF	True.  but plenty of kids play with gasoline RC cars and model airplanes that are in that range. __eou__	agent	0	0	0	0
+PF	true, I had rich friends that did that for a hobby in the 80's, but when they crashed them to pieces, their parents were pissed __eou__	user	0	0	0	0
+JK	only the ones with jobs could keep racing, the rest stopped once their cars were toast __eou__	user	0	0	0	0
+JK	There are few hobbies as expensive as racing. __eou__	agent	0	0	0	0
+JK	like snow boarding :) that's a couple hundred each time __eou__	user	0	0	0	0
+
+OQ	INDArray myArr = Nd4j.create(flat,shape,'c');    what does 'c' represent?  and what is the difference between 'c' and 'f'?  is there any material about this?   [<-LINK->]   see this  __eou__	user	0	0	0	0
+PA	yuimo123: it's general concept, C-ordering and Fortran ordering of elements within linear buffer __eou__	agent	0	0	0	0
+FD	aka Column-major and Row-major __eou__	agent	0	0	0	0
+FD	yes , i know. 'c' is c order ,and 'f' is f order __eou__	user	0	0	0	0
+IR	why asked then? __eou__	agent	0	0	0	0
+JK	:) __eou__	agent	0	0	0	0
+JK	yuimo123: see [<-LINK->]  __eou__	agent	0	0	0	0
+PF	thanks. __eou__	user	0	0	0	0
+FD	raver119: i am read the examples of nd4j, and i saw this. just ask __eou__	user	0	0	0	0
+
+OQ	Hey, sorry for interrupting you, but I got a quick question, wondering if someone can answer it... If I run the following line of code on a pretty large Nd4j array (no dl4j involved) with tons of negative infinity values in it, a lot of messages saying "Number: -Infinity" get logged. Is this intentional, and if so, why?BooleanIndexing.applyWhere(array, new Or(Conditions.isInfinite(), Conditions.isNan()), 10);Does not happen with this piece of code:BooleanIndexing.applyWhere(array, new Or(Conditions.isInfinite(), Conditions.isNan()), new StableNumber(StableNumber.Type.DOUBLE));Nd4j 0.7.1  __eou__	user	0	1	1	2
+IG	StillNoNumber: probably just a bug, leaked debug messsage __eou__	agent	0	1	0	0
+AC	StillNoNumber: i’ll check that right now __eou__	agent	0	1	0	0
+JK	yes, because i’ve wrote that one __eou__	agent	0	1	0	0
+PF	:) __eou__	agent	0	1	0	0
+FQ	raver119: Assumed so. Thanks anyway, should I file a report or something? __eou__	user	0	1	0	0
+GGAC	StillNoNumber: thanks, no need, i’m already opening nd4j __eou__	agent	0	1	0	0
+UF	Alright :D __eou__	user	0	1	0	0
+CC	i mean - you’ve already reported it :) __eou__	agent	0	1	0	0
+IG	yeah but you might prefer it if I report it somewhere so you can organize your to-do-list or whatever __eou__	user	0	1	0	0
+IG	raver119: Found it, line 238 in BooleanIndexing __eou__	user	0	1	0	0
+JK	in case you haven't yet __eou__	user	0	1	0	0
+JK	:P __eou__	user	0	1	0	0
+NF	StillNoNumber: it’ll also disable that spam :( __eou__	agent	0	1	0	0
+
+OQ	I have question, I checkout the tag version "deeplearning4j-0.7.0" from git hub yesterday, after import it into IDEA and resolve maven dependencies, I still see there are many code error, have I missed something?  __eou__	user	0	1	1	2
+CQ	FlyingPiggyKing: wait what? __eou__	agent	0	1	0	0
+CQ	Are you trying to build from source? __eou__	agent	0	1	0	0
+JK	No where in our docs do we tell you to do that :D __eou__	agent	0	1	0	0
+IG	Use maven central please __eou__	agent	1	1	0	1
+FD	dl4j has 4 projects including c code you need to build from source __eou__	agent	1	1	0	1
+FD	I wouldn't suggest trying that __eou__	agent	1	1	0	1
+FD	Especially if you're new __eou__	agent	1	1	0	1
+NF	I just want to dig into the code, see how it works, but I see many code error, like some function is missing... __eou__	user	0	1	0	0
+CC	FlyingPiggyKing: yeah don't do that __eou__	agent	0	1	0	0
+JK	like at all __eou__	agent	0	1	0	0
+IG	use intellij to download the source __eou__	agent	1	1	0	1
+FD	and run it in the debugger if you want to do that __eou__	agent	1	1	0	1
+FD	otherwise you have to build from source __eou__	agent	1	1	0	1
+FD	Like I said you have to build 4 projects to even get to dl4j __eou__	agent	1	1	0	1
+FD	You sound completely new to a lot of this __eou__	agent	1	1	0	1
+FD	I wouldn't suggest digging in unless you have to __eou__	agent	1	1	0	1
+FD	Of course you'r going to have errors __eou__	agent	1	1	0	1
+FD	You need to build the other libraries first __eou__	agent	1	1	0	1
+FD	Don't do it unless you have a compelling reason to __eou__	agent	1	1	0	1
+FD	if you want to just explore don't clone dl4j __eou__	agent	1	1	0	1
+IG	FlyingPiggyKing: you can view the source from intellij using the maven release, just ctrl+b on the various classes, and you can read through them therewithout the headaches associated with  building from source :) __eou__	agent	1	1	0	1
+FQ	AlexDBlack: so you mean let idea to decompile the code from the jar? __eou__	user	0	1	0	0
+CC	no, not decompile. download sources __eou__	agent	0	1	0	0
+FD	FlyingPiggyKing: I already said the source is in maven central __eou__	agent	0	1	0	0
+FD	those are on maven central too __eou__	agent	0	1	0	0
+PF	AlexDBlack: ok, got __eou__	user	0	1	0	0
+AC	let me try __eou__	user	0	1	0	0
+PF	yes, it work for some of the class, like MultiLayerNetwork.java, I can click on the link on the top bar of IDEA, it can download it, while for some class like MultiLayerConfiguration.class, seems like the class is inconsistent with the downloaded source code. __eou__	user	0	1	0	0
+FD	FlyingPiggyKing: intellij is usually weird about that I wouldn't pay too much attention to it __eou__	agent	0	1	0	0
+FD	That's usually because of source code comments and the like __eou__	agent	0	1	0	0
+CQ	it might also be lombok annotation maybe, expanded in binaries but not source? __eou__	agent	0	1	0	0
+FD	anyway, not a concern really __eou__	agent	0	1	0	0
+FD	there some minor error in the source code, like the logger declaration is missing, I see@Slf4j, this maybe the reason __eou__	user	0	1	0	0
+IR	FlyingPiggyKing: that's lombok like alex mentioned __eou__	agent	0	1	0	0
+PF	got it, very thanks! __eou__	user	0	1	0	0
+
+OQ	hellow!  __eou__	user	0	0	0	0
+IG	1151738113: Welcome! Here's a link to Deeplearning4j's Gitter Guidelines, our documentation and other DeepLearning resources online. Please explore these and enjoy! [<-LINK->] __eou__	agent	0	0	0	0
+
+OQ	have you got a code example which simply has working code for tsne plot on word2vec output?  the document only has snippet  __eou__	user	0	0	0	0
+CQ	code for? __eou__	agent	0	0	0	0
+FD	for single method call? __eou__	agent	0	0	0	0
+OP	and the TSNEStandardExample.java does not plot __eou__	user	0	0	0	0
+JK	i’ve already pointed you to method you need __eou__	agent	0	0	0	0
+FD	like TSNEStandardExample.java, except one that actually put up a plot __eou__	user	0	0	0	0
+JK	there’s nothing more needed from you __eou__	agent	0	0	0	0
+NF	so you don't have such an example code __eou__	user	0	0	0	0
+

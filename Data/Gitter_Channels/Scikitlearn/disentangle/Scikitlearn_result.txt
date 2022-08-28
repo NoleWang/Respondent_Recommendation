@@ -1,3 +1,4 @@
+--------------------------------------------------------------------------------------------------
 1 [2014-09-18 03:36] <541a528b163965c9bc2053de> Hi all!
 --------------------------------------------------------------------------------------------------
 1 [2014-10-23 19:59] <544906e2db8155e6700cdd16> I don't know if this is the right place but I need some advice on how to train a classifier using a data set with multiple feature types: text, integers, floats, dates

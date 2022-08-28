@@ -1,0 +1,86 @@
+OQ	not able to run appium test in iOS real device with os 10.1.1, Appium version 1.6, xcode 8. anything to install. Also I able to run appium in iOS simulator by installing  'brew install carthage'  __eou__	user	0	1	1	2
+
+OQ	Hi! I'm using Appium 1.6.0 with Android SDK  24.4.1. During apk installation I get this error which I have never seen beforeDevice API level: 22  [<-CODE->]  __eou__	user	0	1	1	2
+CQ	sankleta: post your desired caps, device android version __eou__	agent	0	1	0	0
+CC	@mgmanikandan87 sure, heredef setUp():    desired_caps = {}    desired_caps['platformName'] = 'Android'    desired_caps['platformVersion'] = '5.1'    desired_caps['deviceName'] = 'MrCucumber'    desired_caps['app'] = '/apk/test-armv7-debug.apk' [<-CODE->] so device has 5.1 as well __eou__	user	0	1	0	0
+IG	sankleta: can you try with any other apk, its seems every looks fine or we need to check with android source code __eou__	agent	1	1	0	1
+
+OQ	Even scientists are unable to understand time and space.Stephen Hawking is researching about it. We might see the results soon... o/  __eou__	user	0	0	0	0
+
+OQ	Hello, I have an issue with swarm. I have a simple java application which tries to call another application. I use swarm for my deployment through a network overlay. The problem is that when I scale an app, I can validate that the hosts behind the VIP are updated but my client keeps calling the same addresses.I tried a lot of things like changing java DNS cache ttlAnyone ever had something like that ?  __eou__	user	0	1	1	2
+
+OQ	hi all  Morning  is there a way to avoid the first router transition? I am using universal and the server renders the view. When the browser side angular kicks in. It starts with a transition animation. This look strange because universal already rendered the view.  __eou__	user	0	0	0	0
+
+OQ	all: trying to find a simple way to tail or access stdout of a linked container running a simple service from another container (running tests) - I'd rather not modify the container running the service i.e. just use stdout - is there a good way to write stdout to a shared volume??  __eou__	user	0	0	0	0
+
+OQ	hi guys..  if i want to test new application do i need to configure webDriver Agent again...  what is the capability code for real device  __eou__	user	0	0	0	0
+
+OQ	Yo  __eou__	user	0	0	0	0
+
+OQ	im getting errors in my console when i try to run commands for nodeschool  any help please  __eou__	user	0	1	1	2
+IG	 [<-CODE->]  [<-CODE->]  [<-CODE->]  [<-CODE->]  [<-CODE->]  __eou__	agent	1	1	0	1
+
+OQ	hey.. i got my caddyserver working.. i get a database error now from wordpress container  this is the link [<-LINK->]   Error establishing a database connection  Hello,I got Caddyserver running. The Database is working correctly now and moved the domain to point to my new server. Somehow I get just a clear Website, even when I curl the webseite I get zero response.I have made a look into the Caddyserver logs and WordPress logs and I get the request, but no response. I also installed nginx as a container and served the nginx to Caddy to see if Caddy is proxying correctly. I get the welcome screen from nginx. So this is working fine, but when I again bind the WordPress container to Caddy its just nothing.Do you have a clue what can be the reason to get no response on the client but requests on the server?Thank you!  __eou__	user	0	1	1	2
+
+OQ	I've got an array of objects, and I've got an issue where something works if I unshift a new object into the array, but if I push an object then it doesn't work. Because I'm guessing that the array isn't being redrawn in the same way when I push. Is there any way to force a redraw so it behaves the same for unshift and push?@DzmitryShylovich Any idea?  __eou__	user	0	1	1	2
+IG	chrillewoodz: u should create a new array instead of mutating __eou__	agent	1	1	0	1
+
+OQ	I am new here. I really like this approach of an app directed at community-building. However I feel that the homepage does not do a great job of communicating this. Also, it took me a while to figure out how easy to go into a room and try it out.  somebody at?  paramaggarwal_twitter:  __eou__	user	0	1	1	2
+
+OQ	hey guys, I'm new in Node.js and webservice I wrote this program but it doesn't work. do you know where my mistake is?  var guid = require('guid');var soap = require('soap');  var url = 'https://msproject.sd-c.de/PWA/_vti_bin/psi/statusing.asmx?wsdl';  var args = {sName: 'Testvorgang 1',                 projGuid: '1bbdf07f-9ee8-e611-8100-00155d0a1d05',                 taskGuid: guid.EMPTY,                 assnGuid: guid.create(),                 sumTaskGuid: '30bdf07f-9ee8-e611-8100-00155d0a1d05',                 dtStart: '2017-02-07T08:00:00',                 dtFinish: null,                 actWork: 1,                 fMilestone: false,                 fAddToTimesheet: true,                 fSubmit: false,                 sComment: ''};  soap.createClient('https://msproject.sd-c.de/PWA/_vti_bin/psi/statusing.asmx?wsdl', function(err, client) {client.MyFunction(args, function(err, result) {          console.log(result);      });  });  Hi guys,  I wrote this program but I recieved this error ( can not read property MyFunction of undefined  __eou__	user	0	1	1	2
+IG	 [<-CODE->]  __eou__	agent	1	1	0	1
+UF	Thank you  __eou__	user	0	1	0	0
+
+OQ	hey everyone, will Appium 1.6.3 work with XCode 7.3.1? Or do I need to upgrade to XCode8?  __eou__	user	0	1	1	2
+IG	it should __eou__	agent	1	1	0	1
+PF	awesome. thank you __eou__	user	0	1	0	0
+FD	don't use automationName XCUITest __eou__	agent	1	1	0	1
+FD	in your caps __eou__	agent	1	1	0	1
+CC	is that only for Xcode 8? __eou__	user	1	1	0	1
+PF	yes __eou__	agent	0	1	0	0
+PF	awesome. I will remember that. thank you __eou__	user	0	1	0	0
+
+OQ	hello, my ethereum wallet will not open or generate an account on a mac, any idea why?  __eou__	user	0	1	1	2
+
+OQ	Hi all.   Anyone had an error like this before when trying to load a route?"uncaught (in promise): Error: loading chunk" 10 failedonly seeing it on IE9, works on everything else as far as I know.  __eou__	user	0	1	1	2
+
+OQ	hi, trying to use the android app login via Github, and it's stuck at Two-factor authentication, waiting to receive an SMS but nothing coming. Is this only usable on a phone (and not a tablet with no SIM) ?  never mind, SMS arrived after a long wait!  __eou__	user	0	1	1	2
+
+OQ	Can someone Help me to send a Result to the Client?The normal way I go is to respond with results [<-CODE->] But now Iam working withhttps://github.com/peteward44/node-svn-ultimateAnd the Functions are not giving a Normal Response as Return but inside itself [<-CODE->] How can I send the Data Result to my Client inside this svn Function?  __eou__	user	0	0	0	0
+
+OQ	HI guys, i have this code   [<-CODE->]   [<-CODE->]  but when i try print the result, this don't show me nothing(sorry for my bad english)  any idea how to do that? :(  }  __eou__	user	0	0	0	0
+
+OQ	Hi all  we are having some issues with translations in our application as we have multiple sources of XLF that we want to inject.Is there an option to change the format from xlf to JSON or some other easy to parse in the frontend value?  __eou__	user	0	1	1	2
+
+OQ	hi  ive been sending some ether on ethereum-wallet.net but it seems like my balance is still 0 can anyone help me ty  __eou__	user	0	1	1	2
+
+OQ	Hello  i'm having this issue 'npm install'  npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform forfsevents@1.0.15: wanted {"os":"darwin","arch":"any"} (current: {"os":"win32","arch":"x64"})  please house to fix it ?  __eou__	user	0	1	1	2
+
+OQ	MadLittleMods: and colleagues, has anyone else reported sporadic search failures? For example, around one minute ago, seekingwebhooksin this room found nothing and there appeared a notification about communication issues.  A second search for the same word found some matches, and there reappeared the notification. Subsequent searches for the same word found nothing, and there reappeared the notification. For example:   [<-LINK->]   __eou__	user	0	1	1	2
+IG	@grahamperrin Please refrain from pinging people directly. Anyone here can help you.It is a problem I noticed a while back and is caused by some limits we are hitting with the version of elasticsearch we are on atm iirc.troupe/gitter-webapp#2133 __eou__	agent	0	1	0	0
+CC	Apologies Eric. I'm already subscribed to [<-ISSUE->] but had not imagined the symptoms going beyond searches for usernames. __eou__	user	0	1	0	0
+IG	Just any query that could hit the timeout __eou__	agent	0	1	0	0
+FD	Thefrom:xxxsyntax is a more involved query that reproduces the problem often __eou__	agent	0	1	0	0
+NF	 [<-ISSUE->] page not found if attempt to open the issue in GitHub; and pointing at the link in this chat does not always reveal an outline of the issue in the pop-up. __eou__	user	0	1	0	0
+IG	grahamperrin: Internal issue for my own reference __eou__	agent	0	1	0	0
+FQ	Ah OK. So I guess that GitHub can allow a limited view of internal issues, yes?  (Or did you make the issue private a few seconds ago?) __eou__	user	0	1	0	0
+IG	grahamperrin: nope. It is just a private repo __eou__	agent	0	1	0	0
+CC	Hmm, I did see the content of that issue (did have access) a few times when pointing at the first of your two bullet pointed links at [<-LINK->] above. __eou__	user	0	1	0	0
+AC	grahamperrin: Screenshots if you can reproduce again please. __eou__	agent	0	1	0	0
+
+OQ	hello  i want mining eth  where I can download the program for windows 10?  __eou__	user	0	0	0	0
+CQ	NtinoValentino_twitter: you want test-network ETH? __eou__	agent	0	0	0	0
+
+OQ	Is it normal that if I change of view in my app, a validator gets triggered multiple times?  __eou__	user	0	1	1	2
+
+OQ	how subscribe on  each ngModel changes on template driven form ?  __eou__	user	0	0	0	0
+
+OQ	The problem I faced with Protractor is, as soon as it invokes app, it immediately tries to inject protractor javascript into webview  in cases of splash screen or 1st screen as native screen, injection of protractor script fails due to absence of any webview  if you can dump the appium log here, that would be helpful  __eou__	user	0	1	1	2
+IG	Same thing I was am facing.. I added caps.setCapability("appWaitActivity", "your Main activity name"); __eou__	agent	1	1	0	1
+FD	but this is for java + appium not sure if you can do it in protractor.. __eou__	agent	1	1	0	1
+CC	what do u get in the server log? __eou__	user	0	1	0	0
+IG	 [<-CODE->] It was stopping server at launch.. and it was random... __eou__	agent	1	1	0	1
+FD	sometime it used to launch app successfully and sometimes it was showing me above issue.. __eou__	agent	1	1	0	1
+
+OQ	hi all i am new to the group please help me in getting source  __eou__	user	0	0	0	0
+
