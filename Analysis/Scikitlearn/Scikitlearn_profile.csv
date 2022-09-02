@@ -1,0 +1,1686 @@
+user_Id,cluster_Id,answer_date,answers
+54d4a1d6db8155e6700f853b,12,2015-02-06 11:14:00,"I'm with family this week and so not super active, but I hope we can work towards the release next week :)
+sure. There is another check_array pr that might be conflicting
+and that I think is very important
+the dtype=object one
+https://github.com/scikit-learn/scikit-learn/pull/4057
+"
+54d4a1d6db8155e6700f853b,61,2015-02-24 22:46:00,"cool
+ok
+"
+54d4a1d6db8155e6700f853b,69,2015-02-25 18:59:00,"yeah that sounds like a good idea
+"
+54d4a1d6db8155e6700f853b,72,2015-02-25 19:14:00,"you mean == 1
+"
+54d4a1d6db8155e6700f853b,75,2015-02-25 19:19:00,"that is also weird ;)
+"
+54d4a1d6db8155e6700f853b,83,2015-02-26 15:27:00,"cool
+yeah maybe that was a bad idea. but it was already broken before
+I know the bugs are unrelated, but I thought the fix might be. I was thinking about removing the implementation of partial fit, which would make it easier to fix both bugs, I think
+args I meant fit_transform
+err fit_predict?
+"
+54d4a1d6db8155e6700f853b,89,2015-02-26 19:47:00,"fyi https://github.com/scikit-learn/scikit-learn/pull/4285 should be good
+I had some weird behavior with the interp1d but I need to do some NYU stuff before I can investigate further
+"
+54d4a1d6db8155e6700f853b,97,2015-03-02 14:53:00,"damn time difference ;)
+"
+54d4a1d6db8155e6700f853b,115,2015-03-02 21:54:00,"possibly. I didn't have much time to look at them yet
+this is not really a priority as I want to get stuff clean and fixed for the release first
+"
+54d4a1d6db8155e6700f853b,118,2015-03-02 22:40:00,"haha I just saw it and thought you read my message ;)
+anything I should look at now? btw, does beta mean uploading docs?
+probably not I guess?
+"
+54d4a1d6db8155e6700f853b,132,2015-03-05 20:44:00,"ok
+"
+54d4a1d6db8155e6700f853b,141,2015-03-05 21:08:00,"Try a tree? Or use OneVsRestClassifer(LogisticRegression).
+I'll have a look soon.
+probably with ``estimator__``. But I'd rather go with a tree, which should work
+"
+54d4a1d6db8155e6700f853b,144,2015-03-05 21:27:00,"no transparency here. I technically have a laptop monitor and a large one, but in the office I currently only use the large one. Still context-switching too much.
+I have the gitter tab just always open
+"
+54d4a1d6db8155e6700f853b,149,2015-03-05 22:25:00,"ok let me look at it tomorrow
+"
+54d4a1d6db8155e6700f853b,160,2015-03-06 16:26:00,"I feel the same way
+do you want to press the green button or should I do the rebase dance?
+"
+54d4a1d6db8155e6700f853b,168,2015-03-06 17:48:00,"ok
+"
+54d4a1d6db8155e6700f853b,183,2015-03-07 17:38:00,"yeah, go ahead. the branch should be there now.
+"
+54d4a1d6db8155e6700f853b,185,2015-03-07 17:56:00,"you too!
+"
+54d4a1d6db8155e6700f853b,196,2015-03-10 20:32:00,"landscape.io does not seem to be very mature yet. but could be cool and carl is pretty responsive
+"
+54d4a1d6db8155e6700f853b,213,2015-03-11 14:30:00,"ok
+"
+54d4a1d6db8155e6700f853b,238,2015-03-18 15:23:00,"@omerzimp why are you so set on AF?
+"
+54d4a1d6db8155e6700f853b,243,2015-03-18 15:26:00,"there is also AgglomerativeClustering, which is much faster and easier to understand than AF
+and provides a hierarchical clustering
+well ok if your point is to understand how to implement AF on MR then go for that. I just don't see why you would want to do that, as AF is a crappy algorithm.
+There are a also papers about implementing good clustering algorithms on MR
+"
+54d4a1d6db8155e6700f853b,245,2015-03-18 15:27:00,"I am just asking why you want AF.
+"
+54d4a1d6db8155e6700f853b,249,2015-03-18 15:41:00,"@ogrisel cool :) there are sooo many reviews to be done....
+"
+54d4a1d6db8155e6700f853b,251,2015-03-18 15:46:00,"btw @ogrisel if we merge one Pr every day, we will still be going at Chrismas (if no-one opens any more).
+omerzimp there is none. Pyspark is the closest, I'd think. there are also python interfaces for h2o and graphlab/dato
+"
+54d4a1d6db8155e6700f853b,253,2015-03-18 15:52:00,"np.unique(clustering.labels_)
+"
+54d4a1d6db8155e6700f853b,269,2015-03-18 20:11:00,"thanks, that's awesome! have fun!
+I'll try to figure out the test that crashes on all kind of weird combinations of python and numpy
+"
+54d4a1d6db8155e6700f853b,270,2015-03-18 20:20:00,":feelsgood:
+"
+54d4a1d6db8155e6700f853b,273,2015-03-18 20:30:00,"Well if you want, you can try to track down what are the changes in python and numpy that cause this to fail ;)
+I have to work on organizational stuff for the rest of the day, so I can't track this down much further at the moment
+"
+54d4a1d6db8155e6700f853b,286,2015-03-19 16:29:00,"I could but I have other things to do. and without looking at it, how should I say if it is doable?
+"
+54d4a1d6db8155e6700f853b,291,2015-03-20 15:54:00,"thanks, looks good and I marked for backport
+"
+54d4a1d6db8155e6700f853b,322,2015-03-23 15:09:00,"Ok you are just building a regressor. By application I mean: does this ever work better than a random forest? Also, is that what people currently use in symbolic regression? And does that work better than greedy expansions of variables in a linear model?
+@ogrisel would you still have them in the ``.utils`` module? I thought about introducing ``._utils`` and just moving (backward-compatible) all the non-public API there?
+but maybe I should rather spend my time on reviewing the LDA and GP PRs  or finishing the MLP.
+Btw, for the MLP, I'm not 100% certain on how to do nesterovs momentum. I find the paper was not very clearly written, but maybe I was just tired
+https://github.com/scikit-learn/scikit-learn/pull/4436 just passed
+"
+54d4a1d6db8155e6700f853b,344,2015-03-24 19:16:00,"well he said he understood my idea
+not that it solves his issue / replaces his
+I should reread my proposal
+It has been two years (sic!)
+"
+54d4a1d6db8155e6700f853b,345,2015-03-24 19:19:00,"I would have to re-read but it tries to address some of the points that I mentioned in my email
+:)
+"
+54d4a1d6db8155e6700f853b,350,2015-03-24 21:00:00,"no
+"
+54d4a1d6db8155e6700f853b,352,2015-03-24 21:01:00,"anyhow, I commented on melange that I think it is not a good name
+I would just call it model selection and evaluation maybe
+"
+54d4a1d6db8155e6700f853b,358,2015-03-24 21:59:00,"google doc
+@ogrisel do you think this is a good idea: https://github.com/scikit-learn/scikit-learn/issues/4445 we could ask cangermueller to do it, he didn't have much opportunity to prove his coding skills yet, I think
+heading over to facebook for free drinks now ^^
+ttyl
+"
+54d4a1d6db8155e6700f853b,369,2015-03-26 01:11:00,"tomorrow. It's 21h in NYC
+"
+54d4a1d6db8155e6700f853b,373,2015-03-26 01:27:00,"noooo don't do it ;)
+"
+54d4a1d6db8155e6700f853b,383,2015-03-26 14:53:00,"@omerzimp I wouldn't expect that.
+"
+54d4a1d6db8155e6700f853b,391,2015-03-26 18:07:00,"I'll do it, I can release afterwards.
+"
+54d4a1d6db8155e6700f853b,393,2015-03-26 18:05:00,"@ogrisel I'm back
+just out for lunch
+@ragv I'll do it in a bit
+"
+54d4a1d6db8155e6700f853b,398,2015-03-26 18:22:00,"@ogrisel what is the status now? do you want to do it or should I? Also, should we have a ""highlights"" section in whatsnew?
+maybe not
+next we should push the 0.16.0 version, trigger the buildbot, and move the docs, right?
+are you working on any of these?
+"
+54d4a1d6db8155e6700f853b,404,2015-03-26 18:42:00,"can you have a brief look at the commit https://github.com/amueller/scikit-learn/commit/dbe3cd33145677cdae9bdbcbef0c3791bf94bca3 @ogrisel ?
+"
+54d4a1d6db8155e6700f853b,408,2015-03-26 18:48:00,"- Improved error messages and better validation when using malformed input data.
+"
+54d4a1d6db8155e6700f853b,411,2015-03-26 18:55:00,"ok. I'll push it, do the docs stuff and push the docs. I think we can do this now.
+whatsnew changes will go to both branches
+"
+54d4a1d6db8155e6700f853b,426,2015-03-27 14:46:00,"good
+I just decided to stay at home, I'm too sick
+"
+54d4a1d6db8155e6700f853b,462,2015-03-29 15:58:00,"thanks
+That sounds like a good strategy
+"
+54d4a1d6db8155e6700f853b,469,2015-04-01 14:27:00,"I agree
+"
+54d4a1d6db8155e6700f853b,493,2015-04-06 14:06:00,"oh damn, I didn't think of that.
+btw, can you ping gael on gsoc?
+we need to move forward
+to get the right number of slots
+"
+54d4a1d6db8155e6700f853b,538,2015-04-14 16:10:00,"ok, fixed. I'll update the mac build thing, I guess, and then we check the sdists...
+and build the website and minimize the PNGs ... fun :)
+"
+54d4a1d6db8155e6700f853b,545,2015-04-14 19:58:00,"maybe I'll try upload_all
+oh, right
+now it works
+"
+54d4a1d6db8155e6700f853b,546,2015-04-14 20:04:00,"yeah It does work. Did you upload already?
+ok. what is twine?
+I'm just drafting the ann mail, ok?
+"
+54d4a1d6db8155e6700f853b,613,2015-05-05 21:27:00,"makes sense, but we can also not wait for the fix in pandas.
+@ogrisel so I think we should maybe just copy the DF in the ""rare"" situation that happens and throw a warning that people should use .values to avoid the copy?
+"
+54d4a1d6db8155e6700f853b,632,2015-05-15 20:55:00,"hey :)
+"
+54d4a1d6db8155e6700f853b,645,2015-05-18 22:39:00,"ok, I will. not sure I have time to go through all of it now
+"
+54d4a1d6db8155e6700f853b,648,2015-05-19 14:40:00,"not yet
+"
+54d4a1d6db8155e6700f853b,653,2015-05-19 15:35:00,"where are you going vlad? Will you be around?
+"
+54d4a1d6db8155e6700f853b,657,2015-05-19 18:22:00,"great!
+"
+54d4a1d6db8155e6700f853b,662,2015-05-20 14:41:00,"pretty sure that will fix the issue
+"
+54d4a1d6db8155e6700f853b,693,2015-05-27 20:39:00,"hehe ok
+loooool http://en.wikipedia.org/wiki/Andreas_M%C3%BCller
+"
+54d4a1d6db8155e6700f853b,695,2015-05-27 20:58:00,"lol
+I'm not that interesting
+"
+54d4a1d6db8155e6700f853b,719,2015-06-03 19:19:00,"yeah probably
+but the FeatureUnion thing didn't get as much attention, I think
+"
+54d4a1d6db8155e6700f853b,738,2015-06-04 20:30:00,"yeah sounds good
+"
+54d4a1d6db8155e6700f853b,746,2015-06-04 22:13:00,"well you could just leave them out, that could be supported.
+but still ugly
+"
+54d4a1d6db8155e6700f853b,752,2015-06-04 22:21:00,"haha
+"
+54d4a1d6db8155e6700f853b,777,2015-06-05 18:04:00,"feel free to do it
+"
+54d4a1d6db8155e6700f853b,784,2015-06-05 20:15:00,"@vene that is what I was asking
+and the slicing API with complex number that do not mean steps seems a really awkward construct
+isinstance(sparse.csr_matrix([[1, 2]]), containers.Mapping) == True. # that is all
+gitter is weird
+"
+54d4a1d6db8155e6700f853b,788,2015-06-05 20:47:00,"more or less horrifying than the complex slicing?
+"
+54d4a1d6db8155e6700f853b,790,2015-06-05 20:58:00,";)
+"
+54d4a1d6db8155e6700f853b,792,2015-06-05 21:08:00,"sorry, I didn't get that
+"
+54d4a1d6db8155e6700f853b,836,2015-06-09 15:45:00,"sounds good
+"
+54d4a1d6db8155e6700f853b,847,2015-06-10 23:09:00,"probably not.
+Maybe ping @ogrisel ?
+great!
+"
+54d4a1d6db8155e6700f853b,891,2015-06-12 19:43:00,"Either is fine
+usually we ask to squash commits before merging, so if you always amend you don't have to do that
+the PR discussions are not handled in a great way by github, no matter which method you use.
+"
+54d4a1d6db8155e6700f853b,941,2015-06-17 17:55:00,"if anyone has time, the timing on #4844 really confuses me btw.
+Slicing an euclidean distance into smaller bits makes the code run faster?!
+"
+54d4a1d6db8155e6700f853b,961,2015-06-17 18:47:00,"so if you want to square an array it is faster to do so by chunking it... that seems wrong
+"
+54d4a1d6db8155e6700f853b,962,2015-06-17 18:50:00,"for the code in #4844 chunks of size 1 are fastest
+%timeit array *= array doesn't work lol
+having the loop over samples be the fastest just seems so wrong
+"
+54d4a1d6db8155e6700f853b,974,2015-06-18 15:14:00,"I stil have not really read that :-/
+"
+54d4a1d6db8155e6700f853b,975,2015-06-18 15:16:00,"sweet
+"
+54d4a1d6db8155e6700f853b,982,2015-06-18 15:32:00,"@vene would you not agree? Well you could argue it is always more robust.
+GBM is an ensemble ;)
+"
+54d4a1d6db8155e6700f853b,989,2015-06-18 15:55:00,"actually I think you should pick an example that can currently not be made to work
+"
+54d4a1d6db8155e6700f853b,993,2015-06-18 15:59:00,"discussion: https://github.com/scikit-learn/scikit-learn/issues/4757
+"
+54d4a1d6db8155e6700f853b,1017,2015-06-22 22:50:00,"no worries vladn :)
+"
+54d4a1d6db8155e6700f853b,1021,2015-06-23 14:48:00,"@rvraghav93 commented there
+"
+54d4a1d6db8155e6700f853b,1022,2015-06-23 14:51:00,"no in cross_validation
+so there will be a new version now in model_selection
+and the old version will behave the old way
+"
+54d4a1d6db8155e6700f853b,1025,2015-06-23 14:56:00,"yeah just add ``new_cv.n_folds(X, y, labels)``
+because we don't want to instantiate the whole thing there. we usually know this anyhow
+"
+54d4a1d6db8155e6700f853b,1032,2015-06-23 15:19:00,"np. sorry for the delay. we have quite a few prs
+@vene @ogrisel do you want to review #4583 ?
+"
+54d4a1d6db8155e6700f853b,1054,2015-06-23 17:31:00,"alright :)
+"
+54d4a1d6db8155e6700f853b,1085,2015-06-30 03:06:00,"tomorrow
+"
+54d4a1d6db8155e6700f853b,1108,2015-07-01 13:54:00,"yes
+"
+54d4a1d6db8155e6700f853b,1123,2015-07-02 20:57:00,"sweet thanks
+"
+54d4a1d6db8155e6700f853b,1187,2015-07-28 20:45:00,"@michaelaye glad you worked it out :)
+"
+54d4a1d6db8155e6700f853b,1195,2015-07-29 16:47:00,"not easily ;)
+you could test it against simple cases that you worked out on paper and that are easy to check?
+though that is rarely the case with formulas involving digamma functions :-/
+Honestly I don't know. unit-testing variational inference ....
+"
+54d4a1d6db8155e6700f853b,1200,2015-07-31 16:24:00,"haha yeah have a nap ;)
+"
+54d4a1d6db8155e6700f853b,1231,2015-08-09 18:20:00,"I can try. I'm pretty busy at the moment but I'll have a look
+Does anyone know where @ogrisel is? Holidays?
+I'll check it tomorrow
+"
+54d4a1d6db8155e6700f853b,1237,2015-08-10 18:38:00,"doc/modules/mixture.rst ?
+"
+54d4a1d6db8155e6700f853b,1239,2015-08-10 18:46:00,"I know ;)
+"
+54d4a1d6db8155e6700f853b,1266,2015-08-13 17:46:00," s/examples/tests I mean
+yes
+ok
+why do you think appveyor is not testing model selection?
+"
+54d4a1d6db8155e6700f853b,1269,2015-08-13 18:04:00,"It looks ok
+"
+54d4a1d6db8155e6700f853b,1279,2015-08-14 18:02:00,"sure :)
+"
+54d4a1d6db8155e6700f853b,1314,2015-09-10 14:17:00,"yeah but that should be a quick change that either of us can do if it has two reviews
+do you have any opinion on adding PR links to whatsnew?
+"
+54d4a1d6db8155e6700f853b,1329,2015-09-11 15:18:00,"yeah
+this is also new to me: https://ci.appveyor.com/project/sklearn-ci/scikit-learn/build/1.0.2090/job/toaww87ohll9pxv9
+wait that is the same
+sorry
+"
+54d4a1d6db8155e6700f853b,1426,2015-10-14 18:11:00,"http://scikit-learn.org/dev/auto_examples/model_selection/plot_roc.html is not rendered
+meh
+"
+54d4a1d6db8155e6700f853b,1441,2015-10-15 14:39:00,"@ogrisel are you planning on uploading the website for the rc? No, right?
+I think it would be nice to fix https://github.com/scikit-learn/scikit-learn/issues/5324
+should I go for that?
+oh right there is https://github.com/scikit-learn/scikit-learn/pull/5402
+https://github.com/scikit-learn/sklearn-docbuilder/pull/6
+"
+54d4a1d6db8155e6700f853b,1448,2015-10-15 17:05:00,"I agree.
+so the plotting examples are ""not that critical"" for the release. Though it would be nice to fix them
+yeah but not for the rc.
+I thought you wanted to do an RC/beta today? Or the full release?
+"
+54d4a1d6db8155e6700f853b,1503,2015-10-21 09:15:00,"thanks @glouppe
+"
+54d4a1d6db8155e6700f853b,1516,2015-10-21 11:27:00,"so it is not our IP
+"
+54d4a1d6db8155e6700f853b,1530,2015-10-21 15:40:00,"@vighneshbirodkar there doesn't necessarily be a loop
+"
+54d4a1d6db8155e6700f853b,1532,2015-10-21 15:47:00,"@vighneshbirodkar  or there could be a closed form solution
+@ogrisel yeah I think it was a fluke
+"
+54d4a1d6db8155e6700f853b,1537,2015-10-21 16:55:00,"why?
+right.
+"
+54d4a1d6db8155e6700f853b,1554,2015-10-22 19:32:00,"indeed
+lol I don't think I wrote a line of code this week
+"
+54d4a1d6db8155e6700f853b,1581,2015-10-29 23:43:00,":D
+"
+54d4a1d6db8155e6700f853b,1590,2015-11-02 01:01:00,"damn, I confused #5534 and #5164
+you were right, #5164 should have been closed
+"
+54d4a1d6db8155e6700f853b,1594,2015-11-02 03:57:00,"yeah you need numpy 1.10
+I think
+"
+54d4a1d6db8155e6700f853b,1746,2015-11-21 01:14:00,"@AAnoosheh you can use SVM(probabilities=True) which will use Platt's method for calibration of the decision function. Or you can use CallibratedClassifierCV to use Isotonic REgression to calibrate an SVM
+you can use Nystrom together with LogisticRegression
+just set n_components in Nystroem to n_samples and it will give you exact kernel logistic regression
+make_pipe(Nystroem(n_components=n_samples), LogisticRegression())
+does kernel logistic regression
+platt's method in libsvm does 5-fold cross-validation, so it is 5 times as expensive at one SVM.
+I don't even know how one would implement KLR in any efficient way, as the dual is dense
+I guess you could do SMO or a similar coordinate descent solver?
+anyhow, I would expect SVM+Platt do be much faster than KLR, unless you set the parameters such that all samples are support vectors
+"
+54d4a1d6db8155e6700f853b,1858,2015-12-10 16:35:00,"that is the same as PR ;)
+?
+"
+54d4a1d6db8155e6700f853b,1864,2015-12-10 17:33:00,"hehe ok
+"
+54d4a1d6db8155e6700f853b,1888,2015-12-17 17:20:00,"and no support for custom architectures, i.e. you can specify a list with the number of nodes in each hidden layer, but they will all have the same activation function and there are no skip connections etc
+yeah we're not gonna expand beyond the model that is there. we want to make the mlp as good as possible, so we will add dropout, and if there is a consensus for a better of-the-shelf optimizer than adam, I think we'll be happy to add that, too
+there was a GSOC last year, but it did't finish yet :-/
+"
+54d4a1d6db8155e6700f853b,1890,2015-12-17 17:22:00,"http://benanne.github.io/2015/03/17/plankton.html
+the GMM you mean?
+"
+54d4a1d6db8155e6700f853b,1893,2015-12-17 17:29:00,"machine learning in scikit-learn
+err machine learning with python
+"
+54d4a1d6db8155e6700f853b,1940,2016-01-19 17:49:00,"Thanks :)
+"
+54d4a1d6db8155e6700f853b,2007,2016-02-09 21:07:00,"Depending on how you parametrize, it's pretty easy to write
+if you assume homogeneous samples, you can just do a slight modification of kfold
+if you want to use a time index, it becomes way trickier (as we need to get a time series object in)
+"
+54d4a1d6db8155e6700f853b,2013,2016-02-09 21:52:00,"that is what I mean
+"
+54d4a1d6db8155e6700f853b,2074,2016-02-18 15:28:00,"just email support@continuum.io
+"
+54d4a1d6db8155e6700f853b,2145,2016-02-29 21:19:00,"was the deadline already? Yes, there is a plan to submit a proposal
+"
+54d4a1d6db8155e6700f853b,2522,2016-06-17 14:44:00,"@lesshaste is it? what is it used for?
+oh wait, is that the paper that describes the regularization used in XGBoost?
+"
+54d4a1d6db8155e6700f853b,2608,2016-07-16 14:46:00,"Ok pasted the above message here: https://github.com/scikit-learn/scikit-learn/wiki/Scipy-2016-Sprint-instructions
+"
+54d4a1d6db8155e6700f853b,2617,2016-07-16 16:33:00,"@btabibian hey. Any contributions are always welcome :)
+the ones that are tagged sprint are very easy ones. If there is something that strikes your fancy, let me know!
+(I mean other than the sprint ones)
+"
+54d4a1d6db8155e6700f853b,2678,2016-07-28 15:14:00,"Need to check with @ogrisel
+@tguillemot can you try pushing again to one of the PRs?
+can you try again?
+"
+54d4a1d6db8155e6700f853b,2826,2016-09-13 18:36:00,"i'll try to trigger the conda builder
+"
+54d4a1d6db8155e6700f853b,2835,2016-09-13 18:42:00,";)
+"
+54d4a1d6db8155e6700f853b,2836,2016-09-13 18:47:00,"ok
+"
+54d4a1d6db8155e6700f853b,2839,2016-09-13 18:49:00,"on python three
+travis is failing
+like our normal travis https://travis-ci.org/scikit-learn/scikit-learn/builds/159677032
+unicode stuff?
+that's the built in the 0.18.X branch?
+"
+54d4a1d6db8155e6700f853b,2858,2016-09-14 19:47:00,"cool
+sounds good
+"
+54d4a1d6db8155e6700f853b,2977,2016-10-25 16:59:00,"either way. first find a test?
+"
+54d4a1d6db8155e6700f853b,2978,2016-10-25 17:30:00,"whether the kernel knows? Well if X==Y it's probably fit
+but no, there is no flag or anything. The kernel shoudn't know
+why do you want that?
+use shogun if you want to do mkl ;)
+"
+54d4a1d6db8155e6700f853b,2992,2016-10-27 15:52:00,"ok cool
+"
+54d4a1d6db8155e6700f853b,3008,2016-10-31 15:41:00,"sure
+"
+54d4a1d6db8155e6700f853b,3076,2016-12-13 15:46:00,"yes
+"
+54d4a1d6db8155e6700f853b,3079,2016-12-13 16:01:00,"yes
+"
+54d4a1d6db8155e6700f853b,3081,2016-12-13 16:16:00,"can't say without looking at your script
+"
+54d4a1d6db8155e6700f853b,3122,2017-01-16 17:06:00,"@pramitchoudhary haven't read that one. I like Max Kuhn's book though
+"
+54d4a1d6db8155e6700f853b,3155,2017-02-24 21:27:00,"yes that makes sense. I haven't checked the code but sounds plausible
+the f_regression and f_classif docs are pretty bad imho
+I have not heard of SIS but that means nothing
+cool :)
+"
+54d4a1d6db8155e6700f853b,3180,2017-03-04 00:19:00,"thanks :)
+"
+54d4a1d6db8155e6700f853b,3181,2017-03-04 00:58:00,"thanks, that would be great :)
+it will mostly be ""easy fix"" issues, I think
+I tagged a bunch of stuff ""sprint""
+as you might have seen on the right here lol
+"
+54d4a1d6db8155e6700f853b,3183,2017-03-04 01:07:00,"2013 till now you are still in the top 20 ;) I'm not sure any other timeframe makes us look more diverse
+matplotlib might need contributors even more, somehow it's not as ""cool"" as sklearn I fear. I wish I could contribute more there, but I can't even keep up with sklearn
+"
+54d4a1d6db8155e6700f853b,3366,2017-06-07 19:27:00,"yeah
+I wrote this ;)
+make it ovr
+then it'll have 4 elements
+I'm on 0.19-dev
+sorry about that
+ok starbucks is closing and I have to write a keynote
+good luck
+"
+54d4a1d6db8155e6700f853b,3393,2017-06-13 09:50:00,"that's not the same as accuracy. and SVC is not probabilistic. And was it in the original training set? self-learning is for semi-supervised learning
+I think SVC uses sample_weight that you can increase
+hm...
+"
+54d4a1d6db8155e6700f853b,3424,2017-06-29 22:48:00,"great :)
+"
+54d4a1d6db8155e6700f853b,3470,2017-07-12 16:02:00,"hi
+sure
+"
+54d4a1d6db8155e6700f853b,3471,2017-07-12 16:02:00,"@ogrisel so branch now and backport TSNE once it's merged?
+"
+54d4a1d6db8155e6700f853b,3479,2017-07-13 16:29:00,"""easy""
+;)
+yeah true
+"
+54d4a1d6db8155e6700f853b,3485,2017-07-13 18:52:00,"@ogrisel https://circleci.com/gh/scikit-learn/scikit-learn/12068?utm_campaign=build-failed&utm_medium=email&utm_source=notification
+ugh
+"
+54d4a1d6db8155e6700f853b,3565,2017-09-05 20:14:00,"@lesshaste feel free to pick it up ;)
+it makes sense if you can define it? ;)
+there are two standard definitions
+I'm not sure what's currently to do
+"
+54d4a1d6db8155e6700f853b,3569,2017-09-05 20:19:00,"What does it mean for a feature to contribute to the auc? how much will AUC change if you leave it out? That is just one step of sequential forward selection
+"
+54d4a1d6db8155e6700f853b,3648,2017-11-22 17:22:00,"yes
+"
+54d4a1d6db8155e6700f853b,3670,2017-12-01 18:02:00,"sorry I gotta run, I'll think about it
+feature additions are usually pretty long-term
+"
+54d4a1d6db8155e6700f853b,3677,2017-12-04 20:16:00,"huh
+these are all ""old"" packages. I guess conda-forge only uses old packages?
+that's what I though, but I was just told in the conda issue tracker that I need to discard any old environment
+or at least not try to upgrade anything or compile anything
+yeah, true
+that sounds possibly unrelated ;)
+"
+54d4a1d6db8155e6700f853b,3695,2017-12-07 23:20:00,"why do you need to sum up the y_i and 1 - y_i cases? in 4.19 we are only looking at the probability of gi
+ah right one of them is always zero... hm yeah could be the different encoding of y_i
+did they use p(x, theta) as the top of 4.18 or the bottom of 4.18? I guess if they are consistent, they use the top, but we might use the bottom one
+but that just replaces classes 0 and 1 I guess
+Eh, I should be grading
+"
+54d4a1d6db8155e6700f853b,3717,2017-12-12 20:36:00,"lol
+"
+54d4a1d6db8155e6700f853b,3718,2017-12-12 20:43:00,"?
+"
+54d4a1d6db8155e6700f853b,3720,2017-12-12 20:48:00,"same applies, I guess?
+@gxyd how do you run pytest?
+"
+54d4a1d6db8155e6700f853b,3977,2018-07-14 14:10:00,"@mirca that's probably a better question for the mailing list. what's the application? robust regression? How does it behave differently from huber in practice?
+"
+54d4a1d6db8155e6700f853b,3978,2018-07-14 14:36:00,":)
+"
+54d4a1d6db8155e6700f853b,3996,2018-07-14 19:57:00,"make test-doc
+or pytest file
+"
+54d4a1d6db8155e6700f853b,4039,2018-07-16 15:07:00,"ok most PRs that are tagged either are small and have +1 or are bug fixes or blockers
+ok apart from KMedoids I think tagged PRs are relatively reasonable right now
+anyone have oppinions on KMedoids?
+"
+54d4a1d6db8155e6700f853b,4047,2018-07-16 17:34:00,"I was trying to press the green button on #9616 but got many unicorns
+"
+54d4a1d6db8155e6700f853b,4056,2018-07-16 19:54:00,"ok
+"
+54d4a1d6db8155e6700f853b,4079,2018-07-17 15:18:00,"I don't have a contact. I had talked to them in the past, sometimes it works. You're in the same time zone as them @GaelVaroquaux ;)
+btw I think https://github.com/scikit-learn/scikit-learn/pull/11570 should basically be good t ogo
+"
+54d4a1d6db8155e6700f853b,4095,2018-07-17 17:01:00,"also changing the mode of one-hot-encoder to sparse=False in the ""new mode""
+"
+54d4a1d6db8155e6700f853b,4162,2018-08-01 09:28:00,"you can use ""points"" instead of ""bt.data""
+yeah here it's not. I opened https://github.com/scikit-learn/scikit-learn/issues/11728
+but you already have the numpy array, it's just points
+``points`` that is
+together with like 500 other people or something ;)
+I'm the person that opened the most issues, I think. Dubious honor.
+"
+54d4a1d6db8155e6700f853b,4164,2018-08-01 09:33:00,"I'm not ""the author"" by any means
+I guess
+"
+54d4a1d6db8155e6700f853b,4212,2018-09-18 12:21:00,"I think it's enough if there's changes around the line for it to create a conflict
+"
+54d4a1d6db8155e6700f853b,4222,2018-09-25 15:04:00,"@h4k1m0u open an issue or ask the mailing list maybe?
+"
+54d4a1d6db8155e6700f853b,4225,2018-09-25 19:44:00,"yeah that should work. at that point it's easy enough to implement it yourself as well though ;)
+"
+54d4a1d6db8155e6700f853b,4526,2019-08-05 18:54:00,"how did you install numpy and scipy? if you did custom compilation that might be a reason. if you install binaries they will use mkl or openblas, either of which should be quite fast
+"
+54d4a1d6db8155e6700f853b,4530,2019-08-06 14:36:00,"what did?
+ah
+"
+54d4a1d6db8155e6700f853b,4608,2019-11-02 16:22:00,"ah :)
+"
+54d4a1d6db8155e6700f853b,4643,2020-01-06 16:16:00,"that means nothing lol
+"
+54d4a1d6db8155e6700f853b,4652,2020-01-07 22:37:00,"oh that was you! sorry I didn't connect your handle to you in-person. I've been in grant-writing mode and just procrastinating ;)
+"
+54d4a1d6db8155e6700f853b,4802,2020-05-19 19:33:00,"lol
+"
+54d4a1d6db8155e6700f853b,4898,2020-07-11 13:39:00,"hm you didn't get a warning? You should have gotten a warning, I think :-/
+"
+54d4a1d6db8155e6700f853b,4901,2020-07-11 13:45:00,"then I'd suggest a regression model, I think
+"
+54d4a1d6db8155e6700f853b,4902,2020-07-11 13:51:00,"yes that's the default, and that's what the mutual_info_regression uses
+and you can probably use that as a starting point and only have to modify it slightly
+"
+54d4a1d6db8155e6700f853b,4903,2020-07-11 13:54:00,"thanks!
+"
+54d4a1d6db8155e6700f853b,4917,2020-07-16 15:02:00,"well np.empty will create a python object which will be memory managed
+This conversation probably further emphasizes the above point of cython being less obvious ;)
+"
+541a528b163965c9bc2053de,13,2015-02-06 11:18:00,"ok
+yeah
+the slinear side effects?
+I saw it broke the calibration PR
+too many open tabs, my firefox is so slow at times...
+"
+541a528b163965c9bc2053de,14,2015-02-06 11:25:00,"that's bad
+"
+541a528b163965c9bc2053de,62,2015-02-24 22:47:00,":)
+"
+541a528b163965c9bc2053de,63,2015-02-24 22:48:00,"Even if we don't fix them all prior to friday (the first beta) it's fine. As long as we only include fixes in the 0.16.X branch once the beta is cut.
+thanks
+"
+541a528b163965c9bc2053de,99,2015-03-02 14:59:00,"yes
+"
+541a528b163965c9bc2053de,114,2015-03-02 21:22:00,"indeed
+"
+541a528b163965c9bc2053de,119,2015-03-02 22:48:00,"yes
+"
+541a528b163965c9bc2053de,121,2015-03-02 23:00:00,"yes we need other reviewers for those.
+good night
+"
+541a528b163965c9bc2053de,136,2015-03-05 20:42:00,"ok
+"
+541a528b163965c9bc2053de,139,2015-03-05 20:41:00,"maybe not
+it depends how stable we find the beta
+I would like to merge this https://github.com/scikit-learn/scikit-learn/pull/4028 before cutting the beta branch
+"
+541a528b163965c9bc2053de,161,2015-03-06 16:31:00,"Let's create the PR ourselves from his branch :)
+Yes better create the PR from his branch to get travis to run it.
+actually it's not possible to create the PR directly from his branch as we need to get rid of the past commits:
+https://github.com/scikit-learn/scikit-learn/compare/master...mjbommar:issue-4297-infinite-isotonic
+that are redundant with your own PR
+I let you do the cherry-pick
+"
+541a528b163965c9bc2053de,169,2015-03-06 17:52:00,"yes
+"
+541a528b163965c9bc2053de,184,2015-03-07 17:51:00,"https://ci.appveyor.com/project/sklearn-ci/scikit-learn/
+"
+541a528b163965c9bc2053de,226,2015-03-18 14:56:00,"Also if you still want to ask questions about the paper on a discussion forum, you should ask specific questions, otherwise you probably won't get any interesting answer.
+"
+541a528b163965c9bc2053de,229,2015-03-18 15:08:00,"but hyperparameters such as ""preference"" in the scikit-learn implementation of AP will impact the clustering outcome
+"
+541a528b163965c9bc2053de,233,2015-03-18 15:14:00,"But it's probably harder to use correctly.
+@amueller alright.
+"
+541a528b163965c9bc2053de,239,2015-03-18 15:24:00,"k=10 for KMeans is as automatic as preference=median for AP
+"
+541a528b163965c9bc2053de,240,2015-03-18 15:24:00,"it's not automatic, it's lying to you
+"
+541a528b163965c9bc2053de,241,2015-03-18 15:24:00,"exactly
+"
+541a528b163965c9bc2053de,249,2015-03-18 15:41:00,"yes
+"
+541a528b163965c9bc2053de,309,2015-03-23 08:37:00,"will do.
+"
+541a528b163965c9bc2053de,313,2015-03-23 13:02:00,"but https://github.com/scikit-learn/scikit-learn/pull/4294 should definitely be part of the GSoC
+just https://github.com/scikit-learn/scikit-learn/wiki/GSoC-2015-Proposal:-Multiple-metric-support-for-CV-and-grid_search-and-other-general-improvements
+"
+541a528b163965c9bc2053de,348,2015-03-24 20:50:00,"I think it's better to put it on melange early so that we can comment on it and read each others comments
+you can still edit it afterwards
+"
+541a528b163965c9bc2053de,393,2015-03-26 18:02:00,"not there? let me do it. Then I will change the version number and start fixing the links in the doc.
+"
+541a528b163965c9bc2053de,400,2015-03-26 18:31:00,"if you feel like it
+"
+541a528b163965c9bc2053de,403,2015-03-26 19:00:00,"thanks
+"
+541a528b163965c9bc2053de,409,2015-03-26 18:49:00,":)
+"
+541a528b163965c9bc2053de,410,2015-03-26 18:50:00,"as you wish.
+I think many users are interested in DBSCAN
+@ragv I think your proposal is fine
+Looks great to me
+"
+541a528b163965c9bc2053de,427,2015-03-27 14:54:00,"I think I can do it all.
+"
+541a528b163965c9bc2053de,431,2015-03-27 15:06:00,"ok great
+"
+541a528b163965c9bc2053de,434,2015-03-27 15:18:00,"ok great
+"
+541a528b163965c9bc2053de,436,2015-03-27 16:23:00,":beers: :
+"
+541a528b163965c9bc2053de,438,2015-03-27 16:34:00,"you need to find another op :)
+which I think I used to be but cannot find my account info anymore
+there might be others
+maybe @NelleV and @amueller are op
+ops
+not 100% sure though
+"
+541a528b163965c9bc2053de,440,2015-03-27 16:39:00,"`pip install -U scikit-learn` would do
+@ragv yes it's ""her""
+no problem
+"
+541a528b163965c9bc2053de,443,2015-03-27 20:34:00,"yes
+which topics do you want to cover?
+"
+541a528b163965c9bc2053de,447,2015-03-27 20:46:00,"I forgot about calibration, I can do that indeed
+no good slide for MLPs but would indeed say a couple of words about that
+I can review the logistic stuff
+"
+541a528b163965c9bc2053de,461,2015-03-29 15:53:00,"apparently yes, this is a constraint of their platform apparently
+"
+541a528b163965c9bc2053de,532,2015-04-14 15:49:00,"ok
+"
+541a528b163965c9bc2053de,537,2015-04-14 16:06:00,":)
+"
+541a528b163965c9bc2053de,541,2015-04-14 17:03:00,"yes I just did that
+I will send you the password to the github account to log in and cancel / restart builds
+in your mail box
+when unqueuing stuff, it better to first unqueue (cancel button) the from the most recent to the most ancient queued job
+"
+541a528b163965c9bc2053de,563,2015-04-24 17:17:00,"Please edit the stackoverlow report instead.
+Also quoting is done with backticks, not forward ticks :)
+"
+541a528b163965c9bc2053de,771,2015-06-05 13:05:00,"thanks :)
+"
+541a528b163965c9bc2053de,855,2015-06-11 11:33:00,"try https://s3.amazonaws.com/archive.travis-ci.org/jobs/66302262/log.txt
+if it does not work, I can paste-bin it for you
+"
+541a528b163965c9bc2053de,1322,2015-09-11 14:14:00,"indeed
+git log sklearn/tree/_tree.c
+I will recythonize it from the current _tree.pyx
+running the tests locally to check that I did no break anything.
+yeah
+"
+541a528b163965c9bc2053de,1328,2015-09-11 15:09:00,"#5245 should be good to go (it's just appveyor that is slow as a dog today)
+"
+541a528b163965c9bc2053de,1334,2015-09-11 15:27:00,"#5254
+"
+541a528b163965c9bc2053de,1452,2015-10-15 17:24:00,"ok
+"
+541a528b163965c9bc2053de,1498,2015-10-21 08:18:00,"@arthurmensch needs to rebase it first
+I mean #5358
+"
+541a528b163965c9bc2053de,1518,2015-10-21 11:49:00,"I still need to finish that one.
+"
+541a528b163965c9bc2053de,1548,2015-10-22 10:29:00,"it seems fine now
+"
+541a528b163965c9bc2053de,2477,2016-06-08 09:22:00,"It's only in the master branch of joblib so far. It will be part of the next release.
+If someone starts implementing tools to save sklearn models to / load from the spark 2 serialization format, please reference the repo in https://github.com/scikit-learn/scikit-learn/blob/master/doc/related_projects.rst#interoperability-and-framework-enhancements
+This will require a good python parquet implementation. The most promising implementation should be the official https://github.com/apache/parquet-cpp but the python bindings are not ready yet but progress  is happening, see eg: http://wesmckinney.com/blog/pandas-and-apache-arrow/
+"
+541a528b163965c9bc2053de,2827,2016-09-13 18:17:00,"then you don't know theory ;)
+I don't have any particular recommendation in mind but if you ask that question to google you will probably get answers
+"
+541a528b163965c9bc2053de,2843,2016-09-13 19:30:00,"Maybe @ jakirkham has an idea.
+hum that did not work
+"
+541a528b163965c9bc2053de,2859,2016-09-14 19:48:00,"great
+"
+541a528b163965c9bc2053de,3466,2017-07-12 10:02:00,"Yes.
+"
+541a528b163965c9bc2053de,3468,2017-07-12 10:10:00,"yes, that's the safest thing to do.
+"
+541a528b163965c9bc2053de,3502,2017-07-18 17:19:00,"an pickle the full pipeline
+"
+541a528b163965c9bc2053de,3565,2017-09-05 07:55:00,"yes, whenever there is `array-like` as the type for X in fit and predict, numerical dataframes should work.
+"
+541a528b163965c9bc2053de,3725,2017-12-14 08:50:00,"The best way to contribute is to actually use scikit-learn for a project of yours to identify which part needs improving from your users point of view.
+"
+541a528b163965c9bc2053de,4263,2018-11-07 09:49:00,"http://8.8.8.8
+It should trigger sign-in pages on open wifi networks.
+"
+541a528b163965c9bc2053de,4435,2019-06-05 09:47:00,"PCA is SVD on centered data.
+"
+541a528b163965c9bc2053de,4480,2019-06-21 17:26:00,"Histogram of Oriented Gradients
+yes
+"
+5474d9eadb8155e6700d8178,38,2015-02-15 16:33:00,"Ok! thanks!
+"
+5474d9eadb8155e6700d8178,52,2015-02-24 14:07:00,"Thanks! :)
+"
+5474d9eadb8155e6700d8178,109,2015-03-02 20:39:00,"Ahh thanks! :)
+"
+5474d9eadb8155e6700d8178,116,2015-03-02 22:08:00,"Sure :)
+"
+5474d9eadb8155e6700d8178,172,2015-03-06 18:43:00,"okay no problem :)
+"
+5474d9eadb8155e6700d8178,191,2015-03-08 21:43:00,"Yes `SpectralEmbedding().fit([[1, 2]])` doesn't work... Ok I'll fix it and add tests for that...
+"
+5474d9eadb8155e6700d8178,208,2015-03-10 21:22:00,"Ah... okay! Sorry for the noise!
+"
+5474d9eadb8155e6700d8178,363,2015-03-25 21:18:00,"Ah... We'll then just wait for it to get better ;)
+"
+5474d9eadb8155e6700d8178,404,2015-03-26 18:43:00,"@ogrisel Thanks I'll just remove ooc... pl let me know if you feel I should do any more modifications to my prop :)
+"
+5474d9eadb8155e6700d8178,416,2015-03-26 19:49:00,"@amueller
+^
+Sorry wrong key presses :worried:
+"
+5474d9eadb8155e6700d8178,570,2015-04-27 19:31:00,"Thanks a lot Vinayak :)
+"
+52f10c205e986b0712ef525f,203,2015-03-10 21:02:00,"kinda, if they get a new pull request than yes
+er, sorry
+if they get a new commit
+"
+52f10c205e986b0712ef525f,211,2015-03-10 22:01:00,"(I have nothing to do with this repository but I'm a big fan of circle-ci)
+"
+5385f2fe048862e761fa2d40,228,2015-03-18 14:59:00,"But working on a subset of the data is meaningless
+I can't even work on 10,000 nodes
+I asked our ML guy. Working with 10,000 data points is meaningless in my context
+nodes = data points in the matrix
+But I still have to optimize the number of clusters
+As far as I understand AF figures that out
+"
+5385f2fe048862e761fa2d40,238,2015-03-18 15:23:00,"Because I like automatic things :P
+"
+5385f2fe048862e761fa2d40,245,2015-03-18 15:27:00,"even if you run it on multiple nodes?
+"
+5385f2fe048862e761fa2d40,248,2015-03-18 15:40:00,"I know spark
+I haven't written anything that uses it yet
+"
+5385f2fe048862e761fa2d40,280,2015-03-19 13:13:00,"That's exactly what I want but I want to rate them in green shades, yellow shades and red shades according to the number of data points in a cluster
+I don't know how to get the number of data points in a cluster
+I need the number of datapoints in a cluster
+Yep that works
+why does it work
+"
+5385f2fe048862e761fa2d40,526,2015-04-13 15:47:00,"Feel free to close it
+"
+54c084dbdb8155e6700eed4c,274,2015-03-18 20:38:00,"ill try to do that on the linux box tonight.
+"
+54c084dbdb8155e6700eed4c,292,2015-03-20 15:57:00,"excellent
+"
+54c084dbdb8155e6700eed4c,1584,2015-11-02 00:37:00,"np
+"
+551061f615522ed4b3ddb1c0,418,2015-03-26 19:53:00,"Got it.
+"
+550f53e215522ed4b3dda5f6,433,2015-03-27 15:11:00,"Yeah, I am on it.
+"
+550f53e215522ed4b3dda5f6,726,2015-06-03 21:49:00,"Thanks, @amueller . The text in the draft is kind of vague, but I think you could get ideas just looking at equations.
+Hope you don't mind.
+"
+550f53e215522ed4b3dda5f6,874,2015-06-11 15:31:00,"Gotcha.
+"
+550f53e215522ed4b3dda5f6,949,2015-06-17 18:02:00,"I mean the code of master branch
+ok.
+"
+551084ad15522ed4b3ddb3b0,587,2015-04-29 18:48:00,"another option would be to take a single X, and a ""is_categorical"" variable that specifies which columns are categorical
+"
+53135b495e986b0712efc453,629,2015-05-15 12:46:00,"haha :D I'll make it easier by raising a PR ;) But incase you want to comment to the wiki pages... You could just edit it and add a comment ""(@vene: This should be removed)"" etc... at the particular place and make it bold... I'll take note of the same :)
+"
+53135b495e986b0712efc453,692,2015-05-27 20:31:00,":beers:
+"
+53135b495e986b0712efc453,776,2015-06-05 18:01:00,"Okay :)
+"
+53135b495e986b0712efc453,858,2015-06-11 11:57:00,"#4826 :)
+Please do take a look if you are able to find time :)
+"
+53135b495e986b0712efc453,859,2015-06-11 12:03:00,"Ahhh... Thanks!!
+"
+53135b495e986b0712efc453,912,2015-06-15 00:29:00,"Thanks!!
+"
+53135b495e986b0712efc453,914,2015-06-15 00:45:00,"Sure! :)
+"
+53135b495e986b0712efc453,928,2015-06-16 21:39:00,"Oh! TIL ^ :P
+"
+53135b495e986b0712efc453,947,2015-06-17 18:01:00,"ah :P
+"
+53135b495e986b0712efc453,954,2015-06-17 18:13:00,"but u can do so only for 10 minutes...
+"
+53135b495e986b0712efc453,972,2015-06-18 15:11:00,"Oh :laughing:  thanks!!
+"
+53135b495e986b0712efc453,975,2015-06-18 15:17:00,"Okay! I'll remove that reference and make that description simpler :)
+Does the example seem okay?
+"
+53135b495e986b0712efc453,978,2015-06-18 15:20:00,"Please take your time!!
+"
+53135b495e986b0712efc453,1011,2015-06-22 18:23:00,"Sure please take ur time :) I'll be done with all the tests by then :smile:
+"
+53135b495e986b0712efc453,1012,2015-06-22 18:44:00,"Thanks a lot! :)
+"
+53135b495e986b0712efc453,1024,2015-06-23 14:54:00,"yes!
+"
+53135b495e986b0712efc453,1047,2015-06-23 17:11:00,"yes!! That seems like a nice solution to me :)
+"
+53135b495e986b0712efc453,1048,2015-06-23 17:11:00,"and about that helper I think we can do without it... its used only in one place... I'll remove that
+IMHO check_cv is used only internally right? we will be able to do  ``` for tr, te in check_cv(...):    ... ``` if we return iterable...
+"
+53135b495e986b0712efc453,1053,2015-06-23 17:30:00,"yes :)
+"
+53135b495e986b0712efc453,1060,2015-06-24 03:09:00,"OK! thanks!
+"
+53135b495e986b0712efc453,1086,2015-06-30 03:07:00,"Sure ;) I forgot its 11PM there :P
+Just one more question!
+Can I finish the documentation / examples too?
+without waiting for the review?
+"
+53135b495e986b0712efc453,1104,2015-07-01 05:13:00,"Ah okay then :)
+"
+53135b495e986b0712efc453,1105,2015-07-01 05:17:00,"Okay!! I'll leave it as such :) Good night!!
+"
+53135b495e986b0712efc453,1114,2015-07-02 14:51:00,"too awsome!
+"
+53135b495e986b0712efc453,1207,2015-08-02 23:59:00,"okay! Thanks :)
+"
+53135b495e986b0712efc453,1247,2015-08-11 18:51:00,":)
+"
+53135b495e986b0712efc453,1277,2015-08-14 18:10:00,"ohh okay! Now its fixed :)
+"
+53135b495e986b0712efc453,1284,2015-08-14 19:53:00,"yea :)
+"
+53135b495e986b0712efc453,1351,2015-09-13 16:04:00,"Yea :grin:
+"
+53135b495e986b0712efc453,1353,2015-09-13 16:10:00,"Both :p
+Haha okay :)
+"
+53135b495e986b0712efc453,1355,2015-09-13 16:34:00,"^_^
+"
+53135b495e986b0712efc453,1376,2015-09-26 20:56:00,"Okay!! See you there ;)
+"
+53135b495e986b0712efc453,1388,2015-10-06 20:01:00,"What kind of issue?
+"
+53135b495e986b0712efc453,1432,2015-10-15 12:58:00,"Wait Andy posted one more broken link right? - [scikit-learn.org/dev/auto_examples/preprocessing/plot_function_transformer.html](scikit-learn.org/dev/auto_examples/preprocessing/plot_function_transformer.html) Unless you are more than 20% done with the doc generation I'll generate the list and let you know shortly :) I need to generate the docs with plots for the one of my PRs anyway...so I could save you the trouble... If you want please take over the http://scikit-learn.org/dev/auto_examples/model_selection/plot_roc.html too... that seems to be due to a problem in importing (`from scipy import stats` seems to fail(?))
+Is there a way to work with 2 branches at once? :P
+Okay!! thanks :)
+"
+53135b495e986b0712efc453,1438,2015-10-15 14:14:00,"I'll take the last 2 if no one else is working on it?
+"
+53135b495e986b0712efc453,1480,2015-10-20 11:47:00,":P :P
+"
+53135b495e986b0712efc453,1481,2015-10-20 12:28:00,
+53135b495e986b0712efc453,1693,2015-11-19 12:28:00,"Hi @lesshaste :)
+Thanks :D and no I'd be happy TODO :) You can actually raise an issue and add your suggestions of features which you feel are worthy of adding and why you think they should be added... That way you will get a larger participation of people  in discussions... :)
+"
+53135b495e986b0712efc453,1709,2015-11-19 15:10:00,"@amueller Also #5834
+And #5703... (sorry :P)
+"
+53135b495e986b0712efc453,1772,2015-11-23 15:26:00,":)
+"
+53135b495e986b0712efc453,1863,2015-12-10 17:28:00,"Ah no why?
+"
+53135b495e986b0712efc453,1876,2015-12-11 17:09:00,"Ahh!! That explains a lot! Thanks :)
+"
+53135b495e986b0712efc453,1878,2015-12-11 17:18:00,"Yes it is.. It will be user specified so... Now I understand this better!
+"
+53135b495e986b0712efc453,1924,2016-01-12 22:20:00,"And pass score-like objects??
+"
+53135b495e986b0712efc453,1949,2016-01-19 19:12:00,"Thanks :D
+"
+53135b495e986b0712efc453,2041,2016-02-12 17:50:00,"@amueller I'm free for the evening (and weekend). I am starting the work on multiple metric grid search... (I have some notes on how you had wanted it implemented) I'll ping you and joel if I get into trouble ;)
+Yes I spoke to him too out of github ;)
+Hehe :P Have a nice time ;)
+"
+53135b495e986b0712efc453,2052,2016-02-16 09:29:00,"I tried to test my implementation of MCAR and NMAR (missingness correlated with class 1) on the covtype dataset and looks like the implementation in #5974 seems to perform slightly better than or as good as imputation for NMAR cases, which was expected and really bad performance for the MCAR case, which is also expected as it tries to extract information out of utter randomness.
+Ah hmm
+Okay thanks for the link
+"
+53135b495e986b0712efc453,2055,2016-02-16 09:38:00,"yeapp
+"
+53135b495e986b0712efc453,2057,2016-02-16 09:42:00,":)
+thanks for the links!
+"
+53135b495e986b0712efc453,2152,2016-03-01 07:30:00,"Did you register sklearn.ml too? :P
+"
+53135b495e986b0712efc453,2192,2016-03-11 14:30:00,"Yes that is a valid point.
+The best way to handle is to consider missing to be a separate category.
+"
+53135b495e986b0712efc453,2194,2016-03-11 14:29:00,":D
+"
+53135b495e986b0712efc453,2661,2016-07-25 14:32:00,"I can change the title if it will help :P
+But no... Just one major thing to do... Switch to threading.
+"
+54e07d6515522ed4b3dc0858,721,2015-06-03 19:31:00,"good point... but at least you know it exists
+"
+54e07d6515522ed4b3dc0858,755,2015-06-04 22:33:00,"this is a mix of grouping by row and grouping by column
+"
+54e07d6515522ed4b3dc0858,757,2015-06-04 22:38:00,"correct
+@xuewei4d maybe in `__init__`?
+I can't find any examples
+"
+54e07d6515522ed4b3dc0858,778,2015-06-05 20:59:00,"That really should work
+"
+54e07d6515522ed4b3dc0858,805,2015-06-06 18:56:00,"yes but then it's no longer a **dict** vectorizer :)
+"
+54e07d6515522ed4b3dc0858,906,2015-06-14 21:06:00,"good point, but wasn't IRC kind of dead?
+"
+54e07d6515522ed4b3dc0858,942,2015-06-17 17:57:00,"exactly
+or LeaveOneLabelOut
+"
+54e07d6515522ed4b3dc0858,955,2015-06-17 18:12:00,"oh God why does gitter display inline gifs?
+I'm starting to understand Gael's hate for it :D
+"
+54e07d6515522ed4b3dc0858,956,2015-06-17 18:16:00,"I will try to do this later today
+"
+54e07d6515522ed4b3dc0858,965,2015-06-17 19:09:00,"@rvraghav93 it's June 26
+it opens June 26 until July 3rd I mean
+"
+54e07d6515522ed4b3dc0858,988,2015-06-18 15:54:00,"the performance of the best models
+"
+54e07d6515522ed4b3dc0858,991,2015-06-18 15:57:00,"why you'd want KFold is hard to explain
+if it doesn't shuffle by default that's perfect!
+yep
+"
+54e07d6515522ed4b3dc0858,1028,2015-06-23 15:03:00,"I guess the same as you
+instantiate the folds
+"
+54e07d6515522ed4b3dc0858,1044,2015-06-23 15:52:00,"Those aren't really common tests, it's just regular tests
+I mean something like https://github.com/scikit-learn/scikit-learn/blob/master/sklearn/utils/estimator_checks.py#L1213
+"
+54e07d6515522ed4b3dc0858,1047,2015-06-23 17:08:00,"also from the code. I was just curious whether there's some obscure meaning of `partition` that I wasn't aware of.
+"
+54e07d6515522ed4b3dc0858,1096,2015-06-30 22:22:00,"and I can't find anything relevant on google scholar quickly
+anyway, you can easily define your custom metrics
+"
+54e07d6515522ed4b3dc0858,1157,2015-07-11 23:18:00,"@rvraghav93 it would have been a great thing to work on next, but the solution isn't clear enough, as @amueller noted
+"
+54e07d6515522ed4b3dc0858,1158,2015-07-11 23:21:00,"it was a good reply
+"
+54e07d6515522ed4b3dc0858,2303,2016-04-03 19:05:00,"str.split has worked for me
+"
+54e07d6515522ed4b3dc0858,2390,2016-05-05 16:34:00,"what do you mean by distance between features?
+btw if you plot a histogram of your data do you have some sort of ""spikes"" at the values that you say you want to treat as categorical?
+you have some latent variables that correspond to your payloads, and when you sample, you have a chance to sample from a random poisson(?) or to exactly(?) pick out the payload
+"
+5537027215522ed4b3df56ab,886,2015-06-12 17:20:00,"yeah
+his earlier tests
+"
+54f0341115522ed4b3dc8e00,923,2015-06-16 15:05:00,"yes, it looks like all of it runs
+"
+5582dd0915522ed4b3e21b33,978,2015-06-18 15:20:00,"Thanks :)
+"
+5582dd0915522ed4b3e21b33,979,2015-06-18 15:28:00,"I'm using version 0.15.2
+"
+5425a933163965c9bc206e53,1106,2015-07-01 13:53:00,"I agree. I will probably try that in my model, but unfortunately I can't change the evaluation metric that this competition uses
+"
+55901c1b15522ed4b3e2f949,1325,2015-09-11 14:29:00,"okay, cool
+"
+55901c1b15522ed4b3e2f949,1349,2015-09-13 15:47:00,"no, the joblib issue is a separate issue
+> [![appveyor2.png](https://files.gitter.im/scikit-learn/scikit-learn/gKbL/thumb/appveyor2.png)](https://files.gitter.im/scikit-learn/scikit-learn/gKbL/appveyor2.png)
+"
+55901c1b15522ed4b3e2f949,1362,2015-09-14 07:37:00,"Yep
+"
+55901c1b15522ed4b3e2f949,1762,2015-11-22 21:18:00,"I'd love to se it
+The abtract
+No :(
+"
+55901c1b15522ed4b3e2f949,1925,2016-01-12 22:29:00,"Okay
+I've been working with mxnet for a bit now but I might have more time soon.
+"
+530c03e25e986b0712efafb8,1402,2015-10-09 18:11:00,"lets say *with*
+or rather, optionally with
+"
+530c03e25e986b0712efafb8,4182,2018-08-20 15:54:00,"Thank you for the pointer @rth .  I should have been able to find that :)
+That shouldn't take long :)
+"
+5571fe1015522ed4b3e17d90,1437,2015-10-15 14:09:00,"yeah make html. Too ~25 minutes on my machine.
+"
+5571fe1015522ed4b3e17d90,1438,2015-10-15 14:15:00,"I can take plot_lle_digits should be trivial
+"
+5571fe1015522ed4b3e17d90,1628,2015-11-12 12:02:00,"Looks interesting, I'll give it a shot, thanks !
+"
+53810862048862e761fa2887,1528,2015-10-21 14:30:00,"I have windows on dual-boot, but I have to setup scikit-learn over there before I can run tests. Does anyone else over there have it ?
+@amueller You mean it could be computed by some function in `scipy.optimize` or similar ?
+"
+53810862048862e761fa2887,1538,2015-10-21 17:00:00,"Even with #5270 the code cannot support non-integer types
+the problem is if converting something like `[1, '1', 2 , 3 , 4]` to an integer, casting to integer works and gives wrong results
+"
+53810862048862e761fa2887,1571,2015-10-26 11:52:00,"You can try the nmf example I posted.
+"
+53810862048862e761fa2887,1573,2015-10-26 11:53:00,"I don't know of any such technique. Since I had worked with text rank I thought I'd give my 2 cents
+"
+53810862048862e761fa2887,1776,2015-11-23 20:17:00,"I have narrowed down the failure to one line so far, but I still don't know why that line causes those tests to fail
+Ok. Thanks. Make sure you go to that commit the last 2 or 3 commits I have been trying other stuff
+"
+53810862048862e761fa2887,1877,2015-12-11 17:17:00,"Yes
+"
+5615bee3d33f749381a8a4f5,1573,2015-10-26 11:54:00,"extractive is fine for me
+Just pick 2 most important sentences and display
+"
+562aa0c916b6c7089cb80cd7,1616,2015-11-06 00:49:00,"all right @amueller . Thanks
+"
+564a144c16b6c7089cbaebe3,1665,2015-11-16 19:00:00,"FWIW: I bypassed the build issue with `pyenv` by installing anaconda directly.
+"
+564a144c16b6c7089cbaebe3,1674,2015-11-16 23:32:00,"yes
+"
+564a0e2916b6c7089cbaead6,1665,2015-11-16 19:01:00,"@lazarillo where can I find you? I am red head in red flannel
+"
+564a11fc16b6c7089cbaeb9e,1671,2015-11-16 19:34:00,"I am going to work on issue #5656
+"
+564a264d16b6c7089cbaee0f,1671,2015-11-16 19:35:00,"edited pull request and ready to merge #5834
+"
+564789be16b6c7089cbab8b7,1694,2015-11-19 12:29:00,"great!
+"
+564789be16b6c7089cbab8b7,1699,2015-11-19 12:43:00,"thanks
+"
+564789be16b6c7089cbab8b7,1700,2015-11-19 12:53:00,"I like that rule
+"
+564789be16b6c7089cbab8b7,1706,2015-11-19 13:55:00,"@rvraghav93  I think these are really sensible rules and I completely agree with them :)
+"
+564789be16b6c7089cbab8b7,1889,2015-12-17 17:22:00,"ah no... could you point me to them please?
+"
+564789be16b6c7089cbab8b7,2014,2016-02-09 21:53:00,"ah ok... so I am very interested in that
+"
+564789be16b6c7089cbab8b7,2016,2016-02-09 22:02:00,"ah :)
+then I am the odd one out :)
+"
+564789be16b6c7089cbab8b7,2054,2016-02-16 09:37:00,"ah...
+"
+564789be16b6c7089cbab8b7,2186,2016-03-11 11:49:00,
+564789be16b6c7089cbab8b7,2260,2016-03-22 15:45:00,"@rvraghav93 That's a great idea!
+"
+564789be16b6c7089cbab8b7,2370,2016-04-28 15:45:00,"ah ok
+that's interesting
+"
+564789be16b6c7089cbab8b7,2389,2016-05-05 16:30:00,"ok that's interesting already
+"
+564789be16b6c7089cbab8b7,2476,2016-06-08 09:16:00,"@ogrisel  the spark link?
+"
+564789be16b6c7089cbab8b7,2627,2016-07-19 10:39:00,"Cool. what does MRG actually stand for?
+oh :)
+oh cool
+"
+564789be16b6c7089cbab8b7,2638,2016-07-19 11:49:00,"thanks! It shouldn't need much RAM
+sadly the xgboost google group seems pretty dead as does their gitter room
+xgboost seems to use 1.6GB on my machine for that dataset
+"
+564789be16b6c7089cbab8b7,2639,2016-07-19 11:52:00,"no! Do you think it might help?
+(got to go out for 30 minutes.. thanks so much for looking at this!)
+"
+564789be16b6c7089cbab8b7,2642,2016-07-19 15:30:00,"@maniteja123  no.. it is still super slow
+it would be great
+yes... I asked on the forum there and have no reply yet
+I mean I asked on the forum for the digits recognizer challenge
+my friend also asked on SO
+no answer :)
+"
+564789be16b6c7089cbab8b7,2645,2016-07-19 15:40:00,"it's definitely worth reading
+"
+564789be16b6c7089cbab8b7,2646,2016-07-19 15:52:00,"hmmm... no not yet but that page does say it is fine in python
+"
+564789be16b6c7089cbab8b7,2668,2016-07-26 15:26:00,"it's perfectly fine :)
+"
+564789be16b6c7089cbab8b7,2805,2016-09-07 20:54:00,"@ItchyJunk  that would be surprising
+exit is a synonym for quit I believe
+surely it's a typo?
+you don't think it's a bug?
+"
+564789be16b6c7089cbab8b7,3221,2017-03-31 11:04:00,"@glemaitre  OK
+I think it is all works fine. I was trying to get TPOT to work which stalls mysteriously on OS X and I wanted to check it wasn't a scikit learn problem. It isn't.
+it's a TPOT bug I think, not a scikit-learn one
+probably in fact a pathos bug
+"
+564789be16b6c7089cbab8b7,3643,2017-11-21 15:11:00,"@amueller  ah right.. so what is the right thing to do here?
+I need to scale the data to use keras (LSTM)
+so I train on some set and the test on another
+how should I scale the test set?
+if this method doesn't guarantee it will be in the right range
+hmm.. I don't actually know.. it's just that all the docs says you should scale everything to be in the range 0 to 1
+ok thanks.. It occurred to me that you could just scale the test set independently too
+which wouldn't be ""cheating"" but would give you the guarantee
+but maybe that is wrong
+true and good point
+thank you
+"
+564789be16b6c7089cbab8b7,3823,2018-03-03 19:48:00,"hi
+"
+564789be16b6c7089cbab8b7,3876,2018-04-20 09:27:00,"will do
+thanks
+"
+564789be16b6c7089cbab8b7,3967,2018-07-09 14:47:00,"great, thanks!
+"
+564789be16b6c7089cbab8b7,3970,2018-07-09 14:55:00,"I need to find a nice expert online as I don't know anyone in real life who could help
+That's my intuition too
+"
+564789be16b6c7089cbab8b7,4484,2019-06-21 17:29:00,"it's only really the convolutions that  take advantage of the neighborhood of pixels I suppose
+@ogrisel  right.
+"
+564789be16b6c7089cbab8b7,4486,2019-06-21 17:35:00,"really I am secretly interested in time series
+"
+564789be16b6c7089cbab8b7,4863,2020-06-15 16:51:00,"does that mean you end up with 2 features?
+I am not clear what a cluster means here
+@adrinjalali  (thank you)
+thank you
+I am surprised it works so well for my regression problem!
+"
+564789be16b6c7089cbab8b7,5107,2021-01-22 09:31:00,"thanks!
+"
+564789be16b6c7089cbab8b7,5116,2021-01-22 10:29:00,"makes sense
+"
+564789be16b6c7089cbab8b7,5117,2021-01-22 10:33:00,":)
+"
+564789be16b6c7089cbab8b7,5127,2021-01-22 11:36:00,"@lesteve thanks :)
+"
+55e8e8690fc9f982beaf992f,1750,2015-11-21 01:39:00,"Perfect, thanks @amueller
+"
+5653208916b6c7089cbbd390,1768,2015-11-23 15:13:00,"ya sure
+"
+5653208916b6c7089cbbd390,1770,2015-11-23 15:23:00,"okay :+1:
+i searched there is no room for Word2vec and gensim :(
+"
+553e8e1015522ed4b3df97f7,1801,2015-11-30 14:25:00,"https://github.com/scikit-learn/scikit-learn/issues?q=is%3Aopen+is%3Aissue+label%3AEasy
+go through the easy issues, you should be able to solve most with a basic knowledge of python
+"
+55f2a92f0fc9f982beb05d85,1820,2015-12-02 19:48:00,"No, the base one in Scikit learn is serial one .. I am trying now to use pySpark to paralleize it, but its really difficult as I am not aware of scikit learn, and I dont have plenty of time :) .. would appreciate if someone can help
+"
+553d32d715522ed4b3df8b92,1910,2016-01-03 16:43:00,"Thank you so much. Will do that.
+"
+553d32d715522ed4b3df8b92,2307,2016-04-05 02:19:00,"Yeah thanks, that was the reason for the ValueError
+But still didn't get the comment regarding the *print* statement :worried:
+"
+553d32d715522ed4b3df8b92,3093,2016-12-21 02:25:00,"Sure Anytime :+1:
+"
+541d52b1163965c9bc205cf3,1937,2016-01-19 16:56:00,"@amueller  can i  help to set it right ?
+"
+56b80528e610378809c05a48,2029,2016-02-11 16:11:00,"Yes
+"
+56b80528e610378809c05a48,2047,2016-02-15 17:41:00,"Its pretty okay ... take your time :)
+"
+56b80528e610378809c05a48,2048,2016-02-15 17:54:00,"oh sorry for my ambiguous description. I implemented the basic case, like the example amueller gave in the discussion between you and him before.
+"
+56b80528e610378809c05a48,2205,2016-03-13 20:01:00,"yes
+really?
+But it works for me ...
+Thx for your help!
+It is not  assign a float to a char
+It is to declare a type that can accept either cython.char or  cython.float
+"
+56b80528e610378809c05a48,2217,2016-03-13 20:15:00,"I see
+thanks for the clarafacation
+"
+56b80528e610378809c05a48,2243,2016-03-22 06:15:00,"Hello @dsquareindia , you mean the type issue in ensemble?
+"
+56b80528e610378809c05a48,2244,2016-03-22 06:17:00,"Yeah I think so
+"
+56b80528e610378809c05a48,2322,2016-04-07 16:30:00,"hahahahaha
+good idea
+"
+56b80528e610378809c05a48,2529,2016-06-18 10:01:00,"May you paste the link?
+"
+56b80528e610378809c05a48,2651,2016-07-23 10:13:00,"Good point. I am not sure about ubuntu but not on mac
+@maniteja123 thanks.
+"
+56b80528e610378809c05a48,2699,2016-08-02 08:41:00,"I personally dont have much experience with R, so I cant answer this question, sorry.
+"
+56c4f19ae610378809c1f8ae,2081,2016-02-18 18:19:00,":clap:
+"
+56c4f19ae610378809c1f8ae,2089,2016-02-19 09:19:00,"Im not sure what you mean by <unconvertable> get better results. are you doing binary classification?
+"
+56c4f19ae610378809c1f8ae,2104,2016-02-19 10:20:00,"thats not always true haha. feature engineering is quite important in the real world to distinguish signal from noise in data.
+e.g. if you wanted to predict whether an employee has access and you were given information about their salary, working hours, and favorite place to eat lunch on amazons campus. this is only 3 features, but its quite evident that where they eat lunch on amazons campus likely has no correlation / is not related to whether theyd have access.
+actually thats not necessarily true, maybe there are more high scale places reserved for executives or something but do you see my point?
+Yup.
+"
+56c4f19ae610378809c1f8ae,2116,2016-02-22 10:21:00,"got it
+"
+56c4f19ae610378809c1f8ae,2155,2016-03-01 07:56:00,"np =)
+"
+56c4f19ae610378809c1f8ae,2277,2016-03-24 23:38:00,"ah, no you arent misunderstanding, I was.
+the featureunion is just a scaffold of various steps, which you then pass things into and get a numpy array. Is this what you were thinking?
+"
+56c4f19ae610378809c1f8ae,2322,2016-04-07 16:30:00,"lol we should put that in contributing.rst :P haha  just kidding
+"
+56c4f19ae610378809c1f8ae,2326,2016-04-07 17:33:00,"yes, it should be.
+i know 3.5 is fully supported
+its been tested with 3.4 / 3.5, and 3.3 should also work. not sure about 3.1 or 3.2
+"
+56c4f19ae610378809c1f8ae,2327,2016-04-07 17:36:00,"indeed
+if you look at https://github.com/scikit-learn/scikit-learn/search?utf8=%E2%9C%93&q=print, youll see that the <unconvertable> print' statements are all functions
+make sure to `from __future__ import print_function`, though.
+"
+56c4f19ae610378809c1f8ae,2357,2016-04-24 06:17:00,"I think the former, but the best way to do so much s to learn basic data science imo
+*is to learn
+If the goal is to eventually contribute, you'd want knowledge of how the various algorithms work, what their use cases are, etc. The easiest way to do this imo is to just use them in various applications.
+"
+56c4f19ae610378809c1f8ae,2415,2016-05-11 21:26:00,
+56c4f19ae610378809c1f8ae,2434,2016-05-22 20:28:00,"Of course, we definitely talk about other things :)
+"
+56c4f19ae610378809c1f8ae,2534,2016-06-21 01:32:00,"what do you mean test?
+like run the unit tests?
+"
+56c4f19ae610378809c1f8ae,2542,2016-06-21 02:49:00,"good to hear
+"
+56c4f19ae610378809c1f8ae,2606,2016-07-16 14:23:00,":wave:
+"
+56c4f19ae610378809c1f8ae,2888,2016-09-28 20:59:00,"nvm, just saw https://github.com/scikit-learn/scikit-learn.github.io/commit/d6c6bd03f4cabbce20a3ac579c243abe0c4f2235
+ah ok
+thanks :smile:
+"
+56c4f19ae610378809c1f8ae,2904,2016-09-30 03:37:00,"well you dont have to understand everything to begin contributing
+the different methods implemented are largely independent of each other
+"
+56c4f19ae610378809c1f8ae,2919,2016-10-04 17:23:00,"you have to modify about.rst
+thats the file name
+the html files are built from rst source files, so modify the rst source
+"
+56c4f19ae610378809c1f8ae,2957,2016-10-17 14:40:00,"i dont think thats worth implementing word2vec/glove in scikit-learn though; as gael said in the issue > Text modelling probably requires more than just machine learning, including specific rules. Thus I think that word2vec belongs more in gensim (where it already is) than in scikit-learn: it is a model very tuned to text.
+and gensim does indeed have a scikit-learn interface (or should have one soon i believe)
+"
+56c625c3e610378809c22760,2084,2016-02-18 20:18:00,"haha yeah true
+"
+561d08d0d33f749381a937bf,2091,2016-02-19 09:25:00,"It does, but I slice the output and use the one that gives a true value.
+"
+561d08d0d33f749381a937bf,2094,2016-02-19 09:47:00,"That way I select the column with a probability of 1.
+This is more magic than science to me.
+"
+561d08d0d33f749381a937bf,2099,2016-02-19 10:04:00,"its the result of the predict_proba
+You certainly can. Simply print out the first X elements of both columns and youll see a pattern immediately.
+I see what you mean.
+Exactly.....going through the trouble of squeezing that extra 1% is insane.
+"
+561d08d0d33f749381a937bf,2101,2016-02-19 10:12:00,"Tell that to Kaggle
+https://www.kaggle.com/c/amazon-employee-access-challenge
+Getting my feet wet.....my head is spinning....most of this is just trial and error.
+"
+53a5cf04a9176b500d1ced1a,2268,2016-03-23 11:03:00,"yeah. cool
+"
+53a5cf04a9176b500d1ced1a,2269,2016-03-23 11:07:00,"yes. Thank you :)
+"
+54b2524adb8155e6700e8a8e,2311,2016-04-05 02:37:00,"Yay!
+I hope you're able to go through the steps and understand how this is doing what we want too...
+"
+54b2524adb8155e6700e8a8e,3349,2017-06-07 11:35:00,"Haha I think
+"
+54b2524adb8155e6700e8a8e,3371,2017-06-08 12:13:00,"Yes
+"
+557fdd5f15522ed4b3e1f9bd,2339,2016-04-14 22:16:00,"@vene +1 I suppose @dsquareindia is making the claim that if a document is labeled X, then a term in that document should also belong to the category X.
+correct?
+"
+557c765a15522ed4b3e1de4f,2358,2016-04-24 06:19:00,"doesn't make any sense to me but whatevs
+"
+569ebe44e610378809bd2db4,2361,2016-04-28 10:51:00,"@lesshaste sorry, I don't have enough knowledge yet to help you
+"
+572d31b4c43b8c6019718fca,2393,2016-05-07 18:12:00,"Good resources for what specifically?
+"
+572d31b4c43b8c6019718fca,2395,2016-05-07 18:11:00,"If you can do machine learning in one language, youll have little to no trouble switching languages :)
+"
+561a58f7d33f749381a8ff2f,2411,2016-05-11 21:07:00,"oh, randomforests do not have this?
+that's my actual question
+no `rf.tree_`
+`feature_importances_` not
+I want to actually convert a randomforest into categorical variables
+ahhh, the separate instances do have the tree
+awesome :)
+"
+561a58f7d33f749381a8ff2f,2415,2016-05-11 21:26:00,"I was thinking to PCA it perhaps lol
+"
+561a58f7d33f749381a8ff2f,2421,2016-05-11 21:39:00,"it's a reinforcement learning comp
+on each round (there are ~1.2m)
+"
+561a58f7d33f749381a8ff2f,2422,2016-05-11 21:40:00,"you get 35 values
+you can influence the 36th variable by choosing 1 out of 4 actions
+"
+54c630d6db8155e6700f168d,2488,2016-06-09 07:03:00,"@nelson-liu Cool
+Even if you have access to the vectorizer through a file (using joblib)
+?
+"
+54c630d6db8155e6700f168d,2491,2016-06-09 07:48:00,"Thanks!
+"
+567d7eca16b6c7089cc02a05,2530,2016-06-18 10:06:00,"atleast you can guide me!
+I am lost in here.... and i want to get some task for myself
+"
+567d7eca16b6c7089cc02a05,2531,2016-06-18 10:22:00,"Thanks Yen
+"
+56333d0d16b6c7089cb8d5c7,2536,2016-06-21 01:33:00,"let say i added a print statement in one of the classes
+that had a bug
+and I want to test that class in an ipython notebook
+yup
+"
+56333d0d16b6c7089cb8d5c7,2537,2016-06-21 01:35:00,"ah okay
+"
+56333d0d16b6c7089cb8d5c7,2538,2016-06-21 01:39:00,"many thanks
+:)
+"
+55aee1ab0fc9f982beaa80a5,2553,2016-06-24 21:09:00,"@vene I hadn't seen that before, I got it now
+"
+56b0a775e610378809bf7a7c,2612,2016-07-16 15:36:00,"@raghavr are you working today ?
+"
+56b0a775e610378809bf7a7c,2680,2016-07-28 15:21:00,";)
+"
+56d577ffe610378809c46670,2615,2016-07-16 16:25:00,"Sure, I'll ping if I face any  problems.
+"
+578a4f87c2f0db084a23455f,2694,2016-07-30 17:13:00,"Thanks!
+"
+57a061aa40f3a6eec05d8d26,2718,2016-08-14 18:57:00,"scikit-learn's implementation
+yes, it's ok
+"
+57a061aa40f3a6eec05d8d26,2744,2016-08-17 21:38:00,"Ok, thanks :)
+"
+57a061aa40f3a6eec05d8d26,3164,2017-03-01 15:25:00,"@rth ok, thanks :)
+"
+57a061aa40f3a6eec05d8d26,3443,2017-07-05 10:52:00,"yes
+I can understand that, but why I would like to do that?
+"
+57a061aa40f3a6eec05d8d26,3453,2017-07-05 12:17:00,"Oh, I saw that on the code... thanks for helping
+"
+57b3fd8640f3a6eec05fe0e8,2736,2016-08-17 20:54:00,"But that assumes there is an easy way to sort through the 2M to narrow it down to .5m. in which case, what the 2 of you recommended sounds good.
+I didn't mean have 4 separate trained instance.. hmm, but it any case, it's not possibly to feed .5 at a time , does it's stuff, frees some memory and you add to it? is what i was trying to ask.
+Ahh, i am very new to all of this so questions make more sense in my head than when i type. ^^
+Ahh..
+"
+57b3fd8640f3a6eec05fe0e8,2741,2016-08-17 21:21:00,"Ahh! thank you kindly for the detailed explanations!
+"
+57b3fd8640f3a6eec05fe0e8,2882,2016-09-28 11:52:00,"Did you paste the error as well?
+"
+56f4e1b785d51f252abab7d7,2750,2016-08-18 08:31:00,"yea, I realized that
+"
+56a34c16e610378809bdc988,2781,2016-09-04 04:03:00,"Great, done. I'll be happy to take it up if :traffic_light: :checkered_flag:
+"
+56a34c16e610378809bdc988,2782,2016-09-04 03:59:00,"@nelson-liu very well :D
+"
+57be017740f3a6eec0612914,2792,2016-09-06 04:16:00,"@tjgerot you are awesome. I took a few Stanford lessons and feel difficult.
+"
+57be017740f3a6eec0612914,2793,2016-09-06 04:20:00,"Udacity's ""intro ML"" is good. the tools (sklearn, ntlk) they use is more recent, not R, octave, numpy. see results quick :)
+"
+57d83c7940f3a6eec0650f6e,2829,2016-09-13 18:22:00,"which math course would you recommend for understanding regression (vector..etc)
+"
+57d83c7940f3a6eec0650f6e,2830,2016-09-13 18:23:00,"I am working with tensor flow api
+but i want to work with SNN
+"
+5759dd0dc2f0db084a1d128d,3007,2016-10-31 15:41:00,":D
+"
+5759dd0dc2f0db084a1d128d,3010,2016-10-31 15:48:00,"That's what I figured
+"
+5759dd0dc2f0db084a1d128d,3177,2017-03-04 00:18:00,"doing it right now
+"
+5759dd0dc2f0db084a1d128d,3182,2017-03-04 01:05:00,"using an infinite timeframe?
+yep, I am surprisingly still in the top 20 :)
+"
+55d21ee30fc9f982beadabb8,3011,2016-10-31 20:09:00,"@amueller It is down
+"
+55d21ee30fc9f982beadabb8,3167,2017-03-02 15:57:00,"pip is included in conda
+I never add problem with up to now
+"
+55d21ee30fc9f982beadabb8,3308,2017-05-21 20:03:00,"`clf = GridSearchCV(svr, parameters, n_jobs=-1)`
+is enough
+clf = GridSearchCV(svr, parameters)
+you can check the examples in the doc
+"
+55d21ee30fc9f982beadabb8,3310,2017-05-21 20:14:00,"yep
+"
+55d21ee30fc9f982beadabb8,3661,2017-11-25 15:23:00,"`make test` run `make test-code` `make test-sphinxext` `make test-doc
+therefore it is equivalent to
+"
+55d21ee30fc9f982beadabb8,3952,2018-06-28 14:27:00,"Yep
+"
+55d21ee30fc9f982beadabb8,3965,2018-07-09 14:40:00,"so it depends what TPOTClassifier from which class is it deriving but I assume `ClassifierMixin`
+TPOTClassifier is not something in scikit-learn so I am not aware of how it works or implemented actually
+"
+55d21ee30fc9f982beadabb8,4018,2018-07-15 21:40:00,"@annaayzenshtat right
+"
+55d21ee30fc9f982beadabb8,4021,2018-07-15 21:58:00,"It should be against master
+"
+55d21ee30fc9f982beadabb8,4036,2018-07-16 15:00:00,"If we consider it as a bug fix then this is ready to be merged.
+I really think that it was actually a bug
+"
+55d21ee30fc9f982beadabb8,4055,2018-07-16 19:47:00,"I'll do that while waiting for some benchmark
+"
+55d21ee30fc9f982beadabb8,4099,2018-07-17 17:18:00,"I will look at it now
+"
+55d21ee30fc9f982beadabb8,4600,2019-10-30 15:14:00,"Basically, I was starting to solve the issue yesterday
+While making `master` work with `master` is easy (just change the import path), the challenging part is to make work out-of-date version with a newer scikit-learn.
+In the latest case, we need to make some `try except ImportError` as you suggested I think
+"
+55d21ee30fc9f982beadabb8,4646,2020-01-06 17:55:00,"but this is rather challenging to retrain models and update models across versions. This might not be in the scope of scikit-learn but having a third-library to manage those could be nice
+@adrinjalali Incremental learning, early stopping, and callbacks are things which would be nice
+they are in the roadmap I think
+:) yes indeed
+"
+55d21ee30fc9f982beadabb8,4647,2020-01-06 18:00:00,"you also have keras-onnx
+and pytorch-onnx
+which manage the same way than sklearn-onnx
+but this is for prediction only
+"
+55d21ee30fc9f982beadabb8,4662,2020-01-08 17:01:00,"internally they will all be converted to float64
+all of them
+it is done in `check_X_y` which is called before
+but apparently it is not working as expected
+"
+55d21ee30fc9f982beadabb8,4671,2020-01-08 17:34:00,"let me try but it should
+"
+55d21ee30fc9f982beadabb8,4959,2020-09-04 12:32:00,"RGB colors -> n_channels
+> Why are there two of the same?
+what do you mean?
+which things are the same?
+it depens of your input
+if you are passing a numpy array with 3 dimension
+with shape `(height, width, 3)` (because it is RGB
+you will get an array of `(n_patches, patch_height, patch_width, 3)`
+"
+55d21ee30fc9f982beadabb8,4961,2020-09-04 12:36:00,"but there is no RGB1 in the documentation?
+> if one takes a 2x2 sample from the image then it should have 4 pixels?
+it will be an array `(n_patches, 2, 2, 3)`
+if this is an RGB image
+or `(n_patches, 2, 2)` if this is gray-scale
+it is just extracting a sub-image
+with the same number of dimension
+> [[RGB_1] [RGB_1]] [[RGB_2] [RGB_2]]
+I am sorry but this not specify anywhere in the doc
+"
+55d21ee30fc9f982beadabb8,4963,2020-09-04 12:42:00,"`img[:, :, 0]` will be the red channel
+I don't agree
+This is just a real life example
+"
+55d21ee30fc9f982beadabb8,4964,2020-09-04 12:49:00,"The docstring give a real example
+and the user guide
+https://scikit-learn.org/stable/modules/feature_extraction.html#patch-extraction
+is giving a synthetic example with fake RGB data
+What do you mean rectangle?
+here you can specify height and width
+so you can specify the rectangle shape
+I don't understand what you want sorry
+"
+55d21ee30fc9f982beadabb8,5022,2020-11-18 20:05:00,"yep. I see that we have a recent feature request https://github.com/scikit-learn/scikit-learn/issues/18748
+I will try to find the discussion back
+We also put it in the road map: https://scikit-learn.org/dev/roadmap.html
+The issue will be to find the right API.
+"
+55d21ee30fc9f982beadabb8,5059,2020-12-17 16:51:00,"There is no such parameter for a `KNeighborsRegressor`
+Indeed the regressor does not anything during `fit` apart of storing the dataset
+"
+55d21ee30fc9f982beadabb8,5112,2021-01-22 09:55:00,"I think so
+I might have misunderstood the use-case (a small example with specific number might help :))
+"
+55d21ee30fc9f982beadabb8,5384,2022-02-22 15:20:00,"which compilers are you using when installing the dev version
+"
+55d21ee30fc9f982beadabb8,5388,2022-02-22 15:32:00,"I can reproduce
+"
+57ec309f40f3a6eec067e511,3118,2017-01-16 16:51:00,":)
+"
+5633b77d16b6c7089cb8e50e,3169,2017-03-02 20:12:00,"@glemaitre Alright, I'll try to minimize. Was just wanting a spot check.
+"
+551c051b15522ed4b3de2fea,3253,2017-04-16 04:59:00,"I dont know.
+"
+551c051b15522ed4b3de2fea,3255,2017-04-16 05:15:00,"I dont know.
+"
+590c8ffdd73408ce4f5d352d,3297,2017-05-12 23:44:00,"@jmschrei  yeah. I find them a bit compound and complex to use. Would be nice to have something with the same APIs design as sklearn
+"
+5921d334d73408ce4f612e46,3311,2017-05-21 20:15:00,"I've been trying to do this for days!
+OK
+How do I do that?
+By changing param_grid?
+"
+5921d334d73408ce4f612e46,3312,2017-05-21 20:18:00,"Ok. Thank you
+"
+56aba3aee610378809bedf43,3334,2017-06-05 07:22:00,"Thanks
+"
+593679b8d73408ce4f65082e,3339,2017-06-06 11:39:00,"@amueller I had impression it did not fully address https://github.com/scikit-learn/scikit-learn/issues/5879  so I thought I could continue working on it?
+"
+54e07d0815522ed4b3dc0850,3346,2017-06-07 11:08:00,"When you want, everybody is back
+"
+54e07d0815522ed4b3dc0850,4076,2018-07-17 15:13:00,"@massich : done for #11124
+@agramfort : done
+"
+54e07d0815522ed4b3dc0850,4085,2018-07-17 15:41:00,"All these seem important
+"
+54e07d0815522ed4b3dc0850,4112,2018-07-17 19:08:00,"OK, but it's a random failure?
+I'll merge the PRs despite of it.
+"
+54e07d0815522ed4b3dc0850,4113,2018-07-17 19:09:00,"Yes, I mean appveor
+"
+55502d0c15522ed4b3e03330,3356,2017-06-07 19:12:00,"oh, sorry
+"
+55502d0c15522ed4b3e03330,3363,2017-06-07 19:22:00,"ohhh, now it makes better sense
+so I do not have enough data for cross-validation
+"
+55502d0c15522ed4b3e03330,3364,2017-06-07 19:23:00,"so in this case
+the decision_function is `array([[-1.00000001,  0.        ,  0.3495638 ,  1.00000001,  1.        ,         0.5530018 ]])`
+the evaluation for class 1 is 0
+so close to 0 is better?
+isnt that the distance to the hyperplane?
+I dont get the same output as yours
+no no
+I copied your code
+it returns an array of 6 elements
+"
+55502d0c15522ed4b3e03330,3420,2017-06-29 13:01:00,"ah ok
+"
+5572219415522ed4b3e17f0c,3423,2017-06-29 22:36:00,"yea I'll check
+"
+5683764a16b6c7089cc092dc,3444,2017-07-05 10:51:00,"yep
+"
+5683764a16b6c7089cc092dc,3537,2017-08-15 10:46:00,"I mean
+in the code
+how can I choose
+"
+5683764a16b6c7089cc092dc,3541,2017-08-15 10:56:00,"great, thanks
+do you know what functions correspond to other loss
+say, ""modified_huber""
+"
+5683764a16b6c7089cc092dc,3542,2017-08-15 10:59:00,"is it possible to pass a custom loss to SGDClassifier
+?
+great thanks
+"
+5683764a16b6c7089cc092dc,3544,2017-08-15 11:04:00,"yes, thanks
+I see
+"
+55f3c8020fc9f982beb0733a,3455,2017-07-06 14:57:00,"thanks
+"
+5581814615522ed4b3e20c6a,3467,2017-07-12 10:07:00,"@ogrisel thank you for this information
+Ok that sounds good
+"
+5581814615522ed4b3e20c6a,3491,2017-07-17 14:35:00,"Perfect
+"
+5581814615522ed4b3e20c6a,3492,2017-07-17 14:36:00,"Exactly
+Thank you @ogrisel
+"
+5581814615522ed4b3e20c6a,3501,2017-07-18 17:20:00,"oh thats great
+"
+5581814615522ed4b3e20c6a,3505,2017-07-18 17:27:00,"Yes i do remember it :)
+"
+5581814615522ed4b3e20c6a,3506,2017-07-18 17:34:00,"Yes i am doing the same
+its a perfect suggestion
+"
+59533ac5d73408ce4f6a9616,3471,2017-07-12 16:02:00,"for interviw
+can any one help me
+"
+58b47262d73408ce4f4d4113,3561,2017-09-04 12:27:00,"@glemaitre Thanks :)
+"
+5717ab2f659847a7aff3b583,3586,2017-09-29 17:29:00,"wait
+"
+55a487245e0d51bd787b4e45,3615,2017-10-22 18:26:00,"@CaptainAshis It's probably what's convenient for the creator to draw.
+"
+5910079ed73408ce4f5dc467,3617,2017-10-22 18:37:00,"ok , Thank you @mikegraham
+"
+53eb987c107e137846baa89d,3654,2017-11-24 09:14:00,"Well that is what I thought initially.
+But how can I force I make it to use the development version.
+Would I need to modify the `PATH` variable?
+"
+53eb987c107e137846baa89d,3731,2017-12-14 18:10:00,"That's also seems useful, thanks @glemaitre .
+"
+53eb987c107e137846baa89d,3738,2017-12-20 22:14:00,"Thanks @DrEhrfurchtgebietend
+"
+53eb987c107e137846baa89d,3755,2018-01-10 15:54:00,"Sure. Thanks.
+"
+59d4f81ed73408ce4f789336,3719,2017-12-12 20:46:00,"I meant the open-source terms :smile:
+"
+59d4f81ed73408ce4f789336,3720,2017-12-12 20:48:00,"yeah, sure. doing my best
+"
+57224267659847a7aff4ffce,3723,2017-12-13 07:32:00,"Can I get a link for the room?
+Never mind
+Got it
+Thanks for the response though
+"
+55fc44590fc9f982beb11bbf,3792,2018-01-19 13:40:00,"Thanks, will check it out
+"
+59afadccd73408ce4f748432,3824,2018-03-03 19:50:00,"Oups, sorry, wrong message...
+"
+5b018bb2d73408ce4f9a05a7,3902,2018-05-25 15:24:00,"Thanks
+"
+5b018bb2d73408ce4f9a05a7,3904,2018-05-25 15:28:00,"What exactly?
+"
+560313510fc9f982beb1a331,4137,2018-07-19 20:09:00,"Really, where's that :)
+"
+58d1e48dd73408ce4f52af1b,4161,2018-08-01 09:19:00,"@amueller  yes understood
+i had an issue with BallTree
+Can I ask here ?
+"
+58d1e48dd73408ce4f52af1b,4165,2018-08-01 09:40:00,"yes thanks. I have accepted your answer on SO as well :) Hopefully I will be notified that the problem has been fixed so I can reinstall scikit-learn
+I had another question. I had a offline conversation with another core developer of  scikit-learn
+I want to use BallTree with https://en.wikipedia.org/wiki/Great-circle_distance and that core developer warned me against it and asked me to use Haversine instead.
+Any reason why ?
+PyProj provides great circle distances and I can define a custom metric. What is the objection in doing this ?
+Not sure what pyproj is doing - https://jswhit.github.io/pyproj/pyproj.Geod-class.html#fwd
+but the author told me it is the  most accurate
+"
+58d1e48dd73408ce4f52af1b,4168,2018-08-01 09:54:00,"yes you are right. I did ask  Jake
+No I mean I do not understand how asking pyproj would help. The question is why I cannot use pyproj's great circle distance with scikit-learn
+"
+58d1e48dd73408ce4f52af1b,4171,2018-08-01 10:01:00,"aah OK
+"
+567f5d7716b6c7089cc043a8,4259,2018-11-06 09:37:00,"@OlimpioGilberto_twitter if you want, and the problem still exists, I can try and have a look if you paste here the PR number.
+"
+567f5d7716b6c7089cc043a8,4542,2019-08-07 11:22:00,"you should write the output in the example. The doc build will run the code and check if the generated output is the same as the one you put there. See https://docs.python.org/3.5/library/doctest.html for more info
+"
+567f5d7716b6c7089cc043a8,4548,2019-08-15 12:58:00,"I don't think it'd be easy, but I'd love to see if it actually passes our tree tests, and if it doesn't why not and which tests. Feel free to ping me when you write the blog post.
+"
+567f5d7716b6c7089cc043a8,4820,2020-05-28 09:17:00,"you not similar, more like orthogonal and dissimilar
+"
+567f5d7716b6c7089cc043a8,4821,2020-05-28 09:19:00,"yes
+"
+567f5d7716b6c7089cc043a8,4849,2020-06-08 11:25:00,"interesting, I'm not sure then
+"
+567f5d7716b6c7089cc043a8,5326,2021-10-13 08:15:00,"ah interesting. I don't think we do much of that in this project, but others may think differently.
+"
+5810cd4cd73408ce4f3101ce,4316,2019-01-02 16:19:00,"Thanks man, i understand how the code works...  but i dont understand why are we doing this
+"
+5824457cd73408ce4f34ebbd,4371,2019-03-15 17:51:00,"yes, regression
+"
+57007657187bb6f0eadd96e8,4372,2019-03-15 17:54:00,"thats just chaning how you look at it, not really changing the properties of it
+just checking I understand your problem though. You are saying in your training set, you have min max output of  something like  .2 - .6 and so you are scaling that to 0-1.
+It depends on the problem you are trying to solve. You'll have to decide if it is appropriate for your problem or not.
+what min max scaling does in that case is stretch the predictions between .2 and .6 to a higher resolution, and then make evertying outside .2 or .6 equal to each other
+if that makes sense to do will be application specific
+"
+5ba59281d73408ce4fa8fbb5,4402,2019-04-25 18:50:00,"thanks a lot
+"
+58de4778d73408ce4f551e04,4415,2019-05-20 09:02:00,"Thanks for the tips ; I would like to upgrade but I sadly can't in my setup <unconvertable> sigh. :)
+Are there any significant changes between joblib 0.13.0 and 0.13.2 ?
+Yes, I just came across this.
+"
+5bc98094d73408ce4fabf741,4419,2019-05-31 07:55:00,"I will check that in practice then I guess as suggested. Thanks @srniranjan
+"
+5bc98094d73408ce4fabf741,4433,2019-06-05 09:45:00,"I see TruncatedSVD which uses LSA underneath for the decomposition of sparse matrices suggested by sklearn team
+but this method lets me go down only by about 200 features which is just not enough.
+and I need to cut it down say to 2000 features so I don't spend days training one model
+yes it is, not entire vocabulary, I have stop words filtered out and lemmas extracted
+What would be the recommended way?
+"
+5bc98094d73408ce4fabf741,4451,2019-06-05 14:28:00,"I will check it out, thanks @gyrdym
+"
+5cf106a0d73408ce4fc1d8b2,4429,2019-06-05 09:36:00,"What is PCA?
+"
+5cf106a0d73408ce4fc1d8b2,4431,2019-06-05 09:41:00,"Ohk thanks @srniranjan
+"
+5d77583cd73408ce4fca7b58,4574,2019-09-10 08:09:00,"thank you Sir, surely i will do that
+"
+53232ac75e986b0712efe3af,4578,2019-09-27 16:33:00,"the issue that I rememered is https://github.com/pandas-dev/pandas/issues/22791
+"
+589b9e0fd73408ce4f490ba4,4605,2019-11-02 11:17:00,"@gbroccolo Yes, you can pick any estimator that fails :)
+"
+5a2c58c8d73408ce4f8294ba,4650,2020-01-07 22:32:00,"OK, I can try with the defaults. I will open a request if I remember
+There also is no min_samples_split
+"
+5a2c58c8d73408ce4f8294ba,4661,2020-01-08 16:56:00,"That is only one possible solution.
+"
+5baf7d9ad73408ce4fa9c9b2,4752,2020-03-16 15:37:00,"yup
+"
+5ecf797dd73408ce4fe523d7,4818,2020-05-28 09:07:00,"I'm not @anjumuaf123_twitter
+"
+5ecf797dd73408ce4fe523d7,4839,2020-06-05 21:25:00,"Ah makes sense, thank you
+"
+5f09bedad73408ce4fe951c0,4899,2020-07-11 13:40:00,"okay
+"
+5eeb9b35d73408ce4fe749bc,4921,2020-07-16 15:15:00,"""For historical reasons"" -> another point for maintainability, then, hehe :p
+I hope the benchmarks for the enhancement I'm working on go well, then. I'd love to be able to open a PR and get a code review for what I've written... I imagine I'm making lots of newbie Cython missteps at this stage, heh. :D
+"
+5da2a33dd73408ce4fcdacee,5009,2020-11-10 17:09:00,"That's cool!
+"
+5479972adb8155e6700d9370,5182,2021-02-11 17:08:00,"@ogrisel maybe @xadupre knows ?
+"
+6075a37e6da03739847a0d9b,5234,2021-04-13 15:17:00,"oh perfect
+"
+5baebfaed73408ce4fa9bd25,5275,2021-07-07 19:42:00,"Oh, wow, that's interesting.  Not what I would have expected.
+"
+5d7033aad73408ce4fca0665,5340,2021-10-30 13:36:00,"Okay
+"
+matrix-ogrisel:matrix.org,5391,2022-02-22 15:44:00,"@marenwestermann: can you please open an issue?
+"
+matrix-ogrisel:matrix.org,5392,2022-02-22 15:53:00,"nice :)
+"
