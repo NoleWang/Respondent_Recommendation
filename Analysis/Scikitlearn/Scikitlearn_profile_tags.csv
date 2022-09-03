@@ -1,0 +1,1686 @@
+user_Id,cluster_Id,answer_date,answers,tags
+54d4a1d6db8155e6700f853b,12,2015-02-06 11:14:00,"I'm with family this week and so not super active, but I hope we can work towards the release next week :)
+sure. There is another check_array pr that might be conflicting
+and that I think is very important
+the dtype=object one
+https://github.com/scikit-learn/scikit-learn/pull/4057
+","['git', 'ant', 'com', 'nt', 'import', 'https', 'port', 'ear', 'il', 'conflict', 'release', 'pull', 'http', 'github', 'ca', 'ase', 'el', 'object', 'war', 'thin', 'ps', 'super', 'act', 'su', 'rd', 'rel', 'rds', 'rt', 'next', 'hat', 'xt', 'tps', 'imp', 'ex', 'rr', 'po', 'ray', 'sup', 'scikit-learn', 'arr', 'co', 'om', 'sc', 'ch', 'dt', 'mpo', 'mi', 'dtype', 'hub', 'eas', 'ta']"
+54d4a1d6db8155e6700f853b,61,2015-02-24 22:46:00,"cool
+ok
+",['co']
+54d4a1d6db8155e6700f853b,69,2015-02-25 18:59:00,"yeah that sounds like a good idea
+","['ide', 'go', 'hat', 'ou', 'od', 'goo', 'de']"
+54d4a1d6db8155e6700f853b,72,2015-02-25 19:14:00,"you mean == 1
+","['mean', 'ou', 'yo']"
+54d4a1d6db8155e6700f853b,75,2015-02-25 19:19:00,"that is also weird ;)
+","['ls', 'rd', 'hat', 'lso', 'ei', 'als']"
+54d4a1d6db8155e6700f853b,83,2015-02-26 15:27:00,"cool
+yeah maybe that was a bad idea. but it was already broken before
+I know the bugs are unrelated, but I thought the fix might be. I was thinking about removing the implementation of partial fit, which would make it easier to fix both bugs, I think
+args I meant fit_transform
+err fit_predict?
+","['ide', 'ant', 'nt', 'vi', 'io', 'orm', 'relate', 'implementation', 'transform', 'edi', 'rm', 'el', 'ati', 'em', 'thin', 'vin', 'pre', 'mean', 'args', 'ld', 'rel', 'partial', 'tr', 'rt', 'hat', 'predict', 'rgs', 'par', 'mov', 'ready', 'ovi', 'mo', 'ou', 'imp', 'ed', 'rr', 'maybe', 'lr', 'nsform', 'red', 'co', 'bro', 'ch', 'sf', 'eme', 'kin', 'mi', 'ent', 'know', 'eas', 'de', 'ta']"
+54d4a1d6db8155e6700f853b,89,2015-02-26 19:47:00,"fyi https://github.com/scikit-learn/scikit-learn/pull/4285 should be good
+I had some weird behavior with the interp1d but I need to do some NYU stuff before I can investigate further
+","['git', 'com', 'nt', 'vi', 'io', 'int', 'https', 'ear', 'erp', 'behavior', 'pull', 'http', 'github', 'ca', 'avi', 'sh', 'ps', 'ld', 'rd', 'go', 'rt', 'sti', 'tps', 'gate', 'som', 'ou', 'ed', 'scikit-learn', 'tig', 'st', 'co', 'ff', 'om', 'sc', 'od', 'ei', 'uff', 'tuf', 'stuff', 'stig', 'hub', 'goo']"
+54d4a1d6db8155e6700f853b,97,2015-03-02 14:53:00,"damn time difference ;)
+","['time', 'diff', 'ime', 'dam', 'difference', 'ff']"
+54d4a1d6db8155e6700f853b,115,2015-03-02 21:54:00,"possibly. I didn't have much time to look at them yet
+this is not really a priority as I want to get stuff clean and fixed for the release first
+","['ant', 'nt', 'io', 'time', 'get', 'release', 'ase', 'fixed', 'el', 'ssi', 'em', 'wan', 'rel', 'ri', 'ime', 'dn', 'idn', 'mu', 'ed', 'po', 'st', 'ss', 'rs', 'ff', 'cl', 'muc', 'ch', 'irs', 'lean', 'pos', 'xed', 'uff', 'rio', 'tuf', 'stuff', 'eas']"
+54d4a1d6db8155e6700f853b,118,2015-03-02 22:40:00,"haha I just saw it and thought you read my message ;)
+anything I should look at now? btw, does beta mean uploading docs?
+probably not I guess?
+","['beta', 'upload', 'message', 'load', 'doc', 'loading', 'thin', 'ocs', 'uploading', 'sh', 'sa', 'mean', 'ld', 'sage', 'ssa', 'ess', 'ou', 'st', 'sag', 'ss', 'ag', 'yo', 'jus', 'yt', 'eta', 'bt', 'ta']"
+54d4a1d6db8155e6700f853b,132,2015-03-05 20:44:00,"ok
+",[]
+54d4a1d6db8155e6700f853b,141,2015-03-05 21:08:00,"Try a tree? Or use OneVsRestClassifer(LogisticRegression).
+I'll have a look soon.
+probably with ``estimator__``. But I'd rather go with a tree, which should work
+","['gis', 'io', 'tree', 'gist', 'ssi', 'sh', 'ld', 'tor', 'go', 'tr', 'sti', 'ess', 'ou', 'mat', 'st', 'ss', 'ch', 'las', 'gr', 'egress']"
+54d4a1d6db8155e6700f853b,144,2015-03-05 21:27:00,"no transparency here. I technically have a laptop monitor and a large one, but in the office I currently only use the large one. Still context-switching too much.
+I have the gitter tab just always open
+","['git', 'nt', 'nic', 'il', 'transparency', 'text', 'apt', 'cal', 'ca', 'ice', 'monitor', 'ntext', 'call', 'ffi', 'tex', 'switching', 'tor', 'context-switch', 'pen', 'tr', 'monit', 'par', 'xt', 'mo', 'ntl', 'ex', 'mu', 'context-switching', 'rr', 'st', 'co', 'ff', 'muc', 'sp', 'ch', 'jus', 'ent', 'ill', 'ta']"
+54d4a1d6db8155e6700f853b,149,2015-03-05 22:25:00,"ok let me look at it tomorrow
+","['row', 'let', 'mo', 'rr', 'om', 'rro', 'tom']"
+54d4a1d6db8155e6700f853b,160,2015-03-06 16:26:00,"I feel the same way
+do you want to press the green button or should I do the rebase dance?
+","['ant', 'nt', 'sam', 'ase', 'base', 'el', 'rebase', 'button', 'sh', 'sa', 'wan', 'pre', 'ld', 'ess', 'ou', 'gree', 'ss', 'yo', 'fee', 'eel', 'ton', 'gr']"
+54d4a1d6db8155e6700f853b,168,2015-03-06 17:48:00,"ok
+",[]
+54d4a1d6db8155e6700f853b,183,2015-03-07 17:38:00,"yeah, go ahead. the branch should be there now.
+","['branch', 'sh', 'ld', 'go', 'head', 'ou', 'ranch', 'ch']"
+54d4a1d6db8155e6700f853b,185,2015-03-07 17:56:00,"you too!
+","['ou', 'yo']"
+54d4a1d6db8155e6700f853b,196,2015-03-10 20:32:00,"landscape.io does not seem to be very mature yet. but could be cool and carl is pretty responsive
+","['io', 'lan', 'landscape', 'ca', 'em', 'pre', 'ld', 'sca', 'tty', 'ape', 'ou', 'po', 'cap', 'mat', 'co', 'sc', 'dsc', 'sp', 'responsive', 'landscape.io']"
+54d4a1d6db8155e6700f853b,213,2015-03-11 14:30:00,"ok
+",[]
+54d4a1d6db8155e6700f853b,238,2015-03-18 15:23:00,"@omerzimp why are you so set on AF?
+","['set', 'ou', 'imp', 'mer', 'om', 'hy', 'yo']"
+54d4a1d6db8155e6700f853b,243,2015-03-18 15:26:00,"there is also AgglomerativeClustering, which is much faster and easier to understand than AF
+and provides a hierarchical clustering
+well ok if your point is to understand how to implement AF on MR then go for that. I just don't see why you would want to do that, as AF is a crappy algorithm.
+There are a also papers about implementing good clustering algorithms on MR
+","['ide', 'ant', 'nt', 'algorithm', 'vi', 'int', 'ls', 'des', 'cal', 'point', 'ca', 'el', 'ati', 'rar', 'em', 'rc', 'wan', 'ld', 'go', 'sta', 'hierarchical', 'ri', 'hat', 'lso', 'ring', 'ovi', 'ape', 'ou', 'imp', 'mu', 'der', 'lg', 'po', 'stan', 'mer', 'st', 'hiera', 'rs', 'om', 'cl', 'aster', 'muc', 'hy', 'yo', 'ch', 'rstan', 'jus', 'arch', 'od', 'eme', 'glom', 'als', 'cra', 'ent', 'goo', 'eas', 'de', 'ta']"
+54d4a1d6db8155e6700f853b,245,2015-03-18 15:27:00,"I am just asking why you want AF.
+","['ant', 'nt', 'skin', 'wan', 'ou', 'st', 'hy', 'yo', 'jus', 'kin']"
+54d4a1d6db8155e6700f853b,249,2015-03-18 15:41:00,"@ogrisel cool :) there are sooo many reviews to be done....
+","['vi', 'views', 'view', 'el', 'review', 'ri', 'ogr', 'co', 'eviews', 'ws', 'rise', 'gr']"
+54d4a1d6db8155e6700f853b,251,2015-03-18 15:46:00,"btw @ogrisel if we merge one Pr every day, we will still be going at Chrismas (if no-one opens any more).
+omerzimp there is none. Pyspark is the closest, I'd think. there are also python interfaces for h2o and graphlab/dato
+","['python', 'nt', 'int', 'merge', 'il', 'ls', 'interface', 'graph', 'el', 'h2', 'thin', 'go', 'pen', 'ri', 'ace', 'clos', 'lso', 'par', 'sti', 'closest', 'mo', 'imp', 'ogr', 'hla', 'mer', 'st', 'eve', 'om', 'ose', 'cl', 'graphlab', 'sp', 'h2o', 'lab', 'face', 'yt', 'als', 'ism', 'rise', 'bt', 'wil', 'gr', 'ill']"
+54d4a1d6db8155e6700f853b,253,2015-03-18 15:52:00,"np.unique(clustering.labels_)
+","['label', 'ls', 'unique', 'el', 'labels', 'ri', 'uniq', 'ring', 'np', 'st', 'cl', 'lab', 'que', 'iq']"
+54d4a1d6db8155e6700f853b,269,2015-03-18 20:11:00,"thanks, that's awesome! have fun!
+I'll try to figure out the test that crashes on all kind of weird combinations of python and numpy
+","['python', 'com', 'crash', 'io', 'combinations', 'numpy', 'ati', 'sh', 'nat', 'rd', 'tr', 'figure', 'ras', 'awe', 'hat', 'bin', 'som', 'ou', 'na', 'ash', 'st', 'co', 'om', 'fig', 'ei', 'kin', 'yt', 'kind', 'ump', 'comb', 'cra']"
+54d4a1d6db8155e6700f853b,270,2015-03-18 20:20:00,":feelsgood:
+","['ls', 'el', 'go', 'od', 'fee', 'eel', 'goo']"
+54d4a1d6db8155e6700f853b,273,2015-03-18 20:30:00,"Well if you want, you can try to track down what are the changes in python and numpy that cause this to fail ;)
+I have to work on organizational stuff for the rest of the day, so I can't track this down much further at the moment
+","['python', 'ant', 'nt', 'io', 'rest', 'il', 'trac', 'rack', 'numpy', 'ca', 'el', 'ati', 'organization', 'wan', 'mom', 'tr', 'rt', 'hat', 'ack', 'mo', 'ou', 'mu', 'na', 'st', 'ff', 'om', 'muc', 'yo', 'ch', 'yt', 'uff', 'tuf', 'stuff', 'ump', 'ent']"
+54d4a1d6db8155e6700f853b,286,2015-03-19 16:29:00,"I could but I have other things to do. and without looking at it, how should I say if it is doable?
+","['thin', 'sh', 'sa', 'ld', 'ou', 'co', 'kin']"
+54d4a1d6db8155e6700f853b,291,2015-03-20 15:54:00,"thanks, looks good and I marked for backport
+","['port', 'backport', 'back', 'go', 'rt', 'ack', 'ed', 'po', 'od', 'rke', 'goo']"
+54d4a1d6db8155e6700f853b,322,2015-03-23 15:09:00,"Ok you are just building a regressor. By application I mean: does this ever work better than a random forest? Also, is that what people currently use in symbolic regression? And does that work better than greedy expansions of variables in a linear model?
+@ogrisel would you still have them in the ``.utils`` module? I thought about introducing ``._utils`` and just moving (backward-compatible) all the non-public API there?
+but maybe I should rather spend my time on reviewing the LDA and GP PRs  or finishing the MLP.
+Btw, for the MLP, I'm not 100% certain on how to do nesterovs momentum. I find the paper was not very clearly written, but maybe I was just tired
+https://github.com/scikit-learn/scikit-learn/pull/4436 just passed
+","['git', 'com', 'random', 'nt', 'variables', 'vi', 'io', 'rest', 'int', 'time', 'https', 'ear', 'ini', 'il', 'dom', 'ria', 'nis', 'sse', 'ls', 'var', 'regression', 'model', 'module', 'pull', 'http', 'sed', 'build', 'view', 'mode', 'github', 'public', 'ca', 'ansi', 'el', 'ssi', 'war', 'ati', 'line', 'em', 'cin', 'find', 'sh', 'review', 'vin', 'ps', 'back', 'mean', 'ld', 'rd', 'mom', 'greedy', 'pen', 'ri', 'tr', 'expansion', 'ime', 'rt', 'cat', 'hat', 'lso', 'del', 'pan', 'du', 'ack', 'sti', 'building', 'ode', 'cer', 'ess', 'mov', 'tps', 'uti', 'ovi', 'mo', 'momentum', 'ape', 'ou', 'ntl', 'exp', 'ex', 'ed', 'rr', 'maybe', 'ogr', 'rtai', 'tire', 'ppl', 'scikit-learn', 'gree', 'nest', 'red', 'st', 'eve', 'ss', 'co', 'om', 'sc', 'cl', 'opl', 'uci', 'sp', 'yo', 'ert', 'mod', 'jus', 'od', 'nes', 'iab', 'ubl', 'rise', 'near', 'ent', 'hub', 'rod', 'sym', 'gr', 'egress', 'ill', 'cert', 'de', 'ta']"
+54d4a1d6db8155e6700f853b,344,2015-03-24 19:16:00,"well he said he understood my idea
+not that it solves his issue / replaces his
+I should reread my proposal
+It has been two years (sic!)
+","['ide', 'ear', 'replace', 'el', 'sh', 'sa', 'ld', 'su', 'opos', 'prop', 'ace', 'hat', 'epl', 'ou', 'der', 'po', 'rep', 'st', 'sal', 'ss', 'rs', 'od', 'pos', 'sic', 'de']"
+54d4a1d6db8155e6700f853b,345,2015-03-24 19:19:00,"I would have to re-read but it tries to address some of the points that I mentioned in my email
+:)
+","['email', 'nt', 'io', 'int', 'il', 'point', 'add', 'dd', 'em', 'ld', 'trie', 'points', 'ri', 'tr', 'hat', 'ess', 'som', 'ou', 'ed', 'po', 'ss', 'om', 'mention', 'ent']"
+54d4a1d6db8155e6700f853b,350,2015-03-24 21:00:00,"no
+",[]
+54d4a1d6db8155e6700f853b,352,2015-03-24 21:01:00,"anyhow, I commented on melange that I think it is not a good name
+I would just call it model selection and evaluation maybe
+","['com', 'nt', 'io', 'evaluation', 'lua', 'select', 'lan', 'model', 'cal', 'eval', 'mode', 'ca', 'el', 'uat', 'ati', 'call', 'thin', 'ld', 'selection', 'go', 'hat', 'mel', 'del', 'alu', 'ode', 'mo', 'ou', 'comm', 'lang', 'ed', 'maybe', 'na', 'st', 'co', 'om', 'mod', 'jus', 'nam', 'od', 'ent', 'val', 'goo', 'de']"
+54d4a1d6db8155e6700f853b,358,2015-03-24 21:59:00,"google doc
+@ogrisel do you think this is a good idea: https://github.com/scikit-learn/scikit-learn/issues/4445 we could ask cangermueller to do it, he didn't have much opportunity to prove his coding skills yet, I think
+heading over to facebook for free drinks now ^^
+ttyl
+","['ide', 'git', 'com', 'free', 'https', 'port', 'ear', 'il', 'boo', 'facebook', 'ls', 'doc', 'http', 'rm', 'kill', 'github', 'ca', 'el', 'thin', 'ps', 'ld', 'su', 'go', 'tty', 'head', 'ri', 'ace', 'rt', 'dn', 'idn', 'cod', 'tps', 'heading', 'ou', 'mu', 'ogr', 'po', 'codi', 'scikit-learn', 'tun', 'ss', 'co', 'om', 'sc', 'muc', 'yo', 'ch', 'face', 'oppo', 'od', 'rise', 'ogl', 'hub', 'gr', 'goo', 'ill', 'de']"
+54d4a1d6db8155e6700f853b,369,2015-03-26 01:11:00,"tomorrow. It's 21h in NYC
+","['row', 'mo', 'rr', 'om', 'rro', 'tom']"
+54d4a1d6db8155e6700f853b,373,2015-03-26 01:27:00,"noooo don't do it ;)
+",[]
+54d4a1d6db8155e6700f853b,383,2015-03-26 14:53:00,"@omerzimp I wouldn't expect that.
+","['expect', 'ld', 'hat', 'dn', 'ou', 'imp', 'exp', 'ex', 'mer', 'om']"
+54d4a1d6db8155e6700f853b,391,2015-03-26 18:07:00,"I'll do it, I can release afterwards.
+","['release', 'ca', 'ase', 'el', 'war', 'rd', 'rel', 'rds', 'eas']"
+54d4a1d6db8155e6700f853b,393,2015-03-26 18:05:00,"@ogrisel I'm back
+just out for lunch
+@ragv I'll do it in a bit
+","['unc', 'el', 'back', 'bit', 'ri', 'ack', 'ou', 'ogr', 'st', 'ag', 'ch', 'jus', 'rise', 'gr']"
+54d4a1d6db8155e6700f853b,398,2015-03-26 18:22:00,"@ogrisel what is the status now? do you want to do it or should I? Also, should we have a ""highlights"" section in whatsnew?
+maybe not
+next we should push the 0.16.0 version, trigger the buildbot, and move the docs, right?
+are you working on any of these?
+","['ant', 'nt', 'io', 'il', 'ls', 'push', 'doc', 'move', 'build', 'version', 'el', 'status', 'hig', 'highlight', 'ocs', 'sh', 'wan', 'ld', 'sta', 'dbo', 'light', 'ri', 'stat', 'tr', 'next', 'hat', 'lso', 'buildbot', 'xt', 'mov', 'mo', 'ou', 'ex', 'maybe', 'ogr', 'st', 'rs', 'yo', 'ats', 'sn', 'kin', 'tus', 'sec', 'rise', 'hts', 'tsne', 'rsi', 'gr', 'orking', 'ta']"
+54d4a1d6db8155e6700f853b,404,2015-03-26 18:42:00,"can you have a brief look at the commit https://github.com/amueller/scikit-learn/commit/dbe3cd33145677cdae9bdbcbef0c3791bf94bca3 @ogrisel ?
+","['git', 'com', 'https', 'ear', 'cd', 'http', 'commit', 'github', 'ca', 'el', 'ps', 'ri', 'bc', 'tps', 'ou', 'comm', 'mu', 'ogr', 'cda', 'scikit-learn', 'co', 'om', 'sc', 'yo', 'c3', 'mi', 'rise', 'hub', 'gr']"
+54d4a1d6db8155e6700f853b,408,2015-03-26 18:48:00,"- Improved error messages and better validation when using malformed input data.
+","['io', 'validation', 'orm', 'message', 'using', 'input', 'rm', 'put', 'lf', 'messages', 'ati', 'sa', 'ida', 'sage', 'ssa', 'malformed', 'ess', 'ata', 'ed', 'rr', 'np', 'sag', 'ss', 'ag', 'rro', 'val', 'ta']"
+54d4a1d6db8155e6700f853b,411,2015-03-26 18:55:00,"ok. I'll push it, do the docs stuff and push the docs. I think we can do this now.
+whatsnew changes will go to both branches
+","['il', 'branch', 'push', 'doc', 'ca', 'thin', 'ocs', 'sh', 'go', 'hat', 'st', 'ranch', 'ff', 'ch', 'ats', 'sn', 'uff', 'tuf', 'stuff', 'tsne', 'wil', 'ill']"
+54d4a1d6db8155e6700f853b,426,2015-03-27 14:46:00,"good
+I just decided to stay at home, I'm too sick
+","['ide', 'go', 'sta', 'ed', 'st', 'om', 'jus', 'od', 'sic', 'goo', 'home', 'de', 'ta']"
+54d4a1d6db8155e6700f853b,462,2015-03-29 15:58:00,"thanks
+That sounds like a good strategy
+","['rate', 'go', 'tr', 'hat', 'ou', 'st', 'od', 'goo']"
+54d4a1d6db8155e6700f853b,469,2015-04-01 14:27:00,"I agree
+","['gree', 'ag', 'gr']"
+54d4a1d6db8155e6700f853b,493,2015-04-06 14:06:00,"oh damn, I didn't think of that.
+btw, can you ping gael on gsoc?
+we need to move forward
+to get the right number of slots
+","['pi', 'get', 'move', 'ping', 'ca', 'el', 'war', 'thin', 'rd', 'forward', 'ri', 'soc', 'hat', 'dn', 'idn', 'dam', 'mov', 'mo', 'ou', 'slots', 'slot', 'ed', 'gso', 'ber', 'yo', 'bt']"
+54d4a1d6db8155e6700f853b,538,2015-04-14 16:10:00,"ok, fixed. I'll update the mac build thing, I guess, and then we check the sdists...
+and build the website and minimize the PNGs ... fun :)
+","['ini', 'il', 'date', 'build', 'fixed', 'thin', 'minimize', 'min', 'ld', 'sdi', 'ess', 'ed', 'sdist', 'web', 'minim', 'st', 'ss', 'ch', 'dis', 'xed', 'mi', 'sts']"
+54d4a1d6db8155e6700f853b,545,2015-04-14 19:58:00,"maybe I'll try upload_all
+oh, right
+now it works
+","['upload', 'load', 'ri', 'tr', 'maybe']"
+54d4a1d6db8155e6700f853b,546,2015-04-14 20:04:00,"yeah It does work. Did you upload already?
+ok. what is twine?
+I'm just drafting the ann mail, ok?
+","['upload', 'il', 'load', 'wine', 'hat', 'ready', 'ou', 'lr', 'st', 'raft', 'yo', 'jus', 'twine']"
+54d4a1d6db8155e6700f853b,613,2015-05-05 21:27:00,"makes sense, but we can also not wait for the fix in pandas.
+@ogrisel so I think we should maybe just copy the DF in the ""rare"" situation that happens and throw a warning that people should use .values to avoid the copy?
+","['io', 'ls', 'copy', 'row', 'oid', 'ca', 'el', 'uat', 'war', 'ati', 'rar', 'cop', 'thin', 'sh', 'ld', 'void', 'pen', 'throw', 'ri', 'wait', 'hat', 'lso', 'alu', 'pan', 'ou', 'sens', 'ning', 'maybe', 'ogr', 'pandas', 'sense', 'st', 'co', 'opl', 'nse', 'jus', 'als', 'rise', 'val', 'gr']"
+54d4a1d6db8155e6700f853b,632,2015-05-15 20:55:00,"hey :)
+",['hey']
+54d4a1d6db8155e6700f853b,645,2015-05-18 22:39:00,"ok, I will. not sure I have time to go through all of it now
+","['time', 'il', 'su', 'go', 'ime', 'ou', 'wil', 'ill']"
+54d4a1d6db8155e6700f853b,648,2015-05-19 14:40:00,"not yet
+",[]
+54d4a1d6db8155e6700f853b,653,2015-05-19 15:35:00,"where are you going vlad? Will you be around?
+","['il', 'go', 'ou', 'yo', 'aro', 'ill']"
+54d4a1d6db8155e6700f853b,657,2015-05-19 18:22:00,"great!
+",['gr']
+54d4a1d6db8155e6700f853b,662,2015-05-20 14:41:00,"pretty sure that will fix the issue
+","['il', 'pre', 'su', 'tty', 'hat', 'ss', 'wil', 'ill']"
+54d4a1d6db8155e6700f853b,693,2015-05-27 20:39:00,"hehe ok
+loooool http://en.wikipedia.org/wiki/Andreas_M%C3%BCller
+","['ip', 'wiki', 'wikipedia', 'http', 'edi', 'dia', 'ed', 'eas']"
+54d4a1d6db8155e6700f853b,695,2015-05-27 20:58:00,"lol
+I'm not that interesting
+","['nt', 'rest', 'int', 'hat', 'sti', 'st']"
+54d4a1d6db8155e6700f853b,719,2015-06-03 19:19:00,"yeah probably
+but the FeatureUnion thing didn't get as much attention, I think
+","['nt', 'io', 'nio', 'get', 'thin', 'dn', 'idn', 'att', 'mu', 'muc', 'ch', 'ent']"
+54d4a1d6db8155e6700f853b,738,2015-06-04 20:30:00,"yeah sounds good
+","['go', 'ou', 'od', 'goo']"
+54d4a1d6db8155e6700f853b,746,2015-06-04 22:13:00,"well you could just leave them out, that could be supported.
+but still ugly
+","['port', 'il', 'el', 'em', 'ld', 'su', 'rte', 'rt', 'hat', 'sti', 'ou', 'ed', 'po', 'sup', 'st', 'co', 'yo', 'jus', 'ill']"
+54d4a1d6db8155e6700f853b,752,2015-06-04 22:21:00,"haha
+",[]
+54d4a1d6db8155e6700f853b,777,2015-06-05 18:04:00,"feel free to do it
+","['free', 'el', 'fee', 'eel']"
+54d4a1d6db8155e6700f853b,784,2015-06-05 20:15:00,"@vene that is what I was asking
+and the slicing API with complex number that do not mean steps seems a really awkward construct
+isinstance(sparse.csr_matrix([[1, 2]]), containers.Mapping) == True. # that is all
+gitter is weird
+","['git', 'com', 'nt', 'awk', 'containers', 'struct', 'pi', 'lex', 'skin', 'ping', 'ems', 'war', 'matrix', 'instance', 'em', 'cin', 'csr', 'ps', 'mean', 'rd', 'eps', 'sta', 'ppi', 'step', 'sli', 'ri', 'tr', 'cons', 'hat', 'par', 'contain', 'ex', 'construct', 'isinstance', 'stan', 'mat', 'st', 'ber', 'rs', 'co', 'om', 'plex', 'sp', 'trix', 'ei', 'kin', 'ompl', 'isin', 'ta']"
+54d4a1d6db8155e6700f853b,788,2015-06-05 20:47:00,"more or less horrifying than the complex slicing?
+","['com', 'lex', 'cin', 'sli', 'ri', 'less', 'ess', 'mo', 'ex', 'rr', 'ss', 'co', 'om', 'plex', 'ompl', 'rif']"
+54d4a1d6db8155e6700f853b,790,2015-06-05 20:58:00,";)
+",[]
+54d4a1d6db8155e6700f853b,792,2015-06-05 21:08:00,"sorry, I didn't get that
+","['get', 'hat', 'dn', 'idn', 'rr']"
+54d4a1d6db8155e6700f853b,836,2015-06-09 15:45:00,"sounds good
+","['go', 'ou', 'od', 'goo']"
+54d4a1d6db8155e6700f853b,847,2015-06-10 23:09:00,"probably not.
+Maybe ping @ogrisel ?
+great!
+","['pi', 'ping', 'el', 'ri', 'ogr', 'rise', 'gr']"
+54d4a1d6db8155e6700f853b,891,2015-06-12 19:43:00,"Either is fine
+usually we ask to squash commits before merging, so if you always amend you don't have to do that
+the PR discussions are not handled in a great way by github, no matter which method you use.
+","['git', 'com', 'io', 'commit', 'github', 'ssi', 'handle', 'sh', 'su', 'led', 'hat', 'sua', 'uss', 'squash', 'att', 'ou', 'comm', 'ed', 'ash', 'mat', 'mer', 'ss', 'co', 'om', 'sc', 'yo', 'ch', 'dis', 'od', 'mi', 'hub', 'gr']"
+54d4a1d6db8155e6700f853b,941,2015-06-17 17:55:00,"if anyone has time, the timing on #4844 really confuses me btw.
+Slicing an euclidean distance into smaller bits makes the code run faster?!
+","['ide', 'nt', 'int', 'time', 'bits', 'distance', 'timing', 'fuse', 'cin', 'min', 'bit', 'sta', 'ime', 'ode', 'uses', 'cod', 'ming', 'stan', 'st', 'co', 'cl', 'aster', 'yo', 'dis', 'od', 'mi', 'bt', 'de', 'ta']"
+54d4a1d6db8155e6700f853b,961,2015-06-17 18:47:00,"so if you want to square an array it is faster to do so by chunking it... that seems wrong
+","['ant', 'nt', 'ems', 'em', 'wan', 'chunking', 'square', 'hat', 'ou', 'rr', 'ray', 'arr', 'st', 'aster', 'yo', 'ch', 'kin']"
+54d4a1d6db8155e6700f853b,962,2015-06-17 18:50:00,"for the code in #4844 chunks of size 1 are fastest
+%timeit array *= array doesn't work lol
+having the loop over samples be the fastest just seems so wrong
+","['oop', 'vi', 'size', 'time', 'sample', 'sam', 'ems', 'em', 'avi', 'sa', 'vin', 'timeit', 'ime', 'chunks', 'imei', 'ode', 'cod', 'ampl', 'rr', 'ray', 'arr', 'st', 'co', 'ch', 'sn', 'jus', 'od', 'ei', 'de']"
+54d4a1d6db8155e6700f853b,974,2015-06-18 15:14:00,"I stil have not really read that :-/
+","['il', 'hat', 'sti', 'st']"
+54d4a1d6db8155e6700f853b,975,2015-06-18 15:16:00,"sweet
+",[]
+54d4a1d6db8155e6700f853b,982,2015-06-18 15:32:00,"@vene would you not agree? Well you could argue it is always more robust.
+GBM is an ensemble ;)
+","['robust', 'el', 'em', 'ld', 'bus', 'sem', 'mo', 'ou', 'gree', 'st', 'co', 'ag', 'yo', 'nse', 'gr']"
+54d4a1d6db8155e6700f853b,989,2015-06-18 15:55:00,"actually I think you should pick an example that can currently not be made to work
+","['nt', 'pi', 'ca', 'xa', 'thin', 'sh', 'pic', 'ld', 'act', 'pick', 'hat', 'ampl', 'ou', 'ntl', 'ex', 'rr', 'yo', 'ent', 'de']"
+54d4a1d6db8155e6700f853b,993,2015-06-18 15:59:00,"discussion: https://github.com/scikit-learn/scikit-learn/issues/4757
+","['git', 'com', 'io', 'https', 'ear', 'http', 'github', 'ssi', 'ps', 'su', 'tps', 'uss', 'scikit-learn', 'ss', 'co', 'om', 'sc', 'dis', 'hub']"
+54d4a1d6db8155e6700f853b,1017,2015-06-22 22:50:00,"no worries vladn :)
+","['ri', 'dn', 'rr']"
+54d4a1d6db8155e6700f853b,1021,2015-06-23 14:48:00,"@rvraghav93 commented there
+","['com', 'nt', 'comm', 'ed', 'co', 'om', 'ag', 'ent']"
+54d4a1d6db8155e6700f853b,1022,2015-06-23 14:51:00,"no in cross_validation
+so there will be a new version now in model_selection
+and the old version will behave the old way
+","['io', 'validation', 'select', 'il', 'model', 'version', 'mode', 'el', 'ati', 'ld', 'selection', 'ida', 'del', 'ode', 'mo', 'ros', 'ss', 'rs', 'mod', 'od', 'cro', 'rsi', 'wil', 'val', 'ill', 'de']"
+54d4a1d6db8155e6700f853b,1025,2015-06-23 14:56:00,"yeah just add ``new_cv.n_folds(X, y, labels)``
+because we don't want to instantiate the whole thing there. we usually know this anyhow
+","['ant', 'nt', 'label', 'ole', 'ls', 'ca', 'add', 'dd', 'el', 'labels', 'thin', 'wan', 'ld', 'su', 'sta', 'lds', 'fold', 'instant', 'sua', 'stan', 'st', 'lab', 'jus', 'hol', 'know', 'ta']"
+54d4a1d6db8155e6700f853b,1032,2015-06-23 15:19:00,"np. sorry for the delay. we have quite a few prs
+@vene @ogrisel do you want to review #4583 ?
+","['ant', 'nt', 'vi', 'view', 'el', 'delay', 'wan', 'review', 'ri', 'quit', 'del', 'ou', 'rr', 'np', 'ogr', 'rs', 'yo', 'rise', 'gr', 'de']"
+54d4a1d6db8155e6700f853b,1054,2015-06-23 17:31:00,"alright :)
+","['ri', 'lr']"
+54d4a1d6db8155e6700f853b,1085,2015-06-30 03:06:00,"tomorrow
+","['row', 'mo', 'rr', 'om', 'rro', 'tom']"
+54d4a1d6db8155e6700f853b,1108,2015-07-01 13:54:00,"yes
+",[]
+54d4a1d6db8155e6700f853b,1123,2015-07-02 20:57:00,"sweet thanks
+",[]
+54d4a1d6db8155e6700f853b,1187,2015-07-28 20:45:00,"@michaelaye glad you worked it out :)
+","['el', 'ou', 'ed', 'yo', 'ch', 'rke', 'mi', 'glad']"
+54d4a1d6db8155e6700f853b,1195,2015-07-29 16:47:00,"not easily ;)
+you could test it against simple cases that you worked out on paper and that are easy to check?
+though that is rarely the case with formulas involving digamma functions :-/
+Honestly I don't know. unit-testing variational inference ....
+","['testing', 'vi', 'io', 'orm', 'il', 'unit-testing', 'cas', 'ria', 'stl', 'inference', 'var', 'function', 'rm', 'gamma', 'ca', 'ase', 'case', 'unc', 'el', 'ati', 'rar', 'dig', 'formula', 'func', 'vin', 'ld', 'formulas', 'rel', 'ri', 'hat', 'sti', 'variation', 'inf', 'ape', 'ou', 'arel', 'imp', 'mu', 'ed', 'gam', 'na', 'nest', 'st', 'co', 'ag', 'yo', 'ch', 't-test', 'las', 'rke', 'nes', 'know', 'eas']"
+54d4a1d6db8155e6700f853b,1200,2015-07-31 16:24:00,"haha yeah have a nap ;)
+",['na']
+54d4a1d6db8155e6700f853b,1231,2015-08-09 18:20:00,"I can try. I'm pretty busy at the moment but I'll have a look
+Does anyone know where @ogrisel is? Holidays?
+I'll check it tomorrow
+","['nt', 'row', 'ca', 'el', 'pre', 'mom', 'days', 'tty', 'ri', 'ida', 'tr', 'bus', 'mo', 'rr', 'ogr', 'om', 'rro', 'yo', 'ch', 'tom', 'rise', 'ent', 'gr', 'know']"
+54d4a1d6db8155e6700f853b,1237,2015-08-10 18:38:00,"doc/modules/mixture.rst ?
+","['module', 'doc', 'du', 'xt', 'mo', 'st', 'rs', 'mod', 'mixture', 'od', 'mi']"
+54d4a1d6db8155e6700f853b,1239,2015-08-10 18:46:00,"I know ;)
+",['know']
+54d4a1d6db8155e6700f853b,1266,2015-08-13 17:46:00," s/examples/tests I mean
+yes
+ok
+why do you think appveyor is not testing model selection?
+","['testing', 'io', 'select', 'model', 'mode', 'el', 'xa', 'thin', 'mean', 'selection', 'del', 'sti', 'ode', 'ampl', 'mo', 'ou', 'ex', 'st', 'appv', 'hy', 'yo', 'appveyor', 'mod', 'od', 'pv', 'sts', 'de']"
+54d4a1d6db8155e6700f853b,1269,2015-08-13 18:04:00,"It looks ok
+",[]
+54d4a1d6db8155e6700f853b,1279,2015-08-14 18:02:00,"sure :)
+",['su']
+54d4a1d6db8155e6700f853b,1314,2015-09-10 14:17:00,"yeah but that should be a quick change that either of us can do if it has two reviews
+do you have any opinion on adding PR links to whatsnew?
+","['vi', 'io', 'ini', 'pi', 'nio', 'views', 'view', 'ca', 'add', 'dd', 'sh', 'review', 'ld', 'hat', 'either', 'ou', 'yo', 'ch', 'ats', 'eviews', 'quic', 'sn', 'uic', 'ei', 'ws', 'tsne']"
+54d4a1d6db8155e6700f853b,1329,2015-09-11 15:18:00,"yeah
+this is also new to me: https://ci.appveyor.com/project/sklearn-ci/scikit-learn/build/1.0.2090/job/toaww87ohll9pxv9
+wait that is the same
+sorry
+","['com', 'https', 'ear', 'il', 'ls', 'sam', 'http', 'build', 'project', 'oaw', 'sa', 'ps', 'ld', 'wait', 'hat', 'lso', 'proj', 'tps', '.app', '.a', 'rr', 'scikit-learn', 'appv', 'co', 'om', 'sc', 'yo', 'appveyor', 'pv', 'als', 'jo', '20']"
+54d4a1d6db8155e6700f853b,1426,2015-10-14 18:11:00,"http://scikit-learn.org/dev/auto_examples/model_selection/plot_roc.html is not rendered
+meh
+","['html', 'io', 'ear', 'plot', 'select', 'model', 'render', 'http', 'ml', 'mode', 'el', 'xa', 'selection', 'del', 'ode', 'ampl', 'mo', 'ex', 'ed', 'der', 'ender', 'auto', 'roc', 'scikit-learn', 'tm', 'red', 'sc', 'mod', 'tml', 'od', 'de']"
+54d4a1d6db8155e6700f853b,1441,2015-10-15 14:39:00,"@ogrisel are you planning on uploading the website for the rc? No, right?
+I think it would be nice to fix https://github.com/scikit-learn/scikit-learn/issues/5324
+should I go for that?
+oh right there is https://github.com/scikit-learn/scikit-learn/pull/5402
+https://github.com/scikit-learn/sklearn-docbuilder/pull/6
+","['git', 'com', 'planning', 'https', 'upload', 'ear', 'nic', 'il', 'load', 'lan', 'pull', 'doc', 'http', 'build', 'github', 'loading', 'el', 'builder', 'ice', 'thin', 'uploading', 'sh', 'rc', 'ps', 'ld', 'su', 'nice', 'go', 'ri', 'hat', 'tps', 'ou', 'ning', 'der', 'ogr', 'web', 'scikit-learn', 'ss', 'co', 'om', 'sc', 'yo', 'rise', 'hub', 'gr', 'de']"
+54d4a1d6db8155e6700f853b,1448,2015-10-15 17:05:00,"I agree.
+so the plotting examples are ""not that critical"" for the release. Though it would be nice to fix them
+yeah but not for the rc.
+I thought you wanted to do an RC/beta today? Or the full release?
+","['ant', 'beta', 'nt', 'plot', 'nic', 'cal', 'release', 'ca', 'ase', 'el', 'ice', 'em', 'xa', 'rc', 'wan', 'ld', 'nice', 'rel', 'ri', 'hat', 'ampl', 'ou', 'ex', 'ed', 'gree', 'ott', 'ag', 'yo', 'od', 'eta', 'gr', 'eas', 'ta']"
+54d4a1d6db8155e6700f853b,1503,2015-10-21 09:15:00,"thanks @glouppe
+",['ou']
+54d4a1d6db8155e6700f853b,1516,2015-10-21 11:27:00,"so it is not our IP
+",['ou']
+54d4a1d6db8155e6700f853b,1530,2015-10-21 15:40:00,"@vighneshbirodkar there doesn't necessarily be a loop
+","['oop', 'vi', 'il', 'sh', 'sa', 'sar', 'ri', 'ssa', 'ess', 'odk', 'ril', 'ss', 'sn', 'od', 'nes', 'rod']"
+54d4a1d6db8155e6700f853b,1532,2015-10-21 15:47:00,"@vighneshbirodkar  or there could be a closed form solution
+@ogrisel yeah I think it was a fluke
+","['vi', 'io', 'orm', 'sed', 'rm', 'el', 'solution', 'thin', 'sh', 'ld', 'ri', 'clos', 'uti', 'luke', 'ou', 'ed', 'ogr', 'odk', 'co', 'ose', 'cl', 'od', 'nes', 'rise', 'rod', 'gr']"
+54d4a1d6db8155e6700f853b,1537,2015-10-21 16:55:00,"why?
+right.
+","['ri', 'hy']"
+54d4a1d6db8155e6700f853b,1554,2015-10-22 19:32:00,"indeed
+lol I don't think I wrote a line of code this week
+","['line', 'thin', 'ode', 'cod', 'ed', 'co', 'od', 'de']"
+54d4a1d6db8155e6700f853b,1581,2015-10-29 23:43:00,":D
+",[]
+54d4a1d6db8155e6700f853b,1590,2015-11-02 01:01:00,"damn, I confused #5534 and #5164
+you were right, #5164 should have been closed
+","['sed', 'fuse', 'sh', 'ld', 'ri', 'clos', 'dam', 'ou', 'ed', 'co', 'ose', 'cl', 'yo']"
+54d4a1d6db8155e6700f853b,1594,2015-11-02 03:57:00,"yeah you need numpy 1.10
+I think
+","['numpy', 'thin', 'ou', 'ed', 'yo', 'ump']"
+54d4a1d6db8155e6700f853b,1746,2015-11-21 01:14:00,"@AAnoosheh you can use SVM(probabilities=True) which will use Platt's method for calibration of the decision function. Or you can use CallibratedClassifierCV to use Isotonic REgression to calibrate an SVM
+you can use Nystrom together with LogisticRegression
+just set n_components in Nystroem to n_samples and it will give you exact kernel logistic regression
+make_pipe(Nystroem(n_components=n_samples), LogisticRegression())
+does kernel logistic regression
+platt's method in libsvm does 5-fold cross-validation, so it is 5 times as expensive at one SVM.
+I don't even know how one would implement KLR in any efficient way, as the dual is dense
+I guess you could do SMO or a similar coordinate descent solver?
+anyhow, I would expect SVM+Platt do be much faster than KLR, unless you set the parameters such that all samples are support vectors
+","['com', 'nt', 'gis', 'ip', 'io', 'validation', 'parameters', 'time', 'ram', 'port', 'nic', 'il', 'components', 'kernel', 'gist', 'pi', 'regression', 'get', 'des', 'cal', 'sample', 'sam', 'pip', 'param', 'function', 'pipe', 'vector', 'ca', 'unc', 'el', 'ssi', 'ati', 'xact', 'calibration', 'set', 'ffi', 'expect', 'em', 'xa', 'func', 'sh', 'abi', 'nat', 'sa', 'solver', 'svm', 'ld', 'act', 'su', 'rd', 'rate', 'tor', 'pen', 'ida', 'meter', 'tr', 'tie', 'ime', 'rt', 'fold', 'libs', 'hat', 'par', 'du', 'sti', 'less', 'ess', 'rom', 'coordinate', 'ampl', 'att', 'libsvm', 'ou', 'imp', 'exp', 'ex', 'mu', 'ed', 'po', 'sup', 'na', 'ros', 'ord', 'cross-validation', 'tonic', 'st', 'eve', 'ss', 'rs', 'ecto', 'co', 'ff', 'om', 'sc', 'aster', 'muc', 'yo', 'ch', 'nse', 'brat', 'jus', 'lib', 'lli', 'mpo', 'babili', 'od', 'eme', 'ether', 'geth', 'las', 'cro', 'ara', 'mi', 'ton', 'libra', 'unless', 'vec', 'para', 'soto', 'lit', 'ent', 'wil', 'val', 'gr', 'egress', 'ill', 'know', 'de']"
+54d4a1d6db8155e6700f853b,1858,2015-12-10 16:35:00,"that is the same as PR ;)
+?
+","['sam', 'sa', 'hat']"
+54d4a1d6db8155e6700f853b,1864,2015-12-10 17:33:00,"hehe ok
+",[]
+54d4a1d6db8155e6700f853b,1888,2015-12-17 17:20:00,"and no support for custom architectures, i.e. you can specify a list with the number of nodes in each hidden layer, but they will all have the same activation function and there are no skip connections etc
+yeah we're not gonna expand beyond the model that is there. we want to make the mlp as good as possible, so we will add dropout, and if there is a consensus for a better of-the-shelf optimizer than adam, I think we'll be happy to add that, too
+there was a GSOC last year, but it did't finish yet :-/
+","['architecture', 'ant', 'nt', 'connection', 'ip', 'io', 'port', 'ear', 'ini', 'expand', 'il', 'hidden', 'adam', 'hit', 'activation', 'nis', 'model', 'des', 'sam', 'function', 'list', 'ml', 'mode', 'skip', 'ca', 'add', 'ada', 'unc', 'dd', 'el', 'lf', 'ssi', 'ati', 'elf', 'func', 'thin', 'sh', 'sa', 'rc', 'connect', 'wan', 'hid', 'layer', 'act', 'su', 'go', 'dde', 'cons', 'rt', 'xpand', 'hat', 'del', 'pan', 'nodes', 'ode', 'dam', 'mo', 'ou', 'consensus', 'sens', 'exp', 'ex', 'happy', 'po', 'sup', 'na', 'sensu', 'lis', 'sus', 'st', 'ber', 'ss', 'co', 'om', 'sp', 'yo', 'ch', 'nse', 'tom', 'gon', 'mod', 'arch', 'od', 'las', 'dropout', 'pos', 'mi', 'mlp', 'nne', 'drop', 'architect', 'hey', 'wil', 'goo', 'ill', 'de']"
+54d4a1d6db8155e6700f853b,1890,2015-12-17 17:22:00,"http://benanne.github.io/2015/03/17/plankton.html
+the GMM you mean?
+","['html', 'git', 'io', 'lan', 'http', 'ml', 'github', nan, 'mean', 'ou', 'na', 'tm', 'yo', 'tml', 'nne', 'ton', 'hub', '20']"
+54d4a1d6db8155e6700f853b,1893,2015-12-17 17:29:00,"machine learning in scikit-learn
+err machine learning with python
+","['python', 'ear', 'ning', 'rr', 'mach', 'scikit-learn', 'sc', 'ch', 'yt']"
+54d4a1d6db8155e6700f853b,1940,2016-01-19 17:49:00,"Thanks :)
+",[]
+54d4a1d6db8155e6700f853b,2007,2016-02-09 21:07:00,"Depending on how you parametrize, it's pretty easy to write
+if you assume homogeneous samples, you can just do a slight modification of kfold
+if you want to use a time index, it becomes way trickier (as we need to get a time series object in)
+","['ant', 'com', 'nt', 'io', 'modi', 'time', 'ram', 'get', 'sample', 'sam', 'sum', 'param', 'ca', 'object', 'ati', 'series', 'sa', 'wan', 'pre', 'ld', 'su', 'pen', 'light', 'tty', 'sli', 'ri', 'tr', 'ime', 'fold', 'cat', 'par', 'ampl', 'mo', 'ou', 'ecom', 'ex', 'ed', 'dex', 'eco', 'mog', 'st', 'ss', 'kie', 'co', 'om', 'yo', 'mod', 'jus', 'od', 'ara', 'para', 'metr', 'parametrize', 'eas', 'de', 'ndi']"
+54d4a1d6db8155e6700f853b,2013,2016-02-09 21:52:00,"that is what I mean
+","['mean', 'hat']"
+54d4a1d6db8155e6700f853b,2074,2016-02-18 15:28:00,"just email support@continuum.io
+","['email', 'nt', 'io', 'port', 'il', 'em', 'su', 'continuum', 'rt', 'po', 'sup', 'st', 'co', 'jus']"
+54d4a1d6db8155e6700f853b,2145,2016-02-29 21:19:00,"was the deadline already? Yes, there is a plan to submit a proposal
+","['lan', 'submit', 'line', 'sa', 'su', 'opos', 'prop', 'ready', 'po', 'lr', 'sal', 'bmi', 'pos', 'mi', 'de']"
+54d4a1d6db8155e6700f853b,2522,2016-06-17 14:44:00,"@lesshaste is it? what is it used for?
+oh wait, is that the paper that describes the regularization used in XGBoost?
+","['io', 'ssh', 'des', 'sed', 'ati', 'sha', 'sh', 'describe', 'ri', 'wait', 'hat', 'less', 'ess', 'ape', 'scribe', 'ed', 'ssha', 'regula', 'st', 'ss', 'haste', 'sc', 'de']"
+54d4a1d6db8155e6700f853b,2608,2016-07-16 14:46:00,"Ok pasted the above message here: https://github.com/scikit-learn/scikit-learn/wiki/Scipy-2016-Sprint-instructions
+","['git', 'com', 'nt', 'ip', 'io', 'int', 'https', 'ear', 'wiki', 'struct', 'message', 'http', 'github', 'paste', 'sa', 'ps', 'ri', 'instructions', 'tr', 'sage', 'ssa', 'ess', 'tps', 'ed', 'scikit-learn', 'st', 'sag', 'ss', 'co', 'om', 'sc', 'ag', 'instr', 'hub', '20']"
+54d4a1d6db8155e6700f853b,2617,2016-07-16 16:33:00,"@btabibian hey. Any contributions are always welcome :)
+the ones that are tagged sprint are very easy ones. If there is something that strikes your fancy, let me know!
+(I mean other than the sprint ones)
+","['com', 'nt', 'io', 'int', 'sprint', 'el', 'thin', 'abi', 'mean', 'let', 'ri', 'tr', 'hat', 'uti', 'som', 'ou', 'ed', 'lcom', 'st', 'co', 'om', 'sp', 'ag', 'yo', 'nes', 'hey', 'bt', 'know', 'eas', 'ta']"
+54d4a1d6db8155e6700f853b,2678,2016-07-28 15:14:00,"Need to check with @ogrisel
+@tguillemot can you try pushing again to one of the PRs?
+can you try again?
+","['il', 'push', 'ca', 'el', 'em', 'sh', 'ri', 'tr', 'mo', 'ou', 'ed', 'ogr', 'ag', 'yo', 'ch', 'rise', 'gr', 'ill']"
+54d4a1d6db8155e6700f853b,2826,2016-09-13 18:36:00,"i'll try to trigger the conda builder
+","['il', 'build', 'builder', 'ld', 'ri', 'tr', 'der', 'conda', 'co', 'de']"
+54d4a1d6db8155e6700f853b,2835,2016-09-13 18:42:00,";)
+",[]
+54d4a1d6db8155e6700f853b,2836,2016-09-13 18:47:00,"ok
+",[]
+54d4a1d6db8155e6700f853b,2839,2016-09-13 18:49:00,"on python three
+travis is failing
+like our normal travis https://travis-ci.org/scikit-learn/scikit-learn/builds/159677032
+unicode stuff?
+that's the built in the 0.18.X branch?
+","['python', 'unicode', 'vi', 'https', 'orm', 'ear', 'nic', 'il', 'branch', 'http', 'rm', 'build', 'avi', 'ps', 'ld', 'lds', 'tr', 'hat', 'ico', 'norm', 'ode', 'cod', 'tps', 'ou', 'travis-ci', 'scikit-learn', 'st', 'ranch', 'co', 'ff', 'sc', 'ch', 'od', 'yt', 'ravi', 'uff', 'tuf', 'stuff', 'de']"
+54d4a1d6db8155e6700f853b,2858,2016-09-14 19:47:00,"cool
+sounds good
+","['go', 'ou', 'co', 'od', 'goo']"
+54d4a1d6db8155e6700f853b,2977,2016-10-25 16:59:00,"either way. first find a test?
+","['find', 'either', 'st', 'rs', 'irs', 'ei']"
+54d4a1d6db8155e6700f853b,2978,2016-10-25 17:30:00,"whether the kernel knows? Well if X==Y it's probably fit
+but no, there is no flag or anything. The kernel shoudn't know
+why do you want that?
+use shogun if you want to do mkl ;)
+","['ant', 'nt', 'kernel', 'el', 'thin', 'sh', 'wan', 'fla', 'lag', 'hat', 'dn', 'ou', 'hy', 'ag', 'yo', 'shogun', 'gun', 'ether', 'ws', 'yt', 'know']"
+54d4a1d6db8155e6700f853b,2992,2016-10-27 15:52:00,"ok cool
+",['co']
+54d4a1d6db8155e6700f853b,3008,2016-10-31 15:41:00,"sure
+",['su']
+54d4a1d6db8155e6700f853b,3076,2016-12-13 15:46:00,"yes
+",[]
+54d4a1d6db8155e6700f853b,3079,2016-12-13 16:01:00,"yes
+",[]
+54d4a1d6db8155e6700f853b,3081,2016-12-13 16:16:00,"can't say without looking at your script
+","['ip', 'ca', 'sa', 'ri', 'ou', 'sc', 'yo', 'kin', 'script']"
+54d4a1d6db8155e6700f853b,3122,2017-01-16 17:06:00,"@pramitchoudhary haven't read that one. I like Max Kuhn's book though
+","['ram', 'boo', 'ax', 'hat', 'ou', 'har', 'ch', 'mi']"
+54d4a1d6db8155e6700f853b,3155,2017-02-24 21:27:00,"yes that makes sense. I haven't checked the code but sounds plausible
+the f_regression and f_classif docs are pretty bad imho
+I have not heard of SIS but that means nothing
+cool :)
+","['io', 'ear', 'regression', 'doc', 'class', 'ssi', 'thin', 'ocs', 'pre', 'mean', 'rd', 'nothing', 'tty', 'hat', 'ode', 'checked', 'ess', 'cod', 'ou', 'sens', 'ed', 'sense', 'ss', 'co', 'cl', 'ch', 'nse', 'od', 'las', 'gr', 'egress', 'de']"
+54d4a1d6db8155e6700f853b,3180,2017-03-04 00:19:00,"thanks :)
+",[]
+54d4a1d6db8155e6700f853b,3181,2017-03-04 00:58:00,"thanks, that would be great :)
+it will mostly be ""easy fix"" issues, I think
+I tagged a bunch of stuff ""sprint""
+as you might have seen on the right here lol
+","['nt', 'int', 'il', 'stl', 'sprint', 'unc', 'thin', 'ld', 'su', 'ri', 'hat', 'mo', 'ou', 'ed', 'st', 'ss', 'ff', 'sp', 'ag', 'yo', 'ch', 'bunch', 'mi', 'uff', 'tuf', 'stuff', 'wil', 'gr', 'ill', 'eas', 'bun', 'ta']"
+54d4a1d6db8155e6700f853b,3183,2017-03-04 01:07:00,"2013 till now you are still in the top 20 ;) I'm not sure any other timeframe makes us look more diverse
+matplotlib might need contributors even more, somehow it's not as ""cool"" as sklearn I fear. I wish I could contribute more there, but I can't even keep up with sklearn
+","['nt', 'time', 'ram', 'ear', 'plot', 'il', 'mef', 'ca', 'matplotlib', 'sh', 'frame', 'ld', 'su', 'tor', 'ri', 'tr', 'ime', 'sti', 'som', 'mo', 'ou', 'ed', 'otl', 'mat', 'st', 'eve', 'rs', 'co', 'om', 'yo', 'lib', 'mi', 'ill', '20']"
+54d4a1d6db8155e6700f853b,3366,2017-06-07 19:27:00,"yeah
+I wrote this ;)
+make it ovr
+then it'll have 4 elements
+I'm on 0.19-dev
+sorry about that
+ok starbucks is closing and I have to write a keynote
+good luck
+","['nt', 'element', 'key', 'el', 'tar', 'keynote', 'em', 'osi', 'elements', 'go', 'sta', 'ri', 'clos', 'hat', 'arb', 'ou', 'rr', 'st', 'cl', 'buck', 'od', 'eme', 'ent', 'goo', 'de', 'ta']"
+54d4a1d6db8155e6700f853b,3393,2017-06-13 09:50:00,"that's not the same as accuracy. and SVC is not probabilistic. And was it in the original training set? self-learning is for semi-supervised learning
+I think SVC uses sample_weight that you can increase
+hm...
+","['vi', 'ear', 'ini', 'il', 'ilist', 'sample', 'sam', 'sed', 'list', 'ca', 'ase', 'el', 'lf', 'set', 'self', 'em', 'ncr', 'elf', 'thin', 'abi', 'sa', 'super', 'su', 'cc', 'ri', 'tr', 'hat', 'sti', 'gina', 'uses', 'ampl', 'sem', 'acc', 'ou', 'ning', 'ed', 'sup', 'na', 'lis', 'st', 'yo', 'babili', 'ei', 'mi', 'training', 'eas']"
+54d4a1d6db8155e6700f853b,3424,2017-06-29 22:48:00,"great :)
+",['gr']
+54d4a1d6db8155e6700f853b,3470,2017-07-12 16:02:00,"hi
+sure
+",['su']
+54d4a1d6db8155e6700f853b,3471,2017-07-12 16:02:00,"@ogrisel so branch now and backport TSNE once it's merged?
+","['port', 'merge', 'branch', 'backport', 'el', 'back', 'ri', 'rt', 'ack', 'ed', 'ogr', 'po', 'mer', 'ranch', 'ch', 'rise', 'gr']"
+54d4a1d6db8155e6700f853b,3479,2017-07-13 16:29:00,"""easy""
+;)
+yeah true
+","['tr', 'eas']"
+54d4a1d6db8155e6700f853b,3485,2017-07-13 18:52:00,"@ogrisel https://circleci.com/gh/scikit-learn/scikit-learn/12068?utm_campaign=build-failed&utm_medium=email&utm_source=notification
+ugh
+","['email', 'com', 'irc', 'io', 'https', 'ear', 'il', 'http', 'edi', 'build', 'ca', 'el', 'ati', 'em', 'rc', 'utm', 'ps', 'ld', 'ri', 'led', 'cat', 'tps', 'ou', 'ed', 'ogr', 'scikit-learn', 'tm', 'circleci', 'co', 'om', 'sc', 'cl', 'gn', 'rise', 'gr', 'rce', '20']"
+54d4a1d6db8155e6700f853b,3565,2017-09-05 20:14:00,"@lesshaste feel free to pick it up ;)
+it makes sense if you can define it? ;)
+there are two standard definitions
+I'm not sure what's currently to do
+","['nt', 'io', 'ssh', 'free', 'ini', 'pi', 'ca', 'el', 'definition', 'init', 'sha', 'sh', 'pic', 'su', 'rd', 'sta', 'pick', 'hat', 'less', 'definitions', 'ess', 'ou', 'ntl', 'sens', 'rr', 'sense', 'ssha', 'efi', 'andar', 'stan', 'st', 'ss', 'haste', 'yo', 'nse', 'fee', 'eel', 'ent', 'de', 'ta']"
+54d4a1d6db8155e6700f853b,3569,2017-09-05 20:19:00,"What does it mean for a feature to contribute to the auc? how much will AUC change if you leave it out? That is just one step of sequential forward selection
+","['nt', 'io', 'select', 'il', 'el', 'war', 'mean', 'selection', 'rd', 'forward', 'step', 'ri', 'tr', 'hat', 'seq', 'ou', 'sequential', 'mu', 'st', 'auc', 'co', 'muc', 'yo', 'ch', 'jus', 'que', 'ent', 'wil', 'ill']"
+54d4a1d6db8155e6700f853b,3648,2017-11-22 17:22:00,"yes
+",[]
+54d4a1d6db8155e6700f853b,3670,2017-12-01 18:02:00,"sorry I gotta run, I'll think about it
+feature additions are usually pretty long-term
+","['io', 'rm', 'add', 'dd', 'thin', 'pre', 'su', 'addition', 'go', 'tty', 'sua', 'ou', 'rr', 'ott', 'got', 'ta']"
+54d4a1d6db8155e6700f853b,3677,2017-12-04 20:16:00,"huh
+these are all ""old"" packages. I guess conda-forge only uses old packages?
+that's what I though, but I was just told in the conda issue tracker that I need to discard any old environment
+or at least not try to upgrade anything or compile anything
+yeah, true
+that sounds possibly unrelated ;)
+","['com', 'nt', 'vi', 'environment', 'relate', 'il', 'trac', 'rack', 'pi', 'env', 'packages', 'upgrade', 'ca', 'el', 'pac', 'ssi', 'rad', 'mpi', 'thin', 'ld', 'package', 'su', 'rd', 'sca', 'rel', 'tr', 'pack', 'hat', 'iron', 'ack', 'uses', 'tracker', 'ess', 'ou', 'ed', 'po', 'pg', 'nm', 'envi', 'forge', 'nme', 'st', 'conda', 'ss', 'co', 'om', 'sc', 'ag', 'environ', 'jus', 'dis', 'pos', 'conda-forge', 'yt', 'card', 'ent', 'gr', 'eas', 'de']"
+54d4a1d6db8155e6700f853b,3695,2017-12-07 23:20:00,"why do you need to sum up the y_i and 1 - y_i cases? in 4.19 we are only looking at the probability of gi
+ah right one of them is always zero... hm yeah could be the different encoding of y_i
+did they use p(x, theta) as the top of 4.18 or the bottom of 4.18? I guess if they are consistent, they use the top, but we might use the bottom one
+but that just replaces classes 0 and 1 I guess
+Eh, I should be grading
+","['nt', 'diff', 'encoding', 'il', 'cas', 'replace', 'sse', 'nsis', 'sum', 'class', 'ca', 'ase', 'case', 'probability', 'rad', 'em', 'sh', 'abi', 'ld', 'su', 'zero', 'ri', 'ace', 'cons', 'hat', 'ess', 'epl', 'cod', 'ou', 'sis', 'ed', 'codi', 'rep', 'otto', 'ott', 'st', 'nco', 'ss', 'co', 'ff', 'om', 'cl', 'hy', 'yo', 'tom', 'jus', 'babili', 'od', 'las', 'kin', 'mi', 'eta', 'lit', 'hey', 'ent', 'gr', 'ta']"
+54d4a1d6db8155e6700f853b,3717,2017-12-12 20:36:00,"lol
+",[]
+54d4a1d6db8155e6700f853b,3718,2017-12-12 20:43:00,"?
+",[]
+54d4a1d6db8155e6700f853b,3720,2017-12-12 20:48:00,"same applies, I guess?
+@gxyd how do you run pytest?
+","['sam', 'sa', 'ess', 'ou', 'pytest', 'ppl', 'st', 'ss', 'yo', 'yt']"
+54d4a1d6db8155e6700f853b,3977,2018-07-14 14:10:00,"@mirca that's probably a better question for the mailing list. what's the application? robust regression? How does it behave differently from huber in practice?
+","['nt', 'irc', 'io', 'diff', 'il', 'regression', 'list', 'ca', 'robust', 'ice', 'ssi', 'ati', 'rc', 'act', 'mailing', 'quest', 'bus', 'cat', 'hat', 'sti', 'ess', 'rom', 'ntl', 'mirc', 'ppl', 'lis', 'st', 'ber', 'ss', 'ff', 'om', 'que', 'mi', 'mir', 'ent', 'hub', 'gr', 'egress']"
+54d4a1d6db8155e6700f853b,3978,2018-07-14 14:36:00,":)
+",[]
+54d4a1d6db8155e6700f853b,3996,2018-07-14 19:57:00,"make test-doc
+or pytest file
+","['il', 'doc', 'file', 'pytest', 'st', 'yt']"
+54d4a1d6db8155e6700f853b,4039,2018-07-16 15:07:00,"ok most PRs that are tagged either are small and have +1 or are bug fixes or blockers
+ok apart from KMedoids I think tagged PRs are relatively reasonable right now
+anyone have oppinions on KMedoids?
+","['io', 'ini', 'pi', 'doi', 'nio', 'oid', 'block', 'el', 'ati', 'thin', 'rel', 'ppi', 'ri', 'rt', 'hat', 'par', 'either', 'rom', 'mo', 'ed', 'na', 'st', 'rs', 'om', 'ag', 'yo', 'reason', 'ei', 'bloc', 'ids', 'locker', 'eas', 'ta']"
+54d4a1d6db8155e6700f853b,4047,2018-07-16 17:34:00,"I was trying to press the green button on #9616 but got many unicorns
+","['nic', 'button', 'pre', 'go', 'tr', 'ico', 'ess', 'unicorn', 'gree', 'ss', 'co', 'got', 'ton', 'gr']"
+54d4a1d6db8155e6700f853b,4056,2018-07-16 19:54:00,"ok
+",[]
+54d4a1d6db8155e6700f853b,4079,2018-07-17 15:18:00,"I don't have a contact. I had talked to them in the past, sometimes it works. You're in the same time zone as them @GaelVaroquaux ;)
+btw I think https://github.com/scikit-learn/scikit-learn/pull/11570 should basically be good t ogo
+","['git', 'com', 'nt', 'time', 'https', 'ear', 'basic', 'cal', 'sam', 'pull', 'http', 'github', 'ca', 'el', 'call', 'em', 'thin', 'sh', 'sa', 'zone', 'contact', 'ps', 'ld', 'act', 'go', 'ime', 'tps', 'asic', 'som', 'ou', 'ed', 'scikit-learn', 'st', 'co', 'om', 'sc', 'tal', 'od', 'tac', 'aro', 'sic', 'bt', 'hub', 'goo', 'ta']"
+54d4a1d6db8155e6700f853b,4095,2018-07-17 17:01:00,"also changing the mode of one-hot-encoder to sparse=False in the ""new mode""
+","['encode', 'encoder', 'ls', 'mode', 'lso', 'par', 'ode', 'cod', 'mo', 'der', 'nco', 'rs', 'co', 'sp', 'ch', 'mod', 'od', 'als', 'de']"
+54d4a1d6db8155e6700f853b,4162,2018-08-01 09:28:00,"you can use ""points"" instead of ""bt.data""
+yeah here it's not. I opened https://github.com/scikit-learn/scikit-learn/issues/11728
+but you already have the numpy array, it's just points
+``points`` that is
+together with like 500 other people or something ;)
+I'm the person that opened the most issues, I think. Dubious honor.
+","['git', 'com', 'nt', 'io', 'int', 'https', 'ear', 'get', 'numpy', 'http', 'point', 'github', 'ca', 'thin', 'ps', 'su', 'pen', 'points', 'hat', 'tps', 'ready', 'som', 'mo', 'ou', 'ata', 'ed', 'rr', 'po', 'ray', 'lr', 'scikit-learn', 'arr', 'st', 'ss', 'rs', 'co', 'om', 'sc', 'opl', 'yo', 'jus', 'ether', 'geth', 'ubi', 'ump', 'bt', 'hub', '.data', 'bio', 'ta', 'hono']"
+54d4a1d6db8155e6700f853b,4164,2018-08-01 09:33:00,"I'm not ""the author"" by any means
+I guess
+","['author', 'mean', 'ess', 'thor', 'ss']"
+54d4a1d6db8155e6700f853b,4212,2018-09-18 12:21:00,"I think it's enough if there's changes around the line for it to create a conflict
+","['conflict', 'line', 'thin', 'ou', 'co', 'ch', 'aro']"
+54d4a1d6db8155e6700f853b,4222,2018-09-25 15:04:00,"@h4k1m0u open an issue or ask the mailing list maybe?
+","['il', 'list', 'su', 'mailing', 'pen', 'maybe', 'lis', 'st', 'ss']"
+54d4a1d6db8155e6700f853b,4225,2018-09-25 19:44:00,"yeah that should work. at that point it's easy enough to implement it yourself as well though ;)
+","['nt', 'int', 'point', 'el', 'lf', 'self', 'em', 'elf', 'sh', 'ld', 'hat', 'ou', 'imp', 'po', 'rs', 'yo', 'eme', 'ent', 'eas']"
+54d4a1d6db8155e6700f853b,4526,2019-08-05 18:54:00,"how did you install numpy and scipy? if you did custom compilation that might be a reason. if you install binaries they will use mkl or openblas, either of which should be quite fast
+","['com', 'ip', 'io', 'il', 'pi', 'numpy', 'compilation', 'ati', 'mpi', 'sh', 'binaries', 'ld', 'sta', 'pen', 'blas', 'ri', 'scipy', 'hat', 'quit', 'bin', 'either', 'ou', 'scip', 'na', 'aries', 'st', 'co', 'om', 'sc', 'openblas', 'yo', 'ch', 'tal', 'tom', 'reason', 'ei', 'las', 'mi', 'ump', 'hey', 'wil', 'ill', 'eas', 'ta']"
+54d4a1d6db8155e6700f853b,4530,2019-08-06 14:36:00,"what did?
+ah
+",['hat']
+54d4a1d6db8155e6700f853b,4608,2019-11-02 16:22:00,"ah :)
+",[]
+54d4a1d6db8155e6700f853b,4643,2020-01-06 16:16:00,"that means nothing lol
+","['thin', 'mean', 'nothing', 'hat']"
+54d4a1d6db8155e6700f853b,4652,2020-01-07 22:37:00,"oh that was you! sorry I didn't connect your handle to you in-person. I've been in grant-writing mode and just procrastinating ;)
+","['ant', 'nt', 'ocr', 'mode', 'ati', 'handle', 'nat', 'connect', 'ri', 'ras', 'hat', 'sti', 'dn', 'idn', 'ode', 'mo', 'ou', 'rr', 'na', 'proc', 'roc', 'ocra', 'st', 'rs', 'co', 'yo', 'mod', 'jus', 'od', 'nne', 'cra', 'gr', 'de']"
+54d4a1d6db8155e6700f853b,4802,2020-05-19 19:33:00,"lol
+",[]
+54d4a1d6db8155e6700f853b,4898,2020-07-11 13:39:00,"hm you didn't get a warning? You should have gotten a warning, I think :-/
+","['get', 'war', 'thin', 'sh', 'ld', 'go', 'dn', 'idn', 'ou', 'ning', 'ott', 'yo', 'got']"
+54d4a1d6db8155e6700f853b,4901,2020-07-11 13:45:00,"then I'd suggest a regression model, I think
+","['io', 'regression', 'model', 'mode', 'el', 'ssi', 'thin', 'su', 'del', 'ode', 'ess', 'mo', 'st', 'ss', 'mod', 'od', 'gr', 'egress', 'de']"
+54d4a1d6db8155e6700f853b,4902,2020-07-11 13:51:00,"yes that's the default, and that's what the mutual_info_regression uses
+and you can probably use that as a starting point and only have to modify it slightly
+","['nt', 'io', 'int', 'modi', 'default', 'regression', 'point', 'ca', 'ssi', 'tar', 'sta', 'light', 'sli', 'rt', 'fault', 'hat', 'uses', 'ess', 'inf', 'mo', 'ou', 'mu', 'po', 'info', 'st', 'ss', 'yo', 'mod', 'htl', 'od', 'gr', 'egress', 'de', 'ta', 'lightly']"
+54d4a1d6db8155e6700f853b,4903,2020-07-11 13:54:00,"thanks!
+",[]
+54d4a1d6db8155e6700f853b,4917,2020-07-16 15:02:00,"well np.empty will create a python object which will be memory managed
+This conversation probably further emphasizes the above point of cython being less obvious ;)
+","['python', 'memory', 'nt', 'vi', 'size', 'io', 'int', 'il', 'rsa', 'managed', 'point', 'el', 'object', 'ati', 'em', 'sa', 'cython', 'rt', 'pty', 'memo', 'less', 'ess', 'mo', 'ou', 'ed', 'np', 'po', 'na', 'ss', 'rs', 'co', 'ag', 'ch', 'sat', 'ei', 'yt', 'wil', 'ill', 'ory']"
+541a528b163965c9bc2053de,13,2015-02-06 11:18:00,"ok
+yeah
+the slinear side effects?
+I saw it broke the calibration PR
+too many open tabs, my firefox is so slow at times...
+","['ide', 'io', 'time', 'firefox', 'ear', 'tabs', 'sid', 'cal', 'ca', 'effects', 'ati', 'calibration', 'ref', 'line', 'sa', 'pen', 'sli', 'effect', 'ime', 'cts', 'ff', 'bro', 'ox', 'brat', 'lib', 'libra', 'near', 'de', 'ta']"
+541a528b163965c9bc2053de,14,2015-02-06 11:25:00,"that's bad
+",['hat']
+541a528b163965c9bc2053de,62,2015-02-24 22:47:00,":)
+",[]
+541a528b163965c9bc2053de,63,2015-02-24 22:48:00,"Even if we don't fix them all prior to friday (the first beta) it's fine. As long as we only include fixes in the 0.16.X branch once the beta is cut.
+thanks
+","['beta', 'io', 'branch', 'cut', 'em', 'include', 'ri', 'ida', 'st', 'ranch', 'rs', 'cl', 'ch', 'irs', 'frida', 'ncl', 'rio', 'eta', 'de', 'ta']"
+541a528b163965c9bc2053de,99,2015-03-02 14:59:00,"yes
+",[]
+541a528b163965c9bc2053de,114,2015-03-02 21:22:00,"indeed
+","['ed', 'de']"
+541a528b163965c9bc2053de,119,2015-03-02 22:48:00,"yes
+",[]
+541a528b163965c9bc2053de,121,2015-03-02 23:00:00,"yes we need other reviewers for those.
+good night
+","['vi', 'view', 'viewer', 'review', 'go', 'ed', 'rs', 'ose', 'od', 'goo']"
+541a528b163965c9bc2053de,136,2015-03-05 20:42:00,"ok
+",[]
+541a528b163965c9bc2053de,139,2015-03-05 20:41:00,"maybe not
+it depends how stable we find the beta
+I would like to merge this https://github.com/scikit-learn/scikit-learn/pull/4028 before cutting the beta branch
+","['git', 'com', 'beta', 'dep', 'https', 'ear', 'merge', 'branch', 'cut', 'pull', 'http', 'github', 'find', 'ps', 'ld', 'sta', 'pen', 'tps', 'ou', 'depends', 'maybe', 'scikit-learn', 'mer', 'st', 'ranch', 'co', 'om', 'sc', 'ch', 'eta', 'hub', 'de', 'ta']"
+541a528b163965c9bc2053de,161,2015-03-06 16:31:00,"Let's create the PR ourselves from his branch :)
+Yes better create the PR from his branch to get travis to run it.
+actually it's not possible to create the PR directly from his branch as we need to get rid of the past commits:
+https://github.com/scikit-learn/scikit-learn/compare/master...mjbommar:issue-4297-infinite-isotonic
+that are redundant with your own PR
+I let you do the cherry-pick
+","['git', 'ant', 'com', 'nt', 'vi', 'https', 'ear', 'ini', 'nic', 'iso', 'branch', 'pi', 'compare', 'get', 'http', 'commit', 'github', 'el', 'init', 'ssi', 'avi', 'rect', 'ps', 'pic', 'act', 'su', 'infinite', 'dir', 'let', 'ctl', 'pick', 'ri', 'tr', 'hat', 'par', 'du', 'inf', 'cherry-pick', 'tps', 'rom', 'ou', 'comm', 'ed', 'rr', 'po', 'scikit-learn', 'tonic', 'red', 'st', 'nite', 'ss', 'ranch', 'rs', 'co', 'om', 'sc', 'aster', 'yo', 'ch', 'pos', 'mi', 'ton', 'ravi', 'soto', 'hub']"
+541a528b163965c9bc2053de,169,2015-03-06 17:52:00,"yes
+",[]
+541a528b163965c9bc2053de,184,2015-03-07 17:51:00,"https://ci.appveyor.com/project/sklearn-ci/scikit-learn/
+","['com', 'https', 'ear', 'http', 'project', 'ps', 'proj', 'tps', '.app', '.a', 'scikit-learn', 'appv', 'co', 'om', 'sc', 'yo', 'appveyor', 'pv']"
+541a528b163965c9bc2053de,226,2015-03-18 14:56:00,"Also if you still want to ask questions about the paper on a discussion forum, you should ask specific questions, otherwise you probably won't get any interesting answer.
+","['ant', 'nt', 'io', 'rest', 'int', 'forum', 'il', 'ls', 'get', 'wise', 'ssi', 'sh', 'wan', 'ld', 'quest', 'lso', 'sti', 'uss', 'ape', 'ou', 'st', 'ss', 'sc', 'sp', 'yo', 'que', 'dis', 'rum', 'ill']"
+541a528b163965c9bc2053de,229,2015-03-18 15:08:00,"but hyperparameters such as ""preference"" in the scikit-learn implementation of AP will impact the clustering outcome
+","['com', 'nt', 'io', 'parameters', 'ram', 'ear', 'implementation', 'il', 'erp', 'reference', 'param', 'utc', 'pac', 'ati', 'ref', 'em', 'pre', 'act', 'su', 'refer', 'ri', 'meter', 'par', 'preference', 'ring', 'ou', 'imp', 'scikit-learn', 'st', 'rs', 'co', 'om', 'sc', 'cl', 'hy', 'hyperparameters', 'ch', 'hyper', 'pact', 'eme', 'rpa', 'ara', 'para', 'ent', 'wil', 'ill', 'ta']"
+541a528b163965c9bc2053de,233,2015-03-18 15:14:00,"But it's probably harder to use correctly.
+@amueller alright.
+","['el', 'rect', 'rd', 'ctl', 'ri', 'mu', 'rr', 'der', 'lr', 'har', 'co', 'de']"
+541a528b163965c9bc2053de,239,2015-03-18 15:24:00,"k=10 for KMeans is as automatic as preference=median for AP
+","['media', 'reference', 'edi', 'ati', 'ref', 'pre', 'refer', 'dia', 'median', 'oma', 'preference', 'ed', 'auto', 'mat', 'om', 'tom', 'matic']"
+541a528b163965c9bc2053de,240,2015-03-18 15:24:00,"it's not automatic, it's lying to you
+","['ati', 'oma', 'ou', 'auto', 'mat', 'om', 'yo', 'tom', 'matic']"
+541a528b163965c9bc2053de,241,2015-03-18 15:24:00,"exactly
+","['xact', 'xa', 'act', 'ctl', 'ex']"
+541a528b163965c9bc2053de,249,2015-03-18 15:41:00,"yes
+",[]
+541a528b163965c9bc2053de,309,2015-03-23 08:37:00,"will do.
+","['il', 'wil', 'ill']"
+541a528b163965c9bc2053de,313,2015-03-23 13:02:00,"but https://github.com/scikit-learn/scikit-learn/pull/4294 should definitely be part of the GSoC
+just https://github.com/scikit-learn/scikit-learn/wiki/GSoC-2015-Proposal:-Multiple-metric-support-for-CV-and-grid_search-and-other-general-improvements
+","['git', 'com', 'nt', 'ip', 'grid', 'https', 'port', 'ear', 'search', 'wiki', 'ini', 'pull', 'http', 'github', 'el', 'init', 'metric', 'em', 'sh', 'sa', 'rc', 'ps', 'ld', 'su', 'opos', 'ri', 'tr', 'rt', 'par', 'ipl', 'tps', 'ou', 'imp', 'tel', 'po', 'sup', 'efi', 'scikit-learn', 'st', 'sal', 'nite', 'co', 'om', 'sc', 'ch', 'lti', 'jus', 'arch', 'eme', 'pos', 'metr', 'ent', 'hub', 'gr', 'de', '20']"
+541a528b163965c9bc2053de,348,2015-03-24 20:50:00,"I think it's better to put it on melange early so that we can comment on it and read each others comments
+you can still edit it afterwards
+","['com', 'nt', 'ear', 'il', 'comments', 'lan', 'edi', 'edit', 'ca', 'put', 'el', 'war', 'thin', 'rd', 'rds', 'hat', 'mel', 'sti', 'ou', 'comm', 'lang', 'ed', 'st', 'rs', 'co', 'om', 'yo', 'ch', 'ent', 'ill']"
+541a528b163965c9bc2053de,393,2015-03-26 18:02:00,"not there? let me do it. Then I will change the version number and start fixing the links in the doc.
+","['io', 'il', 'doc', 'version', 'tar', 'let', 'sta', 'rt', 'st', 'ber', 'rs', 'xing', 'ch', 'rsi', 'wil', 'ill', 'ta']"
+541a528b163965c9bc2053de,400,2015-03-26 18:31:00,"if you feel like it
+","['el', 'ou', 'yo', 'fee', 'eel']"
+541a528b163965c9bc2053de,403,2015-03-26 19:00:00,"thanks
+",[]
+541a528b163965c9bc2053de,409,2015-03-26 18:49:00,":)
+",[]
+541a528b163965c9bc2053de,410,2015-03-26 18:50:00,"as you wish.
+I think many users are interested in DBSCAN
+@ragv I think your proposal is fine
+Looks great to me
+","['nt', 'rest', 'int', 'thin', 'sh', 'sa', 'opos', 'prop', 'ou', 'ed', 'po', 'st', 'sal', 'rs', 'ag', 'yo', 'pos', 'gr']"
+541a528b163965c9bc2053de,427,2015-03-27 14:54:00,"I think I can do it all.
+","['ca', 'thin']"
+541a528b163965c9bc2053de,431,2015-03-27 15:06:00,"ok great
+",['gr']
+541a528b163965c9bc2053de,434,2015-03-27 15:18:00,"ok great
+",['gr']
+541a528b163965c9bc2053de,436,2015-03-27 16:23:00,":beers: :
+",['rs']
+541a528b163965c9bc2053de,438,2015-03-27 16:34:00,"you need to find another op :)
+which I think I used to be but cannot find my account info anymore
+there might be others
+maybe @NelleV and @amueller are op
+ops
+not 100% sure though
+","['nt', 'account', 'sed', 'ca', 'el', 'count', 'thin', 'find', 'ps', 'su', 'cc', 'inf', 'acc', 'mo', 'ou', 'mu', 'ed', 'maybe', 'info', 'rs', 'co', 'yo', 'ch', 'mi']"
+541a528b163965c9bc2053de,440,2015-03-27 16:39:00,"`pip install -U scikit-learn` would do
+@ragv yes it's ""her""
+no problem
+","['ip', 'ear', 'pi', 'pip', 'em', 'ld', 'sta', 'ou', 'scikit-learn', 'st', 'sc', 'ag', 'tal', 'ta']"
+541a528b163965c9bc2053de,443,2015-03-27 20:34:00,"yes
+which topics do you want to cover?
+","['ant', 'nt', 'pi', 'cover', 'wan', 'pic', 'ou', 'co', 'yo', 'ch']"
+541a528b163965c9bc2053de,447,2015-03-27 20:46:00,"I forgot about calibration, I can do that indeed
+no good slide for MLPs but would indeed say a couple of words about that
+I can review the logistic stuff
+","['ide', 'gis', 'vi', 'io', 'gist', 'cal', 'words', 'view', 'ca', 'ati', 'calibration', 'sa', 'word', 'review', 'ld', 'rd', 'go', 'sli', 'slide', 'rds', 'hat', 'sti', 'ou', 'ed', 'ord', 'st', 'co', 'ff', 'brat', 'lib', 'got', 'od', 'libra', 'uff', 'tuf', 'stuff', 'goo', 'de']"
+541a528b163965c9bc2053de,461,2015-03-29 15:53:00,"apparently yes, this is a constraint of their platform apparently
+","['nt', 'int', 'orm', 'platform', 'rm', 'parent', 'tr', 'cons', 'tform', 'par', 'ntl', 'st', 'co', 'ei', 'ent']"
+541a528b163965c9bc2053de,532,2015-04-14 15:49:00,"ok
+",[]
+541a528b163965c9bc2053de,537,2015-04-14 16:06:00,":)
+",[]
+541a528b163965c9bc2053de,541,2015-04-14 17:03:00,"yes I just did that
+I will send you the password to the github account to log in and cancel / restart builds
+in your mail box
+when unqueuing stuff, it better to first unqueue (cancel button) the from the most recent to the most ancient queued job
+","['git', 'nt', 'account', 'queue', 'rest', 'il', 'build', 'restart', 'github', 'ca', 'el', 'count', 'tar', 'button', 'queuing', 'word', 'ld', 'rd', 'send', 'sta', 'cc', 'lds', 'rt', 'hat', 'rom', 'acc', 'mo', 'ou', 'ed', 'ord', 'st', 'ss', 'rs', 'co', 'ff', 'om', 'box', 'yo', 'ox', 'irs', 'jus', 'que', 'ton', 'uff', 'jo', 'tuf', 'eui', 'stuff', 'ent', 'hub', 'wil', 'ill', 'ta', 'cel']"
+541a528b163965c9bc2053de,563,2015-04-24 17:17:00,"Please edit the stackoverlow report instead.
+Also quoting is done with backticks, not forward ticks :)
+","['port', 'stack', 'ls', 'edi', 'edit', 'ase', 'report', 'war', 'quoting', 'back', 'rd', 'forward', 'sta', 'rt', 'lso', 'ack', 'backticks', 'erl', 'ed', 'po', 'rep', 'st', 'repo', 'tac', 'kover', 'eas', 'ta']"
+541a528b163965c9bc2053de,771,2015-06-05 13:05:00,"thanks :)
+",[]
+541a528b163965c9bc2053de,855,2015-06-11 11:33:00,"try https://s3.amazonaws.com/archive.travis-ci.org/jobs/66302262/log.txt
+if it does not work, I can paste-bin it for you
+","['com', 'vi', 'https', 'jobs', 'amazon', 'hive', 'http', 'ca', 'archive', 'avi', 'paste', 'rc', 'ps', 'tr', 'bin', 'xt', 'tps', 'ou', '.a', 'na', 'travis-ci', 'st', 'co', 'om', 'yo', 'ch', 'tx', 'arch', 'obs', 'ws', 'az', 'ravi', 'jo', 'txt']"
+541a528b163965c9bc2053de,1322,2015-09-11 14:14:00,"indeed
+git log sklearn/tree/_tree.c
+I will recythonize it from the current _tree.pyx
+running the tests locally to check that I did no break anything.
+yeah
+","['git', 'nt', 'tree', 'ear', 'il', 'cal', 'ca', 'local', 'call', 'thin', 'break', 'cython', 'tr', 'hat', 'rom', 'ning', 'ed', 'rr', 'st', 'om', 'ch', 'pyx', 'cythonize', 'yt', 'sts', 'ent', 'wil', 'ill', 'de']"
+541a528b163965c9bc2053de,1328,2015-09-11 15:09:00,"#5245 should be good to go (it's just appveyor that is slow as a dog today)
+","['sh', 'ld', 'go', 'hat', 'ou', 'dog', 'st', 'appv', 'yo', 'appveyor', 'jus', 'od', 'pv', 'goo']"
+541a528b163965c9bc2053de,1334,2015-09-11 15:27:00,"#5254
+",[]
+541a528b163965c9bc2053de,1452,2015-10-15 17:24:00,"ok
+",[]
+541a528b163965c9bc2053de,1498,2015-10-21 08:18:00,"@arthurmensch needs to rebase it first
+I mean #5358
+","['rm', 'ase', 'base', 'rebase', 'mean', 'rt', 'ed', 'st', 'rs', 'sc', 'ch', 'irs']"
+541a528b163965c9bc2053de,1518,2015-10-21 11:49:00,"I still need to finish that one.
+","['ini', 'il', 'nis', 'sh', 'hat', 'sti', 'ed', 'st', 'ill']"
+541a528b163965c9bc2053de,1548,2015-10-22 10:29:00,"it seems fine now
+","['ems', 'em']"
+541a528b163965c9bc2053de,2477,2016-06-08 09:22:00,"It's only in the master branch of joblib so far. It will be part of the next release.
+If someone starts implementing tools to save sklearn models to / load from the spark 2 serialization format, please reference the repo in https://github.com/scikit-learn/scikit-learn/blob/master/doc/related_projects.rst#interoperability-and-framework-enhancements
+This will require a good python parquet implementation. The most promising implementation should be the official https://github.com/apache/parquet-cpp but the python bindings are not ready yet but progress  is happening, see eg: http://wesmckinney.com/blog/pandas-and-apache-arrow/
+","['python', 'apache', 'git', 'com', 'nt', 'format', 'io', 'int', 'https', 'orm', 'ram', 'ear', 'opera', 'relate', 'implementation', 'serialization', 'binding', 'il', 'interop', 'branch', 'load', 'ria', 'projects', 'bind', 'ls', 'model', 'blob', 'release', 'row', 'reference', 'doc', 'http', 'rm', 'mode', 'github', 'ase', 'el', 'project', 'pac', 'progress', 'ati', 'lob', 'tar', 'ref', 'ffi', 'em', 'save', 'require', 'sh', 'abi', 'sa', 'frame', 'ps', 'ld', 'refer', 'go', 'rel', 'sta', 'pen', 'far', 'mc', 'ri', 'models', 'rt', 'next', 'del', 'pan', 'cp', 'par', 'bin', 'xt', 'ode', 'cts', 'rope', 'ess', 'proj', 'tps', 'rom', 'ready', 'som', 'mo', 'ou', 'ogre', 'imp', 'ex', 'ning', 'ed', 'rr', 'ogr', 'po', 'arq', 'pandas', 'scikit-learn', 'rep', 'mat', 'arr', 'st', 'ss', 'ranch', 'rs', 'parquet', 'co', 'ff', 'om', 'sc', 'aster', 'joblib', 'sp', 'rro', 'ch', 'repo', 'happening', 'mod', 'intero', 'que', 'lib', 'od', 'eme', 'apache-arrow', 'cement', 'kin', 'req', 'mi', 'nne', 'eon', 'yt', 'isin', 'jo', 'rq', 'lit', 'ent', 'hub', 'wil', 'gr', 'goo', 'ill', 'eas', 'de', 'ta', 'ndi']"
+541a528b163965c9bc2053de,2827,2016-09-13 18:17:00,"then you don't know theory ;)
+I don't have any particular recommendation in mind but if you ask that question to google you will probably get answers
+","['theory', 'com', 'io', 'il', 'get', 'ati', 'min', 'go', 'quest', 'rt', 'hat', 'par', 'icu', 'sti', 'ou', 'comm', 'ecom', 'eco', 'cula', 'st', 'rs', 'co', 'om', 'yo', 'que', 'mi', 'ogl', 'wil', 'goo', 'ill', 'know', 'ory']"
+541a528b163965c9bc2053de,2843,2016-09-13 19:30:00,"Maybe @ jakirkham has an idea.
+hum that did not work
+","['ide', 'hat', 'jak', 'kha', 'de']"
+541a528b163965c9bc2053de,2859,2016-09-14 19:48:00,"great
+",['gr']
+541a528b163965c9bc2053de,3466,2017-07-12 10:02:00,"Yes.
+",[]
+541a528b163965c9bc2053de,3468,2017-07-12 10:10:00,"yes, that's the safest thing to do.
+","['thin', 'sa', 'hat', 'saf', 'fest', 'st']"
+541a528b163965c9bc2053de,3502,2017-07-18 17:19:00,"an pickle the full pipeline
+","['ip', 'pi', 'pipeline', 'pip', 'pipe', 'el', 'line', 'pickle', 'pic', 'pick', 'pel']"
+541a528b163965c9bc2053de,3565,2017-09-05 07:55:00,"yes, whenever there is `array-like` as the type for X in fit and predict, numerical dataframes should work.
+","['ram', 'numerical', 'cal', 'edi', 'numeric', 'ca', 'frames', 'sh', 'frame', 'pre', 'ld', 'ri', 'predict', 'whenever', 'ou', 'dataframe', 'ata', 'ed', 'rr', 'ray', 'mer', 'arr', 'red', 'eve', 'aframe', 'ta']"
+541a528b163965c9bc2053de,3725,2017-12-14 08:50:00,"The best way to contribute is to actually use scikit-learn for a project of yours to identify which part needs improving from your users point of view.
+","['ide', 'nt', 'vi', 'int', 'ear', 'ident', 'point', 'view', 'project', 'vin', 'act', 'ri', 'tr', 'rt', 'par', 'identify', 'proj', 'rom', 'ovi', 'ou', 'imp', 'ed', 'po', 'scikit-learn', 'st', 'rs', 'co', 'om', 'sc', 'yo', 'ch', 'ent', 'de']"
+541a528b163965c9bc2053de,4263,2018-11-07 09:49:00,"http://8.8.8.8
+It should trigger sign-in pages on open wifi networks.
+","['http', 'sign', 'etw', 'sh', 'ld', 'pen', 'ri', 'tr', 'wifi', 'wif', 'ou', 'ag', 'gn']"
+541a528b163965c9bc2053de,4435,2019-06-05 09:47:00,"PCA is SVD on centered data.
+","['nt', 'center', 'enter', 'ata', 'ed', 'red', 'ent', 'ta']"
+541a528b163965c9bc2053de,4480,2019-06-21 17:26:00,"Histogram of Oriented Gradients
+yes
+","['nt', 'ram', 'rad', 'die', 'ri', 'ed', 'ogr', 'st', 'ent', 'gr']"
+5474d9eadb8155e6700d8178,38,2015-02-15 16:33:00,"Ok! thanks!
+",[]
+5474d9eadb8155e6700d8178,52,2015-02-24 14:07:00,"Thanks! :)
+",[]
+5474d9eadb8155e6700d8178,109,2015-03-02 20:39:00,"Ahh thanks! :)
+",[]
+5474d9eadb8155e6700d8178,116,2015-03-02 22:08:00,"Sure :)
+",[]
+5474d9eadb8155e6700d8178,172,2015-03-06 18:43:00,"okay no problem :)
+",['em']
+5474d9eadb8155e6700d8178,191,2015-03-08 21:43:00,"Yes `SpectralEmbedding().fit([[1, 2]])` doesn't work... Ok I'll fix it and add tests for that...
+","['add', 'dd', 'tr', 'hat', 'ed', 'mbed', 'st', 'sn', 'sts', 'bed']"
+5474d9eadb8155e6700d8178,208,2015-03-10 21:22:00,"Ah... okay! Sorry for the noise!
+","['noise', 'rr']"
+5474d9eadb8155e6700d8178,363,2015-03-25 21:18:00,"Ah... We'll then just wait for it to get better ;)
+","['get', 'wait', 'st', 'jus']"
+5474d9eadb8155e6700d8178,404,2015-03-26 18:43:00,"@ogrisel Thanks I'll just remove ooc... pl let me know if you feel I should do any more modifications to my prop :)
+","['io', 'modi', 'move', 'ca', 'el', 'ati', 'em', 'sh', 'ld', 'let', 'ri', 'prop', 'cat', 'mov', 'mo', 'ou', 'ogr', 'st', 'yo', 'mod', 'jus', 'od', 'fee', 'eel', 'rise', 'gr', 'know']"
+5474d9eadb8155e6700d8178,416,2015-03-26 19:49:00,"@amueller
+^
+Sorry wrong key presses :worried:
+","['sse', 'key', 'el', 'pre', 'ri', 'ess', 'mu', 'ed', 'rr', 'ss']"
+5474d9eadb8155e6700d8178,570,2015-04-27 19:31:00,"Thanks a lot Vinayak :)
+",['na']
+52f10c205e986b0712ef525f,203,2015-03-10 21:02:00,"kinda, if they get a new pull request than yes
+er, sorry
+if they get a new commit
+","['com', 'get', 'pull', 'commit', 'request', 'quest', 'comm', 'rr', 'st', 'co', 'om', 'que', 'kin', 'req', 'mi', 'kind', 'hey']"
+52f10c205e986b0712ef525f,211,2015-03-10 22:01:00,"(I have nothing to do with this repository but I'm a big fan of circle-ci)
+","['irc', 'repository', 'osi', 'thin', 'rc', 'tor', 'nothing', 'po', 'rep', 'cl', 'repo', 'epos', 'pos', 'ory']"
+5385f2fe048862e761fa2d40,228,2015-03-18 14:59:00,"But working on a subset of the data is meaningless
+I can't even work on 10,000 nodes
+I asked our ML guy. Working with 10,000 data points is meaningless in my context
+nodes = data points in the matrix
+But I still have to optimize the number of clusters
+As far as I understand AF figures that out
+","['nt', 'int', 'il', 'text', 'des', 'point', 'ca', 'ntext', 'set', 'matrix', 'subset', 'mean', 'su', 'tex', 'sta', 'points', 'far', 'ri', 'tr', 'figure', 'figures', 'hat', 'sti', 'xt', 'less', 'nodes', 'ode', 'ess', 'ou', 'ata', 'ex', 'ning', 'ed', 'der', 'po', 'stan', 'mat', 'st', 'ber', 'eve', 'ss', 'rs', 'co', 'cl', 'fig', 'rstan', 'trix', 'od', 'kin', 'mi', 'orking', 'ill', 'gles', 'de', 'ta']"
+5385f2fe048862e761fa2d40,238,2015-03-18 15:23:00,"Because I like automatic things :P
+","['ca', 'ati', 'thin', 'oma', 'auto', 'mat', 'om', 'tom', 'matic']"
+5385f2fe048862e761fa2d40,245,2015-03-18 15:27:00,"even if you run it on multiple nodes?
+","['ip', 'des', 'ipl', 'nodes', 'ode', 'ou', 'mu', 'eve', 'yo', 'lti', 'od', 'de']"
+5385f2fe048862e761fa2d40,248,2015-03-18 15:40:00,"I know spark
+I haven't written anything that uses it yet
+","['thin', 'ri', 'hat', 'par', 'uses', 'sp', 'yt', 'know']"
+5385f2fe048862e761fa2d40,280,2015-03-19 13:13:00,"That's exactly what I want but I want to rate them in green shades, yellow shades and red shades according to the number of data points in a cluster
+I don't know how to get the number of data points in a cluster
+I need the number of datapoints in a cluster
+Yep that works
+why does it work
+","['ant', 'nt', 'int', 'get', 'des', 'tap', 'point', 'el', 'xact', 'em', 'xa', 'sha', 'sh', 'wan', 'act', 'rd', 'rate', 'cc', 'points', 'ctl', 'hat', 'acc', 'ata', 'ex', 'ed', 'po', 'datapoint', 'ord', 'gree', 'red', 'st', 'ber', 'co', 'cl', 'hy', 'yellow', 'gr', 'apo', 'know', 'de', 'ta']"
+5385f2fe048862e761fa2d40,526,2015-04-13 15:47:00,"Feel free to close it
+","['free', 'el', 'clos', 'ose', 'cl', 'eel']"
+54c084dbdb8155e6700eed4c,274,2015-03-18 20:38:00,"ill try to do that on the linux box tonight.
+","['linux', 'il', 'tr', 'hat', 'box', 'ox', 'ton', 'ill']"
+54c084dbdb8155e6700eed4c,292,2015-03-20 15:57:00,"excellent
+","['nt', 'excel', 'el', 'cell', 'ex', 'ent', 'cel']"
+54c084dbdb8155e6700eed4c,1584,2015-11-02 00:37:00,"np
+",['np']
+551061f615522ed4b3ddb1c0,418,2015-03-26 19:53:00,"Got it.
+",[]
+550f53e215522ed4b3dda5f6,433,2015-03-27 15:11:00,"Yeah, I am on it.
+",[]
+550f53e215522ed4b3dda5f6,726,2015-06-03 21:49:00,"Thanks, @amueller . The text in the draft is kind of vague, but I think you could get ideas just looking at equations.
+Hope you don't mind.
+","['ide', 'io', 'text', 'equation', 'get', 'el', 'uat', 'ati', 'thin', 'min', 'ld', 'tex', 'xt', 'equations', 'ou', 'ex', 'mu', 'st', 'raft', 'co', 'ag', 'yo', 'jus', 'kin', 'mi', 'kind', 'eas', 'de']"
+550f53e215522ed4b3dda5f6,874,2015-06-11 15:31:00,"Gotcha.
+",['ch']
+550f53e215522ed4b3dda5f6,949,2015-06-17 18:02:00,"I mean the code of master branch
+ok.
+","['branch', 'mean', 'ode', 'cod', 'st', 'ranch', 'co', 'aster', 'ch', 'od', 'de']"
+551084ad15522ed4b3ddb3b0,587,2015-04-29 18:48:00,"another option would be to take a single X, and a ""is_categorical"" variable that specifies which columns are categorical
+","['io', 'ria', 'var', 'cal', 'ca', 'col', 'ld', 'go', 'ri', 'cat', 'hat', 'option', 'umn', 'ou', 'take', 'co', 'sp', 'ch', 'iab', 'categorical', 'ta']"
+53135b495e986b0712efc453,629,2015-05-15 12:46:00,"haha :D I'll make it easier by raising a PR ;) But incase you want to comment to the wiki pages... You could just edit it and add a comment ""(@vene: This should be removed)"" etc... at the particular place and make it bold... I'll take note of the same :)
+","['ant', 'com', 'nt', 'wiki', 'cas', 'sam', 'edi', 'move', 'edit', 'ca', 'add', 'ase', 'case', 'dd', 'em', 'sh', 'sa', 'wan', 'ld', 'bold', 'ace', 'rt', 'par', 'icu', 'mov', 'mo', 'ou', 'comm', 'take', 'ed', 'ais', 'cula', 'st', 'co', 'om', 'ag', 'yo', 'jus', 'isin', 'ent', 'eas', 'ta']"
+53135b495e986b0712efc453,692,2015-05-27 20:31:00,":beers:
+",['rs']
+53135b495e986b0712efc453,776,2015-06-05 18:01:00,"Okay :)
+",[]
+53135b495e986b0712efc453,858,2015-06-11 11:57:00,"#4826 :)
+Please do take a look if you are able to find time :)
+","['time', 'ase', 'find', 'ime', 'ou', 'take', 'yo', 'eas', 'ta']"
+53135b495e986b0712efc453,859,2015-06-11 12:03:00,"Ahhh... Thanks!!
+",[]
+53135b495e986b0712efc453,912,2015-06-15 00:29:00,"Thanks!!
+",[]
+53135b495e986b0712efc453,914,2015-06-15 00:45:00,"Sure! :)
+",[]
+53135b495e986b0712efc453,928,2015-06-16 21:39:00,"Oh! TIL ^ :P
+",[]
+53135b495e986b0712efc453,947,2015-06-17 18:01:00,"ah :P
+",[]
+53135b495e986b0712efc453,954,2015-06-17 18:13:00,"but u can do so only for 10 minutes...
+","['ca', 'min', 'minute', 'mi', 'minutes']"
+53135b495e986b0712efc453,972,2015-06-18 15:11:00,"Oh :laughing:  thanks!!
+",[]
+53135b495e986b0712efc453,975,2015-06-18 15:17:00,"Okay! I'll remove that reference and make that description simpler :)
+Does the example seem okay?
+","['ip', 'io', 'des', 'reference', 'move', 'ref', 'em', 'xa', 'refer', 'ri', 'hat', 'mov', 'ampl', 'mo', 'escript', 'imp', 'ex', 'sc', 'script', 'de']"
+53135b495e986b0712efc453,978,2015-06-18 15:20:00,"Please take your time!!
+","['time', 'ase', 'ime', 'ou', 'take', 'yo', 'eas', 'ta']"
+53135b495e986b0712efc453,1011,2015-06-22 18:23:00,"Sure please take ur time :) I'll be done with all the tests by then :smile:
+","['time', 'il', 'ase', 'ime', 'smil', 'take', 'st', 'smile', 'mi', 'sts', 'eas', 'ta']"
+53135b495e986b0712efc453,1012,2015-06-22 18:44:00,"Thanks a lot! :)
+",[]
+53135b495e986b0712efc453,1024,2015-06-23 14:54:00,"yes!
+",[]
+53135b495e986b0712efc453,1047,2015-06-23 17:11:00,"yes!! That seems like a nice solution to me :)
+","['io', 'nic', 'ems', 'ice', 'solution', 'em', 'nice', 'hat', 'uti']"
+53135b495e986b0712efc453,1048,2015-06-23 17:11:00,"and about that helper I think we can do without it... its used only in one place... I'll remove that
+IMHO check_cv is used only internally right? we will be able to do  ``` for tr, te in check_cv(...):    ... ``` if we return iterable...
+","['nt', 'int', 'il', 'iterable', 'return', 'sed', 'move', 'ca', 'el', 'internal', 'helper', 'em', 'thin', 'ri', 'tr', 'ace', 'hat', 'urn', 'mov', 'mo', 'ou', 'ed', 'na', 'rabl', 'intern', 'tern', 'turn', 'ch', 'tera', 'wil', 'ill']"
+53135b495e986b0712efc453,1053,2015-06-23 17:30:00,"yes :)
+",[]
+53135b495e986b0712efc453,1060,2015-06-24 03:09:00,"OK! thanks!
+",[]
+53135b495e986b0712efc453,1086,2015-06-30 03:07:00,"Sure ;) I forgot its 11PM there :P
+Just one more question!
+Can I finish the documentation / examples too?
+without waiting for the review?
+","['nt', 'documentation', 'vi', 'io', 'ini', 'nis', 'document', 'doc', 'view', 'ati', 'xa', 'sh', 'review', 'go', 'quest', 'wait', 'sti', 'ampl', 'mo', 'ou', 'ex', 'st', 'que', 'got', 'ent', 'ta']"
+53135b495e986b0712efc453,1104,2015-07-01 05:13:00,"Ah okay then :)
+",[]
+53135b495e986b0712efc453,1105,2015-07-01 05:17:00,"Okay!! I'll leave it as such :) Good night!!
+","['su', 'ch', 'od']"
+53135b495e986b0712efc453,1114,2015-07-02 14:51:00,"too awsome!
+","['som', 'om', 'ws']"
+53135b495e986b0712efc453,1207,2015-08-02 23:59:00,"okay! Thanks :)
+",[]
+53135b495e986b0712efc453,1247,2015-08-11 18:51:00,":)
+",[]
+53135b495e986b0712efc453,1277,2015-08-14 18:10:00,"ohh okay! Now its fixed :)
+","['fixed', 'ed', 'xed']"
+53135b495e986b0712efc453,1284,2015-08-14 19:53:00,"yea :)
+",[]
+53135b495e986b0712efc453,1351,2015-09-13 16:04:00,"Yea :grin:
+","['ri', 'gr']"
+53135b495e986b0712efc453,1353,2015-09-13 16:10:00,"Both :p
+Haha okay :)
+",[]
+53135b495e986b0712efc453,1355,2015-09-13 16:34:00,"^_^
+",[]
+53135b495e986b0712efc453,1376,2015-09-26 20:56:00,"Okay!! See you there ;)
+","['ou', 'yo']"
+53135b495e986b0712efc453,1388,2015-10-06 20:01:00,"What kind of issue?
+","['su', 'hat', 'ss', 'kin', 'kind']"
+53135b495e986b0712efc453,1432,2015-10-15 12:58:00,"Wait Andy posted one more broken link right? - [scikit-learn.org/dev/auto_examples/preprocessing/plot_function_transformer.html](scikit-learn.org/dev/auto_examples/preprocessing/plot_function_transformer.html) Unless you are more than 20% done with the doc generation I'll generate the list and let you know shortly :) I need to generate the docs with plots for the one of my PRs anyway...so I could save you the trouble... If you want please take over the http://scikit-learn.org/dev/auto_examples/model_selection/plot_roc.html too... that seems to be due to a problem in importing (`from scipy import stats` seems to fail(?))
+Is there a way to work with 2 branches at once? :P
+Okay!! thanks :)
+","['html', 'ant', 'nt', 'ip', 'io', 'processing', 'import', 'orm', 'port', 'ear', 'post', 'plot', 'select', 'il', 'porting', 'branch', 'model', 'doc', 'http', 'transform', 'function', 'list', 'rm', 'ml', 'process', 'mode', 'ase', 'unc', 'ems', 'el', 'ssi', 'ati', 'short', 'repr', 'em', 'xa', 'save', 'func', 'ocs', 'sh', 'sa', 'wan', 'pre', 'ld', 'selection', 'transformer', 'rate', 'let', 'sta', 'ri', 'stat', 'tr', 'scipy', 'rt', 'hat', 'del', 'du', 'less', 'ode', 'ess', 'rom', 'ampl', 'mo', 'ou', 'imp', 'take', 'ex', 'ed', 'po', 'scip', 'auto', 'proc', 'roc', 'nsform', 'scikit-learn', 'tm', 'rep', 'mer', 'lis', 'st', 'ss', 'ranch', 'co', 'om', 'bro', 'sc', 'yo', 'ch', 'ats', '.so', 'mod', 'tml', 'mpo', 'sf', 'od', 'generate', 'pos', 'ubl', 'know', 'eas', 'de', 'ta', '20']"
+53135b495e986b0712efc453,1438,2015-10-15 14:14:00,"I'll take the last 2 if no one else is working on it?
+","['ls', 'el', 'take', 'st', 'las', 'kin', 'orking', 'ta']"
+53135b495e986b0712efc453,1480,2015-10-20 11:47:00,":P :P
+",[]
+53135b495e986b0712efc453,1481,2015-10-20 12:28:00,,"[nan, 'na']"
+53135b495e986b0712efc453,1693,2015-11-19 12:28:00,"Hi @lesshaste :)
+Thanks :D and no I'd be happy TODO :) You can actually raise an issue and add your suggestions of features which you feel are worthy of adding and why you think they should be added... That way you will get a larger participation of people  in discussions... :)
+","['ip', 'io', 'ssh', 'il', 'get', 'ca', 'add', 'dd', 'el', 'ssi', 'ati', 'raise', 'thin', 'sha', 'sh', 'ld', 'act', 'su', 'dde', 'rt', 'hat', 'par', 'sti', 'less', 'ess', 'uss', 'ou', 'ed', 'happy', 'ipa', 'ssha', 'ais', 'st', 'ss', 'haste', 'sc', 'opl', 'hy', 'yo', 'ch', 'dis', 'fee', 'eel', 'hey', 'wil', 'ill', 'de']"
+53135b495e986b0712efc453,1709,2015-11-19 15:10:00,"@amueller Also #5834
+And #5703... (sorry :P)
+","['ls', 'el', 'lso', 'mu', 'rr']"
+53135b495e986b0712efc453,1772,2015-11-23 15:26:00,":)
+",[]
+53135b495e986b0712efc453,1863,2015-12-10 17:28:00,"Ah no why?
+",['hy']
+53135b495e986b0712efc453,1876,2015-12-11 17:09:00,"Ahh!! That explains a lot! Thanks :)
+","['hat', 'explain', 'exp', 'ex', 'plai']"
+53135b495e986b0712efc453,1878,2015-12-11 17:18:00,"Yes it is.. It will be user specified so... Now I understand this better!
+","['il', 'sta', 'ed', 'der', 'stan', 'st', 'rs', 'sp', 'rstan', 'wil', 'ill', 'de', 'ta']"
+53135b495e986b0712efc453,1924,2016-01-12 22:20:00,"And pass score-like objects??
+","['core', 'object', 'cts', 'ss', 'co', 'sc']"
+53135b495e986b0712efc453,1949,2016-01-19 19:12:00,"Thanks :D
+",[]
+53135b495e986b0712efc453,2041,2016-02-12 17:50:00,"@amueller I'm free for the evening (and weekend). I am starting the work on multiple metric grid search... (I have some notes on how you had wanted it implemented) I'll ping you and joel if I get into trouble ;)
+Yes I spoke to him too out of github ;)
+Hehe :P Have a nice time ;)
+","['git', 'ant', 'nt', 'ip', 'free', 'int', 'grid', 'time', 'ear', 'search', 'nic', 'pi', 'get', 'ping', 'github', 'el', 'ice', 'metric', 'tar', 'em', 'rc', 'wan', 'nice', 'sta', 'ri', 'tr', 'ime', 'rt', 'ipl', 'som', 'weekend', 'ou', 'imp', 'mu', 'ning', 'ed', 'po', 'st', 'eve', 'om', 'sp', 'yo', 'ch', 'lti', 'arch', 'eme', 'ubl', 'metr', 'jo', 'ent', 'hub', 'gr', 'ta']"
+53135b495e986b0712efc453,2052,2016-02-16 09:29:00,"I tried to test my implementation of MCAR and NMAR (missingness correlated with class 1) on the covtype dataset and looks like the implementation in #5974 seems to perform slightly better than or as good as imputation for NMAR cases, which was expected and really bad performance for the MCAR case, which is also expected as it tries to extract information out of utter randomness.
+Ah hmm
+Okay thanks for the link
+","['random', 'nt', 'format', 'io', 'performance', 'orm', 'relate', 'implementation', 'trac', 'dom', 'cas', 'ls', 'class', 'rman', 'extract', 'rm', 'ca', 'ase', 'case', 'ems', 'put', 'el', 'ssi', 'ati', 'set', 'expect', 'em', 'dataset', 'act', 'correlated', 'trie', 'go', 'rel', 'light', 'sli', 'ri', 'tr', 'lso', 'xt', 'ess', 'inf', 'informat', 'ou', 'ata', 'imp', 'exp', 'ex', 'ed', 'rr', 'extra', 'perf', 'mat', 'info', 'st', 'mpu', 'ss', 'co', 'om', 'cl', 'ch', 'matio', 'imputation', 'htl', 'gn', 'od', 'eme', 'las', 'nes', 'mi', 'rfo', 'als', 'issi', 'ent', 'goo', 'ta', 'lightly']"
+53135b495e986b0712efc453,2055,2016-02-16 09:38:00,"yeapp
+",[]
+53135b495e986b0712efc453,2057,2016-02-16 09:42:00,":)
+thanks for the links!
+",[]
+53135b495e986b0712efc453,2152,2016-03-01 07:30:00,"Did you register sklearn.ml too? :P
+","['gis', 'ear', 'gist', 'ml', 'ou', 'st', 'yo']"
+53135b495e986b0712efc453,2192,2016-03-11 14:30:00,"Yes that is a valid point.
+The best way to handle is to consider missing to be a separate category.
+","['ide', 'nt', 'int', 'sid', 'point', 'ca', 'ssi', 'handle', 'rate', 'go', 'cons', 'cat', 'hat', 'par', 'der', 'po', 'st', 'ss', 'co', 'ara', 'mi', 'para', 'issi', 'sepa', 'val', 'ory', 'de']"
+53135b495e986b0712efc453,2194,2016-03-11 14:29:00,":D
+",[]
+53135b495e986b0712efc453,2661,2016-07-25 14:32:00,"I can change the title if it will help :P
+But no... Just one major thing to do... Switch to threading.
+","['il', 'ca', 'el', 'title', 'thin', 'st', 'ch', 'jo', 'wil', 'ill']"
+54e07d6515522ed4b3dc0858,721,2015-06-03 19:31:00,"good point... but at least you know it exists
+","['nt', 'int', 'point', 'exists', 'go', 'ou', 'ex', 'po', 'exi', 'st', 'yo', 'od', 'sts', 'goo', 'know', 'eas']"
+54e07d6515522ed4b3dc0858,755,2015-06-04 22:33:00,"this is a mix of grouping by row and grouping by column
+","['grouping', 'pi', 'row', 'ping', 'col', 'umn', 'ou', 'co', 'upi', 'mi', 'gr', 'group']"
+54e07d6515522ed4b3dc0858,757,2015-06-04 22:38:00,"correct
+@xuewei4d maybe in `__init__`?
+I can't find any examples
+","['ini', 'ca', 'init', 'xa', 'find', 'rect', '4d', 'ampl', 'ex', 'rr', 'maybe', 'co', 'ei']"
+54e07d6515522ed4b3dc0858,778,2015-06-05 20:59:00,"That really should work
+","['sh', 'ld', 'hat', 'ou']"
+54e07d6515522ed4b3dc0858,805,2015-06-06 18:56:00,"yes but then it's no longer a **dict** vectorizer :)
+","['vector', 'tor', 'ri', 'ecto', 'vec']"
+54e07d6515522ed4b3dc0858,906,2015-06-14 21:06:00,"good point, but wasn't IRC kind of dead?
+","['nt', 'int', 'point', 'go', 'po', 'sn', 'od', 'kin', 'kind', 'goo', 'de']"
+54e07d6515522ed4b3dc0858,942,2015-06-17 17:57:00,"exactly
+or LeaveOneLabelOut
+","['el', 'xact', 'xa', 'act', 'ctl', 'ex']"
+54e07d6515522ed4b3dc0858,955,2015-06-17 18:12:00,"oh God why does gitter display inline gifs?
+I'm starting to understand Gael's hate for it :D
+","['git', 'spl', 'inline', 'el', 'gif', 'tar', 'line', 'sta', 'rt', 'hat', 'ifs', 'fs', 'disp', 'der', 'stan', 'st', 'rs', 'sp', 'hy', 'rstan', 'display', 'dis', 'od', 'de', 'ta']"
+54e07d6515522ed4b3dc0858,956,2015-06-17 18:16:00,"I will try to do this later today
+","['il', 'tr', 'od', 'wil', 'ill']"
+54e07d6515522ed4b3dc0858,965,2015-06-17 19:09:00,"@rvraghav93 it's June 26
+it opens June 26 until July 3rd I mean
+","['nt', 'il', 'mean', 'rd', 'pen', 'ag']"
+54e07d6515522ed4b3dc0858,988,2015-06-18 15:54:00,"the performance of the best models
+","['performance', 'orm', 'ls', 'model', 'rman', 'rm', 'mode', 'el', 'models', 'del', 'ode', 'mo', 'perf', 'st', 'mod', 'od', 'rfo', 'de']"
+54e07d6515522ed4b3dc0858,991,2015-06-18 15:57:00,"why you'd want KFold is hard to explain
+if it doesn't shuffle by default that's perfect!
+yep
+","['ant', 'nt', 'default', 'shuffle', 'sh', 'wan', 'ld', 'rd', 'fault', 'hat', 'explain', 'ou', 'exp', 'ex', 'har', 'perf', 'plai', 'rfe', 'ff', 'hy', 'yo', 'perfect', 'sn', 'ffl', 'uff', 'de']"
+54e07d6515522ed4b3dc0858,1028,2015-06-23 15:03:00,"I guess the same as you
+instantiate the folds
+","['ant', 'nt', 'sam', 'sa', 'ld', 'sta', 'lds', 'fold', 'instant', 'ess', 'ou', 'stan', 'st', 'ss', 'yo', 'ta']"
+54e07d6515522ed4b3dc0858,1044,2015-06-23 15:52:00,"Those aren't really common tests, it's just regular tests
+I mean something like https://github.com/scikit-learn/scikit-learn/blob/master/sklearn/utils/estimator_checks.py#L1213
+","['git', 'com', 'https', 'ear', 'il', 'ls', 'blob', 'http', 'github', 'lob', 'thin', 'ps', 'mean', 'mmo', 'tor', 'sti', 'tps', 'uti', 'som', 'mo', 'comm', 'scikit-learn', 'mat', 'regula', 'st', 'co', 'om', 'sc', 'ose', 'aster', 'ch', 'jus', 'sts', 'hub']"
+54e07d6515522ed4b3dc0858,1047,2015-06-23 17:08:00,"also from the code. I was just curious whether there's some obscure meaning of `partition` that I wasn't aware of.
+","['io', 'uri', 'ls', 'war', 'mean', 'ri', 'rt', 'hat', 'lso', 'par', 'ode', 'cod', 'rom', 'som', 'ou', 'ning', 'partition', 'st', 'co', 'om', 'sc', 'sn', 'jus', 'od', 'curio', 'ether', 'obs', 'rio', 'als', 'bsc', 'de']"
+54e07d6515522ed4b3dc0858,1096,2015-06-30 22:22:00,"and I can't find anything relevant on google scholar quickly
+anyway, you can easily define your custom metrics
+","['ant', 'nt', 'il', 'metrics', 'ca', 'el', 'metric', 'thin', 'find', 'go', 'rel', 'ri', 'tr', 'ou', 'efi', 'st', 'om', 'sc', 'yo', 'ch', 'tom', 'quic', 'uic', 'hol', 'yt', 'metr', 'ogl', 'scholar', 'goo', 'eas', 'de']"
+54e07d6515522ed4b3dc0858,1157,2015-07-11 23:18:00,"@rvraghav93 it would have been a great thing to work on next, but the solution isn't clear enough, as @amueller noted
+","['io', 'ear', 'el', 'solution', 'thin', 'ld', 'next', 'xt', 'uti', 'ou', 'ex', 'mu', 'ed', 'cl', 'ag', 'sn', 'gr']"
+54e07d6515522ed4b3dc0858,1158,2015-07-11 23:21:00,"it was a good reply
+","['ply', 'go', 'reply', 'epl', 'rep', 'od', 'goo']"
+54e07d6515522ed4b3dc0858,2303,2016-04-03 19:05:00,"str.split has worked for me
+","['spl', 'split', 'tr', 'ed', 'st', 'sp', 'rke', 'lit']"
+54e07d6515522ed4b3dc0858,2390,2016-05-05 16:34:00,"what do you mean by distance between features?
+btw if you plot a histogram of your data do you have some sort of ""spikes"" at the values that you say you want to treat as categorical?
+you have some latent variables that correspond to your payloads, and when you sample, you have a chance to sample from a random poisson(?) or to exactly(?) pick out the payload
+","['ant', 'random', 'nt', 'variables', 'ram', 'plot', 'dom', 'load', 'ria', 'pi', 'var', 'cal', 'sample', 'sam', 'ads', 'ca', 'distance', 'xact', 'etw', 'xa', 'spi', 'sa', 'wan', 'histogram', 'pic', 'mean', 'act', 'go', 'sta', 'poisson', 'payload', 'ctl', 'pick', 'ri', 'tr', 'rt', 'cat', 'hat', 'alu', 'tween', 'pike', 'rom', 'som', 'ampl', 'ou', 'ata', 'ex', 'rr', 'ogr', 'po', 'pik', 'stan', 'st', 'ss', 'co', 'om', 'sp', 'spike', 'yo', 'ch', 'dis', 'iab', 'bt', 'ent', 'val', 'gr', 'categorical', 'ta']"
+5537027215522ed4b3df56ab,886,2015-06-12 17:20:00,"yeah
+his earlier tests
+","['ear', 'st', 'sts']"
+54f0341115522ed4b3dc8e00,923,2015-06-16 15:05:00,"yes, it looks like all of it runs
+",[]
+5582dd0915522ed4b3e21b33,978,2015-06-18 15:20:00,"Thanks :)
+",[]
+5582dd0915522ed4b3e21b33,979,2015-06-18 15:28:00,"I'm using version 0.15.2
+","['io', 'using', 'version', 'rs', 'rsi']"
+5425a933163965c9bc206e53,1106,2015-07-01 13:53:00,"I agree. I will probably try that in my model, but unfortunately I can't change the evaluation metric that this competition uses
+","['com', 'io', 'evaluation', 'lua', 'il', 'model', 'eval', 'mode', 'ca', 'el', 'uat', 'ati', 'metric', 'nat', 'ri', 'tr', 'rt', 'hat', 'del', 'alu', 'ode', 'uses', 'mo', 'tel', 'na', 'tun', 'gree', 'co', 'om', 'ag', 'ch', 'mod', 'od', 'metr', 'wil', 'val', 'gr', 'ill', 'de']"
+55901c1b15522ed4b3e2f949,1325,2015-09-11 14:29:00,"okay, cool
+",['co']
+55901c1b15522ed4b3e2f949,1349,2015-09-13 15:47:00,"no, the joblib issue is a separate issue
+> [![appveyor2.png](https://files.gitter.im/scikit-learn/scikit-learn/gKbL/thumb/appveyor2.png)](https://files.gitter.im/scikit-learn/scikit-learn/gKbL/appveyor2.png)
+","['git', 'https', 'ear', 'il', 'png', 'http', 'file', 'ps', 'su', 'rate', 'par', 'thumb', 'tps', 'scikit-learn', 'appv', 'ss', 'sc', 'joblib', 'yo', 'appveyor', 'lib', 'pv', 'ara', 'para', 'jo', 'sepa']"
+55901c1b15522ed4b3e2f949,1362,2015-09-14 07:37:00,"Yep
+",[]
+55901c1b15522ed4b3e2f949,1762,2015-11-22 21:18:00,"I'd love to se it
+The abtract
+No :(
+","['trac', 'act', 'tr', 'lov', 'bt']"
+55901c1b15522ed4b3e2f949,1925,2016-01-12 22:29:00,"Okay
+I've been working with mxnet for a bit now but I might have more time soon.
+","['time', 'bit', 'ime', 'mo', 'xnet', 'mxnet', 'kin', 'mi', 'orking']"
+530c03e25e986b0712efafb8,1402,2015-10-09 18:11:00,"lets say *with*
+or rather, optionally with
+","['io', 'sa', 'let', 'optional', 'option', 'ets', 'na']"
+530c03e25e986b0712efafb8,4182,2018-08-20 15:54:00,"Thank you for the pointer @rth .  I should have been able to find that :)
+That shouldn't take long :)
+","['nt', 'int', 'point', 'find', 'sh', 'ld', 'rt', 'hat', 'dn', 'ou', 'take', 'po', 'yo', 'ta']"
+5571fe1015522ed4b3e17d90,1437,2015-10-15 14:09:00,"yeah make html. Too ~25 minutes on my machine.
+","['html', 'ml', 'min', 'minute', 'mach', 'tm', 'ch', 'tml', 'mi', 'minutes']"
+5571fe1015522ed4b3e17d90,1438,2015-10-15 14:15:00,"I can take plot_lle_digits should be trivial
+","['git', 'vi', 'plot', 'ca', 'dig', 'digits', 'sh', 'ld', 'ri', 'tr', 'ou', 'digit', 'take', 'ta']"
+5571fe1015522ed4b3e17d90,1628,2015-11-12 12:02:00,"Looks interesting, I'll give it a shot, thanks !
+","['nt', 'rest', 'int', 'sh', 'sti', 'st']"
+53810862048862e761fa2887,1528,2015-10-21 14:30:00,"I have windows on dual-boot, but I have to setup scikit-learn over there before I can run tests. Does anyone else over there have it ?
+@amueller You mean it could be computed by some function in `scipy.optimize` or similar ?
+","['windows', 'com', 'ip', 'io', 'boot', 'ear', 'il', 'boo', 'ls', 'window', 'function', 'ca', 'unc', 'put', 'el', 'set', 'func', 'mean', 'ld', 'scipy', 'du', 'som', 'ou', 'mu', 'ed', 'scip', 'scikit-learn', 'tup', 'st', 'mpu', 'co', 'om', 'sc', 'yo', 'mi', 'ws', 'sts']"
+53810862048862e761fa2887,1538,2015-10-21 17:00:00,"Even with #5270 the code cannot support non-integer types
+the problem is if converting something like `[1, '1', 2 , 3 , 4]` to an integer, casting to integer works and gives wrong results
+","['nt', 'int', 'port', 'types', 'integer', 'cas', 'casting', 'ca', 'em', 'thin', 'su', 'lts', 'rt', 'sti', 'ode', 'cod', 'som', 'po', 'sup', 'st', 'co', 'om', 'ert', 'od', 'de']"
+53810862048862e761fa2887,1571,2015-10-26 11:52:00,"You can try the nmf example I posted.
+","['post', 'ca', 'xa', 'tr', 'ampl', 'ou', 'ex', 'ed', 'po', 'nm', 'st', 'nmf', 'pos']"
+53810862048862e761fa2887,1573,2015-10-26 11:53:00,"I don't know of any such technique. Since I had worked with text rank I thought I'd give my 2 cents
+","['nt', 'text', 'su', 'tex', 'rank', 'xt', 'ou', 'ex', 'ed', 'ch', 'que', 'rke', 'iq', 'ent', 'know']"
+53810862048862e761fa2887,1776,2015-11-23 20:17:00,"I have narrowed down the failure to one line so far, but I still don't know why that line causes those tests to fail
+Ok. Thanks. Make sure you go to that commit the last 2 or 3 commits I have been trying other stuff
+","['com', 'il', 'row', 'commit', 'ca', 'line', 'su', 'go', 'far', 'tr', 'hat', 'sti', 'uses', 'ou', 'comm', 'ed', 'rr', 'na', 'arr', 'st', 'co', 'ff', 'om', 'ose', 'hy', 'rro', 'yo', 'las', 'mi', 'uff', 'tuf', 'stuff', 'sts', 'ill', 'know']"
+53810862048862e761fa2887,1877,2015-12-11 17:17:00,"Yes
+",[]
+5615bee3d33f749381a8a4f5,1573,2015-10-26 11:54:00,"extractive is fine for me
+Just pick 2 most important sentences and display
+","['ant', 'nt', 'import', 'port', 'spl', 'trac', 'pi', 'extract', 'pic', 'act', 'pick', 'tr', 'rt', 'xt', 'disp', 'mo', 'imp', 'ex', 'extra', 'po', 'sentence', 'st', 'sp', 'display', 'sente', 'dis', 'mpo', 'ent', 'ta']"
+562aa0c916b6c7089cb80cd7,1616,2015-11-06 00:49:00,"all right @amueller . Thanks
+","['el', 'ri', 'mu']"
+564a144c16b6c7089cbaebe3,1665,2015-11-16 19:00:00,"FWIW: I bypassed the build issue with `pyenv` by installing anaconda directly.
+","['il', 'sse', 'env', 'sed', 'build', 'rect', 'ld', 'su', 'dir', 'sta', 'ctl', 'ed', 'na', 'anaconda', 'st', 'conda', 'ss', 'co', 'tal', 'pyenv', 'lli', 'bypass', 'ta']"
+564a144c16b6c7089cbaebe3,1674,2015-11-16 23:32:00,"yes
+",[]
+564a0e2916b6c7089cbaead6,1665,2015-11-16 19:01:00,"@lazarillo where can I find you? I am red head in red flannel
+","['il', 'lan', 'ca', 'el', 'find', 'fla', 'head', 'ri', 'ou', 'ed', 'flann', 'red', 'ril', 'yo', 'flannel', 'az', 'nne', 'ill']"
+564a11fc16b6c7089cbaeb9e,1671,2015-11-16 19:34:00,"I am going to work on issue #5656
+","['su', 'go', 'ss']"
+564a264d16b6c7089cbaee0f,1671,2015-11-16 19:35:00,"edited pull request and ready to merge #5834
+","['merge', 'pull', 'edi', 'edit', 'request', 'quest', 'ready', 'ed', 'mer', 'st', 'que', 'req']"
+564789be16b6c7089cbab8b7,1694,2015-11-19 12:29:00,"great!
+",['gr']
+564789be16b6c7089cbab8b7,1699,2015-11-19 12:43:00,"thanks
+",[]
+564789be16b6c7089cbab8b7,1700,2015-11-19 12:53:00,"I like that rule
+","['rule', 'hat']"
+564789be16b6c7089cbab8b7,1706,2015-11-19 13:55:00,"@rvraghav93  I think these are really sensible rules and I completely agree with them :)
+","['com', 'rules', 'el', 'em', 'thin', 'rule', 'let', 'sens', 'tel', 'gree', 'co', 'om', 'ag', 'ompl', 'gr']"
+564789be16b6c7089cbab8b7,1889,2015-12-17 17:22:00,"ah no... could you point me to them please?
+","['nt', 'int', 'point', 'ase', 'em', 'ld', 'ou', 'po', 'co', 'yo', 'eas']"
+564789be16b6c7089cbab8b7,2014,2016-02-09 21:53:00,"ah ok... so I am very interested in that
+","['nt', 'rest', 'int', 'hat', 'ed', 'st']"
+564789be16b6c7089cbab8b7,2016,2016-02-09 22:02:00,"ah :)
+then I am the odd one out :)
+","['dd', 'ou', 'od']"
+564789be16b6c7089cbab8b7,2054,2016-02-16 09:37:00,"ah...
+",[]
+564789be16b6c7089cbab8b7,2186,2016-03-11 11:49:00,,"[nan, 'na']"
+564789be16b6c7089cbab8b7,2260,2016-03-22 15:45:00,"@rvraghav93 That's a great idea!
+","['ide', 'hat', 'ag', 'gr', 'de']"
+564789be16b6c7089cbab8b7,2370,2016-04-28 15:45:00,"ah ok
+that's interesting
+","['nt', 'rest', 'int', 'hat', 'sti', 'st']"
+564789be16b6c7089cbab8b7,2389,2016-05-05 16:30:00,"ok that's interesting already
+","['nt', 'rest', 'int', 'hat', 'sti', 'ready', 'lr', 'st']"
+564789be16b6c7089cbab8b7,2476,2016-06-08 09:16:00,"@ogrisel  the spark link?
+","['el', 'ri', 'par', 'ogr', 'sp', 'rise', 'gr']"
+564789be16b6c7089cbab8b7,2627,2016-07-19 10:39:00,"Cool. what does MRG actually stand for?
+oh :)
+oh cool
+","['act', 'sta', 'hat', 'stan', 'st', 'co', 'ta']"
+564789be16b6c7089cbab8b7,2638,2016-07-19 11:49:00,"thanks! It shouldn't need much RAM
+sadly the xgboost google group seems pretty dead as does their gitter room
+xgboost seems to use 1.6GB on my machine for that dataset
+","['git', 'boost', 'boo', 'ase', 'ems', 'set', 'em', 'sh', 'sa', 'dataset', 'pre', 'ld', 'go', 'tty', 'hat', 'dn', 'ou', 'ata', 'mu', 'ed', 'mach', 'st', 'om', 'roo', 'muc', 'ch', 'xgboost', 'ei', 'ogl', 'room', 'gr', 'group', 'goo', 'oom', 'de', 'ta']"
+564789be16b6c7089cbab8b7,2639,2016-07-19 11:52:00,"no! Do you think it might help?
+(got to go out for 30 minutes.. thanks so much for looking at this!)
+","['el', 'thin', 'min', 'go', 'minute', 'ou', 'mu', 'muc', 'yo', 'ch', 'got', 'kin', 'mi', 'minutes']"
+564789be16b6c7089cbab8b7,2642,2016-07-19 15:30:00,"@maniteja123  no.. it is still super slow
+it would be great
+yes... I asked on the forum there and have no reply yet
+I mean I asked on the forum for the digits recognizer challenge
+my friend also asked on SO
+no answer :)
+","['git', 'forum', 'il', 'ls', 'hal', 'ply', 'dig', 'friend', 'digits', 'mean', 'super', 'ld', 'su', 'ri', 'lso', 'sti', 'reply', 'epl', 'ou', 'digit', 'ed', 'sup', 'eco', 'rep', 'st', 'nite', 'co', 'ch', 'gn', 'rum', 'als', 'gr', 'ill']"
+564789be16b6c7089cbab8b7,2645,2016-07-19 15:40:00,"it's definitely worth reading
+","['ini', 'el', 'init', 'rt', 'tel', 'efi', 'nite', 'de']"
+564789be16b6c7089cbab8b7,2646,2016-07-19 15:52:00,"hmmm... no not yet but that page does say it is fine in python
+","['python', 'sa', 'hat', 'ag', 'yt']"
+564789be16b6c7089cbab8b7,2668,2016-07-26 15:26:00,"it's perfectly fine :)
+","['ctl', 'perf', 'rfe', 'perfect']"
+564789be16b6c7089cbab8b7,2805,2016-09-07 20:54:00,"@ItchyJunk  that would be surprising
+exit is a synonym for quit I believe
+surely it's a typo?
+you don't think it's a bug?
+","['el', 'thin', 'exit', 'ld', 'su', 'synonym', 'rel', 'ri', 'hat', 'quit', 'ou', 'ex', 'po', 'exi', 'eve', 'syn', 'hy', 'yo', 'ch', 'isin', 'urp']"
+564789be16b6c7089cbab8b7,3221,2017-03-31 11:04:00,"@glemaitre  OK
+I think it is all works fine. I was trying to get TPOT to work which stalls mysteriously on OS X and I wanted to check it wasn't a scikit learn problem. It isn't.
+it's a TPOT bug I think, not a scikit-learn one
+probably in fact a pathos bug
+","['ant', 'nt', 'io', 'ear', 'ls', 'get', 'path', 'em', 'thin', 'wan', 'act', 'sta', 'ri', 'tr', 'fact', 'ou', 'ed', 'scikit-learn', 'st', 'sc', 'pathos', 'ch', 'tal', 'sn', 'rio', 'myst', 'sly', 'ta']"
+564789be16b6c7089cbab8b7,3643,2017-11-21 15:11:00,"@amueller  ah right.. so what is the right thing to do here?
+I need to scale the data to use keras (LSTM)
+so I train on some set and the test on another
+how should I scale the test set?
+if this method doesn't guarantee it will be in the right range
+hmm.. I don't actually know.. it's just that all the docs says you should scale everything to be in the range 0 to 1
+ok thanks.. It occurred to me that you could just scale the test set independently too
+which wouldn't be ""cheating"" but would give you the guarantee
+but maybe that is wrong
+true and good point
+thank you
+","['ant', 'nt', 'int', 'dep', 'il', 'ndepend', 'cal', 'doc', 'point', 'ca', 'el', 'ati', 'range', 'set', 'thin', 'ocs', 'sh', 'sa', 'ld', 'act', 'scale', 'sca', 'go', 'cc', 'pen', 'ri', 'tr', 'ras', 'tee', 'hat', 'heat', 'dn', 'som', 'ou', 'ata', 'ntl', 'mu', 'ed', 'rr', 'maybe', 'po', 'red', 'st', 'eve', 'co', 'om', 'sc', 'yo', 'ch', 'keras', 'sn', 'jus', 'od', 'ara', 'yt', 'ent', 'wil', 'goo', 'ill', 'know', 'de', 'ta']"
+564789be16b6c7089cbab8b7,3823,2018-03-03 19:48:00,"hi
+",[]
+564789be16b6c7089cbab8b7,3876,2018-04-20 09:27:00,"will do
+thanks
+","['il', 'wil', 'ill']"
+564789be16b6c7089cbab8b7,3967,2018-07-09 14:47:00,"great, thanks!
+",['gr']
+564789be16b6c7089cbab8b7,3970,2018-07-09 14:55:00,"I need to find a nice expert online as I don't know anyone in real life who could help
+That's my intuition too
+","['nt', 'io', 'int', 'nic', 'tui', 'el', 'ice', 'line', 'find', 'intuit', 'ld', 'nice', 'rt', 'hat', 'ou', 'exp', 'ex', 'ed', 'co', 'yo', 'ert', 'intu', 'know']"
+564789be16b6c7089cbab8b7,4484,2019-06-21 17:29:00,"it's only really the convolutions that  take advantage of the neighborhood of pixels I suppose
+@ogrisel  right.
+","['ant', 'nt', 'io', 'pi', 'ls', 'pixel', 'el', 'pix', 'pixels', 'su', 'convolution', 'ri', 'hat', 'uti', 'take', 'ogr', 'po', 'sup', 'co', 'ose', 'ag', 'od', 'ei', 'pos', 'pose', 'rise', 'gr', 'ta']"
+564789be16b6c7089cbab8b7,4486,2019-06-21 17:35:00,"really I am secretly interested in time series
+","['nt', 'rest', 'int', 'time', 'etl', 'series', 'ri', 'ime', 'ed', 'st', 'sec']"
+564789be16b6c7089cbab8b7,4863,2020-06-15 16:51:00,"does that mean you end up with 2 features?
+I am not clear what a cluster means here
+@adrinjalali  (thank you)
+thank you
+I am surprised it works so well for my regression problem!
+","['io', 'ear', 'regression', 'sed', 'el', 'ssi', 'em', 'mean', 'su', 'ri', 'hat', 'ess', 'ou', 'ed', 'st', 'ss', 'cl', 'yo', 'rise', 'urp', 'gr', 'egress']"
+564789be16b6c7089cbab8b7,5107,2021-01-22 09:31:00,"thanks!
+",[]
+564789be16b6c7089cbab8b7,5116,2021-01-22 10:29:00,"makes sense
+","['sens', 'sense', 'nse']"
+564789be16b6c7089cbab8b7,5117,2021-01-22 10:33:00,":)
+",[]
+564789be16b6c7089cbab8b7,5127,2021-01-22 11:36:00,"@lesteve thanks :)
+","['st', 'eve']"
+55e8e8690fc9f982beaf992f,1750,2015-11-21 01:39:00,"Perfect, thanks @amueller
+","['el', 'mu', 'rfe']"
+5653208916b6c7089cbbd390,1768,2015-11-23 15:13:00,"ya sure
+",['su']
+5653208916b6c7089cbbd390,1770,2015-11-23 15:23:00,"okay :+1:
+i searched there is no room for Word2vec and gensim :(
+","['ear', 'search', 'rc', 'rd', 'ed', 'gensim', 'ord', 'om', 'roo', 'ch', 'arch', 'vec', 'room', 'oom']"
+553e8e1015522ed4b3df97f7,1801,2015-11-30 14:25:00,"https://github.com/scikit-learn/scikit-learn/issues?q=is%3Aopen+is%3Aissue+label%3AEasy
+go through the easy issues, you should be able to solve most with a basic knowledge of python
+","['python', 'git', 'com', 'https', 'ear', 'label', 'basic', 'http', 'owl', 'github', 'el', 'sh', 'ps', 'ld', 'su', 'go', 'pen', 'led', 'tps', 'asic', 'mo', 'ou', 'ed', 'edg', 'scikit-learn', 'st', 'ss', 'co', 'om', 'sc', 'yo', 'lab', 'yt', 'sic', 'hub', 'know', 'eas']"
+55f2a92f0fc9f982beb05d85,1820,2015-12-02 19:48:00,"No, the base one in Scikit learn is serial one .. I am trying now to use pySpark to paralleize it, but its really difficult as I am not aware of scikit learn, and I dont have plenty of time :) .. would appreciate if someone can help
+","['nt', 'time', 'diff', 'ear', 'ria', 'ca', 'ase', 'base', 'el', 'war', 'ffi', 'pre', 'ld', 'ri', 'tr', 'ime', 'par', 'icu', 'som', 'ou', 'ff', 'om', 'sc', 'ei', 'ara', 'eon', 'para', 'ent']"
+553d32d715522ed4b3df8b92,1910,2016-01-03 16:43:00,"Thank you so much. Will do that.
+","['il', 'hat', 'ou', 'mu', 'muc', 'yo', 'ch', 'ill']"
+553d32d715522ed4b3df8b92,2307,2016-04-05 02:19:00,"Yeah thanks, that was the reason for the ValueError
+But still didn't get the comment regarding the *print* statement :worried:
+","['com', 'nt', 'int', 'il', 'state', 'get', 'em', 'rd', 'sta', 'ri', 'stat', 'hat', 'alu', 'sti', 'dn', 'idn', 'comm', 'ed', 'rr', 'st', 'co', 'om', 'rro', 'reason', 'eme', 'ent', 'ill', 'eas', 'ta']"
+553d32d715522ed4b3df8b92,3093,2016-12-21 02:25:00,"Sure Anytime :+1:
+","['time', 'ime', 'yt']"
+541d52b1163965c9bc205cf3,1937,2016-01-19 16:56:00,"@amueller  can i  help to set it right ?
+","['ca', 'el', 'set', 'ri', 'mu']"
+56b80528e610378809c05a48,2029,2016-02-11 16:11:00,"Yes
+",[]
+56b80528e610378809c05a48,2047,2016-02-15 17:41:00,"Its pretty okay ... take your time :)
+","['time', 'pre', 'tty', 'ime', 'ou', 'take', 'yo', 'ta']"
+56b80528e610378809c05a48,2048,2016-02-15 17:54:00,"oh sorry for my ambiguous description. I implemented the basic case, like the example amueller gave in the discussion between you and him before.
+","['nt', 'ip', 'io', 'cas', 'basic', 'des', 'ca', 'ase', 'case', 'el', 'ssi', 'etw', 'em', 'xa', 'ri', 'ambiguous', 'tween', 'asic', 'uss', 'ampl', 'ou', 'escript', 'imp', 'ex', 'mu', 'ed', 'rr', 'ss', 'sc', 'yo', 'dis', 'eme', 'sic', 'script', 'ent', 'de']"
+56b80528e610378809c05a48,2205,2016-03-13 20:01:00,"yes
+really?
+But it works for me ...
+Thx for your help!
+It is not  assign a float to a char
+It is to declare a type that can accept either cython.char or  cython.float
+","['sign', 'ca', 'el', 'ssi', 'char', 'cc', 'declare', 'cython', 'hat', 'ecl', 'either', 'acc', 'ou', 'assign', 'har', 'ss', 'ept', 'cl', 'yo', 'ch', 'gn', 'ei', 'yt', 'de']"
+56b80528e610378809c05a48,2217,2016-03-13 20:15:00,"I see
+thanks for the clarafacation
+","['io', 'ca', 'ati', 'cat', 'cl', 'ara']"
+56b80528e610378809c05a48,2243,2016-03-22 06:15:00,"Hello @dsquareindia , you mean the type issue in ensemble?
+","['el', 'em', 'mean', 'su', 'dia', 'square', 'sem', 'ou', 'ss', 'yo', 'nse', 'ei', 'ndi']"
+56b80528e610378809c05a48,2244,2016-03-22 06:17:00,"Yeah I think so
+",['thin']
+56b80528e610378809c05a48,2322,2016-04-07 16:30:00,"hahahahaha
+good idea
+","['ide', 'go', 'ahah', 'od', 'goo', 'de']"
+56b80528e610378809c05a48,2529,2016-06-18 10:01:00,"May you paste the link?
+","['paste', 'ou', 'st', 'yo']"
+56b80528e610378809c05a48,2651,2016-07-23 10:13:00,"Good point. I am not sure about ubuntu but not on mac
+@maniteja123 thanks.
+","['nt', 'int', 'ubuntu', 'point', 'su', 'ou', 'po', 'nite', 'od', 'bun']"
+56b80528e610378809c05a48,2699,2016-08-02 08:41:00,"I personally dont have much experience with R, so I cant answer this question, sorry.
+","['ant', 'nt', 'io', 'ca', 'ri', 'quest', 'sti', 'exp', 'ex', 'mu', 'rr', 'na', 'persona', 'st', 'rs', 'muc', 'ch', 'que']"
+56c4f19ae610378809c1f8ae,2081,2016-02-18 18:19:00,":clap:
+","['cl', 'clap']"
+56c4f19ae610378809c1f8ae,2089,2016-02-19 09:19:00,"Im not sure what you mean by <unconvertable> get better results. are you doing binary classification?
+","['io', 'binary', 'doi', 'get', 'class', 'classification', 'ca', 'unc', 'ssi', 'ati', 'mean', 'su', 'lts', 'rt', 'cat', 'hat', 'bin', 'ou', 'na', 'nco', 'ss', 'co', 'cl', 'yo', 'ert', 'las', 'ta']"
+56c4f19ae610378809c1f8ae,2104,2016-02-19 10:20:00,"thats not always true haha. feature engineering is quite important in the real world to distinguish signal from noise in data.
+e.g. if you wanted to predict whether an employee has access and you were given information about their salary, working hours, and favorite place to eat lunch on amazons campus. this is only 3 features, but its quite evident that where they eat lunch on amazons campus likely has no correlation / is not related to whether theyd have access.
+actually thats not necessarily true, maybe there are more high scale places reserved for executives or something but do you see my point?
+Yup.
+","['ide', 'ant', 'nt', 'format', 'vi', 'io', 'import', 'int', 'orm', 'port', 'relate', 'il', 'amazon', 'exe', 'cal', 'cut', 'ident', 'edi', 'sign', 'rm', 'point', 'ca', 'executives', 'unc', 'el', 'ati', 'exec', 'hig', 'em', 'thin', 'sh', 'sa', 'wan', 'pre', 'ld', 'act', 'scale', 'hour', 'sca', 'noise', 'rel', 'cc', 'reserved', 'sar', 'ri', 'tr', 'ace', 'relation', 'rt', 'hat', 'quit', 'predict', 'ssa', 'sti', 'ess', 'inf', 'informat', 'uti', 'ring', 'rom', 'som', 'correlation', 'acc', 'mo', 'ou', 'ata', 'favorite', 'imp', 'ex', 'ed', 'rr', 'maybe', 'po', 'na', 'ngui', 'mat', 'red', 'info', 'ril', 'st', 'sal', 'mpu', 'ss', 'rs', 'co', 'om', 'sc', 'yo', 'ch', 'ats', 'matio', 'serve', 'dis', 'mpo', 'gn', 'ether', 'ei', 'kin', 'az', 'hey', 'ent', 'given', 'orking', 'de', 'ta']"
+56c4f19ae610378809c1f8ae,2116,2016-02-22 10:21:00,"got it
+","['go', 'got']"
+56c4f19ae610378809c1f8ae,2155,2016-03-01 07:56:00,"np =)
+",['np']
+56c4f19ae610378809c1f8ae,2277,2016-03-24 23:38:00,"ah, no you arent misunderstanding, I was.
+the featureunion is just a scaffold of various steps, which you then pass things into and get a numpy array. Is this what you were thinking?
+","['nt', 'io', 'int', 'union', 'nio', 'var', 'get', 'numpy', 'sun', 'ca', 'thin', 'ps', 'ld', 'su', 'eps', 'sca', 'sta', 'step', 'ri', 'fold', 'hat', 'scaffold', 'caf', 'ou', 'rr', 'der', 'ray', 'stan', 'arr', 'st', 'ss', 'rs', 'ff', 'sc', 'yo', 'ch', 'rstan', 'jus', 'kin', 'mi', 'rio', 'ump', 'ent', 'de', 'ta', 'ndi']"
+56c4f19ae610378809c1f8ae,2322,2016-04-07 16:30:00,"lol we should put that in contributing.rst :P haha  just kidding
+","['nt', 'dd', 'put', 'sh', 'ld', 'ri', 'tr', 'hat', 'uti', 'ou', 'st', 'rs', 'co', 'jus']"
+56c4f19ae610378809c1f8ae,2326,2016-04-07 17:33:00,"yes, it should be.
+i know 3.5 is fully supported
+its been tested with 3.4 / 3.5, and 3.3 should also work. not sure about 3.1 or 3.2
+","['port', 'ls', 'sh', 'ld', 'su', 'rte', 'rt', 'lso', 'ou', 'ed', 'po', 'sup', 'st', 'als', 'know']"
+56c4f19ae610378809c1f8ae,2327,2016-04-07 17:36:00,"indeed
+if you look at https://github.com/scikit-learn/scikit-learn/search?utf8=%E2%9C%93&q=print, youll see that the <unconvertable> print' statements are all functions
+make sure to `from __future__ import print_function`, though.
+","['git', 'com', 'nt', 'io', 'import', 'int', 'https', 'port', 'ear', 'search', 'state', 'future', 'http', 'function', 'github', 'unc', 'em', 'func', 'rc', 'utf', 'ps', 'su', 'sta', 'ri', 'stat', 'rt', 'hat', 'statements', 'tps', 'rom', 'ou', 'imp', 'ed', 'po', 'scikit-learn', 'st', 'nco', 'co', 'om', 'sc', 'yo', 'ch', 'ert', 'arch', 'mpo', 'eme', 'ent', 'hub', 'de', 'ta']"
+56c4f19ae610378809c1f8ae,2357,2016-04-24 06:17:00,"I think the former, but the best way to do so much s to learn basic data science imo
+*is to learn
+If the goal is to eventually contribute, you'd want knowledge of how the various algorithms work, what their use cases are, etc. The easiest way to do this imo is to just use them in various applications.
+","['ant', 'nt', 'algorithm', 'io', 'orm', 'ear', 'cas', 'basic', 'var', 'owl', 'rm', 'ca', 'ase', 'case', 'ati', 'em', 'thin', 'wan', 'go', 'ri', 'tr', 'led', 'cat', 'hat', 'asic', 'mo', 'ou', 'ata', 'mu', 'ed', 'lg', 'edg', 'ppl', 'mer', 'st', 'eve', 'co', 'sc', 'muc', 'yo', 'ch', 'jus', 'ei', 'goa', 'rio', 'sic', 'ent', 'know', 'eas', 'ta']"
+56c4f19ae610378809c1f8ae,2415,2016-05-11 21:26:00,,"[nan, 'na']"
+56c4f19ae610378809c1f8ae,2434,2016-05-22 20:28:00,"Of course, we definitely talk about other things :)
+","['ini', 'el', 'init', 'thin', 'ou', 'tel', 'efi', 'nite', 'rs', 'co', 'tal', 'de', 'ta']"
+56c4f19ae610378809c1f8ae,2534,2016-06-21 01:32:00,"what do you mean test?
+like run the unit tests?
+","['mean', 'hat', 'ou', 'st', 'yo', 'sts']"
+56c4f19ae610378809c1f8ae,2542,2016-06-21 02:49:00,"good to hear
+","['ear', 'go', 'od', 'goo']"
+56c4f19ae610378809c1f8ae,2606,2016-07-16 14:23:00,":wave:
+","['wav', 'wave']"
+56c4f19ae610378809c1f8ae,2888,2016-09-28 20:59:00,"nvm, just saw https://github.com/scikit-learn/scikit-learn.github.io/commit/d6c6bd03f4cabbce20a3ac579c243abe0c4f2235
+ah ok
+thanks :smile:
+","['git', 'com', 'io', 'https', 'ear', 'il', 'cab', 'http', 'commit', 'github', 'ca', 'sa', 'ps', 'smil', 'c5', 'bc', 'tps', 'comm', 'c4', 'scikit-learn', 'nvm', 'st', 'co', 'om', 'sc', 'jus', 'smile', 'mi', 'hub', '20']"
+56c4f19ae610378809c1f8ae,2904,2016-09-30 03:37:00,"well you dont have to understand everything to begin contributing
+the different methods implemented are largely independent of each other
+","['nt', 'methods', 'dep', 'diff', 'ndepend', 'el', 'em', 'thin', 'sta', 'pen', 'ri', 'tr', 'uti', 'ou', 'imp', 'ed', 'der', 'stan', 'ods', 'st', 'eve', 'rs', 'co', 'ff', 'yo', 'ch', 'rstan', 'od', 'eme', 'yt', 'ent', 'de', 'ta']"
+56c4f19ae610378809c1f8ae,2919,2016-10-04 17:23:00,"you have to modify about.rst
+thats the file name
+the html files are built from rst source files, so modify the rst source
+","['html', 'modi', 'il', 'file', 'ml', 'rc', 'hat', 'rom', 'mo', 'ou', 'na', 'tm', 'st', 'rs', 'om', 'yo', 'ats', 'mod', 'tml', 'nam', 'od', 'rce']"
+56c4f19ae610378809c1f8ae,2957,2016-10-17 14:40:00,"i dont think thats worth implementing word2vec/glove in scikit-learn though; as gael said in the issue > Text modelling probably requires more than just machine learning, including specific rules. Thus I think that word2vec belongs more in gensim (where it already is) than in scikit-learn: it is a model very tuned to text.
+and gensim does indeed have a scikit-learn interface (or should have one soon i believe)
+","['nt', 'int', 'ear', 'text', 'model', 'interface', 'rules', 'mode', 'el', 'em', 'thin', 'require', 'sh', 'sa', 'rule', 'word', 'ld', 'su', 'rd', 'tex', 'ace', 'rt', 'hat', 'del', 'xt', 'ode', 'ready', 'mo', 'ou', 'requires', 'imp', 'ex', 'ning', 'ed', 'lr', 'mach', 'lov', 'gensim', 'ord', 'scikit-learn', 'tun', 'st', 'eve', 'ss', 'word2vec', 'sc', 'cl', 'sp', 'ch', 'ats', 'face', 'mod', 'jus', 'ncl', 'lli', 'od', 'eme', 'req', 'glove', 'vec', 'ent', 'de']"
+56c625c3e610378809c22760,2084,2016-02-18 20:18:00,"haha yeah true
+",['tr']
+561d08d0d33f749381a937bf,2091,2016-02-19 09:25:00,"It does, but I slice the output and use the one that gives a true value.
+","['put', 'ice', 'sli', 'tr', 'slice', 'hat', 'alu', 'ou', 'output', 'tput', 'tpu', 'val']"
+561d08d0d33f749381a937bf,2094,2016-02-19 09:47:00,"That way I select the column with a probability of 1.
+This is more magic than science to me.
+","['select', 'il', 'probability', 'el', 'agi', 'col', 'abi', 'hat', 'umn', 'mo', 'co', 'sc', 'ag', 'babili', 'lit']"
+561d08d0d33f749381a937bf,2099,2016-02-19 10:04:00,"its the result of the predict_proba
+You certainly can. Simply print out the first X elements of both columns and youll see a pattern immediately.
+I see what you mean.
+Exactly.....going through the trouble of squeezing that extra 1% is insane.
+","['media', 'nt', 'int', 'element', 'edi', 'ca', 'san', 'el', 'ply', 'xact', 'em', 'xa', 'elements', 'col', 'sa', 'pre', 'mean', 'act', 'su', 'dia', 'go', 'ctl', 'ri', 'tr', 'sane', 'rt', 'hat', 'predict', 'umn', 'xt', 'cer', 'att', 'ou', 'imp', 'ex', 'tel', 'ed', 'extra', 'rtai', 'red', 'tern', 'st', 'rs', 'co', 'ane', 'yo', 'irs', 'ert', 'que', 'eme', 'ubl', 'ent', 'cert', 'ta']"
+561d08d0d33f749381a937bf,2101,2016-02-19 10:12:00,"Tell that to Kaggle
+https://www.kaggle.com/c/amazon-employee-access-challenge
+Getting my feet wet.....my head is spinning....most of this is just trial and error.
+","['com', 'https', 'amazon', 'ria', 'pi', 'http', 'hal', 'el', 'em', 'spi', 'ps', 'cc', 'head', 'ri', 'tr', 'hat', 'spinning', 'ess', 'tps', 'acc', 'mo', 'pinning', 'trial', 'ning', 'rr', 'spin', 'st', 'ss', 'co', 'om', 'sp', 'ag', 'rro', 'ch', 'jus', 'kaggle', 'fee', 'az']"
+53a5cf04a9176b500d1ced1a,2268,2016-03-23 11:03:00,"yeah. cool
+",['co']
+53a5cf04a9176b500d1ced1a,2269,2016-03-23 11:07:00,"yes. Thank you :)
+","['ou', 'yo']"
+54b2524adb8155e6700e8a8e,2311,2016-04-05 02:37:00,"Yay!
+I hope you're able to go through the steps and understand how this is doing what we want too...
+","['ant', 'nt', 'doi', 'wan', 'ps', 'eps', 'go', 'sta', 'step', 'hat', 'ou', 'der', 'stan', 'st', 'rs', 'yo', 'rstan', 'de', 'ta']"
+54b2524adb8155e6700e8a8e,3349,2017-06-07 11:35:00,"Haha I think
+",['thin']
+54b2524adb8155e6700e8a8e,3371,2017-06-08 12:13:00,"Yes
+",[]
+557fdd5f15522ed4b3e1f9bd,2339,2016-04-14 22:16:00,"@vene +1 I suppose @dsquareindia is making the claim that if a document is labeled X, then a term in that document should also belong to the category X.
+correct?
+","['nt', 'label', 'document', 'ls', 'aim', 'doc', 'rm', 'ca', 'el', 'sh', 'rect', 'ld', 'su', 'dia', 'go', 'square', 'led', 'cat', 'hat', 'lso', 'ou', 'ed', 'rr', 'po', 'sup', 'co', 'ose', 'cl', 'lab', 'ei', 'pos', 'kin', 'pose', 'als', 'ent', 'ory', 'ndi']"
+557c765a15522ed4b3e1de4f,2358,2016-04-24 06:19:00,"doesn't make any sense to me but whatevs
+","['hat', 'sens', 'sense', 'nse', 'sn']"
+569ebe44e610378809bd2db4,2361,2016-04-28 10:51:00,"@lesshaste sorry, I don't have enough knowledge yet to help you
+","['ssh', 'owl', 'el', 'sha', 'sh', 'led', 'less', 'ess', 'ou', 'ed', 'rr', 'edg', 'ssha', 'st', 'ss', 'haste', 'yo', 'know']"
+572d31b4c43b8c6019718fca,2393,2016-05-07 18:12:00,"Good resources for what specifically?
+","['resources', 'cal', 'ca', 'call', 'rc', 'hat', 'ou', 'sp', 'od', 'rce']"
+572d31b4c43b8c6019718fca,2395,2016-05-07 18:11:00,"If you can do machine learning in one language, youll have little to no trouble switching languages :)
+","['ear', 'lan', 'ca', 'switching', 'tr', 'ttl', 'ou', 'lang', 'ning', 'mach', 'ag', 'yo', 'ch', 'ubl', 'lit']"
+561a58f7d33f749381a8ff2f,2411,2016-05-11 21:07:00,"oh, randomforests do not have this?
+that's my actual question
+no `rf.tree_`
+`feature_importances_` not
+I want to actually convert a randomforest into categorical variables
+ahhh, the separate instances do have the tree
+awesome :)
+","['ant', 'random', 'nt', 'variables', 'io', 'rest', 'import', 'int', 'tree', 'port', 'dom', 'ria', 'var', 'cal', 'ca', 'instance', 'wan', 'act', 'rate', 'go', 'sta', 'ri', 'quest', 'tr', 'rt', 'cat', 'awe', 'hat', 'par', 'instances', 'sti', 'som', 'imp', 'po', 'omf', 'stan', 'st', 'co', 'om', 'ert', 'que', 'mpo', 'ara', 'iab', 'para', 'sts', 'sepa', 'categorical', 'ta']"
+561a58f7d33f749381a8ff2f,2415,2016-05-11 21:26:00,"I was thinking to PCA it perhaps lol
+","['thin', 'ps', 'aps', 'kin']"
+561a58f7d33f749381a8ff2f,2421,2016-05-11 21:39:00,"it's a reinforcement learning comp
+on each round (there are ~1.2m)
+","['com', 'nt', 'ear', 'em', 'rc', 'inf', 'ou', 'ning', 'info', 'co', 'om', 'ch', 'orc', 'eme', 'ei', 'cement', 'ent', 'rce']"
+561a58f7d33f749381a8ff2f,2422,2016-05-11 21:40:00,"you get 35 values
+you can influence the 36th variable by choosing 1 out of 4 actions
+","['io', 'ria', 'action', 'var', 'get', 'ca', 'osi', 'act', 'ri', 'alu', 'inf', 'ou', 'yo', 'ch', 'fluence', 'iab', 'val']"
+54c630d6db8155e6700f168d,2488,2016-06-09 07:03:00,"@nelson-liu Cool
+Even if you have access to the vectorizer through a file (using joblib)
+?
+","['il', 'ls', 'using', 'file', 'vector', 'el', 'tor', 'cc', 'ri', 'lso', 'ess', 'acc', 'ou', 'ss', 'ecto', 'joblib', 'yo', 'lib', 'vec', 'jo']"
+54c630d6db8155e6700f168d,2491,2016-06-09 07:48:00,"Thanks!
+",[]
+567d7eca16b6c7089cc02a05,2530,2016-06-18 10:06:00,"atleast you can guide me!
+I am lost in here.... and i want to get some task for myself
+","['ide', 'ant', 'nt', 'guid', 'get', 'atl', 'ca', 'el', 'lf', 'self', 'task', 'elf', 'wan', 'uid', 'som', 'ou', 'st', 'om', 'yo', 'eas', 'de', 'ta']"
+567d7eca16b6c7089cc02a05,2531,2016-06-18 10:22:00,"Thanks Yen
+",[]
+56333d0d16b6c7089cb8d5c7,2536,2016-06-21 01:33:00,"let say i added a print statement in one of the classes
+that had a bug
+and I want to test that class in an ipython notebook
+yup
+","['python', 'ant', 'nt', 'ip', 'int', 'state', 'boo', 'sse', 'class', 'add', 'dd', 'em', 'sa', 'wan', 'let', 'ipython', 'sta', 'ri', 'stat', 'dde', 'hat', 'ed', 'st', 'ss', 'cl', 'eme', 'yup', 'las', 'yt', 'ent', 'de', 'ta']"
+56333d0d16b6c7089cb8d5c7,2537,2016-06-21 01:35:00,"ah okay
+",[]
+56333d0d16b6c7089cb8d5c7,2538,2016-06-21 01:39:00,"many thanks
+:)
+",[]
+55aee1ab0fc9f982beaa80a5,2553,2016-06-24 21:09:00,"@vene I hadn't seen that before, I got it now
+","['go', 'hat', 'dn', 'got']"
+56b0a775e610378809bf7a7c,2612,2016-07-16 15:36:00,"@raghavr are you working today ?
+","['avr', 'ou', 'ag', 'yo', 'od', 'kin', 'orking']"
+56b0a775e610378809bf7a7c,2680,2016-07-28 15:21:00,";)
+",[]
+56d577ffe610378809c46670,2615,2016-07-16 16:25:00,"Sure, I'll ping if I face any  problems.
+","['pi', 'ping', 'ems', 'em', 'ace', 'face', 'lems']"
+578a4f87c2f0db084a23455f,2694,2016-07-30 17:13:00,"Thanks!
+",[]
+57a061aa40f3a6eec05d8d26,2718,2016-08-14 18:57:00,"scikit-learn's implementation
+yes, it's ok
+","['nt', 'io', 'ear', 'implementation', 'ati', 'em', 'imp', 'scikit-learn', 'sc', 'eme', 'ent', 'ta']"
+57a061aa40f3a6eec05d8d26,2744,2016-08-17 21:38:00,"Ok, thanks :)
+",[]
+57a061aa40f3a6eec05d8d26,3164,2017-03-01 15:25:00,"@rth ok, thanks :)
+",['rt']
+57a061aa40f3a6eec05d8d26,3443,2017-07-05 10:52:00,"yes
+I can understand that, but why I would like to do that?
+","['ca', 'ld', 'sta', 'hat', 'ou', 'der', 'stan', 'st', 'rs', 'hy', 'rstan', 'de', 'ta']"
+57a061aa40f3a6eec05d8d26,3453,2017-07-05 12:17:00,"Oh, I saw that on the code... thanks for helping
+","['pi', 'ping', 'el', 'sa', 'hat', 'ode', 'cod', 'co', 'od', 'de']"
+57b3fd8640f3a6eec05fe0e8,2736,2016-08-17 20:54:00,"But that assumes there is an easy way to sort through the 2M to narrow it down to .5m. in which case, what the 2 of you recommended sounds good.
+I didn't mean have 4 separate trained instance.. hmm, but it any case, it's not possibly to feed .5 at a time , does it's stuff, frees some memory and you add to it? is what i was trying to ask.
+Ahh, i am very new to all of this so questions make more sense in my head than when i type. ^^
+Ahh..
+","['memory', 'com', 'io', 'free', 'time', 'cas', 'row', 'sum', 'ca', 'add', 'ase', 'case', 'dd', 'ssi', 'instance', 'em', 'feed', 'mean', 'su', 'rate', 'go', 'sta', 'head', 'quest', 'tr', 'ime', 'rt', 'hat', 'par', 'sti', 'memo', 'dn', 'idn', 'som', 'mo', 'ou', 'comm', 'sens', 'ecom', 'ed', 'rr', 'po', 'sense', 'na', 'eco', 'stan', 'arr', 'st', 'ss', 'co', 'ff', 'om', 'rro', 'yo', 'ch', 'nse', 'que', 'od', 'fee', 'pos', 'ara', 'uff', 'para', 'tuf', 'stuff', 'sepa', 'goo', 'ory', 'eas', 'de', 'ta']"
+57b3fd8640f3a6eec05fe0e8,2741,2016-08-17 21:21:00,"Ahh! thank you kindly for the detailed explanations!
+","['io', 'il', 'lan', 'ati', 'tail', 'nat', 'led', 'ou', 'exp', 'ex', 'ed', 'na', 'yo', 'kin', 'eta', 'kind', 'de', 'ta']"
+57b3fd8640f3a6eec05fe0e8,2882,2016-09-28 11:52:00,"Did you paste the error as well?
+","['el', 'paste', 'ou', 'rr', 'st', 'rro', 'yo']"
+56f4e1b785d51f252abab7d7,2750,2016-08-18 08:31:00,"yea, I realized that
+","['hat', 'ed']"
+56a34c16e610378809bdc988,2781,2016-09-04 04:03:00,"Great, done. I'll be happy to take it up if :traffic_light: :checkered_flag:
+","['traffic', 'ffi', 'fla', 'lag', 'light', 'tr', 'take', 'ed', 'happy', 'red', 'ff', 'ag', 'ch', 'ta']"
+56a34c16e610378809bdc988,2782,2016-09-04 03:59:00,"@nelson-liu very well :D
+","['ls', 'el', 'lso']"
+57be017740f3a6eec0612914,2792,2016-09-06 04:16:00,"@tjgerot you are awesome. I took a few Stanford lessons and feel difficult.
+","['diff', 'el', 'ffi', 'rd', 'awe', 'icu', 'less', 'ess', 'som', 'ou', 'ord', 'ss', 'ff', 'om', 'yo', 'fee', 'anf', 'eel', 'ta']"
+57be017740f3a6eec0612914,2793,2016-09-06 04:20:00,"Udacity's ""intro ML"" is good. the tools (sklearn, ntlk) they use is more recent, not R, octave, numpy. see results quick :)
+","['nt', 'int', 'ear', 'ls', 'numpy', 'octave', 'su', 'city', 'go', 'lts', 'tr', 'dac', 'mo', 'ntl', 'quic', 'uic', 'od', 'ump', 'hey', 'ent', 'goo', 'ta']"
+57d83c7940f3a6eec0650f6e,2829,2016-09-13 18:22:00,"which math course would you recommend for understanding regression (vector..etc)
+","['com', 'math', 'io', 'regression', 'vector', 'ssi', 'ld', 'tor', 'sta', 'ess', 'ou', 'comm', 'ecom', 'der', 'eco', 'stan', 'mat', 'st', 'ss', 'rs', 'ecto', 'co', 'om', 'yo', 'ch', 'rstan', 'vec', 'gr', 'egress', 'de', 'ta', 'ndi']"
+57d83c7940f3a6eec0650f6e,2830,2016-09-13 18:23:00,"I am working with tensor flow api
+but i want to work with SNN
+","['ant', 'nt', 'api', 'pi', 'flow', 'wan', 'tensor', 'kin', 'orking']"
+5759dd0dc2f0db084a1d128d,3007,2016-10-31 15:41:00,":D
+",[]
+5759dd0dc2f0db084a1d128d,3010,2016-10-31 15:48:00,"That's what I figured
+","['figure', 'hat', 'ed', 'red', 'fig']"
+5759dd0dc2f0db084a1d128d,3177,2017-03-04 00:18:00,"doing it right now
+","['doi', 'ri']"
+5759dd0dc2f0db084a1d128d,3182,2017-03-04 01:05:00,"using an infinite timeframe?
+yep, I am surprisingly still in the top 20 :)
+","['time', 'ram', 'ini', 'il', 'mef', 'using', 'init', 'frame', 'su', 'infinite', 'ri', 'ime', 'sti', 'inf', 'st', 'nite', 'isin', 'urp', 'ill', '20']"
+55d21ee30fc9f982beadabb8,3011,2016-10-31 20:09:00,"@amueller It is down
+","['el', 'mu']"
+55d21ee30fc9f982beadabb8,3167,2017-03-02 15:57:00,"pip is included in conda
+I never add problem with up to now
+","['ip', 'pi', 'pip', 'add', 'dd', 'em', 'include', 'ed', 'eve', 'conda', 'co', 'cl', 'ncl', 'de']"
+55d21ee30fc9f982beadabb8,3308,2017-05-21 20:03:00,"`clf = GridSearchCV(svr, parameters, n_jobs=-1)`
+is enough
+clf = GridSearchCV(svr, parameters)
+you can check the examples in the doc
+","['parameters', 'ram', 'ear', 'jobs', 'doc', 'param', 'ca', 'lf', 'xa', 'rc', 'ri', 'meter', 'par', 'ampl', 'ou', 'ex', 'rs', 'cl', 'yo', 'ch', 'arch', 'ara', 'obs', 'para', 'jo']"
+55d21ee30fc9f982beadabb8,3310,2017-05-21 20:14:00,"yep
+",[]
+55d21ee30fc9f982beadabb8,3661,2017-11-25 15:23:00,"`make test` run `make test-code` `make test-sphinxext` `make test-doc
+therefore it is equivalent to
+","['nt', 'sphinx', 'doc', 'ref', 'equivalent', 'xt', 'ode', 'cod', 'ex', 'st', 'co', 'sp', 'phinx', 'od', 'ent', 'val', 'de']"
+55d21ee30fc9f982beadabb8,3952,2018-06-28 14:27:00,"Yep
+",[]
+55d21ee30fc9f982beadabb8,3965,2018-07-09 14:40:00,"so it depends what TPOTClassifier from which class is it deriving but I assume `ClassifierMixin`
+TPOTClassifier is not something in scikit-learn so I am not aware of how it works or implemented actually
+","['nt', 'vi', 'dep', 'ear', 'sum', 'class', 'ssi', 'war', 'em', 'thin', 'vin', 'act', 'su', 'pen', 'ri', 'hat', 'rom', 'som', 'imp', 'ed', 'depends', 'der', 'deriving', 'scikit-learn', 'ss', 'om', 'sc', 'cl', 'ch', 'eme', 'las', 'ent', 'de']"
+55d21ee30fc9f982beadabb8,4018,2018-07-15 21:40:00,"@annaayzenshtat right
+","['sh', 'hta', 'zen', 'ri', 'na', 'ta']"
+55d21ee30fc9f982beadabb8,4021,2018-07-15 21:58:00,"It should be against master
+","['sh', 'ld', 'ou', 'st', 'aster', 'ag']"
+55d21ee30fc9f982beadabb8,4036,2018-07-16 15:00:00,"If we consider it as a bug fix then this is ready to be merged.
+I really think that it was actually a bug
+","['ide', 'merge', 'sid', 'thin', 'act', 'cons', 'hat', 'ready', 'ed', 'der', 'mer', 'co', 'de']"
+55d21ee30fc9f982beadabb8,4055,2018-07-16 19:47:00,"I'll do that while waiting for some benchmark
+","['chm', 'il', 'wait', 'hat', 'som', 'om', 'ch']"
+55d21ee30fc9f982beadabb8,4099,2018-07-17 17:18:00,"I will look at it now
+","['il', 'wil', 'ill']"
+55d21ee30fc9f982beadabb8,4600,2019-10-30 15:14:00,"Basically, I was starting to solve the issue yesterday
+While making `master` work with `master` is easy (just change the import path), the challenging part is to make work out-of-date version with a newer scikit-learn.
+In the latest case, we need to make some `try except ImportError` as you suggested I think
+","['io', 'import', 'port', 'ear', 'il', 'erd', 'cas', 'cal', 'date', 'hal', 'version', 'ca', 'ase', 'case', 'path', 'call', 'tar', 'thin', 'su', 'rd', 'sta', 'tr', 'rt', 'par', 'except', 'rda', 'asic', 'som', 'ou', 'imp', 'ex', 'ed', 'rr', 'po', 'scikit-learn', 'st', 'ss', 'rs', 'ept', 'om', 'sc', 'aster', 'rro', 'yo', 'ch', 'jus', 'mpo', 'kin', 'sic', 'rsi', 'atest', 'eas', 'ta']"
+55d21ee30fc9f982beadabb8,4646,2020-01-06 17:55:00,"but this is rather challenging to retrain models and update models across versions. This might not be in the scope of scikit-learn but having a third-library to manage those could be nice
+@adrinjalali Incremental learning, early stopping, and callbacks are things which would be nice
+they are in the roadmap I think
+:) yes indeed
+","['nt', 'vi', 'io', 'ear', 'nic', 'scope', 'pi', 'ls', 'model', 'versions', 'cal', 'date', 'hal', 'ping', 'version', 'mode', 'ca', 'el', 'ice', 'callback', 'rar', 'map', 'call', 'em', 'avi', 'ncr', 'cop', 'thin', 'dm', 'vin', 'back', 'ld', 'rd', 'nice', 'ppi', 'ri', 'tr', 'models', 'del', 'roadmap', 'ack', 'dma', 'ode', 'mo', 'ou', 'ning', 'ed', 'na', 'ros', 'scikit-learn', 'st', 'ss', 'rs', 'co', 'sc', 'ose', 'ag', 'ch', 'tal', 'mod', 'lib', 'od', 'eme', 'cro', 'mi', 'libra', 'acr', 'creme', 'across', 'hey', 'ent', 'rsi', 'de', 'ta']"
+55d21ee30fc9f982beadabb8,4647,2020-01-06 18:00:00,"you also have keras-onnx
+and pytorch-onnx
+which manage the same way than sklearn-onnx
+but this is for prediction only
+","['io', 'ear', 'ls', 'sam', 'edi', 'sa', 'rc', 'pre', 'tor', 'prediction', 'ras', 'lso', 'predict', 'ou', 'ed', 'na', 'red', 'torch', 'ag', 'yo', 'ch', 'keras', 'orc', 'pytorch', 'onnx', 'yt', 'als']"
+55d21ee30fc9f982beadabb8,4662,2020-01-08 17:01:00,"internally they will all be converted to float64
+all of them
+it is done in `check_X_y` which is called before
+but apparently it is not working as expected
+","['nt', 'int', 'il', 'cal', 'ca', 'internal', 'parent', 'call', 'expect', 'em', 'rte', 'rt', 'led', 'par', 'ntl', 'exp', 'ex', 'ed', 'na', 'intern', 'tern', 'co', 'ch', 'ert', 'kin', 'hey', 'ent', 'wil', 'orking', 'ill']"
+55d21ee30fc9f982beadabb8,4671,2020-01-08 17:34:00,"let me try but it should
+","['sh', 'ld', 'let', 'tr', 'ou']"
+55d21ee30fc9f982beadabb8,4959,2020-09-04 12:32:00,"RGB colors -> n_channels
+> Why are there two of the same?
+what do you mean?
+which things are the same?
+it depens of your input
+if you are passing a numpy array with 3 dimension
+with shape `(height, width, 3)` (because it is RGB
+you will get an array of `(n_patches, patch_height, patch_width, 3)`
+","['io', 'dep', 'height', 'il', 'patch', 'ls', 'get', 'numpy', 'sam', 'input', 'ca', 'channel', 'colors', 'put', 'el', 'ssi', 'shape', 'thin', 'col', 'sha', 'sh', 'sa', 'mean', 'pen', 'width', 'wid', 'dimension', 'ime', 'hat', 'ape', 'ou', 'channels', 'rr', 'np', 'ray', 'arr', 'ss', 'rs', 'co', 'hy', 'yo', 'ch', 'dt', 'ei', 'nne', 'shap', 'ump', 'wil', 'ill', 'de']"
+55d21ee30fc9f982beadabb8,4961,2020-09-04 12:36:00,"but there is no RGB1 in the documentation?
+> if one takes a 2x2 sample from the image then it should have 4 pixels?
+it will be an array `(n_patches, 2, 2, 3)`
+if this is an RGB image
+or `(n_patches, 2, 2)` if this is gray-scale
+it is just extracting a sub-image
+with the same number of dimension
+> [[RGB_1] [RGB_1]] [[RGB_2] [RGB_2]]
+I am sorry but this not specify anywhere in the doc
+","['nt', 'documentation', 'io', 'il', 'trac', 'patch', 'pi', 'document', 'ls', 'cal', 'sample', 'sam', 'image', 'doc', 'extract', 'ca', 'pixel', 'el', 'ati', 'pix', 'sh', 'sa', 'pixels', 'ld', 'act', 'su', 'scale', 'sca', 'tr', 'dimension', 'ime', 'xt', 'mage', 'rom', 'ampl', 'ou', 'take', 'ex', 'rr', 'extra', 'ray', 'arr', 'st', 'ber', 'om', 'sc', 'sp', 'ag', 'ch', 'jus', 'ent', 'wil', 'gr', 'ill', 'ta']"
+55d21ee30fc9f982beadabb8,4963,2020-09-04 12:42:00,"`img[:, :, 0]` will be the red channel
+I don't agree
+This is just a real life example
+","['il', 'channel', 'el', 'xa', 'ampl', 'ex', 'ed', 'gree', 'red', 'st', 'ag', 'ch', 'jus', 'nne', 'wil', 'gr', 'ill']"
+55d21ee30fc9f982beadabb8,4964,2020-09-04 12:49:00,"The docstring give a real example
+and the user guide
+https://scikit-learn.org/stable/modules/feature_extraction.html#patch-extraction
+is giving a synthetic example with fake RGB data
+What do you mean rectangle?
+here you can specify height and width
+so you can specify the rectangle shape
+I don't understand what you want sorry
+","['html', 'ide', 'string', 'ant', 'nt', 'vi', 'io', 'https', 'ear', 'height', 'trac', 'patch', 'action', 'synth', 'guid', 'module', 'docstring', 'doc', 'http', 'extract', 'ml', 'ca', 'angle', 'shape', 'xa', 'ocs', 'sha', 'sh', 'wan', 'rect', 'cstring', 'vin', 'ps', 'mean', 'act', 'extraction', 'sta', 'width', 'ri', 'tr', 'wid', 'hat', 'du', 'xt', 'uid', 'tps', 'ring', 'ampl', 'mo', 'ape', 'ou', 'ata', 'ex', 'rr', 'der', 'extra', 'synthetic', 'scikit-learn', 'tm', 'stan', 'st', 'rs', 'sc', 'syn', 'sp', 'yo', 'ch', 'rstan', 'dt', 'mod', 'tml', 'od', 'ei', 'shap', 'de', 'ta']"
+55d21ee30fc9f982beadabb8,5022,2020-11-18 20:05:00,"yep. I see that we have a recent feature request https://github.com/scikit-learn/scikit-learn/issues/18748
+I will try to find the discussion back
+We also put it in the road map: https://scikit-learn.org/dev/roadmap.html
+The issue will be to find the right API.
+","['html', 'git', 'com', 'nt', 'io', 'https', 'ear', 'il', 'ls', 'http', 'ml', 'github', 'put', 'ssi', 'map', 'request', 'find', 'dm', 'ps', 'back', 'su', 'ri', 'quest', 'tr', 'hat', 'lso', 'roadmap', 'ack', 'dma', 'tps', 'uss', 'scikit-learn', 'tm', 'st', 'ss', 'co', 'om', 'sc', 'que', 'dis', 'tml', 'req', 'als', 'ent', 'hub', 'wil', 'ill', 'de']"
+55d21ee30fc9f982beadabb8,5059,2020-12-17 16:51:00,"There is no such parameter for a `KNeighborsRegressor`
+Indeed the regressor does not anything during `fit` apart of storing the dataset
+","['ram', 'uri', 'param', 'ase', 'set', 'thin', 'dataset', 'su', 'tor', 'ri', 'meter', 'rt', 'par', 'du', 'ess', 'ring', 'ata', 'ed', 'st', 'ss', 'rs', 'ch', 'ei', 'ara', 'yt', 'para', 'gr', 'egress', 'de', 'ta']"
+55d21ee30fc9f982beadabb8,5112,2021-01-22 09:55:00,"I think so
+I might have misunderstood the use-case (a small example with specific number might help :))
+","['cas', 'sun', 'ca', 'ase', 'case', 'el', 'xa', 'thin', 'use-case', 'su', 'ampl', 'ex', 'der', 'st', 'ber', 'rs', 'sp', 'od', 'mi', 'de']"
+55d21ee30fc9f982beadabb8,5384,2022-02-22 15:20:00,"which compilers are you using when installing the dev version
+","['com', 'io', 'il', 'pi', 'using', 'version', 'mpi', 'sta', 'ou', 'st', 'piler', 'rs', 'co', 'om', 'yo', 'ch', 'tal', 'lli', 'rsi', 'de', 'ta']"
+55d21ee30fc9f982beadabb8,5388,2022-02-22 15:32:00,"I can reproduce
+","['ca', 'repr', 'du', 'rep', 'od', 'rod']"
+57ec309f40f3a6eec067e511,3118,2017-01-16 16:51:00,":)
+",[]
+5633b77d16b6c7089cb8e50e,3169,2017-03-02 20:12:00,"@glemaitre Alright, I'll try to minimize. Was just wanting a spot check.
+","['ant', 'nt', 'ini', 'em', 'minimize', 'min', 'wan', 'ri', 'tr', 'po', 'lr', 'minim', 'st', 'sp', 'ch', 'jus', 'pot', 'mi']"
+551c051b15522ed4b3de2fea,3253,2017-04-16 04:59:00,"I dont know.
+","['nt', 'know']"
+551c051b15522ed4b3de2fea,3255,2017-04-16 05:15:00,"I dont know.
+","['nt', 'know']"
+590c8ffdd73408ce4f5d352d,3297,2017-05-12 23:44:00,"@jmschrei  yeah. I find them a bit compound and complex to use. Would be nice to have something with the same APIs design as sklearn
+","['com', 'ear', 'nic', 'lex', 'des', 'jms', 'sam', 'sign', 'ice', 'em', 'thin', 'find', 'sa', 'ld', 'bit', 'nice', 'chr', 'som', 'ou', 'ex', 'po', 'esi', 'pound', 'co', 'om', 'sc', 'plex', 'ch', 'mpo', 'gn', 'ei', 'ompl', 'de']"
+5921d334d73408ce4f612e46,3311,2017-05-21 20:15:00,"I've been trying to do this for days!
+OK
+How do I do that?
+By changing param_grid?
+","['grid', 'ram', 'param', 'days', 'ri', 'tr', 'hat', 'par', 'ch', 'ara', 'para', 'gr']"
+5921d334d73408ce4f612e46,3312,2017-05-21 20:18:00,"Ok. Thank you
+","['ou', 'yo']"
+56aba3aee610378809bedf43,3334,2017-06-05 07:22:00,"Thanks
+",[]
+593679b8d73408ce4f65082e,3339,2017-06-06 11:39:00,"@amueller I had impression it did not fully address https://github.com/scikit-learn/scikit-learn/issues/5879  so I thought I could continue working on it?
+","['git', 'com', 'nt', 'io', 'https', 'ear', 'continue', 'http', 'github', 'add', 'dd', 'el', 'ssi', 'pre', 'ps', 'ld', 'su', 'ess', 'tps', 'ou', 'imp', 'mu', 'scikit-learn', 'ss', 'co', 'om', 'sc', 'kin', 'hub', 'orking']"
+54e07d0815522ed4b3dc0850,3346,2017-06-07 11:08:00,"When you want, everybody is back
+","['ant', 'nt', 'wan', 'back', 'ack', 'ou', 'eve', 'yo', 'od']"
+54e07d0815522ed4b3dc0850,4076,2018-07-17 15:13:00,"@massich : done for #11124
+@agramfort : done
+","['ram', 'amf', 'ssi', 'rt', 'ss', 'ag', 'ch', 'mass', 'sic', 'gr']"
+54e07d0815522ed4b3dc0850,4085,2018-07-17 15:41:00,"All these seem important
+","['ant', 'nt', 'import', 'port', 'em', 'rt', 'imp', 'po', 'mpo', 'ta']"
+54e07d0815522ed4b3dc0850,4112,2018-07-17 19:08:00,"OK, but it's a random failure?
+I'll merge the PRs despite of it.
+","['random', 'merge', 'il', 'dom', 'pi', 'des', 'spi', 'mer', 'om', 'sp', 'de']"
+54e07d0815522ed4b3dc0850,4113,2018-07-17 19:09:00,"Yes, I mean appveor
+","['mean', 'appv', 'pv']"
+55502d0c15522ed4b3e03330,3356,2017-06-07 19:12:00,"oh, sorry
+",['rr']
+55502d0c15522ed4b3e03330,3363,2017-06-07 19:22:00,"ohhh, now it makes better sense
+so I do not have enough data for cross-validation
+","['io', 'validation', 'ati', 'ida', 'ou', 'ata', 'sens', 'sense', 'ros', 'cross-validation', 'ss', 'nse', 'cro', 'val', 'ta']"
+55502d0c15522ed4b3e03330,3364,2017-06-07 19:23:00,"so in this case
+the decision_function is `array([[-1.00000001,  0.        ,  0.3495638 ,  1.00000001,  1.        ,         0.5530018 ]])`
+the evaluation for class 1 is 0
+so close to 0 is better?
+isnt that the distance to the hyperplane?
+I dont get the same output as yours
+no no
+I copied your code
+it returns an array of 6 elements
+","['nt', 'io', 'evaluation', 'lua', 'erp', 'lan', 'cas', 'pi', 'element', 'get', 'eval', 'return', 'sam', 'class', 'function', 'ca', 'ase', 'case', 'distance', 'unc', 'put', 'el', 'uat', 'ati', 'em', 'cop', 'func', 'elements', 'sa', 'sta', 'clos', 'hat', 'alu', 'urn', 'ode', 'plane', 'cod', 'ou', 'ed', 'rr', 'ray', 'stan', 'output', 'arr', 'st', 'ss', 'rs', 'turn', 'co', 'ose', 'cl', 'ane', 'tput', 'hy', 'yo', 'hyper', 'sn', 'dis', 'od', 'eme', 'las', 'tpu', 'rpl', 'ent', 'val', 'de', 'ta']"
+55502d0c15522ed4b3e03330,3420,2017-06-29 13:01:00,"ah ok
+",[]
+5572219415522ed4b3e17f0c,3423,2017-06-29 22:36:00,"yea I'll check
+",['ch']
+5683764a16b6c7089cc092dc,3444,2017-07-05 10:51:00,"yep
+",[]
+5683764a16b6c7089cc092dc,3537,2017-08-15 10:46:00,"I mean
+in the code
+how can I choose
+","['ca', 'mean', 'ode', 'cod', 'co', 'ose', 'ch', 'od', 'de']"
+5683764a16b6c7089cc092dc,3541,2017-08-15 10:56:00,"great, thanks
+do you know what functions correspond to other loss
+say, ""modified_huber""
+","['io', 'modi', 'function', 'unc', 'func', 'sa', 'loss', 'hat', 'mo', 'ou', 'ed', 'rr', 'po', 'ber', 'ss', 'co', 'sp', 'yo', 'mod', 'od', 'hub', 'gr', 'know']"
+5683764a16b6c7089cc092dc,3542,2017-08-15 10:59:00,"is it possible to pass a custom loss to SGDClassifier
+?
+great thanks
+","['ssi', 'loss', 'po', 'st', 'ss', 'om', 'tom', 'las', 'pos', 'gr']"
+5683764a16b6c7089cc092dc,3544,2017-08-15 11:04:00,"yes, thanks
+I see
+",[]
+55f3c8020fc9f982beb0733a,3455,2017-07-06 14:57:00,"thanks
+",[]
+5581814615522ed4b3e20c6a,3467,2017-07-12 10:07:00,"@ogrisel thank you for this information
+Ok that sounds good
+","['format', 'io', 'orm', 'rm', 'el', 'ati', 'go', 'ri', 'hat', 'inf', 'informat', 'ou', 'ogr', 'mat', 'info', 'yo', 'matio', 'od', 'rise', 'gr', 'goo']"
+5581814615522ed4b3e20c6a,3491,2017-07-17 14:35:00,"Perfect
+",['rfe']
+5581814615522ed4b3e20c6a,3492,2017-07-17 14:36:00,"Exactly
+Thank you @ogrisel
+","['el', 'xact', 'xa', 'act', 'ctl', 'ri', 'ou', 'ogr', 'yo', 'rise', 'gr']"
+5581814615522ed4b3e20c6a,3501,2017-07-18 17:20:00,"oh thats great
+","['hat', 'ats', 'gr']"
+5581814615522ed4b3e20c6a,3505,2017-07-18 17:27:00,"Yes i do remember it :)
+","['member', 'em', 'ber', 'eme']"
+5581814615522ed4b3e20c6a,3506,2017-07-18 17:34:00,"Yes i am doing the same
+its a perfect suggestion
+","['io', 'doi', 'sam', 'sa', 'su', 'sti', 'perf', 'rfe', 'st', 'perfect']"
+59533ac5d73408ce4f6a9616,3471,2017-07-12 16:02:00,"for interviw
+can any one help me
+","['nt', 'vi', 'int', 'ca', 'el']"
+58b47262d73408ce4f4d4113,3561,2017-09-04 12:27:00,"@glemaitre Thanks :)
+","['em', 'tr']"
+5717ab2f659847a7aff3b583,3586,2017-09-29 17:29:00,"wait
+",['wait']
+55a487245e0d51bd787b4e45,3615,2017-10-22 18:26:00,"@CaptainAshis It's probably what's convenient for the creator to draw.
+","['nt', 'apt', 'sh', 'tor', 'draw', 'hat', 'co', 'raw', 'ent', 'ta']"
+5910079ed73408ce4f5dc467,3617,2017-10-22 18:37:00,"ok , Thank you @mikegraham
+","['ou', 'yo', 'mi', 'gr']"
+53eb987c107e137846baa89d,3654,2017-11-24 09:14:00,"Well that is what I thought initially.
+But how can I force I make it to use the development version.
+Would I need to modify the `PATH` variable?
+","['nt', 'io', 'modi', 'ini', 'ria', 'var', 'version', 'ca', 'el', 'init', 'rc', 'ld', 'ri', 'hat', 'mo', 'ou', 'ed', 'eve', 'rs', 'orc', 'mod', 'od', 'iab', 'velo', 'ent', 'rsi', 'rce', 'de']"
+53eb987c107e137846baa89d,3731,2017-12-14 18:10:00,"That's also seems useful, thanks @glemaitre .
+","['ls', 'ems', 'em', 'tr', 'hat', 'lso', 'sef', 'als']"
+53eb987c107e137846baa89d,3738,2017-12-20 22:14:00,"Thanks @DrEhrfurchtgebietend
+","['rc', 'geb', 'ch']"
+53eb987c107e137846baa89d,3755,2018-01-10 15:54:00,"Sure. Thanks.
+",[]
+59d4f81ed73408ce4f789336,3719,2017-12-12 20:46:00,"I meant the open-source terms :smile:
+","['ant', 'nt', 'il', 'open-source', 'rms', 'rm', 'rc', 'mean', 'pen', 'smil', 'ou', 'smile', 'mi', 'rce', 'terms']"
+59d4f81ed73408ce4f789336,3720,2017-12-12 20:48:00,"yeah, sure. doing my best
+","['doi', 'su', 'st']"
+57224267659847a7aff4ffce,3723,2017-12-13 07:32:00,"Can I get a link for the room?
+Never mind
+Got it
+Thanks for the response though
+","['get', 'response', 'min', 'ou', 'po', 'eve', 'om', 'roo', 'sp', 'nse', 'mi', 'room', 'oom']"
+55fc44590fc9f982beb11bbf,3792,2018-01-19 13:40:00,"Thanks, will check it out
+","['il', 'ou', 'ch', 'wil', 'ill']"
+59afadccd73408ce4f748432,3824,2018-03-03 19:50:00,"Oups, sorry, wrong message...
+","['message', 'ups', 'sa', 'ps', 'sage', 'ssa', 'ess', 'rr', 'sag', 'ss', 'ag']"
+5b018bb2d73408ce4f9a05a7,3902,2018-05-25 15:24:00,"Thanks
+",[]
+5b018bb2d73408ce4f9a05a7,3904,2018-05-25 15:28:00,"What exactly?
+","['xact', 'xa', 'act', 'ctl', 'hat', 'ex']"
+560313510fc9f982beb1a331,4137,2018-07-19 20:09:00,"Really, where's that :)
+",['hat']
+58d1e48dd73408ce4f52af1b,4161,2018-08-01 09:19:00,"@amueller  yes understood
+i had an issue with BallTree
+Can I ask here ?
+","['el', 'su', 'mu', 'der', 'st', 'ss', 'rs', 'od', 'de']"
+58d1e48dd73408ce4f52af1b,4165,2018-08-01 09:40:00,"yes thanks. I have accepted your answer on SO as well :) Hopefully I will be notified that the problem has been fixed so I can reinstall scikit-learn
+I had another question. I had a offline conversation with another core developer of  scikit-learn
+I want to use BallTree with https://en.wikipedia.org/wiki/Great-circle_distance and that core developer warned me against it and asked me to use Haversine instead.
+Any reason why ?
+PyProj provides great circle distances and I can define a custom metric. What is the objection in doing this ?
+Not sure what pyproj is doing - https://jswhit.github.io/pyproj/pyproj.Geod-class.html#fwd
+but the author told me it is the  most accurate
+","['html', 'ide', 'git', 'ant', 'nt', 'irc', 'vi', 'ip', 'io', 'https', 'ear', 'wiki', 'il', 'hit', 'offline', 'wikipedia', 'doi', 'author', 'des', 'rsa', 'class', 'http', 'edi', 'ml', 'github', 'ca', 'distance', 'core', 'fixed', 'el', 'object', 'war', 'ati', 'metric', 'line', 'em', 'sa', 'rc', 'wan', 'ps', 'ld', 'su', 'rate', 'dia', 'sta', 'cc', 'ri', 'quest', 'tr', 'hat', 'reinstall', 'sti', 'proj', 'tps', 'ovi', 'acc', 'mo', 'ou', 'thor', 'ed', 'efi', 'scikit-learn', 'tm', 'stan', 'pyp', 'st', 'eve', 'ss', 'rs', 'ept', 'co', 'ff', 'om', 'sc', 'cl', 'hy', 'ag', 'yo', 'tal', 'sat', 'tom', 'reason', 'que', 'dis', 'tml', 'pyproj', 'od', 'ei', 'las', 'ffl', 'xed', 'metr', 'velo', 'rsi', 'hub', 'wil', 'gr', 'ill', 'eas', 'de', 'ta']"
+58d1e48dd73408ce4f52af1b,4168,2018-08-01 09:54:00,"yes you are right. I did ask  Jake
+No I mean I do not understand how asking pyproj would help. The question is why I cannot use pyproj's great circle distance with scikit-learn
+","['irc', 'io', 'ear', 'skin', 'ca', 'distance', 'el', 'rc', 'mean', 'ld', 'sta', 'ri', 'quest', 'sti', 'proj', 'ou', 'der', 'scikit-learn', 'stan', 'pyp', 'st', 'rs', 'sc', 'cl', 'hy', 'yo', 'rstan', 'que', 'dis', 'pyproj', 'kin', 'gr', 'de', 'ta']"
+58d1e48dd73408ce4f52af1b,4171,2018-08-01 10:01:00,"aah OK
+",[]
+567f5d7716b6c7089cc043a8,4259,2018-11-06 09:37:00,"@OlimpioGilberto_twitter if you want, and the problem still exists, I can try and have a look if you paste here the PR number.
+","['ant', 'nt', 'twitter', 'io', 'il', 'pi', 'ca', 'exists', 'em', 'mpi', 'paste', 'wan', 'tr', 'rt', 'sti', 'ou', 'imp', 'ex', 'exi', 'st', 'ber', 'yo', 'ert', 'sts', 'ill']"
+567f5d7716b6c7089cc043a8,4542,2019-08-07 11:22:00,"you should write the output in the example. The doc build will run the code and check if the generated output is the same as the one you put there. See https://docs.python.org/3.5/library/doctest.html for more info
+","['html', 'python', 'https', 'il', 'doctest', 'sam', 'doc', 'http', 'build', 'ml', 'put', 'rar', 'xa', 'ocs', 'sh', 'sa', 'ps', 'ld', 'rate', 'ri', 'ctest', 'ode', 'inf', 'cod', 'tps', 'octest', 'ampl', 'mo', 'ou', 'ex', 'generated', 'ed', 'tm', 'output', 'info', 'st', 'co', 'tput', 'yo', 'ch', 'lib', 'tml', 'od', 'generate', 'tpu', 'libra', 'yt', 'wil', 'ill', 'de']"
+567f5d7716b6c7089cc043a8,4548,2019-08-15 12:58:00,"I don't think it'd be easy, but I'd love to see if it actually passes our tree tests, and if it doesn't why not and which tests. Feel free to ping me when you write the blog post.
+","['free', 'tree', 'post', 'pi', 'sse', 'ping', 'el', 'thin', 'act', 'ri', 'tr', 'ou', 'po', 'lov', 'st', 'ss', 'hy', 'yo', 'ch', 'sn', 'pos', 'eel', 'sts', 'eas']"
+567f5d7716b6c7089cc043a8,4820,2020-05-28 09:17:00,"you not similar, more like orthogonal and dissimilar
+","['il', 'ssi', 'go', 'orthogonal', 'rt', 'mo', 'ou', 'ssim', 'na', 'ss', 'yo', 'gon', 'dis', 'mi', 'issi']"
+567f5d7716b6c7089cc043a8,4821,2020-05-28 09:19:00,"yes
+",[]
+567f5d7716b6c7089cc043a8,4849,2020-06-08 11:25:00,"interesting, I'm not sure then
+","['nt', 'rest', 'int', 'su', 'sti', 'st']"
+567f5d7716b6c7089cc043a8,5326,2021-10-13 08:15:00,"ah interesting. I don't think we do much of that in this project, but others may think differently.
+","['nt', 'rest', 'int', 'diff', 'project', 'thin', 'hat', 'sti', 'proj', 'ntl', 'mu', 'st', 'rs', 'ff', 'muc', 'ch', 'ent']"
+5810cd4cd73408ce4f3101ce,4316,2019-01-02 16:19:00,"Thanks man, i understand how the code works...  but i dont understand why are we doing this
+","['nt', 'doi', 'sta', 'ode', 'cod', 'der', 'stan', 'st', 'rs', 'co', 'hy', 'rstan', 'od', 'de', 'ta']"
+5824457cd73408ce4f34ebbd,4371,2019-03-15 17:51:00,"yes, regression
+","['io', 'regression', 'ssi', 'ess', 'ss', 'gr', 'egress']"
+57007657187bb6f0eadd96e8,4372,2019-03-15 17:54:00,"thats just chaning how you look at it, not really changing the properties of it
+just checking I understand your problem though. You are saying in your training set, you have min max output of  something like  .2 - .6 and so you are scaling that to 0-1.
+It depends on the problem you are trying to solve. You'll have to decide if it is appropriate for your problem or not.
+what min max scaling does in that case is stretch the predictions between .2 and .6 to a higher resolution, and then make evertying outside .2 or .6 equal to each other
+if that makes sense to do will be application specific
+","['ide', 'io', 'dep', 'ini', 'scaling', 'il', 'cas', 'ria', 'sid', 'cal', 'properties', 'resolution', 'edi', 'ca', 'ase', 'case', 'ax', 'put', 'solution', 'ati', 'etw', 'max', 'hig', 'set', 'em', 'thin', 'sa', 'min', 'pre', 'sca', 'sta', 'stretch', 'pen', 'ri', 'prop', 'tr', 'prediction', 'tie', 'rt', 'cat', 'hat', 'predict', 'checkin', 'tween', 'rope', 'etch', 'uti', 'som', 'ou', 'sens', 'ning', 'ed', 'depends', 'der', 'sense', 'ppl', 'stan', 'output', 'red', 'st', 'eve', 'rs', 'om', 'sc', 'tput', 'sp', 'yo', 'ch', 'ats', 'rstan', 'nse', 'ert', 'proper', 'jus', 'kin', 'tpu', 'mi', 'higher', 'wil', 'training', 'ill', 'de', 'ta']"
+5ba59281d73408ce4fa8fbb5,4402,2019-04-25 18:50:00,"thanks a lot
+",[]
+58de4778d73408ce4f551e04,4415,2019-05-20 09:02:00,"Thanks for the tips ; I would like to upgrade but I sadly can't in my setup <unconvertable> sigh. :)
+Are there any significant changes between joblib 0.13.0 and 0.13.2 ?
+Yes, I just came across this.
+","['ant', 'nt', 'ip', 'upgrade', 'sign', 'ca', 'unc', 'etw', 'rad', 'set', 'sa', 'ps', 'ld', 'rt', 'tween', 'ou', 'pg', 'ros', 'tup', 'st', 'nco', 'ss', 'co', 'joblib', 'ch', 'ert', 'jus', 'lib', 'gn', 'cro', 'acr', 'jo', 'across', 'ips', 'gr', 'de', 'ta']"
+5bc98094d73408ce4fabf741,4419,2019-05-31 07:55:00,"I will check that in practice then I guess as suggested. Thanks @srniranjan
+","['il', 'ice', 'act', 'su', 'hat', 'ess', 'ed', 'st', 'ss', 'ch', 'wil', 'ill']"
+5bc98094d73408ce4fabf741,4433,2019-06-05 09:45:00,"I see TruncatedSVD which uses LSA underneath for the decomposition of sparse matrices suggested by sklearn team
+but this method lets me go down only by about 200 features which is just not enough.
+and I need to cut it down say to 2000 features so I don't spend days training one model
+yes it is, not entire vocabulary, I have stop words filtered out and lemmas extracted
+What would be the recommended way?
+","['com', 'nt', 'io', 'ear', 'ini', 'il', 'trac', 'position', 'model', 'words', 'cut', 'emma', 'cab', 'extract', 'mode', 'ca', 'unc', 'el', 'ice', 'vocabulary', 'em', 'osi', 'filter', 'sa', 'word', 'composition', 'ld', 'act', 'su', 'rd', 'let', 'go', 'days', 'pen', 'ri', 'tr', 'decomposition', 'rds', 'cat', 'hat', 'neat', 'del', 'par', 'xt', 'ode', 'uses', 'mo', 'ets', 'ou', 'comm', 'ecom', 'ex', 'ning', 'ed', 'der', 'extra', 'po', 'eco', 'tire', 'runc', 'ord', 'lte', 'mat', 'red', 'st', 'rs', 'co', 'om', 'sp', 'ch', 'mod', 'jus', 'deco', 'mpo', 'od', 'pos', 'voc', 'filtered', 'emm', 'ent', 'training', 'de', '20']"
+5bc98094d73408ce4fabf741,4451,2019-06-05 14:28:00,"I will check it out, thanks @gyrdym
+","['il', 'rd', 'ou', 'ch', 'wil', 'ill']"
+5cf106a0d73408ce4fc1d8b2,4429,2019-06-05 09:36:00,"What is PCA?
+",['hat']
+5cf106a0d73408ce4fc1d8b2,4431,2019-06-05 09:41:00,"Ohk thanks @srniranjan
+",[]
+5d77583cd73408ce4fca7b58,4574,2019-09-10 08:09:00,"thank you Sir, surely i will do that
+","['il', 'el', 'su', 'rel', 'hat', 'ou', 'yo', 'wil', 'ill']"
+53232ac75e986b0712efe3af,4578,2019-09-27 16:33:00,"the issue that I rememered is https://github.com/pandas-dev/pandas/issues/22791
+","['git', 'com', 'https', 'http', 'github', 'em', 'ps', 'su', 'hat', 'pan', 'tps', 'ed', 'pandas', 'mer', 'red', 'ss', 'co', 'om', 'eme', 'hub', 'de']"
+589b9e0fd73408ce4f490ba4,4605,2019-11-02 11:17:00,"@gbroccolo Yes, you can pick any estimator that fails :)
+","['il', 'pi', 'ls', 'ca', 'col', 'pic', 'tor', 'cc', 'pick', 'hat', 'sti', 'ou', 'roc', 'mat', 'st', 'co', 'bro', 'yo']"
+5a2c58c8d73408ce4f8294ba,4650,2020-01-07 22:32:00,"OK, I can try with the defaults. I will open a request if I remember
+There also is no min_samples_split
+","['spl', 'il', 'split', 'faults', 'default', 'ls', 'sample', 'sam', 'ca', 'member', 'em', 'request', 'sa', 'min', 'pen', 'lts', 'quest', 'tr', 'fault', 'lso', 'defaults', 'ampl', 'st', 'ber', 'sp', 'que', 'eme', 'req', 'mi', 'als', 'lit', 'wil', 'ill', 'de']"
+5a2c58c8d73408ce4f8294ba,4661,2020-01-08 16:56:00,"That is only one possible solution.
+","['io', 'solution', 'ssi', 'hat', 'uti', 'po', 'ss', 'pos']"
+5baf7d9ad73408ce4fa9c9b2,4752,2020-03-16 15:37:00,"yup
+",['yup']
+5ecf797dd73408ce4fe523d7,4818,2020-05-28 09:07:00,"I'm not @anjumuaf123_twitter
+","['twitter', 'mu', 'uaf']"
+5ecf797dd73408ce4fe523d7,4839,2020-06-05 21:25:00,"Ah makes sense, thank you
+","['ou', 'sens', 'sense', 'yo', 'nse']"
+5f09bedad73408ce4fe951c0,4899,2020-07-11 13:40:00,"okay
+",[]
+5eeb9b35d73408ce4fe749bc,4921,2020-07-16 15:15:00,"""For historical reasons"" -> another point for maintainability, then, hehe :p
+I hope the benchmarks for the enhancement I'm working on go well, then. I'd love to be able to open a PR and get a code review for what I've written... I imagine I'm making lots of newbie Cython missteps at this stage, heh. :D
+","['nt', 'vi', 'chm', 'int', 'maintainability', 'il', 'get', 'cal', 'point', 'view', 'ca', 'el', 'agi', 'stage', 'em', 'abi', 'review', 'ps', 'eps', 'tor', 'go', 'sta', 'step', 'pen', 'ri', 'hat', 'ode', 'cod', 'po', 'na', 'lov', 'st', 'ss', 'co', 'ag', 'ch', 'sst', 'reason', 'od', 'eme', 'cement', 'kin', 'mi', 'yt', 'lit', 'ent', 'orking', 'eas', 'de', 'ta']"
+5da2a33dd73408ce4fcdacee,5009,2020-11-10 17:09:00,"That's cool!
+","['hat', 'co']"
+5479972adb8155e6700d9370,5182,2021-02-11 17:08:00,"@ogrisel maybe @xadupre knows ?
+","['el', 'xa', 'pre', 'ri', 'du', 'dup', 'maybe', 'ogr', 'ws', 'rise', 'gr', 'know']"
+6075a37e6da03739847a0d9b,5234,2021-04-13 15:17:00,"oh perfect
+","['perf', 'rfe', 'perfect']"
+5baebfaed73408ce4fa9bd25,5275,2021-07-07 19:42:00,"Oh, wow, that's interesting.  Not what I would have expected.
+","['nt', 'rest', 'int', 'expect', 'ld', 'hat', 'sti', 'ou', 'exp', 'ex', 'ed', 'st']"
+5d7033aad73408ce4fca0665,5340,2021-10-30 13:36:00,"Okay
+",[]
+matrix-ogrisel:matrix.org,5391,2022-02-22 15:44:00,"@marenwestermann: can you please open an issue?
+","['rman', 'rm', 'ca', 'ase', 'su', 'pen', 'ou', 'st', 'ss', 'yo', 'eas']"
+matrix-ogrisel:matrix.org,5392,2022-02-22 15:53:00,"nice :)
+","['nic', 'ice', 'nice']"
