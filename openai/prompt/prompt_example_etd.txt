@@ -1,0 +1,14 @@
+Question: """ Trying to come up with a generic pattern validation directive since none is built in, but running into an issue of only getting the string name of the variable passed to the directive instead of the variable itself... any ideas? """
+Answer: The sentence """ Trying to come up with a generic pattern validation directive since none is built in """ uses <pattern>trying to VB</pattern> to describe the required information . The answer is YES.
+
+Question: """ Hi, I could run the examples of DL4J except the BasicRNNExample. It will suddenly stop when it is running without any exception. My OS is Win10. I try different version of JDK and eclipse but no use. Is there anything wrong? """ 
+Answer: The sentence """ I try different version of JDK and eclipse but no use. """ uses <pattern>try NN</pattern> to describe the required information. The answer is YES.
+
+Question: """ Hellow all, i have this problem with Angular .  I was send data to from component A to component B then when component B change recaved data i want to callback this new data to component A. How i can do it ? """ 
+Answer: The sentence """ i want to callback this new data to component A. """ uses <pattern>want to VB</pattern> to describe the required information. The answer is YES.
+
+Question: """ Hi guys, can anyone give me a hint on how to check if the ngContent part of a Component contains a special tag. I have a template like this: Ah, just realized that the string passed to ContentChild is refering to a local template variable... so is it even possible to inject elements by CSS-Selector into the component? """ 
+Answer: The sentence """ so is it even possible to inject elements by CSS-Selector into the component? """ uses <pattern>possible to VB</pattern> to describe the required information. The answer is YES.
+
+Question: """ Does anyone know if it is possible to make a path mapping for the type script compiler. BTW: I use node resolution strategy and do not want to create separate node modules ? """
+Answer: The sentence """ I use node resolution strategy and do not want to create separate node modules ? """ uses <pattern>not want to VB</pattern> to describe the required information. The answer is YES.

@@ -1,0 +1,86 @@
+answer1
+"The sentence """""" all my containers go into timeout state like every 30 mins """""" uses <pattern>go into timeout state</pattern> to indicate that there is something wrong with the containers. The answer is YES."
+"The sentence """""" If I submit the entire timeserie on ComputationGraph.output method, do I get the values for all steps or just the last one? """""" uses <pattern>get the values for all steps</pattern> to indicate that the user is unsure about the behavior of the ComputationGraph.output method. The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" the gitter window disappears. the process appears to be still running, though. """""" uses <pattern>the gitter window disappears</pattern> to indicate that there is something wrong with ""gitter app for windows"". The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" why can't create a community for an org? """""" uses <pattern>can't VB</pattern> to indicate that the user is encountering an error when trying to create a community for an org. The answer is YES."
+"The sentence """""" can't send the ETH from ETHWallet transaction stuck on 0 from 12 confirmations """""" uses <pattern>can't send the ETH from ETHWallet</pattern> to indicate that there is something wrong with sending ETH from the ETHWallet. The answer is YES."
+"The sentence """""" An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: exited with code 1'; Stderr: 'Failed to install settings_apk-debug.apk: (WARNING: The server did not provide any stacktrace information) Command duration or timeout: 2.73 seconds """""" uses <pattern>an unknown server-side error occurred</pattern> to indicate that there is something wrong with the server-side processing of the command. The answer"
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" so it stands to reason that my feature mask should be of shape: examples x timeSteps, aka minibatchSize x timeSteps. """""" uses <pattern>stands to reason that</pattern> to indicate the user's expectation. The answer is NO."
+"The sentence """""" Any idea why creating the layers takes way too much time? """""" uses <pattern>way too much JJ NN</pattern> to indicate that there is something wrong with ""creating the layers"". The answer is YES."
+"The sentence """""" the display and the hover avatar are out of sync """""" uses <pattern>the display and the hover</pattern> to indicate that there is something wrong with the synchronization between the display and the hover avatar. The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" Am I the only one with synching issues here? """""" uses <pattern>synching issues</pattern> to indicate that there is something wrong with ""synching"". The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" throw err; Error: Cannot find module at Function.Module._resolve """""" uses <pattern>Cannot find module</pattern> to indicate that there is something wrong with module resolution. The answer is YES."
+"The sentence """""" getPageSource() does not return all elements """""" uses <pattern>does not VB all NNS</pattern> to indicate that there is something wrong with ""getPageSource()"". The answer is YES."
+"The sentence """""" How does that work? """""" uses <pattern>How does that work</pattern> to indicate that the user is seeking an explanation or understanding of a certain concept or process. The answer is NO, as it does not indicate any error or undesired behavior."
+"The sentence """""" this one cant download the blocks and is not syncronized my ethereum cleint with the blockchain """""" uses <pattern>VBZ not VB</pattern> to indicate that there is something wrong with ""ethereum client"". The answer is YES."
+"The sentence """""" its showing .Permission denied when tried to open bash profile """""" uses <pattern>showing .Permission denied when tried to VB</pattern> to indicate that there is something wrong when ""tried to open bash profile"". The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" My Delete and Edit routes dont work """""" uses <pattern>don't work</pattern> to indicate that there is something wrong with ""Delete and Edit routes"". The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" I've run through all the tutorials I can handle, and backed out and in and all around but I had it working in the same file folder last night! """""" uses <pattern>had it working in the same file folder last night</pattern> to indicate that there is something wrong with the configuration or setup of mocha. The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" suggest what can be done to address ""connection refused"" message while running node in debug mode """""" uses <pattern>address sth</pattern> to indicate that the user is encountering a problem with ""connection refused"" message while running node in debug mode. The answer is YES."
+"The sentence """""" I can't upload avatar to my community rooms - after uploading avatar url request is time-outed. """""" uses <pattern>can't VB sth</pattern> to indicate that there is something wrong with ""uploading avatar"". The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" I bought ether but can not see it in the wallet - on etherscan.io it shows it to me """""" uses <pattern>can not see it in the wallet</pattern> to indicate that there is something wrong with ""seeing ether in the wallet"". The answer is YES."
+"The sentence """""" I'm trying to track state in a simple object literal """""" uses <pattern>trying to VB sth</pattern> to indicate that the user is trying to achieve something. The answer is NO."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" I am getting error message when run from cmd """""" uses <pattern>getting error message when VB</pattern> to indicate that there is something wrong when ""run from cmd"". The answer is YES."
+"The sentence """""" Is there any way to get values specified by row INDArray and column INDArray? """""" uses <pattern>any way to VB NNS</pattern> to indicate that the user is looking for a solution. The answer is NO."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" does not let me access foo, either input.foo or input[""foo""]. """""" uses <pattern>does not let me access</pattern> to indicate that there is something wrong with accessing the property ""foo"". The answer is YES."
+"The sentence """""" I get running root is not recommended, use --allow-root to bypass """""" uses <pattern>get running root is not recommended</pattern> to indicate that there is something wrong with running the container as root. The answer is YES."
+"The sentence """""" After which apparently params is null, Which should mean that there are 0 results. That's where I'm lost """""" uses <pattern>params is null</pattern> to indicate that there is something wrong with ""params"". The answer is YES."
+"The sentence """""" it only returns Attaching to when i docker-compose -f docker-compose.network.yml up with contentversion """""" uses <pattern>returns JJ to</pattern> to indicate that there is something wrong with the command ""docker-compose -f docker-compose.network.yml up"". The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" my approach doesn't work """""" uses <pattern>VBZ not work</pattern> to indicate that there is something wrong with ""my approach"". The answer is YES."
+"The sentence """""" sometimes they just launch on different devices """""" uses <pattern>launch on different devices</pattern> to indicate that there is something wrong with the launching behavior of Appium. The answer is YES."
+"The sentence """""" the @completion on github isn't working when you want to tag someone in a PR """""" uses <pattern>isn't working when you want to VB</pattern> to indicate that there is something wrong with ""the @completion on github"". The answer is YES."
+"The sentence """""" What is the fastest and easiest way to revert this order again? """""" uses <pattern>the fastest and easiest way to VB</pattern> to indicate that the user is looking for a solution to revert the order. The answer is YES."
+"The sentence """""" elastic doesnt seem to start before container with django starts to build """""" uses <pattern>sth doesn't seem to VB before sth starts to VB</pattern> to indicate that there is something wrong with the starting order of ""elastic"" and ""container with django"". The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" Will the system run on it or nd4j will not work ? """""" uses <pattern>VB or VB</pattern> to indicate that there is a doubt about whether ""nd4j will work"" on the AIX system. The answer is YES."
+"The sentence """""" Can anyone help with my memory leak issue? """""" uses <pattern>help with sth</pattern> to indicate that the user is seeking assistance with a memory leak issue. The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" I got fatal error C1083: Cannot open include file: 'errno.h': No such file or directory. """""" uses <pattern>got fatal error C1083</pattern> to indicate that there is something wrong with the installation of ""event-loop-stats"" in a Windows environment. The answer is YES."
+"The sentence """""" getting this trying to access with ejs i keep getting .forEach is not a function when i try to access JSON with ejs """""" uses <pattern>getting this trying to access with sth</pattern> to indicate that there is something wrong when ""trying to access JSON with ejs"". The answer is YES."
+"The sentence """""" Issue was resolved, need i386 arch. """""" uses <pattern>Issue was resolved</pattern> to indicate that the issue has been resolved. The answer is NO."
+"The sentence """""" somehow I get very different results when using EarlyStopping... is it because I was overfitting before? """""" uses <pattern>get very different results</pattern> to indicate that there is something wrong with the results obtained when using EarlyStopping. The answer is YES."
+"The sentence """""" Is there a way to write definition files with arrow functions? """""" uses <pattern>Is there a way to VB</pattern> to indicate that the user is looking for a solution. The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" I am not able to delete files that were created during the runtime of a container. """""" uses <pattern>not able to VB NNS</pattern> to indicate that there is something wrong with ""deleting files"". The answer is YES."
+"The sentence """""" when i try to set it to es2015, it ends up with a lot of linter errors, like ""cannot find 'typescript'"" module, some parameter has implicitly ""any"" type (but i think the latest comes from that modules cannot be found). """""" uses <pattern>ends up with a lot of NNS</pattern> to indicate that there is something wrong when ""setting it to es2015"". The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" it says: ""The address is not a regular token contract address"" - but the adress is perfectly valid of ERC20 token """""" uses <pattern>says: ""error message""</pattern> to indicate that there is something wrong with ""The address is not a regular token contract address"". The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" I got an error ""No CUDA devices were found in system"", what should I do? """""" uses <pattern>got an error</pattern> to indicate that there is something wrong with ""No CUDA devices were found in system"". The answer is YES."
+"The sentence """""" What's the difference between req.session and req.app variables. Are they both session variables? """""" uses <pattern>difference between sth and sth</pattern> to indicate that the user wants to know the difference between ""req.session"" and ""req.app"" variables. The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" but no matter how I fix code signing issues, I still run into this issue when running test written in Java """""" uses <pattern>run into this issue</pattern> to indicate that there is something wrong when ""running test written in Java"". The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" I've been getting this NoSuchElementException when using normalizer.fit(trainDataIter) """""" uses <pattern>getting this NoSuchElementException</pattern> to indicate that there is something wrong with ""normalizer.fit(trainDataIter)"". The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" getting error appium simulator device not starting """""" uses <pattern>getting error sth</pattern> to indicate that there is something wrong with ""appium simulator device not starting"". The answer is YES."
+"The sentence """""" my all test scripts got failed but on debug its running fine """""" uses <pattern>VB all JJ NNS</pattern> to indicate that there is something wrong with ""all test scripts"". The answer is YES."
+"The sentence """""" They do exist in sonatype as 3.9-SNAPSHOT though. Are they gone for real or they just have not been built yet? """""" uses <pattern>exist in sth as VB</pattern> to indicate that there is something wrong with ""dl4j-spark-ml"". The answer is YES."
+"The sentence """""" When jQuery code is in setTimeout(..., 0) it works. When it is outside, it does not. """""" uses <pattern>When sth is in VB, it works</pattern> to indicate that there is something wrong when ""jQuery code is outside setTimeout"". The answer is YES."
+"The sentence """""" that service X isn't available at the Resolver level """""" uses <pattern>isn't available at the NN level</pattern> to indicate that there is something wrong with ""service X"" at the Resolver level. The answer is YES."
+"The sentence """""" I realized that in production mode Angular initializes my components twice (on every browser) which causes requests duplication. """""" uses <pattern>realized that VB</pattern> to indicate that there is something wrong with ""Angular initializes my components twice"". The answer is YES."

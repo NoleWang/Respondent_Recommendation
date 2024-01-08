@@ -1,0 +1,18 @@
+Function udf_Whats_Colored(rTXT As Range, Optional iCLRNDX As Long = 3)
+    Dim c As Long, str As String
+
+    For c = 1 To Len(rTXT.Text)
+        With rTXT.Characters(Start:=c, Length:=1)
+            If .Font.Color = RGB(237, 125, 49) Then
+                If Not CBool(Len(str)) Or _
+                   rTXT.Characters(Start:=c + (c > 1), Length:=1).Font.Color = RGB(237, 125, 49) Then
+                    str = str & Mid(rTXT.Text, c, 1)
+                Else
+                    str = str & " " & Mid(rTXT.Text, c, 1)
+                End If
+            End If
+        End With
+    Next c
+    udf_Whats_Colored = str
+
+End Function

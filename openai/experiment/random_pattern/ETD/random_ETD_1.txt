@@ -1,0 +1,32 @@
+8 random patterns: ['ETD_TRYING_TO', 'ETD_GOING_TO', 'ETD_CONSIDER_ACTION', 'ETD_CAN_QUESTION', 'ETD_SUPPOSED_TO', 'ETD_IMPLEMENT', 'ETD_THINK_ABOUT', 'ETD_EXPECTED'] 
+# add ETD_EXPECTED
+
+7 random patterns: ['ETD_TRYING_TO', 'ETD_GOING_TO', 'ETD_CONSIDER_ACTION', 'ETD_CAN_QUESTION', 'ETD_SUPPOSED_TO', 'ETD_IMPLEMENT', 'ETD_THINK_ABOUT'] 
+# add ETD_THINK_ABOUT
+
+6 random patterns: ['ETD_TRYING_TO', 'ETD_GOING_TO', 'ETD_CONSIDER_ACTION', 'ETD_CAN_QUESTION', 'ETD_SUPPOSED_TO', 'ETD_IMPLEMENT']
+
+5 random patterns: ['ETD_IMPLEMENT', 'ETD_TRYING_TO', 'ETD_GOING_TO', 'ETD_CONSIDER_ACTION', 'ETD_CAN_QUESTION'] 
+# remove ETD_SUPPOSED_TO
+
+4 random patterns: ['ETD_IMPLEMENT', 'ETD_CAN_QUESTION', 'ETD_GOING_TO', 'ETD_TRYING_TO'] 
+# remove ETD_CONSIDER_ACTION
+
+3 random patterns: ['ETD_IMPLEMENT', 'ETD_CAN_QUESTION', 'ETD_GOING_TO'] 
+# remove ETD_TRYING_TO
+
+ETD_TRYING_TO :  I once saw a microwave with a toaster built in. Like the downfall of all relational ORMs - trying to support them all is doing too much. okay, so it's a pretty terrible analogy, but even supporting all the different versions of a single db is maybe intractible when you write it like that is it actually a "method" vs a function property?  Is there a difference?
+
+ETD_GOING_TO :  I will be grateful if you could take a look on this topic -  I am going to create chatbot using websockets in Angular2 however I have a problem with ERROR TypeError: Cannot read property 'emit' of undefined
+
+ETD_CONSIDER_ACTION :  Hi guys, im using ngtools/webpack and come across an issue where it said Calling function 'RouteUltility', function calls are not supported. Consider replacing the function or lambda with a reference to an exported function, resolving symbol routes
+
+ETD_CAN_QUESTION :  I have my app component, routing, and a few main routes with a few main route components. I need to split the routed to component in half and put a nav bar in between it's two sections. But I do not want the nav bar to reload every time I route to a new component. How can I project a nav bar into a routed to component so that when I route to route's a, b, c or d, the nav bar stays.
+
+ETD_SUPPOSED_TO :  There's an option in angular-cli--extract-css What's the pro/const ? i think we're supposed to use that in dev so our JS is not compiled again and again if we're just touching the SCSS for example. But what about prod ? Is it better to have styles in js or css ?
+
+ETD_IMPLEMENT :  I have build large SPAs with Angular, but now want to add some angular "widgets" to a regular website (think quote of the day/flight status etc). If I use the normal webpack route, I'm going to end up with a large bundle which duplicates all the angular resources for each simple little widget. Is there an established pattern for using Angular in this way?
+
+ETD_THINK_ABOUT :  Hi, I am aware that DL4J is recommended to be used with Java 8 but is there any way I can use DL4J with Java 10 and IntelliJ (with or w/out Maven is fine, knowing that Maven have some quirks with Java 10 as well). I was thinking of building with Maven with java SDK 8 and then running the project with java sdk 10 with imported jars from java 8 sdk that the project requires. I have success so far by getting rid of all the exceptions through from the dl4j-examples but I still have this exception: "Error:java: java.lang.ExceptionInInitializerError" No worries, thanks. Here's my gist: [<-LINK->]
+
+ETD_EXPECTED :  Hi,  I would like to lazy load the Vue runtime in Angular.  I have an ng app which might (or might not) load another app. This (second) app is based on Vue and expects the Vue runtime to be already available.  Vue seems to be available as a module.  Is it possible to lazy load this with the import().then() approach?  Thanks!

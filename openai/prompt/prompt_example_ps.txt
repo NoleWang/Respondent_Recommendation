@@ -1,0 +1,17 @@
+Question: """ hi all, i am facing some issue with typescript where i have a state object and i am trying to update the state with the key of the object being dynamic..please see the example for details  [<-CODE->] here in function changeDate typescript is throwing error i also tried changing function to  [<-CODE->] still i am getting an error came across this [<-LINK->] this was the issue i was facing """
+Answer: The sentence """ i am facing some issue with typescript where i have a state object """ uses <pattern>facing [error-term] IN NN where</pattern> ("issue" is the [error-term]) to describe the problem which the user is currently encountering. The answer is YES.
+
+Question: """ i have a problem with Angular web components & routing :  I don't know how do the routing in the custom web component and make it work in the parent app. any updates please according to my question with angular web components """
+Answer: The sentence """ i have a problem with Angular web components & routing """ uses <pattern>have a [error-term] IN JJ NN </pattern> ("problem" is the [error-term]) to describe the problem which the user is currently encountering. The answer is YES.
+
+Question: """ Function calls are not supported in decorators but 'DashboardsRoutesService' was called in 'ROUTES' how to fix in production build? any idea about Function calls are not supported in decorators but 'DashboardsRoutesService' was called in 'ROUTES'? """
+Answer: The sentence """ Function calls are not supported in decorators """ uses <pattern>not supported (VBN)</pattern> to indicate that there is something wrong with "Function calls". The answer is YES.
+
+Question: """ Is there anyone here dealing with a hybrid app? I love the view encapsulation of Angular, and I would be very happy to use the global AngularJS style sheets only on the AngularJS components. But... the hybrid tag is an directive tag which can't contain styleUrls :( """
+Answer: The sentence """ But... the hybrid tag is an directive tag which can't contain styleUrls :( """ uses <pattern>can't VB NNS</pattern> to indicate that there is something wrong with "the hybrid tag". The answer is YES.
+
+Question: """ hi there. I am trying to use [<-LINK->] in my node js app here is my app.js [<-LINK->] i am using bable node server. In my routes, when I try to get req.fingerprint, I am getting undefined. Can anyone please help me out roychri: , It didn't show any error. It just prints as undefined roychri: , so you want me to put it on top? """
+Answer: The sentence """ I am getting undefined. """ uses an undesired adjective <pattern>undefined</pattern> to indicate that the user is getting something wrong. The answer is YES.
+
+Question: """ Hi, I am using ParagraphVectors for labelling some documents. I need to store and load those vectors. Therefore, I tried something like. Now, the labels seem to be empty (vec.getLabelsSource() is null). I checked the stored zip file manually and there are some B64 encoded labels in labels.txt. I wonder if anybody has any idea what I did wrong? """
+Answer: The sentence """ Now, the labels seem to be empty (vec.getLabelsSource() is null). """ uses an undesired adjective <pattern>empty</pattern> to indicate that there is something wrong with "the labels". The answer is YES.

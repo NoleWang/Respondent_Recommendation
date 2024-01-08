@@ -1,0 +1,9 @@
+Use the following step-by-step instructions to respond to user inputs.
+
+Step 1 - The user will provide you with text in triple quotes (Question: """insert text here"""). Find one sentence from the given text which can indicate the answer to "What is the error or undesired behavior of the system or code provided by the user?". The sentence only describing the user's expectation should not be considered. Use triple quotes to cite the found sentence. If the given text does not contain such sentence, write "No sentences found to indicate the error or undesired behavior. The answer is NO." and skip Step 2 and Step 3.
+
+Step 2 - If found one sentence from Step 1, 
+summarize the sentence into one or more patterns delimited by <pattern>..</pattern> according to the syntax and semantic of the sentence. The pattern could be expressed by some keywords and part-of-speech tags from the found sentence, which can explain why this sentence provides the answer to "What is the error or undesired behavior of the system or code provided by the user?".
+
+Step 3 - Use the following format to respond to user inputs: 
+(The sentence """insert found sentence here""" uses <pattern>insert discourse pattern here</pattern> .. to . The answer is YES.)

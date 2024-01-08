@@ -1,0 +1,681 @@
+answer1
+"The sentence """""" it is messing up my material css i.e I am not able to find any material css on the component """""" uses <pattern>messing up</pattern> to indicate that ""messing up the material css and not being able to find any material css on the component"" is an undesired behavior. The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" `[ngSwitch]=""condition""` starts displaying the new matching element before removing the old one when `condition` changes """""" uses <pattern>starts displaying the new JJ NOUN before VBG the old</pattern> to indicate that ""displaying the new matching element before removing the old one"" is an undesired behavior. The answer is YES."
+"The sentence """""" Element implicitly has an 'any' type because expression of type '""name1""' can't be used to index type '{}'. """""" uses <pattern>implicitly has an 'any' type because expression of type</pattern> to indicate that ""Element implicitly has an 'any' type"" is the error or undesired behavior. The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" The only problem is with projected content. """""" uses <pattern>the problem is with NP</pattern> to indicate that ""the problem is with projected content"" is an undesired behavior. The answer is YES."
+"The sentence """""" But I cannot type another path in the browser address bar that is valid (and I can get to via routerlink or code anvagation) as: [code]. """""" uses <pattern>type another path in the browser address bar</pattern> to indicate that the user is unable to navigate to another valid path by typing it in the browser address bar. The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" Property 'and' does not exist on type 'SpyInstance<void, []>' """""" uses <pattern>Property does not exist on type</pattern> to indicate that the error is related to the property 'and' not existing on the specified type. The answer is YES."
+"The sentence """""" `ERROR in Cannot read property 'kind' of undefined` """""" uses <pattern>ERROR in Cannot read property 'kind' of undefined</pattern> to indicate the error or undesired behavior of the system or code provided by the user. The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" i don't get the colors in HTML in component.ts """""" uses <pattern>don't get JJ NNS in NNS</pattern> to indicate that ""don't get the colors in HTML"" is an undesired behavior. The answer is YES."
+"The sentence """""" If i imports any material module, it gives errors everywhere on my code once i declare any of its components """""" uses <pattern>gives errors everywhere on my code</pattern> to indicate that ""errors everywhere on my code"" is an undesired behavior. The answer is YES."
+"The sentence """""" The pipe 'async' could not be found """""" uses <pattern>could not be found</pattern> to indicate that ""the pipe 'async'"" is an error or undesired behavior. The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" HttpClient doesn't seem to support streaming data from the server """""" uses <pattern>doesn't seem to support VB -ing</pattern> to indicate that ""HttpClient doesn't seem to support streaming data from the server"" is an undesired behavior. The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" why router.events,subscribe fires multiple times """""" uses <pattern>fires multiple times</pattern> to indicate that ""router.events.subscribe"" is causing multiple executions, which is an undesired behavior. The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" Anyone knows why `this.router.navigate(['../../'], { relativeTo: this.activatedRoute })` lands always at root instead of two path segments up? """""" uses <pattern>lands always at root instead of two path segments up</pattern> to indicate that ""landing at root instead of two path segments up"" is an undesired behavior. The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" Image assets are not getting included in the final build """""" uses <pattern>not getting included in the final build</pattern> to indicate that the image assets not being included in the final build is an undesired behavior. The answer is YES."
+"The sentence """""" just seen that they are using Async ngOnInit() """""" uses <pattern>using Async ngOnInit()</pattern> to indicate that ""using Async ngOnInit()"" is a bad practice. The answer is YES."
+"The sentence """""" I get this error: ""NG0201: No provider for DefaultValueAccessor found in."" """""" uses <pattern>No provider for NN found in</pattern> to indicate that ""No provider for DefaultValueAccessor"" is the error. The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" Module parse failed: Unexpected token (2413:45) You may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. """""" uses <pattern>Unexpected token (NNP:NNP)</pattern> to indicate that ""Unexpected token (2413:45)"" is the error in the given code. The answer is YES."
+"The sentence """""" It should takeUntil service is deystroyed """""" uses <pattern>should takeUntil NP</pattern> to indicate that the user expects the service to be destroyed at some point. The answer is NO."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" if I pass it as context: {myMethod: componentMethod} and call it in ng-template, it doesn't work """""" uses <pattern>pass it as context JJ NN</pattern> to indicate that ""passing a method/function via *ngTemplateOutlet"" is not working. The answer is YES."
+"The sentence """""" I want to be able to override MyService in module B """""" uses <pattern>override NOUN in NOUN</pattern> to indicate that the user is having trouble overriding ""MyService"" in ""module B"". The answer is YES."
+"The sentence """""" Refused to apply style from [link] because its MIME type ('text/html') is not a supported stylesheet MIME type, and strict MIME checking is enabled """""" uses <pattern>Refused to apply style from [link]</pattern> to indicate that ""Refused to apply style"" is an undesired behavior. The answer is YES."
+"The sentence """""" for some reason still getting the ""NG8002: Can't bind to 'ngModel' since it isn't a known property of 'input'."" """""" uses <pattern>still getting the JJ</pattern> to indicate that ""still getting the NG8002 error"" is an undesired behavior. The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" However it is not a perfect solution because when there is a change of order or a field is missing, everything stops working """""" uses <pattern>when there is a JJ NN or a NN is missing</pattern> to indicate that ""when there is a change of order or a field is missing"" is an undesired behavior. The answer is YES."
+"The sentence """""" Should I change the use of the forRoot? or remove it and provide it in another way? """""" uses <pattern>change the use of the forRoot</pattern> and <pattern>remove it and provide it in another way</pattern> to indicate that the user is unsure about how to change the configuration parameters for the service. The answer is YES."
+"The sentence """""" ReferenceError: Document is not defined at [file] """""" uses <pattern>ReferenceError: N is not defined at [file]</pattern> to indicate that ""ReferenceError: Document is not defined"" is the error or undesired behavior. The answer is YES."
+"The sentence """""" - Warning: Module not found: Error: Can't resolve 'crypto' in [file]. """""" uses <pattern>Error: Can't resolve JJ NN: Error</pattern> to indicate that ""Module not found"" is an undesired behavior. The answer is YES."
+"The sentence """""" That interceptor cancel translations requests too and the translations don't appear """""" uses <pattern>cancel NN NNS</pattern> to indicate that ""cancel translations requests"" is an undesired behavior. The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" in the compiled .css file it looks like `z-index:#900`, which is of course breaking my page """""" uses <pattern>looks like `z-index:#NNN`</pattern> to indicate that ""z-index:#900"" in the compiled .css file is an undesired behavior. The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" You can do that by assigning properties right """""" uses <pattern>assigning properties</pattern> to indicate that the code is not correctly assigning properties, which is an error or undesired behavior. The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" Error: [file] - error TS2344: Type 'K' does not satisfy the constraint 'string'. Type 'number' is not assignable to type 'string'. """""" uses <pattern>'K' does not satisfy the constraint 'string'</pattern> to indicate that there is a type mismatch error. The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" ""DEPRECATED: DI is instantiating a token ""MockLocationStrategy"" that inherits its @Injectable decorator but does not provide one itself"" """""" uses <pattern>DEPRECATED: DI is instantiating a token that inherits its @Injectable decorator but does not provide one</pattern> to indicate that there is a deprecation warning related to DI instantiation. The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" Error: SEARCH_ALREADY_RUNNING_EXCEPTION at DevicesService.startSearch """""" uses <pattern>Error: NN at NNP.NNP</pattern> to indicate that ""Error: SEARCH_ALREADY_RUNNING_EXCEPTION at DevicesService.startSearch"" is an undesired behavior. The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" My API is returning the correct data but the http.get response has almost all of the properties set to null """""" uses <pattern>the http.get response has almost all of the properties set to null</pattern> to indicate that the undesired behavior is that ""the http.get response has almost all of the properties set to null"". The answer is YES."
+"The sentence """""" The serve command requires to be run in an Angular project, but a project definition could not be found """""" uses <pattern>requires to be run in an Angular project</pattern> to indicate that the error is caused by ""a project definition could not be found"". The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" the click event doesnt get registered """""" uses <pattern>doesnt get VB</pattern> to indicate that ""the click event doesn't get registered"" is an undesired behavior. The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" When I select a value from the dropdown using Safari (works in Chrome, FF), the dragging of the element kicks in rather than just setting the dropdown value. """""" uses <pattern>the dragging of the element kicks in rather than just setting</pattern> to indicate that ""the dragging of the element"" is an undesired behavior. The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" i just get a blank page in return """""" uses <pattern>get a blank page</pattern> to indicate that the user is experiencing a blank page as an undesired behavior. The answer is YES."
+"The sentence """""" the issue I see in the logs above is that it is trying to get the javascript sources from [link] which IMO is wrong """""" uses <pattern>trying to get the JJ NNS from [link]</pattern> to indicate that ""trying to get the javascript sources from [link]"" is an undesired behavior. The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" It would most likely look better if I can get to fade everything out and in again """""" uses <pattern>fade everything out and in</pattern> to indicate that the user wants to fade everything out and in again, which implies an error or undesired behavior. The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" Access to XMLHttpRequest at [link] from origin [link] has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource. """""" uses <pattern>No 'Access-Control-Allow-Origin' header is present</pattern> to indicate that ""No 'Access-Control-Allow-Origin' header is present"" is an undesired behavior. The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" angular's viewportScroller doesn't appear to have the ability of smoth scrolling or any sort of animation """""" uses <pattern>doesn't appear to have the ability of JJ NNS or any sort of</pattern> to indicate that ""angular's viewportScroller"" lacks the ability of smooth scrolling or any sort of animation. The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" But when I am passing the same FormGroup through router and setting the values, this event is not triggered """""" uses <pattern>this event is not triggered</pattern> to indicate that the event not being triggered is an undesired behavior. The answer is YES."
+"The sentence """""" The pipe 'async' could not be found! """""" uses <pattern>could not be found</pattern> to indicate that the error is related to the pipe 'async' not being found. The answer is YES."
+"The sentence """""" Error during loading: Uncaught Error: A platform with a different configuration has been created. Please destroy it first """""" uses <pattern>Error during loading: Uncaught Error: A platform with a different configuration has been created</pattern> to indicate that ""A platform with a different configuration has been created"" is the error or undesired behavior. The answer is YES."
+"The sentence """""" the browser horizontal scroll bar appear and there is always a bit of unneeded white space after the toolbar """""" uses <pattern>browser horizontal scroll bar appear</pattern> to indicate that ""the browser horizontal scroll bar appear"" is an undesired behavior. The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" I have to do it or the one element that will stay behind breaks the animation a bit and I can not fix in any other way """""" uses <pattern>fix in any other way</pattern> to indicate that the user is unable to fix the animation issue in any other way. The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" I am getting error of bad request """""" uses <pattern>error of NN</pattern> to indicate that ""error of bad request"" is the error or undesired behavior. The answer is YES."
+"The sentence """""" Error message below: main.js:formatted:77430 Unhandled Promise rejection: Cannot read property 'deps' of undefined """""" uses <pattern>Error message below:</pattern> to indicate that ""Cannot read property 'deps' of undefined"" is an error or undesired behavior. The answer is YES."
+"The sentence """""" ``` ./node_modules/leaflet/dist/images/marker-icon.png:1:0 - Error: Module parse failed: Unexpected character 'i12' (1:0). You may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See [link] (Source code omitted for this binary file) ``` """""" uses <pattern>Error: Module parse failed</pattern> to indicate that ""Module parse failed"" is the error or undesired behavior. The answer is YES."
+"The sentence """""" the *ngFor also throws up errors of ""Cannot read property 'length' of null"" """""" uses <pattern>throws up errors of ""Cannot read property 'length' of null""</pattern> to indicate that the error message ""Cannot read property 'length' of null"" is an undesired behavior. The answer is YES."
+"The sentence """""" As you can see, it takes a very long time to load. """""" uses <pattern>takes a very long time to VB</pattern> to indicate that ""takes a very long time to load"" is an undesired behavior. The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" ""Value could not be determined statically"" will be the new error message using that approach """""" uses <pattern>be VBN</pattern> to indicate that ""Value could not be determined statically"" is an undesired behavior. The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" the changes are not reflected in the output bundle anymore """""" uses <pattern>not reflected in the output bundle</pattern> to indicate that the changes made are not visible in the output bundle. The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" I'm struggling with making a call to fetch the CRSF cookie and after that to continue with my main request """""" uses <pattern>struggling with VB to VB</pattern> to indicate that the user is facing difficulties in ""making a call to fetch the CRSF cookie and after that to continue with my main request"". The answer is YES."
+"The sentence """""" when I change the inline template of any component to templateUrl, sourcemaps are gone """""" uses <pattern>sourcemaps are gone</pattern> to indicate that ""sourcemaps are gone"" is an undesired behavior. The answer is YES."
+"The sentence """""" i got weird behavior fetching data is fast and normal but it dosn't show up on html page , guess what ! i need to just scroll to appear ! """""" uses <pattern>fetching data is fast and normal</pattern> and <pattern>dosn't show up on html page</pattern> to indicate that the fetched data is not appearing on the HTML page. The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" my Windows 10 laptop goes into energy spare mode """""" uses <pattern>goes into NNP</pattern> to indicate that the user's laptop going into energy spare mode is an undesired behavior. The answer is YES."
+"The sentence """""" I have VUE web component, in the slot of web component I use angular component, but angular component styles are not applying """""" uses <pattern>angular component styles are not applying</pattern> to indicate that ""angular component styles are not applying"" is an undesired behavior. The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" basically Shadow DOM is not working """""" uses <pattern>is not working</pattern> to indicate that ""Shadow DOM"" is not functioning as expected. The answer is YES."
+"The sentence """""" I always get an error when it is imported or declared or exported. """""" uses <pattern>get an error when VBZ</pattern> to indicate that the user is experiencing an error when importing, declaring, or exporting the component. The answer is YES."
+"The sentence """""" fastest and memory efficient way to avoid out of memory exception """""" uses <pattern>adj and adj way to avoid NNP</pattern> to indicate that the user is looking for a solution to avoid ""out of memory exception"". The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" Now the new problem is I need data from the Parent Component in the grandchild component """""" uses <pattern>I need data from the X Component in the Y component</pattern> to indicate that the user is facing a design problem where they need to access data from the Parent Component in the Grandchild Component. The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" Cannot read property 'disabled' of undefined """""" uses <pattern>Cannot read property NNS of undefined</pattern> to indicate that the error is caused by trying to access a property of an undefined object. The answer is YES."
+"The sentence """""" Some time dialog part hiding behind the viewport can't see the rest of the dialog """""" uses <pattern>hiding behind the NN</pattern> to indicate that ""dialog part hiding behind the viewport"" is an undesired behavior. The answer is YES."
+"The sentence """""" But i cannot achieve that even when i fetch new list afetr removing an element from it. """""" uses <pattern>even when PRP VBD</pattern> to indicate that the user cannot achieve the desired behavior of ""removing elements from ngFor list and immediately removing them from their own list"". The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" The problem basically is when I set some value on the subform , the main form is marked as dirty... """""" uses <pattern>when I set some value on the subform</pattern> to indicate that setting a value on the subform is causing the main form to be marked as dirty, which is an undesired behavior. The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" This version of CLI is only compatible with Angular versions ^12.0.0-next || >=12.0.0 <13.0.0, but Angular version 9.1.0 was found instead. """""" uses <pattern>This version of CLI is only compatible with</pattern> to indicate that the user is facing compatibility issues between the installed version of Angular CLI and the required version of Angular. The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" But its insane, because i made a connection to gcp logger, and after 3600sec the request not working. """""" uses <pattern>after NUMsec the NOUN not VERB</pattern> to indicate that ""the request not working after 3600sec"" is an undesired behavior. The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" The compiler is complaining in just one component apparently saying that it doesn't recognize the selectors in the html """""" uses <pattern>doesn't recognize the JJ NNS in the html</pattern> to indicate that the compiler is complaining about the component not recognizing the selectors in the HTML. The answer is YES."
+"The sentence """""" however, the headers map is private , it would be great if I can at least get a copy """""" uses <pattern>the headers map is private</pattern> to indicate that ""the headers map is private"" is an undesired behavior. The answer is YES."
+"The sentence """""" mainly the problem arises in `useFactory` when I was using a lambda function such as `(x: SomeType) => new ObjectFunction(x) ` where ObjectFunction is from a library. so I changed it to a function instead like [code]. """""" uses <pattern>the problem arises in NOUN when using a lambda function such as</pattern> to indicate that ""the problem arises when using a lambda function"" is an undesired behavior. The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" The following piece of code is complaining with the error below [code], the error is on `toHaveBeenCalledWith` """""" uses <pattern>complaining with the error</pattern> to indicate that the code is encountering an error with ""toHaveBeenCalledWith"". The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" Whenever I run an e2e test (depending on protractor) I get a slew of console errors a la: > BREAKING CHANGE: webpack < 5 used to include polyfills for node.js core modules by default. """""" uses <pattern>get a slew of console errors</pattern> to indicate that the user is experiencing ""a slew of console errors"" as an undesired behavior. The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" how can these 'remotes' be assembled within a 'host'/shell without running into CORS restrictions? """""" uses <pattern>without running into NP CORS restrictions</pattern> to indicate that the user is facing CORS restrictions when trying to assemble the 'remotes' within a 'host'/shell. The answer is YES."
+"The sentence """""" But I have not been able to import the js file in my component """""" uses <pattern>not been able to VB PRP$ NN</pattern> to indicate that the user is experiencing difficulty in ""importing the js file in my component"". The answer is YES."
+"The sentence """""" I get ""Error: Expected null to be truthy."" """""" uses <pattern>Error: VB to be JJ</pattern> to indicate that the user is getting an error message ""Expected null to be truthy"" which is an undesired behavior. The answer is YES."
+"The sentence """""" some how i see this error RangeError: Maximum call stack size exceeded at v.<computed>.get (web-component.min.js:1) """""" uses <pattern>error RangeError: Maximum call stack size exceeded</pattern> to indicate that the error ""Maximum call stack size exceeded"" is an undesired behavior. The answer is YES."
+"The sentence """""" The OPTIONS request never contains my added header """""" uses <pattern>never contains my added header</pattern> to indicate that the OPTIONS preflight request not containing the added header is an undesired behavior. The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" the angular doesn't accept this ( ngFor=""let post of posts$"" ) the error says this "" Error: src/app/myapp/myapp.component.html:21:46 - error TS2322: Type 'Object' is not assignable to type 'NgIterable<any>'."""""" uses <pattern>says this "" Error: </pattern> to indicate that the error message is an indication of the error or undesired behavior. The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" So, I would like to know if you have another idea to handle the use of multiple HTML files for a component ? """""" uses <pattern>handle the use of multiple JJ NNS for a NN</pattern> to indicate that the user is looking for an alternative solution to handle the use of multiple HTML files for a component. The answer is NO."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" An unhandled exception occurred: PostCSS plugin postcss-discard-comments requires PostCSS 8 """""" uses <pattern>unhandled exception occurred</pattern> and <pattern>requires</pattern> to indicate that the error is caused by a required version of PostCSS plugin. The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" The forkJoin stopped returning values """""" uses <pattern>stopped VBG JJ NNS</pattern> to indicate that ""stopped returning values"" is an undesired behavior. The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" soon as I name it, it gives me `Cannot match any route: URL segment '...'` """""" uses <pattern>gives me `Cannot match any route</pattern> to indicate that ""gives me `Cannot match any route`"" is an undesired behavior. The answer is YES."
+"The sentence """""" Why are there no suggestions for events in the html ""(click,...) by using ""Angular Language Service"" (default Ivy) in VS code? """""" uses <pattern>no suggestions for JJ NNS</pattern> to indicate that ""no suggestions for events"" is an undesired behavior. The answer is YES."
+"The sentence """""" shows the formcontrol status is Disabled but it still is enabled when you click on it """""" uses <pattern>status is Disabled but it still is enabled</pattern> to indicate that the form control is not disabling as expected. The answer is YES."
+"The sentence """""" I get the following error: core.js:4127 ERROR Error: Uncaught (in promise): TypeError: [file] is not a function at breadcrumb.service.ts:6 """""" uses <pattern>TypeError: [file] is not a function</pattern> to indicate that ""TypeError: [file] is not a function"" is an undesired behavior. The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" i can't even run ionic serve cos it will give me the same error """""" uses <pattern>give me the same error</pattern> to indicate that ""getting the same error"" is an undesired behavior. The answer is YES."
+"The sentence """""" Error: error TS2307: Cannot find module './input.component' or its corresponding type declarations. """""" uses <pattern>Cannot find module JJ NNS</pattern> to indicate that ""Cannot find module './input.component' or its corresponding type declarations"" is the error. The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" it still shows the control and form is valid """""" uses <pattern>still shows the control and form is valid</pattern> to indicate that the form validation is not updating properly. The answer is YES."
+"The sentence """""" An unhandled exception occurred: No provider for InjectionToken ng.v5.stylesheetProcessor! """""" uses <pattern>No provider for InjectionToken</pattern> to indicate that ""No provider for InjectionToken"" is the error or undesired behavior. The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" Failed to publish metadata file to swarm, please check the Swarm gateways is available ( swarm-gateways.net ).{""statusCode"":0} """""" uses <pattern>Failed to VBG NNS</pattern> to indicate that ""Failed to publish metadata file to swarm"" is an undesired behavior. The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" In my real code sometimes it will return a promise and sometimes it will return a boolean """""" uses <pattern>sometimes it will return a promise</pattern> and <pattern>sometimes it will return a boolean</pattern> to indicate that the user is experiencing trouble with ""union types and promises"". The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" but when I actually visit the webserver on my host browser the container exits after the first page load """""" uses <pattern>the container exits after the first page load</pattern> to indicate that the container exiting after the first page load is an undesired behavior. The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" Invalid login - 535 Incorrect authentication data """""" uses <pattern>Invalid login - 535 Incorrect authentication data</pattern> to indicate that ""Invalid login - 535 Incorrect authentication data"" is an error or undesired behavior. The answer is YES."
+"The sentence """""" When I try run test in real iOS device I'm getting error:selenium.common.exceptions.WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: simctl error running 'create': Invalid device type """""" uses <pattern>getting error:selenium.common.exceptions.WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: simctl error running 'create': Invalid device type</pattern> to indicate that the user is experiencing an error related to the invalid device type when trying to run a test on a real iOS device. The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" Error: Could not install app: exited with code 253 """""" uses <pattern>Error: Could not install app</pattern> to indicate that ""could not install the app"" is an undesired behavior. The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" Looks like this is some kind of XSS attack in user name """""" uses <pattern>XSS attack in user name</pattern> to indicate that the user is experiencing an XSS attack in the chat. The answer is YES."
+"The sentence """""" but when i try to update by _id it doesnt seem to find the record """""" uses <pattern>doesnt seem to find the record</pattern> to indicate that ""not finding the record by _id for updating"" is an undesired behavior. The answer is YES."
+"The sentence """""" Connect to 0.0.0.0:4723 [/0.0.0.0] failed: Connection refused """""" uses <pattern>Connect to NN.NN.NN.NN:NNNN</pattern> to indicate that ""Connection refused"" is an undesired behavior. The answer is YES."
+"The sentence """""" Source file does not specify required compiler version!Consider adding ""pragma solidity ^0.4.8contract MyToken {^Spanning multiple lines. """""" uses <pattern>Source file does not specify required compiler version</pattern> to indicate that ""Source file does not specify required compiler version"" is an error or undesired behavior. The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" that doesn't seem to work for typescript """""" uses <pattern>doesn't seem to work for</pattern> to indicate that ""it doesn't work for typescript"" is an undesired behavior. The answer is YES."
+"The sentence """""" Value is infinite after jump. oldStep=1.0. score=NaN, score2=NaN. """""" uses <pattern>Value is JJ after NN. oldStep=1.0. score=NaN, score2=NaN</pattern> to indicate that ""Value is infinite after jump"" and ""score=NaN, score2=NaN"" are the undesired behaviors. The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" Why does it not recognise my EJS files? """""" uses <pattern>not recognize PRP$ NNS files</pattern> to indicate that the system or code is not recognizing ""EJS files"". The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" it says that those methods are not supported for iOS """""" uses <pattern>says that DT NNS are not supported for NNP</pattern> to indicate that the user is looking for a workaround for controlling network on iOS because the methods are not supported. The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" error { Error: write EPROTO 140735782093632:error:14094410:SSL routines:ssl3_read_bytes:sslv3 alert handshake failure: SSL alert number: error:SSL routines: ssl3_write_bytes:ssl handshake failure: { Error: write EPROTO 140735782093632:error:14094410:SSL routines:ssl3_read_bytes:sslv3 alert handshake failure: alert number: error:1409E0E5:SSL routines:ssl3_write_bytes:ssl handshake failure: """""" does not contain any sentence that indicates the error or undesired behavior. The answer is NO."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" i see in nginx logs:*17991 upstream prematurely closed connection while reading response header from upstream Egoscio """""" uses <pattern>upstream prematurely closed connection while reading response header from upstream</pattern> to indicate that ""upstream prematurely closed connection while reading response header from upstream"" is an undesired behavior. The answer is YES."
+"The sentence """""" any channel I go to is a blank page """""" uses <pattern>is a blank page</pattern> to indicate that ""a blank page"" is an undesired behavior. The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" the XENT seems specify for binary class, not multi labeled """""" uses <pattern>XENT seems specify for JJ NN, not JJ NN</pattern> to indicate that the user is observing that ""XENT"" is specified for ""binary class"" instead of ""multi labeled"". The answer is YES."
+"The sentence """""" it just stop downloading 731,591 of 2,753,163 """""" uses <pattern>stop downloading NN of NN</pattern> to indicate that ""stop downloading 731,591 of 2,753,163"" is an undesired behavior. The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" if I change any dependency I get ENOENT: no such file or directory, rename errors """""" uses <pattern>get ENOENT: no such JJ or JJ, JJ</pattern> to indicate that ""ENOENT: no such file or directory, rename errors"" is an undesired behavior. The answer is YES."
+"The sentence """""" Can't find any in the examples right now """""" uses <pattern>find any in the NNS</pattern> to indicate that the user is unable to find any examples. The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" the ROOT CA is placed in PEM format but docker still complains """""" uses <pattern>docker still complains</pattern> to indicate that ""docker still complains"" is an undesired behavior. The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" Should i save map ""labelNumber -> labelName"" by myself or there another approach for it? """""" uses <pattern>another approach for</pattern> to indicate that the user is looking for an alternative approach. The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" '[scroll(10,100)] Error response status: 13' """""" uses <pattern>Error response status: NN</pattern> to indicate that ""Error response status: 13"" is an error or undesired behavior. The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" gives dropwizard error: unrecognized field at: template """""" uses <pattern>gives NOUN error: unrecognized field</pattern> to indicate that ""unrecognized field"" is an error or undesired behavior. The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" but after that it doesn't open the application but it install the app but not yet open it """""" uses <pattern>doesn't open the application</pattern> and <pattern>install the app but not yet open it</pattern> to indicate that ""the application is not opening after installing"" is an undesired behavior. The answer is YES."
+"The sentence """""" I get a NullPointerException in org.nd4j.linalg.api.shape.Shape/rank """""" uses <pattern>get a NullPointerException in JJ/NN/NN</pattern> to indicate that ""getting a NullPointerException"" is an undesired behavior. The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" The process still seems to be running in the container on the remote host but there's no more stdout displayed on my machine? """""" uses <pattern>no more JJ NN displayed</pattern> to indicate that ""no more stdout displayed"" is an undesired behavior. The answer is YES."
+"The sentence """""" i cant see any docs for it """""" uses <pattern>cant see any NNS for it</pattern> to indicate that the user is unable to find the documentation for installing Gitter on their own servers. The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" it still tells me i dont have any extension lik PgSQL or PDO_PgSQL """""" uses <pattern>tells me</pattern> to indicate that the user is experiencing an error message saying ""I don't have any extension like PgSQL or PDO_PgSQL"". The answer is YES."
+"The sentence """""" It keeps saying ""Etherium node connection error"" """""" uses <pattern>saying ""Etherium node connection error""</pattern> to indicate that the error or undesired behavior of the system is related to ""Etherium node connection error"". The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" but I can't get it to report errors """""" uses <pattern>can't get it to VB NN</pattern> to indicate that ""can't get it to report errors"" is an undesired behavior. The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" I can't enter text even usingadb shell input text ""hello"". """""" uses <pattern>can't enter text</pattern> to indicate that ""can't enter text"" is an undesired behavior. The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" I want to use 0.6.0 but seem to have maven dependency issues with the perf/jblas libs """""" uses <pattern>seem to have</pattern> to indicate that the user is experiencing ""maven dependency issues"" with ""perf/jblas libs"". The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" we're experiencing zombie docker processes because SLURM will send a SIGKILL if SIGTERM doesn't end the process """""" uses <pattern>experiencing zombie docker processes</pattern> to indicate that ""experiencing zombie docker processes"" is an undesired behavior. The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" I'm getting this error:Error occured while starting App. Original error: 'com.sample.android.activity.SplashActivity' never started"" """""" uses <pattern>Error occured while VBG</pattern> to indicate that ""Error occured while starting App"" is an undesired behavior. The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" this is the error i get org.openqa.selenium.WebDriverException: Connection refused: connect """""" uses <pattern>error i get JJ NNP</pattern> to indicate that the user is experiencing an error of ""Connection refused: connect"". The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" unexpected memory consumption from yesterday """""" uses <pattern>unexpected NN consumption</pattern> to indicate that ""unexpected memory consumption"" is an undesired behavior. The answer is YES."
+"The sentence """""" I can't get my code to swipe from the Left to the right to work using percents """""" uses <pattern>code to swipe from JJ to JJ to work</pattern> to indicate that the user is having trouble getting ""code to swipe from the Left to the right to work using percents"". The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" but on C# AppiumFieldDecorator is not recognized """""" uses <pattern>is not recognized</pattern> to indicate that ""AppiumFieldDecorator is not recognized"" is an error or undesired behavior. The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" I can't log in anymore. """""" uses <pattern>can't log in</pattern> to indicate that the user is experiencing an error or undesired behavior of not being able to log in. The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" i could not see the coins in the wallet """""" uses <pattern>not see the coins</pattern> to indicate that ""not seeing the coins in the wallet"" is an undesired behavior. The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" ERROR in Checkbox.css """""" uses <pattern>ERROR in NN</pattern> to indicate that there is an error in the ""Checkbox.css"" file. The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" Error: CONNECTION ERROR: Couldn't connect to node . """""" uses <pattern>Error: CONNECTION ERROR: Couldn't connect to node</pattern> to indicate that the user is experiencing a connection error. The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" Property 'children' is missing in type '{}'. """""" uses <pattern>Property 'N' is missing in type '{}'</pattern> to indicate that the property 'children' is missing in the given type. The answer is YES."
+"The sentence """""" But then I try to create a room with the name ""topics"" and it says ""Validation error"" """""" uses <pattern>says ""Validation error""</pattern> to indicate that the system is giving a ""Validation error"" when trying to create a room with the name ""topics"". The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" Still seems weird thatrequirewould resolve toany """""" uses <pattern>resolve to NNS</pattern> to indicate that ""resolve to any"" is an undesired behavior. The answer is YES."
+"The sentence """""" i get connection refused docker """""" uses <pattern>connection refused</pattern> to indicate that ""connection refused"" is an undesired behavior. The answer is YES."
+"The sentence """""" INDArray lables = dsTest.getLabels(); always gives back [1.0,0.0] for two classes """""" uses <pattern>always gives back</pattern> to indicate that ""always giving back [1.0,0.0] for two classes"" is an undesired behavior. The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" Getting errors when execute following code """""" uses <pattern>Getting errors when execute following code</pattern> to indicate that the user is experiencing errors when executing the given code. The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" but can't run it on docker-machine, it works on my localhost instead of 192.168.99.100 """""" uses <pattern>works on my localhost instead of IP address</pattern> to indicate that the user is experiencing the error of the project running on localhost instead of the expected IP address. The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" CudaZeroHandler: Out of [DEVICE] memory, host memory will be used instead: deviceId: [0], requested bytes: [182200] """""" uses <pattern>Out of [DEVICE] memory</pattern> to indicate that the system is experiencing a memory allocation issue. The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" This carried on for couple of days and I reached 3.6 million. Then it stopped, i restarted it and then to my horror it started the sync right from the beginning """""" uses <pattern>right from the VBing</pattern> to indicate that ""started the sync right from the beginning"" is an undesired behavior. The answer is YES."
+"The sentence """""" casting does not """""" uses <pattern>casting does not</pattern> to indicate that ""casting"" is not working correctly. The answer is YES."
+"The sentence """""" then restore the key store and do a full sync the ether in my account still can't display """""" uses <pattern>still can't VB</pattern> to indicate that ""still can't display"" is an undesired behavior. The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" I'm unable to see it in any of the options I've tried """""" uses <pattern>unable to see it in any of the options I've tried</pattern> to indicate that the user is experiencing an error or undesired behavior. The answer is YES."
+"The sentence """""" I get the following error : org.nd4j.nativeblas.Nd4jCpu$NativeOps.tadOnlyShapeInfo """""" uses <pattern>get the following error : NounPhrase</pattern> to indicate that ""org.nd4j.nativeblas.Nd4jCpu$NativeOps.tadOnlyShapeInfo"" is the error or undesired behavior. The answer is YES."
+"The sentence """""" the destructured data is of type any instead of string """""" uses <pattern>destructured data is of type any instead of string</pattern> to indicate that ""destructured data is of type any instead of string"" is an undesired behavior. The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" IDEA is always telling me resolving dependencies of deeplearning4j examples """""" uses <pattern>telling me VBG dependencies of NNS NNS</pattern> to indicate that the user is having trouble with ""resolving dependencies of deeplearning4j examples"". The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" if I use rmsprop it throws a lot of Hit termination condition on iteration 0: score=0.0, oldScore=0.0 """""" uses <pattern>throws a lot of Hit NN condition</pattern> to indicate that ""throws a lot of Hit termination condition"" is an undesired behavior. The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" it keeps giving me errors that my git working directory isnt clean(which i cleaned using git clean -d -x -f) and that A ERROR package.json """""" uses <pattern>giving me errors that</pattern> to indicate that the user is experiencing errors while updating their npm version. The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" The app unable to connect to the mysql on port 3306 """""" uses <pattern>unable to VBG to NN on NN</pattern> to indicate that ""unable to connect to the mysql on port 3306"" is an undesired behavior. The answer is YES."
+"The sentence """""" they complained a lot that there's no elegant way to send animations. """""" uses <pattern>complained a lot that there's no elegant way to</pattern> to indicate that ""no elegant way to send animations"" is an undesired behavior. The answer is YES."
+"The sentence """""" I am getting an error:SyntaxError: Unexpected end of JSON input """""" uses <pattern>getting an error: <error message></pattern> to indicate that the user is experiencing an error with the message ""SyntaxError: Unexpected end of JSON input"". The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" I assume there should be a pop-up when I click 'Add users to this room', but nothing happens """""" uses <pattern>nothing happens</pattern> to indicate that the user is experiencing an error or undesired behavior where ""nothing happens"" when they click on ""Add users to this room"". The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" the container started and exited so quick why is that happening? """""" uses <pattern>container started and exited</pattern> to indicate that the container is exiting too quickly, which is an undesired behavior. The answer is YES."
+"The sentence """""" But, the only one I seem to see it the global version, even whn I'm in directory that I have installed 2.3.2 """""" uses <pattern>the only one I seem to see</pattern> to indicate that the user is expecting to see multiple versions of TypeScript but is only able to see the global version. This indicates an undesired behavior. The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" Fatal Error: Unable to load internal client id. """""" uses <pattern>Fatal Error: Unable to load internal client id</pattern> to indicate that ""unable to load internal client id"" is the error or undesired behavior. The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" An unknown server-side error occurred while processing the command. Original error: Unable to launch WebDriverAgent because of xcodebuild failure: xcodebuild failed with code 65 while trying to start a session from appium desktop """""" uses <pattern>Unable to launch WebDriverAgent because of xcodebuild failure</pattern> to indicate that ""xcodebuild failure"" is the error or undesired behavior. The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" they just won't comunicate, i have opened all necessary ports on all the hosts, they are joining the overlay network and show as peers, they're showing on the gossip service but if i try to curl a service or ping a service name it just times out. """""" uses <pattern>just times out</pattern> to indicate that the containers are experiencing connectivity issues. The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" So if I have more than 2000 transactions on one day. I can only download the earliest 2000. I can't download the whole? """""" uses <pattern>can't download the whole</pattern> to indicate that the user is unable to download the entire transaction record. The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" depends_on does not wait for the healthcheck to be valid """""" uses <pattern>does not wait for NP to be JJ</pattern> to indicate that ""depends_on"" is not functioning as expected. The answer is YES."
+"The sentence """""" it's telling me I can't export something I'm trying to export, because I'm not exporting it? """""" uses <pattern>telling me PRP VBP</pattern> to indicate that the user is facing an error where they are unable to export something they are trying to export. The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" it looks like the only way to talk is using .write(message) and .on('data', (data) """""" uses <pattern>the only way to VBG is using VB</pattern> to indicate that the user is expecting to be able to communicate using custom events, but it seems that the only way to communicate is using "".write(message)"" and "".on('data', (data)"". The answer is NO."
+"The sentence """""" Typescript is throwing an error that prevents me from injecting the component to my Routes """""" uses <pattern>throwing an error</pattern> to indicate that ""Typescript is throwing an error"" is an undesired behavior. The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" i cant Verify And Publish becouse the wallet dont give a compiler """""" uses <pattern>be able to VB becouse of NP</pattern> to indicate that the user is unable to ""Verify And Publish"" because the wallet does not provide a compiler. The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" Keeps crashing. It crashes often. """""" uses <pattern>keeps VBG</pattern> to indicate that ""crashing often"" is an undesired behavior. The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" unable to read superblock #002: truncated file: eof = 4263435 """""" uses <pattern>truncated file: eof = </pattern> to indicate that the user is experiencing a problem with a truncated file. The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" Inconsistent classfile encountered: The undefined type parameter S.Builder is referenced from within AbstractDataSetNormalizer eval line 614 Java Problem """""" uses <pattern>Inconsistent classfile encountered: The undefined type parameter</pattern> to indicate that ""Inconsistent classfile encountered: The undefined type parameter"" is an error. The answer is YES."
+"The sentence """""" My ios app is not launching through appium its just opening and closing with in a fraction of time """""" uses <pattern>not VBG through NNP</pattern> to indicate that ""not launching through appium"" is the error or undesired behavior. The answer is YES."
+"The sentence """""" My problem is that all the pre-processed data is very large and I'm not sure how to store it with the requirement that I want to be able to shuffle the data between each epoch. """""" uses <pattern>store it with the requirement that I want to be able to shuffle the data between each epoch</pattern> to indicate that the user is having difficulty finding a way to store and shuffle the large pre-processed data. The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" For some reason automation can't even sendkeys to a textbox anymore """""" uses <pattern>can't even VB to DT NN anymore</pattern> to indicate that ""automation can't send keys to a textbox anymore"" is an undesired behavior. The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" it always returns a .reject() and .then() is not executed """""" uses <pattern>.then() is not VBN</pattern> to indicate that ""then() is not executed"" is an undesired behavior. The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" The second time, I get a missing types error. """""" uses <pattern>I get a missing types error</pattern> to indicate that ""getting a missing types error"" is an undesired behavior. The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" The problem here I see is that, when I use bodyParser() the above code doesn't get executed """""" uses <pattern>the above code doesn't get executed</pattern> to indicate that the code is not getting executed when using bodyParser(). The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" I'm getting 'Process finished with exit code 2' when I run model.fit(dataset) """""" uses <pattern>'Process finished with exit code 2'</pattern> to indicate that ""Process finished with exit code 2"" is an undesired behavior. The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" What might be the reason for npm run build to not be able to find specific scripts with CICD runuser, but to work fine as root? """""" uses <pattern>not be able to VBG specific scripts</pattern> to indicate that ""not be able to find specific scripts"" is an undesired behavior. The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" my problem is that i can't received sms on my modem (huawei), but i can send sms """""" uses <pattern>can't VBG sms</pattern> to indicate that ""can't receive sms"" is an undesired behavior. The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """"""Even though I provide a prebuilt lookup table and vocab, the vocabulary is being rebuilt from scratch when I run fit()."""""" uses <pattern>the vocabulary is being JJ from NN when I run VBG()</pattern> to indicate that ""the vocabulary is being rebuilt from scratch"" is an undesired behavior. The answer is YES."
+"The sentence """""" My post request was blocked by the browser and cancelled """""" uses <pattern>blocked by the browser and cancelled</pattern> to indicate that the user's post request being blocked and cancelled is an undesired behavior. The answer is YES."
+"The sentence """""" TypeError: Cannot read property 'write' of nullat Zlib.callback (zlib.js:499:33) """""" uses <pattern>TypeError: Cannot read property</pattern> to indicate that the error ""Cannot read property 'write' of null"" is occurring. The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" It can't resolve the module 'child_process'. """""" uses <pattern>can't resolve the module</pattern> to indicate that ""can't resolve the module 'child_process'"" is an error or undesired behavior. The answer is YES."
+"The sentence """""" A few problems.. first the callback runs only when there is an error, and after about 4000 request the I get this error """""" uses <pattern>the callback runs only when there is an error</pattern> and <pattern>after about 4000 request the I get this error</pattern> to indicate that the user is experiencing issues with the callback function and encountering an error after a certain number of requests. The answer is YES."
+"The sentence """""" I can't even reproduce the original manual examples with latest Firefox. """""" uses <pattern>reproduce the original manual examples with</pattern> to indicate that the user is unable to reproduce the original manual examples with the latest Firefox. The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" still cant edit files in there... """""" uses <pattern>still cant VB NNS in there</pattern> to indicate that the user is unable to edit files in a certain location. The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" but no files in my host machine dir (marked in orange) """""" uses <pattern>no files in my host machine dir</pattern> to indicate that ""no files in my host machine dir"" is an undesired behavior. The answer is YES."
+"The sentence """""" Unfortunately the time asking neural network for output is longer then 1ms even with only 1 hidden layer. """""" uses <pattern>the time asking neural network for output is longer than 1ms</pattern> to indicate that the user is experiencing slow performance when asking the neural network for output. The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" it works if I use sendkeys it is not proceeding to next page """""" uses <pattern>proceeding to</pattern> to indicate that the user is having trouble with ""proceeding to the next page"". The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" that line seems to be feeding the input from the last layer back into itself """""" uses <pattern>feeding the input from the last layer back into itself</pattern> to indicate that there is an error or undesired behavior in the code. The answer is YES."
+"The sentence """""" it is simply disappears from the taskbar after some time """""" uses <pattern>disappears from the taskbar</pattern> to indicate that ""disappearing from the taskbar"" is an undesired behavior. The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" it always created a new container after a few seconds """""" uses <pattern>created a new NOUN</pattern> to indicate that ""always created a new container"" is an undesired behavior. The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" when I try to run I've got some error,s I think was miss native libraries """""" uses <pattern>I've got some error,s I think was miss native libraries</pattern> to indicate that ""missing native libraries"" is the error or undesired behavior. The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" What could cause the error ""error TS6053: File not found."" to appear?"""""" uses <pattern>error TS6053: File not found.</pattern> to indicate that the error ""error TS6053: File not found."" is an undesired behavior. The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" if our test is not executing in 10 sec then again its wait 10 sec """""" uses <pattern>if our test is not executing in NUM sec then again its wait NUM sec</pattern> to indicate that the user expects to add multiple wait times if the test is not executing within a specified time. The answer is NO."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" I am unable to run appium in mac system """""" uses <pattern>unable to VB appium in NP system</pattern> to indicate that the user is experiencing an error or undesired behavior with running appium. The answer is YES."
+"The sentence """""" It seems like this syntax should be legal, but it isn't """""" uses <pattern>this syntax should be legal</pattern> to indicate that the user is expecting a certain syntax to be legal, but it is not. The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" Following is the issue I get in appium Enqueue Failure: UI Testing Failure - App accessibility isn't loaded. """""" uses <pattern>Enqueue Failure</pattern> and <pattern>UI Testing Failure</pattern> to indicate that ""App accessibility isn't loaded"" is an undesired behavior. The answer is YES."
+"The sentence """""" I'm getting this error :Error on fetch for app/main.js """""" uses <pattern>Error on fetch for NNS/NN</pattern> to indicate that ""Error on fetch for app/main.js"" is the error or undesired behavior. The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" Appium error: An unknown server-side error occurred while processing the command. Original error: Could not proxy. Proxy error: Could not proxy command to remote server. Original error: 404 - ""unknown command"" """""" uses <pattern>Original error: Could not proxy. Proxy error: Could not proxy command to remote server. Original error: 404 - ""unknown command""</pattern> to indicate that ""An unknown server-side error occurred while processing the command"" is an error or undesired behavior. The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" Has gitter cached the old image? """""" uses <pattern>cached the old image</pattern> to indicate that ""gitter"" is experiencing a caching issue where the old image is being displayed. The answer is YES."
+"The sentence """""" If I don't include that, I get error TS2686 related to using UMD globals. """""" uses <pattern>get error TS2686 related to using UMD globals</pattern> to indicate that getting ""error TS2686 related to using UMD globals"" is an undesired behavior. The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" the error is cannot read the propertyplayer """""" uses <pattern>cannot read the property NOUN</pattern> to indicate that ""cannot read the property 'player'"" is the error or undesired behavior. The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" but I can't setup projects (the are not under my username when I create the chat from github, and I can't add a ""/"" in their URL """""" uses <pattern>can't VB JJ NNS</pattern> to indicate that ""can't setup projects"" is an undesired behavior. The answer is YES."
+"The sentence """""" When I run a program in IntelliJ, it always defaults to -Xmx4G no matter where I change the JVM options in the IDE """""" uses <pattern>defaults to JJ NN</pattern> to indicate that the program always defaults to ""-Xmx4G"" which is an undesired behavior. The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" ERROR: for mongo Cannot create container for service mongo: invalid volume specification. """""" uses <pattern>ERROR: for NN Cannot create container for service NN</pattern> to indicate that ""invalid volume specification"" is an error or undesired behavior. The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" any idea why if I changed my email in Github I'm still receiving Gitter email notifications to the old address? """""" uses <pattern>still receiving JJ NNS to the old address</pattern> to indicate that ""still receiving Gitter email notifications to the old address"" is an undesired behavior. The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" Cannot find the module 'adm-zip'.. """""" uses <pattern>Cannot find the module NN</pattern> to indicate that ""Cannot find the module 'adm-zip'"" is an undesired behavior. The answer is YES."
+"The sentence """""" can't figure out why loop back isn't working """""" uses <pattern>isn't working</pattern> to indicate that ""loop back"" is an error or undesired behavior. The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" Does the error mean that I need even more memory? """""" uses <pattern>mean that I need even more JJ NN</pattern> to indicate that the user is unsure if they need to allocate more memory. The answer is NO."
+"The sentence """""" The app starts running, but then crashes after serving a single request. """""" uses <pattern>crashes after VBG</pattern> to indicate that ""crashing after serving a single request"" is an undesired behavior. The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" but I am have some issues with it, it not updating as it should """""" uses <pattern>not updating as it should</pattern> to indicate that ""not updating as it should"" is an undesired behavior. The answer is YES."
+"The sentence """""" curl: (7) Failed to connect to localhost port 9999: Connection refused """""" uses <pattern>Failed to connect to localhost</pattern> to indicate that the user is experiencing a connection issue with the host server. The answer is YES."
+"The sentence """""" I\'m currently getting an exception: ""Per output masking for MCXENT + softmax: not supported"" """""" uses <pattern>getting an exception</pattern> to indicate that the user is experiencing an error or undesired behavior related to ""Per output masking for MCXENT + softmax"". The answer is YES."
+"The sentence """""" After referencing rl4j version 1.0.0-SNAPSHOT in my project it still tries to pull dl4j and nd4j SNAPSHOTs """""" uses <pattern>still tries to pull</pattern> to imply that the undesired behavior is that ""it still tries to pull dl4j and nd4j SNAPSHOTs"". The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" so it saysCannot find name ____ the architecture is: """""" uses <pattern>so it saysCannot find name</pattern> to indicate that ""Cannot find name ____"" is an undesired behavior. The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" 'Exception in thread ""main"" java.lang.IncompatibleClassChangeError: Implementing class' """""" does not contain any indication of the error or undesired behavior. The answer is NO."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" the accurancy seems very low (only up to 12%) """""" uses <pattern>the accuracy seems very low</pattern> to indicate that ""low accuracy"" is an undesired behavior. The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" It looks like ""events"" is the thing I'm looking for... """""" uses <pattern>the thing I'm looking for is</pattern> to indicate that ""events"" is the expected solution. The answer is NO."
+"The sentence """""" We don't mind if all the messages are lost. """""" uses <pattern>don't mind if all the NNS are JJ</pattern> to indicate that the user is willing to lose all the messages. The answer is NO."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" The application at '*/Downloads/DrowsyHypno 2/Apps/1.7.1-e5ed0db.apk' does not exist or is not accessible """""" uses <pattern>does not exist or is not accessible</pattern> to indicate that the ""application"" is not accessible or does not exist. The answer is YES."
+"The sentence """""" Every time I try to download 1.8.2 Windows I get ""Failed - Network error"" """""" uses <pattern>get ""Failed - Network error""</pattern> to indicate that ""getting a network error"" is an undesired behavior. The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" the second test fails """""" uses <pattern>the second test fails</pattern> to indicate that the second test is experiencing an undesired behavior. The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" mounting the volume inside a container fails with block device required """""" uses <pattern>fails with JJ NNS required</pattern> to indicate that ""fails with block device required"" is an undesired behavior. The answer is YES."
+"The sentence """""" I'm getting a lot of ""ExecutorLostFailure (executor 34 exited caused by one of the running tasks) Reason: Remote RPC client disassociated. Likely due to containers exceeding thresholds, or network issues. Check driver logs for WARN messages."" """""" uses <pattern>I'm getting a lot of ""ExecutorLostFailure</pattern> to indicate that the user is experiencing a lot of ""ExecutorLostFailure"" errors. The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" Every time I train, I get an OutOfMemory error thrown. """""" uses <pattern>get an OutOfMemory error</pattern> to indicate that the user is experiencing an OutOfMemory error while training. The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" I'm getting the following error: Exception in thread ""main"" java.lang.IllegalStateException: Unable to get number of of rows for a non 2d matrix """""" uses <pattern>Error in thread ""main"" java.lang.IllegalStateException</pattern> to indicate that the user is encountering an error when calling eval.eval(test.getLabels(), output) on the dataset. The answer is YES."
+"The sentence """""" but it doesnt change the locale """""" uses <pattern>doesnt change the NN</pattern> to indicate that ""doesnt change the locale"" is an undesired behavior. The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" /Users/danlin/git/dl4j-local/libnd4j/include/pairwise_util.h:15:10: fatal error: 'omp.h' file not found """""" uses <pattern>fatal error: JJ NN not found</pattern> to indicate that ""'omp.h' file not found"" is the error or undesired behavior. The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" for some reason it keeps going down """""" uses <pattern>keeps VBG</pattern> to indicate that ""keeps going down"" is an undesired behavior. The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" i cannot transfer eth status always fail currently """""" does not indicate the error or undesired behavior of the system or code provided by the user. The answer is NO."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" when I run ownfuncs.checkQueries() I do. """""" uses <pattern>when I run VB</pattern> to indicate that the user is experiencing an error when running ""ownfuncs.checkQueries()"". The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" First room visited and participants remain despite header bar and URL changing to next room clicked """""" uses <pattern>remain despite</pattern> to indicate that ""participants remain"" is an undesired behavior. The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+No sentences found to indicate the error or undesired behavior. The answer is NO.
+"The sentence """""" but nothing shows up in the network panel for me to inspect the POST request and reverse engineer it """""" uses <pattern>nothing shows up in the network panel</pattern> to indicate that ""nothing shows up"" is an undesired behavior. The answer is YES."
+No sentences found to indicate the error or undesired behavior. The answer is NO.
