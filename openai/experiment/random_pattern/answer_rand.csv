@@ -1,331 +1,398 @@
 answer1
-"The sentence """""" Please help me and tell me, how can I acess my funds on this wallet? """""" uses <pattern>help me and tell me, how can I VB</pattern> to indicate that the user expects to ""acess my funds on this wallet"". The answer is YES."
 No sentences found to indicate the user's expectation. The answer is NO.
-"The sentence """""" Im invested slightly into bitcoin and would love to chat more about cryptocurrencies """""" uses <pattern>love to VB</pattern> to indicate that the user expects to ""chat more about cryptocurrencies"". The answer is YES."
-No sentences found to indicate the user's expectation. The answer is NO.
+"The sentence """""" I'm kind of surprised this isn't a type error """""" uses <pattern>surprised this isn't VBP</pattern> to indicate that the user expects this ""not a type error"". The answer is YES."
 No sentences found to indicate the user's expectation. The answer is NO.
 No sentences found to indicate the user's expectation. The answer is NO.
 No sentences found to indicate the user's expectation. The answer is NO.
-"The sentence """""" My ios app is not launching through appium its just opening and closing with in a fraction of time """""" uses <pattern>not launching</pattern> to indicate that the user expects the app to ""launch through appium"". The answer is YES."
-"The sentence """""" all the pre-processed data is very large and I'm not sure how to store it with the requirement that I want to be able to shuffle the data between each epoch """""" uses <pattern>not sure how to VB</pattern> to indicate that the user expects to ""store the data with the requirement that I want to be able to shuffle the data between each epoch"". The answer is YES."
-"The sentence """""" NODE_ENV=production node_modules/.bin/webpack -p"" but not produce bundle.js file.Plz help me """""" uses <pattern>not produce sth</pattern> to indicate that the user expects ""webpack -p"" to ""produce bundle.js file"". The answer is YES."
+"The sentence """""" is it safe to delete chaindata dir """""" uses <pattern>safe to VB</pattern> to indicate that the user expects to ""delete chaindata dir"". The answer is YES."
+"The sentence """""" Yes I want to check the code coverage of the appium code i have written """""" uses <pattern>want to VB</pattern> to indicate that the user expects to ""check the code coverage of the appium code"". The answer is YES."
 No sentences found to indicate the user's expectation. The answer is NO.
-"The sentence """""" can anyone help me to run mongodb in my system """""" uses <pattern>can anyone help me to VB</pattern> to indicate that the user expects ""to run mongodb in my system"". The answer is YES."
-"The sentence """""" Does anyone know how to use driver.ExecuteJavaScript() to change to an IFrame? """""" uses <pattern>how to VB</pattern> to indicate that the user expects to ""use driver.ExecuteJavaScript() to change to an IFrame"". The answer is YES."
 No sentences found to indicate the user's expectation. The answer is NO.
-"The sentence """""" Are there any video/tutorials about this? """""" uses <pattern>any sth about</pattern> to indicate that the user expects ""video/tutorials about pool mining with a gaming computer"". The answer is YES."
-"The sentence """""" Coverage is failing on my macOS """""" uses <pattern>sth is VBG</pattern> to indicate that the user expects ""Coverage"" to be ""failing"". The answer is YES."
-"The sentence """""" For some reason automation can't even sendkeys to a textbox anymore. """""" uses <pattern>can't VB</pattern> to indicate that the user expects ""automation"" to ""sendkeys to a textbox"". The answer is YES."
-No sentences found to indicate the user's expectation. The answer is NO.
-"The sentence """""" I have mongo collection, use mongoose odm, and try to find element, by query where fields is array of objects. """""" uses <pattern>try to VB</pattern> to indicate that the user expects to ""find element, by query where fields is array of objects"". The answer is YES."
-"The sentence """""" When I try to ""promisify"" library it always returns a .reject() and .then() is not executed. """""" uses <pattern>try to VB</pattern> to indicate that the user expects to ""promisify"" library. The answer is YES."
-"The sentence """""" do anyone know if I can declare decorator on a protected abstract accessor in my base class? """""" uses <pattern>if I can declare decorator on sth</pattern> to indicate that the user expects to ""declare decorator on a protected abstract accessor in my base class"". The answer is YES."
-No sentences found to indicate the user's expectation. The answer is NO.
-"The sentence """""" Has anyone encountered/resolved this error while building nd4j on Windows 7? """""" uses <pattern>encountered sth</pattern> to indicate that the user expects to ""encountered this error"". The answer is YES."
-"The sentence """""" not sure if that's the preferred way to solve it """""" uses <pattern>not sure if sth is</pattern> to indicate that the user's expectation is NOT ""that's the preferred way to solve it"". The answer is YES."
-"The sentence """""" Are there any good tutorials on doing this? """""" uses <pattern>are there any sth</pattern> to indicate that the user expects ""good tutorials on doing this"". The answer is YES."
-"The sentence """""" The problem here I see is that, when I use bodyParser() the above code doesn't get executed """""" uses <pattern>problem ... is that...</pattern> to indicate that the user expects ""the above code"" to ""get executed"". The answer is YES."
-"The sentence """""" I need to check if this text is gone or not """""" uses <pattern>need to VB</pattern> to indicate that the user expects to ""check if this text is gone or not"". The answer is YES."
-"The sentence """""" I want to develop a mobile application that uses blockchain for trading """""" uses <pattern>want to VB</pattern> to indicate that the user expects to ""develop a mobile application"". The answer is YES."
-"The sentence """""" I'm having an issue, no internet inside the container :( """""" uses <pattern>having an issue</pattern> to indicate that the user expects to solve ""no internet inside the container"". The answer is YES."
-"The sentence """""" I need to upgrade my appium 1.6.3 to 1.6.4 in Mac """""" uses <pattern>need to VB</pattern> to indicate that the user expects to ""upgrade my appium 1.6.3 to 1.6.4 in Mac"". The answer is YES."
-No sentences found to indicate the user's expectation. The answer is NO.
-"The sentence """""" I'm getting 'Process finished with exit code 2' when I run model.fit(dataset). """""" uses <pattern>getting sth when VB</pattern> to indicate that the user expects to ""get 'Process finished with exit code 2' when run model.fit(dataset)"". The answer is YES."
-"The sentence """""" anyone know any documents related to docker setup for scaling mongodb here """""" uses <pattern>know any documents</pattern> to indicate that the user expects to ""know documents related to docker setup for scaling mongodb"". The answer is YES."
-"The sentence """""" mining not working and I am not receiving any ether from even though it keeps saying it has """""" uses <pattern>not VB</pattern> to indicate that the user expects ""mining"" to ""work"". The answer is YES."
-"The sentence """""" is there a way to tell the model to ignore one of the columns in my csv files? """""" uses <pattern>is there a way to VB</pattern> to indicate that the user expects to ""tell the model to ignore one of the columns in my csv files"". The answer is YES."
-"The sentence """""" What might be the reason for npm run build to not be able to find specific scripts with CICD runuser """""" uses <pattern>reason for sth to VB</pattern> to indicate that the user expects to ""find specific scripts with CICD runuser"". The answer is YES."
-"The sentence """""" I'm trying to include the ""/app"" directory in my project's root, so that I can import like ""app/actions/my-action"" """""" uses <pattern>trying to VB</pattern> to indicate that the user expects to ""include the ""/app"" directory in my project's root"". The answer is YES."
-"The sentence """""" swarm thinks the node is pending swarm can't find the images on docker hub, even though they exist """""" uses <pattern>swarm thinks sth</pattern> to indicate that the user expects ""the images on docker hub"" to be ""found by swarm"". The answer is YES."
-"The sentence """""" How do I connect to it to pass the code and also read the output from it? """""" uses <pattern>How do I VB</pattern> to indicate that the user expects to ""connect to it"". The answer is YES."
-"The sentence """""" my problem is that i can't received sms on my modem """""" uses <pattern>my problem is that</pattern> to indicate that the user expects to solve ""received sms on my modem"". The answer is YES."
-"The sentence """""" It's worth it to me to update the interfaces whenever the API changes. """""" uses <pattern>It's worth it to me to VB</pattern> to indicate that the user expects to ""update the interfaces whenever the API changes"". The answer is YES."
-"The sentence """""" I want to run a socket image based on a newer kernel? """""" uses <pattern>want to VB</pattern> to indicate that the user expects to ""run a socket image based on a newer kernel"". The answer is YES."
-"The sentence """""" npm run test --url=google.com --url=vk.com """""" uses <pattern>npm run test</pattern> to indicate that the user expects to ""run test"". The answer is YES."
-"The sentence """""" I want to allow only numbers as indexes/keys """""" uses <pattern>want to VB</pattern> to indicate that the user expects ""only numbers as indexes/keys"". The answer is YES."
-"The sentence """""" I expected the behavior to be the same as when I provide a prebuilt model using the useExistingWordVectors method """""" uses <pattern>expected sth to VB</pattern> to indicate that the user expects the behavior to ""be the same as when I provide a prebuilt model using the useExistingWordVectors method"". The answer is YES."
-"The sentence """""" There is no problem with https requesting http here. """""" uses <pattern>no problem with sth VBG</pattern> to indicate that the user expects ""https requesting http"". The answer is YES."
-No sentences found to indicate the user's expectation. The answer is NO.
-"The sentence """""" how would you measure it? """""" uses <pattern>would you VB</pattern> to indicate that the user expects to ""measure it"". The answer is YES."
-"The sentence """""" It can resolve the module with intellisense but it just won't compile """""" uses <pattern>just won't VB</pattern> to indicate that the user expects to ""compile"". The answer is YES."
-"The sentence """""" On post 4445 I am running another server which gets about 8000 airports and using ajax-request sending a post request with the airport dits """""" uses <pattern>using sth to VB</pattern> to indicate that the user expects to ""use ajax-request"". The answer is YES."
-No sentences found to indicate the user's expectation. The answer is NO.
-"The sentence """""" Should i add the nd4j-jblas to my pom.xml file if I want GPU suport? """""" uses <pattern>should I VB</pattern> to indicate that the user expects to ""add the nd4j-jblas to my pom.xml file"". The answer is YES."
-"The sentence """""" is there any other way i can do it so that i can override the inside container conf. files """""" uses <pattern>is there any other way ...</pattern> but ""override the inside container conf. files"" is too vague and does not imply the exact user's expectation, so the answer is NO."
-No sentences found to indicate the user's expectation. The answer is NO.
-"The sentence """""" I tried allien on deb package but it not worked """""" uses <pattern>tried VB</pattern> to indicate that the user expects to ""install gitter desktop on Fedora"". The answer is YES."
-"The sentence """""" do i need to specify volume in the Dockerfile """""" uses <pattern>need to VB</pattern> to indicate that the user expects to ""specify volume in the Dockerfile"". The answer is YES."
-"The sentence """""" i want to use phpstorm on my local machine to work via sftp on the vps (changing files in the container volume.) """""" uses <pattern>want to VB</pattern> to indicate that the user expects to ""use phpstorm on my local machine to work via sftp on the vps"". The answer is YES."
-"The sentence """""" i need some help in Appium installation in mac for IOS please assist me """""" uses <pattern>need some help in sth</pattern> to indicate that the user expects to ""installation in mac for IOS"". The answer is YES."
-"The sentence """""" but no files in my host machine dir (marked in orange). what am i missing? """""" uses <pattern>what am I missing</pattern> to indicate that the user expects to know ""what am I missing"". The answer is YES."
-"The sentence """""" Is there way how to increase the speed of testing(not training neural Network)? """""" uses <pattern>way how to VB</pattern> to indicate that the user expects ""increase the speed of testing"". The answer is YES."
-"The sentence """""" but why can't this be converted to a getter that returns the concatenated value on demand rather than allocating memory for the string? """""" uses <pattern>why can't sth VB</pattern> to indicate that the user expects to ""convert this to a getter that returns the concatenated value on demand"". The answer is YES."
-"The sentence """""" is it correct that the ""nOut"" parameter for a ConvLayer is the number of kernels/filters that will be applied to the input an therefore result in the ""depth"" dimension of the resulting volume? """""" uses <pattern>is it correct that...</pattern> to indicate that the user expects to know ""the ""nOut"" parameter for a ConvLayer"". The answer is YES."
-"The sentence """""" i just want to run simple script written in Typescript and be able to debug it """""" uses <pattern>want to VB</pattern> to indicate that the user expects to ""run simple script written in Typescript"". The answer is YES."
-"The sentence """""" Anyone know what I'm doing wrong here? """""" uses <pattern>anyone know</pattern> to indicate that the user expects to ""know what I'm doing wrong"". The answer is YES."
-"The sentence """""" ""ErrorAn unknown server-side error occurred while processing the command. Original error: Sdk '10.2.1' was not in list of simctl sdks"" """""" uses <pattern>getting sth</pattern> to indicate that the user expects to ""open an app using real device"". The answer is YES."
-"The sentence """""" anyone else facing problems with the ethereum wallet not synching/starting """""" uses <pattern>anyone else facing problems with sth</pattern> to indicate that the user expects the ethereum wallet to ""synch/starting"". The answer is YES."
-"The sentence """""" I am not able to use setValue function in uiautomator2 but only if I use setValue for setting the PIN in the app, it works if I use sendkeys it is not proceeding to next page can somebody help on using uiautomator2 """""" uses <pattern>can somebody help on VBG</pattern> to indicate that the user expects ""somebody help on using uiautomator2"". The answer is YES."
-"The sentence """""" are they just as fast or does everything become like xpath brutally slow? """""" uses <pattern>or does sth VB</pattern> to indicate that the user expects ""everything become like xpath brutally slow"". The answer is YES."
-"The sentence """""" im not really worried about client the idea can be compared with slack to have like team channels clients are only gonna be receiving """""" uses <pattern>im not really worried about sth</pattern> to indicate that the user expects ""client"". The answer is YES."
-"The sentence """""" i've run into a problem with the f1score function which uses labelProbabilities """""" uses <pattern>run into sth</pattern> to indicate that the user expects ""a problem with the f1score function"". The answer is YES."
-"The sentence """""" Is there a setting to fix this behaviour? """""" uses <pattern>Is there a sth to VB</pattern> to indicate that the user expects to ""fix this behaviour"". The answer is YES."
-"The sentence """""" my deposit is not showing up on etherdelta. is there a problem with the exchange guys? """""" uses <pattern>is there a problem with</pattern> to indicate that the user expects ""a problem with the exchange guys"". The answer is YES."
-"The sentence """""" docker stop ,docker rm -f , doesn't work ,it always created a new container after a few seconds """""" uses <pattern>doesn't VB</pattern> to indicate that the user expects docker stop and docker rm -f to ""work"". The answer is YES."
-"The sentence """""" Are they concatenated and ran through or one by one and the output concatenated? """""" uses <pattern>Are they VB</pattern> to indicate that the user expects to know ""they are concatenated and ran through or one by one and the output concatenated"". The answer is YES."
-"The sentence """""" perhaps I've a folder with all jars and I'm starting it with a .sh file. """""" uses <pattern>perhaps I've sth</pattern> to indicate that the user expects to run ""run on a unix machine"". The answer is YES."
-No sentences found to indicate the user's expectation. The answer is NO.
-"The sentence """""" I try to bind tcp connection between two services, to share the same event_bus """""" uses <pattern>trying to VB</pattern> to indicate that the user expects to ""bind tcp connection between two services, to share the same event_bus"". The answer is YES."
-"The sentence """""" If I am using gensim at the moment """""" uses <pattern>if I am using VBG</pattern> to indicate that the user expects to ""use gensim"". The answer is YES."
-"The sentence """""" but I can't open it.. any idea? """""" uses <pattern>can't VB</pattern> to indicate that the user expects to ""open it"". The answer is YES."
-"The sentence """""" I'm just doing a ""npm rebuild"" """""" uses <pattern>doing sth</pattern> to indicate that the user expects ""npm rebuild"" to work. The answer is YES."
-"The sentence """""" I'am having some issues I keep getting this error in the tx id's idk if the tokens were created or not lol """""" uses <pattern>having sth</pattern> to indicate that the user expects ""some issues"". The answer is YES."
-"The sentence """""" how to use firebase for my project """""" uses <pattern>how to VB</pattern> to indicate that the user expects ""use firebase for my project"". The answer is YES."
-"The sentence """""" i can't build structure like - Gosts (Folder) -> 1998 (Folder) -> 1 quarter (Folder) -> GOST 123.98 (document) -> 1.1 (Item) """""" uses <pattern>can't VB</pattern> to indicate that the user expects to ""build structure"". The answer is YES."
-"The sentence """""" i can't send any eth with my mist wallet """""" uses <pattern>can't VB</pattern> to indicate that the user expects to ""send any eth with my mist wallet"". The answer is YES."
-"The sentence """""" is it possible to have httpd and php7 on separated containers and setup httpd on the first container to use php on the second container """""" uses <pattern>is it possible to VB</pattern> to indicate that the user expects to ""have httpd and php7 on separated containers"". The answer is YES."
-"The sentence """""" I have given time as 10sec and within 10 sec our test case is failed then how can we add multiple time on same test case """""" uses <pattern>how can we VB</pattern> to indicate that the user expects to ""add multiple time on same test case"". The answer is YES."
-"The sentence """""" I'm currently coding a very simple program one which will open Safari on my ""real"" iPhone s4 """""" uses <pattern>currently coding sth</pattern> to indicate that the user expects to ""code a very simple program"". The answer is YES."
-"The sentence """""" Do you know what I've to download to work with DL4J? But I don't see any example about how to do a new data set or how to use images to create that data set. """""" uses <pattern>have to VB</pattern> to indicate that the user expects to ""download to work with DL4J"". The answer is YES."
-"The sentence """""" any idea about this? """""" uses <pattern>any idea sth</pattern> to indicate that the user expects ""any idea about this"". The answer is YES."
-"The sentence """""" I think I found an issue that explains this """""" uses <pattern>I think I found sth</pattern> to indicate that the user expects ""an issue that explains this"". The answer is YES."
-No sentences found to indicate the user's expectation. The answer is NO.
-"The sentence """""" Any help/pointers would be greatly appreciated. """""" uses <pattern>would be appreciated</pattern> to indicate that the user expects ""help/pointers"". The answer is YES."
-"The sentence """""" Following is the issue I get in appium Enqueue Failure: UI Testing Failure - App accessibility isn't loaded """""" uses <pattern>Following is sth</pattern> to indicate that the user expects ""UI Testing Failure - App accessibility isn't loaded"" in ""appium"". The answer is YES."
-No sentences found to indicate the user's expectation. The answer is NO.
-"The sentence """""" I'm looking for a computer game that """""" uses <pattern>looking for sth</pattern> to indicate that the user expects ""a computer game"". The answer is YES."
-No sentences found to indicate the user's expectation. The answer is NO.
-"The sentence """""" I used Linux brew to install docker I think not sure about docker.io """""" uses <pattern>used sth to VB</pattern> to indicate that the user expects to ""install docker"". The answer is YES."
-"The sentence """""" I can't find the elements in the appium desktop inspector tree """""" uses <pattern>can't VB</pattern> to indicate that the user expects NOT to ""find the elements in the appium desktop inspector tree"". The answer is YES."
-"The sentence """""" this is occuring when i take screenshot () by webdriverio """""" uses <pattern>this is occurring when VBG</pattern> to indicate that the user expects ""screenshot () by webdriverio"". The answer is YES."
-No sentences found to indicate the user's expectation. The answer is NO.
-"The sentence """""" I can't seem to find anything with more details about it """""" uses <pattern>can't VB</pattern> to indicate that the user expects to ""find anything with more details about it"". The answer is YES."
-"The sentence """""" I would like to know if there's a way to mock the camera to test barcodes """""" uses <pattern>would like to VB</pattern> to indicate that the user expects to ""mock the camera to test barcodes"". The answer is YES."
-"The sentence """""" is there anything wrong with defining a single instance of the class and passing it to .addLayer multiple times """""" uses <pattern>is there anything wrong with VBG</pattern> to indicate that the user expects to ""define a single instance of the class and passing it to .addLayer multiple times"". The answer is YES."
-"The sentence """""" I would like to change my Gitter username to ""go_resty"" or ""go-resty"" """""" uses <pattern>would like to VB</pattern> to indicate that the user expects to ""change my Gitter username"". The answer is YES."
-"The sentence """""" It's really bugging me """""" uses <pattern>really bugging VB</pattern> to indicate that the user expects ""it"" to ""sort itself out over time"". The answer is YES."
-"The sentence """""" I'm in the middle of converting from using the typings CLI to npm with@types """""" uses <pattern>in the middle of VBG</pattern> to indicate that the user expects to ""convert from using the typings CLI to npm with@types"". The answer is YES."
-"The sentence """""" i am trying to get momentjsobjects to work """""" uses <pattern>trying to VB</pattern> to indicate that the user expects to ""momentjsobjects to work"". The answer is YES."
-No sentences found to indicate the user's expectation. The answer is NO.
-"The sentence """"""  error message is: Too short EDID data """""" uses <pattern>error message is</pattern> to indicate that the user's expectation is ""error message"". The answer is YES."
-"The sentence """""" but, globalBuffer not change, why? """""" uses <pattern>VB ADJ</pattern> to indicate that the user expects ""globalBuffer"" to ""change"". The answer is YES."
-"The sentence """""" I'm unable to setup this... It's ok for my direct chat, but I can't setup projects (the are not under my username when I create the chat from github, and I can't add a ""/"" in their URL. """""" uses <pattern>unable to VB</pattern> to indicate that the user expects to ""setup projects"". The answer is YES."
-"The sentence """""" I hope someone here can help me instead """""" uses <pattern>hope someone/sth can VB</pattern> to indicate that the user expects ""someone here"" to ""help me instead"". The answer is YES."
-"The sentence """""" It seems to work but is there a way to check whether this was really computed by gpu """""" uses <pattern>a way to VB</pattern> to indicate that the user expects ""check whether this was really computed by gpu"". The answer is YES."
-No sentences found to indicate the user's expectation. The answer is NO.
-"The sentence """""" My question is: Does the optimisation config employ a type of early stopping """""" uses <pattern>My question is: VBZ</pattern> to indicate that the user expects ""the optimisation config"" to ""employ a type of early stopping"". The answer is YES."
-No sentences found to indicate the user's expectation. The answer is NO.
-"The sentence """""" is there any tutorial for robotframework using appiumlibrary? """""" uses <pattern>is there any sth</pattern> to indicate that the user expects ""tutorial for robotframework using appiumlibrary"". The answer is YES."
-"The sentence """""" Does it make sense to wrap logs with ""``` text"" """""" uses <pattern>make sense to VB</pattern> to indicate that the user expects ""logs"" to ""be wrapped with ``` text"". The answer is YES."
-"The sentence """""" Can anyone help me how can I use Google maps API in my node project """""" uses <pattern>can anyone help me how</pattern> to indicate that the user expects ""help me how to use Google maps API"". The answer is YES."
-"The sentence """""" is there anything new on ios/android app logs being accessible in appium """""" uses <pattern>is there anything new on sth</pattern> to indicate that the user expects to ""be accessible in appium"". The answer is YES."
-"The sentence """""" what should i do? """""" uses <pattern>what should I VB</pattern> to indicate that the user expects to ""convert the response object to my DataObject"". The answer is YES."
-"The sentence """""" I also require CTC, is that implemented too? """""" uses <pattern>require sth</pattern> to indicate that the user expects CTC ""to be implemented"". The answer is YES."
-No sentences found to indicate the user's expectation. The answer is NO.
-"The sentence """""" i've searched the documentation and can't seem to find how to block users from private messaging you """""" uses <pattern>can't seem to VB</pattern> to indicate that the user expects to ""block users from private messaging"". The answer is YES."
-"The sentence """""" is there any way of combining columns using datavec """""" uses <pattern>is there any way of VBG</pattern> to indicate that the user expects to ""combine columns using datavec"". The answer is YES."
-"The sentence """""" i'd like to ask for your help.I've tried to send ETH trough the telegram wallet Monee.Trx ID in Etherscan. telegram I've wrote ""@wallet number sum"" instead of ""wallet number sum"", so it appears that they gone to the wrong wallet. Cause Monee bot take as the users address. Currency have gone and not to my binance wallet. Could you please help me anyhow? Maybe i can connect with the owner of the wallet somehow. Thank you. """""" uses <pattern>help me anyhow</pattern> to indicate that the user expects to ""help me anyhow"". The answer is YES."
-"The sentence """""" when we do ImageTransform on data, it is done before ImageRecordReader resize image or after that? """""" uses <pattern>done before ADJ or after that</pattern> to indicate that the user expects to clarify when ImageTransform is done. The answer is YES."
-"The sentence """""" what would I need to do to emulate/make it work? """""" uses <pattern>what would I need to do to VB</pattern> to indicate that the user expects to ""emulate/make it work"". The answer is YES."
-"The sentence """""" I continue receiving this error code while trying to use node.js on command prompt """""" uses <pattern>trying to VB</pattern> to indicate that the user expects to ""use node.js on command prompt"". The answer is YES."
-"The sentence """""" guess """""" uses <pattern>guess</pattern> but ""guess"" is too vague and does not imply the exact user's expectation, so the answer is NO."
-"The sentence """""" I can't install anything even i re-installed node and npm """""" uses <pattern>can't VB</pattern> to indicate that the user expects not to ""install anything"". The answer is YES."
-"The sentence """""" I'm still receiving Gitter email notifications to the old address """""" uses <pattern>still VB</pattern> to indicate that the user expects to ""receive Gitter email notifications to the new address"". The answer is YES."
-"The sentence """""" I'd like to use Gitlab instead, but I don't want to have to add each room I'm part of. """""" uses <pattern>want to VB</pattern> to indicate that the user expects to ""use Gitlab instead"". The answer is YES."
-"The sentence """""" tried with hiogh gas price and gets stuck """""" uses <pattern>tried with sth and VBZ</pattern> to indicate that the user expects to ""clear a stucked transaction"". The answer is YES."
-"The sentence """""" Was looking at LUKs but seems that changes the docker engine config and would apply to all containers """""" uses <pattern>looking at VBG</pattern> to indicate that the user expects to ""change the docker engine config"". The answer is YES."
-"The sentence """""" npm build is failing """""" uses <pattern>VBZ</pattern> to indicate that the user expects ""npm build"" to ""be failing"". The answer is YES."
-"The sentence """""" While executing the gulp command getting this error """""" uses <pattern>getting sth</pattern> to indicate that the user expects to ""execute the gulp command"". The answer is YES."
-"The sentence """""" I am getting started with docker today with Windows containers """""" uses <pattern>getting started with sth</pattern> to indicate that the user expects to ""start with docker today with Windows containers"". The answer is YES."
-"The sentence """""" What might be a reason for ""Cannot do forward pass: inputs not set"" """""" uses <pattern>what might be a reason for sth</pattern> to indicate that the user expects ""a reason for the exception"". The answer is YES."
-"The sentence """""" Is there anything I can do to fix that problem? """""" uses <pattern>anything I can do to VB</pattern> to indicate that the user expects to ""fix that problem"". The answer is YES."
-"The sentence """""" I'm also having some problem running the examples """""" uses <pattern>having sth</pattern> to indicate that the user expects ""running the examples"". The answer is YES."
-"The sentence """""" i want to by some of those ethereum machine but i dont have any idea what i can do with those can somebody explain me this """""" uses <pattern>i want to VB</pattern> to indicate that the user expects to ""by some of those ethereum machine"". The answer is YES."
-"The sentence """""" lets say that someAsync, is a generator function and it does smth.. in the end it 'returns' a value """""" uses <pattern>say that sth is</pattern> to indicate that the user expects ""someAsync"" to ""be a generator function"". The answer is YES."
-"The sentence """""" heard that it can be automated using an image from gallery """""" uses <pattern>heard that sth can be VBN</pattern> to indicate that the user expects ""it"" to ""be automated using an image from gallery"". The answer is YES."
-"The sentence """""" I got Flow.js working and everything, but I can't get TypeScript to recognize my ES6 imports. """""" uses <pattern>can't get sth to VB</pattern> to indicate that the user expects ""TypeScript"" to ""recognize my ES6 imports"". The answer is YES."
-"The sentence """""" Is there a way to get any error message? """""" uses <pattern>is there a way to VB</pattern> to indicate that the user expects to ""get any error message"". The answer is YES."
-"The sentence """""" What should I add with JSDoc so tsc with checkJs doesn't throw an error """""" uses <pattern>should VB</pattern> to indicate that the user expects to ""add with JSDoc so tsc with checkJs doesn't throw an error"". The answer is YES."
-"The sentence """""" To be more specific: Multiple node modules, each with a pacakge.json, each writtein in typescript """""" uses <pattern>to be more specific</pattern> to indicate that the user expects ""Multiple node modules, each with a pacakge.json, each writtein in typescript"". The answer is YES."
-"The sentence """""" Does the error mean that I need even more memory? """""" uses <pattern>Does ... mean ...</pattern> to indicate that the user expects the error ""mean that I need even more memory"". The answer is YES."
-"The sentence """""" Does anyone have any idea what might be going on? """""" uses <pattern>any idea what might be</pattern> to indicate that the user expects ""any idea what might be going on"". The answer is YES."
-"The sentence """""" Has anyone run into ""Error response from daemon: missing signature key"" when trying to do a docker pull from a private registry? """""" uses <pattern>run into</pattern> to indicate that the user expects to ""do a docker pull from a private registry"". The answer is YES."
-"The sentence """""" It appears that Gitter does not support issuing notifications """""" uses <pattern>appears sth</pattern> to indicate that the user expects ""Gitter not to support issuing notifications"". The answer is YES."
-"The sentence """""" does trainData get a) 65% of iter.next contents, b) all of the previous data in getTrain, plus the new data from iter.net? ie. does it add to the dataset in place. """""" uses <pattern>does sth get sth</pattern> to indicate that the user expects ""trainData"" to ""get a) 65% of iter.next contents, b) all of the previous data in getTrain, plus the new data from iter.net"". The answer is YES."
-"The sentence """""" Seems likeInstanceType< typeof specificThing>only gives the generic type :( """""" uses <pattern>give sth</pattern> to indicate that the user expects ""InstanceType"" to ""give the generic type"". The answer is YES."
-"The sentence """""" I am making use of a nodejs serve-sent event and client side eventSource. but I am have some issues with it, it not updating as it should. """""" uses <pattern>have some issues with sth</pattern> to indicate that the user expects ""node serve-sent event and client side eventSource"" to ""updating as it should"". The answer is YES."
-"The sentence """""" I just run a server on host (python -m http.server 9999) but """""" uses <pattern>I just run sth</pattern> to indicate that the user expects to ""run a server on host"". The answer is YES."
-"The sentence """""" Is there any way I can use MultiDataset without masking the labels? """""" uses <pattern>is there any way to VB</pattern> to indicate that the user expects to ""use MultiDataset without masking the labels"". The answer is YES."
-"The sentence """""" How can I build rl4j from source and install 1.0.0-SNAPSHOT that references 1.0.0-beta3 dl4j and nd4j jars? """""" uses <pattern>can I VB</pattern> to indicate that the user expects to ""build rl4j from source"". The answer is YES."
-"The sentence """""" How about those untraceable ETH TX transations which can't be found in Etherscan.Io? """""" uses <pattern>how about sth</pattern> to indicate that the user expects to ""untraceable ETH TX transations which can't be found in Etherscan.Io"". The answer is YES."
-"The sentence """""" i'm not sure why i would need to its not importing anything using the DOM """""" uses <pattern>not sure why sth</pattern> to indicate that the user expects to ""import anything using the DOM"". The answer is YES."
-"The sentence """""" I have eth0 and eth1 serving external traffic that needs to be routed to my container """""" uses <pattern>needs to be VBN</pattern> to indicate that the user expects ""external traffic"" to ""be routed to my container"". The answer is YES."
-"The sentence """""" If I want to restart training, can I just callMultiLayerNetwork.initto reset and start from scratch? """""" uses <pattern>can I just VB</pattern> to indicate that the user expects to ""callMultiLayerNetwork.initto reset and start from scratch"". The answer is YES."
-No sentences found to indicate the user's expectation. The answer is NO.
-"The sentence """""" I am having the same issue as yesterday, and this after I created a MultidatasetIterator as you suggested """""" uses <pattern>having sth</pattern> to indicate that the user expects ""the same issue"". The answer is YES."
-"The sentence """""" is it possible not to display my full name? """""" uses <pattern>possible not to VB</pattern> to indicate that the user expects to ""not display my full name"". The answer is YES."
-No sentences found to indicate the user's expectation. The answer is NO.
-"The sentence """""" Is there a type that means unknown function? """""" uses <pattern>is there a type that VB</pattern> to indicate that the user expects ""a type that means unknown function"". The answer is YES."
-"The sentence """""" I wonder why I did not have a GitLab account until today """""" uses <pattern>wonder why</pattern> to indicate that the user expects to know ""why I did not have a GitLab account until today"". The answer is YES."
-"The sentence """""" I'm able to run the Ethereum wallet using the portable zip """""" uses <pattern>able to VB</pattern> to indicate that the user expects to ""run the Ethereum wallet using the portable zip"". The answer is YES."
-No sentences found to indicate the user's expectation. The answer is NO.
-"The sentence """""" is it safe to delete chaindata dir and restart my sync with --fast flag? """""" uses <pattern>is it safe to VB</pattern> to indicate that the user expects to ""delete chaindata dir and restart my sync with --fast flag"". The answer is YES."
-"The sentence """""" Yes I want to check the code coverage of the appium code i have written my android app is written in java, my tests are run using appium """""" uses <pattern>want to VB</pattern> to indicate that the user expects to ""check the code coverage of the appium code"". The answer is YES."
-"The sentence """""" I just keep getting: eth/downloader/downloader.go:305] Synchronisation failed: block download canceled (requested) """""" uses <pattern>keep getting sth</pattern> to indicate that the user expects to ""troubleshoot the sync"". The answer is YES."
-"The sentence """""" I have multiple contracts in one code source. how to deploy all these contracts under the of one contract in remix ? """""" uses <pattern>how to VB</pattern> to indicate that the user expects to ""deploy all these contracts under the of one contract in remix"". The answer is YES."
-"The sentence """""" what is difference between webelement.click(); and driver.tap(1, webelement, 1); """""" uses <pattern>difference between sth and sth</pattern> to indicate that the user expects the ""difference between webelement.click(); and driver.tap(1, webelement, 1);"". The answer is YES."
+"The sentence """""" what is difference between webelement.click(); and driver.tap(1, webelement, 1); """""" uses <pattern>difference between</pattern> to indicate that the user expects an answer about ""the difference between webelement.click(); and driver.tap(1, webelement, 1);"". The answer is YES."
 "The sentence """""" is it possible to inject a file into an image before starting a container from that image? """""" uses <pattern>is it possible to VB</pattern> to indicate that the user expects to ""inject a file into an image"". The answer is YES."
-"The sentence """""" This library exposes __RCS.Scrollbar using commonjs module. """""" uses <pattern>exposes sth using sth</pattern> to indicate that the user expects the library to ""expose __RCS.Scrollbar using commonjs module"". The answer is YES."
-"The sentence """""" I wonder if there is some kind of defacto standard one that is being used a lot """""" uses <pattern>wonder if there is sth</pattern> to indicate that the user expects ""some kind of defacto standard one"". The answer is YES."
-"The sentence """""" Ideally we'd now like to start fresh with a Gitter room based on that org """""" uses <pattern>Ideally we'd like to VB</pattern> to indicate that the user expects to ""start fresh with a Gitter room based on that org"". The answer is YES."
-"The sentence """""" I was surprised but i guess in practical terms it won't be so much of a problem """""" uses <pattern>be so much of a problem</pattern> to indicate that the user expects ""it won't be so much of a problem"". The answer is YES."
+"The sentence """""" if included on a webpage in a global context is this good enough, """""" uses <pattern>good enough</pattern> to indicate that the user expects ""this definition file will be included with my package"". The answer is YES."
+"The sentence """""" I need a very simple signal library """""" uses <pattern>need a</pattern> to indicate that the user expects to ""use a signal library"". The answer is YES."
+"The sentence """""" Ideally we'd now like to start fresh with a Gitter room based on that org, but we can't access the old one any more """""" uses <pattern>would like to VB</pattern> to indicate that the user expects to ""start fresh with a Gitter room based on that org"". The answer is YES."
+"The sentence """""" i've given it aStream<Sheep>, it's not breaking """""" uses <pattern>not breaking</pattern> to indicate that the user expects the function to be ""not breaking"". The answer is YES."
 No sentences found to indicate the user's expectation. The answer is NO.
-"The sentence """""" Every time I try to downlaod 1.8.2 Wnidows I get ""Failed - Network error"" """""" uses <pattern>trying to VB</pattern> to indicate that the user expects to ""downlaod 1.8.2 Wnidows"". The answer is YES."
-"The sentence """""" i would like to share an observation, and dependign on your input, i could file an issue. """""" uses <pattern>would like to VB</pattern> to indicate that the user expects to ""share an observation"". The answer is YES."
-"The sentence """""" Any idea why? If I reinstall appium, it will start successfully go through """""" uses <pattern>any idea why</pattern> to indicate that the user expects to know ""why"" the second test fails. The answer is YES."
-"The sentence """""" Is it possible to have a node script command in a parent directory call a node script of child directory? """""" uses <pattern>is it possible to VB</pattern> to indicate that the user expects to ""have a node script command in a parent directory call a node script of child directory"". The answer is YES."
-"The sentence """""" is it not possible to have a squashfs volume """""" uses <pattern>is it not possible to VB</pattern> to indicate that the user expects to ""have a squashfs volume"". The answer is YES."
-"The sentence """""" I'm facing a lot of problem in training neural network with Spark """""" uses <pattern>facing sth in VBG</pattern> to indicate that the user expects to ""train neural network with Spark"". The answer is YES."
-"The sentence """""" I'm looking into beginning a long term investment into Ethereum """""" uses <pattern>looking into VBG</pattern> to indicate that the user expects to ""begin a long term investment into Ethereum"". The answer is YES."
-"The sentence """""" I would have to schedule an external script that regularly kills the container and then recreates it """""" uses <pattern>would have to VB</pattern> to indicate that the user expects to ""schedule an external script that regularly kills the container and then recreates it"". The answer is YES."
-"The sentence """""" How to tell wordpress to read this type of tags """""" uses <pattern>How to VB</pattern> to indicate that the user expects to ""tell wordpress to read this type of tags"". The answer is YES."
 No sentences found to indicate the user's expectation. The answer is NO.
-"The sentence """""" I have added the App Activity and name """""" uses <pattern>added sth</pattern> to indicate that the user expects to ""open the Native Chrome app"". The answer is YES."
 No sentences found to indicate the user's expectation. The answer is NO.
-"The sentence """""" I can't see a technical/functional purpose for it """""" uses <pattern>can't see a sth for it</pattern> to indicate that the user expects NOT ""a technical/functional purpose for it"". The answer is YES."
-"The sentence """""" I've been here a few times asking similar questions but I can't seem to get past this """""" uses <pattern>can't seem to VB</pattern> to indicate that the user expects to ""get past this"". The answer is YES."
-"The sentence """""" Is there some way of ... using .load without pumping the file contents into the REPL session history? """""" uses <pattern>is there some way of VB</pattern> to indicate that the user expects to ""use .load without pumping the file contents into the REPL session history"". The answer is YES."
-"The sentence """""" I need to dynamically set component's parameters (without restart) """""" uses <pattern>need to VB</pattern> to indicate that the user expects ""dynamically set component's parameters"". The answer is YES."
+"The sentence """""" If I reinstall appium, it will start successfully go through """""" uses <pattern>will VB</pattern> to indicate that the user expects the app to ""start successfully go through"". The answer is YES."
+"The sentence """""" Is it possible to have a node script command in a parent directory call a node script of child directory? """""" uses <pattern>possible to VB</pattern> to indicate that the user expects ""a node script command in a parent directory call a node script of child directory"". The answer is YES."
+"The sentence """""" docker volume create -d local -o type=squashfs -o device=$(pwd)/pia.squashfsand then mounting the volume inside a container fails withblock device required """""" uses <pattern>fails withblock</pattern> to indicate that the user expects ""the volume to be mounted"". The answer is YES."
+"The sentence """""" I'm facing a lot of problem in training neural network with Spark """""" uses <pattern>facing VBG</pattern> to indicate that the user expects to ""train neural network with Spark"". The answer is YES."
+No sentences found to indicate the user's expectation. The answer is NO.
+"The sentence """""" so if I wanted to make sure the container is always up to date I would have to schedule an external script that regularly kills the container and then recreates it? """""" uses <pattern>would have to VB</pattern> to indicate that the user expects to ""schedule an external script that regularly kills the container and then recreates it"". The answer is YES."
+No sentences found to indicate the user's expectation. The answer is NO.
+No sentences found to indicate the user's expectation. The answer is NO.
+"The sentence """""" Trying to open the Native Chrome app in a Pixel emulator. """""" uses <pattern>trying to VB</pattern> to indicate that the user expects to ""open the Native Chrome app in a Pixel emulator"". The answer is YES."
+No sentences found to indicate the user's expectation. The answer is NO.
+"The sentence """""" I've always used EXPOSE in my Dockerfiles, however other than informing the user """""" uses <pattern>always VB</pattern> to indicate that the user expects to ""use EXPOSE in Dockerfiles"". The answer is YES."
+No sentences found to indicate the user's expectation. The answer is NO.
+"The sentence """""" Is there some way of a) using .load without pumping the file contents into the REPL session history? b) filtering history navigation by what you type like IPython? """""" uses <pattern>some way of VB</pattern> to indicate that the user expects ""a way of a) using .load without pumping the file contents into the REPL session history? b) filtering history navigation by what you type like IPython?"". The answer is YES."
+"The sentence """""" I need to dynamically set component's parameters (without restart) """""" uses <pattern>need to VB</pattern> to indicate that the user expects to ""dynamically set component's parameters"". The answer is YES."
 "The sentence """""" anyone managed to use sqlite in an aurelia app? """""" uses <pattern>managed to VB</pattern> to indicate that the user expects to ""use sqlite in an aurelia app"". The answer is YES."
-"The sentence """""" many people starting in source code projects just didnt get involved """""" uses <pattern>many people starting in sth just didnt VB</pattern> to indicate that the user expects ""many people starting in source code projects"" to ""get involved"". The answer is YES."
+No sentences found to indicate the user's expectation. The answer is NO.
 "The sentence """""" i want to make a function that accepts a callback """""" uses <pattern>want to VB</pattern> to indicate that the user expects to ""make a function that accepts a callback"". The answer is YES."
-"The sentence """""" I can't seem to add the deeplearning4j-zoo dependency in the image classification tutorial """""" uses <pattern>can't VB</pattern> to indicate that the user expects to ""add the deeplearning4j-zoo dependency in the image classification tutorial"". The answer is YES."
-"The sentence """""" Not sure if there is also an issue when calling eval.eval(test.getLabels(), output); """""" uses <pattern>not sure if VB</pattern> to indicate that the user expects to ""call eval.eval(test.getLabels(), output);"". The answer is YES."
-"The sentence """""" I thought we can set this on android only...does it work on iOS too? """""" uses <pattern>does it work on iOS too?</pattern> to indicate that the user expects to ""get the device locale in iOS"". The answer is YES."
 No sentences found to indicate the user's expectation. The answer is NO.
-"The sentence """""" I've managed to build locally before (e.g 0.5 ), but now when trying to build 0.6.1-SNAPSHOT I'm getting an error I haven't seen before when building libnd4j """""" uses <pattern>trying to VB</pattern> to indicate that the user expects to ""build 0.6.1-SNAPSHOT"". The answer is YES."
-"The sentence """""" maybe because leaving """""" uses <pattern>maybe because</pattern> to indicate that the user expects to delete his gitter room because he is ""leaving"". The answer is YES."
-"The sentence """""" but still i am expecting :) """""" uses <pattern>still VB</pattern> to indicate that the user expects ""ether support to reply"". The answer is YES."
-"The sentence """""" is it normal to be delayed so much? """""" uses <pattern>is it normal to VB</pattern> to indicate that the user expects to ""be delayed so much"". The answer is YES."
-"The sentence """""" I'm trying to find a workaround but nothing seems to be working... """""" uses <pattern>trying to VB</pattern> to indicate that the user expects to ""find a workaround"". The answer is YES."
-"The sentence """""" i'm working around it by making them instance members, but it makes for a lot of unnecessary code """""" uses <pattern>working around it by VBG</pattern> to indicate that the user expects to ""work around it by making them instance members"". The answer is YES."
-"The sentence """""" can any one help in handling month picker date and year picker are working """""" uses <pattern>can any one help in VBG</pattern> to indicate that the user expects ""help in handling month picker date and year picker"". The answer is YES."
-"The sentence """""" Cool Guys scroll on UICollectionView isn't working """""" uses <pattern>isn't working</pattern> to indicate that the user expects ""scroll on UICollectionView"" to work. The answer is YES."
+"The sentence """""" I'm using the SNAPSHOT version of the distribution to fix an issue with reset being called on a sequence reader where the features and labels are in the same file. """""" uses <pattern>using sth to VB</pattern> to indicate that the user expects to ""use SNAPSHOT version of the distribution"". The answer is YES."
+"The sentence """""" any idea how to get the device locale in iOS? """""" uses <pattern>idea how to VB</pattern> to indicate that the user expects to ""get the device locale in iOS"". The answer is YES."
 No sentences found to indicate the user's expectation. The answer is NO.
-"The sentence """""" As ethereum is opensource anyone could setup their own blockchain, correct? """""" uses <pattern>correct</pattern> to indicate that the user expects ""anyone could setup their own blockchain"". The answer is YES."
-"The sentence """""" I'm using Mist 0.9.0 and geth 1.6.6 """""" uses <pattern>using sth</pattern> to indicate that the user expects ""Mist 0.9.0 and geth 1.6.6"". The answer is YES."
 No sentences found to indicate the user's expectation. The answer is NO.
-"The sentence """""" seems like it can't infer shit so i wrote my own helper """""" uses <pattern>seems like sth</pattern> to indicate that the user expects the ""Redux typings on Connect can't infer shit"". The answer is YES."
-"The sentence """""" can anyone give me a pointer as to how Typescript works behind the scenes? """""" uses <pattern>give me a pointer as to how sth works</pattern> to indicate that the user expects ""how Typescript works behind the scenes"". The answer is YES."
-"The sentence """""" I want to focus on the code and automate cloud ) """""" uses <pattern>want to VB</pattern> to indicate that the user expects to ""focus on the code and automate cloud"". The answer is YES."
-"The sentence """""" is there a cap on the amount of the Ethereums? """""" uses <pattern>is there a cap</pattern> to indicate that the user expects an answer to ""the cap on the amount of the Ethereums"". The answer is YES."
-"The sentence """""" how can I enable live-reload in my docker-container? """""" uses <pattern>how can I VB</pattern> to indicate that the user expects to ""enable live-reload in my docker-container"". The answer is YES."
-"The sentence """""" is it possible to the os that the docker container is running in? """""" uses <pattern>is it possible to VB</pattern> to indicate that the user expects to ""access the os that the docker container is running in"". The answer is YES."
-"The sentence """""" I would like it to return something like a ""JSONObject"" with methods so I can extract data """""" uses <pattern>would like to VB</pattern> to indicate that the user expects to ""return something like a ""JSONObject"" with methods"". The answer is YES."
-"The sentence """""" I am testing my app in NodeJS and I cant get a simple method to run by using the this-keyword """""" uses <pattern>cant get sth to VB</pattern> to indicate that the user expects to ""get a simple method to run by using the this-keyword"". The answer is YES."
-"The sentence """""" we need to sign app with developer account and it should be build in developer mode """""" uses <pattern>need to VB</pattern> to indicate that the user expects to ""sign app with developer account and it should be build in developer mode"". The answer is YES."
-"The sentence """""" any issues with xcode 11 and appium 1.13 """""" uses <pattern>sth with sth</pattern> to indicate that the user expects no issues with ""xcode 11 and appium 1.13"". The answer is YES."
+No sentences found to indicate the user's expectation. The answer is NO.
+"The sentence """""" but still i am expecting :) """""" uses <pattern>still ADJ VBZ</pattern> to indicate that the user expects ""the amount will be credited in the ethereum wallet"". The answer is YES."
+No sentences found to indicate the user's expectation. The answer is NO.
+No sentences found to indicate the user's expectation. The answer is NO.
+"The sentence """""" can anyone explain why this is? """""" uses <pattern>can anyone VB</pattern> to indicate that the user expects an ""explanation"". The answer is YES."
+No sentences found to indicate the user's expectation. The answer is NO.
+No sentences found to indicate the user's expectation. The answer is NO.
+"The sentence """""" i think is the reason because i can see the aborted connection errors in my cloud sql logs """""" uses <pattern>i think is VB</pattern> to indicate that the user expects to ""see aborted connection errors"". The answer is YES."
+"The sentence """""" If I then want to do some mining the choice of blockchain to mine for would be the one with the most transactions and fewest miners would be the best choice? """""" uses <pattern>the choice of sth to VB</pattern> to indicate that the user expects to ""choose a blockchain to mine for"". The answer is YES."
+No sentences found to indicate the user's expectation. The answer is NO.
+No sentences found to indicate the user's expectation. The answer is NO.
+"The sentence """""" Typescript typings on Connect have been giving me cancer latley seems like it can't infer shit """""" uses <pattern>giving me cancer</pattern> to indicate that the user expects ""redux typings"" to ""infer shit"". The answer is YES."
+"The sentence """""" can anyone give me a pointer as to how Typescript works behind the scenes? """""" uses <pattern>can anyone VB</pattern> to indicate that the user expects ""a pointer as to how Typescript works"". The answer is YES."
+"The sentence """""" I want to focus on the code and automate cloud =) """""" uses <pattern>want to VB</pattern> to indicate that the user expects to ""focus on the code and automate cloud"". The answer is YES."
+No sentences found to indicate the user's expectation. The answer is NO.
+"The sentence """""" how can I enable live-reload in my docker-container """""" uses <pattern>how can I VB</pattern> to indicate that the user expects ""live-reload in my docker-container"". The answer is YES."
+"The sentence """""" is it possible to the os that the docker container is running in? """""" uses <pattern>is it possible to VB</pattern> to indicate that the user expects to ""the os that the docker container is running in"". The answer is YES."
+"The sentence """""" I would like it to return something like a ""JSONObject"" with methods so I can extract data """""" uses <pattern>would like to VB</pattern> to indicate that the user expects to ""have something that does like a 'JSONObject' with methods"". The answer is YES."
+"The sentence """""" I am testing my app in NodeJS and I cant get a simple method to run by using the this-keyword... """""" uses <pattern>testing sth. in</pattern> to indicate that the user expects to ""test the app in NodeJS"". The answer is YES."
+"The sentence """""" we need to sign app with developer account and it should be build in developer mode """""" uses <pattern>need to VB</pattern> to indicate that the user expects to ""sign app with developer account and build in developer mode"". The answer is YES."
+No sentences found to indicate the user's expectation. The answer is NO.
 "The sentence """""" I want to install android-x86-6.0-r1.iso with qemu """""" uses <pattern>want to VB</pattern> to indicate that the user expects to ""install android-x86-6.0-r1.iso with qemu"". The answer is YES."
-"The sentence """""" anyone know if it's possible to ssh into a docker host from a container? """""" uses <pattern>know if it's possible to VB</pattern> to indicate that the user expects to ""ssh into a docker host from a container"". The answer is YES."
-"The sentence """""" My question is using app.use(functionnamehere); does not necessarily execute the function """""" uses <pattern>question is VB</pattern> to indicate that the user expects to know ""if app.use(functionnamehere) necessarily executes the function"". The answer is YES."
-"The sentence """""" is anyone know margin setting in ethereum what is it and how to we perform it? """""" uses <pattern>is anyone know</pattern> to indicate that the user expects to ""know margin setting in ethereum"". The answer is YES."
-"The sentence """""" The data in the cvs files should be:1,2,34,5,6...or 123456...? """""" uses <pattern>should be</pattern> to indicate that the user expects data to ""be:1,2,34,5,6...or 123456...?"". The answer is YES."
-"The sentence """""" Having an issues with navigation between rooms on both web app and desktop shell. """""" uses <pattern>Having an issues with sth</pattern> to indicate that the user expects to ""fix the issues with navigation"". The answer is YES."
+"The sentence """""" anyone know if it's possible to ssh into a docker host from a container? """""" uses <pattern>possible to VB</pattern> to indicate that the user expects to ""ssh into a docker host from a container"". The answer is YES."
+"The sentence """""" My question is using app.use(functionnamehere); does not necessarily execute the function? """""" uses <pattern>question is</pattern> to indicate that the user expects the app to ""execute the function"". The answer is YES."
+"The sentence """""" someone give me task to do margin setting in your project i not undrestend about the term what mean by margin in ethereum """""" uses <pattern>not undrestend about sth</pattern> to indicate that the user expects to know ""what mean by margin in ethereum"". The answer is YES."
 No sentences found to indicate the user's expectation. The answer is NO.
 No sentences found to indicate the user's expectation. The answer is NO.
-"The sentence """""" whatever I export or publish, I only getConnection refusedwith curl """""" uses <pattern>whatever I export or publish</pattern> to indicate that the user expects to ""export or publish"". The answer is YES."
+No sentences found to indicate the user's expectation. The answer is NO.
+No sentences found to indicate the user's expectation. The answer is NO.
+No sentences found to indicate the user's expectation. The answer is NO.
 "The sentence """""" I cannot use dl4j - because some classes are not in the dependecies. """""" uses <pattern>cannot VB</pattern> to indicate that the user expects to ""use dl4j"". The answer is YES."
-"The sentence """""" what would be the best container to stash image data in to send over Socket.io """""" uses <pattern>the best container to VB</pattern> to indicate that the user expects to ""stash image data in to send over Socket.io"". The answer is YES."
-"The sentence """""" Are the stats for network IO suposed to work when I'm running a container with --net=host ? """""" uses <pattern>suppose to VB</pattern> to indicate that the user expects ""the stats for network IO"" to ""work"". The answer is YES."
+No sentences found to indicate the user's expectation. The answer is NO.
+No sentences found to indicate the user's expectation. The answer is NO.
 "The sentence """""" I just want to type the time and get the code omg :D """""" uses <pattern>want to VB</pattern> to indicate that the user expects to ""type the time and get the code"". The answer is YES."
-"The sentence """""" What's the easiest way to test/debug/step through a change to the compiler? """""" uses <pattern>easiest way to VB</pattern> to indicate that the user expects ""test/debug/step through a change to the compiler"". The answer is YES."
-"The sentence """""" Hey dude thanks I'm trying to authenticate to a site using node """""" uses <pattern>trying to VB</pattern> to indicate that the user expects to ""authenticate to a site using node"". The answer is YES."
-"The sentence """""" Just want to set a specific value at a specific point for instance row 1 col 2 using matrix.putScalar(new int[]{1,2},data); is throwing an exception """""" uses <pattern>using sth to VB</pattern> to indicate that the user expects ""matrix.putScalar(new int[]{1,2},data)"". The answer is YES."
-"The sentence """""" I'm looking at the documentation and having a hard time figuring out how to use it """""" uses <pattern>looking at sth and having a hard time</pattern> to indicate that the user expects to ""figure out how to use it"". The answer is YES."
-"The sentence """""" I'm trying to automate a test App using appium (v 1.6.5 - local / desktop version) in which I observed the following error : """""" uses <pattern>trying to VB</pattern> to indicate that the user expects to ""automate a test App using appium"". The answer is YES."
-"The sentence """""" I need to run this apple script as part of jenkins setup """""" uses <pattern>need to VB</pattern> to indicate that the user expects to ""run this apple script as part of jenkins setup"". The answer is YES."
-"The sentence """""" I want to run web tests on mobile Safari 12.1 """""" uses <pattern>want to VB</pattern> to indicate that the user expects to ""run web tests on mobile Safari 12.1"". The answer is YES."
+"The sentence """""" What's the easiest way to test/debug/step through a change to the compiler? """""" uses <pattern>What's the easiest way</pattern> to indicate that the user expects to ""test/debug/step through a change to the compiler"". The answer is YES."
+No sentences found to indicate the user's expectation. The answer is NO.
+"The sentence """""" Just want to set a specific value at a specific point for instance row 1 col 2 using matrix.putScalar(new int[]{1,2},data); """""" uses <pattern>want to VB</pattern> to indicate that the user expects to ""set a specific value at a specific point"". The answer is YES."
+"The sentence """""" I'll try to change my document loading code to use that """""" uses <pattern>try to VB</pattern> to indicate that the user expects to ""change my document loading code"". The answer is YES."
+No sentences found to indicate the user's expectation. The answer is NO.
+"The sentence """""" I need to run this apple script as part of jenkins setup """""" uses <pattern>need to VB</pattern> to indicate that the user expects to ""run the apple script"". The answer is YES."
+No sentences found to indicate the user's expectation. The answer is NO.
 "The sentence """""" anyone here? because i have no diea how promises work and im trying to find out how to be able to use that API call """""" uses <pattern>trying to VB</pattern> to indicate that the user expects to ""use that API call"". The answer is YES."
 No sentences found to indicate the user's expectation. The answer is NO.
-"The sentence """""" I want it available on an emitter made global """""" uses <pattern>want sth to VB</pattern> to indicate that the user expects to ""be able to use prependListener"". The answer is YES."
-"The sentence """""" Having hell clearing my terminal of [at-loader] errors. -_- """""" uses <pattern>having hell VB</pattern> to indicate that the user expects to ""clear my terminal of [at-loader] errors"". The answer is YES."
-"The sentence """""" I was trying to create a room for the ""Angular"" community """""" uses <pattern>trying to VB</pattern> to indicate that the user expects to ""create a room for the Angular community"". The answer is YES."
 No sentences found to indicate the user's expectation. The answer is NO.
-"The sentence """""" I'm using APPIUM-WEBDRIVERIO-MOCHA-CHAI """""" uses <pattern>using sth</pattern> to indicate that the user expects to ""handle an assertion/expect error"". The answer is YES."
-"The sentence """""" doesnt work? is the typeof correct? """""" uses <pattern>does sth work</pattern> to indicate that the user expects ""typeof of a class"" to ""work"". The answer is YES."
-"The sentence """""" I feel like I'm close. Any pointers? """""" uses <pattern>feel like</pattern> to indicate that the user expects ""pointers"". The answer is YES."
+"The sentence """""" Having hell clearing my terminal of [at-loader] errors. -_- """""" uses <pattern>Having hell</pattern> to indicate that the user expects to ""clear terminal of [at-loader] errors"". The answer is YES."
+"The sentence """""" I was trying to create a room for the ""Angular"" community """""" uses <pattern>trying to VB</pattern> to indicate that the user expects to ""create a room for the community"". The answer is YES."
 No sentences found to indicate the user's expectation. The answer is NO.
-"The sentence """""" i would like to ask if is it possible to use docker in windows 2008 server """""" uses <pattern>would like to ask if</pattern> to indicate that the user expects to ""use docker in windows 2008 server"". The answer is YES."
+"The sentence """""" does anyone know how to handle an assertion/expect error to ensure that the subsequent test case continue to run """""" uses <pattern>know how to VB</pattern> to indicate that the user expects to ""handle an assertion/expect error"". The answer is YES."
+"The sentence """""" how can I define interface with typeof of a class? """""" uses <pattern>how can I VB</pattern> to indicate that the user expects to ""define interface with typeof of a class"". The answer is YES."
+"The sentence """""" I feel like I'm close. """""" uses <pattern>feel like VB</pattern> to indicate that the user expects to ""calculate the determinant of a matrix"". The answer is YES."
+No sentences found to indicate the user's expectation. The answer is NO.
+No sentences found to indicate the user's expectation. The answer is NO.
 "The sentence """""" im trying to figure out why my dockerhub is showing all my tags as being updated """""" uses <pattern>trying to VB</pattern> to indicate that the user expects to ""figure out why dockerhub is showing all tags as being updated"". The answer is YES."
-"The sentence """""" Im getting Error: Timeout of 2000ms exceeded. For async tests and hooks, ensure ""done()"" is called; if returning a Promise """""" uses <pattern>getting Error: Timeout of 2000ms exceeded. For async tests and hooks, ensure ""done()"" is called; if returning a Promise</pattern> to indicate that the user expects to ""resolve Error: Timeout of 2000ms exceeded"". The answer is YES."
-"The sentence """""" when docker run output isError: Could not find or load main class ${JAVA_OPTS} """""" uses <pattern>when sth is sth</pattern> to indicate that the user expects to ""find or load main class ${JAVA_OPTS}"". The answer is YES."
-"The sentence """""" what will happen if two persons run the same contract to change the same global variable at the same timeTHX """""" uses <pattern>what will happen if sth</pattern> to indicate that the user expects to know ""what will happen if two persons run the same contract"". The answer is YES."
-"The sentence """""" How can i run docker command in dockerfile """""" uses <pattern>how can I VB</pattern> to indicate that the user expects to ""run docker command in dockerfile"". The answer is YES."
+"The sentence """""" Im getting Error: Timeout of 2000ms exceeded """""" uses <pattern>getting error</pattern> to indicate that the user expects to ""resolve the issue"". The answer is YES."
+"The sentence """""" env $JAVA_OPTS not work, when docker run output isError: Could not find or load main class ${JAVA_OPTS} I firgout , env var not work in ENTRYPOINT or CMD when use exec format """""" uses <pattern>env var not work</pattern> to indicate that the user expects the environment variable to work. The answer is YES."
 No sentences found to indicate the user's expectation. The answer is NO.
-"The sentence """""" but the fullName already return as undefined so there is no way we can access an object's property before it's instantiated ? """""" uses <pattern>there is no way we can VB</pattern> to indicate that the user expects the program NOT to ""access an object's property before it's instantiated"". The answer is YES."
-"The sentence """""" Is there no way what-so-ever to pause the current execution context """""" uses <pattern>no way to VB</pattern> to indicate that the user expects to ""pause the current execution context"". The answer is YES."
+"The sentence """""" How can i run docker command in dockerfile? """""" uses <pattern>can I VB</pattern> to indicate that the user expects to ""run docker command in dockerfile"". The answer is YES."
 No sentences found to indicate the user's expectation. The answer is NO.
-"The sentence """""" I have a problem with running private blockchain """""" uses <pattern>have a problem with VBG</pattern> to indicate that the user expects to ""running private blockchain"". The answer is YES."
-"The sentence """""" how do i unpack all of nested dependencies in root node_modules """""" uses <pattern>how do I VB</pattern> to indicate that the user expects to ""unpack all of nested dependencies in root node_modules"". The answer is YES."
-"The sentence """""" I'm trying to transalate a caffe network in DL4J.. """""" uses <pattern>trying to VB</pattern> to indicate that the user expects to ""transalate a caffe network in DL4J"". The answer is YES."
-"The sentence """""" I'm having a hard time finding a python function to wait for an element to be gone before moving on """""" uses <pattern>hard time finding ADJ to VB</pattern> to indicate that the user expects to ""find a python function to wait for an element to be gone"". The answer is YES."
-"The sentence """""" Let's say I have 3 time steps and a list with data entries """""" uses <pattern>let's say</pattern> to indicate that the user expects to ""have 3 time steps and a list with data entries"". The answer is YES."
+"The sentence """""" Is it possible to access a javascript object inside the object itself for instance I have """""" uses <pattern>Is it possible to VB</pattern> to indicate that the user expects to ""access a javascript object inside the object itself"". The answer is YES."
+"The sentence """""" Is there no way what-so-ever to pause the current execution context, let node's event loop proceed, and then resume to the current execution context? """""" uses <pattern>is there no way VB</pattern> to indicate that the user expects to ""pause the current execution context, let node's event loop proceed, and then resume to the current execution context"". The answer is YES."
 No sentences found to indicate the user's expectation. The answer is NO.
-"The sentence """""" I'd really like to be able to show the growth of our Gitter community over time """""" uses <pattern>would really like to VB</pattern> to indicate that the user expects to ""show the growth of our Gitter community over time"". The answer is YES."
-"The sentence """""" how can I resolve ""Duplicate class org.openqa.selenium.WebDriver found in modules java-client-7.3.0.jar"" """""" uses <pattern>how can I VB</pattern> to indicate that the user expects to ""resolve ""Duplicate class org.openqa.selenium.WebDriver found in modules java-client-7.3.0.jar"""". The answer is YES."
+"The sentence """""" I have tried $ geth --ipcpath after this my mist wallet is syncing not my blockchain """""" uses <pattern>tried VB</pattern> to indicate that the user expects to ""sync my blockchain"". The answer is YES."
+"The sentence """""" how do i unpack all of nested dependencies in root node_modules ? """""" uses <pattern>how do i VB</pattern> to indicate that the user expects to ""unpack all of nested dependencies"". The answer is YES."
+"The sentence """""" I'm trying to transalate a caffe network in DL4J.. """""" uses <pattern>trying to VB</pattern> to indicate that the user expects to ""transalate a caffe network in DL4J.."". The answer is YES."
 No sentences found to indicate the user's expectation. The answer is NO.
-"The sentence """""" but even hard refreshing the browser does nothing, and the page stays in the same state it was before my edits """""" uses <pattern>does nothing, and sth stays in the same state</pattern> to indicate that the user expects ""the page"" to ""stay in the same state"". The answer is YES."
-"The sentence """""" is there any solution for that """""" uses <pattern>is there any solution</pattern> to indicate that the user expects ""a solution for that"". The answer is YES."
-"The sentence """""" hola hi some have experience to connect Node with Firebird ? """""" uses <pattern>some have experience to VB</pattern> to indicate that the user expects ""some have experience to connect Node with Firebird"". The answer is YES."
-"The sentence """""" Somehow I have to tell it how to time-mask the output """""" uses <pattern>have to VB</pattern> to indicate that the user expects to ""tell it how to time-mask the output"". The answer is YES."
-"The sentence """""" It's basically just a map over an object, creating functions that know the key they are at, plus type-safe extra parameters.(The idea is from ) """""" uses <pattern>basically just</pattern> to indicate that the user expects ""creating functions that know the key they are at, plus type-safe extra parameters"". The answer is YES."
-"The sentence """""" what should i do? """""" uses <pattern>what should I do?</pattern> to indicate that the user expects to ""do"". The answer is YES."
-"The sentence """""" What to do for resolve it? """""" uses <pattern>What to do for VB</pattern> to indicate that the user expects to ""resolve it"". The answer is YES."
-"The sentence """""" I'm using DL4J and I want to training a file on hadoop with sparkCan """""" uses <pattern>want to VB</pattern> to indicate that the user expects to ""training a file on hadoop with sparkCan"". The answer is YES."
-"The sentence """""" What do you think is best? """""" uses <pattern>what do you think is ADJ/ADV</pattern> to indicate that the user expects other people's opinions on ""what is best"". The answer is NO."
-"The sentence """""" Should I set username and password within dockerfile? """""" uses <pattern>should I VB</pattern> to indicate that the user expects to ""set username and password within dockerfile"". The answer is YES."
+"The sentence """""" Let's say I have 3 time steps and a list with data entries. """""" uses <pattern>Let's say I VBZ</pattern> to indicate that the user expects to ""have 3 time steps and a list with data entries"". The answer is YES."
 No sentences found to indicate the user's expectation. The answer is NO.
-"The sentence """""" Is it no longer possible to get a gitter URL that mirrors your github URL, """""" uses <pattern>is it no longer possible to VB</pattern> to indicate that the user expects it to ""get a gitter URL that mirrors your github URL"". The answer is YES."
-"The sentence """""" Does anyone know of any npm packages or frameworks that can track network traffic from an native mobile app? """""" uses <pattern>know of any npm packages or frameworks that can</pattern> to indicate that the user expects ""npm packages or frameworks"". The answer is YES."
-"The sentence """""" It is What I should do? """""" uses <pattern>What I should VB</pattern> to indicate that the user expects to ""do"". The answer is YES."
+"The sentence """""" is there any way to get some historical stats """""" uses <pattern>any way to VB</pattern> to indicate that the user expects to ""get some historical stats"". The answer is YES."
+No sentences found to indicate the user's expectation. The answer is NO.
+No sentences found to indicate the user's expectation. The answer is NO.
+"The sentence """"""Anybody have experience with Webpack not overwriting?"""""" uses <pattern>Anybody VB</pattern> to indicate that the user expects ""Webpack not overwriting"". The answer is YES."
+No sentences found to indicate the user's expectation. The answer is NO.
+"The sentence """""" hola hi some have experience to connect Node with Firebird ? """""" uses <pattern>have experience to VB</pattern> to indicate that the user expects to ""connect Node with Firebird"". The answer is YES."
+No sentences found to indicate the user's expectation. The answer is NO.
+No sentences found to indicate the user's expectation. The answer is NO.
+No sentences found to indicate the user's expectation. The answer is NO.
+No sentences found to indicate the user's expectation. The answer is NO.
+"The sentence """""" I want to training a file on hadoop with spark """""" uses <pattern>want to VB</pattern> to indicate that the user expects to ""training a file on hadoop with spark"". The answer is YES."
+No sentences found to indicate the user's expectation. The answer is NO.
+No sentences found to indicate the user's expectation. The answer is NO.
+No sentences found to indicate the user's expectation. The answer is NO.
+"The sentence """""" Example attached Somewhat related, trying my project name without my Github username is a no go, even though the URL is not taken. """""" uses <pattern>related VBG</pattern> to indicate that the user expects to ""try my project name without my Github username"". The answer is YES."
+"The sentence """""" Does anyone know of any npm packages or frameworks that can track network traffic from an native mobile app? """""" uses <pattern>anyone know of any</pattern> to indicate that the user expects to ""know of any npm packages or frameworks that can track network traffic from an native mobile app"". The answer is YES."
+No sentences found to indicate the user's expectation. The answer is NO.
 "The sentence """""" would it make sence to also have a look for socket.io for performance? """""" uses <pattern>would it make sence to VB</pattern> to indicate that the user expects to ""have a look for socket.io for performance"". The answer is YES."
-"The sentence """""" is anyone using docker for mac on a hackintosh? """""" uses <pattern>is anyone using sth</pattern> to indicate that the user expects ""docker for mac on a hackintosh"". The answer is YES."
-"The sentence """""" im using the default constructor which doesn't call the createConfusion() internal method """""" uses <pattern>using sth</pattern> to indicate that the user expects ""the default constructor"". The answer is YES."
-"The sentence """""" So any way around to make it work? """""" uses <pattern>any way around to VB</pattern> to indicate that the user expects ""any way around to make it work"". The answer is YES."
+"The sentence """""" i cant connect to my containers once they are running """""" uses <pattern>cant VB</pattern> to indicate that the user expects to ""connect to my containers"". The answer is YES."
+"The sentence """""" think i see the issue, createConfusion is called from eval() but not from evalTimeSeries() """""" uses <pattern>think VB</pattern> to indicate that the user expects ""createConfusion is called from eval() but not from evalTimeSeries()"". The answer is YES."
 No sentences found to indicate the user's expectation. The answer is NO.
-"The sentence """""" I have multiple copies of the chain data and keystore folders before the corruption took place """""" uses <pattern>have sth</pattern> to indicate that the user expects to have ""the chain data and keystore folders"". The answer is YES."
+No sentences found to indicate the user's expectation. The answer is NO.
+"The sentence """""" when I imported the keystore folder into a fresh install of Ethereum Wallet on another Mac, it was showing $0 Balance in my Wallet. """""" uses <pattern>showing sth</pattern> to indicate that the user expects the balance to be ""showing"". The answer is YES."
 "The sentence """""" I got half way through the process on myetherwaller.com and somehow managed to close the confirmation popup """""" uses <pattern>managed to VB</pattern> to indicate that the user expects to ""close the confirmation popup"". The answer is YES."
-"The sentence """""" I am trying to automate upload pdf documents functionality in webview on my android app """""" uses <pattern>trying to VB</pattern> to indicate that the user expects to ""automate upload pdf documents functionality in webview"". The answer is YES."
-"The sentence """""" Is there a way to retain the ""this"" type in the base class ? """""" uses <pattern>Is there a way to VB</pattern> to indicate that the user expects to ""retain the ""this"" type in the base class"". The answer is YES."
-"The sentence """""" I'm looking for a library that does async forloops """""" uses <pattern>looking for sth</pattern> to indicate that the user expects ""a library that does async forloops"". The answer is YES."
-"The sentence """""" can someone help me import audio files to my react component? """""" uses <pattern>can someone help me VB</pattern> to indicate that the user expects ""import audio files to my react component"". The answer is YES."
+"The sentence """""" I am trying to automate upload pdf documents functionality in webview on my android app """""" uses <pattern>trying to VB</pattern> to indicate that the user expects to automate ""upload pdf documents functionality"". The answer is YES."
+"The sentence """""" So I cannot chain them. """""" uses <pattern>cannot VB</pattern> to indicate that the user expects to ""chain them"". The answer is YES."
+"The sentence """""" I'm looking for a library that does async forloops, meaning it always uses nextTick between interations """""" uses <pattern>looking for VBG</pattern> to indicate that the user expects to ""find a library that does async forloops"". The answer is YES."
+"The sentence """""" can someone help me import audio files to my react component? """""" uses <pattern>can someone help VB</pattern> to indicate that the user expects to ""import audio files"". The answer is YES."
+"The sentence """""" Instead of showing logged in successfully Can some one help where did i missed something? """""" uses <pattern>where did I VB</pattern> to indicate that the user expects to ""know where they missed something"". The answer is YES."
+No sentences found to indicate the user's expectation. The answer is NO.
+"The sentence """""" I use fixed exposed ports to access different services , but I would like some virtualhosts defined, so I don't have to access . """""" uses <pattern>would like sth</pattern> to indicate that the user expects ""virtualhosts defined"". The answer is YES."
+"The sentence """""" Has anyone used Appium with the VMware/AirWatch Browser yet? """""" uses <pattern>used sth with sth</pattern> to indicate that the user expects to ""used Appium with the VMware/AirWatch Browser"". The answer is YES."
+No sentences found to indicate the user's expectation. The answer is NO.
+"The sentence """""" Hope I good here """""" uses <pattern>Hope VB</pattern> to indicate that the user expects to ""good here"". The answer is YES."
+"The sentence """""" It looks like that when I'm extending an other class """""" uses <pattern>looks like VBP</pattern> to indicate that the user expects to ""extend an other class"". The answer is YES."
 No sentences found to indicate the user's expectation. The answer is NO.
 No sentences found to indicate the user's expectation. The answer is NO.
-"The sentence """""" I tried jwilder/nginx-proxy but the network configuration used with compose v2 syntax is not working. Switching to v1 is not an option.. """""" uses <pattern>tried sth but...</pattern> to indicate that user expects ""jwilder/nginx-proxy"" to work. The answer is YES."
-"The sentence """""" Has anyone used Appium with the VMware/AirWatch Browser yet? """""" uses <pattern>Has anyone VB</pattern> to indicate that the user expects ""used Appium with the VMware/AirWatch Browser"". The answer is YES."
-No sentences found to indicate the user's expectation. The answer is NO.
-"The sentence """""" Is providing an entrypoint in the docker-compose.yml preventing the entrypoint DockerFile entrypoint from the image from being run? """""" uses <pattern>preventing sth from VBG</pattern> to indicate that the user expects to ""provide an entrypoint in the docker-compose.yml"". The answer is YES."
-"The sentence """""" It looks like that when I'm extending an other class (in other package in typescript transpilled to es2015) """""" uses <pattern>looks like VB</pattern> to indicate that the user expects ""extending an other class (in other package in typescript transpilled to es2015)"". The answer is YES."
-No sentences found to indicate the user's expectation. The answer is NO.
-"The sentence """""" I can not make senKeys work """""" uses <pattern>can not VB</pattern> to indicate that the user expects not to ""make senKeys work"". The answer is YES."
-"The sentence """""" is able to generate if for me but i would like to do it on my own """""" uses <pattern>would like to VB</pattern> to indicate that the user expects to ""generate if for me"". The answer is YES."
+"The sentence """""" is there any documentation what the different data in this file means """""" uses <pattern>is there any documentation</pattern> to indicate that the user expects ""documentation what the different data in this file means"". The answer is YES."
 "The sentence """""" I'm trying to setup a compose file for wordpress/mysql """""" uses <pattern>trying to VB</pattern> to indicate that the user expects to ""setup a compose file for wordpress/mysql"". The answer is YES."
 No sentences found to indicate the user's expectation. The answer is NO.
-"The sentence """""" When I run echo $ANDROID_HOME I get android sdk root """""" uses <pattern>When I run VBP</pattern> to indicate that the user expects to ""get android sdk root"". The answer is YES."
-"The sentence """""" Want to learn it badly, just not sure if it's reasonable """""" uses <pattern>want to VB</pattern> to indicate that the user expects to ""learn it"". The answer is YES."
-"The sentence """""" Any ideas? """""" uses <pattern>Any ideas?</pattern> to indicate that the user expects to find ""ideas"". The answer is YES."
-"The sentence """""" i am not very sure if the file should already be there on the given location """""" uses <pattern>not very sure if</pattern> to indicate that the user expects ""the file should already be there on the given location"". The answer is YES."
-"The sentence """""" im planning to use appium to automate chrome in android """""" uses <pattern>planning to VB</pattern> to indicate that the user expects to ""use appium to automate chrome in android"". The answer is YES."
-"The sentence """""" Mydocker build -t myproject .command requires access to postgres """""" uses <pattern>requires sth</pattern> to indicate that the user expects ""docker build -t myproject ."" to ""access to postgres"". The answer is YES."
-"The sentence """""" is there a reason dark mode for the android app does not extend to the actual chat? """""" uses <pattern>is there a reason sth does not VB</pattern> to indicate that the user expects ""dark mode for the android app"" to ""extend to the actual chat"". The answer is YES."
 No sentences found to indicate the user's expectation. The answer is NO.
-"No sentences found to indicate the user's expectation.input: """""" How do you unit test an Angular 2 component that uses a Google Maps Service """"""output: The sentence """""" How do you unit test an Angular 2 component that uses a Google Maps Service """""" uses <pattern>how to VB</pattern> to indicate that the user expects to ""unit test an Angular 2 component"". The answer is YES."
-"The sentence """""" cannot run an instance of strapi says module not found """""" uses <pattern>cannot VB</pattern> to indicate that the user expects to ""run an instance of strapi"". The answer is YES."
-"The sentence """""" Can this mean that dl4j needs a lot of memory for itself even in training with spark? """""" uses <pattern>can this mean that</pattern> to indicate that the user expects ""dl4j needs a lot of memory for itself even in training with spark"". The answer is YES."
-"The sentence """""" I want to know if I can do a PR with a standard logistic regression implementation or if it is not the right place """""" uses <pattern>want to know if I can VB</pattern> to indicate that the user expects to ""do a PR with a standard logistic regression implementation"". The answer is YES."
-"The sentence """""" when i tired to start the new postgerss docker deamon is giving error. """""" uses <pattern>tired to VB</pattern> to indicate that the user expects to ""start the new postgerss docker deamon"". The answer is YES."
-"The sentence """""" If I transition an organization from ""no restrictions"" to ""restricting 3rd party access"" """""" uses <pattern>If I VB</pattern> to indicate that the user expects to ""transition an organization from ""no restrictions"" to ""restricting 3rd party access"""". The answer is YES."
-"The sentence """""" I hevnt been able to move any of my ERC20 tokens out of exchanges """""" uses <pattern>hevnt been able to VB</pattern> to indicate that the user expects to ""move any of my ERC20 tokens out of exchanges"". The answer is YES."
-"The sentence """""" is that something I have to disable on hexchat? """""" uses <pattern>is that something I have to VB</pattern> to indicate that the user expects to ""disable on hexchat"". The answer is YES."
-"(The sentence """""" I read tutorials using gulp to compile typescript files into javascript files in a separate folder (often dist). """""" uses <pattern>read VBD</pattern> to indicate that the user expects to ""compile typescript files into javascript files"". The answer is YES.)"
-"The sentence """""" after the evaluationI created a small dataset for training purpose which contains around 4900 pictures per class """""" uses <pattern>created sth for sth</pattern> to indicate that the user expects to ""created a small dataset"". The answer is YES."
+"The sentence """""" Want to learn it badly, just not sure if it's reasonable """""" uses <pattern>want to VB</pattern> indicate that the user expects to ""learn MEAN"". The answer is YES."
+No sentences found to indicate the user's expectation. The answer is NO.
+No sentences found to indicate the user's expectation. The answer is NO.
+"The sentence """""" im planning to use appium to automate chrome in android """""" uses <pattern>planning to VB</pattern> to indicate that the user expects to ""use appium to automate chrome in android"". The answer is YES."
+No sentences found to indicate the user's expectation. The answer is NO.
+No sentences found to indicate the user's expectation. The answer is NO.
+No sentences found to indicate the user's expectation. The answer is NO.
+No sentences found to indicate the user's expectation. The answer is NO.
+No sentences found to indicate the user's expectation. The answer is NO.
+"The sentence """""" Can this mean that dl4j needs a lot of memory for itself even in training with spark? """""" uses <pattern>Can this mean sth</pattern> to indicate that the user expects to know the answer to ""dl4j needs a lot of memory for itself even in training with spark"". The answer is YES."
+"The sentence """""" I want to know if I can do a PR with a standard logistic regression implementation """""" uses <pattern>want to VB</pattern> to indicate that the user expects to ""do a PR with a standard logistic regression implementation"". The answer is YES."
+No sentences found to indicate the user's expectation. The answer is NO.
+"The sentence """""" will there be any unforeseen issues or outages? """""" uses <pattern>will there be VB</pattern> to indicate that the user expects to ""have unforeseen issues or outages"". The answer is YES."
+No sentences found to indicate the user's expectation. The answer is NO.
+"The sentence """""" I am trying to use hexchat, but I keep getting: No ping reply for 79 seconds, disconnecting. """""" uses <pattern>trying to VB</pattern> to indicate that the user expects to ""use hexchat"". The answer is YES."
+No sentences found to indicate the user's expectation. The answer is NO.
+No sentences found to indicate the user's expectation. The answer is NO.
+No sentences found to indicate the user's expectation. The answer is NO.
+No sentences found to indicate the user's expectation. The answer is NO.
+No sentences found to indicate the user's expectation. The answer is NO.
+No sentences found to indicate the user's expectation. The answer is NO.
+"The sentence """""" I'm not sure if I have the wrong idea of how to build a Schema - should I be splitting out the model for this Event Schema? """""" uses <pattern>not sure VB</pattern> to indicate that the user expects to ""build a Schema"". The answer is YES."
+No sentences found to indicate the user's expectation. The answer is NO.
+No sentences found to indicate the user's expectation. The answer is NO.
+No sentences found to indicate the user's expectation. The answer is NO.
+"The sentence """""" hi, everyone i need help, i deployed my yelcamp to heroku successfully but i can't send mail from the contact form """""" uses <pattern>need help, i VB</pattern> to indicate that the user expects to ""send mail from the contact form"". The answer is YES."
+No sentences found to indicate the user's expectation. The answer is NO.
+"The sentence """""" Has anyone been successful using ""mixins"" to replicate ""partial class"" concept in Angular? """""" uses <pattern>want to VB</pattern> to indicate that the user expects to ""use mixins to replicate partial class concept in Angular"". The answer is YES."
+"The sentence """""" Is it possible there be a feature/action just to watch the issue or subscribe without opening a new tab """""" uses <pattern>Is it possible to VB</pattern> to indicate that the user expects ""a feature/action just to watch the issue or subscribe without opening a new tab"". The answer is YES."
+"The sentence """""" when I execute ""npm install fe-base"" in terminal, it throw error """""" uses <pattern>execute VB</pattern> to indicate that the user expects to ""execute npm install fe-base"". The answer is YES."
+No sentences found to indicate the user's expectation. The answer is NO.
+No sentences found to indicate the user's expectation. The answer is NO.
+"The sentence """""" I'm trying to run bash scripts for etl in a container """""" uses <pattern>trying to VB</pattern> to indicate that the user expects to ""run bash scripts for etl in a container"". The answer is YES."
+"The sentence """""" Could someone help me with that code? """""" uses <pattern>help me with sth</pattern> to indicate that the user expects to ""correct the code"". The answer is YES."
+"The sentence """""" Is there a bulletproof solution to do that? """""" uses <pattern>Is there a VB</pattern> to indicate that the user expects ""a bulletproof solution"". The answer is YES."
+"The sentence """""" I am using Word2VecSentimentRNN.javain order to make a sentiment analysis """""" uses <pattern>using sth in order to VB</pattern> to indicate that the user expects to ""make a sentiment analysis"". The answer is YES."
+"The sentence """""" I can't find figure out how to use it """""" uses <pattern>can't VB</pattern> to indicate that the user expects to ""use dl4j-cli"". The answer is YES."
+No sentences found to indicate the user's expectation. The answer is NO.
+No sentences found to indicate the user's expectation. The answer is NO.
+"The sentence """""" I am trying to run DL4J in raspberry Pi """""" uses <pattern>trying to VB</pattern> to indicate that the user expects to ""run DL4J in raspberry Pi"". The answer is YES."
+No sentences found to indicate the user's expectation. The answer is NO.
+No sentences found to indicate the user's expectation. The answer is NO.
+"The sentence """""" I have developed one functionality using node socket and uploaded on Apache server """""" uses <pattern>developed sth. using</pattern> to indicate that the user expects to ""develop one functionality using node socket"". The answer is YES."
+"The sentence """""" Got a weird issue where I am trying to add a customd.tsfile to add some methods to an existing module (express) but VSCode picks them up, but when I gulp them (using same tsconfig) it doesnt seem to pick them up """""" uses <pattern>weird issue VBZ</pattern> to indicate that the user expects to ""add some methods to an existing module"". The answer is YES."
+"The sentence """""" I want to wait for this function for 10 seconds irrespective of that internal api ticker finished or not. """""" uses <pattern>want to VB</pattern> to indicate that the user expects to ""wait for this function for 10 seconds"". The answer is YES."
+No sentences found to indicate the user's expectation. The answer is NO.
+No sentences found to indicate the user's expectation. The answer is NO.
+No sentences found to indicate the user's expectation. The answer is NO.
+"The sentence """""" but I am getting the following error: index.d.ts is not a module. """""" uses <pattern>getting the following error</pattern> to indicate that the user expects to ""get error"". The answer is YES."
+"The sentence """""" I followed the steps for running the example files """""" uses <pattern>followed the VB</pattern> to indicate that the user expects to ""run the example files"". The answer is YES."
+"The sentence """""" i am wrong """""" uses <pattern>wrong ADJ</pattern> to indicate that the user expects to ""understand what docker is"". The answer is YES."
+"The sentence """""" How can i start testing app using appium via ruby. """""" uses <pattern>can I VB</pattern> to indicate that the user expects to ""start testing app using appium via ruby"". The answer is YES."
+No sentences found to indicate the user's expectation. The answer is NO.
+"The sentence """""" I want to apply Kalman Filter to Reduce RSSI Noise. """""" uses <pattern>want to VB</pattern> to indicate that the user expects to ""apply Kalman Filter"". The answer is YES."
+No sentences found to indicate the user's expectation. The answer is NO.
+"The sentence """""" Is there any way to map T | undefined to T """""" uses <pattern>any way to VB</pattern> to indicate that the user expects ""map T | undefined to T"". The answer is YES."
+"The sentence """""" I downloaded my wallet a few weeks ago and last night transferred some Ethereum to my wallet but 24 hours later it hasn't arrived. """""" uses <pattern>need to VB</pattern> to indicate that the user expects to ""get the Ethereum transferred to my wallet"". The answer is YES."
+"The sentence """""" need that for assing it to my workspace """""" uses <pattern>need that for VBG</pattern> to indicate that the user expects to ""assing it to my workspace"". The answer is YES."
+No sentences found to indicate the user's expectation. The answer is NO.
+"The sentence """""" Ever since upgrading to typescript 2.4.1, I am getting a strange ""implicit any""-Error. """""" uses <pattern>getting a strange</pattern> to indicate that the user expects to ""upgrade to typescript 2.4.1"". The answer is YES."
+"The sentence """""" I'd like to remove it commenting the line out in the csproj works """""" uses <pattern>would like to VB</pattern> to indicate that the user expects ""remove it commenting the line out in the csproj"". The answer is YES."
+"The sentence """""" my first step will to be to run my unit tests in browser mode """""" uses <pattern>(first) step will be to VB</pattern> to indicate that the user expects to ""run my unit tests in browser mode"". The answer is YES."
+No sentences found to indicate the user's expectation. The answer is NO.
+No sentences found to indicate the user's expectation. The answer is NO.
+"The sentence """""" I'm receiving this error: I've just change from Typescript 2.3 to 2.4 I think could be the Strict contravariance for callback parameters but I didn't find a way to fix it """""" uses <pattern>think could be</pattern> to indicate that the user expects to fix ""Strict contravariance for callback parameters"". The answer is YES."
+No sentences found to indicate the user's expectation. The answer is NO.
+No sentences found to indicate the user's expectation. The answer is NO.
+"The sentence """""" i a Hi i am using appium 1.7.2 , i am able to launch app but unable to locate element in natjve ios """""" uses <pattern>unable to VB</pattern> to indicate that the user expects to ""locate element in native ios"". The answer is YES."
+"The sentence """""" if I running out of gas at line 7 will my balance decrease but the transfer never be made? """""" uses <pattern>will VB</pattern> to indicate that the user expects to ""know if the balance decrease but the transfer never be made"". The answer is YES."
+"The sentence """""" I have a question about cudnn. Does cudnn7 works for dl4j? """""" uses <pattern>have a question</pattern> to indicate that the user expects to ""get information about cudnn"". The answer is YES."
+"The sentence """""" I want to get a service written in Angular / typescript and compile it on it's own """""" uses <pattern>want to VB</pattern> to indicate that the user expects to ""get a service written"". The answer is YES."
+"The sentence """""" I am currently stuck with changing date from a date picker """""" uses <pattern>stuck with VBG</pattern> to indicate that the user expects to ""change date from a date picker"". The answer is YES."
+No sentences found to indicate the user's expectation. The answer is NO.
+"The sentence """""" hi Guys I wanted to store a database file """""" uses <pattern>wanted to VB</pattern> to indicate that the user expects to ""store a database file"". The answer is YES."
+"The sentence """""" When i increase requests, I start to get Received HTTP error 504 trying to fetch link. """""" uses <pattern>start to VB</pattern> to indicate that the user expects to ""increase requests"". The answer is YES."
+"The sentence """""" Anyone know of a good library for adding debugging output to an app? """""" uses <pattern>know of VB</pattern> to indicate that the user expects to ""know a good library for adding debugging output"". The answer is YES."
+No sentences found to indicate the user's expectation. The answer is NO.
+"The sentence """""" is a docker build basically doing a run as well? """""" uses <pattern>is VB ADJ</pattern> to indicate that the user expects to know ""a docker build is basically doing a run as well"". The answer is YES."
+No sentences found to indicate the user's expectation. The answer is NO.
+"The sentence """""" I'm trying to connect a physical device but the app is already installed on device """""" uses <pattern>trying to VB</pattern> to indicate that the user expects to ""connect a physical device"". The answer is YES."
+No sentences found to indicate the user's expectation. The answer is NO.
+"The sentence """""" I want to upload every image in req files to cloudinary asynchronously """""" uses <pattern>want to VB</pattern> to indicate that the user expects to ""upload every image in req files to cloudinary asynchronously"". The answer is YES."
+No sentences found to indicate the user's expectation. The answer is NO.
+"The sentence """""" It claims, that it can't download the app over http with a self signed certificate. """""" uses <pattern>claim VBZ</pattern> to indicate that the user expects to ""download the app over http with a self signed certificate"". The answer is YES."
+"The sentence """""" can we enable disable SIM in android using ADB or Appium? """""" uses <pattern>can we VB</pattern> to indicate that the user expects to ""enable disable SIM in android using ADB or Appium"". The answer is YES."
+No sentences found to indicate the user's expectation. The answer is NO.
+No sentences found to indicate the user's expectation. The answer is NO.
+No sentences found to indicate the user's expectation. The answer is NO.
+"The sentence """""" Is there a way to archive an old inactive gitter room, so that people can't post there anymore, but the archives are still available? """""" uses <pattern>is there a way to VB</pattern> to indicate that the user expects to ""archive an old inactive gitter room"". The answer is YES."
+"The sentence """""" i am trying to fetch geolocation using google api """""" uses <pattern>trying to VB</pattern> to indicate that the user expects to ""fetch geolocation using google api"". The answer is YES."
+"The sentence """""" trying to start new projects using es6 properly """""" uses <pattern>trying to VB</pattern> to indicate that the user expects to ""start new projects using es6 properly"". The answer is YES."
+"The sentence """""" can I safely replace that with Object? """""" uses <pattern>can I VB</pattern> to indicate that the user expects to ""replace that with Object"". The answer is YES."
+No sentences found to indicate the user's expectation. The answer is NO.
+No sentences found to indicate the user's expectation. The answer is NO.
+No sentences found to indicate the user's expectation. The answer is NO.
+"The sentence """""" Where I would expect to do something like this """""" uses <pattern>expect to VB</pattern> to indicate that the user expects to ""do something like this"". The answer is YES."
+"The sentence """""" what is the best way to troubleshoot localhost networking problems? """""" uses <pattern>what is the best way to VB</pattern> to indicate that the user expects to ""troubleshoot localhost networking problems"". The answer is YES."
+"The sentence """""" It uses stylus and I'm trying to figure out how to get some basic styling going """""" uses <pattern>trying to VB</pattern> to indicate that the user expects to ""get some basic styling going"". The answer is YES."
+"The sentence """""" how to config all these containers all listen to port 80? """""" uses <pattern>how to VB</pattern> to indicate that the user expects to ""config all these containers all listen to port 80"". The answer is YES."
+"The sentence """""" On page refresh i am connected with new socket id and not able to fetch previous socket data. """""" uses <pattern>not able to VB</pattern> to indicate that the user expects to ""fetch previous socket data"". The answer is YES."
+"The sentence """""" I am getting an error related to spark shuffling """""" uses <pattern>getting an error related to</pattern> to indicate that the user expects to ""get an error related to spark shuffling"". The answer is YES."
+No sentences found to indicate the user's expectation. The answer is NO.
+"The sentence """""" I've tried various styles of import, but I keep getting errors similar to '.../keycloak-js/dist/keycloak.d.ts' is not a module """""" uses <pattern>but I keep VB</pattern> to indicate that the user expects to ""import the file properly"". The answer is YES."
+No sentences found to indicate the user's expectation. The answer is NO.
+No sentences found to indicate the user's expectation. The answer is NO.
+"The sentence """""" Does anyone know whether the following is intended behavior and, if yes, what the rationale is? """""" uses <pattern>intended behavior</pattern> to indicate that the user expects to know ""whether the following is intended behavior"". The answer is YES."
+"The sentence """""" Now when i am trying to install that version- NPM is giving me error that the version is not found. """""" uses <pattern>trying to VB</pattern> to indicate that the user expects to ""install that version"". The answer is YES."
+No sentences found to indicate the user's expectation. The answer is NO.
+No sentences found to indicate the user's expectation. The answer is NO.
+No sentences found to indicate the user's expectation. The answer is NO.
+"The sentence """""" I have a PHP container in which I need to run cron (for wordpress, because the wordpress cron is not running) """""" uses <pattern>need to VB</pattern> to indicate that the user expects to ""run cron"". The answer is YES."
+No sentences found to indicate the user's expectation. The answer is NO.
+"The sentence """""" Is there a way to copy and paste text and Unicode from appium? """""" uses <pattern>is there a way to VB</pattern> to indicate that the user expects to ""copy and paste text and Unicode from appium"". The answer is YES."
+"The sentence """""" Hey guys I have been having trouble with how to set up any software for mining ether """""" uses <pattern>having trouble with VB</pattern> to indicate that the user expects to ""set up any software for mining ether"". The answer is YES."
+No sentences found to indicate the user's expectation. The answer is NO.
+"The sentence """""" haw I can streaming video from my webcam with nodejs """""" uses <pattern>haw VB</pattern> to indicate that the user expects to ""streaming video from my webcam with nodejs"". The answer is YES."
+No sentences found to indicate the user's expectation. The answer is NO.
+"The sentence """""" from my understanding this is a supervised learning approach since the model gets trained initially, is this correct? """""" uses <pattern>from my understanding</pattern> to indicate that the user expects to know ""this is a supervised learning approach"". The answer is YES."
+"The sentence """""" My question is, I assume the possibility of iterating over smaller portions of the data set must have provided some use case (better results?) """""" uses <pattern>assume sth VBN</pattern> to indicate that the user expects ""the possibility of iterating over smaller portions of the data set to provide some use case (better results?)"". The answer is YES."
+No sentences found to indicate the user's expectation. The answer is NO.
+No sentences found to indicate the user's expectation. The answer is NO.
+"The sentence """""" I want to convert I was thinking of something like, but SplitBox is const so can't reassign it """""" uses <pattern>thinking of VBG</pattern> to indicate that the user expects to ""convert to es6"". The answer is YES."
+"The sentence """""" are there any plans to do work on the Android client """""" uses <pattern>are there any plan to VB</pattern> to indicate that the user expects to ""do work on the Android client"". The answer is YES."
+"The sentence """""" Oh never mind, found the way to do it """""" uses <pattern>found the way to VB</pattern> to indicate that the user expects to ""create private rooms"". The answer is YES."
+No sentences found to indicate the user's expectation. The answer is NO.
+"The sentence """""" trying to find a simple way to tail or access stdout of a linked container running a simple service """""" uses <pattern>trying to VB</pattern> to indicate that the user expects to ""find a simple way to tail or access stdout of a linked container"". The answer is YES."
+No sentences found to indicate the user's expectation. The answer is NO.
+No sentences found to indicate the user's expectation. The answer is NO.
+"The sentence """""" i want to run serpent contract in geth testnet. """""" uses <pattern>want to VB</pattern> to indicate that the user expects to ""run serpent contract in geth testnet"". The answer is YES."
+"The sentence """""" Is there a way to order commands in docker-compose? """""" uses <pattern>way to VB</pattern> to indicate that the user expects to ""order commands in docker-compose"". The answer is YES."
+"The sentence """""" I need help recovering a wallet. """""" uses <pattern>need help VBG</pattern> to indicate that the user expects to ""recover a wallet"". The answer is YES."
+No sentences found to indicate the user's expectation. The answer is NO.
+No sentences found to indicate the user's expectation. The answer is NO.
+No sentences found to indicate the user's expectation. The answer is NO.
+No sentences found to indicate the user's expectation. The answer is NO.
+"The sentence """""" I downloaded the Mac OS X app, but then I found some rooms that required me to be logged in with github, so I logged out in the browser and logged back in with github """""" uses <pattern>logged sth. in VB</pattern> to indicate that the user expects to ""logged in with github"". The answer is YES."
+"The sentence """""" Question, how can I judge TerminationReason is Error or IterationTerminationCondition or EpochTerminationCondition? """""" uses <pattern>how can I VB</pattern> to indicate that the user expects to ""judge TerminationReason is Error or IterationTerminationCondition or EpochTerminationCondition"". The answer is YES."
+"The sentence """""" is there any instructions to decide how many layers should I choose? """""" uses <pattern>is there any sth to decide</pattern> to indicate that the user expects ""instructions to decide how many layers should I choose"". The answer is YES."
+"The sentence """""" Tried shapeshifting and they just scammed me """""" uses <pattern>tried VB</pattern> to indicate that the user expects to ""turn BTC into ETH"". The answer is YES."
+No sentences found to indicate the user's expectation. The answer is NO.
+No sentences found to indicate the user's expectation. The answer is NO.
+"The sentence """""" does the dts have ""declare module 'hyperapp'"" in it? """""" uses <pattern>does sth VB</pattern> to indicate that the user expects the dts to ""have 'declare module 'hyperapp'"" in it"". The answer is YES."
+"The sentence """""" does the master node have to have GPU cards or CUDA installed """""" uses <pattern>have to VB</pattern> to indicate that the user expects the master node to ""have GPU cards or CUDA installed"". The answer is YES."
+No sentences found to indicate the user's expectation. The answer is NO.
+"The sentence """""" if I stop the process and re-run does it start downloading all the blocks again or it will continue from where it was? """""" uses <pattern>want to know sth</pattern> to indicate that the user expects to ""know if it will continue from where it was"". The answer is YES."
+"The sentence """""" I loved jpa when working with java i also wanted to use typeorm here """""" uses <pattern>loved VBD</pattern> to indicate that the user expects to ""use typeorm"". The answer is YES."
+No sentences found to indicate the user's expectation. The answer is NO.
+"The sentence """""" Is it possible to immediate pass code from the command line to node? """""" uses <pattern>Is it possible to VB</pattern> to indicate that the user expects to ""immediate pass code from the command line to node"". The answer is YES."
+"The sentence """""" if i want to use SVM classifer as the classifer of the DBN """""" uses <pattern>want to VB</pattern> to indicate that the user expects to ""use SVM classifer as the classifer of the DBN"". The answer is YES."
+"The sentence """""" Now, I am trying to do predictions using it on my prediction set which is a spark dataframe. """""" uses <pattern>trying to VB</pattern> to indicate that the user expects to ""do predictions using the model on the prediction set"". The answer is YES."
+"The sentence """""" Is it possible to access a property using a string? """""" uses <pattern>is it possible to VB</pattern> to indicate that the user expects ""access a property using a string"". The answer is YES."
+"The sentence """""" but if I do items.key it all works """""" uses <pattern>if I do sth</pattern> to indicate that the user expects ""it all works"". The answer is YES."
+"The sentence """""" I am expecting that I get an email notification when someone posts a message directly to me. """""" uses <pattern>expecting that</pattern> to indicate that the user expects to ""get an email notification"". The answer is YES."
+No sentences found to indicate the user's expectation. The answer is NO.
+No sentences found to indicate the user's expectation. The answer is NO.
+"The sentence """""" I have a docker image with ssh server (open ssh) """""" uses <pattern>have sth with VB</pattern> to indicate that the user expects to ""have a docker image with ssh server (open ssh)"". The answer is YES."
+"The sentence """""" But in my Ethereum Wallet the balance is still 0 """""" uses <pattern>still VB</pattern> to indicate that the user expects the balance in ""Ethereum Wallet"" to be ""0"". The answer is YES."
+"The sentence """""" is there a way to block a specific container from sending smtp? """""" uses <pattern>is there a way to VB</pattern> to indicate that the user expects to ""block a specific container from sending smtp"". The answer is YES."
+"The sentence """""" Its just the one function fetchOTP() that Im looking to expose, should just return this OTPCode = res[0]; """""" uses <pattern>looking to VB</pattern> to indicate that the user expects to ""expose the function fetchOTP()"". The answer is YES."
+No sentences found to indicate the user's expectation. The answer is NO.
+"The sentence """""" Hey, can I do ""inline"" type assertion in higher order function? """""" uses <pattern>can I VB</pattern> to indicate that the user expects to ""do inline type assertion in higher order function"". The answer is YES."
+"The sentence """""" so what does it do? """""" uses <pattern>so what does sth do</pattern> to indicate that the user expects to ""know what the name part does"". The answer is YES."
+"The sentence """""" I have two models; A category can have many subCategory and a subCategory can only belong to one category. """""" uses <pattern>have two models</pattern> to indicate that the user expects ""two models"". The answer is YES."
+"The sentence """""" i am trying to do anpm install -g truffle- a global install """""" uses <pattern>trying to VB</pattern> to indicate that the user expects to ""do anpm install -g truffle"". The answer is YES."
+No sentences found to indicate the user's expectation. The answer is NO.
+"The sentence """""" If I submit the entire timeserie on ComputationGraph.output method, do I get the values for all steps or just the last one? """""" uses <pattern>do I VB</pattern> to indicate that the user expects to ""get the values for all steps or just the last one"". The answer is YES."
+"The sentence """""" Can someone suggest me if it is feasible with deeplearning4j """""" uses <pattern>Can someone suggest me if sth is</pattern> to indicate that the user expects to ""run DBN and Convolutional Nets against MNSIT dataset and CIFAR10 dataset"". The answer is YES."
+"The sentence """""" now, gitter asks for my permission (it does it anyways, despite the fact that my credentials were wrong) and when I click either deny or allow, the gitter window disappears """""" uses <pattern>gitter asks for my permission</pattern> to indicate that the user expects ""gitter to ask for my permission"". The answer is YES."
+"The sentence """""" Does anyone have an example pom file I could use for my own project """""" uses <pattern>have an example sth</pattern> to indicate that the user expects to ""have an example pom file"". The answer is YES."
+No sentences found to indicate the user's expectation. The answer is NO.
+"The sentence """""" is there a way to write a function like this: """""" uses <pattern>is there a way to VB</pattern> to indicate that the user expects to ""write a function like this"". The answer is YES."
+No sentences found to indicate the user's expectation. The answer is NO.
+No sentences found to indicate the user's expectation. The answer is NO.
+No sentences found to indicate the user's expectation. The answer is NO.
+No sentences found to indicate the user's expectation. The answer is NO.
+No sentences found to indicate the user's expectation. The answer is NO.
+"The sentence """""" so i need to be able to mount the host machines' git app dir into the 'web' docker compose container """""" uses <pattern>need to VB</pattern> to indicate that the user expects to ""mount the host machines' git app dir into the 'web' docker compose container"". The answer is YES."
+"The sentence """""" I'm trying to rebuild everything on Mac """""" uses <pattern>trying to VB</pattern> to indicate that the user expects to ""rebuild everything on Mac"". The answer is YES."
+"The sentence """""" I want to create tuple type in which last parameter is different """""" uses <pattern>want to VB</pattern> to indicate that the user expects to ""create tuple type"". The answer is YES."
+"The sentence """""" I'm using feature masking, so it stands to reason that my feature mask should be of shape: examples x timeSteps, aka minibatchSize x timeSteps. """""" uses <pattern>should be</pattern> to indicate that the user expects the feature mask ""be of shape: examples x timeSteps, aka minibatchSize x timeSteps"". The answer is YES."
+"The sentence """""" Any idea why creating the layers takes way too much time? """""" uses <pattern>any idea why sth VBZ</pattern> to indicate that the user expects ""to know why creating the layers takes way too much time"". The answer is YES."
+No sentences found to indicate the user's expectation. The answer is NO.
+No sentences found to indicate the user's expectation. The answer is NO.
+No sentences found to indicate the user's expectation. The answer is NO.
+"The sentence """""" What software would you recommend I use to build a http server (with websockets)? """""" uses <pattern>recommend to VB</pattern> to indicate that the user expects to ""build a http server"". The answer is YES."
+No sentences found to indicate the user's expectation. The answer is NO.
+No sentences found to indicate the user's expectation. The answer is NO.
+No sentences found to indicate the user's expectation. The answer is NO.
+No sentences found to indicate the user's expectation. The answer is NO.
+No sentences found to indicate the user's expectation. The answer is NO.
+No sentences found to indicate the user's expectation. The answer is NO.
+"The sentence """""" Cannot PUT /bars/5b6dd68b3856de342012d6b4 Cannot DELETE /bars/5b6dd68b3856de342012d6b4 """""" uses <pattern>help me</pattern> to indicate that the user expects the routes to be workable. The answer is YES."
+"The sentence """""" whether there are any desired capabilities that could disable the app getting launched as soon as the IOS driver is initialised """""" uses <pattern>whether there are any sth that could VB</pattern> to indicate that the user expects ""any desired capabilities that could disable the app getting launched"". The answer is YES."
+No sentences found to indicate the user's expectation. The answer is NO.
+"The sentence """""" i want to download light blockchain starting from heigh 1.5M and above """""" uses <pattern>want to VB</pattern> to indicate that the user expects ""download light blockchain"". The answer is YES."
+No sentences found to indicate the user's expectation. The answer is NO.
+"The sentence """""" Is there a Pearson Correlation version of the Loss Function available in DL4J? """""" uses <pattern>is there a</pattern> to indicate that the user expects ""a Pearson Correlation version of the Loss Function"". The answer is YES."
+No sentences found to indicate the user's expectation. The answer is NO.
+"The sentence """""" The message appears when I try to access the node server.js app after attaching debugger """""" uses <pattern>try to VB</pattern> to indicate that the user expects to ""access the node server.js app"". The answer is YES."
+No sentences found to indicate the user's expectation. The answer is NO.
+No sentences found to indicate the user's expectation. The answer is NO.
+"The sentence """""" I have a question about the wallet. """""" uses <pattern>question about</pattern> to indicate that the user expects to ""have a question about the wallet"". The answer is YES."
+"The sentence """""" I'm trying to track state in a simple object literal """""" uses <pattern>trying to VB</pattern> to indicate that the user expects to ""track state in a simple object literal"". The answer is YES."
+No sentences found to indicate the user's expectation. The answer is NO.
+No sentences found to indicate the user's expectation. The answer is NO.
+"The sentence """""" Is there any way to get values specified by row INDArray and column INDArray """""" uses <pattern>Is there any way to VB</pattern> to indicate that the user expects to ""get values specified by row INDArray and column INDArray"". The answer is YES."
+"The sentence """""" I can't find any way to do that """""" uses <pattern>VBZ no way</pattern> to indicate that the user expects to ""delete a community"" or ""change its settings"". The answer is YES."
+No sentences found to indicate the user's expectation. The answer is NO.
+"The sentence """""" how do I access any potential properties """""" uses <pattern>how do I VB</pattern> to indicate that the user expects to ""access any potential properties"". The answer is YES."
+No sentences found to indicate the user's expectation. The answer is NO.
+"The sentence """""" I'm working on a test setup in """""" uses <pattern>working on VBG</pattern> to indicate that the user expects to ""work on a test setup"". The answer is YES."
+"The sentence """""" i would like to define my networks in seperate docker-compose files """""" uses <pattern>would like to VB</pattern> to indicate that the user expects to ""define my networks in seperate docker-compose files"". The answer is YES."
+No sentences found to indicate the user's expectation. The answer is NO.
+"The sentence """""" i've tried to use it smth like that listener.config but my approach doesn't work """""" uses <pattern>tried to VB</pattern> to indicate that the user expects to ""use it smth like that listener.config"". The answer is YES."
+"The sentence """""" Has anyone had issues with appium starting on the wrong physical device? """""" uses <pattern>issues with sth VBG</pattern> to indicate that the user expects to ""issues with appium starting on the wrong physical device"". The answer is YES."
+"The sentence """""" anyone notice that the @completionon github isn't working when you want to tag someone in a PR or is it just me? """""" uses <pattern>notice that VBP</pattern> to indicate that the user expects ""the @completionon github isn't working"". The answer is YES."
+"The sentence """""" I want to order on a certain column again. """""" uses <pattern>want to VB</pattern> to indicate that the user expects to ""order on a certain column again"". The answer is YES."
+"The sentence """""" but elastic doesnt seem to start before container with django starts to build. """""" uses <pattern>doesnt VB</pattern> to indicate that the user expects ""elastic to start before container with django starts to build"". The answer is YES."
+No sentences found to indicate the user's expectation. The answer is NO.
+No sentences found to indicate the user's expectation. The answer is NO.
+"The sentence """""" Hi can I ask you what can I read/watch to understand back-end development """""" uses <pattern>can I ask you what can I VB</pattern> to indicate that the user expects to ""understand back-end development"". The answer is YES."
+No sentences found to indicate the user's expectation. The answer is NO.
+No sentences found to indicate the user's expectation. The answer is NO.
+"The sentence """""" I know its not usually good practice to use the logs in a test """""" uses <pattern>not usually to VB</pattern> to indicate that the user expects to ""use the logs in a test"". The answer is YES."
+"The sentence """""" I got fatal error C1083: Cannot open include file: 'errno.h': No such file or directory. Will event loop stats support for windows environment? """""" uses <pattern>Will VB</pattern> to indicate that the user expects ""event loop stats to support for windows environment"". The answer is YES."
+"The sentence """""" can i do get request to external url using express like we do using request? """""" uses <pattern>can I VB</pattern> to indicate that the user expects to ""do get request to external url using express"". The answer is YES."
+No sentences found to indicate the user's expectation. The answer is NO.
+No sentences found to indicate the user's expectation. The answer is NO.
+"The sentence """""" Is there a way to write definition files with arrow functions? """""" uses <pattern>Is there a way to VB</pattern> to indicate that the user expects to ""write definition files with arrow functions"". The answer is YES."
+"The sentence """""" I want to generate a new log file on my server by day """""" uses <pattern>want to VB</pattern> to indicate that the user expects to ""generate a new log file on my server by day"". The answer is YES."
+"The sentence """""" I am not able to delete files that were created during the runtime of a container. """""" uses <pattern>able to VB</pattern> to indicate that the user expects to ""delete files that were created during the runtime of a container"". The answer is YES."
+No sentences found to indicate the user's expectation. The answer is NO.
+"The sentence """""" I would like to crawl an Ethereum network completely """""" uses <pattern>would like to VB</pattern> to indicate that the user expects to ""crawl an Ethereum network completely"". The answer is YES."
+No sentences found to indicate the user's expectation. The answer is NO.
+"The sentence """""" you++, I am trying to use the VGG16 CIFAR pre trained network - would you recommend that? """""" uses <pattern>recommend that</pattern> to indicate that the user expects the other to ""recommend that"". The answer is YES."
+No sentences found to indicate the user's expectation. The answer is NO.
+"The sentence """""" What's the difference between req.session and req.app variables """""" uses <pattern>difference between two sth</pattern> to indicate that the user expects to know the difference ""between req.session and req.app variables"". The answer is YES."
+No sentences found to indicate the user's expectation. The answer is NO.
+No sentences found to indicate the user's expectation. The answer is NO.
+No sentences found to indicate the user's expectation. The answer is NO.
+"The sentence """""" can i not use updater on my net directly? """""" uses <pattern>use sth on</pattern> to indicate that the user expects to ""use updater on my net directly"". The answer is YES."
+No sentences found to indicate the user's expectation. The answer is NO.
+"The sentence """""" Is there anyway to let custom bridge networks through the firewall on centos? """""" uses <pattern>anyway to VB</pattern> to indicate that the user expects to ""let custom bridge networks through the firewall on centos"". The answer is YES."
+No sentences found to indicate the user's expectation. The answer is NO.
+"The sentence """""" but on debug its running fine """""" uses <pattern>running fine</pattern> to indicate that the user expects the test scripts to ""run fine"". The answer is YES."
+"The sentence """""" Are they gone for real or they just have not been built yet? """""" uses <pattern>gone for real</pattern> to indicate that the user expects ""dl4j-spark-ml and dl4j-jcublas-*"" to be ""gone for real or not"". The answer is YES."
+"The sentence """""" I've come with simple example. When jQuery code is in setTimeout(..., 0) it works. """""" uses <pattern>come with VB</pattern> to indicate that the user expects to ""come with simple example"". The answer is YES."
+"The sentence """""" Is there a way scope services at the Route level so they can be unique per-route natigation? """""" uses <pattern>way to VB</pattern> to indicate that the user expects to ""scope services at the Route level"". The answer is YES."
+"The sentence """""" realized that in production mode Angular initializes my components twice (on every browser) which causes requests duplication. """""" uses <pattern>realized that VB</pattern> to indicate that the user expects to ""prevent requests duplication"". The answer is YES."
